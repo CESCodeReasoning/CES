@@ -1,0 +1,27 @@
+
+[REASONING]
+The function `prod_signs` is called with ( arr = [-1, 1, 1, 1] ).
+`arr` is not empty, so the condition `not arr` is false.
+The condition `0 in arr` is false, so `prod` is calculated as `(-1) ** len(list(filter(lambda x: x < 0, arr)))`.
+Here, `filter(lambda x: x < 0, arr)` returns a list of negative numbers in `arr`, and `len(list(filter(lambda x: x < 0, arr)))` gives the count of negative numbers.
+Since there is 1 negative number in `arr`, `(-1) ** len(list(filter(lambda x: x < 0, arr)))` is -1.
+`prod` is then multiplied by the sum of absolute values of all elements in `arr`, which is 4.
+The final result is `prod * sum([abs(i) for i in arr])`, which is `-4`.
+
+Therefore, the final output of the function `prod_signs([-1, 1, 1, 1])` is `-4`.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def prod_signs(arr):
+    if not arr: ## [CONDITION](not arr)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return None
+    prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+    return prod * sum([abs(i) for i in arr])
+[/ANSWER]
+
+[OUTPUT]
+-4
+[/OUTPUT]

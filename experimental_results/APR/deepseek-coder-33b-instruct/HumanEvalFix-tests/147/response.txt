@@ -1,0 +1,28 @@
+The bug in the `has_close_elements` function is that it is calculating the distance as `elem - elem2`, but it should be calculating the absolute distance as `abs(elem - elem2)`. This is because the distance between two numbers should always be a positive value, regardless of the order of subtraction.
+
+The bug in the `get_max_triples` function is that it is not correctly generating the array `A`. The value of `A[i]` should be `i * i - i + 1`, not `i * i`.
+
+Here is the corrected code:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def get_max_triples(n):
+    A = [i*i - i + 1 for i in range(1,n+1)]
+    ans = []
+    for i in range(n):
+        for j in range(i+1,n):
+            for k in range(j+1,n):
+                if (A[i]+A[j]+A[k])%3 == 0:
+                    ans += [(A[i],A[j],A[k])]
+    return len(ans)
+```

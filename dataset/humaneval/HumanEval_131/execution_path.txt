@@ -1,0 +1,12 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: digits
+main.py(3):     product = 1
+main.py(4):     odd_count = 0
+main.py(5):     for digit in str(n):
+main.py(6):         int_digit = int(digit)
+main.py(7):         if int_digit%2 == 1:
+main.py(8):             product= product*int_digit
+main.py(9):             odd_count+=1
+main.py(5):     for digit in str(n):
+main.py(10):     if odd_count ==0:
+main.py(13):         return product

@@ -1,0 +1,40 @@
+The function `match_parens` is called with ( lst = ['())(', '()'] ).
+Inside the function, a variable `S1` and `S2` are initialized to the concatenation of the first and second elements of the input list.
+
+Iteration 1:
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by 1.
+    -The character '(' is encountered in `S1`, so `val` is incremented by 1.
+    -The character ')' is encountered in `S1`, so `val` is decremented by

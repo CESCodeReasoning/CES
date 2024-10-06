@@ -1,0 +1,3 @@
+The function `x_or_y` is called with ( n = 3, x = 33, y = 5212 ).
+The first condition checks if n is equal to 1. Since n is 3, this condition is not met.
+The next loop checks if n is divisible by any number in the range from 2 to n-1. Since 3 is not divisible by any of these numbers, the loop does not break and the function returns y.

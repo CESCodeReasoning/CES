@@ -1,0 +1,32 @@
+The function `find_zero` is called with ( xs = [-6, 11, -6, 1] ).
+Inside the function, a variable `begin` is initialized to -1.
+A variable `end` is initialized to 1.
+The loop iterates from -1 through 1 (since ( end = 1 )).
+First Iteration (begin = -1):
+    - begin <= 1 when begin=-1
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The first branch is taken.
+    -`begin *= 2.0` updates `begin` to -0.5 ( -1 * 2.0 = -0.5 ).
+Second Iteration (begin = -0.5):
+    - begin <= 1 when begin=-0.5
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The first branch is taken.
+    -`begin *= 2.0` updates `begin` to -0.25 ( -0.5 * 2.0 = -0.25 ).
+Third Iteration (begin = -0.25):
+    - begin <= 1 when begin=-0.25
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The first branch is taken.
+    -`begin *= 2.0` updates `begin` to -0.125 ( -0.25 * 2.0 = -0.125 ).
+Fourth Iteration (begin = -0.125):
+    - begin <= 1 when begin=-0.125
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The first branch is taken.
+    -`begin *= 2.0` updates `begin` to -0.0625 ( -0.125 * 2.0 = -0.0625 ).
+Fifth Iteration (begin = -0.0625):
+    - begin <= 1 when begin=-0.0625
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The first branch is taken.
+    -`begin *= 2.0` updates `begin` to -0.03125 ( -0.0625 * 2.0 = -0.03125 ).
+Sixth Iteration (begin = -0.03125):
+    - begin <= 1 when begin=-0.03125
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The first branch is taken.
+    -`begin *= 2.0` updates `begin` to -0.015625 ( -0.03125 * 2.0 = -0.015625 ).
+Seventh Iteration (begin = -0.015625):
+    - begin <= 1 when begin=-0.015625
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The first branch is taken.
+    -`begin *= 2.0` updates `begin` to -0.0078125 ( -

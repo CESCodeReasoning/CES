@@ -1,0 +1,15 @@
+The function `even_odd_count` is called with ( num = -345821 ).
+Inside the function, a variable `even_count` and `odd_count` are initialized to 0.
+
+Iteration 1:
+    -The digit '3' is odd, so odd_count becomes 1.
+Iteration 2:
+    -The digit '4' is even, so even_count becomes 1.
+Iteration 3:
+    -The digit '5' is odd, so odd_count becomes 2.
+Iteration 4:
+    -The digit '8' is even, so even_count becomes 2.
+Iteration 5:
+    -The digit '2' is even, so even_count becomes 3.
+Iteration 6:
+    -The digit '1' is odd, so odd_count becomes 3.

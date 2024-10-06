@@ -1,0 +1,68 @@
+```response
+            return y
+            break
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n):
+    if n == 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+            break
+    else:
+        return True
+
+Tests:
+def check(is_prime):
+
+    # Check some simple cases
+    assert is_prime(7) == True
+    assert is_prime(15) == False
+    assert is_prime(3) == True
+    assert is_prime(1259) == True
+    assert is_prime(7919) == True
+    assert is_prime(3609) == True
+    assert is_prime(91) == True
+    assert is_prime(6) == False
+    
+
+    # Check some edge cases that are easy to work out by hand.
+    assert is_prime(1) == False
+    assert is_prime(2) == True
+
+check(is_prime)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_prime(n)` to solve the following problem:
+A simple program which should return the value of x if n is
+a prime number and should return the value of y otherwise.
+Examples:
+for is_prime(7) == True
+for is_prime(15) == False
+for is_prime(3) == True
+for is_prime(1259) == True
+for is_prime(7919) == True
+for is_prime(3609) == True
+for is_prime(91) == True
+for is_prime(6) == False
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+            return False
+            break
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n):
+    if n == 1:
+        return False
+    for i in range(

@@ -1,0 +1,138 @@
+<｜begin▁of▁sentence｜>
+
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+FIX = """
+Add more test cases.
+"""
+
+def vowels_count(s):
+    vowels = "aeiouyAEIOUY"
+    n_vowels = sum(c in vowels for c in s)
+    return n_vowels
+
+Tests:
+def check(vowels_count):
+
+    # Check some simple cases
+    assert vowels_count("abcde") == 2, "Test 1"
+    assert vowels_count("Alone") == 3, "Test 2"
+    assert vowels_count("key") == 2, "Test 3"
+    assert vowels_count("bye") == 1, "Test 4"
+    assert vowels_count("keY") == 2, "Test 5"
+    assert vowels_count("bYe") == 1, "Test 6"
+    assert vowels_count("ACEDY") == 3, "Test 7"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+check(vowels_count)
+
+The code should satisfy the following natural language specification:
+Write a Python function `vowels_count(s)` to solve the following problem:
+Write a function vowels_count which takes a string representing
+a word as input and returns the number of vowels in the string.
+Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a
+vowel, but only when it is at the end of the given word.
+Example:
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(2) == True
+    assert is_prime(3) == True
+    assert is_prime(4) == False
+    assert is_prime(5) == True
+    assert is_prime(6) == False
+    assert is_prime(7) == True
+    assert is_prime(8) == False
+    assert is_prime(9) == False
+    assert is_prime(10) == False
+    assert is_prime(11) == True
+    assert is_prime(12) == False
+    assert is_prime(13) == True
+    assert is_prime(14) == False
+    assert is_prime(15) == False
+    assert is_prime(16) == False
+    assert is_prime(17) == True
+    assert is_prime(18) == False
+    assert is_prime(19) == True
+    assert is_prime(20) == False
+
+check(is_prime)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_prime(n: int) -> bool` to solve the following problem:
+Check if a given number is a prime number.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def is_palindrome(s: str) -> bool:
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_pal

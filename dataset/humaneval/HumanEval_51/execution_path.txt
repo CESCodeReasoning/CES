@@ -1,0 +1,11 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: remove_vowels
+main.py(3):     return "".join([s for s in text if s.lower() not in ["a", "e", "i", "o", "u"]])
+ --- modulename: main, funcname: <listcomp>
+main.py(3):     return "".join([s for s in text if s.lower() not in ["a", "e", "i", "o", "u"]])
+main.py(3):     return "".join([s for s in text if s.lower() not in ["a", "e", "i", "o", "u"]])
+main.py(3):     return "".join([s for s in text if s.lower() not in ["a", "e", "i", "o", "u"]])
+main.py(3):     return "".join([s for s in text if s.lower() not in ["a", "e", "i", "o", "u"]])
+main.py(3):     return "".join([s for s in text if s.lower() not in ["a", "e", "i", "o", "u"]])
+main.py(3):     return "".join([s for s in text if s.lower() not in ["a", "e", "i", "o", "u"]])
+main.py(3):     return "".join([s for s in text if s.lower() not in ["a", "e", "i", "o", "u"]])

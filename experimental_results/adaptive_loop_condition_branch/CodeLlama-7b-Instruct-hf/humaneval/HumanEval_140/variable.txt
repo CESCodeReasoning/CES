@@ -1,0 +1,22 @@
+from typing import *
+def fix_spaces(text):
+    new_text = ""
+    i = 0
+    start, end = 0, 0
+    while i < len(text): ## [STATE]i=??[/STATE][STATE]len(text)=??[/STATE]
+        if text[i] == " ": ## [CONDITION](text[i] == " ")=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            end += 1
+        else: ## [BRANCH]taken=??[/BRANCH]
+            if end - start > 2: ## [CONDITION](end - start > 2)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                new_text += "-"+text[i]
+            elif end - start > 0: ## [CONDITION](end - start > 0)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                new_text += "_"*(end - start)+text[i]
+            else: ## [BRANCH]taken=??[/BRANCH]
+                new_text += text[i]
+            start, end = i+1, i+1
+        i+=1
+    if end - start > 2: ## [CONDITION](end - start > 2)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        new_text += "-"
+    elif end - start > 0: ## [CONDITION](end - start > 0)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        new_text += "_"
+    return new_text

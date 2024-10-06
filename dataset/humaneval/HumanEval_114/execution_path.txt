@@ -1,0 +1,53 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: minSubArraySum
+main.py(3):     max_sum = 0
+main.py(4):     s = 0
+main.py(5):     for num in nums:
+main.py(6):         s += -num
+main.py(7):         if (s < 0):
+main.py(8):             s = 0
+main.py(9):         max_sum = max(s, max_sum)
+main.py(5):     for num in nums:
+main.py(6):         s += -num
+main.py(7):         if (s < 0):
+main.py(8):             s = 0
+main.py(9):         max_sum = max(s, max_sum)
+main.py(5):     for num in nums:
+main.py(6):         s += -num
+main.py(7):         if (s < 0):
+main.py(8):             s = 0
+main.py(9):         max_sum = max(s, max_sum)
+main.py(5):     for num in nums:
+main.py(6):         s += -num
+main.py(7):         if (s < 0):
+main.py(8):             s = 0
+main.py(9):         max_sum = max(s, max_sum)
+main.py(5):     for num in nums:
+main.py(6):         s += -num
+main.py(7):         if (s < 0):
+main.py(8):             s = 0
+main.py(9):         max_sum = max(s, max_sum)
+main.py(5):     for num in nums:
+main.py(6):         s += -num
+main.py(7):         if (s < 0):
+main.py(8):             s = 0
+main.py(9):         max_sum = max(s, max_sum)
+main.py(5):     for num in nums:
+main.py(10):     if max_sum == 0:
+main.py(11):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(11):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(11):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(11):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(11):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(11):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(11):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(11):         max_sum = max(-i for i in nums)
+main.py(12):     min_sum = -max_sum
+main.py(13):     return min_sum

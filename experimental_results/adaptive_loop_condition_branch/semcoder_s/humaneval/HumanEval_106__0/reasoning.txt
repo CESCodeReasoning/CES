@@ -1,0 +1,16 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterates from 1 to n (inclusive).
+If the current number is even, calculate the factorial of the number and append it to the list ret.
+If the current number is odd, calculate the sum of all numbers up to the current number and append it to the list ret.
+First Iteration (i=1):
+    - `i` is 1, the condition `i % 2 == 0` is False, so the else branch is taken.
+    - `x` is initialized to 0, then for j in the range from 1 to 2 (inclusive), x is incremented by j, so x = 0 + 1 = 1.
+    - The list ret is appended with [1].
+Second Iteration (i=2):
+    - `i` is 2, the condition `i % 2 == 0` is True, so the if branch is taken.
+    - `x` is initialized to 1, then for j in the range from 1 to 3 (inclusive), x is multiplied by j, so x = 1 * 2 = 2.
+    - The list ret is appended with [2].
+Third Iteration (i=3):
+    - `i` is 3, the condition `i % 2 == 0` is False, so the else branch is taken.
+    - `x` is initialized to 0, then for j in the range from 1 to 4 (inclusive), x is incremented by j, so x = 0 + 1 + 2 + 3 = 6.
+    - The list ret is appended with [6].

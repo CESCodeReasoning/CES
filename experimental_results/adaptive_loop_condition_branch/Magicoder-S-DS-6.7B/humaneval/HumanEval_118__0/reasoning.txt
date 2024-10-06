@@ -1,0 +1,11 @@
+The function `get_closest_vowel` is called with ( word = "full" ).
+The condition `len(word) < 3` is false, so the function proceeds to the next step.
+The loop iterates from the second last character to the first character of the word.
+Iteration 1:
+    -The character 'l' is not in vowels, so it skips to the next iteration.
+Iteration 2:
+    -The character 'u' is in vowels, so it checks the next character and the previous character.
+    -The next character is 'l', which is in vowels, so it skips to the next iteration.
+Iteration 3:
+    -The character 'f' is not in vowels, so it skips to the next iteration.
+The function returns an empty string, as it did not find any vowel that was not followed or preceded by another vowel.

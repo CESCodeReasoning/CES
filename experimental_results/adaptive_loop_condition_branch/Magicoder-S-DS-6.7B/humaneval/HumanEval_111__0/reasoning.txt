@@ -1,0 +1,18 @@
+The function `histogram` is called with ( test = 'a b c d g' ).
+Inside the function, a variable `dict1` is initialized to an empty dictionary.
+The input string is split into a list of words.
+
+Iteration 1:
+    -The word 'a' is not in the dictionary, so it is added with a count of 1.
+Iteration 2:
+    -The word 'b' is not in the dictionary, so it is added with a count of 1.
+Iteration 3:
+    -The word 'c' is not in the dictionary, so it is added with a count of 1.
+Iteration 4:
+    -The word 'd' is not in the dictionary, so it is added with a count of 1.
+Iteration 5:
+    -The word 'g' is not in the dictionary, so it is added with a count of 1.
+
+The maximum count is 1, so no words are added to the dictionary.
+
+Therefore, the final output of the function `histogram('a b c d g')` is an empty dictionary.

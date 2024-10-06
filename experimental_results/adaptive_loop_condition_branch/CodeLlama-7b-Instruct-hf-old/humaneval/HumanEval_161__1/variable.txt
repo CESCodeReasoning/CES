@@ -1,0 +1,18 @@
+from typing import *
+
+
+def solve(s):
+    flg = 0
+    idx = 0
+    new_str = list(s)
+    for i in s: ## [STATE]i=??[/STATE][STATE]s=??[/STATE]
+        if i.isalpha(): ## [CONDITION](i.isalpha())=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            new_str[idx] = i.swapcase()
+            flg = 1
+        idx += 1
+    s = ""
+    for i in new_str: ## [STATE]i=??[/STATE][STATE]new_str=??[/STATE]
+        s += i
+    if flg == 0: ## [CONDITION](flg == 0)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return s[len(s)::-1]
+    return s

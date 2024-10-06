@@ -1,0 +1,14 @@
+from typing import *
+
+
+def count_vowels_consonants(input_string):
+    vowels = 'aeiouAEIOU'
+    vowel_count = 0
+    consonant_count = 0
+    
+    for char in input_string: ## [STATE]char=['H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!'][/STATE][STATE]input_string=["Hello, World!"][/STATE]
+        if char in vowels: ## [CONDITION](char in vowels)=[False, True, False, False, True, False, False, False, True, False, False, False, False][/CONDITION][BRANCH]taken=[N, Y, N, N, Y, N, N, N, Y, N, N, N, N][/BRANCH]
+            vowel_count += 1  
+        else: ## [BRANCH]taken=[Y, N, Y, Y, N, Y, Y, Y, N, Y, Y, Y, Y][/BRANCH]
+            consonant_count += 1 
+    return (vowel_count, consonant_count)

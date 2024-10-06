@@ -1,0 +1,9 @@
+The function `strange_sort_list` is called with ( lst = [111111]).
+Inside the function, a variable `res` is initialized to an empty list.
+A variable `switch` is initialized to True.
+First Iteration:
+    - lst = [111111], min(lst) = 111111.
+    -`res.append(min(lst) if switch else max(lst))` updates `res` to [111111] ( [111111] + [111111] = [111111] ).
+    -`lst.remove(res[-1])` removes 111111 from `lst`.
+    -`switch = not switch` updates `switch` to False.
+lst is empty, the while loop terminates. The function returns the value of `res`, which is now [111111].

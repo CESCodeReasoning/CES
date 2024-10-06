@@ -1,0 +1,9 @@
+Fixed Code:
+```python
+def pluck(arr):
+    if(len(arr) == 0): return []
+    evens = [(i, x) for i, x in enumerate(arr) if x % 2 == 0]
+    if not evens: return []
+    smallest_even = min(evens, key=lambda x: (x[1], x[0]))
+    return [smallest_even[0], smallest_even[1]]
+```

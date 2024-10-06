@@ -1,0 +1,54 @@
+The function `is_nested` is called with ( string = '[][][[]]' ).
+Inside the function, three empty lists are created to store the indices of the opening and closing brackets.
+
+Iteration 1:
+    -The character '[' is an opening bracket, so it is added to the list of opening brackets.
+Iteration 2:
+    -The character '[' is an opening bracket, so it is added to the list of opening brackets.
+Iteration 3:
+    -The character '[' is an opening bracket, so it is added to the list of opening brackets.
+Iteration 4:
+    -The character ']' is a closing bracket, so it is added to the list of closing brackets.
+Iteration 5:
+    -The character ']' is a closing bracket, so it is added to the list of closing brackets.
+Iteration 6:
+    -The character '[' is an opening bracket, so it is added to the list of opening brackets.
+Iteration 7:
+    -The character ']' is a closing bracket, so it is added to the list of closing brackets.
+
+The lists of opening and closing brackets are then reversed.
+
+The variable `cnt` is initialized to 0.
+The variable `i` is initialized to 0.
+The length of the list of closing brackets is stored in the variable `l`.
+
+Iteration 1:
+    -The index of the opening bracket at position 0 is compared to the index of the closing bracket at position 0.
+    -Since the index of the opening bracket is less than the index of the closing bracket, the condition is true and the counter is incremented.
+    -The variable `i` is incremented.
+Iteration 2:
+    -The index of the opening bracket at position 1 is compared to the index of the closing bracket at position 1.
+    -Since the index of the opening bracket is less than the index of the closing bracket, the condition is true and the counter is incremented.
+    -The variable `i` is incremented.
+Iteration 3:
+    -The index of the opening bracket at position 2 is compared to the index of the closing bracket at position 2.
+    -Since the index of the opening bracket is less than the index of the closing bracket, the condition is true and the counter is incremented.
+    -The variable `i` is incremented.
+Iteration 4:
+    -The index of the opening bracket at position 3 is compared to the index of the closing bracket at position 3.
+    -Since the index of the opening bracket is less than the index of the closing bracket, the condition is true and the counter is incremented.
+    -The variable `i` is incremented.
+Iteration 5:
+    -The index of the opening bracket at position 4 is compared to the index of the closing bracket at position 4.
+    -Since the index of the opening bracket is less than the index of the closing bracket, the condition is true and the counter is incremented.
+    -The variable `i` is incremented.
+Iteration 6:
+    -The index of the opening bracket at position 5 is compared to the index of the closing bracket at position 5.
+    -Since the index of the opening bracket is less than the index of the closing bracket, the condition is true and the counter is incremented.
+    -The variable `i` is incremented.
+Iteration 7:
+    -The index of the opening bracket at position 6 is compared to the index of the closing bracket at position 6.
+    -Since the index of the opening bracket is less than the index of the closing bracket, the condition is true and the counter is incremented.
+    -The variable `i` is incremented.
+
+The function returns the value of the counter, which is 3.

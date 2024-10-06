@@ -1,0 +1,16 @@
+[REASONING]
+The function solve takes an integer N as input and returns the binary representation of the sum of the digits of N.
+To determine the output of executing the function solve on the input 963, we need to first calculate the sum of the digits of 963, which is 9 + 6 + 3 = 18.
+Then, we need to convert 18 to binary, which is 10010.
+Therefore, the output of executing the function solve on the input 963 is "10010".
+[/REASONING]
+
+[ANSWER]
+def solve(N):
+    # [STATE] N = 963 [/STATE]
+    return bin(sum(int(i) for i in str(N)))[2:]
+[/ANSWER]
+
+[OUTPUT]
+"10010"
+[/OUTPUT]

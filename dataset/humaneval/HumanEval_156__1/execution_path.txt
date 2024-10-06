@@ -1,0 +1,89 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: int_to_mini_roman
+main.py(5):     num = [1, 4, 5, 9, 10, 40, 50, 90,
+main.py(6):            100, 400, 500, 900, 1000]
+main.py(5):     num = [1, 4, 5, 9, 10, 40, 50, 90,
+main.py(7):     sym = ["I", "IV", "V", "IX", "X", "XL",
+main.py(8):            "L", "XC", "C", "CD", "D", "CM", "M"]
+main.py(7):     sym = ["I", "IV", "V", "IX", "X", "XL",
+main.py(9):     i = 12
+main.py(10):     res = ''
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(15):             res += sym[i]
+main.py(16):             div -= 1
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(15):             res += sym[i]
+main.py(16):             div -= 1
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(12):         div = number // num[i]
+main.py(13):         number %= num[i]
+main.py(14):         while div:
+main.py(15):             res += sym[i]
+main.py(16):             div -= 1
+main.py(14):         while div:
+main.py(15):             res += sym[i]
+main.py(16):             div -= 1
+main.py(14):         while div:
+main.py(17):         i -= 1
+main.py(11):     while number:
+main.py(18):     return res.lower()

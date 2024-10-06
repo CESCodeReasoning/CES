@@ -1,0 +1,8 @@
+The function `file_name_check` is called with (file_name = '@this1_is6_valid.exe').
+The function splits the file name into a list using the '.' character as the separator.
+The length of the list is checked, and if it is not equal to 2, the function returns 'No'.
+The second element of the list (i.e., the file extension) is checked to see if it is in the list of allowed extensions (['txt', 'exe', 'dll']). If it is not, the function returns 'No'.
+The first element of the list (i.e., the file name without the extension) is checked to see if it is empty. If it is, the function returns 'No'.
+The first character of the file name is checked to see if it is a letter. If it is not, the function returns 'No'.
+The number of digits in the file name is counted and if it is greater than 3, the function returns 'No'.
+If all the above conditions are met, the function returns 'Yes'.

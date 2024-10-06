@@ -1,0 +1,42 @@
+
+[REASONING]
+The function `solve` is called with ( s = "AsDf" ).
+Inside the function, a variable `flg` and `idx` are initialized to 0.
+A new list `new_str` is created from the string `s`.
+
+Iteration 1:
+    -The character 'A' is an alphabet, so it is swapped to 'a' and `flg` becomes 1.
+Iteration 2:
+    -The character 's' is not an alphabet.
+Iteration 3:
+    -The character 'D' is an alphabet, so it is swapped to 'd' and `flg` remains 1.
+Iteration 4:
+    -The character 'f' is an alphabet, so it is swapped to 'F' and `flg` remains 1.
+
+After the loop, the list `new_str` is converted back to a string `s`.
+
+Since `flg` is not 0, the string `s` is returned as it is.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def solve(s):
+    flg = 0
+    idx = 0
+    new_str = list(s)
+    for i in s: ## [STATE]i=['A', 's', 'D', 'f'][/STATE][STATE]s=["AsDf"][/STATE]
+        if i.isalpha(): ## [CONDITION](i.isalpha())=[True, False, True, True][/CONDITION][BRANCH]taken=[Y, N, Y, Y][/BRANCH]
+            new_str[idx] = i.swapcase()
+            flg = 1
+        idx += 1
+    s = ""
+    for i in new_str: ## [STATE]i=['a', 's', 'd', 'F'][/STATE][STATE]new_str=["AsDf"][/STATE]
+        s += i
+    if flg == 0: ## [CONDITION](flg == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return s[len(s)::-1]
+    return s
+[/ANSWER]
+
+[OUTPUT]
+"aSdF"
+[/OUTPUT]

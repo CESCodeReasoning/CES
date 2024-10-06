@@ -1,0 +1,5 @@
+The function `digitSum` is called with ( s = "abcCd" ).
+The condition `s == ""` is false, therefore the if branch is not taken.
+The return statement returns the sum of the digits of the string `s`, which is calculated using the `sum` method and the `ord` method.
+The `ord` method returns the ASCII value of a character, and the `isupper` method checks if a character is uppercase.
+Therefore, the final output of the function `digitSum("abcCd")` is 10.

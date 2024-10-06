@@ -1,0 +1,47 @@
+The function `how_many_times` is called with ( string = "john doe", substring = "john" ).
+Inside the function, a variable `times` is initialized to 0.
+The loop iterates from 0 through ( (len(string) - len(substring)) + 1 ).
+First Iteration (i = 0)
+   - `i` is 0, which satisfies ( 0 <= i < (len(string) - len(substring)) + 1 ).
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` results in `times = 1`.
+Second Iteration (i = 1)
+   - `i` is 1, which still satisfies ( 0 <= i < (len(string) - len(substring)) + 1 ).
+   - The same condition is true.
+   - Action: `times += 1` updates `times` to 2 (`1 + 1 = 2`).
+Third Iteration (i = 2)
+   - `i` is 2, which now satisfies ( 1 <= i < (len(string) - len(substring)) + 1 ).
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` updates `times` to 3 (`2 + 1 = 3`).
+Fourth Iteration (i = 3)
+   - `i` is 3, which now satisfies ( 2 <= i < (len(string) - len(substring)) + 1 ).
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` updates `times` to 4 (`3 + 1 = 4`).
+Fifth Iteration (i = 4)
+   - `i` is 4, which now satisfies ( 3 <= i < (len(string) - len(substring)) + 1 ).
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` updates `times` to 5 (`4 + 1 = 5`).
+Sixth Iteration (i = 5)
+   - `i` is 5, which now satisfies ( 4 <= i < (len(string) - len(substring)) + 1 ).
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` updates `times` to 6 (`5 + 1 = 6`).
+Seventh Iteration (i = 6)
+   - `i` is 6, which now satisfies ( 5 <= i < (len(string) - len(substring)) + 1 ).
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` updates `times` to 7 (`6 + 1 = 7`).
+Eighth Iteration (i = 7)
+   - `i` is 7, which now satisfies ( 6 <= i < (len(string) - len(substring)) + 1 ).
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` updates `times` to 8 (`7 + 1 = 8`).
+Ninth Iteration (i = 8)
+   - `i` is 8, which now satisfies ( 7 <= i < (len(string) - len(substring)) + 1 ).
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` updates `times` to 9 (`8 + 1 = 9`).
+Tenth Iteration (i = 9)
+   - `i` is 9, which now satisfies ( 8 <= i < (len(string) - len(substring)) + 1 ).
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` updates `times` to 10 (`9 + 1 = 10`).
+Return Statement
+   - After the loop completes, the function returns the value of `times`, which is now 10.
+
+Therefore, the final output of the function `how_many_times('john doe', 'john')` is 10.

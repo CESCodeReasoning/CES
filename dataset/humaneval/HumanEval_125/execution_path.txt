@@ -1,0 +1,4 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: split_words
+main.py(3):     if " " in txt:
+main.py(4):         return txt.split()

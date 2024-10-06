@@ -1,0 +1,10 @@
+The function `closest_integer` is called with the argument "14.5".
+Inside the function, a variable `value` is initialized to "14.5".
+First, the condition ( value.count('.') == 1 ) is checked.
+If the condition is satisfied, then the if branch is taken and the trailing zeros are removed from the value.
+The value is then converted to a float and the condition ( value[-2:] == '.5' ) is checked.
+If the condition is satisfied, then the if branch is taken and the function returns the ceiling of the value.
+Otherwise, the condition ( len(value) > 0 ) is checked.
+If the condition is satisfied, then the if branch is taken and the function returns the integer part of the rounded value.
+Otherwise, the condition ( len(value) == 0 ) is checked.
+If the condition is satisfied, then the if branch is taken and the function returns 0.

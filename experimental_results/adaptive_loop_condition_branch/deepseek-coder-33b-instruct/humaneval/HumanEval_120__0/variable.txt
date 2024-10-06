@@ -1,0 +1,9 @@
+from typing import *
+
+
+def maximum(arr, k):
+    if k == 0: ## [CONDITION](k == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return []
+    arr.sort() ## [STATE]arr=[-3, -2, -1, 1, 1, 2, 2][/STATE]
+    ans = arr[-k:] ## [STATE]ans=[2][/STATE]
+    return ans

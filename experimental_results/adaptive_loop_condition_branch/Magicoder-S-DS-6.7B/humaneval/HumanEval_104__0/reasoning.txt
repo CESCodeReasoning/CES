@@ -1,0 +1,11 @@
+The function `unique_digits` is called with ( x = [135, 103, 31] ).
+Inside the function, a variable `odd_digit_elements` is initialized as an empty list.
+
+Iteration 1:
+    -The number 135 is checked. All digits in 135 are odd, so 135 is appended to `odd_digit_elements`.
+Iteration 2:
+    -The number 103 is checked. Only the digit 3 is odd, so 103 is not appended to `odd_digit_elements`.
+Iteration 3:
+    -The number 31 is checked. Only the digit 1 is odd, so 31 is appended to `odd_digit_elements`.
+
+After the loop, the function returns the sorted list of odd digit numbers, which is [135, 31].

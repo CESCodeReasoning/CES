@@ -1,0 +1,13 @@
+from typing import *
+
+
+def sort_even(l: list):
+    evens = l[::2] ## [STATE]evens=[5, 2, -5, 3, -3, 9, 0, 123, 1, -10][/STATE][STATE]l[::2]=[5, 2, -5, 3, -3, 9, 0, 123, 1, -10][/STATE]
+    odds = l[1::2] ## [STATE]odds=[3, -5, 3, 9, 0, 123, 1, -10][/STATE][STATE]l[1::2]=[3, -5, 3, 9, 0, 123, 1, -10][/STATE]
+    evens.sort() ## [STATE]evens=[-5, -3, 0, 1, 2, 3, 9, 123][/STATE]
+    ans = [] ## [STATE]ans=[][/STATE]
+    for e, o in zip(evens, odds): ## [STATE]e=[-5, -3, 0, 1, 2, 3, 9, 123][/STATE][STATE]o=[3, -5, 3, 9, 0, 123, 1, -10][/STATE][STATE]zip(evens, odds)=[(e, o) for e, o in zip(evens, odds)]=[(-5, 3), (-3, -5), (0, 3), (1, 9), (2, 0), (3, 123), (9, 1)][/STATE][STATE]evens=[-5, -3, 0, 1, 2, 3, 9, 123][/STATE][STATE]odds=[3, -5, 3, 9, 0, 123, 1, -10][/STATE]
+        ans.extend([e, o]) ## [STATE]ans=[(-5, 3), (-3, -5), (0, 3), (1, 9), (2, 0), (3, 123), (9, 1)][/STATE]
+    if len(evens) > len(odds): ## [CONDITION](len(evens) > len(odds))=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        ans.append(evens[-1]) ## [STATE]ans=[(-5, 3), (-3, -5), (0, 3), (1, 9), (2, 0), (3, 123), (9, 1), 123][/STATE]
+    return ans ## [STATE]ans=[(-5, 3), (-3, -5), (0, 3), (1, 9), (2, 0), (3, 123), (9, 1), 123][/STATE]

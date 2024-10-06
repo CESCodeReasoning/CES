@@ -1,0 +1,10 @@
+The function `compare_one` is called with ( a = 1, b = 2 ).
+The function checks if `a` and `b` are strings. If they are, it replaces any commas with periods.
+After that, it converts the strings to floats and compares them.
+If they are equal, it returns None.
+If they are not equal, it returns the larger one.
+
+In this case, `a` and `b` are integers, so the function does not need to replace any commas with periods.
+It then converts `a` and `b` to floats and compares them. Since `a` (1) is not equal to `b` (2), it returns `b`.
+
+Therefore, the final output of the function `compare_one(1, 2)` is 2.

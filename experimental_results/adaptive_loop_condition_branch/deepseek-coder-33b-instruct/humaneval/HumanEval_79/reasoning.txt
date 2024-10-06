@@ -1,0 +1,5 @@
+The function decimal_to_binary takes a decimal number as input and returns a string that represents the binary equivalent of the input number.
+
+The function uses the built-in Python function bin() to convert the decimal number to binary. The bin() function returns a string that starts with "0b" to indicate that it is a binary number, so we use [2:] to get the binary number without the "0b".
+
+To determine the output of executing the function decimal_to_binary on the input 0, we need to convert 0 to binary. The binary representation of 0 is "0". Therefore, the output of executing the function decimal_to_binary on the input 0 is "db0db".

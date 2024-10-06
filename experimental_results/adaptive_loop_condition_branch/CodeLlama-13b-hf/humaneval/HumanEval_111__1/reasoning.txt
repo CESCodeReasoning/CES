@@ -1,0 +1,15 @@
+The function `histogram` is called with ( test = 'b b b b a' ).
+Inside the function, a variable `dict1` is initialized to {}.
+A variable `list1` is initialized to ['b', 'b', 'b', 'b', 'a'].
+A variable `t` is initialized to 0.
+
+Iteration 1:
+    - The character 'b' is in list1, so t becomes 1.
+Iteration 2:
+    - The character 'b' is in list1, so t becomes 2.
+Iteration 3:
+    - The character 'b' is in list1, so t becomes 3.
+Iteration 4:
+    - The character 'b' is in list1, so t becomes 4.
+Iteration 5:
+    - The character 'a' is in list1, so t becomes 1.

@@ -1,0 +1,7 @@
+The function `rounded_avg` is called with parameters (n = 560, m = 851).
+1. The function first checks if `m < n`. In this case, since 851 is not less than 560, the condition is false.
+2. The function then initializes a variable `summation` to 0.
+3. A loop iterates from `n` to `m + 1` (i.e., from 560 to 852). The loop calculates the sum of all integers from 560 to 851.
+4. After the loop, the function calculates the average of these numbers by dividing `summation` by `(m - n + 1)` (which is the count of numbers from 560 to 851 inclusive).
+5. The average is then rounded using the `round()` function.
+6. Finally, the function returns the binary representation of this rounded average using the `bin()` function.

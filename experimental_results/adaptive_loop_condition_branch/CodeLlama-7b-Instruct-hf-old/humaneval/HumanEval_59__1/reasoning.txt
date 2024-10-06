@@ -1,0 +1,9 @@
+The function `largest_prime_factor` is called with ( n = 63 ).
+Inside the function, two variables `largest` and `is_prime` are defined.
+The function first defines a function `is_prime` that takes an integer `k` as input and returns `True` if `k` is prime and `False` otherwise.
+The function then defines a loop that iterates from 2 to `n + 1`.
+For each iteration, the function checks if `n` is divisible by `j` and if `j` is prime.
+If both conditions are true, the function updates `largest` to be the maximum of `largest` and `j`.
+The function then returns `largest`.
+
+Therefore, the final output of the function `largest_prime_factor(63)` is 3.

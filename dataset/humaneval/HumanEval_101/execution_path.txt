@@ -1,0 +1,64 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: words_string
+main.py(3):     if not s:
+main.py(6):     s_list = []
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(10):             s_list.append(' ')
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(9):         if letter == ',':
+main.py(12):             s_list.append(letter)
+main.py(8):     for letter in s:
+main.py(14):     s_list = "".join(s_list)
+main.py(15):     return s_list.split()

@@ -1,0 +1,9 @@
+The function `digitSum` is called with the string "aAaaaXa".
+The function checks if the input string is empty.
+The condition `s == ""` is false, since the input string is not empty.
+The function then proceeds to the return statement.
+The return statement uses a list comprehension to iterate over each character in the input string.
+For each character, the function checks if it is uppercase using the `isupper()` method.
+If the character is uppercase, the function adds its ASCII value to the sum.
+Otherwise, the function adds 0 to the sum.
+Finally, the function returns the sum.

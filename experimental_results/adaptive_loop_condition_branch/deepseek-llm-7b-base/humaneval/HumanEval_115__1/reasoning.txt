@@ -1,0 +1,5 @@
+The function max_fill takes a 2D list of integers representing the grid and a positive integer representing the capacity as input.
+The function returns the maximum number of filled cells in the grid, assuming that each cell can be filled with at most one unit of water.
+To determine the maximum number of filled cells in the grid, we need to calculate the sum of the water volume of each cell in the grid.
+The water volume of a cell is the product of the cell's width and height, multiplied by the capacity.
+Therefore, the maximum number of filled cells in the grid is the sum of the water volume of each cell in the grid, divided by the capacity.

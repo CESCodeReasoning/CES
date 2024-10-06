@@ -1,0 +1,10 @@
+The function `move_one_ball` is called with ( arr = [4, 3, 1, 2] ).
+Inside the function, a variable `sorted_array` is initialized to the sorted version of `arr`.
+A variable `my_arr` is initialized to an empty list.
+The minimum value in `arr` is found and its index is found.
+The elements of `arr` are rearranged in `my_arr` such that the minimum value is at the beginning.
+The loop iterates from 0 to 3 (since ( len(arr) = 4 )).
+First Iteration (i = 0)
+   - `my_arr[i]` is 4, which is not equal to `sorted_array[i]` (4 != 1).
+   - The condition `my_arr[i] != sorted_array[i]` is true.
+   - Action: `return False` is executed, and the function returns False.

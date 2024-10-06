@@ -1,0 +1,3 @@
+The function reverse_delete takes two inputs: a string s and a string c. The function first removes all characters in c from s. Then, it checks if the resulting string is the same when reversed.
+
+For the input "mamma", "mia", the function first removes all occurrences of "m" and "i" from "mamma" to get "aaa". Then, it checks if "aaa" is the same when reversed, which is true. Therefore, the output of executing the function reverse_delete on the input "mamma", "mia" is ("aaa", True).

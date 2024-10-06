@@ -1,0 +1,102 @@
+<｜begin▁of▁sentence｜>
+
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def add(x: int, y: int):
+    return x + y + y + x
+
+Tests:
+def check(add):
+    import random
+
+    assert add(0, 1) == 1
+    assert add(1, 0) == 1
+    assert add(2, 3) == 5
+    assert add(5, 7) == 12
+    assert add(7, 5) == 12
+
+    for i in range(100):
+        x, y = random.randint(0, 1000), random.randint(0, 1000)
+        assert add(x, y) == x + y
+
+check(add)
+
+The code should satisfy the following natural language specification:
+Write a Python function `add(x: int, y: int)` to solve the following problem:
+Add two numbers x and y
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def is_palindrome(s: str) -> bool:
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("radar") == True
+    assert is_palindrome("python") == False
+    assert is_palindrome("madam") == True
+    assert is_palindrome("level") == True
+    assert is_palindrome("refer") == True
+    assert is_palindrome("deed") == True
+    assert is_palindrome("rotor") == True
+    assert is_palindrome("kayak") == True
+    assert is_palindrome("racecar") == True
+    assert is_palindrome("madamimadam") == True
+
+check(is_palindrome)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(s: str) -> bool` to solve the following problem:
+Check if a given string is a palindrome.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```<｜end▁of▁sentence｜>

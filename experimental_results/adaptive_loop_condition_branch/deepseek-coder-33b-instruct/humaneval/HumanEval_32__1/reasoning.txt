@@ -1,0 +1,7 @@
+The function `find_zero` is called with a list of coefficients `xs`.
+The function `poly` calculates the value of the polynomial at a given point `x`.
+The function `find_zero` is used to find the root of the polynomial.
+The while loop multiplies the polynomial at `begin` and `end`. If the product is greater than 0, it doubles `begin` and `end`.
+The while loop continues until the difference between `begin` and `end` is less than 1e-10.
+The while loop calculates the center between `begin` and `end`. If the product of the polynomial at `center` and `begin` is greater than 0, it updates `begin` to `center`. Otherwise, it updates `end` to `center`.
+The function returns `begin`, which is the root of the polynomial.

@@ -1,0 +1,19 @@
+```response
+    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(

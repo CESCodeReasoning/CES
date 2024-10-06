@@ -1,0 +1,25 @@
+[REASONING]
+The function `is_prime` is called with the argument `n = 5 * 17` which evaluates to `85`.
+1. The function first checks if `n` is less than 2. Since `85` is greater than `2`, this condition is false.
+2. The function then enters a loop that iterates from `2` to `n - 1` (which is `84` in this case).
+3. During the iterations:
+   - When `k = 5`, the condition `n % k == 0` is true because `85 % 5 = 0`. This indicates that `85` is divisible by `5`, proving that `85` is not a prime number.
+   - The function returns `False` immediately after finding this divisor without completing the rest of the loop.
+4. Therefore, the output of the function `is_prime(85)` is `False`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def is_prime(n):
+    if n < 2: ## [CONDITION](n < 2)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return False
+    for k in range(2, n - 1): ## [STATE]k=[2, 3, 4, 5][/STATE][STATE]range(2, (n - 1))=[2, 3, 4, ..., 84][/STATE][STATE](n - 1)=[84][/STATE]
+        if n % k == 0: ## [CONDITION](n % k == 0)=[False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, Y][/BRANCH]
+            return False
+    return True
+[/PYTHON]
+
+[OUTPUT]
+False
+[/OUTPUT]

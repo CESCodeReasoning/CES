@@ -1,0 +1,49 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: minPath
+main.py(3):     n = len(grid)
+main.py(4):     val = n * n + 1
+main.py(5):     for i in range(n):
+main.py(6):         for j in range(n):
+main.py(7):             if grid[i][j] == 1:
+main.py(8):                 temp = []
+main.py(9):                 if i != 0:
+main.py(12):                 if j != 0:
+main.py(15):                 if i != n - 1:
+main.py(16):                     temp.append(grid[i + 1][j])
+main.py(18):                 if j != n - 1:
+main.py(19):                     temp.append(grid[i][j + 1])
+main.py(21):                 val = min(temp)
+main.py(6):         for j in range(n):
+main.py(7):             if grid[i][j] == 1:
+main.py(6):         for j in range(n):
+main.py(7):             if grid[i][j] == 1:
+main.py(6):         for j in range(n):
+main.py(5):     for i in range(n):
+main.py(6):         for j in range(n):
+main.py(7):             if grid[i][j] == 1:
+main.py(6):         for j in range(n):
+main.py(7):             if grid[i][j] == 1:
+main.py(6):         for j in range(n):
+main.py(7):             if grid[i][j] == 1:
+main.py(6):         for j in range(n):
+main.py(5):     for i in range(n):
+main.py(6):         for j in range(n):
+main.py(7):             if grid[i][j] == 1:
+main.py(6):         for j in range(n):
+main.py(7):             if grid[i][j] == 1:
+main.py(6):         for j in range(n):
+main.py(7):             if grid[i][j] == 1:
+main.py(6):         for j in range(n):
+main.py(5):     for i in range(n):
+main.py(23):     ans = []
+main.py(24):     for i in range(k):
+main.py(25):         if i % 2 == 0:
+main.py(26):             ans.append(1)
+main.py(24):     for i in range(k):
+main.py(25):         if i % 2 == 0:
+main.py(28):             ans.append(val)
+main.py(24):     for i in range(k):
+main.py(25):         if i % 2 == 0:
+main.py(26):             ans.append(1)
+main.py(24):     for i in range(k):
+main.py(29):     return ans

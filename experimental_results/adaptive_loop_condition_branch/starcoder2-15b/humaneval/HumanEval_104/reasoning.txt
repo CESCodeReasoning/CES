@@ -1,0 +1,58 @@
+The function `unique_digits` is called with ( x = [15, 33, 1422, 1] ).
+Inside the function, a variable `odd_digit_elements` is initialized to an empty list.
+
+Iteration 1:
+    -The number 15 is passed to the for loop.
+    -The condition `all (int(c) % 2 == 1 for c in str(i))` is evaluated.
+    -The string representation of 15 is "15".
+    -The for loop iterates over each character in the string "15".
+    -The character '1' is passed to the condition.
+    -The integer value of '1' is 1.
+    -The condition evaluates to True because 1 % 2 == 1.
+    -The character '5' is passed to the condition.
+    -The integer value of '5' is 5.
+    -The condition evaluates to True because 5 % 2 == 1.
+    -The for loop completes and the condition evaluates to True.
+    -The number 15 is appended to the list `odd_digit_elements`.
+
+Iteration 2:
+    -The number 33 is passed to the for loop.
+    -The condition `all (int(c) % 2 == 1 for c in str(i))` is evaluated.
+    -The string representation of 33 is "33".
+    -The for loop iterates over each character in the string "33".
+    -The character '3' is passed to the condition.
+    -The integer value of '3' is 3.
+    -The condition evaluates to True because 3 % 2 == 1.
+    -The character '3' is passed to the condition.
+    -The integer value of '3' is 3.
+    -The condition evaluates to True because 3 % 2 == 1.
+    -The for loop completes and the condition evaluates to True.
+    -The number 33 is appended to the list `odd_digit_elements`.
+
+Iteration 3:
+    -The number 1422 is passed to the for loop.
+    -The condition `all (int(c) % 2 == 1 for c in str(i))` is evaluated.
+    -The string representation of 1422 is "1422".
+    -The for loop iterates over each character in the string "1422".
+    -The character '1' is passed to the condition.
+    -The integer value of '1' is 1.
+    -The condition evaluates to True because 1 % 2 == 1.
+    -The character '4' is passed to the condition.
+    -The integer value of '4' is 4.
+    -The condition evaluates to False because 4 % 2 == 0.
+    -The for loop breaks and the condition evaluates to False.
+    -The number 1422 is not appended to the list `odd_digit_elements`.
+
+Iteration 4:
+    -The number 1 is passed to the for loop.
+    -The condition `all (int(c) % 2 == 1 for c in str(i))` is evaluated.
+    -The string representation of 1 is "1".
+    -The for loop iterates over each character in the string "1".
+    -The character '1' is passed to the condition.
+    -The integer value of '1' is 1.
+    -The condition evaluates to True because 1 % 2 == 1.
+    -The for loop completes and the condition evaluates to True.
+    -The number 1 is appended to the list `odd_digit_elements`.
+
+After the for loop completes, the list `odd_digit_elements` contains the numbers 15, 33, and 1.
+The list is sorted and returned.

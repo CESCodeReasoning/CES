@@ -1,0 +1,4 @@
+from typing import *
+def add_elements(arr, k):
+    # [STATE] arr[:k] is [1, -2, -3] and len(str(elem)) for each elem in arr[:k] is 1, 2, 2 respectively [/STATE]
+    return sum(elem for elem in arr[:k] if len(str(elem)) <= 2)  # [CONDITION] len(str(elem)) <= 2 [/CONDITION]

@@ -1,0 +1,97 @@
+The function `fix_spaces` is called with the argument "Yellow Yellow  Dirty  Fellow".
+Inside the function, a variable `new_text` is initialized to an empty string.
+The loop iterates through each character in the input string.
+First Iteration (i = 0):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is false. The third branch is not taken.
+    - `new_text += text[i]` appends the current character to `new_text`.
+Second Iteration (i = 1):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is false. The third branch is not taken.
+    - `new_text += text[i]` appends the current character to `new_text`.
+Third Iteration (i = 2):
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` increments `end` to 3.
+Fourth Iteration (i = 3):
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` increments `end` to 4.
+Fifth Iteration (i = 4):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Sixth Iteration (i = 5):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Seventh Iteration (i = 6):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Eighth Iteration (i = 7):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Ninth Iteration (i = 8):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Tenth Iteration (i = 9):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Eleventh Iteration (i = 10):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Twelfth Iteration (i = 11):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Thirteenth Iteration (i = 12):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Fourteenth Iteration (i = 13):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Fifteenth Iteration (i = 14):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Sixteenth Iteration (i = 15):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Seventeenth Iteration (i = 16):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Eighteenth Iteration (i = 17):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Nineteenth Iteration (i = 18):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is true. The third branch is taken.
+    - `new_text += "_" * (end - start) + text[i]` appends two underscores and the current character to `new_text`.
+Twentieth Iteration (i = 19):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `

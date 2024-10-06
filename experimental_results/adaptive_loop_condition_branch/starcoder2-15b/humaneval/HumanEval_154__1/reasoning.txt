@@ -1,0 +1,9 @@
+The function cycpattern_check(a, b) takes two strings a and b as its parameters.
+The function returns True if the pattern b is found in the string a, otherwise it returns False.
+The function first checks if the length of the pattern b is greater than or equal to the length of the string a. If it is, then the pattern cannot be found in the string, so the function returns False.
+The function then creates a new string pat by concatenating the pattern b with itself.
+The function then iterates through all possible starting indices i of the pattern in the string a.
+For each starting index i, the function iterates through all possible starting indices j of the pattern in the concatenated string pat.
+For each pair of starting indices i and j, the function checks if the pattern b is found in the string a starting at index i and in the concatenated string pat starting at index j.
+If the pattern is found in either of the two strings, the function returns True.
+If the pattern is not found in either of the two strings, the function returns False.

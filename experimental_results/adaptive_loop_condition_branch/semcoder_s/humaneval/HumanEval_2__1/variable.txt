@@ -1,0 +1,5 @@
+from typing import *
+
+
+def truncate_number(number: float) -> float:
+    return number % 1.0  # The fractional part of 1.33 is 0.33

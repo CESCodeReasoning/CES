@@ -1,0 +1,54 @@
+
+[REASONING]
+The function `correct_bracketing` is called with ( brackets = "<><><<><>><>>><>" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The character '<' is equal to "<", so depth becomes 1.
+Iteration 2:
+    -The character '>' is not equal to "<", so depth becomes 0.
+Iteration 3:
+    -The character '<' is equal to "<", so depth becomes 1.
+Iteration 4:
+    -The character '<' is equal to "<", so depth becomes 2.
+Iteration 5:
+    -The character '>' is not equal to "<", so depth becomes 1.
+Iteration 6:
+    -The character '>' is not equal to "<", so depth becomes 0.
+Iteration 7:
+    -The character '<' is equal to "<", so depth becomes 1.
+Iteration 8:
+    -The character '>' is not equal to "<", so depth becomes 0.
+Iteration 9:
+    -The character '>' is not equal to "<", so depth becomes -1.
+Iteration 10:
+    -The character '>' is not equal to "<", so depth becomes -2.
+Iteration 11:
+    -The character '>' is not equal to "<", so depth becomes -3.
+Iteration 12:
+    -The character '>' is not equal to "<", so depth becomes -4.
+Iteration 13:
+    -The character '>' is not equal to "<", so depth becomes -5.
+Iteration 14:
+    -The character '>' is not equal to "<", so depth becomes -6.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets: ## [STATE]b=['<', '>', '<', '<', '>', '>', '<', '>', '>', '>', '>', '>', '>'][/STATE][STATE]brackets=["<><><<><>><>>><>"][/STATE]
+        if b == "<": ## [CONDITION](b == "<")=[True, False, True, True, False, False, True, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[Y, N, Y, Y, N, N, Y, N, N, N, N, N, N, N][/BRANCH]
+            depth += 1
+        else: ## [BRANCH]taken=[N, Y, N, N, Y, Y, N, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+            depth -= 1
+        if depth < 0: ## [CONDITION](depth < 0)=[False, False, False, False, False, False, False, False, False, False, False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N, N, N, N, N, N, Y][/BRANCH]
+            return False
+    return depth == 0
+[/ANSWER]
+
+[OUTPUT]
+False
+[/OUTPUT]

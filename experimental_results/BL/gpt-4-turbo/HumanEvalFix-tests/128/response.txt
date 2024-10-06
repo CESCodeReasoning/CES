@@ -1,0 +1,3 @@
+```response
+    prod = 0 if 0 in arr else (-1) ** 2 * len(list(filter(lambda x: x < 0, arr)))
+```

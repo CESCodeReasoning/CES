@@ -1,0 +1,28 @@
+[REASONING]
+The function `rescale_to_unit` takes a list of floating-point numbers as input and returns a new list where each number is rescaled to a unit range between 0 and 1. This is achieved by subtracting the minimum value of the list from each element, and then dividing by the range (maximum value minus minimum value).
+
+For the input `[2.0, 49.9]`:
+1. The minimum value (`min_number`) in the list is 2.0.
+2. The maximum value (`max_number`) in the list is 49.9.
+3. Each element in the list is transformed using the formula `(x - min_number) / (max_number - min_number)`.
+   - For 2.0: `(2.0 - 2.0) / (49.9 - 2.0) = 0.0 / 47.9 = 0.0`
+   - For 49.9: `(49.9 - 2.0) / (49.9 - 2.0) = 47.9 / 47.9 = 1.0`
+4. The resulting list after applying the transformation to each element is `[0.0, 1.0]`.
+
+Thus, the output of the function `rescale_to_unit` with the input `[2.0, 49.9]` is `[0.0, 1.0]`.
+[REASONING]
+
+[ANSWER]
+```python
+from typing import List
+
+def rescale_to_unit(numbers: List[float]) -> List[float]:
+    min_number = min(numbers)  # [STATE] min_number = 2.0 [/STATE]
+    max_number = max(numbers)  # [STATE] max_number = 49.9 [/STATE]
+    return [(x - min_number) / (max_number - min_number) for x in numbers]  # [STATE] numbers = [0.0, 1.0] [/STATE]
+```
+[/ANSWER]
+
+[OUTPUT]
+[0.0, 1.0]
+[/OUTPUT]

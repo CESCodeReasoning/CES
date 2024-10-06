@@ -1,0 +1,12 @@
+The function `minPath` takes a grid and a value `k` as input.
+The function initializes a variable `val` to `n * n + 1`, where `n` is the length of the grid.
+The outer loop iterates over each element in the grid.
+For each element, if the element is equal to 1, it checks the elements above, below, to the left, and to the right of it.
+If any of these elements are not out of bounds, they are added to a list `temp`.
+The minimum value in `temp` is then assigned to `val`.
+
+The inner loop iterates `k` times.
+If `i` is even, 1 is appended to the `ans` list.
+If `i` is odd, `val` is appended to the `ans` list.
+
+Finally, the function returns the `ans` list.

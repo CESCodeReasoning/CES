@@ -1,0 +1,9 @@
+The function `is_equal_to_sum_even` checks if a given integer `n` is both even and greater than or equal to 8. The function uses a logical AND operator to combine two conditions:
+1. `n % 2 == 0` checks if `n` is even.
+2. `n >= 8` checks if `n` is greater than or equal to 8.
+
+For the input 13:
+- The first condition `n % 2 == 0` checks if 13 is even. Since 13 divided by 2 gives a remainder of 1, the condition evaluates to False.
+- The second condition `n >= 8` checks if 13 is greater than or equal to 8. This condition is True because 13 is greater than 8.
+
+However, since the first condition is False, the overall result of the AND operation is False, regardless of the second condition being True. Therefore, the function returns False for the input 13.

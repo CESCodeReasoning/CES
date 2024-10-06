@@ -1,0 +1,15 @@
+The function `solve` is called with ( s = "ab" ).
+Inside the function, a variable `flg` is initialized to 0.
+
+Iteration 1:
+    -The character 'a' is an alphabet, so the condition `i.isalpha()` is true.
+    -The `if` block is executed, and the character 'a' is swapped to 'A'.
+    -The `flg` variable is set to 1.
+Iteration 2:
+    -The character 'b' is an alphabet, so the condition `i.isalpha()` is true.
+    -The `if` block is executed, and the character 'b' is swapped to 'B'.
+    -The `flg` variable is set to 1.
+
+The `if` block is executed, and the string is reversed.
+
+Therefore, the final output of the function `solve("ab")` is "BA".

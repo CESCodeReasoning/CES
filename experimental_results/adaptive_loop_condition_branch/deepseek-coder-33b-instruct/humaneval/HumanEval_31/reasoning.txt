@@ -1,0 +1,11 @@
+The function `is_prime` is called with ( n = 6 ).
+
+First Condition:
+    - `n` is 6, which is not less than 2.
+    - The condition `n < 2` is false.
+    - Action: The loop is not executed.
+
+Second Iteration (k = 2)
+    - `n` is 6, which is divisible by 2.
+    - The condition `n % k == 0` is true.
+    - Action: The function returns `False`.

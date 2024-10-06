@@ -1,0 +1,66 @@
+[REASONING]
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The function splits the sentence into a list of words.
+For each word in the list, the function checks if the length of the word is 1.
+If the length of the word is 1, the function sets a flag to 1.
+The function then checks if the length of the word is divisible by any number between 2 and the length of the word.
+If the length of the word is divisible by any number between 2 and the length of the word, the function sets the flag to 1.
+If the flag is 0 or the length of the word is 2, the function adds the word to a new list.
+The function then returns the new list joined by a space.
+First Iteration (word="there"):
+    - `word` is "there", `len(word)` is 5.
+    - `len(word) == 1` is False, the if branch is not taken.
+    - `range(2, len(word))` is [2, 3, 4].
+    - `len(word) % i == 0` is False for all i in [2, 3, 4], the if branch is not taken.
+    - `flg == 0 or len(word) == 2` is True, the if branch is taken. Append "there" to new_lst.
+Second Iteration (word="is"):
+    - `word` is "is", `len(word)` is 2.
+    - `len(word) == 1` is False, the if branch is not taken.
+    - `range(2, len(word))` is empty, the for loop is skipped.
+    - `flg == 0 or len(word) == 2` is True, the if branch is taken. Append "is" to new_lst.
+Third Iteration (word="no"):
+    - `word` is "no", `len(word)` is 2.
+    - `len(word) == 1` is False, the if branch is not taken.
+    - `range(2, len(word))` is empty, the for loop is skipped.
+    - `flg == 0 or len(word) == 2` is True, the if branch is taken. Append "no" to new_lst.
+Forth Iteration (word="place"):
+    - `word` is "place", `len(word)` is 5.
+    - `len(word) == 1` is False, the if branch is not taken.
+    - `range(2, len(word))` is [2, 3, 4].
+    - `len(word) % i == 0` is False for all i in [2, 3, 4], the if branch is not taken.
+    - `flg == 0 or len(word) == 2` is True, the if branch is taken. Append "place" to new_lst.
+Fifth Iteration (word="available"):
+    - `word` is "available", `len(word)` is 9.
+    - `len(word) == 1` is False, the if branch is not taken.
+    - `range(2, len(word))` is [2, 3, 4, 5, 6, 7, 8].
+    - `len(word) % i == 0` is True for i=3, the if branch is taken. Set `flg` to 1.
+    - `flg == 0 or len(word) == 2` is False, the if branch is not taken.
+Sixth Iteration (word="here"):
+    - `word` is "here", `len(word)` is 4.
+    - `len(word) == 1` is False, the if branch is not taken.
+    - `range(2, len(word))` is [2, 3].
+    - `len(word) % i == 0` is True for i=2, the if branch is taken. Set `flg` to 1.
+    - `flg == 0 or len(word) == 2` is False, the if branch is not taken.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def words_in_sentence(sentence):
+    new_lst = []
+    for word in sentence.split(): ## [STATE]word=["there", "is", "no", "place", "available", "here"][/STATE][STATE]sentence.split()=["there", "is", "no", "place", "available", "here"][/STATE]
+        flg = 0
+        if len(word) == 1: ## [CONDITION](len(word) == 1)=[False, False, False, False, False, False][/CONDITION][BRANCH]taken=[F, F, F, F, F, F][/BRANCH]
+            flg = 1
+        for i in range(2, len(word)): ## [STATE]i=[2, 3, 4, 2, 3, 2, 3][/STATE][STATE]range(2, len(word))=[[2, 3, 4], [2, 3], [2, 3], [2, 3, 4], [2, 3, 4, 5, 6, 7, 8], [2, 3]][/STATE][STATE]len(word)=[5, 2, 2, 5, 9, 4][/STATE]
+            if len(word) % i == 0: ## [CONDITION](len(word) % i == 0)=[False, False, False, False, True, True][/CONDITION][BRANCH]taken=[F, F, F, F, T, T][/BRANCH]
+                flg = 1
+        if flg == 0 or len(word) == 2: ## [CONDITION](flg == 0 or len(word) == 2)=[True, True, True, True, False, False][/CONDITION][CONDITION](flg == 0)=[True, True, True, True, False, False][/CONDITION][CONDITION](len(word) == 2)=[False, True, True, False, False, True][/CONDITION][BRANCH]taken=[T, T, T, T, F, F][/BRANCH]
+            new_lst.append(word)
+    return " ".join(new_lst)
+[/ANSWER]
+
+[OUTPUT]
+there is no place
+[/OUTPUT]

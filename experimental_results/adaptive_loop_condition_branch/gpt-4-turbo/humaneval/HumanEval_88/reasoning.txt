@@ -1,0 +1,5 @@
+The function `sort_array` takes a list `array` as input. It first checks if the list is empty. If it is, the function returns an empty list. If the list is not empty, it sorts the list. The sorting order (ascending or descending) is determined by the sum of the first and last elements of the list. If this sum is even, the list is sorted in descending order; otherwise, it is sorted in ascending order.
+
+For the input `[15, 42, 87, 32, 11, 0]`, the function checks if the list is empty. Since it is not, it proceeds to determine the sorting order. The sum of the first element (15) and the last element (0) is 15, which is odd. Therefore, the list is sorted in ascending order.
+
+The sorted list in ascending order is `[0, 11, 15, 32, 42, 87]`.

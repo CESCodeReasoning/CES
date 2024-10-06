@@ -1,0 +1,11 @@
+The function `right_angle_triangle` checks if the given three sides (a, b, c) can form a right-angled triangle. According to the Pythagorean theorem, a triangle is right-angled if the square of one side is equal to the sum of the squares of the other two sides. The function checks this condition for all three combinations:
+1. a² = b² + c²
+2. b² = a² + c²
+3. c² = a² + b²
+
+For the input values (1, 1, 1), the function will evaluate:
+1. 1² = 1² + 1² → 1 = 1 + 1 → 1 = 2 (False)
+2. 1² = 1² + 1² → 1 = 1 + 1 → 1 = 2 (False)
+3. 1² = 1² + 1² → 1 = 1 + 1 → 1 = 2 (False)
+
+Since none of these conditions are true, the function will return False, indicating that a triangle with sides 1, 1, and 1 cannot be a right-angled triangle.

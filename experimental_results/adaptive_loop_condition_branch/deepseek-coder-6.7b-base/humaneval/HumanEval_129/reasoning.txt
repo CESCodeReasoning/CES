@@ -1,0 +1,53 @@
+The function `minPath` is called with ( grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], k = 3 ).
+The variable `n` is initialized to the length of the grid (3).
+The variable `val` is initialized to `n * n + 1` (4).
+
+The outer loop iterates through each element in the grid.
+
+First Iteration (i = 0):
+    - `i` is 0, j in the inner loop is 0, 1, 2.
+    - grid[i][j] = 1, which satisfies the condition `grid[i][j] == 1`.
+    - The if block is executed, and the variable `temp` is initialized to an empty list.
+    - The if block is executed, and the value of `grid[i - 1][j]` is appended to `temp`.
+    - The if block is executed, and the value of `grid[i][j - 1]` is appended to `temp`.
+    - The if block is not executed, since `i` is 0.
+    - The if block is not executed, since `j` is 0.
+    - The variable `val` is updated to the minimum value in `temp` (which is 1).
+
+Second Iteration (i = 1):
+    - `i` is 1, j in the inner loop is 0, 1, 2.
+    - grid[i][j] = 4, which does not satisfy the condition `grid[i][j] == 1`.
+    - The if block is not executed.
+    - The if block is executed, and the value of `grid[i - 1][j]` is appended to `temp`.
+    - The if block is executed, and the value of `grid[i][j - 1]` is appended to `temp`.
+    - The if block is executed, and the value of `grid[i + 1][j]` is appended to `temp`.
+    - The if block is executed, and the value of `grid[i][j + 1]` is appended to `temp`.
+    - The variable `val` is updated to the minimum value in `temp` (which is 1).
+
+Third Iteration (i = 2):
+    - `i` is 2, j in the inner loop is 0, 1, 2.
+    - grid[i][j] = 7, which does not satisfy the condition `grid[i][j] == 1`.
+    - The if block is not executed.
+    - The if block is executed, and the value of `grid[i - 1][j]` is appended to `temp`.
+    - The if block is executed, and the value of `grid[i][j - 1]` is appended to `temp`.
+    - The if block is executed, and the value of `grid[i + 1][j]` is appended to `temp`.
+    - The if block is executed, and the value of `grid[i][j + 1]` is appended to `temp`.
+    - The variable `val` is updated to the minimum value in `temp` (which is 1).
+
+The variable `ans` is initialized to an empty list.
+
+The inner loop iterates through the range of `k`.
+
+First Iteration (i = 0):
+    - `i` is 0, which satisfies the condition `i % 2 == 0`.
+    - The if block is executed, and the value 1 is appended to `ans`.
+
+Second Iteration (i = 1):
+    - `i` is 1, which does not satisfy the condition `i % 2 == 0`.
+    - The else block is executed, and the value of `val` is appended to `ans`.
+
+Third Iteration (i = 2):
+    - `i` is 2, which satisfies the condition `i % 2 == 0`.
+    - The if block is executed, and the value 1 is appended to `ans`.
+
+The function returns the list `ans`, which is [1, 1, 1].

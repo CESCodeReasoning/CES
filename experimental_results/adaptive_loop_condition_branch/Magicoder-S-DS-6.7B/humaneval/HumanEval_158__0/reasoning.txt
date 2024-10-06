@@ -1,0 +1,13 @@
+The function find_max takes a list of strings as input and returns the longest string that contains all unique characters.
+
+The function uses the sorted function to sort the list of strings based on two criteria:
+1. The length of the set of characters in each string (negative because we want to sort in descending order).
+2. The string itself (in case of a tie in the first criteria).
+
+The sorted function returns a new list with the strings sorted according to the criteria.
+
+The lambda function is a small anonymous function that takes a string x and returns a tuple (-len(set(x)), x). The negative length of the set of characters is used as the first element of the tuple to sort in descending order, and the string itself is used as the second element of the tuple to break ties.
+
+The [0] at the end of the sorted function call is used to get the first element of the sorted list, which is the longest string that contains all unique characters.
+
+For the input ["play", "this", "game", "of","footbott"], the longest string that contains all unique characters is "footbott".

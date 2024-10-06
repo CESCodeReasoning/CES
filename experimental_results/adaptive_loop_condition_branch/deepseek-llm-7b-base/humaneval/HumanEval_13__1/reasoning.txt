@@ -1,0 +1,18 @@
+The function `sum_of_digits` is called with ( n = 12345 ).
+Inside the function, a variable `total` is initialized to 0.
+First Iteration:
+    - n = 1234, n % 10 = 4.
+    -`total += n % 10` updates `total` to 4 ( 0 + 4 = 4 ).
+Second Iteration:
+    - n = 123, n % 10 = 3.
+    -`total += n % 10` updates `total` to 7 ( 4 + 3 = 7 ).
+Third Iteration:
+    - n = 12, n % 10 = 2.
+    -`total += n % 10` updates `total` to 9 ( 7 + 2 = 9 ).
+Fourth Iteration:
+    - n = 1, n % 10 = 1.
+    -`total += n % 10` updates `total` to 10 ( 9 + 1 = 10 ).
+Fifth Iteration:
+    - n = 0, n % 10 = 0.
+    -`total += n % 10` updates `total` to 10 ( 10 + 0 = 10 ).
+n is empty, the while loop terminates. The function returns the value of `total`, which is now 10.

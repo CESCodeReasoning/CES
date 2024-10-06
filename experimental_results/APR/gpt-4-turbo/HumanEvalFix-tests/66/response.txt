@@ -1,0 +1,38 @@
+Here are the fixed versions of the two functions `has_close_elements` and `digitSum` based on the specifications and test cases provided:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `digitSum`
+```python
+def digitSum(s: str) -> int:
+    return sum(ord(char) for char in s if char.isupper())  # Sum ASCII values of uppercase characters only
+
+# Tests
+def check(digitSum):
+    assert digitSum("") == 0, "Error"
+    assert digitSum("abAB") == 131, "Error"
+    assert digitSum("abcCd") == 67, "Error"
+    assert digitSum("helloE") == 69, "Error"
+    assert digitSum("woArBld") == 131, "Error"
+    assert digitSum("aAaaaXa") == 153, "Error"
+    assert digitSum(" How are yOu?") == 151, "Error"
+    assert digitSum("You arE Very Smart") == 327, "Error"
+
+check(digitSum)
+```
+
+These corrected versions of the functions address the issues in the original code:
+- For `has_close_elements`, the use of `abs()` ensures that the distance is always a non-negative value, which is crucial for comparing distances correctly.
+- For `digitSum`, the function now correctly sums the ASCII values of uppercase characters only, as specified in the task description.

@@ -1,0 +1,12 @@
+The function `odd_count` is called with (lst = ['3', '11111111']).
+Inside the function, a variable `res` is initialized to an empty list.
+The loop iterates over the elements of the list `lst`.
+First Iteration (arr = '3'):
+    The expression `int(d) % 2 == 1` evaluates to True for all digits in the string '3'.
+    The expression `sum(int(d) % 2 == 1 for d in arr)` evaluates to 3, which is the number of odd digits in the string '3'.
+    The string "the number of odd elements 3 in the str3 of the 3nput." is appended to the list `res`.
+Second Iteration (arr = '11111111'):
+    The expression `int(d) % 2 == 1` evaluates to True for all digits in the string '11111111'.
+    The expression `sum(int(d) % 2 == 1 for d in arr)` evaluates to 8, which is the number of odd digits in the string '11111111'.
+    The string "the number of odd elements 8 in the str8 of the 8nput." is appended to the list `res`.
+After the loop completes, the function returns the list `res`, which contains the strings "the number of odd elements 3 in the str3 of the 3nput." and "the number of odd elements 8 in the str8 of the 8nput.".

@@ -1,0 +1,16 @@
+[REASONING]
+The function `decimal_to_binary` takes an integer `decimal` as input and converts it to its binary representation using Python's built-in `bin()` function. The `bin()` function returns a binary string prefixed with '0b'. The code slices off the first two characters ('0b') using `[2:]` to get the pure binary representation. Then, it concatenates "db" at the beginning and end of this binary string to form the final result.
+For the input 32, the binary representation of 32 is '100000'. After slicing off '0b', we concatenate "db" at the start and end, resulting in "db100000db".
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def decimal_to_binary(decimal):
+    # [STATE] decimal = 32 [/STATE]
+    return "db" + bin(decimal)[2:] + "db"  # [STATE] bin(decimal)[2:] = '100000' [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+"db100000db"
+[/OUTPUT]

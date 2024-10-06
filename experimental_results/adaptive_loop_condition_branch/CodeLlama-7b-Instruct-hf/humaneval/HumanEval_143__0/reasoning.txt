@@ -1,0 +1,39 @@
+The function words_in_sentence(sentence) takes a string as its parameter.
+The outer loop iterates through each word in the sentence.
+In the inner loop, for each word indexed by i in the outer loop, compare it with every other word that comes after it in the sentence.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `word` is "there", `flg` is 0.
+    - `len(word)` is 4, `i` is 1, `j` is 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `len(word) % i` is 0, `flg` is 1.
+    - `flg` is 1 or `len(word) == 2`, `new_lst` is ["there"].
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `word` is "is", `flg` is 0.
+    - `len(word)` is 2, `i` is 2, `j` is 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `len(word) % i` is 0, `flg` is 1.
+    - `flg` is 1 or `len(word) == 2`, `new_lst` is ["there", "is"].
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `word` is "no", `flg` is 0.
+    - `len(word)` is 2, `i` is 3, `j` is 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `len(word) % i` is 0, `flg` is 1.
+    - `flg` is 1 or `len(word) == 2`, `new_lst` is ["there", "is", "no"].
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `word` is "place", `flg` is 0.
+    - `len(word)` is 5, `i` is 4, `j` is 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `len(word) % i` is 0, `flg` is 1.
+    - `flg` is 1 or `len(word) == 2`, `new_lst` is ["there", "is", "no", "place"].
+Fifth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `word` is "available", `flg` is 0.
+    - `len(word)` is 9, `i` is 5, `j` is 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `len(word) % i` is 0, `flg` is 1.
+    - `flg` is 1 or `len(word) == 2`, `new_lst` is ["there", "is", "no", "place", "available"].
+Sixth Iteration (i=5):
+    - `i` is 5, j in the inner loop is 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    - `word` is "here", `flg` is 0.
+    - `len(word)` is 4, `i` is 6, `j` is 7, 8, 9, 10, 11, 12, 13, 14.
+    - `len(word) % i` is 0, `flg` is 1.
+    - `flg` is 1 or `len(word) == 2`, `new_lst` is ["there", "is", "no", "place", "available", "here"].

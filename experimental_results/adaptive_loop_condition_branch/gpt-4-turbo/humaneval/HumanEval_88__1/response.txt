@@ -1,0 +1,22 @@
+[REASONING]
+The function `sort_array` takes a list `array` as input. The function checks if the list is empty and returns an empty list if true. If the list is not empty, it sorts the list. The sorting order (ascending or descending) is determined by the sum of the first and last elements of the list. If this sum is even, the list is sorted in descending order; otherwise, it is sorted in ascending order.
+
+For the input `[5]`, the list is not empty, so the function proceeds to the sorting step. Since the list has only one element, the first and last elements are the same, i.e., `5`. The sum `5 + 5 = 10` is even. Therefore, the list should be sorted in descending order. However, since the list contains only one element, the sorted list remains `[5]`.
+
+Thus, the output of executing the function `sort_array` on the input `[5]` is `[5]`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def sort_array(array):
+    # [STATE] array = [5] [/STATE]
+    return [] if len(array) == 0 else sorted(
+        array, reverse=(array[0] + array[-1]) % 2 == 0)  # [CONDITION] len(array) == 0 [/CONDITION] [BRANCH] N [/BRANCH]
+# [STATE] (array[0] + array[-1]) % 2 == 0 -> (5 + 5) % 2 == 0 -> 10 % 2 == 0 -> True [/STATE]
+# [STATE] sorted(array, reverse=True) -> sorted([5], reverse=True) -> [5] [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+[5]
+[/OUTPUT]

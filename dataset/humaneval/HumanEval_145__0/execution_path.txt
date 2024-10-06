@@ -1,0 +1,159 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: order_by_points
+main.py(5):     def digits_sum(n):
+main.py(12):     return sorted(nums, key=digits_sum)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)
+ --- modulename: main, funcname: digits_sum
+main.py(6):         neg = 1
+main.py(7):         if n < 0:
+main.py(9):         n = [int(i) for i in str(n)]
+ --- modulename: main, funcname: <listcomp>
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(9):         n = [int(i) for i in str(n)]
+main.py(10):         n[0] = n[0] * neg
+main.py(11):         return sum(n)

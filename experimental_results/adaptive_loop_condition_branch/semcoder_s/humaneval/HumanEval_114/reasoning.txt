@@ -1,0 +1,29 @@
+The function `minSubArraySum` is called with ( nums = [2, 3, 4, 1, 2, 4] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+
+Iteration 1:
+    - `s += -num` => `s += -2` => `s = -2`.
+    - `max_sum = max(s, max_sum)` => `max_sum = max(-2, 0)` => `max_sum = 0`.
+Iteration 2:
+    - `s += -num` => `s += -3` => `s = -5`.
+    - `max_sum = max(s, max_sum)` => `max_sum = max(-5, 0)` => `max_sum = 0`.
+Iteration 3:
+    - `s += -num` => `s += -4` => `s = -9`.
+    - `max_sum = max(s, max_sum)` => `max_sum = max(-9, 0)` => `max_sum = 0`.
+Iteration 4:
+    - `s += -num` => `s += -1` => `s = -10`.
+    - `max_sum = max(s, max_sum)` => `max_sum = max(-10, 0)` => `max_sum = 0`.
+Iteration 5:
+    - `s += -num` => `s += -2` => `s = -12`.
+    - `max_sum = max(s, max_sum)` => `max_sum = max(-12, 0)` => `max_sum = 0`.
+Iteration 6:
+    - `s += -num` => `s += -4` => `s = -16`.
+    - `max_sum = max(s, max_sum)` => `max_sum = max(-16, 0)` => `max_sum = 0`.
+
+Since `max_sum` is still 0, the condition `max_sum == 0` is True.
+
+The `if` block is executed:
+    - `max_sum = max(-i for i in nums)` => `max_sum = max(-2, -3, -4, -1, -2, -4)` => `max_sum = -1`.
+    - `min_sum = -max_sum` => `min_sum = 1`.
+
+Therefore, the final output of the function `minSubArraySum([2, 3, 4, 1, 2, 4])` is 1.

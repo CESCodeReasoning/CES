@@ -1,0 +1,16 @@
+from typing import *
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    running_max = None
+    result = []
+
+    for n in numbers: ## [STATE]n=[4, 3, 2, 1][/STATE][STATE]numbers=[[4, 3, 2, 1]][/STATE]
+        if running_max is None: ## [CONDITION](running_max is None)=[True, False, False, False][/CONDITION][BRANCH]taken=[Y, N, N, N][/BRANCH]
+            running_max = n
+        else: ## [BRANCH]taken=[N, Y, Y, Y][/BRANCH]
+            running_max = max(running_max, n)
+
+        result.append(running_max)
+
+    return result

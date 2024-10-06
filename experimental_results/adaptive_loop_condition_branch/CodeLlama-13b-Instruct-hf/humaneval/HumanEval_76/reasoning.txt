@@ -1,0 +1,17 @@
+The function `is_simple_power` is called with ( x = 16, n = 2 ).
+Inside the function, the condition ( n == 1 ) is evaluated to False.
+Therefore, the if branch is not taken and the while loop is executed.
+The loop iterates from 1 to 16 (since ( x = 16 )).
+First Iteration (power = 1):
+    - power < x when power=1
+    - power = power * n updates power to 2 ( 1 * 2 = 2 ).
+Second Iteration (power = 2):
+    - power < x when power=2
+    - power = power * n updates power to 4 ( 2 * 2 = 4 ).
+Third Iteration (power = 4):
+    - power < x when power=4
+    - power = power * n updates power to 8 ( 4 * 2 = 8 ).
+Fourth Iteration (power = 8):
+    - power < x when power=8
+    - power = power * n updates power to 16 ( 8 * 2 = 16 ).
+After the loop completes, the condition ( power == x ) is satisfied, therefore the while loop is exited and the function returns `True` as the output.

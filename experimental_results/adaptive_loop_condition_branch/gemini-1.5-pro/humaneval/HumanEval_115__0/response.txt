@@ -1,0 +1,15 @@
+[REASONING]
+The function max_fill takes a 2D grid and a capacity as input, and returns the minimum number of containers needed to fill the grid with water, given that each container can hold at most capacity amount of water.
+To determine the minimum number of containers needed, we need to calculate the total amount of water needed to fill the grid, and then divide it by the capacity of each container.
+The total amount of water needed to fill the grid is the sum of the sum of each row in the grid.
+Therefore, we can calculate the minimum number of containers needed by summing up the ceil value of the division of the sum of each row in the grid by the capacity.
+[/REASONING]
+
+[ANSWER]
+def max_fill(grid, capacity):
+    return sum([math.ceil(sum(arr) / capacity) for arr in grid])
+[/ANSWER]
+
+[OUTPUT]
+6
+[/OUTPUT]

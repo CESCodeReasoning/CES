@@ -1,0 +1,4 @@
+The function `will_it_fly` is called with the arguments `q = [3, 2, 3]` and `w = 1`.
+1. The function first checks if the sum of the list `q` is greater than `w`. The sum of `q` is `3 + 2 + 3 = 8`, which is greater than `w = 1`.
+2. Since the condition `sum(q) > w` is true, the function immediately returns `False` without proceeding to check if the list `q` is a palindrome.
+3. The function does not enter the while loop because the condition `sum(q) > w` was sufficient to determine the output.

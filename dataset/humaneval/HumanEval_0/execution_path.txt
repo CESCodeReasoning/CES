@@ -1,0 +1,50 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: has_close_elements
+main.py(3):     for idx, elem in enumerate(numbers):
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(6):                 distance = abs(elem - elem2)
+main.py(7):                 if distance < threshold:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(6):                 distance = abs(elem - elem2)
+main.py(7):                 if distance < threshold:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(6):                 distance = abs(elem - elem2)
+main.py(7):                 if distance < threshold:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(6):                 distance = abs(elem - elem2)
+main.py(7):                 if distance < threshold:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(6):                 distance = abs(elem - elem2)
+main.py(7):                 if distance < threshold:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(3):     for idx, elem in enumerate(numbers):
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(6):                 distance = abs(elem - elem2)
+main.py(7):                 if distance < threshold:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(6):                 distance = abs(elem - elem2)
+main.py(7):                 if distance < threshold:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(6):                 distance = abs(elem - elem2)
+main.py(7):                 if distance < threshold:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(6):                 distance = abs(elem - elem2)
+main.py(7):                 if distance < threshold:
+main.py(4):         for idx2, elem2 in enumerate(numbers):
+main.py(5):             if idx != idx2:
+main.py(6):                 distance = abs(elem - elem2)
+main.py(7):                 if distance < threshold:
+main.py(8):                     return True

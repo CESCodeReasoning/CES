@@ -1,0 +1,13 @@
+The function `unique_digits` is called with ( x = [15, 33, 1422, 1] ).
+Inside the function, an empty list `odd_digit_elements` is initialized.
+
+Iteration 1:
+    -The number 15 has all odd digits, so it is appended to `odd_digit_elements`.
+Iteration 2:
+    -The number 33 has all odd digits, so it is appended to `odd_digit_elements`.
+Iteration 3:
+    -The number 1422 does not have all odd digits, so it is not appended to `odd_digit_elements`.
+Iteration 4:
+    -The number 1 has all odd digits, so it is appended to `odd_digit_elements`.
+
+Finally, the function returns the sorted list of numbers with all odd digits.

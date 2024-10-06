@@ -1,0 +1,10 @@
+The function `Strongest_Extension` is called with ( class_name = 'Sp', extensions = ['671235', 'Bb'] ).
+Inside the function, a variable `strong` and `my_val` are initialized to 0.
+
+Iteration 1:
+    - The variable `strong` is assigned the value of the first element of the list `extensions`, which is '671235'.
+    - The variable `my_val` is assigned the value of the difference between the number of uppercase letters and the number of lowercase letters in the string '671235'.
+Iteration 2:
+    - The variable `val` is assigned the value of the difference between the number of uppercase letters and the number of lowercase letters in the string 'Bb'.
+    - The variable `strong` is assigned the value of the string 'Bb'.
+    - The variable `my_val` is assigned the value of the difference between the number of uppercase letters and the number of lowercase letters in the string 'Bb'.

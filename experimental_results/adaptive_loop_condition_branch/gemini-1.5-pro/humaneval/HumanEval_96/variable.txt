@@ -1,0 +1,31 @@
+from typing import *
+def count_up_to(n):
+    primes = [] ## [STATE]primes=[][/STATE]
+    for i in range(2, n): ## [STATE]range(2, n)=[2, 3, 4, 5][/STATE][STATE]n=5[/STATE]
+        is_prime = True ## [STATE]is_prime=True[/STATE]
+        for j in range(2, i): ## [STATE]range(2, i)=[2][/STATE][STATE]i=2[/STATE]
+            if i % j == 0: ## [CONDITION](i % j == 0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+                is_prime = False
+                break
+        if is_prime: ## [CONDITION](is_prime)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+            primes.append(i)
+        for j in range(2, i): ## [STATE]range(2, i)=[2, 3][/STATE][STATE]i=3[/STATE]
+            if i % j == 0: ## [CONDITION](i % j == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+                is_prime = False
+                break
+        if is_prime: ## [CONDITION](is_prime)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+            primes.append(i)
+        for j in range(2, i): ## [STATE]range(2, i)=[2, 3, 4][/STATE][STATE]i=4[/STATE]
+            if i % j == 0: ## [CONDITION](i % j == 0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+                is_prime = False
+                break
+        if is_prime: ## [CONDITION](is_prime)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+            primes.append(i)
+        for j in range(2, i): ## [STATE]range(2, i)=[2, 3, 4][/STATE][STATE]i=5[/STATE]
+            if i % j == 0: ## [CONDITION](i % j == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+                is_prime = False
+                break
+        if is_prime: ## [CONDITION](is_prime)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+            primes.append(i)
+    return primes
+

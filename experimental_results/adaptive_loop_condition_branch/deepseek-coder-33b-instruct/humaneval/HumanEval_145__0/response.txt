@@ -1,0 +1,31 @@
+
+[REASONING]
+The function `order_by_points` is called with a list of integers.
+The function `digits_sum` is defined inside `order_by_points`. It takes an integer `n` as input.
+If `n` is negative, it multiplies `n` by -1 and `neg` by -1.
+It converts `n` to a list of digits.
+If `n` was negative, it multiplies the first digit by -1.
+It returns the sum of the digits.
+The `order_by_points` function sorts the input list `nums` based on the sum of the digits of each number.
+
+Therefore, the final output of the function `order_by_points([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46])` is `[0, 2, 3, 6, 37, 56, 423, 423, 423, 463, 145, 53, 1234, 3457, 46]`.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def order_by_points(nums):
+    def digits_sum(n):
+        neg = 1
+        if n < 0: ## [CONDITION](n < 0)=[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N][/BRANCH]
+            n, neg = -1 * n, -1
+        n = [int(i) for i in str(n)]
+        n[0] = n[0] * neg
+        return sum(n)
+    return sorted(nums, key=digits_sum)
+[/ANSWER]
+
+[OUTPUT]
+[0, 2, 3, 6, 37, 56, 423, 423, 423, 463, 145, 53, 1234, 3457, 46]
+[/OUTPUT]

@@ -1,0 +1,44 @@
+The function `fix_spaces` is called with the string "Exa   mple".
+Inside the function, a new string `new_text` is initialized to an empty string.
+The loop iterates through each character in the input string.
+First Iteration (i = 0):
+    - The character at index 0 is "E".
+    - The condition `text[i] == " "` is false.
+    - The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "E".
+Second Iteration (i = 1):
+    - The character at index 1 is "x".
+    - The condition `text[i] == " "` is false.
+    - The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Ex".
+Third Iteration (i = 2):
+    - The character at index 2 is "a".
+    - The condition `text[i] == " "` is false.
+    - The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Exa".
+Fourth Iteration (i = 3):
+    - The character at index 3 is " ".
+    - The condition `text[i] == " "` is true.
+    - The if branch is taken.
+    - `end += 1` updates `end` to 4.
+Fifth Iteration (i = 4):
+    - The character at index 4 is "m".
+    - The condition `text[i] == " "` is false.
+    - The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Exa_m".
+Sixth Iteration (i = 5):
+    - The character at index 5 is "p".
+    - The condition `text[i] == " "` is false.
+    - The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Exa_mp".
+Seventh Iteration (i = 6):
+    - The character at index 6 is "l".
+    - The condition `text[i] == " "` is false.
+    - The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Exa_mpl".
+Eighth Iteration (i = 7):
+    - The character at index 7 is "e".
+    - The condition `text[i] == " "` is false.
+    - The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Exa_mple".
+After the loop completes, the function returns the value of `new_text`, which is now "Exa_mple".

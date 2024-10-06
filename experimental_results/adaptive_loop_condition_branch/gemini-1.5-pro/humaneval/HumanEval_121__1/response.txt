@@ -1,0 +1,18 @@
+[REASONING]
+The function solution takes a list of integers lst as input and returns the sum of all the odd integers at even indices in the list.
+To determine the output of executing the function solution on the input [30, 13, 23, 32], we need to first identify the odd integers at even indices in the list.
+The first integer in the list, 30, is at an even index (index 0) but is not odd.
+The second integer in the list, 13, is at an even index (index 1) and is odd.
+The third integer in the list, 23, is at an odd index (index 2) and is odd.
+The fourth integer in the list, 32, is at an even index (index 3) but is not odd.
+Therefore, the sum of all the odd integers at even indices in the list is 13 + 23 = 36.
+[/REASONING]
+
+[ANSWER]
+def solution(lst):
+    return sum([x for idx, x in enumerate(lst) if [CONDITION]idx % 2 == 0 and x % 2 == 1])
+[/ANSWER]
+
+[OUTPUT]
+36
+[/OUTPUT]

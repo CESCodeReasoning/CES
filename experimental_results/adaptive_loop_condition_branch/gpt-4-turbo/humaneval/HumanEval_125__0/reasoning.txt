@@ -1,0 +1,8 @@
+The function `split_words` is called with an empty string (`txt = ""`).
+1. The first condition checks if there is a space `" "` in the text. Since the text is empty, this condition is false.
+2. The second condition checks if there is a comma `","` in the text. Again, since the text is empty, this condition is also false.
+3. Neither of the first two conditions are met, so the function proceeds to the `else` block.
+4. In the `else` block, a list comprehension is used to find all lowercase letters in the text that have an even ASCII value. Since the text is empty, the list comprehension returns an empty list.
+5. The length of this empty list is calculated, which is 0.
+
+Therefore, the final output of the function `split_words("")` is 0.

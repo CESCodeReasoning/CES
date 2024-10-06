@@ -1,0 +1,10 @@
+
+[REASONING]
+The function get_positive takes a list of integers as input and returns a new list that contains only the positive integers from the input list.
+To determine the output of executing the function get_positive on the input [5, 3, -5, 2, 3, 3, 9, 0, 123, 1, -10], we need to filter out the non-positive integers from the list.
+Therefore, the output of executing the function get_positive on the input [5, 3, -5, 2, 3, 3, 9, 0, 123, 1, -10] is [5, 3, 2, 3, 3, 9, 1, 123].
+[/REASONING]
+
+[OUTPUT]
+[5, 3, 2, 3, 3, 9, 1, 123]
+[/OUTPUT]

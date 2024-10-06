@@ -1,0 +1,24 @@
+[REASONING]
+The function `multiply` takes two integers, `a` and `b`, as input. It calculates the product of the last digits of both integers. The last digit of an integer can be obtained using the modulus operation with 10. The function uses `abs` to ensure that the result is non-negative, even if the input numbers are negative.
+
+For the input values `a = 76` and `b = 67`:
+1. The last digit of `76` is `76 % 10 = 6`.
+2. The last digit of `67` is `67 % 10 = 7`.
+3. The product of these last digits is `6 * 7 = 42`.
+
+Thus, the output of the function `multiply` when called with arguments `76` and `67` is `42`.
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def multiply(a: int, b: int) -> int:
+    # [STATE] a % 10 = 6, b % 10 = 7 [/STATE]
+    return abs(a % 10) * abs(b % 10)  # [STATE] abs(6) * abs(7) = 42 [/STATE]
+```
+[/ANSWER]
+
+[OUTPUT]
+42
+[/OUTPUT]

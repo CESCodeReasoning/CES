@@ -1,0 +1,9 @@
+The function `specialFilter` is called with ( nums = [1] ).
+Inside the function, a variable `count` is initialized to 0.
+
+Iteration 1:
+    -The number 1 is not greater than 10, so the loop continues.
+    -The number 1 does not have an odd digit at the beginning or the end, so the loop continues.
+    -The count remains 0.
+
+Therefore, the final output of the function `specialFilter([1])` is 0.

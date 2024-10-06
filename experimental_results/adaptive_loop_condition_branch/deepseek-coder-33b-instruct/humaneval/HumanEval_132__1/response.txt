@@ -1,0 +1,56 @@
+
+[REASONING]
+The function `is_nested` is called with ( string = '[[[[]]]]' ).
+Inside the function, two empty lists `opening_bracket_index` and `closing_bracket_index` are initialized.
+
+Iteration 1:
+    -The character '[' is in string, so it is appended to `opening_bracket_index`.
+Iteration 2:
+    -The character '[' is in string, so it is appended to `opening_bracket_index`.
+Iteration 3:
+    -The character '[' is in string, so it is appended to `opening_bracket_index`.
+Iteration 4:
+    -The character ']' is not in string, so it is appended to `closing_bracket_index`.
+Iteration 5:
+    -The character ']' is not in string, so it is appended to `closing_bracket_index`.
+Iteration 6:
+    -The character ']' is not in string, so it is appended to `closing_bracket_index`.
+Iteration 7:
+    -The character '[' is in string, so it is appended to `opening_bracket_index`.
+Iteration 8:
+    -The character ']' is not in string, so it is appended to `closing_bracket_index`.
+Iteration 9:
+    -The character ']' is not in string, so it is appended to `closing_bracket_index`.
+
+After the loop, `closing_bracket_index` is reversed.
+
+Then, a counter `cnt` is initialized to 0 and an index `i` is initialized to 0.
+
+Iteration 1:
+    -The condition `i < l and idx < closing_bracket_index[i]` is true, so `cnt` is incremented by 1 and `i` is incremented by 1.
+Iteration 2:
+    -The condition `i < l and idx < closing_bracket_index[i]` is true, so `cnt` is incremented by 1 and `i` is incremented by 1.
+Iteration 3:
+    -The condition `i < l and idx < closing_bracket_index[i]` is true, so `cnt` is incremented by 1 and `i` is incremented by 1.
+
+Finally, the function returns `cnt >= 2`, which is true.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def is_nested(string):
+    opening_bracket_index = []
+    closing_bracket_index = []
+    for i in range(len(string)): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6, 7, 8] ## [STATE]range(len(string))=[0, 1, 2, 3, 4, 5, 6, 7, 8] ## [STATE]len(string)=[9]
+        if string[i] == '[': ## [CONDITION](string[i] == '[')=[True, True, True, False, False, False, True, True, True] ## [BRANCH]taken=[Y, Y, Y, N, N, N, Y, Y, Y]
+            opening_bracket_index.append(i)
+        else: ## [BRANCH]taken=[N, N, N, Y, Y, Y, N, N, N]
+            closing_bracket_index.append(i)
+    closing_bracket_index.reverse()
+    cnt = 0
+    i = 0
+    l = len(closing_bracket_index)
+    for idx in opening_bracket_index: ## [STATE]idx=[0, 1, 2] ## [STATE]opening_bracket_index=[0, 1, 2]
+        if i < l and idx < closing_bracket_index[i]: ## [CONDITION](i < l and idx < closing_bracket_index[i])=[True, True, True] ## [CONDITION](i < l)=[True, True

@@ -1,0 +1,4 @@
+The function get_row takes a two-dimensional list lst and an integer x as input and returns a list of coordinates (i, j) where lst[i][j] == x.
+To determine the output of executing the function get_row on the input ([], 1), we need to find all coordinates (i, j) where lst[i][j] == 1.
+Since lst is an empty list, there are no coordinates (i, j) where lst[i][j] == 1.
+Therefore, the output of executing the function get_row on the input ([], 1) is [].

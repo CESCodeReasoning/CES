@@ -1,0 +1,8 @@
+from typing import *
+
+
+def solve(N: int) -> str:
+    # [STATE] N is 147 [/STATE]
+    digits_sum = sum(int(i) for i in str(N))  # [STATE] digits_sum is 12 [/STATE]
+    binary_representation = bin(digits_sum)[2:]  # [STATE] binary_representation is '1100' [/STATE]
+    return binary_representation

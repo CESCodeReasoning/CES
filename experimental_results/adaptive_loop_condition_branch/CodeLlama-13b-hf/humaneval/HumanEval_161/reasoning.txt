@@ -1,0 +1,16 @@
+The function `solve` is called with ( s = "AsDf" ).
+Inside the function, a variable `flg` and `idx` are initialized to 0.
+Inside the function, a variable `new_str` is initialized to a list of characters in the string `s`.
+
+Iteration 1:
+    - The character 'A' is a letter, so `flg` becomes 1.
+    - The character 'A' is a letter, so `new_str[0]` becomes 'A'.
+Iteration 2:
+    - The character 's' is not a letter, so `flg` remains 1.
+    - The character 's' is not a letter, so `new_str[1]` remains 's'.
+Iteration 3:
+    - The character 'D' is a letter, so `flg` becomes 1.
+    - The character 'D' is a letter, so `new_str[2]` becomes 'd'.
+Iteration 4:
+    - The character 'f' is not a letter, so `flg` remains 1.
+    - The character 'f' is not a letter, so `new_str[3]` remains 'f'.

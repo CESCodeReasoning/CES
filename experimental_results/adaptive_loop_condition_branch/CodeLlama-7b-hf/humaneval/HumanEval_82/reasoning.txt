@@ -1,0 +1,7 @@
+The function `prime_length` is called with ( string = "Hello" ).
+The length of the string is 5.
+The condition `l == 0 or l == 1` is false.
+The condition `l == 0` is false.
+The condition `l == 1` is false.
+The condition `l % i == 0` is false for all values of `i` from 2 to 5.
+Therefore, the function returns `True`.

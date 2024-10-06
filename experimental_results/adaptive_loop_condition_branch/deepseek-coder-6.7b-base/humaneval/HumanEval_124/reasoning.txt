@@ -1,0 +1,11 @@
+The function `valid_date` is called with ( date = '03-11-2000' ).
+The function first strips the leading and trailing whitespaces from the input date string.
+Then, it splits the date string into its components (month, day, and year) using the split method.
+The month, day, and year are converted to integers using the int function.
+Next, the function checks if the month is valid (between 1 and 12).
+If the month is not valid, the function returns False.
+If the month is valid, the function checks if the day is valid for the corresponding month.
+If the day is not valid, the function returns False.
+If the day is valid, the function returns True.
+
+Therefore, the final output of the function `valid_date('03-11-2000')` is True.

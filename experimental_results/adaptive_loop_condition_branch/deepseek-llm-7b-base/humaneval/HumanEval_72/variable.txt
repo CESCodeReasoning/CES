@@ -1,0 +1,12 @@
+from typing import *
+def will_it_fly(q,w):
+    if sum(q) > w: ## [CONDITION](sum(q) > w)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return False
+
+    i, j = 0, len(q)-1
+    while i<j: ## [STATE]i=??[/STATE][STATE]j=??[/STATE]
+        if q[i] != q[j]: ## [CONDITION](q[i] != q[j])=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            return False
+        i+=1
+        j-=1
+    return True

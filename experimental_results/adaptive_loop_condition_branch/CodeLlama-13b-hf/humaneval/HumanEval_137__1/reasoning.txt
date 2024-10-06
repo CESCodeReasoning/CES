@@ -1,0 +1,5 @@
+The function `compare_one` is called with ( a = "1", b = "2" ).
+`a` is "1", which is a string.
+The condition `isinstance(temp_a, str)` is true, therefore the if branch is taken and the method returns None
+
+Therefore, the final output of the function `compare_one("1", "2")` is None.

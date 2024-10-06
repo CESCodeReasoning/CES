@@ -1,0 +1,18 @@
+```response
+    if n%2==0:
+        odd_collatz = [] 
+    else:
+        odd_collatz = [n]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def get_max_min_diff(numbers):
+    if len(numbers) == 0:
+        return None
+    else:
+        max_num = max(numbers)
+        min_num = min(numbers)
+        return max_num -

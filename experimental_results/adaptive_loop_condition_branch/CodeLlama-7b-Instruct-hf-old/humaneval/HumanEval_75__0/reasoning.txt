@@ -1,0 +1,10 @@
+The function `is_multiply_prime` takes an integer `a` as its parameter.
+The function first defines a nested function `is_prime` that takes an integer `n` as its parameter.
+The `is_prime` function checks if `n` is prime by iterating from 2 to `n-1` and checking if `n` is divisible by any number between 2 and `n-1`. If `n` is not divisible by any number between 2 and `n-1`, then it must be prime.
+
+The outer function `is_multiply_prime` also takes an integer `a` as its parameter.
+The outer function iterates from 2 to 100 and checks if each number is prime. If a number is prime, then it checks if any of the numbers 2 to 100 are divisible by it. If a number is divisible by any of the numbers 2 to 100, then it is not a prime.
+
+The outer function also checks if the product of any two numbers from 2 to 100 is equal to `a`. If the product of two numbers is equal to `a`, then it is a multiply prime.
+
+Therefore, the final output of the function `is_multiply_prime(3 * 6 * 7)` is `True`.

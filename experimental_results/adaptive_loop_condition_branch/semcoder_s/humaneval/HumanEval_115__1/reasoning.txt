@@ -1,0 +1,11 @@
+The function `max_fill` calculates the maximum number of times a bucket can be filled with water such that the total amount of water does not exceed the capacity of the bucket.
+
+Here's the step-by-step reasoning:
+1. The function takes a 2D list `grid` representing the amount of water in each glass and an integer `capacity` representing the capacity of the bucket.
+2. It calculates the total amount of water in each row using `sum(arr)` for each row `arr` in the `grid`.
+3. It divides the total amount of water in each row by the `capacity` to get the quantity of water that can be filled in one fill operation.
+4. It rounds up the result of the division using `math.ceil()` to ensure that at least one fill operation is performed if the total water is less than the capacity.
+5. It sums up all the ceil values obtained from step 4 to get the total number of fill operations that can be performed.
+6. The function returns this total number.
+
+Therefore, the output of `max_fill([[1,1,1,1], [1,1,1,1]], 2)` is the sum of ceil values of the divisions, which is `2 + 2 = 4`.

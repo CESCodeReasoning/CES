@@ -1,0 +1,30 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def words_in_sentence(sentence):
+    new_lst = []
+    for word in sentence.split():
+        if len(word) == 2 or len(word) == 3:
+            new_lst.append(word)
+        elif len(word) > 3:
+            flg = 0
+            for i in range(2, int(len(word)**0.5)+1 ):
+                if len(word)%i == 0:
+                    flg = 1
+                    break
+            if flg == 0:
+                new_lst.append(word)
+    return " ".join(new_lst)
+```

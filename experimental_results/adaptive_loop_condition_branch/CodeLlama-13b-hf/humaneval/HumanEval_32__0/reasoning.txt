@@ -1,0 +1,86 @@
+The function `find_zero` is called with ( xs = [5, 3, -5] ).
+Inside the function, a variable `begin` is initialized to -1.0.
+A variable `end` is initialized to 1.0.
+The loop iterates until ( ( end - begin ) > 1e-10 ).
+First Iteration (begin = -1.0, end = 1.0):
+    - ( end - begin ) > 1e-10 when begin = -1.0 and end = 1.0
+    - The loop is entered.
+Second Iteration (begin = -2.0, end = 2.0):
+    - ( end - begin ) > 1e-10 when begin = -2.0 and end = 2.0
+    - The loop is entered.
+Third Iteration (begin = -4.0, end = 4.0):
+    - ( end - begin ) > 1e-10 when begin = -4.0 and end = 4.0
+    - The loop is entered.
+Fourth Iteration (begin = -8.0, end = 8.0):
+    - ( end - begin ) > 1e-10 when begin = -8.0 and end = 8.0
+    - The loop is entered.
+Fifth Iteration (begin = -16.0, end = 16.0):
+    - ( end - begin ) > 1e-10 when begin = -16.0 and end = 16.0
+    - The loop is entered.
+Sixth Iteration (begin = -32.0, end = 32.0):
+    - ( end - begin ) > 1e-10 when begin = -32.0 and end = 32.0
+    - The loop is entered.
+Seventh Iteration (begin = -64.0, end = 64.0):
+    - ( end - begin ) > 1e-10 when begin = -64.0 and end = 64.0
+    - The loop is entered.
+Eighth Iteration (begin = -128.0, end = 128.0):
+    - ( end - begin ) > 1e-10 when begin = -128.0 and end = 128.0
+    - The loop is entered.
+Ninth Iteration (begin = -256.0, end = 256.0):
+    - ( end - begin ) > 1e-10 when begin = -256.0 and end = 256.0
+    - The loop is entered.
+Tenth Iteration (begin = -512.0, end = 512.0):
+    - ( end - begin ) > 1e-10 when begin = -512.0 and end = 512.0
+    - The loop is entered.
+Eleventh Iteration (begin = -1024.0, end = 1024.0):
+    - ( end - begin ) > 1e-10 when begin = -1024.0 and end = 1024.0
+    - The loop is entered.
+Twelfth Iteration (begin = -2048.0, end = 2048.0):
+    - ( end - begin ) > 1e-10 when begin = -2048.0 and end = 2048.0
+    - The loop is entered.
+Thirteenth Iteration (begin = -4096.0, end = 4096.0):
+    - ( end - begin ) > 1e-10 when begin = -4096.0 and end = 4096.0
+    - The loop is entered.
+Fourteenth Iteration (begin = -8192.0, end = 8192.0):
+    - ( end - begin ) > 1e-10 when begin = -8192.0 and end = 8192.0
+    - The loop is entered.
+Fifteenth Iteration (begin = -16384.0, end = 16384.0):
+    - ( end - begin ) > 1e-10 when begin = -16384.0 and end = 16384.0
+    - The loop is entered.
+Sixteenth Iteration (begin = -32768.0, end = 32768.0):
+    - ( end - begin ) > 1e-10 when begin = -32768.0 and end = 32768.0
+    - The loop is entered.
+Seventeenth Iteration (begin = -65536.0, end = 65536.0):
+    - ( end - begin ) > 1e-10 when begin = -65536.0 and end = 65536.0
+    - The loop is entered.
+Eighteenth Iteration (begin = -131072.0, end = 131072.0):
+    - ( end - begin ) > 1e-10 when begin = -131072.0 and end = 131072.0
+    - The loop is entered.
+Nineteenth Iteration (begin = -262144.0, end = 262144.0):
+    - ( end - begin ) > 1e-10 when begin = -262144.0 and end = 262144.0
+    - The loop is entered.
+Twentieth Iteration (begin = -524288.0, end = 524288.0):
+    - ( end - begin ) > 1e-10 when begin = -524288.0 and end = 524288.0
+    - The loop is entered.
+Twenty-first Iteration (begin = -1048576.0, end = 1048576.0):
+    - ( end - begin ) > 1e-10 when begin = -1048576.0 and end = 1048576.0
+    - The loop is entered.
+Twenty-second Iteration (begin = -2097152.0, end = 2097152.0):
+    - ( end - begin ) > 1e-10 when begin = -2097152.0 and end = 2097152.0
+    - The loop is entered.
+Twenty-third Iteration (begin = -4194304.0, end = 4194304.0):
+    - ( end - begin ) > 1e-10 when begin = -4194304.0 and end = 4194304.0
+    - The loop is entered.
+Twenty-fourth Iteration (begin = -8388608.0, end = 8388608.0):
+    - ( end - begin ) > 1e-10 when begin = -8388608.0 and end = 8388608.0
+    - The loop is entered.
+Twenty-fifth Iteration (begin = -16777216.0, end = 16777216.0):
+    - ( end - begin ) > 1e-10 when begin = -16777216.0 and end = 16777216.0
+    - The loop is entered.
+Twenty-sixth Iteration (begin = -33554432.0, end = 33554432.0):
+    - ( end - begin ) > 1e-10 when begin = -33554432.0 and end = 33554432.0
+    - The loop is entered.
+Twenty-seventh Iteration (begin = -67108864.0, end = 67108864.0):
+    - ( end - begin ) > 1e-10 when begin = -67108864.0 and end = 67108864.0
+    - The loop is entered.
+Twenty-eighth Iteration (begin = -134217

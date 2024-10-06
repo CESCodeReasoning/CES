@@ -1,0 +1,15 @@
+```response
+            if ans != arr[len(arr) - i - 1]:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def find_max_sum(nums):
+    max_sum = nums[0]
+    current_sum = nums[0]
+
+    for num in nums[1:]:
+        current_sum = max(current_sum + num, num)
+        max_sum = max(current_sum, max_sum

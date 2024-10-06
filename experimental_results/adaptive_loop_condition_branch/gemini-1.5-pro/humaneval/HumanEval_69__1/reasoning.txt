@@ -1,0 +1,14 @@
+The function `search` is called with ( lst = [8, 8, 8, 8, 8, 8, 8, 8] ).
+Inside the function, a list `frq` is initialized with zeros of length ( max(lst) + 1 ).
+The loop iterates over the elements of `lst` and increments the corresponding index in `frq`.
+After the loop, the variable `ans` is initialized to -1.
+The second loop iterates over the indices of `frq` from 1 to its length.
+For each index `i`, the condition `frq[i] >= i` is checked.
+If the condition is true, the value of `ans` is updated to `i`.
+After the loop, the function returns the value of `ans`.
+
+In this case, the maximum value in `lst` is 8, so `frq` has a length of 9.
+The first loop increments the index 8 in `frq` by 8, resulting in `frq[8] = 8`.
+The second loop checks the condition `frq[i] >= i` for each index `i` from 1 to 9.
+The only index that satisfies the condition is `i = 8`, so `ans` is updated to 8.
+Finally, the function returns `ans = 8`.

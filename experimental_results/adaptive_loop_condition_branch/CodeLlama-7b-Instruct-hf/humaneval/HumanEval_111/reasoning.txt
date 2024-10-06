@@ -1,0 +1,48 @@
+The function `histogram` is called with ( test = 'a b b a' ).
+Inside the function, a dictionary `dict1` is initialized to an empty dictionary.
+The input string is split into a list of words using the space character as the delimiter.
+The list of words is stored in `list1`.
+
+Iteration 1:
+    -The first word in the list is 'a'.
+    -The count of 'a' in the list is 2.
+    -The variable `t` is set to 2.
+Iteration 2:
+    -The second word in the list is 'b'.
+    -The count of 'b' in the list is 2.
+    -The variable `t` is not updated.
+Iteration 3:
+    -The third word in the list is 'b'.
+    -The count of 'b' in the list is 2.
+    -The variable `t` is not updated.
+Iteration 4:
+    -The fourth word in the list is 'a'.
+    -The count of 'a' in the list is 1.
+    -The variable `t` is not updated.
+
+After the loop, the variable `t` is 2, since the count of the most frequent word in the list is 2.
+
+The loop is then executed again, this time to add the words to the dictionary.
+
+Iteration 1:
+    -The first word in the list is 'a'.
+    -The count of 'a' in the list is 2.
+    -The dictionary `dict1` is updated with the key 'a' and the value 2.
+Iteration 2:
+    -The second word in the list is 'b'.
+    -The count of 'b' in the list is 2.
+    -The dictionary `dict1` is updated with the key 'b' and the value 2.
+Iteration 3:
+    -The third word in the list is 'b'.
+    -The count of 'b' in the list is 2.
+    -The dictionary `dict1` is updated with the key 'b' and the value 2.
+Iteration 4:
+    -The fourth word in the list is 'a'.
+    -The count of 'a' in the list is 1.
+    -The dictionary `dict1` is updated with the key 'a' and the value 1.
+
+After the loop, the dictionary `dict1` contains the following key-value pairs:
+    -'a': 2
+    -'b': 2
+
+The function returns the dictionary `dict1`.

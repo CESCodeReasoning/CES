@@ -1,0 +1,31 @@
+The function `fib` is called with ( n = 12 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = 12 - 1 ) and ( n = 12 - 2 ).
+The condition `n == 0` is false for both calls, so the first if branch is not taken for both.
+The condition `n == 1` is false for both calls, so the second if branch is not taken for both.
+The function calls itself twice more, with ( n = 12 - 1 - 1 ) and ( n = 12 - 1 - 2 ).
+The condition `n == 0` is false for both calls, so the first if branch is not taken for both.
+The condition `n == 1` is false for both calls, so the second if branch is not taken for both.
+The function calls itself twice more, with ( n = 12 - 1 - 1 - 1 ) and ( n = 12 - 1 - 1 - 2 ).
+The condition `n == 0` is false for both calls, so the first if branch is not taken for both.
+The condition `n == 1` is false for both calls, so the second if branch is not taken for both.
+The function calls itself twice more, with ( n = 12 - 1 - 1 - 1 - 1 ) and ( n = 12 - 1 - 1 - 1 - 2 ).
+The condition `n == 0` is false for both calls, so the first if branch is not taken for both.
+The condition `n == 1` is false for both calls, so the second if branch is not taken for both.
+The function calls itself twice more, with ( n = 12 - 1 - 1 - 1 - 1 - 1 ) and ( n = 12 - 1 - 1 - 1 - 1 - 2 ).
+The condition `n == 0` is false for both calls, so the first if branch is not taken for both.
+The condition `n == 1` is false for both calls, so the second if branch is not taken for both.
+The function calls itself twice more, with ( n = 12 - 1 - 1 - 1 - 1 - 1 - 1 ) and ( n = 12 - 1 - 1 - 1 - 1 - 1 - 2 ).
+The condition `n == 0` is false for both calls, so the first if branch is not taken for both.
+The condition `n == 1` is false for both calls, so the second if branch is not taken for both.
+The function calls itself twice more, with ( n = 12 - 1 - 1 - 1 - 1 - 1 - 1 - 1 ) and ( n = 12 - 1 - 1 - 1 - 1 - 1 - 1 - 2 ).
+The condition `n == 0` is false for both calls, so the first if branch is not taken for both.
+The condition `n == 1` is false for both calls, so the second if branch is not taken for both.
+The function calls itself twice more, with ( n = 12 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 ) and ( n = 12 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 2 ).
+The condition `n == 0` is false for both calls, so the first if branch is not taken for both.
+The condition `n == 1` is false for both calls, so the second if branch is not taken for both.
+The function calls itself twice more, with ( n = 12 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 ) and ( n = 12 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 2 ).
+The condition `n == 0` is false for both calls, so the first if branch is not taken for both.
+The condition `n == 1` is false for both calls, so the second if branch is not taken for both.
+The function calls itself twice more, with ( n = 12 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 

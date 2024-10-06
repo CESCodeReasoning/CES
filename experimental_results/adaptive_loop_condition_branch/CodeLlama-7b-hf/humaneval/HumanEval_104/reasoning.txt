@@ -1,0 +1,19 @@
+The function `unique_digits` is called with ( x = [15, 33, 1422, 1] ).
+Inside the function, a variable `odd_digit_elements` is initialized to an empty list.
+The loop iterates through the elements of x.
+First Iteration (i = 15)
+   - The condition `all (int(c) % 2 == 1 for c in str(i))` is true.
+   - Action: `odd_digit_elements.append(i)` appends 15 to `odd_digit_elements`.
+Second Iteration (i = 33)
+   - The condition `all (int(c) % 2 == 1 for c in str(i))` is true.
+   - Action: `odd_digit_elements.append(i)` appends 33 to `odd_digit_elements`.
+Third Iteration (i = 1422)
+   - The condition `all (int(c) % 2 == 1 for c in str(i))` is false.
+   - Action: `odd_digit_elements.append(i)` does not append anything to `odd_digit_elements`.
+Fourth Iteration (i = 1)
+   - The condition `all (int(c) % 2 == 1 for c in str(i))` is true.
+   - Action: `odd_digit_elements.append(i)` appends 1 to `odd_digit_elements`.
+Return Statement
+   - After the loop completes, the function returns the sorted list of `odd_digit_elements`, which is [1, 15, 33].
+
+Therefore, the final output of the function `unique_digits([15, 33, 1422, 1])` is [1, 15, 33].

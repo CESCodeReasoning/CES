@@ -1,0 +1,7 @@
+The function right_angle_triangle takes three arguments a, b, and c, which are the lengths of the sides of a triangle. The function checks if the triangle is a right angle triangle by checking if the square of the length of any side is equal to the sum of the squares of the lengths of the other two sides.
+
+To determine the output of executing the function right_angle_triangle on the input (1, 1, 1), we need to check if the square of 1 is equal to the sum of the squares of 1 and 1.
+
+1 * 1 = 1
+1 + 1 = 2
+1 is not equal to 2, so the output of executing the function right_angle_triangle on the input (1, 1, 1) is False.

@@ -1,0 +1,20 @@
+The function `longest` is called with ( strings = ['x', 'y', 'z'] ).
+Inside the function, a variable `maxlen` is initialized to 0.
+
+Iteration 1:
+    -The length of 'x' is 1, so maxlen becomes 1.
+Iteration 2:
+    -The length of 'y' is 1, so maxlen becomes 1.
+Iteration 3:
+    -The length of 'z' is 1, so maxlen becomes 1.
+
+The condition `not strings` is false, so the `if` block is executed.
+
+The `for` loop iterates over the list of strings.
+
+Iteration 1:
+    -The string 'x' is compared to maxlen, which is 1.
+    -The length of 'x' is 1, so the condition is true.
+    -The `return` statement is executed, returning 'x'.
+
+Therefore, the final output of the function `longest(['x', 'y', 'z'])` is 'x'.

@@ -1,0 +1,5 @@
+The function add_elements takes two arguments: an array of integers arr and a positive integer k.
+The function returns the sum of the first k elements of arr that have a length of at most 2.
+To determine the output of executing the function add_elements on the input [1,-2,-3,41,57,76,87,88,99] and k = 3, we need to find the sum of the first 3 elements of arr that have a length of at most 2.
+The first 3 elements of arr that have a length of at most 2 are [1,-2,-3].
+Therefore, the output of executing the function add_elements on the input [1,-2,-3,41,57,76,87,88,99] and k = 3 is 1 + (-2) + (-3) = -4.

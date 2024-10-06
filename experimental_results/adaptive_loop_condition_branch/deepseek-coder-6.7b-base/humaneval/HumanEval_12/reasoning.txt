@@ -1,0 +1,8 @@
+The function `longest` is called with ( strings = ['x', 'yyy', 'zzzz', 'www', 'kkkk', 'abc'] ).
+The condition `not strings` is false, so the function proceeds to the next step.
+The `max` function is used to find the maximum length of the strings in the list.
+The maximum length is 4.
+Iteration 1:
+    -The length of 'x' is not equal to the maximum length, so the loop continues.
+Iteration 2:
+    -The length of 'yyy' is equal to the maximum length, so the function returns 'yyy'.

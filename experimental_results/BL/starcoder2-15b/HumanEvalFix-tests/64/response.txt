@@ -1,0 +1,21 @@
+```response
+                assert True, "This prints if this assert fails 2 (also good for debugging!)"
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+FIX = """
+Add more test cases.
+"""
+
+def vowels_count(s):
+    vowels = "aeiouyAEIOUY"
+    n_vowels = sum(c in vowels for c in s)
+    return n_vowels
+
+Tests:
+def check(vowels_count):
+
+    #

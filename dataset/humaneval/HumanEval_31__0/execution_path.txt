@@ -1,0 +1,12 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: is_prime
+main.py(5):     if n < 2:
+main.py(7):     for k in range(2, n - 1):
+main.py(8):         if n % k == 0:
+main.py(7):     for k in range(2, n - 1):
+main.py(8):         if n % k == 0:
+main.py(7):     for k in range(2, n - 1):
+main.py(8):         if n % k == 0:
+main.py(7):     for k in range(2, n - 1):
+main.py(8):         if n % k == 0:
+main.py(9):             return False

@@ -1,0 +1,10 @@
+The function `prod_signs` is called with ( arr = [-1, 1, 1, 1] ).
+First, the function checks if the array is empty. Since the array is not empty, the function proceeds to calculate the product of the signs of the negative numbers in the array and the sum of the absolute values of all the numbers in the array.
+
+The function first checks if there is a 0 in the array. Since there is no 0 in the array, the function proceeds to calculate the product of the signs of the negative numbers in the array. The function uses the `filter` function to create a list of all the negative numbers in the array, and then uses the `len` function to calculate the length of the list. The function then uses the `**` operator to raise -1 to the power of the length of the list, which results in -1.
+
+The function then calculates the sum of the absolute values of all the numbers in the array. The function uses a list comprehension to create a list of the absolute values of all the numbers in the array, and then uses the `sum` function to calculate the sum of the list.
+
+The function then returns the product of the signs of the negative numbers in the array and the sum of the absolute values of all the numbers in the array.
+
+Therefore, the final output of the function `prod_signs([-1, 1, 1, 1])` is -4.

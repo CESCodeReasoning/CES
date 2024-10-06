@@ -1,0 +1,16 @@
+The function `sorted_list_sum` is called with ( lst = ["aa", "a", "aaa"] ).
+Inside the function, the list `lst` is sorted in ascending order.
+
+Iteration 1:
+    -The length of the string "a" is 1, which is an odd number.
+    -The condition `len(i)%2 == 0` is false, so the string "a" is not appended to the list `new_lst`.
+Iteration 2:
+    -The length of the string "aa" is 2, which is an even number.
+    -The condition `len(i)%2 == 0` is true, so the string "aa" is appended to the list `new_lst`.
+Iteration 3:
+    -The length of the string "aaa" is 3, which is an odd number.
+    -The condition `len(i)%2 == 0` is false, so the string "aaa" is not appended to the list `new_lst`.
+
+After the loop completes, the list `new_lst` contains only the string "aa".
+The list `new_lst` is sorted again based on the length of the strings, resulting in ["aa"].
+The function returns the sorted list ["aa"].

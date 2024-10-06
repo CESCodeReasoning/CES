@@ -1,0 +1,56 @@
+The function `solve` is called with ( s = "#a@C" ).
+Inside the function, a variable `flg` is initialized to 0.
+A variable `idx` is initialized to 0.
+A list `new_str` is initialized to `[]`.
+
+Iteration 1:
+    -The character '#' is not in alphabetic characters, so `flg` remains 0.
+Iteration 2:
+    -The character 'a' is in alphabetic characters, so `flg` becomes 1.
+Iteration 3:
+    -The character '@' is not in alphabetic characters, so `flg` remains 1.
+Iteration 4:
+    -The character 'C' is in alphabetic characters, so `flg` becomes 1.
+Iteration 5:
+    -The character ' ' (space) is not in alphabetic characters, so `flg` remains 1.
+Iteration 6:
+    -The character 'C' is in alphabetic characters, so `flg` becomes 1.
+Iteration 7:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 8:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 9:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 10:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 11:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 12:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 13:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 14:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 15:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 16:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 17:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 18:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 19:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 20:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 21:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 22:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 23:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 24:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 25:
+    -The character 'C' is in alphabetic characters, so `flg` remains 1.
+Iteration 26:

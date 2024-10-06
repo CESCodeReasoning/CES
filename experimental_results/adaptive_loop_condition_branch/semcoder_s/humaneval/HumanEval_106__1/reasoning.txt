@@ -1,0 +1,9 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterates from 1 to n (inclusive).
+If the current number i is even:
+    - Calculate the factorial of i by multiplying all numbers from 1 to i.
+    - Append the calculated factorial to the result list ret.
+If the current number i is odd:
+    - Calculate the sum of all numbers from 1 to i.
+    - Append the calculated sum to the result list ret.
+Finally, return the result list ret.

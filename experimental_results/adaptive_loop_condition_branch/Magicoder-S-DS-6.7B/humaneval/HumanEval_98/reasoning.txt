@@ -1,0 +1,15 @@
+The function `count_upper` is called with ( s = 'aBCdEf' ).
+Inside the function, a variable `count` is initialized to 0.
+
+Iteration 1:
+    -The character 'a' is not in "AEIOU", so no increment in count.
+Iteration 2:
+    -The character 'B' is not in "AEIOU", so no increment in count.
+Iteration 3:
+    -The character 'C' is in "AEIOU", so count becomes 1.
+Iteration 4:
+    -The character 'd' is not in "AEIOU", so no increment in count.
+Iteration 5:
+    -The character 'E' is in "AEIOU", so count becomes 2.
+Iteration 6:
+    -The character 'f' is not in "AEIOU", so no increment in count.

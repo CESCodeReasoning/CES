@@ -1,0 +1,45 @@
+The function `longest` is called with ( strings = ["a", "b", "c"] ).
+Inside the function, a variable `maxlen` is initialized to 0.
+
+Iteration 1:
+    -The length of the first string is 1, which is greater than the current value of `maxlen`, so `maxlen` is updated to 1.
+Iteration 2:
+    -The length of the second string is 2, which is greater than the current value of `maxlen`, so `maxlen` is updated to 2.
+Iteration 3:
+    -The length of the third string is 3, which is greater than the current value of `maxlen`, so `maxlen` is updated to 3.
+Iteration 4:
+    -The length of the first string is 1, which is greater than the current value of `maxlen`, so `maxlen` is updated to 1.
+Iteration 5:
+    -The length of the second string is 2, which is greater than the current value of `maxlen`, so `maxlen` is updated to 2.
+Iteration 6:
+    -The length of the third string is 3, which is greater than the current value of `maxlen`, so `maxlen` is updated to 3.
+Iteration 7:
+    -The length of the first string is 1, which is greater than the current value of `maxlen`, so `maxlen` is updated to 1.
+Iteration 8:
+    -The length of the second string is 2, which is greater than the current value of `maxlen`, so `maxlen` is updated to 2.
+Iteration 9:
+    -The length of the third string is 3, which is greater than the current value of `maxlen`, so `maxlen` is updated to 3.
+Iteration 10:
+    -The length of the first string is 1, which is greater than the current value of `maxlen`, so `maxlen` is updated to 1.
+Iteration 11:
+    -The length of the second string is 2, which is greater than the current value of `maxlen`, so `maxlen` is updated to 2.
+Iteration 12:
+    -The length of the third string is 3, which is greater than the current value of `maxlen`, so `maxlen` is updated to 3.
+Iteration 13:
+    -The length of the first string is 1, which is greater than the current value of `maxlen`, so `maxlen` is updated to 1.
+Iteration 14:
+    -The length of the second string is 2, which is greater than the current value of `maxlen`, so `maxlen` is updated to 2.
+Iteration 15:
+    -The length of the third string is 3, which is greater than the current value of `maxlen`, so `maxlen` is updated to 3.
+Iteration 16:
+    -The length of the first string is 1, which is greater than the current value of `maxlen`, so `maxlen` is updated to 1.
+Iteration 17:
+    -The length of the second string is 2, which is greater than the current value of `maxlen`, so `maxlen` is updated to 2.
+Iteration 18:
+    -The length of the third string is 3, which is greater than the current value of `maxlen`, so `maxlen` is updated to 3.
+Iteration 19:
+    -The length of the first string is 1, which is greater than the current value of `maxlen`, so `maxlen` is updated to 1.
+Iteration 20:
+    -The length of the second string is 2, which is greater than the current value of `maxlen`, so `maxlen` is updated to 2.
+Iteration 21:
+    -The length of the third string is 3

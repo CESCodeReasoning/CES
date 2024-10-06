@@ -1,0 +1,9 @@
+from typing import *
+
+
+def circular_shift(x, shift):
+    s = str(x)
+    if shift > len(s): ## [CONDITION](shift > len(s))=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return s[::-1]
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        return s[len(s) - shift:] + s[:len(s) - shift] ## [STATE]s[len(s) - shift:]=[2][/STATE][STATE]s[:len(s) - shift]=[1][/STATE]

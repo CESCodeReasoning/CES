@@ -1,0 +1,3 @@
+The function `choose_num` is called with ( x = 13, y = 12 ).
+The condition `x > y` is not satisfied (13 > 12), so the first if condition is not met.
+The second if condition checks if `y` is even (12 is even), so the function returns `y` which is 12.

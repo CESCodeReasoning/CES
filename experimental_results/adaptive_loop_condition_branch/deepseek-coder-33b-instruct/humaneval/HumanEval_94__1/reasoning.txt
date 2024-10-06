@@ -1,0 +1,22 @@
+The function `skjkasdkd` is called with ( lst = [0,8,1,2,1,7] ).
+Inside the function, a variable `maxx` is initialized to 0.
+The loop iterates over the list `lst`.
+First Iteration (i = 0):
+    - `lst[i]` is 0, which is not a prime number.
+Second Iteration (i = 1):
+    - `lst[i]` is 8, which is a prime number.
+    - The condition `lst[i] > maxx` is true (while `isPrime(lst[i])` is true).
+    - Action: `maxx = lst[i]` updates `maxx` to 8.
+Third Iteration (i = 2):
+    - `lst[i]` is 1, which is not a prime number.
+Fourth Iteration (i = 3):
+    - `lst[i]` is 2, which is a prime number.
+    - The condition `lst[i] > maxx` is true (while `isPrime(lst[i])` is true).
+    - Action: `maxx = lst[i]` updates `maxx` to 2.
+Fifth Iteration (i = 4):
+    - `lst[i]` is 1, which is not a prime number.
+Sixth Iteration (i = 5):
+    - `lst[i]` is 7, which is a prime number.
+    - The condition `lst[i] > maxx` is true (while `isPrime(lst[i])` is true).
+    - Action: `maxx = lst[i]` updates `maxx` to 7.
+After the loop completes, the function returns the sum of the digits of the maximum prime number in the list, which is 7.

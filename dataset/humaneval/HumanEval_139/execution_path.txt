@@ -1,0 +1,18 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: special_factorial
+main.py(3):     fact_i = 1
+main.py(4):     special_fact = 1
+main.py(5):     for i in range(1, n+1):
+main.py(6):         fact_i *= i
+main.py(7):         special_fact *= fact_i
+main.py(5):     for i in range(1, n+1):
+main.py(6):         fact_i *= i
+main.py(7):         special_fact *= fact_i
+main.py(5):     for i in range(1, n+1):
+main.py(6):         fact_i *= i
+main.py(7):         special_fact *= fact_i
+main.py(5):     for i in range(1, n+1):
+main.py(6):         fact_i *= i
+main.py(7):         special_fact *= fact_i
+main.py(5):     for i in range(1, n+1):
+main.py(8):     return special_fact

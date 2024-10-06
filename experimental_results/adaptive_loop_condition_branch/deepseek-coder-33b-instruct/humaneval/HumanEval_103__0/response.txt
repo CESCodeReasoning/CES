@@ -1,0 +1,26 @@
+
+[ANSWER]
+from typing import *
+
+
+def rounded_avg(n, m):
+    if m < n: ## [CONDITION](m < n)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return -1
+    summation = 0
+    for i in range(n, m + 1): ## [STATE]i=[560, 561, ..., 851][/STATE][STATE]range(n, (m + 1))=[560, 561, ..., 851][/STATE][STATE]n=[560][/STATE][STATE](m + 1)=[852][/STATE]
+        summation += i
+    return bin(round(summation / (m - n + 1)))
+[/ANSWER]
+
+[REASONING]
+The function `rounded_avg` is called with ( n = 560, m = 851 ).
+The condition ( m < n ) is not satisfied, therefore the if branch is not taken.
+A variable `summation` is initialized to 0.
+The loop iterates from 560 through 851 (since ( n = 560, m = 851 )).
+For each iteration, `summation += i` updates `summation` by adding the current value of `i`.
+After the loop completes, the function returns the binary representation of the rounded average of the numbers from n to m.
+[/REASONING]
+
+[OUTPUT]
+'0b1101000010'
+[/OUTPUT]

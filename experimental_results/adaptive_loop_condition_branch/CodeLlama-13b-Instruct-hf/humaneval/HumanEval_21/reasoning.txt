@@ -1,0 +1,5 @@
+The function rescale_to_unit takes a list of floating-point numbers as input and returns a list of floating-point numbers that have been rescaled to the unit interval [0, 1].
+To determine the output of executing the function rescale_to_unit on the input [2.0, 49.9], we need to first determine the minimum and maximum values in the input list.
+The minimum value is 2.0, and the maximum value is 49.9.
+Next, we need to subtract the minimum value from each element in the input list and divide the result by the difference between the maximum and minimum values.
+Therefore, the output of executing the function rescale_to_unit on the input [2.0, 49.9] is [(2.0 - 2.0) / (49.9 - 2.0), (49.9 - 2.0) / (49.9 - 2.0)] = [0.0, 1.0].

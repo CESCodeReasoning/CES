@@ -1,0 +1,32 @@
+The function `factorize` is called with the argument `n = 3 * 19 * 3 * 19 = 1089`.
+The function aims to factorize the number 1089 into its prime factors.
+
+1. Initialize an empty list `fact` to store factors and set `i = 2`.
+2. Calculate `math.sqrt(1089) + 1 ≈ 33.016 + 1 = 34.016`, so `int(math.sqrt(n) + 1) = 34`.
+3. Start a while loop that runs while `i <= 34`.
+
+First Iteration (`i = 2`):
+   - `1089 % 2 != 0`, so the condition `n % i == 0` is false. Increment `i` to 3.
+
+Second Iteration (`i = 3`):
+   - `1089 % 3 == 0`, so the condition `n % i == 0` is true. Append `3` to `fact` and update `n = 1089 // 3 = 363`. Increment `i` to 3 (stays the same since we need to check for multiple factors of 3).
+
+Third Iteration (`i = 3`):
+   - `363 % 3 == 0`, so the condition `n % i == 0` is true again. Append `3` to `fact` and update `n = 363 // 3 = 121`. Increment `i` to 3 (stays the same).
+
+Fourth Iteration (`i = 3`):
+   - `121 % 3 != 0`, so the condition `n % i == 0` is false. Increment `i` to 4.
+
+Subsequent Iterations (`i = 4` to `i = 10`):
+   - None of these values of `i` divide 121, so `i` is incremented each time until `i = 11`.
+
+Iteration (`i = 11`):
+   - `121 % 11 == 0`, so the condition `n % i == 0` is true. Append `11` to `fact` and update `n = 121 // 11 = 11`. Increment `i` to 11 (stays the same).
+
+Next Iteration (`i = 11`):
+   - `11 % 11 == 0`, so the condition `n % i == 0` is true again. Append `11` to `fact` and update `n = 11 // 11 = 1`. Increment `i` to 12.
+
+5. The while loop exits as `i` becomes 12 which is greater than 34.
+6. Check if `n > 1` after the loop. Since `n = 1`, this condition is false.
+
+The function returns the list `[3, 3, 11, 11]` which are the prime factors of 1089.

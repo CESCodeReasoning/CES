@@ -1,0 +1,9 @@
+The function `add_elements` takes a list `arr` and an integer `k` as input. It calculates the sum of the first `k` elements in the list `arr` that have a length of 1 or 2 digits.
+
+- The first `k=3` elements of `arr` are `[1, -2, -3]`.
+- The first element `1` has 1 digit, so it is included in the sum.
+- The second element `-2` has 2 digits, so it is included in the sum.
+- The third element `-3` has 2 digits, so it is included in the sum.
+- The sum of the elements is `1 + (-2) + (-3) =  -4`.
+
+Therefore, the output of executing the function `add_elements` on the input `([1,-2,-3,41,57,76,87,88,99], 3)` is `-4`.

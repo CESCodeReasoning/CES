@@ -1,0 +1,133 @@
+The function `int_to_mini_roman` is called with ( number = 19 ).
+Inside the function, a variable `num` is initialized to [1, 4, 5, 9, 10, 40, 50, 90,  
+           100, 400, 500, 900, 1000].
+Inside the function, a variable `sym` is initialized to ["I", "IV", "V", "IX", "X", "XL",  
+           "L", "XC", "C", "CD", "D", "CM", "M"].
+Inside the function, a variable `i` is initialized to 12.
+Inside the function, a variable `res` is initialized to ''.
+First Iteration:
+    - number = 19, number // num[i] = 1, number %= num[i] = 19 % 1000 = 19.
+    - div = number // num[i] = 19 // 1000 = 0.
+    - number %= num[i] = 19 % 1000 = 19.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Second Iteration:
+    - number = 19, number // num[i] = 19 // 900 = 0.
+    - number %= num[i] = 19 % 900 = 19.
+    - div = number // num[i] = 19 // 500 = 0.
+    - number %= num[i] = 19 % 500 = 19.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Third Iteration:
+    - number = 19, number // num[i] = 19 // 400 = 0.
+    - number %= num[i] = 19 % 400 = 19.
+    - div = number // num[i] = 19 // 100 = 0.
+    - number %= num[i] = 19 % 100 = 19.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Fourth Iteration:
+    - number = 19, number // num[i] = 19 // 90 = 0.
+    - number %= num[i] = 19 % 90 = 19.
+    - div = number // num[i] = 19 // 50 = 0.
+    - number %= num[i] = 19 % 50 = 19.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Fifth Iteration:
+    - number = 19, number // num[i] = 19 // 40 = 0.
+    - number %= num[i] = 19 % 40 = 19.
+    - div = number // num[i] = 19 // 10 = 0.
+    - number %= num[i] = 19 % 10 = 9.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Sixth Iteration:
+    - number = 9, number // num[i] = 9 // 9 = 0.
+    - number %= num[i] = 9 % 9 = 9.
+    - div = number // num[i] = 9 // 5 = 0.
+    - number %= num[i] = 9 % 5 = 4.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Seventh Iteration:
+    - number = 4, number // num[i] = 4 // 4 = 0.
+    - number %= num[i] = 4 % 4 = 4.
+    - div = number // num[i] = 4 // 1 = 0.
+    - number %= num[i] = 4 % 1 = 0.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Eighth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - div = number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Ninth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - div = number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Tenth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - div = number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Eleventh Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - div = number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Twelfth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - div = number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - while div:  ## [STATE]div=??[/STATE]
+        res += sym[i] 
+        div -= 1
+    - res = ''.
+    - i = 12.
+Thirteenth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - div = number // num[i] = 0 // 1 = 0.
+    - number %= num[i] = 0 % 1 = 0.
+    - while div:  ## [STATE]div=??[/STATE]
+       

@@ -1,0 +1,13 @@
+The function `numerical_letter_grade` is called with the list `[0, 0.7]` as the argument for `grades`.
+Inside the function, an empty list `letter_grade` is initialized to store the letter grades corresponding to each GPA in the `grades` list.
+
+Iteration 1:
+    - The GPA `0` is checked against various conditions:
+        - It does not satisfy any conditions for GPA values greater than 0.0, so it falls into the `else` block.
+        - The letter grade "E" is appended to `letter_grade`.
+Iteration 2:
+    - The GPA `0.7` is checked:
+        - It satisfies the condition `gpa > 0.0` but does not satisfy `gpa > 0.7`.
+        - The letter grade "D-" is appended to `letter_grade`.
+
+After iterating through all GPAs, the function returns the list `letter_grade` containing the corresponding letter grades for each GPA.

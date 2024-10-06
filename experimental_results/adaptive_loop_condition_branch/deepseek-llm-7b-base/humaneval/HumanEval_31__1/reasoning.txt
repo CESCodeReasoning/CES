@@ -1,0 +1,38 @@
+The function `is_prime` is called with ( n = 11 * 7 ).
+Inside the function, a variable `n` is initialized to 11 * 7.
+The loop iterates from 2 through ( n - 1 ) (since ( n = 11 * 7 )).
+First Iteration (k = 2)
+   - `k` is 2, which satisfies ( 2 <= k < 11 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `11 % 2 = 1`.
+Second Iteration (k = 3)
+   - `k` is 3, which satisfies ( 3 <= k < 11 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `11 % 3 = 2`.
+Third Iteration (k = 4)
+   - `k` is 4, which satisfies ( 4 <= k < 11 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `11 % 4 = 3`.
+Fourth Iteration (k = 5)
+   - `k` is 5, which satisfies ( 5 <= k < 11 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `11 % 5 = 4`.
+Fifth Iteration (k = 6)
+   - `k` is 6, which satisfies ( 6 <= k < 11 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `11 % 6 = 5`.
+Sixth Iteration (k = 7)
+   - `k` is 7, which satisfies ( 7 <= k < 11 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `11 % 7 = 6`.
+Seventh Iteration (k = 8)
+   - `k` is 8, which satisfies ( 8 <= k < 11 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `11 % 8 = 7`.
+Eighth Iteration (k = 9)
+   - `k` is 9, which satisfies ( 9 <= k < 11 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `11 % 9 = 8`.
+Ninth Iteration (k = 10)
+   - `k` is 10, which satisfies ( 10 <= k < 11 ).
+   - The condition `k < n - 1`

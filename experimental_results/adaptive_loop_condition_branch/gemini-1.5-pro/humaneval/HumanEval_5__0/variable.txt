@@ -1,0 +1,16 @@
+from typing import *
+
+
+def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    if not numbers: ## [CONDITION](not numbers)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return []
+
+    result = []
+
+    for n in numbers[:-1]: ## [STATE]n=[5, 6, 3][/STATE][STATE]numbers[:(- 1)]=[5, 6, 3][/STATE]
+        result.append(n)
+        result.append(delimeter)
+
+    result.append(numbers[-1])
+
+    return result

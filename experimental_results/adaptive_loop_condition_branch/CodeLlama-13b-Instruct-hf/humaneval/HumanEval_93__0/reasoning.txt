@@ -1,0 +1,13 @@
+The function encode takes a string message as input and returns a new string with the following modifications:
+
+1. The vowels in the message are replaced with their corresponding characters two positions ahead in the ASCII table.
+2. The case of the message is swapped.
+
+To determine the output of executing the function encode on the input "YES", we need to follow these steps:
+
+1. The vowels in "YES" are "Y" and "E".
+2. The corresponding characters two positions ahead in the ASCII table are "Z" and "G".
+3. The case of "YES" is swapped to "yes".
+4. The resulting string is "zg".
+
+Therefore, the output of executing the function encode on the input "YES" is "zg".

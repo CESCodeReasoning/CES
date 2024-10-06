@@ -1,0 +1,42 @@
+The function `sum_squares` is called with ( lst = [-16, -9, -2, 36, 36, 26, -20, 25, -40, 20, -4, 12, -26, 35, 37] ).
+Inside the function, an empty list `result` is initialized.
+The loop iterates from 0 through 14 (since the length of the list is 15).
+
+Iteration 1:
+    - `i` is 0, which satisfies ( i % 3 == 0 ).
+    - The condition `i % 3 == 0` is true.
+    - Action: `result.append(lst[i]**2)` results in `result = [-16**2] = [256]`.
+Iteration 2:
+    - `i` is 1, which does not satisfy ( i % 3 == 0 ).
+    - The condition `i % 3 == 0` is false.
+    - The condition `i % 4 == 0 and i % 3 != 0` is false.
+    - Action: `result.append(lst[i])` results in `result = [256, -9]`.
+Iteration 3:
+    - `i` is 2, which does not satisfy ( i % 3 == 0 ).
+    - The condition `i % 3 == 0` is false.
+    - The condition `i % 4 == 0 and i % 3 != 0` is false.
+    - Action: `result.append(lst[i])` results in `result = [256, -9, -2]`.
+Iteration 4:
+    - `i` is 3, which satisfies ( i % 3 == 0 ).
+    - The condition `i % 3 == 0` is true.
+    - Action: `result.append(lst[i]**2)` results in `result = [256, -9, -2, 36**2] = [256, -9, -2, 1296]`.
+Iteration 5:
+    - `i` is 4, which satisfies ( i % 3 == 0 ).
+    - The condition `i % 3 == 0` is true.
+    - Action: `result.append(lst[i]**2)` results in `result = [256, -9, -2, 1296, 36**2] = [256, -9, -2, 1296, 1296]`.
+Iteration 6:
+    - `i` is 5, which does not satisfy ( i % 3 == 0 ).
+    - The condition `i % 3 == 0` is false.
+    - The condition `i % 4 == 0 and i % 3 != 0` is false.
+    - Action: `result.append(lst[i])` results in `result = [256, -9, -2, 1296, 1296, 26]`.
+Iteration 7:
+    - `i` is 6, which does not satisfy ( i % 3 == 0 ).
+    - The condition `i % 3 == 0` is false.
+    - The condition `i % 4 == 0 and i % 3 != 0` is false.
+    - Action: `result.append(lst[i])` results in `result = [256, -9, -2, 1296, 1296, 26, -20]`.
+Iteration 8:
+    - `i` is 7, which satisfies ( i % 3 == 0 ).
+    - The condition `i % 3 == 0` is true.
+    - Action: `result.append(lst[i]**2)` results in `result = [256, -9, -2, 1296, 1296, 26, -20, 25**2] = [256, -9, -2, 1296, 1296, 26, -20, 625]`.
+Iteration 9:
+    - `i` is 8, which does not satisfy ( i

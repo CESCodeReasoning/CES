@@ -1,0 +1,190 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: fix_spaces
+main.py(5):     new_text = ""
+main.py(6):     i = 0
+main.py(7):     start, end = 0, 0
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(10):             end += 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(15):                 new_text += "_" * (end - start) + text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(10):             end += 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(10):             end += 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(15):                 new_text += "_" * (end - start) + text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(10):             end += 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(10):             end += 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(15):                 new_text += "_" * (end - start) + text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(9):         if text[i] == " ":
+main.py(12):             if end - start > 2:
+main.py(14):             elif end - start > 0:
+main.py(17):                 new_text += text[i]
+main.py(18):             start, end = i + 1, i + 1
+main.py(19):         i += 1
+main.py(8):     while i < len(text):
+main.py(20):     if end - start > 2:
+main.py(22):     elif end - start > 0:
+main.py(24):     return new_text

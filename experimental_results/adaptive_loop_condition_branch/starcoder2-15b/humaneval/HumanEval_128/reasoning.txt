@@ -1,0 +1,10 @@
+The function `prod_signs` is called with ( arr = [1, 2, 2, -4] ).
+`arr` is not empty, so the condition `not arr` is false.
+The `if` branch is not taken.
+The function initializes a variable `prod` to 0 if 0 is in `arr`, otherwise it is set to (-1) ** len(list(filter(lambda x: x < 0, arr))).
+In this case, 0 is not in `arr`, so `prod` is set to (-1) ** len(list(filter(lambda x: x < 0, arr))).
+The `filter` function returns a list of all elements in `arr` that are less than 0, which is [-4].
+The length of this list is 1, so (-1) ** len(list(filter(lambda x: x < 0, arr))) is (-1) ** 1, which is -1.
+The function returns the product of `prod` and the sum of the absolute values of the elements in `arr`, which is -1 * (1 + 2 + 2 + 4) = -11.
+
+Therefore, the final output of the function `prod_signs([1, 2, 2, -4])` is -11.

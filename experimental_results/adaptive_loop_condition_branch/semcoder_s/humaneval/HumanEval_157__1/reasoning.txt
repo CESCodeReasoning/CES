@@ -1,0 +1,7 @@
+The function `right_angle_triangle` takes three arguments a, b, and c. It checks if any of the two conditions (a^2 = b^2 + c^2, b^2 = a^2 + c^2, c^2 = a^2 + b^2) are true. If any of these conditions are true, it returns True, indicating that the given sides form a right-angled triangle. Otherwise, it returns False.
+
+To determine the output of executing the function `right_angle_triangle` on the input (1, 1, 1), we need to check if any of the conditions are true.
+
+- Condition 1: 1^2 = 1^2 + 1^2 is true, so the function returns True.
+
+Therefore, the output of executing the function `right_angle_triangle` on the input (1, 1, 1) is True.

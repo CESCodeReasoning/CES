@@ -1,0 +1,4 @@
+The function `digitSum` is called with ( s = "aAaaaXa" ).
+The condition `s == ""` is false, therefore the if branch is not taken and the method returns 0.
+
+Therefore, the final output of the function `digitSum("aAaaaXa")` is 0.

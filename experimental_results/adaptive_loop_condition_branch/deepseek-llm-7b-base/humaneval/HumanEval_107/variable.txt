@@ -1,0 +1,14 @@
+from typing import *
+def even_odd_palindrome(n):
+    def is_palindrome(n):
+        return str(n) == str(n)[::-1]
+
+    even_palindrome_count = 0
+    odd_palindrome_count = 0 ## [CONDITION](gpa == 4.0)=??[/CONDITION][CONDITION](text[i] == " ")=??[/CONDITION]
+
+    for i in range(1, n+1): ## [STATE]range(1, (n + 1))=??[/STATE][STATE](n + 1)=??[/STATE][CONDITION](gpa > 3.7)=??[/CONDITION]
+        if i%2 == 1 and is_palindrome(i): ## [CONDITION](end - start > 2)=??[/CONDITION][CONDITION](i%2 == 1 and is_palindrome(i))=??[/CONDITION][CONDITION](i%2 == 1)=??[/CONDITION][CONDITION](is_palindrome(i))=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                odd_palindrome_count += 1 ## [CONDITION](gpa > 3.3)=??[/CONDITION]
+        elif i%2 == 0 and is_palindrome(i): ## [CONDITION](end - start > 0)=??[/CONDITION][CONDITION](i%2 == 0 and is_palindrome(i))=??[/CONDITION][CONDITION](i%2 == 0)=??[/CONDITION][CONDITION](is_palindrome(i))=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            even_palindrome_count += 1 ## [CONDITION](gpa > 3.0)=??[/CONDITION]
+    return (even_palindrome_count, odd_palindrome_count)

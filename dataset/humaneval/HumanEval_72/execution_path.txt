@@ -1,0 +1,10 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: will_it_fly
+main.py(3):     if sum(q) > w:
+main.py(6):     i, j = 0, len(q)-1
+main.py(7):     while i<j:
+main.py(8):         if q[i] != q[j]:
+main.py(10):         i+=1
+main.py(11):         j-=1
+main.py(7):     while i<j:
+main.py(12):     return True

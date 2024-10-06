@@ -1,0 +1,8 @@
+The function `closest_integer` is called with the argument "15.3".
+The first condition `value.count('.') == 1` is satisfied, therefore the if branch is taken.
+Inside the if branch, the while loop iterates and removes the trailing zeros from the string "15.3".
+After the while loop completes, the string "15.3" is converted to a float and assigned to the variable `num`.
+The second condition `value[-2:] == '.5'` is satisfied, therefore the if branch is taken.
+Inside the if branch, the variable `num` is checked to see if it is greater than 0. Since `num` is 15.3, it is greater than 0, therefore the if branch is taken.
+The function `ceil` is called with the argument `num`, which returns the ceiling of the number, which is 16.
+The function `closest_integer` returns the value 16.

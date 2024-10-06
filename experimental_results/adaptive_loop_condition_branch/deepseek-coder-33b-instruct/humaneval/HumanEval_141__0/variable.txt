@@ -1,0 +1,18 @@
+from typing import *
+
+
+def file_name_check(file_name):
+    suf = ['txt', 'exe', 'dll']
+    lst = file_name.split(sep='.')
+    if len(lst) != 2: ## [CONDITION](len(lst) != 2)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    if not lst[1] in suf: ## [CONDITION](not lst[1] in suf)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    if len(lst[0]) == 0: ## [CONDITION](len(lst[0]) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    if not lst[0][0].isalpha(): ## [CONDITION](not lst[0][0].isalpha())=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return 'No'
+    t = len([x for x in lst[0] if x.isdigit()])
+    if t > 3: ## [CONDITION](t > 3)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    return 'Yes'

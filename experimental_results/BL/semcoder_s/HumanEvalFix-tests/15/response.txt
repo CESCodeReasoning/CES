@@ -1,0 +1,111 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def string_sequence(n: int) -> str:
+    return ' '.join([str(x) for x in range(n)])
+
+Tests:
+def check(string_sequence):
+    assert string_sequence(0) == '0'
+    assert string_sequence(3) == '0 1 2 3'
+    assert string_sequence(10) == '0 1 2 3 4 5 6 7 8 9 10'
+
+check(string_sequence)
+
+The code should satisfy the following natural language specification:
+Write a Python function `string_sequence(n: int) -> str` to solve the following problem:
+Return a string containing space-delimited numbers starting from 0 upto n inclusive.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return ' '.join([str(x) for x in range(n)])
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def sum_of_squares(n: int) -> int:
+    return sum([x**2 for x in range(n+1)])
+
+Tests:
+def check(sum_of_squares):
+    assert sum_of_squares(0) == 0
+    assert sum_of_squares(1) == 1
+    assert sum_of_squares(2) == 5
+    assert sum_of_squares(3) == 14
+    assert sum_of_squares(4) == 35
+    assert sum_of_squares(5) == 75
+
+check(sum_of_squares)
+
+The code should satisfy the following natural language specification:
+Write a Python function `sum_of_squares(n: int) -> int` to solve the following problem:
+Calculate the sum of squares of numbers from 0 to n inclusive.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return sum([x**2 for x in range(n+1)])
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def sum_of_cubes(n: int) -> int:
+    return sum([x**3 for x in range(n+1)])
+
+Tests:
+def check(sum_of_cubes):
+    assert sum_of_cubes(0) == 0
+    assert sum_of_cubes(1) == 1
+    assert sum_of_cubes(2) == 9
+    assert sum_of_cubes(3) == 36
+    assert sum_of_cubes(4) == 100
+    assert sum_of_cubes(5) == 225
+
+check(sum_of_cubes)
+
+The code should satisfy the following natural language specification:
+Write a Python function `sum_

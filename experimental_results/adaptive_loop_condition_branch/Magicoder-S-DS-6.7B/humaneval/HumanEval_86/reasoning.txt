@@ -1,0 +1,8 @@
+The function anti_shuffle takes a string s as input and returns a new string.
+The function splits the input string into words and sorts each word alphabetically.
+The sorted words are then joined back together with a space in between each word.
+
+For example, if the input string is 'Hi', the function will split it into ['Hi'] and sort each word alphabetically.
+The sorted words are then joined back together with a space in between each word, resulting in 'iH'.
+
+Therefore, the output of executing the function anti_shuffle on the input 'Hi' is 'iH'.

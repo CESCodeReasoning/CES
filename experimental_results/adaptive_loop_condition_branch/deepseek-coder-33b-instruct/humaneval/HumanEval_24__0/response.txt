@@ -1,0 +1,31 @@
+
+[REASONING]
+The function `largest_divisor` is called with ( n = 49 ).
+
+Iteration 1:
+    -The number '49' is not divisible by '48', so the condition `n % i == 0` is false.
+Iteration 2:
+    -The number '49' is not divisible by '47', so the condition `n % i == 0` is false.
+.
+.
+.
+Iteration 48:
+    -The number '49' is not divisible by '1', so the condition `n % i == 0` is false.
+Iteration 49:
+    -The number '49' is divisible by '49', so the condition `n % i == 0` is true.
+    -Action: The function returns '49'.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def largest_divisor(n: int) -> int:
+    for i in reversed(range(n)): ## [STATE]i=[48, 47, 46, ..., 1] ## [STATE]reversed(range(n))=[48, 47, 46, ..., 1] ## [STATE]range(n)=[0, 1, 2, ..., 48, 49]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[False, False, False, ..., True] ## [BRANCH]taken=[N, N, N, ..., Y]
+            return i
+[/ANSWER]
+
+[OUTPUT]
+49
+[/OUTPUT]

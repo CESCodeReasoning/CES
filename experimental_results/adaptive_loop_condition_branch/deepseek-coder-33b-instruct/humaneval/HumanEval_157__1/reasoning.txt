@@ -1,0 +1,9 @@
+The function right_angle_triangle takes three numbers a, b, and c as input and returns a boolean value. The function checks if the triangle with sides a, b, and c is a right-angled triangle.
+
+A triangle is right-angled if the square of the length of one side is equal to the sum of the squares of the lengths of the other two sides.
+
+In the given input, a = 1, b = 1, and c = 1.
+
+The function checks if a*a is equal to b*b + c*c, b*b is equal to a*a + c*c, or c*c is equal to a*a + b*b.
+
+In this case, none of these conditions are true, so the function returns False.

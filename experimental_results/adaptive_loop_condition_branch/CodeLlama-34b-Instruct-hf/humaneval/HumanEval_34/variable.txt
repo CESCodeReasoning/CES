@@ -1,0 +1,2 @@
+def unique(my_list):
+    return sorted(list(set(my_list)))

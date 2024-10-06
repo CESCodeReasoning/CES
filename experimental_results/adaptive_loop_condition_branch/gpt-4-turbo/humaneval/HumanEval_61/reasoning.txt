@@ -1,0 +1,14 @@
+The function `correct_bracketing` is called with the input string "(()())".
+The function checks if the brackets in the string are correctly nested and balanced.
+
+1. Initialize `depth` to 0.
+2. Iterate over each character in the string:
+   - First character '(' increases `depth` to 1.
+   - Second character '(' increases `depth` to 2.
+   - Third character ')' decreases `depth` to 1.
+   - Fourth character '(' increases `depth` to 2.
+   - Fifth character ')' decreases `depth` to 1.
+   - Sixth character ')' decreases `depth` to 0.
+3. After the loop, check if `depth` equals 0, which it does, indicating that the brackets are correctly nested and balanced.
+
+Therefore, the function returns `True`, indicating that the input string "(()())" is correctly bracketed.

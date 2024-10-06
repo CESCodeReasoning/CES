@@ -1,0 +1,23 @@
+The function triples_sum_to_zero(l) takes a list of numbers([1, 2, 3, 7]) as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+The inner loop iterates through each element in the list to compare it against the others.
+The innermost loop iterates through each element in the list to compare it against the others.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, k in the innermost loop is 2.
+    - numbers[i]=1: compare with 2, 3, 7:
+        - When j = 1 (numbers[j]=2), the condition `numbers[i] + numbers[j] + numbers[k] == 0` is False, the if branch is not taken.
+        - When j = 2 (numbers[j]=3), the condition `numbers[i] + numbers[j] + numbers[k] == 0` is False, the if branch is not taken.
+        - When j = 3 (numbers[j]=7), the condition `numbers[i] + numbers[j] + numbers[k] == 0` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, k in the innermost loop is 3.
+    - numbers[i]=2: compare with 3, 7:
+        - When j = 2 (numbers[j]=3), the condition `numbers[i] + numbers[j] + numbers[k] == 0` is False, the if branch is not taken.
+        - When j = 3 (numbers[j]=7), the condition `numbers[i] + numbers[j] + numbers[k] == 0` is False, the if branch is not taken.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, k in the innermost loop is 3.
+    - numbers[i]=3: compare with 7:
+        - When j = 3 (numbers[j]=7), the condition `numbers[i] + numbers[j] + numbers[k] == 0` is False, the if branch is not taken.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 3, k in the innermost loop is 3.
+    - numbers[i]=7: compare with 7:
+        - When j = 3 (numbers[j]=7), the condition `numbers[i] + numbers[j] + numbers[k] == 0` is False, the if branch is not taken.

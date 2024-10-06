@@ -1,0 +1,6 @@
+The function `split_words` is called with an empty string ("").
+The condition `" " in txt` is False, so the first branch is not taken.
+The condition `"," in txt` is also False, so the second branch is not taken.
+The third branch is taken, and the function returns the length of a list comprehension.
+The list comprehension iterates over each character in the input string, and checks if the character is lowercase and has an even Unicode code point.
+The length of the resulting list is returned as the output of the function.

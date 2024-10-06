@@ -1,0 +1,12 @@
+The function `file_name_check` is called with the argument `"example.txt"`.
+1. The function defines a list `suf` containing valid file extensions: `['txt', 'exe', 'dll']`.
+2. The file name `"example.txt"` is split by the dot separator resulting in the list `lst = ['example', 'txt']`.
+3. The function checks if the length of `lst` is not equal to 2. Since the length is 2, this condition is false.
+4. Next, it checks if the extension part (`lst[1]` which is `'txt'`) is not in the list `suf`. Since `'txt'` is in `suf`, this condition is false.
+5. Then, it checks if the length of the base name (`lst[0]` which is `'example'`) is 0. Since the length is 7, this condition is false.
+6. It checks if the first character of the base name (`lst[0][0]` which is `'e'`) is not alphabetic. Since `'e'` is alphabetic, this condition is false.
+7. Finally, it calculates `t` as the number of digits in the base name. In this case, `t = 0` since there are no digits in `'example'`.
+8. It checks if `t` is greater than 3. Since `t = 0`, this condition is false.
+9. Since none of the conditions that would return `'No'` are met, the function returns `'Yes'`.
+
+Therefore, the final output of the function `file_name_check("example.txt")` is `'Yes'`.

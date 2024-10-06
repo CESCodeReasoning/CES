@@ -1,0 +1,12 @@
+The function string_sequence takes an integer n as input and returns a string.
+
+The function uses a list comprehension to generate a list of integers from 0 to n (inclusive). The range function generates the sequence of numbers from 0 to n, and the str function converts each number to a string.
+
+The join method is then used to concatenate all the strings in the list, with a space character (' ') as the separator.
+
+So, if we call string_sequence with the input 10, the function will return the string "0 1 2 3 4 5 6 7 8 9 10".
+
+This is because the range function generates the sequence [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], and the join method concatenates these strings with a space in between each one.
+
+The output of executing the function string_sequence on the input 10 is "0 1 2 3 4 5 6 7 8 9 10".
+

@@ -1,0 +1,71 @@
+The function find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.2]) takes a list of numbers as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (idx=0, elem=1.0):
+    - `idx` is 0, `elem` is 1.0, `idx2` in the inner loop is 1, 2, 3, 4 and 5.
+    - `elem2` is 2.0, 3.0, 4.0, 5.0 and 2.2.
+    - When `idx2` is 1 (`elem2` is 2.0), the condition `idx != idx2` is True, the if branch is taken.
+        - Since `distance` is None, the if branch of the nested if statement is taken.
+        - Calculate the distance between 1.0 and 2.0, which is 1.0.
+        - Set `closest_pair` to (1.0, 2.0).
+    - When `idx2` is 2 (`elem2` is 3.0), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 1.0 and 3.0, which is 2.0.
+        - Since the new distance (2.0) is greater than the current distance (1.0), the else branch of the nested if statement is taken.
+    - When `idx2` is 3 (`elem2` is 4.0), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 1.0 and 4.0, which is 3.0.
+        - Since the new distance (3.0) is greater than the current distance (1.0), the else branch of the nested if statement is taken.
+    - When `idx2` is 4 (`elem2` is 5.0), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 1.0 and 5.0, which is 4.0.
+        - Since the new distance (4.0) is greater than the current distance (1.0), the else branch of the nested if statement is taken.
+    - When `idx2` is 5 (`elem2` is 2.2), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 1.0 and 2.2, which is 1.2.
+        - Since the new distance (1.2) is less than the current distance (1.0), the if branch of the nested if statement is taken.
+        - Update `closest_pair` to (1.0, 2.2).
+Second Iteration (idx=1, elem=2.0):
+    - `idx` is 1, `elem` is 2.0, `idx2` in the inner loop is 2, 3, 4 and 5.
+    - `elem2` is 3.0, 4.0, 5.0 and 2.2.
+    - When `idx2` is 2 (`elem2` is 3.0), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 2.0 and 3.0, which is 1.0.
+        - Since the new distance (1.0) is less than the current distance (1.2), the if branch of the nested if statement is taken.
+        - Update `closest_pair` to (2.0, 3.0).
+    - When `idx2` is 3 (`elem2` is 4.0), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 2.0 and 4.0, which is 2.0.
+        - Since the new distance (2.0) is greater than the current distance (1.0), the else branch of the nested if statement is taken.
+    - When `idx2` is 4 (`elem2` is 5.0), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 2.0 and 5.0, which is 3.0.
+        - Since the new distance (3.0) is greater than the current distance (1.0), the else branch of the nested if statement is taken.
+    - When `idx2` is 5 (`elem2` is 2.2), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 2.0 and 2.2, which is 0.2.
+        - Since the new distance (0.2) is less than the current distance (1.0), the if branch of the nested if statement is taken.
+        - Update `closest_pair` to (2.0, 2.2).
+Third Iteration (idx=2, elem=3.0):
+    - `idx` is 2, `elem` is 3.0, `idx2` in the inner loop is 3, 4 and 5.
+    - `elem2` is 4.0, 5.0 and 2.2.
+    - When `idx2` is 3 (`elem2` is 4.0), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 3.0 and 4.0, which is 1.0.
+        - Since the new distance (1.0) is less than the current distance (0.2), the if branch of the nested if statement is taken.
+        - Update `closest_pair` to (3.0, 4.0).
+    - When `idx2` is 4 (`elem2` is 5.0), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 3.0 and 5.0, which is 2.0.
+        - Since the new distance (2.0) is greater than the current distance (1.0), the else branch of the nested if statement is taken.
+    - When `idx2` is 5 (`elem2` is 2.2), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 3.0 and 2.2, which is 0.8.
+        - Since the new distance (0.8) is less than the current distance (1.0), the if branch of the nested if statement is taken.
+        - Update `closest_pair` to (3.0, 2.2).
+Fourth Iteration (idx=3, elem=4.0):
+    - `idx` is 3, `elem` is 4.0, `idx2` in the inner loop is 4 and 5.
+    - `elem2` is 5.0 and 2.2.
+    - When `idx2` is 4 (`elem2` is 5.0), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 4.0 and 5.0, which is 1.0.
+        - Since the new distance (1.0) is less than the current distance (0.8), the if branch of the nested if statement is taken.
+        - Update `closest_pair` to (4.0, 5.0).
+    - When `idx2` is 5 (`elem2` is 2.2), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 4.0 and 2.2, which is 1.8.
+        - Since the new distance (1.8) is greater than the current distance (0.8), the else branch of the nested if statement is taken.
+Fifth Iteration (idx=4, elem=5.0):
+    - `idx` is 4, `elem` is 5.0, `idx2` in the inner loop is 5.
+    - `elem2` is 2.2.
+    - When `idx2` is 5 (`elem2` is 2.2), the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 5.0 and 2.2, which is 2.8.
+        - Since the new distance (2.8) is greater than the current distance (0.8), the else branch of the nested if statement is taken.
+Sixth Iteration (idx=5, elem=

@@ -1,0 +1,53 @@
+The function `fix_spaces` is called with ( text = "Example" ).
+Inside the function, a variable `new_text` is initialized to an empty string.
+The loop iterates through the characters in the string.
+First Iteration ( i = 0 ):
+    - The character at index 0 is 'E'.
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is false. The third branch is taken.
+    - `new_text += text[i]` appends 'E' to `new_text`.
+    - `start` and `end` are both set to 1.
+Second Iteration ( i = 1 ):
+    - The character at index 1 is 'x'.
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is false. The third branch is taken.
+    - `new_text += text[i]` appends 'x' to `new_text`.
+    - `start` and `end` are both set to 2.
+Third Iteration ( i = 2 ):
+    - The character at index 2 is 'a'.
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is false. The third branch is taken.
+    - `new_text += text[i]` appends 'a' to `new_text`.
+    - `start` and `end` are both set to 3.
+Fourth Iteration ( i = 3 ):
+    - The character at index 3 is 'm'.
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is false. The third branch is taken.
+    - `new_text += text[i]` appends 'm' to `new_text`.
+    - `start` and `end` are both set to 4.
+Fifth Iteration ( i = 4 ):
+    - The character at index 4 is 'p'.
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is false. The third branch is taken.
+    - `new_text += text[i]` appends 'p' to `new_text`.
+    - `start` and `end` are both set to 5.
+Sixth Iteration ( i = 5 ):
+    - The character at index 5 is 'l'.
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is false. The third branch is taken.
+    - `new_text += text[i]` appends 'l' to `new_text`.
+    - `start` and `end` are both set to 6.
+Seventh Iteration ( i = 6 ):
+    - The character at index 6 is 'e'.
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The condition `end - start > 2` is false. The second branch is not taken.
+    - The condition `end - start > 0` is false. The third branch is taken.
+    - `new_text += text[i]` appends 'e' to `new_text`.
+    - `start` and `end` are both set to 7.
+After the loop completes, the function returns the value of `new_text`, which is "Example".

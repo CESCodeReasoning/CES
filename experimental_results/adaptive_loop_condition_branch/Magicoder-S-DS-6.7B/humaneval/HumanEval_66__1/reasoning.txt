@@ -1,0 +1,6 @@
+The function `digitSum` is called with ( s = "aAaaaXa" ).
+The condition `s == ""` is false, therefore the else branch is taken.
+The function `ord` is used to get the ASCII value of the character. If the character is uppercase, its ASCII value is returned, otherwise 0 is returned.
+The sum of all ASCII values of uppercase characters in the string "aAaaaXa" is calculated.
+
+Therefore, the final output of the function `digitSum("aAaaaXa")` is 130.

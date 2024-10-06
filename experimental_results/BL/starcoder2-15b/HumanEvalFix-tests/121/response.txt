@@ -1,0 +1,17 @@
+```response
+                return sum([x for idx, x in enumerate(lst) if idx%2==1 and x%2==1])
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def solution(lst):
+    return sum([x for idx, x in enumerate(lst) if idx%2==1 and x%2==1])
+
+Tests:
+def check(solution):
+
+    # Check some simple cases
+    assert solution([5, 8, 7, 1])    == 12
+    assert

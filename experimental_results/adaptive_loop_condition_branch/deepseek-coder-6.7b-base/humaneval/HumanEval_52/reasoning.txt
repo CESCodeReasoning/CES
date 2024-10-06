@@ -1,0 +1,13 @@
+The function `below_threshold` is called with ( l = [1, 20, 4, 10], t = 21 ).
+The function iterates through each element in the list `l`.
+
+Iteration 1:
+    -The element 1 is less than 21, so the function continues to the next iteration.
+Iteration 2:
+    -The element 20 is greater than or equal to 21, so the function returns False.
+Iteration 3:
+    -The element 4 is less than 21, so the function continues to the next iteration.
+Iteration 4:
+    -The element 10 is less than 21, so the function continues to the next iteration.
+
+Since all elements in the list are less than 21, the function returns True.

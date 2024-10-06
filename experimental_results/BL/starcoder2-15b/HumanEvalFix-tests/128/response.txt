@@ -1,0 +1,16 @@
+```response
+                prod = 0 if 0 in arr else (-1) ** 2 * len(list(filter(lambda x: x < 0, arr)))
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s):
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("abba") == True
+    assert is_palindrome("abcba") == True
+    assert is_palindrome("abcc

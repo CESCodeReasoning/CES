@@ -1,0 +1,17 @@
+The function `rounded_avg` is called with ( n = 350, m = 902 ).
+First, the condition ( m < n ) is checked, which is False, so the if branch is not taken.
+Then, a variable `summation` is initialized to 0.
+The loop iterates from 350 through 902 (since ( n = 350 ) and ( m = 902 )).
+First Iteration (i = 350):
+    `summation += i` updates `summation` to 350 ( 0 + 350 = 350 ).
+Second Iteration (i = 351):
+    `summation += i` updates `summation` to 701 ( 350 + 351 = 701 ).
+Third Iteration (i = 352)
+    `summation += i` updates `summation` to 1053 ( 701 + 352 = 1053 ).
+...
+553rd Iteration (i = 902)
+    `summation += i` updates `summation` to 405453 ( 350000 + 5453 = 405453 ).
+After the loop completes, the function returns `bin(round(summation / (m - n + 1)))`.
+The result of `summation / (m - n + 1)` is 45050.33333333333.
+The result of `round(summation / (m - n + 1))` is 45050.
+The result of `bin(round(summation / (m - n + 1)))` is '0b101011111111111111111111111110'.

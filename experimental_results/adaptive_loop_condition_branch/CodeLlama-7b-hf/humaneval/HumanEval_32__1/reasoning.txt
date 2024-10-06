@@ -1,0 +1,27 @@
+The function `sum_up_to_n` is called with ( n = 5 ).
+Inside the function, a variable `total` is initialized to 0.
+The loop iterates from 1 through 5 (since ( n = 5 )).
+First Iteration (current_number = 1):
+    - current_number <= 5 when current_number=1
+    - The conditin `current_number >= 1 and current_number < 3` is true. The first branch is taken.
+    -`total += 1` updates `total` to 1 ( 0 + 1 = 1 ).
+Second Iteration (current_number = 2):
+    - current_number <= 5 when current_number=2
+    - The conditin `current_number >= 1 and current_number < 3` is true.
+    -`total += 1` updates `total` to 2 ( 1 + 1 = 2 ).
+Third Iteration (current_number = 3)
+    - current_number <= 5 when current_number=3.
+    - The condition `current_number >= 1 and current_number < 3` is false. The first branch is not taken.
+    - The condition `current_number < 5` is true. The second branch is taken.
+    -`total += 2` updates `total` to 4 ( 2 + 2 = 4 ).
+Fourth Iteration (current_number = 4)
+    -current_number <= 5 when current_number=4.
+    - The condition `current_number >= 1 and current_number < 3` is false. The first branch is not taken.
+    - The condition `current_number < 5` is true. The second branch is taken.
+    -`total += current_number` updates `total` to 6 ( 4 + 2 = 6 ).
+Fifth Iteration (current_number = 5)
+    -  current_number <= 5 when current_number=5
+    - The condition `current_number >= 1 and current_number < 3` is false. The first branch is not taken.
+    - The condition `current_number < 5` is false. The second branch is not taken.
+    - The else branch is taken. `total *= 4` updates `total` to 24 ( 6 * 4 = 24 ).
+After the loop completes, the function returns the value of `total`, which is now 24.

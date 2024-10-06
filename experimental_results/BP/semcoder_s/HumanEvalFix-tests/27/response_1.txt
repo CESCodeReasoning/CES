@@ -1,0 +1,104 @@
+<｜begin▁of▁sentence｜>
+
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def flip_case(string: str) -> str:
+    return string.lower()
+
+Tests:
+def check(flip_case):
+    assert flip_case('') == ''
+    assert flip_case('Hello!') == 'hELLO!'
+    assert flip_case('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'
+
+check(flip_case)
+
+The code should satisfy the following natural language specification:
+Write a Python function `flip_case(string: str) -> str` to solve the following problem:
+For a given string, flip lowercase characters to uppercase and uppercase to lowercase.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def find_common_elements(list1: List[int], list2: List[int]) -> List[int]:
+    common_elements = []
+    for elem in list1:
+        if elem in list2:
+            common_elements.append(elem)
+    return common_elements
+
+Tests:
+def check(find_common_elements):
+    assert find_common_elements([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]) == [3, 4, 5]
+    assert find_common_elements([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]) == []
+    assert find_common_elements([1, 1, 1, 1, 1], [1, 1, 1, 1, 1]) == [1, 1, 1, 1, 1]
+    assert find_common_elements([1, 2, 3, 4, 5], [5, 5, 5, 5, 5]) == [5]
+
+check(find_common_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `find_common_elements(list1: List[int], list2: List[int]) -> List[int]` to solve the following problem:
+Find common elements between two given lists.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def find_unique_elements(numbers: List[int]) -> List[int]:
+    unique_elements = []
+    for elem in numbers:
+        if elem not in unique_elements:
+            unique_elements

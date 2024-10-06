@@ -1,0 +1,7 @@
+The function `fib4` is called with ( n = 5 ).
+The function starts by initializing a list `results` with the first four Fibonacci numbers [0, 0, 2, 0].
+The condition `(n < 4)` is checked. Since `n` is 5, the condition is not satisfied, so the if branch is not taken.
+The for loop starts at 4 and continues until `n` (5).
+In the first iteration (i = 4), the last four numbers in `results` are [0, 0, 2, 0]. Their sum (0 + 0 + 2 + 0 = 2) is appended to `results`. The first element (0) is popped from `results`.
+In the second iteration (i = 5), the last four numbers in `results` are [0, 2, 0, 2]. Their sum (0 + 2 + 0 + 2 = 4) is appended to `results`. The first element (0) is popped from `results`.
+After the loop completes, the last element in `results` is returned as the output.

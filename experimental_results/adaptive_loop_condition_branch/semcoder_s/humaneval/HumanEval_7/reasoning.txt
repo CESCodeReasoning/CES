@@ -1,0 +1,8 @@
+The function `filter_by_substring` takes a list of strings and a substring as input and returns a new list containing only the strings that contain the specified substring.
+
+- The function uses a list comprehension to iterate over each string in the input list.
+- For each string, it checks if the substring is present in the string using the `in` operator.
+- If the substring is found in the string, the string is included in the new list.
+- Finally, the function returns the new list containing strings that contain the specified substring.
+
+Since the input list is empty, the output list will also be empty.

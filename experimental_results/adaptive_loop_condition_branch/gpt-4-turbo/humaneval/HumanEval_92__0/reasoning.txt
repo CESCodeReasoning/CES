@@ -1,0 +1,9 @@
+The function `any_int` is called with the arguments (x = 2, y = 1, z = 1).
+First, the function checks if all the arguments `x`, `y`, and `z` are integers. Since all are integers, the condition `(isinstance(x, int) and isinstance(y, int) and isinstance(z, int))` evaluates to True, and the branch is taken.
+Next, the function checks if the sum of any two arguments equals the third argument:
+   - `x + y == z` evaluates to `2 + 1 == 1`, which is False.
+   - `x + z == y` evaluates to `2 + 1 == 1`, which is False.
+   - `y + z == x` evaluates to `1 + 1 == 2`, which is True.
+Since one of the conditions is True, the function returns True.
+
+Therefore, the final output of the function `any_int(2, 1, 1)` is True.

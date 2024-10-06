@@ -1,0 +1,7 @@
+The function `rounded_avg` is called with ( n = 560, m = 851 ).
+The condition `m < n` is not satisfied, so the else branch is taken.
+The loop iterates from 560 through 851 (since ( n = 560, m = 851 )).
+The summation of all numbers from 560 to 851 inclusive is calculated.
+The average is calculated by dividing the summation by the count of numbers from 560 to 851 inclusive.
+The average is then rounded and converted to binary representation.
+The binary representation of the rounded average is returned.

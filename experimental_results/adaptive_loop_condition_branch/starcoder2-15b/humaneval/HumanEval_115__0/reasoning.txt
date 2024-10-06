@@ -1,0 +1,11 @@
+The function max_fill takes two arguments: grid, which is a 2D array of integers, and capacity, which is an integer.
+The function returns the maximum number of fills that can be made in the grid, where each fill is a contiguous block of 1s with a capacity of at most capacity.
+
+To determine the output of executing the function max_fill on the input [[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2, we need to understand the logic of the function.
+
+The function first calculates the sum of each row in the grid using the sum function.
+Then, it divides each sum by capacity using the / operator.
+Finally, it rounds each division up using the math.ceil function.
+The sum of these rounded divisions is the maximum number of fills that can be made in the grid.
+
+Therefore, the output of executing the function max_fill on the input [[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2 is 5.

@@ -1,0 +1,28 @@
+[REASONING]
+The function `fib` is called with ( n = 11 ).
+The first condition ( n == 0 ) is false, so the first branch is not taken.
+The second condition ( n == 1 ) is also false, so the second branch is not taken.
+Therefore, the function proceeds to the recursive case.
+The function calls itself with ( n = 10 ), which in turn calls itself with ( n = 9 ), and so on, until it reaches the base case ( n = 0 ).
+At this point, the function returns 0.
+The function then backtracks, returning the sum of the results of the two recursive calls.
+For example, when the function returns from the call with ( n = 10 ), it returns 0 + 1 = 1.
+When the function returns from the call with ( n = 11 ), it returns 1 + 1 = 2.
+Therefore, the final output of the function `fib(11)` is 2.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def fib(n: int):
+    if n == 0: ## [CONDITION](n == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 0
+    if n == 1: ## [CONDITION](n == 1)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 1
+    return fib(n - 1) + fib(n - 2)
+[/ANSWER]
+
+[OUTPUT]
+2
+[/OUTPUT]

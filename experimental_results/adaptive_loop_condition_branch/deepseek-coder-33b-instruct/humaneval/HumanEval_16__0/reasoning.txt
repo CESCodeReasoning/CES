@@ -1,0 +1,11 @@
+The function count_distinct_characters takes a string as input and returns the count of distinct characters in the string.
+
+The function first converts the string to lowercase using the lower() method. This is done to ensure that the function treats uppercase and lowercase characters as the same.
+
+Then, it converts the string to a set. In Python, a set is an unordered collection of unique elements. By converting the string to a set, we automatically remove any duplicate characters.
+
+Finally, it returns the length of the set. The length of a set is the number of unique elements it contains, so this gives us the count of distinct characters in the original string.
+
+To determine the output of executing the function count_distinct_characters on the input 'abcde', we need to count the number of distinct characters in the string 'abcde'.
+
+The string 'abcde' contains 5 distinct characters ('a', 'b', 'c', 'd', 'e'). Therefore, the output of executing the function count_distinct_characters on the input 'abcde' is 5.

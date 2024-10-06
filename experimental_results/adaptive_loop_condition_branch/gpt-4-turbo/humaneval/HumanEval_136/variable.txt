@@ -1,0 +1,10 @@
+from typing import *
+
+def largest_smallest_integers(lst):
+    # [STATE] smallest = [] [/STATE]
+    smallest = list(filter(lambda x: x < 0, lst))  # [CONDITION] x < 0 [/CONDITION]
+    # [STATE] largest = [2, 4, 1, 3, 5, 7] [/STATE]
+    largest = list(filter(lambda x: x > 0, lst))  # [CONDITION] x > 0 [/CONDITION]
+    # [BRANCH] N [/BRANCH] for max(smallest) since smallest is empty
+    # [BRANCH] Y [/BRANCH] for min(largest) since largest is not empty
+    return (max(smallest) if smallest else None, min(largest) if largest else None)

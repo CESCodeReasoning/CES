@@ -1,0 +1,5 @@
+The function `choose_num` is called with ( x = 33, y = 12354 ).
+The condition `x > y` is not satisfied (33 is not greater than 12354).
+The condition `y % 2 == 0` is not satisfied (12354 is not even).
+The condition `x == y` is not satisfied (33 is not equal to 12354).
+Therefore, the function returns `y - 1`, which is `12354 - 1 = 12353`.

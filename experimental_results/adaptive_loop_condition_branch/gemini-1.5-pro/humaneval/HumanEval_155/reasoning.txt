@@ -1,0 +1,12 @@
+The function `even_odd_count` is called with ( num = 7 ).
+Inside the function, two variables `even_count` and `odd_count` are initialized to 0.
+The function then converts the absolute value of the input number to a string and iterates over each character in the string.
+For each character, it converts it back to an integer and checks if it is even or odd.
+If the integer is even, it increments the `even_count` by 1.
+If the integer is odd, it increments the `odd_count` by 1.
+After iterating over all the characters in the string, the function returns a tuple containing the `even_count` and the `odd_count`.
+
+In this case, the input number is 7, so the absolute value is also 7.
+The string representation of 7 is "7", so the function iterates over the single character "7".
+The integer value of "7" is 7, which is odd, so the `odd_count` is incremented to 1.
+The function then returns the tuple (0, 1), indicating that there are 0 even digits and 1 odd digit in the input number.

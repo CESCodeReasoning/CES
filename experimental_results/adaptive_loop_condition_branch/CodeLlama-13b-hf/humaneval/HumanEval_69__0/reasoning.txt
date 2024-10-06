@@ -1,0 +1,55 @@
+The function `search` is called with ( lst = [2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1] ).
+Inside the function, a variable `frq` is initialized to [0] * (max(lst) + 1).
+
+Iteration 1:
+    - The value of `frq[2]` is 0, so it becomes 1.
+Iteration 2:
+    - The value of `frq[7]` is 0, so it becomes 1.
+Iteration 3:
+    - The value of `frq[8]` is 0, so it becomes 2.
+Iteration 4:
+    - The value of `frq[8]` is 2, so it becomes 3.
+Iteration 5:
+    - The value of `frq[4]` is 0, so it becomes 1.
+Iteration 6:
+    - The value of `frq[8]` is 3, so it becomes 4.
+Iteration 7:
+    - The value of `frq[7]` is 1, so it becomes 2.
+Iteration 8:
+    - The value of `frq[3]` is 0, so it becomes 1.
+Iteration 9:
+    - The value of `frq[9]` is 0, so it becomes 1.
+Iteration 10:
+    - The value of `frq[6]` is 0, so it becomes 1.
+Iteration 11:
+    - The value of `frq[5]` is 0, so it becomes 1.
+Iteration 12:
+    - The value of `frq[10]` is 0, so it becomes 1.
+Iteration 13:
+    - The value of `frq[4]` is 1, so it becomes 2.
+Iteration 14:
+    - The value of `frq[3]` is 1, so it becomes 2.
+Iteration 15:
+    - The value of `frq[6]` is 1, so it becomes 2.
+Iteration 16:
+    - The value of `frq[7]` is 2, so it becomes 3.
+Iteration 17:
+    - The value of `frq[1]` is 0, so it becomes 1.
+Iteration 18:
+    - The value of `frq[7]` is 3, so it becomes 4.
+Iteration 19:
+    - The value of `frq[4]` is 2, so it becomes 3.
+Iteration 20:
+    - The value of `frq[10]` is 1, so it becomes 2.
+Iteration 21:
+    - The value of `frq[8]` is 4, so it becomes 5.
+Iteration 22:
+    - The value of `frq[1]` is 1, so it becomes 2.
+Iteration 23:
+    - The value of `frq[10]` is 2, so it becomes 3.
+Iteration 24:
+    - The value of `frq[8]` is 5, so it becomes 6.
+Iteration 25:
+    - The value of `frq[1]` is 2, so it becomes 3.
+
+The value of `ans` is 6.

@@ -1,0 +1,20 @@
+The function `match_parens` is called with the list `['()(', ')']`.
+Inside the function:
+1. The function concatenates the first and second elements of the list to form `S1 = '()()'`.
+2. It then concatenates the second and first elements to form `S2 = ')()('`.
+
+For `S1 = '()()'`:
+- The function `check` is called with `s = '()()'`.
+- Iteration over each character in `s`:
+  - For '(': `val` is incremented by 1.
+  - For ')': `val` is decremented by 1.
+  - For '(': `val` is incremented by 1.
+  - For ')': `val` is decremented by 1.
+- After all iterations, `val` equals 0, indicating that parentheses are balanced. The function returns `True`.
+
+For `S2 = ')()('`:
+- The function `check` is called with `s = ')()('`.
+- Iteration over each character in `s`:
+  - For ')': `val` is decremented by 1 (val becomes negative), immediately returning `False` as it indicates unbalanced parentheses.
+
+Since `check(S1)` returns `True`, the function `match_parens` returns 'Yes', indicating that at least one combination of the list elements results in a string with balanced parentheses.

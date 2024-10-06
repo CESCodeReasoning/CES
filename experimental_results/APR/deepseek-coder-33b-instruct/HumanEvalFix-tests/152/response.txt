@@ -1,0 +1,21 @@
+The bug in the `has_close_elements` function is that it calculates the distance between two elements as `elem - elem2`, but it should be `abs(elem - elem2)` to get the absolute difference.
+
+The bug in the `compare` function is that it calculates the difference as `abs(x-y)+abs(y-x)`, but it should be `abs(x-y)`.
+
+Here is the fixed code:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def compare(game,guess):
+    return [abs(x-y) for x,y in zip(game,guess)]
+```

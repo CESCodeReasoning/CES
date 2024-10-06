@@ -1,0 +1,8 @@
+from typing import *
+
+
+def count_distinct_characters(string: str) -> int:
+    # [STATE] string.lower() is 'abcde' [/STATE]
+    # [STATE] set(string.lower()) is {'a', 'b', 'c', 'd', 'e'} [/STATE]
+    # [STATE] len(set(string.lower())) is 5 [/STATE]
+    return len(set(string.lower()))

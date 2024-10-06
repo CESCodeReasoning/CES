@@ -1,0 +1,8 @@
+The function `any_int` is called with ( x = 2, y = 3, z = 1 ).
+The first condition checks if all three arguments are integers, which is true.
+The second condition checks if any two of the three arguments add up to the third argument.
+(2 + 3 == 1) is False, (2 + 1 == 3) is False, and (3 + 1 == 2) is True.
+Therefore, the second condition is True.
+The function returns True.
+
+Therefore, the final output of the function `any_int(2, 3, 1)` is True.

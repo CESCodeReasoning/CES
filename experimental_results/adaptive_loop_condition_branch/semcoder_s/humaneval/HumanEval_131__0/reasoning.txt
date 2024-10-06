@@ -1,0 +1,15 @@
+The function `digits` is called with ( n = 120 ).
+Inside the function, a variable `product` is initialized to 1 and `odd_count` to 0.
+The loop iterates over each digit in the string representation of `n` (which is "120").
+First Iteration (digit = '1'):
+   - The digit '1' is converted to an integer (int_digit = 1).
+   - '1' is odd, so the product is updated to 1 * 1 = 1, and `odd_count` becomes 1.
+Second Iteration (digit = '2'):
+   - The digit '2' is converted to an integer (int_digit = 2).
+   - '2' is even, so no updates are made.
+Third Iteration (digit = '0'):
+   - The digit '0' is converted to an integer (int_digit = 0).
+   - '0' is even, so no updates are made.
+After the loop, since `odd_count` is not 0 (it's 1), the function returns the `product`, which is 1.
+
+Therefore, the final output of the function `digits(120)` is 1.

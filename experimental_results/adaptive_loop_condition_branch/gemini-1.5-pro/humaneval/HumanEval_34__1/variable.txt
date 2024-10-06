@@ -1,0 +1,8 @@
+from typing import *
+
+
+def unique(l: list):
+    # Convert the list to a set to remove duplicates
+    set_l = set(l)
+    # Convert the set back to a list and sort it
+    return sorted(list(set_l))

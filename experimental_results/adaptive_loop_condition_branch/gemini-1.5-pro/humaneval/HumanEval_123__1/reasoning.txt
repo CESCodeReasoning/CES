@@ -1,0 +1,14 @@
+The function `get_odd_collatz` is called with ( n = 5 ).
+The function first checks if n is even. Since n is odd, the else branch is taken and `odd_collatz` is initialized to [5].
+The function then enters a while loop that continues as long as n is greater than 1.
+Inside the loop, the function checks if n is even. Since n is odd, the else branch is taken and n is updated to ( n * 3 + 1 = 16 ).
+The function then checks if n is odd. Since n is even, the else branch is not taken.
+The function then updates n to ( n / 2 = 8 ).
+The function then checks if n is odd. Since n is even, the else branch is not taken.
+The function then updates n to ( n / 2 = 4 ).
+The function then checks if n is odd. Since n is even, the else branch is not taken.
+The function then updates n to ( n / 2 = 2 ).
+The function then checks if n is odd. Since n is even, the else branch is not taken.
+The function then updates n to ( n / 2 = 1 ).
+The function then checks if n is odd. Since n is odd, the if branch is taken and 1 is appended to `odd_collatz`.
+The function then exits the while loop and returns the sorted `odd_collatz`, which is [1, 5].

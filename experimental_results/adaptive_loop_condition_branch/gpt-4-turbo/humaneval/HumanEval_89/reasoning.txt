@@ -1,0 +1,16 @@
+The function `encrypt` is called with the string "hi".
+Inside the function, a string `d` containing the alphabet is defined, and an empty string `out` is initialized to store the result.
+
+Iteration 1:
+    - The character 'h' is in the alphabet string `d`.
+    - The index of 'h' in `d` is 7. The encryption shifts this index by 4 (2*2), resulting in an index of 11.
+    - The character at index 11 in `d` is 'l'.
+    - 'l' is appended to `out`.
+
+Iteration 2:
+    - The character 'i' is in the alphabet string `d`.
+    - The index of 'i' in `d` is 8. The encryption shifts this index by 4, resulting in an index of 12.
+    - The character at index 12 in `d` is 'm'.
+    - 'm' is appended to `out`.
+
+The final encrypted string is "lm".

@@ -1,0 +1,9 @@
+The function `compare_one` is called with ( a = 1, b = 2 ).
+`temp_a` and `temp_b` are assigned the values of `a` and `b` respectively.
+`temp_a` is a string, so `temp_a` is assigned the value of `temp_a.replace(',','.')`.
+`temp_b` is also a string, so `temp_b` is assigned the value of `temp_b.replace(',','.')`.
+The condition `float(temp_a) == float(temp_b)` is evaluated.
+Since `temp_a` and `temp_b` are both strings, they are converted to floats using the `float()` method.
+The condition `float(temp_a) == float(temp_b)` is true, therefore the if branch is taken and the method returns `None`.
+
+Therefore, the final output of the function `compare_one(1, 2)` is `None`.

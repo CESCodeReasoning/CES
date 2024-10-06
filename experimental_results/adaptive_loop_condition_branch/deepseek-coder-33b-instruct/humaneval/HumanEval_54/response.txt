@@ -1,0 +1,10 @@
+
+[REASONING]
+The function same_chars takes two strings s0 and s1 as input. It converts each string into a set of characters (set(s0) and set(s1)). A set in Python is an unordered collection of unique elements. Therefore, the function checks if the two sets are equal. If they are, it means that the two strings have the same characters, regardless of their order.
+
+In the given example, 'eabcdzzzz' and 'dddzzzzzzzddeddabc' have the same characters, but in different orders. Therefore, the function should return True.
+[/REASONING]
+
+[OUTPUT]
+True
+[/OUTPUT]

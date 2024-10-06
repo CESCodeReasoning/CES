@@ -1,0 +1,24 @@
+
+[REASONING]
+The function `largest_divisor` is called with ( n = 100 ).
+
+Iteration 1:
+    -The number 100 is not divisible by 100, so the condition `n % i == 0` is false.
+Iteration 2:
+    -The number 100 is divisible by 99, so the condition `n % i == 0` is true.
+    -Action: The function returns 99.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def largest_divisor(n: int) -> int:
+    for i in reversed(range(n)): ## [STATE]i=[100, 99, 98, ..., 2, 1][/STATE][STATE]reversed(range(n))=[100, 99, 98, ..., 2, 1][/STATE][STATE]range(n)=[0, 1, ..., 98, 99, 100][/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[False, False, False, ..., False, True][/CONDITION][BRANCH]taken=[N, N, N, ..., N, Y][/BRANCH]
+            return i
+[/ANSWER]
+
+[OUTPUT]
+99
+[/OUTPUT]

@@ -1,0 +1,10 @@
+The function encode takes a string message as input and returns a new string where all the vowels are replaced with their uppercase counterparts, and all the consonants are replaced with their lowercase counterparts.
+
+To determine the output of executing the function encode on the input "I DoNt KnOw WhAt tO WrItE", we need to follow the steps below:
+
+1. First, we need to identify the vowels in the input string. The vowels in this case are "a", "e", "i", "o", and "u".
+2. Next, we need to create a dictionary that maps each vowel to its uppercase counterpart. This dictionary is created using a list comprehension, where each element is a tuple containing the vowel and its uppercase counterpart.
+3. Then, we need to swap the case of the input string. This is done by calling the swapcase() method on the input string.
+4. Finally, we need to iterate over each character in the swapped string and replace each vowel with its uppercase counterpart. This is done using a list comprehension, where each element is a tuple containing the character and its uppercase counterpart.
+
+The output of executing the function encode on the input "I DoNt KnOw WhAt tO WrItE" is "i dOnT kNoW wHaT tO wRiTe".

@@ -1,0 +1,3 @@
+The function reverse_delete takes two strings s and c as input and returns a tuple containing the reversed string s and a boolean value indicating whether s is a palindrome.
+To determine the output of executing the function reverse_delete on the input "mamma" and "mia", we need to reverse the string "mamma" and check if it is a palindrome.
+Therefore, the output of executing the function reverse_delete on the input "mamma" and "mia" is ("amama", True).

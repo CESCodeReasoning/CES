@@ -1,0 +1,51 @@
+The function `search` is called with ( lst = [2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1] ).
+Inside the function, a variable `frq` is initialized to a list of zeros with the length of the maximum element in the input list plus 1.
+
+Iteration 1:
+    -The element '2' is not in the list, so frq[2] becomes 0.
+Iteration 2:
+    -The element '7' is not in the list, so frq[7] becomes 0.
+Iteration 3:
+    -The element '8' is in the list, so frq[8] becomes 1.
+Iteration 4:
+    -The element '8' is in the list, so frq[8] becomes 2.
+Iteration 5:
+    -The element '4' is in the list, so frq[4] becomes 1.
+Iteration 6:
+    -The element '8' is in the list, so frq[8] becomes 3.
+Iteration 7:
+    -The element '7' is in the list, so frq[7] becomes 1.
+Iteration 8:
+    -The element '3' is not in the list, so frq[3] becomes 0.
+Iteration 9:
+    -The element '9' is not in the list, so frq[9] becomes 0.
+Iteration 10:
+    -The element '6' is not in the list, so frq[6] becomes 0.
+Iteration 11:
+    -The element '5' is not in the list, so frq[5] becomes 0.
+Iteration 12:
+    -The element '10' is in the list, so frq[10] becomes 1.
+Iteration 13:
+    -The element '4' is in the list, so frq[4] becomes 2.
+Iteration 14:
+    -The element '3' is not in the list, so frq[3] becomes 0.
+Iteration 15:
+    -The element '6' is not in the list, so frq[6] becomes 0.
+Iteration 16:
+    -The element '7' is in the list, so frq[7] becomes 2.
+Iteration 17:
+    -The element '1' is not in the list, so frq[1] becomes 0.
+Iteration 18:
+    -The element '7' is in the list, so frq[7] becomes 3.
+Iteration 19:
+    -The element '4' is in the list, so frq[4] becomes 3.
+Iteration 20:
+    -The element '10' is in the list, so frq[10] becomes 2.
+Iteration 21:
+    -The element '8' is in the list, so frq[8] becomes 4.
+Iteration 22:
+    -The element '1' is not in the list, so frq[1] becomes 0.
+
+The function then returns the first index `i` such that `frq[i] >= i`, which is 4.
+
+Therefore, the final output of the function `search([2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1])` is 4.

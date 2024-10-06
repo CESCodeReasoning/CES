@@ -1,0 +1,10 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: get_positive
+main.py(3):     return [e for e in l if e > 0]
+ --- modulename: main, funcname: <listcomp>
+main.py(3):     return [e for e in l if e > 0]
+main.py(3):     return [e for e in l if e > 0]
+main.py(3):     return [e for e in l if e > 0]
+main.py(3):     return [e for e in l if e > 0]
+main.py(3):     return [e for e in l if e > 0]
+main.py(3):     return [e for e in l if e > 0]

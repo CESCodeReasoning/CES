@@ -1,0 +1,8 @@
+The function `largest_divisor` is called with ( n = 3 ).
+Inside the function, a loop is initiated from n-1 to 0 (since the smallest divisor of a number is 1, and the largest divisor of a number is the number itself).
+Iteration 1:
+    - The number 3 is not divisible by 0 (which would cause a ZeroDivisionError), so it skips to the next iteration.
+Iteration 2:
+    - The number 3 is not divisible by 1, so it skips to the next iteration.
+Iteration 3:
+    - The number 3 is divisible by 3, so it returns 3 as the largest divisor.

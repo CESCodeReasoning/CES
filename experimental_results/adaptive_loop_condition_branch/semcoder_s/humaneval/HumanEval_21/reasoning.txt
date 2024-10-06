@@ -1,0 +1,7 @@
+The function `rescale_to_unit` takes a list of floating-point numbers as input and returns a new list where each number is rescaled to the range [0, 1] based on the minimum and maximum values in the input list.
+
+1. `min_number = min(numbers)`: Finds the minimum number in the input list.
+2. `max_number = max(numbers)`: Finds the maximum number in the input list.
+3. `return [(x - min_number) / (max_number - min_number) for x in numbers]`: Rescales each number in the input list to the range [0, 1] based on the minimum and maximum values.
+
+Therefore, the output of executing the function `rescale_to_unit([2.0, 49.9])` is `[0.0, 1.0]`.

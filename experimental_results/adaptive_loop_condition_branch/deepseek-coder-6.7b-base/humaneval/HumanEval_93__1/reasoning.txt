@@ -1,0 +1,5 @@
+The function encode takes a string message as input and returns the encoded message.
+The encoded message is obtained by performing the following steps:
+1. The vowels in the input message are replaced with their corresponding vowels in the alphabet shifted by 2 positions.
+2. The case of the letters in the input message is swapped.
+3. The resulting encoded message is returned.

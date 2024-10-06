@@ -1,0 +1,34 @@
+
+[REASONING]
+The function `get_odd_collatz` is called with ( n = 5 ).
+First, it checks if `n` is even or odd. If `n` is even, it initializes an empty list `odd_collatz`. If `n` is odd, it initializes `odd_collatz` with `n`.
+Then, it enters a loop where it repeatedly divides `n` by 2 if it's even, or multiplies `n` by 3 and adds 1 if it's odd.
+If `n` becomes odd during this process, it is appended to `odd_collatz`.
+The loop continues until `n` becomes 1.
+Finally, it returns the sorted list `odd_collatz`.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def get_odd_collatz(n):
+    if n % 2 == 0: ## [CONDITION](n % 2 == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        odd_collatz = []
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        odd_collatz = [n]
+    while n > 1: ## [STATE](n > 1)=[True, True, True, True][/STATE][STATE]n=[5, 16, 8, 4, 2][/STATE]
+        if n % 2 == 0: ## [CONDITION](n % 2 == 0)=[False, True, True, False][/CONDITION][BRANCH]taken=[N, N, Y, N][/BRANCH]
+            n = n / 2
+        else: ## [BRANCH]taken=[Y, N, N, N][/BRANCH]
+            n = n * 3 + 1
+
+        if n % 2 == 1: ## [CONDITION](n % 2 == 1)=[False, True, False, True][/CONDITION][BRANCH]taken=[N, Y, N, Y][/BRANCH]
+            odd_collatz.append(int(n))
+
+    return sorted(odd_collatz)
+[/ANSWER]
+
+[OUTPUT]
+[5, 16, 8, 4, 2]
+[/OUTPUT]

@@ -1,0 +1,10 @@
+from typing import *
+
+def anti_shuffle(s: str) -> str:
+    # [STATE] s = "Hi" [/STATE]
+    return ' '.join([''.join(sorted(list(i))) for i in s.split(' ')])
+    # [STATE] s.split(' ') = ["Hi"] [/STATE]
+    # [STATE] list(i) for i in ["Hi"] = [['H', 'i']] [/STATE]
+    # [STATE] sorted(list(i)) for i in ["Hi"] = [['H', 'i']] [/STATE]
+    # [STATE] ''.join(sorted(list(i))) for i in ["Hi"] = ["Hi"] [/STATE]
+    # [STATE] ' '.join(...) = "Hi" [/STATE]

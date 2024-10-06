@@ -1,0 +1,22 @@
+The function `histogram` is called with ( test = 'a b b a' ).
+Inside the function, a dictionary `dict1` is initialized.
+The string `test` is split into a list `list1` using the split function.
+The variable `t` is initialized to 0.
+
+Iteration 1:
+    -The word 'a' appears twice in the list, so `t` becomes 2.
+Iteration 2:
+    -The word 'b' appears twice in the list, but `t` is already 2, so no change.
+Iteration 3:
+    -The word 'b' appears twice in the list, but `t` is already 2, so no change.
+Iteration 4:
+    -The word 'a' appears twice in the list, but `t` is already 2, so no change.
+
+Since `t` is 2, the condition `t>0` is true.
+
+Iteration 5:
+    -The word 'a' appears twice in the list, so it is added to the dictionary `dict1` with a value of 2.
+Iteration 6:
+    -The word 'b' appears twice in the list, but it is already in the dictionary, so no change.
+
+The function returns the dictionary `dict1` which is {'a': 2}.

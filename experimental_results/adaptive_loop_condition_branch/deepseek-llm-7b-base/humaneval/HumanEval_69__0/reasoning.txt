@@ -1,0 +1,15 @@
+The function `count_vowels_consonants` is called with ( input_string = "Hello, World!" ).
+Inside the function, a variable `vowel_count` and `consonant_count` are initialized to 0.
+
+Iteration 1:
+    -The character 'H' is not in vowels,so consonant_count becomes 1.
+Iteration 2:
+    -The character 'e' is in vowels, so vowel_count becomes 1.
+Iteration 3:
+    -The character 'l' is not in vowels, so consonant_count becomes 2.
+Iteration 4:
+    -The character 'l' is not in vowels, so consonant_count becomes 3.
+Iteration 5:
+    -The character 'o' is in vowels, so vowel_count becomes 2.
+Iteration 6:
+    -The character ',' is not in vowels, so consonant_count becomes

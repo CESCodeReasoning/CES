@@ -1,0 +1,5 @@
+The function `starts_one_ends` is called with ( n = 2 ).
+The condition `n == 1` is false, therefore the else branch is taken.
+The else branch's action: `return 18 * (10 ** (n - 2))` returns 18 * (10 ** (2 - 2)) = 18 * (10 ** 0) = 18 * 1 = 18.
+
+Therefore, the final output of the function `starts_one_ends(2)` is 18.

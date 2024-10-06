@@ -1,0 +1,27 @@
+[REASONING]
+The function `remove_duplicates` is designed to remove all elements from a list that appear more than once. It takes a list of integers as input and returns a list of integers with duplicates removed.
+
+1. The function starts by importing the `collections` module and then uses the `Counter` class from this module to count the occurrences of each element in the input list.
+2. A `Counter` object `c` is created from the input list `numbers`. This object holds the count of each element in the list.
+3. The function then uses a list comprehension to create a new list. This list includes only those elements `n` from the original list `numbers` for which the count `c[n]` is less than or equal to 1. This effectively filters out any numbers that appear more than once.
+4. The resulting list, which contains no duplicates, is returned.
+
+In this specific case, the input list is empty. Therefore:
+- The `Counter` object `c` will also be empty because there are no elements to count.
+- The list comprehension will iterate over an empty list, resulting in an empty list being returned.
+
+Thus, the output for the input `[]` will be an empty list `[]`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    import collections
+    c = collections.Counter(numbers)  # [STATE] c = Counter() [/STATE]
+    return [n for n in numbers if c[n] <= 1]  # [STATE] return [] [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+[]
+[/OUTPUT]

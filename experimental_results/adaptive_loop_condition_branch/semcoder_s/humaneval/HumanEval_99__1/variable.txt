@@ -1,0 +1,23 @@
+from typing import *
+
+
+def closest_integer(value):
+    from math import floor, ceil
+
+    if value.count('.') == 1: ## [CONDITION](value.count('.') == 1)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+        # remove trailing zeros
+        while (value[-1] == '0'): ## [STATE](value[(- 1)] == '0')=True[/STATE][STATE]value[(- 1)]='0'[/STATE]
+            value = value[:-1]
+
+    num = float(value)
+    if value[-2:] == '.5': ## [CONDITION](value[-2:] == '.5')=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+        if num > 0:
+            res = ceil(num)
+        else: ## [BRANCH]taken=N[/BRANCH]
+            res = floor(num)
+    elif len(value) > 0: ## [BRANCH]taken=Y[/BRANCH]
+        res = int(round(num))
+    else: ## [BRANCH]taken=N[/BRANCH]
+        res = 0
+
+    return res

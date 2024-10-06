@@ -1,0 +1,120 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def common(l1: list, l2: list):
+    ret = set()
+    for e1 in l1:
+        for e2 in l2:
+            ret.add(e1)
+    return sorted(list(ret))
+
+Tests:
+def check(common):
+    assert common([1, 4, 3, 34, 653, 2, 5], [5, 7, 1, 5, 9, 653, 121]) == [1, 5, 653]
+    assert common([5, 3, 2, 8], [3, 2]) == [2, 3]
+    assert common([4, 3, 2, 8], [3, 2, 4]) == [2, 3, 4]
+    assert common([4, 3, 2, 8], []) == []
+
+check(common)
+
+The code should satisfy the following natural language specification:
+Write a Python function `common(l1: list, l2: list)` to solve the following problem:
+Return sorted unique common elements for two lists.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+            ret.add(e1)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s: str) -> bool:
+    s = s.lower()
+    s = ''.join(c for c in s if c.isalnum())
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("A man, a plan, a canal: Panama") == True
+    assert is_palindrome("race a car") == False
+    assert is_palindrome("") == True
+    assert is_palindrome(" ") == True
+    assert is_palindrome("a") == True
+    assert is_palindrome("ab") == False
+
+check(is_palindrome)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(s: str) -> bool` to solve the following problem:
+Check if a given string is a palindrome.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return s == s[::-1]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_valid_ip(ip: str) -> bool:
+    parts = ip.split('.')
+    if len(parts) != 4:
+        return False
+    for part in parts:
+        if not part.isdigit():
+            return False
+        i = int(part)
+        if i < 0 or i > 255:
+            return False
+    return True
+
+Tests:
+def check(is_valid_ip):
+    assert is_valid_ip("192.168.0.1") == True
+    assert is_valid_ip("192.168.0") == False
+    assert is_valid_ip("192.168.0.01") == False
+    assert is_valid_ip("

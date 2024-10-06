@@ -1,0 +1,13 @@
+The function `rolling_max` is called with ( numbers = [1, 2, 3, 4] ).
+Inside the function, a variable `running_max` is initialized to None.
+
+Iteration 1:
+    -The first element of the list is 1, so running_max becomes 1.
+Iteration 2:
+    -The second element of the list is 2, so running_max becomes 2.
+Iteration 3:
+    -The third element of the list is 3, so running_max becomes 3.
+Iteration 4:
+    -The fourth element of the list is 4, so running_max becomes 4.
+
+The function returns the list [1, 2, 3, 4].

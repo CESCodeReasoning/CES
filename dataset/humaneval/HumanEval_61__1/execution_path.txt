@@ -1,0 +1,9 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: correct_bracketing
+main.py(5):     depth = 0
+main.py(6):     for b in brackets:
+main.py(7):         if b == "(":
+main.py(8):             depth += 1
+main.py(11):         if depth < 0:
+main.py(6):     for b in brackets:
+main.py(13):     return depth == 0

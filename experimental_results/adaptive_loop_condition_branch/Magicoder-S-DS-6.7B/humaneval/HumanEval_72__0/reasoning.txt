@@ -1,0 +1,10 @@
+The function `will_it_fly` is called with ( q = [3, 2, 3], w = 1 ).
+The condition `sum(q) > w` is false. The first branch is not taken.
+The while loop iterates over the list `q` from the start to the end and from the end to the start.
+The first iteration (i = 0, j = 2):
+    - q[i] (which is 3) is not equal to q[j] (which is 3). The function returns False.
+The second iteration (i = 1, j = 1):
+    - q[i] (which is 2) is equal to q[j] (which is 2). The function continues.
+The third iteration (i = 2, j = 0):
+    - q[i] (which is 3) is not equal to q[j] (which is 3). The function returns False.
+The while loop completes, and the function returns True.

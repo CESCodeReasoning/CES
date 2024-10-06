@@ -1,0 +1,5 @@
+The function `next_smallest` takes a list `lst` as input and returns the second smallest element in the list.
+
+- The list `lst` is sorted and duplicates are removed.
+- If the length of the list is less than 2, the function returns `None` as there are not enough elements to find the second smallest one.
+- Otherwise, the function returns the second element of the sorted list, which is the second smallest element in the original list.

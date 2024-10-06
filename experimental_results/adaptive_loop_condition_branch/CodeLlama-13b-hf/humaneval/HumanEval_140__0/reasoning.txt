@@ -1,0 +1,47 @@
+The function `fix_spaces` is called with ( text = "Exa   mple" ).
+Inside the function, a variable `new_text` is initialized to "".
+The loop iterates from 0 through 10 (since ( len(text) = 10 )).
+First Iteration (i = 0):
+    - i < 10 when i=0
+    - The conditin `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "E" ( "" + "E" = "E" ).
+    - `start, end = i + 1, i + 1` updates `start` to 1 and `end` to 1.
+Second Iteration (i = 1):
+    - i < 10 when i=1
+    - The conditin `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 2.
+Third Iteration (i = 2):
+    - i < 10 when i=2
+    - The conditin `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 3.
+Fourth Iteration (i = 3):
+    - i < 10 when i=3
+    - The conditin `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 4.
+Fifth Iteration (i = 4):
+    - i < 10 when i=4
+    - The conditin `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Exa" ( "E" + "xa" = "Exa" ).
+    - `start, end = i + 1, i + 1` updates `start` to 5 and `end` to 5.
+Sixth Iteration (i = 5):
+    - i < 10 when i=5
+    - The conditin `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 6.
+Seventh Iteration (i = 6):
+    - i < 10 when i=6
+    - The conditin `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 7.
+Eighth Iteration (i = 7):
+    - i < 10 when i=7
+    - The conditin `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 8.
+Ninth Iteration (i = 8):
+    - i < 10 when i=8
+    - The conditin `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Exa   m" ( "Exa" + "   m" = "Exa   m" ).
+    - `start, end = i + 1, i + 1` updates `start` to 9 and `end` to 9.
+Tenth Iteration (i = 9):
+    - i < 10 when i=9
+    - The conditin `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 10.
+After the loop completes, the function returns the value of `new_text`, which is now "Exa   mple".

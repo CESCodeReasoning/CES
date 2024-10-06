@@ -1,0 +1,22 @@
+from typing import *
+def fix_spaces(text):
+    new_text = ""
+    i = 0
+    start, end = 0, 0
+    while i < len(text): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6, 7][/STATE][STATE]len(text)=[8][/STATE]
+        if text[i] == " ": ## [CONDITION](text[i] == " ")=[False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N][/BRANCH]
+            end += 1
+        else: ## [BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+            if end - start > 2: ## [CONDITION](end - start > 2)=[False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N][/BRANCH]
+                new_text += "-"+text[i]
+            elif end - start > 0: ## [CONDITION](end - start > 0)=[True, True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N][/BRANCH]
+                new_text += "_"*(end - start)+text[i]
+            else: ## [BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+                new_text += text[i]
+            start, end = i+1, i+1
+        i+=1
+    if end - start > 2: ## [CONDITION](end - start > 2)=[False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N][/BRANCH]
+        new_text += "-"
+    elif end - start > 0: ## [CONDITION](end - start > 0)=[True, True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N][/BRANCH]
+        new_text += "_"
+    return new_text

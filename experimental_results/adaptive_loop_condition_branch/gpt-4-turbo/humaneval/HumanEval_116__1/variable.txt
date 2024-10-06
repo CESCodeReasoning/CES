@@ -1,0 +1,10 @@
+from typing import *
+
+
+def sort_array(arr):
+    # [STATE] arr is [] [/STATE]
+    # First sort: sorts the array in ascending order
+    first_sort = sorted(arr)  # [STATE] first_sort is [] [/STATE]
+    # Second sort: sorts the array based on the count of '1's in the binary representation of each element
+    final_sort = sorted(first_sort, key=lambda x: bin(x)[2:].count('1'))  # [STATE] final_sort is [] [/STATE]
+    return final_sort

@@ -1,0 +1,9 @@
+The function `prod_signs` is called with ( arr = [1, 2, 2, -4] ).
+The condition `not arr` is false, so the if branch is not taken.
+The condition `0 in arr` is false, so the if branch is not taken.
+The condition `len(list(filter(lambda x: x < 0, arr)))` is 1, so the if branch is taken.
+The condition `prod` is -1, so the if branch is taken.
+The condition `sum([abs(i) for i in arr])` is 9, so the if branch is taken.
+The condition `prod * sum([abs(i) for i in arr])` is -9, so the if branch is taken.
+
+Therefore, the final output of the function `prod_signs([1, 2, 2, -4])` is -9.

@@ -1,0 +1,6 @@
+Fixed Code:
+```python
+def string_to_md5(text):
+    import hashlib
+    return hashlib.md5(text.encode()).hexdigest() if text else None
+```

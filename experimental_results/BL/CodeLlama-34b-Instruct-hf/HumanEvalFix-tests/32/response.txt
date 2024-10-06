@@ -1,0 +1,56 @@
+```response
+        if poly(xs, center) * poly(xs, begin) > 0:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+def prime_factors(n: int) -> List[int]:
+    if n < 2:
+        return []
+    factors = []
+    i = 2
+    while i * i <= n:
+        if n % i:
+            i += 1
+        else:
+            n //= i
+            factors.append(i)
+    if n > 1:
+        factors.append(n)
+    return factors
+
+
+def prime_factorization(n: int) -> List[int]:
+    if n < 2:
+        return []
+    factors = prime_factors(n)
+    if len(factors) == 1:
+        return factors
+    else:
+        return prime_factorization(factors[0]) + prime_factorization(factors[1:])
+
+Tests:
+def check(prime_factorization):
+    assert prime_factorization(1) == []
+    assert prime_factorization(2) == [2]
+    assert prime_factorization(3) == [3]
+    assert prime_factorization(4) == [2, 2]
+    assert prime_factorization(5) == [5]
+    assert prime_factorization(6) == [2, 3]
+    assert prime_factorization(7) == [7]
+    assert prime_factorization(8) == [2, 2, 2]
+    assert prime_factorization(9) == [3, 3]
+    assert prime_factorization(10) == [2, 5]
+    assert prime_factorization(11) == [11]
+    assert prime_factorization(12) == [2, 2, 3

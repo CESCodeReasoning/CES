@@ -1,0 +1,7 @@
+The function add_elements takes an array arr and an integer k as input. It returns the sum of the first k elements of the array that have a string representation with length at most 2.
+To determine the output of executing the function add_elements on the input [11,21,3,90,5,6,7,8,9] and 4, we need to follow the steps below:
+
+1. The function first takes the first 4 elements of the array [11,21,3,90] and sums them up, which gives us 44.
+2. Then, it takes the next 4 elements of the array [5,6,7,8] and sums them up, which gives us 26.
+3. Finally, it takes the last element of the array [9] and sums it up, which gives us 9.
+Therefore, the output of executing the function add_elements on the input [11,21,3,90,5,6,7,8,9] and 4 is 77.

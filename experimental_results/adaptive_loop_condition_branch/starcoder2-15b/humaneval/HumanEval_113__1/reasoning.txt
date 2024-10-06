@@ -1,0 +1,23 @@
+The function `odd_count` is called with (lst = ['271', '137', '314']).
+Inside the function, a variable `res` is initialized to an empty list.
+The loop iterates over each element in the list `lst`.
+
+First Iteration (arr = '271'):
+    The `sum` function is called with a generator expression that calculates the sum of the number of odd digits in the string '271'.
+    The generator expression iterates over each digit in the string '271' and checks if the digit is odd by checking if the remainder of the digit divided by 2 is 1.
+    The `sum` function returns the sum of the number of odd digits in the string '271', which is 2.
+    The string 'the number of odd elements 2n the str2n the string 2 of the 2nput.' is appended to the list `res`.
+
+Second Iteration (arr = '137'):
+    The `sum` function is called with a generator expression that calculates the sum of the number of odd digits in the string '137'.
+    The generator expression iterates over each digit in the string '137' and checks if the digit is odd by checking if the remainder of the digit divided by 2 is 1.
+    The `sum` function returns the sum of the number of odd digits in the string '137', which is 3.
+    The string 'the number of odd elements 3n the str3n the string 3 of the 3nput.' is appended to the list `res`.
+
+Third Iteration (arr = '314'):
+    The `sum` function is called with a generator expression that calculates the sum of the number of odd digits in the string '314'.
+    The generator expression iterates over each digit in the string '314' and checks if the digit is odd by checking if the remainder of the digit divided by 2 is 1.
+    The `sum` function returns the sum of the number of odd digits in the string '314', which is 1.
+    The string 'the number of odd elements 1n the str1n the string 1 of the 1nput.' is appended to the list `res`.
+
+After the loop completes, the function returns the list `res`, which contains the strings 'the number of odd elements 2n the str2n the string 2 of the 2nput.', 'the number of odd elements 3n the str3n the string 3 of the 3nput.', and 'the number of odd elements 1n the str1n the string 1 of the 1nput.'.

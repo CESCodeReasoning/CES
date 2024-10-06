@@ -1,0 +1,41 @@
+The function `match_parens` is called with ( lst = ['())(', '()'] ).
+Inside the function, a variable `S1` and `S2` are initialized to the concatenation of the first and second elements of `lst` respectively.
+
+The function `check` is called with `S1` as an argument.
+Inside the function, a variable `val` is initialized to 0.
+
+The loop iterates through the characters of `S1`.
+First Iteration (i = '('):
+   - `i` is '(', which satisfies ( i == '(' ).
+   - The condition `i == '('` is true.
+   - Action: `val` becomes 1 (`val = val + 1`).
+Second Iteration (i = ')'):
+   - `i` is ')', which does not satisfy ( i == '(' ).
+   - The condition `i == '('` is false.
+   - Action: `val` becomes 0 (`val = val - 1`).
+Third Iteration (i = '('):
+   - `i` is '(', which satisfies ( i == '(' ).
+   - The condition `i == '('` is true.
+   - Action: `val` becomes 1 (`val = val + 1`).
+Fourth Iteration (i = ')'):
+   - `i` is ')', which does not satisfy ( i == '(' ).
+   - The condition `i == '('` is false.
+   - Action: `val` becomes 0 (`val = val - 1`).
+Fifth Iteration (i = '('):
+   - `i` is '(', which satisfies ( i == '(' ).
+   - The condition `i == '('` is true.
+   - Action: `val` becomes 1 (`val = val + 1`).
+Sixth Iteration (i = ')'):
+   - `i` is ')', which does not satisfy ( i == '(' ).
+   - The condition `i == '('` is false.
+   - Action: `val` becomes 0 (`val = val - 1`).
+Seventh Iteration (i = ')'):
+   - `i` is ')', which does not satisfy ( i == '(' ).
+   - The condition `i == '('` is false.
+   - Action: `val` becomes -1 (`val = val - 1`).
+
+The loop completes, and the function `check` returns `False` since `val` is less than 0.
+
+The function `match_parens` returns `'Yes'` since `check(S1)` is `False` and `check(S2)` is `True`.
+
+Therefore, the final output of the function `match_parens(['())(', '()'])` is `'Yes'`.

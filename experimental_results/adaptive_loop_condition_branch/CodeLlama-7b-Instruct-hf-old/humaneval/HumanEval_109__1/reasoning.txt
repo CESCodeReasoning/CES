@@ -1,0 +1,10 @@
+The function `move_one_ball` is called with ( arr = [3, 5, 4, 1, 2] ).
+Inside the function, a variable `sorted_array` is initialized to the sorted version of `arr`.
+A variable `my_arr` is initialized to the same elements as `arr`, but with the first element moved to the end.
+
+Iteration 1:
+    -The minimum value in `arr` is 1, and its index is 3.
+    -The `my_arr` is initialized to [3, 5, 4, 1, 2] with the first element moved to the end.
+    -The condition `my_arr[i] != sorted_array[i]` is true for all elements, so the function returns `True`.
+
+Therefore, the final output of the function `move_one_ball([3, 5, 4, 1, 2])` is `True`.

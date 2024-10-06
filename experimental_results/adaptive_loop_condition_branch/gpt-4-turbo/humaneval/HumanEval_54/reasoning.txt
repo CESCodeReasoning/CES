@@ -1,0 +1,8 @@
+The function `same_chars` takes two strings, `s0` and `s1`, as input. It returns `True` if both strings contain the exact same unique characters, regardless of the order or frequency of those characters in each string. This is achieved by converting each string into a set of characters and then comparing these sets for equality.
+
+For the input strings 'eabcdzzzz' and 'dddzzzzzzzddeddabc':
+1. Convert 'eabcdzzzz' to a set of characters, which results in the set `{'e', 'a', 'b', 'c', 'd', 'z'}`.
+2. Convert 'dddzzzzzzzddeddabc' to a set of characters, which also results in the set `{'e', 'a', 'b', 'c', 'd', 'z'}`.
+3. Compare the two sets. Since both sets are equal, the function returns `True`.
+
+Thus, the output of executing the function `same_chars` on the given inputs is `True`.

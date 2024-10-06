@@ -1,0 +1,5 @@
+The function add takes a list lst as input and returns the sum of the even numbers in lst, skipping the first element.
+To determine the output of executing the function add on the input [4, 0, 6, 7], we need to consider the elements in the list [4, 0, 6, 7] starting from the second element (index 1).
+The second element is 0, which is an even number. Therefore, we add 0 to the sum.
+The fourth element is 7, which is an odd number. Therefore, we skip it.
+Therefore, the output of executing the function add on the input [4, 0, 6, 7] is 0.

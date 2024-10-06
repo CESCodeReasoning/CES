@@ -1,0 +1,17 @@
+The function `rolling_max` is called with ( numbers = [4, 3, 2, 1] ).
+Inside the function, a variable `running_max` is initialized to None and an empty list `result` is created.
+
+Iteration 1:
+    - `running_max` is None, so `n` (4) is assigned to `running_max`.
+    - 4 is appended to `result`.
+Iteration 2:
+    - `running_max` is not None, so `running_max` is updated to the maximum of `running_max` and `n` (3).
+    - 4 is appended to `result`.
+Iteration 3:
+    - `running_max` is not None, so `running_max` is updated to the maximum of `running_max` and `n` (2).
+    - 4 is appended to `result`.
+Iteration 4:
+    - `running_max` is not None, so `running_max` is updated to the maximum of `running_max` and `n` (1).
+    - 4 is appended to `result`.
+
+Therefore, the final output of the function `rolling_max([4, 3, 2, 1])` is [4, 4, 4, 4].

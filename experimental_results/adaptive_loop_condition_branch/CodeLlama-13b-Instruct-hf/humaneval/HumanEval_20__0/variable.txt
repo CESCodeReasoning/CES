@@ -1,0 +1,17 @@
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    closest_pair = None
+    distance = None
+
+    for idx, elem in enumerate(numbers): ## [STATE]idx=[0, 1, 2, 3, 4][/STATE][STATE]elem=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE][STATE]enumerate(numbers)=[[0, 1.1], [1, 2.2], [2, 3.1], [3, 4.1], [4, 5.1]][/STATE][STATE]numbers=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE]
+        for idx2, elem2 in enumerate(numbers): ## [STATE]idx2=[0, 1, 2, 3, 4][/STATE][STATE]elem2=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE][STATE]enumerate(numbers)=[[0, 1.1], [1, 2.2], [2, 3.1], [3, 4.1], [4, 5.1]][/STATE][STATE]numbers=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE]
+            if idx != idx2: ## [CONDITION](idx != idx2)=[T, T, T, T, T][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, Y][/BRANCH]
+                if distance is None: ## [CONDITION](distance is None)=[T, F, F, F, F][/CONDITION][BRANCH]taken=[Y, N, N, N, N][/BRANCH]
+                    distance = abs(elem - elem2)
+                    closest_pair = tuple(sorted([elem, elem2]))
+                else: ## [BRANCH]taken=[N, Y, Y, Y, Y][/BRANCH]
+                    new_distance = abs(elem - elem2)
+                    if new_distance < distance: ## [CONDITION](new_distance < distance)=[F, T, T, T, T][/CONDITION][BRANCH]taken=[N, Y, Y, Y, Y][/BRANCH]
+                        distance = new_distance
+                        closest_pair = tuple(sorted([elem, elem2]))
+
+    return closest_pair

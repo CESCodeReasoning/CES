@@ -1,0 +1,113 @@
+The function `factorize` is called with ( n = 3 * 19 * 3 * 19 ).
+Inside the function, a variable `fact` is initialized to an empty list.
+Inside the function, a variable `i` is initialized to 2.
+The loop iterates from 2 through 19 (since ( n = 3 * 19 * 3 * 19 )).
+First Iteration (i = 2):
+    - i <= 19 when i=2
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 2 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 * 3 * 19 // 2 = 3 * 19 * 3.
+Second Iteration (i = 3):
+    - i <= 19 when i=3
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 3 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 * 3 // 3 = 3 * 19.
+Third Iteration (i = 4):
+    - i <= 19 when i=4
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The condition `n % i == 0` is false. The second branch is not taken.
+    - The else branch is not taken.
+    - `i += 1` updates `i` to 5.
+Fourth Iteration (i = 5):
+    - i <= 19 when i=5
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 5 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 // 5 = 3 * 19.
+Fifth Iteration (i = 6):
+    - i <= 19 when i=6
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The condition `n % i == 0` is false. The second branch is not taken.
+    - The else branch is not taken.
+    - `i += 1` updates `i` to 7.
+Sixth Iteration (i = 7):
+    - i <= 19 when i=7
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 7 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 // 7 = 3 * 19.
+Seventh Iteration (i = 8):
+    - i <= 19 when i=8
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The condition `n % i == 0` is false. The second branch is not taken.
+    - The else branch is not taken.
+    - `i += 1` updates `i` to 9.
+Eighth Iteration (i = 9):
+    - i <= 19 when i=9
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 9 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 // 9 = 3 * 19.
+Ninth Iteration (i = 10):
+    - i <= 19 when i=10
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The condition `n % i == 0` is false. The second branch is not taken.
+    - The else branch is not taken.
+    - `i += 1` updates `i` to 11.
+Tenth Iteration (i = 11):
+    - i <= 19 when i=11
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 11 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 // 11 = 3 * 19.
+Eleventh Iteration (i = 12):
+    - i <= 19 when i=12
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The condition `n % i == 0` is false. The second branch is not taken.
+    - The else branch is not taken.
+    - `i += 1` updates `i` to 13.
+Twelfth Iteration (i = 13):
+    - i <= 19 when i=13
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 13 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 // 13 = 3 * 19.
+Thirteenth Iteration (i = 14):
+    - i <= 19 when i=14
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The condition `n % i == 0` is false. The second branch is not taken.
+    - The else branch is not taken.
+    - `i += 1` updates `i` to 15.
+Fourteenth Iteration (i = 15):
+    - i <= 19 when i=15
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 15 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 // 15 = 3 * 19.
+Fifteenth Iteration (i = 16):
+    - i <= 19 when i=16
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The condition `n % i == 0` is false. The second branch is not taken.
+    - The else branch is not taken.
+    - `i += 1` updates `i` to 17.
+Sixteenth Iteration (i = 17):
+    - i <= 19 when i=17
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 17 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 // 17 = 3 * 19.
+Seventeenth Iteration (i = 18):
+    - i <= 19 when i=18
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The condition `n % i == 0` is false. The second branch is not taken.
+    - The else branch is not taken.
+    - `i += 1` updates `i` to 19.
+Eighteenth Iteration (i = 19):
+    - i <= 19 when i=19
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 19 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 // 19 = 3 * 19.
+Nineteenth Iteration (i = 20):
+    - i <= 19 when i=20
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The condition `n % i == 0` is false. The second branch is not taken.
+    - The else branch is not taken.
+    - `i += 1` updates `i` to 21.
+Twentieth Iteration (i = 21):
+    - i <= 19 when i=21
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The condition `n % i == 0` is false. The second branch is not taken.
+    - The else

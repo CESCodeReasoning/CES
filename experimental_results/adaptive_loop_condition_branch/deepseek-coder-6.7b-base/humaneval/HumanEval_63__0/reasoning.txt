@@ -1,0 +1,6 @@
+The function `fibfib` is called with ( n = 1 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is true, so the second if branch is taken.
+The function returns 0.
+
+Therefore, the final output of the function `fibfib(1)` is 0.

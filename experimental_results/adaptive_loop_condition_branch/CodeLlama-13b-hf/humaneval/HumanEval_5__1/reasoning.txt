@@ -1,0 +1,3 @@
+The function `intersperse` is called with ( numbers = [2, 2, 2], delimeter = 2 ).
+Inside the function, a variable `result` is initialized to an empty list.
+The condition ( not numbers ) is satisfied, therefore the if branch is taken and the function returns an empty list as the output.

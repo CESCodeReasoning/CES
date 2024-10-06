@@ -1,0 +1,7 @@
+The function `encrypt` is called with ( s = 'hi' ).
+Inside the function, a variable `out` is initialized to an empty string.
+
+Iteration 1:
+    -The character 'h' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right in the alphabet.
+Iteration 2:
+    -The character 'i' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right in the alphabet.

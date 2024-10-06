@@ -1,0 +1,11 @@
+The function max_fill takes two arguments: grid, which is a 2D array of integers, and capacity, which is an integer.
+The function returns the maximum number of rows that can be filled with capacity or less items from each row of grid.
+To determine the output of executing the function max_fill on the input [[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1, we need to calculate the maximum number of rows that can be filled with capacity or less items from each row of grid.
+In this case, grid is a 2D array of integers, and capacity is 1.
+The function max_fill calculates the sum of each row of grid and then divides it by capacity.
+It then rounds up the result to the nearest integer using the math.ceil function.
+Finally, it returns the sum of these rounded values.
+In this case, the sum of each row of grid is [1, 1, 4].
+Dividing each of these sums by capacity (1) gives [1, 1, 4].
+Rounding up each of these values to the nearest integer using math.ceil gives [1, 1, 4].
+Finally, the sum of these rounded values is 6, which is the output of executing the function max_fill on the input [[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1.

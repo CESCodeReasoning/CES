@@ -1,0 +1,9 @@
+from typing import *
+
+
+def unique(l: list):
+    # [STATE]l = ['a', 'b', 'b', 'c', 'd', 'd'][/STATE]
+    # [STATE]set(l) = {'a', 'b', 'c', 'd'}[/STATE]
+    # [STATE]list(set(l)) = ['a', 'b', 'c', 'd'][/STATE]
+    # [STATE]sorted(list(set(l))) = ['a', 'b', 'c', 'd'][/STATE]
+    return sorted(list(set(l)))

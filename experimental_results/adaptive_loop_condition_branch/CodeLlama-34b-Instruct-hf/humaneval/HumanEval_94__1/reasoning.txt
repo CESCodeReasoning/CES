@@ -1,0 +1,30 @@
+The function `skjkasdkd` is called with ( lst = [0, 8, 1, 2, 1, 7] ).
+Inside the function, a variable `maxx` is initialized to 0.
+The loop iterates from 0 through 5 (since ( len(lst) = 6 )).
+First Iteration (i = 0):
+    - `lst[i]` is 0, which is not greater than `maxx` (0).
+    - The condition `isPrime(lst[i])` is false.
+    - The `if` statement is not taken.
+Second Iteration (i = 1):
+    - `lst[i]` is 8, which is greater than `maxx` (0).
+    - The condition `isPrime(lst[i])` is true.
+    - The `if` statement is taken.
+    - `maxx` is updated to 8.
+Third Iteration (i = 2):
+    - `lst[i]` is 1, which is not greater than `maxx` (8).
+    - The condition `isPrime(lst[i])` is false.
+    - The `if` statement is not taken.
+Fourth Iteration (i = 3):
+    - `lst[i]` is 2, which is not greater than `maxx` (8).
+    - The condition `isPrime(lst[i])` is false.
+    - The `if` statement is not taken.
+Fifth Iteration (i = 4):
+    - `lst[i]` is 1, which is not greater than `maxx` (8).
+    - The condition `isPrime(lst[i])` is false.
+    - The `if` statement is not taken.
+Sixth Iteration (i = 5):
+    - `lst[i]` is 7, which is greater than `maxx` (8).
+    - The condition `isPrime(lst[i])` is true.
+    - The `if` statement is taken.
+    - `maxx` is updated to 7.
+After the loop completes, the function returns the value of `maxx`, which is now 7.

@@ -1,0 +1,49 @@
+[REASONING]
+The function `prime_fib` is called with `n = 4`. The function generates Fibonacci numbers and checks if each number is a prime. If it is a prime, it decrements `n` until `n` becomes 0, at which point it returns the last generated Fibonacci number.
+
+1. Initialize the Fibonacci sequence with `f = [0, 1]`.
+2. Enter a loop to generate the next Fibonacci number by summing the last two numbers in the list `f`.
+3. Check if the newly generated Fibonacci number is prime using the `is_prime` function.
+4. If the number is prime, decrement `n`.
+5. If `n` becomes 0, return the last Fibonacci number.
+
+The Fibonacci sequence starts as 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+The prime numbers in this sequence are 2, 3, 5, 13, ...
+
+Step-by-step:
+- 0 and 1 are not prime.
+- The next number, 1, is not prime.
+- The next number, 2, is prime (n decrements to 3).
+- The next number, 3, is prime (n decrements to 2).
+- The next number, 5, is prime (n decrements to 1).
+- The next number, 8, is not prime.
+- The next number, 13, is prime (n decrements to 0).
+
+At this point, since `n` is 0, the function returns the last Fibonacci number, which is 13.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def prime_fib(n: int):
+    import math
+
+    def is_prime(p):
+        if p < 2: ## [CONDITION](p < 2)=[True, True, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, N, N, N, N, N, N, N, N][/BRANCH]
+            return False
+        for k in range(2, min(int(math.sqrt(p)) + 1, p - 1)): ## [STATE]k=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2][/STATE][STATE]range(2, min((int(math.sqrt(p)) + 1), (p - 1)))=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2][/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2][/STATE]
+            if p % k == 0: ## [CONDITION](p % k == 0)=[False, False, True, False, True, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, Y, N, Y, N, N, N, N, N][/BRANCH]
+                return False
+        return True
+    f = [0, 1]
+    while True:
+        f.append(f[-1] + f[-2])
+        if is_prime(f[-1]): ## [CONDITION](is_prime(f[-1]))=[False, False, True, True, True, False, True][/CONDITION][BRANCH]taken=[N, N, Y, Y, Y, N, Y][/BRANCH]
+            n -= 1
+        if n == 0: ## [CONDITION](n == 0)=[False, False, False, False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, Y][/BRANCH]
+            return f[-1]
+[/PYTHON]
+
+[OUTPUT]
+13
+[/OUTPUT]

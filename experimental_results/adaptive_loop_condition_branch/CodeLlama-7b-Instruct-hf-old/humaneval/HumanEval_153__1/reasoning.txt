@@ -1,0 +1,18 @@
+The function `Strongest_Extension` is called with ( class_name = "finNNalLLly", extensions = ['Die', 'NowW', 'Wow', 'WoW'] ).
+Inside the function, a variable `strong` is initialized to the first element of the `extensions` list.
+The variable `my_val` is initialized to the length of the list comprehension `[x for x in extensions[0] if x.isalpha() and x.isupper()]` minus the length of the list comprehension `[x for x in extensions[0] if x.isalpha() and x.islower()]`.
+The loop iterates over the elements of the `extensions` list.
+First Iteration (s = 'Die'):
+   - The condition `val > my_val` is false.
+   - Action: `strong` remains the same.
+Second Iteration (s = 'NowW'):
+   - The condition `val > my_val` is false.
+   - Action: `strong` remains the same.
+Third Iteration (s = 'Wow'):
+   - The condition `val > my_val` is true.
+   - Action: `strong` is updated to 'Wow'.
+Fourth Iteration (s = 'WoW'):
+   - The condition `val > my_val` is true.
+   - Action: `strong` is updated to 'WoW'.
+
+Therefore, the final value of `strong` is 'WoW'.

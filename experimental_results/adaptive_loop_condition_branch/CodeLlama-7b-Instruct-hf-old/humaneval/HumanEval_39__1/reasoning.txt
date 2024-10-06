@@ -1,0 +1,9 @@
+The function `prime_fib` is called with ( n = 4 ).
+Inside the function, the `is_prime` function is defined.
+The `is_prime` function takes a single argument `p` and returns `True` if `p` is prime and `False` otherwise.
+The function `prime_fib` also defines a list `f` with the first two elements being 0 and 1.
+The function then enters an infinite loop.
+In each iteration, the last two elements of the list `f` are added together to get the next element of the list.
+The function then checks if the last element of the list is prime using the `is_prime` function.
+If the last element is prime, the function subtracts 1 from the input `n`.
+If the input `n` is 0, the function returns the last element of the list.

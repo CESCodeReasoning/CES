@@ -1,0 +1,3 @@
+```response
+        return "".join([chr(((ord(ch) - 5 - ord("a")) % 26) + ord(ch)) for ch in s])
+```

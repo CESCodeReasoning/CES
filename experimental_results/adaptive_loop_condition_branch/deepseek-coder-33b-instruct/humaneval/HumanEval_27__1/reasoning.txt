@@ -1,0 +1,34 @@
+The function flip_case takes a string as input and returns the string with all uppercase letters converted to lowercase and all lowercase letters converted to uppercase.
+
+To determine the output of executing the function flip_case on the input 'These violent delights have violent ends', we need to convert all uppercase letters to lowercase and all lowercase letters to uppercase.
+
+The string 'These violent delights have violent ends' has the following changes:
+- 'T' is converted to 't'
+- 'H' is converted to 'h'
+- 'E' is converted to 'e'
+- 'S' is converted to 's'
+- 'V' is converted to 'v'
+- 'I' is converted to 'i'
+- 'O' is converted to 'o'
+- 'L' is converted to 'l'
+- 'E' is converted to 'e'
+- 'N' is converted to 'n'
+- 'T' is converted to 't'
+- 'D' is converted to 'd'
+- 'E' is converted to 'e'
+- 'L' is converted to 'l'
+- 'I' is converted to 'i'
+- 'G' is converted to 'g'
+- 'H' is converted to 'h'
+- 'T' is converted to 't'
+- 'S' is converted to 's'
+- 'V' is converted to 'v'
+- 'I' is converted to 'i'
+- 'O' is converted to 'o'
+- 'L' is converted to 'l'
+- 'E' is converted to 'e'
+- 'N' is converted to 'n'
+- 'D' is converted to 'd'
+- 'S' is converted to 's'
+
+Therefore, the output of executing the function flip_case on the input 'These violent delights have violent ends' is 'tHESE VIOLent DELIGHTS HAVE VIOLent ENDS'.

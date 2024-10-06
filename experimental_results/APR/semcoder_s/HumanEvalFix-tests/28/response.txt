@@ -1,0 +1,145 @@
+<｜begin▁of▁sentence｜>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in concatenate.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+from typing import List
+
+
+def concatenate(strings: List[str]) -> str:
+    return ' '.join(strings)
+
+Tests:
+def check(concatenate):
+    assert concatenate([]) == ''
+    assert concatenate(['x', 'y', 'z']) == 'xyz'
+    assert concatenate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'
+
+check(concatenate)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `concatenate(strings: List[str]) -> str` to solve the following problem:
+Concatenate list of strings into a single string
+
+Fixed Code:
+```python
+from typing import List
+
+
+def concatenate(strings: List[str]) -> str:
+    return ' '.join(strings)
+```
+
+
+    
+Fix bugs in count_vowels.
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+from typing import List
+
+
+def count_vowels(text: str) -> int:
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+
+Tests:
+def check(count_vowels):
+    assert count_vowels('hello') == 2
+    assert count_vowels('world') == 1
+    assert count_vowels('python') == 1
+    assert count_vowels('programming') == 4
+    assert count_vowels('rhythm') == 1
+
+check(count_vowels)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `count_vowels(text: str) -> int` to solve the following problem:
+Count the number of vowels in a given text
+
+Fixed Code:
+```python
+from typing import List
+
+
+def count_vowels(text: str) -> int:
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+```
+
+
+    
+Fix bugs in is_palindrome.
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+from typing import List
+
+
+def is_palindrome(text: str) -> bool:
+    return text == text[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome('radar') == True
+    assert is_palindrome('python') == False
+    assert is_palindrome('madam') == True
+    assert is_palindrome('level') == True
+    assert is_

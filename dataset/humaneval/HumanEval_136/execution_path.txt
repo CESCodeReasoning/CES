@@ -1,0 +1,29 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: largest_smallest_integers
+main.py(3):     smallest = list(filter(lambda x: x < 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(3):     smallest = list(filter(lambda x: x < 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(3):     smallest = list(filter(lambda x: x < 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(3):     smallest = list(filter(lambda x: x < 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(3):     smallest = list(filter(lambda x: x < 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(3):     smallest = list(filter(lambda x: x < 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(3):     smallest = list(filter(lambda x: x < 0, lst))
+main.py(4):     largest = list(filter(lambda x: x > 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     largest = list(filter(lambda x: x > 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     largest = list(filter(lambda x: x > 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     largest = list(filter(lambda x: x > 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     largest = list(filter(lambda x: x > 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     largest = list(filter(lambda x: x > 0, lst))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     largest = list(filter(lambda x: x > 0, lst))
+main.py(5):     return (max(smallest) if smallest else None, min(largest) if largest else None)

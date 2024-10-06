@@ -1,0 +1,12 @@
+The function `fizz_buzz` is called with ( n = 100000 ).
+Inside the function, an empty list `ns` is initialized.
+The loop iterates from 0 through 99999 (since ( n = 100000 )).
+For each iteration:
+   - If the number is divisible by 11 or 13 (or both), it is appended to the list `ns`.
+   - The list `ns` is then converted to a string and stored in `s`.
+   - The string `s` is iterated over, counting the number of times the character '7' appears, and storing it in `ans`.
+Finally, the function returns the value of `ans`.
+
+The loop iterates over a large range, and the condition checks for divisibility by 11 or 13, which are relatively prime numbers. Therefore, the numbers that satisfy this condition are multiples of 11 or 13, which are not present in the sequence.
+
+Therefore, the final output of the function `fizz_buzz(100000)` is 0.

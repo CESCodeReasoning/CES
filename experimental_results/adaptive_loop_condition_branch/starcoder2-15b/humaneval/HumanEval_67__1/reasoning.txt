@@ -1,0 +1,9 @@
+The function `fruit_distribution` is called with ( s = "5 apples and 6 oranges", n = 21 ).
+Inside the function, a variable `lis` is initialized to an empty list.
+
+Iteration 1:
+    -The character '5' is a digit, so it is appended to the list `lis`.
+Iteration 2:
+    -The character '6' is a digit, so it is appended to the list `lis`.
+
+The function returns the difference between `n` and the sum of the integers in `lis`.

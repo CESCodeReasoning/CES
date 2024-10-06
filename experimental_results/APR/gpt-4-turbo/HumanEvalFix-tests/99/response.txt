@@ -1,0 +1,19 @@
+Here's the fixed code for the `closest_integer` function, which correctly handles the rounding of numbers represented as strings, especially when the number is equidistant from two integers (i.e., when the decimal part is `.5`). The function now properly rounds away from zero in such cases.
+
+```python
+def closest_integer(value: str) -> int:
+    from math import floor, ceil
+
+    num = float(value)
+    if value.endswith('.5'):
+        if num > 0:
+            res = ceil(num)
+        else:
+            res = floor(num)
+    else:
+        res = round(num)
+
+    return res
+```
+
+This function first converts the string `value` to a float `num`. It then checks if the string ends with `.5` to handle the special rounding case. If the number is positive and ends with `.5`, it uses `ceil` to round up, and if it's negative, it uses `floor` to round down, effectively rounding away from zero. For all other cases, it uses Python's built-in `round` function, which rounds to the nearest integer, breaking ties by rounding to the nearest even number.

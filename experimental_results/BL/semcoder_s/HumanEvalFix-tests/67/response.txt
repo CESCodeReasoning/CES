@@ -1,0 +1,116 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def fruit_distribution(s,n):
+    lis = list()
+    for i in s.split(' '):
+        if i.isdigit():
+            lis.append(int(i))
+    return n - sum(lis) - 1
+
+Tests:
+def check(fruit_distribution):
+
+    # Check some simple cases
+    assert fruit_distribution("5 apples and 6 oranges",19) == 8
+    assert fruit_distribution("5 apples and 6 oranges",21) == 10
+    assert fruit_distribution("0 apples and 1 oranges",3) == 2
+    assert fruit_distribution("1 apples and 0 oranges",3) == 2
+    assert fruit_distribution("2 apples and 3 oranges",100) == 95
+    assert fruit_distribution("2 apples and 3 oranges",5) == 0
+    assert fruit_distribution("1 apples and 100 oranges",120) == 19
+
+check(fruit_distribution)
+
+The code should satisfy the following natural language specification:
+Write a Python function `fruit_distribution(s,n)` to solve the following problem:
+In this task, you will be given a string that represents a number of apples and oranges
+that are distributed in a basket of fruit this basket contains
+apples, oranges, and mango fruits. Given the string that represents the total number of
+the oranges and apples and an integer that represent the total number of the fruits
+in the basket return the number of the mango fruits in the basket.
+for examble:
+fruit_distribution("5 apples and 6 oranges", 19) ->19 - 5 - 6 = 8
+fruit_distribution("0 apples and 1 oranges",3) -> 3 - 0 - 1 = 2
+fruit_distribution("2 apples and 3 oranges", 100) -> 100 - 2 - 3 = 95
+fruit_distribution("100 apples and 1 oranges",120) -> 120 - 100 - 1 = 19
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return n - sum(lis) - 1
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def find_missing_number(numbers):
+    n = len(numbers) + 1
+    total_sum = n * (n + 1) // 2
+    sum_of_numbers = sum(numbers)
+    return total_sum - sum_of_numbers
+
+Tests:
+def check(find_missing_number):
+    assert find_missing_number([1, 2, 3, 4, 5, 6, 8]) == 7
+    assert find_missing_number([1, 2, 3, 4, 5, 7]) == 6
+    assert find_missing_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == 11
+    assert find_missing_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) == 16
+    assert find_missing_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]) == 21
+
+check(find_missing_number)
+
+The code should satisfy the following natural language specification:
+Write a Python function `find_missing_number(numbers)` to solve the following problem:
+You are given a list of integers in an arithmetic progression, except for one number which is missing.
+Find and return the missing number.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return total_sum - sum_of_numbers
+```
+
+
+
+Given the following buggy code, tests and natural language

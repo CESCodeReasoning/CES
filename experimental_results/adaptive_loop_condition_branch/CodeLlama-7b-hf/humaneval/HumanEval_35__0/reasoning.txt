@@ -1,0 +1,31 @@
+The function `max_element` is called with ( l = [-5, 2, 48, 9, 4, 0, 6, 7] ).
+Inside the function, a variable `m` is initialized to the first element of the list, which is -5.
+The loop iterates through the list.
+First Iteration (e = -5)
+   - The condition `e > m` is false.
+   - Action: `m` remains -5.
+Second Iteration (e = 2)
+   - The condition `e > m` is true.
+   - Action: `m` becomes 2.
+Third Iteration (e = 48)
+   - The condition `e > m` is true.
+   - Action: `m` becomes 48.
+Fourth Iteration (e = 9)
+   - The condition `e > m` is true.
+   - Action: `m` becomes 9.
+Fifth Iteration (e = 4)
+   - The condition `e > m` is false.
+   - Action: `m` remains 9.
+Sixth Iteration (e = 0)
+   - The condition `e > m` is false.
+   - Action: `m` remains 9.
+Seventh Iteration (e = 6)
+   - The condition `e > m` is true.
+   - Action: `m` becomes 6.
+Eighth Iteration (e = 7)
+   - The condition `e > m` is true.
+   - Action: `m` becomes 7.
+Return Statement
+   - After the loop completes, the function returns the value of `m`, which is 7.
+
+Therefore, the final output of the function `max_element([-5, 2, 48, 9, 4, 0, 6, 7])` is 7.

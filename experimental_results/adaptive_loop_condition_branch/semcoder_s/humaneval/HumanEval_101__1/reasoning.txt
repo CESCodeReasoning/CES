@@ -1,0 +1,57 @@
+The function `words_string` is called with ( s = "One,, two, three, four, five, six," ).
+Iteration 1:
+    -The character 'O' is not ',' so it is appended to s_list.
+Iteration 2:
+    -The character 'n' is not ',' so it is appended to s_list.
+Iteration 3:
+    -The character 'e' is not ',' so it is appended to s_list.
+Iteration 4:
+    -The character ',' is ',' so a space is appended to s_list.
+Iteration 5:
+    -The character ' ' is not ',' so it is appended to s_list.
+Iteration 6:
+    -The character 't' is not ',' so it is appended to s_list.
+Iteration 7:
+    -The character 'w' is not ',' so it is appended to s_list.
+Iteration 8:
+    -The character 'o' is not ',' so it is appended to s_list.
+Iteration 9:
+    -The character ',' is ',' so a space is appended to s_list.
+Iteration 10:
+    -The character ' ' is not ',' so it is appended to s_list.
+Iteration 11:
+    -The character 't' is not ',' so it is appended to s_list.
+Iteration 12:
+    -The character 'h' is not ',' so it is appended to s_list.
+Iteration 13:
+    -The character 'r' is not ',' so it is appended to s_list.
+Iteration 14:
+    -The character 'e' is not ',' so it is appended to s_list.
+Iteration 15:
+    -The character 'e' is not ',' so it is appended to s_list.
+Iteration 16:
+    -The character ',' is ',' so a space is appended to s_list.
+Iteration 17:
+    -The character ' ' is not ',' so it is appended to s_list.
+Iteration 18:
+    -The character 'f' is not ',' so it is appended to s_list.
+Iteration 19:
+    -The character 'o' is not ',' so it is appended to s_list.
+Iteration 20:
+    -The character 'u' is not ',' so it is appended to s_list.
+Iteration 21:
+    -The character 'r' is not ',' so it is appended to s_list.
+Iteration 22:
+    -The character ',' is ',' so a space is appended to s_list.
+Iteration 23:
+    -The character ' ' is not ',' so it is appended to s_list.
+Iteration 24:
+    -The character 's' is not ',' so it is appended to s_list.
+Iteration 25:
+    -The character 'i' is not ',' so it is appended to s_list.
+Iteration 26:
+    -The character 'x' is not ',' so it is appended to s_list.
+Iteration 27:
+    -The character ',' is ',' so a space is appended to s_list.
+
+Finally, s_list is joined and split by spaces.

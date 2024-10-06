@@ -1,0 +1,5 @@
+The function sort_numbers takes a string of numbers as input and returns a string of sorted numbers.
+To sort the numbers, the function first splits the input string into a list of individual numbers.
+It then creates a dictionary that maps each number word to its corresponding integer value.
+The function then sorts the list of numbers using the dictionary to determine the order of the numbers.
+Finally, the function joins the sorted list of numbers back into a string and returns it.

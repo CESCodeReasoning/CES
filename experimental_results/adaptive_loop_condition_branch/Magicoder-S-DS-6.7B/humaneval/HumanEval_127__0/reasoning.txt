@@ -1,0 +1,15 @@
+The function `intersection` is called with ( interval1 = [-2, -2], interval2 = [-3, -2] ).
+The function `is_prime` is called with ( num = length ).
+
+The function `is_prime` checks if a number is prime.
+Iteration 1:
+    -The number 1 is not prime, so it returns False.
+Iteration 2:
+    -The number 2 is prime, so it returns True.
+
+The function `intersection` calculates the intersection of two intervals.
+Iteration 1:
+    -The maximum of the two left endpoints is -2.
+    -The minimum of the two right endpoints is -2.
+    -The length of the intersection is 0.
+    -The length is not greater than 0 or not a prime number, so it returns "NO".

@@ -1,0 +1,7 @@
+from typing import *
+
+
+def sort_third(l: list):
+    l = list(l)  # [STATE]l = [5, 8, -12, 4, 23, 2, 3, 11, 12, -10][/STATE]
+    l[::3] = sorted(l[::3])  # [STATE]l[::3] = [-12, 4, 2, 11, -10][/STATE]
+    return l  # [STATE]l = [-12, 2, 3, 4, 5, 8, 11, 12, 23, -10][/STATE]

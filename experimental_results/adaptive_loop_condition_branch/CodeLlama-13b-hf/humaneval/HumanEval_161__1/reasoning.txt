@@ -1,0 +1,10 @@
+The function `solve` is called with ( s = "ab" ).
+Inside the function, a variable `flg` and `idx` are initialized to 0.
+Inside the function, a variable `new_str` is initialized to a list of characters in `s`.
+
+Iteration 1:
+    - The character 'a' is a letter, so `flg` becomes 1.
+    - The character 'a' is a letter, so `new_str[0]` becomes 'A'.
+Iteration 2:
+    - The character 'b' is a letter, so `flg` becomes 1.
+    - The character 'b' is a letter, so `new_str[1]` becomes 'B'.

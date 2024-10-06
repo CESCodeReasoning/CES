@@ -1,0 +1,21 @@
+[REASONING]
+The function reverse_delete takes two strings as input, s and c.
+It first creates a new string s by removing all the characters in c from s.
+Then, it checks if the new string s is a palindrome (i.e., it reads the same forwards and backwards).
+If it is, the function returns a tuple containing the new string s and True.
+Otherwise, it returns a tuple containing the new string s and False.
+To determine the output of executing the function reverse_delete on the input "abcde" and "ae", we need to first remove all the characters in "ae" from "abcde".
+This gives us the new string "bcd".
+Then, we need to check if "bcd" is a palindrome.
+It is not, so the function returns a tuple containing the new string "bcd" and False.
+[/REASONING]
+
+[ANSWER]
+def reverse_delete(s,c):
+    s = ''.join([char for char in s if char not in c])
+    return (s,s[::-1] == s)
+[/ANSWER]
+
+[OUTPUT]
+('bcd', False)
+[/OUTPUT]

@@ -1,0 +1,14 @@
+[REASONING]
+The function flip_case takes a string as input and returns a new string with the case of each character flipped.
+To determine the output of executing the function flip_case on the input 'These violent delights have violent ends', we need to flip the case of each character in the input string.
+Therefore, the output of executing the function flip_case on the input 'These violent delights have violent ends' is 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'.
+[/REASONING]
+
+[ANSWER]
+def flip_case(string: str) -> str:
+    return string.swapcase()
+[/ANSWER]
+
+[OUTPUT]
+'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'
+[/OUTPUT]

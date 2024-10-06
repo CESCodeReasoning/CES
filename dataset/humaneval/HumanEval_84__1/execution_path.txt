@@ -1,0 +1,11 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: solve
+main.py(5):     return bin(sum(int(i) for i in str(N)))[2:]
+ --- modulename: main, funcname: <genexpr>
+main.py(5):     return bin(sum(int(i) for i in str(N)))[2:]
+ --- modulename: main, funcname: <genexpr>
+main.py(5):     return bin(sum(int(i) for i in str(N)))[2:]
+ --- modulename: main, funcname: <genexpr>
+main.py(5):     return bin(sum(int(i) for i in str(N)))[2:]
+ --- modulename: main, funcname: <genexpr>
+main.py(5):     return bin(sum(int(i) for i in str(N)))[2:]

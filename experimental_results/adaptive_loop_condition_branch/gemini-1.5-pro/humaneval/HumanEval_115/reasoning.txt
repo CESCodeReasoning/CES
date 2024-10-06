@@ -1,0 +1,5 @@
+The function max_fill takes a 2D grid and a capacity as input, and returns the minimum number of containers needed to fill the grid.
+Each container can hold at most capacity amount of water.
+To determine the minimum number of containers needed to fill the grid, we need to calculate the total amount of water in the grid and divide it by the capacity.
+Since we can only use integer number of containers, we need to round up the result to the nearest integer.
+Therefore, the minimum number of containers needed to fill the grid is the sum of the rounded up total amount of water in each row of the grid.

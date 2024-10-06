@@ -1,0 +1,9 @@
+from typing import *
+
+
+def sum_squares(lst):
+    import math
+    squared = 0
+    for i in lst: ## [STATE]i=[1, 2, 3, 4, 5][/STATE][STATE]lst=[1, 2, 3, 4, 5][/STATE]
+        squared += math.ceil(i)**2
+    return squared

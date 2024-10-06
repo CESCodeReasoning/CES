@@ -1,0 +1,6 @@
+The function right_angle_triangle takes three integer arguments a, b, and c. It returns True if the given arguments form a right-angled triangle, and False otherwise.
+To determine whether the given arguments form a right-angled triangle, we need to check if any of the following conditions is true:
+1. a*a == b*b + c*c
+2. b*b == a*a + c*c
+3. c*c == a*a + b*b
+If any of these conditions is true, then the given arguments form a right-angled triangle. Otherwise, they do not form a right-angled triangle.

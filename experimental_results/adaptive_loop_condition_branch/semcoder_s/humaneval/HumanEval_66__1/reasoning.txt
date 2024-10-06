@@ -1,0 +1,7 @@
+The function `digitSum` is called with ( s = "aAaaaXa" ).
+The condition `s == ""` is false, so we move to the return statement.
+The function uses a generator expression to iterate over each character in the string "aAaaaXa".
+For each character, if it is an uppercase letter, its ASCII value is returned, otherwise 0 is returned.
+The sum of these values is calculated and returned.
+
+Therefore, the final output of the function `digitSum("aAaaaXa")` is the sum of ASCII values of uppercase letters in the string "aAaaaXa", which is 0 (since there are no uppercase letters).

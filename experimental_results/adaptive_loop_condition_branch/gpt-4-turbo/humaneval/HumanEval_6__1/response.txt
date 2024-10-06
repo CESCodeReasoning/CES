@@ -1,0 +1,54 @@
+[REASONING]
+The function `parse_nested_parens` is called with the input string '(()(())((())))'.
+The function is designed to parse nested parentheses and determine the maximum depth of nesting for each group of parentheses separated by spaces. However, since the input string does not contain any spaces, it will be treated as a single group.
+
+Here's the step-by-step breakdown:
+1. The input string is split by spaces using `paren_string.split(' ')`. Since there are no spaces, the result is a list containing the entire string: ['(()(())((())))'].
+2. The list comprehension iterates over this list, and for each group (in this case, just one group), it calls `parse_paren_group`.
+3. Inside `parse_paren_group`, two variables `depth` and `max_depth` are initialized to 0.
+4. The function then iterates over each character in the string:
+   - For '(': `depth` is incremented. If `depth` exceeds `max_depth`, then `max_depth` is updated.
+   - For ')': `depth` is decremented.
+5. The characters are processed as follows:
+   - '(': depth = 1, max_depth = 1
+   - '(': depth = 2, max_depth = 2
+   - ')': depth = 1
+   - '(': depth = 2
+   - '(': depth = 3, max_depth = 3
+   - ')': depth = 2
+   - ')': depth = 1
+   - '(': depth = 2
+   - '(': depth = 3
+   - '(': depth = 4, max_depth = 4
+   - ')': depth = 3
+   - ')': depth = 2
+   - ')': depth = 1
+   - ')': depth = 0
+6. The maximum depth found in this string is 4.
+7. The list comprehension collects these maximum depths into a list, which in this case contains just one element: [4].
+
+Therefore, the output of the function `parse_nested_parens('(()(())((())))')` is [4].
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    def parse_paren_group(s):
+        depth = 0
+        max_depth = 0
+        for c in s: ## [STATE]c=['(', '(', ')', '(', '(', ')', '(', '(', '(', ')', ')', ')', ')'][/STATE][STATE]s=['(()(())((())))'][/STATE]
+            if c == '(': ## [CONDITION](c == '(')=[True, True, False, True, True, False, True, True, True, False, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, N, Y, Y, N, Y, Y, Y, N, N, N, N][/BRANCH]
+                depth += 1
+                max_depth = max(depth, max_depth)
+            else: ## [BRANCH]taken=[N, N, Y, N, N, Y, N, N, N, Y, Y, Y, Y][/BRANCH]
+                depth -= 1
+
+        return max_depth
+
+    return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+[/PYTHON]
+
+[OUTPUT]
+[4]
+[/OUTPUT]

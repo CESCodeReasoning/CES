@@ -1,0 +1,104 @@
+[REASONING]
+The function `fix_spaces` is called with ( text = "Exa   mple" ).
+Inside the function, a variable `new_text` is initialized to an empty string.
+The loop iterates through the characters in the text.
+First Iteration ( i = 0 ):
+    - text[i] is "E".
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken.
+    - The condition `end - start > 2` is false. The first branch is not taken.
+    - The condition `end - start > 0` is false. The second branch is not taken.
+    - The else branch is taken. `new_text += text[i]` appends "E" to `new_text`.
+    - `start` and `end` are both set to 1.
+Second Iteration ( i = 1 ):
+    - text[i] is "x".
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken.
+    - The condition `end - start > 2` is false. The first branch is not taken.
+    - The condition `end - start > 0` is false. The second branch is not taken.
+    - The else branch is taken. `new_text += text[i]` appends "x" to `new_text`.
+    - `start` and `end` are both set to 2.
+Third Iteration ( i = 2 ):
+    - text[i] is "a".
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken.
+    - The condition `end - start > 2` is false. The first branch is not taken.
+    - The condition `end - start > 0` is false. The second branch is not taken.
+    - The else branch is taken. `new_text += text[i]` appends "a" to `new_text`.
+    - `start` and `end` are both set to 3.
+Fourth Iteration ( i = 3 ):
+    - text[i] is " ".
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end` is incremented to 4.
+Fifth Iteration ( i = 4 ):
+    - text[i] is " ".
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end` is incremented to 5.
+Sixth Iteration ( i = 5 ):
+    - text[i] is " ".
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end` is incremented to 6.
+Seventh Iteration ( i = 6 ):
+    - text[i] is "m".
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken.
+    - The condition `end - start > 2` is true. The first branch is taken. `new_text += "-" + text[i]` appends "-m" to `new_text`.
+    - `start` and `end` are both set to 7.
+Eighth Iteration ( i = 7 ):
+    - text[i] is "p".
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken.
+    - The condition `end - start > 2` is false. The first branch is not taken.
+    - The condition `end - start > 0` is false. The second branch is not taken.
+    - The else branch is taken. `new_text += text[i]` appends "p" to `new_text`.
+    - `start` and `end` are both set to 8.
+Ninth Iteration ( i = 8 ):
+    - text[i] is "l".
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken.
+    - The condition `end - start > 2` is false. The first branch is not taken.
+    - The condition `end - start > 0` is false. The second branch is not taken.
+    - The else branch is taken. `new_text += text[i]` appends "l" to `new_text`.
+    - `start` and `end` are both set to 9.
+Tenth Iteration ( i = 9 ):
+    - text[i] is "e".
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken.
+    - The condition `end - start > 2` is false. The first branch is not taken.
+    - The condition `end - start > 0` is false. The second branch is not taken.
+    - The else branch is taken. `new_text += text[i]` appends "e" to `new_text`.
+    - `start` and `end` are both set to 10.
+After the loop completes, the function returns the value of `new_text`, which is "Exa-mple".
+[/REASONING]
+
+
+[ANSWER]
+from typing import *
+
+
+def fix_spaces(text):
+    new_text = ""
+    i = 0
+    start, end = 0, 0
+    while i < len(text): ## [STATE](i < len(text))=[True, True, True, True, True, True, True, True, True, True][/STATE][STATE]i=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9][/STATE][STATE]len(text)=[10][/STATE]
+        if text[i] == " ": ## [CONDITION](text[i] == " ")=[False, False, False, True, True, True, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, Y, Y, Y, N, N, N, N][/BRANCH]
+            end += 1
+        else: ## [BRANCH]taken=[Y, Y, Y, N, N, N, Y, Y, Y, Y][/BRANCH]
+            if end - start > 2: ## [CONDITION](end - start > 2)=[False, False, False, False, False, False, True, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, Y, N, N, N][/BRANCH]
+                new_text += "-" + text[i]
+            elif end - start > 0: ## [BRANCH]taken=[N, N, N, N, N, N, N, Y, Y, Y][/BRANCH]
+                new_text += "_" * (end - start) + text[i]
+            else: ## [BRANCH]taken=[Y, Y, Y, Y, Y, Y, N, N, N, N][/BRANCH]
+                new_text += text[i]
+            start, end = i + 1, i + 1
+        i += 1
+    if end - start > 2: ## [CONDITION](end - start > 2)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        new_text += "-"
+    elif end - start > 0: ## [BRANCH]taken=[N][/BRANCH]
+        new_text += "_"
+    return new_text
+[/ANSWER]
+
+[OUTPUT]
+Exa-mple
+[/OUTPUT]

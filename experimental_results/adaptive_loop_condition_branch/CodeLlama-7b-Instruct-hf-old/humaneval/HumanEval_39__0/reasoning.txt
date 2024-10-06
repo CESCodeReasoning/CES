@@ -1,0 +1,14 @@
+The function `prime_fib` is called with ( n = 9 ).
+Inside the function, the `math` module is imported.
+
+The function `is_prime` is defined. It takes a single argument `p` of type `int`.
+The function first checks if `p` is less than 2. If it is, it returns `False`.
+Otherwise, it iterates from 2 to the smaller of `int(math.sqrt(p)) + 1` and `p - 1` (since `p` is a prime number, it can only be divisible by 1 and itself).
+For each `k` in the range, it checks if `p` is divisible by `k`. If it is, it returns `False`.
+If the loop completes without returning `False`, it means that `p` is prime, and the function returns `True`.
+
+The function `prime_fib` also defines a list `f` with the first two elements being 0 and 1.
+The function then enters an infinite loop.
+In each iteration, it appends the sum of the last two elements of `f` to `f`.
+It then checks if the last element of `f` is prime. If it is, it subtracts 1 from `n`.
+If `n` is 0, the function returns the last element of `f`.

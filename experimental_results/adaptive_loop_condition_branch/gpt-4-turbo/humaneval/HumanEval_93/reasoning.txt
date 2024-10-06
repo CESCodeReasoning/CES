@@ -1,0 +1,10 @@
+The function `encode` takes a string `message` as input. The first step in the function is to define a string `vowels` containing all lowercase and uppercase vowels. Next, a dictionary `vowels_replace` is created where each vowel is mapped to a character that is two positions ahead in the ASCII table. For example, 'a' becomes 'c', 'A' becomes 'C', etc.
+
+The `message` is then converted by swapping its case using the `swapcase()` method. This means all uppercase letters in the original message become lowercase and vice versa.
+
+Finally, the function constructs a new string by iterating over each character in the swapped case message. If the character is a vowel (as per the `vowels_replace` dictionary), it is replaced by its corresponding value in the dictionary. If it is not a vowel, it remains unchanged. The resulting characters are joined together to form the final encoded message.
+
+For the input 'TEST', the steps are as follows:
+1. Convert 'TEST' to 'test' using `swapcase()`.
+2. 'test' contains no vowels as per the `vowels_replace` dictionary, so no replacements are made.
+3. The final encoded message is 'test'.

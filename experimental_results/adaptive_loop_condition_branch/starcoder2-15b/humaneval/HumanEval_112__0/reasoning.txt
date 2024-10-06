@@ -1,0 +1,9 @@
+The function reverse_delete takes two arguments: a string s and a string c.
+It removes all characters in s that are also in c, and then checks if the resulting string is a palindrome.
+
+In this case, the input string s is "abcdedcba" and the input string c is "v".
+The function removes all characters in s that are also in c, which means it removes all characters in s that are also in "v".
+Since "v" is an empty string, the function removes all characters in s, which means it removes all characters in "abcdedcba".
+The resulting string is an empty string "".
+
+The function then checks if the resulting string is a palindrome. An empty string is a palindrome, so the function returns ("", True).

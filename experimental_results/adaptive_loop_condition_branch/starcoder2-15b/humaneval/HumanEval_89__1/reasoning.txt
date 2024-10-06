@@ -1,0 +1,67 @@
+The function `encrypt` is called with ( s = 'asdfghjkl' ).
+Inside the function, a variable `d` is initialized to 'abcdefghijklmnopqrstuvwxyz'.
+The variable `out` is initialized to an empty string.
+
+Iteration 1:
+    -The character 'a' is in d, so the condition is true.
+    -The index of 'a' in d is 0.
+    -The index of 'a' in d is 0 + 2 * 2 = 4.
+    -The index of 'a' in d is 4 % 26 = 4.
+    -The character at index 4 in d is 'e'.
+    -The character 'e' is added to the end of out.
+Iteration 2:
+    -The character's' is in d, so the condition is true.
+    -The index of's' in d is 18.
+    -The index of's' in d is 18 + 2 * 2 = 22.
+    -The index of's' in d is 22 % 26 = 22.
+    -The character at index 22 in d is 'u'.
+    -The character 'u' is added to the end of out.
+Iteration 3:
+    -The character 'd' is in d, so the condition is true.
+    -The index of 'd' in d is 3.
+    -The index of 'd' in d is 3 + 2 * 2 = 7.
+    -The index of 'd' in d is 7 % 26 = 7.
+    -The character at index 7 in d is 'h'.
+    -The character 'h' is added to the end of out.
+Iteration 4:
+    -The character 'f' is in d, so the condition is true.
+    -The index of 'f' in d is 5.
+    -The index of 'f' in d is 5 + 2 * 2 = 11.
+    -The index of 'f' in d is 11 % 26 = 11.
+    -The character at index 11 in d is 'l'.
+    -The character 'l' is added to the end of out.
+Iteration 5:
+    -The character 'g' is in d, so the condition is true.
+    -The index of 'g' in d is 6.
+    -The index of 'g' in d is 6 + 2 * 2 = 14.
+    -The index of 'g' in d is 14 % 26 = 14.
+    -The character at index 14 in d is 'o'.
+    -The character 'o' is added to the end of out.
+Iteration 6:
+    -The character 'h' is in d, so the condition is true.
+    -The index of 'h' in d is 7.
+    -The index of 'h' in d is 7 + 2 * 2 = 15.
+    -The index of 'h' in d is 15 % 26 = 15.
+    -The character at index 15 in d is 'p'.
+    -The character 'p' is added to the end of out.
+Iteration 7:
+    -The character 'j' is in d, so the condition is true.
+    -The index of 'j' in d is 9.
+    -The index of 'j' in d is 9 + 2 * 2 = 17.
+    -The index of 'j' in d is 17 % 26 = 17.
+    -The character at index 17 in d is 'r'.
+    -The character 'r' is added to the end of out.
+Iteration 8:
+    -The character 'k' is in d, so the condition is true.
+    -The index of 'k' in d is 10.
+    -The index of 'k' in d is 10 + 2 * 2 = 18.
+    -The index of 'k' in d is 18 % 26 = 18.
+    -The character at index 18 in d is's'.
+    -The character's' is added to the end of out.
+Iteration 9:
+    -The character 'l' is in d, so the condition is true.
+    -The index of 'l' in d is 11.
+    -The index of 'l' in d is 11 + 2 * 2 = 19.
+    -The index of 'l' in d is 19 % 26 = 19.
+    -The character at index 19 in d is 't'.
+    -The character 't' is added to the end of out.

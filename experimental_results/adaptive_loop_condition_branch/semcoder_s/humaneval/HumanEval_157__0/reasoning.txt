@@ -1,0 +1,10 @@
+The function `right_angle_triangle` takes three arguments a, b, and c. It checks if any of the two conditions (a^2 = b^2 + c^2, b^2 = a^2 + c^2, c^2 = a^2 + b^2) are true, which indicates that a, b, and c can form a right-angled triangle.
+
+To determine the output of executing the function `right_angle_triangle` on the input (7, 24, 25), we need to check if any of the conditions are satisfied.
+
+Substituting the values, we get:
+- 7^2 = 24^2 + 25^2 (not true)
+- 24^2 = 7^2 + 25^2 (not true)
+- 25^2 = 7^2 + 24^2 (true)
+
+Therefore, the output of executing the function `right_angle_triangle` on the input (7, 24, 25) is `True`.

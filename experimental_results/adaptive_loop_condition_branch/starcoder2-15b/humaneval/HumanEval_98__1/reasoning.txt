@@ -1,0 +1,11 @@
+The function `count_upper` is called with ( s = 'U' ).
+Inside the function, a variable `count` is initialized to 0.
+The loop iterates from 0 through the length of the string s (which is 1) with a step size of 2.
+First Iteration (i = 0)
+   - `s[i]` is 'U', which is in "AEIOU".
+   - The condition `s[i] in "AEIOU"` is true.
+   - Action: `count += 1` results in `count = 1`.
+Return Statement
+   - After the loop completes, the function returns the value of `count`, which is now 1.
+
+Therefore, the final output of the function `count_upper('U')` is 1.

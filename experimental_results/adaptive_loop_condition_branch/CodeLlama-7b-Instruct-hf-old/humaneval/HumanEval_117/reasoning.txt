@@ -1,0 +1,7 @@
+The function select_words(s, n) takes a string s and an integer n as its parameters.
+The function splits the string s into a list of words using the split() method.
+The outer loop iterates through each word in the list of words.
+The inner loop iterates through each character in the word.
+The condition checks if the character is a consonant (not in the list of vowels ["a","e","i","o","u"]).
+If the character is a consonant, the counter n_consonants is incremented.
+If the counter n_consonants is equal to n, the word is added to the result list.

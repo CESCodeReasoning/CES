@@ -1,0 +1,26 @@
+The function `fibfib` is called with ( n = 10 ).
+Inside the function, a variable `n` is initialized to 10.
+The loop iterates from 0 through 10 (since ( n = 10 )).
+First Iteration (n = 0)
+   - `n` is 0, which satisfies ( n == 0 ).
+   - The condition `n == 0` is true.
+   - Action: `return 0` results in `return 0`.
+Second Iteration (n = 1)
+   - `n` is 1, which still satisfies ( n == 1 ).
+   - The same condition is true.
+   - Action: `return 0` results in `return 0`.
+Third Iteration (n = 2)
+   - `n` is 2, which now satisfies ( n == 2 ).
+   - The condition `n == 2` is true.
+   - Action: `return 1` results in `return 1`.
+Fourth Iteration (n = 3)
+   - `n` is 3, which still satisfies ( n == 3 ).
+   - The condition `n == 3` is true.
+   - Action: `return 1` results in `return 1`.
+Fifth Iteration (n = 4)
+   - `n` is 4, now outside the previous conditions, falling into the `else` block.
+   - The `else` block's action: `return fibfib(n - 1) + fibfib(n - 2) + fibfib(n - 3)` updates `n` to 3, then `return`s the sum of `fibfib(3)`, `fibfib(2)`, and `fibfib(1)`, which is 2 + 1 + 1 = 4.
+Return Statement
+   - After the loop completes, the function returns the value of `n`, which is now 4.
+
+Therefore, the final output of the function `fibfib(10)` is 4.

@@ -1,0 +1,6 @@
+from typing import *
+
+
+def decimal_to_binary(decimal):
+    # [STATE] decimal = 32 [/STATE]
+    return "db" + bin(decimal)[2:] + "db"  # [STATE] bin(decimal)[2:] = '100000' [/STATE]

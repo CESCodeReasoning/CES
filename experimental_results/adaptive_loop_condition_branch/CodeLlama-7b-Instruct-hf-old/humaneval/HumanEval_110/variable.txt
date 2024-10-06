@@ -1,0 +1,14 @@
+from typing import *
+def exchange(lst1, lst2):
+    odd = 0
+    even = 0 ## [STATE]i=??[/STATE]
+    for i in lst1: ## [STATE]lst1=??[/STATE]
+        if i%2 == 1: ## [CONDITION](i%2 == 1)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            odd += 1 ## [STATE]i=??[/STATE]
+    for i in lst2: ## [STATE]lst2=??[/STATE]
+        if i%2 == 0: ## [CONDITION](i%2 == 0)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            even += 1
+    if even >= odd: ## [CONDITION](even >= odd)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return "YES"
+    return "NO"
+            

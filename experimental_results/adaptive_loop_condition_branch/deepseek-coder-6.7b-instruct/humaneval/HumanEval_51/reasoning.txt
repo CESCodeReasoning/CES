@@ -1,0 +1,12 @@
+The function remove_vowels takes a string text as input and returns a new string where all the vowels (both uppercase and lowercase) are removed.
+
+To determine the output of executing the function remove_vowels on the input 'fedcba', we need to iterate over each character in the string 'fedcba'. If the character is not a vowel (i.e., it is not in the list ["a", "e", "i", "o", "u"]), we include it in the new string. If the character is a vowel, we skip it.
+
+So, the output of executing the function remove_vowels on the input 'fedcba' is 'fedcba', because all the vowels are removed.
+
+The function remove_vowels uses a list comprehension to create a new string. The expression [s for s in text if s.lower() not in ["a", "e", "i", "o", "u"]] generates a list of characters in text that are not vowels. The "".join() method then concatenates these characters into a new string.
+
+The lower() method is used to ensure that the function works correctly even if the input string contains uppercase vowels.
+
+The time complexity of the function is O(n), where n is the length of the input string. This is because the function needs to iterate over each character in the string once.
+<|EOT|>

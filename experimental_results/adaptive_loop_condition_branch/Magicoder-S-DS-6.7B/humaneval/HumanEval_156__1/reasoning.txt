@@ -1,0 +1,27 @@
+The function `int_to_mini_roman` is called with ( number = 152 ).
+Inside the function, two lists are defined: `num` and `sym`. `num` contains the values of the Roman numerals, and `sym` contains the corresponding symbols.
+The while loop iterates from 12 (the index of the largest Roman numeral in `num`) down to 0.
+First Iteration (i = 12):
+    - number // num[i] = 152 // 100 = 1 (integer division).
+    - number %= num[i] updates number to 52 (152 % 100 = 52).
+    - div = 1, while div: is True.
+    - res += sym[i] updates res to 'C'.
+    - div -= 1 updates div to 0.
+Second Iteration (i = 11):
+    - number // num[i] = 52 // 50 = 1 (integer division).
+    - number %= num[i] updates number to 2 (52 % 50 = 2).
+    - div = 1, while div: is True.
+    - res += sym[i] updates res to 'C' + 'L' = 'CL'.
+    - div -= 1 updates div to 0.
+Third Iteration (i = 9):
+    - number // num[i] = 2 // 1 = 2 (integer division).
+    - number %= num[i] updates number to 0 (2 % 1 = 0).
+    - div = 2, while div: is True.
+    - res += sym[i] updates res to 'CL' + 'X' = 'CLX'.
+    - div -= 1 updates div to 1.
+Fourth Iteration (i = 8):
+    - number // num[i] = 0 // 1 = 0 (integer division).
+    - number %= num[i] updates number to 0 (0 % 1 = 0).
+    - div = 0, while div: is False.
+    - div -= 1 updates div to -1.
+The while loop terminates, and the function returns the value of `res`, which is now 'clx'.

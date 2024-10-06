@@ -1,0 +1,9 @@
+The function `prod_signs` is called with ( arr = [1, 2, 2, -4] ).
+The condition `not arr` is false, therefore the if branch is not taken and the method proceeds to the next line.
+The variable `prod` is assigned the value of `0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))`.
+The condition `0 in arr` is false, therefore the first part of the ternary operator is evaluated.
+The second part of the ternary operator is evaluated, which is `(-1) ** len(list(filter(lambda x: x < 0, arr)))`.
+The list comprehension `[abs(i) for i in arr]` is evaluated, which results in `[1, 2, 2, 4]`.
+The method returns the product of the list comprehension and `prod`, which is `(-1) ** len(list(filter(lambda x: x < 0, arr))) * sum([1, 2, 2, 4])`.
+
+Therefore, the final output of the function `prod_signs([1, 2, 2, -4])` is `-8`.

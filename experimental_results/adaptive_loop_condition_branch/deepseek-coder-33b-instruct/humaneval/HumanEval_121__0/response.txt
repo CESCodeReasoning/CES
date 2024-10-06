@@ -1,0 +1,12 @@
+
+[REASONING]
+The function solution takes a list of integers as input. It then iterates over the list, keeping track of both the index and the value at each index. It only considers the value if the index is even and the value is odd. It then sums up all these values and returns the result.
+
+In the given list [2, 4, 8], the values at even indices are 2 and 8. However, only 2 is odd, so the function only considers this value.
+
+Therefore, the output of executing the function solution on the input [2, 4, 8] is 2.
+[/REASONING]
+
+[OUTPUT]
+2
+[/OUTPUT]

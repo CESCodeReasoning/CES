@@ -1,0 +1,5 @@
+from typing import *
+
+def sum_to_n(n: int):
+    # [STATE] n = 1 [/STATE]
+    return sum(range(n + 1))  # [STATE] n + 1 = 2, range(n + 1) = range(2) = [0, 1], sum(range(2)) = 1 [/STATE]

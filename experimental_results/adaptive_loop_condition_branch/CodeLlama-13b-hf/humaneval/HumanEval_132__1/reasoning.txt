@@ -1,0 +1,109 @@
+The function `is_nested` is called with ( string = "[[[[]]]]" ).
+Inside the function, a variable `opening_bracket_index` and `closing_bracket_index` are initialized to empty lists.
+
+Iteration 1:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 0.
+Iteration 2:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 1.
+Iteration 3:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 2.
+Iteration 4:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 3.
+Iteration 5:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 4.
+Iteration 6:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 5.
+Iteration 7:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 6.
+Iteration 8:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 7.
+Iteration 9:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 8.
+Iteration 10:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 9.
+Iteration 11:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 10.
+Iteration 12:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 11.
+Iteration 13:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 12.
+
+The `closing_bracket_index` list is reversed.
+
+Iteration 1:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 0.
+Iteration 2:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 1.
+Iteration 3:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 2.
+Iteration 4:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 3.
+Iteration 5:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 4.
+Iteration 6:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 5.
+Iteration 7:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 6.
+Iteration 8:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 7.
+Iteration 9:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 8.
+Iteration 10:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 9.
+Iteration 11:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 10.
+Iteration 12:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 11.
+Iteration 13:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 12.
+
+The `closing_bracket_index` list is reversed.
+
+Iteration 1:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 0.
+Iteration 2:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 1.
+Iteration 3:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 2.
+Iteration 4:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 3.
+Iteration 5:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 4.
+Iteration 6:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 5.
+Iteration 7:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 6.
+Iteration 8:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 7.
+Iteration 9:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 8.
+Iteration 10:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 9.
+Iteration 11:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 10.
+Iteration 12:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 11.
+Iteration 13:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 12.
+
+The `closing_bracket_index` list is reversed.
+
+Iteration 1:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 0.
+Iteration 2:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 1.
+Iteration 3:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 2.
+Iteration 4:
+    - The character '[' is not equal to '[', so the `opening_bracket_index` list is appended with 3.
+Iteration 5:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 4.
+Iteration 6:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 5.
+Iteration 7:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 6.
+Iteration 8:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 7.
+Iteration 9:
+    - The character ']' is not equal to '[', so the `closing_bracket_index` list is appended with 8.
+Iteration 10

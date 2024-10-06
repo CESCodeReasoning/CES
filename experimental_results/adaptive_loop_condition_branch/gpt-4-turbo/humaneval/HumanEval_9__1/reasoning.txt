@@ -1,0 +1,28 @@
+The function `rolling_max` is called with the list `[1, 2, 3, 4]`.
+Inside the function, a variable `running_max` is initialized to `None` and an empty list `result` is created to store the running maximum values.
+
+Iteration 1:
+    - The number `n` is 1.
+    - Since `running_max` is `None`, the condition `(running_max is None)` is true.
+    - `running_max` is updated to 1.
+    - The value 1 is appended to `result`.
+
+Iteration 2:
+    - The number `n` is 2.
+    - `running_max` is not `None` now, so the `else` branch is taken.
+    - `running_max` is updated to the maximum of 1 and 2, which is 2.
+    - The value 2 is appended to `result`.
+
+Iteration 3:
+    - The number `n` is 3.
+    - Again, the `else` branch is taken.
+    - `running_max` is updated to the maximum of 2 and 3, which is 3.
+    - The value 3 is appended to `result`.
+
+Iteration 4:
+    - The number `n` is 4.
+    - The `else` branch is taken.
+    - `running_max` is updated to the maximum of 3 and 4, which is 4.
+    - The value 4 is appended to `result`.
+
+The function returns the list `[1, 2, 3, 4]` which represents the running maximum values for each element in the input list.

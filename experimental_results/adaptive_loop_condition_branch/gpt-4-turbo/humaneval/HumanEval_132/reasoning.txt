@@ -1,0 +1,21 @@
+The function `is_nested` is called with the input string "[[]]".
+
+1. The function initializes two lists: `opening_bracket_index` and `closing_bracket_index` to keep track of the indices of opening and closing brackets respectively.
+
+2. The function iterates over each character in the string:
+   - For the first character '[', it is an opening bracket, so its index (0) is added to `opening_bracket_index`.
+   - For the second character '[', it is another opening bracket, so its index (1) is added to `opening_bracket_index`.
+   - For the third character ']', it is a closing bracket, so its index (2) is added to `closing_bracket_index`.
+   - For the fourth character ']', it is another closing bracket, so its index (3) is added to `closing_bracket_index`.
+
+3. The `closing_bracket_index` list is then reversed to facilitate the comparison of indices in the next step.
+
+4. The function initializes a counter `cnt` to 0 and an index `i` to 0. It also calculates the length `l` of the `closing_bracket_index` list.
+
+5. The function iterates over each index in `opening_bracket_index`:
+   - For the first index (0), it checks if it is less than the first index in the reversed `closing_bracket_index` (3). Since it is, `cnt` is incremented by 1 and `i` is incremented by 1.
+   - For the second index (1), it checks if it is less than the next index in the reversed `closing_bracket_index` (2). Since it is, `cnt` is incremented by 1 and `i` is incremented by 1.
+
+6. Finally, the function checks if `cnt` is greater than or equal to 2. Since `cnt` is 2, the function returns `True`.
+
+Therefore, the output of the function `is_nested("[[]]")` is `True`.

@@ -1,0 +1,21 @@
+[REASONING]
+The function `is_simple_power` is called with ( x = 1, n = 1 ).
+The first condition ( n == 1 ) is satisfied, therefore the if branch is taken and the function returns ( x == 1 ) as the output.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def is_simple_power(x, n):
+    if (n == 1): ## [CONDITION](n == 1)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+        return (x == 1)
+    power = 1
+    while (power < x): ## [STATE](power < x)=False[/STATE][STATE]power=[1][/STATE][STATE]x=[1][/STATE]
+        power = power * n
+    return (power == x)
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]

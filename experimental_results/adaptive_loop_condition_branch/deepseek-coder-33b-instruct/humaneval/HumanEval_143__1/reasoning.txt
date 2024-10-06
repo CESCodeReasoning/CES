@@ -1,0 +1,25 @@
+The function words_in_sentence(sentence) takes a sentence("go for it") as its parameter.
+The outer loop iterates through each word in the sentence.
+For each word, it checks if the length of the word is 1 or if the length of the word is divisible by any number from 2 to the length of the word.
+If the word meets either of these conditions, it is not added to the new list.
+First Iteration (word="go"):
+    - `word` is "go", `len(word)` is 2, `flg` is 0.
+    - `len(word)` is not 1, so the if branch is not taken.
+    - `i` is 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20.
+    - `len(word) % i` is not 0 for any i, so the if branch is not taken.
+    - `flg` is 0, `len(word)` is not 2, so the if branch is not taken.
+    - "go" is added to `new_lst`.
+Second Iteration (word="for"):
+    - `word` is "for", `len(word)` is 3, `flg` is 0.
+    - `len(word)` is not 1, so the if branch is not taken.
+    - `i` is 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20.
+    - `len(word) % i` is not 0 for any i, so the if branch is not taken.
+    - `flg` is 0, `len(word)` is not 2, so the if branch is not taken.
+    - "for" is added to `new_lst`.
+Third Iteration (word="it"):
+    - `word` is "it", `len(word)` is 2, `flg` is 0.
+    - `len(word)` is not 1, so the if branch is not taken.
+    - `i` is 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20.
+    - `len(word) % i` is not 0 for any i, so the if branch is not taken.
+    - `flg` is 0, `len(word)` is not 2, so the if branch is not taken.
+    - "it" is added to `new_lst`.

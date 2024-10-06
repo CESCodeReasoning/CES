@@ -1,0 +1,21 @@
+The function `fruit_distribution` is called with ( s = "5 apples and 6 oranges", n = 19 ).
+Inside the function, a list `lis` is initialized to be empty.
+The string `s` is split by the space character, resulting in a list of strings `["5", "apples", "and", "6", "oranges"]`.
+The loop iterates over the list of strings.
+First Iteration (i = "5")
+   - The string "5" is a digit, so the condition `i.isdigit()` is true.
+   - Action: The integer 5 is appended to the list `lis`.
+Second Iteration (i = "apples")
+   - The string "apples" is not a digit, so the condition `i.isdigit()` is false.
+   - Action: The string "apples" is skipped.
+Third Iteration (i = "and")
+   - The string "and" is not a digit, so the condition `i.isdigit()` is false.
+   - Action: The string "and" is skipped.
+Fourth Iteration (i = "6")
+   - The string "6" is a digit, so the condition `i.isdigit()` is true.
+   - Action: The integer 6 is appended to the list `lis`.
+Fifth Iteration (i = "oranges")
+   - The string "oranges" is not a digit, so the condition `i.isdigit()` is false.
+   - Action: The string "oranges" is skipped.
+After the loop completes, the list `lis` contains the integers [5, 6].
+The function returns the value of `n - sum(lis)`, which is 19 - (5 + 6) = 8.

@@ -1,0 +1,9 @@
+The function `order_by_points` takes a list of numbers as input and returns a list of numbers sorted in descending order based on the sum of their digits.
+The function first defines a helper function `digits_sum` that takes a number as input and returns the sum of its digits.
+The function then uses the `sorted` method to sort the input list of numbers based on the `digits_sum` function.
+The `sorted` method takes a `key` argument that specifies the function to use for sorting.
+In this case, the `key` argument is set to `digits_sum`, which means that the `digits_sum` function will be applied to each element of the input list before sorting.
+The `sorted` method also takes an optional `reverse` argument that specifies whether to sort the list in ascending or descending order.
+In this case, the `reverse` argument is set to `True`, which means that the list will be sorted in descending order.
+
+Therefore, the final output of the function `order_by_points` is a list of numbers sorted in descending order based on the sum of their digits.

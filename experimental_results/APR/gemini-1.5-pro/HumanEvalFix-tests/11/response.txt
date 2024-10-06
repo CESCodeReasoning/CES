@@ -1,0 +1,23 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```
+
+```python
+from typing import List
+
+
+def string_xor(a: str, b: str) -> str:
+    def xor(i, j):
+        if (i == '1' and j == '0') or (i == '0' and j == '1'):
+            return '1'
+        else:
+            return '0'
+
+    return ''.join(xor(x, y) for x, y in zip(a, b))
+```

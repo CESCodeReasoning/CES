@@ -1,0 +1,9 @@
+The function `is_sorted` is called with the list `[3, 2, 1]`.
+Inside the function:
+1. A dictionary `count_digit` is initialized using a dictionary comprehension. This dictionary counts occurrences of each element in the list. After processing the list `[3, 2, 1]`, the dictionary will be `{3: 1, 2: 1, 1: 1}` since each element appears exactly once.
+
+2. The first conditional statement checks if any element in the list appears more than twice using the dictionary `count_digit`. The condition `(any(count_digit[i] > 2 for i in lst))` evaluates to `False` because no element appears more than twice. Therefore, this branch is not taken.
+
+3. The second conditional statement checks if the list is sorted in non-decreasing order. This is done by iterating through the list starting from the second element and checking if each element is greater than or equal to the previous element. The condition `(all(lst[i - 1] <= lst[i] for i in range(1, len(lst))))` evaluates to `False` for the list `[3, 2, 1]` because `2` is not greater than or equal to `3`. Therefore, this branch is not taken.
+
+4. Since neither of the conditions for returning `True` are met, the function proceeds to the `else` branch and returns `False`.

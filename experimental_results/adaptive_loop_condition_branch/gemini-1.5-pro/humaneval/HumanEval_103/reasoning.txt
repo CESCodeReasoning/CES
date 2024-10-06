@@ -1,0 +1,15 @@
+The function `rounded_avg` is called with ( n = 1, m = 5 ).
+The condition ( m < n ) is not satisfied, therefore the if branch is not taken.
+The variable `summation` is initialized to 0.
+The loop iterates from 1 through 5 (since ( n = 1 ) and ( m = 5 )).
+First Iteration (i = 1):
+    `summation += i` updates `summation` to 1 ( 0 + 1 = 1 ).
+Second Iteration (i = 2):
+    `summation += i` updates `summation` to 3 ( 1 + 2 = 3 ).
+Third Iteration (i = 3)
+    `summation += i` updates `summation` to 6 ( 3 + 3 = 6 ).
+Fourth Iteration (i = 4)
+    `summation += i` updates `summation` to 10 ( 6 + 4 = 10 ).
+Fifth Iteration (i = 5)
+    `summation += i` updates `summation` to 15 ( 10 + 5 = 15 ).
+After the loop completes, the function returns `bin(round(summation/(m - n + 1)))`, which is `bin(round(15/(5 - 1 + 1)))` = `bin(round(15/5))` = `bin(round(3))` = `bin(3)` = `0b11`.

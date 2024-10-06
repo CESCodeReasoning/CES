@@ -1,0 +1,11 @@
+The function `get_row` takes a 2D list `lst` and a number `x` as input. It returns a sorted list of tuples, where each tuple represents the coordinates of the number `x` in the 2D list `lst`.
+
+The function first creates a list of tuples `coords`, where each tuple represents a coordinate in the 2D list `lst`. The tuples are created by iterating over the indices of the 2D list `lst`. If the element at the current index is equal to `x`, the index is added to the list `coords`.
+
+The list `coords` is then sorted twice. First, it is sorted by the second element of each tuple (i.e., the column index), in descending order. This is done by the `key=lambda x: x[1]` argument to the `sorted` function. The reason for sorting by the second element first is that we want to find the coordinates of `x` from top to bottom in the 2D list `lst`.
+
+Next, the list `coords` is sorted by the first element of each tuple (i.e., the row index), in ascending order. This is done by the `key=lambda x: x[0]` argument to the `sorted` function. The reason for sorting by the first element second is that if there are multiple coordinates with the same column index, we want to return the coordinates with the smaller row index first.
+
+Given the input `get_row([], 1)`, the function will return an empty list because there are no elements in the input list `lst`. Therefore, there are no coordinates of `1` in the 2D list `lst`.
+
+Therefore, the output of executing the function `get_row([], 1)` is `[]`.

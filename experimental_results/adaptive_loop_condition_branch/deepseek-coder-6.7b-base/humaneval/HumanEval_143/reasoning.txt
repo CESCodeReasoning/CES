@@ -1,0 +1,6 @@
+The function words_in_sentence(sentence) takes a string as its parameter.
+The function splits the string into a list of words using the split() method.
+The function iterates through each word in the list.
+The function checks if the length of the word is 1 or 2. If it is, it appends the word to the new list.
+If the length of the word is greater than 2, the function checks if the length of the word is divisible by any number between 2 and the length of the word. If it is, it appends the word to the new list.
+The function returns a string that is the concatenation of the words in the new list.

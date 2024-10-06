@@ -1,0 +1,6 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: maximum
+main.py(3):     if k == 0:
+main.py(5):     arr.sort()
+main.py(6):     ans = arr[-k:]
+main.py(7):     return ans

@@ -1,0 +1,6 @@
+The function filter_by_prefix takes two arguments: a list of strings (strings) and a string (prefix).
+It returns a new list containing all the strings in the list that start with the prefix.
+
+To determine the output of executing the function filter_by_prefix on the input ['abc', 'abcd', 'abcde'], 'abc', we need to iterate over the list and check if each string starts with the prefix.
+We can use the startswith() method to check if a string starts with a given prefix.
+Therefore, the output of executing the function filter_by_prefix on the input ['abc', 'abcd', 'abcde'], 'abc' is ['abc', 'abcd', 'abcde'].

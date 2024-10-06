@@ -1,0 +1,4 @@
+The function make_a_pile takes an integer n as input and returns a list of integers.
+To determine the output of executing the function make_a_pile on the input 4, we need to generate a list of integers.
+The list will have n elements, where the ith element is equal to 2i + n.
+Therefore, the output of executing the function make_a_pile on the input 4 is [6, 8, 10, 12].

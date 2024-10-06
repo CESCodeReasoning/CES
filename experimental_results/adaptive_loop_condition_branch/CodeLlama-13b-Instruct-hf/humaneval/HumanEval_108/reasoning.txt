@@ -1,0 +1,25 @@
+The function `count_nums` is called with ( arr = [1, 1, 2, -2, 3, 4, 5] ).
+The function `digits_sum` is called with ( n = 1 ).
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` returns the sum of the digits of `n`, which is 1.
+The function `digits_sum` is called with ( n = 1 ).
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` returns the sum of the digits of `n`, which is 1.
+The function `digits_sum` is called with ( n = 2 ).
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` returns the sum of the digits of `n`, which is 2.
+The function `digits_sum` is called with ( n = -2 ).
+The condition `n < 0` is true, therefore the if branch is taken.
+The function `digits_sum` returns the sum of the digits of `n`, which is -2.
+The function `digits_sum` is called with ( n = 3 ).
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` returns the sum of the digits of `n`, which is 3.
+The function `digits_sum` is called with ( n = 4 ).
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` returns the sum of the digits of `n`, which is 4.
+The function `digits_sum` is called with ( n = 5 ).
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` returns the sum of the digits of `n`, which is 5.
+The function `count_nums` returns the length of the list of positive numbers, which is 5.
+
+Therefore, the final output of the function `count_nums([1, 1, 2, -2, 3, 4, 5])` is 5.

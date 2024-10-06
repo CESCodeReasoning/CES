@@ -1,0 +1,17 @@
+[REASONING]
+The function get_positive takes a list l as input and returns a new list containing only the positive elements of l.
+To determine the output of executing the function get_positive on the input [-1, -2], we need to first iterate over the elements of l and check if each element is greater than 0.
+Since neither -1 nor -2 is greater than 0, the output of executing the function get_positive on the input [-1, -2] is an empty list.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def get_positive(l: list):
+    return [e for e in l if [CONDITION]e > 0[/CONDITION]]
+[/ANSWER]
+
+[OUTPUT]
+[]
+[/OUTPUT]

@@ -1,0 +1,8 @@
+from typing import *
+def common(l1: list, l2: list):
+    ret = set() ## [STATE]e1=[1, 4, 3, 34, 653, 2, 5][/STATE]
+    for e1 in l1: ## [STATE]e2=[5, 7, 1, 5, 9, 653, 121][/STATE][STATE]l1=[1, 4, 3, 34, 653, 2, 5][/STATE]
+        for e2 in l2: ## [STATE]l2=[5, 7, 1, 5, 9, 653, 121][/STATE]
+            if e1 == e2: ## [CONDITION](e1 == e2)=[True, False, False, False, True, False, True][/CONDITION][BRANCH]taken=[Y, N, N, N, Y, N, Y][/BRANCH]
+                ret.add(e1)
+    return sorted(list(ret))

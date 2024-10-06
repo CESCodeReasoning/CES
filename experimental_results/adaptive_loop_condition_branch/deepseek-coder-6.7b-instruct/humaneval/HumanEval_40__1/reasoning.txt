@@ -1,0 +1,31 @@
+The function triples_sum_to_zero(l) takes a list of integers as its parameter.
+The outermost loop iterates through each element in the list to compare it against the others.
+The first inner loop starts from the current element and iterates through the remaining elements to compare it against the others.
+The innermost loop starts from the current element and iterates through the remaining elements to compare it against the others.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4 and 5.
+    - j=1: k in the innermost loop is 2, 3, 4, 5.
+    - j=2: k in the innermost loop is 3, 4, 5.
+    - j=3: k in the innermost loop is 4, 5.
+    - j=4: k in the innermost loop is 5.
+    - j=5: No more elements to compare.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4 and 5.
+    - j=2: k in the innermost loop is 3, 4, 5.
+    - j=3: k in the innermost loop is 4, 5.
+    - j=4: k in the innermost loop is 5.
+    - j=5: No more elements to compare.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4 and 5.
+    - j=3: k in the innermost loop is 4, 5.
+    - j=4: k in the innermost loop is 5.
+    - j=5: No more elements to compare.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4 and 5.
+    - j=4: k in the innermost loop is 5.
+    - j=5: No more elements to compare.
+Fifth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5.
+    - j=5: No more elements to compare.
+Sixth iteration (i=5):
+    No more elements to compare.

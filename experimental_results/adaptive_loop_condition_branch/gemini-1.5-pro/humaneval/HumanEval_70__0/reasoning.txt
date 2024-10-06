@@ -1,0 +1,4 @@
+The function `strange_sort_list` is called with ( lst = [] ).
+Inside the function, two variables `res` and `switch` are initialized to [] and True, respectively.
+The while loop iterates until `lst` is empty.
+Since `lst` is empty, the while loop terminates. The function returns the value of `res`, which is now [].

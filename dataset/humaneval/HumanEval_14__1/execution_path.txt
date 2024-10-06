@@ -1,0 +1,5 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: all_prefixes
+main.py(5):     result = []
+main.py(7):     for i in range(len(string)):
+main.py(9):     return result

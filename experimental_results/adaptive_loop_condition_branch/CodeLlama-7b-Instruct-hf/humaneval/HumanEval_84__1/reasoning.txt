@@ -1,0 +1,4 @@
+The function solve takes an integer N as input and returns the binary representation of the sum of the digits of N.
+To determine the output of executing the function solve on the input 147, we need to calculate the sum of the digits of 147, which is 1+4+7=12.
+Then, we need to convert the sum to binary, which is 10010 in base 2.
+Therefore, the output of executing the function solve on the input 147 is "10010".

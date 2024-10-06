@@ -1,0 +1,12 @@
+The function `is_prime` is called with ( n = 6 ).
+The condition `n < 2` is false, so the function proceeds to the next condition.
+The loop iterates from 2 through 5 (since ( n = 6 )).
+First Iteration (k = 2)
+   - `n` is not divisible by `k` (6 % 2 = 0), so the function returns False.
+Second Iteration (k = 3)
+   - `n` is not divisible by `k` (6 % 3 = 0), so the function returns False.
+Third Iteration (k = 4)
+   - `n` is not divisible by `k` (6 % 4 = 2), so the function returns False.
+Fourth Iteration (k = 5)
+   - `n` is not divisible by `k` (6 % 5 = 1), so the function returns True.
+Therefore, the final output of the function `is_prime(6)` is True.

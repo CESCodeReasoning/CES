@@ -1,0 +1,7 @@
+The function `order_by_points` takes a list of integers as input and sorts them based on the sum of their digits.
+
+The helper function `digits_sum` calculates the sum of the digits of a number.
+
+For each number in the input list, the `digits_sum` function is applied to calculate the sum of its digits. The numbers are then sorted based on these sums.
+
+The sorted list is then returned as the output.

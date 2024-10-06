@@ -1,0 +1,95 @@
+The function `sum_squares` is called with ( lst = [-16, -9, -2, 36, 36, 26, -20, 25, -40, 20, -4, 12, -26, 35, 37] ).
+Inside the function, a variable `result` is initialized to an empty list.
+
+Iteration 1:
+    -The value of `i` is 0, which is not divisible by 3.
+    -The condition `i % 3 == 0` is false.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` remains an empty list.
+Iteration 2:
+    -The value of `i` is 1, which is not divisible by 3.
+    -The condition `i % 3 == 0` is false.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` remains an empty list.
+Iteration 3:
+    -The value of `i` is 2, which is not divisible by 3.
+    -The condition `i % 3 == 0` is false.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` remains an empty list.
+Iteration 4:
+    -The value of `i` is 3, which is divisible by 3.
+    -The condition `i % 3 == 0` is true.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` becomes [lst[3]**2].
+Iteration 5:
+    -The value of `i` is 4, which is divisible by 3.
+    -The condition `i % 3 == 0` is true.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` becomes [lst[3]**2, lst[4]**2].
+Iteration 6:
+    -The value of `i` is 5, which is not divisible by 3.
+    -The condition `i % 3 == 0` is false.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` remains [lst[3]**2, lst[4]**2].
+Iteration 7:
+    -The value of `i` is 6, which is divisible by 3.
+    -The condition `i % 3 == 0` is true.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` becomes [lst[3]**2, lst[4]**2, lst[6]**2].
+Iteration 8:
+    -The value of `i` is 7, which is not divisible by 3.
+    -The condition `i % 3 == 0` is false.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` remains [lst[3]**2, lst[4]**2, lst[6]**2].
+Iteration 9:
+    -The value of `i` is 8, which is divisible by 3.
+    -The condition `i % 3 == 0` is true.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` becomes [lst[3]**2, lst[4]**2, lst[6]**2, lst[8]**2].
+Iteration 10:
+    -The value of `i` is 9, which is not divisible by 3.
+    -The condition `i % 3 == 0` is false.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` remains [lst[3]**2, lst[4]**2, lst[6]**2, lst[8]**2].
+Iteration 11:
+    -The value of `i` is 10, which is divisible by 3.
+    -The condition `i % 3 == 0` is true.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` becomes [lst[3]**2, lst[4]**2, lst[6]**2, lst[8]**2, lst[10]**2].
+Iteration 12:
+    -The value of `i` is 11, which is not divisible by 3.
+    -The condition `i % 3 == 0` is false.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` remains [lst[3]**2, lst[4]**2, lst[6]**2, lst[8]**2, lst[10]**2].
+Iteration 13:
+    -The value of `i` is 12, which is divisible by 3.
+    -The condition `i % 3 == 0` is true.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` becomes [lst[3]**2, lst[4]**2, lst[6]**2, lst[8]**2, lst[10]**2, lst[12]**2].
+Iteration 14:
+    -The value of `i` is 13, which is not divisible by 3.
+    -The condition `i % 3 == 0` is false.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` remains [lst[3]**2, lst[4]**2, lst[6]**2, lst[8]**2, lst[10]**2, lst[12]**2].
+Iteration 15:
+    -The value of `i` is 14, which is divisible by 3.
+    -The condition `i % 3 == 0` is true.
+    -The branch `elif i % 4 == 0 and i % 3 != 0` is not taken.
+    -The branch `else` is not taken.
+    -The value of `result` becomes [lst[3]**2, lst[4]**2, lst[6]**2, lst[8]**2, lst[10]**2, lst[12]**2, lst[14]**2].
+
+Therefore, the final output of the function `sum_squares([-16, -9, -2, 36, 36, 26, -20, 25, -40, 20, -4, 12, -26, 35, 37])` is 144.

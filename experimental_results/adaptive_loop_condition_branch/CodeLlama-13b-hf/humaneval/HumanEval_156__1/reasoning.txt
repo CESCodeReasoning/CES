@@ -1,0 +1,166 @@
+The function `int_to_mini_roman` is called with ( number = 152 ).
+Inside the function, a variable `num` is initialized to [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000].
+Inside the function, a variable `sym` is initialized to ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"].
+Inside the function, a variable `i` is initialized to 12.
+Inside the function, a variable `res` is initialized to ''.
+First Iteration:
+    - number = 152, num[i] = 1000.
+    - div = 152 // 1000 = 1.
+    - number %= 1000 = 52.
+    - res = ''.
+    - while div:
+        - div = 1, div -= 1.
+        - res = 'M'.
+    - i = 12 - 1 = 11.
+Second Iteration:
+    - number = 52, num[i] = 100.
+    - div = 52 // 100 = 0.
+    - number %= 100 = 52.
+    - res = 'M'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = 11 - 1 = 10.
+Third Iteration:
+    - number = 52, num[i] = 10.
+    - div = 52 // 10 = 5.
+    - number %= 10 = 2.
+    - res = 'M'.
+    - while div:
+        - div = 5, div -= 1.
+        - res = 'MV'.
+    - i = 10 - 1 = 9.
+Fourth Iteration:
+    - number = 2, num[i] = 1.
+    - div = 2 // 1 = 2.
+    - number %= 1 = 0.
+    - res = 'MV'.
+    - while div:
+        - div = 2, div -= 1.
+        - res = 'MVII'.
+    - i = 9 - 1 = 8.
+Fifth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = 8 - 1 = 7.
+Sixth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = 7 - 1 = 6.
+Seventh Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = 6 - 1 = 5.
+Eighth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = 5 - 1 = 4.
+Ninth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = 4 - 1 = 3.
+Tenth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = 3 - 1 = 2.
+Eleventh Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = 2 - 1 = 1.
+Twelfth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = 1 - 1 = 0.
+Thirteenth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = 0 - 1 = -1.
+Fourteenth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = -1 - 1 = -2.
+Fifteenth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = -2 - 1 = -3.
+Sixteenth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = -3 - 1 = -4.
+Seventeenth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = -4 - 1 = -5.
+Eighteenth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = -5 - 1 = -6.
+Nineteenth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while div:
+        - div = 0, div -= 1.
+    - i = -6 - 1 = -7.
+Twentieth Iteration:
+    - number = 0, num[i] = 1.
+    - div = 0 // 1 = 0.
+    - number %= 1 = 0.
+    - res = 'MVII'.
+    - while

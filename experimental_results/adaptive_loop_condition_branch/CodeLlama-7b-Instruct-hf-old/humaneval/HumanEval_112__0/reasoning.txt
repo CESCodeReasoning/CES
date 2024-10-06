@@ -1,0 +1,13 @@
+The function reverse_delete takes two arguments: s and c.
+s is a string, and c is a string of characters to be deleted.
+The function returns a tuple containing two elements:
+1. The reversed string of s without the characters in c.
+2. A boolean value indicating whether the reversed string is the same as the original string.
+
+To determine the output of executing the function reverse_delete on the input "abcdedcba" and "v", we need to follow the steps below:
+
+1. First, we need to remove all the characters in "v" from "abcdedcba".
+2. Then, we need to reverse the remaining string.
+3. Finally, we need to check if the reversed string is the same as the original string.
+
+Therefore, the output of executing the function reverse_delete on the input "abcdedcba" and "v" is ("edcba", False).

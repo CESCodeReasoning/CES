@@ -1,0 +1,7 @@
+from typing import *
+
+
+def check_if_last_char_is_a_letter(txt: str) -> bool:
+    check = txt.split(' ')[-1]  # The last word in the string is "e"
+    return True if len(check) == 1 and (
+        97 <= ord(check.lower()) <= 122) else False  # The length of the last word is 1 and the ASCII value of 'e' falls within the range of lowercase letters

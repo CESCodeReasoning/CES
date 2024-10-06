@@ -1,0 +1,5 @@
+The function `prod_signs` is called with an array of integers.
+The first line checks if the array is empty. If it is, the function returns `None`.
+The second line initializes a variable `prod` to 0 if there is a 0 in the array, or to (-1) raised to the power of the number of negative integers in the array.
+The third line calculates the product of the absolute values of the integers in the array.
+The function returns the product of `prod` and the sum of the absolute values of the integers in the array.

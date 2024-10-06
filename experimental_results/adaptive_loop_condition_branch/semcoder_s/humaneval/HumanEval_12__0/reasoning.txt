@@ -1,0 +1,7 @@
+The function `longest` is called with ( strings = ['x', 'y', 'z'] ).
+The condition `not strings` is `False`, so we proceed to the next line.
+The `maxlen` variable is assigned the maximum length of strings in the list, which is 1 for 'x', 'y', 'z'.
+Iteration 1:
+    -The string 'x' has a length of 1, which is equal to `maxlen`.
+    -The condition `len(s) == maxlen` is `True` for 'x'.
+    -The function returns 'x'.

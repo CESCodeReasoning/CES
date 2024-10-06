@@ -1,0 +1,23 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```
+
+
+```python
+def flip_case(string: str) -> str:
+    result = []
+    for char in string:
+        if char.islower():
+            result.append(char.upper())
+        elif char.isupper():
+            result.append(char.lower())
+        else:
+            result.append(char)
+    return ''.join(result)
+```

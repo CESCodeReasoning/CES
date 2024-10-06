@@ -1,0 +1,5 @@
+from typing import *
+
+
+def unique(my_list: list):
+    return sorted(list(set(my_list)))

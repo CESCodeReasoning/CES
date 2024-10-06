@@ -1,0 +1,6 @@
+The function find_max takes a list of strings words as input and returns the string with the maximum number of unique characters.
+To determine the output of executing the function find_max on the input ["name", "enam", "game"], we need to first sort the list of strings by the number of unique characters in each string in descending order.
+Then, we need to return the first string in the sorted list.
+The number of unique characters in "name" is 4, the number of unique characters in "enam" is 4, and the number of unique characters in "game" is 4.
+Therefore, the list of strings sorted by the number of unique characters in each string in descending order is ["name", "enam", "game"].
+Therefore, the output of executing the function find_max on the input ["name", "enam", "game"] is "name".

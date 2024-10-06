@@ -1,0 +1,4 @@
+The function sort_array takes an array of integers as input and returns a sorted array.
+The sorting is done in a way that the first and last elements of the array are in the same position as they were in the original array.
+To achieve this, the function uses the sorted() function to sort the array, but with a custom comparison function that reverses the sorting if the sum of the first and last elements is even.
+Therefore, the output of executing the function sort_array on the input [2, 4, 3, 0, 1, 5, 6] is [0, 1, 2, 3, 4, 5, 6].

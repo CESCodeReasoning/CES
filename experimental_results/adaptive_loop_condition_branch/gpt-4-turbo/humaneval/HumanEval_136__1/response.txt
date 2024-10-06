@@ -1,0 +1,27 @@
+[REASONING]
+The function `largest_smallest_integers` takes a list of integers as input and aims to find the largest negative integer and the smallest positive integer from the list. It uses two filters to separate the negative and positive integers into two lists named `smallest` and `largest`, respectively.
+
+1. The input list is `[-1, -3, -5, -6]`.
+2. The `smallest` list is created by filtering all negative numbers from the input list, resulting in `[-1, -3, -5, -6]`.
+3. The `largest` list is created by filtering all positive numbers from the input list, but since there are no positive numbers, it results in an empty list `[]`.
+4. The function then attempts to find the maximum value in the `smallest` list, which is `-1` (the largest negative number).
+5. The function also attempts to find the minimum value in the `largest` list, but since it is empty, it returns `None`.
+6. The function returns a tuple `(-1, None)`, where `-1` is the largest negative number and `None` indicates the absence of any positive numbers.
+
+Thus, the output of the function when called with the input `[-1, -3, -5, -6]` is `(-1, None)`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def largest_smallest_integers(lst):
+    # [STATE] lst = [-1, -3, -5, -6] [/STATE]
+    smallest = list(filter(lambda x: x < 0, lst))  # [STATE] smallest = [-1, -3, -5, -6] [/STATE]
+    largest = list(filter(lambda x: x > 0, lst))  # [STATE] largest = [] [/STATE]
+    return (max(smallest) if smallest else None,  # [CONDITION] smallest is not empty [/CONDITION] [BRANCH] Y [/BRANCH]
+            min(largest) if largest else None)  # [CONDITION] largest is empty [/CONDITION] [BRANCH] N [/BRANCH]
+[/PYTHON]
+
+[OUTPUT]
+(-1, None)
+[/OUTPUT]

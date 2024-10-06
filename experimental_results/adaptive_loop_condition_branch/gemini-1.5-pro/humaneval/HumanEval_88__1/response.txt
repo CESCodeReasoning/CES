@@ -1,0 +1,19 @@
+[REASONING]
+The function sort_array takes an array as input and returns a sorted version of the array.
+If the length of the array is 0, the function returns an empty array.
+Otherwise, the function sorts the array in ascending order if the sum of the first and last elements of the array is odd, or in descending order if the sum of the first and last elements of the array is even.
+To determine the output of executing the function sort_array on the input [5], we need to check the length of the array.
+Since the length of the array is 1, the function returns an empty array.
+Therefore, the output of executing the function sort_array on the input [5] is [].
+[/REASONING]
+
+[ANSWER]
+def sort_array(array):
+    # [STATE]len(array) == 0[/STATE]
+    return [] if [CONDITION]len(array) == 0[/CONDITION] else sorted(
+        array, reverse=(array[0] + array[-1]) % 2 == 0)
+[/ANSWER]
+
+[OUTPUT]
+[]
+[/OUTPUT]

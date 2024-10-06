@@ -1,0 +1,13 @@
+The function `prime_length` is called with ( string = 'Hello' ).
+The length of the string is 5.
+
+Iteration 1:
+    -The length of the string is not 0 or 1, so the condition `l == 0 or l == 1` is false.
+Iteration 2:
+    -The length of the string is not divisible by 2, so the condition `l % i == 0` is false.
+Iteration 3:
+    -The length of the string is not divisible by 3, so the condition `l % i == 0` is false.
+Iteration 4:
+    -The length of the string is not divisible by 4, so the condition `l % i == 0` is false.
+Iteration 5:
+    -The length of the string is not divisible by 5, so the condition `l % i == 0` is false.

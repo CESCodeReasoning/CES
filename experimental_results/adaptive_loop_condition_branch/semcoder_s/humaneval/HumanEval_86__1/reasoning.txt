@@ -1,0 +1,8 @@
+The function `anti_shuffle` takes a string `s` as input and returns a new string where the characters in each word are shuffled in alphabetical order.
+
+Here's the step-by-step reasoning of the function:
+1. The function splits the input string `s` into a list of words using the `split(' ')` method.
+2. For each word in the list, it converts the word into a list of characters, sorts the list of characters in alphabetical order, and then joins the sorted characters back into a string.
+3. Finally, it joins all the sorted words back into a single string with spaces between each word and returns this new string.
+
+For the input 'Hello World!!!', the function will return 'Helo Wllod!!!' after shuffling the characters in each word.

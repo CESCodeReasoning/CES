@@ -1,0 +1,27 @@
+The function `factorize` is called with ( n = 3 * 2 * 3 = 18 ).
+Inside the function, a list `fact` is initialized to an empty list.
+The loop iterates from 2 through 5 (since ( n = 18 )).
+First Iteration (i = 2):
+    - (i <= int((math.sqrt(n) + 1))) when i=2
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 2 to `fact`.
+    - `n //= i` updates `n` to 9.
+Second Iteration (i = 3)
+    - (i <= int((math.sqrt(n) + 1))) when i=3
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 3 to `fact`.
+    - `n //= i` updates `n` to 3.
+Third Iteration (i = 4)
+    - (i <= int((math.sqrt(n) + 1))) when i=4
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 5.
+Fourth Iteration (i = 5)
+    - (i <= int((math.sqrt(n) + 1))) when i=5
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 6.
+Fifth Iteration (i = 6)
+    - (i <= int((math.sqrt(n) + 1))) when i=6
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 7.
+After the loop completes, the condition `n > 1` is true. The else branch is taken. `fact.append(n)` appends 3 to `fact`.
+After the loop and the condition completes, the function returns the list `fact`, which is now [2, 3, 3].

@@ -1,0 +1,68 @@
+The function `match_parens` is called with ( lst = ['(()(())', '())())'] ).
+Inside the function, two variables `S1` and `S2` are defined.
+
+Iteration 1:
+    - `S1` is assigned the value '(()(())' + '())' = '(()(())()'
+    - `S2` is assigned the value '(()(())' + '())' = '(()(())()'
+Iteration 2:
+    - `S1` is assigned the value '(()(())()' + '()' = '(()(())()()'
+    - `S2` is assigned the value '(()(())()' + '()' = '(()(())()()'
+Iteration 3:
+    - `S1` is assigned the value '(()(())()()' + '()' = '(()(())()()()'
+    - `S2` is assigned the value '(()(())()()' + '()' = '(()(())()()()'
+Iteration 4:
+    - `S1` is assigned the value '(()(())()()()' + '()' = '(()(())()()()()'
+    - `S2` is assigned the value '(()(())()()()' + '()' = '(()(())()()()()'
+Iteration 5:
+    - `S1` is assigned the value '(()(())()()()()' + '()' = '(()(())()()()()()'
+    - `S2` is assigned the value '(()(())()()()()' + '()' = '(()(())()()()()()'
+
+The function then checks if either `S1` or `S2` is a valid parenthesis expression.
+
+The function `check` is called with ( s = '(()(())()()()()' ).
+Inside the function, a variable `val` is initialized to 0.
+
+Iteration 1:
+    - `val` is 0
+    - `i` is '('
+    - `val` is 1
+Iteration 2:
+    - `val` is 1
+    - `i` is '('
+    - `val` is 2
+Iteration 3:
+    - `val` is 2
+    - `i` is '('
+    - `val` is 3
+Iteration 4:
+    - `val` is 3
+    - `i` is '('
+    - `val` is 4
+Iteration 5:
+    - `val` is 4
+    - `i` is '('
+    - `val` is 5
+Iteration 6:
+    - `val` is 5
+    - `i` is ')'
+    - `val` is 4
+Iteration 7:
+    - `val` is 4
+    - `i` is ')'
+    - `val` is 3
+Iteration 8:
+    - `val` is 3
+    - `i` is ')'
+    - `val` is 2
+Iteration 9:
+    - `val` is 2
+    - `i` is ')'
+    - `val` is 1
+Iteration 10:
+    - `val` is 1
+    - `i` is ')'
+    - `val` is 0
+
+The function returns `True` if `val` is 0, otherwise it returns `False`.
+
+Therefore, the final output of the function `match_parens(['(()(())', '())())'])` is 'Yes'.

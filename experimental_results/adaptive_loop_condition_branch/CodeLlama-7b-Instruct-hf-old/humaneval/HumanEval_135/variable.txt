@@ -1,0 +1,8 @@
+def can_arrange(arr):
+    ind=-1
+    i=1
+    while i<len(arr): ## [STATE]i=1[/STATE][STATE]len(arr)=5[/STATE]
+      if arr[i]<arr[i-1]: ## [CONDITION](arr[i]<arr[i-1])=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+        ind=i
+      i+=1
+    return ind

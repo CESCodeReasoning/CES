@@ -1,0 +1,124 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_simple_power(x, n):
+    if (n == 1): 
+        return (x == 1) 
+    power = 1
+    while (n < x): 
+        power = power * n 
+    return (power == x) 
+
+Tests:
+def check(is_simple_power):
+
+    # Check some simple cases
+    assert is_simple_power(1, 4)== True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(2, 2)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(8, 2)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(3, 2)==False, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(3, 1)==False, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(5, 3)==False, "This prints if this assert fails 1 (good for debugging!)"
+    # Check some simple cases
+    assert is_simple_power(16, 2)== True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(143214, 16)== False, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(4, 2)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(9, 3)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(16, 4)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(24, 2)==False, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(128, 4)==False, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(12, 6)==False, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert is_simple_power(1, 1)==True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert is_simple_power(1, 12)==True, "This prints if this assert fails 2 (also good for debugging!)"
+
+check(is_simple_power)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_simple_power(x, n)` to solve the following problem:
+Your task is to write a function that returns true if a number x is a simple
+power of n and false in other cases.
+x is a simple power of n if n**int=x
+For example:
+is_simple_power(1, 4) => true
+is_simple_power(2, 2) => true
+is_simple_power(8, 2) => true
+is_simple_power(3, 2) => false
+is_simple_power(3, 1) => false
+is_simple_power(5, 3) => false
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return (power == x) 
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_simple_power(x, n):
+    if (n == 1): 
+        return (x == 1) 
+    power = 1
+    while (n < x): 
+        power = power * n 
+    return (power == x) 
+
+Tests:
+def check(is_simple_power):
+
+    # Check some simple cases
+    assert is_simple_power(1, 4)== True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(2, 2)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(8, 2)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(3, 2)==False, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(3, 1)==False, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(5, 3)==False, "This prints if this assert fails 1 (good for debugging!)"
+    # Check some simple cases
+    assert is_simple_power(16, 2)== True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(143214, 16)== False, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(4, 2)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(9, 3)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(16, 4)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert is_simple_power(

@@ -1,0 +1,11 @@
+The function `sort_even` is called with ( l = [1, 2, 3] ).
+The list `l` is divided into `evens` and `odds` based on their index.
+For `evens`, elements at index 0, 2 are selected.
+For `odds`, elements at index 1 are selected.
+The `evens` list is sorted in ascending order.
+The `ans` list is initialized to an empty list.
+The loop iterates over pairs of elements from `evens` and `odds`.
+First Iteration (e=1, o=2):
+    The pair (1, 2) is added to `ans`.
+After the loop completes, since the length of `evens` is not greater than the length of `odds`, the else branch is taken.
+The function returns the sorted `ans` list as the output.

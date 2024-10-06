@@ -1,0 +1,104 @@
+The function `fibfib` is called with ( n = 10 ).
+The first condition `n == 0` is not satisfied, so the branch is not taken.
+The second condition `n == 1` is not satisfied, so the branch is not taken.
+The third condition `n == 2` is not satisfied, so the branch is not taken.
+The function then calls itself recursively with `n - 1`, `n - 2`, and `n - 3`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(9)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(8)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(7)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(6)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(5)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(4)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(3)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(2)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(1)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(0)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(1)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(2)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(1)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(2)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(3)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(2)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(3)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(4)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(3)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(4)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(5)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(4)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(5)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(6)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(5)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(6)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(7)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(6)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(7)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(8)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(7)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(8)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(9)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(8)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(9)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(10)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(9)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(10)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(11)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(10)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(11)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(12)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(11)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(12)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(13)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(12)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(13)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(14)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(13)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(14)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(15)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(14)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(15)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(16)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(15)`.
+- `fibfib(n - 2)`: This is the same as `fibfib(16)`.
+- `fibfib(n - 3)`: This is the same as `fibfib(17)`.
+
+The recursive calls are:
+- `fibfib(n - 1)`: This is the same as `fibfib(16)`.
+- `fibfib(n -

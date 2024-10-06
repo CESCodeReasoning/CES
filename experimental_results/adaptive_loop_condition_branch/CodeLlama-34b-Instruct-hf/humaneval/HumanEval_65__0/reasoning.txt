@@ -1,0 +1,7 @@
+The function `circular_shift` is called with ( x = 97, shift = 8 ).
+The function first converts the integer `x` to a string `s`.
+The function then checks if `shift` is greater than the length of `s`.
+Since `shift` is 8 and the length of `s` is 3, the condition `shift > len(s)` is false.
+Therefore, the `else` branch is taken.
+The function returns the substring of `s` starting from the index `len(s) - shift` and ending at the index `len(s) - shift + 1`.
+Since `len(s) - shift` is 2 and `len(s) - shift + 1` is 3, the function returns the substring "79".

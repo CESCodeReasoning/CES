@@ -1,0 +1,5 @@
+from typing import *
+
+
+def pairs_sum_to_zero(l):
+    for i, l1 in enumerate(l): ## [STATE]i=[0, 1, 2, 3, 4, 5][/STATE][

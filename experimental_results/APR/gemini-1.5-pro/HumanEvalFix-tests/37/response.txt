@@ -1,0 +1,23 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```
+
+
+```python
+def sort_even(l: list):
+    evens = sorted(l[::2])
+    odds = l[1::2]
+    ans = []
+    for i in range(len(odds)):
+        ans.append(evens[i])
+        ans.append(odds[i])
+    if len(evens) > len(odds):
+        ans.append(evens[-1])
+    return ans
+```

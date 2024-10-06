@@ -1,0 +1,48 @@
+Here are the fixed versions of the two functions, `has_close_elements` and `monotonic`, along with their respective test cases:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+
+# Tests
+def check_has_close_elements(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check_has_close_elements(has_close_elements)
+```
+
+### Fixed Code for `monotonic`
+```python
+def monotonic(l: list) -> bool:
+    return l == sorted(l) or l == sorted(l, reverse=True)
+
+# Tests
+def check_monotonic(monotonic):
+    assert monotonic([1, 2, 4, 10]) == True
+    assert monotonic([1, 2, 4, 20]) == True
+    assert monotonic([1, 20, 4, 10]) == False
+    assert monotonic([4, 1, 0, -10]) == True
+    assert monotonic([4, 1, 1, 0]) == True
+    assert monotonic([1, 2, 3, 2, 5, 60]) == False
+    assert monotonic([1, 2, 3, 4, 5, 60]) == True
+    assert monotonic([9, 9, 9, 9]) == True
+
+check_monotonic(monotonic)
+```
+
+These corrected versions of the functions now properly implement the specified functionality and pass all the provided test cases.

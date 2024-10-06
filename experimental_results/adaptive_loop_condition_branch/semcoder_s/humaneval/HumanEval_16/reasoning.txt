@@ -1,0 +1,7 @@
+The function `count_distinct_characters` takes a string as input and returns the count of distinct characters in the string.
+
+1. The input string is 'abcde' + 'cade' + 'CADE'.
+2. The string is concatenated to form 'abcde' + 'cade' + 'CADE' = 'abcdecaDECADE'.
+3. The string is converted to lowercase to count distinct characters, resulting in 'abcdecaDECADE' -> 'abcdecaDECADE'.
+4. The distinct characters are counted using `set`, resulting in 7 distinct characters: 'a', 'b', 'c', 'd', 'e', 'D', 'E'.
+5. The count of distinct characters is returned, which is 7.

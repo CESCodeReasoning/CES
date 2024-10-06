@@ -1,0 +1,8 @@
+The function `fib` is called with ( n = 11 ).
+Inside the function, the first condition `n == 0` is checked.
+Since `n` is 11, this condition is false.
+The second condition `n == 1` is checked.
+Since `n` is 11, this condition is also false.
+The function recursively calls itself with `n - 1` and `n - 2`.
+The first recursive call returns the result of `fib(10)` and the second recursive call returns the result of `fib(9)`.
+The final output of the function is the sum of the two recursive calls.

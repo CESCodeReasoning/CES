@@ -1,0 +1,16 @@
+The function `parse_music` takes a string `music_string` as input and returns a list of integers. The string `music_string` is split into a list of strings using the `split(' ')` function. The `if x` condition is used to filter out any empty strings that might result from the split operation.
+
+The function then uses a dictionary `note_map` to map the strings in the list to their corresponding integers. The keys in the dictionary are the strings to be mapped, and the values are the integers they should be mapped to.
+
+To determine the output of executing the function `parse_music` on the input `'o| .| o| .| o o| o o|'`, we need to map each string in the input string to its corresponding integer using the `note_map` dictionary.
+
+The strings in the input string are: 'o|', '.|', 'o|', '.|', 'o', 'o|', 'o', 'o|'.
+
+The corresponding integers in the output list are: 2, 1, 2, 1, 4, 4, 4, 4.
+
+Therefore, the output of executing the function `parse_music` on the input `'o| .| o| .| o o| o o|'` is `[2, 1, 2, 1, 4, 4, 4, 4]`.
+
+[OUTPUT]
+[2, 1, 2, 1, 4, 4, 4, 4]
+[/OUTPUT]
+<|EOT|>

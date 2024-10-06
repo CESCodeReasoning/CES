@@ -1,0 +1,33 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: fib4
+main.py(5):     results = [0, 0, 2, 0]
+main.py(6):     if n < 4:
+main.py(9):     for _ in range(4, n + 1):
+main.py(10):         results.append(results[-1] + results[-2] + results[-3] + results[-4])
+main.py(11):         results.pop(0)
+main.py(9):     for _ in range(4, n + 1):
+main.py(10):         results.append(results[-1] + results[-2] + results[-3] + results[-4])
+main.py(11):         results.pop(0)
+main.py(9):     for _ in range(4, n + 1):
+main.py(10):         results.append(results[-1] + results[-2] + results[-3] + results[-4])
+main.py(11):         results.pop(0)
+main.py(9):     for _ in range(4, n + 1):
+main.py(10):         results.append(results[-1] + results[-2] + results[-3] + results[-4])
+main.py(11):         results.pop(0)
+main.py(9):     for _ in range(4, n + 1):
+main.py(10):         results.append(results[-1] + results[-2] + results[-3] + results[-4])
+main.py(11):         results.pop(0)
+main.py(9):     for _ in range(4, n + 1):
+main.py(10):         results.append(results[-1] + results[-2] + results[-3] + results[-4])
+main.py(11):         results.pop(0)
+main.py(9):     for _ in range(4, n + 1):
+main.py(10):         results.append(results[-1] + results[-2] + results[-3] + results[-4])
+main.py(11):         results.pop(0)
+main.py(9):     for _ in range(4, n + 1):
+main.py(10):         results.append(results[-1] + results[-2] + results[-3] + results[-4])
+main.py(11):         results.pop(0)
+main.py(9):     for _ in range(4, n + 1):
+main.py(10):         results.append(results[-1] + results[-2] + results[-3] + results[-4])
+main.py(11):         results.pop(0)
+main.py(9):     for _ in range(4, n + 1):
+main.py(13):     return results[-1]

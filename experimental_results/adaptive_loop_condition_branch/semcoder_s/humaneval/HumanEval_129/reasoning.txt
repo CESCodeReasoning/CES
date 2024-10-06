@@ -1,0 +1,59 @@
+The function `minPath` is called with ( grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], k = 3 ).
+The variable `val` is initialized to 10 (n * n + 1), where n = 3.
+The outer loop iterates over each element in the grid.
+The inner loop iterates over each element in the grid.
+First Iteration (i = 0, j = 0):
+    - The element at grid[0][0] is 1, so the if condition is True.
+    - temp is initialized as an empty list.
+    - The element at grid[0][0] is 1, so it is appended to temp.
+    - The minimum value in temp is 1, which is assigned to val.
+Second Iteration (i = 0, j = 1):
+    - The element at grid[0][1] is 2, so the if condition is True.
+    - temp is initialized as an empty list.
+    - The element at grid[0][0] is 1, so it is appended to temp.
+    - The minimum value in temp is 1, which is assigned to val.
+Third Iteration (i = 0, j = 2):
+    - The element at grid[0][2] is 3, so the if condition is True.
+    - temp is initialized as an empty list.
+    - The element at grid[0][0] is 1, so it is appended to temp.
+    - The minimum value in temp is 1, which is assigned to val.
+Fourth Iteration (i = 1, j = 0):
+    - The element at grid[1][0] is 4, so the if condition is True.
+    - temp is initialized as an empty list.
+    - The element at grid[0][0] is 1, so it is appended to temp.
+    - The minimum value in temp is 1, which is assigned to val.
+Fifth Iteration (i = 1, j = 1):
+    - The element at grid[1][1] is 5, so the if condition is True.
+    - temp is initialized as an empty list.
+    - The element at grid[0][0] is 1, so it is appended to temp.
+    - The minimum value in temp is 1, which is assigned to val.
+Sixth Iteration (i = 1, j = 2):
+    - The element at grid[1][2] is 6, so the if condition is True.
+    - temp is initialized as an empty list.
+    - The element at grid[0][0] is 1, so it is appended to temp.
+    - The minimum value in temp is 1, which is assigned to val.
+Seventh Iteration (i = 2, j = 0):
+    - The element at grid[2][0] is 7, so the if condition is True.
+    - temp is initialized as an empty list.
+    - The element at grid[0][0] is 1, so it is appended to temp.
+    - The minimum value in temp is 1, which is assigned to val.
+Eighth Iteration (i = 2, j = 1):
+    - The element at grid[2][1] is 8, so the if condition is True.
+    - temp is initialized as an empty list.
+    - The element at grid[0][0] is 1, so it is appended to temp.
+    - The minimum value in temp is 1, which is assigned to val.
+Ninth Iteration (i = 2, j = 2):
+    - The element at grid[2][2] is 9, so the if condition is True.
+    - temp is initialized as an empty list.
+    - The element at grid[0][0] is 1, so it is appended to temp.
+    - The minimum value in temp is 1, which is assigned to val.
+The loop ends.
+The list `ans` is initialized as an empty list.
+The loop iterates 3 times.
+First Iteration (i = 0):
+    - i % 2 == 0 is True, so 1 is appended to ans.
+Second Iteration (i = 1):
+    - i % 2 == 0 is False, so val (which is 1) is appended to ans.
+Third Iteration (i = 2):
+    - i % 2 == 0 is True, so 1 is appended to ans.
+The function returns ans, which is [1, 1, 1].

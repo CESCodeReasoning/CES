@@ -1,0 +1,38 @@
+[REASONING]
+The function `correct_bracketing` is called with the input string "<<".
+Inside the function, a variable `depth` is initialized to 0 to keep track of the nesting level of brackets.
+
+Iteration 1:
+    - The character '<' increases the `depth` by 1 (from 0 to 1).
+Iteration 2:
+    - The character '<' increases the `depth` again by 1 (from 1 to 2).
+Iteration 3:
+    - The character '>' decreases the `depth` by 1 (from 2 to 1).
+Iteration 4:
+    - The character '<' increases the `depth` by 1 (from 1 to 2).
+Iteration 5:
+    - The character '>' decreases the `depth` by 1 (from 2 to 1).
+Iteration 6:
+    - The character '>' decreases the `depth` by 1 (from 1 to 0).
+
+After all iterations, the `depth` is 0, indicating that all opening brackets have corresponding closing brackets and they are correctly nested. Therefore, the function returns `True`.
+
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets: ## [STATE]brackets="<<><>>"[/STATE]
+        if b == "<": ## [CONDITION](b == "<")=[True, True, False, True, False, False][/CONDITION][BRANCH]taken=[Y, Y, N, Y, N, N][/BRANCH]
+            depth += 1
+        else: ## [BRANCH]taken=[N, N, Y, N, Y, Y][/BRANCH]
+            depth -= 1
+        if depth < 0: ## [CONDITION](depth < 0)=[False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N][/BRANCH]
+            return False
+    return depth == 0
+[/PYTHON]
+
+[OUTPUT]
+True
+[/OUTPUT]

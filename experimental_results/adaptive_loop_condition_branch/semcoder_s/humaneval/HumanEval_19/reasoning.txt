@@ -1,0 +1,11 @@
+The function `sort_numbers` takes a string of space-separated numbers in words as input and returns a string of the same numbers in words sorted based on their numerical value.
+
+Here's the step-by-step reasoning:
+1. A dictionary `value_map` is created to map the word numbers to their corresponding numerical values.
+2. The input string is split by space and each word is converted to its corresponding numerical value using the `value_map`.
+3. The list of numerical values is sorted in ascending order.
+4. The sorted list of numerical values is joined back into a string with words separated by spaces.
+
+For the input 'five zero four seven nine eight', the numerical values are [5, 0, 4, 7, 9, 8]. After sorting, the list becomes [0, 4, 5, 7, 8, 9]. The corresponding words are ['zero', 'four', 'five', 'seven', 'eight', 'nine'].
+
+Therefore, the output of executing the function `sort_numbers` on the input 'five zero four seven nine eight' is 'zero four five seven eight nine'.

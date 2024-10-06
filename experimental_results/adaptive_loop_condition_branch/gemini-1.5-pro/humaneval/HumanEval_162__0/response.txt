@@ -1,0 +1,17 @@
+[REASONING]
+The function string_to_md5 takes a string text as input and returns the MD5 hash of the string if the string is not empty, otherwise it returns None.
+To determine the output of executing the function string_to_md5 on the input '', we need to check if the string is empty.
+Since the string is empty, the function will return None.
+Therefore, the output of executing the function string_to_md5 on the input '' is None.
+[/REASONING]
+
+[ANSWER]
+def string_to_md5(text):
+    import hashlib
+    [STATE]text_is_empty = not text[/STATE]
+    return hashlib.md5(text.encode('ascii')).hexdigest() if [CONDITION]not text_is_empty[/CONDITION] else None
+[/ANSWER]
+
+[OUTPUT]
+None
+[/OUTPUT]

@@ -1,0 +1,20 @@
+[REASONING]
+The function parse_music takes a string music_string as input and returns a list of integers.
+The function first creates a dictionary note_map that maps each note to its corresponding integer value.
+Then, the function splits the input string into a list of strings, where each string represents a note.
+Finally, the function iterates over the list of strings and uses the note_map dictionary to convert each string to its corresponding integer value.
+The output of the function is a list of integers that represents the notes in the input string.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def parse_music(music_string: str) -> List[int]:
+    note_map = {'o': 4, 'o|': 2, '.|': 1}
+    return [note_map[x] for x in music_string.split(' ') if x]
+[/ANSWER]
+
+[OUTPUT]
+[1, 1, 1, 1]
+[/OUTPUT]

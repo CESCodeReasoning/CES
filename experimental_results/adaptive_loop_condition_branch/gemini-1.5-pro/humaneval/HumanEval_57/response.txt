@@ -1,0 +1,18 @@
+[REASONING]
+The function `monotonic` is called with the list `[1, 2, 4, 10]`.
+The condition `l == sorted(l)` checks if the list is sorted in ascending order.
+The condition `l == sorted(l, reverse=True)` checks if the list is sorted in descending order.
+Since `[1, 2, 4, 10]` is sorted in ascending order, the first condition is true and the function returns True.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def monotonic(l: list):
+    if l == sorted(l) or l == sorted(l, reverse=True): ## [CONDITION](l == sorted(l) or l == sorted(l, reverse=True))=[True][/CONDITION][CONDITION](l == sorted(l))=[True][/CONDITION][CONDITION](l == sorted(l, reverse=True))=[False][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return True
+    return False
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]

@@ -1,0 +1,6 @@
+from typing import *
+
+
+def make_a_pile(n: int) -> List[int]:
+    # [STATE] n is 4 [/STATE]
+    return [n + 2 * i for i in range(n)]  # [STATE] List comprehension returns [4, 6, 8, 10] [/STATE]

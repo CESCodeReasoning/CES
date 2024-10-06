@@ -1,0 +1,40 @@
+The function `largest_prime_factor` is called with ( n = 15 ).
+Inside the function, a variable `largest` is initialized to 1.
+
+Iteration 1:
+    - The value of `j` is 2, which is not a prime number.
+Iteration 2:
+    - The value of `j` is 3, which is a prime number.
+    - The value of `largest` is updated to 3.
+Iteration 3:
+    - The value of `j` is 4, which is not a prime number.
+Iteration 4:
+    - The value of `j` is 5, which is a prime number.
+    - The value of `largest` is updated to 5.
+Iteration 5:
+    - The value of `j` is 6, which is not a prime number.
+Iteration 6:
+    - The value of `j` is 7, which is a prime number.
+    - The value of `largest` is updated to 7.
+Iteration 7:
+    - The value of `j` is 8, which is not a prime number.
+Iteration 8:
+    - The value of `j` is 9, which is a prime number.
+    - The value of `largest` is updated to 9.
+Iteration 9:
+    - The value of `j` is 10, which is not a prime number.
+Iteration 10:
+    - The value of `j` is 11, which is a prime number.
+    - The value of `largest` is updated to 11.
+Iteration 11:
+    - The value of `j` is 12, which is not a prime number.
+Iteration 12:
+    - The value of `j` is 13, which is a prime number.
+    - The value of `largest` is updated to 13.
+Iteration 13:
+    - The value of `j` is 14, which is not a prime number.
+Iteration 14:
+    - The value of `j` is 15, which is a prime number.
+    - The value of `largest` is updated to 15.
+
+Therefore, the final output of the function `largest_prime_factor(15)` is 3.

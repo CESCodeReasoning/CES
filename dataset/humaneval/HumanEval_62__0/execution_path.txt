@@ -1,0 +1,6 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: derivative
+main.py(5):     return [(i * x) for i, x in enumerate(xs)][1:]
+ --- modulename: main, funcname: <listcomp>
+main.py(5):     return [(i * x) for i, x in enumerate(xs)][1:]
+main.py(5):     return [(i * x) for i, x in enumerate(xs)][1:]

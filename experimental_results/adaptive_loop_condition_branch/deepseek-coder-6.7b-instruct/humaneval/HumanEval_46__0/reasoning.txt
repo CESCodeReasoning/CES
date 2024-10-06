@@ -1,0 +1,6 @@
+The function `fib4` is called with ( n = 10 ).
+The initial list `results` is [0, 0, 2, 0].
+The condition ( n < 4 ) is not satisfied, so the else branch is taken.
+The loop starts from 4 to 10 (inclusive).
+In each iteration, the last 4 elements of `results` are added together and appended to the end of `results`. The first element of `results` is popped out.
+After the loop completes, the last element of `results` is returned as the output.

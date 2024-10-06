@@ -1,0 +1,94 @@
+The function `histogram` is called with ( test = 'a b b a' ).
+Inside the function, a variable `dict1` is initialized to an empty dictionary.
+A variable `list1` is initialized to the list of words in the input string.
+A variable `t` is initialized to 0.
+
+Iteration 1:
+    -The word 'a' occurs 2 times in the list, so t becomes 2.
+    -The word 'b' occurs 2 times in the list, so t remains 2.
+    -The word 'b' occurs 2 times in the list, so t remains 2.
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 2:
+    -The word 'b' occurs 2 times in the list, so t remains 2.
+    -The word 'b' occurs 2 times in the list, so t remains 2.
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 3:
+    -The word 'b' occurs 2 times in the list, so t remains 2.
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 4:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 5:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 6:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 7:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 8:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 9:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 10:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 11:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 12:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 13:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 14:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 15:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 16:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 17:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 18:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 19:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 20:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 21:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 22:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 23:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 24:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 25:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 26:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 27:
+    -The word 'a' occurs 2 times in the list, so t remains 2.
+
+Iteration 28:
+    -The word

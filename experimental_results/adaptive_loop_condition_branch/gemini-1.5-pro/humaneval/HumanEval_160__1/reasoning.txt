@@ -1,0 +1,10 @@
+The function `do_algebra` is called with (operator = ['+', '*', '-'], operand = [2, 3, 4, 5]).
+Inside the function, a variable `expression` is initialized to '2'.
+The loop iterates over the elements of `operator` and `operand[1:]` in parallel.
+First Iteration (oprt = '+', oprn = 3):
+    `expression += oprt + str(oprn)` results in `expression = '2+3'`.
+Second Iteration (oprt = '*', oprn = 4):
+    `expression += oprt + str(oprn)` results in `expression = '2+3*4'`.
+Third Iteration (oprt = '-', oprn = 5):
+    `expression += oprt + str(oprn)` results in `expression = '2+3*4-5'`.
+Finally, `eval(expression)` is called, which evaluates the string `expression` as a Python expression and returns the result, which is 9.

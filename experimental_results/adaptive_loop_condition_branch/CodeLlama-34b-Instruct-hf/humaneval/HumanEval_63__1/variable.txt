@@ -1,0 +1,26 @@
+from typing import *
+
+
+def fibfib(n: int):
+    if n == 0: ## [CONDITION](n == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 0
+    if n == 1: ## [CONDITION](n == 1)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 0
+    if n == 2: ## [CONDITION](n == 2)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 1
+    if n == 3: ## [CONDITION](n == 3)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 1
+    if n == 4: ## [CONDITION](n == 4)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 2
+    if n == 5: ## [CONDITION](n == 5)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 3
+    if n == 6: ## [CONDITION](n == 6)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 5
+    if n == 7: ## [CONDITION](n == 7)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 8
+    if n == 8: ## [CONDITION](n == 8)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 13
+    if n == 9: ## [CONDITION](n == 9)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 21
+    if n == 10: ## [CONDITION](n == 10)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return fibfib(n - 1) + fibfib(n - 2) + fibfib(n - 3)

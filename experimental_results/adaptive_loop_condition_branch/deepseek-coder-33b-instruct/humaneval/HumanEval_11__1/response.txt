@@ -1,0 +1,45 @@
+
+[REASONING]
+The function `string_xor` is called with ( a = '0101', b = '0000' ).
+The function `xor` is defined inside `string_xor`. It takes two arguments `i` and `j` and returns '0' if `i` and `j` are equal and '1' otherwise.
+The `xor` function is used in a generator expression inside the `join` method. The `zip` function is used to pair the characters of `a` and `b`. For each pair, `xor` is called with the pair of characters.
+
+First Pair (x = '0', y = '0')
+   - `x` and `y` are equal, so the condition `x == y` is true.
+   - The condition `x == y` is true.
+   - Action: `xor(x, y)` returns '0'.
+Second Pair (x = '1', y = '0')
+   - `x` and `y` are not equal, so the condition `x == y` is false.
+   - The condition `x == y` is false.
+   - Action: `xor(x, y)` returns '1'.
+Third Pair (x = '0', y = '0')
+   - `x` and `y` are equal, so the condition `x == y` is true.
+   - The condition `x == y` is true.
+   - Action: `xor(x, y)` returns '0'.
+Fourth Pair (x = '1', y = '0')
+   - `x` and `y` are not equal, so the condition `x == y` is false.
+   - The condition `x == y` is false.
+   - Action: `xor(x, y)` returns '1'.
+
+The `join` method concatenates all the '0's and '1's returned by `xor` into a single string.
+
+Therefore, the final output of the function `string_xor('0101', '0000')` is '0101'.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def string_xor(a: str, b: str) -> str:
+    def xor(i, j):
+        if i == j: ## [CONDITION](i == j)=[True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y][/BRANCH]
+            return '0'
+        else: ## [BRANCH]taken=[N, N, N, N][/BRANCH]
+            return '1'
+
+    return ''.join(xor(x, y) for x, y in zip(a, b))
+[/ANSWER]
+
+[OUTPUT]
+'0101'
+[/OUTPUT]

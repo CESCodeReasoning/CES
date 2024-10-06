@@ -1,0 +1,7 @@
+The function sort_numbers takes a string numbers as input and returns a string.
+The function first creates a dictionary value_map that maps each string representation of a number to its corresponding integer value.
+The function then splits the input string numbers into a list of words using the split method.
+The function then filters out any empty strings from the list of words using a list comprehension.
+The function then sorts the list of words using the sorted method, with the key parameter set to a lambda function that maps each word to its corresponding integer value from the value_map dictionary.
+The function then joins the sorted list of words back into a single string using the join method, with each word separated by a space.
+The function then returns the sorted string.

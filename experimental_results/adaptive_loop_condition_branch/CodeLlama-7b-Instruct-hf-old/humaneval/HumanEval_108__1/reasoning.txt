@@ -1,0 +1,9 @@
+The function `count_nums` takes an array of integers as input.
+The function first defines a nested function `digits_sum` that takes an integer `n` as input.
+The function `digits_sum` first checks if `n` is negative.
+If `n` is negative, the function negates `n` and sets `neg` to -1.
+Then, the function converts `n` to a list of its digits using list comprehension.
+Finally, the function sums the digits of `n` and returns the result.
+The outer function `count_nums` then applies the `digits_sum` function to each element in the input array using list comprehension.
+The resulting list is then filtered to only include positive numbers using the `filter` function.
+Finally, the length of the filtered list is returned as the output of the `count_nums` function.

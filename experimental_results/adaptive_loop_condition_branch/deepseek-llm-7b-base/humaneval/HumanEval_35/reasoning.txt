@@ -1,0 +1,9 @@
+The function `max_element` is called with ( l = [1, 2, 3] ).
+Inside the function, a variable `m` is initialized to the first element of `l`, which is 1.
+
+Iteration 1:
+    -The first element of `l` is 1, which is greater than `m`, so the condition `e > m` is true.
+Iteration 2:
+    -The second element of `l` is 2, which is greater than `m`, so the condition `e > m` is true.
+Iteration 3:
+    -The third element of `l` is 3, which is not greater than `m`, so the condition `e > m` is false.

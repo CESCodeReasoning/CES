@@ -1,0 +1,7 @@
+The function `compare_one` is called with ( a = 5, b = 6 ).
+`a` and `b` are both integers, so the first two if statements are skipped.
+The third if statement checks if `float(temp_a) == float(temp_b)`.
+`temp_a` and `temp_b` are both integers, so `float(temp_a)` and `float(temp_b)` are equal to `temp_a` and `temp_b` respectively.
+Therefore, the condition `float(temp_a) == float(temp_b)` is true, and the method returns None.
+
+Therefore, the final output of the function `compare_one(5, 6)` is None.

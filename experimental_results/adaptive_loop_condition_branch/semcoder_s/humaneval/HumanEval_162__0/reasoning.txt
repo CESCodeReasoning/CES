@@ -1,0 +1,8 @@
+The function `string_to_md5` takes a string as input and returns the MD5 hash of the input string.
+
+- The function checks if the input string is empty.
+- If the input string is empty, it returns `None`.
+- If the input string is not empty, it encodes the string to ASCII and calculates the MD5 hash of the string.
+- Finally, it returns the hexadecimal digest of the MD5 hash.
+
+Therefore, the output of executing the function `string_to_md5('')` is `None`.

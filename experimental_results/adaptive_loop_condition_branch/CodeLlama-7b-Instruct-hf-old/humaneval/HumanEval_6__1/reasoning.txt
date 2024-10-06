@@ -1,0 +1,38 @@
+The function `parse_nested_parens` is called with ( paren_string = '(()(())((())))' ).
+Inside the function, a variable `depth` is initialized to 0.
+The function `parse_paren_group` is called with ( s = '(()(())((())))' ).
+Inside `parse_paren_group`, a variable `depth` is initialized to 0.
+The loop iterates through the characters in the input string.
+First Iteration:
+   - The character '(' is encountered, so `depth` is incremented to 1.
+   - The maximum depth is updated to 1.
+Second Iteration:
+   - The character '(' is encountered, so `depth` is incremented to 2.
+   - The maximum depth is updated to 2.
+Third Iteration:
+   - The character '(' is encountered, so `depth` is incremented to 3.
+   - The maximum depth is updated to 3.
+Fourth Iteration:
+   - The character '(' is encountered, so `depth` is incremented to 4.
+   - The maximum depth is updated to 4.
+Fifth Iteration:
+   - The character '(' is encountered, so `depth` is incremented to 5.
+   - The maximum depth is updated to 5.
+Sixth Iteration:
+   - The character ')' is encountered, so `depth` is decremented to 4.
+   - The maximum depth is updated to 4.
+Seventh Iteration:
+   - The character ')' is encountered, so `depth` is decremented to 3.
+   - The maximum depth is updated to 3.
+Eighth Iteration:
+   - The character ')' is encountered, so `depth` is decremented to 2.
+   - The maximum depth is updated to 2.
+Ninth Iteration:
+   - The character ')' is encountered, so `depth` is decremented to 1.
+   - The maximum depth is updated to 1.
+Tenth Iteration:
+   - The character ')' is encountered, so `depth` is decremented to 0.
+   - The maximum depth is updated to 0.
+The function `parse_paren_group` returns the maximum depth, which is 5.
+The function `parse_nested_parens` returns a list of the maximum depth for each group of parentheses in the input string.
+Therefore, the final output of the function `parse_nested_parens('(()(())((())))')` is [5].

@@ -1,0 +1,6 @@
+The function `string_xor` is called with ( a = '1', b = '1' ).
+The function `xor` is defined inside `string_xor`. It takes two arguments `i` and `j` and returns '0' if `i` and `j` are equal, otherwise it returns '1'.
+The function `string_xor` returns a string that is the result of applying `xor` to each pair of characters from `a` and `b`.
+In this case, `a` and `b` are both '1'. Therefore, `xor` will return '0' for each pair of characters, and the result of `string_xor` will be '0'.
+
+Therefore, the final output of the function `string_xor('1', '1')` is '0'.

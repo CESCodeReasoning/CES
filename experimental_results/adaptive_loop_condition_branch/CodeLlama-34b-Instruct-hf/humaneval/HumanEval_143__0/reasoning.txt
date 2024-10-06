@@ -1,0 +1,6 @@
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The sentence is split into a list of words using the split() method.
+The outer loop iterates through each word in the list.
+For each word, the inner loop checks if the word is a prime number.
+If the word is a prime number, it is added to the new_lst list.
+The new_lst list is returned as a string using the join() method.

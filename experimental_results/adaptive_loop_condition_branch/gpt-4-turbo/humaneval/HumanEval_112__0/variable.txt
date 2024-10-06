@@ -1,0 +1,9 @@
+from typing import *
+
+
+def reverse_delete(s, c):
+    # [STATE] s = "abcdedcba", c = "v" [/STATE]
+    s = ''.join([char for char in s if char not in c])  # [STATE] s = "abcdedcba" [/STATE]
+    # [CONDITION] s[::-1] == s [/CONDITION]
+    # [BRANCH] Y [/BRANCH]
+    return (s, s[::-1] == s)  # [STATE] return ("abcdedcba", True) [/STATE]

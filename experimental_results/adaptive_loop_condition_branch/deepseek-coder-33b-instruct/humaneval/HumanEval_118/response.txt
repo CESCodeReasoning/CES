@@ -1,0 +1,33 @@
+
+[REASONING]
+The function `get_closest_vowel` is called with ( word = "yogurt" ).
+The length of the word is 6, which is not less than 3.
+The loop starts from the third last character of the word (index `len(word) - 2`) and goes backwards to the second character (index `1`).
+
+Iteration 1:
+    - The character 'r' is not a vowel.
+Iteration 2:
+    - The character 't' is not a vowel.
+Iteration 3:
+    - The character 'u' is a vowel.
+    - The characters before and after 'u' are not vowels.
+    - So, 'u' is returned as the closest vowel.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def get_closest_vowel(word):
+    if len(word) < 3: ## [CONDITION](len(word) < 3)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return ""
+
+    vowels = {"a", "e", "i", "o", "u", "A", "E", 'O', 'U', 'I'}
+    for i in range(len(word)-2, 0, -1): ## [STATE]i=[4, 3, 2][/STATE][STATE]range((len(word) - 2), 0, (- 1))=[4, 3, 2][/STATE][STATE](len(word) - 2)=[4][/STATE]
+        if word[i] in vowels: ## [CONDITION](word[i] in vowels)=[False, False, True][/CONDITION][BRANCH]taken=[N, N, Y][/BRANCH]
+            if (word[i+1] not in vowels) and (word[i-1] not in vowels): ## [CONDITION]((word[i+1] not in vowels) and (word[i-1] not in vowels))=[False, False, True][/CONDITION][CONDITION](word[i+1] not in vowels)=[False, False, True][/CONDITION][CONDITION](word[i-1] not in vowels)=[False, False, True][/CONDITION][BRANCH]taken=[N, N, Y][/BRANCH]
+                return word[i]
+    return ""
+[/ANSWER]
+
+[OUTPUT]
+'u'
+[/OUTPUT]

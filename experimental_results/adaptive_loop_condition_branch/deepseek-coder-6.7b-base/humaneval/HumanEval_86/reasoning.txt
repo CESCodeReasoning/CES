@@ -1,0 +1,5 @@
+The function anti_shuffle takes a string s as input and returns a new string that is the result of shuffling the characters in each word of s.
+To determine the output of executing the function anti_shuffle on the input "Hi", we need to shuffle the characters in each word of "Hi".
+The first word is "Hi", which has two characters, so we need to shuffle them.
+The shuffled characters of "Hi" are "Hi", which is the same as the original word.
+Therefore, the output of executing the function anti_shuffle on the input "Hi" is "Hi".

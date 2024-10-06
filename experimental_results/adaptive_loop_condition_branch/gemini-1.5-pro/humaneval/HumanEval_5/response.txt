@@ -1,0 +1,25 @@
+[REASONING]
+The function `intersperse` is called with ( numbers = [], delimeter = 7 ).
+The condition ( not numbers ) is satisfied, therefore the if branch is taken and the function returns an empty list as the output.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def intersperse(numbers: List[int], delimeter: int) -> List[int]:
+    if not numbers: ## [CONDITION](not numbers)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return []
+
+    result = []
+
+    for n in numbers[:-1]:
+        result.append(n)
+        result.append(delimeter)
+
+    result.append(numbers[-1])
+
+    return result
+[/ANSWER]
+
+[OUTPUT]
+[]
+[/OUTPUT]

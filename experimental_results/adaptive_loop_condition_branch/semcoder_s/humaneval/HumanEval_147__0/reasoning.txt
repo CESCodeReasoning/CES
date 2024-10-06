@@ -1,0 +1,9 @@
+The function get_max_triples(n) takes an integer n as its parameter.
+It initializes a list A with the values of the expression i^2 - i + 1 for i in the range from 1 to n.
+Then it initializes an empty list ans to store the triples that satisfy the condition.
+The outer loop iterates through each element in the list A to consider it as the first element of the triple.
+The middle loop iterates through each element that comes after the first element to consider it as the second element of the triple.
+The inner loop iterates through each element that comes after the second element to consider it as the third element of the triple.
+For each triple (A[i], A[j], A[k]), it checks if the sum of the elements is divisible by 3.
+If the sum is divisible by 3, it appends the triple to the list ans.
+Finally, it returns the length of the list ans, which represents the number of triples that satisfy the condition.

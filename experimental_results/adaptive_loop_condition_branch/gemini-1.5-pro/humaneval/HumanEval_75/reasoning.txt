@@ -1,0 +1,10 @@
+The function `is_multiply_prime` takes an integer `a` as input and returns `True` if `a` can be expressed as a product of three prime numbers, and `False` otherwise.
+The function first defines a helper function `is_prime` that checks if a given number is prime.
+A number is prime if it is greater than 1 and is not divisible by any number other than 1 and itself.
+The function `is_multiply_prime` then iterates over all possible combinations of three prime numbers and checks if their product is equal to `a`.
+If such a combination is found, the function returns `True`.
+Otherwise, it returns `False`.
+
+In this case, we are checking if 5 can be expressed as a product of three prime numbers.
+The only possible combination of three prime numbers that multiply to 5 is 1 * 5 * 1.
+Therefore, the function returns `True`.

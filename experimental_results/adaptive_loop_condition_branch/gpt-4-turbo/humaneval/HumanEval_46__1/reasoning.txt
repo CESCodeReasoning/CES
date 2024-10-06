@@ -1,0 +1,20 @@
+The function `fib4` is called with `n = 12`.
+The function starts by initializing a list `results` with the values `[0, 0, 2, 0]`.
+The function then checks if `n` is less than 4. Since `n = 12`, which is not less than 4, this condition is false, and the corresponding branch is not taken.
+The loop starts from 4 up to `n + 1` (which is 13), iterating through the numbers 4 to 12.
+In each iteration, the function appends to `results` the sum of the last four elements of `results` and then removes the first element of `results` to keep the list size constant at 4.
+This process effectively calculates the next number in a sequence where each number is the sum of the previous four numbers in the sequence.
+After completing the loop, the function returns the last element of `results`, which is the 12th number in this sequence.
+
+Iterations:
+- For `_ = 4`: Append `2` (0+0+2+0), results becomes `[0, 2, 0, 2]`.
+- For `_ = 5`: Append `4` (0+2+0+2), results becomes `[2, 0, 2, 4]`.
+- For `_ = 6`: Append `8` (0+2+4+2), results becomes `[0, 2, 4, 8]`.
+- For `_ = 7`: Append `14` (2+4+8+0), results becomes `[2, 4, 8, 14]`.
+- For `_ = 8`: Append `28` (4+8+14+2), results becomes `[4, 8, 14, 28]`.
+- For `_ = 9`: Append `54` (8+14+28+4), results becomes `[8, 14, 28, 54]`.
+- For `_ = 10`: Append `104` (14+28+54+8), results becomes `[14, 28, 54, 104]`.
+- For `_ = 11`: Append `200` (28+54+104+14), results becomes `[28, 54, 104, 200]`.
+- For `_ = 12`: Append `386` (54+104+200+28), results becomes `[54, 104, 200, 386]`.
+
+The function returns `386`, which is the 12th number in this sequence.

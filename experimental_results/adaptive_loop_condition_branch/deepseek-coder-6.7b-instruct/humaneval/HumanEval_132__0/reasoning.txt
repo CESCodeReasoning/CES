@@ -1,0 +1,50 @@
+The function `is_nested` is called with ( string = '[][][[]]' ).
+Inside the function, two empty lists `opening_bracket_index` and `closing_bracket_index` are initialized.
+
+Iteration 1:
+    -The character '[' is found, so its index is appended to `opening_bracket_index`.
+Iteration 2:
+    -The character ']' is found, so its index is appended to `closing_bracket_index`.
+Iteration 3:
+    -The character '[' is found, so its index is appended to `opening_bracket_index`.
+Iteration 4:
+    -The character ']' is found, so its index is appended to `closing_bracket_index`.
+Iteration 5:
+    -The character '[' is found, so its index is appended to `opening_bracket_index`.
+Iteration 6:
+    -The character '[' is found, so its index is appended to `opening_bracket_index`.
+Iteration 7:
+    -The character ']' is found, so its index is appended to `closing_bracket_index`.
+
+After the loop, `closing_bracket_index` is reversed to match the order of the closing brackets in the string.
+
+The function then iterates over `opening_bracket_index`. For each index `idx` in `opening_bracket_index`, it checks if `idx` is less than the current index `i` in `closing_bracket_index`. If this is true, it increments `cnt` by 1 and `i` by 1.
+
+Finally, the function returns whether `cnt` is greater than or equal to 2.
+
+In the given string '[][][[]]', there are 2 pairs of nested brackets, so the function returns True.
+
+[ANSWER]
+def is_nested(string):
+    opening_bracket_index = []
+    closing_bracket_index = []
+    for i in range(len(string)): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6][/STATE][STATE]range(len(string))=[0, 1, 2, 3, 4, 5, 6][/STATE][STATE]len(string)=[7][/STATE]
+        if string[i] == '[': ## [CONDITION](string[i] == '[')=[True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+            opening_bracket_index.append(i)
+        else: ## [BRANCH]taken=[N, N, N, N, N, N, N][/BRANCH]
+            closing_bracket_index.append(i)
+    closing_bracket_index.reverse()
+    cnt = 0
+    i = 0
+    l = len(closing_bracket_index)
+    for idx in opening_bracket_index: ## [STATE]idx=[0, 2, 4][/STATE][STATE]opening_bracket_index=[0, 2, 4][/STATE]
+        if i < l and idx < closing_bracket_index[i]: ## [CONDITION](i < l and idx < closing_bracket_index[i])=[True, True, True][/CONDITION][CONDITION](i < l)=[True, True, True][/CONDITION][CONDITION](idx < closing_bracket_index[i])=[True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y][/BRANCH]
+            cnt += 1
+            i += 1
+    return cnt >= 2
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]
+<|EOT|>

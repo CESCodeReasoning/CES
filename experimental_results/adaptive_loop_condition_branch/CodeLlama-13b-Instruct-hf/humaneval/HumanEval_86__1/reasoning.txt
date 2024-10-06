@@ -1,0 +1,9 @@
+The function anti_shuffle takes a string s as input and returns a new string where each word in the input string is sorted and concatenated.
+To determine the output of executing the function anti_shuffle on the input "Hello World!!!", we need to follow these steps:
+
+1. Split the input string "Hello World!!!" into a list of words using the split() method with the delimiter as a space. This gives us the list ["Hello", "World", "!!!"]
+2. For each word in the list, sort the characters in the word using the sorted() method. This gives us the list ["!", "!", "!", "H", "W", "e", "l", "l", "o", "r", "d"]
+3. Join the sorted characters in each word using the join() method with the delimiter as an empty string. This gives us the string "! ! ! H W e l l o r d"
+4. Return the joined string as the output of the function.
+
+Therefore, the output of executing the function anti_shuffle on the input "Hello World!!!" is "! ! ! H W e l l o r d".

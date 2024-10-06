@@ -1,0 +1,13 @@
+The function `skjkasdkd` is called with ( lst = [127, 97, 8192] ).
+Inside the function, a helper function `isPrime` is defined to check if a number is prime.
+The function `skjkasdkd` iterates over the list `lst`.
+Iteration 1:
+    - The number 127 is greater than `maxx` (initially 0) and is a prime number.
+    - `maxx` is updated to 127.
+Iteration 2:
+    - The number 97 is greater than `maxx` (now 127) and is a prime number.
+    - `maxx` is updated to 97.
+Iteration 3:
+    - The number 8192 is not greater than `maxx` (still 97) and is not a prime number.
+After the loop completes, the function converts `maxx` to a string, iterates over each digit, converts it back to an integer, and returns the sum of these integers.
+The sum of the digits of 97 is 16 (9 + 7 = 16), so the function returns 16.

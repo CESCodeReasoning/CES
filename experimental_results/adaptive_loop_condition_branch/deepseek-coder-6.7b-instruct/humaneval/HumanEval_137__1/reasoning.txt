@@ -1,0 +1,10 @@
+The function `compare_one` is called with ( a = "1", b = "2" ).
+First, it checks if `temp_a` is a string.
+   - `temp_a` is a string, so it replaces all commas with dots.
+Second, it checks if `temp_b` is a string.
+   - `temp_b` is a string, so it replaces all commas with dots.
+Finally, it checks if `temp_a` and `temp_b` are equal after being converted to floats.
+   - `temp_a` and `temp_b` are not equal after being converted to floats, so it returns `a` if `temp_a` is greater than `temp_b`, else it returns `b`.
+Since `temp_a` is "1" and `temp_b` is "2", `temp_a` is not greater than `temp_b`, so the function returns `b`.
+
+Therefore, the final output of the function `compare_one("1", "2")` is "2".

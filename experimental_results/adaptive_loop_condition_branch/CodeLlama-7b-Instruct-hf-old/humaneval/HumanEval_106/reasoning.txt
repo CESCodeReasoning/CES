@@ -1,0 +1,9 @@
+The function f(n) takes an integer n as its parameter.
+The function returns a list of integers.
+The list contains the factorial of n.
+The factorial of n is calculated using the formula: n! = n * (n - 1) * (n - 2) * ... * 1.
+The function uses a for loop to iterate from 1 to n+1.
+For each iteration, the function checks if the current number is even.
+If the current number is even, the function calculates the factorial of the current number using the formula.
+If the current number is odd, the function calculates the sum of the factorial of the current number and 1.
+The function returns the list of factorials.

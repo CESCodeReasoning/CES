@@ -1,0 +1,59 @@
+The function `words_string` is called with ( s = "Hi, my name is John" ).
+Inside the function, a variable `s_list` is initialized to an empty list.
+
+Iteration 1:
+    -The character 'H' is not equal to ',', so the `else` block is executed.
+    -The character 'H' is added to `s_list`.
+Iteration 2:
+    -The character 'i' is not equal to ',', so the `else` block is executed.
+    -The character 'i' is added to `s_list`.
+Iteration 3:
+    -The character ',' is equal to ',', so the `if` block is executed.
+    -A space is added to `s_list`.
+Iteration 4:
+    -The character ' ' (space) is not equal to ',', so the `else` block is executed.
+    -The character ' ' (space) is added to `s_list`.
+Iteration 5:
+    -The character 'm' is not equal to ',', so the `else` block is executed.
+    -The character 'm' is added to `s_list`.
+Iteration 6:
+    -The character 'y' is not equal to ',', so the `else` block is executed.
+    -The character 'y' is added to `s_list`.
+Iteration 7:
+    -The character ' ' (space) is not equal to ',', so the `else` block is executed.
+    -The character ' ' (space) is added to `s_list`.
+Iteration 8:
+    -The character 'n' is not equal to ',', so the `else` block is executed.
+    -The character 'n' is added to `s_list`.
+Iteration 9:
+    -The character 'a' is not equal to ',', so the `else` block is executed.
+    -The character 'a' is added to `s_list`.
+Iteration 10:
+    -The character 'm' is not equal to ',', so the `else` block is executed.
+    -The character 'm' is added to `s_list`.
+Iteration 11:
+    -The character 'e' is not equal to ',', so the `else` block is executed.
+    -The character 'e' is added to `s_list`.
+Iteration 12:
+    -The character ' ' (space) is not equal to ',', so the `else` block is executed.
+    -The character ' ' (space) is added to `s_list`.
+Iteration 13:
+    -The character 'i' is not equal to ',', so the `else` block is executed.
+    -The character 'i' is added to `s_list`.
+Iteration 14:
+    -The character 's' is not equal to ',', so the `else` block is executed.
+    -The character 's' is added to `s_list`.
+Iteration 15:
+    -The character ' ' (space) is not equal to ',', so the `else` block is executed.
+    -The character ' ' (space) is added to `s_list`.
+Iteration 16:
+    -The character 'J' is not equal to ',', so the `else` block is executed.
+    -The character 'J' is added to `s_list`.
+Iteration 17:
+    -The character 'o' is not equal to ',', so the `else` block is executed.
+    -The character 'o' is added to `s_list`.
+Iteration 18:
+    -The character 'h' is not equal to ',', so the `else` block is executed.
+    -The character 'h' is added to `s_list`.
+
+After the loop completes, the function returns the list `s_list`.

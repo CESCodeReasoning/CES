@@ -1,0 +1,12 @@
+The function `hex_key` is called with ( num = "AB" ).
+Inside the function, a variable `total` is initialized to 0.
+The loop iterates over the characters in the string "AB".
+First Iteration (i = 0):
+   - The character 'A' is in the `primes` tuple, so `total` is incremented by 1.
+Second Iteration (i = 1):
+   - The character 'B' is in the `primes` tuple, so `total` is incremented by 1 again.
+The loop ends after iterating over all characters in the string.
+Return Statement
+   - After the loop completes, the function returns the value of `total`, which is now 2.
+
+Therefore, the final output of the function `hex_key("AB")` is 2.

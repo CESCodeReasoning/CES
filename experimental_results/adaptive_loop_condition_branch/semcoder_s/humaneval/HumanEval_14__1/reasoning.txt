@@ -1,0 +1,12 @@
+The function `all_prefixes` is called with (string = '').
+Inside the function, an empty list `result` is initialized.
+`len(string)` = 0 since the input string is empty.
+The loop iterates from 0 to 0 since `range(len(string))` = [0].
+
+First Iteration(i = 0):
+    string[:i + 1] = string[:1] = ''
+    result = ['']
+
+The loop ends as there are no more iterations.
+
+The function returns the list `result`, which contains the prefixes of the empty string, which is ['']

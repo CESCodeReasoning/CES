@@ -1,0 +1,4 @@
+The function parse_music takes a string music_string as input and returns a list of integers.
+The function works by first splitting the input string on spaces, which gives a list of substrings.
+Then, it uses a dictionary note_map to map each substring to an integer value, where 'o' is mapped to 4, 'o|' is mapped to 2, and '.|' is mapped to 1.
+Finally, the function uses a list comprehension to create a new list where each element is the value corresponding to the substring in the input string.

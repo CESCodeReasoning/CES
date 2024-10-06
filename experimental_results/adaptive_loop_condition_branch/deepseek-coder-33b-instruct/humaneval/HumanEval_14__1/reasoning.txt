@@ -1,0 +1,5 @@
+The function `all_prefixes` is called with (string = '' ).
+Inside the function, an empty list `result` is initialized.
+`len(string)` = 0 since there are 0 characters in ''.
+The loop iterates from 0 to -1 since `range(len(string))`= []
+Since there are no iterations, the function returns the empty list `result`.

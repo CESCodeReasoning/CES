@@ -1,0 +1,7 @@
+The function find_max takes a list of strings as input and returns the longest string in the list.
+To determine the output of executing the function find_max on the input ["name", "of", "string"], we need to sort the list of strings in descending order based on their length.
+The sorted function in Python can take an optional key argument, which specifies a function to be called on each list element prior to making comparisons.
+In this case, the key function is lambda x: (-len(set(x)), x), which first takes the length of the set of unique characters in each string and then the string itself.
+The sorted function will first compare the length of the set of unique characters in each string, and if they are equal, it will compare the strings themselves.
+The sorted list of strings is then returned, and the first element of the sorted list is selected using the index [0].
+Therefore, the output of executing the function find_max on the input ["name", "of", "string"] is "string".

@@ -1,0 +1,115 @@
+The function `is_prime` is called with ( n = 5 * 17 ).
+The condition `n < 2` is not satisfied, so the function proceeds to the loop.
+The loop iterates from 2 through ( 5 * 17 - 1 ).
+Iteration 1:
+    - The number 5 * 17 is divisible by 2, so the function returns False.
+Iteration 2:
+    - The number 5 * 17 is divisible by 3, so the function returns False.
+Iteration 3:
+    - The number 5 * 17 is not divisible by 4, so the function continues to the next iteration.
+Iteration 4:
+    - The number 5 * 17 is not divisible by 5, so the function continues to the next iteration.
+Iteration 5:
+    - The number 5 * 17 is not divisible by 6, so the function continues to the next iteration.
+Iteration 6:
+    - The number 5 * 17 is not divisible by 7, so the function continues to the next iteration.
+Iteration 7:
+    - The number 5 * 17 is not divisible by 8, so the function continues to the next iteration.
+Iteration 8:
+    - The number 5 * 17 is not divisible by 9, so the function continues to the next iteration.
+Iteration 9:
+    - The number 5 * 17 is not divisible by 10, so the function continues to the next iteration.
+Iteration 10:
+    - The number 5 * 17 is not divisible by 11, so the function continues to the next iteration.
+Iteration 11:
+    - The number 5 * 17 is not divisible by 12, so the function continues to the next iteration.
+Iteration 12:
+    - The number 5 * 17 is not divisible by 13, so the function continues to the next iteration.
+Iteration 13:
+    - The number 5 * 17 is not divisible by 14, so the function continues to the next iteration.
+Iteration 14:
+    - The number 5 * 17 is not divisible by 15, so the function continues to the next iteration.
+Iteration 15:
+    - The number 5 * 17 is not divisible by 16, so the function continues to the next iteration.
+Iteration 16:
+    - The number 5 * 17 is not divisible by 17, so the function continues to the next iteration.
+Iteration 17:
+    - The number 5 * 17 is not divisible by 18, so the function continues to the next iteration.
+Iteration 18:
+    - The number 5 * 17 is not divisible by 19, so the function continues to the next iteration.
+Iteration 19:
+    - The number 5 * 17 is not divisible by 20, so the function continues to the next iteration.
+Iteration 20:
+    - The number 5 * 17 is not divisible by 21, so the function continues to the next iteration.
+Iteration 21:
+    - The number 5 * 17 is not divisible by 22, so the function continues to the next iteration.
+Iteration 22:
+    - The number 5 * 17 is not divisible by 23, so the function continues to the next iteration.
+Iteration 23:
+    - The number 5 * 17 is not divisible by 24, so the function continues to the next iteration.
+Iteration 24:
+    - The number 5 * 17 is not divisible by 25, so the function continues to the next iteration.
+Iteration 25:
+    - The number 5 * 17 is not divisible by 26, so the function continues to the next iteration.
+Iteration 26:
+    - The number 5 * 17 is not divisible by 27, so the function continues to the next iteration.
+Iteration 27:
+    - The number 5 * 17 is not divisible by 28, so the function continues to the next iteration.
+Iteration 28:
+    - The number 5 * 17 is not divisible by 29, so the function continues to the next iteration.
+Iteration 29:
+    - The number 5 * 17 is not divisible by 30, so the function continues to the next iteration.
+Iteration 30:
+    - The number 5 * 17 is not divisible by 31, so the function continues to the next iteration.
+Iteration 31:
+    - The number 5 * 17 is not divisible by 32, so the function continues to the next iteration.
+Iteration 32:
+    - The number 5 * 17 is not divisible by 33, so the function continues to the next iteration.
+Iteration 33:
+    - The number 5 * 17 is not divisible by 34, so the function continues to the next iteration.
+Iteration 34:
+    - The number 5 * 17 is not divisible by 35, so the function continues to the next iteration.
+Iteration 35:
+    - The number 5 * 17 is not divisible by 36, so the function continues to the next iteration.
+Iteration 36:
+    - The number 5 * 17 is not divisible by 37, so the function continues to the next iteration.
+Iteration 37:
+    - The number 5 * 17 is not divisible by 38, so the function continues to the next iteration.
+Iteration 38:
+    - The number 5 * 17 is not divisible by 39, so the function continues to the next iteration.
+Iteration 39:
+    - The number 5 * 17 is not divisible by 40, so the function continues to the next iteration.
+Iteration 40:
+    - The number 5 * 17 is not divisible by 41, so the function continues to the next iteration.
+Iteration 41:
+    - The number 5 * 17 is not divisible by 42, so the function continues to the next iteration.
+Iteration 42:
+    - The number 5 * 17 is not divisible by 43, so the function continues to the next iteration.
+Iteration 43:
+    - The number 5 * 17 is not divisible by 44, so the function continues to the next iteration.
+Iteration 44:
+    - The number 5 * 17 is not divisible by 45, so the function continues to the next iteration.
+Iteration 45:
+    - The number 5 * 17 is not divisible by 46, so the function continues to the next iteration.
+Iteration 46:
+    - The number 5 * 17 is not divisible by 47, so the function continues to the next iteration.
+Iteration 47:
+    - The number 5 * 17 is not divisible by 48, so the function continues to the next iteration.
+Iteration 48:
+    - The number 5 * 17 is not divisible by 49, so the function continues to the next iteration.
+Iteration 49:
+    - The number 5 * 17 is not divisible by 50, so the function continues to the next iteration.
+Iteration 50:
+    - The number 5 * 17 is not divisible by 51, so the function continues to the next iteration.
+Iteration 51:
+    - The number 5 * 17 is not divisible by 52, so the function continues to the next iteration.
+Iteration 52:
+    - The number 5 * 17 is not divisible by 53, so the function continues to the next iteration.
+Iteration 53:
+    - The number 5 * 17 is not divisible by 54, so the function continues to the next iteration.
+Iteration 54:
+    - The number 5 * 17 is not divisible by 55, so the function continues to the next iteration.
+Iteration 55:
+    - The number 5 * 17 is not divisible by 56, so the function continues to the next iteration.
+Iteration 56:
+    - The number 5 * 17 is not divisible by 57

@@ -1,0 +1,12 @@
+from typing import *
+
+
+def longest(strings: List[str]) -> Optional[str]:
+    if not strings: ## [CONDITION](not strings)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return None
+
+    maxlen = max(len(x) for x in strings) ## [STATE]maxlen=1[/STATE]
+    for s in strings: ## [STATE]s=['x', 'y', 'z'][/STATE][STATE]strings=['x', 'y', 'z'][/STATE]
+        if len(s) == maxlen: ## [CONDITION](len(s) == maxlen)=[False, False, False][/CONDITION][BRANCH]taken=[N, N, N][/BRANCH]
+            return s
+    return None

@@ -1,0 +1,36 @@
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+```
+
+```python
+def maximum(arr, k):
+    if k == 0:
+        return []
+    arr.sort(reverse=True)
+    return arr[:k]
+
+# Tests
+def check(maximum):
+    assert maximum([-3, -4, 5], 3) == [5, -3, -4]
+    assert maximum([4, -4, 4], 2) == [4, 4]
+    assert maximum([-3, 2, 1, 2, -1, -2, 1], 1) == [2]
+    assert maximum([123, -123, 20, 0 , 1, 2, -3], 3) == [123, 20, 2]
+    assert maximum([-123, 20, 0 , 1, 2, -3], 4) == [20, 2, 1, 0]
+    assert maximum([5, 15, 0, 3, -13, -8, 0], 7) == [15, 5, 3, 0, 0, -8, -13]
+    assert maximum([-1, 0, 2, 5, 3, -10], 2) == [5, 3]
+    assert maximum([1, 0, 5, -7], 1) == [5]
+    assert maximum([4, -4], 2) == [4, -4]
+    assert maximum([-10, 10], 2) == [10, -10]
+    assert maximum([1, 2, 3, -23, 243, -400, 0], 0) == []
+
+check(maximum)
+```

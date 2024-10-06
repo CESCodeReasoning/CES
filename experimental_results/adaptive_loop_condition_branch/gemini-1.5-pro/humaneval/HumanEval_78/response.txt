@@ -1,0 +1,28 @@
+[REASONING]
+The function `hex_key` is called with ( num = "AB" ).
+Inside the function, a variable `total` is initialized to 0.
+The loop iterates from 0 to 1 (since ( len(num) = 2 )).
+First Iteration (i = 0)
+   - `num[i]` is 'A', which is not in primes, so the condition is false.
+   - Action: `total` remains 0.
+Second Iteration (i = 1)
+   - `num[i]` is 'B', which is in primes, so the condition is true.
+   - Action: `total` is updated to 1 (`0 + 1 = 1`).
+Return Statement
+   - After the loop completes, the function returns the value of `total`, which is now 1.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def hex_key(num):
+    primes = ('2', '3', '5', '7', 'B', 'D')
+    total = 0 ## [STATE]total=0[/STATE]
+    for i in range(0, len(num)): ## [STATE]range(0, len(num))=[0, 1][/STATE][STATE]len(num)=2[/STATE]
+        if num[i] in primes: ## [CONDITION](num[i] in primes)=[False, True][/CONDITION][BRANCH]taken=[N, Y][/BRANCH]
+            total += 1
+    return total
+[/ANSWER]
+
+[OUTPUT]
+1
+[/OUTPUT]

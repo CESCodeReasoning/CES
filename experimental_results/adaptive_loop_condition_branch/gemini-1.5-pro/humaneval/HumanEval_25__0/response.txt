@@ -1,0 +1,114 @@
+[REASONING]
+The function `factorize` is called with ( n = 3 * 2 * 3 ).
+Inside the function, a list `fact` is initialized to an empty list.
+The loop iterates from 2 to the square root of n (since the square root of n is the largest possible factor of n).
+First Iteration ( i = 2 ):
+    - i <= int(math.sqrt(n) + 1) when i=2 and n=3 * 2 * 3
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 2 to `fact`.
+    - `n //= i` updates `n` to 3 ( 3 * 2 * 3 // 2 = 3 ).
+Second Iteration ( i = 3 ):
+    - i <= int(math.sqrt(n) + 1) when i=3 and n=3
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 3 to `fact`.
+    - `n //= i` updates `n` to 1 ( 3 // 3 = 1 ).
+Third Iteration ( i = 4 ):
+    - i <= int(math.sqrt(n) + 1) when i=4 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Fourth Iteration ( i = 5 ):
+    - i <= int(math.sqrt(n) + 1) when i=5 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Fifth Iteration ( i = 6 ):
+    - i <= int(math.sqrt(n) + 1) when i=6 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Sixth Iteration ( i = 7 ):
+    - i <= int(math.sqrt(n) + 1) when i=7 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Seventh Iteration ( i = 8 ):
+    - i <= int(math.sqrt(n) + 1) when i=8 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Eighth Iteration ( i = 9 ):
+    - i <= int(math.sqrt(n) + 1) when i=9 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Ninth Iteration ( i = 10 ):
+    - i <= int(math.sqrt(n) + 1) when i=10 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Tenth Iteration ( i = 11 ):
+    - i <= int(math.sqrt(n) + 1) when i=11 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Eleventh Iteration ( i = 12 ):
+    - i <= int(math.sqrt(n) + 1) when i=12 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Twelfth Iteration ( i = 13 ):
+    - i <= int(math.sqrt(n) + 1) when i=13 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Thirteenth Iteration ( i = 14 ):
+    - i <= int(math.sqrt(n) + 1) when i=14 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Fourteenth Iteration ( i = 15 ):
+    - i <= int(math.sqrt(n) + 1) when i=15 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Fifteenth Iteration ( i = 16 ):
+    - i <= int(math.sqrt(n) + 1) when i=16 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Sixteenth Iteration ( i = 17 ):
+    - i <= int(math.sqrt(n) + 1) when i=17 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Seventeenth Iteration ( i = 18 ):
+    - i <= int(math.sqrt(n) + 1) when i=18 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Eighteenth Iteration ( i = 19 ):
+    - i <= int(math.sqrt(n) + 1) when i=19 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Nineteenth Iteration ( i = 20 ):
+    - i <= int(math.sqrt(n) + 1) when i=20 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Twentieth Iteration ( i = 21 ):
+    - i <= int(math.sqrt(n) + 1) when i=21 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Twenty-first Iteration ( i = 22 ):
+    - i <= int(math.sqrt(n) + 1) when i=22 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Twenty-second Iteration ( i = 23 ):
+    - i <= int(math.sqrt(n) + 1) when i=23 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Twenty-third Iteration ( i = 24 ):
+    - i <= int(math.sqrt(n) + 1) when i=24 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Twenty-fourth Iteration ( i = 25 ):
+    - i <= int(math.sqrt(n) + 1) when i=25 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Twenty-fifth Iteration ( i = 26 ):
+    - i <= int(math.sqrt(n) + 1) when i=26 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Twenty-sixth Iteration ( i = 27 ):
+    - i <= int(math.sqrt(n) + 1) when i=27 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next iteration.
+Twenty-seventh Iteration ( i = 28 ):
+    - i <= int(math.sqrt(n) + 1) when i=28 and n=1
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The loop continues to the next

@@ -1,0 +1,8 @@
+The function `closest_integer` is called with value = "14.5".
+The condition `value.count('.') == 1` is `True`, so the code inside the if block is executed.
+The while loop removes trailing zeros from the value until a non-zero digit is encountered.
+After the loop, value becomes "14".
+The variable `num` is assigned the float value of the updated `value`, which is 14.0.
+The condition `value[-2:] == '.5'` is `True`, so the code inside the if block is executed.
+The condition `num > 0` is `True`, so `res` is assigned the ceiling value of `num`, which is 15.
+The function returns `res`, which is 15.

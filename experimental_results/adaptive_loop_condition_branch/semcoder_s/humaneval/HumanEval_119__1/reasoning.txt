@@ -1,0 +1,15 @@
+The function `match_parens` is called with ( lst = ['(()(())', '())())'] ).
+Inside the function, a variable `S1` is formed by concatenating the first two characters of the first string in `lst`, and `S2` is formed by concatenating the first two characters of the second string in `lst`.
+
+The `check` function is defined to validate if the parentheses in a string are balanced.
+
+Iteration 1:
+    -The character '(' is encountered, so `val` is incremented to 1.
+    -The character '(' is encountered again, so `val` is incremented to 2.
+    -The character '(' is encountered again, so `val` is incremented to 3.
+    -The character ')' is encountered, so `val` is decremented to 2.
+    -The character ')' is encountered again, so `val` is decremented to 1.
+    -The character ')' is encountered again, so `val` is decremented to 0.
+    -The loop ends, and `val` is 0, so the function returns `True`.
+
+Therefore, the final output of the function `match_parens(['(()(())', '())())'])` is 'Yes'.

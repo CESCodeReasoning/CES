@@ -1,0 +1,5 @@
+The function `maximum` is called with ( arr = [-3, 2, 1, 2, -1, -2, 1], k = 1 ).
+`k` is 1, which satisfies ( k == 0 ).
+The condition `k == 0` is true, therefore the if branch is taken and the method returns an empty list.
+
+Therefore, the final output of the function `maximum([-3, 2, 1, 2, -1, -2, 1], 1)` is [].

@@ -1,0 +1,47 @@
+[REASONING]
+The function `by_length` is called with the list `[1, -1, 3, 2]`.
+Inside the function, a dictionary `dic` is defined that maps integers from 1 to 9 to their corresponding English words.
+The list is sorted in reverse order, resulting in `sorted_arr = [3, 2, 1, -1]`.
+An empty list `new_arr` is initialized.
+The function then iterates over each element in `sorted_arr`.
+
+First Iteration (var = 3):
+    `dic[var]` is "Three", so "Three" is appended to `new_arr`.
+Second Iteration (var = 2):
+    `dic[var]` is "Two", so "Two" is appended to `new_arr`.
+Third Iteration (var = 1):
+    `dic[var]` is "One", so "One" is appended to `new_arr`.
+Fourth Iteration (var = -1):
+    `-1` is not a key in `dic`, so nothing is appended to `new_arr`.
+
+After the loop completes, the function returns `new_arr`, which now contains `["Three", "Two", "One"]`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def by_length(arr):
+    dic = {
+        1: "One",
+        2: "Two",
+        3: "Three",
+        4: "Four",
+        5: "Five",
+        6: "Six",
+        7: "Seven",
+        8: "Eight",
+        9: "Nine",
+    }
+    sorted_arr = sorted(arr, reverse=True) ## [STATE]sorted_arr=[3, 2, 1, -1][/STATE]
+    new_arr = []
+    for var in sorted_arr: ## [STATE]var=[3, 2, 1, -1][/STATE]
+        try:
+            new_arr.append(dic[var])
+        except BaseException:
+            pass
+    return new_arr
+[/PYTHON]
+
+[OUTPUT]
+['Three', 'Two', 'One']
+[/OUTPUT]

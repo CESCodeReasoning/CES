@@ -1,0 +1,9 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: find_max
+main.py(5):     return sorted(words, key=lambda x: (-len(set(x)), x))[0]
+ --- modulename: main, funcname: <lambda>
+main.py(5):     return sorted(words, key=lambda x: (-len(set(x)), x))[0]
+ --- modulename: main, funcname: <lambda>
+main.py(5):     return sorted(words, key=lambda x: (-len(set(x)), x))[0]
+ --- modulename: main, funcname: <lambda>
+main.py(5):     return sorted(words, key=lambda x: (-len(set(x)), x))[0]

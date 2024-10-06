@@ -1,0 +1,9 @@
+The function is_bored takes a string S as input and returns the number of sentences in S that start with "I ".
+To determine the output of executing the function is_bored on the input "You and I are going for a walk", we need to count the number of sentences in the input string that start with "I ".
+
+The input string is split into sentences using the regular expression r'[.?!]\s*'.
+The sentences are then checked for whether they start with "I ".
+If a sentence starts with "I ", the sum of 1 is added to the total count.
+
+In the input string, there are two sentences that start with "I ": "You and I are going for a walk" and "I am bored".
+Therefore, the output of executing the function is_bored on the input "You and I are going for a walk" is 2.

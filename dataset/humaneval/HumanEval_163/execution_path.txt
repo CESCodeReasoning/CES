@@ -1,0 +1,14 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: generate_integers
+main.py(3):     lower = max(2, min(a, b))
+main.py(4):     upper = min(8, max(a, b))
+main.py(6):     return [i for i in range(lower, upper+1) if i % 2 == 0]
+ --- modulename: main, funcname: <listcomp>
+main.py(6):     return [i for i in range(lower, upper+1) if i % 2 == 0]
+main.py(6):     return [i for i in range(lower, upper+1) if i % 2 == 0]
+main.py(6):     return [i for i in range(lower, upper+1) if i % 2 == 0]
+main.py(6):     return [i for i in range(lower, upper+1) if i % 2 == 0]
+main.py(6):     return [i for i in range(lower, upper+1) if i % 2 == 0]
+main.py(6):     return [i for i in range(lower, upper+1) if i % 2 == 0]
+main.py(6):     return [i for i in range(lower, upper+1) if i % 2 == 0]
+main.py(6):     return [i for i in range(lower, upper+1) if i % 2 == 0]

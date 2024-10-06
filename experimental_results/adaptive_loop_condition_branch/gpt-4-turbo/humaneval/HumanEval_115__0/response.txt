@@ -1,0 +1,32 @@
+[REASONING]
+The function `max_fill` takes two parameters: `grid`, which is a list of lists of integers, and `capacity`, which is an integer. The function calculates the maximum number of containers needed to fill the items in each row of the grid, given the capacity of each container.
+
+1. The function iterates over each row in the grid.
+2. For each row, it calculates the sum of the items in that row.
+3. It then divides the sum by the capacity to determine how many full containers are needed for that row. Since containers can only hold an integer number of items, it uses `math.ceil` to round up to the nearest whole number.
+4. The results for each row are summed to get the total number of containers needed for the entire grid.
+
+For the input `[[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]]` with a capacity of 2:
+- First row: sum is 2, requiring `math.ceil(2/2) = 1` container.
+- Second row: sum is 0, requiring `math.ceil(0/2) = 0` containers.
+- Third row: sum is 4, requiring `math.ceil(4/2) = 2` containers.
+- Fourth row: sum is 3, requiring `math.ceil(3/2) = 2` containers.
+
+Adding these up gives `1 + 0 + 2 + 2 = 5` containers in total.
+[REASONING]
+
+[PYTHON]
+from typing import *
+import math
+
+def max_fill(grid: List[List[int]], capacity: int) -> int:
+    # [STATE] grid = [[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], capacity = 2 [/STATE]
+    return sum([
+        math.ceil(sum(arr) / capacity)  # [STATE] sum(arr) = 2, 0, 4, 3 respectively for each row [/STATE]
+        for arr in grid
+    ])
+[/PYTHON]
+
+[OUTPUT]
+5
+[/OUTPUT]

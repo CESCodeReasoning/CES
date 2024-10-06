@@ -1,0 +1,8 @@
+The function `fizz_buzz` is called with ( n = 200 ).
+Inside the function, an empty list `ns` is initialized to store the numbers that meet the conditions.
+The loop iterates from 0 through 199 (since ( n = 200 )).
+For each iteration, it checks if the number `i` is divisible by 11 or 13.
+If `i` is divisible by 11 or 13, it appends `i` to `ns`.
+After the loop, it joins the elements of `ns` into a string `s`.
+Then, it iterates over `s`, counting the number of times the character '7' appears.
+Finally, it returns this count.

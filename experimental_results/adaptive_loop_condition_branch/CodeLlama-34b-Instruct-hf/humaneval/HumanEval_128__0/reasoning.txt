@@ -1,0 +1,6 @@
+The function `prod_signs` is called with an array `arr` containing the values `[-1, 1, 1, 1]`.
+The first line of the function checks if the array is empty. If it is, the function returns `None`.
+Since the array is not empty, the function continues to the next line.
+The next line initializes a variable `prod` to 0 if the array contains 0, or to (-1) raised to the power of the length of the array if it does not contain 0.
+The next line filters the array to only include negative values, and then takes the length of the filtered array.
+The function then returns the product of `prod` and the sum of the absolute values of the array.

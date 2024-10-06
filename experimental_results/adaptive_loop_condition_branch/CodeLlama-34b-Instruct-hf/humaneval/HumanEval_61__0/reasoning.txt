@@ -1,0 +1,19 @@
+The function `correct_bracketing` is called with ( brackets = ")((" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The character ')' is not '('.
+    -The condition (depth < 0) is false.
+    -The function continues to the next iteration.
+Iteration 2:
+    -The character '(' is '('.
+    -The condition (depth < 0) is false.
+    -The function continues to the next iteration.
+Iteration 3:
+    -The character '(' is '('.
+    -The condition (depth < 0) is false.
+    -The function continues to the next iteration.
+Iteration 4:
+    -The character ')' is not '('.
+    -The condition (depth < 0) is true.
+    -The function returns False.

@@ -1,0 +1,12 @@
+from typing import *
+
+
+def even_odd_count(num):
+    even_count = 0
+    odd_count = 0
+    for i in str(abs(num)): ## [STATE]i=['7', '8', '7', '8', '8', '7', '8'][/STATE][STATE]str(abs(num))=['78'][/STATE][STATE]abs(num)=78[/STATE]
+        if int(i) % 2 == 0: ## [CONDITION](int(i) % 2 == 0)=[False, True, False, True, True, False, True][/CONDITION][BRANCH]taken=[N, Y, N, Y, Y, N, Y][/BRANCH]
+            even_count += 1
+        else: ## [BRANCH]taken=[Y, N, Y, N, N, Y, N][/BRANCH]
+            odd_count += 1
+    return (even_count, odd_count)

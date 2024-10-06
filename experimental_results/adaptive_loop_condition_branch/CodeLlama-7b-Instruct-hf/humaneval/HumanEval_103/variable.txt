@@ -1,0 +1,8 @@
+from typing import *
+def rounded_avg(n, m):
+    if m < n: ## [CONDITION](m < n)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return -1
+    summation = 0
+    for i in range(n, m+1): ## [STATE]i=[1, 2, 3, 4, 5][/STATE][STATE]range(n, (m + 1))=[1, 2, 3, 4, 5][/STATE][STATE]n=1[/STATE][STATE](m + 1)=6[/STATE]
+        summation += i
+    return bin(round(summation/(m - n + 1)))

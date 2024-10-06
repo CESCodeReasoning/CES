@@ -1,0 +1,120 @@
+The function `largest_divisor` is called with ( n = 100 ).
+The loop iterates from 99 down to 1 (since we are using `reversed(range(n))`).
+First Iteration (i = 99)
+   - `n % i` is 1, which is not equal to 0.
+Second Iteration (i = 98)
+   - `n % i` is 2, which is not equal to 0.
+Third Iteration (i = 97)
+   - `n % i` is 3, which is not equal to 0.
+Fourth Iteration (i = 96)
+   - `n % i` is 4, which is not equal to 0.
+Fifth Iteration (i = 95)
+   - `n % i` is 5, which is not equal to 0.
+Sixth Iteration (i = 94)
+   - `n % i` is 6, which is not equal to 0.
+Seventh Iteration (i = 93)
+   - `n % i` is 7, which is not equal to 0.
+Eighth Iteration (i = 92)
+   - `n % i` is 8, which is not equal to 0.
+Ninth Iteration (i = 91)
+   - `n % i` is 9, which is not equal to 0.
+Tenth Iteration (i = 90)
+   - `n % i` is 10, which is not equal to 0.
+Eleventh Iteration (i = 89)
+   - `n % i` is 11, which is not equal to 0.
+Twelfth Iteration (i = 88)
+   - `n % i` is 12, which is not equal to 0.
+Thirteenth Iteration (i = 87)
+   - `n % i` is 13, which is not equal to 0.
+Fourteenth Iteration (i = 86)
+   - `n % i` is 14, which is not equal to 0.
+Fifteenth Iteration (i = 85)
+   - `n % i` is 15, which is not equal to 0.
+Sixteenth Iteration (i = 84)
+   - `n % i` is 16, which is not equal to 0.
+Seventeenth Iteration (i = 83)
+   - `n % i` is 17, which is not equal to 0.
+Eighteenth Iteration (i = 82)
+   - `n % i` is 18, which is not equal to 0.
+Nineteenth Iteration (i = 81)
+   - `n % i` is 19, which is not equal to 0.
+Twentieth Iteration (i = 80)
+   - `n % i` is 20, which is not equal to 0.
+Twenty-First Iteration (i = 79)
+   - `n % i` is 21, which is not equal to 0.
+Twenty-Second Iteration (i = 78)
+   - `n % i` is 22, which is not equal to 0.
+Twenty-Third Iteration (i = 77)
+   - `n % i` is 23, which is not equal to 0.
+Twenty-Fourth Iteration (i = 76)
+   - `n % i` is 24, which is not equal to 0.
+Twenty-Fifth Iteration (i = 75)
+   - `n % i` is 25, which is not equal to 0.
+Twenty-Sixth Iteration (i = 74)
+   - `n % i` is 26, which is not equal to 0.
+Twenty-Seventh Iteration (i = 73)
+   - `n % i` is 27, which is not equal to 0.
+Twenty-Eighth Iteration (i = 72)
+   - `n % i` is 28, which is not equal to 0.
+Twenty-Ninth Iteration (i = 71)
+   - `n % i` is 29, which is not equal to 0.
+Thirtieth Iteration (i = 70)
+   - `n % i` is 30, which is not equal to 0.
+Thirty-First Iteration (i = 69)
+   - `n % i` is 31, which is not equal to 0.
+Thirty-Second Iteration (i = 68)
+   - `n % i` is 32, which is not equal to 0.
+Thirty-Third Iteration (i = 67)
+   - `n % i` is 33, which is not equal to 0.
+Thirty-Fourth Iteration (i = 66)
+   - `n % i` is 34, which is not equal to 0.
+Thirty-Fifth Iteration (i = 65)
+   - `n % i` is 35, which is not equal to 0.
+Thirty-Sixth Iteration (i = 64)
+   - `n % i` is 36, which is not equal to 0.
+Thirty-Seventh Iteration (i = 63)
+   - `n % i` is 37, which is not equal to 0.
+Thirty-Eighth Iteration (i = 62)
+   - `n % i` is 38, which is not equal to 0.
+Thirty-Ninth Iteration (i = 61)
+   - `n % i` is 39, which is not equal to 0.
+Fortieth Iteration (i = 60)
+   - `n % i` is 40, which is not equal to 0.
+Forty-First Iteration (i = 59)
+   - `n % i` is 41, which is not equal to 0.
+Forty-Second Iteration (i = 58)
+   - `n % i` is 42, which is not equal to 0.
+Forty-Third Iteration (i = 57)
+   - `n % i` is 43, which is not equal to 0.
+Forty-Fourth Iteration (i = 56)
+   - `n % i` is 44, which is not equal to 0.
+Forty-Fifth Iteration (i = 55)
+   - `n % i` is 45, which is not equal to 0.
+Forty-Sixth Iteration (i = 54)
+   - `n % i` is 46, which is not equal to 0.
+Forty-Seventh Iteration (i = 53)
+   - `n % i` is 47, which is not equal to 0.
+Forty-Eighth Iteration (i = 52)
+   - `n % i` is 48, which is not equal to 0.
+Forty-Ninth Iteration (i = 51)
+   - `n % i` is 49, which is not equal to 0.
+Fifty-th Iteration (i = 50)
+   - `n % i` is 50, which is not equal to 0.
+Fifty-First Iteration (i = 49)
+   - `n % i` is 51, which is not equal to 0.
+Fifty-Second Iteration (i = 48)
+   - `n % i` is 52, which is not equal to 0.
+Fifty-Third Iteration (i = 47)
+   - `n % i` is 53, which is not equal to 0.
+Fifty-Fourth Iteration (i = 46)
+   - `n % i` is 54, which is not equal to 0.
+Fifty-Fifth Iteration (i = 45)
+   - `n % i` is 55, which is not equal to 0.
+Fifty-Sixth Iteration (i = 44)
+   - `n % i` is 56, which is not equal to 0.
+Fifty-Seventh Iteration (i = 43)
+   - `n % i` is 57, which is not equal to 0.
+Fifty-Eighth Iteration (i = 42)
+   - `n % i` is 58, which is not equal to 0.
+Fifty-Ninth Iteration (i = 41)
+   - `n % i

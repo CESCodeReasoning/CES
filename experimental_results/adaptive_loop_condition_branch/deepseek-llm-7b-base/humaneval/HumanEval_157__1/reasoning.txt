@@ -1,0 +1,6 @@
+The function right_angle_triangle takes three integers a, b, and c as input and returns True if the triangle formed by the sides a, b, and c is a right-angled triangle, or False otherwise.
+To determine whether the triangle formed by the sides a, b, and c is a right-angled triangle, we need to check if the following conditions are met:
+a * a == b * b + c * c
+b * b == a * a + c * c
+c * c == a * a + b * b
+Therefore, the output of executing the function right_angle_triangle on the input (1, 1, 1) is True.

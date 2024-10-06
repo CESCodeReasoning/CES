@@ -1,0 +1,19 @@
+[REASONING]
+The function `add` is designed to take two integers, `x` and `y`, as input and return their sum.
+To determine the output of executing the function `add` on the inputs `6` and `8`, we simply perform the addition of these two numbers.
+Therefore, the output of executing the function `add` on the inputs `6` and `8` is `14`.
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def add(x: int, y: int):
+    # [STATE] x = 6, y = 8 [/STATE]
+    return x + y  # [RETURN] 14 [/RETURN]
+```
+[/ANSWER]
+
+[OUTPUT]
+14
+[/OUTPUT]

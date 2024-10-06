@@ -1,0 +1,7 @@
+The function solution takes a list of integers lst as input and returns the sum of all the even indices that contain odd numbers.
+To determine the output of executing the function solution on the input [5, 8, 7, 1], we need to follow the steps below:
+
+1. The list [5, 8, 7, 1] is passed as an argument to the function solution.
+2. The list comprehension [x for idx, x in enumerate(lst) if idx%2==0 and x%2==1] is executed. This list comprehension iterates over the elements of the input list and selects only the even indices that contain odd numbers. The resulting list is [8, 7].
+3. The sum of the elements in the resulting list is calculated, which gives the output 15.
+Therefore, the output of executing the function solution on the input [5, 8, 7, 1] is 15.

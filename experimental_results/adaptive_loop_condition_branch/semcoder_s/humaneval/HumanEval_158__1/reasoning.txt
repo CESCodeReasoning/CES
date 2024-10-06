@@ -1,0 +1,11 @@
+The function `find_max` takes a list of words as input and returns the word with the maximum number of unique characters in descending order. In case of a tie, the word with the lexicographically smallest order is returned.
+
+Here's the step-by-step reasoning:
+1. The `sorted` function is used to sort the list of words based on two criteria:
+   - The first criteria is the length of the set of unique characters in descending order. The `-len(set(x))` is used to sort in descending order.
+   - The second criteria is the lexicographical order of the words.
+2. The sorted list is then indexed with `[0]` to get the first (and in this case, the only) element, which is the word with the maximum number of unique characters in descending order.
+
+For the input `["name", "enam", "game"]`, the words are sorted based on the two criteria mentioned above. The sorted list is `["name", "enam", "game"]`.
+
+Therefore, the output of executing the function `find_max` on the input `["name", "enam", "game"]` is `"name"`.

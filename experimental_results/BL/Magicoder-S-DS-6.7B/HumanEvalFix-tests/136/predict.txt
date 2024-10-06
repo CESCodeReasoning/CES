@@ -1,0 +1,4 @@
+smallest = list(filter(lambda x: x < 0, lst))
+    largest = list(filter(lambda x: x > 0, lst))
+    largest = list(filter(lambda x: x > 0, smallest))
+    smallest = list(filter(lambda x: x > 0, largest))

@@ -1,0 +1,21 @@
+[REASONING]
+The function `largest_divisor` is called with ( n = 3 ).
+Inside the function, a variable `i` is initialized to 3.
+The loop iterates from 3 to 1 (since ( n = 3 )).
+First Iteration (i = 3)
+   - `i` is 3, which satisfies ( n % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns the value of `i`, which is 3.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def largest_divisor(n: int) -> int: ## [STATE]i=[3][/STATE]
+    for i in reversed(range(n)): ## [STATE]reversed(range(n))=[3, 2, 1][/STATE][STATE]range(n)=[0, 1, 2][/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+            return i
+[/ANSWER]
+
+[OUTPUT]
+3
+[/OUTPUT]

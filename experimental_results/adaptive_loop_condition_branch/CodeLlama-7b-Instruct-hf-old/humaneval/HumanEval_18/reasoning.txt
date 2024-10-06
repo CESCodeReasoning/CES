@@ -1,0 +1,20 @@
+The function `get_unique_elements` is called with ( my_list = [1, 2, 3, 2, 1] ).
+Inside the function, a variable `unique_elements` is initialized to an empty list.
+
+Iteration 1:
+    -The element `1` is not in `unique_elements`, so it is appended to `unique_elements`.
+    -`unique_elements` becomes [1].
+Iteration 2:
+    -The element `2` is not in `unique_elements`, so it is appended to `unique_elements`.
+    -`unique_elements` becomes [1, 2].
+Iteration 3:
+    -The element `3` is not in `unique_elements`, so it is appended to `unique_elements`.
+    -`unique_elements` becomes [1, 2, 3].
+Iteration 4:
+    -The element `2` is already in `unique_elements`, so it is not appended.
+    -`unique_elements` remains [1, 2, 3].
+Iteration 5:
+    -The element `1` is already in `unique_elements`, so it is not appended.
+    -`unique_elements` remains [1, 2, 3].
+
+Therefore, the final output of the function `get_unique_elements([1, 2, 3, 2, 1])` is [1, 2, 3].

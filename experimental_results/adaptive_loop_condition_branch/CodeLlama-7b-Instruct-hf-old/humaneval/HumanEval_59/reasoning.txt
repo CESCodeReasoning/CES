@@ -1,0 +1,24 @@
+The function `largest_prime_factor` is called with ( n = 15 ).
+Inside the function, two variables `largest` and `is_prime` are defined.
+The function `is_prime` is defined inside `largest_prime_factor`.
+The function `is_prime` takes an integer `k` as input and returns `True` if `k` is prime and `False` otherwise.
+The function `is_prime` has a conditional statement that checks if `k` is less than 2.
+If `k` is less than 2, then `is_prime` returns `False`.
+Otherwise, `is_prime` checks if `k` is divisible by any number between 2 and `k - 1`.
+If `k` is not divisible by any number between 2 and `k - 1`, then `is_prime` returns `True`.
+Otherwise, `is_prime` returns `False`.
+
+The function `largest_prime_factor` has a conditional statement that checks if `n` is divisible by any number between 2 and `n - 1`.
+If `n` is not divisible by any number between 2 and `n - 1`, then `largest_prime_factor` returns `n`.
+Otherwise, `largest_prime_factor` checks if `n` is prime.
+If `n` is prime, then `largest_prime_factor` returns `n`.
+Otherwise, `largest_prime_factor` returns the largest prime factor of `n`.
+
+The function `largest_prime_factor` has a loop that iterates from 2 to `n + 1`.
+Inside the loop, `largest_prime_factor` checks if `n` is divisible by any number between 2 and `n - 1`.
+If `n` is divisible by any number between 2 and `n - 1`, then `largest_prime_factor` returns the largest prime factor of `n`.
+Otherwise, `largest_prime_factor` checks if `n` is prime.
+If `n` is prime, then `largest_prime_factor` returns `n`.
+Otherwise, `largest_prime_factor` returns the largest prime factor of `n`.
+
+Therefore, the final output of the function `largest_prime_factor(15)` is 5.

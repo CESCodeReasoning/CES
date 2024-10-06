@@ -1,0 +1,35 @@
+Here are the fixed versions of the provided Python functions, enclosed in the appropriate markdown for code formatting:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `solution`
+```python
+def solution(lst):
+    return sum(x for idx, x in enumerate(lst) if idx % 2 == 0 and x % 2 == 1)  # Check for odd elements at even indices (0-based)
+
+# Tests
+def check(solution):
+    assert solution([5, 8, 7, 1]) == 12
+    assert solution([3, 3, 3, 3, 3]) == 9
+    assert solution([30, 13, 24, 321]) == 0
+    assert solution([5, 9]) == 5
+    assert solution([2, 4, 8]) == 0
+    assert solution([30, 13, 23, 32]) == 23
+    assert solution([3, 13, 2, 9]) == 3
+
+check(solution)
+```
+
+These corrections ensure that the functions behave as specified in the problem descriptions. The `has_close_elements` function now correctly calculates the absolute distance between elements, and the `solution` function correctly sums odd numbers at even indices (considering 0-based indexing).

@@ -1,0 +1,35 @@
+Here is the fixed code for both functions, `has_close_elements` and `file_name_check`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `file_name_check`
+```python
+def file_name_check(file_name: str) -> str:
+    suf = ['txt', 'exe', 'dll']
+    lst = file_name.split('.')
+    if len(lst) != 2:
+        return 'No'
+    if len(lst[0]) == 0 or not lst[0][0].isalpha():
+        return 'No'
+    if len([x for x in lst[0] if x.isdigit()]) > 3:
+        return 'No'
+    if lst[1] not in suf:
+        return 'No'
+    return 'Yes'
+```
+
+These fixes address the issues in the original code:
+- For `has_close_elements`, the absolute value of the distance is now correctly calculated to ensure that the function checks for closeness correctly.
+- For `file_name_check`, the function now also checks if the extension (substring after the dot) is one of the allowed types ('txt', 'exe', 'dll'). This ensures that the filename is valid not only based on the structure and character constraints but also based on the file type.

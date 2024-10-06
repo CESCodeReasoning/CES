@@ -1,0 +1,4 @@
+The function `decimal_to_binary` takes an integer `decimal` as input and returns the binary representation of the decimal number as a string.
+To determine the binary representation of the decimal number 32, we need to convert 32 from decimal to binary.
+32 in binary is 100000.
+Therefore, the output of executing the function `decimal_to_binary` on the input 32 is "db100000db".

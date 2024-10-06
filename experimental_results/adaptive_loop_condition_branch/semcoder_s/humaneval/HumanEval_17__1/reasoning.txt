@@ -1,0 +1,8 @@
+The function `parse_music` takes a string `music_string` as input and returns a list of integers representing the music notes.
+
+- The `note_map` dictionary maps music symbols to their corresponding note values.
+- The string `music_string` is split by spaces and each resulting substring is checked if it is not empty.
+- For each non-empty substring, the corresponding note value is retrieved from the `note_map` dictionary and added to the result list.
+- Finally, the list of note values is returned.
+
+For the input `'.| .| .| .|'`, the function will return `[1, 1, 1, 1]`.

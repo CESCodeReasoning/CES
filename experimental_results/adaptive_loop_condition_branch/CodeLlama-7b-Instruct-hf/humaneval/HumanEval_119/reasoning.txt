@@ -1,0 +1,117 @@
+The function `match_parens` is called with ( lst = ['()(', ')'] ).
+Inside the function, two variables `S1` and `S2` are initialized to the concatenation of the first two elements of the list `lst`.
+
+Iteration 1:
+    -The string `S1` is initialized to '()(' and `S2` is initialized to ')()'.
+Iteration 2:
+    -The string `S1` is updated to '()((' and `S2` is updated to ')()('.
+Iteration 3:
+    -The string `S1` is updated to '()((' and `S2` is updated to ')()(('.
+Iteration 4:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 5:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 6:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 7:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 8:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 9:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 10:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 11:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 12:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 13:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 14:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 15:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 16:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 17:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 18:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 19:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 20:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 21:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 22:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 23:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 24:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 25:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 26:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 27:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 28:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 29:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 30:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 31:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 32:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 33:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 34:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 35:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 36:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 37:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 38:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 39:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 40:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 41:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 42:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 43:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 44:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 45:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 46:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 47:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 48:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 49:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 50:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 51:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 52:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 53:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 54:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 55:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 56:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.
+Iteration 57:
+    -The string `S1` is updated to '()(((' and `S2` is updated to ')()(('.

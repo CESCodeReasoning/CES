@@ -1,0 +1,6 @@
+The function `digitSum` is called with the string "You arE Very Smart".
+The first line checks if the input string is empty. If it is, the function returns 0.
+Since the input string is not empty, the function proceeds to the next line.
+The next line uses a list comprehension to iterate over each character in the input string.
+For each character, the function checks if it is an uppercase letter using the `isupper()` method. If it is, the function converts the character to its ASCII code using the `ord()` function.
+The function then returns the sum of all the ASCII codes of the uppercase letters in the input string.

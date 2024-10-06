@@ -1,0 +1,4 @@
+from typing import *
+def next_smallest(lst):
+    lst = sorted(set(lst))  # [STATE]: The set of the list is used to remove duplicates and then sorted to get a sorted list.
+    return None if len(lst) < 2 else lst[1]  # [STATE]: The function returns the second element of the sorted list if the length of the sorted list is greater than 1, otherwise it returns None.

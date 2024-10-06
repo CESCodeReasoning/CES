@@ -1,0 +1,5 @@
+The function is_bored takes a string S as input and returns a boolean value indicating whether the string contains the sentence "I love it!" in the first two words.
+To determine the output of executing the function is_bored on the input "I love It !", we need to split the string into sentences using the regular expression r'[.?!]\s*'.
+The resulting list of sentences is ["I love It !"].
+We then check whether the first two words of the first sentence are "I " using the expression sentence[0:2] == 'I '.
+Since the first two words of the first sentence are "I ", the output of executing the function is_bored on the input "I love It !" is True.

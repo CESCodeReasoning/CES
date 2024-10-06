@@ -1,0 +1,45 @@
+The function `rounded_avg` is called with ( n = 560, m = 851 ).
+The condition ( m < n ) is not satisfied, therefore the if branch is not taken.
+Inside the function, a variable `summation` is initialized to 0.
+The loop iterates from 560 through 851 (since ( m = 851 )).
+First Iteration (i = 560):
+    summation += i updates `summation` to 560 ( 0 + 560 = 560 ).
+Second Iteration (i = 561):
+    summation += i updates `summation` to 1121 ( 560 + 561 = 1121 ).
+Third Iteration (i = 562)
+    summation += i updates `summation` to 1683 ( 1121 + 562 = 1683 ).
+Fourth Iteration (i = 563)
+    summation += i updates `summation` to 2246 ( 1683 + 563 = 2246 ).
+Fifth Iteration (i = 564)
+    summation += i updates `summation` to 2809 ( 2246 + 564 = 2809 ).
+Sixth Iteration (i = 565)
+    summation += i updates `summation` to 3372 ( 2809 + 565 = 3372 ).
+Seventh Iteration (i = 566)
+    summation += i updates `summation` to 3935 ( 3372 + 566 = 3935 ).
+Eighth Iteration (i = 567)
+    summation += i updates `summation` to 4498 ( 3935 + 567 = 4498 ).
+Ninth Iteration (i = 568)
+    summation += i updates `summation` to 5061 ( 4498 + 568 = 5061 ).
+Tenth Iteration (i = 569)
+    summation += i updates `summation` to 5624 ( 5061 + 569 = 5624 ).
+Eleventh Iteration (i = 570)
+    summation += i updates `summation` to 6187 ( 5624 + 570 = 6187 ).
+Twelfth Iteration (i = 571)
+    summation += i updates `summation` to 6750 ( 6187 + 571 = 6750 ).
+Thirteenth Iteration (i = 572)
+    summation += i updates `summation` to 7313 ( 6750 + 572 = 7313 ).
+Fourteenth Iteration (i = 573)
+    summation += i updates `summation` to 7876 ( 7313 + 573 = 7876 ).
+Fifteenth Iteration (i = 574)
+    summation += i updates `summation` to 8439 ( 7876 + 574 = 8439 ).
+Sixteenth Iteration (i = 575)
+    summation += i updates `summation` to 9002 ( 8439 + 575 = 9002 ).
+Seventeenth Iteration (i = 576)
+    summation += i updates `summation` to 9565 ( 9002 + 576 = 9565 ).
+Eighteenth Iteration (i = 577)
+    summation += i updates `summation` to 10128 ( 9565 + 577 = 10128 ).
+Nineteenth Iteration (i = 578)
+    summation += i updates `summation` to 10691 ( 10128 + 578 = 10691 ).
+Twentieth Iteration (i = 579)
+    summation += i updates `summation` to 11254 ( 10691 + 579 = 11254 ).
+Twenty-First Iteration (i = 580)

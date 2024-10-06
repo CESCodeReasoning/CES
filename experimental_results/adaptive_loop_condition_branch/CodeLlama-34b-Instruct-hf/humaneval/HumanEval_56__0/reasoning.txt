@@ -1,0 +1,43 @@
+The function `correct_bracketing` is called with ( brackets = "<><><<><>><>>><>" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The character '>' is not '<', so depth becomes 1.
+Iteration 2:
+    -The character '>' is not '<', so depth becomes 2.
+Iteration 3:
+    -The character '>' is not '<', so depth becomes 3.
+Iteration 4:
+    -The character '>' is not '<', so depth becomes 4.
+Iteration 5:
+    -The character '>' is not '<', so depth becomes 5.
+Iteration 6:
+    -The character '>' is not '<', so depth becomes 6.
+Iteration 7:
+    -The character '>' is not '<', so depth becomes 7.
+Iteration 8:
+    -The character '>' is not '<', so depth becomes 8.
+Iteration 9:
+    -The character '>' is not '<', so depth becomes 9.
+Iteration 10:
+    -The character '>' is not '<', so depth becomes 10.
+Iteration 11:
+    -The character '>' is not '<', so depth becomes 11.
+Iteration 12:
+    -The character '>' is not '<', so depth becomes 12.
+Iteration 13:
+    -The character '>' is not '<', so depth becomes 13.
+Iteration 14:
+    -The character '>' is not '<', so depth becomes 14.
+Iteration 15:
+    -The character '>' is not '<', so depth becomes 15.
+Iteration 16:
+    -The character '>' is not '<', so depth becomes 16.
+Iteration 17:
+    -The character '>' is not '<', so depth becomes 17.
+Iteration 18:
+    -The character '>' is not '<', so depth becomes 18.
+Iteration 19:
+    -The character '>' is not '<', so depth becomes 19.
+Iteration 20:
+    -The character '>' is not '<', so depth becomes 20.

@@ -1,0 +1,16 @@
+The function numerical_letter_grade is called with ( grades = [0, 0.7] ).
+Inside the function, a variable letter_grade is initialized to an empty list.
+
+Iteration 1:
+    -The value of gpa is 0, which is less than 0.7, so the first condition (gpa == 4.0) is false.
+    -The second condition (gpa > 3.7) is false, so the third condition (gpa > 3.3) is false.
+    -The fourth condition (gpa > 3.0) is false, so the fifth condition (gpa > 2.7) is false.
+    -The sixth condition (gpa > 2.3) is false, so the seventh condition (gpa > 2.0) is false.
+    -The eighth condition (gpa > 1.7) is false, so the ninth condition (gpa > 1.3) is false.
+    -The tenth condition (gpa > 1.0) is false, so the eleventh condition (gpa > 0.7) is false.
+    -The twelfth condition (gpa > 0.0) is true, so the else block is executed.
+    -The else block appends "D-" to letter_grade.
+Iteration 2:
+    -The value of gpa is 0.7, which is greater than 0.0, so the twelfth condition (gpa > 0.0) is true.
+    -The eleventh condition (gpa > 0.7) is true, so the else block is executed.
+    -The else block appends "D" to letter_grade.

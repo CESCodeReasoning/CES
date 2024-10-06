@@ -1,0 +1,4 @@
+The function get_positive takes a list l as input and returns a new list containing only the positive elements of l.
+To determine the output of executing the function get_positive on the input [-1, -2, 4, 5, 6], we need to iterate over the elements of the input list and check if each element is greater than 0.
+If an element is greater than 0, we add it to the new list.
+Therefore, the output of executing the function get_positive on the input [-1, -2, 4, 5, 6] is [4, 5, 6].

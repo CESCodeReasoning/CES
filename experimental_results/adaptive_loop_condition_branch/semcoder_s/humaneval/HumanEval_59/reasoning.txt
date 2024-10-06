@@ -1,0 +1,41 @@
+The function `largest_prime_factor` is called with ( n = 15 ).
+Inside the function, a variable `largest` is initialized to 1.
+The loop iterates from 2 through 15 (since ( n = 15 )).
+Iteration 1 (j = 2)
+   - `n` is divisible by 2 and 2 is a prime number (True).
+   - Action: `largest` is updated to 2.
+Iteration 2 (j = 3)
+   - `n` is divisible by 3 and 3 is a prime number (True).
+   - Action: `largest` is updated to 3.
+Iteration 3 (j = 4)
+   - `n` is not divisible by 4.
+Iteration 4 (j = 5)
+   - `n` is divisible by 5 and 5 is a prime number (True).
+   - Action: `largest` is updated to 5.
+Iteration 5 (j = 6)
+   - `n` is not divisible by 6.
+Iteration 6 (j = 7)
+   - `n` is divisible by 7 and 7 is a prime number (True).
+   - Action: `largest` is updated to 7.
+Iteration 7 (j = 8)
+   - `n` is not divisible by 8.
+Iteration 8 (j = 9)
+   - `n` is not divisible by 9.
+Iteration 9 (j = 10)
+   - `n` is not divisible by 10.
+Iteration 10 (j = 11)
+   - `n` is divisible by 11 and 11 is a prime number (True).
+   - Action: `largest` is updated to 11.
+Iteration 11 (j = 12)
+   - `n` is not divisible by 12.
+Iteration 12 (j = 13)
+   - `n` is divisible by 13 and 13 is a prime number (True).
+   - Action: `largest` is updated to 13.
+Iteration 13 (j = 14)
+   - `n` is not divisible by 14.
+Iteration 14 (j = 15)
+   - `n` is not divisible by 15.
+Return Statement
+   - After the loop completes, the function returns the value of `largest`, which is now 13.
+
+Therefore, the final output of the function `largest_prime_factor(15)` is 13.

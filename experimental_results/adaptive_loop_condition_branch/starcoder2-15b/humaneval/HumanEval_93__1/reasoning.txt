@@ -1,0 +1,9 @@
+The function encode takes a string message as input and returns an encoded version of the message.
+The function first creates a dictionary vowels_replace that maps each vowel to the character 2 positions ahead of it in the alphabet.
+It then swaps the case of all the characters in the message and returns a new string where each vowel is replaced with the corresponding character in vowels_replace.
+
+To determine the output of executing the function encode on the input "I DoNt KnOw WhAt tO WrItE", we need to perform the following steps:
+1. Swap the case of all the characters in the message "I DoNt KnOw WhAt tO WrItE" to obtain "i dONt kNOw wHaT To wRITE".
+2. Replace each vowel in the message with the corresponding character in vowels_replace.
+
+Therefore, the output of executing the function encode on the input "I DoNt KnOw WhAt tO WrItE" is "i dONv kNOz wHbV To xVWE".

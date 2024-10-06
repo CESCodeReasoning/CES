@@ -1,0 +1,54 @@
+[REASONING]
+The function `by_length` is called with the list `[2, 1, 1, 4, 5, 8, 2, 3]`.
+Inside the function, a dictionary `dic` is defined that maps integers to their corresponding English words from one to nine.
+The input list is sorted in descending order, resulting in `sorted_arr = [8, 5, 4, 3, 2, 2, 1, 1]`.
+An empty list `new_arr` is initialized.
+The function then iterates over each element in `sorted_arr`.
+
+First Iteration (var = 8):
+    `dic[var]` is "Eight", which is appended to `new_arr`.
+Second Iteration (var = 5):
+    `dic[var]` is "Five", which is appended to `new_arr`.
+Third Iteration (var = 4):
+    `dic[var]` is "Four", which is appended to `new_arr`.
+Fourth Iteration (var = 3):
+    `dic[var]` is "Three", which is appended to `new_arr`.
+Fifth Iteration (var = 2):
+    `dic[var]` is "Two", which is appended to `new_arr`.
+Sixth Iteration (var = 2):
+    Again, `dic[var]` is "Two", which is appended to `new_arr`.
+Seventh Iteration (var = 1):
+    `dic[var]` is "One", which is appended to `new_arr`.
+Eighth Iteration (var = 1):
+    Again, `dic[var]` is "One", which is appended to `new_arr`.
+
+After the loop completes, the function returns `new_arr`, which now contains the words corresponding to the numbers in descending order based on their original values.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def by_length(arr):
+    dic = {
+        1: "One",
+        2: "Two",
+        3: "Three",
+        4: "Four",
+        5: "Five",
+        6: "Six",
+        7: "Seven",
+        8: "Eight",
+        9: "Nine",
+    }
+    sorted_arr = sorted(arr, reverse=True) ## [STATE]sorted_arr=[8, 5, 4, 3, 2, 2, 1, 1][/STATE]
+    new_arr = []
+    for var in sorted_arr: ## [STATE]var=[8, 5, 4, 3, 2, 2, 1, 1][/STATE]
+        try:
+            new_arr.append(dic[var])
+        except:
+            pass
+    return new_arr
+[/PYTHON]
+
+[OUTPUT]
+['Eight', 'Five', 'Four', 'Three', 'Two', 'Two', 'One', 'One']
+[/OUTPUT]

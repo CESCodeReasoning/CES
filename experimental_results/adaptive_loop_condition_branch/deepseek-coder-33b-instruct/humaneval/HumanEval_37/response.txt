@@ -1,0 +1,27 @@
+
+[ANSWER]
+from typing import *
+def sort_even(l: list):
+    evens = l[::2] ## [STATE]evens=[1, 3][/STATE]
+    odds = l[1::2] ## [STATE]odds=[2][/STATE]
+    evens.sort() ## [STATE]evens=[1, 3][/STATE]
+    ans = []
+    for e, o in zip(evens, odds): ## [STATE]e=1[/STATE][STATE]o=2[/STATE][STATE]zip(evens, odds)=[(1, 2)][/STATE][STATE]evens=[1, 3][/STATE][STATE]odds=[2][/STATE]
+        ans.extend([e, o]) ## [STATE]ans=[1, 2]
+    if len(evens) > len(odds): ## [CONDITION](len(evens) > len(odds))=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+        ans.append(evens[-1])
+    return ans
+[/ANSWER]
+
+[REASONING]
+The function `sort_even` is called with ( l = [1, 2, 3] ).
+Inside the function, two lists `evens` and `odds` are created. `evens` contains the elements at even indices of `l` and `odds` contains the elements at odd indices of `l`.
+`evens` is sorted in ascending order.
+Then, for each pair of elements `e` from `evens` and `o` from `odds`, `e` and `o` are appended to `ans`.
+Since the length of `evens` is not greater than the length of `odds`, the else branch is not taken.
+Finally, `ans` is returned as the output.
+[/REASONING]
+
+[OUTPUT]
+(1, 2)
+[/OUTPUT]

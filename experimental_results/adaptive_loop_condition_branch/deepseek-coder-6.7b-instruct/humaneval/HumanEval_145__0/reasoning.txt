@@ -1,0 +1,29 @@
+The function `order_by_points` is called with a list of integers.
+The function `digits_sum` is defined inside `order_by_points`. It calculates the sum of the digits of a number. If the number is negative, it multiplies the first digit by -1 to maintain the sign.
+The `sorted` function is used to sort the list of numbers by the sum of their digits.
+
+For example, for the number 1234, the sum of its digits is 1 + 2 + 3 + 4 = 10.
+For the number -1234, the sum of its digits is -1 * (1 + 2 + 3 + 4) = -10.
+
+The function `order_by_points` returns a list of numbers sorted by the sum of their digits.
+
+Therefore, the final output of the function `order_by_points([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46])` is [2, 6, 56, 3, 53, 423, 423, 423, 1234, 145, 463, 3457, 37, 0, 46].
+
+[ANSWER]
+from typing import *
+
+
+def order_by_points(nums):
+    def digits_sum(n):
+        neg = 1
+        if n < 0: ## [CONDITION](n < 0)=[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+            n, neg = -1 * n, -1
+        n = [int(i) for i in str(n)]
+        n[0] = n[0] * neg
+        return sum(n)
+    return sorted(nums, key=digits_sum)
+
+[OUTPUT]
+[2, 6, 56, 3, 53, 423, 423, 423, 1234, 145, 463, 3457, 37, 0, 46]
+[/OUTPUT]
+<|EOT|>

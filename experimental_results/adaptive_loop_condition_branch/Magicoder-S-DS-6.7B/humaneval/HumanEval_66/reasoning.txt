@@ -1,0 +1,8 @@
+The function `digitSum` is called with ( s = "You arE Very Smart" ).
+The condition `s == ""` is false, therefore the else branch is taken.
+The function `sum` is called with an iterable that is the result of a generator expression.
+The generator expression iterates over each character in the string `s`.
+For each character, if the character is an uppercase letter, the ASCII value of the character is returned. If the character is not an uppercase letter, 0 is returned.
+The `sum` function adds up all the values returned by the generator expression.
+
+Therefore, the final output of the function `digitSum("You arE Very Smart")` is 104.

@@ -1,0 +1,23 @@
+The function `fib4` is called with ( n = 12 ).
+Inside the function, a list `results` is initialized to [0, 0, 2, 0].
+The condition ( n < 4 ) is not satisfied, therefore the else branch is taken.
+The loop iterates from 4 through 12 (since ( n = 12 )).
+First Iteration (_ = 4):
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 0, 2, 0, 4] and results.pop(0) removes the first element from `results`.
+Second Iteration (_ = 5)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 2, 0, 4, 6] and results.pop(0) removes the first element from `results`.
+Third Iteration (_ = 6)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [2, 0, 4, 6, 10] and results.pop(0) removes the first element from `results`.
+Fourth Iteration (_ = 7)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 4, 6, 10, 20] and results.pop(0) removes the first element from `results`.
+Fifth Iteration (_ = 8)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [4, 6, 10, 20, 42] and results.pop(0) removes the first element from `results`.
+Sixth Iteration (_ = 9)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [6, 10, 20, 42, 84] and results.pop(0) removes the first element from `results`.
+Seventh Iteration (_ = 10)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [10, 20, 42, 84, 168] and results.pop(0) removes the first element from `results`.
+Eighth Iteration (_ = 11)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [20, 42, 84, 168, 336] and results.pop(0) removes the first element from `results`.
+Ninth Iteration (_ = 12)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [42, 84, 168, 336, 672] and results.pop(0) removes the first element from `results`.
+After the loop completes, the function returns `results[-1]` which is 672 as

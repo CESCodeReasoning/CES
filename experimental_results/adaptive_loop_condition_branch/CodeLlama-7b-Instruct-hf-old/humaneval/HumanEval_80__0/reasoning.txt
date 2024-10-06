@@ -1,0 +1,18 @@
+The function `is_happy` is called with ( s = "aabb" ).
+Inside the function, a conditional statement checks if the length of the input string ( s ) is less than 3.
+If the length is less than 3, the function returns False.
+
+Iteration 1:
+    -The length of "aabb" is 4, which is greater than 3.
+    -The conditional statement is false, so the function continues to the next step.
+
+Iteration 2:
+    -The range of (len(s) - 2) is [0, 1, 2], since the length of "aabb" is 4.
+    -The for loop iterates over each index in the range.
+
+Iteration 3:
+    -The first index is 0, and the second index is 1.
+    -The condition (s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]) is true, since "a" is equal to "a" and "b" is equal to "b".
+    -The function returns False.
+
+Therefore, the final output of the function `is_happy("aabb")` is False.

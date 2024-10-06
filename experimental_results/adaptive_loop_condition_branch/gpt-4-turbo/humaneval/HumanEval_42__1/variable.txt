@@ -1,0 +1,6 @@
+from typing import *
+
+
+def incr_list(l: list):
+    # [STATE] l = [] [/STATE]
+    return [(e + 1) for e in l]  # [CONDITION] l is empty [/CONDITION]

@@ -1,0 +1,9 @@
+The function `move_one_ball` is called with ( arr = [3, 5, 4, 1, 2] ).
+Inside the function, the length of the array is checked.
+The length of the array is 5, which is not equal to 0.
+The array is sorted in ascending order.
+The minimum value in the array is 1, which is at index 3.
+The array is rotated to the right by 3 places.
+The rotated array is compared with the sorted array.
+The elements at index 0, 1, 2, 3, and 4 are equal in both arrays.
+The function returns True.

@@ -1,0 +1,51 @@
+
+[REASONING]
+The function `match_parens` is called with ( lst = ['())(', '()'] ).
+Inside the function, two strings S1 and S2 are created by concatenating the first and second elements of the list and the second and first elements of the list respectively.
+
+For S1:
+    - The first character is ')', so val is decremented to -1.
+    - The second character is '(', so val is incremented to 0.
+    - The third character is '(', so val is incremented to 1.
+    - The fourth character is ')', so val is decremented to 0.
+    - The fifth character is ')', so val is decremented to -1.
+    - The sixth character is '(', so val is incremented to 0.
+    - The seventh character is ')', so val is decremented to -1.
+    - The eighth character is '(', so val is incremented to 0.
+    - The ninth character is ')', so val is decremented to -1.
+    - The tenth character is '(', so val is incremented to 0.
+    - The eleventh character is ')', so val is decremented to -1.
+    - The twelfth character is '(', so val is incremented to 0.
+    - The thirteenth character is ')', so val is decremented to -1.
+    - The fourteenth character is '(', so val is incremented to 0.
+    - The fifteenth character is ')', so val is decremented to -1.
+    - The sixteenth character is '(', so val is incremented to 0.
+    - The seventeenth character is ')', so val is decremented to -1.
+    - The eighteenth character is '(', so val is incremented to 0.
+    - The nineteenth character is ')', so val is decremented to -1.
+    - The twentieth character is '(', so val is incremented to 0.
+    - The twenty-first character is ')', so val is decremented to -1.
+    - The twenty-second character is '(', so val is incremented to 0.
+    - The twenty-third character is ')', so val is decremented to -1.
+    - The twenty-fourth character is '(', so val is incremented to 0.
+    - The twenty-fifth character is ')', so val is decremented to -1.
+    - The twenty-sixth character is '(', so val is incremented to 0.
+    - The twenty-seventh character is ')', so val is decremented to -1.
+    - The twenty-eighth character is '(', so val is incremented to 0.
+    - The twenty-ninth character is ')', so val is decremented to -1.
+    - The thirtieth character is '(', so val is incremented to 0.
+    - The thirtieth character is ')', so val is decremented to -1.
+    - The thirtieth character is '(', so val is incremented to 0.
+    - The thirtieth character is ')', so val is decremented to -1.
+    - The thirtieth character is '(', so val is incremented to 0.
+    - The thirtieth character is ')', so val is decremented to -1.
+    - The thirtieth character is '(', so val is incremented to 0.
+    - The thirtieth character is ')', so val is decremented to -1.
+    - The thirtieth character is '(', so val is incremented to 0.
+    - The thirtieth character is ')', so val is decremented to -1.
+    - The thirtieth character is '(', so val is incremented to 0.
+    - The thirtieth character is ')', so val is decremented to -1.
+    - The thirtieth character is '(', so val is incremented to 0.
+    - The thirtieth character is ')', so val is decremented to -1.
+    - The thirtieth character is '(', so val is incremented to 0.
+    - The

@@ -1,0 +1,9 @@
+The function sort_numbers takes a string of numbers separated by spaces as input and returns a string of the same numbers sorted in ascending order.
+To determine the output of executing the function sort_numbers on the input "five zero four seven nine eight", we need to follow these steps:
+
+1. The input string is split into a list of individual numbers using the split() method with a space as the delimiter.
+2. The list of numbers is filtered to remove any empty strings using a list comprehension.
+3. The list of numbers is sorted using the sorted() function with a custom key function that maps each number to its corresponding integer value using the value_map dictionary.
+4. The sorted list of numbers is joined back into a string using the join() method with a space as the delimiter.
+
+Therefore, the output of executing the function sort_numbers on the input "five zero four seven nine eight" is "zero four five seven eight nine".

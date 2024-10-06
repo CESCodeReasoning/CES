@@ -1,0 +1,11 @@
+The function encode takes a string message as input and returns a new string with the following modifications:
+
+1. The vowels in the message are replaced with their corresponding characters two positions ahead in the ASCII table.
+2. The case of the message is swapped.
+
+To determine the output of executing the function encode on the input "I DoNt KnOw WhAt tO WrItE", we need to follow the steps above:
+
+1. The vowels in the message are replaced with their corresponding characters two positions ahead in the ASCII table. This means that "I" becomes "K", "o" becomes "q", "e" becomes "g", "a" becomes "c", "u" becomes "x", and "e" becomes "g" again.
+2. The case of the message is swapped. This means that "I" becomes "i", "o" becomes "O", "e" becomes "E", "a" becomes "A", "u" becomes "U", and "e" becomes "E" again.
+
+Therefore, the output of executing the function encode on the input "I DoNt KnOw WhAt tO WrItE" is "KqgCxEUgE".

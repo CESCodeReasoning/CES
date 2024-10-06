@@ -1,0 +1,14 @@
+The function `fib4` is called with `n = 10`.
+Inside the function, a list `results` is initialized with the values `[0, 0, 2, 0]`.
+The function first checks if `n` is less than 4. Since `n = 10`, this condition is not satisfied, so the else branch is taken.
+The loop iterates from 4 to 10 (inclusive) because `n + 1 = 11`.
+During each iteration, a new element is appended to `results`. This new element is the sum of the last four elements of `results`. After appending, the first element of `results` is removed to maintain the length of the list as four.
+Here's the breakdown of the iterations:
+- Iteration 4: New element = 0 + 0 + 2 + 0 = 2, `results` becomes `[0, 2, 0, 2]`.
+- Iteration 5: New element = 0 + 2 + 0 + 2 = 4, `results` becomes `[2, 0, 2, 4]`.
+- Iteration 6: New element = 2 + 0 + 2 + 4 = 8, `results` becomes `[0, 2, 4, 8]`.
+- Iteration 7: New element = 2 + 4 + 8 + 0 = 14, `results` becomes `[2, 4, 8, 14]`.
+- Iteration 8: New element = 4 + 8 + 14 + 2 = 28, `results` becomes `[4, 8, 14, 28]`.
+- Iteration 9: New element = 8 + 14 + 28 + 4 = 54, `results` becomes `[8, 14, 28, 54]`.
+- Iteration 10: New element = 14 + 28 + 54 + 8 = 104, `results` becomes `[14, 28, 54, 104]`.
+After the loop completes, the function returns the last element of `results`, which is 104.

@@ -1,0 +1,10 @@
+The function `get_odd_collatz` takes an integer `n` as input.
+The function first checks if `n` is even.
+If `n` is even, the function initializes an empty list `odd_collatz`.
+If `n` is odd, the function initializes a list `odd_collatz` with `n`.
+The function then enters a loop where it repeatedly applies the following steps:
+    1. If `n` is even, it divides `n` by 2.
+    2. If `n` is odd, it multiplies `n` by 3 and adds 1.
+    3. If `n` is odd, it appends `n` to the list `odd_collatz`.
+The function continues to iterate until `n` is 1.
+After the loop completes, the function returns the sorted list `odd_collatz`.

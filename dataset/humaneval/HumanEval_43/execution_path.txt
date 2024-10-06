@@ -1,0 +1,24 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: pairs_sum_to_zero
+main.py(3):     for i, l1 in enumerate(l):
+main.py(4):         for j in range(i + 1, len(l)):
+main.py(5):             if l1 + l[j] == 0:
+main.py(4):         for j in range(i + 1, len(l)):
+main.py(5):             if l1 + l[j] == 0:
+main.py(4):         for j in range(i + 1, len(l)):
+main.py(5):             if l1 + l[j] == 0:
+main.py(4):         for j in range(i + 1, len(l)):
+main.py(3):     for i, l1 in enumerate(l):
+main.py(4):         for j in range(i + 1, len(l)):
+main.py(5):             if l1 + l[j] == 0:
+main.py(4):         for j in range(i + 1, len(l)):
+main.py(5):             if l1 + l[j] == 0:
+main.py(4):         for j in range(i + 1, len(l)):
+main.py(3):     for i, l1 in enumerate(l):
+main.py(4):         for j in range(i + 1, len(l)):
+main.py(5):             if l1 + l[j] == 0:
+main.py(4):         for j in range(i + 1, len(l)):
+main.py(3):     for i, l1 in enumerate(l):
+main.py(4):         for j in range(i + 1, len(l)):
+main.py(3):     for i, l1 in enumerate(l):
+main.py(7):     return False

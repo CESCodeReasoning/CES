@@ -1,0 +1,8 @@
+from typing import *
+
+
+def do_algebra(operator: List[str], operand: List[int]) -> int:
+    expression = ''
+    for oprt, oprn in zip(operator, operand[1:]):
+        expression += oprt + str(oprn)
+    return eval(expression)

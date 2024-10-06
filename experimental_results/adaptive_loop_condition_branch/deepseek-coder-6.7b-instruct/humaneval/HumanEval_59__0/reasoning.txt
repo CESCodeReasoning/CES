@@ -1,0 +1,108 @@
+The function `largest_prime_factor` is called with ( n = 330 ).
+Inside the function, a variable `largest` is initialized to 1.
+The function `is_prime` is defined to check if a number is prime.
+The loop iterates from 2 through 330 (since ( n = 330 )).
+Iteration 1:
+    -The number 2 is a factor of 330 and is prime, so `largest` becomes 2.
+Iteration 2:
+    -The number 3 is a factor of 330 and is prime, so `largest` remains 2.
+Iteration 3:
+    -The number 5 is a factor of 330 and is prime, so `largest` becomes 5.
+Iteration 4:
+    -The number 7 is a factor of 330 and is prime, so `largest` becomes 7.
+Iteration 5:
+    -The number 11 is a factor of 330 and is prime, so `largest` becomes 11.
+Iteration 6:
+    -The number 13 is a factor of 330 and is prime, so `largest` becomes 13.
+Iteration 7:
+    -The number 17 is a factor of 330 and is prime, so `largest` becomes 17.
+Iteration 8:
+    -The number 19 is a factor of 330 and is prime, so `largest` becomes 19.
+Iteration 9:
+    -The number 23 is a factor of 330 and is prime, so `largest` becomes 23.
+Iteration 10:
+    -The number 29 is a factor of 330 and is prime, so `largest` becomes 29.
+Iteration 11:
+    -The number 31 is a factor of 330 and is prime, so `largest` becomes 31.
+Iteration 12:
+    -The number 37 is a factor of 330 and is prime, so `largest` becomes 37.
+Iteration 13:
+    -The number 41 is a factor of 330 and is prime, so `largest` becomes 41.
+Iteration 14:
+    -The number 43 is a factor of 330 and is prime, so `largest` becomes 43.
+Iteration 15:
+    -The number 47 is a factor of 330 and is prime, so `largest` becomes 47.
+Iteration 16:
+    -The number 53 is a factor of 330 and is prime, so `largest` becomes 53.
+Iteration 17:
+    -The number 59 is a factor of 330 and is prime, so `largest` becomes 59.
+Iteration 18:
+    -The number 61 is a factor of 330 and is prime, so `largest` becomes 61.
+Iteration 19:
+    -The number 67 is a factor of 330 and is prime, so `largest` becomes 67.
+Iteration 20:
+    -The number 71 is a factor of 330 and is prime, so `largest` becomes 71.
+Iteration 21:
+    -The number 73 is a factor of 330 and is prime, so `largest` becomes 73.
+Iteration 22:
+    -The number 79 is a factor of 330 and is prime, so `largest` becomes 79.
+Iteration 23:
+    -The number 83 is a factor of 330 and is prime, so `largest` becomes 83.
+Iteration 24:
+    -The number 89 is a factor of 330 and is prime, so `largest` becomes 89.
+Iteration 25:
+    -The number 97 is a factor of 330 and is prime, so `largest` becomes 97.
+Iteration 26:
+    -The number 101 is a factor of 330 and is prime, so `largest` becomes 101.
+Iteration 27:
+    -The number 103 is a factor of 330 and is prime, so `largest` becomes 103.
+Iteration 28:
+    -The number 107 is a factor of 330 and is prime, so `largest` becomes 107.
+Iteration 29:
+    -The number 109 is a factor of 330 and is prime, so `largest` becomes 109.
+Iteration 30:
+    -The number 113 is a factor of 330 and is prime, so `largest` becomes 113.
+Iteration 31:
+    -The number 127 is a factor of 330 and is prime, so `largest` becomes 127.
+Iteration 32:
+    -The number 131 is a factor of 330 and is prime, so `largest` becomes 131.
+Iteration 33:
+    -The number 137 is a factor of 330 and is prime, so `largest` becomes 137.
+Iteration 34:
+    -The number 139 is a factor of 330 and is prime, so `largest` becomes 139.
+Iteration 35:
+    -The number 149 is a factor of 330 and is prime, so `largest` becomes 149.
+Iteration 36:
+    -The number 151 is a factor of 330 and is prime, so `largest` becomes 151.
+Iteration 37:
+    -The number 157 is a factor of 330 and is prime, so `largest` becomes 157.
+Iteration 38:
+    -The number 163 is a factor of 330 and is prime, so `largest` becomes 163.
+Iteration 39:
+    -The number 167 is a factor of 330 and is prime, so `largest` becomes 167.
+Iteration 40:
+    -The number 173 is a factor of 330 and is prime, so `largest` becomes 173.
+Iteration 41:
+    -The number 179 is a factor of 330 and is prime, so `largest` becomes 179.
+Iteration 42:
+    -The number 181 is a factor of 330 and is prime, so `largest` becomes 181.
+Iteration 43:
+    -The number 191 is a factor of 330 and is prime, so `largest` becomes 191.
+Iteration 44:
+    -The number 193 is a factor of 330 and is prime, so `largest` becomes 193.
+Iteration 45:
+    -The number 197 is a factor of 330 and is prime, so `largest` becomes 197.
+Iteration 46:
+    -The number 199 is a factor of 330 and is prime, so `largest` becomes 199.
+Iteration 47:
+    -The number 211 is a factor of 330 and is prime, so `largest` becomes 211.
+Iteration 48:
+    -The number 223 is a factor of 330 and is prime, so `largest` becomes 223.
+Iteration 49:
+    -The number 227 is a factor of 330 and is prime, so `largest` becomes 227.
+Iteration 50:
+    -The number 229 is a factor of 330 and is prime, so `largest` becomes 229.
+Iteration 51:
+    -The number 233 is a factor of 330 and is prime, so `largest` becomes 233.
+Iteration 52:
+    -The number 239 is a factor of 330 and is prime, so `largest` becomes 239.

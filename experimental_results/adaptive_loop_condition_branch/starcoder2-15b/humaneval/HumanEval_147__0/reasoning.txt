@@ -1,0 +1,10 @@
+The function get_max_triples(n) takes an integer n as its parameter.
+The function creates a list A of integers from 1 to n, where each element is the square of its index minus the index plus 1.
+The function then initializes an empty list ans to store the triples that satisfy the condition.
+The function then iterates through the elements of A using three nested loops.
+The outer loop iterates through the elements of A from index 0 to n - 1.
+The middle loop iterates through the elements of A from index i + 1 to n - 1.
+The inner loop iterates through the elements of A from index j + 1 to n - 1.
+For each triple (A[i], A[j], A[k]), the function checks if the sum of the elements is divisible by 3.
+If it is, the triple is added to the ans list.
+The function then returns the length of the ans list.

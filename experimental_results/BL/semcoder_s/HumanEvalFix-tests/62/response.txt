@@ -1,0 +1,124 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def derivative(xs: list):
+    return [(i * x) for i, x in enumerate(xs)]
+
+Tests:
+def check(derivative):
+    assert derivative([3, 1, 2, 4, 5]) == [1, 4, 12, 20]
+    assert derivative([1, 2, 3]) == [2, 6]
+    assert derivative([3, 2, 1]) == [2, 2]
+    assert derivative([3, 2, 1, 0, 4]) == [2, 2, 0, 16]
+    assert derivative([1]) == []
+
+check(derivative)
+
+The code should satisfy the following natural language specification:
+Write a Python function `derivative(xs: list)` to solve the following problem:
+xs represent coefficients of a polynomial.
+xs[0] + xs[1] * x + xs[2] * x^2 + ....
+Return derivative of this polynomial in the same form.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return [(i * x) for i, x in enumerate(xs)]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(2) == True
+    assert is_prime(3) == True
+    assert is_prime(4) == False
+    assert is_prime(5) == True
+    assert is_prime(6) == False
+    assert is_prime(7) == True
+    assert is_prime(8) == False
+    assert is_prime(9) == False
+    assert is_prime(10) == False
+
+check(is_prime)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_prime(n: int) -> bool` to solve the following problem:
+Check if given number is prime.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    for i in range(2, n):
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s: str) -> bool:
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("racecar") == True
+    assert is_palindrome("python") == False
+    assert is_palindrome("a") == True
+    assert is_palindrome("") == True
+    assert is_palindrome("aa") == True
+    assert is_palindrome("ab") == False
+
+check(is_palindrome)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(s: str) -> bool` to solve the following problem:
+Check if given

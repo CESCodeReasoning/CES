@@ -1,0 +1,17 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: numerical_letter_grade
+main.py(6):     letter_grade = []
+main.py(7):     for gpa in grades:
+main.py(8):         if gpa == 4.0:
+main.py(10):         elif gpa > 3.7:
+main.py(12):         elif gpa > 3.3:
+main.py(14):         elif gpa > 3.0:
+main.py(16):         elif gpa > 2.7:
+main.py(18):         elif gpa > 2.3:
+main.py(20):         elif gpa > 2.0:
+main.py(22):         elif gpa > 1.7:
+main.py(24):         elif gpa > 1.3:
+main.py(26):         elif gpa > 1.0:
+main.py(27):             letter_grade.append("D+")
+main.py(7):     for gpa in grades:
+main.py(34):     return letter_grade

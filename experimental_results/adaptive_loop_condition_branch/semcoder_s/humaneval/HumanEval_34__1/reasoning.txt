@@ -1,0 +1,8 @@
+The function unique takes a list l as input and returns a new list that contains only unique elements from the input list.
+To determine the output of executing the function unique on the input [2, 1, 1, 2, 1, 1], we need to remove duplicates from the input list.
+
+1. Convert the list to a set to remove duplicates.
+2. Convert the set back to a list to maintain the order of elements.
+3. Sort the list to ensure the output list is in ascending order.
+
+Therefore, the output of executing the function unique on the input [2, 1, 1, 2, 1, 1] is [1, 2].

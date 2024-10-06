@@ -1,0 +1,25 @@
+The function has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) takes a list of numbers([1.1, 2.2, 3.1, 4.1, 5.1]) and a threshold(0.5) as its parameters.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (idx=0):
+    - `idx` is 0, `elem` is 1.1, `idx2` in the inner loop is 1, 2, 3 and 4.
+    - `elem2` is 2.2, 3.1, 4.1 and 5.1.
+    - When `idx2` is 1, `elem2` is 2.2, the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 1.1 and 2.2, which is 1.1.
+        - The condition `distance < threshold` is False, the if branch is not taken.
+    - When `idx2` is 2, `elem2` is 3.1, the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 1.1 and 3.1, which is 2.0.
+        - The condition `distance < threshold` is False, the if branch is not taken.
+    - When `idx2` is 3, `elem2` is 4.1, the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 1.1 and 4.1, which is 3.0.
+        - The condition `distance < threshold` is False, the if branch is not taken.
+    - When `idx2` is 4, `elem2` is 5.1, the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 1.1 and 5.1, which is 4.0.
+        - The condition `distance < threshold` is False, the if branch is not taken.
+Second Iteration (idx=1):
+    - `idx` is 1, `elem` is 2.2, `idx2` in the inner loop is 2, 3 and 4.
+    - `elem2` is 3.1, 4.1 and 5.1.
+    - When `idx2` is 2, `elem2` is 3.1, the condition `idx != idx2` is True, the if branch is taken.
+        - Calculate the distance between 2.2 and 3.1, which is 0.9.
+        - The condition `distance < threshold` is True, the if branch is taken.
+        - Return True.

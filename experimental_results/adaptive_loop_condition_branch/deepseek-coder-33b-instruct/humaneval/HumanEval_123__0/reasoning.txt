@@ -1,0 +1,14 @@
+The function `get_odd_collatz` is called with ( n = 1 ).
+The condition `n % 2 == 0` is false, so the else branch is taken. `odd_collatz` is initialized with a list containing only `n`.
+The loop iterates as long as `n` is greater than 1.
+First Iteration (n = 1):
+    - The condition `n % 2 == 0` is false. The else branch is taken. `odd_collatz` is initialized with a list containing only `n`.
+    - The condition `n % 2 == 0` is false. So, `n = n * 3 + 1` is executed. `n` becomes 4.
+    - The condition `n % 2 == 1` is true. `n` is appended to `odd_collatz`.
+Second Iteration (n = 4):
+    - The condition `n % 2 == 0` is true. So, `n = n / 2` is executed. `n` becomes 2.
+    - The condition `n % 2 == 1` is false. So, `n` is not appended to `odd_collatz`.
+Third Iteration (n = 2):
+    - The condition `n % 2 == 0` is true. So, `n = n / 2` is executed. `n` becomes 1.
+    - The condition `n % 2 == 1` is false. So, `n` is not appended to `odd_collatz`.
+After the loop completes, the function returns the sorted list `odd_collatz`, which is now [1].

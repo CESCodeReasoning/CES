@@ -1,0 +1,8 @@
+1. The function sort_numbers takes a string numbers as input and returns a string with the numbers in the input string sorted in ascending order.
+2. The function first creates a dictionary value_map that maps the string representation of a number to its corresponding integer value.
+3. The function then splits the input string numbers into a list of strings, where each string in the list represents a number.
+4. The function then filters the list of strings to remove any empty strings.
+5. The function then sorts the list of strings using the key=lambda x: value_map[x] argument, which sorts the strings based on the integer values corresponding to the strings.
+6. The function then joins the sorted list of strings into a single string, separated by spaces.
+7. The function returns the sorted string.
+8. Since the input string is empty, the function will return an empty string.

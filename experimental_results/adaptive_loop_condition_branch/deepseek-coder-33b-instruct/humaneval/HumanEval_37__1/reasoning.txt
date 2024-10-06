@@ -1,0 +1,8 @@
+The function `sort_even` is called with ( l = [1, 2, 3] ).
+Inside the function, two lists `evens` and `odds` are created. `evens` contains the elements at even indices of `l` and `odds` contains the elements at odd indices of `l`.
+`evens` is sorted in ascending order.
+An empty list `ans` is created.
+The loop iterates over `evens` and `odds` simultaneously.
+First Iteration (e = 1, o = 2):
+    `ans.extend([e, o])` appends `e` and `o` to `ans`.
+After the loop completes, the condition ( len(evens) > len(odds) ) is not satisfied, therefore the else branch is taken and the function returns `ans` as the output.

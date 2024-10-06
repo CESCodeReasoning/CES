@@ -1,0 +1,11 @@
+The function `get_row` takes two parameters: `lst`, which is a list of lists (a matrix), and `x`, which is the value to search for within the matrix. The function aims to find all coordinates `(i, j)` where `i` is the row index and `j` is the column index such that the element at these coordinates equals `x`.
+
+The function uses a list comprehension to iterate over all elements of the matrix and checks if the element equals `x`. If it does, the coordinate `(i, j)` is added to the list `coords`.
+
+After collecting all coordinates where the element equals `x`, the function sorts these coordinates. The sorting is done in two steps:
+1. First, it sorts by the column index `j` in descending order.
+2. Then, it sorts by the row index `i` in ascending order.
+
+For the input `get_row([], 1)`, the matrix `lst` is empty. Therefore, there are no elements to iterate over, and the list `coords` will remain empty. The sorting operations will also operate on an empty list, so the function will return an empty list as there are no coordinates where the element equals `x`.
+
+Thus, the output of the function for this input will be an empty list.

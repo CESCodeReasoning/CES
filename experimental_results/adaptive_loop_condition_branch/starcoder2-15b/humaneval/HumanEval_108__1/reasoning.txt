@@ -1,0 +1,12 @@
+The function `count_nums` is called with ( arr = [1, 6, 9, -6, 0, 1, 5] ).
+Inside the function, the `digits_sum` function is defined.
+The `digits_sum` function takes an integer `n` as input and returns the sum of the digits of `n`.
+The `digits_sum` function first checks if `n` is negative. If it is, it multiplies `n` by -1 and sets the `neg` variable to -1.
+The `digits_sum` function then converts `n` to a string and splits it into individual digits.
+The `digits_sum` function then converts the digits back to integers and multiplies the first digit by `neg`.
+The `digits_sum` function then returns the sum of the digits.
+The `count_nums` function then uses the `digits_sum` function to calculate the sum of the digits for each element in `arr`.
+The `count_nums` function then filters the resulting list to only include elements greater than 0.
+The `count_nums` function then returns the length of the filtered list.
+
+Therefore, the final output of the function `count_nums([1, 6, 9, -6, 0, 1, 5])` is 4.

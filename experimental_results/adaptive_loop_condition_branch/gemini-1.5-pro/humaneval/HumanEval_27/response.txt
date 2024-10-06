@@ -1,0 +1,15 @@
+[REASONING]
+The function flip_case takes a string as input and returns a new string with the case of each character flipped.
+To determine the output of executing the function flip_case on the input 'Hello!', we need to flip the case of each character in the string.
+The first character 'H' becomes 'h', the second character 'e' becomes 'E', the third character 'l' becomes 'L', the fourth character 'l' becomes 'L', the fifth character 'o' becomes 'O', and the sixth character '!' remains the same.
+Therefore, the output of executing the function flip_case on the input 'Hello!' is 'hELLO!'.
+[/REASONING]
+
+[ANSWER]
+def flip_case(string: str) -> str:
+    return string.swapcase()
+[/ANSWER]
+
+[OUTPUT]
+'hELLO!'
+[/OUTPUT]

@@ -1,0 +1,90 @@
+The function `x_or_y` is called with ( n = 91, x = 56, y = 129 ).
+
+The first condition is checked:
+    - `n` is not equal to 1, so the function continues to the next condition.
+
+The loop iterates from 2 to 90 (since ( n = 91 )).
+
+Iteration 1:
+    - `i` is 2, which satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 2:
+    - `i` is 3, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 3:
+    - `i` is 4, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 4:
+    - `i` is 5, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 5:
+    - `i` is 6, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 6:
+    - `i` is 7, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 7:
+    - `i` is 8, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 8:
+    - `i` is 9, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 9:
+    - `i` is 10, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 10:
+    - `i` is 11, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 11:
+    - `i` is 12, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 12:
+    - `i` is 13, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 13:
+    - `i` is 14, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 14:
+    - `i` is 15, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 15:
+    - `i` is 16, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 16:
+    - `i` is 17, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+
+Iteration 17:
+    - `i` is 18, which still satisfies ( 2 <= i < 91 ).
+    - The condition `n % i == 

@@ -1,0 +1,9 @@
+The function compare takes two lists game and guess as input and returns a list of the absolute differences between corresponding elements of the two lists.
+To determine the output of executing the function compare on the input [1,2,3,4,5,1] and [1,2,3,4,2,-2], we need to calculate the absolute differences between corresponding elements of the two lists.
+The absolute differences between the first elements of the two lists are 0 and 0, respectively.
+The absolute differences between the second elements of the two lists are 0 and 0, respectively.
+The absolute differences between the third elements of the two lists are 0 and 0, respectively.
+The absolute differences between the fourth elements of the two lists are 0 and 0, respectively.
+The absolute differences between the fifth elements of the two lists are 0 and 1, respectively.
+The absolute differences between the sixth elements of the two lists are 0 and 3, respectively.
+Therefore, the output of executing the function compare on the input [1,2,3,4,5,1] and [1,2,3,4,2,-2] is [0, 0, 0, 0, 1, 3].

@@ -1,0 +1,12 @@
+The function `get_row` takes a list of lists `lst` and an integer `x` as input. It finds the coordinates of `x` in `lst` and returns them in sorted order.
+
+- The list comprehension `[(i, j) for i in range(len(lst)) for j in range(len(lst[i])) if lst[i][j] == x]` generates a list of tuples containing the coordinates of `x` in `lst`.
+- The `sorted` function is used twice to sort the coordinates first by the row index (in ascending order) and then by the column index (in descending order).
+
+The function `get_row` is called with the input `([[], [1], [1, 2, 3]], 3)`.
+
+The coordinates of `3` in the input list are `(2, 2)`.
+
+The sorted coordinates are `[(2, 2)]`.
+
+Therefore, the output of `get_row([[], [1], [1, 2, 3]], 3)` is `[(2, 2)]`.

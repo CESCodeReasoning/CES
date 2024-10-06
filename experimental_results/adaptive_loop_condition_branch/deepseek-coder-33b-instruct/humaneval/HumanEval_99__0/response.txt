@@ -1,0 +1,40 @@
+
+[ANSWER]
+```python
+from typing import *
+
+def closest_integer(value):
+    from math import floor, ceil
+
+    if value.count('.') == 1: ## [CONDITION](value.count('.') == 1)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+        # remove trailing zeros
+        while (value[-1] == '0'): ## [STATE](value[(- 1)] == '0')=True[/STATE][STATE]value[(- 1)]='0'[/STATE]
+            value = value[:-1]
+
+    num = float(value)
+    if value[-2:] == '.5': ## [CONDITION](value[-2:] == '.5')=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+        if num > 0: ## [CONDITION](num > 0)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+            res = ceil(num)
+        else: ## [BRANCH]taken=N[/BRANCH]
+            res = floor(num)
+    elif len(value) > 0: ## [BRANCH]taken=Y[/BRANCH]
+        res = int(round(num))
+    else: ## [BRANCH]taken=N[/BRANCH]
+        res = 0
+
+    return res
+```
+[/ANSWER]
+
+[OUTPUT]
+15
+[/OUTPUT]
+
+[REASONING]
+The function `closest_integer` is called with ( value = "14.5" ).
+Inside the function, the condition (value.count('.') == 1) is satisfied, therefore the if branch is taken.
+The while loop removes the trailing zeros from the value, but since there are no trailing zeros, the loop is not executed.
+The condition (value[-2:] == '.5') is also satisfied, therefore the if branch is taken.
+The condition (num > 0) is also satisfied, therefore the if branch is taken.
+The function returns `res` as the output.
+[/REASONING]

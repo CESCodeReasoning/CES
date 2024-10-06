@@ -1,0 +1,19 @@
+[REASONING]
+The function `unique` takes a list `l` as input. The purpose of this function is to return a new list that contains only unique elements from the input list, sorted in ascending order.
+1. The input list is `[5, 3, 5, 2, 3, 3, 9, 0, 123]`.
+2. The `set(l)` function is used to remove duplicates from the list. The set created from the input list would be `{0, 2, 3, 5, 9, 123}`.
+3. The `list(set(l))` function converts the set back into a list. The list now looks like `[0, 2, 3, 5, 9, 123]`.
+4. The `sorted(list(set(l)))` function sorts the list in ascending order. The final sorted list is `[0, 2, 3, 5, 9, 123]`.
+5. This sorted list of unique elements is then returned as the output of the function.
+[REASONING]
+
+[PYTHON]
+from typing import *
+def unique(l: list):
+    # [STATE] l = [5, 3, 5, 2, 3, 3, 9, 0, 123] [/STATE]
+    return sorted(list(set(l)))  # [STATE] return value = [0, 2, 3, 5, 9, 123] [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+[0, 2, 3, 5, 9, 123]
+[/OUTPUT]

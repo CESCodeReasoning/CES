@@ -1,0 +1,28 @@
+[REASONING]
+The function `string_xor` is called with two strings `a` and `b`, both containing the character '1'.
+The function defines a nested function `xor` which takes two characters `i` and `j`. It compares these characters:
+- If `i` is equal to `j`, it returns '0'.
+- Otherwise, it returns '1'.
+In this case, since both `a` and `b` are '1', the characters are equal.
+The `xor` function is called with `i = '1'` and `j = '1'`, and since they are equal, '0' is returned.
+The `string_xor` function then joins this result into a string, which results in '0'.
+
+Therefore, the final output of the function `string_xor('1', '1')` is '0'.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def string_xor(a: str, b: str) -> str:
+    def xor(i, j):
+        if i == j: ## [CONDITION](i == j)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+            return '0'
+        else: ## [BRANCH]taken=[N][/BRANCH]
+            return '1'
+
+    return ''.join(xor(x, y) for x, y in zip(a, b))
+[/PYTHON]
+
+[OUTPUT]
+0
+[/OUTPUT]

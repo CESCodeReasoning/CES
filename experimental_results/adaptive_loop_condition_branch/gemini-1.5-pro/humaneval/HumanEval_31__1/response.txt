@@ -1,0 +1,124 @@
+[REASONING]
+The function `is_prime` is called with ( n = 11 * 7 = 77 ).
+First, it checks if ( n < 2 ), which is not the case here, so the condition is false.
+Then, it enters the loop that iterates from 2 to ( n - 1 = 77 - 1 = 76 ).
+Iteration 1:
+    - k = 2, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 2:
+    - k = 3, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 3:
+    - k = 4, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 4:
+    - k = 5, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 5:
+    - k = 6, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 6:
+    - k = 7, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 7:
+    - k = 8, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 8:
+    - k = 9, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 9:
+    - k = 10, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 10:
+    - k = 11, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 11:
+    - k = 12, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 12:
+    - k = 13, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 13:
+    - k = 14, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 14:
+    - k = 15, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 15:
+    - k = 16, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 16:
+    - k = 17, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 17:
+    - k = 18, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 18:
+    - k = 19, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 19:
+    - k = 20, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 20:
+    - k = 21, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 21:
+    - k = 22, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 22:
+    - k = 23, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 23:
+    - k = 24, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 24:
+    - k = 25, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 25:
+    - k = 26, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 26:
+    - k = 27, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 27:
+    - k = 28, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 28:
+    - k = 29, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 29:
+    - k = 30, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 30:
+    - k = 31, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 31:
+    - k = 32, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 32:
+    - k = 33, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 33:
+    - k = 34, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 34:
+    - k = 35, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 35:
+    - k = 36, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 36:
+    - k = 37, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 37:
+    - k = 38, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 38:
+    - k = 39, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 39:
+    - k = 40, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 40:
+    - k = 41, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 41:
+    - k = 42, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 42:
+    - k = 43, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 43:
+    - k = 44, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 44:
+    - k = 45, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 45:
+    - k = 46, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 46:
+    - k = 47, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 47:
+    - k = 48, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 48:
+    - k = 49, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 49:
+    - k = 50, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 50:
+    - k = 51, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 51:
+    - k = 52, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 52:
+    - k = 53, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 53:
+    - k = 54, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 54:
+    - k = 55, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 55:
+    - k = 56, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 56:
+    - k = 57, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 57:
+    - k = 58, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 58:
+    - k = 59, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 59:
+    - k = 60, and ( n % k == 0 ) is false, so the condition is false.
+Iteration 60:
+    - k = 61, and ( n % k == 0 ) is false, so the condition is false.

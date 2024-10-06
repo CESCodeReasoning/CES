@@ -1,0 +1,10 @@
+from typing import *
+def fizz_buzz(n: int):
+    ns = []
+    for i in range(n): ## [STATE]i=[0, 1, 2, ..., 49][/STATE][STATE]range(n)=[0, 1, 2, ..., 49][/STATE][STATE]n=[50][/STATE]
+        if i % 11 == 0 or i % 13 == 0: ## [CONDITION](i % 11 == 0 or i % 13 == 0)=[True, False, False, False, False, False, False, False, False, False, False, True, False, True, False, False, False, False, False, False, False, False, True, False, False, True, False, False, False, False, False, False, True, False, False, False, False, False, False, True, False, False, False, False, False, False, True, False, False, False][/CONDITION][CONDITION](i % 11 == 0)=[True, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False][/CONDITION][CONDITION](i % 13 == 0)=[True, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[Y, N, N, N, N, N, N, N, N, N, N, Y, N, Y, N, N, N, N, N, N, N, N, Y, N, N, Y, N, N, N, N, N, N, Y, N, N, N, N, N, N, Y, N, N, N, N, N, N, Y, N, N, N][/BRANCH]
+            ns.append(i)
+    s = ''.join(list(map(str, ns))) ## [STATE]s='011132226333944'[/STATE]
+    ans = 0
+    for c in s: ## [STATE]c=['0', '1', '1', '1', '3', '2', '2', '2', '6', '3', '3', '3', '9', '4', '4'][/STATE][STATE]s='011132226333944'[/STATE]
+        ans += (c == '

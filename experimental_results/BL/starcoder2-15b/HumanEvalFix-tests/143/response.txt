@@ -1,0 +1,18 @@
+```response
+                if flg == 0 or len(word) == 2:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s):
+    s = s.lower()
+    s = s.replace(" ", "")
+    s = s.replace(",", "")
+    s = s.replace(".", "")
+    s = s.replace("!", "")
+    s = s.replace("?", "")
+    s = s.replace("'", "")
+    s = s.replace('"', "")
+    s = s.

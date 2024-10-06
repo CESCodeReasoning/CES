@@ -1,0 +1,14 @@
+The function `by_length` is called with (arr = [1, -1, 3, 2]).
+A dictionary `dic` is defined with keys as integer values and values as corresponding string values.
+The `sorted` function is used to sort the elements of `arr` in reverse order.
+A new empty list `new_arr` is initialized.
+The loop iterates over each element in `sorted_arr`.
+First Iteration (var = -1):
+    -1 is not a key in the dictionary `dic`, so it is skipped.
+Second Iteration (var = 1):
+    The value corresponding to key 1 in the dictionary `dic` is 'One'. 'One' is appended to `new_arr`.
+Third Iteration (var = 2):
+    The value corresponding to key 2 in the dictionary `dic` is 'Two'. 'Two' is appended to `new_arr`.
+Fourth Iteration (var = 3):
+    The value corresponding to key 3 in the dictionary `dic` is 'Three'. 'Three' is appended to `new_arr`.
+The final `new_arr` is ['One', 'Two', 'Three'].

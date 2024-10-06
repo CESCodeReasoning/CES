@@ -1,0 +1,38 @@
+The function `int_to_mini_roman` is called with ( number = 152 ).
+Inside the function, a variable `res` is initialized to an empty string.
+First Iteration:
+    - number = 152, i = 12.
+    - `div = number // num[i]` updates `div` to 3 ( 152 // 100 = 1.5 = 3 ).
+    - `number %= num[i]` updates `number` to 52 ( 152 % 100 = 52 ).
+    - `res += sym[i]` updates `res` to "C" ( "" + "C" = "C" ).
+    - `div -= 1` updates `div` to 2 ( 3 - 1 = 2 ).
+    - `i -= 1` updates `i` to 11 ( 12 - 1 = 11 ).
+Second Iteration:
+    - number = 52, i = 11.
+    - `div = number // num[i]` updates `div` to 5 ( 52 // 10 = 5.2 = 5 ).
+    - `number %= num[i]` updates `number` to 2 ( 52 % 10 = 2 ).
+    - `res += sym[i]` updates `res` to "CX" ( "C" + "X" = "CX" ).
+    - `div -= 1` updates `div` to 4 ( 5 - 1 = 4 ).
+    - `i -= 1` updates `i` to 10 ( 11 - 1 = 10 ).
+Third Iteration:
+    - number = 2, i = 10.
+    - `div = number // num[i]` updates `div` to 2 ( 2 // 5 = 0.4 = 2 ).
+    - `number %= num[i]` updates `number` to 2 ( 2 % 5 = 2 ).
+    - `res += sym[i]` updates `res` to "CXII" ( "CX" + "II" = "CXII" ).
+    - `div -= 1` updates `div` to 1 ( 2 - 1 = 1 ).
+    - `i -= 1` updates `i` to 9 ( 10 - 1 = 9 ).
+Fourth Iteration:
+    - number = 2, i = 9.
+    - `div = number // num[i]` updates `div` to 2 ( 2 // 1 = 2 ).
+    - `number %= num[i]` updates `number` to 0 ( 2 % 1 = 0 ).
+    - `res += sym[i]` updates `res` to "CXII" ( "CXII" + "" = "CXII" ).
+    - `div -= 1` updates `div` to 1 ( 2 - 1 = 1 ).
+    - `i -= 1` updates `i` to 8 ( 9 - 1 = 8 ).
+Fifth Iteration:
+    - number = 0, i = 8.
+    - `div = number // num[i]` updates `div` to 0 ( 0 // 1 = 0 ).
+    - `number %= num[i]` updates `number` to 0 ( 0 % 1 = 0 ).
+    - `res += sym[i]` updates `res` to "CXII" ( "CXII" + "" = "CXII" ).
+    - `div -= 1` updates `div` to 0 ( 0 - 1 = 0 ).
+    - `i -= 1` updates `i` to 7 ( 8 - 1 = 7 ).
+The while loop terminates since `number` is now 0. The function returns the value of `res`, which is now "CXII".

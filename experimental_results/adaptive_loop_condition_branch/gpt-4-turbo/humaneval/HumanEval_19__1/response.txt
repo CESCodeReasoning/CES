@@ -1,0 +1,41 @@
+[REASONING]
+The function `sort_numbers` takes a string of number words as input and returns a string of these number words sorted in ascending numerical order. The function uses a dictionary `value_map` to map number words to their corresponding numerical values.
+
+Here's the step-by-step breakdown:
+1. The input string 'three five nine' is split into a list of words: ['three', 'five', 'nine'].
+2. The list comprehension filters out any empty strings, but since there are none in this case, it remains unchanged.
+3. The `sorted` function sorts this list based on the numerical values of the words, as defined in `value_map`. The lambda function `lambda x: value_map[x]` is used as the key for sorting.
+4. The sorted list of words based on their numerical values is ['three', 'five', 'nine'] which corresponds to the numerical order [3, 5, 9].
+5. The sorted list is then joined back into a single string with spaces separating the words, resulting in 'three five nine'.
+
+Thus, the output of the function when given the input 'three five nine' is 'three five nine', as the words are already in ascending order based on their numerical values.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def sort_numbers(numbers: str) -> str:
+    value_map = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    # [STATE] value_map is {'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9} [/STATE]
+    return ' '.join(
+        sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+    # [STATE] numbers.split(' ') is ['three', 'five', 'nine'] [/STATE]
+    # [CONDITION] x in ['three', 'five', 'nine'] [/CONDITION]
+    # [BRANCH] Y [/BRANCH]
+    # [STATE] sorted(['three', 'five', 'nine'], key=lambda x: value_map[x]) is ['three', 'five', 'nine'] [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+"three five nine"
+[/OUTPUT]

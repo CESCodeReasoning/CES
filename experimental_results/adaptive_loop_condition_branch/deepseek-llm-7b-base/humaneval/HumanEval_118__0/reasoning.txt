@@ -1,0 +1,22 @@
+The function `get_closest_vowel` is called with ( word = "full" ).
+Inside the function, a variable `vowel` is initialized to `""`.
+Iteration 1:
+    -The character 'f' is not in vowels, so `vowel` remains `""`.
+Iteration 2:
+    -The character 'u' is in vowels, so `vowel` becomes `"u"`.
+Iteration 3:
+    -The character 'l' is not in vowels, so `vowel` remains `"u"`.
+Iteration 4:
+    -The character 'l' is not in vowels, so `vowel` remains `"u"`.
+Iteration 5:
+    -The character 'l' is not in vowels, so `vowel` remains `"u"`.
+Iteration 6:
+    -The character 'l' is not in vowels, so `vowel` remains `"u"`.
+Iteration 7:
+    -The character 'l' is not in vowels, so `vowel` remains `"u"`.
+Iteration 8:
+    -The character 'l' is not in vowels, so `vowel` remains `"u"`.
+Iteration 9:
+    -The character 'l' is not in vowels, so `vowel` remains `"u"`.
+Iteration 10:
+    -The character 'l' is not in vowels, so `vow

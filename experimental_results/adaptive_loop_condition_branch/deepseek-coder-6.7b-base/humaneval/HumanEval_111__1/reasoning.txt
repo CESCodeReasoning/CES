@@ -1,0 +1,22 @@
+The function `histogram` is called with ( test = 'b b b b a' ).
+Inside the function, a variable `dict1` is initialized to an empty dictionary.
+A variable `list1` is initialized to the list of words in the input string.
+A variable `t` is initialized to 0.
+
+Iteration 1:
+    -The word 'b' appears 4 times in the list, so t becomes 4.
+    -The word 'b' appears 4 times in the list, so dict1 becomes {'b': 4}.
+Iteration 2:
+    -The word 'b' appears 4 times in the list, so t remains 4.
+    -The word 'b' appears 4 times in the list, so dict1 becomes {'b': 4}.
+Iteration 3:
+    -The word 'b' appears 4 times in the list, so t remains 4.
+    -The word 'b' appears 4 times in the list, so dict1 becomes {'b': 4}.
+Iteration 4:
+    -The word 'b' appears 4 times in the list, so t remains 4.
+    -The word 'b' appears 4 times in the list, so dict1 becomes {'b': 4}.
+Iteration 5:
+    -The word 'a' appears 1 time in the list, so t remains 4.
+    -The word 'a' appears 1 time in the list, so dict1 becomes {'b': 4, 'a': 1}.
+
+The function returns the dictionary {'b': 4, 'a': 1}.

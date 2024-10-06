@@ -1,0 +1,19 @@
+The function `parse_nested_parens` is called with ( paren_string = '(()()) ((())) () ((())()())' ).
+Inside the function, a nested function `parse_paren_group` is defined.
+
+The function `parse_paren_group` takes a string `s` as input.
+It initializes two variables `depth` and `max_depth` to 0.
+
+The loop iterates through each character `c` in the string `s`.
+If the character is an opening parenthesis, the `depth` variable is incremented by 1.
+If the character is a closing parenthesis, the `depth` variable is decremented by 1.
+The `max_depth` variable is updated to the maximum of the current `depth` and the previous `max_depth`.
+
+After the loop completes, the function returns the value of `max_depth`.
+
+The outer function `parse_nested_parens` takes a string `paren_string` as input.
+It splits the string into a list of substrings using the space character as a delimiter.
+It then applies the `parse_paren_group` function to each substring in the list.
+Finally, it returns the list of results.
+
+Therefore, the final output of the function `parse_nested_parens('(()()) ((())) () ((())()())')` is `[2, 2, 1, 3, 3, 3]`.

@@ -1,0 +1,17 @@
+The function `smallest_change` is called with ( arr = [1, 2, 3, 4, 3, 2, 2] ).
+Inside the function, a variable `ans` is initialized to 0.
+
+Iteration 1:
+    - `i` is 0, `arr[i]` is 1, and `arr[len(arr) - i - 1]` is 2.
+    - The condition `arr[i] != arr[len(arr) - i - 1]` is true, so `ans` becomes 1.
+Iteration 2:
+    - `i` is 1, `arr[i]` is 2, and `arr[len(arr) - i - 1]` is 3.
+    - The condition is true, so `ans` becomes 2.
+Iteration 3:
+    - `i` is 2, `arr[i]` is 3, and `arr[len(arr) - i - 1]` is 2.
+    - The condition is false, so `ans` remains 2.
+Iteration 4:
+    - `i` is 3, `arr[i]` is 4, and `arr[len(arr) - i - 1]` is 3.
+    - The condition is false, so `ans` remains 2.
+
+Therefore, the final output of the function `smallest_change([1, 2, 3, 4, 3, 2, 2])` is 2.

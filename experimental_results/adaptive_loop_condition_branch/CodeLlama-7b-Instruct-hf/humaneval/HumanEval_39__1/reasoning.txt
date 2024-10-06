@@ -1,0 +1,39 @@
+The function `prime_fib` is called with ( n = 4 ).
+Inside the function, a variable `f` is initialized to [0, 1].
+The loop iterates until the condition `n == 0` is true.
+First Iteration:
+    - `f` is [0, 1, 1].
+    - `f[-1] + f[-2]` is 1 + 1 = 2.
+    - `f` is [0, 1, 1, 2].
+    - `is_prime(f[-1])` is `True`.
+    - `n` is 4.
+    - `n` is not equal to 0, so the loop continues.
+Second Iteration:
+    - `f` is [0, 1, 1, 2, 3].
+    - `f[-1] + f[-2]` is 3 + 2 = 5.
+    - `f` is [0, 1, 1, 2, 3, 5].
+    - `is_prime(f[-1])` is `True`.
+    - `n` is 4.
+    - `n` is not equal to 0, so the loop continues.
+Third Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8].
+    - `f[-1] + f[-2]` is 8 + 5 = 13.
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13].
+    - `is_prime(f[-1])` is `True`.
+    - `n` is 4.
+    - `n` is not equal to 0, so the loop continues.
+Fourth Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21].
+    - `f[-1] + f[-2]` is 21 + 13 = 34.
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21, 34].
+    - `is_prime(f[-1])` is `True`.
+    - `n` is 4.
+    - `n` is not equal to 0, so the loop continues.
+Fifth Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55].
+    - `f[-1] + f[-2]` is 55 + 34 = 89.
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89].
+    - `is_prime(f[-1])` is `True`.
+    - `n` is 4.
+    - `n` is not equal to 0, so the loop continues.
+After the loop completes, the function returns the value of `f[-1]`, which is now 89.

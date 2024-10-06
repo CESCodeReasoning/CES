@@ -1,0 +1,11 @@
+The function `rolling_max` is called with ( numbers = [4, 3, 2, 1] ).
+Inside the function, a variable `running_max` is initialized to None.
+
+Iteration 1:
+    -The running_max is None, so it becomes 4.
+Iteration 2:
+    -The running_max is 4, so it becomes 4.
+Iteration 3:
+    -The running_max is 4, so it becomes 4.
+Iteration 4:
+    -The running_max is 4, so it becomes 4.

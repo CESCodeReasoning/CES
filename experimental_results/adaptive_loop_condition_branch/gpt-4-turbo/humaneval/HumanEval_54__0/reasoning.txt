@@ -1,0 +1,8 @@
+The function `same_chars` takes two strings, `s0` and `s1`, as input. It returns `True` if the sets of characters in both strings are equal, otherwise it returns `False`.
+To determine the output of executing the function `same_chars` on the inputs 'abcd' and 'dddddddabcf':
+1. Convert both strings to sets of characters:
+   - `set('abcd')` results in `{'a', 'b', 'c', 'd'}`
+   - `set('dddddddabcf')` results in `{'a', 'b', 'c', 'd', 'f'}`
+2. Compare these two sets:
+   - `{'a', 'b', 'c', 'd'}` is not equal to `{'a', 'b', 'c', 'd', 'f'}` because the second set contains an extra character 'f'.
+Therefore, the output of executing the function `same_chars` on the inputs 'abcd' and 'dddddddabcf' is `False`.

@@ -1,0 +1,5 @@
+The function `choose_num` is called with ( x = 33, y = 12354 ).
+`x` is 33, which is greater than `y` (12354).
+The condition `x > y` is true, therefore the if branch is taken and the method returns -1
+
+Therefore, the final output of the function `choose_num(33, 12354)` is -1.

@@ -1,0 +1,138 @@
+<｜begin▁of▁sentence｜>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in parse_nested_parens.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    def parse_paren_group(s):
+        depth = 0
+        max_depth = 0
+        for c in s:
+            if c == '(':
+                depth += 1
+                max_depth = max(depth, max_depth)
+            else:
+                max_depth -= 1
+
+        return max_depth
+
+    return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+
+Tests:
+def check(parse_nested_parens):
+    assert parse_nested_parens('(()()) ((())) () ((())()())') == [2, 3, 1, 3]
+    assert parse_nested_parens('() (()) ((())) (((())))') == [1, 2, 3, 4]
+    assert parse_nested_parens('(()(())((())))') == [4]
+
+check(parse_nested_parens)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `parse_nested_parens(paren_string: str) -> List[int]` to solve the following problem:
+Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+For each of the group, output the deepest level of nesting of parentheses.
+E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+Fixed Code:
+```python
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    def parse_paren_group(s):
+        depth = 0
+        max_depth = 0
+        for c in s:
+            if c == '(':
+                depth += 1
+                max_depth = max(depth, max_depth)
+            else:
+                depth -= 1
+
+        return max_depth
+
+    return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+```
+
+
+    
+Fix bugs in find_duplicates.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+from typing import List
+
+
+def find_duplicates(numbers: List[int]) -> List[int]:
+    counts = {}
+    for num in numbers:
+        if num in counts:
+            counts[num] += 1
+        else:
+            counts[num] = 1
+
+    duplicates = []
+    for num, count in counts.items():
+        if count > 1:
+            duplicates.append(num)
+
+    return duplicates
+
+Tests:
+def check(find_duplicates):
+    assert find_duplicates([1, 2, 2, 3, 4, 4, 4, 5, 5, 5, 5]) == [2, 4, 5]
+    assert find_duplicates([1, 1, 1, 1, 1, 1]) == [1]
+    assert find_duplicates([1, 2, 3, 4, 5]) == []
+    assert find_duplicates([1, 1, 2, 2, 3, 3, 4, 4, 5, 5]) == [1, 2, 3, 4, 5]
+    assert find_duplicates([1, 2, 2, 3, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6

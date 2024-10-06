@@ -1,0 +1,5 @@
+The function `split_words` is called with ( txt = "" ).
+The condition `"," in txt` is False. The second branch is not taken.
+The condition `" " in txt` is False. The first branch is not taken.
+The condition `txt.islower()` is False. The third branch is not taken.
+Therefore, the final output of the function `split_words("")` is 0.

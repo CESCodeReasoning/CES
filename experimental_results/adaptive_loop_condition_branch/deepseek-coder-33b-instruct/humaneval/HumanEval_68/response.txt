@@ -1,0 +1,25 @@
+
+[REASONING]
+The function `pluck` is called with ( arr = [4,2,3] ).
+The length of `arr` is 3, which does not equal 0, so the first condition `len(arr) == 0` is false.
+The `else` branch is taken, and the function continues.
+The `filter` function is used to create a new list `evens` that contains only the even numbers from `arr`.
+The list `evens` is not empty, so the second condition `evens == []` is false.
+The `else` branch is taken, and the function continues.
+The `min` function is used to find the smallest number in `evens`, and its index in `arr` is returned.
+
+Therefore, the final output of the function `pluck([4,2,3])` is [2, 1].
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def pluck(arr):
+    if(len(arr) == 0): return [] ## [CONDITION](len(arr) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+    evens = list(filter(lambda x: x%2 == 0, arr))
+    if(evens == []): return [] ## [CONDITION](evens == [])=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+    return [min(evens), arr.index(min(evens))]
+[/ANSWER]
+
+[OUTPUT]
+[2, 1]
+[/OUTPUT]

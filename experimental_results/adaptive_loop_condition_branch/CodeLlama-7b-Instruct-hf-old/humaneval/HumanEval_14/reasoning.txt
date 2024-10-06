@@ -1,0 +1,23 @@
+The function `all_prefixes` is called with (string = 'asdfgh').
+Inside the function, a variable `result` is initialized to an empty list.
+The loop iterates from 0 to 6 since `range(len(string))` = [0, 1, 2, 3, 4, 5, 6].
+
+First Iteration(i = 0):
+    string[:i+1] = 'a'
+    result.append('a')
+Second Iteration(i = 1):
+    string[:i+1] = 'as'
+    result.append('as')
+Third Iteration(i = 2):
+    string[:i+1] = 'asd'
+    result.append('asd')
+Fourth Iteration(i = 3):
+    string[:i+1] = 'asdf'
+    result.append('asdf')
+Fifth Iteration(i = 4):
+    string[:i+1] = 'asdfg'
+    result.append('asdfg')
+Sixth Iteration(i = 5):
+    string[:i+1] = 'asdfgh'
+    result.append('asdfgh')
+After the loop completes, the function returns the value of `result`, which is now ['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh'].

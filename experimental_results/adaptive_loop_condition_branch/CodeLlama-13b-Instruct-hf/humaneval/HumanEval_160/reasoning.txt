@@ -1,0 +1,11 @@
+The function `do_algebra` is called with (operator = ['**', '*', '+'], operand = [2, 3, 4, 5]).
+Inside the function, a variable `expression` is initialized to '2'.
+`zip(operator, operand[1:])` = zip(['**', '*', '+'], [3, 4, 5]) = [('**', 3), ('*', 4), ('+', 5)].
+The loop iterates through the elements of the list `zip(operator, operand[1:])`.
+
+First Iteration(oprt = '**', oprn = 3):
+    expression = '2' + '**' + '3' = '2**3'
+Second Iteration(oprt = '*', oprn = 4):
+    expression = '2**3' + '*' + '4' = '2**3*4'
+Third Iteration(oprt = '+', oprn = 5):
+    expression = '2**3*4' + '+' + '5' = '2**3*4+5'

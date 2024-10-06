@@ -1,0 +1,18 @@
+[REASONING]
+The function `compare` takes two lists, `game` and `guess`, as inputs. It returns a list of the absolute differences between corresponding elements of the two lists. The function uses list comprehension to achieve this, iterating over pairs of elements from `game` and `guess` using the `zip` function. For each pair `(x, y)`, it calculates the absolute difference `abs(x - y)` and collects these differences into a new list.
+
+In this specific case, both input lists are `[0,0,0,0,0,0]`. Therefore, the differences between corresponding elements of `game` and `guess` will all be `0` because each element in `game` is exactly the same as the corresponding element in `guess`. The resulting list will thus be `[0, 0, 0, 0, 0, 0]`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def compare(game: List[int], guess: List[int]) -> List[int]:
+    # [STATE] game = [0,0,0,0,0,0], guess = [0,0,0,0,0,0] [/STATE]
+    return [abs(x - y) for x, y in zip(game, guess)]  # [CONDITION] x - y == 0 for all pairs (x, y) [/CONDITION]
+# [BRANCH] There are no conditional branches in this code, so no Y/N marking is applicable. [/BRANCH]
+[/PYTHON]
+
+[OUTPUT]
+[0, 0, 0, 0, 0, 0]
+[/OUTPUT]

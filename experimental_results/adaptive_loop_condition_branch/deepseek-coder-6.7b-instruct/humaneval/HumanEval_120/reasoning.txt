@@ -1,0 +1,5 @@
+The function `maximum` is called with ( arr = [-3, -4, 5], k = 3 ).
+The condition `k == 0` is false, so the else branch is taken.
+The array `arr` is sorted in ascending order, resulting in `arr = [-4, -3, 5]`.
+The last `k` elements of the sorted array are selected, which are `[-3, -4, 5]`.
+Therefore, the final output of the function `maximum([-3, -4, 5], 3)` is `[-3, -4, 5]`.

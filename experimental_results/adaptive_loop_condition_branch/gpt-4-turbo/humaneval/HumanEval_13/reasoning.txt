@@ -1,0 +1,19 @@
+The function `greatest_common_divisor` is called with the arguments (a = 3, b = 7).
+The function uses the Euclidean algorithm to find the greatest common divisor (GCD) of two numbers.
+Here's the step-by-step execution:
+- Initial values: a = 3, b = 7.
+- First Iteration:
+  - Since b is not zero, the loop continues.
+  - Inside the loop, `a` is assigned the value of `b` (7), and `b` is assigned the value of `a % b` (3 % 7 = 3).
+- Second Iteration:
+  - New values: a = 7, b = 3.
+  - Since b is not zero, the loop continues.
+  - Inside the loop, `a` is assigned the value of `b` (3), and `b` is assigned the value of `a % b` (7 % 3 = 1).
+- Third Iteration:
+  - New values: a = 3, b = 1.
+  - Since b is not zero, the loop continues.
+  - Inside the loop, `a` is assigned the value of `b` (1), and `b` is assigned the value of `a % b` (3 % 1 = 0).
+- Fourth Iteration:
+  - New values: a = 1, b = 0.
+  - Since b is now zero, the loop terminates.
+The function returns the value of `a`, which is now 1, the GCD of 3 and 7.

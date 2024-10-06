@@ -1,0 +1,4 @@
+from typing import *
+def car_race_collision(n: int):
+    # [STATE] n = 2 [/STATE]
+    return n**2  # [STATE] n**2 = 4 [/STATE]

@@ -1,0 +1,22 @@
+The function `solve` is called with ( s = "AsDf" ).
+Inside the function, a variable `flg` and `idx` are initialized to 0.
+A variable `new_str` is initialized to a list of characters in the input string `s`.
+
+Iteration 1:
+    -The character 'A' is an alphabet, so the condition `i.isalpha()` is true.
+    -The `if` block is executed, and the character 'A' is converted to 'a'.
+    -The `flg` variable is set to 1.
+Iteration 2:
+    -The character 's' is not an alphabet, so the condition `i.isalpha()` is false.
+    -The `else` block is executed, and the character 's' is not changed.
+Iteration 3:
+    -The character 'D' is an alphabet, so the condition `i.isalpha()` is true.
+    -The `if` block is executed, and the character 'D' is converted to 'd'.
+    -The `flg` variable is set to 1.
+Iteration 4:
+    -The character 'f' is not an alphabet, so the condition `i.isalpha()` is false.
+    -The `else` block is executed, and the character 'f' is not changed.
+
+After the loop, the `flg` variable is 1, indicating that at least one alphabet was found in the input string.
+
+The `if` block is executed, and the reversed string is returned.

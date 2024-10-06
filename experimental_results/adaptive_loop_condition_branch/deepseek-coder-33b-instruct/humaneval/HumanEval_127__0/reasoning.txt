@@ -1,0 +1,13 @@
+The function `intersection` is called with ( interval1 = [-2, -2] and interval2 = [-3, -2] ).
+
+The function `is_prime` checks if a number is prime.
+
+The function `intersection` calculates the intersection of two intervals.
+
+The intersection of two intervals is defined as the interval that contains all points that are in both intervals.
+
+In this case, the intersection of [-2, -2] and [-3, -2] is [-2, -2].
+
+The length of this intersection is 0.
+
+Since 0 is not a prime number, the function `intersection` returns "NO".

@@ -1,0 +1,7 @@
+The function `order_by_points` is called with ( nums = [1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46] ).
+The function `digits_sum` is called with ( n = 1234 ).
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` returns the sum of the digits of `n`, which is 1+2+3+4 = 10.
+The function `order_by_points` returns the sorted list of `nums` based on the return value of `digits_sum`, which is [0, 145, 2, 3, 423, 463, 53, 6, 37, 3457, 3, 56, 1234, 46].
+
+Therefore, the final output of the function `order_by_points([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46])` is [0, 145, 2, 3, 423, 463, 53, 6, 37, 3457, 3, 56, 1234, 46].

@@ -1,0 +1,12 @@
+The function `largest_divisor` is called with ( n = 3 ).
+Inside the function, a loop iterates over the reversed range of numbers from 0 to n-1 (i.e., from 2 to 0 for n = 3).
+
+Iteration 1:
+    - The value of `i` is 2.
+    - The condition `n % i == 0` checks if 3 is divisible by 2, which is false.
+Iteration 2:
+    - The value of `i` is 1.
+    - The condition `n % i == 0` checks if 3 is divisible by 1, which is true.
+    - Since the condition is true, the function returns 1 as the largest divisor of 3.
+
+The loop does not proceed to `i = 0` because a divisor has already been found and the function has returned.

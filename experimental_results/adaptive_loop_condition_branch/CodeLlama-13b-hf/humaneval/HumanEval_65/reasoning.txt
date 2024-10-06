@@ -1,0 +1,4 @@
+The function `circular_shift` is called with ( x = 100, shift = 2 ).
+`shift` is 2, which is greater than the length of the string representation of `x`, therefore the if branch is taken and the method returns the string representation of `x` in reverse order.
+
+Therefore, the final output of the function `circular_shift(100, 2)` is 001.

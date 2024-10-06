@@ -1,0 +1,11 @@
+The function `below_threshold` is called with ( l = [1, 20, 4, 10] , t = 21 ).
+The function iterates over each element in the list.
+Iteration 1:
+    - The element 1 is less than 21, so the function continues to the next element.
+Iteration 2:
+    - The element 20 is not less than 21, so the function returns False.
+Iteration 3:
+    - The function does not execute the remaining iterations because it has already returned False.
+Iteration 4:
+    - The function does not execute the remaining iterations because it has already returned False.
+The function has not returned a value after all iterations, so it continues to the end of the function and returns True.

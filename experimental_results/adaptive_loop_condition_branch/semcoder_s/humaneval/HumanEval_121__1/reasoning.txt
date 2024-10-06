@@ -1,0 +1,8 @@
+The function `solution` takes a list `lst` as input and returns the sum of elements at even indices that are odd numbers in the list.
+
+- The list `[30, 13, 23, 32]` is given as input.
+- The function iterates over the elements of the list along with their indices using `enumerate`.
+- For the given list, the elements at even indices are at 0, 2 indices. The elements are 30, 23.
+- 30 is an odd number, so it is included in the sum.
+- 23 is an odd number, so it is included in the sum.
+- The sum of the odd numbers at even indices is 30 + 23 = 53.

@@ -1,0 +1,11 @@
+The function `will_it_fly` takes two arguments `q` and `w`.
+The function first calculates the sum of the elements in `q` using the built-in `sum` function.
+The function then checks if the sum of the elements in `q` is greater than `w`.
+If the condition is true, the function returns `False`.
+Otherwise, the function sets `i` and `j` to 0 and the length of `q` minus 1, respectively.
+The function then enters a loop where it checks if `i` is less than `j`.
+If the condition is true, the function checks if the elements at `q[i]` and `q[j]` are equal.
+If the condition is false, the function returns `False`.
+Otherwise, the function increments `i` and decrements `j`.
+The function repeats this process until `i` is greater than or equal to `j`.
+If the condition is true, the function returns `True`.

@@ -1,0 +1,6 @@
+The function `compare_one` is called with ( a = "1", b = "2" ).
+The first condition `isinstance(temp_a, str)` is true, therefore the if branch is taken and `temp_a` is replaced with `temp_a.replace(',', '.')`.
+The second condition `isinstance(temp_b, str)` is also true, therefore the if branch is taken and `temp_b` is replaced with `temp_b.replace(',', '.')`.
+The third condition `float(temp_a) == float(temp_b)` is false, therefore the else branch is taken and the method returns `a` if `float(temp_a) > float(temp_b)` else `b`.
+
+Therefore, the final output of the function `compare_one("1", "2")` is "1".

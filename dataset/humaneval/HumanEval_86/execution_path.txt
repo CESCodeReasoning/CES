@@ -1,0 +1,6 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: anti_shuffle
+main.py(3):     return ' '.join([''.join(sorted(list(i))) for i in s.split(' ')])
+ --- modulename: main, funcname: <listcomp>
+main.py(3):     return ' '.join([''.join(sorted(list(i))) for i in s.split(' ')])
+main.py(3):     return ' '.join([''.join(sorted(list(i))) for i in s.split(' ')])

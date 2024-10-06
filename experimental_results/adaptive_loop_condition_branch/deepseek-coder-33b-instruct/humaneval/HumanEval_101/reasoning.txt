@@ -1,0 +1,43 @@
+The function `words_string` is called with ( s = "Hi, my name is John" ).
+
+First Iteration:
+    - The condition `not s` is False, so the `else` block is executed.
+    - The character 'H' is not equal to ',', so it is appended to `s_list`.
+Second Iteration:
+    - The character 'i' is not equal to ',', so it is appended to `s_list`.
+Third Iteration:
+    - The character ',' is equal to ',', so a space is appended to `s_list`.
+Fourth Iteration:
+    - The character ' ' (space) is not equal to ',', so it is appended to `s_list`.
+Fifth Iteration:
+    - The character 'm' is not equal to ',', so it is appended to `s_list`.
+Sixth Iteration:
+    - The character 'y' is not equal to ',', so it is appended to `s_list`.
+Seventh Iteration:
+    - The character ' ' (space) is not equal to ',', so it is appended to `s_list`.
+Eighth Iteration:
+    - The character 'n' is not equal to ',', so it is appended to `s_list`.
+Ninth Iteration:
+    - The character 'a' is not equal to ',', so it is appended to `s_list`.
+Tenth Iteration:
+    - The character 'm' is not equal to ',', so it is appended to `s_list`.
+Eleventh Iteration:
+    - The character 'e' is not equal to ',', so it is appended to `s_list`.
+Twelfth Iteration:
+    - The character ' ' (space) is not equal to ',', so it is appended to `s_list`.
+Thirteenth Iteration:
+    - The character 'i' is not equal to ',', so it is appended to `s_list`.
+Fourteenth Iteration:
+    - The character 's' is not equal to ',', so it is appended to `s_list`.
+Fifteenth Iteration:
+    - The character ' ' (space) is not equal to ',', so it is appended to `s_list`.
+Sixteenth Iteration:
+    - The character 'J' is not equal to ',', so it is appended to `s_list`.
+Seventeenth Iteration:
+    - The character 'o' is not equal to ',', so it is appended to `s_list`.
+Eighteenth Iteration:
+    - The character 'h' is not equal to ',', so it is appended to `s_list`.
+Nineteenth Iteration:
+    - The character 'n' is not equal to ',', so it is appended to `s_list`.
+
+The final output of the function `words_string("Hi, my name is John")` is ['Hi', 'my', 'name', 'is', 'John'].

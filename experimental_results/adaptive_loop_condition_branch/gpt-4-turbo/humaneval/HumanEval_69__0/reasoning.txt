@@ -1,0 +1,13 @@
+The function `search` is called with the list `[2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1]`.
+Inside the function:
+1. A frequency list `frq` is initialized with zeros, with a length of `max(lst) + 1` which is `11` (since the maximum value in the list is `10`).
+2. The list `lst` is iterated over, and the frequency of each number is counted and stored in `frq`.
+3. The frequency list `frq` after counting looks like `[0, 2, 1, 2, 3, 1, 2, 4, 4, 1, 2]`.
+4. Another loop iterates from `1` to `len(frq)` (which is `11`), checking if `frq[i]` is greater than or equal to `i`.
+5. The condition `frq[i] >= i` is checked for each `i`:
+   - For `i = 7`, `frq[7] = 4` which is not greater than `7`.
+   - For `i = 8`, `frq[8] = 4` which is not greater than `8`.
+   - No other `i` satisfies the condition `frq[i] >= i`.
+6. The variable `ans` remains `-1` as no index `i` satisfies the condition `frq[i] >= i`.
+
+Therefore, the function returns `-1` indicating no such element was found where the frequency is greater than or equal to its value.

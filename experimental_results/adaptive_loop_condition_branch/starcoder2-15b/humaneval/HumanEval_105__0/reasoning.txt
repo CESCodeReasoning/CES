@@ -1,0 +1,20 @@
+The function `by_length` is called with (arr = [1, -1, 3, 2]).
+Inside the function, a variable `dic` is initialized to a dictionary with keys 1 to 9 and values "One" to "Nine".
+`sorted_arr` is initialized to a sorted version of `arr` in descending order.
+`new_arr` is initialized to an empty list.
+The loop iterates through each element in `sorted_arr`.
+
+First Iteration (var = 3):
+    `dic[var]` returns "Three" since `var` is 3.
+    `new_arr.append(dic[var])` appends "Three" to `new_arr`.
+Second Iteration (var = 2):
+    `dic[var]` returns "Two" since `var` is 2.
+    `new_arr.append(dic[var])` appends "Two" to `new_arr`.
+Third Iteration (var = 1):
+    `dic[var]` returns "One" since `var` is 1.
+    `new_arr.append(dic[var])` appends "One" to `new_arr`.
+Fourth Iteration (var = -1):
+    `dic[var]` raises a `KeyError` since `var` is not in the keys of `dic`.
+    The `except` block is executed and nothing is appended to `new_arr`.
+
+After the loop completes, the function returns `new_arr`, which is now ["Three", "Two", "One"].

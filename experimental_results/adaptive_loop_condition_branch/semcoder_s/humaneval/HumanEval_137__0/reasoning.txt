@@ -1,0 +1,11 @@
+The function `compare_one` is called with ( a = 5, b = 6 ).
+Two temporary variables `temp_a` and `temp_b` are created and initialized with the values of `a` and `b` respectively.
+Checking if `temp_a` is a string:
+   - `temp_a` is not a string, so this condition is False.
+Checking if `temp_b` is a string:
+   - `temp_b` is not a string, so this condition is False.
+Comparing `temp_a` and `temp_b`:
+   - `temp_a` and `temp_b` are not equal, so the condition `float(temp_a) == float(temp_b)` is False.
+Returning the value of `a` if `temp_a` is greater than `temp_b`, else returning the value of `b`.
+
+Therefore, the final output of the function `compare_one(5, 6)` is 6.

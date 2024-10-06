@@ -1,0 +1,46 @@
+The function `fruit_distribution` is called with ( s = "5 apples and 6 oranges", n = 19 ).
+Inside the function, a variable `lis` is initialized as an empty list.
+
+Iteration 1:
+    -The character '5' is a digit, so it is appended to the list.
+Iteration 2:
+    -The character 'a' is not a digit, so it is ignored.
+Iteration 3:
+    -The character 'p' is not a digit, so it is ignored.
+Iteration 4:
+    -The character 'p' is not a digit, so it is ignored.
+Iteration 5:
+    -The character 'l' is not a digit, so it is ignored.
+Iteration 6:
+    -The character 'e' is not a digit, so it is ignored.
+Iteration 7:
+    -The character 's' is not a digit, so it is ignored.
+Iteration 8:
+    -The character ' ' (space) is not a digit, so it is ignored.
+Iteration 9:
+    -The character 'a' is not a digit, so it is ignored.
+Iteration 10:
+    -The character 'n' is not a digit, so it is ignored.
+Iteration 11:
+    -The character 'd' is not a digit, so it is ignored.
+Iteration 12:
+    -The character ' ' (space) is not a digit, so it is ignored.
+Iteration 13:
+    -The character '6' is a digit, so it is appended to the list.
+Iteration 14:
+    -The character 'o' is not a digit, so it is ignored.
+Iteration 15:
+    -The character 'r' is not a digit, so it is ignored.
+Iteration 16:
+    -The character 'a' is not a digit, so it is ignored.
+Iteration 17:
+    -The character 'n' is not a digit, so it is ignored.
+Iteration 18:
+    -The character 'g' is not a digit, so it is ignored.
+Iteration 19:
+    -The character 'e' is not a digit, so it is ignored.
+Iteration 20:
+    -The character 's' is not a digit, so it is ignored.
+
+The final list `lis` contains [5, 6].
+The function returns the difference between `n` and the sum of the elements in `lis`, which is 19 - (5 + 6) = 10.

@@ -1,0 +1,11 @@
+The function `encrypt` is called with ( s = 'et' ).
+Inside the function, a variable `out` is initialized to an empty string.
+
+Iteration 1:
+    -The character 'e' is in the string `d`, so the index of 'e' in `d` is found (which is 4).
+    -The encrypted character is found by adding 2 * 2 to the index of 'e' in `d` and taking the result modulo 26 (which is 14).
+    -The encrypted character is then appended to `out`.
+Iteration 2:
+    -The character 't' is in the string `d`, so the index of 't' in `d` is found (which is 19).
+    -The encrypted character is found by adding 2 * 2 to the index of 't' in `d` and taking the result modulo 26 (which is 23).
+    -The encrypted character is then appended to `out`.

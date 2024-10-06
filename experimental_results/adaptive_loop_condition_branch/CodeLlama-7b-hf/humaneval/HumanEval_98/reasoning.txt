@@ -1,0 +1,22 @@
+The function `count_upper` is called with ( s = 'aBCdEf' ).
+Inside the function, a variable `count` is initialized to 0.
+The loop iterates from 0 through 5 (since ( len(s) = 6 )).
+First Iteration (i = 0)
+   - `i` is 0, which satisfies ( 0 <= i < 6 ).
+   - The condition `s[i] in "AEIOU"` is false.
+   - Action: `count += 1` does not update `count`.
+Second Iteration (i = 2)
+   - `i` is 2, which still satisfies ( 0 <= i < 6 ).
+   - The same condition is false.
+   - Action: `count += 1` does not update `count`.
+Third Iteration (i = 4)
+   - `i` is 4, which now satisfies ( 2 <= i < 6 ).
+   - The condition `s[i] in "AEIOU"` is true.
+   - Action: `count += 1` updates `count` to 1 (`0 + 1 = 1`).
+Fourth Iteration (i = 6)
+   - `i` is 6, now outside the previous conditions, falling into the `else` block.
+   - The `else` block's action: `count += 1` updates `count` to 2 (`1 + 1 = 2`).
+Return Statement
+   - After the loop completes, the function returns the value of `count`, which is now 2.
+
+Therefore, the final output of the function `count_upper('aBCdEf')` is 2.

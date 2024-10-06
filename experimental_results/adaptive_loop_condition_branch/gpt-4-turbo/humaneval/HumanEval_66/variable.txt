@@ -1,0 +1,5 @@
+from typing import *
+def digitSum(s):
+    if s == "": ## [CONDITION](s == "")=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 0
+    return sum(ord(char) if char.isupper() else 0 for char in s) ## [STATE]s="You arE Very Smart"[/STATE]

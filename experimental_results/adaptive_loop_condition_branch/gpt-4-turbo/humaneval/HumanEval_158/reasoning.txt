@@ -1,0 +1,11 @@
+The function `find_max` takes a list of words as input and returns the word that has the maximum number of unique characters. If there are ties (words with the same number of unique characters), it returns the lexicographically smallest word among them.
+
+Here's the step-by-step breakdown:
+1. The function receives the list `["name", "of", "string"]`.
+2. It sorts the list using a custom key. The key is defined by a lambda function that takes a word `x` and returns a tuple `(-len(set(x)), x)`.
+3. The lambda function calculates the negative of the length of the set of characters in `x` (which gives the number of unique characters in `x`, negated to sort in descending order) and the word itself (to sort lexicographically in ascending order in case of ties).
+4. The words are sorted based on the number of unique characters in descending order, and lexicographically in ascending order in case of ties.
+5. The sorted list is `["string", "name", "of"]` because "string" has 6 unique characters, "name" has 4, and "of" has 2.
+6. The first element of the sorted list, "string", is returned as it has the maximum number of unique characters.
+
+Thus, the output of executing the function `find_max` on the input `["name", "of", "string"]` is "string".

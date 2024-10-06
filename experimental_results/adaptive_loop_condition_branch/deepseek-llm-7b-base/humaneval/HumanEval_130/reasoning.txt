@@ -1,0 +1,34 @@
+The function `is_prime` is called with ( n = 10 ).
+Inside the function, a variable `n` is initialized to 10.
+The loop iterates from 2 through 10 (since ( n = 10 )).
+First Iteration (i = 2)
+   - `i` is 2, which satisfies ( 2 <= i < 10 ).
+   - The condition `i < 10` is true.
+   - Action: `for i in range(2, n):` updates `i` to 3.
+Second Iteration (i = 3)
+   - `i` is 3, which satisfies ( 3 <= i < 10 ).
+   - The condition `i < 10` is true.
+   - Action: `for i in range(2, n):` updates `i` to 4.
+Third Iteration (i = 4)
+   - `i` is 4, which satisfies ( 4 <= i < 10 ).
+   - The condition `i < 10` is true.
+   - Action: `for i in range(2, n):` updates `i` to 5.
+Fourth Iteration (i = 5)
+   - `i` is 5, which satisfies ( 5 <= i < 10 ).
+   - The condition `i < 10` is true.
+   - Action: `for i in range(2, n):` updates `i` to 6.
+Fifth Iteration (i = 6)
+   - `i` is 6, which satisfies ( 6 <= i < 10 ).
+   - The condition `i < 10` is true.
+   - Action: `for i in range(2, n):` updates `i` to 7.
+Sixth Iteration (i = 7)
+   - `i` is 7, which satisfies ( 7 <= i < 10 ).
+   - The condition `i < 10` is true.
+   - Action: `for i in range(2, n):` updates `i` to 8.
+Seventh Iteration (i = 8)
+   - `i` is 8, which satisfies ( 8 <= i < 10 ).
+   - The condition `i < 10` is true.
+   - Action: `for i in range(2, n):` updates `i` to 9.
+Eighth Iteration (i = 9)
+   - `i` is 9, which satisfies ( 9 <= i < 10 ).
+   - The condition `

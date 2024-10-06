@@ -1,0 +1,35 @@
+The function cycpattern_check(a, b) takes two strings as its parameters.
+The outer loop iterats through each element in the first string to compare it against the second string.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the second string.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4 and 5.
+    - a[i:i+l] = "xyzw", pat[j:j+l] = "xywxyw":
+        - When j = 1 (pat[j:j+l] = "xyw"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+        - When j = 2 (pat[j:j+l] = "xywxy"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+        - When j = 3 (pat[j:j+l] = "xywxyw"), the condition `a[i:i+l] == pat[j:j+l]` is True, the if branch is taken. Return True.
+        - When j = 4 (pat[j:j+l] = "xywxywxy"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+        - When j = 5 (pat[j:j+l] = "xywxywxyw"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4 and 5.
+    - a[i:i+l] = "xyzw", pat[j:j+l] = "xywxyw":
+        - When j = 2 (pat[j:j+l] = "xywxy"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+        - When j = 3 (pat[j:j+l] = "xywxyw"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+        - When j = 4 (pat[j:j+l] = "xywxywxy"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+        - When j = 5 (pat[j:j+l] = "xywxywxyw"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4 and 5.
+    - a[i:i+l] = "xyzw", pat[j:j+l] = "xywxyw":
+        - When j = 3 (pat[j:j+l] = "xywxyw"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+        - When j = 4 (pat[j:j+l] = "xywxywxy"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+        - When j = 5 (pat[j:j+l] = "xywxywxyw"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4 and 5.
+    - a[i:i+l] = "xyzw", pat[j:j+l] = "xywxyw":
+        - When j = 4 (pat[j:j+l] = "xywxywxy"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+        - When j = 5 (pat[j:j+l] = "xywxywxyw"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+Fifth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5.
+    - a[i:i+l] = "xyzw", pat[j:j+l] = "xywxyw":
+        - When j = 5 (pat[j:j+l] = "xywxywxyw"), the condition `a[i:i+l] == pat[j:j+l]` is False, the if branch is not taken.
+Sixth iteration (i=5):
+    No more elements to compare.

@@ -1,0 +1,12 @@
+The function solution takes a list of integers as input and returns the sum of all odd numbers at even indices.
+
+The list [5, 8, 7, 1] has the following indices and values:
+
+0: 5
+1: 8
+2: 7
+3: 1
+
+The odd numbers at even indices are 5 (at index 0) and 1 (at index 3).
+
+Therefore, the output of executing the function solution on the input [5, 8, 7, 1] is 6 (5 + 1).

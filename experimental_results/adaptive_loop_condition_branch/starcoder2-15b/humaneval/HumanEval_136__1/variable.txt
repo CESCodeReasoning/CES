@@ -1,0 +1,6 @@
+from typing import *
+
+
+def count_vowels(s):
+    vowels = "aeiou"
+    return sum(s.count(vowel) for vowel in vowels)

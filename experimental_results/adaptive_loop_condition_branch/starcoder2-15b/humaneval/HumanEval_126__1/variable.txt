@@ -1,0 +1,13 @@
+from typing import *
+
+
+def is_sorted(lst):
+    count_digit = dict([(i, 0) for i in lst])
+    for i in lst: ## [STATE]i=[3, 2, 1][/STATE][STATE]lst=[3, 2, 1][/STATE]
+        count_digit[i] += 1
+    if any(count_digit[i] > 2 for i in lst): ## [CONDITION](any(count_digit[i] > 2 for i in lst))=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return False
+    if all(lst[i - 1] <= lst[i] for i in range(1, len(lst))): ## [CONDITION](all(lst[i - 1] <= lst[i] for i in range(1, len(lst))))=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return True
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        return False

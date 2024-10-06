@@ -1,0 +1,5 @@
+The function `any_int` is called with ( x = 2, y = 3, z = 1 ).
+The conditions `isinstance(x,int)`, `isinstance(y,int)`, and `isinstance(z,int)` are checked.
+All the arguments are integers, so the first condition is True.
+The second condition checks if any two of the arguments can form a triangle (i.e., x + y = z, x + z = y, or y + z = x).
+The values 2, 3, and 1 satisfy the condition (2 + 3 = 1), so the function returns True.

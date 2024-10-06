@@ -1,0 +1,4 @@
+The function `truncate_number` takes a floating-point number as input and returns the fractional part of the number.
+To determine the output of executing the function `truncate_number` on the input 123.456, we need to find the fractional part of 123.456.
+This can be done by using the modulo operator `%` with 1.0. The modulo operator returns the remainder of the division of the number to its right by the number to its left.
+Therefore, the output of executing the function `truncate_number` on the input 123.456 is `123.456 % 1.0 = 0.456`.

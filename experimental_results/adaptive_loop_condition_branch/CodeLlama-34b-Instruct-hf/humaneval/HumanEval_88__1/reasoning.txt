@@ -1,0 +1,6 @@
+The function sort_array takes an array as input and returns a sorted version of the array.
+The function first checks if the length of the array is 0, and if so, returns an empty array.
+Otherwise, it sorts the array in ascending order by default.
+The sorting is done using the built-in sorted() function in Python.
+The reverse parameter is set to True if the sum of the first and last elements of the array is even, and False otherwise.
+Therefore, if the sum of the first and last elements is even, the array will be sorted in descending order.

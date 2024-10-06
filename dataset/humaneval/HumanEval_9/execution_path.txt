@@ -1,0 +1,26 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: rolling_max
+main.py(3):     running_max = None
+main.py(4):     result = []
+main.py(6):     for n in numbers:
+main.py(7):         if running_max is None:
+main.py(8):             running_max = n
+main.py(12):         result.append(running_max)
+main.py(6):     for n in numbers:
+main.py(7):         if running_max is None:
+main.py(10):             running_max = max(running_max, n)
+main.py(12):         result.append(running_max)
+main.py(6):     for n in numbers:
+main.py(7):         if running_max is None:
+main.py(10):             running_max = max(running_max, n)
+main.py(12):         result.append(running_max)
+main.py(6):     for n in numbers:
+main.py(7):         if running_max is None:
+main.py(10):             running_max = max(running_max, n)
+main.py(12):         result.append(running_max)
+main.py(6):     for n in numbers:
+main.py(7):         if running_max is None:
+main.py(10):             running_max = max(running_max, n)
+main.py(12):         result.append(running_max)
+main.py(6):     for n in numbers:
+main.py(14):     return result

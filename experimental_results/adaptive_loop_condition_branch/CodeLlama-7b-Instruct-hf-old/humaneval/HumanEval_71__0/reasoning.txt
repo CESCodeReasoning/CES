@@ -1,0 +1,6 @@
+The function `triangle_area` is called with ( a = 1, b = 2, c = 3 ).
+The condition `a + b <= c or a + c <= b or b + c <= a` is evaluated as follows:
+   - `a + b <= c` is true (1 + 2 <= 3)
+   - `a + c <= b` is false (1 + 3 <= 2)
+   - `b + c <= a` is false (2 + 3 <= 1)
+Therefore, the if branch is taken and the method returns -1.

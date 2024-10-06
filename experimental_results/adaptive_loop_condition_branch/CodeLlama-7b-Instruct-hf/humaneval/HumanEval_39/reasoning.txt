@@ -1,0 +1,20 @@
+The function `prime_fib` is called with ( n = 1 ).
+Inside the function, the following imports are made:
+    - `import math`
+    - `from typing import *`
+
+The function `is_prime` is defined inside `prime_fib`.
+The function `is_prime` takes a single argument `p` of type `int`.
+The function `is_prime` returns `True` if the following conditions are met:
+    - `p` is greater than or equal to 2.
+    - `p` is not divisible by any number between 2 and the square root of `p`.
+
+The function `prime_fib` also defines a list `f` with the initial values `[0, 1]`.
+The function `prime_fib` enters a loop that appends the sum of the last two elements of `f` to `f`.
+The loop continues until the condition `n == 0` is met.
+
+The function `is_prime` is called with the last element of `f` as its argument.
+If the result of `is_prime` is `True`, the function `prime_fib` subtracts 1 from `n`.
+If the result of `is_prime` is `False`, the function `prime_fib` does not change `n`.
+
+After the loop completes, the function `prime_fib` returns the last element of `f`.

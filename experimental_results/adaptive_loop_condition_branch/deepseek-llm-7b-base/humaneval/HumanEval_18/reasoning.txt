@@ -1,0 +1,12 @@
+The function `how_many_times` is called with ( string = '', substring = 'x' ).
+Inside the function, a variable `times` is initialized to 0.
+
+The loop iterates from 0 through 0 (since ( len(string) - len(substring) + 1 )).
+First Iteration (i = 0)
+   - `i` is 0, which satisfies ( 0 <= i < 1 ).
+   - The condition `i < 1` is true.
+   - Action: `times += 1` updates `times` to 1 (`0 + 1 = 1`).
+Return Statement
+   - After the loop completes, the function returns the value of `times`, which is now 1.
+
+Therefore, the final output of the function `how_many_times(string, substring)` is 1.

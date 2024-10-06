@@ -1,0 +1,9 @@
+The function `median` is called with ( l = [-10, 4, 6, 1000, 10, 20] ).
+The list is sorted in ascending order, resulting in [-10, 4, 6, 10, 20, 1000].
+The length of the list is 6, which is an odd number.
+The condition `len(l) % 2 == 1` is true, so the if branch is taken.
+The median is the middle number in the sorted list. Since the list has an odd number of elements, the median is the middle element.
+The middle element is at index len(l) // 2 = 6 // 2 = 3.
+The element at index 3 is 10.
+
+Therefore, the final output of the function `median([-10, 4, 6, 1000, 10, 20])` is 10.

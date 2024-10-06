@@ -1,0 +1,46 @@
+[REASONING]
+The function `parse_nested_parens` is called with the input string `((()))`.
+The function first defines a nested function `parse_paren_group` which calculates the maximum depth of nested parentheses in a given string segment.
+
+Here's the step-by-step execution:
+1. The input string `((()))` does not contain any spaces, so the `split(' ')` method results in a list containing the single element `((()))`.
+2. The list comprehension iterates over this list, and for each element (in this case, just one), it calls `parse_paren_group`.
+3. Inside `parse_paren_group`, the variables `depth` and `max_depth` are initialized to 0.
+4. The function then iterates over each character in the string `((()))`:
+   - For each '(', `depth` is incremented by 1 and `max_depth` is updated if `depth` exceeds the current `max_depth`.
+   - For each ')', `depth` is decremented by 1.
+5. The characters are processed as follows:
+   - '(' increases depth to 1, max_depth becomes 1.
+   - '(' increases depth to 2, max_depth becomes 2.
+   - '(' increases depth to 3, max_depth becomes 3.
+   - ')' decreases depth to 2.
+   - ')' decreases depth to 1.
+   - ')' decreases depth to 0.
+6. The maximum depth recorded is 3, which is returned by `parse_paren_group`.
+7. The list comprehension collects this value into a list, resulting in `[3]`.
+
+Therefore, the output of the function `parse_nested_parens('((()))')` is `[3]`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    def parse_paren_group(s):
+        depth = 0
+        max_depth = 0
+        for c in s: ## [STATE]c=['(', '(', '(', ')', ')', ')'][/STATE][STATE]s=['((()))'][/STATE]
+            if c == '(': ## [CONDITION](c == '(')=[True, True, True, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, Y, N, N, N][/BRANCH]
+                depth += 1
+                max_depth = max(depth, max_depth)
+            else: ## [BRANCH]taken=[N, N, N, Y, Y, Y][/BRANCH]
+                depth -= 1
+
+        return max_depth
+
+    return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+[/PYTHON]
+
+[OUTPUT]
+[3]
+[/OUTPUT]

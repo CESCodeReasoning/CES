@@ -1,0 +1,6 @@
+from typing import *
+def get_row(lst, x):
+    # [STATE] lst is an empty list, x is 1 [/STATE]
+    coords = [(i, j) for i in range(len(lst)) for j in range(len(lst[i])) if lst[i][j] == x]  # [CONDITION] lst[i][j] == x [/CONDITION] [BRANCH] N [/BRANCH]
+    # [STATE] coords is an empty list [/STATE]
+    return sorted(sorted(coords, key=lambda x: x[1], reverse=True), key=lambda x: x[0])  # [STATE] return value is an empty list [/STATE]

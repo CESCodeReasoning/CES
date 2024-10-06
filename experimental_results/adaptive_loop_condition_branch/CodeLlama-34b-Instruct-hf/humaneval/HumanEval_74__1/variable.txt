@@ -1,0 +1,16 @@
+from typing import *
+
+
+def total_match(lst1, lst2):
+    l1 = 0
+    for st in lst1: ## [STATE]st=['hi', 'admin'][/STATE][STATE]lst1=['hi', 'admin'][/STATE]
+        l1 += len(st)
+
+    l2 = 0
+    for st in lst2: ## [STATE]st=['hi', 'hi', 'admin', 'project'][/STATE][STATE]lst2=['hi', 'hi', 'admin', 'project'][/STATE]
+        l2 += len(st)
+
+    if l1 <= l2: ## [CONDITION](l1 <= l2)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return lst1
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        return lst2

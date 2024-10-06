@@ -1,0 +1,4 @@
+from typing import *
+def strlen(string: str) -> int:
+    # [STATE]string is 'asdasnakj'[/STATE]
+    return len(string)

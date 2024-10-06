@@ -1,0 +1,7 @@
+The function `find_zero` is called with ( xs = [-6, 11, -6, 1] ).
+Inside the function, two variables `begin` and `end` are initialized to -1. and 1. respectively.
+The first while loop multiplies `begin` and `end` by 2.0 until `poly(xs, begin) * poly(xs, end) > 0` is false.
+The second while loop continues until `end - begin > 1e-10` is false.
+In each iteration of the second while loop, `center` is calculated as the average of `begin` and `end`.
+If `poly(xs, center) * poly(xs, begin) > 0` is true, `begin` is updated to `center`. Otherwise, `end` is updated to `center`.
+After the second while loop completes, the function returns the value of `begin`, which is the zero of the polynomial.

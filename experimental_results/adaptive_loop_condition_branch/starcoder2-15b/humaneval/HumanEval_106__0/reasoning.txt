@@ -1,0 +1,16 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterates from 1 to n + 1.
+For each iteration, if i is even, calculate the factorial of i and append it to ret.
+Otherwise, calculate the sum of the numbers from 1 to i and append it to ret.
+First Iteration (i=1):
+    - `i` is 1, which is odd.
+    - Calculate the sum of the numbers from 1 to 1 (1).
+    - Append 1 to ret.
+Second Iteration (i=2):
+    - `i` is 2, which is even.
+    - Calculate the factorial of 2 (2).
+    - Append 2 to ret.
+Third Iteration (i=3):
+    - `i` is 3, which is odd.
+    - Calculate the sum of the numbers from 1 to 3 (6).
+    - Append 6 to ret.

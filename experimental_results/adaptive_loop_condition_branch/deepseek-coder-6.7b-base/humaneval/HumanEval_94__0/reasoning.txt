@@ -1,0 +1,19 @@
+The function `skjkasdkd` is called with ( lst = [127, 97, 8192] ).
+Inside the function, a variable `maxx` is initialized to 0.
+The loop iterates from 0 through 2 (since ( len(lst) = 3 )).
+First Iteration (i = 0):
+    - The condition `i < len(lst)` is true.
+    - The condition `lst[i] > maxx` is true.
+    - The condition `isPrime(lst[i])` is true.
+    - The first branch is taken. `maxx = lst[i]` updates `maxx` to 127.
+Second Iteration (i = 1):
+    - The condition `i < len(lst)` is true.
+    - The condition `lst[i] > maxx` is false.
+    - The condition `isPrime(lst[i])` is true.
+    - The first branch is not taken.
+Third Iteration (i = 2):
+    - The condition `i < len(lst)` is true.
+    - The condition `lst[i] > maxx` is false.
+    - The condition `isPrime(lst[i])` is false.
+    - The first branch is not taken.
+After the loop completes, the function returns the value of `maxx`, which is now 127.

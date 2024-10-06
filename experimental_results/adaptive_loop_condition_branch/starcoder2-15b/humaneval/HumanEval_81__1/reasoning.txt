@@ -1,0 +1,38 @@
+The function `numerical_letter_grade` is called with ( grades = [0, 0.7] ).
+Inside the function, a variable `letter_grade` is initialized to an empty list.
+
+Iteration 1:
+    -The first element of the list is 0, which is not equal to 4.0.
+    -The condition `gpa == 4.0` is false.
+    -The next condition `gpa > 3.7` is also false.
+    -The next condition `gpa > 3.3` is also false.
+    -The next condition `gpa > 3.0` is also false.
+    -The next condition `gpa > 2.7` is also false.
+    -The next condition `gpa > 2.3` is also false.
+    -The next condition `gpa > 2.0` is also false.
+    -The next condition `gpa > 1.7` is also false.
+    -The next condition `gpa > 1.3` is also false.
+    -The next condition `gpa > 1.0` is also false.
+    -The next condition `gpa > 0.7` is true.
+    -The next condition `gpa > 0.0` is also true.
+    -The else block is not executed.
+    -The letter grade for the first element is appended to the list: `letter_grade = ["D-"]`.
+
+Iteration 2:
+    -The second element of the list is 0.7, which is not equal to 4.0.
+    -The condition `gpa == 4.0` is false.
+    -The next condition `gpa > 3.7` is also false.
+    -The next condition `gpa > 3.3` is also false.
+    -The next condition `gpa > 3.0` is also false.
+    -The next condition `gpa > 2.7` is also false.
+    -The next condition `gpa > 2.3` is also false.
+    -The next condition `gpa > 2.0` is also false.
+    -The next condition `gpa > 1.7` is also false.
+    -The next condition `gpa > 1.3` is also false.
+    -The next condition `gpa > 1.0` is also false.
+    -The next condition `gpa > 0.7` is true.
+    -The next condition `gpa > 0.0` is also true.
+    -The else block is not executed.
+    -The letter grade for the second element is appended to the list: `letter_grade = ["D-", "D-"]`.
+
+The function returns the list of letter grades: `["D-", "D-"]`.

@@ -1,0 +1,5 @@
+from typing import *
+def monotonic(l: list):
+    if l == sorted(l) or l == sorted(l, reverse=True): ## [CONDITION](l == sorted(l) or l == sorted(l, reverse=True))=[False, False, True, False][/CONDITION][CONDITION](l == sorted(l))=[False, True, False, False][/CONDITION][CONDITION](l == sorted(l, reverse=True))=[True, False, False, False][/CONDITION][BRANCH]taken=[N, N, Y, N][/BRANCH]
+        return True
+    return False

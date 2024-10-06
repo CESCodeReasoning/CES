@@ -1,0 +1,12 @@
+The function `intersection` is called with ( interval1 = [-1, 1], interval2 = [0, 4] ).
+Inside the function, a helper function `is_prime` is defined to check if a number is prime.
+The intersection of the two intervals is calculated by finding the maximum of the first interval's left endpoint and the second interval's left endpoint, and the minimum of the first interval's right endpoint and the second interval's right endpoint.
+The length of the intersection is calculated as the difference between the right endpoint and the left endpoint.
+If the length of the intersection is greater than 0 and the length is a prime number, the function returns "YES", otherwise it returns "NO".
+
+The helper function `is_prime` is called with ( num = length ).
+If the number is 1 or 0, it is not prime, so it returns False.
+If the number is 2, it is prime, so it returns True.
+For any other number, it checks if it is divisible by any number from 2 to itself. If it is divisible, it is not prime, so it returns False. Otherwise, it is prime, so it returns True.
+
+The length of the intersection is 2, which is a prime number, so the function returns "YES".

@@ -1,0 +1,10 @@
+The function `get_odd_collatz` is called with ( n = 1 ).
+The condition `n % 2 == 0` is false. The first branch is not taken.
+The else branch is taken. The variable `odd_collatz` is initialized to [1].
+The loop iterates from 1 through 1 (since ( n = 1 )).
+First Iteration (n = 1):
+    - n > 1 when n=1
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The condition `n % 2 == 1` is true. The second branch is taken.
+    -`odd_collatz.append(int(n))` updates `odd_collatz` to [1, 1].
+After the loop completes, the function returns the sorted value of `odd_collatz`, which is now [1, 1].

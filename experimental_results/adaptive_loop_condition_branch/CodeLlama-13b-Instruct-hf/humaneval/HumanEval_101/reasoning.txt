@@ -1,0 +1,44 @@
+The function `words_string` is called with ( s = "Hi, my name is John" ).
+Inside the function, a variable `s_list` is initialized to an empty list.
+
+Iteration 1:
+    - The character 'H' is not equal to ',', so it is appended to `s_list`.
+Iteration 2:
+    - The character 'i' is not equal to ',', so it is appended to `s_list`.
+Iteration 3:
+    - The character ',' is equal to ',', so a space is appended to `s_list`.
+Iteration 4:
+    - The character ' ' (space) is not equal to ',', so it is appended to `s_list`.
+Iteration 5:
+    - The character 'm' is not equal to ',', so it is appended to `s_list`.
+Iteration 6:
+    - The character 'y' is not equal to ',', so it is appended to `s_list`.
+Iteration 7:
+    - The character ' ' (space) is not equal to ',', so it is appended to `s_list`.
+Iteration 8:
+    - The character 'n' is not equal to ',', so it is appended to `s_list`.
+Iteration 9:
+    - The character 'a' is not equal to ',', so it is appended to `s_list`.
+Iteration 10:
+    - The character 'm' is not equal to ',', so it is appended to `s_list`.
+Iteration 11:
+    - The character 'e' is not equal to ',', so it is appended to `s_list`.
+Iteration 12:
+    - The character ' ' (space) is not equal to ',', so it is appended to `s_list`.
+Iteration 13:
+    - The character 'i' is not equal to ',', so it is appended to `s_list`.
+Iteration 14:
+    - The character 's' is not equal to ',', so it is appended to `s_list`.
+Iteration 15:
+    - The character ' ' (space) is not equal to ',', so it is appended to `s_list`.
+Iteration 16:
+    - The character 'J' is not equal to ',', so it is appended to `s_list`.
+Iteration 17:
+    - The character 'o' is not equal to ',', so it is appended to `s_list`.
+Iteration 18:
+    - The character 'h' is not equal to ',', so it is appended to `s_list`.
+Iteration 19:
+    - The character 'n' is not equal to ',', so it is appended to `s_list`.
+
+The final value of `s_list` is "Hi my name is John".
+The function returns the list of words in the string, which is ["Hi", "my", "name", "is", "John"].

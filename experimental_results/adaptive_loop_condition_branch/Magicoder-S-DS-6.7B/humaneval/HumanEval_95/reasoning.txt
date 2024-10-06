@@ -1,0 +1,9 @@
+The function `check_dict_case` is called with ( dict = {"p":"pineapple", "b":"banana"} ).
+Inside the function, a variable `state` is initialized to "start".
+
+Iteration 1:
+    -The key 'p' is a string and is not uppercase, so state becomes "mixed".
+Iteration 2:
+    -The key 'b' is a string and is not uppercase, so state becomes "mixed".
+
+The function returns False, because the state is "mixed".

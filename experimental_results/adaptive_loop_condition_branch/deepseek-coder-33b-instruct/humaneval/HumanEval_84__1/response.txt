@@ -1,0 +1,17 @@
+
+[REASONING]
+The function solve takes an integer N as input. It converts the integer N into a string, then iterates over each character in the string, converting it back into an integer and summing all these integers. The sum is then converted into a binary number (using the bin function) and the '0b' prefix is removed by slicing the string from the 2nd index onwards. The function finally returns this binary string.
+
+To determine the output of executing the function solve on the input 147, we need to follow the steps outlined above.
+
+1. Convert 147 into a string: "147"
+2. Iterate over each character in the string, convert it back into an integer and sum all these integers: 1 + 4 + 7 = 12
+3. Convert the sum (12) into a binary number: bin(12) = '0b1100'
+4. Remove the '0b' prefix from the binary string: '0b1100'[2:] = '1100'
+
+Therefore, the output of executing the function solve on the input 147 is '1100'.
+[/REASONING]
+
+[OUTPUT]
+'1100'
+[/OUTPUT]

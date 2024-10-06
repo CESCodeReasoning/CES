@@ -1,0 +1,16 @@
+The function `closest_integer` is called with the argument "15.3".
+Inside the function, the variable `value` is initialized to "15.3".
+The condition (value.count('.') == 1) is satisfied, therefore the if branch is taken.
+The while loop iterates from 0 through (len(value) - 1) (since (value.count('.') == 1)).
+First Iteration (value[-1] == '0'):
+    - value[-1] == '0' when value="15.3"
+    - value = value[:-1] updates value to "15.3"
+Second Iteration (value[-1] == '0'):
+    - value[-1] == '0' when value="15.3"
+    - value = value[:-1] updates value to "15.3"
+After the while loop completes, the variable `num` is initialized to the float value of "15.3".
+The condition (value[-2:] == '.5') is satisfied, therefore the if branch is taken.
+The variable `res` is initialized to the result of calling the `ceil` method with the argument `num`.
+The result of the `ceil` method is 16.
+The variable `res` is updated to 16.
+The function returns the value of `res`, which is 16.

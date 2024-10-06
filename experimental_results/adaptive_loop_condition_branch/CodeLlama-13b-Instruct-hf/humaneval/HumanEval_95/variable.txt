@@ -1,0 +1,24 @@
+from typing import *
+def check_dict_case(dict):
+    if len(dict.keys()) == 0: ## [CONDITION](len(dict.keys()) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return False
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        state = "start"
+        for key in dict.keys(): ## [STATE]dict.keys()=["p", "b"][/STATE]
+
+            if isinstance(key, str) == False: ## [CONDITION](isinstance(key, str) == False)=[False][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+                state = "mixed"
+                break
+            if state == "start": ## [CONDITION](state == "start")=["start"][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+                if key.isupper(): ## [CONDITION](key.isupper())=["p"][/CONDITION][BRANCH]taken=[N][/BRANCH]
+                    state = "upper"
+                elif key.islower(): ## [CONDITION](key.islower())=["b"][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+                    state = "lower"
+                else: ## [BRANCH]taken=[N][/BRANCH]
+                    break
+            elif (state == "upper" and not key.isupper()) or (state == "lower" and not key.islower()): ## [CONDITION]((state == "upper" and not key.isupper()) or (state == "lower" and not key.islower()))=["p"][/CONDITION][CONDITION]((state == "upper" and not key.isupper()))=["p"][/CONDITION][CONDITION](state == "upper")=["upper"][/CONDITION][CONDITION](not key.isupper())=["p"][/CONDITION][CONDITION]((state == "lower" and not key.islower()))=["b"][/CONDITION][CONDITION](state == "lower")=["lower"][/CONDITION][CONDITION](not key.islower())=["b"][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+                    state = "mixed"
+                    break
+            else: ## [BRANCH]taken=[N][/BRANCH]
+                break
+        return state == "upper" or state == "lower" 

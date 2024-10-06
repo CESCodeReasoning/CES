@@ -1,0 +1,18 @@
+The function `histogram` is called with ( test = 'b b b b a' ).
+Inside the function, a dictionary `dict1` is initialized to an empty dictionary.
+A list `list1` is created by splitting the input string on spaces.
+
+Iteration 1:
+    -The character 'b' is not in the dictionary, so the count is 1.
+Iteration 2:
+    -The character 'b' is already in the dictionary, so the count is 2.
+Iteration 3:
+    -The character 'b' is already in the dictionary, so the count is 3.
+Iteration 4:
+    -The character 'b' is already in the dictionary, so the count is 4.
+Iteration 5:
+    -The character 'a' is not in the dictionary, so the count is 1.
+
+The maximum count is 4, so the dictionary `dict1` is updated with the key-value pair ('b', 4).
+
+The function returns the dictionary `dict1`.

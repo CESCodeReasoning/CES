@@ -1,0 +1,42 @@
+```response
+    if (numerator/denom == int(numerator/denom)):
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(1) == False, 'test1'
+    assert is_prime(2) == True, 'test2'
+    assert is_prime(3) == True, 'test3'
+    assert is_prime(4) == False, 'test4'
+    assert is_prime(5) == True, 'test5'
+    assert is_prime(6) == False, 'test6'
+    assert is_prime(7) == True, 'test7'
+    assert is_prime(8) == False, 'test8'
+    assert is_prime(9) == False, 'test9'
+    assert is_prime(10) == False, 'test10'
+    assert is_prime(11) == True, 'test11'
+    assert is_prime(12) == False, 'test12'
+    assert is_prime(13) == True, 'test13'
+    assert is_prime(14) == False, 'test14'
+    assert is_prime(15) == False, 'test15'
+    assert is_prime(16) == False, 'test16'
+    assert is_prime(17) == True, 'test17'
+    assert is_prime(18) == False, 'test18'
+    assert is_prime(19) == True, 'test19'
+    assert is_prime(20) == False, 'test20'
+    assert is_prime(21) == False, 'test21'
+    assert is_prime(22) == False, 'test22'
+    assert is_prime(23) == True, 'test23'
+    assert

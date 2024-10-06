@@ -1,0 +1,4 @@
+The function reverse_delete takes two inputs: a string s and a character c.
+The function first creates a new string by joining all the characters in s that are not in c.
+The function then checks if the new string is a palindrome by comparing it with its reverse.
+If the new string is a palindrome, the function returns True, otherwise it returns False.

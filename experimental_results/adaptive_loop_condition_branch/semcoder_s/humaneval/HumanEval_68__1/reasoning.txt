@@ -1,0 +1,10 @@
+The function `pluck` is called with ( arr = [5, 0, 3, 0, 4, 2] ).
+First, we check if the length of the array `arr` is 0.
+   - The length of `arr` is 6, so this condition is false.
+Next, we filter the even numbers from the array using a lambda function and store them in `evens`.
+   - The even numbers in `arr` are 0, 0, 4, 2, so `evens` becomes [0, 0, 4, 2].
+Then, we check if `evens` is an empty list.
+   - `evens` is not an empty list, so this condition is false.
+Finally, we return a list containing the minimum value from `evens` and its index in the original array.
+   - The minimum value in `evens` is 0, and its index in `arr` is 1.
+Therefore, the final output of the function `pluck([5, 0, 3, 0, 4, 2])` is [0, 1].

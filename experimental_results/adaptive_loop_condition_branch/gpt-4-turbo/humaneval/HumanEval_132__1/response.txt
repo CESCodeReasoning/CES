@@ -1,0 +1,44 @@
+[REASONING]
+The function `is_nested` is called with the input string '[[[[]]]]'.
+The function initializes two lists: `opening_bracket_index` to store the indices of opening brackets '[' and `closing_bracket_index` to store the indices of closing brackets ']'.
+
+The function then iterates over each character in the string:
+- For each character, it checks if it is an opening bracket '['. If true, it appends the index to `opening_bracket_index`.
+- If the character is not an opening bracket, it is assumed to be a closing bracket and its index is appended to `closing_bracket_index`.
+
+After collecting indices, `closing_bracket_index` is reversed to facilitate the comparison of each opening bracket with its corresponding closing bracket from the end of the string.
+
+The function then iterates over each index in `opening_bracket_index` and checks if there is a corresponding closing bracket that comes after the opening bracket in the string. This is done by comparing the current opening bracket index with the current closing bracket index from the reversed list.
+
+If the condition is satisfied, `cnt` is incremented and the index `i` for `closing_bracket_index` is also incremented. This process checks if the brackets are properly nested and counts the number of nested pairs.
+
+Finally, the function checks if the count of nested pairs `cnt` is greater than or equal to 2, returning `True` if it is, indicating that the string has at least two nested pairs of brackets.
+
+For the input '[[[[]]]]', the function should find that there are multiple nested pairs and return `True`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def is_nested(string):
+    opening_bracket_index = []
+    closing_bracket_index = []
+    for i in range(len(string)): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6, 7][/STATE][STATE]range(len(string))=[0, 1, 2, 3, 4, 5, 6, 7][/STATE][STATE]len(string)=8[/STATE]
+        if string[i] == '[': ## [CONDITION](string[i] == '[')=[True, True, True, True, False, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, N, N, N, N][/BRANCH]
+            opening_bracket_index.append(i)
+        else: ## [BRANCH]taken=[N, N, N, N, Y, Y, Y, Y][/BRANCH]
+            closing_bracket_index.append(i)
+    closing_bracket_index.reverse()
+    cnt = 0
+    i = 0
+    l = len(closing_bracket_index)
+    for idx in opening_bracket_index: ## [STATE]idx=[0, 1, 2, 3][/STATE][STATE]opening_bracket_index=[0, 1, 2, 3][/STATE]
+        if i < l and idx < closing_bracket_index[i]: ## [CONDITION](i < l and idx < closing_bracket_index[i])=[True, True, True, True][/CONDITION][CONDITION](i < l)=[True, True, True, True][/CONDITION][CONDITION](idx < closing_bracket_index[i])=[True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y][/BRANCH]
+            cnt += 1
+            i += 1
+    return cnt >= 2
+[/PYTHON]
+
+[OUTPUT]
+True
+[/OUTPUT]

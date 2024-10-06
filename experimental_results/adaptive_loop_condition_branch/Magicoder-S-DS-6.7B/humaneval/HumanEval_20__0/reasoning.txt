@@ -1,0 +1,27 @@
+The function find_closest_elements(numbers) takes a list of numbers([1.1, 2.2, 3.1, 4.1, 5.1]) as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (idx=0):
+    - `idx` is 0, idx2 in the inner loop is 1, 2, 3, 4.
+    - numbers[idx]=1.1: compare with 2.2, 3.1, 4.1, 5.1:
+        - When idx2 = 1 (numbers[idx2]=2.2), the condition `idx != idx2` is False, the if branch is not taken.
+        - When idx2 = 2 (numbers[idx2]=3.1), the condition `idx != idx2` is False, the if branch is not taken.
+        - When idx2 = 3 (numbers[idx2]=4.1), the condition `idx != idx2` is False, the if branch is not taken.
+        - When idx2 = 4 (numbers[idx2]=5.1), the condition `idx != idx2` is False, the if branch is not taken.
+Second Iteration (idx=1):
+    - `idx` is 1, idx2 in the inner loop is 2, 3, 4.
+    - numbers[idx]=2.2: compare with 3.1, 4.1, 5.1:
+        - When idx2 = 2 (numbers[idx2]=3.1), the condition `idx != idx2` is False, the if branch is not taken.
+        - When idx2 = 3 (numbers[idx2]=4.1), the condition `idx != idx2` is False, the if branch is not taken.
+        - When idx2 = 4 (numbers[idx2]=5.1), the condition `idx != idx2` is False, the if branch is not taken.
+Third Iteration (idx=2):
+    - `idx` is 2, idx2 in the inner loop is 3, 4.
+    - numbers[idx]=3.1: compare with 4.1, 5.1:
+        - When idx2 = 3 (numbers[idx2]=4.1), the condition `idx != idx2` is False, the if branch is not taken.
+        - When idx2 = 4 (numbers[idx2]=5.1), the condition `idx != idx2` is False, the if branch is not taken.
+Forth Iteration (idx=3):
+    - `idx` is 3, idx2 in the inner loop is 4.
+    - numbers[idx]=4.1: compare with 5.1:
+        - When idx2 = 4 (numbers[idx2]=5.1), the condition `idx != idx2` is False, the if branch is not taken.
+Fifth Iteration (idx=4):
+    No more elements to compare.

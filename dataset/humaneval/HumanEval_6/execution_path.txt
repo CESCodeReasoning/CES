@@ -1,0 +1,114 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: parse_nested_parens
+main.py(3):     def parse_paren_group(s):
+main.py(15):     return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+ --- modulename: main, funcname: <listcomp>
+main.py(15):     return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+ --- modulename: main, funcname: parse_paren_group
+main.py(4):         depth = 0
+main.py(5):         max_depth = 0
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(13):         return max_depth
+main.py(15):     return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+ --- modulename: main, funcname: parse_paren_group
+main.py(4):         depth = 0
+main.py(5):         max_depth = 0
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(13):         return max_depth
+main.py(15):     return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+ --- modulename: main, funcname: parse_paren_group
+main.py(4):         depth = 0
+main.py(5):         max_depth = 0
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(13):         return max_depth
+main.py(15):     return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+ --- modulename: main, funcname: parse_paren_group
+main.py(4):         depth = 0
+main.py(5):         max_depth = 0
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(8):                 depth += 1
+main.py(9):                 max_depth = max(depth, max_depth)
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(7):             if c == '(':
+main.py(11):                 depth -= 1
+main.py(6):         for c in s:
+main.py(13):         return max_depth
+main.py(15):     return [parse_paren_group(x) for x in paren_string.split(' ') if x]

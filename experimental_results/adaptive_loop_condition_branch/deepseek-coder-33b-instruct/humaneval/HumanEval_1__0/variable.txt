@@ -1,0 +1,11 @@
+from typing import *
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    result = []
+    current_string = []
+    current_depth = 0
+
+    for c in paren_string: ## [STATE]c=['(', '(', ')', '(', ')', '(', ')', '(', '(', ')', ')', ')', ')'][/STATE][STATE]paren_string=["(()(())((())))"][/STATE]
+        if c == '(': ## [CONDITION](c == '(')=[True, True, False, True, False, True, False, True, True, False, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, N, Y, N, Y, N, Y, Y, N, N, N, N][/BRANCH]
+            current_

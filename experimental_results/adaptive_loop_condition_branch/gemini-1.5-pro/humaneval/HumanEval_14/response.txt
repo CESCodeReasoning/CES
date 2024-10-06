@@ -1,0 +1,39 @@
+[REASONING]
+The function `all_prefixes` is called with (string = 'asdfgh').
+Inside the function, a variable `result` is initialized to an empty list.
+`len(string)` = 6 since there are 6 characters in 'asdfgh'.
+The loop iterates from 0 to 5 since `range(len(string))`= [0, 1, 2, 3, 4, 5]
+
+First Iteration(i = 0):
+    string[:i+1] = 'a'
+    result.append('a') results in result = ['a']
+Second Iteration(i = 1):
+    string[:i+1] = 'as'
+    result.append('as') results in result = ['a', 'as']
+Third Iteration(i = 2):
+    string[:i+1] = 'asd'
+    result.append('asd') results in result = ['a', 'as', 'asd']
+Forth Iteration(i = 3): 
+    string[:i+1] = 'asdf'
+    result.append('asdf') results in result = ['a', 'as', 'asd', 'asdf']
+Fifth Iteration(i = 4): 
+    string[:i+1] = 'asd'
+    result.append('asd') results in result = ['a', 'as', 'asd', 'asdf', 'asd']
+Sixth Iteration(i = 5): 
+    string[:i+1] = 'asdfg'
+    result.append('asdfg') results in result = ['a', 'as', 'asd', 'asdf', 'asd', 'asdfg']
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def all_prefixes(string: str) -> List[str]:
+    result = []
+ ## [STATE]i=[0, 1, 2, 3, 4, 5][/STATE]
+    for i in range(len(string)): ## [STATE]range(len(string))=[0, 1, 2, 3, 4, 5][/STATE][STATE]len(string)=[6][/STATE]
+        result.append(string[:i+1])
+    return result
+[/ANSWER]
+
+[OUTPUT]
+['a', 'as', 'asd', 'asdf', 'asd', 'asdfg']
+[/OUTPUT]

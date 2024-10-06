@@ -1,0 +1,6 @@
+The function unique takes a list as input and returns a sorted list with only unique elements.
+To determine the output of executing the function unique on the input ['a', 'b', 'b', 'c', 'd', 'd'], we need to first remove the duplicates from the list using the set() function.
+The set() function returns a set object, which is an unordered collection of unique elements.
+Therefore, the output of executing the function unique on the input ['a', 'b', 'b', 'c', 'd', 'd'] is ['a', 'b', 'c', 'd'].
+Next, we sort the list using the sorted() function, which returns a sorted list.
+Therefore, the final output of executing the function unique on the input ['a', 'b', 'b', 'c', 'd', 'd'] is ['a', 'b', 'c', 'd'].

@@ -1,0 +1,1 @@
+return sorted(nums, key=digits_sum)

@@ -1,0 +1,9 @@
+The function `rounded_avg` is called with ( n = 560, m = 851 ).
+Inside the function, a variable `summation` is initialized to 0.
+The loop iterates from 560 through 851 (since ( m = 851 )).
+First Iteration (i = 560):
+    `summation += i` updates `summation` to 560 ( 0 + 560 = 560 ).
+Second Iteration (i = 561):
+    `summation += i` updates `summation` to 1121 ( 560 + 561 = 1121 ).
+Third Iteration (i = 562)
+    `summation += i` updates `summation` to 1683 ( 1121 + 562 = 

@@ -1,0 +1,19 @@
+The function `max_element` is called with ( l = [-5, 2, 48, 9, 4, 0, 6, 7] ).
+Inside the function, a variable `m` is initialized to the first element of the list (l[0] = -5).
+
+Iteration 1:
+    -The element -5 is not greater than the current maximum (-5), so the loop continues.
+Iteration 2:
+    -The element 2 is greater than the current maximum (-5), so the loop continues and m becomes 2.
+Iteration 3:
+    -The element 48 is greater than the current maximum 2, so the loop continues and m becomes 48.
+Iteration 4:
+    -The element 9 is not greater than the current maximum 48, so the loop continues.
+Iteration 5:
+    -The element 4 is not greater than the current maximum 48, so the loop continues.
+Iteration 6:
+    -The element 0 is not greater than the current maximum 48, so the loop continues.
+Iteration 7:
+    -The element 6 is greater than the current maximum 48, so the loop continues and m becomes 6.
+Iteration 8:
+    -The element 7 is greater than the current maximum 6, so the loop continues and m becomes 7.

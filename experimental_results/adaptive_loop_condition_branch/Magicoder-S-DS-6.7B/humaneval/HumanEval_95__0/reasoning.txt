@@ -1,0 +1,9 @@
+The function `check_dict_case` is called with ( dict = {"STATE":"NC", "ZIP":"12345" } ).
+Inside the function, a variable `state` is initialized to "start".
+
+Iteration 1:
+    -The key 'STATE' is a string and is uppercase, so `state` becomes "upper".
+Iteration 2:
+    -The key 'ZIP' is a string and is not uppercase, so `state` becomes "mixed".
+
+The function returns False because the dictionary keys are not all uppercase or lowercase.

@@ -1,0 +1,11 @@
+The function `do_algebra` is called with `operator = ['//', '*']` and `operand = [7, 3, 4]`.
+Inside the function, the variable `expression` is initialized to the string representation of the first element of `operand`, which is '7'.
+The `zip` function pairs elements from `operator` and `operand[1:]` to iterate over them together. Here, `operand[1:]` results in `[3, 4]`, so `zip(operator, operand[1:])` results in `[('//', 3), ('*', 4)]`.
+
+First Iteration (oprt = '//', oprn = 3):
+    `expression` is updated by concatenating '//' and '3' to '7', resulting in the string '7//3'.
+Second Iteration (oprt = '*', oprn = 4):
+    `expression` is further updated by concatenating '*' and '4' to '7//3', resulting in the string '7//3*4'.
+
+After the loop, the `expression` string '7//3*4' is evaluated using the `eval` function. The expression performs integer division of 7 by 3, which results in 2, and then multiplies the result by 4, resulting in 8.
+The function returns the evaluated result, which is 8.

@@ -1,0 +1,23 @@
+The function encode takes a string message as input and performs the following operations on it:
+
+1. It creates a dictionary vowels_replace where each vowel (both lowercase and uppercase) is mapped to its ASCII value plus 2. This is done to encode the vowels by shifting them two positions to the right.
+
+2. It swaps the case of the entire message. This means that all uppercase letters are converted to lowercase and vice versa.
+
+3. It iterates over each character in the message. If the character is a vowel (as defined in the vowels string), it replaces it with its encoded version from the vowels_replace dictionary. If the character is not a vowel, it remains the same.
+
+4. It joins all the characters together into a single string and returns it.
+
+To determine the output of executing the function encode on the input "I DoNt KnOw WhAt tO WrItE", we need to apply these steps.
+
+First, we replace the vowels with their encoded versions:
+"I" -> "I", "D" -> "F", "O" -> "Q", "N" -> "T", "K" -> "M", "W" -> "Z", "H" -> "J", "T" -> "V", "O" -> "W", "W" -> "Z", "R" -> "C", "T" -> "V".
+
+Next, we swap the case of the message:
+"I" -> "i", "d" -> "D", "o" -> "O", "n" -> "N", "k" -> "K", "w" -> "W", "h" -> "H", "a" -> "A", "t" -> "T", "o" -> "O", "w" -> "W", "h" -> "H", "a" -> "A", "t" -> "T", "t" -> "T", "o" -> "O", "w" -> "W", "r" -> "R", "i" -> "I".
+
+Finally, we join all the characters together:
+"IdOntKnOWWhAtTOWrItE"
+
+Therefore, the output of executing the function encode on the input "I DoNt KnOw WhAt tO WrItE" is "idontknoWwhAttoWrItE".
+

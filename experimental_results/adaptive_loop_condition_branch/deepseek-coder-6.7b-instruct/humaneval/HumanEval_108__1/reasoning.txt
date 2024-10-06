@@ -1,0 +1,32 @@
+The function `count_nums` is called with ( arr = [1, 6, 9, -6, 0, 1, 5] ).
+The function `digits_sum` is defined inside `count_nums`. This function calculates the sum of the digits of a number, taking into account whether the number is negative.
+In the `count_nums` function, for each number in the input array, the `digits_sum` function is called. The result of this function is a list of sums of digits for each number in the array.
+Then, the `filter` function is used to keep only the numbers that are greater than 0.
+Finally, the `len` function is used to count the number of elements in the resulting list.
+
+For example, for the number 1, the `digits_sum` function returns 1 (1 + 0 = 1). For the number 6, the `digits_sum` function returns 6 (6 + 0 = 6). For the number 9, the `digits_sum` function returns 9 (9 + 0 = 9). For the number -6, the `digits_sum` function returns 15 (6 + 1 + 0 = 15). For the number 0, the `digits_sum` function returns 0 (0 + 0 = 0). For the number 1, the `digits_sum` function returns 1 (1 + 0 = 1). For the number 5, the `digits_sum` function returns 5 (5 + 0 = 5).
+
+The `filter` function keeps only the numbers that are greater than 0, so the resulting list is [1, 6, 9, 15, 1, 5].
+
+Finally, the `len` function counts the number of elements in this list, which is 6.
+
+Therefore, the final output of the function `count_nums([1, 6, 9, -6, 0, 1, 5])` is 6.
+
+[ANSWER]
+from typing import *
+
+
+def count_nums(arr):
+    def digits_sum(n):
+        neg = 1
+        if n < 0: ## [CONDITION](n < 0)=[True, False, False, True, False, False, False][/CONDITION][BRANCH]taken=[Y, N, N, Y, N, N, N][/BRANCH]
+            n, neg = -1 * n, -1
+        n = [int(i) for i in str(n)]
+        n[0] = n[0] * neg
+        return sum(n)
+    return len(list(filter(lambda x: x > 0, [digits_sum(i) for i in arr])))
+
+[OUTPUT]
+6
+[/OUTPUT]
+<|EOT|>

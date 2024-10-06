@@ -1,0 +1,5 @@
+The function `is_palindrome` is called with the argument `x`.
+The function checks if the string is empty. Since the string is not empty, the function returns `''`.
+The function then initializes the variable `beginning_of_suffix` to 0.
+The function enters a while loop, which checks if the string is a palindrome. Since the string is not a palindrome, the function increments `beginning_of_suffix` by 1.
+The function then returns the string concatenated with the reverse of the substring of the string from index 0 to `beginning_of_suffix`.

@@ -1,0 +1,5 @@
+The function first calculates the sum of each row of the array by using a list comprehension. The list comprehension iterates over the rows of the array and calculates the sum of each row using the sum() function.
+
+The function then calculates the maximum number of buckets that can be filled in each row by dividing the sum of the row by the capacity and rounding up to the nearest integer. This is done using the math.ceil() function.
+
+The function returns the sum of the maximum number of buckets that can be filled in each row.

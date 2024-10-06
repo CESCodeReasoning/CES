@@ -1,0 +1,61 @@
+The function `match_parens` is called with ( lst = ['(()(())', '())())'] ).
+Inside the function, a variable `S1` and `S2` are initialized to the concatenation of the first and second elements of the input list.
+
+Iteration 1:
+    -The character '(' is encountered, so val becomes 1.
+    -The character '(' is encountered, so val becomes 2.
+    -The character '(' is encountered, so val becomes 3.
+    -The character '(' is encountered, so val becomes 4.
+    -The character '(' is encountered, so val becomes 5.
+    -The character '(' is encountered, so val becomes 6.
+    -The character '(' is encountered, so val becomes 7.
+    -The character '(' is encountered, so val becomes 8.
+    -The character '(' is encountered, so val becomes 9.
+    -The character '(' is encountered, so val becomes 10.
+    -The character '(' is encountered, so val becomes 11.
+    -The character '(' is encountered, so val becomes 12.
+    -The character '(' is encountered, so val becomes 13.
+    -The character '(' is encountered, so val becomes 14.
+    -The character '(' is encountered, so val becomes 15.
+    -The character '(' is encountered, so val becomes 16.
+    -The character '(' is encountered, so val becomes 17.
+    -The character '(' is encountered, so val becomes 18.
+    -The character '(' is encountered, so val becomes 19.
+    -The character '(' is encountered, so val becomes 20.
+    -The character '(' is encountered, so val becomes 21.
+    -The character '(' is encountered, so val becomes 22.
+    -The character '(' is encountered, so val becomes 23.
+    -The character '(' is encountered, so val becomes 24.
+    -The character '(' is encountered, so val becomes 25.
+    -The character '(' is encountered, so val becomes 26.
+    -The character '(' is encountered, so val becomes 27.
+    -The character '(' is encountered, so val becomes 28.
+    -The character '(' is encountered, so val becomes 29.
+    -The character '(' is encountered, so val becomes 30.
+    -The character '(' is encountered, so val becomes 31.
+    -The character '(' is encountered, so val becomes 32.
+    -The character '(' is encountered, so val becomes 33.
+    -The character '(' is encountered, so val becomes 34.
+    -The character '(' is encountered, so val becomes 35.
+    -The character '(' is encountered, so val becomes 36.
+    -The character '(' is encountered, so val becomes 37.
+    -The character '(' is encountered, so val becomes 38.
+    -The character '(' is encountered, so val becomes 39.
+    -The character '(' is encountered, so val becomes 40.
+    -The character '(' is encountered, so val becomes 41.
+    -The character '(' is encountered, so val becomes 42.
+    -The character '(' is encountered, so val becomes 43.
+    -The character '(' is encountered, so val becomes 44.
+    -The character '(' is encountered, so val becomes 45.
+    -The character '(' is encountered, so val becomes 46.
+    -The character '(' is encountered, so val becomes 47.
+    -The character '(' is encountered, so val becomes 48.
+    -The character '(' is encountered, so val becomes 49.
+    -The character '(' is encountered, so val becomes 50.
+    -The character '(' is encountered, so val becomes 51.
+    -The character '(' is encountered, so val becomes 52.
+    -The character '(' is encountered, so val becomes 53.
+    -The character '(' is encountered, so val becomes 54.
+    -The character '(' is encountered, so val becomes 55.
+    -The character '(' is encountered, so val becomes 56.
+    -The character '

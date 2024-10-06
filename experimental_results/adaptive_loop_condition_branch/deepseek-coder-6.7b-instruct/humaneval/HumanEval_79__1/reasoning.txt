@@ -1,0 +1,7 @@
+The function decimal_to_binary takes a decimal number as input and returns the binary representation of the number.
+
+To convert a decimal number to binary, we can use Python's built-in function bin(). This function converts an integer number to a binary string. However, the bin() function returns a string that starts with '0b', which indicates that it is a binary number. To get rid of this prefix, we can use slicing to get the part of the string starting from the second character.
+
+So, to convert the decimal number 103 to binary, we first convert it to binary using bin(103), which returns '0b1101011'. Then, we concatenate 'db' at the beginning and 'db' at the end of this string to get 'db1101011db'.
+
+Therefore, the output of executing the function decimal_to_binary on the input 103 is 'db1101011db'.

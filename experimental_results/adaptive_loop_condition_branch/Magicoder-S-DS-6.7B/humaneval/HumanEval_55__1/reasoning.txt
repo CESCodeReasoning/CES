@@ -1,0 +1,17 @@
+The function `fib` is called with ( n = 11 ).
+The first condition `n == 0` is not met, so the next condition `n == 1` is checked.
+This condition is also not met, so the function calls itself with `n - 1` and `n - 2`.
+This results in `fib(10) + fib(9)`.
+`fib(10)` is calculated as `fib(9) + fib(8)`, which results in `fib(8) + fib(7) + fib(7) + fib(6)`.
+`fib(9)` is calculated as `fib(8) + fib(7)`, which results in `fib(7) + fib(6) + fib(6) + fib(5)`.
+`fib(8)` is calculated as `fib(7) + fib(6)`, which results in `fib(6) + fib(5) + fib(5) + fib(4)`.
+`fib(7)` is calculated as `fib(6) + fib(5)`, which results in `fib(5) + fib(4) + fib(4) + fib(3)`.
+`fib(6)` is calculated as `fib(5) + fib(4)`, which results in `fib(4) + fib(3) + fib(3) + fib(2)`.
+`fib(5)` is calculated as `fib(4) + fib(3)`, which results in `fib(3) + fib(2) + fib(2) + fib(1)`.
+`fib(4)` is calculated as `fib(3) + fib(2)`, which results in `fib(2) + fib(1) + fib(1) + fib(0)`.
+`fib(3)` is calculated as `fib(2) + fib(1)`, which results in `fib(1) + fib(0) + fib(0) + 1`.
+`fib(2)` is calculated as `fib(1) + fib(0)`, which results in `fib(0) + 0 + 0 + 1`.
+`fib(1)` is calculated as `fib(0) + 0`, which results in `0 + 0 + 1`.
+`fib(0)` is calculated as `0`.
+
+Therefore, the final output of the function `fib(11)` is 89.

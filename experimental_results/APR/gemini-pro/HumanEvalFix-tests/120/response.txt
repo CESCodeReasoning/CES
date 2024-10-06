@@ -1,0 +1,9 @@
+```python
+def maximum(arr, k):
+    if k == 0:
+        return []
+    arr.sort()
+    ans = arr[-k:]
+    ans.sort(reverse=True)
+    return ans
+```

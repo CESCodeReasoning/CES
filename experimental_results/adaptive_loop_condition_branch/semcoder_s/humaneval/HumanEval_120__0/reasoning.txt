@@ -1,0 +1,5 @@
+The function `maximum` is called with ( arr = [-3, 2, 1, 2, -1, -2, 1] , k = 1 ).
+The condition `k == 0` is false (since k = 1).
+The `if` condition is skipped and the `arr.sort()` method is called, sorting the array `[-3, 2, 1, 2, -1, -2, 1]` to `[-3, -2, -1, 1, 1, 2, 2]`.
+The last k elements of the sorted array are selected, which are `[2]`.
+Therefore, the final output of the function `maximum([-3, 2, 1, 2, -1, -2, 1], 1)` is `[2]`.

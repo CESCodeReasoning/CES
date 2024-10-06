@@ -1,0 +1,8 @@
+The function multiply takes two integers a and b as input. It first computes the absolute value of a and b by taking the remainder of each with 10. Then, it multiplies the absolute values and returns the result.
+To determine the output of executing the function multiply on the input (148, 412), we need to follow these steps:
+1. Compute the absolute value of 148 and 412 by taking the remainder of each with 10.
+abs(148 % 10) = 8
+abs(412 % 10) = 2
+2. Multiply the absolute values.
+8 * 2 = 16
+Therefore, the output of executing the function multiply on the input (148, 412) is 16.

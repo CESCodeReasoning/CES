@@ -1,0 +1,12 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: sort_even
+main.py(3):     evens = l[::2]
+main.py(4):     odds = l[1::2]
+main.py(5):     evens.sort()
+main.py(6):     ans = []
+main.py(7):     for e, o in zip(evens, odds):
+main.py(8):         ans.extend([e, o])
+main.py(7):     for e, o in zip(evens, odds):
+main.py(9):     if len(evens) > len(odds):
+main.py(10):         ans.append(evens[-1])
+main.py(11):     return ans

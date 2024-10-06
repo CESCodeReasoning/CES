@@ -1,0 +1,5 @@
+The function sort_array takes an array as input. If the array is empty, it returns an empty array. If the array is not empty, it sorts the array in descending order if the sum of the first and last elements of the array is even, otherwise it sorts the array in ascending order.
+
+In the given input [5], the array has only one element, so it is not empty. The sum of the first and last elements of the array (which is 5) is odd. Therefore, the array is sorted in ascending order.
+
+Therefore, the output of executing the function sort_array on the input [5] is [5].

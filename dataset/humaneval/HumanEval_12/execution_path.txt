@@ -1,0 +1,25 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: longest
+main.py(3):     if not strings:
+main.py(6):     maxlen = max(len(x) for x in strings)
+ --- modulename: main, funcname: <genexpr>
+main.py(6):     maxlen = max(len(x) for x in strings)
+ --- modulename: main, funcname: <genexpr>
+main.py(6):     maxlen = max(len(x) for x in strings)
+ --- modulename: main, funcname: <genexpr>
+main.py(6):     maxlen = max(len(x) for x in strings)
+ --- modulename: main, funcname: <genexpr>
+main.py(6):     maxlen = max(len(x) for x in strings)
+ --- modulename: main, funcname: <genexpr>
+main.py(6):     maxlen = max(len(x) for x in strings)
+ --- modulename: main, funcname: <genexpr>
+main.py(6):     maxlen = max(len(x) for x in strings)
+ --- modulename: main, funcname: <genexpr>
+main.py(6):     maxlen = max(len(x) for x in strings)
+main.py(7):     for s in strings:
+main.py(8):         if len(s) == maxlen:
+main.py(7):     for s in strings:
+main.py(8):         if len(s) == maxlen:
+main.py(7):     for s in strings:
+main.py(8):         if len(s) == maxlen:
+main.py(9):             return s

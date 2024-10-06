@@ -1,0 +1,9 @@
+The function `maximum` is called with ( arr = [-3, -4, 5], k = 3 ).
+`k` is 3, which is not equal to 0.
+The if branch is not taken.
+The method `sort` is called on `arr`.
+The method `sort` sorts the array in ascending order.
+The method `ans` is assigned the last 3 elements of `arr`, which are [-3, -4, 5].
+The method `return` returns the value of `ans`, which is [-3, -4, 5].
+
+Therefore, the final output of the function `maximum([-3, -4, 5], 3)` is [-3, -4, 5].

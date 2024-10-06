@@ -1,0 +1,6 @@
+The function `digitSum` is called with ( s = "aAaaaXa" ).
+`s` is "aAaaaXa", which does not equal to "".
+The condition `s == ""` is false, therefore the else branch is taken.
+The function returns the sum of the ASCII values of the uppercase characters in the string.
+In this case, the uppercase characters are 'A' and 'X', whose ASCII values are 65 and 88 respectively.
+Therefore, the final output of the function `digitSum("aAaaaXa")` is 65 + 88 = 153.

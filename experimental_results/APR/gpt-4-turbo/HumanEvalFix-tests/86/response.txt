@@ -1,0 +1,27 @@
+Here is the fixed code for both functions, `has_close_elements` and `anti_shuffle`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `anti_shuffle`
+```python
+def anti_shuffle(s: str) -> str:
+    words = s.split(' ')
+    sorted_words = [''.join(sorted(word)) for word in words]
+    return ' '.join(sorted_words)
+```
+
+These fixes address the issues in the original code:
+- For `has_close_elements`, the absolute value is used to correctly calculate the distance between two numbers.
+- For `anti_shuffle`, the function now correctly handles spaces between words, ensuring that the order of words and spaces in the sentence is preserved while sorting the characters within each word.

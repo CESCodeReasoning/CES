@@ -1,0 +1,71 @@
+[REASONING]
+The function select_words(s, n) takes a string s("Mary had a little lamb") and an integer n(3) as its parameters.
+The function returns a list of words from the string that have exactly n consonants.
+The function first splits the string into a list of words.
+Then, for each word in the list, the function counts the number of consonants in the word.
+If the number of consonants in the word is equal to n, the function adds the word to the result list.
+Finally, the function returns the result list.
+First Iteration (word="Mary"):
+    - `word` is "Mary", len(word) is 4.
+    - `i` is 0, 1, 2, 3.
+    - word[i].lower() is "m", "a", "r", "y".
+    - "m" is not in ["a", "e", "i", "o", "u"], so n_consonants is 1.
+    - "a" is in ["a", "e", "i", "o", "u"], so n_consonants is still 1.
+    - "r" is not in ["a", "e", "i", "o", "u"], so n_consonants is 2.
+    - "y" is not in ["a", "e", "i", "o", "u"], so n_consonants is 3.
+    - n_consonants is not equal to n, so the word is not added to the result list.
+Second Iteration (word="had"):
+    - `word` is "had", len(word) is 3.
+    - `i` is 0, 1, 2.
+    - word[i].lower() is "h", "a", "d".
+    - "h" is not in ["a", "e", "i", "o", "u"], so n_consonants is 1.
+    - "a" is in ["a", "e", "i", "o", "u"], so n_consonants is still 1.
+    - "d" is not in ["a", "e", "i", "o", "u"], so n_consonants is 2.
+    - n_consonants is equal to n, so the word is added to the result list.
+Third Iteration (word="a"):
+    - `word` is "a", len(word) is 1.
+    - `i` is 0.
+    - word[i].lower() is "a".
+    - "a" is in ["a", "e", "i", "o", "u"], so n_consonants is 0.
+    - n_consonants is not equal to n, so the word is not added to the result list.
+Fourth Iteration (word="little"):
+    - `word` is "little", len(word) is 6.
+    - `i` is 0, 1, 2, 3, 4, 5.
+    - word[i].lower() is "l", "i", "t", "t", "l", "e".
+    - "l" is not in ["a", "e", "i", "o", "u"], so n_consonants is 1.
+    - "i" is in ["a", "e", "i", "o", "u"], so n_consonants is still 1.
+    - "t" is not in ["a", "e", "i", "o", "u"], so n_consonants is 2.
+    - "t" is not in ["a", "e", "i", "o", "u"], so n_consonants is 3.
+    - "l" is not in ["a", "e", "i", "o", "u"], so n_consonants is 4.
+    - "e" is in ["a", "e", "i", "o", "u"], so n_consonants is still 4.
+    - n_consonants is not equal to n, so the word is not added to the result list.
+Fifth Iteration (word="lamb"):
+    - `word` is "lamb", len(word) is 4.
+    - `i` is 0, 1, 2, 3.
+    - word[i].lower() is "l", "a", "m", "b".
+    - "l" is not in ["a", "e", "i", "o", "u"], so n_consonants is 1.
+    - "a" is in ["a", "e", "i", "o", "u"], so n_consonants is still 1.
+    - "m" is not in ["a", "e", "i", "o", "u"], so n_consonants is 2.
+    - "b" is not in ["a", "e", "i", "o", "u"], so n_consonants is 3.
+    - n_consonants is equal to n, so the word is added to the result list.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def select_words(s, n):
+    result = []
+    for word in s.split(): ## [STATE]word=["Mary", "had", "a", "little", "lamb"][/STATE][STATE]s.split()=["Mary", "had", "a", "little", "lamb"][/STATE]
+        n_consonants = 0
+        for i in range(0, len(word)): ## [STATE]i=[0, 1, 2, 3, 0, 1, 2, 0, 0, 1, 2, 3, 4, 5, 0, 1, 2, 3][/STATE][STATE]range(0, len(word))=[[0, 1, 2, 3], [0, 1, 2], [0], [0, 1, 2, 3, 4, 5], [0, 1, 2, 3]][/STATE][STATE]len(word)=[4, 3, 1, 6, 4][/STATE]
+            if word[i].lower() not in ["a", "e", "i", "o", "u"]: ## [CONDITION](word[i].lower() not in ["a", "e", "i", "o", "u"])=[True, False, True, True, True, False, True, False, False, True, True, True, True, False, True, False, True, True][/CONDITION][BRANCH]taken=[T, F, T, T, T, F, T, F, F, T, T, T, T, F, T, F, T, T][/BRANCH]
+                n_consonants += 1
+        if n_consonants == n: ## [CONDITION](n_consonants == n)=[False, True, False, False, True][/CONDITION][BRANCH]taken=[F, T, F, F, T][/BRANCH]
+            result.append(word)
+    return result
+[/ANSWER]
+
+[OUTPUT]
+['had', 'lamb']
+[/OUTPUT]

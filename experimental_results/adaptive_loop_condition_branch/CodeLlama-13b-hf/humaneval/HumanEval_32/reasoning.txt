@@ -1,0 +1,128 @@
+The function `find_zero` is called with ( xs = [-6, 11, -6, 1] ).
+Inside the function, a variable `begin` is initialized to -1.0.
+A variable `end` is initialized to 1.0.
+The loop iterates until `end - begin` is less than 1e-10.
+The first iteration of the loop:
+    - `end - begin` is 2.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -2.0.
+The second iteration of the loop:
+    - `end - begin` is 4.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -4.0.
+The third iteration of the loop:
+    - `end - begin` is 8.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -8.0.
+The fourth iteration of the loop:
+    - `end - begin` is 16.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -16.0.
+The fifth iteration of the loop:
+    - `end - begin` is 32.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -32.0.
+The sixth iteration of the loop:
+    - `end - begin` is 64.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -64.0.
+The seventh iteration of the loop:
+    - `end - begin` is 128.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -128.0.
+The eighth iteration of the loop:
+    - `end - begin` is 256.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -256.0.
+The ninth iteration of the loop:
+    - `end - begin` is 512.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -512.0.
+The tenth iteration of the loop:
+    - `end - begin` is 1024.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -1024.0.
+The eleventh iteration of the loop:
+    - `end - begin` is 2048.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -2048.0.
+The twelfth iteration of the loop:
+    - `end - begin` is 4096.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -4096.0.
+The thirteenth iteration of the loop:
+    - `end - begin` is 8192.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -8192.0.
+The fourteenth iteration of the loop:
+    - `end - begin` is 16384.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -16384.0.
+The fifteenth iteration of the loop:
+    - `end - begin` is 32768.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -32768.0.
+The sixteenth iteration of the loop:
+    - `end - begin` is 65536.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -65536.0.
+The seventeenth iteration of the loop:
+    - `end - begin` is 131072.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -131072.0.
+The eighteenth iteration of the loop:
+    - `end - begin` is 262144.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -262144.0.
+The nineteenth iteration of the loop:
+    - `end - begin` is 524288.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -524288.0.
+The twentieth iteration of the loop:
+    - `end - begin` is 1048576.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -1048576.0.
+The twenty-first iteration of the loop:
+    - `end - begin` is 2097152.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -2097152.0.
+The twenty-second iteration of the loop:
+    - `end - begin` is 4194304.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -4194304.0.
+The twenty-third iteration of the loop:
+    - `end - begin` is 8388608.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -8388608.0.
+The twenty-fourth iteration of the loop:
+    - `end - begin` is 16777216.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.
+    - `begin` is updated to -16777216.0.
+The twenty-fifth iteration of the loop:
+    - `end - begin` is 33554432.0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - The first branch is taken.

@@ -1,0 +1,22 @@
+[REASONING]
+The function solution takes a list of integers lst as input and returns the sum of all the odd integers at even indices in the list.
+To determine the output of executing the function solution on the input [5, 8, 7, 1], we need to first identify the odd integers at even indices in the list.
+The first integer in the list is at index 0, which is an even index. The integer at index 0 is 5, which is an odd integer.
+The second integer in the list is at index 1, which is an odd index. The integer at index 1 is 8, which is an even integer.
+The third integer in the list is at index 2, which is an even index. The integer at index 2 is 7, which is an odd integer.
+The fourth integer in the list is at index 3, which is an odd index. The integer at index 3 is 1, which is an odd integer.
+Therefore, the odd integers at even indices in the list are 5 and 7.
+The sum of 5 and 7 is 12.
+Therefore, the output of executing the function solution on the input [5, 8, 7, 1] is 12.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def solution(lst):
+    return sum([x for [STATE]idx, x in enumerate(lst) if [CONDITION]idx%2==0 and x%2==1[/CONDITION]])
+[/STATE]
+[/ANSWER]
+
+[OUTPUT]
+12
+[/OUTPUT]

@@ -1,0 +1,95 @@
+The function `largest_prime_factor` is called with ( n = 63 ).
+Inside the function, a variable `largest` is initialized to 1.
+
+Iteration 1:
+    -The condition `n % j == 0 and is_prime(j)` is true for j = 3.
+    -The condition `n % j == 0` is true because 63 % 3 == 0.
+    -The condition `is_prime(j)` is true because 3 is a prime number.
+    -The value of `largest` is updated to 3.
+Iteration 2:
+    -The condition `n % j == 0 and is_prime(j)` is true for j = 7.
+    -The condition `n % j == 0` is true because 63 % 7 == 0.
+    -The condition `is_prime(j)` is true because 7 is a prime number.
+    -The value of `largest` is updated to 7.
+Iteration 3:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 9.
+    -The condition `n % j == 0` is true because 63 % 9 == 0.
+    -The condition `is_prime(j)` is false because 9 is not a prime number.
+Iteration 4:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 11.
+    -The condition `n % j == 0` is false because 63 % 11!= 0.
+Iteration 5:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 13.
+    -The condition `n % j == 0` is false because 63 % 13!= 0.
+Iteration 6:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 15.
+    -The condition `n % j == 0` is false because 63 % 15!= 0.
+Iteration 7:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 17.
+    -The condition `n % j == 0` is false because 63 % 17!= 0.
+Iteration 8:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 19.
+    -The condition `n % j == 0` is false because 63 % 19!= 0.
+Iteration 9:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 21.
+    -The condition `n % j == 0` is false because 63 % 21!= 0.
+Iteration 10:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 23.
+    -The condition `n % j == 0` is false because 63 % 23!= 0.
+Iteration 11:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 25.
+    -The condition `n % j == 0` is false because 63 % 25!= 0.
+Iteration 12:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 27.
+    -The condition `n % j == 0` is false because 63 % 27!= 0.
+Iteration 13:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 29.
+    -The condition `n % j == 0` is false because 63 % 29!= 0.
+Iteration 14:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 31.
+    -The condition `n % j == 0` is false because 63 % 31!= 0.
+Iteration 15:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 33.
+    -The condition `n % j == 0` is false because 63 % 33!= 0.
+Iteration 16:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 35.
+    -The condition `n % j == 0` is false because 63 % 35!= 0.
+Iteration 17:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 37.
+    -The condition `n % j == 0` is false because 63 % 37!= 0.
+Iteration 18:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 39.
+    -The condition `n % j == 0` is false because 63 % 39!= 0.
+Iteration 19:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 41.
+    -The condition `n % j == 0` is false because 63 % 41!= 0.
+Iteration 20:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 43.
+    -The condition `n % j == 0` is false because 63 % 43!= 0.
+Iteration 21:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 45.
+    -The condition `n % j == 0` is false because 63 % 45!= 0.
+Iteration 22:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 47.
+    -The condition `n % j == 0` is false because 63 % 47!= 0.
+Iteration 23:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 49.
+    -The condition `n % j == 0` is false because 63 % 49!= 0.
+Iteration 24:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 51.
+    -The condition `n % j == 0` is false because 63 % 51!= 0.
+Iteration 25:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 53.
+    -The condition `n % j == 0` is false because 63 % 53!= 0.
+Iteration 26:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 55.
+    -The condition `n % j == 0` is false because 63 % 55!= 0.
+Iteration 27:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 57.
+    -The condition `n % j == 0` is false because 63 % 57!= 0.
+Iteration 28:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 59.
+    -The condition `n % j == 0` is false because 63 % 59!= 0.
+Iteration 29:
+    -The condition `n % j == 0 and is_prime(j)` is false for j = 61.
+    -The condition `n % j == 0` is false because 63 % 61!= 0.

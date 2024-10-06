@@ -1,0 +1,11 @@
+The function find_max takes a list of strings as input and returns the string with the maximum length and the smallest lexicographical order.
+
+The function sorted is used to sort the list of strings. The key parameter of the sorted function is a function that takes a string and returns a value that will be used for sorting. In this case, the key function is a lambda function that returns a tuple (-len(set(x)), x). The negative length of the set of characters in the string is used as the first element of the tuple for sorting, and the string itself is used as the second element of the tuple for sorting.
+
+The set function is used to remove duplicate characters from the string. The length of the set is used as the first element of the tuple for sorting, and the string itself is used as the second element of the tuple for sorting.
+
+The sorted function sorts the list of strings based on these criteria. The sorted function returns a new sorted list, leaving the original list unchanged.
+
+The [0] index is used to get the first element of the sorted list, which is the string with the maximum length and the smallest lexicographical order.
+
+For the input ["name", "enam", "game"], the output will be "enam". The string "enam" has the maximum length (5 characters) and the smallest lexicographical order among the three strings.

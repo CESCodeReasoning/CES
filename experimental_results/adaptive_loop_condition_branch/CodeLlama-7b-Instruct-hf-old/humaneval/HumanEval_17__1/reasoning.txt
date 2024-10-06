@@ -1,0 +1,6 @@
+The function parse_music takes a string music_string as input and returns a list of integers.
+The function works by first splitting the input string into a list of substrings using the space character as the delimiter.
+Then, it iterates over the list of substrings and for each substring, it checks if it is in the note_map dictionary.
+If the substring is in the dictionary, it returns the corresponding value.
+Otherwise, it returns 0.
+The function then returns the list of integers that it has constructed.

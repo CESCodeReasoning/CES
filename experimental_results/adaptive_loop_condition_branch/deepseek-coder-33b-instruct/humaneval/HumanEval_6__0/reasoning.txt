@@ -1,0 +1,19 @@
+The function `parse_nested_parens` is called with ( paren_string = "((()))" ).
+The function `parse_paren_group` is defined inside `parse_nested_parens`.
+
+Iteration 1:
+    -The character '(' is in '(', so depth becomes 1 and max_depth becomes 1.
+Iteration 2:
+    -The character '(' is in '(', so depth becomes 2 and max_depth becomes 2.
+Iteration 3:
+    -The character '(' is in '(', so depth becomes 3 and max_depth becomes 3.
+Iteration 4:
+    -The character ')' is not in '(', so depth becomes 2.
+Iteration 5:
+    -The character ')' is not in '(', so depth becomes 1.
+Iteration 6:
+    -The character ')' is not in '(', so depth becomes 0.
+
+The function `parse_paren_group` returns the max_depth, which is 3.
+
+The function `parse_nested_parens` returns a list with the max_depth, which is [3].

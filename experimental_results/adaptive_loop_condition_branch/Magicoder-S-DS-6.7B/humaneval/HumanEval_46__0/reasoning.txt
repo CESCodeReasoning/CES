@@ -1,0 +1,19 @@
+The function `fib4` is called with ( n = 10 ).
+The condition ( n < 4 ) is not satisfied, so the else branch is taken.
+The list `results` is initialized with [0, 0, 2, 0].
+The loop iterates from 4 through 10 (since ( n = 10 )).
+First Iteration (_ = 4):
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 0, 2, 0, 4] ( 0 + 0 + 2 + 0 = 4 ).
+Second Iteration (_ = 5):
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 0, 2, 0, 4, 8] ( 4 + 0 + 2 + 0 = 8 ).
+Third Iteration (_ = 6)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 0, 2, 0, 4, 8, 16] ( 8 + 4 + 2 + 0 = 20 ).
+Fourth Iteration (_ = 7)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 0, 2, 0, 4, 8, 16, 32] ( 16 + 8 + 4 + 0 = 40 ).
+Fifth Iteration (_ = 8)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 0, 2, 0, 4, 8, 16, 32, 64] ( 32 + 16 + 8 + 0 = 80 ).
+Sixth Iteration (_ = 9)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 0, 2, 0, 4, 8, 16, 32, 64, 128] ( 64 + 32 + 16 + 0 = 200 ).
+Seventh Iteration (_ = 10)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 0, 2, 0, 4, 8, 16, 32, 64, 128, 256] ( 128 + 64 + 32 + 0 = 384 ).
+After the loop completes, the function returns `results[-1]` which is 384 as the output.

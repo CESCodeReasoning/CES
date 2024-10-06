@@ -1,0 +1,8 @@
+from typing import *
+
+
+def generate_integers(a, b):
+    lower = max(2, min(a, b))  # Calculate the lower bound
+    upper = min(8, max(a, b))  # Calculate the upper bound
+
+    return [i for i in range(lower, upper + 1) if i % 2 == 0]  # Generate and filter even numbers within the bounds

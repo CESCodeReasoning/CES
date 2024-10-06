@@ -1,0 +1,6 @@
+from typing import *
+
+
+def make_a_pile(n: int) -> List[int]:
+    # [STATE] n is 6 [/STATE]
+    return [n + 2 * i for i in range(n)]  # [STATE] range(n) generates values from 0 to 5 [/STATE]

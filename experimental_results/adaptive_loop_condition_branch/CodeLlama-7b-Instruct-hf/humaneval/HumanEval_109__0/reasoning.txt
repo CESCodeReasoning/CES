@@ -1,0 +1,14 @@
+The function `move_one_ball` is called with ( arr = [4, 3, 1, 2] ).
+
+Step 1:
+    - The length of the array is not 0, so the `if` statement is not executed.
+Step 2:
+    - The array is sorted in ascending order.
+Step 3:
+    - The array is reversed.
+Step 4:
+    - The array is sorted in ascending order again.
+Step 5:
+    - The function returns `True`.
+
+Therefore, the final output of the function `move_one_ball([4, 3, 1, 2])` is `True`.

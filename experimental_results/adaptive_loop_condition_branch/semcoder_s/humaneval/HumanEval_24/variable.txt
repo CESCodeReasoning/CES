@@ -1,0 +1,5 @@
+from typing import *
+def largest_divisor(n: int) -> int:
+    for i in reversed(range(n)): ## [STATE]i=[2, 1][/STATE][STATE]reversed(range(n))=[1, 0][/STATE][STATE]range(n)=[0, 1, 2][/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[False, True][/CONDITION][BRANCH]taken=[N, Y][/BRANCH]
+            return i

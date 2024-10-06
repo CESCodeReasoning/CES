@@ -1,0 +1,8 @@
+The function `split_words` is called with ( txt = "Hello world!" ).
+The condition `" " in txt` is False, so the first branch is not taken.
+The condition `"," in txt` is also False, so the second branch is not taken.
+The `else` branch is taken.
+The function `split_words` returns the count of lowercase letters with even ASCII values in the string.
+The string "Hello world!" contains 2 lowercase letters with even ASCII values (h and l).
+
+Therefore, the final output of the function `split_words("Hello world!")` is 2.

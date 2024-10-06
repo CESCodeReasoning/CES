@@ -1,0 +1,49 @@
+The function `prime_fib` is called with ( n = 4 ).
+Inside the function, a variable `f` is initialized to [0, 1].
+The loop iterates until the condition `n == 0` is met.
+First Iteration (f = [0, 1]):
+    - The condition `is_prime(f[-1])` is false.
+    - The loop continues with the next iteration.
+Second Iteration (f = [0, 1, 1]):
+    - The condition `is_prime(f[-1])` is false.
+    - The loop continues with the next iteration.
+Third Iteration (f = [0, 1, 1, 2]):
+    - The condition `is_prime(f[-1])` is true.
+    - The `n` variable is decremented by 1.
+    - The loop continues with the next iteration.
+Fourth Iteration (f = [0, 1, 1, 2, 3]):
+    - The condition `is_prime(f[-1])` is false.
+    - The loop continues with the next iteration.
+Fifth Iteration (f = [0, 1, 1, 2, 3, 5]):
+    - The condition `is_prime(f[-1])` is true.
+    - The `n` variable is decremented by 1.
+    - The loop continues with the next iteration.
+Sixth Iteration (f = [0, 1, 1, 2, 3, 5, 8]):
+    - The condition `is_prime(f[-1])` is false.
+    - The loop continues with the next iteration.
+Seventh Iteration (f = [0, 1, 1, 2, 3, 5, 8, 13]):
+    - The condition `is_prime(f[-1])` is true.
+    - The `n` variable is decremented by 1.
+    - The loop continues with the next iteration.
+Eighth Iteration (f = [0, 1, 1, 2, 3, 5, 8, 13, 21]):
+    - The condition `is_prime(f[-1])` is false.
+    - The loop continues with the next iteration.
+Ninth Iteration (f = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]):
+    - The condition `is_prime(f[-1])` is true.
+    - The `n` variable is decremented by 1.
+    - The loop continues with the next iteration.
+Tenth Iteration (f = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]):
+    - The condition `is_prime(f[-1])` is false.
+    - The loop continues with the next iteration.
+Eleventh Iteration (f = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]):
+    - The condition `is_prime(f[-1])` is true.
+    - The `n` variable is decremented by 1.
+    - The loop continues with the next iteration.
+Twelfth Iteration (f = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]):
+    - The condition `is_prime(f[-1])` is false.
+    - The loop continues with the next iteration.
+Thirteenth Iteration (f = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233]):
+    - The condition `is_prime(f[-1])` is true.
+    - The `n` variable is decremented by 1.
+    - The loop continues with the next iteration.
+Fourteenth Iteration (f = [0, 1, 1, 2, 3, 5

@@ -1,0 +1,27 @@
+The function `fruit_distribution` is called with ( s = "5 apples and 6 oranges", n = 21 ).
+Inside the function, a variable `lis` is initialized to an empty list.
+The string `s` is split into a list of words using the space character as the delimiter.
+The list of words is then iterated over.
+First Iteration:
+   - `i` is "5".
+   - The condition `i.isdigit()` is true, so the `if` block is executed.
+   - The `if` block appends the integer value of `i` (5) to the list `lis`.
+Second Iteration:
+   - `i` is "apples".
+   - The condition `i.isdigit()` is false, so the `else` block is executed.
+   - The `else` block does not modify the list `lis`.
+Third Iteration:
+   - `i` is "and".
+   - The condition `i.isdigit()` is false, so the `else` block is executed.
+   - The `else` block does not modify the list `lis`.
+Fourth Iteration:
+   - `i` is "6".
+   - The condition `i.isdigit()` is true, so the `if` block is executed.
+   - The `if` block appends the integer value of `i` (6) to the list `lis`.
+Fifth Iteration:
+   - `i` is "oranges".
+   - The condition `i.isdigit()` is false, so the `else` block is executed.
+   - The `else` block does not modify the list `lis`.
+The `for` loop completes, and the function returns the value of `n` minus the sum of the elements in the list `lis`.
+
+Therefore, the final output of the function `fruit_distribution("5 apples and 6 oranges",21)` is 16.

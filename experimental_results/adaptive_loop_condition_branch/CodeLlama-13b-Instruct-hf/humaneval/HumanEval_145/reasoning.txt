@@ -1,0 +1,23 @@
+The function `order_by_points` is called with ( nums = [1, 11, -1, -11, -12] ).
+The function `digits_sum` is called with ( n = 11 ).
+The condition `n < 0` is false, therefore the if branch is not taken and the method returns the original value of `n`.
+The function `digits_sum` is called with ( n = -1 ).
+The condition `n < 0` is true, therefore the if branch is taken and the method returns the negative value of `n`.
+The function `digits_sum` is called with ( n = -11 ).
+The condition `n < 0` is true, therefore the if branch is taken and the method returns the negative value of `n`.
+The function `digits_sum` is called with ( n = -12 ).
+The condition `n < 0` is true, therefore the if branch is taken and the method returns the negative value of `n`.
+The function `sorted` is called with ( nums = [1, 11, -1, -11, -12] ) and the key function `digits_sum`.
+The function `digits_sum` is called with ( n = 1 ).
+The condition `n < 0` is false, therefore the if branch is not taken and the method returns the original value of `n`.
+The function `digits_sum` is called with ( n = 11 ).
+The condition `n < 0` is false, therefore the if branch is not taken and the method returns the original value of `n`.
+The function `digits_sum` is called with ( n = -1 ).
+The condition `n < 0` is true, therefore the if branch is taken and the method returns the negative value of `n`.
+The function `digits_sum` is called with ( n = -11 ).
+The condition `n < 0` is true, therefore the if branch is taken and the method returns the negative value of `n`.
+The function `digits_sum` is called with ( n = -12 ).
+The condition `n < 0` is true, therefore the if branch is taken and the method returns the negative value of `n`.
+The function `sorted` returns the sorted list [1, -1, -11, -12, 11].
+
+Therefore, the final output of the function `order_by_points([1, 11, -1, -11, -12])` is [1, -1, -11, -12, 11].

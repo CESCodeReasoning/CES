@@ -1,0 +1,3 @@
+```response
+    return sum(ord(char) if char.islower() else 0 for char in s)
+```

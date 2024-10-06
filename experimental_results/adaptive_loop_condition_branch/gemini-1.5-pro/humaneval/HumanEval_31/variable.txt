@@ -1,0 +1,8 @@
+from typing import *
+def is_prime(n):
+    if n < 2: ## [CONDITION](n < 2)=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+        return False ## [STATE]k=??[/STATE]
+    for k in range(2, (n - 1)): ## [STATE]range(2, (n - 1))=[2, 3, 4, 5][/STATE][STATE](n - 1)=5[/STATE]
+        if n % k == 0: ## [CONDITION](n % k == 0)=[False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N][/BRANCH]
+            return False
+    return True

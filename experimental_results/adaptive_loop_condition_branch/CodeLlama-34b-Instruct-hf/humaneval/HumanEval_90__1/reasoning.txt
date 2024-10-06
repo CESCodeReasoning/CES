@@ -1,0 +1,5 @@
+    The function next_smallest takes a list lst as input.
+    It first sorts the list and converts it into a set to remove any duplicates.
+    Then, it checks if the length of the sorted list is less than 2. If it is, it returns None.
+    Otherwise, it returns the second element of the sorted list.
+    

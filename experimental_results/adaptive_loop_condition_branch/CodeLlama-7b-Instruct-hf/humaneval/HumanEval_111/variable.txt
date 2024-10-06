@@ -1,0 +1,15 @@
+from typing import *
+def histogram(test):
+    dict1={}
+    list1=test.split(" ")
+    t=0
+
+    for i in list1: ## [STATE]i=['a', 'b', 'b', 'a'][/STATE][STATE]list1=['a', 'b', 'b', 'a'][/STATE]
+        if(list1.count(i)>t) and i!='': ## [CONDITION]((list1.count(i)>t) and i!=)=[True, True, True, True][/CONDITION][CONDITION](i!=)=[True, True, True, True][/CONDITION][CONDITION](list1.count(i)>t)=[True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y][/BRANCH]
+            t=list1.count(i)
+    if t>0: ## [CONDITION](t>0)=[True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y][/BRANCH]
+        for i in list1: ## [STATE]i=['a', 'b', 'b', 'a'][/STATE][STATE]list1=['a', 'b', 'b', 'a'][/STATE]
+            if(list1.count(i)==t): ## [CONDITION](list1.count(i)==t)=[True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y][/BRANCH]
+                
+                dict1[i]=t
+    return dict1

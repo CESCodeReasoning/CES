@@ -1,0 +1,116 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def check_if_last_char_is_a_letter(txt):
+ 
+    check = txt.split(' ')[-1]
+    return True if len(check) == 1 and (97 <= ord(check.upper()) <= 122) else False
+
+Tests:
+def check(check_if_last_char_is_a_letter):
+
+    # Check some simple cases
+    assert check_if_last_char_is_a_letter("apple") == False
+    assert check_if_last_char_is_a_letter("apple pi e") == True
+    assert check_if_last_char_is_a_letter("eeeee") == False
+    assert check_if_last_char_is_a_letter("A") == True
+    assert check_if_last_char_is_a_letter("Pumpkin pie ") == False
+    assert check_if_last_char_is_a_letter("Pumpkin pie 1") == False
+    assert check_if_last_char_is_a_letter("") == False
+    assert check_if_last_char_is_a_letter("eeeee e ") == False
+    assert check_if_last_char_is_a_letter("apple pie") == False
+    assert check_if_last_char_is_a_letter("apple pi e ") == False
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True
+
+check(check_if_last_char_is_a_letter)
+
+The code should satisfy the following natural language specification:
+Write a Python function `check_if_last_char_is_a_letter(txt)` to solve the following problem:
+Create a function that returns True if the last character
+of a given string is an alphabetical character and is not
+a part of a word, and False otherwise.
+Note: "word" is a group of characters separated by space.
+Examples:
+check_if_last_char_is_a_letter("apple pie") ➞ False
+check_if_last_char_is_a_letter("apple pi e") ➞ True
+check_if_last_char_is_a_letter("apple pi e ") ➞ False
+check_if_last_char_is_a_letter("") ➞ False
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return True if len(check) == 1 and (97 <= ord(check.upper()) <= 122) else False
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(n):
+    n = str(n)
+    return n == n[::-1]
+
+def next_palindrome(n):
+    n = n + 1
+    while not is_palindrome(n):
+        n = n + 1
+    return n
+
+Tests:
+def check(next_palindrome):
+    assert next_palindrome(123) == 131
+    assert next_palindrome(99) == 101
+    assert next_palindrome(199) == 202
+    assert next_palindrome(1234) == 1311
+    assert next_palindrome(12345) == 12421
+    assert next_palindrome(123456) == 124321
+    assert next_palindrome(1234567) == 1243421
+    assert next_palindrome(12345678) == 124342124
+    assert next_palindrome(123456789) == 124342124
+    assert next_palindrome(123456799) == 124342124
+    assert next_palindrome(123456798) == 124342124
+    assert next_palindrome(123456797) == 124342124
+    assert next_palindrome(123456796) == 124342124
+    assert next_palindrome(123456795) == 124342124
+    assert next_palindrome(123456794) == 124342

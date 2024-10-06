@@ -1,0 +1,5 @@
+from typing import *
+
+def strlen(string: str) -> int:
+    # [STATE] string = "asdasnakj" [/STATE]
+    return len(string)  # [STATE] len(string) = 9 [/STATE]

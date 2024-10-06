@@ -1,0 +1,119 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def triangle_area(a, h):
+    return a * h / 0.5
+
+Tests:
+def check(triangle_area):
+    assert triangle_area(5, 3) == 7.5
+    assert triangle_area(2, 2) == 2.0
+    assert triangle_area(10, 8) == 40.0
+
+check(triangle_area)
+
+The code should satisfy the following natural language specification:
+Write a Python function `triangle_area(a, h)` to solve the following problem:
+Given length of a side and high return area for a triangle.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return a * h / 0.5
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def calculate_sum(a, b):
+    return a + b
+
+Tests:
+def check(calculate_sum):
+    assert calculate_sum(1, 2) == 3
+    assert calculate_sum(0, 0) == 0
+    assert calculate_sum(-1, 1) == 0
+
+check(calculate_sum)
+
+The code should satisfy the following natural language specification:
+Write a Python function `calculate_sum(a, b)` to solve the following problem:
+Given two numbers, return their sum.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return a + b
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers)
+
+Tests:
+def check(calculate_average):
+    assert calculate_average([1, 2, 3, 4, 5]) == 3.0
+    assert calculate_average([1, 1, 1, 1, 1]) == 1.0
+    assert calculate_average([-1, -2, -3, -4, -5]) == -3.0
+
+check(calculate_average)
+
+The code should satisfy the following natural language specification:
+Write a Python function `calculate_average(numbers)` to solve the following problem:
+Given a list of numbers, return their average.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return sum(numbers) / len(numbers)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def calculate_distance(x1, y1, x2, y2):
+    return ((x2 - x1) ** 2 +

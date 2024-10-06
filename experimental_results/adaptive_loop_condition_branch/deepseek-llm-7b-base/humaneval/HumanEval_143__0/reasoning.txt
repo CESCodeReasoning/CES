@@ -1,0 +1,30 @@
+The function words_in_sentence(sentence) takes a string as its parameter.
+The outer loop iterates through each word in the sentence.
+In the inner loop, for each word indexed by i in the outer loop, check if it is a palindrome.
+First Iteration (i=0):
+    - `i` is 0, word in the inner loop is "there".
+    - `len(word)` is 5, `len(word) % i` is 0, `len(word) % i == 0` is True, `flg` is 1.
+    - `flg` is 1, `new_lst` is appended with "there".
+Second Iteration (i=1):
+    - `i` is 1, word in the inner loop is "is".
+    - `len(word)` is 2, `len(word) % i` is 1, `len(word) % i == 0` is False, `flg` is 0.
+    - `flg` is 0, `new_lst` is not appended with "is".
+Third Iteration (i=2):
+    - `i` is 2, word in the inner loop is "no".
+    - `len(word)` is 2, `len(word) % i` is 1, `len(word) % i == 0` is False, `flg` is 0.
+    - `flg` is 0, `new_lst` is not appended with "no".
+Fourth Iteration (i=3):
+    - `i` is 3, word in the inner loop is "place".
+    - `len(word)` is 4, `len(word) % i` is 1, `len(word) % i == 0` is False, `flg` is 0.
+    - `flg` is 0, `new_lst` is not appended with "place".
+Fifth Iteration (i=4):
+    - `i` is 4, word in the inner loop is "here".
+    - `len(word)` is 4, `len(word) % i` is 1, `len(word) % i == 0` is False, `flg` is 0.
+    - `flg` is 0, `new_lst` is not appended with "here".
+Sixth iteration (i=5):
+    - `i` is 5, word in the inner loop is "available".
+    - `len(word)` is 6, `len(word) % i` is 1, `len(word) % i == 0` is False, `flg` is 0.
+    - `flg` is 0, `new_lst` is not appended with "available".
+Seventh iteration (i=6):
+    - `i` is 6, word in the inner loop is "available".
+    - `len(word)` is 6, `len(word) % i

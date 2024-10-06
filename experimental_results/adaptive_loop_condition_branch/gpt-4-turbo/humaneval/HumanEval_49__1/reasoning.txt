@@ -1,0 +1,5 @@
+The function `modp` is called with parameters `n = 0` and `p = 101`.
+Inside the function, a variable `ret` is initialized to 1.
+The loop is supposed to iterate from 0 up to `n-1`. However, since `n = 0`, the range for the loop is `range(0)`, which means the loop does not execute at all.
+Since the loop does not execute, the value of `ret` remains unchanged at 1.
+The function then returns the value of `ret`, which is 1.

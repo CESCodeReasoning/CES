@@ -1,0 +1,8 @@
+The function `string_to_md5` takes a string as input and returns the MD5 hash of the input string.
+To calculate the MD5 hash of 'Hello world', we need to:
+1. Import the `hashlib` module.
+2. Encode the input string 'Hello world' to bytes using ASCII encoding.
+3. Calculate the MD5 hash of the encoded bytes.
+4. Return the hexadecimal representation of the MD5 hash.
+
+Therefore, the MD5 hash of 'Hello world' is '3e25960a79dbc69b674cd4ec67a72c62'.

@@ -1,0 +1,21 @@
+```response
+    maxlen = max(len(x) for x in strings)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+def count_above_average(numbers: List[int]) -> int:
+    average = sum(numbers) / len(numbers)
+    count = 0
+    for n in numbers:
+        if n > average:
+            count += 1
+
+    return count
+
+Tests:
+def check(count

@@ -1,0 +1,29 @@
+[REASONING]
+The function `solve` takes an integer `N` as input. The steps executed in the function are as follows:
+1. Convert the integer `N` to a string to separate its digits.
+2. Iterate over each character in the string, convert each character back to an integer, and sum all these integers. This step calculates the sum of the digits of `N`.
+3. Convert the sum of the digits to its binary representation using Python's `bin()` function, which returns a string prefixed with '0b'.
+4. Slice the binary string to remove the '0b' prefix and return the result.
+
+For the input `147`:
+- Convert `147` to the string `"147"`.
+- Convert each character back to an integer and sum them: `1 + 4 + 7 = 12`.
+- Convert `12` to binary: `bin(12)` results in `'0b1100'`.
+- Slice off the '0b' prefix to get the final result: `'1100'`.
+
+Thus, the output for the input `147` is `'1100'`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def solve(N: int) -> str:
+    # [STATE] N is 147 [/STATE]
+    digits_sum = sum(int(i) for i in str(N))  # [STATE] digits_sum is 12 [/STATE]
+    binary_representation = bin(digits_sum)[2:]  # [STATE] binary_representation is '1100' [/STATE]
+    return binary_representation
+[/PYTHON]
+
+[OUTPUT]
+"1100"
+[/OUTPUT]

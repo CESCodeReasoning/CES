@@ -1,0 +1,9 @@
+The function `is_sorted` is called with the list containing a single element `[5]`.
+Inside the function:
+1. A dictionary `count_digit` is created using a list comprehension. This dictionary is initialized to count the occurrences of each element in the list. Since the list has only one element, `count_digit` will be `{5: 0}` initially.
+2. The function then iterates over the list `lst` which contains just one element `[5]`. During this iteration:
+   - For `i = 5`, the count of `5` in `count_digit` is incremented by 1. So, `count_digit` becomes `{5: 1}`.
+3. The function checks if any element in `count_digit` has a count greater than 2 using the `any` function. Since the maximum count is 1 (for element `5`), this condition is false.
+4. Next, the function checks if all elements in the list are sorted in non-decreasing order using the `all` function combined with a generator expression. Since there is only one element, the generator expression inside the `all` function does not execute any iterations (as `range(1, len(lst))` results in `range(1, 1)`, which is empty). Therefore, the `all` function returns `True` by default when its input is empty.
+5. As the list is considered sorted (due to the `all` function returning `True`), the function returns `True`.
+

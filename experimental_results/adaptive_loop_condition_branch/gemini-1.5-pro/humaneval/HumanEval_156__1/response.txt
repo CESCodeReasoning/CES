@@ -1,0 +1,72 @@
+[REASONING]
+The function `int_to_mini_roman` is called with ( number = 152 ).
+Inside the function, two lists `num` and `sym` are initialized with corresponding values.
+The variable `i` is initialized to 12.
+The variable `res` is initialized to an empty string.
+First Iteration:
+    - number = 152, num[i] = 1000, div = 152 // 1000 = 0, number = 152 % 1000 = 152.
+    - The while loop is skipped because div is 0.
+Second Iteration:
+    - number = 152, num[i] = 900, div = 152 // 900 = 0, number = 152 % 900 = 152.
+    - The while loop is skipped because div is 0.
+Third Iteration:
+    - number = 152, num[i] = 500, div = 152 // 500 = 0, number = 152 % 500 = 152.
+    - The while loop is skipped because div is 0.
+Fourth Iteration:
+    - number = 152, num[i] = 400, div = 152 // 400 = 0, number = 152 % 400 = 152.
+    - The while loop is skipped because div is 0.
+Fifth Iteration:
+    - number = 152, num[i] = 100, div = 152 // 100 = 1, number = 152 % 100 = 52.
+    - The while loop iterates once and adds 'C' to `res`.
+Sixth Iteration:
+    - number = 52, num[i] = 90, div = 52 // 90 = 0, number = 52 % 90 = 52.
+    - The while loop is skipped because div is 0.
+Seventh Iteration:
+    - number = 52, num[i] = 50, div = 52 // 50 = 1, number = 52 % 50 = 2.
+    - The while loop iterates once and adds 'L' to `res`.
+Eighth Iteration:
+    - number = 2, num[i] = 40, div = 2 // 40 = 0, number = 2 % 40 = 2.
+    - The while loop is skipped because div is 0.
+Ninth Iteration:
+    - number = 2, num[i] = 10, div = 2 // 10 = 0, number = 2 % 10 = 2.
+    - The while loop is skipped because div is 0.
+Tenth Iteration:
+    - number = 2, num[i] = 9, div = 2 // 9 = 0, number = 2 % 9 = 2.
+    - The while loop is skipped because div is 0.
+Eleventh Iteration:
+    - number = 2, num[i] = 5, div = 2 // 5 = 0, number = 2 % 5 = 2.
+    - The while loop is skipped because div is 0.
+Twelfth Iteration:
+    - number = 2, num[i] = 4, div = 2 // 4 = 0, number = 2 % 4 = 2.
+    - The while loop is skipped because div is 0.
+Thirteenth Iteration:
+    - number = 2, num[i] = 1, div = 2 // 1 = 2, number = 2 % 1 = 0.
+    - The while loop iterates twice and adds 'II' to `res`.
+The while loop terminates because number is 0.
+The function returns the value of `res`, which is now 'CLI'.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def int_to_mini_roman(number):
+    num = [1, 4, 5, 9, 10, 40, 50, 90,
+           100, 400, 500, 900, 1000]
+    sym = ["I", "IV", "V", "IX", "X", "XL",
+           "L", "XC", "C", "CD", "D", "CM", "M"]
+    i = 12
+    res = ''
+    while number: ## [STATE]number=[152, 52, 2, 0][/STATE]
+        div = number // num[i]
+        number %= num[i]
+        while div: ## [STATE]div=[0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 2][/STATE]
+            res += sym[i]
+            div -= 1
+        i -= 1
+    return res.lower()
+[/ANSWER]
+
+[OUTPUT]
+cli
+[/OUTPUT]

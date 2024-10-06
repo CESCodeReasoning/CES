@@ -1,0 +1,12 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: pluck
+main.py(3):     if(len(arr) == 0): return []
+main.py(4):     evens = list(filter(lambda x: x%2 == 0, arr))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     evens = list(filter(lambda x: x%2 == 0, arr))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     evens = list(filter(lambda x: x%2 == 0, arr))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     evens = list(filter(lambda x: x%2 == 0, arr))
+main.py(5):     if(evens == []): return []
+main.py(6):     return [min(evens), arr.index(min(evens))]

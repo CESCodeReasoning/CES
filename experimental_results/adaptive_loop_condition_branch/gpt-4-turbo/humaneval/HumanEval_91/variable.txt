@@ -1,0 +1,9 @@
+from typing import *
+def is_bored(S):
+    import re
+    # [STATE] S = "Hello world" [/STATE]
+    sentences = re.split(r'[.?!]\s*', S)
+    # [STATE] sentences = ["Hello world"] [/STATE]
+    return sum(sentence[0:2] == 'I ' for sentence in sentences)
+    # [CONDITION] sentence[0:2] == 'I ' [/CONDITION]
+    # [BRANCH] N [/BRANCH]

@@ -1,0 +1,5 @@
+The function `modp` is called with (n = 0, p = 101).
+Inside the function, a variable `ret` is initialized to 1.
+The loop iterates from 0 to n-1 (since range(n) = []).
+Since the loop doesn't run at all, `ret` remains 1.
+After the loop completes, the function returns the value of `ret`, which is 1.

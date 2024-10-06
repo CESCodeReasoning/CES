@@ -1,0 +1,4 @@
+The function largest_smallest_integers takes a list of integers as input and returns a tuple containing the largest and smallest integers in the list.
+To determine the output of executing the function largest_smallest_integers on the empty list, we need to determine the largest and smallest integers in the empty list.
+Since there are no integers in the empty list, the largest and smallest integers are None.
+Therefore, the output of executing the function largest_smallest_integers on the empty list is (None, None).

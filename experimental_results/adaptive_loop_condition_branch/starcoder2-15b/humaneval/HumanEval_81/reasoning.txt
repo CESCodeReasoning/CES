@@ -1,0 +1,48 @@
+The function `numerical_letter_grade` is called with ( grades = [4.0, 3, 1.7, 2, 3.5] ).
+Inside the function, a variable `letter_grade` is initialized to an empty list.
+
+Iteration 1:
+    -The first element of the list is 4.0, which is equal to 4.0.
+    -The condition `gpa == 4.0` is true.
+    -Action: The letter grade "A+" is appended to the list.
+Iteration 2:
+    -The second element of the list is 3, which is not greater than 3.7.
+    -The condition `gpa > 3.7` is false.
+    -The next condition `gpa > 3.3` is also false.
+    -The next condition `gpa > 3.0` is false.
+    -The next condition `gpa > 2.7` is false.
+    -The next condition `gpa > 2.3` is false.
+    -The next condition `gpa > 2.0` is false.
+    -The next condition `gpa > 1.7` is false.
+    -The next condition `gpa > 1.3` is false.
+    -The next condition `gpa > 1.0` is false.
+    -The next condition `gpa > 0.7` is false.
+    -The next condition `gpa > 0.0` is false.
+    -The else block is executed, and the letter grade "E" is appended to the list.
+Iteration 3:
+    -The third element of the list is 1.7, which is not greater than 3.7.
+    -The condition `gpa > 3.7` is false.
+    -The next condition `gpa > 3.3` is false.
+    -The next condition `gpa > 3.0` is false.
+    -The next condition `gpa > 2.7` is false.
+    -The next condition `gpa > 2.3` is false.
+    -The next condition `gpa > 2.0` is false.
+    -The next condition `gpa > 1.7` is true.
+    -Action: The letter grade "C" is appended to the list.
+Iteration 4:
+    -The fourth element of the list is 2, which is not greater than 3.7.
+    -The condition `gpa > 3.7` is false.
+    -The next condition `gpa > 3.3` is false.
+    -The next condition `gpa > 3.0` is false.
+    -The next condition `gpa > 2.7` is false.
+    -The next condition `gpa > 2.3` is true.
+    -Action: The letter grade "B-" is appended to the list.
+Iteration 5:
+    -The fifth element of the list is 3.5, which is not greater than 3.7.
+    -The condition `gpa > 3.7` is false.
+    -The next condition `gpa > 3.3` is false.
+    -The next condition `gpa > 3.0` is false.
+    -The next condition `gpa > 2.7` is true.
+    -Action: The letter grade "B" is appended to the list.
+
+The function returns the list of letter grades: ["A+", "E", "C", "B-", "B"].

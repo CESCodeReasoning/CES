@@ -1,0 +1,11 @@
+The function `digitSum` is called with ( s = "abcCd" ).
+The condition `s == ""` is false, so the else branch is taken.
+The function `ord` returns the ASCII value of a character. If the character is uppercase, its ASCII value is added to the sum. If the character is lowercase, 0 is added to the sum.
+The character 'a' is lowercase, so its ASCII value (97) is not added to the sum.
+The character 'b' is lowercase, so its ASCII value (98) is not added to the sum.
+The character 'c' is lowercase, so its ASCII value (99) is not added to the sum.
+The character 'C' is uppercase, so its ASCII value (67) is added to the sum.
+The character 'd' is lowercase, so its ASCII value (100) is not added to the sum.
+The sum of the ASCII values is 163.
+
+Therefore, the final output of the function `digitSum("abcCd")` is 163.

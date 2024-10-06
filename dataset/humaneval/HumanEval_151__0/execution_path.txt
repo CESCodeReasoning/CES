@@ -1,0 +1,8 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: double_the_difference
+main.py(5):     return sum([i**2 for i in lst if i > 0 and i %
+ --- modulename: main, funcname: <listcomp>
+main.py(5):     return sum([i**2 for i in lst if i > 0 and i %
+main.py(5):     return sum([i**2 for i in lst if i > 0 and i %
+main.py(5):     return sum([i**2 for i in lst if i > 0 and i %
+main.py(5):     return sum([i**2 for i in lst if i > 0 and i %

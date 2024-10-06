@@ -1,0 +1,9 @@
+The function `numerical_letter_grade` is called with ( grades = [0, 0.7] ).
+Inside the function, an empty list `letter_grade` is initialized.
+
+Iteration 1:
+    -The grade 0 is less than 1.0, so it falls into the 'D' category.
+Iteration 2:
+    -The grade 0.7 is less than 1.0, so it falls into the 'D' category.
+
+Therefore, the final output of the function `numerical_letter_grade([0, 0.7])` is ['D', 'D'].

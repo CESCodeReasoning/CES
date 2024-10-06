@@ -1,0 +1,8 @@
+[REASONING]
+The function `median` is called with a list ( l = [3, 1, 2, 4, 5] ).
+The list is sorted ( l = [1, 2, 3, 4, 5] ).
+The length of the list is 5, which is odd.
+Therefore, the if branch is taken and the method returns the middle element of the list ( l[2] = 2 ).
+
+Therefore, the final output of the function `median([3, 1, 2, 4, 5])` is 2.
+[/REASONING]

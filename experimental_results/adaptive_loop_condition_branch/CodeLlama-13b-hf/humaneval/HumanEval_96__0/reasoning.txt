@@ -1,0 +1,55 @@
+The function count_up_to(n) takes an integer n as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (i=2):
+    - `i` is 2, j in the inner loop is 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17.
+    - numbers[i]=2: compare with 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17:
+        - When j = 2 (numbers[j]=3), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 3 (numbers[j]=4), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 4 (numbers[j]=5), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 5 (numbers[j]=6), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 6 (numbers[j]=7), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 7 (numbers[j]=8), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 8 (numbers[j]=9), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 9 (numbers[j]=10), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 10 (numbers[j]=11), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 11 (numbers[j]=12), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 12 (numbers[j]=13), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 13 (numbers[j]=14), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 14 (numbers[j]=15), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 15 (numbers[j]=16), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 16 (numbers[j]=17), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 17 (numbers[j]=18), the condition `i % j == 0` is False, the if branch is not taken.
+Second Iteration (i=3):
+    - `i` is 3, j in the inner loop is 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17.
+    - numbers[i]=3: compare with 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17:
+        - When j = 3 (numbers[j]=4), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 4 (numbers[j]=5), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 5 (numbers[j]=6), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 6 (numbers[j]=7), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 7 (numbers[j]=8), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 8 (numbers[j]=9), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 9 (numbers[j]=10), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 10 (numbers[j]=11), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 11 (numbers[j]=12), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 12 (numbers[j]=13), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 13 (numbers[j]=14), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 14 (numbers[j]=15), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 15 (numbers[j]=16), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 16 (numbers[j]=17), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 17 (numbers[j]=18), the condition `i % j == 0` is False, the if branch is not taken.
+Third Iteration (i=4):
+    - `i` is 4, j in the inner loop is 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17.
+    - numbers[i]=4: compare with 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17:
+        - When j = 4 (numbers[j]=5), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 5 (numbers[j]=6), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 6 (numbers[j]=7), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 7 (numbers[j]=8), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 8 (numbers[j]=9), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 9 (numbers[j]=10), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 10 (numbers[j]=11), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 11 (numbers[j]=12), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 12 (numbers[j]=13), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 13 (numbers[j]=14), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 14 (numbers[j]=15), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 15 (numbers[j]=16), the condition `i % j == 0` is False, the if branch is not taken.

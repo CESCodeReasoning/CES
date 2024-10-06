@@ -1,0 +1,17 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: move_one_ball
+main.py(5):     if len(arr) == 0:
+main.py(7):     sorted_array = sorted(arr)
+main.py(8):     my_arr = []
+main.py(10):     min_value = min(arr)
+main.py(11):     min_index = arr.index(min_value)
+main.py(12):     my_arr = arr[min_index:] + arr[0:min_index]
+main.py(13):     for i in range(len(arr)):
+main.py(14):         if my_arr[i] != sorted_array[i]:
+main.py(13):     for i in range(len(arr)):
+main.py(14):         if my_arr[i] != sorted_array[i]:
+main.py(13):     for i in range(len(arr)):
+main.py(14):         if my_arr[i] != sorted_array[i]:
+main.py(13):     for i in range(len(arr)):
+main.py(14):         if my_arr[i] != sorted_array[i]:
+main.py(15):             return False

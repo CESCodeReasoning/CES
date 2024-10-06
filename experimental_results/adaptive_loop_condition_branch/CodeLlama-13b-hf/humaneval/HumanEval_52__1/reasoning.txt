@@ -1,0 +1,5 @@
+The function `below_threshold` is called with ( l = [1, 20, 4, 10], t = 5 ).
+Inside the function, a variable `e` is initialized to 0.
+
+Iteration 1:
+    - The element 1 is less than 5, so the function returns True.

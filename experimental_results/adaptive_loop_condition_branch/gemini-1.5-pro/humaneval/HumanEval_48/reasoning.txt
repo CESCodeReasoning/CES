@@ -1,0 +1,13 @@
+The function `is_palindrome` is called with ( text = 'xywyx' ).
+Inside the function, a loop iterates from 0 to the length of the text (which is 5).
+Iteration 1:
+    - The character at index 0 ('x') is equal to the character at index 4 ('x').
+Iteration 2:
+    - The character at index 1 ('y') is equal to the character at index 3 ('y').
+Iteration 3:
+    - The character at index 2 ('w') is equal to the character at index 2 ('w').
+Iteration 4:
+    - The character at index 3 ('y') is equal to the character at index 1 ('y').
+Iteration 5:
+    - The character at index 4 ('x') is equal to the character at index 0 ('x').
+Since all the characters match, the function returns True.

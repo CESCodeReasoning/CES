@@ -1,0 +1,21 @@
+The function `do_algebra` is called with (operator = ['//', '*'], operand = [7, 3, 4]).
+The function takes two arguments: a list of operators and a list of operands.
+The first operator is '//', which is the integer division operator. The second operator is '*', which is the multiplication operator.
+The first operand is 7, the second operand is 3, and the third operand is 4.
+
+The function constructs an expression by iterating over the operators and operands.
+The expression starts with the first operand (7).
+For each pair of an operator and an operand, the function appends the operator and the operand to the expression.
+
+First iteration (oprt = '//', oprn = 3):
+    expression = '7' + '//' + '3' results in expression = '7//3'
+Second iteration (oprt = '*', oprn = 4):
+    expression = '7//3' + '*' + '4' results in expression = '7//3*4'
+
+After the loop completes, the function evaluates the expression and returns the result.
+
+The expression '7//3*4' is evaluated as follows:
+    7 // 3 = 2 (integer division)
+    2 * 4 = 8
+So, the function returns 8.
+

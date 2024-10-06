@@ -1,0 +1,33 @@
+[REASONING]
+The function right_angle_triangle takes three integers a, b, and c as input and returns True if the three integers satisfy the Pythagorean theorem, which states that in a right-angle triangle, the square of the length of the hypotenuse is equal to the sum of the squares of the lengths of the other two sides.
+To determine the output of executing the function right_angle_triangle on the input 3, 4, and 5, we need to check if any of the following conditions is satisfied:
+1. a*a == b*b + c*c
+2. b*b == a*a + c*c
+3. c*c == a*a + b*b
+We can check each condition one by one.
+1. a*a == b*b + c*c
+3*3 == 4*4 + 5*5
+9 == 16 + 25
+9 == 41
+[CONDITION]9 == 41[/CONDITION] is False, so this condition is not satisfied.
+2. b*b == a*a + c*c
+4*4 == 3*3 + 5*5
+16 == 9 + 25
+16 == 34
+[CONDITION]16 == 34[/CONDITION] is False, so this condition is not satisfied.
+3. c*c == a*a + b*b
+5*5 == 3*3 + 4*4
+25 == 9 + 16
+25 == 25
+[CONDITION]25 == 25[/CONDITION] is True, so this condition is satisfied.
+Therefore, the output of executing the function right_angle_triangle on the input 3, 4, and 5 is True.
+[/REASONING]
+
+[ANSWER]
+def right_angle_triangle(a, b, c):
+    return a*a == b*b + c*c or b*b == a*a + c*c or c*c == a*a + b*b
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]

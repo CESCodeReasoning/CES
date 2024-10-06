@@ -1,0 +1,6 @@
+from typing import *
+def modp(n: int, p: int):
+    ret = 1 ## [STATE]ret=1[/STATE]
+    for i in range(n): ## [STATE]range(n)=[0, 1, 2][/STATE][STATE]n=3[/STATE]
+        ret = (2 * ret) % p
+    return ret

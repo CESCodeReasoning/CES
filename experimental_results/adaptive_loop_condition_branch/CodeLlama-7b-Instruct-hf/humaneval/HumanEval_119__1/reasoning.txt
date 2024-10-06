@@ -1,0 +1,31 @@
+The function `match_parens` is called with ( lst = ['(()(())', '())())'] ).
+Inside the function, a variable `val` is initialized to 0.
+
+Iteration 1:
+    -The string '(()(())' is passed to the function `check`.
+    -The function `check` iterates through the string '(()(())'.
+    -The first character '(' is encountered, so val becomes 1.
+    -The second character '(' is encountered, so val becomes 2.
+    -The third character '(' is encountered, so val becomes 3.
+    -The fourth character '(' is encountered, so val becomes 4.
+    -The fifth character '(' is encountered, so val becomes 5.
+    -The sixth character ')' is encountered, so val becomes 4.
+    -The seventh character ')' is encountered, so val becomes 3.
+    -The eighth character ')' is encountered, so val becomes 2.
+    -The ninth character ')' is encountered, so val becomes 1.
+    -The tenth character ')' is encountered, so val becomes 0.
+    -The function `check` returns True.
+Iteration 2:
+    -The string '())())' is passed to the function `check`.
+    -The function `check` iterates through the string '())())'.
+    -The first character ')' is encountered, so val becomes -1.
+    -The second character ')' is encountered, so val becomes -2.
+    -The third character ')' is encountered, so val becomes -3.
+    -The fourth character ')' is encountered, so val becomes -4.
+    -The fifth character ')' is encountered, so val becomes -5.
+    -The sixth character '(' is encountered, so val becomes -4.
+    -The seventh character '(' is encountered, so val becomes -3.
+    -The eighth character '(' is encountered, so val becomes -2.
+    -The ninth character '(' is encountered, so val becomes -1.
+    -The tenth character ')' is encountered, so val becomes 0.
+    -The function `check` returns False.

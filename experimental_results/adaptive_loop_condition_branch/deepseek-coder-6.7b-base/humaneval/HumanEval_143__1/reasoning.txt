@@ -1,0 +1,18 @@
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The function splits the sentence into a list of words.
+The function iterates through each word in the list.
+First Iteration (word="go"):
+    - The length of the word is 2, so the if branch is not taken.
+    - The for loop is not executed.
+    - The if branch is not taken.
+    - The word is appended to the new list.
+Second Iteration (word="for"):
+    - The length of the word is 3, so the if branch is not taken.
+    - The for loop is executed.
+    - The if branch is not taken.
+    - The word is appended to the new list.
+Third Iteration (word="it"):
+    - The length of the word is 2, so the if branch is not taken.
+    - The for loop is not executed.
+    - The if branch is not taken.
+    - The word is appended to the new list.

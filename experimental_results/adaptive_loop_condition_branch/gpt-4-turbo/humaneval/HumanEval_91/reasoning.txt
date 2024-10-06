@@ -1,0 +1,8 @@
+The function `is_bored` takes a string `S` as input and checks how many sentences in `S` start with "I ". The function uses the `re.split` method to split the input string `S` into sentences based on punctuation marks (period, question mark, or exclamation mark) followed by whitespace. Each sentence is then checked to see if the first two characters are "I ". The function counts and returns the number of such sentences.
+
+For the input "Hello world", the steps are as follows:
+1. The string "Hello world" is split into sentences. Since there are no punctuation marks, the entire string is considered one sentence, resulting in the list `['Hello world']`.
+2. Each sentence in the list is checked to see if it starts with "I ". In this case, "Hello world" does not start with "I ", so the count remains 0.
+3. The function returns the count, which is 0.
+
+Thus, the output of executing the function `is_bored` on the input "Hello world" is 0.

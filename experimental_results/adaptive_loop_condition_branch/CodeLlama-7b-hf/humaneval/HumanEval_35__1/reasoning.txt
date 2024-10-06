@@ -1,0 +1,17 @@
+The function `max_element` is called with ( l = [3, 2, -3.5, 0] ).
+Inside the function, a variable `m` is initialized to the first element of the list, which is 3.
+The loop iterates through the list.
+First Iteration (e = 3)
+   - The condition `e > m` is true.
+   - Action: `m = e` updates `m` to 3.
+Second Iteration (e = 2)
+   - The condition `e > m` is true.
+   - Action: `m = e` updates `m` to 2.
+Third Iteration (e = -3.5)
+   - The condition `e > m` is false.
+   - Action: `m = e` does not update `m`.
+Fourth Iteration (e = 0)
+   - The condition `e > m` is false.
+   - Action: `m = e` does not update `m`.
+
+Therefore, the final output of the function `max_element([3, 2, -3.5, 0])` is 2.

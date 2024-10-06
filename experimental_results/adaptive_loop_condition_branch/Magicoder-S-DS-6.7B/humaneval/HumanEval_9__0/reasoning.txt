@@ -1,0 +1,15 @@
+The function `rolling_max` is called with ( numbers = [4, 3, 2, 1] ).
+Inside the function, a variable `running_max` is initialized to None and `result` is an empty list.
+
+Iteration 1:
+    -The current number is 4, so running_max becomes 4.
+    -The running_max is appended to the result list.
+Iteration 2:
+    -The current number is 3, so running_max becomes 4 (max(4, 3) = 4).
+    -The running_max is appended to the result list.
+Iteration 3:
+    -The current number is 2, so running_max becomes 4 (max(4, 2) = 4).
+    -The running_max is appended to the result list.
+Iteration 4:
+    -The current number is 1, so running_max becomes 4 (max(4, 1) = 4).
+    -The running_max is appended to the result list.

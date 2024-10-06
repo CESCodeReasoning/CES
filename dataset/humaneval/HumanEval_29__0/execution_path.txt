@@ -1,0 +1,8 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: filter_by_prefix
+main.py(5):     return [x for x in strings if x.startswith(prefix)]
+ --- modulename: main, funcname: <listcomp>
+main.py(5):     return [x for x in strings if x.startswith(prefix)]
+main.py(5):     return [x for x in strings if x.startswith(prefix)]
+main.py(5):     return [x for x in strings if x.startswith(prefix)]
+main.py(5):     return [x for x in strings if x.startswith(prefix)]

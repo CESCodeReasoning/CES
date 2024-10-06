@@ -1,0 +1,9 @@
+from typing import *
+def cycpattern_check(a , b):
+    l = len(b)
+    pat = b + b ## [STATE]pat=xywxyw[/STATE]
+    for i in range(len(a) - l + 1): ## [STATE]i=[0, 1][/STATE][STATE]range(((len(a) - l) + 1))=[0, 1][/STATE][STATE]((len(a) - l) + 1)=[2][/STATE]
+        for j in range(l + 1): ## [STATE]range((l + 1))=[0, 1, 2, 3][/STATE][STATE](l + 1)=[3][/STATE]
+            if a[i:i+l] == pat[j:j+l]: ## [CONDITION](a[i:i+l] == pat[j:j+l])=[False, False, True, False][/CONDITION][BRANCH]taken=[F, F, T, F][/BRANCH]
+                return True
+    return False

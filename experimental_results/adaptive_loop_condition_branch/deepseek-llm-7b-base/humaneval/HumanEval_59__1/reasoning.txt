@@ -1,0 +1,22 @@
+The function `largest_prime_factor` is called with ( n = 63 ).
+Inside the function, a variable `largest` is initialized to 1.
+The loop iterates from 2 through 63 (since ( n = 63 )).
+First Iteration (i = 2)
+   - `i` is 2, which satisfies ( 2 <= i < 63 ).
+   - The condition `i < 63` is true.
+   - Action: `largest = max(largest, i)` updates `largest` to 2.
+Second Iteration (i = 3)
+   - `i` is 3, which satisfies ( 3 <= i < 63 ).
+   - The condition `i < 63` is true.
+   - Action: `largest = max(largest, i)` updates `largest` to 3.
+Third Iteration (i = 4)
+   - `i` is 4, which satisfies ( 4 <= i < 63 ).
+   - The condition `i < 63` is true.
+   - Action: `largest = max(largest, i)` updates `largest` to 4.
+Fourth Iteration (i = 5)
+   - `i` is 5, which satisfies ( 5 <= i < 63 ).
+   - The condition `i < 63` is true.
+   - Action: `largest = max(largest, i)` updates `largest` to 5.
+Fifth Iteration (i = 6)
+   - `i` is 6, which satisfies ( 6 <= i < 63 ).
+  

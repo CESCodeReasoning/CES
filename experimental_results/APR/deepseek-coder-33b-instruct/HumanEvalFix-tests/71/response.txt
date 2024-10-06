@@ -1,0 +1,26 @@
+The bug in the `has_close_elements` function is that it is calculating the distance as `elem - elem2`, but it should be calculating the absolute distance as `abs(elem - elem2)`.
+
+The bug in the `triangle_area` function is that it is not checking if the three sides form a valid triangle. It should be checking if the sum of any two sides is greater than the third side.
+
+Here is the fixed code:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def triangle_area(a, b, c):
+    if a + b <= c or a + c <= b or b + c <= a:
+        return -1 
+    s = (a + b + c)    
+    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+    area = round(area, 2)
+    return area
+```

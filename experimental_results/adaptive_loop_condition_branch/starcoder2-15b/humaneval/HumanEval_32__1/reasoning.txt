@@ -1,0 +1,8 @@
+The function `find_zero` is called with the list of coefficients `xs = [5, 8, -12, 4, 23, 2, 3, 11, 12, -10]`.
+The function initializes two variables `begin` and `end` to -1.0 and 1.0 respectively.
+The first while loop iterates until the condition `(poly(xs, begin) * poly(xs, end) > 0)` is false.
+Inside the loop, the variables `begin` and `end` are multiplied by 2.0.
+The second while loop iterates until the condition `(end - begin > 1e-10)` is false.
+Inside the loop, the variable `center` is calculated as the average of `begin` and `end`.
+The condition `(poly(xs, center) * poly(xs, begin) > 0)` is checked. If it is true, `begin` is set to `center`, otherwise `end` is set to `center`.
+The function returns the value of `begin` after the loop completes.

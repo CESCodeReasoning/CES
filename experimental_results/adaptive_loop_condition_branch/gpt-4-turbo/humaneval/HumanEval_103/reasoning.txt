@@ -1,0 +1,11 @@
+The function `rounded_avg` is called with parameters (n = 1, m = 5).
+1. The function first checks if `m < n`. In this case, since m (5) is greater than n (1), the condition is false.
+2. The function initializes `summation` to 0.
+3. A loop iterates from `n` to `m+1`. Here, `n` is 1 and `m+1` is 6, so the loop iterates over the range [1, 2, 3, 4, 5].
+   - First Iteration (i = 1): `summation` becomes 1 (0 + 1).
+   - Second Iteration (i = 2): `summation` becomes 3 (1 + 2).
+   - Third Iteration (i = 3): `summation` becomes 6 (3 + 3).
+   - Fourth Iteration (i = 4): `summation` becomes 10 (6 + 4).
+   - Fifth Iteration (i = 5): `summation` becomes 15 (10 + 5).
+4. After the loop, the average is calculated as `summation / (m - n + 1)`, which is `15 / (5 - 1 + 1) = 15 / 5 = 3`.
+5. The function then returns the binary representation of the rounded average using `bin(round(3))`, which is `bin(3)` resulting in `'0b11'`.

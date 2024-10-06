@@ -1,0 +1,9 @@
+The function `is_prime` is called with the argument `n = 11 * 7` which evaluates to `77`.
+1. The function first checks if `n` is less than 2. Since `77` is greater than `2`, this condition is false.
+2. The function then enters a loop that iterates from `2` to `76` (since `n - 1 = 76`).
+3. During the iterations:
+   - When `k = 7`, `77 % 7` equals `0`, indicating that `77` is divisible by `7`.
+   - As a result, the function returns `False` because `77` is not a prime number (it has a divisor other than `1` and itself).
+4. The loop does not complete all iterations because it exits early when a divisor is found.
+
+Therefore, the output of the function `is_prime(77)` is `False`, indicating that `77` is not a prime number.

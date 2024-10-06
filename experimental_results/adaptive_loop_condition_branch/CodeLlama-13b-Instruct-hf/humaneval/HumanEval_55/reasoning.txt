@@ -1,0 +1,5 @@
+The function `fib` is called with ( n = 10 ).
+`n` is 10, which satisfies ( n == 0 ) and ( n == 1 ) is false.
+The if branch is taken and the method returns `fib(n - 1) + fib(n - 2)`.
+
+Therefore, the final output of the function `fib(10)` is 55.

@@ -1,0 +1,32 @@
+The function select_words(s, n) takes a string s and an integer n as its parameters.
+The function first splits the string s into a list of words using the split() method.
+The outer loop iterates through each word in the list.
+In the inner loop, for each word indexed by i in the outer loop, count the number of consonants in the word.
+First Iteration (i=0):
+    - `i` is 0, word is "Hello", n_consonants is 2.
+    - word[i].lower() not in ["a", "e", "i", "o", "u"]:
+        - When i = 0 (word[i] = "H"), the condition is True, the if branch is taken.
+        - When i = 1 (word[i] = "e"), the condition is False, the if branch is not taken.
+        - When i = 2 (word[i] = "l"), the condition is True, the if branch is taken.
+        - When i = 3 (word[i] = "l"), the condition is False, the if branch is not taken.
+        - When i = 4 (word[i] = "o"), the condition is True, the if branch is taken.
+    - n_consonants == n:
+        - When n = 4, the condition is True, the if branch is taken.
+        - When n = 3, the condition is False, the if branch is not taken.
+        - When n = 2, the condition is False, the if branch is not taken.
+        - When n = 1, the condition is False, the if branch is not taken.
+        - When n = 0, the condition is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, word is "world", n_consonants is 3.
+    - word[i].lower() not in ["a", "e", "i", "o", "u"]:
+        - When i = 0 (word[i] = "w"), the condition is True, the if branch is taken.
+        - When i = 1 (word[i] = "o"), the condition is False, the if branch is not taken.
+        - When i = 2 (word[i] = "r"), the condition is True, the if branch is taken.
+        - When i = 3 (word[i] = "l"), the condition is False, the if branch is not taken.
+        - When i = 4 (word[i] = "d"), the condition is True, the if branch is taken.
+    - n_consonants == n:
+        - When n = 4, the condition is True, the if branch is taken.
+        - When n = 3, the condition is False, the if branch is not taken.
+        - When n = 2, the condition is False, the if branch is not taken.
+        - When n = 1, the condition is False, the if branch is not taken.
+        - When n = 0, the condition is False, the if branch is not taken.

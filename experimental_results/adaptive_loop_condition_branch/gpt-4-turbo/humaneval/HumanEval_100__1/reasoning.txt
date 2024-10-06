@@ -1,0 +1,11 @@
+The function `make_a_pile` takes an integer `n` as input and returns a list. The list is generated using a list comprehension that iterates over a range of `n` (from 0 to n-1). For each index `i` in this range, the expression `n + 2 * i` is computed and added to the list. This expression essentially starts from `n` and increments by 2 for each subsequent element.
+
+To determine the output of executing the function `make_a_pile` on the input `6`, we can manually compute the list:
+- When `i = 0`, the expression is `6 + 2*0 = 6`
+- When `i = 1`, the expression is `6 + 2*1 = 8`
+- When `i = 2`, the expression is `6 + 2*2 = 10`
+- When `i = 3`, the expression is `6 + 2*3 = 12`
+- When `i = 4`, the expression is `6 + 2*4 = 14`
+- When `i = 5`, the expression is `6 + 2*5 = 16`
+
+Thus, the output of executing the function `make_a_pile` on the input `6` is the list `[6, 8, 10, 12, 14, 16]`.

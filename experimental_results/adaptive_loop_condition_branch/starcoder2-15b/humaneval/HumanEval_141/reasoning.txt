@@ -1,0 +1,12 @@
+The function `file_name_check` is called with ( file_name = "example.txt" ).
+Inside the function, the variable `suf` is initialized to ['txt', 'exe', 'dll'].
+The variable `lst` is initialized to the result of splitting the file_name by the '.' character.
+The file_name is split into ['example', 'txt'].
+The length of `lst` is 2, which does not equal 2.
+The condition `len(lst)!= 2` is false.
+The `if` branch is not taken and the function continues to the next `if` statement.
+The variable `lst[1]` is 'txt', which is not in the list `suf`.
+The condition `not lst[1] in suf` is true.
+The `if` branch is taken and the function returns 'No'.
+
+Therefore, the final output of the function `file_name_check("example.txt")` is 'No'.

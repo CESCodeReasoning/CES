@@ -1,0 +1,16 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: intersperse
+main.py(5):     if not numbers:
+main.py(8):     result = []
+main.py(10):     for n in numbers[:-1]:
+main.py(11):         result.append(n)
+main.py(12):         result.append(delimeter)
+main.py(10):     for n in numbers[:-1]:
+main.py(11):         result.append(n)
+main.py(12):         result.append(delimeter)
+main.py(10):     for n in numbers[:-1]:
+main.py(11):         result.append(n)
+main.py(12):         result.append(delimeter)
+main.py(10):     for n in numbers[:-1]:
+main.py(14):     result.append(numbers[-1])
+main.py(16):     return result

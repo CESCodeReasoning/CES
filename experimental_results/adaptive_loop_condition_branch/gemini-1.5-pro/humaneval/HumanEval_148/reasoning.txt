@@ -1,0 +1,6 @@
+The function `bf` is called with ( planet1 = "Jupiter", planet2 = "Neptune" ).
+The function first checks if both `planet1` and `planet2` are valid planet names and if they are not the same planet.
+Since both `planet1` and `planet2` are valid planet names and they are not the same planet, the function proceeds to calculate the indices of `planet1` and `planet2` in the `planet_names` tuple.
+The index of `planet1` is 4 and the index of `planet2` is 7.
+Since `planet1_index` is less than `planet2_index`, the function returns the planets between `planet1` and `planet2` (exclusive).
+Therefore, the final output of the function `bf("Jupiter", "Neptune")` is `('Saturn', 'Uranus')`.

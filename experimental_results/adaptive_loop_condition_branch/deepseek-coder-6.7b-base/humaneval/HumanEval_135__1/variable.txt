@@ -1,0 +1,11 @@
+from typing import *
+
+
+def can_arrange(arr):
+    ind = -1
+    i = 1
+    while i < len(arr): ## [STATE](i < len(arr))=[True, True, True, True][/STATE][STATE]i=[1, 2, 3, 4][/STATE][STATE]len(arr)=[5][/STATE]
+        if arr[i] < arr[i - 1]: ## [CONDITION](arr[i] < arr[i - 1])=[False, True, False, False][/CONDITION][BRANCH]taken=[N, Y, N, N][/BRANCH]
+            ind = i
+        i += 1
+    return ind

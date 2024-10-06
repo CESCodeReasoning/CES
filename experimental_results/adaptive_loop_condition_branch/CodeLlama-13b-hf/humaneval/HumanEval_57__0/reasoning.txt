@@ -1,0 +1,5 @@
+The function `monotonic` is called with ( l = [4, 1, 0, -10] ).
+`l` is [4, 1, 0, -10], which satisfies ( l == sorted(l) or l == sorted(l, reverse=True) ).
+The condition `l == sorted(l)` is true, therefore the if branch is taken and the method returns True
+
+Therefore, the final output of the function `monotonic([4, 1, 0, -10])` is True.

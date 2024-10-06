@@ -1,0 +1,8 @@
+The function `find_zero` is called with ( xs = [-6, 11, -6, 1] ).
+Inside the function, two variables `begin` and `end` are initialized to -1.0 and 1.0 respectively.
+The loop checks if the polynomial function evaluated at `begin` and `end` have the same sign. If they have the same sign, it doubles `end` until they have different signs.
+Then, it enters a while loop that continues as long as the difference between `end` and `begin` is greater than 1e-10.
+Inside the loop, it calculates the center between `begin` and `end`.
+Then, it checks if the polynomial function evaluated at `center` and `begin` have the same sign. If they have the same sign, it updates `begin` to `center`, otherwise it updates `end` to `center`.
+This process continues until the difference between `end` and `begin` is less than 1e-10.
+Finally, it returns the value of `begin`, which is the approximate zero of the polynomial.

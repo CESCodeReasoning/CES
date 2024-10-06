@@ -1,0 +1,9 @@
+The function `any_int` is called with ( x = 2, y = 1, z = 1 ).
+`x` is an integer, which satisfies (isinstance(x, int)).
+`y` is an integer, which satisfies (isinstance(y, int)).
+`z` is an integer, which satisfies (isinstance(z, int)).
+The if branch is taken.
+`x` is 2, which satisfies ( x + y == z ) and ( x + z == y ) but doesn't satisfy ( y + z == x ). Thus, the condition `(x + y == z) or (x + z == y) or (y + z == x)` is False, and the branch is not taken.
+The else branch is taken.
+
+Therefore, the final output of the function `any_int(2, 1, 1)` is False.

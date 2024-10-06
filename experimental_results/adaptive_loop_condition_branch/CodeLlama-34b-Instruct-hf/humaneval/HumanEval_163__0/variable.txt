@@ -1,0 +1,15 @@
+from typing import *
+
+
+def generate_integers(a, b):
+    [REASONING]
+    The function generate_integers takes two integers a and b as input.
+    It first finds the minimum and maximum of a and b using the built-in min and max functions.
+    It then creates a list of integers from the minimum to the maximum (inclusive) using the range function.
+    Finally, it filters the list to include only the even integers using a list comprehension.
+    The output of the function is the filtered list of integers.
+    [/REASONING]
+    lower = max(2, min(a, b))
+    upper = min(8, max(a, b))
+
+    return [i for i in range(lower, upper + 1) if i % 2 == 0]

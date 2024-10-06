@@ -1,0 +1,10 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: greatest_common_divisor
+main.py(3):     while b:
+main.py(4):         a, b = b, a % b
+main.py(3):     while b:
+main.py(4):         a, b = b, a % b
+main.py(3):     while b:
+main.py(4):         a, b = b, a % b
+main.py(3):     while b:
+main.py(5):     return a

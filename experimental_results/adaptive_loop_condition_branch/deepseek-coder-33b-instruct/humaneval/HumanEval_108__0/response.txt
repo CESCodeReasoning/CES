@@ -1,0 +1,32 @@
+
+[REASONING]
+The function `count_nums` is called with ( arr = [1] ).
+The function `digits_sum` is defined inside `count_nums`.
+The function `digits_sum` takes an integer `n` as input.
+The condition `n < 0` is not true for `n = 1`, so the else branch is taken.
+The function `digits_sum` converts the integer `n` into a list of digits.
+The first digit is multiplied by `neg`, which is 1.
+The sum of the digits is returned.
+The function `count_nums` returns the count of positive numbers in the list of sums of digits of the elements in `arr`.
+
+Therefore, the final output of the function `count_nums([1])` is 1.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def count_nums(arr):
+    def digits_sum(n):
+        neg = 1
+        if n < 0: ## [CONDITION](n < 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+            n, neg = -1 * n, -1
+        n = [int(i) for i in str(n)]
+        n[0] = n[0] * neg
+        return sum(n)
+    return len(list(filter(lambda x: x > 0, [digits_sum(i) for i in arr])))
+[/ANSWER]
+
+[OUTPUT]
+1
+[/OUTPUT]

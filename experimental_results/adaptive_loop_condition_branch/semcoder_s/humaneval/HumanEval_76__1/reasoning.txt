@@ -1,0 +1,14 @@
+The function `is_simple_power` is called with ( x = 128, n = 4 ).
+The condition `(n == 1)` is checked. Since `n` is not equal to 1, the if branch is not taken.
+The loop iterates until `power` is greater than or equal to `x`.
+First Iteration (power = 1):
+    - power * n = 1 * 4 = 4
+Second Iteration (power = 4):
+    - power * n = 4 * 4 = 16
+Third Iteration (power = 16):
+    - power * n = 16 * 4 = 64
+Fourth Iteration (power = 64):
+    - power * n = 64 * 4 = 256
+Fifth Iteration (power = 256):
+    - power * n = 256 * 4 = 1024
+After the loop completes, `power` is equal to `x`, so the function returns `True`.

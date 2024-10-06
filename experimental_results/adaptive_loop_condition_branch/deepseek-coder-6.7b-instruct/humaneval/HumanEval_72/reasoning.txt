@@ -1,0 +1,3 @@
+The function `will_it_fly` is called with ( q = [3, 2, 3], w = 9 ).
+The first condition checks if the sum of the elements in the list `q` is greater than `w`. Since the sum of [3, 2, 3] is 8 which is not greater than 9, the first condition is not met.
+The while loop then checks if the elements in the list `q` are the same when read from the start and end. The elements at the start and end of the list are 3 and 3, which are the same. The condition is met, so the function returns True.

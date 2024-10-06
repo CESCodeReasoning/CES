@@ -1,0 +1,5 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: any_int
+main.py(4):     if isinstance(x,int) and isinstance(y,int) and isinstance(z,int):
+main.py(5):         if (x+y==z) or (x+z==y) or (y+z==x):
+main.py(6):             return True

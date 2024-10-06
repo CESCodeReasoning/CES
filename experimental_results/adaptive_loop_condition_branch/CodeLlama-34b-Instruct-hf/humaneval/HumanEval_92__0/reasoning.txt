@@ -1,0 +1,4 @@
+The function `any_int` is called with ( x = 2, y = 1, z = 1 ).
+`x`, `y`, and `z` are all integers, so the first if branch is taken.
+The condition `(x + y == z) or (x + z == y) or (y + z == x)` is true, since `2 + 1 == 1`.
+Therefore, the function returns `True`.

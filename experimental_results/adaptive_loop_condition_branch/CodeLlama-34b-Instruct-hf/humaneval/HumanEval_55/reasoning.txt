@@ -1,0 +1,8 @@
+The function `fib` is called with ( n = 10 ).
+Inside the function, the first condition `n == 0` is checked.
+Since `n` is not equal to 0, the condition is false and the code moves on to the next condition `n == 1`.
+Since `n` is not equal to 1, the condition is also false and the code moves on to the final condition `n > 1`.
+Since `n` is greater than 1, the final condition is true and the code executes the return statement.
+The return statement calculates the nth Fibonacci number by calling the function recursively with (n - 1) and (n - 2) as arguments.
+The function is called recursively until the base case is reached, where `n` is either 0 or 1.
+Once the base case is reached, the function returns the calculated Fibonacci number.

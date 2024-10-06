@@ -1,0 +1,5 @@
+The function `filter_by_substring` is designed to filter a list of strings, returning only those strings that contain a specified substring. The function takes two parameters: `strings`, which is a list of strings, and `substring`, which is the string pattern to search for within each string in the list.
+
+In this specific call to `filter_by_substring`, the `strings` list is empty (`[]`), and the `substring` is 'john'. Since the list is empty, there are no strings to check for the presence of the substring 'john'. Therefore, the list comprehension `[x for x in strings if substring in x]` will iterate over an empty list and consequently return an empty list as well.
+
+Thus, the output of this function call will be an empty list (`[]`).

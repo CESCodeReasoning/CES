@@ -1,0 +1,9 @@
+The function `order_by_points` is called with ( nums = [1, 11, -1, -11, -12] ).
+The function `digits_sum` is defined within `order_by_points`.
+The `sorted` function is used to sort the `nums` list based on the `digits_sum` function.
+The `digits_sum` function calculates the sum of the digits of a number.
+For each number in `nums`, the `digits_sum` function is applied to calculate the sum of its digits.
+The `sorted` function uses this sum to sort the numbers in `nums`.
+The sorted list is returned as the output.
+
+Therefore, the final output of the function `order_by_points([1, 11, -1, -11, -12])` is the sorted list of the numbers based on the sum of their digits.

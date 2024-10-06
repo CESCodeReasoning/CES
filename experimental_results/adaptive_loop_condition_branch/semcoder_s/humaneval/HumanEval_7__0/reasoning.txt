@@ -1,0 +1,6 @@
+The function `filter_by_substring` takes a list of strings and a substring as input and returns a new list containing only the strings that contain the specified substring.
+
+- The list comprehension `[x for x in strings if substring in x]` iterates over each string in the input list and includes it in the output list only if the substring is found in that string.
+- For the input `filter_by_substring(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx')`, the output will be `['xxx', 'xxxAAA', 'xxx']`.
+
+Therefore, the output of executing the function `filter_by_substring(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx')` is `['xxx', 'xxxAAA', 'xxx']`.

@@ -1,0 +1,4 @@
+The function reverse_delete takes two inputs: a string s and a character c.
+The function first removes all occurrences of the character c from the string s using a list comprehension.
+Then, it returns a tuple containing the modified string and a boolean value indicating whether the string is a palindrome or not.
+To determine whether the string is a palindrome, the function checks if the string is equal to its reverse.

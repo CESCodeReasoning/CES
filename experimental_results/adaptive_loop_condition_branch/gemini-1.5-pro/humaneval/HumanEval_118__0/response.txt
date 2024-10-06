@@ -1,0 +1,36 @@
+[REASONING]
+The function `get_closest_vowel` is called with ( word = "full" ).
+The length of the word is 4, which is greater than or equal to 3.
+The loop iterates from ( len(word) - 2 ) to 1, decrementing by 1 in each iteration.
+Iteration 1:
+    - i = 2
+    - word[i] = 'l'
+    - 'l' is not in vowels
+Iteration 2:
+    - i = 1
+    - word[i] = 'u'
+    - 'u' is in vowels
+    - word[i + 1] = 'l' is not in vowels
+    - word[i - 1] = 'f' is not in vowels
+    - The condition is true, so the function returns 'u'.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def get_closest_vowel(word):
+    if len(word) < 3: ## [CONDITION](len(word) < 3)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return ""
+
+    vowels = {"a", "e", "i", "o", "u", "A", "E", 'O', 'U', 'I'}
+    for i in range(len(word) - 2, 0, -1): ## [STATE]i=[2, 1][/STATE][STATE]range((len(word) - 2), 0, (- 1))=[2, 1][/STATE][STATE](len(word) - 2)=[2][/STATE]
+        if word[i] in vowels: ## [CONDITION](word[i] in vowels)=[False, True][/CONDITION][BRANCH]taken=[N, Y][/BRANCH]
+            if (word[i + 1] not in vowels) and (word[i - 1] not in vowels): ## [CONDITION]((word[i + 1] not in vowels) and (word[i - 1] not in vowels))=[True, True][/CONDITION][CONDITION](word[i + 1] not in vowels)=[True, True][/CONDITION][CONDITION](word[i - 1] not in vowels)=[True, True][/CONDITION][BRANCH]taken=[Y, Y][/BRANCH]
+                return word[i]
+    return ""
+[/ANSWER]
+
+[OUTPUT]
+u
+[/OUTPUT]

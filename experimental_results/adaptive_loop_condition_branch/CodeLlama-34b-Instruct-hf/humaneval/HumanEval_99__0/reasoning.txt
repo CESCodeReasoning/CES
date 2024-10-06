@@ -1,0 +1,12 @@
+The function `closest_integer` is called with the argument "14.5".
+Inside the function, the first if statement checks if the argument `value` contains exactly one decimal point.
+Since "14.5" contains exactly one decimal point, the if branch is taken.
+The while loop removes any trailing zeros from the argument `value`.
+Since "14.5" does not have any trailing zeros, the while loop does not execute.
+The next line converts the argument `value` to a float and stores it in the variable `num`.
+The second if statement checks if the last two characters of the argument `value` are ".5".
+Since the last two characters of "14.5" are ".5", the if branch is taken.
+The next line checks if the float `num` is greater than 0.
+Since 14.5 is greater than 0, the if branch is taken.
+The function `ceil` is called with the argument `num`, which returns the smallest integer greater than or equal to `num`.
+The function returns the result of `ceil(num)`, which is 15.

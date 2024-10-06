@@ -1,0 +1,41 @@
+The function get_max_triples(n) takes an integer n as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, ..., 99.
+    - `A[i]` is 1, `A[j]` is 2, 3, ..., 99.
+    - `(A[i] + A[j]) % 3 == 0` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, ..., 99.
+    - `A[i]` is 4, `A[j]` is 5, 6, ..., 99.
+    - `(A[i] + A[j]) % 3 == 0` is False, the if branch is not taken.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, ..., 99.
+    - `A[i]` is 9, `A[j]` is 10, 11, ..., 99.
+    - `(A[i] + A[j]) % 3 == 0` is False, the if branch is not taken.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4, 5, ..., 99.
+    - `A[i]` is 16, `A[j]` is 17, 18, ..., 99.
+    - `(A[i] + A[j]) % 3 == 0` is False, the if branch is not taken.
+...
+...
+...
+Ninth Iteration (i=9):
+    - `i` is 9, j in the inner loop is 10, 11, ..., 99.
+    - `A[i]` is 81, `A[j]` is 82, 83, ..., 99.
+    - `(A[i] + A[j]) % 3 == 0` is False, the if branch is not taken.
+Tenth Iteration (i=10):
+    - `i` is 10, j in the inner loop is 11, 12, ..., 99.
+    - `A[i]` is 84, `A[j]` is 85, 86, ..., 99.
+    - `(A[i] + A[j]) % 3 == 0` is False, the if branch is not taken.
+...
+...
+...
+Ninety-Ninth Iteration (i=99):
+    - `i` is 99, j in the inner loop is 100.
+    - `A[i]` is 9801, `A[j]` is 9802.
+    - `(A[i] + A[j]) % 3 == 0` is False, the if branch is not taken.
+One Hundredth Iteration (i=100):
+    - `i` is 100, j in the inner loop is 101.
+    - `A[i]` is 9804, `A[j]` is 9805.
+    - `(A[i] + A[j]) % 3 == 0` is False, the if branch is not taken.

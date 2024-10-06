@@ -1,0 +1,17 @@
+The function `largest_prime_factor` is called with `n = 330`.
+Inside the function, a variable `largest` is initialized to 1.
+The loop iterates from 2 through 330 (since `n = 330`).
+
+For each iteration, the function checks if `j` is a divisor of `n` and if `j` is a prime number using the nested `is_prime` function.
+
+The `is_prime` function checks if a number `k` is less than 2 (returns False if true), and then checks divisibility by all numbers from 2 to `k-1`. If any number divides `k`, it returns False; otherwise, it returns True indicating `k` is prime.
+
+Here are the prime factors of 330:
+- 2: Divides 330 and is prime.
+- 3: Divides 330 and is prime.
+- 5: Divides 330 and is prime.
+- 11: Divides 330 and is prime.
+
+The largest prime factor found is 11.
+
+Therefore, the final output of the function `largest_prime_factor(330)` is 11.

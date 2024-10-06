@@ -1,0 +1,20 @@
+The function `is_prime` is called with (n = 10 ).
+Inside the function, a variable `n` is initialized to 10.
+The loop iterates from 2 to 10 (since n = 10 ).
+First Iteration (i = 2):
+    `n % i` evaluates to 0 since 10 % 2 = 0.
+Second Iteration (i = 3):
+    `n % i` evaluates to 0 since 10 % 3 = 0.
+Third Iteration (i = 4):
+    `n % i` evaluates to 0 since 10 % 4 = 0.
+Fourth Iteration (i = 5):
+    `n % i` evaluates to 0 since 10 % 5 = 0.
+Fifth Iteration (i = 6):
+    `n % i` evaluates to 0 since 10 % 6 = 0.
+Sixth Iteration (i = 7):
+    `n % i` evaluates to 0 since 10 % 7 = 0.
+Seventh Iteration (i = 8):
+    `n % i` evaluates to 0 since 10 % 8 = 0.
+Eighth Iteration (i = 9):
+    `n % i` evaluates to 0 since 10 % 9 = 0.
+After the loop completes, the function returns `False` since 10 is not a prime number.

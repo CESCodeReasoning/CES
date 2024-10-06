@@ -1,0 +1,15 @@
+The function `minSubArraySum` is called with ( nums = [1, -1] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+
+Iteration 1:
+    - `num` is 1, `s` becomes 1.
+    - `s` is greater than 0, so `s` remains 1.
+    - `max_sum` is updated to 1.
+Iteration 2:
+    - `num` is -1, `s` becomes 0.
+    - `s` is less than 0, so `s` becomes 0.
+    - `max_sum` is updated to 0.
+
+The final value of `max_sum` is 0, and the final value of `min_sum` is -0, which is 0.
+
+Therefore, the final output of the function `minSubArraySum([1, -1])` is 0.

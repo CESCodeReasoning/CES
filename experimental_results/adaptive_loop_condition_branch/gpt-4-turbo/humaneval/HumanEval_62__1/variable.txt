@@ -1,0 +1,6 @@
+from typing import *
+
+
+def derivative(xs: list):
+    # [STATE] xs = [3, 2, 1] [/STATE]
+    return [(i * x) for i, x in enumerate(xs)][1:]  # [STATE] [(i * x) for i, x in enumerate(xs)] = [0, 2, 2] [/STATE]

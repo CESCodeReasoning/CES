@@ -1,0 +1,26 @@
+[REASONING]
+The function `pluck` is called with ( arr = [5, 0, 3, 0, 4, 2] ).
+The first condition `len(arr) == 0` is false, so the if branch is not taken.
+The list comprehension `list(filter(lambda x: x % 2 == 0, arr))` creates a new list `evens` containing the even numbers from `arr`.
+The second condition `evens == []` is false, so the if branch is not taken.
+The function returns a list containing the minimum even number in `arr` and its index.
+The minimum even number in `arr` is 0, and its index is 1.
+Therefore, the final output of the function `pluck([5, 0, 3, 0, 4, 2])` is `[0, 1]`.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def pluck(arr):
+    if (len(arr) == 0): ## [CONDITION](len(arr) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return []
+    evens = list(filter(lambda x: x % 2 == 0, arr))
+    if (evens == []): ## [CONDITION](evens == [])=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return []
+    return [min(evens), arr.index(min(evens))]
+[/ANSWER]
+
+[OUTPUT]
+[0, 1]
+[/OUTPUT]

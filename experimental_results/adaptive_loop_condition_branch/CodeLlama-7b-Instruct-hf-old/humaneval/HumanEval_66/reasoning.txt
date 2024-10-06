@@ -1,0 +1,6 @@
+The function `digitSum` is called with ( s = "You arE Very Smart" ).
+The condition `s == ""` is false, therefore the if branch is not taken.
+The return statement returns the sum of the ordinal values of the characters in `s` that are uppercase.
+The `ord()` method returns the integer value of a character, and the `isupper()` method returns a boolean indicating whether a character is uppercase or not.
+The `sum()` method returns the sum of the values in an iterable.
+Therefore, the final output of the function `digitSum("You arE Very Smart")` is 121.

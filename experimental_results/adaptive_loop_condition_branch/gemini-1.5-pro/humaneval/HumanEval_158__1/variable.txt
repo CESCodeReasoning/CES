@@ -1,0 +1,8 @@
+from typing import *
+
+
+def find_max(words):
+    # Sort the list of strings by the number of unique characters in each string in descending order.
+    # [STATE]words = sorted(words, key=lambda x: (-len(set(x)), x))[/STATE]
+    # Return the first string in the sorted list.
+    # [STATE]return words[0][/STATE]

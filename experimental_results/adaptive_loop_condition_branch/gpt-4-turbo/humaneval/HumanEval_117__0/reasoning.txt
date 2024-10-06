@@ -1,0 +1,18 @@
+The function `select_words(s, n)` takes a string `s` and an integer `n` as parameters. The goal is to find all words in the string `s` that have exactly `n` consonants.
+
+The string "Hello world" is split into the words ["Hello", "world"].
+- For each word, the function counts the number of consonants.
+- The word "Hello" has 3 consonants ('H', 'l', 'l').
+- The word "world" has 4 consonants ('w', 'r', 'l', 'd').
+
+Detailed Iteration:
+1. First word: "Hello"
+   - Iterates over each character: 'H', 'e', 'l', 'l', 'o'.
+   - Counts consonants: 3 ('H', 'l', 'l').
+   - Since 3 consonants do not equal the target 4, "Hello" is not added to the result list.
+2. Second word: "world"
+   - Iterates over each character: 'w', 'o', 'r', 'l', 'd'.
+   - Counts consonants: 4 ('w', 'r', 'l', 'd').
+   - Since 4 consonants equal the target 4, "world" is added to the result list.
+
+The function returns the list containing the word "world" as it meets the condition of having exactly 4 consonants.

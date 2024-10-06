@@ -1,0 +1,20 @@
+```response
+                depth -= 1
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(word: str) -> bool:
+    for idx in range(len(word) // 2):
+        if word[idx] != word[-idx - 1]:
+            return False
+    return True
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("abba")
+    assert is_palindrome("abcba")
+    assert is_palindrome("abccba")
+   

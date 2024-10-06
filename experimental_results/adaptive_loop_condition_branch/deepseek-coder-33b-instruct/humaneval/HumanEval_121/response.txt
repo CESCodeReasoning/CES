@@ -1,0 +1,10 @@
+
+[REASONING]
+The function solution takes a list of integers as input. It then uses a list comprehension to create a new list that includes only the elements at even indices (0-indexed) and are odd. It then sums up these elements and returns the result.
+
+To determine the output of executing the function solution on the input [5, 8, 7, 1], we need to find the elements at even indices (0-indexed) that are odd. In this case, the elements at even indices are 5 and 7. The sum of these elements is 5 + 7 = 12.
+[/REASONING]
+
+[OUTPUT]
+12
+[/OUTPUT]

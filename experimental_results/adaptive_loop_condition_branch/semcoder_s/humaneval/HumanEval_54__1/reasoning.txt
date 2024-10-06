@@ -1,0 +1,8 @@
+The function `same_chars` takes two strings `s0` and `s1` as input and returns `True` if the characters in `s0` and `s1` are the same, ignoring the order.
+
+To determine the output of executing the function `same_chars` on the input `'eabcd'` and `'dddddddabc'`, we need to compare the unique characters in each string.
+
+- The unique characters in `'eabcd'` are `'e', 'a', 'b', 'c', 'd'`.
+- The unique characters in `'dddddddabc'` are `'d', 'a', 'b', 'c'`.
+
+Since the unique characters in the two strings are not the same, the function will return `False`.

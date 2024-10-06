@@ -1,0 +1,35 @@
+The function words_in_sentence(sentence) takes a string as its parameter.
+The outer loop iterates through each word in the sentence.
+In the inner loop, for each word indexed by i in the outer loop, compare it with every other word that comes after it in the sentence.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4 and 5.
+    - word=go: compare with for, it:
+        - When j = 1 (word=for), the condition `len(word) == 1` is False, the if branch is not taken.
+        - When j = 2 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+        - When j = 3 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+        - When j = 4 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+        - When j = 5 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4 and 5.
+    - word=for: compare with go, it:
+        - When j = 2 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+        - When j = 3 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+        - When j = 4 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+        - When j = 5 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4 and 5.
+    - word=it: compare with go, for:
+        - When j = 3 (word=for), the condition `len(word) == 1` is False, the if branch is not taken.
+        - When j = 4 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+        - When j = 5 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4 and 5.
+    - word=it: compare with go, for:
+        - When j = 4 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+        - When j = 5 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+Fifth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5.
+    - word=it: compare with go, for:
+        - When j = 5 (word=it), the condition `len(word) == 1` is False, the if branch is not taken.
+Sixth iteration (i=5):
+    No more elements to compare.

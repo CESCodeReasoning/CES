@@ -1,0 +1,8 @@
+from typing import *
+
+
+def prod_signs(arr):
+    if not arr: ## [CONDITION](not arr)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return None
+    prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr))) ## [STATE]0 in arr=[False][/STATE][STATE]list(filter(lambda x: x < 0, arr))=[-1][/STATE][STATE]len(list(filter(lambda x: x < 0, arr)))=[1][/STATE][STATE](-1) ** len(list(filter(lambda x: x < 0, arr)))=[-1][/STATE]
+    return prod * sum([abs(i) for i in arr]) ## [STATE]sum([abs(i) for i in arr])=[4][/STATE][STATE]prod * sum([abs(i) for i in arr])=[-4][/STATE]

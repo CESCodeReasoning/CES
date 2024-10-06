@@ -1,0 +1,5 @@
+The function `starts_one_ends` is called with ( n = 2 ).
+`n` is 2, which satisfies ( 1 <= n < 3 ).
+The condition `n == 1` is false, therefore the if branch is not taken and the method returns 18.
+
+Therefore, the final output of the function `starts_one_ends(2)` is 18.

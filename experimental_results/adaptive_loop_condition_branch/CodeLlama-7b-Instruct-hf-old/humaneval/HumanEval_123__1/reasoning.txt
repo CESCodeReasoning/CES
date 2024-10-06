@@ -1,0 +1,32 @@
+The function `get_odd_collatz` is called with ( n = 5 ).
+Inside the function, a variable `odd_collatz` is initialized to an empty list.
+The loop iterates from 5 through 1 (since ( n = 5 )).
+First Iteration (n = 5):
+    - n % 2 == 0 when n=5
+    - The conditin `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken. `odd_collatz` is updated to [5].
+Second Iteration (n = 4):
+    - n % 2 == 0 when n=4
+    - The conditin `n % 2 == 0` is true. The first branch is taken.
+    -`n = n / 2` updates n to 2 ( 4 / 2 = 2 ).
+    - The conditin `n % 2 == 1` is false. The second branch is not taken.
+    - `odd_collatz.append(int(n))` updates `odd_collatz` to [5, 2].
+Third Iteration (n = 2):
+    - n % 2 == 0 when n=2
+    - The conditin `n % 2 == 0` is true. The first branch is taken.
+    -`n = n / 2` updates n to 1 ( 2 / 2 = 1 ).
+    - The conditin `n % 2 == 1` is false. The second branch is not taken.
+    - `odd_collatz.append(int(n))` updates `odd_collatz` to [5, 2, 1].
+Fourth Iteration (n = 1):
+    - n % 2 == 0 when n=1
+    - The conditin `n % 2 == 0` is true. The first branch is taken.
+    -`n = n / 2` updates n to 0 ( 1 / 2 = 0 ).
+    - The conditin `n % 2 == 1` is false. The second branch is not taken.
+    - `odd_collatz.append(int(n))` updates `odd_collatz` to [5, 2, 1, 0].
+Fifth Iteration (n = 0):
+    -  n % 2 == 0 when n=0
+    - The conditin `n % 2 == 0` is true. The first branch is taken.
+    -`n = n / 2` updates n to 0 ( 0 / 2 = 0 ).
+    - The conditin `n % 2 == 1` is false. The second branch is not taken.
+    - `odd_collatz.append(int(n))` updates `odd_collatz` to [5, 2, 1, 0, 0].
+After the loop completes, the function returns the sorted list `odd_collatz`, which is now [5, 2, 1, 0, 0].

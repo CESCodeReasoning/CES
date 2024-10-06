@@ -1,0 +1,7 @@
+The function `sort_even` is called with ( l = [5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10] ).
+First, it separates the even and odd indexed elements into two lists: `evens` and `odds`.
+Then, it sorts the `evens` list in ascending order.
+Next, it creates an empty list `ans` and populates it by alternatingly taking elements from `evens` and `odds`.
+Finally, if the length of `evens` is greater than the length of `odds`, it appends the last element of `evens` to `ans`.
+
+After the loop completes, the function returns the sorted list `ans`.

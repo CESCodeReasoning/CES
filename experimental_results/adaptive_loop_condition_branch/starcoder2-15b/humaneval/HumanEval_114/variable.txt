@@ -1,0 +1,13 @@
+from typing import *
+def minSubArraySum(nums):
+    max_sum = 0
+    s = 0
+    for num in nums: ## [STATE]num=[2, 3, 4, 1, 2, 4][/STATE][STATE]nums=[2, 3, 4, 1, 2, 4][/STATE]
+        s += -num
+        if (s < 0): ## [CONDITION](s < 0)=[False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N][/BRANCH]
+            s = 0
+        max_sum = max(s, max_sum)
+    if max_sum == 0: ## [CONDITION](max_sum == 0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        max_sum = max(-i for i in nums)
+    min_sum = -max_sum
+    return min_sum

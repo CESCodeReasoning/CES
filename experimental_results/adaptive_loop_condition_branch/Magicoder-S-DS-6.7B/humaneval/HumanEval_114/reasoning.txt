@@ -1,0 +1,35 @@
+The function `minSubArraySum` is called with ( nums = [2, 3, 4, 1, 2, 4] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+
+Iteration 1:
+    -The number 2 is added to `s`, which becomes -2.
+    -Since `s` is not less than 0, `s` remains 0.
+    -`max_sum` remains 0.
+Iteration 2:
+    -The number 3 is added to `s`, which becomes -5.
+    -Since `s` is less than 0, `s` becomes 0.
+    -`max_sum` remains 0.
+Iteration 3:
+    -The number 4 is added to `s`, which becomes -9.
+    -Since `s` is less than 0, `s` becomes 0.
+    -`max_sum` remains 0.
+Iteration 4:
+    -The number 1 is added to `s`, which becomes -10.
+    -Since `s` is less than 0, `s` becomes 0.
+    -`max_sum` remains 0.
+Iteration 5:
+    -The number 2 is added to `s`, which becomes -12.
+    -Since `s` is less than 0, `s` becomes 0.
+    -`max_sum` remains 0.
+Iteration 6:
+    -The number 4 is added to `s`, which becomes -16.
+    -Since `s` is less than 0, `s` becomes 0.
+    -`max_sum` remains 0.
+
+After the loop, `max_sum` remains 0.
+
+Since `max_sum` is 0, the condition `max_sum == 0` is true.
+
+The `else` block is executed, and `min_sum` is set to -`max_sum`, which is -0.
+
+Therefore, the final output of the function `minSubArraySum([2, 3, 4, 1, 2, 4])` is 0.

@@ -1,0 +1,124 @@
+<｜begin▁of▁sentence｜>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in incr_list.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def incr_list(l: list):
+    return [(e + 2) for e in l]
+
+Tests:
+def check(incr_list):
+    assert incr_list([]) == []
+    assert incr_list([3, 2, 1]) == [4, 3, 2]
+    assert incr_list([5, 2, 5, 2, 3, 3, 9, 0, 123]) == [6, 3, 6, 3, 4, 4, 10, 1, 124]
+
+check(incr_list)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `incr_list(l: list)` to solve the following problem:
+Return list with elements incremented by 1.
+
+Fixed Code:
+```python
+def incr_list(l: list):
+    return [(e + 1) for e in l]
+```
+
+
+    
+Fix bugs in is_palindrome.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def is_palindrome(s: str) -> bool:
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("") == True
+    assert is_palindrome("a") == True
+    assert is_palindrome("ab") == False
+    assert is_palindrome("aa") == True
+    assert is_palindrome("aba") == True
+    assert is_palindrome("abcba") == True
+    assert is_palindrome("abcdba") == False
+
+check(is_palindrome)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(s: str) -> bool` to solve the following problem:
+Check if a given string is a palindrome.
+
+Fixed Code:
+```python
+def is_palindrome(s: str) -> bool:
+    return s == s[::-1]
+```
+
+
+    
+Fix bugs in max_difference.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def max_difference(l: list) -> int:
+    return max(l) - min(l)
+
+Tests:
+def check(max_difference):
+    assert max_difference([1, 2, 3, 4, 5]) == 4
+    assert max_difference([5, 4, 3, 2, 1]) == 4
+    assert max_difference([1, 1, 1, 1, 1]) == 0
+    assert max_difference([10, 20, 30, 40, 50]) == 40
+    assert max_difference([50, 40, 30, 20, 10]) == 40
+
+check

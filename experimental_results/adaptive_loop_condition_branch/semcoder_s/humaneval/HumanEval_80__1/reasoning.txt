@@ -1,0 +1,11 @@
+The function `is_happy` is called with ( s = "xyy" ).
+The length of the string "xyy" is 3, which is not less than 3, so the first condition is not met.
+The loop iterates over the indices of the string "xyy" (0, 1, 2).
+Iteration 1 (i = 0):
+   - The characters at indices 0, 1, and 2 are 'x', 'y', and 'y' respectively.
+   - The condition `s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]` is not met.
+Iteration 2 (i = 1):
+   - The characters at indices 1, 2, and 3 are 'y', 'y', and 'y' respectively.
+   - The condition `s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]` is met, so the function returns False.
+
+Therefore, the final output of the function `is_happy("xyy")` is False.

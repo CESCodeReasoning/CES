@@ -1,0 +1,18 @@
+[REASONING]
+The function `decimal_to_binary` takes an integer `decimal` as input and converts it to its binary representation. The built-in Python function `bin()` is used to convert the decimal number to a binary string. The `bin()` function returns a string that starts with '0b', which represents that the number is in binary format. In the function, `bin(decimal)[2:]` is used to slice the string and remove the '0b' prefix. The function then concatenates "db" at the beginning and end of the binary string to form the final result.
+For the input 103, the binary representation of 103 is '1100111'. After removing the '0b' prefix and adding "db" at the beginning and end, the final output is "db1100111db".
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def decimal_to_binary(decimal: int) -> str:
+    # [STATE] decimal is 103 [/STATE]
+    binary_representation = bin(decimal)[2:]  # [STATE] binary_representation is '1100111' [/STATE]
+    result = "db" + binary_representation + "db"  # [STATE] result is 'db1100111db' [/STATE]
+    return result
+[/PYTHON]
+
+[OUTPUT]
+"db1100111db"
+[/OUTPUT]

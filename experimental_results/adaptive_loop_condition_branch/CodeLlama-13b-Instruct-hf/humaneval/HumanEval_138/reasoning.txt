@@ -1,0 +1,3 @@
+The function is_equal_to_sum_even takes an integer n as input and returns a boolean value indicating whether n is equal to the sum of its even digits.
+To determine the output of the function, we need to check if n is divisible by 2 and if it is greater than or equal to 8.
+If both conditions are true, the output is True, otherwise it is False.

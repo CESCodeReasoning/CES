@@ -1,0 +1,29 @@
+Here are the fixed versions of both functions, `has_close_elements` and `remove_duplicates`, with the corrections made to address the issues in the original code:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `remove_duplicates`
+```python
+from typing import List
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    from collections import Counter
+    count = Counter(numbers)
+    return [num for num in numbers if count[num] == 1]  # Check if count is exactly 1 to include the number
+```
+
+These fixes address the logical errors in the original implementations:
+- In `has_close_elements`, the absolute value is used to correctly calculate the distance between two numbers.
+- In `remove_duplicates`, the list comprehension checks for numbers that appear exactly once in the list, ensuring duplicates are removed while maintaining the order of the remaining elements.

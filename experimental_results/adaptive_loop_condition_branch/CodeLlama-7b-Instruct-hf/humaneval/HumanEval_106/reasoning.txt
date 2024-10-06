@@ -1,0 +1,38 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterats through each element in the range(1, n+1) to calculate the factorial of n.
+In the inner loop, for each element indexed by i in the outer loop, calculate the factorial of i.
+First Iteration (i=1):
+    - `i` is 1, j in the inner loop is 1, 2, 3, 4, 5.
+    - `x` is 1, `j` in the inner loop is 1, 2, 3, 4, 5.
+    - `range(1, (i + 1))` is [1, 2, 3, 4, 5], `i` is 1, `x` is 1.
+    - `range(1, (n + 1))` is [1, 2, 3, 4, 5], `n` is 5, `x` is 1.
+    - `ret` is [], `x` is 1.
+    - `ret` is [1], `x` is 1.
+Second Iteration (i=2):
+    - `i` is 2, j in the inner loop is 2, 3, 4, 5.
+    - `x` is 2, `j` in the inner loop is 2, 3, 4, 5.
+    - `range(1, (i + 1))` is [1, 2, 3, 4, 5], `i` is 2, `x` is 2.
+    - `range(1, (n + 1))` is [1, 2, 3, 4, 5], `n` is 5, `x` is 2.
+    - `ret` is [1], `x` is 2.
+    - `ret` is [1, 2], `x` is 2.
+Third Iteration (i=3):
+    - `i` is 3, j in the inner loop is 3, 4, 5.
+    - `x` is 6, `j` in the inner loop is 3, 4, 5.
+    - `range(1, (i + 1))` is [1, 2, 3, 4, 5], `i` is 3, `x` is 6.
+    - `range(1, (n + 1))` is [1, 2, 3, 4, 5], `n` is 5, `x` is 6.
+    - `ret` is [1, 2], `x` is 6.
+    - `ret` is [1, 2, 6], `x` is 6.
+Forth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 4, 5.
+    - `x` is 24, `j` in the inner loop is 4, 5.
+    - `range(1, (i + 1))` is [1, 2, 3, 4, 5], `i` is 4, `x` is 24.
+    - `range(1, (n + 1))` is [1, 2, 3, 4, 5], `n` is 5, `x` is 24.
+    - `ret` is [1, 2, 6], `x` is 24.
+    - `ret` is [1, 2, 6, 24], `x` is 24.
+Fifth Iteration (i=5):
+    - `i` is 5, j in the inner loop is 5.
+    - `x` is 120, `j` in the inner loop is 5.
+    - `range(1, (i + 1))` is [1, 2, 3, 4, 5], `i` is 5, `x` is 120.
+    - `range(1, (n + 1))` is [1, 2, 3, 4, 5], `n` is 5, `x` is 120.
+    - `ret` is [1, 2, 6, 24], `x` is 120.
+    - `ret` is [1, 2, 6, 24, 120], `x` is 120.

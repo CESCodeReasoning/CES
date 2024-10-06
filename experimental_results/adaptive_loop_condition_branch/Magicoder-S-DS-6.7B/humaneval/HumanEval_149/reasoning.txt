@@ -1,0 +1,11 @@
+The function `sorted_list_sum` is called with ( lst = ["aa", "a", "aaa"] ).
+Inside the function, the list `lst` is sorted.
+
+Iteration 1:
+    -The length of 'a' is 1, which is not even.
+Iteration 2:
+    -The length of 'aa' is 2, which is even. So, 'aa' is appended to `new_lst`.
+Iteration 3:
+    -The length of 'aaa' is 3, which is not even.
+
+After the loop, `new_lst` is sorted by length and returned.

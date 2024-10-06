@@ -1,0 +1,9 @@
+from typing import *
+
+
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    closest_pair = None
+    distance = None
+
+    for idx, elem in enumerate(numbers): ## [STATE]idx=[0, 1, 2, 3, 4][/STATE][STATE]elem=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE][STATE]enumerate(numbers)=[[0, 1.1], [1, 2.2], [2, 3.1], [3, 4.1], [4, 5.1]][/STATE][STATE]numbers=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE]
+        for idx2, elem2 in enumerate(numbers): ## [STATE]idx2=[1, 2, 3, 4, 1, 2, 3, 4, 2, 3, 4, 3, 4, 4][/STATE][STATE]elem2=[2.2, 3

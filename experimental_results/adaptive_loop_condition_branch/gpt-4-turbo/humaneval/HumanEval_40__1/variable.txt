@@ -1,0 +1,10 @@
+from typing import *
+
+
+def triples_sum_to_zero(l: list):
+    for i in range(len(l)): ## [STATE]i=[0, 1][/STATE][STATE]range(len(l))=[0, 1, 2, 3, 4, 5][/STATE][STATE]len(l)=6[/STATE]
+        for j in range(i + 1, len(l)): ## [STATE]j=[1, 2][/STATE][STATE]range((i + 1), len(l))=[[1, 2, 3, 4, 5], [2, 3, 4, 5]][/STATE][STATE](i + 1)=[1, 2][/STATE][STATE]len(l)=6[/STATE]
+            for k in range(j + 1, len(l)): ## [STATE]k=[2, 3, 4, 5][/STATE][STATE]range((j + 1), len(l))=[[2, 3, 4, 5]][/STATE][STATE](j + 1)=2[/STATE][STATE]len(l)=6[/STATE]
+                if l[i] + l[j] + l[k] == 0: ## [CONDITION](l[i] + l[j] + l[k] == 0)=[False, False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, N, Y][/BRANCH]
+                    return True
+    return False

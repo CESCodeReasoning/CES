@@ -1,0 +1,4 @@
+The function sort_array takes an array arr as input and returns a sorted version of arr, where the elements are sorted based on the number of 1s in their binary representation.
+To determine the output of executing the function sort_array on the input [], we need to sort the empty array using the key function.
+The key function takes each element x in arr and returns the binary representation of x without the leading "0b" and counts the number of 1s in the binary representation.
+Therefore, the output of executing the function sort_array on the input [] is [].

@@ -1,0 +1,13 @@
+The function `count_up_to(n)` is designed to find all prime numbers up to a given number `n` (exclusive). Here, `n` is 18.
+- The outer loop iterates from 2 to `n-1` (i.e., 2 to 17). For each number `i`, it checks if `i` is a prime number.
+- The inner loop iterates from 2 to `i-1`. For each number `j`, it checks if `i` is divisible by `j` (i.e., `i % j == 0`). If true, `i` is not a prime, and the loop breaks.
+- If after checking all possible divisors `j`, `i` is not divisible by any `j`, then `i` is a prime number and is added to the list `primes`.
+
+Step-by-step for `n=18`:
+- For `i=2`, the inner loop does not execute because `range(2, 2)` is empty. `is_prime` remains True, so 2 is added to `primes`.
+- For `i=3`, similar to `i=2`, the inner loop does not execute, so 3 is added.
+- For `i=4`, the inner loop checks `j=2`. Since `4 % 2 == 0`, `is_prime` is set to False, and the loop breaks.
+- For `i=5`, the inner loop runs for `j=2, 3, 4`. None divide 5 without a remainder, so 5 is added.
+- This process continues, checking each number up to 17, adding prime numbers to the list.
+
+The prime numbers less than 18 are 2, 3, 5, 7, 11, 13, and 17.

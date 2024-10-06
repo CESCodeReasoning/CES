@@ -1,0 +1,25 @@
+from typing import *
+
+
+def f(s):
+    return s + "a"
+
+
+def g(s):
+    return s + "b"
+
+
+def h(s):
+    return s + "c"
+
+
+def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:
+    return [x for x in strings if x.startswith(prefix)]
+
+
+def filter_by_suffix(strings: List[str], suffix: str) -> List[str]:
+    return [x for x in strings if x.endswith(suffix)]
+
+
+def filter_by_prefix_and_suffix(strings: List[str], prefix: str, suffix: str) -> List[str]:
+    return [x for x in strings if x.startswith(prefix) and x.endswith(suffix)]

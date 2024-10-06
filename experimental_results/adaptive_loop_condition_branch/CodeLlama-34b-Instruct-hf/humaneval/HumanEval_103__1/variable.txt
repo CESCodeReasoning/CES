@@ -1,0 +1,10 @@
+from typing import *
+
+
+def rounded_avg(n, m):
+    if m < n: ## [CONDITION](m < n)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return -1
+    summation = 0
+    for i in range(n, m + 1): ## [STATE]i=[350, 351, 352, ..., 901, 902][/STATE][STATE]range(n, (m + 1))=[350, 351, 352, ..., 901, 902][/STATE][STATE]n=[350][/STATE][STATE](m + 1)=[903][/STATE]
+        summation += i
+    return bin(round(summation / (m - n + 1)))

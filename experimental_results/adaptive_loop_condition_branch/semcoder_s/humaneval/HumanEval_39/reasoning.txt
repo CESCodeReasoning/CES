@@ -1,0 +1,14 @@
+The function `prime_fib` is called with ( n = 1 ).
+Inside the function, a list `f` is initialized with the first two Fibonacci numbers: [0, 1].
+The while loop starts an infinite loop that generates Fibonacci numbers and checks if they are prime.
+First Iteration:
+    - The Fibonacci number 1 is generated (1 = 0 + 1).
+    - The function `is_prime` is called with ( p = 1 ).
+    - Since 1 is less than 2, the condition `p < 2` is true, and the function returns False.
+    - The loop continues.
+Second Iteration:
+    - The Fibonacci number 2 is generated (2 = 1 + 1).
+    - The function `is_prime` is called with ( p = 2 ).
+    - Since 2 is not less than 2, the condition `p < 2` is false, and the function returns True.
+    - n is decremented by 1, so n becomes 0.
+    - The condition `n == 0` is true, so the function returns the last Fibonacci number, which is 2.

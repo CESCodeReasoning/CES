@@ -1,0 +1,15 @@
+[REASONING]
+The function `parse_music` takes a string `music_string` as input, which represents musical notes separated by spaces. The function uses a dictionary `note_map` to map string representations of musical notes to their corresponding integer values. The function splits the input string by spaces to get a list of note strings, and then uses a list comprehension to convert each note string into its corresponding integer value based on the `note_map`. The list comprehension includes a condition to filter out any empty strings that might result from consecutive spaces. In this specific case, the input string is '.| .| .| .|', which splits into a list of four '.|' strings. Each '.|' is mapped to the integer 1 according to the `note_map`. Therefore, the output of the function for this input will be a list of four 1s, [1, 1, 1, 1].
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def parse_music(music_string: str) -> List[int]:
+    note_map = {'o': 4, 'o|': 2, '.|': 1}  # [STATE] note_map = {'o': 4, 'o|': 2, '.|': 1} [/STATE]
+    return [note_map[x] for x in music_string.split(' ') if x]  # [CONDITION] x [/CONDITION] [BRANCH] Y [/BRANCH]
+[/PYTHON]
+
+[OUTPUT]
+[1, 1, 1, 1]
+[/OUTPUT]

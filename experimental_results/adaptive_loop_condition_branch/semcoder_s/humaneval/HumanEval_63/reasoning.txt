@@ -1,0 +1,7 @@
+The function `fibfib` is called with ( n = 2 ).
+The first two base cases are already handled:
+   - When `n` is 0, the function returns 0.
+   - When `n` is 1, the function returns 0.
+For `n` equal to 2, the function returns 1.
+
+Therefore, the final output of the function `fibfib(2)` is 1.

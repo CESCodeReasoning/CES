@@ -1,0 +1,144 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: separate_paren_groups
+main.py(4):     result = []
+main.py(5):     current_string = []
+main.py(6):     current_depth = 0
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(17):                 result.append(''.join(current_string))
+main.py(18):                 current_string.clear()
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(17):                 result.append(''.join(current_string))
+main.py(18):                 current_string.clear()
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(17):                 result.append(''.join(current_string))
+main.py(18):                 current_string.clear()
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(10):             current_depth += 1
+main.py(11):             current_string.append(c)
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(8):     for c in paren_string:
+main.py(9):         if c == '(':
+main.py(12):         elif c == ')':
+main.py(13):             current_depth -= 1
+main.py(14):             current_string.append(c)
+main.py(16):             if current_depth == 0:
+main.py(17):                 result.append(''.join(current_string))
+main.py(18):                 current_string.clear()
+main.py(8):     for c in paren_string:
+main.py(20):     return result

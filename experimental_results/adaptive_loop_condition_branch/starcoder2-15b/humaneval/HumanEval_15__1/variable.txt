@@ -1,0 +1,5 @@
+from typing import *
+
+
+def sum_of_squares(n: int) -> int:
+    return sum([x**2 for x in range(n + 1)])

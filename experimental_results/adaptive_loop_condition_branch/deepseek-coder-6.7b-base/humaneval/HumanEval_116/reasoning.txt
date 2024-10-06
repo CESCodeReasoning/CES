@@ -1,0 +1,11 @@
+The function sort_array takes an array arr as input and returns a sorted array based on the following criteria:
+1. The elements of the array are sorted in ascending order.
+2. If two elements have the same number of 1's in their binary representation, they are sorted in ascending order.
+
+To determine the output of executing the function sort_array on the input [1,5,2,3,4], we need to sort the array based on the above criteria.
+
+First, we sort the array in ascending order. This gives us [1,2,3,4,5].
+
+Next, we sort the array based on the number of 1's in their binary representation. Since 1 has 1 1 in its binary representation, 5 has 2 1's in its binary representation, 2 has 1 1 in its binary representation, 3 has 2 1's in its binary representation, and 4 has 1 1 in its binary representation, the sorted array is [1,2,3,4,5].
+
+Therefore, the output of executing the function sort_array on the input [1,5,2,3,4] is [1,2,3,4,5].

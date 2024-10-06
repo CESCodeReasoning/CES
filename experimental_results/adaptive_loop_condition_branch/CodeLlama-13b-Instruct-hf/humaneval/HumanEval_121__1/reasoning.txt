@@ -1,0 +1,8 @@
+The function `solution` takes a list of integers as input and returns the sum of the elements at even indices that are odd.
+
+To determine the output of the function, we need to follow these steps:
+
+1. Iterate through the list of integers and keep track of the current index.
+2. If the current index is even and the current element is odd, add it to the sum.
+3. Return the sum.
+

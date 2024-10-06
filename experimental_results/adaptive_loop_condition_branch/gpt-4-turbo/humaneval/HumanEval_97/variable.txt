@@ -1,0 +1,5 @@
+from typing import *
+
+def multiply(a: int, b: int) -> int:
+    # [STATE] a % 10 = 8, b % 10 = 2 [/STATE]
+    return abs(a % 10) * abs(b % 10)  # [STATE] abs(8) * abs(2) = 16 [/STATE]

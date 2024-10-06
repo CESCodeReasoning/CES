@@ -1,0 +1,18 @@
+The function `encode` takes a string `message` as input and performs the following operations:
+
+1. It first defines a string `vowels` containing all the vowels in both lowercase and uppercase.
+2. It then creates a dictionary `vowels_replace` where each vowel in `vowels` is mapped to its ASCII value plus 2. This is done using the `ord` function to get the ASCII value of the character and `chr` function to convert the ASCII value back to a character.
+3. The `swapcase` method is used to convert all uppercase letters to lowercase and all lowercase letters to uppercase.
+4. Finally, it returns a new string where each character in `message` is replaced by its corresponding value in `vowels_replace` if it is a vowel, or left unchanged if it is not a vowel. This is done using a list comprehension.
+
+To determine the output of executing the function `encode` on the input 'YES', we need to apply these operations in sequence:
+
+1. Convert 'YES' to 'yes' by applying `swapcase`.
+2. Replace each vowel in 'yes' by its corresponding value in `vowels_replace`.
+
+Therefore, the output of executing the function `encode` on the input 'YES' is 'bgh'.
+
+[OUTPUT]
+'bgh'
+[/OUTPUT]
+<|EOT|>

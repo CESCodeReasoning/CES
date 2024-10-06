@@ -1,0 +1,5 @@
+The function make_a_pile takes an integer n as input and returns a list of integers. The list is created using a list comprehension, which generates a sequence of numbers. The sequence starts from 0 and increments by 1 for each element, and for each element, it calculates the value of n + 2*i, where i is the current index.
+
+To determine the output of executing the function make_a_pile on the input 3, we need to calculate the sequence of numbers starting from 0 and incrementing by 1 for each element, and for each element, we calculate the value of 3 + 2*i, where i is the current index.
+
+The sequence of numbers is [0, 3, 6], so the output of executing the function make_a_pile on the input 3 is [0, 3, 6].

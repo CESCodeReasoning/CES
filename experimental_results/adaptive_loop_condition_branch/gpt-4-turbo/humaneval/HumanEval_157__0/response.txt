@@ -1,0 +1,29 @@
+[REASONING]
+The function `right_angle_triangle` checks if the given three sides (a, b, c) can form a right-angled triangle. According to the Pythagorean theorem, a triangle is right-angled if the square of the longest side is equal to the sum of the squares of the other two sides. The function checks all three possible combinations to determine if any of them satisfy the Pythagorean condition:
+1. \(a^2 = b^2 + c^2\)
+2. \(b^2 = a^2 + c^2\)
+3. \(c^2 = a^2 + b^2\)
+
+For the input values a=7, b=24, and c=25:
+- First, it checks if \(7^2 = 24^2 + 25^2\). This evaluates to \(49 = 576 + 625\), which is false.
+- Second, it checks if \(24^2 = 7^2 + 25^2\). This evaluates to \(576 = 49 + 625\), which is false.
+- Third, it checks if \(25^2 = 7^2 + 24^2\). This evaluates to \(625 = 49 + 576\), which is true.
+
+Since the third condition is true, the function returns `True`, indicating that the sides can form a right-angled triangle.
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def right_angle_triangle(a: int, b: int, c: int) -> bool:
+    # Check if a^2 == b^2 + c^2 [STATE]49 == 576 + 625, 576 == 49 + 625, 625 == 49 + 576[/STATE]
+    return a * a == b * b + c * c or b * b == a * a + c * c or c * c == a * a + b * b
+    # [CONDITION]False or False or True[/CONDITION]
+    # [BRANCH]N or N or Y[/BRANCH]
+```
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]

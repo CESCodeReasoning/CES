@@ -1,0 +1,9 @@
+The function `compare_one` is called with ( a = 1, b = 2 ).
+`a` is 1, which is an integer.
+`b` is 2, which is an integer.
+The condition `isinstance(temp_a, str)` is false, therefore the if branch is not taken.
+The condition `isinstance(temp_b, str)` is false, therefore the if branch is not taken.
+The condition `float(temp_a) == float(temp_b)` is false, therefore the if branch is not taken.
+The method returns `a`
+
+Therefore, the final output of the function `compare_one(1, 2)` is 1.

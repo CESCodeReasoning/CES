@@ -1,0 +1,11 @@
+from typing import *
+def words_in_sentence(sentence):
+    new_lst = []
+    for word in sentence.split(): ## [STATE]word=["This", "is", "a", "test"][/STATE][STATE]sentence.split()=["This", "is", "a", "test"][/STATE]
+        flg = 0
+        if len(word) == 1: ## [CONDITION](len(word) == 1)=[F, F, T, F][/CONDITION][BRANCH]taken=[F, F, T, F][/BRANCH]
+            flg = 1
+        for i in range(2, len(word)): ## [STATE]i=[2, 3, 4][/STATE][STATE]range(2, len(word))=[[2, 3, 4], [2, 3, 4], [2], []][/STATE][STATE]len(word)=[4, 4, 1, 4][/STATE]
+            if len(word)%i == 0: ## [CONDITION](len(word)%i == 0)=[F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F][/CONDITION][BRANCH]taken=[F, F, F, F, F, F, F, F, F, F, F, F, F, F, F][/BRANCH]
+                flg = 1
+        if flg == 0 or len

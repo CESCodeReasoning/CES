@@ -1,0 +1,140 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def closest_integer(value):
+    from math import floor, ceil
+
+    if value.count('.') == 1:
+        # remove trailing zeros
+        while (value[-1] == '0'):
+            value = value[:-1]
+
+    num = float(value)
+    if value[-2:] == '.5':
+        if num > 0:
+            res = floor(num)
+        else:
+            res = ceil(num)
+    elif len(value) > 0:
+        res = int(round(num))
+    else:
+        res = 0
+
+    return res
+
+Tests:
+def check(closest_integer):
+
+    # Check some simple cases
+    assert closest_integer("10") == 10, "Test 1"
+    assert closest_integer("14.5") == 15, "Test 2"
+    assert closest_integer("-15.5") == -16, "Test 3"
+    assert closest_integer("15.3") == 15, "Test 3"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert closest_integer("0") == 0, "Test 0"
+
+check(closest_integer)
+
+The code should satisfy the following natural language specification:
+Write a Python function `closest_integer(value)` to solve the following problem:
+Create a function that takes a value (string) representing a number
+and returns the closest integer to it. If the number is equidistant
+from two integers, round it away from zero.
+Examples
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+        res = int(round(num))
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s: str) -> bool:
+    s = s.lower()
+    s = ''.join(c for c in s if c.isalnum())
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("A man, a plan, a canal: Panama") == True
+    assert is_palindrome("race a car") == False
+    assert is_palindrome("") == True
+    assert is_palindrome("a") == True
+    assert is_palindrome("ab") == False
+    assert is_palindrome("abcba") == True
+    assert is_palindrome("abcdcba") == True
+
+check(is_palindrome)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(s: str) -> bool` to solve the following problem:
+Check if a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward, ignoring spaces, punctuation, and capitalization.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return s == s[::-1]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_valid_ip(ip: str) -> bool:
+    parts = ip.split('.')
+    if len(parts) != 4:
+        return False
+    for part in parts:
+        if not part.isdigit():
+            return False
+        i = int(part)
+        if i < 0 or i > 255:
+            return False
+    return True
+
+Tests:
+def check(is_valid_ip):
+    assert is_valid_ip("192.168.0.1") ==

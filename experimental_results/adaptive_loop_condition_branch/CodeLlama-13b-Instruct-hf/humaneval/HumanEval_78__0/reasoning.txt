@@ -1,0 +1,14 @@
+The function `hex_key` is called with ( num = "2020" ).
+Inside the function, a variable `primes` is initialized to a tuple of prime numbers.
+The loop iterates from 0 through 3 (since ( len(num) = 4 )).
+First Iteration (i = 0)
+   - `i` is 0, which is not in `primes`.
+Second Iteration (i = 1)
+   - `i` is 1, which is in `primes`.
+Third Iteration (i = 2)
+   - `i` is 2, which is not in `primes`.
+Fourth Iteration (i = 3)
+   - `i` is 3, which is not in `primes`.
+The loop completes, and the function returns the value of `total`, which is 1.
+
+Therefore, the final output of the function `hex_key("2020")` is 1.

@@ -1,0 +1,19 @@
+```response
+                new_text += "_"+text[i]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(text):
+    text = text.lower()
+    for i in range(len(text)//2):
+        if text[i] != text[-i-1]:
+            return False
+    return True
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("A man, a plan, a canal, Panama!") == True
+    assert is_pal

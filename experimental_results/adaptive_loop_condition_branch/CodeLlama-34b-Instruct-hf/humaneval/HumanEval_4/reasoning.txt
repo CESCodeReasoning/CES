@@ -1,0 +1,6 @@
+The function mean_absolute_deviation takes a list of floating-point numbers as input and returns the mean absolute deviation of the input list.
+To determine the output of executing the function mean_absolute_deviation on the input [1.0, 2.0, 3.0], we need to calculate the mean absolute deviation of the input list.
+The mean of the input list is (1.0 + 2.0 + 3.0) / 3 = 2.0.
+The absolute deviation of each input number from the mean is abs(1.0 - 2.0) = 1.0, abs(2.0 - 2.0) = 0.0, and abs(3.0 - 2.0) = 1.0.
+The mean absolute deviation of the input list is (1.0 + 0.0 + 1.0) / 3 = 0.6666666666666666.
+Therefore, the output of executing the function mean_absolute_deviation on the input [1.0, 2.0, 3.0] is 0.6666666666666666.

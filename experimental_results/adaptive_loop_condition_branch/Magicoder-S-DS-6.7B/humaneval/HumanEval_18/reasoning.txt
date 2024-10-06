@@ -1,0 +1,10 @@
+The function `how_many_times` is called with ( string = '', substring = 'x' ).
+Inside the function, a variable `times` is initialized to 0.
+
+The loop iterates from 0 through the length of the string minus the length of the substring plus 1.
+
+The function checks if the substring is equal to the substring of the string from the current index to the length of the substring.
+
+Since the string is empty, the loop does not execute.
+
+The function returns the value of `times`, which is still 0.

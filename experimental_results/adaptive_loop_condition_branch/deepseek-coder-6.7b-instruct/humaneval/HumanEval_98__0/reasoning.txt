@@ -1,0 +1,11 @@
+The function `count_upper` is called with ( s = 'dBBE' ).
+Inside the function, a variable `count` is initialized to 0.
+
+Iteration 1:
+    - The character at index 0 in the string 'dBBE' is 'd'. It's not an uppercase vowel, so the count remains 0.
+Iteration 2:
+    - The character at index 2 in the string 'dBBE' is 'B'. It's not an uppercase vowel, so the count remains 0.
+Iteration 3:
+    - The character at index 4 in the string 'dBBE' is 'E'. It's not an uppercase vowel, so the count remains 0.
+
+So, the final output of the function `count_upper('dBBE')` is 0.

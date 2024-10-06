@@ -1,0 +1,48 @@
+```response
+    return values
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def get_unique_elements(my_list: List[int]) -> List[int]:
+    unique_elements = []
+    for element in my_list:
+        if element not in unique_elements:
+            unique_elements.append(element)
+    return unique_elements
+
+Tests:
+def check(get_unique_elements):
+    assert get_unique_elements([]) == []
+    assert get_unique_elements([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]
+    assert get_unique_elements([1, 1, 1, 1, 1]) == [1]
+    assert get_unique_elements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    assert get_unique_elements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+check(get_unique_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `get_unique_elements(my_list: List[int]) -> List[int]` to solve the following problem:
+Get unique elements from a list of integers
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return unique_elements
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def get_unique_elements(my_list: List[int]) -> List[int]:
+    unique_elements = []
+    for

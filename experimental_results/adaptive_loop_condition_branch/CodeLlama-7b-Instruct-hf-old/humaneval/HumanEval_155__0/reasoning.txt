@@ -1,0 +1,25 @@
+The function `even_odd_count` is called with ( num = -345821 ).
+Inside the function, two variables `even_count` and `odd_count` are initialized to 0.
+
+Iteration 1:
+    -The character '3' is not even, so odd_count becomes 1.
+Iteration 2:
+    -The character '4' is not even, so odd_count becomes 2.
+Iteration 3:
+    -The character '5' is not even, so odd_count becomes 3.
+Iteration 4:
+    -The character '8' is not even, so odd_count becomes 4.
+Iteration 5:
+    -The character '2' is even, so even_count becomes 1.
+Iteration 6:
+    -The character '1' is not even, so odd_count becomes 5.
+Iteration 7:
+    -The character 'N' is not even, so odd_count becomes 6.
+Iteration 8:
+    -The character 'O' is not even, so odd_count becomes 7.
+Iteration 9:
+    -The character 'D' is not even, so odd_count becomes 8.
+Iteration 10:
+    -The character '!' is not even, so odd_count becomes 9.
+
+Therefore, the final output of the function `even_odd_count(-345821)` is (1, 9).

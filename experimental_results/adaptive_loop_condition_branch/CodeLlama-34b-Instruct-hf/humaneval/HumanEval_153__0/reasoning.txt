@@ -1,0 +1,17 @@
+The function `Strongest_Extension` is called with ( class_name = 'Sp', extensions = ['671235', 'Bb'] ).
+Inside the function, a variable `strong` is initialized to the first element of `extensions`.
+
+Iteration 1:
+    - `s` is '671235'.
+    - `val` is the difference between the number of uppercase and lowercase letters in `s`.
+    - `val` is 0, since `s` contains only digits.
+    - The condition `val > my_val` is false, since `my_val` is 0.
+    - The `else` block is not executed.
+Iteration 2:
+    - `s` is 'Bb'.
+    - `val` is the difference between the number of uppercase and lowercase letters in `s`.
+    - `val` is 1, since `s` contains one uppercase letter and one lowercase letter.
+    - The condition `val > my_val` is true, since `my_val` is 0.
+    - The `else` block is executed.
+    - `strong` is updated to 'Bb'.
+    - `my_val` is updated to 1.

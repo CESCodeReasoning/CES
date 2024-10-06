@@ -1,0 +1,38 @@
+[REASONING]
+The function `get_odd_collatz` is called with `n = 5`.
+1. The initial check `(n % 2 == 0)` evaluates to `False` because 5 is odd. Therefore, the first branch is not taken, and the second branch initializes `odd_collatz` with `[5]`.
+2. The while loop condition `(n > 1)` is `True` since `n = 5`.
+3. Inside the loop, since `n` is odd `(n % 2 == 0)` evaluates to `False`, so `n` is updated to `n * 3 + 1 = 16`.
+4. In the next iteration, `n = 16` (even), so `(n % 2 == 0)` is `True`. `n` is updated to `n / 2 = 8`.
+5. Next, `n = 8` (even), so `n` is updated to `n / 2 = 4`.
+6. Next, `n = 4` (even), so `n` is updated to `n / 2 = 2`.
+7. Next, `n = 2` (even), so `n` is updated to `n / 2 = 1`.
+8. Finally, `n = 1` (odd), and since `(n % 2 == 1)` is `True`, `1` is added to `odd_collatz`.
+9. The loop ends as `n` becomes `1`, which is not greater than `1`.
+10. The list `odd_collatz` now contains `[5, 1]` and is returned sorted as `[1, 5]`.
+
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def get_odd_collatz(n):
+    if n % 2 == 0: ## [CONDITION](n % 2 == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        odd_collatz = []
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        odd_collatz = [n]
+    while n > 1: ## [STATE](n > 1)=[True, True, True, True, True, True, True, False][/STATE][STATE]n=[5, 16, 8, 4, 2, 1, 1][/STATE]
+        if n % 2 == 0: ## [CONDITION](n % 2 == 0)=[False, True, True, True, True, False][/CONDITION][BRANCH]taken=[N, Y, Y, Y, Y, N][/BRANCH]
+            n = n / 2
+        else: ## [BRANCH]taken=[Y, N, N, N, N, Y][/BRANCH]
+            n = n * 3 + 1
+
+        if n % 2 == 1: ## [CONDITION](n % 2 == 1)=[False, False, False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, N, N, Y][/BRANCH]
+            odd_collatz.append(int(n))
+
+    return sorted(odd_collatz)
+[/PYTHON]
+
+[OUTPUT]
+[1, 5]
+[/OUTPUT]

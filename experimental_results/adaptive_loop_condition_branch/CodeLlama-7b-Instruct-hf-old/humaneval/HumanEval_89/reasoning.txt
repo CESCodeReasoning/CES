@@ -1,0 +1,15 @@
+The function `encrypt` is called with ( s = 'hi' ).
+Inside the function, a variable `d` is initialized to 'abcdefghijklmnopqrstuvwxyz'.
+A variable `out` is initialized to an empty string.
+The loop iterates over the characters in `s`.
+First Iteration (c = 'h')
+   - `c` is 'h', which is not in `d`.
+   - The condition `c in d` is false.
+   - Action: `out += c` appends 'h' to `out`.
+Second Iteration (c = 'i')
+   - `c` is 'i', which is not in `d`.
+   - The condition `c in d` is false.
+   - Action: `out += c` appends 'i' to `out`.
+Return Statement
+   - After the loop completes, the function returns the value of `out`, which is 'hi'.
+Therefore, the final output of the function `encrypt('hi')` is 'hi'.

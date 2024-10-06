@@ -1,0 +1,34 @@
+The function `fruit_distribution` is called with ( s = "2 apples and 3 oranges", n = 5 ).
+Inside the function, a variable `lis` is initialized to an empty list.
+
+Iteration 1:
+    -The string "2" is split into a list of characters.
+    -The character '2' is not a digit, so the branch `taken` is marked as `N`.
+Iteration 2:
+    -The string "apples" is split into a list of characters.
+    -The character 'a' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'p' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'p' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'l' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'e' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 's' is not a digit, so the branch `taken` is marked as `N`.
+Iteration 3:
+    -The string "and" is split into a list of characters.
+    -The character 'a' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'n' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'd' is not a digit, so the branch `taken` is marked as `N`.
+Iteration 4:
+    -The string "3" is split into a list of characters.
+    -The character '3' is a digit, so the branch `taken` is marked as `Y`.
+    -The character '3' is appended to the list `lis`.
+Iteration 5:
+    -The string "oranges" is split into a list of characters.
+    -The character 'o' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'r' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'a' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'n' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'g' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 'e' is not a digit, so the branch `taken` is marked as `N`.
+    -The character 's' is not a digit, so the branch `taken` is marked as `N`.
+
+After the loop completes, the function returns the value of `n - sum(lis)`, which is 5 - 3 = 2.

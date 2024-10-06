@@ -1,0 +1,28 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterats through each element in the range(1, n + 1) to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the range(1, n + 1).
+First Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4, 5.
+    - `i % 2 == 0` is False, the if branch is not taken.
+    - `x` is 0, `x += j` is 0 + 1 = 1.
+    - `ret` is [0], `ret += [x]` is [0, 1].
+Second Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, 5.
+    - `i % 2 == 0` is True, the if branch is taken.
+    - `x` is 1, `x *= j` is 1 * 2 = 2.
+    - `ret` is [0, 1], `ret += [x]` is [0, 1, 2].
+Third Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4, 5.
+    - `i % 2 == 0` is False, the if branch is not taken.
+    - `x` is 0, `x += j` is 0 + 3 = 3.
+    - `ret` is [0, 1, 2], `ret += [x]` is [0, 1, 2, 3].
+Forth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5.
+    - `i % 2 == 0` is True, the if branch is taken.
+    - `x` is 2, `x *= j` is 2 * 4 = 8.
+    - `ret` is [0, 1, 2, 3], `ret += [x]` is [0, 1, 2, 3, 8].
+Fifth Iteration (i=5):
+    - `i` is 5, j in the inner loop is empty.
+    - `i % 2 == 0` is False, the if branch is not taken.
+    - `x` is 0, `x += j` is 0 + 5 = 5.
+    - `ret` is [0, 1, 2, 3, 8], `ret += [x]` is [0, 1, 2, 3, 8, 5].

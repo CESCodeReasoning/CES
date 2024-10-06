@@ -1,0 +1,12 @@
+from typing import *
+
+
+def order_by_points(nums):
+    def digits_sum(n):
+        neg = 1  ## [STATE]neg=1[/STATE]
+        if n < 0: ## [CONDITION](n < 0)=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+            n, neg = -1 * n, -1  ## [STATE]n=-1*n[/STATE][STATE]neg=-1[/STATE]
+        n = [int(i) for i in str(n)]  ## [STATE]n=[int(i) for i in str(n)][/STATE]
+        n[0] = n[0] * neg  ## [STATE]n[0]=n[0]*neg[/STATE]
+        return sum(n)  ## [STATE]sum(n)=sum(n)[/STATE]
+    return sorted(nums, key=digits_sum)  ## [STATE]sorted(nums, key=digits_sum)=[][/STATE]

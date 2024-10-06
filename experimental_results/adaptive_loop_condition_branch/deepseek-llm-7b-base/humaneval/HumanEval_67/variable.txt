@@ -1,0 +1,7 @@
+from typing import *
+def fruit_distribution(s,n):
+    lis = list()
+    for i in s.split(' '): ## [STATE]i=[5, 6][/STATE][STATE]s.split()=[5, 6][/STATE]
+        if i.isdigit(): ## [CONDITION](i.isdigit())=[True, True][/CONDITION][BRANCH]taken=[Y, Y][/BRANCH]
+            lis.append(int(i))
+    return n - sum(lis)

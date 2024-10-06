@@ -1,0 +1,5 @@
+The function largest_smallest_integers takes a list of integers as input and returns a tuple containing the largest and smallest integers in the list.
+To determine the largest and smallest integers in the list, we need to iterate over the list and compare each integer to the previous one.
+If the current integer is larger than the previous one, we can set the largest integer to the current integer.
+Similarly, if the current integer is smaller than the previous one, we can set the smallest integer to the current integer.
+Once we have determined the largest and smallest integers in the list, we can return them as a tuple.

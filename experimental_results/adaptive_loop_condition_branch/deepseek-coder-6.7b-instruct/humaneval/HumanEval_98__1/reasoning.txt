@@ -1,0 +1,6 @@
+The function `count_upper` is called with ( s = 'U' ).
+Inside the function, a variable `count` is initialized to 0.
+The loop iterates over the string `s` with a step of 2.
+Since the string `s` is of length 1, the loop will only run once.
+The character at index 0 is 'U', which is not an uppercase vowel.
+Therefore, the function returns `count` which is still 0.

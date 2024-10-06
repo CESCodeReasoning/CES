@@ -1,0 +1,5 @@
+The function `order_by_points` is called with an empty list.
+The function `digits_sum` is not called.
+The function `sorted` is called with the empty list and the `key` argument set to the function `digits_sum`.
+Since the list is empty, the function `sorted` returns an empty list.
+Therefore, the final output of the function `order_by_points` is an empty list.

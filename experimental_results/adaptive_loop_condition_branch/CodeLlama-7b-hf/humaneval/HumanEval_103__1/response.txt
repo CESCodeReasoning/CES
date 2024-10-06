@@ -1,0 +1,145 @@
+<s> [INST]<<SYS>>You are given a piece of Python code and its output. You are asked to complete the following task:
+1. First think step by step and explain the execution process of the code. Enclose your reasoning process between [REASONING] and [/REASONING].
+2. Replace the "??" between [STATE] and [/STATE] in the comment with the state of a variable or the return value of a method call/expression.
+3. Replace the "??" between [CONDITION] and [/CONDITION] in the comment with the the value of a predicate in the conditional statement.
+4. Replace the "??" between [BRANCH] and [/BRANCH] in the comment with `Y` and `N`. If a branch is hit during the execution, then mark it with `Y`, otherwise mark it with `N`.
+5. Enclose the annotated code with [PYTHON] AND [/PYTHON]
+6. Finally print the output and enclose it with [OUTPUT] and [/OUTPUT].
+<</SYS>>
+Bellow are some examples:
+
+[CODE]
+def sum_of_integer(N, K):
+    sum_1 = 0
+    for i in range(1,N+1): ## [STATE]i=??[/STATE][STATE]range(1,N+1)=??[/STATE][STATE]N+1=??[/STATE]
+        sum += i
+    if sum > K: ## [CONDITION](sum > K)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return True
+    else: ## [BRANCH]taken=??[/BRANCH]
+        return False
+[/CODE]
+[INPUT]
+sum_of_integer(5, 10)
+[/INPUT]
+
+[ANSWER]
+def sum_of_integer(N, K):
+    sum_1 = 0
+    for i in range(1,N+1): ## [STATE]i=[1, 2, 3, 4, 5][/STATE][STATE]range(1,N+1)=[1, 2, 3, 4, 5][/STATE][STATE]N+1=[6][/STATE]
+        sum += i
+    if sum > K: ## [CONDITION](sum > K)=[True] [/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return True
+    else: ## [BRANCH]taken=[N][/BRANCH]
+        return False
+[/ANSWER]
+
+[REASONING]
+The function `sum_of_integer` is called with ( N = 5, K=10).
+Inside the function, a variable `sum` is initialized to 0.
+The loop iterates from 1 through 5 (since ( N = 5 )).
+First Iteration (i = 1):
+    `sum += i` updates `sum` to 1 ( 0 + 1 = 1 ).
+Second Iteration (i = 2):
+    `sum += i` updates `sum` to 3 ( 1 + 2 = 3 ).
+Third Iteration (i = 3)
+    `sum += i` updates `sum` to 6 ( 3 + 3 = 6 ).
+Fourth Iteration (i = 4)
+    `sum += i` updates `sum` to 10 ( 6 + 4 = 10 ).
+Fifth Iteration (i = 5)
+    `sum += i` updates `sum` to 15 ( 10 + 5 = 1 ).
+After the loop completes, the condition ( sum > K ) is satisfied, therefore the if branch is taken and the function returns `True` as the output.
+[/REASONING]
+
+[OUTPUT]
+True
+[/OUTPUT]
+
+
+[CODE]
+def sum_elements(elements, K):
+    total = 0
+    for i in range(len(elements)): ## [STATE]i=??[/STATE][STATE]len(elements)=??[/STATE][STATE]range(len(elements))=??[/STATE]
+        total += elements[i]
+    if total > K: ## [CONDITION](total > K)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return True
+    else: ## [BRANCH]taken=??[/BRANCH]
+        return False
+[/CODE]
+
+[INPUT]
+sum_elements([10, 20, 30, 40, 50], 100)
+[/INPUT]
+
+
+[REASONING]
+The function `sum_elements` is called with ( elements = [10, 20, 30, 40, 50], K = 100 ).
+Inside the function, a variable `total` is initialized to 0.
+The loop iterates from 0 through 4 (since ( len(elements) = 5 )).
+First Iteration (i = 0):
+    elements[i] = 10, `total += elements[i]` updates `total` to 1 ( 0 + 10 = 10 ).
+Second Iteration (i = 1):
+    elements[i] = 20, `total += elements[i]` updates `total` to 30 ( 10 + 20 = 30 ).
+Third Iteration (i = 2)
+    elements[i] = 30, `total += elements[i]` updates `total` to 60 ( 30 + 30 = 60 ).
+Fourth Iteration (i = 3)
+    elements[i] = 40, `total += elements[i]` updates `total` to 100 ( 60 + 40 = 100 ).
+Fifth Iteration (i = 4)
+    elements[i] = 50, `total += elements[i]` updates `total` to 150 ( 100 + 50 = 150 ).
+After the loop completes, the condition ( total > K ) is satisfied, therefore the if branch is taken and the function returns `True` as the output.
+[/REASONING]
+
+[ANSWER]
+def sum_elements(elements, K):
+    total = 0
+    for i in range(len(elements)): ## [STATE]i=[0, 1, 2, 3, 4][/STATE][STATE]len(elements)=[5][/STATE][STATE]range(len(elements))=[0, 1, 2, 3, 4][/STATE]
+        total += elements[i]
+    if total > K: ## [CONDITION](total > K)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return True
+    else: ## [BRANCH]taken=[N][/BRANCH]
+        return False
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]
+[CODE]
+from typing import *
+
+
+def rounded_avg(n, m):
+    if m < n: ## [CONDITION](m < n)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return -1
+    summation = 0
+    for i in range(n, m + 1): ## [STATE]i=??[/STATE][STATE]range(n, (m + 1))=??[/STATE][STATE]n=??[/STATE][STATE](m + 1)=??[/STATE]
+        summation += i
+    return bin(round(summation / (m - n + 1)))
+[/CODE]
+
+[INPUT]
+rounded_avg(350,902)
+[/INPUT]
+
+[QUESTION]
+First print the step by step reasoning (wrapped with [REASONING] and [/REASONING]), then print the annotated code (wrapped with [PYTHON] and [PYTHON]), finally print the output (wrapped with [OUTPUT] and [OUTPUT]):
+[/QUESTION]
+[/INST]
+
+[CODE]
+def rounded_avg(n, m):
+    if m < n: ## [CONDITION](m < n)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return -1
+    summation = 0
+    for i in range(n, m + 1): ## [STATE]i=??[/STATE][STATE]range(n, (m + 1))=??[/STATE][STATE]n=??[/STATE][STATE](m + 1)=??[/STATE]
+        summation += i
+    return bin(round(summation / (m - n + 1)))
+[/CODE]
+[INPUT]
+rounded_avg(350,902)
+[/INPUT]
+
+[ANSWER]
+def rounded_avg(n, m):
+    if m < n: ## [CONDITION](m < n)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return -1
+    summation = 0
+    for i in range(n, m + 1): ## [STATE]i=[350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704

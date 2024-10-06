@@ -1,0 +1,5 @@
+The function check_if_last_char_is_a_letter takes a string txt as input and checks if the last word in the string is a single letter.
+
+To determine the output of executing the function check_if_last_char_is_a_letter on the input "apple pi e ", we need to split the string into words, get the last word, and check if it is a single letter.
+
+The last word in the string "apple pi e " is "e". Since "e" is a single letter, the function returns True.

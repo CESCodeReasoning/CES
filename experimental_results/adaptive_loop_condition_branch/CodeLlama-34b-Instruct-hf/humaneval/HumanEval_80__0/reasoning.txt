@@ -1,0 +1,16 @@
+The function `is_happy` is called with ( s = "aabb" ).
+Inside the function, the first condition checks if the length of `s` is less than 3.
+Since the length of "aabb" is 4, the condition is false.
+
+The loop iterates from 0 to 2 (since the length of `s` is 4).
+First Iteration (i = 0)
+   - `i` is 0, which satisfies the condition `i < len(s) - 2`.
+   - The condition `s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]` is false.
+Second Iteration (i = 1)
+   - `i` is 1, which still satisfies the condition `i < len(s) - 2`.
+   - The condition `s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]` is false.
+Third Iteration (i = 2)
+   - `i` is 2, which now satisfies the condition `i < len(s) - 2`.
+   - The condition `s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]` is false.
+
+Since the loop completes without finding any adjacent duplicates, the function returns `True`.

@@ -1,0 +1,5 @@
+from typing import *
+def is_equal_to_sum_even(n):
+    [STATE]n_is_even = n%2 == 0[/STATE]
+    [STATE]n_is_greater_than_or_equal_to_8 = n >= 8[/STATE]
+    return [STATE]n_is_even and n_is_greater_than_or_equal_to_8[/STATE]

@@ -1,0 +1,11 @@
+The function `move_one_ball` is called with the input array `[4, 3, 1, 2]`.
+1. The function first checks if the array is empty. Since it is not, this condition is false.
+2. The array is then sorted to `sorted_array = [1, 2, 3, 4]`.
+3. The minimum value in the original array is found to be `1`, and its index is `2`.
+4. The array is rearranged starting from the index of the minimum value to the end, and then from the start of the array to the index of the minimum value, resulting in `my_arr = [1, 2, 4, 3]`.
+5. The function then iterates through the array to check if each element in `my_arr` matches the corresponding element in `sorted_array`.
+   - First iteration (i = 0): `my_arr[0]` is `1`, which matches `sorted_array[0]`.
+   - Second iteration (i = 1): `my_arr[1]` is `2`, which matches `sorted_array[1]`.
+   - Third iteration (i = 2): `my_arr[2]` is `4`, which does not match `sorted_array[2]` (`3`). This discrepancy leads to the function returning `False`.
+
+Therefore, the function returns `False` indicating that the array cannot be sorted by a single rotation.

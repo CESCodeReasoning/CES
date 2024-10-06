@@ -1,0 +1,95 @@
+The function `even_odd_palindrome` is called with ( n = 123 ).
+Inside the function, a variable `even_palindrome_count` and `odd_palindrome_count` are initialized to 0.
+
+Iteration 1:
+    -The number 1 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 1 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (0, 0).
+Iteration 2:
+    -The number 2 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 2 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (1, 0).
+Iteration 3:
+    -The number 3 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 3 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (1, 1).
+Iteration 4:
+    -The number 4 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 4 is even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (2, 1).
+Iteration 5:
+    -The number 5 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 5 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (2, 2).
+Iteration 6:
+    -The number 6 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 6 is even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (3, 2).
+Iteration 7:
+    -The number 7 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 7 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (3, 3).
+Iteration 8:
+    -The number 8 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 8 is even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (4, 3).
+Iteration 9:
+    -The number 9 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 9 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (4, 4).
+Iteration 10:
+    -The number 10 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 10 is even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (5, 4).
+Iteration 11:
+    -The number 11 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 11 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (5, 5).
+Iteration 12:
+    -The number 12 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 12 is even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (6, 5).
+Iteration 13:
+    -The number 13 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 13 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (6, 6).
+Iteration 14:
+    -The number 14 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 14 is even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (7, 6).
+Iteration 15:
+    -The number 15 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 15 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (7, 7).
+Iteration 16:
+    -The number 16 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 16 is even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (8, 7).
+Iteration 17:
+    -The number 17 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 17 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (8, 8).
+Iteration 18:
+    -The number 18 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 18 is even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (9, 8).
+Iteration 19:
+    -The number 19 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 19 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (9, 9).
+Iteration 20:
+    -The number 20 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 20 is even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (10, 9).
+Iteration 21:
+    -The number 21 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 21 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (10, 10).
+Iteration 22:
+    -The number 22 is a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is false.
+    -The number 22 is even, so the condition `i%2 == 0 and is_palindrome(i)` is true.
+    -The function returns (11, 10).
+Iteration 23:
+    -The number 23 is not a palindrome, so the condition `i%2 == 1 and is_palindrome(i)` is true.
+    -The number 23 is not even, so the condition `i%2 == 0 and is_palindrome(i)` is false.
+    -The function returns (11, 11).

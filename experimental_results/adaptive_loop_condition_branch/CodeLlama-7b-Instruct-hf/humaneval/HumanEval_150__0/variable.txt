@@ -1,0 +1,12 @@
+from typing import *
+
+
+def x_or_y(n, x, y):
+    if n == 1: ## [CONDITION](n == 1)=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+        return y
+    for i in range(2, n): ## [STATE]i=2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32[/STATE][STATE]range(2, n)=2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32[/STATE][STATE]n=3[/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False[/CONDITION][BRANCH]taken=N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N[/BRANCH]
+            return y
+            break
+    else:
+        return x

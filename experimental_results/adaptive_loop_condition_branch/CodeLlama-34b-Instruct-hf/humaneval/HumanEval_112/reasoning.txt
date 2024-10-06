@@ -1,0 +1,5 @@
+The function reverse_delete takes two inputs: a string s and a string c.
+It first removes all characters in c from s, and then checks if the remaining string is a palindrome.
+To determine the output of executing the function reverse_delete on the input "abcde" and "ae", we need to follow these steps:
+1. Remove all characters in "ae" from "abcde". This gives us "bc".
+2. Check if "bc" is a palindrome. It is not, so the function returns ("bc", False).

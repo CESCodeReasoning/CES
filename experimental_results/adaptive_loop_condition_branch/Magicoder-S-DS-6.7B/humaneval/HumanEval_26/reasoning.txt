@@ -1,0 +1,12 @@
+The function remove_duplicates takes a list of integers as input and returns a new list that contains only the elements that appear once in the input list.
+
+To determine the output of executing the function remove_duplicates on the input [1, 2, 3, 2, 4, 3, 5], we need to count the occurrences of each number in the list and then filter out the numbers that appear more than once.
+
+The input list [1, 2, 3, 2, 4, 3, 5] has the following counts:
+- 1 appears once
+- 2 appears twice
+- 3 appears twice
+- 4 appears once
+- 5 appears once
+
+Therefore, the output of executing the function remove_duplicates on the input [1, 2, 3, 2, 4, 3, 5] is [1, 4, 5].

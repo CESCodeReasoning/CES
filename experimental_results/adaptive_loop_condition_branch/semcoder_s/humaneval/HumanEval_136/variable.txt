@@ -1,0 +1,5 @@
+from typing import *
+def largest_smallest_integers(lst):
+    smallest = list(filter(lambda x: x < 0, lst))  # Filters out negative numbers from the list
+    largest = list(filter(lambda x: x > 0, lst))  # Filters out positive numbers from the list
+    return (max(smallest) if smallest else None, min(largest) if largest else None)  # Returns a tuple with the largest negative number and smallest positive number

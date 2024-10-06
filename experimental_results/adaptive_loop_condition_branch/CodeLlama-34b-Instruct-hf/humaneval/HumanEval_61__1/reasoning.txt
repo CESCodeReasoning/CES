@@ -1,0 +1,5 @@
+The function `correct_bracketing` is called with ( brackets = "(" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The character '(' is not ')' or ']', so depth becomes 1.

@@ -1,0 +1,25 @@
+The function `largest_divisor` is called with ( n = 100 ).
+Inside the function, a loop iterates from 99 to 0 (since ( n = 100 )).
+First Iteration (i = 99)
+   - `i` is 99, which does not divide `n` evenly.
+   - The condition `n % i == 0` is false.
+   - No action is taken.
+Second Iteration (i = 98)
+   - `i` is 98, which does not divide `n` evenly.
+   - The condition `n % i == 0` is false.
+   - No action is taken.
+Third Iteration (i = 97)
+   - `i` is 97, which does not divide `n` evenly.
+   - The condition `n % i == 0` is false.
+   - No action is taken.
+...
+Fifty-First Iteration (i = 51)
+   - `i` is 51, which does not divide `n` evenly.
+   - The condition `n % i == 0` is false.
+   - No action is taken.
+Fifty-Second Iteration (i = 50)
+   - `i` is 50, which divides `n` evenly.
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns the value of `i`, which is 50.
+
+Therefore, the final output of the function `largest_divisor(100)` is 50.

@@ -1,0 +1,25 @@
+The function `get_odd_collatz` is called with `n = 14`.
+Initially, since `n` is even (`n % 2 == 0` is true), the `odd_collatz` list is initialized as an empty list. The first branch in the if-else statement is taken.
+
+The while loop continues as long as `n > 1`. Here's the breakdown of each iteration:
+1. `n = 14` (even) - `n` is halved to `n = 7`. The first branch in the while loop is taken.
+2. `n = 7` (odd) - `n` is updated to `n = 22` (`n = 3*7 + 1`). The second branch in the while loop is taken. Since `n % 2 == 1` is false, `7` is added to `odd_collatz`.
+3. `n = 22` (even) - `n` is halved to `n = 11`. The first branch in the while loop is taken.
+4. `n = 11` (odd) - `n` is updated to `n = 34` (`n = 3*11 + 1`). The second branch in the while loop is taken. Since `n % 2 == 1` is false, `11` is added to `odd_collatz`.
+5. `n = 34` (even) - `n` is halved to `n = 17`. The first branch in the while loop is taken.
+6. `n = 17` (odd) - `n` is updated to `n = 52` (`n = 3*17 + 1`). The second branch in the while loop is taken. Since `n % 2 == 1` is false, `17` is added to `odd_collatz`.
+7. `n = 52` (even) - `n` is halved to `n = 26`. The first branch in the while loop is taken.
+8. `n = 26` (even) - `n` is halved to `n = 13`. The first branch in the while loop is taken.
+9. `n = 13` (odd) - `n` is updated to `n = 40` (`n = 3*13 + 1`). The second branch in the while loop is taken. Since `n % 2 == 1` is false, `13` is added to `odd_collatz`.
+10. `n = 40` (even) - `n` is halved to `n = 20`. The first branch in the while loop is taken.
+11. `n = 20` (even) - `n` is halved to `n = 10`. The first branch in the while loop is taken.
+12. `n = 10` (even) - `n` is halved to `n = 5`. The first branch in the while loop is taken.
+13. `n = 5` (odd) - `n` is updated to `n = 16` (`n = 3*5 + 1`). The second branch in the while loop is taken. Since `n % 2 == 1` is false, `5` is added to `odd_collatz`.
+14. `n = 16` (even) - `n` is halved to `n = 8`. The first branch in the while loop is taken.
+15. `n = 8` (even) - `n` is halved to `n = 4`. The first branch in the while loop is taken.
+16. `n = 4` (even) - `n` is halved to `n = 2`. The first branch in the while loop is taken.
+17. `n = 2` (even) - `n` is halved to `n = 1`. The first branch in the while loop is taken.
+
+Finally, the `odd_collatz` list contains `[7, 11, 17, 13, 5]`. After sorting, the list becomes `[5, 7, 11, 13, 17]`.
+
+The function returns the sorted list of odd numbers encountered during the Collatz sequence of the input number.

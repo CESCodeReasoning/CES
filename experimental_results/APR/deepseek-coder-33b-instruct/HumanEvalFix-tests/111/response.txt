@@ -1,0 +1,32 @@
+The bug in the `has_close_elements` function is that it is calculating the distance as `elem - elem2`, but it should be calculating the absolute distance as `abs(elem - elem2)`.
+
+The bug in the `histogram` function is that it is not correctly updating the dictionary `dict1`. It should be updating the dictionary with the count of each word in the string `test`.
+
+Here is the fixed code:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def histogram(test):
+    dict1={}
+    list1=test.split(" ")
+    t=1
+
+    for i in list1:
+        if(list1.count(i)>t) and i != '':
+            t=list1.count(i)
+    if t>0:
+        for i in list1:
+            if(list1.count(i)==t):
+                dict1[i]=t
+    return dict1
+```

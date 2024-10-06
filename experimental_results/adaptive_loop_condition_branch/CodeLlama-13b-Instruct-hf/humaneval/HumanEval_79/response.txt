@@ -1,0 +1,62 @@
+<s> [INST]<<SYS>>You are given a piece of Python code and its output. You are asked to complete the following task:
+1. First think step by step and explain the execution process of the code. Enclose your reasoning process between [REASONING] and [/REASONING].
+2. Finally print the output and enclose it with [OUTPUT] and [/OUTPUT].
+            <</SYS>>
+Bellow are some examples:
+
+[CODE]
+def f(s):
+    return s + "a"
+[/CODE]
+
+[INPUT]
+f("hi")
+[/INPUT]
+
+[REASONING]
+The function f takes a string s as input and returns the concatenation of s with the string "a".
+To determine the output of executing the function f on the input "hi", we need to concatenate "hi" with "a".
+Therefore, the output of executing the function f on the input "hi" is "hia".
+[REASONING]
+
+[OUTPUT]
+"hia"
+[/OUTPUT]
+[CODE]
+from typing import *
+def decimal_to_binary(decimal):
+    return "db" + bin(decimal)[2:] + "db"
+[/CODE]
+
+[INPUT]
+decimal_to_binary(0) 
+[/INPUT]
+
+[/INST]  [PYTHON]
+def decimal_to_binary(decimal):
+    return "db" + bin(decimal)[2:] + "db"
+[/PYTHON]
+
+[TESTS]
+# Test case 1:
+assert decimal_to_binary(0) == "db0b", "Incorrect conversion of 0 to binary"
+# Test case 2:
+assert decimal_to_binary(1) == "db1b", "Incorrect conversion of 1 to binary"
+# Test case 3:
+assert decimal_to_binary(2) == "db10b", "Incorrect conversion of 2 to binary"
+# Test case 4:
+assert decimal_to_binary(3) == "db11b", "Incorrect conversion of 3 to binary"
+# Test case 5:
+assert decimal_to_binary(4) == "db100b", "Incorrect conversion of 4 to binary"
+# Test case 6:
+assert decimal_to_binary(5) == "db101b", "Incorrect conversion of 5 to binary"
+# Test case 7:
+assert decimal_to_binary(6) == "db110b", "Incorrect conversion of 6 to binary"
+# Test case 8:
+assert decimal_to_binary(7) == "db111b", "Incorrect conversion of 7 to binary"
+# Test case 9:
+assert decimal_to_binary(8) == "db1000b", "Incorrect conversion of 8 to binary"
+# Test case 10:
+assert decimal_to_binary(9) == "db1001b", "Incorrect conversion of 9 to binary"
+[/TESTS]
+</s>

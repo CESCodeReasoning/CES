@@ -1,0 +1,10 @@
+The function `by_length` is called with (arr = [1, -1, 3, 2]).
+Inside the function, a dictionary `dic` is defined with key-value pairs where the key is the length of a number and the value is the word that represents that length.
+The `sorted` function is called on `arr` with the `reverse` parameter set to `True` to sort the array in descending order.
+The `new_arr` list is initialized to an empty list.
+The `for` loop iterates over the sorted `arr` list.
+For each element `var` in the `arr` list, the `try` block is executed.
+If `var` is a key in the `dic` dictionary, then the corresponding value is appended to `new_arr`.
+If `var` is not a key in the `dic` dictionary, then the `except` block is executed.
+The `pass` statement is used to skip the code in the `except` block.
+After the loop completes, the function returns the `new_arr` list.

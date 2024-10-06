@@ -1,0 +1,18 @@
+The function `correct_bracketing` is called with the input string "<<".
+Inside the function, a variable `depth` is initialized to 0 to keep track of the nesting level of brackets.
+
+Iteration 1:
+    - The character '<' increases the `depth` by 1 (from 0 to 1).
+Iteration 2:
+    - The character '<' increases the `depth` again by 1 (from 1 to 2).
+Iteration 3:
+    - The character '>' decreases the `depth` by 1 (from 2 to 1).
+Iteration 4:
+    - The character '<' increases the `depth` by 1 (from 1 to 2).
+Iteration 5:
+    - The character '>' decreases the `depth` by 1 (from 2 to 1).
+Iteration 6:
+    - The character '>' decreases the `depth` by 1 (from 1 to 0).
+
+After all iterations, the `depth` is 0, indicating that all opening brackets have corresponding closing brackets and they are correctly nested. Therefore, the function returns `True`.
+

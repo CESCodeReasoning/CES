@@ -1,0 +1,22 @@
+The function `int_to_mini_roman` is called with ( number = 900 ).
+Inside the function, two lists `num` and `sym` are initialized with corresponding values.
+The variable `i` is initialized to 12.
+The variable `res` is initialized to an empty string.
+First Iteration:
+    - number = 900, num[i] = 1000, div = 0.
+    - number = 900, num[i] = 900, div = 1.
+    - div = 1, res = "M".
+    - div = 0, i = 11.
+Second Iteration:
+    - number = 0, num[i] = 500, div = 0.
+    - number = 0, num[i] = 400, div = 0.
+    - number = 0, num[i] = 100, div = 0.
+    - number = 0, num[i] = 90, div = 0.
+    - number = 0, num[i] = 50, div = 0.
+    - number = 0, num[i] = 40, div = 0.
+    - number = 0, num[i] = 10, div = 0.
+    - number = 0, num[i] = 9, div = 0.
+    - number = 0, num[i] = 5, div = 0.
+    - number = 0, num[i] = 4, div = 0.
+    - number = 0, num[i] = 1, div = 0.
+The while loop terminates. The function returns the value of `res`, which is now "M".

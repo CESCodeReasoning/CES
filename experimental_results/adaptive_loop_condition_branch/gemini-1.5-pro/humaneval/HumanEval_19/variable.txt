@@ -1,0 +1,22 @@
+from typing import *
+def sort_numbers(numbers: str) -> str:
+    value_map = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    # Split the input string into a list of strings, one for each number.
+    numbers_list = numbers.split(' ')
+    # Filter out any empty strings from the list.
+    numbers_list = [x for x in numbers_list if x]
+    # Sort the list of strings using the key=lambda x: value_map[x] argument, which sorts the strings by the integer value of the corresponding number.
+    numbers_list.sort(key=lambda x: value_map[x])
+    # Join the sorted list of strings into a single string and return the result.
+    return ' '.join(numbers_list)

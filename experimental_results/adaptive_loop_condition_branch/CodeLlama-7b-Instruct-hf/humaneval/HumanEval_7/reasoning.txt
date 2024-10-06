@@ -1,0 +1,5 @@
+The function filter_by_substring takes two arguments: a list of strings (strings) and a string (substring).
+It returns a new list containing all the elements of strings that contain the substring.
+
+To determine the output of executing the function filter_by_substring on the input [ ] and 'john', we need to iterate over the list [ ] and check if each element contains the substring 'john'.
+Since there are no elements in the list, the output is an empty list [ ].

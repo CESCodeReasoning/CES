@@ -1,0 +1,28 @@
+
+[REASONING]
+The function `maximum` is called with ( arr = [-3, 2, 1, 2, -1, -2, 1], k = 1 ).
+`k` is 1, which is not equal to 0.
+The condition `k == 0` is false, therefore the else branch is taken.
+Action: `arr.sort()` sorts the array in ascending order.
+Action: `ans = arr[-k:]` takes the last `k` elements from the sorted array.
+Return Statement
+   - After the if-else block, the function returns the value of `ans`, which is the last element of the sorted array.
+
+Therefore, the final output of the function `maximum([-3, 2, 1, 2, -1, -2, 1], 1)` is [1].
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def maximum(arr, k):
+    if k == 0: ## [CONDITION](k == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return []
+    arr.sort() ## [STATE]arr=[-3, -2, -1, 1, 1, 2, 2][/STATE]
+    ans = arr[-k:] ## [STATE]ans=[2][/STATE]
+    return ans
+[/ANSWER]
+
+[OUTPUT]
+[2]
+[/OUTPUT]

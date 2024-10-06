@@ -1,0 +1,76 @@
+[REASONING]
+The function `parse_nested_parens` is called with ( paren_string = '(()(())((())))' ).
+The function `parse_nested_parens` calls the helper function `parse_paren_group` for each non-empty substring of `paren_string` separated by spaces.
+
+The first substring is '(()(())((())))'.
+The function `parse_paren_group` is called with ( s = '(()(())((())))' ).
+The function `parse_paren_group` iterates through the characters of `s`.
+The first character is '('.
+The condition ( c == '(' ) is true.
+The depth is incremented to 1.
+The max_depth is updated to 1.
+The next character is '('.
+The condition ( c == '(' ) is true.
+The depth is incremented to 2.
+The max_depth is updated to 2.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to 1.
+The next character is '('.
+The condition ( c == '(' ) is true.
+The depth is incremented to 2.
+The max_depth is updated to 2.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to 1.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to 0.
+The next character is '('.
+The condition ( c == '(' ) is true.
+The depth is incremented to 1.
+The max_depth is updated to 1.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to 0.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to -1.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to -2.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to -3.
+The function `parse_paren_group` returns the max_depth, which is 2.
+
+The second substring is empty, so it is skipped.
+
+The third substring is empty, so it is skipped.
+
+The function `parse_nested_parens` returns a list of the max_depths for each non-empty substring of `paren_string` separated by spaces.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    def parse_paren_group(s):
+        depth = 0
+        max_depth = 0
+        for c in s: ## [STATE]c=['(', '(', ')', '(', ')', ')', '(', ')', ')', ')', ')', ')'][/STATE][STATE]s=['(()(())((())))'][/STATE]
+            if c == '(': ## [CONDITION](c == '(')=[True, True, False, True, False, False, True, False, False, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, N, Y, N, N, Y, N, N, N, N, N][/BRANCH]
+                depth += 1
+                max_depth = max(depth, max_depth)
+            else: ## [BRANCH]taken=[N, N, Y, N, Y, Y, N, Y, Y, Y, Y, Y][/BRANCH]
+                depth -= 1
+
+        return max_depth
+
+    return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+[/ANSWER]
+
+[OUTPUT]
+[2]
+[/OUTPUT]

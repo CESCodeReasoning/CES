@@ -1,0 +1,38 @@
+The function `parse_nested_parens` is called with ( paren_string = '((()))' ).
+The function `parse_nested_parens` splits the input string `paren_string` into a list of strings, each of which represents a group of parentheses.
+
+The function `parse_nested_parens` calls another function `parse_paren_group` for each group of parentheses.
+
+In `parse_paren_group`, the function iterates over each character in the string. If the character is '(', the depth is increased by 1. If the character is ')', the depth is decreased by 1. The maximum depth is tracked by `max_depth`.
+
+The function `parse_paren_group` returns the maximum depth `max_depth`.
+
+Finally, the function `parse_nested_parens` returns a list of the maximum depths of each group of parentheses.
+
+For the input '((()))', the function `parse_nested_parens` splits the string into ['((()))'], and for each group of parentheses, it calls `parse_paren_group`.
+
+In the group '((()))', the maximum depth is 2, so the function `parse_nested_parens` returns [2].
+
+Therefore, the final output of the function `parse_nested_parens('((()))')` is [2].
+
+[ANSWER]
+def parse_nested_parens(paren_string: str) -> List[int]:
+    def parse_paren_group(s):
+        depth = 0
+        max_depth = 0
+        for c in s: ## [STATE]c=['(', '(', ')', ')', ')'][/STATE][STATE]s=['((()))'][/STATE]
+            if c == '(': ## [CONDITION](c == '(')=[True, True, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, N, N, N][/BRANCH]
+                depth += 1
+                max_depth = max(depth, max_depth)
+            else: ## [BRANCH]taken=[N, N, Y, Y, Y][/BRANCH]
+                depth -= 1
+
+        return max_depth
+
+    return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+[/ANSWER]
+
+[OUTPUT]
+[2]
+[/OUTPUT]
+<|EOT|>

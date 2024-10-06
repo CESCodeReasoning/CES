@@ -1,0 +1,15 @@
+The function `encrypt` is called with ( s = 'et' ).
+Inside the function, a variable `d` is initialized to the string 'abcdefghijklmnopqrstuvwxyz'.
+
+Iteration 1:
+    -The character 'e' is in d, so the index of 'e' is 4.
+    -The index of 'e' is multiplied by 2, which is 8.
+    -The index of 'e' is added to 8, which is 12.
+    -The index of 'e' is modulo 26, which is 12.
+    -The character at index 12 in d is 'm', so the output string is 'm'.
+Iteration 2:
+    -The character 't' is in d, so the index of 't' is 19.
+    -The index of 't' is multiplied by 2, which is 38.
+    -The index of 't' is added to 38, which is 46.
+    -The index of 't' is modulo 26, which is 10.
+    -The character at index 10 in d is 'k', so the output string is 'mk'.

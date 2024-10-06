@@ -1,0 +1,13 @@
+from typing import *
+
+
+def sort_even(l: list):
+    evens = l[::2]
+    odds = l[1::2]
+    evens.sort()
+    ans = []
+    for e, o in zip(evens, odds): ## [STATE]e=[1][/STATE][STATE]o=[2][/STATE][STATE]zip(evens, odds)=[(1, 2)][/STATE][STATE]evens=[1][/STATE][STATE]odds=[2][/STATE]
+        ans.extend([e, o])
+    if len(evens) > len(odds): ## [CONDITION](len(evens) > len(odds))=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        ans.append(evens[-1])
+    return ans

@@ -1,0 +1,22 @@
+The function `how_many_times` is called with ( string = 'john doe', substring = 'john' ).
+Inside the function, a variable `times` is initialized to 0.
+
+Iteration 1:
+    - The substring 'john' is compared to the substring of 'john doe' from index 0 to 3 ( 'john' ).
+    - Since they are equal, `times` is incremented to 1.
+
+Iteration 2:
+    - The substring 'john' is compared to the substring of 'john doe' from index 1 to 4 ( 'ohnd' ).
+    - Since they are not equal, `times` remains 1.
+
+Iteration 3:
+    - The substring 'john' is compared to the substring of 'john doe' from index 2 to 5 ( 'hndo' ).
+    - Since they are not equal, `times` remains 1.
+
+Iteration 4:
+    - The substring 'john' is compared to the substring of 'john doe' from index 3 to 6 ( 'ndoe' ).
+    - Since they are not equal, `times` remains 1.
+
+Iteration 5:
+    - The substring 'john' is compared to the substring of 'john doe' from index 4 to 7 ( 'doe' ).
+    - Since they are not equal, `times` remains 1.

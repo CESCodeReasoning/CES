@@ -1,0 +1,13 @@
+The function `count_upper` is called with ( s = 'dBBE' ).
+Inside the function, a variable `count` is initialized to 0.
+
+Iteration 1:
+    -The character 'd' is not in "AEIOU", so no increment in count.
+Iteration 2:
+    -The character 'B' is not in "AEIOU", so no increment in count.
+Iteration 3:
+    -The character 'B' is not in "AEIOU", so no increment in count.
+Iteration 4:
+    -The character 'E' is in "AEIOU", so count becomes 1.
+
+Therefore, the final output of the function `count_upper('dBBE')` is 1.

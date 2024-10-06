@@ -1,0 +1,5 @@
+The function `specialFilter` is called with an empty list `[]`.
+Inside the function, a variable `count` is initialized to 0.
+The loop iterates over the elements in the list `nums`.
+Since the list is empty, the loop does not execute.
+Therefore, the function returns the value of `count`, which is 0.

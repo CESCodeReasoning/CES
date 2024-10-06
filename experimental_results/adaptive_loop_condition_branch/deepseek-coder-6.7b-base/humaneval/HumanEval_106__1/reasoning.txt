@@ -1,0 +1,24 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterates from 1 to n, inclusive.
+In the inner loop, for each element indexed by i in the outer loop, calculate the factorial of i.
+First Iteration (i=1):
+    - `i` is 1, j in the inner loop is 1.
+    - x = 1 * 1 = 1
+Second Iteration (i=2):
+    - `i` is 2, j in the inner loop is 1, 2.
+    - x = 1 * 1 * 2 = 2
+Third Iteration (i=3):
+    - `i` is 3, j in the inner loop is 1, 2, 3.
+    - x = 1 * 1 * 2 * 3 = 6
+Forth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 1, 2, 3, 4.
+    - x = 1 * 1 * 2 * 3 * 4 = 24
+Fifth Iteration (i=5):
+    - `i` is 5, j in the inner loop is 1, 2, 3, 4, 5.
+    - x = 1 * 1 * 2 * 3 * 4 * 5 = 120
+Sixth Iteration (i=6):
+    - `i` is 6, j in the inner loop is 1, 2, 3, 4, 5, 6.
+    - x = 1 * 1 * 2 * 3 * 4 * 5 * 6 = 720
+Seventh Iteration (i=7):
+    - `i` is 7, j in the inner loop is 1, 2, 3, 4, 5, 6, 7.
+    - x = 1 * 1 * 2 * 3 * 4 * 5 * 6 * 7 = 5040

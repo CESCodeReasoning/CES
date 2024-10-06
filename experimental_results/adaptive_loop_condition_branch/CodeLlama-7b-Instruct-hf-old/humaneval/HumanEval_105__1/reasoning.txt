@@ -1,0 +1,30 @@
+The function `by_length` is called with an empty list (arr = []).
+Inside the function, a dictionary `dic` is defined with numbers and their corresponding lengths.
+The list `sorted_arr` is sorted in reverse order using the `sorted` method.
+The loop iterates over the sorted list `sorted_arr`.
+First Iteration:
+    `var` = [] (since `sorted_arr` is empty)
+    `dic[var]` is not defined since `var` is an empty list.
+    The `try` block is executed and the `except` block is skipped.
+    `new_arr` remains empty.
+Second Iteration:
+    `var` = [] (since `sorted_arr` is still empty)
+    `dic[var]` is not defined since `var` is an empty list.
+    The `try` block is executed and the `except` block is skipped.
+    `new_arr` remains empty.
+Third Iteration:
+    `var` = [] (since `sorted_arr` is still empty)
+    `dic[var]` is not defined since `var` is an empty list.
+    The `try` block is executed and the `except` block is skipped.
+    `new_arr` remains empty.
+Fourth Iteration:
+    `var` = [] (since `sorted_arr` is still empty)
+    `dic[var]` is not defined since `var` is an empty list.
+    The `try` block is executed and the `except` block is skipped.
+    `new_arr` remains empty.
+Fifth Iteration:
+    `var` = [] (since `sorted_arr` is still empty)
+    `dic[var]` is not defined since `var` is an empty list.
+    The `try` block is executed and the `except` block is skipped.
+    `new_arr` remains empty.
+After the loop completes, the function returns an empty list.

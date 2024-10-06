@@ -1,0 +1,9 @@
+The function unique takes a list l as input. It first converts the list to a set to remove any duplicate elements, then converts the set back to a list and sorts it. The sorted list is then returned.
+
+To determine the output of executing the function unique on the input ['a', 'b', 'b', 'c', 'd', 'd'], we first convert the list to a set to remove any duplicate elements. The set will only contain unique elements, so the set will be {'a', 'b', 'c', 'd'}.
+
+Next, we convert the set back to a list. Since sets are unordered in Python, the list might not be in the same order as the original list.
+
+Finally, we sort the list in ascending order. The sorted list is then returned.
+
+Therefore, the output of executing the function unique on the input ['a', 'b', 'b', 'c', 'd', 'd'] is ['a', 'b', 'c', 'd'].

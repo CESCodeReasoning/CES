@@ -1,0 +1,9 @@
+The function `greatest_common_divisor` is called with ( a = 10, b = 15 ).
+Inside the function, a variable `a` is initialized to 10.
+First Iteration:
+    - b = 15, a % b = 5.
+    - a, b = b, a % b updates a to 15 and b to 5.
+Second Iteration:
+    - b = 5, a % b = 0.
+    - a, b = b, a % b updates a to 5 and b to 0.
+The while loop terminates. The function returns the value of `a`, which is now 5.

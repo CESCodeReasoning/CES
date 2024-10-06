@@ -1,0 +1,15 @@
+from typing import *
+
+
+def minSubArraySum(nums):
+    max_sum = 0
+    s = 0
+    for num in nums: ## [STATE]num=[0, 10, 20, 1000000][/STATE][STATE]nums=[[0, 10, 20, 1000000]][/STATE]
+        s += -num
+        if (s < 0): ## [CONDITION](s < 0)=[False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, Y][/BRANCH]
+            s = 0
+        max_sum = max(s, max_sum)
+    if max_sum == 0: ## [CONDITION](max_sum == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        max_sum = max(-i for i in nums)
+    min_sum = -max_sum
+    return min_sum

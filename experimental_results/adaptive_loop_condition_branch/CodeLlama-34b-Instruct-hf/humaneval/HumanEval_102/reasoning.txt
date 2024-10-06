@@ -1,0 +1,8 @@
+The function `choose_num` is called with ( x = 12, y = 15 ).
+First, the function checks if `x` is greater than `y`.
+Since `x` is 12 and `y` is 15, the condition `x > y` is false.
+Next, the function checks if `y` is even.
+Since `y` is 15, `y % 2` is 1, so the condition `y % 2 == 0` is false.
+Next, the function checks if `x` is equal to `y`.
+Since `x` is 12 and `y` is 15, the condition `x == y` is false.
+Finally, the function returns `y - 1`, which is 14.

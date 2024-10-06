@@ -1,0 +1,15 @@
+Buggy Code:
+```python
+def derivative(xs: list):
+    return [(i * x) for i, x in enumerate(xs)]
+```
+
+The bug in this code is that it is not correctly calculating the derivative of the polynomial. The derivative of a polynomial is calculated by multiplying each coefficient by its power and then subtracting 1 from the power.
+
+Fixed Code:
+```python
+def derivative(xs: list):
+    return [i * x for i, x in enumerate(xs[1:], 1)]
+```
+
+In the fixed code, we use the `enumerate` function with a start value of 1 to skip the first element of the list (which is the constant term in the polynomial) and then multiply each coefficient by its power.

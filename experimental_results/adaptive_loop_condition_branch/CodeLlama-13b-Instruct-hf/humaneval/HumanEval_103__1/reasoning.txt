@@ -1,0 +1,69 @@
+The function `rounded_avg` is called with ( n = 350, m = 902 ).
+The condition ( m < n ) is not satisfied, therefore the if branch is not taken.
+The loop iterates from 350 through 902 (since ( m = 902 )).
+First Iteration (i = 350):
+    `summation += i` updates `summation` to 350 ( 0 + 350 = 350 ).
+Second Iteration (i = 351):
+    `summation += i` updates `summation` to 701 ( 350 + 351 = 701 ).
+Third Iteration (i = 352)
+    `summation += i` updates `summation` to 1052 ( 701 + 352 = 1052 ).
+Fourth Iteration (i = 353)
+    `summation += i` updates `summation` to 1403 ( 1052 + 353 = 1403 ).
+Fifth Iteration (i = 354)
+    `summation += i` updates `summation` to 1754 ( 1403 + 354 = 1754 ).
+Sixth Iteration (i = 355)
+    `summation += i` updates `summation` to 2105 ( 1754 + 355 = 2105 ).
+Seventh Iteration (i = 356)
+    `summation += i` updates `summation` to 2456 ( 2105 + 356 = 2456 ).
+Eighth Iteration (i = 357)
+    `summation += i` updates `summation` to 2807 ( 2456 + 357 = 2807 ).
+Ninth Iteration (i = 358)
+    `summation += i` updates `summation` to 3158 ( 2807 + 358 = 3158 ).
+Tenth Iteration (i = 359)
+    `summation += i` updates `summation` to 3510 ( 3158 + 359 = 3510 ).
+Eleventh Iteration (i = 360)
+    `summation += i` updates `summation` to 3861 ( 3510 + 360 = 3861 ).
+Twelfth Iteration (i = 361)
+    `summation += i` updates `summation` to 4212 ( 3861 + 361 = 4212 ).
+Thirteenth Iteration (i = 362)
+    `summation += i` updates `summation` to 4563 ( 4212 + 362 = 4563 ).
+Fourteenth Iteration (i = 363)
+    `summation += i` updates `summation` to 4914 ( 4563 + 363 = 4914 ).
+Fifteenth Iteration (i = 364)
+    `summation += i` updates `summation` to 5265 ( 4914 + 364 = 5265 ).
+Sixteenth Iteration (i = 365)
+    `summation += i` updates `summation` to 5616 ( 5265 + 365 = 5616 ).
+Seventeenth Iteration (i = 366)
+    `summation += i` updates `summation` to 5967 ( 5616 + 366 = 5967 ).
+Eighteenth Iteration (i = 367)
+    `summation += i` updates `summation` to 6318 ( 5967 + 367 = 6318 ).
+Nineteenth Iteration (i = 368)
+    `summation += i` updates `summation` to 6669 ( 6318 + 368 = 6669 ).
+Twentieth Iteration (i = 369)
+    `summation += i` updates `summation` to 7020 ( 6669 + 369 = 7020 ).
+Twenty-first Iteration (i = 370)
+    `summation += i` updates `summation` to 7371 ( 7020 + 370 = 7371 ).
+Twenty-second Iteration (i = 371)
+    `summation += i` updates `summation` to 7722 ( 7371 + 371 = 7722 ).
+Twenty-third Iteration (i = 372)
+    `summation += i` updates `summation` to 8073 ( 7722 + 372 = 8073 ).
+Twenty-fourth Iteration (i = 373)
+    `summation += i` updates `summation` to 8424 ( 8073 + 373 = 8424 ).
+Twenty-fifth Iteration (i = 374)
+    `summation += i` updates `summation` to 8775 ( 8424 + 374 = 8775 ).
+Twenty-sixth Iteration (i = 375)
+    `summation += i` updates `summation` to 9126 ( 8775 + 375 = 9126 ).
+Twenty-seventh Iteration (i = 376)
+    `summation += i` updates `summation` to 9477 ( 9126 + 376 = 9477 ).
+Twenty-eighth Iteration (i = 377)
+    `summation += i` updates `summation` to 9828 ( 9477 + 377 = 9828 ).
+Twenty-ninth Iteration (i = 378)
+    `summation += i` updates `summation` to 10179 ( 9828 + 378 = 10179 ).
+Thirtieth Iteration (i = 379)
+    `summation += i` updates `summation` to 10530 ( 10179 + 379 = 10530 ).
+Thirty-first Iteration (i = 380)
+    `summation += i` updates `summation` to 10881 ( 10530 + 380 = 10881 ).
+Thirty-second Iteration (i = 381)
+    `summation += i` updates `summation` to 11232 ( 10881 + 381 = 11232 ).
+Thirty-third Iteration (i = 382)
+    `summation += i` updates `summation` to

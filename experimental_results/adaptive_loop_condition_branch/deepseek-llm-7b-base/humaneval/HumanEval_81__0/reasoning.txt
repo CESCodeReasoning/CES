@@ -1,0 +1,5 @@
+The function `is_palindrome` is called with ( word = "racecar" ).
+Inside the function, a variable `word` is initialized to `"racecar"`.
+The function checks if the word is equal to its reverse, i.e. `word == word[::-1]`.
+If the word is equal to its reverse, the function returns `True`.
+Otherwise, the function returns `False`.

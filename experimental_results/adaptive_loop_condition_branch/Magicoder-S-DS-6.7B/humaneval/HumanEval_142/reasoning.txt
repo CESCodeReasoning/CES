@@ -1,0 +1,11 @@
+The function `sum_squares` is called with ( lst = [1,2,3] ).
+Inside the function, a variable `result` is initialized to an empty list.
+
+Iteration 1:
+    -The index '0' is divisible by 3, so the square of the element at index 0 (1) is appended to the result list.
+Iteration 2:
+    -The index '1' is not divisible by 3, so the element at index 1 (2) is appended to the result list.
+Iteration 3:
+    -The index '2' is divisible by 3, so the square of the element at index 2 (3) is appended to the result list.
+
+The sum of the elements in the result list is 10.

@@ -1,0 +1,13 @@
+The function `solve` takes an integer `N` as input. The steps executed by the function are as follows:
+1. Convert the integer `N` to a string to iterate over each digit.
+2. Use a generator expression inside the `sum` function to convert each character (digit) back to an integer and sum them up.
+3. Convert the resulting sum of the digits to its binary representation using the `bin` function, which returns a string prefixed with '0b'.
+4. Slice the binary string to remove the '0b' prefix and return the result.
+
+For the input `1000`:
+- Convert `1000` to the string "1000".
+- Sum the digits: 1 + 0 + 0 + 0 = 1.
+- Convert the sum (1) to binary: `bin(1)` results in '0b1'.
+- Slice the binary string to remove the '0b', resulting in '1'.
+
+Thus, the output for the input `1000` is '1'.

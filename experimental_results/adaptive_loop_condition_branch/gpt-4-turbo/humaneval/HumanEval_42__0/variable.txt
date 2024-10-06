@@ -1,0 +1,6 @@
+from typing import *
+
+
+def incr_list(l: list):
+    # [STATE] l is [3, 2, 1] [/STATE]
+    return [(e + 1) for e in l]  # [STATE] e is 3, then 2, then 1 [/STATE]

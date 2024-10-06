@@ -1,0 +1,17 @@
+The function `correct_bracketing` is called with ( brackets = "(()())" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    - The character '(' is encountered, so `depth` becomes 1.
+Iteration 2:
+    - The character '(' is encountered again, so `depth` becomes 2.
+Iteration 3:
+    - The character ')' is encountered, so `depth` becomes 1.
+Iteration 4:
+    - The character '(' is encountered again, so `depth` becomes 2.
+Iteration 5:
+    - The character ')' is encountered, so `depth` becomes 1.
+Iteration 6:
+    - The character ')' is encountered, so `depth` becomes 0.
+
+Since `depth` is 0 at the end of the loop, the function returns `True`.

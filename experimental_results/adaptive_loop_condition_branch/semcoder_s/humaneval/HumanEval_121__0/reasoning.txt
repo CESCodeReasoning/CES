@@ -1,0 +1,8 @@
+The function `solution` takes a list `lst` as input and returns the sum of elements at even indices in the list that are odd numbers.
+
+- The list `[2, 4, 8]` is given as input.
+- The function iterates over the elements of the list along with their indices.
+- For the list `[2, 4, 8]`, the elements and their indices are (2, 0), (4, 1), and (8, 2).
+- The function filters out the elements that are at even indices and are odd numbers.
+- In this case, the only element that satisfies both conditions is `2` at index `0`.
+- Therefore, the sum of the single odd number at an even index is `2`.

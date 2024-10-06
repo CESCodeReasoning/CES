@@ -1,0 +1,10 @@
+
+[REASONING]
+The function double_the_difference takes a list of integers as input. It then squares each number in the list that is positive, odd, and does not contain a decimal point. It then returns the sum of these squared numbers.
+
+For the input [-10, -20, -30], none of the numbers are positive, odd, or do not contain a decimal point. Therefore, the output of the function is 0.
+[/REASONING]
+
+[OUTPUT]
+0
+[/OUTPUT]

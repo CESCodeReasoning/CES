@@ -1,0 +1,44 @@
+The function `is_nested` is called with ( string = "[[[[]]]]" ).
+Inside the function, a variable `opening_bracket_index` and `closing_bracket_index` are initialized to empty lists.
+
+Iteration 1:
+    -The character '[' is found at index 0, so opening_bracket_index becomes [0].
+Iteration 2:
+    -The character '[' is found at index 1, so opening_bracket_index becomes [0, 1].
+Iteration 3:
+    -The character '[' is found at index 2, so opening_bracket_index becomes [0, 1, 2].
+Iteration 4:
+    -The character '[' is found at index 3, so opening_bracket_index becomes [0, 1, 2, 3].
+Iteration 5:
+    -The character ']' is found at index 4, so closing_bracket_index becomes [4].
+Iteration 6:
+    -The character ']' is found at index 5, so closing_bracket_index becomes [4, 5].
+Iteration 7:
+    -The character ']' is found at index 6, so closing_bracket_index becomes [4, 5, 6].
+Iteration 8:
+    -The character ']' is found at index 7, so closing_bracket_index becomes [4, 5, 6, 7].
+Iteration 9:
+    -The character ']' is found at index 8, so closing_bracket_index becomes [4, 5, 6, 7, 8].
+Iteration 10:
+    -The character ']' is found at index 9, so closing_bracket_index becomes [4, 5, 6, 7, 8, 9].
+
+The closing_bracket_index list is reversed to [9, 8, 7, 6, 5, 4].
+
+Iteration 1:
+    -The first opening_bracket_index is 0, which is less than the first closing_bracket_index 9.
+    -cnt becomes 1.
+    -i becomes 1.
+Iteration 2:
+    -The second opening_bracket_index is 1, which is less than the second closing_bracket_index 8.
+    -cnt becomes 2.
+    -i becomes 2.
+Iteration 3:
+    -The third opening_bracket_index is 2, which is less than the third closing_bracket_index 7.
+    -cnt becomes 3.
+    -i becomes 3.
+Iteration 4:
+    -The fourth opening_bracket_index is 3, which is less than the fourth closing_bracket_index 6.
+    -cnt becomes 4.
+    -i becomes 4.
+
+Since cnt is greater than or equal to 2, the function returns True.

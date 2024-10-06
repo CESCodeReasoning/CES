@@ -1,0 +1,32 @@
+The fixed code for `has_close_elements` is:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+The fixed code for `is_nested` is:
+
+```python
+def is_nested(string):
+    stack = []
+    for bracket in string:
+        if bracket == '[':
+            stack.append(bracket)
+        elif bracket == ']':
+            if len(stack) > 1 and stack[-2] == '[':
+                return True
+            else:
+                stack.pop()
+    return False
+```
+
+In the fixed code for `is_nested`, we use a stack to keep track of the brackets. When we encounter an opening bracket, we push it onto the stack. When we encounter a closing bracket, we check if the stack has more than one element and the second last element is an opening bracket. If it is, we return True. If it's not, we pop the last element from the stack. If we finish iterating through the string and haven't found a nested bracket, we return False.

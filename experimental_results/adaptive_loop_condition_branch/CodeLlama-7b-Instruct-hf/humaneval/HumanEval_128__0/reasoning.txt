@@ -1,0 +1,5 @@
+The function `prod_signs` is called with ( arr = [-1, 1, 1, 1] ).
+The condition `not arr` is false, therefore the if branch is not taken.
+The method returns the product of the signs of the elements in the array, which is (-1) ** len(list(filter(lambda x: x < 0, arr))) * sum([abs(i) for i in arr]).
+The value of the product is (-1) ** 4 * sum([abs(i) for i in arr]), where the sum is 4 and the product is -1.
+Therefore, the final output of the function `prod_signs([-1, 1, 1, 1])` is -1.

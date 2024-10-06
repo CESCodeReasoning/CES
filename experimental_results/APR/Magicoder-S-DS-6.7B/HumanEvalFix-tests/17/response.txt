@@ -1,0 +1,90 @@
+<｜begin▁of▁sentence｜>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in parse_music.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+from typing import List
+
+
+def parse_music(music_string: str) -> List[int]:
+    note_map = {'o': 3, 'o|': 2, '.|': 1}
+    return [note_map[x] for x in music_string.split(' ') if x]
+
+Tests:
+def check(parse_music):
+    assert parse_music('') == []
+    assert parse_music('o o o o') == [4, 4, 4, 4]
+    assert parse_music('.| .| .| .|') == [1, 1, 1, 1]
+    assert parse_music('o| o| .| .| o o o o') == [2, 2, 1, 1, 4, 4, 4, 4]
+    assert parse_music('o| .| o| .| o o| o o|') == [2, 1, 2, 1, 4, 2, 4, 2]
+
+check(parse_music)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `parse_music(music_string: str) -> List[int]` to solve the following problem:
+Input to this function is a string representing musical notes in a special ASCII format.
+Your task is to parse this string and return list of integers corresponding to how many beats does each
+not last.
+Here is a legend:
+'o' - whole note, lasts four beats
+'o|' - half note, lasts two beats
+'.|' - quater note, lasts one beat
+
+Fixed Code:
+```python
+from typing import List
+
+
+def parse_music(music_string: str) -> List[int]:
+    note_map = {'o': 4, 'o|': 2, '.|': 1}
+    return [note_map[x] for x in music_string.split(' ') if x]
+```<｜end▁of▁sentence｜>

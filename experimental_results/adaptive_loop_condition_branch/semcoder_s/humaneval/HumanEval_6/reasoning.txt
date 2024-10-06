@@ -1,0 +1,21 @@
+The function `parse_nested_parens` is called with ( paren_string = '(()()) ((())) () ((())()())' ).
+Inside the function, a variable `max_depth` is initialized to 0.
+The `parse_nested_parens` function splits the input string by space and filters out any empty strings.
+For each non-empty string:
+    - The `parse_paren_group` function is called with the string.
+    - Inside `parse_paren_group`, a variable `depth` is initialized to 0 and `max_depth` to 0.
+    - The function iterates over each character in the string.
+        - If the character is '(', depth is incremented and max_depth is updated to the maximum of depth and max_depth.
+        - If the character is ')', depth is decremented.
+    - The function returns the `max_depth`.
+
+The function then returns a list of the `max_depth` values for each non-empty string.
+
+The input string '(()()) ((())) () ((())()())' is split into ['(()())', '((()))', '()', '((())()())'].
+For each of these strings:
+    - '(()())' has a max depth of 2.
+    - '((()))' has a max depth of 3.
+    - '()' has a max depth of 1 (empty string).
+    - '((())()())' has a max depth of 4.
+
+Therefore, the final output of the function `parse_nested_parens('(()()) ((())) () ((())()())')` is [2, 3, 1, 4].

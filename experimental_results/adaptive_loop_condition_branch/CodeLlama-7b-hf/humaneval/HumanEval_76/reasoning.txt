@@ -1,0 +1,82 @@
+The function `is_simple_power` is called with ( x = 16, n = 2 ).
+The condition ( n == 1 ) is not satisfied, therefore the if branch is not taken.
+The variable `power` is initialized to 1.
+The loop iterates from 1 through 16 (since ( x = 16 )).
+First Iteration (power = 1):
+    - power < x when power=1 and x=16
+    -`power = power * n` updates `power` to 2 ( 1 * 2 = 2 ).
+Second Iteration (power = 2):
+    - power < x when power=2 and x=16
+    -`power = power * n` updates `power` to 4 ( 2 * 2 = 4 ).
+Third Iteration (power = 4):
+    - power < x when power=4 and x=16
+    -`power = power * n` updates `power` to 8 ( 4 * 2 = 8 ).
+Fourth Iteration (power = 8):
+    - power < x when power=8 and x=16
+    -`power = power * n` updates `power` to 16 ( 8 * 2 = 16 ).
+Fifth Iteration (power = 16):
+    - power < x when power=16 and x=16
+    -`power = power * n` updates `power` to 32 ( 16 * 2 = 32 ).
+Sixth Iteration (power = 32):
+    - power < x when power=32 and x=16
+    -`power = power * n` updates `power` to 64 ( 32 * 2 = 64 ).
+Seventh Iteration (power = 64):
+    - power < x when power=64 and x=16
+    -`power = power * n` updates `power` to 128 ( 64 * 2 = 128 ).
+Eighth Iteration (power = 128):
+    - power < x when power=128 and x=16
+    -`power = power * n` updates `power` to 256 ( 128 * 2 = 256 ).
+Ninth Iteration (power = 256):
+    - power < x when power=256 and x=16
+    -`power = power * n` updates `power` to 512 ( 256 * 2 = 512 ).
+Tenth Iteration (power = 512):
+    - power < x when power=512 and x=16
+    -`power = power * n` updates `power` to 1024 ( 512 * 2 = 1024 ).
+Eleventh Iteration (power = 1024):
+    - power < x when power=1024 and x=16
+    -`power = power * n` updates `power` to 2048 ( 1024 * 2 = 2048 ).
+Twelfth Iteration (power = 2048):
+    - power < x when power=2048 and x=16
+    -`power = power * n` updates `power` to 4096 ( 2048 * 2 = 4096 ).
+Thirteenth Iteration (power = 4096):
+    - power < x when power=4096 and x=16
+    -`power = power * n` updates `power` to 8192 ( 4096 * 2 = 8192 ).
+Fourteenth Iteration (power = 8192):
+    - power < x when power=8192 and x=16
+    -`power = power * n` updates `power` to 16384 ( 8192 * 2 = 16384 ).
+Fifteenth Iteration (power = 16384):
+    - power < x when power=16384 and x=16
+    -`power = power * n` updates `power` to 32768 ( 16384 * 2 = 32768 ).
+Sixteenth Iteration (power = 32768):
+    - power < x when power=32768 and x=16
+    -`power = power * n` updates `power` to 65536 ( 32768 * 2 = 65536 ).
+Seventeenth Iteration (power = 65536):
+    - power < x when power=65536 and x=16
+    -`power = power * n` updates `power` to 131072 ( 65536 * 2 = 131072 ).
+Eighteenth Iteration (power = 131072):
+    - power < x when power=131072 and x=16
+    -`power = power * n` updates `power` to 262144 ( 131072 * 2 = 262144 ).
+Nineteenth Iteration (power = 262144):
+    - power < x when power=262144 and x=16
+    -`power = power * n` updates `power` to 524288 ( 262144 * 2 = 524288 ).
+Twentieth Iteration (power = 524288):
+    - power < x when power=524288 and x=16
+    -`power = power * n` updates `power` to 1048576 ( 524288 * 2 = 1048576 ).
+Twenty-first Iteration (power = 1048576):
+    - power < x when power=1048576 and x=16
+    -`power = power * n` updates `power` to 2097152 ( 1048576 * 2 = 2097152 ).
+Twenty-second Iteration (power = 2097152):
+    - power < x when power=2097152 and x=16
+    -`power = power * n` updates `power` to 4194304 ( 2097152 * 2 = 4194304 ).
+Twenty-third Iteration (power = 4194304):
+    - power < x when power=4194304 and x=16
+    -`power = power * n` updates `power` to 8388608 ( 4194304 * 2 = 8388608 ).
+Twenty-fourth Iteration (power = 8388608):
+    - power < x when power=8388608 and x=16
+    -`power = power * n` updates `power` to 16777216 ( 8388608 * 2 = 16777216 ).
+Twenty-fifth Iteration (power = 16777216):
+    - power < x when power=16777216 and x=16
+    -`power = power * n` updates `power` to 33554432 ( 16777216 * 2 = 33554432 ).
+Twenty-sixth Iteration (power = 33554432):
+    - power < x when power=33554432 and x=16
+    -`power

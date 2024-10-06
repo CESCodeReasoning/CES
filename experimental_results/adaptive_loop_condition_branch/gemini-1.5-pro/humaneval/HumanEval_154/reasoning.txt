@@ -1,0 +1,16 @@
+The function cycpattern_check(a, b) takes two strings as its parameters.
+It checks if the string b is a cyclic pattern of string a.
+The function first concatenates the string b with itself to create a new string pat.
+Then, it iterates through the string a with a sliding window of length l (the length of string b).
+For each window, it checks if the window is equal to a substring of pat.
+If so, it returns True.
+Otherwise, it returns False.
+In this case, a = "xyzw" and b = "xyw".
+The function first concatenates b with itself to create pat = "xywxyw".
+Then, it iterates through a with a sliding window of length l = 3.
+The first window is "xyz".
+It checks if "xyz" is equal to a substring of pat.
+It is not, so it moves on to the next window.
+The next window is "yzw".
+It checks if "yzw" is equal to a substring of pat.
+It is, so it returns True.

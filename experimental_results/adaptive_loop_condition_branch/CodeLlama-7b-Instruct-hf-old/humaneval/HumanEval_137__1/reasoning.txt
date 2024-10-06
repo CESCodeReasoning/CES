@@ -1,0 +1,8 @@
+The function `compare_one` is called with ( a = "1", b = "2" ).
+`a` and `b` are strings, so the first two if conditions are executed.
+`temp_a` and `temp_b` are assigned the values of `a` and `b` respectively.
+`temp_a` and `temp_b` are strings, so the third if condition is executed.
+`temp_a` and `temp_b` are converted to floats and compared.
+If the comparison is true, then the method returns None, otherwise it returns `a` if `temp_a` is greater than `temp_b`, otherwise it returns `b`.
+
+Therefore, the final output of the function `compare_one("1", "2")` is `None`.

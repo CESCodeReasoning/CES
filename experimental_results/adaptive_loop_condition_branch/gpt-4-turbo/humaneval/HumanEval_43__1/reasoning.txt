@@ -1,0 +1,12 @@
+The function `pairs_sum_to_zero(l)` takes a list `l` as its parameter. The list provided is `[-3, 9, -1, 3, 2, 31]`.
+The function iterates through each element in the list using an outer loop, and for each element, it iterates through the subsequent elements using an inner loop to check if any pair sums to zero.
+
+First Iteration (i=0):
+    - `i` is 0, `l1` is -3, `j` in the inner loop is 1, 2, 3, 4, 5.
+    - Compare -3 with 9, -1, 3, 2, 31:
+        - When j = 1 (l[j]=9), the condition `-3 + 9 == 0` is False, the if branch is not taken.
+        - When j = 2 (l[j]=-1), the condition `-3 + -1 == 0` is False, the if branch is not taken.
+        - When j = 3 (l[j]=3), the condition `-3 + 3 == 0` is True, the if branch is taken. Return True.
+
+Since a pair that sums to zero is found, the function returns True and does not proceed to further iterations.
+

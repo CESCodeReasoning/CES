@@ -1,0 +1,8 @@
+The function filter_by_substring takes two arguments: a list of strings and a substring.
+It returns a new list containing only the strings from the original list that contain the substring.
+
+In this case, the function is called with two arguments: a list of strings and the substring 'xxx'.
+The function iterates over each string in the list and checks if the substring 'xxx' is present in the string.
+If it is, the string is added to the new list.
+
+The output of the function call is a new list containing only the strings that contain the substring 'xxx'.

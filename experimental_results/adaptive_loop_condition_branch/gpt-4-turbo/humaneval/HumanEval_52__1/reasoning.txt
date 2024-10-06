@@ -1,0 +1,10 @@
+The function `below_threshold` is called with the list `l = [1, 20, 4, 10]` and the threshold `t = 5`.
+The function iterates through each element in the list to check if all elements are below the threshold.
+
+Iteration 1:
+    - The element `1` is less than `5`, so the condition `(e >= t)` is false.
+Iteration 2:
+    - The element `20` is greater than `5`, so the condition `(e >= t)` is true.
+    - Since the condition is true, the function returns `False` immediately without checking the remaining elements.
+
+The function does not proceed to check elements `4` and `10` because it has already encountered an element (`20`) that is not below the threshold, leading to an early termination with a return value of `False`.

@@ -1,0 +1,7 @@
+The function `below_threshold` is called with ( l = [1, 20, 4, 10] , t = 21 ).
+The function iterates over each element in the list.
+First Iteration (e = 1)
+   - `e` is not greater than or equal to 21, so the condition is false.
+Second Iteration (e = 20)
+   - `e` is greater than or equal to 21, so the condition is true.
+   - The function returns `False`.

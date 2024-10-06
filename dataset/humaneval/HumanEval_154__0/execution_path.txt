@@ -1,0 +1,24 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: cycpattern_check
+main.py(5):     l = len(b)
+main.py(6):     pat = b + b
+main.py(7):     for i in range(len(a) - l + 1):
+main.py(8):         for j in range(l + 1):
+main.py(9):             if a[i:i + l] == pat[j:j + l]:
+main.py(8):         for j in range(l + 1):
+main.py(9):             if a[i:i + l] == pat[j:j + l]:
+main.py(8):         for j in range(l + 1):
+main.py(9):             if a[i:i + l] == pat[j:j + l]:
+main.py(8):         for j in range(l + 1):
+main.py(9):             if a[i:i + l] == pat[j:j + l]:
+main.py(8):         for j in range(l + 1):
+main.py(9):             if a[i:i + l] == pat[j:j + l]:
+main.py(8):         for j in range(l + 1):
+main.py(9):             if a[i:i + l] == pat[j:j + l]:
+main.py(8):         for j in range(l + 1):
+main.py(7):     for i in range(len(a) - l + 1):
+main.py(8):         for j in range(l + 1):
+main.py(9):             if a[i:i + l] == pat[j:j + l]:
+main.py(8):         for j in range(l + 1):
+main.py(9):             if a[i:i + l] == pat[j:j + l]:
+main.py(10):                 return True

@@ -1,0 +1,18 @@
+The function `fib4` is called with ( n = 10 ).
+Inside the function, a variable `results` is initialized to [0, 0, 2, 0].
+The loop iterates from 4 through 10 (since ( n = 10 )).
+First Iteration (i = 4):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6].
+Second Iteration (i = 5):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 18].
+Third Iteration (i = 6):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 18, 34].
+Fourth Iteration (i = 7):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 18, 34, 60].
+Fifth Iteration (i = 8):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 18, 34, 60, 98].
+Sixth Iteration (i = 9):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 18, 34, 60, 98, 160].
+Seventh Iteration (i = 10):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 18, 34, 60, 98, 160, 260].
+After the loop completes, the condition ( n < 4 ) is not satisfied, therefore the if branch is not taken and the function returns `results[-1]` as the output.

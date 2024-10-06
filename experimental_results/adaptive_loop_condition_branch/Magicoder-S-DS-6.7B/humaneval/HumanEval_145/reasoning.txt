@@ -1,0 +1,42 @@
+The function `order_by_points` is called with ( nums = [1, 11, -1, -11, -12] ).
+The function `digits_sum` is defined inside `order_by_points`.
+The function `digits_sum` is called with ( n = 1 ).
+`n` is 1, which is not less than 0.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `str(n)` converts `n` to a string.
+The function `[int(i) for i in str(n)]` converts each character of the string to an integer.
+The function `sum(n)` adds up all the integers in the list.
+The function `sorted(nums, key=digits_sum)` sorts the list `nums` based on the result of `digits_sum`.
+The function `digits_sum` is called with ( n = 11 ).
+`n` is 11, which is not less than 0.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `str(n)` converts `n` to a string.
+The function `[int(i) for i in str(n)]` converts each character of the string to an integer.
+The function `sum(n)` adds up all the integers in the list.
+The function `sorted(nums, key=digits_sum)` sorts the list `nums` based on the result of `digits_sum`.
+The function `digits_sum` is called with ( n = -1 ).
+`n` is -1, which is less than 0.
+The condition `n < 0` is true, therefore the if branch is taken.
+The function `-1 * n` multiplies `n` by -1.
+The function `str(n)` converts `n` to a string.
+The function `[int(i) for i in str(n)]` converts each character of the string to an integer.
+The function `sum(n)` adds up all the integers in the list.
+The function `sorted(nums, key=digits_sum)` sorts the list `nums` based on the result of `digits_sum`.
+The function `digits_sum` is called with ( n = -11 ).
+`n` is -11, which is less than 0.
+The condition `n < 0` is true, therefore the if branch is taken.
+The function `-1 * n` multiplies `n` by -1.
+The function `str(n)` converts `n` to a string.
+The function `[int(i) for i in str(n)]` converts each character of the string to an integer.
+The function `sum(n)` adds up all the integers in the list.
+The function `sorted(nums, key=digits_sum)` sorts the list `nums` based on the result of `digits_sum`.
+The function `digits_sum` is called with ( n = -12 ).
+`n` is -12, which is less than 0.
+The condition `n < 0` is true, therefore the if branch is taken.
+The function `-1 * n` multiplies `n` by -1.
+The function `str(n)` converts `n` to a string.
+The function `[int(i) for i in str(n)]` converts each character of the string to an integer.
+The function `sum(n)` adds up all the integers in the list.
+The function `sorted(nums, key=digits_sum)` sorts the list `nums` based on the result of `digits_sum`.
+
+Therefore, the final output of the function `order_by_points([1, 11, -1, -11, -12])` is [-12, -11, -1, 1, 11].

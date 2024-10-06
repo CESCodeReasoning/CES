@@ -1,0 +1,32 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: triples_sum_to_zero
+main.py(5):     for i in range(len(l)):
+main.py(6):         for j in range(i + 1, len(l)):
+main.py(7):             for k in range(j + 1, len(l)):
+main.py(8):                 if l[i] + l[j] + l[k] == 0:
+main.py(7):             for k in range(j + 1, len(l)):
+main.py(8):                 if l[i] + l[j] + l[k] == 0:
+main.py(7):             for k in range(j + 1, len(l)):
+main.py(6):         for j in range(i + 1, len(l)):
+main.py(7):             for k in range(j + 1, len(l)):
+main.py(8):                 if l[i] + l[j] + l[k] == 0:
+main.py(7):             for k in range(j + 1, len(l)):
+main.py(6):         for j in range(i + 1, len(l)):
+main.py(7):             for k in range(j + 1, len(l)):
+main.py(6):         for j in range(i + 1, len(l)):
+main.py(5):     for i in range(len(l)):
+main.py(6):         for j in range(i + 1, len(l)):
+main.py(7):             for k in range(j + 1, len(l)):
+main.py(8):                 if l[i] + l[j] + l[k] == 0:
+main.py(7):             for k in range(j + 1, len(l)):
+main.py(6):         for j in range(i + 1, len(l)):
+main.py(7):             for k in range(j + 1, len(l)):
+main.py(6):         for j in range(i + 1, len(l)):
+main.py(5):     for i in range(len(l)):
+main.py(6):         for j in range(i + 1, len(l)):
+main.py(7):             for k in range(j + 1, len(l)):
+main.py(6):         for j in range(i + 1, len(l)):
+main.py(5):     for i in range(len(l)):
+main.py(6):         for j in range(i + 1, len(l)):
+main.py(5):     for i in range(len(l)):
+main.py(10):     return False

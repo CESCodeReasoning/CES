@@ -1,0 +1,35 @@
+[REASONING]
+The function `is_sorted` is called with ( lst = [1, 2, 3, 4] ).
+Inside the function, a dictionary `count_digit` is initialized with keys as elements of `lst` and values as 0.
+The loop iterates through each element in `lst`.
+First Iteration (i = 1):
+    `count_digit[i] += 1` updates the value of `count_digit[1]` to 1 ( 0 + 1 = 1 ).
+Second Iteration (i = 2):
+    `count_digit[i] += 1` updates the value of `count_digit[2]` to 1 ( 0 + 1 = 1 ).
+Third Iteration (i = 3)
+    `count_digit[i] += 1` updates the value of `count_digit[3]` to 1 ( 0 + 1 = 1 ).
+Fourth Iteration (i = 4)
+    `count_digit[i] += 1` updates the value of `count_digit[4]` to 1 ( 0 + 1 = 1 ).
+After the loop completes, the condition ( any(count_digit[i] > 2 for i in lst) ) is not satisfied, therefore the if branch is not taken.
+The condition ( all(lst[i - 1] <= lst[i] for i in range(1, len(lst))) ) is satisfied, therefore the if branch is taken and the function returns `True` as the output.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def is_sorted(lst):
+    count_digit = dict([(i, 0) for i in lst])
+    for i in lst: ## [STATE]i=[1, 2, 3, 4][/STATE][STATE]lst=[1, 2, 3, 4][/STATE]
+        count_digit[i] += 1
+    if any(count_digit[i] > 2 for i in lst): ## [CONDITION](any(count_digit[i] > 2 for i in lst))=False[/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return False
+    if all(lst[i - 1] <= lst[i] for i in range(1, len(lst))): ## [CONDITION](all(lst[i - 1] <= lst[i] for i in range(1, len(lst))))=True[/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return True
+    else: ## [BRANCH]taken=[N][/BRANCH]
+        return False
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]

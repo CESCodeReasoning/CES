@@ -1,0 +1,27 @@
+The function `int_to_mini_roman` is called with ( number = 19 ).
+Inside the function, a list `num` is defined with the values [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000].
+A list `sym` is defined with the values ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"].
+A variable `i` is initialized to 12.
+A variable `res` is initialized to an empty string.
+The while loop iterates while ( number > 0 ).
+First Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number %= num[i] = 19 % 1000 = 19.
+    - div = 0, while div: res += sym[i] = "M".
+    - i -= 1 = 11.
+Second Iteration:
+    - number = 19, number // num[i] = 19 // 100 = 0, number %= num[i] = 19 % 100 = 19.
+    - div = 0, while div: res += sym[i] = "M".
+    - i -= 1 = 10.
+Third Iteration:
+    - number = 19, number // num[i] = 19 // 10 = 1, number %= num[i] = 19 % 10 = 9.
+    - div = 1, while div: res += sym[i] = "X".
+    - i -= 1 = 9.
+Fourth Iteration:
+    - number = 9, number // num[i] = 9 // 1 = 9, number %= num[i] = 9 % 1 = 0.
+    - div = 0, while div: res += sym[i] = "I".
+    - i -= 1 = 8.
+Fifth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0, number %= num[i] = 0 % 1 = 0.
+    - div = 0, while div: res += sym[i] = "I".
+    - i -= 1 = 7.
+After the loop completes, the function returns the value of `res`, which is now "MCMXCIX".

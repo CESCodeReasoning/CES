@@ -1,0 +1,39 @@
+The function `parse_nested_parens` is called with ( paren_string = '(()(())((())))' ).
+The function `parse_nested_parens` splits the input string into a list of substrings using the split method with a space character as the separator.
+The function then iterates over each substring in the list and calls the `parse_paren_group` function on each substring.
+
+The `parse_paren_group` function takes a string as input and returns the maximum depth of nested parentheses in that string.
+
+Iteration 1:
+    -The character '(' is encountered, so depth is incremented to 1.
+    -The maximum depth is set to 1.
+Iteration 2:
+    -The character '(' is encountered, so depth is incremented to 2.
+    -The maximum depth is set to 2.
+Iteration 3:
+    -The character ')' is encountered, so depth is decremented to 1.
+Iteration 4:
+    -The character '(' is encountered, so depth is incremented to 2.
+    -The maximum depth is set to 2.
+Iteration 5:
+    -The character ')' is encountered, so depth is decremented to 1.
+Iteration 6:
+    -The character '(' is encountered, so depth is incremented to 2.
+    -The maximum depth is set to 2.
+Iteration 7:
+    -The character ')' is encountered, so depth is decremented to 1.
+Iteration 8:
+    -The character ')' is encountered, so depth is decremented to 0.
+Iteration 9:
+    -The character ')' is encountered, so depth is decremented to -1.
+Iteration 10:
+    -The character '(' is encountered, so depth is incremented to 0.
+    -The maximum depth is set to 0.
+Iteration 11:
+    -The character ')' is encountered, so depth is decremented to -1.
+Iteration 12:
+    -The character ')' is encountered, so depth is decremented to -2.
+Iteration 13:
+    -The character ')' is encountered, so depth is decremented to -3.
+
+The function `parse_paren_group` returns the maximum depth of nested parentheses in the input string, which is 2.

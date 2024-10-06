@@ -1,0 +1,23 @@
+[REASONING]
+The function `any_int` is called with ( x = 3, y = 4, z = 7 ).
+The first condition `isinstance(x, int) and isinstance(y, int) and isinstance(z, int)` is true because all three arguments are integers.
+The second condition `(x + y == z) or (x + z == y) or (y + z == x)` is false because none of the three sums is equal to any of the three arguments.
+Therefore, the function returns False.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def any_int(x, y, z):
+
+    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int): ## [CONDITION](isinstance(x, int) and isinstance(y, int) and isinstance(z, int))=[True][/CONDITION][CONDITION](isinstance(z, int))=[True][/CONDITION][CONDITION](isinstance(x, int))=[True][/CONDITION][CONDITION](isinstance(y, int))=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        if (x + y == z) or (x + z == y) or (y + z == x): ## [CONDITION]((x + y == z) or (x + z == y) or (y + z == x))=[False][/CONDITION][CONDITION](x + y == z)=[False][/CONDITION][CONDITION](x + z == y)=[False][/CONDITION][CONDITION](y + z == x)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+            return True
+        return False
+    return False
+[/ANSWER]
+
+[OUTPUT]
+False
+[/OUTPUT]

@@ -1,0 +1,182 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: find_closest_elements
+main.py(5):     closest_pair = None
+main.py(6):     distance = None
+main.py(8):     for idx, elem in enumerate(numbers):
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(12):                     distance = abs(elem - elem2)
+main.py(13):                     closest_pair = tuple(sorted([elem, elem2]))
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(8):     for idx, elem in enumerate(numbers):
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(17):                         distance = new_distance
+main.py(18):                         closest_pair = tuple(sorted([elem, elem2]))
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(8):     for idx, elem in enumerate(numbers):
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(8):     for idx, elem in enumerate(numbers):
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(8):     for idx, elem in enumerate(numbers):
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(8):     for idx, elem in enumerate(numbers):
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(11):                 if distance is None:
+main.py(15):                     new_distance = abs(elem - elem2)
+main.py(16):                     if new_distance < distance:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(10):             if idx != idx2:
+main.py(9):         for idx2, elem2 in enumerate(numbers):
+main.py(8):     for idx, elem in enumerate(numbers):
+main.py(20):     return closest_pair

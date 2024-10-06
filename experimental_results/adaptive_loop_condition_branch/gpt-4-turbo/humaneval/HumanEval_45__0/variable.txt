@@ -1,0 +1,6 @@
+from typing import *
+
+
+def triangle_area(a, h):
+    # [STATE] a = 10, h = 8 [/STATE]
+    return a * h / 2.0  # [STATE] return value = 40.0 [/STATE]

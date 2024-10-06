@@ -1,0 +1,30 @@
+The function `rolling_max` is called with ( numbers = [3, 2, 3, 100, 3] ).
+Inside the function, a variable `running_max` is initialized to None.
+The loop iterates over the list `numbers`.
+First Iteration (n = 3)
+   - `running_max` is None, so it is set to 3.
+   - `result` is now [3].
+Second Iteration (n = 2)
+   - `running_max` is 3, so it is compared to 2.
+   - The condition `running_max is None` is false, so the `else` block is executed.
+   - `running_max` is set to the maximum of 3 and 2, which is 3.
+   - `result` is now [3, 3].
+Third Iteration (n = 3)
+   - `running_max` is 3, so it is compared to 3.
+   - The condition `running_max is None` is false, so the `else` block is executed.
+   - `running_max` is set to the maximum of 3 and 3, which is still 3.
+   - `result` is now [3, 3, 3].
+Fourth Iteration (n = 100)
+   - `running_max` is 3, so it is compared to 100.
+   - The condition `running_max is None` is false, so the `else` block is executed.
+   - `running_max` is set to the maximum of 3 and 100, which is 100.
+   - `result` is now [3, 3, 3, 100].
+Fifth Iteration (n = 3)
+   - `running_max` is 100, so it is compared to 3.
+   - The condition `running_max is None` is false, so the `else` block is executed.
+   - `running_max` is set to the maximum of 100 and 3, which is still 100.
+   - `result` is now [3, 3, 3, 100, 100].
+Return Statement
+   - After the loop completes, the function returns the value of `result`, which is now [3, 3, 3, 100, 100].
+
+Therefore, the final output of the function `rolling_max([3, 2, 3, 100, 3])` is [3, 3, 3, 100, 100].

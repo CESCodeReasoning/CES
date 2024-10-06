@@ -1,0 +1,5 @@
+The function `is_bored` takes a string `S` as input and aims to determine how many sentences in `S` start with "I ". The function uses the `re.split` method to split the input string into sentences based on punctuation marks followed by whitespace (i.e., '.', '?', '!', followed by zero or more spaces). This results in a list of sentences. The function then iterates over this list, checking the first two characters of each sentence to see if they are 'I '. It sums up the number of sentences that meet this condition and returns this sum.
+
+For the input "You and I are going for a walk", the `re.split` method will split the string into the list `['You and I are going for a walk']` since there are no punctuation marks followed by spaces. The function then checks the first two characters of the only sentence in the list, which are 'Yo'. Since 'Yo' does not equal 'I ', the sum of sentences starting with 'I ' is 0.
+
+Thus, the output of the function `is_bored` for the given input is 0.

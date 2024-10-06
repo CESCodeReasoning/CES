@@ -1,0 +1,13 @@
+The function `encrypt` is called with ( s = 'hi' ).
+Inside the function, a variable `d` is assigned the string 'abcdefghijklmnopqrstuvwxyz'.
+A variable `out` is initialized as an empty string.
+The loop iterates over each character in the input string 'hi'.
+First Iteration (c = 'h'):
+   - The character 'h' is in the string `d`, so it gets encrypted.
+   - The encrypted character is calculated as `d[(d.index(c)+2*2) % 26]`, which is 'j'.
+   - 'j' is added to `out`.
+Second Iteration (c = 'i'):
+   - The character 'i' is in the string `d`, so it gets encrypted.
+   - The encrypted character is calculated as `d[(d.index(c)+2*2) % 26]`, which is 'k'.
+   - 'k' is added to `out`.
+The encrypted string is 'jk'.

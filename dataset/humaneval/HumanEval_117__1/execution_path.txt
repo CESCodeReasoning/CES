@@ -1,0 +1,75 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: select_words
+main.py(5):     result = []
+main.py(6):     for word in s.split():
+main.py(7):         n_consonants = 0
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(11):         if n_consonants == n:
+main.py(12):             result.append(word)
+main.py(6):     for word in s.split():
+main.py(7):         n_consonants = 0
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(11):         if n_consonants == n:
+main.py(6):     for word in s.split():
+main.py(7):         n_consonants = 0
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(8):         for i in range(0, len(word)):
+main.py(11):         if n_consonants == n:
+main.py(6):     for word in s.split():
+main.py(7):         n_consonants = 0
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(8):         for i in range(0, len(word)):
+main.py(11):         if n_consonants == n:
+main.py(6):     for word in s.split():
+main.py(7):         n_consonants = 0
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(9):             if word[i].lower() not in ["a", "e", "i", "o", "u"]:
+main.py(10):                 n_consonants += 1
+main.py(8):         for i in range(0, len(word)):
+main.py(11):         if n_consonants == n:
+main.py(12):             result.append(word)
+main.py(6):     for word in s.split():
+main.py(13):     return result

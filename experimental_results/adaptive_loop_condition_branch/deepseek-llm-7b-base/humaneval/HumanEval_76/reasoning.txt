@@ -1,0 +1,40 @@
+The function `is_simple_power` is called with ( x = 16, n = 2 ).
+Inside the function, a variable `power` is initialized to 1.
+The loop iterates from 1 through 15 (since ( x = 16 )).
+First Iteration (power = 1):
+    - power < 16 when power=1
+    -`power = power * n` updates `power` to 1 ( 1 * 2 = 2 ).
+Second Iteration (power = 2):
+    - power < 16 when power=2
+    -`power = power * n` updates `power` to 4 ( 2 * 2 = 4 ).
+Third Iteration (power = 4):
+    - power < 16 when power=4
+    -`power = power * n` updates `power` to 8 ( 4 * 2 = 8 ).
+Fourth Iteration (power = 8):
+    - power < 16 when power=8
+    -`power = power * n` updates `power` to 16 ( 8 * 2 = 16 ).
+Fifth Iteration (power = 16):
+    - power < 16 when power=16
+    -`power = power * n` updates `power` to 32 ( 16 * 2 = 32 ).
+Sixth Iteration (power = 32):
+    - power < 16 when power=32
+    -`power = power * n` updates `power` to 64 ( 32 * 2 = 64 ).
+Seventh Iteration (power = 64):
+    - power < 16 when power=64
+    -`power = power * n` updates `power` to 128 ( 64 * 2 = 128 ).
+Eighth Iteration (power = 128):
+    - power < 16 when power=128
+    -`power = power * n` updates `power` to 256 ( 128 * 2 = 256 ).
+Ninth Iteration (power = 256):
+    - power < 16 when power=256
+    -`power = power * n` updates `power` to 512 ( 256 * 2 = 512 ).
+Tenth Iteration (power = 512):
+    - power < 16 when power=512
+    -`power = power * n` updates `power` to 1024 ( 512 * 2 = 1024 ).
+Eleventh Iteration (power = 1024):
+    - power < 16 when power=1024
+    -`power = power * n` updates `power` to 2048 ( 1024 * 2 = 2048 ).
+Twelfth Iteration (power = 2048):
+    - power < 16 when power=2048
+    -`power = power * n` updates `power` to 4096 ( 2048 * 2 = 4096 ).
+Thirteenth Iteration (power

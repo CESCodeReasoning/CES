@@ -1,0 +1,31 @@
+The function `greatest_common_divisor` is called with ( a = 3, b = 7 ).
+Inside the function, a while loop is used to calculate the greatest common divisor (GCD) of the two numbers.
+
+In the first iteration:
+    - b is not zero ( b = 7 ), so the loop continues.
+    - a % b = 3 ( the remainder of 3 divided by 7 ), and b becomes 3.
+    - a becomes 7.
+
+In the second iteration:
+    - b is not zero ( b = 3 ), so the loop continues.
+    - a % b = 1 ( the remainder of 7 divided by 3 ), and b becomes 1.
+    - a becomes 3.
+
+In the third iteration:
+    - b is zero ( b = 1 ), so the loop terminates.
+
+The function returns the value of `a`, which is now the GCD of the original numbers.
+
+So, the GCD of 3 and 7 is 1.
+
+[ANSWER]
+def greatest_common_divisor(a: int, b: int) -> int:
+    while b: ## [STATE]b=[7, 3, 1][/STATE]
+        a, b = b, a % b
+    return a
+[/ANSWER]
+
+[OUTPUT]
+1
+[/OUTPUT]
+<|EOT|>

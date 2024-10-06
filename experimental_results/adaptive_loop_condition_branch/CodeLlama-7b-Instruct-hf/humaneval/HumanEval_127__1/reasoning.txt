@@ -1,0 +1,15 @@
+The function `intersection` is called with two intervals: (-1, 1) and (0, 4).
+
+The function first defines a helper function `is_prime` that checks if a number is prime.
+
+The function then defines two variables `l` and `r` that represent the left and right endpoints of the intersection of the two intervals.
+
+The function then calculates the length of the intersection by subtracting the left endpoint from the right endpoint.
+
+The function then checks if the length of the intersection is greater than 0 and if the length is prime.
+
+If the length is greater than 0 and prime, the function returns "YES".
+
+If the length is not greater than 0 or not prime, the function returns "NO".
+
+Therefore, the output of the function `intersection([-1, 1], [0, 4])` is "NO".

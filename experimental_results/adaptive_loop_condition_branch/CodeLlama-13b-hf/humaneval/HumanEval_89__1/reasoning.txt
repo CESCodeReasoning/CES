@@ -1,0 +1,21 @@
+The function `encrypt` is called with ( s = "asdfghjkl" ).
+Inside the function, a variable `out` is initialized to "".
+
+Iteration 1:
+    -The character 'a' is in d, so out becomes "c".
+Iteration 2:
+    -The character 's' is in d, so out becomes "cf".
+Iteration 3:
+    -The character 'd' is in d, so out becomes "cfg".
+Iteration 4:
+    -The character 'f' is in d, so out becomes "cfgu".
+Iteration 5:
+    -The character 'g' is in d, so out becomes "cfguv".
+Iteration 6:
+    -The character 'h' is in d, so out becomes "cfguvw".
+Iteration 7:
+    -The character 'j' is in d, so out becomes "cfguvwx".
+Iteration 8:
+    -The character 'k' is in d, so out becomes "cfguvwxy".
+Iteration 9:
+    -The character 'l' is in d, so out becomes "cfguvwxyz".

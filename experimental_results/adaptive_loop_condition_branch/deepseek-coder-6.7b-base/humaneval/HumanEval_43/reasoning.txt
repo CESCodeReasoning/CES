@@ -1,0 +1,24 @@
+The function pairs_sum_to_zero(l) takes a list of numbers as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3.
+    - l1=1: compare with 3, 5, 0:
+        - When j = 1 (l[j]=3), the condition `l1 + l[j] == 0` is False, the if branch is not taken.
+        - When j = 2 (l[j]=5), the condition `l1 + l[j] == 0` is False, the if branch is not taken.
+        - When j = 3 (l[j]=0), the condition `l1 + l[j] == 0` is True, the if branch is taken. Return True.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3.
+    - l1=3: compare with 5, 0:
+        - When j = 2 (l[j]=5), the condition `l1 + l[j] == 0` is False, the if branch is not taken.
+        - When j = 3 (l[j]=0), the condition `l1 + l[j] == 0` is True, the if branch is taken. Return True.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3.
+    - l1=5: compare with 0:
+        - When j = 3 (l[j]=0), the condition `l1 + l[j] == 0` is True, the if branch is taken. Return True.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4.
+    - l1=0: compare with 0:
+        - When j = 4 (l[j]=0), the condition `l1 + l[j] == 0` is True, the if branch is taken. Return True.
+Fifth Iteration (i=4):
+    No more elements to compare.

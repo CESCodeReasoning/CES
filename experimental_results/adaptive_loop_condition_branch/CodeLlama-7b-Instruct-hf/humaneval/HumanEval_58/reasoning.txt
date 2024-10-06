@@ -1,0 +1,60 @@
+The function common(l1, l2) takes two lists as its parameters.
+The outer loop iterates through each element in the first list.
+In the inner loop, for each element indexed by e1 in the outer loop, compare it with every element in the second list.
+First Iteration (e1=1):
+    - `e1` is 1, `e2` in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is 5 (numbers[j]=5), the condition `e1 == e2` is True, the if branch is taken. Add 1 to the set `ret`.
+Second Iteration (e1=4):
+    - `e1` is 4, `e2` in the inner loop is 7, 1, 5, 9, 653, 121.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is 7 (numbers[j]=7), the condition `e1 == e2` is False, the if branch is not taken.
+Third Iteration (e1=3):
+    - `e1` is 3, `e2` in the inner loop is 1, 5, 9, 653, 121.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is 1 (numbers[j]=1), the condition `e1 == e2` is True, the if branch is taken. Add 1 to the set `ret`.
+Forth Iteration (e1=34):
+    - `e1` is 34, `e2` in the inner loop is 5, 9, 653, 121.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is 5 (numbers[j]=5), the condition `e1 == e2` is False, the if branch is not taken.
+Fifth Iteration (e1=653):
+    - `e1` is 653, `e2` in the inner loop is 5, 9, 121.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is 5 (numbers[j]=5), the condition `e1 == e2` is False, the if branch is not taken.
+Sixth Iteration (e1=2):
+    - `e1` is 2, `e2` in the inner loop is 5, 9, 121.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is 5 (numbers[j]=5), the condition `e1 == e2` is False, the if branch is not taken.
+Seventh Iteration (e1=5):
+    - `e1` is 5, `e2` in the inner loop is 9, 121.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is 9 (numbers[j]=9), the condition `e1 == e2` is False, the if branch is not taken.
+Eighth Iteration (e1=None):
+    - `e1` is None, `e2` in the inner loop is 121.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is 121 (numbers[j]=121), the condition `e1 == e2` is False, the if branch is not taken.
+Ninth Iteration (e1=None):
+    - `e1` is None, `e2` in the inner loop is None.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is None (numbers[j]=None), the condition `e1 == e2` is False, the if branch is not taken.
+Tenth Iteration (e1=None):
+    - `e1` is None, `e2` in the inner loop is None.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is None (numbers[j]=None), the condition `e1 == e2` is False, the if branch is not taken.
+Eleventh Iteration (e1=None):
+    - `e1` is None, `e2` in the inner loop is None.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is None (numbers[j]=None), the condition `e1 == e2` is False, the if branch is not taken.
+Twelfth Iteration (e1=None):
+    - `e1` is None, `e2` in the inner loop is None.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is None (numbers[j]=None), the condition `e1 == e2` is False, the if branch is not taken.
+Thirteenth Iteration (e1=None):
+    - `e1` is None, `e2` in the inner loop is None.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is None (numbers[j]=None), the condition `e1 == e2` is False, the if branch is not taken.
+Fourteenth Iteration (e1=None):
+    - `e1` is None, `e2` in the inner loop is None.
+    - `l1` is [1, 4, 3, 34, 653, 2, 5], `l2` is [5, 7, 1, 5, 9, 653, 121].
+    - When `e2` is None (numbers[j]=None), the condition `e1 == e2` is False, the if branch is not taken.
+Fifteenth Iteration (e1=None):

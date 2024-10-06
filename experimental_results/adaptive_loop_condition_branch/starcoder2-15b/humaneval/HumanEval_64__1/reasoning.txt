@@ -1,0 +1,9 @@
+The function `vowels_count` is called with ( s = "bye" ).
+The variable `vowels` is initialized to the string "aeiouAEIOU".
+The variable `n_vowels` is initialized to the sum of the number of characters in `s` that are in `vowels`.
+In this case, the sum is 1, since only the character 'e' is in `vowels`.
+The last character of `s` is 'e', which is not 'y' or 'Y'.
+The condition `s[-1] == 'y' or s[-1] == 'Y'` is false.
+The `else` branch is taken, and the function returns the value of `n_vowels`, which is 1.
+
+Therefore, the final output of the function `vowels_count("bye")` is 1.

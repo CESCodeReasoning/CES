@@ -1,0 +1,35 @@
+The fixed code for `has_close_elements` is:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+The fixed code for `words_string` is:
+
+```python
+def words_string(s):
+    if not s:
+        return []
+
+    s_list = []
+    word = ""
+
+    for letter in s:
+        if letter == ',':
+            s_list.append(word.strip())
+            word = ""
+        else:
+            word += letter
+
+    s_list.append(word.strip())
+    return [word for word in s_list if word]
+```

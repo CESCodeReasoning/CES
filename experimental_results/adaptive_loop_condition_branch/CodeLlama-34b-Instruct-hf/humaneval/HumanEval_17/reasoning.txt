@@ -1,0 +1,10 @@
+The function parse_music takes a string music_string as input and returns a list of integers.
+To determine the output of executing the function parse_music on the input '', we need to follow these steps:
+
+1. The function first creates a dictionary note_map with keys 'o', 'o|', and '.|' and values 4, 2, and 1, respectively.
+2. The function then splits the input music_string into a list of substrings using ' ' as the delimiter.
+3. The function then creates a list comprehension that iterates over the substrings in the list and maps each substring to its corresponding value in the note_map dictionary.
+4. The function then filters out any empty substrings from the list.
+5. The function then returns the resulting list of integers.
+
+Since the input music_string is '', the resulting list of substrings will be empty, and the function will return an empty list.

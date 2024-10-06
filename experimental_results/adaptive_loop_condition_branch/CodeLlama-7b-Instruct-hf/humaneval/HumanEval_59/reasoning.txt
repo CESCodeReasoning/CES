@@ -1,0 +1,15 @@
+The function `largest_prime_factor` is called with ( n = 15 ).
+Inside the function, two variables `largest` and `is_prime` are defined.
+
+The function first defines a function `is_prime` that takes an integer `k` as input.
+The function checks if `k` is less than 2, and if it is, it returns `False`.
+Otherwise, it checks if `k` is divisible by any number between 2 and `k - 1`, and if it is, it returns `False`.
+If `k` is not divisible by any number between 2 and `k - 1`, it returns `True`.
+
+The function then defines a range of numbers from 2 to `n + 1`, and iterates through each number in the range.
+For each number `j` in the range, the function checks if `n` is divisible by `j` and if `is_prime(j)` is `True`.
+If `n` is divisible by `j` and `is_prime(j)` is `True`, the function updates the value of `largest` to be the maximum of `largest` and `j`.
+
+Finally, the function returns the value of `largest`.
+
+Therefore, the output of the function `largest_prime_factor(15)` is 5.

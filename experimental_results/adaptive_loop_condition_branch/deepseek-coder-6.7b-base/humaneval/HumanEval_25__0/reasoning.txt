@@ -1,0 +1,46 @@
+The function `factorize` is called with ( n = 3 * 2 * 3 ).
+The function `factorize` returns a list of prime factors of ( n ).
+The function `factorize` initializes an empty list `fact` to store the prime factors.
+The function `factorize` initializes a variable `i` to 2.
+The function `factorize` enters a loop that iterates from 2 through the square root of ( n ) + 1.
+First Iteration (i = 2):
+    - i <= int((math.sqrt(n) + 1)) when i=2
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i` is incremented by 1.
+Second Iteration (i = 3):
+    - i <= int((math.sqrt(n) + 1)) when i=3
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i` is incremented by 1.
+Third Iteration (i = 4):
+    - i <= int((math.sqrt(n) + 1)) when i=4
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i` is incremented by 1.
+Fourth Iteration (i = 5):
+    - i <= int((math.sqrt(n) + 1)) when i=5
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i` is incremented by 1.
+Fifth Iteration (i = 6):
+    - i <= int((math.sqrt(n) + 1)) when i=6
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i` is incremented by 1.
+Sixth Iteration (i = 7):
+    - i <= int((math.sqrt(n) + 1)) when i=7
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i` is incremented by 1.
+Seventh Iteration (i = 8):
+    - i <= int((math.sqrt(n) + 1)) when i=8
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i` is incremented by 1.
+Eighth Iteration (i = 9):
+    - i <= int((math.sqrt(n) + 1)) when i=9
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i` is incremented by 1.
+Ninth Iteration (i = 10):
+    - i <= int((math.sqrt(n) + 1)) when i=10
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i` is incremented by 1.
+Tenth Iteration (i = 11):
+    - i <= int((math.sqrt(n) + 1)) when i=11
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i` is incremented by 1.
+After the loop completes, the function returns the list `fact`, which contains the prime factors of ( n ).

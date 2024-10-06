@@ -1,0 +1,31 @@
+The function `by_length` is called with (arr = [2, 1, 1, 4, 5, 8, 2, 3]).
+The function sorts the array in descending order.
+The sorted array is [8, 5, 4, 3, 2, 2, 1, 1].
+The loop iterates over the sorted array.
+
+First Iteration (var = 8):
+    dic[var] = 'Eight'
+    new_arr = ['Eight']
+Second Iteration (var = 5):
+    dic[var] = 'Five'
+    new_arr = ['Eight', 'Five']
+Third Iteration (var = 4):
+    dic[var] = 'Four'
+    new_arr = ['Eight', 'Five', 'Four']
+Fourth Iteration (var = 3):
+    dic[var] = 'Three'
+    new_arr = ['Eight', 'Five', 'Four', 'Three']
+Fifth Iteration (var = 2):
+    dic[var] = 'Two'
+    new_arr = ['Eight', 'Five', 'Four', 'Three', 'Two']
+Sixth Iteration (var = 2):
+    dic[var] = 'Two'
+    new_arr = ['Eight', 'Five', 'Four', 'Three', 'Two', 'Two']
+Seventh Iteration (var = 1):
+    dic[var] = 'One'
+    new_arr = ['Eight', 'Five', 'Four', 'Three', 'Two', 'Two', 'One']
+Eighth Iteration (var = 1):
+    dic[var] = 'One'
+    new_arr = ['Eight', 'Five', 'Four', 'Three', 'Two', 'Two', 'One', 'One']
+
+The function returns the new_arr which is ['Eight', 'Five', 'Four', 'Three', 'Two', 'Two', 'One', 'One'].

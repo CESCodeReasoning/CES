@@ -1,0 +1,32 @@
+The function `fix_spaces` is called with the argument `text` equal to "Example".
+Inside the function, a variable `new_text` is initialized to an empty string.
+The loop iterates from 0 through 5 (since the length of `text` is 6).
+First Iteration (i = 0):
+    - `text[i] == " "` is false. The first branch is not taken.
+    - `end - start` is 0. The second branch is not taken.
+    - `new_text` is assigned the value of `text[i]`, which is "E".
+    - `start` and `end` are assigned the values of `i+1` and `i+1`, respectively, which are 1 and 1.
+Second Iteration (i = 1):
+    - `text[i] == " "` is false. The first branch is not taken.
+    - `end - start` is 1. The second branch is not taken.
+    - `new_text` is assigned the value of `text[i]`, which is "x".
+    - `start` and `end` are assigned the values of `i+1` and `i+1`, respectively, which are 2 and 2.
+Third Iteration (i = 2):
+    - `text[i] == " "` is true. The first branch is taken.
+    - `end` is incremented by 1, which is 3.
+Fourth Iteration (i = 3):
+    - `text[i] == " "` is false. The first branch is not taken.
+    - `end - start` is 2. The second branch is taken.
+    - `new_text` is assigned the value of `text[i]`, which is "a".
+    - `start` and `end` are assigned the values of `i+1` and `i+1`, respectively, which are 4 and 4.
+Fifth Iteration (i = 4):
+    - `text[i] == " "` is false. The first branch is not taken.
+    - `end - start` is 3. The second branch is not taken.
+    - `new_text` is assigned the value of `text[i]`, which is "m".
+    - `start` and `end` are assigned the values of `i+1` and `i+1`, respectively, which are 5 and 5.
+Sixth Iteration (i = 5):
+    - `text[i] == " "` is false. The first branch is not taken.
+    - `end - start` is 4. The second branch is not taken.
+    - `new_text` is assigned the value of `text[i]`, which is "p".
+    - `start` and `end` are assigned the values of `i+1` and `i+1`, respectively, which are 6 and 6.
+After the loop completes, the function returns the value of `new_text`, which is "E-x_a-m-p".

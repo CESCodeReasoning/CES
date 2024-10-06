@@ -1,0 +1,27 @@
+The function `special_factorial` is called with (n = 7).
+Inside the function, two variables `fact_i` and `special_fact` are initialized to 1.
+`range(1, n + 1)` = [1, 2, 3, 4, 5, 6, 7]
+The loop iterates from 1 through 7.
+
+First Iteration (i = 1):
+    `fact_i` = 1 * 1 = 1
+    `special_fact` = 1 * 1 = 1
+Second Iteration (i = 2):
+    `fact_i` = 1 * 2 = 2
+    `special_fact` = 1 * 2 = 2
+Third Iteration (i = 3):
+    `fact_i` = 2 * 3 = 6
+    `special_fact` = 2 * 6 = 12
+Fourth Iteration (i = 4):
+    `fact_i` = 6 * 4 = 24
+    `special_fact` = 12 * 24 = 288
+Fifth Iteration (i = 5):
+    `fact_i` = 24 * 5 = 120
+    `special_fact` = 288 * 120 = 34560
+Sixth Iteration (i = 6):
+    `fact_i` = 120 * 6 = 720
+    `special_fact` = 34560 * 720 = 25088000
+Seventh Iteration (i = 7):
+    `fact_i` = 720 * 7 = 5040
+    `special_fact` = 25088000 * 5040 = 126075200000
+After the loop completes, the function returns the value of `special_fact`, which is now 126075200000.

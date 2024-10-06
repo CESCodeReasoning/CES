@@ -1,0 +1,32 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def is_palindrome(string: str) -> bool:
+    """ Test if given string is a palindrome """
+    return string == string[::-1]
+
+
+def make_palindrome(string: str) -> str:
+    if not string:
+        return ''
+
+    beginning_of_suffix = len(string) - 1
+
+    while beginning_of_suffix >= 0 and not is_palindrome(string[:beginning_of_suffix + 1]):
+        beginning_of_suffix -= 1
+
+    return string + string[:beginning_of_suffix][::-1]
+
+```

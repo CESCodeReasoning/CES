@@ -1,0 +1,5 @@
+The function get_row takes a list of lists lst and an element x as input, and returns a list of the coordinates of all occurrences of x in lst, sorted first by column and then by row.
+To determine the output of executing the function get_row on the input [[], [1], [1, 2, 3]], 3, we need to find all occurrences of 3 in the list of lists and sort them first by column and then by row.
+The first occurrence of 3 is at index (2, 2) in the list of lists.
+The second occurrence of 3 is at index (2, 1) in the list of lists.
+Therefore, the output of executing the function get_row on the input [[], [1], [1, 2, 3]], 3 is [(2, 2), (2, 1)].

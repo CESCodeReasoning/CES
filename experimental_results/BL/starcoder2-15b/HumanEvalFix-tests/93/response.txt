@@ -1,0 +1,19 @@
+```response
+                message = message.swapcase()
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(word):
+    return word == word[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome('madam') == True
+    assert is_palindrome('racecar') == True
+    assert is_palindrome('hello') == False
+    assert is_palindrome('lol') == True
+    assert is_palindrome('radar') == True
+    assert

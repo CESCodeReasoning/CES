@@ -1,0 +1,10 @@
+The function `any_int` is called with ( x = 3, y = 4, z = 7 ).
+`x`, `y`, and `z` are all integers, which satisfies (isinstance(x, int) and isinstance(y, int) and isinstance(z, int)).
+`x` is 3, `y` is 4, and `z` is 7.
+`x + y` is 7, `x + z` is 10, and `y + z` is 11.
+`x + y == z` is False, `x + z == y` is False, and `y + z == x` is False.
+`(x + y == z) or (x + z == y) or (y + z == x)` is False.
+The if branch is not taken.
+The else branch is taken.
+
+Therefore, the final output of the function `any_int(3,4,7)` is False.

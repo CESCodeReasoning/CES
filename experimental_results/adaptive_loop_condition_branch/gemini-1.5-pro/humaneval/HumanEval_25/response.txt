@@ -1,0 +1,37 @@
+[REASONING]
+The function `factorize` is called with ( n = 2 ).
+Inside the function, a list `fact` is initialized to store the factors of `n`.
+The loop iterates from 2 to the square root of `n` (since the factors of `n` must be less than or equal to its square root).
+First Iteration ( i = 2 ):
+    - `n % i == 0` is true since 2 is a factor of 2. The first branch is taken.
+    - `fact.append(i)` appends 2 to `fact`.
+    - `n //= i` updates `n` to 1 ( 2 // 2 = 1 ).
+Second Iteration ( i = 2 ):
+    - `n % i == 0` is false since 2 is not a factor of 1. The first branch is not taken.
+    - `i += 1` updates `i` to 3.
+The loop terminates since `i` is now greater than the square root of `n`.
+Since `n` is still greater than 1, the else branch is taken. `fact.append(n)` appends 1 to `fact`.
+After the loop completes, the function returns the value of `fact`, which is now [2, 1].
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def factorize(n: int) -> List[int]:
+    import math
+    fact = []
+    i = 2
+    while i <= int(math.sqrt(n) + 1): ## [STATE]i=[2, 2][/STATE][STATE]int((math.sqrt(n) + 1))=[2, 2][/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[True, False][/CONDITION][BRANCH]taken=[Y, N][/BRANCH]
+            fact.append(i)
+            n //= i
+        else: ## [BRANCH]taken=[N][/BRANCH]
+            i += 1
+
+    if n > 1: ## [CONDITION](n > 1)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        fact.append(n)
+    return fact
+[/ANSWER]
+
+[OUTPUT]
+[2, 1]
+[/OUTPUT]

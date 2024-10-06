@@ -1,0 +1,9 @@
+The function `bf` is called with ( planet1 = "Mercury", planet2 = "Uranus" ).
+The function checks if both planets are in the list of planet names.
+The condition `planet1 not in planet_names or planet2 not in planet_names` is false, as both "Mercury" and "Uranus" are in the list of planet names.
+The condition `planet1 == planet2` is false, as "Mercury" is not equal to "Uranus".
+The function then finds the index of each planet in the list of planet names.
+The condition `planet1_index < planet2_index` is true, as the index of "Mercury" is less than the index of "Uranus".
+The function returns a list of planets between "Mercury" and "Uranus", which is ["Venus", "Earth", "Mars", "Jupiter", "Saturn"].
+
+Therefore, the final output of the function `bf("Mercury", "Uranus")` is ["Venus", "Earth", "Mars", "Jupiter", "Saturn"].

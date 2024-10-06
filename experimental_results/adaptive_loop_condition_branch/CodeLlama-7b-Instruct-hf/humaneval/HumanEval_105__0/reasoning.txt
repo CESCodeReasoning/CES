@@ -1,0 +1,19 @@
+The function `by_length` is called with (arr = [1, -1, 3, 2]).
+Inside the function, a dictionary `dic` is created with key-value pairs of length-string.
+The list `sorted_arr` is sorted in reverse order using the `sorted` function.
+The loop iterates through the sorted list `sorted_arr`.
+
+First Iteration(var = 3):
+    `dic[var]` is not found in the dictionary, so the `try-except` block is executed.
+    The `pass` statement is executed.
+Second Iteration(var = 2):
+    `dic[var]` is not found in the dictionary, so the `try-except` block is executed.
+    The `pass` statement is executed.
+Third Iteration(var = 1):
+    `dic[var]` is found in the dictionary, so the `try-except` block is not executed.
+    The string "One" is appended to the list `new_arr`.
+Fourth Iteration(var = -1):
+    `dic[var]` is not found in the dictionary, so the `try-except` block is executed.
+    The `pass` statement is executed.
+
+After the loop completes, the function returns the list `new_arr`.

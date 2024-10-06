@@ -1,0 +1,39 @@
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The outer loop iterates through each word in the sentence.
+In the inner loop, for each word indexed by word in the outer loop, check if it is a palindrome.
+First Iteration (word="go"):
+    - `word` is "go", flg is 0.
+    - Check if the length of "go" is 1: False.
+    - Check if the length of "go" is divisible by 2: False.
+    - Check if the length of "go" is divisible by 3: False.
+    - Check if the length of "go" is divisible by 4: False.
+    - Check if the length of "go" is divisible by 5: False.
+    - Check if the length of "go" is divisible by 6: False.
+    - Check if the length of "go" is divisible by 7: False.
+    - Check if the length of "go" is divisible by 8: False.
+    - Check if the length of "go" is divisible by 9: False.
+    - Check if the length of "go" is divisible by 10: False.
+    - flg is still 0.
+    - Check if flg is 0 or the length of "go" is 2: True.
+    - Append "go" to new_lst.
+Second Iteration (word="for"):
+    - `word` is "for", flg is 0.
+    - Check if the length of "for" is 1: False.
+    - Check if the length of "for" is divisible by 2: False.
+    - Check if the length of "for" is divisible by 3: False.
+    - Check if the length of "for" is divisible by 4: False.
+    - Check if the length of "for" is divisible by 5: False.
+    - Check if the length of "for" is divisible by 6: False.
+    - Check if the length of "for" is divisible by 7: False.
+    - Check if the length of "for" is divisible by 8: False.
+    - Check if the length of "for" is divisible by 9: False.
+    - Check if the length of "for" is divisible by 10: False.
+    - flg is still 0.
+    - Check if flg is 0 or the length of "for" is 2: True.
+    - Append "for" to new_lst.
+Third Iteration (word="it"):
+    - `word` is "it", flg is 0.
+    - Check if the length of "it" is 1: True.
+    - flg is now 1.
+    - Check if flg is 0 or the length of "it" is 2: False.
+    - Do not append "it" to new_lst.

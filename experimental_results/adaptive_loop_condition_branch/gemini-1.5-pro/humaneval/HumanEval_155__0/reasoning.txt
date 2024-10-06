@@ -1,0 +1,15 @@
+The function `even_odd_count` is called with ( num = -345821 ).
+Inside the function, two variables `even_count` and `odd_count` are initialized to 0.
+The function converts the absolute value of the input number to a string and iterates over each character in the string.
+Iteration 1:
+    -The character '3' is converted to an integer and checked for evenness. Since 3 is odd, `odd_count` is incremented by 1.
+Iteration 2:
+    -The character '4' is converted to an integer and checked for evenness. Since 4 is even, `even_count` is incremented by 1.
+Iteration 3:
+    -The character '5' is converted to an integer and checked for evenness. Since 5 is odd, `odd_count` is incremented by 1.
+Iteration 4:
+    -The character '8' is converted to an integer and checked for evenness. Since 8 is even, `even_count` is incremented by 1.
+Iteration 5:
+    -The character '2' is converted to an integer and checked for evenness. Since 2 is even, `even_count` is incremented by 1.
+Iteration 6:
+    -The character '1' is converted to an integer and checked for evenness. Since 1 is odd, `odd_count` is incremented by 1.

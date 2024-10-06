@@ -1,0 +1,96 @@
+<s> [INST]<<SYS>>
+You are an expert Python programmer.
+<</SYS>>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+
+Fix bugs in starts_one_ends. 
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def starts_one_ends(n):
+    if n == 1: return 1
+    return 18 * n * (10 ** (n - 2))
+
+Tests:
+def check(starts_one_ends):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert starts_one_ends(1) == 1
+    assert starts_one_ends(2) == 18
+    assert starts_one_ends(3) == 180
+    assert starts_one_ends(4) == 1800
+    assert starts_one_ends(5) == 18000
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+check(starts_one_ends)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `starts_one_ends(n)` to solve the following problem:
+Given a positive integer n, return the count of the numbers of n-digit
+positive integers that start or end with 1.
+[/INST]
+```python
+def starts_one_ends(n):
+    count = 0
+    for i in range(10**(n-1), 10**n):
+        if str(i)[0] == '1' or str(i)[-1] == '1':
+            count += 1
+    return count
+```
+
+The fixed code satisfies the natural language specification by using a loop to iterate over all n-digit positive integers and count the number of integers that start or end with 1. The `str` function is used to convert the integer to a string, and then the first and last characters of the string are checked to see if they are equal to '1'. If they are, the count is incremented. The final count is returned.
+
+Here are some examples of how the function works:
+
+* `starts_one_ends(1)` returns 1, because there is only one 1-digit positive integer that starts or ends with 1 (1).
+* `starts_one_ends(2)` returns 18, because there are 18 2-digit positive integers that start or end with 1 (10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 7

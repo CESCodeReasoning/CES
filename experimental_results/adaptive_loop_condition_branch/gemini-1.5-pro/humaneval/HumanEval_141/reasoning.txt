@@ -1,0 +1,10 @@
+The function `file_name_check` is called with ( file_name = "example.txt" ).
+The file name is split into two parts by the dot ('.') character, resulting in the list `lst = ["example", "txt"]`.
+The first condition checks if the list has exactly two elements, which it does.
+The second condition checks if the second element of the list (`lst[1]`) is in the list of valid suffixes (`suf`). It is, so the condition is true.
+The third condition checks if the first element of the list (`lst[0]`) has a length of 0, which it does not.
+The fourth condition checks if the first character of the first element of the list (`lst[0][0]`) is alphabetic, which it is.
+The fifth condition checks if the number of digits in the first element of the list (`lst[0]`) is greater than 3, which it is not.
+All conditions are met, so the function returns 'Yes'.
+
+Therefore, the final output of the function `file_name_check("example.txt")` is 'Yes'.

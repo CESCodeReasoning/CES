@@ -1,0 +1,64 @@
+[REASONING]
+The function `minSubArraySum` is called with the list `nums = [2, 3, 4, 1, 2, 4]`.
+Inside the function:
+- `max_sum` is initialized to 0.
+- `s` is initialized to 0.
+
+The loop iterates over each element in the list `nums`.
+
+First Iteration (num = 2):
+   - `s` is updated by adding `-num` which results in `s = 0 - 2 = -2`.
+   - Since `s < 0`, `s` is reset to 0.
+   - `max_sum` remains 0 as `max(0, 0)` is 0.
+
+Second Iteration (num = 3):
+   - `s` is updated to `-3`.
+   - Again, `s < 0`, so `s` is reset to 0.
+   - `max_sum` remains 0.
+
+Third Iteration (num = 4):
+   - `s` is updated to `-4`.
+   - `s < 0`, so `s` is reset to 0.
+   - `max_sum` remains 0.
+
+Fourth Iteration (num = 1):
+   - `s` is updated to `-1`.
+   - `s < 0`, so `s` is reset to 0.
+   - `max_sum` remains 0.
+
+Fifth Iteration (num = 2):
+   - `s` is updated to `-2`.
+   - `s < 0`, so `s` is reset to 0.
+   - `max_sum` remains 0.
+
+Sixth Iteration (num = 4):
+   - `s` is updated to `-4`.
+   - `s < 0`, so `s` is reset to 0.
+   - `max_sum` remains 0.
+
+After the loop, since `max_sum` is still 0, the function checks if `max_sum == 0` which is true.
+- It then calculates the maximum of the negative values of elements in `nums`, which is `-1` (from `-min(nums)`).
+- `min_sum` is set to `-max_sum` which results in `1`.
+
+Therefore, the minimum subarray sum of the list `[2, 3, 4, 1, 2, 4]` is `1`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def minSubArraySum(nums):
+    max_sum = 0
+    s = 0
+    for num in nums: ## [STATE]num=[2, 3, 4, 1, 2, 4][/STATE][STATE]nums=[2, 3, 4, 1, 2, 4][/STATE]
+        s += -num
+        if (s < 0): ## [CONDITION](s < 0)=[True, True, True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, Y, Y][/BRANCH]
+            s = 0
+        max_sum = max(s, max_sum)
+    if max_sum == 0: ## [CONDITION](max_sum == 0)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+        max_sum = max(-i for i in nums)
+    min_sum = -max_sum
+    return min_sum
+[/PYTHON]
+
+[OUTPUT]
+1
+[/OUTPUT]

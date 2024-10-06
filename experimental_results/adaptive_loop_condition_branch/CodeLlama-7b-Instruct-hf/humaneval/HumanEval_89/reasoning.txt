@@ -1,0 +1,18 @@
+The function `encrypt` is called with ( s = 'hi' ).
+Inside the function, a variable `d` is initialized to 'abcdefghijklmnopqrstuvwxyz'.
+A variable `out` is initialized to an empty string.
+
+Iteration 1:
+    -The character 'h' is in 'abcdefghijklmnopqrstuvwxyz', so the condition (c in d) is true.
+    -The condition (c in d) is true, so the branch taken is Y.
+    -The value of d.index(c) is 0, so the value of (d.index(c)+2*2) % 26 is 4.
+    -The value of (d.index(c)+2*2) % 26 is 4, so the value of d[(d.index(c)+2*2) % 26] is 'e'.
+    -The value of out is '', so the value of out += d[(d.index(c)+2*2) % 26] is 'e'.
+Iteration 2:
+    -The character 'i' is in 'abcdefghijklmnopqrstuvwxyz', so the condition (c in d) is true.
+    -The condition (c in d) is true, so the branch taken is Y.
+    -The value of d.index(c) is 8, so the value of (d.index(c)+2*2) % 26 is 14.
+    -The value of (d.index(c)+2*2) % 26 is 14, so the value of d[(d.index(c)+2*2) % 26] is 'm'.
+    -The value of out is 'e', so the value of out += d[(d.index(c)+2*2) % 26] is 'em'.
+
+Therefore, the final output of the function `encrypt('hi')` is 'em'.

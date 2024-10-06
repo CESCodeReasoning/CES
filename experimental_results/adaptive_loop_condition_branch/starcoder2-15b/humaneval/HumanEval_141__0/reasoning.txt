@@ -1,0 +1,9 @@
+The function `file_name_check` is called with ( file_name = 'I563_No.exe' ).
+Inside the function, the variable `suf` is initialized to ['txt', 'exe', 'dll'].
+The variable `lst` is initialized to the result of splitting the file_name by the '.' character.
+The file_name is split into ['I563_No', 'exe'].
+The length of `lst` is 2, which does not equal 2.
+The condition `len(lst)!= 2` is true.
+The if branch is taken and the function returns 'No'.
+
+Therefore, the final output of the function `file_name_check('I563_No.exe')` is 'No'.

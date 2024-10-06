@@ -1,0 +1,8 @@
+The function `file_name_check` is called with (file_name = 'I563_No.exe').
+The function splits the file name into a list using the '.' character as the separator.
+The length of the list is checked, and if it is not equal to 2, the function returns 'No'.
+The second element of the list is checked to see if it is in the list of allowed file extensions (['txt', 'exe', 'dll']). If it is not, the function returns 'No'.
+The length of the first element of the list is checked, and if it is 0, the function returns 'No'.
+The first character of the first element of the list is checked to see if it is a letter. If it is not, the function returns 'No'.
+The function then checks if there are more than 3 digits in the first element of the list. If there are, the function returns 'No'.
+If all of the above conditions are met, the function returns 'Yes'.

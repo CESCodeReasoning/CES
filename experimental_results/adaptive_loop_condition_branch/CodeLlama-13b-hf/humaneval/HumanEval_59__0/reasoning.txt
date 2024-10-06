@@ -1,0 +1,90 @@
+The function `largest_prime_factor` is called with ( n = 330 ).
+Inside the function, a variable `largest` is initialized to 1.
+
+Iteration 1:
+    - The value of `j` is 2, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 1, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is True, which satisfies ( is_prime(j) ).
+    - The value of `largest` is 1, which is less than 2, so `largest` becomes 2.
+Iteration 2:
+    - The value of `j` is 3, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 1, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is True, which satisfies ( is_prime(j) ).
+    - The value of `largest` is 2, which is less than 3, so `largest` becomes 3.
+Iteration 3:
+    - The value of `j` is 4, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 3, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 3, which is less than 4, so `largest` remains 3.
+Iteration 4:
+    - The value of `j` is 5, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 0, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is True, which satisfies ( is_prime(j) ).
+    - The value of `largest` is 3, which is less than 5, so `largest` becomes 5.
+Iteration 5:
+    - The value of `j` is 6, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 3, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 5, which is less than 6, so `largest` remains 5.
+Iteration 6:
+    - The value of `j` is 7, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 3, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 5, which is less than 7, so `largest` remains 5.
+Iteration 7:
+    - The value of `j` is 8, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 4, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 5, which is less than 8, so `largest` remains 5.
+Iteration 8:
+    - The value of `j` is 9, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 3, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 5, which is less than 9, so `largest` remains 5.
+Iteration 9:
+    - The value of `j` is 10, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 0, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is True, which satisfies ( is_prime(j) ).
+    - The value of `largest` is 5, which is less than 10, so `largest` becomes 10.
+Iteration 10:
+    - The value of `j` is 11, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 3, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 10, which is less than 11, so `largest` remains 10.
+Iteration 11:
+    - The value of `j` is 12, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 4, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 10, which is less than 12, so `largest` remains 10.
+Iteration 12:
+    - The value of `j` is 13, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 3, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 10, which is less than 13, so `largest` remains 10.
+Iteration 13:
+    - The value of `j` is 14, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 2, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 10, which is less than 14, so `largest` remains 10.
+Iteration 14:
+    - The value of `j` is 15, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 3, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 10, which is less than 15, so `largest` remains 10.
+Iteration 15:
+    - The value of `j` is 16, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 4, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 10, which is less than 16, so `largest` remains 10.
+Iteration 16:
+    - The value of `j` is 17, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 1, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is True, which satisfies ( is_prime(j) ).
+    - The value of `largest` is 10, which is less than 17, so `largest` becomes 17.
+Iteration 17:
+    - The value of `j` is 18, which satisfies ( 2 <= j <= 330 ).
+    - The value of `n % j` is 3, which satisfies ( n % j == 0 ).
+    - The value of `is_prime(j)` is False, which does not satisfy ( is_prime(j) ).
+    - The value of `largest` is 17, which is less than 18, so `largest` remains 17.
+Iteration 18:
+    - The

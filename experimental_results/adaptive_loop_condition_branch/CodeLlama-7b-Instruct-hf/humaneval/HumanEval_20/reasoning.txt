@@ -1,0 +1,33 @@
+The function find_closest_elements(numbers) takes a list of floats([1.0, 2.0, 3.9, 4.0, 5.0, 2.2]) as its parameter.
+The outer loop iterats through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (idx=0):
+    - `idx` is 0, `elem` in the inner loop is 1.0, 2.0, 3.9, 4.0, 5.0, 2.2.
+    - `idx2` in the inner loop is 1, 2, 3, 4, 5, 6.
+    - `elem2` in the inner loop is 2.0, 3.9, 4.0, 5.0, 2.2.
+    - `distance` is None.
+Second Iteration (idx=1):
+    - `idx` is 1, `elem` in the inner loop is 2.0, 3.9, 4.0, 5.0, 2.2.
+    - `idx2` in the inner loop is 2, 3, 4, 5, 6.
+    - `elem2` in the inner loop is 3.9, 4.0, 5.0, 2.2.
+    - `distance` is None.
+Third Iteration (idx=2):
+    - `idx` is 2, `elem` in the inner loop is 3.9, 4.0, 5.0, 2.2.
+    - `idx2` in the inner loop is 3, 4, 5, 6.
+    - `elem2` in the inner loop is 4.0, 5.0, 2.2.
+    - `distance` is None.
+Forth Iteration (idx=3):
+    - `idx` is 3, `elem` in the inner loop is 4.0, 5.0, 2.2.
+    - `idx2` in the inner loop is 4, 5, 6.
+    - `elem2` in the inner loop is 5.0, 2.2.
+    - `distance` is None.
+Fifth Iteration (idx=4):
+    - `idx` is 4, `elem` in the inner loop is 5.0, 2.2.
+    - `idx2` in the inner loop is 5, 6.
+    - `elem2` in the inner loop is 2.2.
+    - `distance` is None.
+Sixth Iteration (idx=5):
+    - `idx` is 5, `elem` in the inner loop is 2.2.
+    - `idx2` in the inner loop is 6.
+    - `elem2` in the inner loop is None.
+    - `distance` is None.

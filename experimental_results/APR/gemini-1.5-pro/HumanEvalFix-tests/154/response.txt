@@ -1,0 +1,23 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def cycpattern_check(a , b):
+    l = len(b)
+    pat = b + b
+    for i in range(len(a) - l + 1):
+        if pat[i:i+l] in a:
+            return True
+    return False
+```

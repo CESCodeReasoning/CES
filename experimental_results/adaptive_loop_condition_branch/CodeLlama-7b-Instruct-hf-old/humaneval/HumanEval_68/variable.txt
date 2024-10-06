@@ -1,0 +1,6 @@
+from typing import *
+def pluck(arr):
+    if(len(arr) == 0): return [] ## [CONDITION](len(arr) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+    evens = list(filter(lambda x: x%2 == 0, arr))
+    if(evens == []): return [] ## [CONDITION](evens == [])= [False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+    return [min(evens), arr.index(min(evens))]

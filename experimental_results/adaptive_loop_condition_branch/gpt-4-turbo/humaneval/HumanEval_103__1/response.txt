@@ -1,0 +1,26 @@
+[REASONING]
+The function `rounded_avg` is called with `n = 350` and `m = 902`.
+First, the function checks if `m` is less than `n`. In this case, `m` is greater than `n` (902 > 350), so the condition `(m < n)` is `False` and the corresponding branch is not taken.
+Next, the function initializes a variable `summation` to 0.
+The loop iterates from `n` to `m` inclusive, which means from 350 to 902. The range function generates numbers from 350 to 902.
+During each iteration, the current value of `i` is added to `summation`.
+After the loop completes, the function calculates the average of the numbers from `n` to `m` by dividing `summation` by `(m - n + 1)`, which is the count of numbers in the range.
+The average is then rounded to the nearest integer using the `round` function.
+Finally, the function returns the binary representation of the rounded average using the `bin` function.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def rounded_avg(n, m):
+    if m < n: ## [CONDITION](m < n)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return -1
+    summation = 0
+    for i in range(n, m + 1): ## [STATE]i=[350, 351, ..., 902][/STATE][STATE]range(n, (m + 1))=[350, 351, ..., 902][/STATE][STATE]n=[350][/STATE][STATE](m + 1)=[903][/STATE]
+        summation += i
+    return bin(round(summation / (m - n + 1)))
+[/PYTHON]
+
+[OUTPUT]
+0b100000000
+[/OUTPUT]

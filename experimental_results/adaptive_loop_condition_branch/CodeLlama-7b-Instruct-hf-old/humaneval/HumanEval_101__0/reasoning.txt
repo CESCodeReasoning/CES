@@ -1,0 +1,44 @@
+The function `words_string` is called with ( s = "One, two, three, four, five, six" ).
+Inside the function, a variable `s_list` is initialized to an empty list.
+
+Iteration 1:
+    -The character 'O' is not equal to ',', so the else branch is taken.
+    -The character 'n' is not equal to ',', so the else branch is taken.
+    -The character 'e' is not equal to ',', so the else branch is taken.
+    -The character ',' is equal to ',', so the if branch is taken.
+    -The character ' ' is appended to `s_list`.
+Iteration 2:
+    -The character 't' is not equal to ',', so the else branch is taken.
+    -The character 'w' is not equal to ',', so the else branch is taken.
+    -The character 'o' is not equal to ',', so the else branch is taken.
+    -The character ',' is equal to ',', so the if branch is taken.
+    -The character ' ' is appended to `s_list`.
+Iteration 3:
+    -The character 't' is not equal to ',', so the else branch is taken.
+    -The character 'h' is not equal to ',', so the else branch is taken.
+    -The character 'r' is not equal to ',', so the else branch is taken.
+    -The character 'e' is not equal to ',', so the else branch is taken.
+    -The character ',' is equal to ',', so the if branch is taken.
+    -The character ' ' is appended to `s_list`.
+Iteration 4:
+    -The character 'f' is not equal to ',', so the else branch is taken.
+    -The character 'o' is not equal to ',', so the else branch is taken.
+    -The character 'u' is not equal to ',', so the else branch is taken.
+    -The character 'r' is not equal to ',', so the else branch is taken.
+    -The character ',' is equal to ',', so the if branch is taken.
+    -The character ' ' is appended to `s_list`.
+Iteration 5:
+    -The character 's' is not equal to ',', so the else branch is taken.
+    -The character 'i' is not equal to ',', so the else branch is taken.
+    -The character 'x' is not equal to ',', so the else branch is taken.
+    -The character ',' is equal to ',', so the if branch is taken.
+    -The character ' ' is appended to `s_list`.
+Iteration 6:
+    -The character ' ' is not equal to ',', so the else branch is taken.
+    -The character 's' is not equal to ',', so the else branch is taken.
+    -The character 'i' is not equal to ',', so the else branch is taken.
+    -The character 'x' is not equal to ',', so the else branch is taken.
+    -The character ',' is equal to ',', so the if branch is taken.
+    -The character ' ' is appended to `s_list`.
+
+The function returns the list `s_list`.

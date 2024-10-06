@@ -1,0 +1,21 @@
+The fixed code for `has_close_elements` is:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+The fixed code for `is_equal_to_sum_even` is:
+
+```python
+def is_equal_to_sum_even(n):
+    return n%2 == 0 and n >= 8 and n <= 20
+```

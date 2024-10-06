@@ -1,0 +1,16 @@
+The function `right_angle_triangle` checks if three numbers can form a right-angled triangle. In a right-angled triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides.
+
+To determine if the input numbers can form a right-angled triangle, we need to check if the square of the first number (a) is equal to the sum of the squares of the second number (b) and third number (c). We can also check if the square of the second number (b) is equal to the sum of the squares of the first number (a) and third number (c), and if the square of the third number (c) is equal to the sum of the squares of the first number (a) and second number (b).
+
+Let's consider the input (7, 24, 25). According to the function, we need to check if 7^2 is equal to 24^2 + 25^2, 24^2 is equal to 7^2 + 25^2, and 25^2 is equal to 7^2 + 24^2.
+
+The first check is 49 == 625 + 625, which is False.
+The second check is 576 == 49^2 + 625, which is False.
+The third check is 6561 == 49^2 + 576, which is True.
+
+Therefore, the output of executing the function `right_angle_triangle` on the input (7, 24, 25) is True.
+
+[OUTPUT]
+True
+[/OUTPUT]
+<|EOT|>

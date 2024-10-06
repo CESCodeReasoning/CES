@@ -1,0 +1,10 @@
+The function `string_xor` takes two binary strings `a` and `b` as input and returns the XOR of the two strings.
+The inner function `xor` takes two binary digits as input and returns the XOR of the two digits.
+The `zip` function is used to pair the digits of the two strings together.
+The `xor` function is applied to each pair of digits using a generator expression.
+The result is a new binary string where each digit is the XOR of the corresponding digits in the input strings.
+
+For the input strings '111000' and '101010':
+- The pairs are ('1', '1'), ('1', '0'), ('1', '1'), ('0', '0'), ('0', '0'), ('0', '0').
+- The XOR of each pair is '0' (as both digits are the same), '1' (as one digit is '1'), '0' (as both digits are '0'), '0' (as both digits are '0'), '0' (as both digits are '0'), '0' (as both digits are '0').
+- Therefore, the XOR of the two strings is '000000'.

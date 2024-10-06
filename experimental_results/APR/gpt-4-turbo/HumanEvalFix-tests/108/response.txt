@@ -1,0 +1,34 @@
+Here's the fixed code for both functions, `has_close_elements` and `count_nums`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `count_nums`
+```python
+def count_nums(arr):
+    def digits_sum(n):
+        neg = 1
+        if n < 0:
+            n, neg = -n, -1
+        digits = [int(i) for i in str(n)]
+        if neg == -1:
+            digits[0] *= -1
+        return sum(digits)
+    
+    return len([x for x in [digits_sum(i) for i in arr] if x > 0])
+```
+
+These fixes address the following issues:
+1. In `has_close_elements`, the distance calculation now correctly uses the absolute value to ensure that the comparison is always between positive distances.
+2. In `count_nums`, the handling of negative numbers and the calculation of the sum of digits have been corrected to properly account for the sign of the first digit when the number is negative. The list comprehension and filtering logic have also been streamlined for clarity and correctness.

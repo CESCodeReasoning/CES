@@ -1,0 +1,9 @@
+from typing import *
+
+
+def unique_digits(x):
+    odd_digit_elements = []
+    for i in x: ## [STATE]i=[12345, 2033, 111, 151][/STATE][STATE]x=[12345, 2033, 111, 151][/STATE]
+        if all(int(c) % 2 == 1 for c in str(i)): ## [CONDITION](all(int(c) % 2 == 1 for c in str(i)))=[False, True, False, False][/CONDITION][BRANCH]taken=[N, Y, N, N][/BRANCH]
+            odd_digit_elements.append(i)
+    return sorted(odd_digit_elements)

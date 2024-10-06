@@ -1,0 +1,144 @@
+<｜begin▁of▁sentence｜>
+
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def intersection(interval1, interval2):
+    def is_prime(num):
+        if num == 1 or num == 0:
+            return False
+        if num == 2:
+            return True
+        for i in range(2, num):
+            if num%i == 0:
+                return False
+        return True
+
+    l = max(interval1[0], interval2[0])
+    r = min(interval1[1], interval2[1])
+    length = r - l
+    if length > 0 and is_prime(length):
+        return "YES"
+    return "NO"
+
+Tests:
+def check(intersection):
+
+    # Check some simple cases
+    assert intersection((1, 2), (2, 3)) == "NO"
+    assert intersection((-1, 1), (0, 4)) == "NO"
+    assert intersection((-3, -1), (-5, 5)) == "YES"
+    assert intersection((-2, 2), (-4, 0)) == "YES"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert intersection((-11, 2), (-1, -1)) == "NO"
+    assert intersection((1, 2), (3, 5)) == "NO"
+    assert intersection((1, 2), (1, 2)) == "NO"
+    assert intersection((-2, -2), (-3, -2)) == "NO"
+
+check(intersection)
+
+The code should satisfy the following natural language specification:
+Write a Python function `intersection(interval1, interval2)` to solve the following problem:
+You are given two intervals,
+where each interval is a pair of integers. For example, interval = (start, end) = (1, 2).
+The given intervals are closed which means that the interval (start, end)
+includes both start and end.
+For each given interval, it is assumed that its start is less or equal its end.
+Your task is to determine whether the length of intersection of these two
+intervals is a prime number.
+Example, the intersection of the intervals (1, 3), (2, 4) is (2, 3)
+which its length is 1, which not a prime number.
+If the length of the intersection is a prime number, return "YES",
+otherwise, return "NO".
+If the two intervals don't intersect, return "NO".
+[input/output] samples:
+intersection((1, 2), (2, 3)) ==> "NO"
+intersection((-1, 1), (0, 4)) ==> "NO"
+intersection((-3, -1), (-5, 5)) ==> "YES"
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    i = 3
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 2
+    return True
+
+def count_primes(nums):
+    count = 0
+    for num in nums:
+        if is_prime(num):
+            count += 1
+    return count
+
+Tests:
+def check(count_primes):
+    assert count_primes([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]) == 10
+    assert count_primes([4, 6, 8, 10, 12, 14, 16, 18, 20, 22]) == 0
+    assert count_primes([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == 4
+    assert count_primes([11, 13, 15, 17, 19, 21, 23, 25, 27, 29]) == 10
+    assert count_primes([31, 33, 35, 37, 39, 41, 43, 45, 47, 49]) == 10
+
+check(count_primes)
+
+The code should satisfy the following natural language specification:
+Write a Python function `count_primes(nums)` to solve the following problem:
+Given a list of numbers, count the number of prime numbers in the list.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response

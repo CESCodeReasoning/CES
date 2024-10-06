@@ -1,0 +1,48 @@
+```response
+        if flg == 0 or len(word) == 2:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+def prime_factors(n):
+    factors = []
+    for i in range(2, n):
+        if is_prime(i):
+            while n % i == 0:
+                factors.append(i)
+                n = n / i
+    if n > 1:
+        factors.append(n)
+    return factors
+
+Tests:
+def check(prime_factors):
+    assert prime_factors(1) == []
+    assert prime_factors(2) == [2]
+    assert prime_factors(3) == [3]
+    assert prime_factors(4) == [2, 2]
+    assert prime_factors(5) == [5]
+    assert prime_factors(6) == [2, 3]
+    assert prime_factors(7) == [7]
+    assert prime_factors(8) == [2, 2, 2]
+    assert prime_factors(9) == [3, 3]
+    assert prime_factors(10) == [2, 5]
+    assert prime_factors(11) == [11]
+    assert prime_factors(12) == [2, 2, 3]
+    assert prime_factors(13) == [13]
+    assert prime_factors(14) == [2, 7]
+    assert prime_factors(15) == [3, 5]
+    assert prime_factors(16) == [2, 2, 2, 2]
+    assert prime_factors(17) == [17]
+    assert prime_factors(18) == [2, 3, 3]
+    assert prime_factors(19) ==

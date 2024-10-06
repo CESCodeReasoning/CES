@@ -1,0 +1,16 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: sorted_list_sum
+main.py(5):     lst.sort()
+main.py(6):     new_lst = []
+main.py(7):     for i in lst:
+main.py(8):         if len(i) % 2 == 0:
+main.py(7):     for i in lst:
+main.py(8):         if len(i) % 2 == 0:
+main.py(9):             new_lst.append(i)
+main.py(7):     for i in lst:
+main.py(8):         if len(i) % 2 == 0:
+main.py(7):     for i in lst:
+main.py(8):         if len(i) % 2 == 0:
+main.py(9):             new_lst.append(i)
+main.py(7):     for i in lst:
+main.py(10):     return sorted(new_lst, key=len)

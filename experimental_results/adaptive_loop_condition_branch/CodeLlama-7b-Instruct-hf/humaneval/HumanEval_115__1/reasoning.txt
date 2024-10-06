@@ -1,0 +1,9 @@
+The function max_fill takes two arguments: a 2D array of integers called grid, and an integer called capacity.
+The function returns the maximum number of buckets that can be filled with water from the grid, subject to the constraint that the total volume of water that can be filled is less than or equal to capacity.
+
+To determine the output of executing the function max_fill on the input [[1,1,1,1], [1,1,1,1]], 2, we need to follow these steps:
+
+1. First, we need to calculate the total volume of water that can be filled from the grid. This is done by summing up the elements of each row of the grid, which gives us a total of 4 + 4 + 4 + 4 = 16 liters.
+2. Next, we need to calculate the maximum number of buckets that can be filled with water from the grid, subject to the constraint that the total volume of water that can be filled is less than or equal to capacity.
+This is done by dividing the total volume of water by the capacity, which gives us a maximum of 16 / 2 = 8 buckets.
+3. Finally, we return the result of the previous step, which is 8.

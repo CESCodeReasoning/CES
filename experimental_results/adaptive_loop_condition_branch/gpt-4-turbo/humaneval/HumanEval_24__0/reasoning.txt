@@ -1,0 +1,14 @@
+The function `largest_divisor` is called with ( n = 49 ).
+Inside the function, a loop iterates over the range from `n-1` to 1 in reverse order (since `range(n)` generates numbers from 0 to `n-1` and `reversed(range(n))` will start from `n-1` and go down to 0).
+
+Iteration 1:
+   - `i` is 48, and 49 % 48 is not 0.
+Iteration 2:
+   - `i` is 47, and 49 % 47 is not 0.
+   - ...
+   - This continues until `i` is 7.
+Iteration 7:
+   - `i` is 7, and 49 % 7 is 0, which means 7 is a divisor of 49.
+   - Since this is the first divisor found in reverse order, it is the largest divisor other than the number itself.
+
+The loop stops when it finds the first divisor, which is 7, and returns this value.

@@ -1,0 +1,11 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: filter_integers
+main.py(5):     return [x for x in values if isinstance(x, int)]
+ --- modulename: main, funcname: <listcomp>
+main.py(5):     return [x for x in values if isinstance(x, int)]
+main.py(5):     return [x for x in values if isinstance(x, int)]
+main.py(5):     return [x for x in values if isinstance(x, int)]
+main.py(5):     return [x for x in values if isinstance(x, int)]
+main.py(5):     return [x for x in values if isinstance(x, int)]
+main.py(5):     return [x for x in values if isinstance(x, int)]
+main.py(5):     return [x for x in values if isinstance(x, int)]

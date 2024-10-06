@@ -1,0 +1,11 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: reverse_delete
+main.py(3):     s = ''.join([char for char in s if char not in c])
+ --- modulename: main, funcname: <listcomp>
+main.py(3):     s = ''.join([char for char in s if char not in c])
+main.py(3):     s = ''.join([char for char in s if char not in c])
+main.py(3):     s = ''.join([char for char in s if char not in c])
+main.py(3):     s = ''.join([char for char in s if char not in c])
+main.py(3):     s = ''.join([char for char in s if char not in c])
+main.py(3):     s = ''.join([char for char in s if char not in c])
+main.py(4):     return (s,s[::-1] == s)

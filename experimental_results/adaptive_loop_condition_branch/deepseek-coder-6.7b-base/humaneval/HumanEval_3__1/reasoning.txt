@@ -1,0 +1,8 @@
+The function `below_zero` is called with ( operations = [1, -1, 2, -2, 5, -5, 4, -4] ).
+Inside the function, a variable `balance` is initialized to 0.
+
+Iteration 1:
+    -The operation 1 is added to the balance, resulting in a balance of 1.
+Iteration 2:
+    -The operation -1 is subtracted from the balance, resulting in a balance of -1.
+    -The balance is now less than 0, so the function returns True.

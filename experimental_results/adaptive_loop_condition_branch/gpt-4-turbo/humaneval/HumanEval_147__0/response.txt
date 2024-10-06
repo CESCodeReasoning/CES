@@ -1,0 +1,37 @@
+[REASONING]
+The function `get_max_triples(n)` is designed to find all unique triples `(i, j, k)` where `i < j < k` and the sum of the values `A[i] + A[j] + A[k]` is divisible by 3. The list `A` is generated using the formula `i * i - i + 1` for each `i` from 1 to `n`.
+
+Here's a breakdown of the function's execution for `n = 100`:
+1. The list `A` is generated with 100 elements where each element is calculated as `i * i - i + 1`.
+2. The function then iterates over all possible triples `(i, j, k)` where `i < j < k` using three nested loops.
+3. For each triple, it checks if the sum `A[i] + A[j] + A[k]` is divisible by 3.
+4. If the condition is met, the triple is added to the list `ans`.
+5. Finally, the function returns the count of such triples.
+
+The loops iterate as follows:
+- The outer loop (`i`) runs from 0 to 98.
+- The middle loop (`j`) starts from `i+1` and runs up to 99.
+- The innermost loop (`k`) starts from `j+1` and runs up to 99.
+
+The condition checks if `(A[i] + A[j] + A[k]) % 3 == 0`. If true, the triple is considered valid and added to the result list `ans`.
+
+The function finally returns the length of `ans`, which is the count of all valid triples.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def get_max_triples(n):
+    A = [i * i - i + 1 for i in range(1, n + 1)]
+    ans = []
+    for i in range(n): ## [STATE]i=[0 to 98][/STATE][STATE]range(n)=[0 to 99][/STATE][STATE]n=100[/STATE]
+        for j in range(i + 1, n): ## [STATE]j=[i+1 to 99][/STATE][STATE]range((i + 1), n)=[i+1 to 99][/STATE][STATE](i + 1)=[1 to 99][/STATE][STATE]n=100[/STATE]
+            for k in range(j + 1, n): ## [STATE]k=[j+1 to 99][/STATE][STATE]range((j + 1), n)=[j+1 to 99][/STATE][STATE](j + 1)=[i+2 to 100][/STATE][STATE]n=100[/STATE]
+                if (A[i] + A[j] + A[k]) % 3 == 0: ## [CONDITION]((A[i] + A[j] + A[k]) % 3 == 0)=True or False[/CONDITION][BRANCH]taken=Y or N[/BRANCH]
+                    ans += [(A[i], A[j], A[k])]
+    return len(ans)
+[/PYTHON]
+
+[OUTPUT]
+[3, 4]
+[/OUTPUT]

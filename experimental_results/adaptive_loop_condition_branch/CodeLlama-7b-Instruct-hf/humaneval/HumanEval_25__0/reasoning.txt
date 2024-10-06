@@ -1,0 +1,26 @@
+The function `factorize` is called with ( n = 3 * 2 * 3 ).
+Inside the function, a variable `fact` is initialized to an empty list.
+The loop iterates from 2 through the square root of n (since ( n = 3 * 2 * 3 ) and ( math.sqrt(n) + 1 ) = 4 ).
+First Iteration (i = 2):
+    - i <= int((math.sqrt(n) + 1)) when i=2 and int((math.sqrt(n) + 1))=4
+    - The condition `n % i == 0` is false. The else branch is taken.
+    - `i += 1` updates `i` to 3.
+Second Iteration (i = 3):
+    - i <= int((math.sqrt(n) + 1)) when i=3 and int((math.sqrt(n) + 1))=4
+    - The condition `n % i == 0` is true. The if branch is taken.
+    - `fact.append(i)` updates `fact` to [2, 3].
+    - `n //= i` updates `n` to 3.
+Third Iteration (i = 4):
+    - i <= int((math.sqrt(n) + 1)) when i=4 and int((math.sqrt(n) + 1))=4
+    - The condition `n % i == 0` is false. The else branch is taken.
+    - `i += 1` updates `i` to 5.
+Fourth Iteration (i = 5):
+    - i <= int((math.sqrt(n) + 1)) when i=5 and int((math.sqrt(n) + 1))=4
+    - The condition `n % i == 0` is true. The if branch is taken.
+    - `fact.append(i)` updates `fact` to [2, 3, 5].
+    - `n //= i` updates `n` to 1.
+Fifth Iteration (i = 6):
+    - i <= int((math.sqrt(n) + 1)) when i=6 and int((math.sqrt(n) + 1))=4
+    - The condition `n % i == 0` is false. The else branch is taken.
+    - The loop terminates.
+After the loop completes, the function returns the value of `fact`, which is now [2, 3, 5].

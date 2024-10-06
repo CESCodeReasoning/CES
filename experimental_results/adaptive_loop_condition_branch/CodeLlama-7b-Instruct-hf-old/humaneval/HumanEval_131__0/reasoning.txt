@@ -1,0 +1,102 @@
+The function `digits` is called with ( n = 120 ).
+Inside the function, a variable `product` is initialized to 1.
+A variable `odd_count` is initialized to 0.
+The loop iterates through the digits of the input number (n = 120).
+First Iteration (digit = 1)
+   - `digit` is 1, which is an odd number.
+   - The condition `int_digit % 2 == 1` is true.
+   - Action: `product = product * int_digit` results in `product = 1 * 1 = 1`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 1.
+Second Iteration (digit = 2)
+   - `digit` is 2, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 1 * 2 = 2`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Third Iteration (digit = 0)
+   - `digit` is 0, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 2 * 0 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Fourth Iteration (digit = 2)
+   - `digit` is 2, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 2 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Fifth Iteration (digit = 0)
+   - `digit` is 0, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 0 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Sixth Iteration (digit = 2)
+   - `digit` is 2, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 2 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Seventh Iteration (digit = 0)
+   - `digit` is 0, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 0 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Eighth Iteration (digit = 2)
+   - `digit` is 2, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 2 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Ninth Iteration (digit = 0)
+   - `digit` is 0, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 0 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Tenth Iteration (digit = 2)
+   - `digit` is 2, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 2 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Eleventh Iteration (digit = 0)
+   - `digit` is 0, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 0 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Twelfth Iteration (digit = 2)
+   - `digit` is 2, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 2 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Thirteenth Iteration (digit = 0)
+   - `digit` is 0, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 0 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Fourteenth Iteration (digit = 2)
+   - `digit` is 2, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 2 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Fifteenth Iteration (digit = 0)
+   - `digit` is 0, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 0 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Sixteenth Iteration (digit = 2)
+   - `digit` is 2, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 2 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Seventeenth Iteration (digit = 0)
+   - `digit` is 0, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 0 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Eighteenth Iteration (digit = 2)
+   - `digit` is 2, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 2 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Nineteenth Iteration (digit = 0)
+   - `digit` is 0, which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product = product * int_digit` results in `product = 0 * 0 = 0`.
+   - Action: `odd_count = odd_count + 1` updates `odd_count` to 2.
+Twentieth Iteration (digit = 2)
+   - `digit` is 2, which is an even number.
+   - The condition `int_digit %

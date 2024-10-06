@@ -1,0 +1,8 @@
+The function `simplify` is called with ( x = "1/5", n = "5/1" ).
+`x` is "1/5", which is split into ( a = "1", b = "5" ).
+`n` is "5/1", which is split into ( c = "5", d = "1" ).
+The numerator is calculated as ( a * c = 5 ).
+The denominator is calculated as ( b * d = 5 ).
+The condition `numerator/denom == int(numerator/denom)` is true, therefore the if branch is taken and the method returns True
+
+Therefore, the final output of the function `simplify("1/5", "5/1")` is True.

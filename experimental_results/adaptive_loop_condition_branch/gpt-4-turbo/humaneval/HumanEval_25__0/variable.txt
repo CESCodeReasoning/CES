@@ -1,0 +1,17 @@
+from typing import *
+
+
+def factorize(n: int) -> List[int]:
+    import math
+    fact = []
+    i = 2
+    while i <= int(math.sqrt(n) + 1): ## [STATE](i <= int((math.sqrt(n) + 1)))=[True, True, True, True, True, False][/STATE][STATE]i=[2, 2, 3, 3, 4][/STATE][STATE]int((math.sqrt(n) + 1))=[5, 5, 2, 2, 2][/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[True, False, True, True, False][/CONDITION][BRANCH]taken=[Y, N, Y, Y, N][/BRANCH]
+            fact.append(i)
+            n //= i
+        else: ## [BRANCH]taken=[N, Y, N, N, Y][/BRANCH]
+            i += 1
+
+    if n > 1: ## [CONDITION](n > 1)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        fact.append(n)
+    return fact

@@ -1,0 +1,37 @@
+The function `max_element` is called with ( l = [-5, 2, 48, 9, 4, 0, 6, 7] ).
+Inside the function, a variable `m` is initialized to the first element of `l`.
+
+Iteration 1:
+    -The element `e` is -5, which is less than `m` (48).
+    -The condition `e > m` is false.
+    -No action is taken.
+Iteration 2:
+    -The element `e` is 2, which is less than `m` (48).
+    -The condition `e > m` is false.
+    -No action is taken.
+Iteration 3:
+    -The element `e` is 48, which is greater than `m` (48).
+    -The condition `e > m` is true.
+    -Action: `m` is updated to 48.
+Iteration 4:
+    -The element `e` is 9, which is less than `m` (48).
+    -The condition `e > m` is false.
+    -No action is taken.
+Iteration 5:
+    -The element `e` is 4, which is less than `m` (48).
+    -The condition `e > m` is false.
+    -No action is taken.
+Iteration 6:
+    -The element `e` is 0, which is less than `m` (48).
+    -The condition `e > m` is false.
+    -No action is taken.
+Iteration 7:
+    -The element `e` is 6, which is less than `m` (48).
+    -The condition `e > m` is false.
+    -No action is taken.
+Iteration 8:
+    -The element `e` is 7, which is greater than `m` (48).
+    -The condition `e > m` is true.
+    -Action: `m` is updated to 7.
+
+Therefore, the maximum element in the list is 7.

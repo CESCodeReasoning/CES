@@ -1,0 +1,11 @@
+The function `double_the_difference` takes a list of numbers as input and returns the sum of the squares of all positive odd integers in the list that do not contain a decimal point in their string representation. The function uses a list comprehension to filter and process the elements of the input list.
+
+1. The input list `[-10, -20, -30]` is processed by the list comprehension.
+2. The list comprehension iterates over each element in the list:
+   - For `-10`: It checks if `-10` is greater than 0, which is false. Therefore, `-10` is not included in the final list for summation.
+   - For `-20`: Similarly, `-20` is not greater than 0, so it is also not included.
+   - For `-30`: `-30` is not greater than 0, so it is not included.
+3. Since none of the elements in the list satisfy the condition of being a positive odd integer without a decimal point, the list comprehension results in an empty list `[]`.
+4. The `sum` function is then called on this empty list, which results in a sum of 0.
+
+Thus, the output of the function when called with the input `[-10, -20, -30]` is 0.

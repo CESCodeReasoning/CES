@@ -1,0 +1,16 @@
+from typing import *
+
+
+def Strongest_Extension(class_name, extensions):
+    strong = extensions[0]
+    my_val = len([x for x in extensions[0] if x.isalpha() and x.isupper()]) - \
+        len([x for x in extensions[0] if x.isalpha() and x.islower()])
+    for s in extensions: ## [STATE]s=['Die', 'NowW', 'Wow', 'WoW'][/STATE][STATE]extensions=['Die', 'NowW', 'Wow', 'WoW'][/STATE]
+        val = len([x for x in s if x.isalpha() and x.isupper()]) - \
+            len([x for x in s if x.isalpha() and x.islower()])
+        if val > my_val: ## [CONDITION](val > my_val)=[False, False, True, False][/CONDITION][BRANCH]taken=[N, N, Y, N][/BRANCH]
+            strong = s
+            my_val = val
+
+    ans = class_name + "." + strong
+    return ans

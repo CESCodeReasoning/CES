@@ -1,0 +1,8 @@
+The function `multiply` takes two integers, `a` and `b`, as input. It calculates the product of the last digits of both integers. 
+To find the last digit of an integer, the modulus operation with 10 is used (`a % 10` for `a` and `b % 10` for `b`). 
+The `abs` function ensures that the result is non-negative, even if the input numbers are negative.
+For the input values 148 and 412:
+- The last digit of 148 is 148 % 10 = 8.
+- The last digit of 412 is 412 % 10 = 2.
+The product of these last digits is 8 * 2 = 16.
+Thus, the output of the function `multiply` with inputs 148 and 412 is 16.

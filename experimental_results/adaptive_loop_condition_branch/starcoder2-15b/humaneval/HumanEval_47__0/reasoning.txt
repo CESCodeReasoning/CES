@@ -1,0 +1,7 @@
+The function `median` is called with ( l = [8, 1, 3, 9, 9, 2, 7] ).
+The list `l` is sorted in ascending order: [1, 2, 3, 7, 8, 9, 9].
+The length of the list `l` is 7, which is an odd number.
+The condition `len(l) % 2 == 1` is true, therefore the if branch is taken.
+The median is the middle element of the sorted list `l`, which is 7.
+
+Therefore, the final output of the function `median([8, 1, 3, 9, 9, 2, 7])` is 7.

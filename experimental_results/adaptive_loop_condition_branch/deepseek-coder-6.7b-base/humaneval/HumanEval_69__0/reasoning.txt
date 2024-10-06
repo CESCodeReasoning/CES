@@ -1,0 +1,57 @@
+The function `search` is called with ( lst = [2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1] ).
+Inside the function, a variable `frq` is initialized to a list of zeros with length equal to the maximum element in the input list `lst` plus 1.
+
+Iteration 1:
+    -The value at index `lst[0]`, which is 2, is incremented by 1.
+Iteration 2:
+    -The value at index `lst[1]`, which is 7, is incremented by 1.
+Iteration 3:
+    -The value at index `lst[2]`, which is 8, is incremented by 1.
+Iteration 4:
+    -The value at index `lst[3]`, which is 8, is incremented by 1.
+Iteration 5:
+    -The value at index `lst[4]`, which is 4, is incremented by 1.
+Iteration 6:
+    -The value at index `lst[5]`, which is 8, is incremented by 1.
+Iteration 7:
+    -The value at index `lst[6]`, which is 7, is incremented by 1.
+Iteration 8:
+    -The value at index `lst[7]`, which is 3, is incremented by 1.
+Iteration 9:
+    -The value at index `lst[8]`, which is 9, is incremented by 1.
+Iteration 10:
+    -The value at index `lst[9]`, which is 6, is incremented by 1.
+Iteration 11:
+    -The value at index `lst[10]`, which is 5, is incremented by 1.
+Iteration 12:
+    -The value at index `lst[11]`, which is 10, is incremented by 1.
+Iteration 13:
+    -The value at index `lst[12]`, which is 4, is incremented by 1.
+Iteration 14:
+    -The value at index `lst[13]`, which is 3, is incremented by 1.
+Iteration 15:
+    -The value at index `lst[14]`, which is 6, is incremented by 1.
+Iteration 16:
+    -The value at index `lst[15]`, which is 7, is incremented by 1.
+Iteration 17:
+    -The value at index `lst[16]`, which is 1, is incremented by 1.
+Iteration 18:
+    -The value at index `lst[17]`, which is 7, is incremented by 1.
+Iteration 19:
+    -The value at index `lst[18]`, which is 4, is incremented by 1.
+Iteration 20:
+    -The value at index `lst[19]`, which is 10, is incremented by 1.
+Iteration 21:
+    -The value at index `lst[20]`, which is 8, is incremented by 1.
+Iteration 22:
+    -The value at index `lst[21]`, which is 1, is incremented by 1.
+
+The variable `ans` is initialized to -1.
+
+Iteration 1:
+    -The value at index `i`, which is 1, is less than the length of `frq` (22).
+    -The value at index `frq[i]`, which is 0, is less than `i` (1).
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains -1.
+Iteration 2:
+    -The value at index `i`, which is 2, is less than the length of `frq` (

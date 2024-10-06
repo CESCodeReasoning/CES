@@ -1,0 +1,6 @@
+The function `circular_shift` is called with ( x = 100, shift = 2 ).
+`shift` is 2, which is less than the length of `s` (which is 3).
+The condition `shift > len(s)` is false, therefore the else branch is taken.
+The function returns the concatenation of the last two characters of `s` (which is "00") and the first character of `s` (which is "1").
+
+Therefore, the final output of the function `circular_shift(100, 2)` is "001".

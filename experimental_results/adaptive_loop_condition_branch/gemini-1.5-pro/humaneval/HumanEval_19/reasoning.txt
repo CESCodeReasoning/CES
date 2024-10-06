@@ -1,0 +1,12 @@
+The function sort_numbers takes a string of numbers as input and returns a string of the numbers sorted in ascending order.
+The function first creates a dictionary called value_map that maps the string representation of each number to its corresponding integer value.
+Then, the function splits the input string into a list of strings, one for each number.
+The function then filters out any empty strings from the list.
+The function then sorts the list of strings using the key=lambda x: value_map[x] argument, which sorts the strings by the integer value of the corresponding number.
+Finally, the function joins the sorted list of strings into a single string and returns the result.
+To determine the output of executing the function sort_numbers on the input 'five zero four seven nine eight', we need to first split the input string into a list of strings, one for each number.
+The resulting list is ['five', 'zero', 'four', 'seven', 'nine', 'eight'].
+We then filter out any empty strings from the list, which results in the list ['five', 'zero', 'four', 'seven', 'nine', 'eight'].
+We then sort the list of strings using the key=lambda x: value_map[x] argument, which sorts the strings by the integer value of the corresponding number.
+The resulting list is ['zero', 'four', 'five', 'eight', 'nine', 'seven'].
+Finally, we join the sorted list of strings into a single string and return the result, which is 'zero four five eight nine seven'.

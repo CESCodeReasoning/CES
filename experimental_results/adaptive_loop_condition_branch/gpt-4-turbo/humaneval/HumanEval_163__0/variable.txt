@@ -1,0 +1,10 @@
+from typing import *
+
+
+def generate_integers(a: int, b: int) -> List[int]:
+    # [STATE] lower = 17, upper = 8 [/STATE]
+    lower = max(2, min(a, b))  # [STATE] min(a, b) = 17 [/STATE]
+    upper = min(8, max(a, b))  # [STATE] max(a, b) = 89 [/STATE]
+
+    # [CONDITION] lower <= upper [/CONDITION] [BRANCH] N [/BRANCH]
+    return [i for i in range(lower, upper + 1) if i % 2 == 0]  # [STATE] range(lower, upper + 1) = range(17, 9) [/STATE]

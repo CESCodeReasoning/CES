@@ -1,0 +1,24 @@
+```response
+                s_list.append(letter)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s):
+    if not s:
+        return True
+
+    s = s.lower()
+    s = s.replace(" ", "")
+
+    for i in range(len(s) // 2):
+        if s[i] != s[-i - 1]:
+            return False
+
+    return True
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("A man

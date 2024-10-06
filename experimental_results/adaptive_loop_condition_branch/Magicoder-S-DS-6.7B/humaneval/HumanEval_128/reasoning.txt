@@ -1,0 +1,9 @@
+The function `prod_signs` is called with ( arr = [1, 2, 2, -4] ).
+The condition `not arr` is false, so the else branch is taken.
+The list comprehension `[abs(i) for i in arr]` evaluates to [1, 2, 2, 4].
+The sum of this list is 10.
+The condition `0 in arr` is false, so the list comprehension `list(filter(lambda x: x < 0, arr))` evaluates to [].
+The length of this list is 0.
+The expression `(-1) ** len(list(filter(lambda x: x < 0, arr)))` evaluates to 1.
+The product of 1 and 10 is 10.
+Therefore, the final output of the function `prod_signs([1, 2, 2, -4])` is 10.

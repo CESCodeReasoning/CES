@@ -1,0 +1,6 @@
+from typing import *
+
+
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    # [STATE] strings = ['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], substring = 'xxx' [/STATE]
+    return [x for x in strings if substring in x]  # [CONDITION] substring in x [/CONDITION]

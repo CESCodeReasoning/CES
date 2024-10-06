@@ -1,0 +1,23 @@
+The function `fruit_distribution` is called with ( s = "5 apples and 6 oranges", n = 21 ).
+Inside the function, a variable `lis` is initialized to an empty list.
+The string `s` is split into a list of strings using the space character as the delimiter.
+
+Iteration 1:
+    -The string '5' is not a digit, so the condition `i.isdigit()` is false.
+    -The action `lis.append(int(i))` is not executed.
+Iteration 2:
+    -The string 'apples' is not a digit, so the condition `i.isdigit()` is false.
+    -The action `lis.append(int(i))` is not executed.
+Iteration 3:
+    -The string 'and' is not a digit, so the condition `i.isdigit()` is false.
+    -The action `lis.append(int(i))` is not executed.
+Iteration 4:
+    -The string '6' is not a digit, so the condition `i.isdigit()` is false.
+    -The action `lis.append(int(i))` is not executed.
+Iteration 5:
+    -The string 'oranges' is not a digit, so the condition `i.isdigit()` is false.
+    -The action `lis.append(int(i))` is not executed.
+
+The final value of `lis` is [].
+
+The final value of `n - sum(lis)` is 21 - 0 = 21.

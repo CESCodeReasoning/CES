@@ -1,0 +1,3 @@
+```response
+    return sum([math.floor(sum(arr)/capacity) for arr in grid])
+```

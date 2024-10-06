@@ -1,0 +1,5 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: sort_third
+main.py(3):     l = list(l)
+main.py(4):     l[::3] = sorted(l[::3])
+main.py(5):     return l

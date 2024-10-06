@@ -1,0 +1,31 @@
+
+[REASONING]
+The function `will_it_fly` is called with ( q = [1, 2, 3], w = 6 ).
+The condition `sum(q) > w` is false, so the first branch is not taken.
+The loop iterates from 0 through 1 (since len(q) - 1 = 2 - 1 = 1).
+First Iteration (i = 0, j = 1):
+    - `i < j` is true.
+    - The condition `q[i] != q[j]` is true. The first branch is taken.
+    - The function returns False.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def will_it_fly(q, w):
+    if sum(q) > w: ## [CONDITION](sum(q) > w)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return False
+
+    i, j = 0, len(q) - 1
+    while i < j: ## [STATE](i < j)=[True, False][/STATE][STATE]i=[0, 0][/STATE][STATE]j=[1, 1][/STATE]
+        if q[i] != q[j]: ## [CONDITION](q[i] != q[j])=[True, False][/CONDITION][BRANCH]taken=[Y, N][/BRANCH]
+            return False
+        i += 1
+        j -= 1
+    return True
+[/ANSWER]
+
+[OUTPUT]
+False
+[/OUTPUT]

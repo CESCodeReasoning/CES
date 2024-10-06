@@ -1,0 +1,8 @@
+The function `parse_music` takes a string `music_string` as input and returns a list of integers representing the notes in the music string.
+
+- The `note_map` dictionary maps note symbols to their corresponding integer values.
+- The `split(' ')` method splits the `music_string` into a list of notes separated by spaces.
+- The list comprehension `[note_map[x] for x in music_string.split(' ') if x]` iterates over the list of notes, mapping each note to its corresponding integer value using `note_map` and filters out any empty strings.
+- The resulting list of integers is returned as the output of the function.
+
+For the input `'o| .| o| .| o o| o o|'`, the function will return the list `[2, 1, 2, 1, 4, 4, 4]`.

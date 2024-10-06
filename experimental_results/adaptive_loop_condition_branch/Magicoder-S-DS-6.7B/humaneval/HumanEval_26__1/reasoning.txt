@@ -1,0 +1,5 @@
+The function remove_duplicates takes a list of integers as input and returns a new list that contains only the elements that appear only once in the input list.
+
+To determine the output of executing the function remove_duplicates on the input [], we need to iterate over the input list and count the occurrence of each number. Then, we need to filter out the numbers that appear more than once.
+
+Since the input list is empty, there are no duplicates, so the output of executing the function remove_duplicates on the input [] is an empty list.

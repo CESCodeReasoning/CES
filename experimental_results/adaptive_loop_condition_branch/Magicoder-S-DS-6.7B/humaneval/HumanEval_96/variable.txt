@@ -1,0 +1,13 @@
+from typing import *
+def count_up_to(n):
+    primes = []
+    for i in range(2, n): ## [STATE]i=[2, 3, 4, 5][/STATE][STATE]range(2, n)=[2, 3, 4, 5][/STATE][STATE]n=[5][/STATE]
+        is_prime = True
+        for j in range(2, i): ## [STATE]j=[2, 3, 4, 2, 3, 4, 2, 3, 4, 3, 4, 3, 4, 4, 4][/STATE][STATE]range(2, i)=[[2, 3, 4], [2, 3, 4], [2, 3, 4], [2, 3], [2, 3, 4], [2, 3, 4], [2, 3, 4], [2, 3, 4], [2, 3, 4], [2, 3, 4], [2, 3, 4], [2, 3, 4], [2, 3, 4], [2, 3, 4], [2, 3, 4]][/STATE][STATE]i=[2, 3, 4, 5, 2, 3, 4, 5, 2, 3, 4, 5, 2, 3, 4, 5][/STATE]
+            if i % j == 0: ## [CONDITION](i % j == 0)=[False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[F, F, F, F, T, F, F, F, F, F, F, F, F, F, F, F][/BRANCH]
+                is_prime = False
+                break
+        if is_prime: ## [CONDITION](is_prime)=[True, True, False, True, True, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[T, T, F, T, T, F, F, F, F, F, F, F, F, F, F, F][/BRANCH]
+            primes.append(i)
+    return primes
+

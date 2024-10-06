@@ -1,0 +1,8 @@
+The function `circular_shift` takes two arguments `x` and `shift`.
+`x` is an integer, and `shift` is an integer.
+The function returns a string that is the result of circularly shifting the string representation of `x` by `shift` characters.
+
+The function first converts `x` to a string using the `str()` method.
+Then it checks if `shift` is greater than the length of the string representation of `x`.
+If it is, then the function returns the string representation of `x` in reverse order.
+Otherwise, it returns the last `shift` characters of the string representation of `x` followed by the first `len(s) - shift` characters of the string representation of `x`.

@@ -1,0 +1,21 @@
+The function `by_length` is called with (arr = [2, 1, 1, 4, 5, 8, 2, 3] ).
+Inside the function, a dictionary `dic` is defined to map numbers to their corresponding word representations.
+The array `arr` is sorted in descending order using `sorted(arr, reverse=True)`, resulting in `sorted_arr` = [8, 5, 4, 3, 2, 2, 1, 1].
+An empty array `new_arr` is initialized.
+The loop iterates through the elements of `sorted_arr`.
+First Iteration (var = 8):
+    `dic[var]` is 'Eight', so 'Eight' is appended to `new_arr`.
+Second Iteration (var = 5):
+    `dic[var]` is 'Five', so 'Five' is appended to `new_arr`.
+Third Iteration (var = 4):
+    `dic[var]` is 'Four', so 'Four' is appended to `new_arr`.
+Fourth Iteration (var = 3):
+    `dic[var]` is 'Three', so 'Three' is appended to `new_arr`.
+Fifth Iteration (var = 2):
+    `dic[var]` is 'Two', so 'Two' is appended to `new_arr`.
+Sixth Iteration (var = 2):
+    `dic[var]` is 'Two', so 'Two' is appended to `new_arr`.
+Seventh Iteration (var = 1):
+    `dic[var]` is 'One', so 'One' is appended to `new_arr`.
+Eighth Iteration (var = 1):
+    `dic[var]` is 'One', so 'One' is appended to `new_arr`.

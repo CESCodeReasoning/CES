@@ -1,0 +1,8 @@
+The function `reverse_delete` takes two arguments `s` and `c`. `s` is a string and `c` is a string of characters to be removed from `s`.
+
+- The function first creates a new string by iterating over each character in `s` and only keeping characters that are not in `c`. This is done using a list comprehension and the `join` method to convert the list back into a string.
+- The function then checks if the reversed string is equal to the original string. If they are equal, it returns `True`, otherwise it returns `False`.
+
+Given the input `reverse_delete("abcde","ae")`, the function will remove the characters 'a' and 'e' from the string "abcde", resulting in "bcd". Then it will check if the reversed string "dcb" is equal to the original string "bcd", which is `False`.
+
+Therefore, the output of executing the function `reverse_delete("abcde","ae")` is `("bcd", False)`.

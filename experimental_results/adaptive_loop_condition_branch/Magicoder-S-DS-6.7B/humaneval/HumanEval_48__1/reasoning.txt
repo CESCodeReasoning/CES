@@ -1,0 +1,15 @@
+The function `is_palindrome` is called with ( text = 'aaaaa' ).
+The function iterates over the string from the first character to the middle character.
+
+Iteration 1:
+    -The first character 'a' is compared with the last character 'a'. They are the same, so the function continues to the next iteration.
+Iteration 2:
+    -The second character 'a' is compared with the second last character 'a'. They are the same, so the function continues to the next iteration.
+Iteration 3:
+    -The third character 'a' is compared with the third last character 'a'. They are the same, so the function continues to the next iteration.
+Iteration 4:
+    -The fourth character 'a' is compared with the fourth last character 'a'. They are the same, so the function continues to the next iteration.
+Iteration 5:
+    -The fifth character 'a' is compared with the fifth last character 'a'. They are the same, so the function continues to the next iteration.
+
+The function returns True, indicating that the string is a palindrome.

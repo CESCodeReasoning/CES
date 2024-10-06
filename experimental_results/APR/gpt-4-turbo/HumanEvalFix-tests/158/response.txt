@@ -1,0 +1,35 @@
+Here's the fixed code for both functions, `has_close_elements` and `find_max`, with the necessary corrections and improvements based on the specifications provided:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `find_max`
+```python
+def find_max(words):
+    max_unique_count = -1
+    result = None
+    for word in words:
+        unique_chars = len(set(word))
+        if unique_chars > max_unique_count:
+            max_unique_count = unique_chars
+            result = word
+        elif unique_chars == max_unique_count:
+            if word < result:
+                result = word
+    return result
+```
+
+These fixes address the issues in the original code snippets:
+- For `has_close_elements`, the absolute value of the difference is used to correctly measure the distance between two numbers.
+- For `find_max`, the function now correctly identifies the word with the maximum number of unique characters, and in case of a tie, it selects the lexicographically smallest word.

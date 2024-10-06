@@ -1,0 +1,15 @@
+The function `file_name_check` is called with ( file_name = '@this1_is6_valid.exe' ).
+The function first splits the file name into a list of strings using the separator '.'.
+The list is then checked for length.
+If the length of the list is not 2, then the method returns 'No'.
+The second element of the list is then checked to see if it is in the list suf.
+If the second element is not in suf, then the method returns 'No'.
+The first element of the list is then checked to see if it is empty.
+If the first element is empty, then the method returns 'No'.
+The first character of the first element is then checked to see if it is a letter.
+If the first character is not a letter, then the method returns 'No'.
+The number of digits in the first element is then counted.
+If the number of digits in the first element is greater than 3, then the method returns 'No'.
+Otherwise, the method returns 'Yes'.
+
+Therefore, the final output of the function `file_name_check('@this1_is6_valid.exe')` is 'Yes'.

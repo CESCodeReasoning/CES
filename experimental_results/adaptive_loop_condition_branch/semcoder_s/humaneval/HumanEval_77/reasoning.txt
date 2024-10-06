@@ -1,0 +1,9 @@
+The function `iscube(a)` checks if a number is a cube of another number.
+
+- The function takes an input `a`.
+- The absolute value of `a` is taken and stored back in `a`.
+- The cube root of `a` is calculated and rounded to the nearest integer.
+- The result is cubed and compared with the original number `a`.
+- If the result is equal to `a`, then `a` is a cube number, otherwise it is not.
+
+Therefore, the function `iscube(a)` returns `True` if `a` is a cube number and `False` otherwise.

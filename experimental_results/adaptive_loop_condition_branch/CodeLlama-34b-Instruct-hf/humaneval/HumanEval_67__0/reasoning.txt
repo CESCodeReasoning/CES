@@ -1,0 +1,28 @@
+The function `fruit_distribution` is called with ( s = "2 apples and 3 oranges", n = 5 ).
+Inside the function, a list `lis` is initialized to an empty list.
+The string `s` is split into a list of words using the `split` method.
+The loop iterates over the list of words.
+First Iteration (i = "2")
+   - `i` is a string, which satisfies `i.isdigit()`.
+   - The condition `i.isdigit()` is true.
+   - Action: `lis.append(int(i))` appends the integer 2 to the list `lis`.
+Second Iteration (i = "apples")
+   - `i` is a string, but does not satisfy `i.isdigit()`.
+   - The condition `i.isdigit()` is false.
+   - Action: `lis.append(int(i))` does not execute.
+Third Iteration (i = "and")
+   - `i` is a string, but does not satisfy `i.isdigit()`.
+   - The condition `i.isdigit()` is false.
+   - Action: `lis.append(int(i))` does not execute.
+Fourth Iteration (i = "3")
+   - `i` is a string, which satisfies `i.isdigit()`.
+   - The condition `i.isdigit()` is true.
+   - Action: `lis.append(int(i))` appends the integer 3 to the list `lis`.
+Fifth Iteration (i = "oranges")
+   - `i` is a string, but does not satisfy `i.isdigit()`.
+   - The condition `i.isdigit()` is false.
+   - Action: `lis.append(int(i))` does not execute.
+Return Statement
+   - After the loop completes, the function returns the value of `n - sum(lis)`.
+
+Therefore, the final output of the function `fruit_distribution("2 apples and 3 oranges", 5)` is 5 - (2 + 3) = 0.

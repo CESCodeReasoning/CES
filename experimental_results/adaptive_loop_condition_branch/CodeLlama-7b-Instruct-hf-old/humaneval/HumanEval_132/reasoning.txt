@@ -1,0 +1,40 @@
+The function `is_nested` is called with ( string = '[[]]' ).
+Inside the function, three variables are initialized: `opening_bracket_index`, `closing_bracket_index`, and `cnt`.
+
+Iteration 1:
+    -The character '[' is pushed into `opening_bracket_index`.
+Iteration 2:
+    -The character '[' is pushed into `opening_bracket_index`.
+Iteration 3:
+    -The character ']' is pushed into `closing_bracket_index`.
+Iteration 4:
+    -The character ']' is pushed into `closing_bracket_index`.
+
+After the loop, `opening_bracket_index` contains [0, 1] and `closing_bracket_index` contains [2, 3].
+
+The `closing_bracket_index` is reversed.
+
+The `cnt` variable is initialized to 0.
+
+The `i` variable is initialized to 0.
+
+The `l` variable is initialized to the length of `closing_bracket_index`.
+
+The `for` loop iterates over `opening_bracket_index`.
+
+Iteration 1:
+    -The `idx` variable is set to 0.
+    -The `if` condition is checked: (i < l and idx < closing_bracket_index[i]).
+    -The `if` condition is true, so the `if` block is executed.
+    -The `cnt` variable is incremented by 1.
+    -The `i` variable is incremented by 1.
+Iteration 2:
+    -The `idx` variable is set to 1.
+    -The `if` condition is checked: (i < l and idx < closing_bracket_index[i]).
+    -The `if` condition is true, so the `if` block is executed.
+    -The `cnt` variable is incremented by 1.
+    -The `i` variable is incremented by 1.
+
+After the loop, `cnt` is 2.
+
+Therefore, the final output of the function `is_nested('[[]]')` is `True`.

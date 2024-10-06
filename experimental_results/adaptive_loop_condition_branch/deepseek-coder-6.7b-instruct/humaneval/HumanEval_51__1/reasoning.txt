@@ -1,0 +1,10 @@
+The function remove_vowels takes a string text as input and returns a new string where all the vowels (both uppercase and lowercase) are removed.
+
+To determine the output of executing the function remove_vowels on the input 'ybcd', we need to iterate over each character in the string 'ybcd'. If the character is not a vowel (i.e., it is not 'a', 'e', 'i', 'o', or 'u' in either case), we include it in the new string. If the character is a vowel, we skip it.
+
+So, for the first character 'y', it is not a vowel, so we include it in the new string. For the next character 'b', it is not a vowel, so we include it in the new string. For the next character 'c', it is not a vowel, so we include it in the new string. Finally, for the last character 'd', it is not a vowel, so we include it in the new string.
+
+Therefore, the output of executing the function remove_vowels on the input 'ybcd' is 'ybcd'.
+
+Note: The function is case-insensitive, meaning it treats 'A', 'E', 'I', 'O', and 'U' as vowels.
+

@@ -1,0 +1,29 @@
+The function `prime_length` is called with ( string = "Hello" ).
+Inside the function, a variable `l` is initialized to the length of the string.
+
+Iteration 1:
+    -The character 'H' is not in the range of 2 to l, so the loop continues.
+Iteration 2:
+    -The character 'e' is in the range of 2 to l, so the loop continues.
+Iteration 3:
+    -The character 'l' is not in the range of 2 to l, so the loop continues.
+Iteration 4:
+    -The character 'l' is not in the range of 2 to l, so the loop continues.
+Iteration 5:
+    -The character 'o' is in the range of 2 to l, so the loop continues.
+Iteration 6:
+    -The character ',' is not in the range of 2 to l, so the loop continues.
+Iteration 7:
+    -The character ' ' (space) is not in the range of 2 to l, so the loop continues.
+Iteration 8:
+    -The character 'W' is not in the range of 2 to l, so the loop continues.
+Iteration 9:
+    -The character 'o' is in the range of 2 to l, so the loop continues.
+Iteration 10:
+    -The character 'r' is not in the range of 2 to l, so the loop continues.
+Iteration 11:
+    -The character 'l' is not in the range of 2 to l, so the loop continues.
+Iteration 12:
+    -The character 'd' is not in the range of 2 to l, so the loop continues.
+Iteration 13:
+    -The character '!' is not in the range of 2 to l, so the loop continues.

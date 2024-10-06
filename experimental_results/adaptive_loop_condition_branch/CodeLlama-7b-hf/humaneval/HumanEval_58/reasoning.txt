@@ -1,0 +1,59 @@
+The function common(l1, l2) takes two lists as its parameters.
+The outer loop iterates through each element in the first list.
+The inner loop iterates through each element in the second list.
+First Iteration (e1=1, e2=5):
+    - `e1` is 1, `e2` in the inner loop is 5.
+    - `e1` is 1, `e2` in the inner loop is 7.
+    - `e1` is 1, `e2` in the inner loop is 1.
+    - `e1` is 1, `e2` in the inner loop is 5.
+    - `e1` is 1, `e2` in the inner loop is 9.
+    - `e1` is 1, `e2` in the inner loop is 653.
+    - `e1` is 1, `e2` in the inner loop is 121.
+Second Iteration (e1=4, e2=5):
+    - `e1` is 4, `e2` in the inner loop is 5.
+    - `e1` is 4, `e2` in the inner loop is 7.
+    - `e1` is 4, `e2` in the inner loop is 1.
+    - `e1` is 4, `e2` in the inner loop is 5.
+    - `e1` is 4, `e2` in the inner loop is 9.
+    - `e1` is 4, `e2` in the inner loop is 653.
+    - `e1` is 4, `e2` in the inner loop is 121.
+Third Iteration (e1=3, e2=5):
+    - `e1` is 3, `e2` in the inner loop is 5.
+    - `e1` is 3, `e2` in the inner loop is 7.
+    - `e1` is 3, `e2` in the inner loop is 1.
+    - `e1` is 3, `e2` in the inner loop is 5.
+    - `e1` is 3, `e2` in the inner loop is 9.
+    - `e1` is 3, `e2` in the inner loop is 653.
+    - `e1` is 3, `e2` in the inner loop is 121.
+Forth Iteration (e1=34, e2=5):
+    - `e1` is 34, `e2` in the inner loop is 5.
+    - `e1` is 34, `e2` in the inner loop is 7.
+    - `e1` is 34, `e2` in the inner loop is 1.
+    - `e1` is 34, `e2` in the inner loop is 5.
+    - `e1` is 34, `e2` in the inner loop is 9.
+    - `e1` is 34, `e2` in the inner loop is 653.
+    - `e1` is 34, `e2` in the inner loop is 121.
+Fifth Iteration (e1=653, e2=5):
+    - `e1` is 653, `e2` in the inner loop is 5.
+    - `e1` is 653, `e2` in the inner loop is 7.
+    - `e1` is 653, `e2` in the inner loop is 1.
+    - `e1` is 653, `e2` in the inner loop is 5.
+    - `e1` is 653, `e2` in the inner loop is 9.
+    - `e1` is 653, `e2` in the inner loop is 653.
+    - `e1` is 653, `e2` in the inner loop is 121.
+Sixth Iteration (e1=2, e2=5):
+    - `e1` is 2, `e2` in the inner loop is 5.
+    - `e1` is 2, `e2` in the inner loop is 7.
+    - `e1` is 2, `e2` in the inner loop is 1.
+    - `e1` is 2, `e2` in the inner loop is 5.
+    - `e1` is 2, `e2` in the inner loop is 9.
+    - `e1` is 2, `e2` in the inner loop is 653.
+    - `e1` is 2, `e2` in the inner loop is 121.
+Seventh Iteration (e1=5, e2=5):
+    - `e1` is 5, `e2` in the inner loop is 5.
+    - `e1` is 5, `e2` in the inner loop is 7.
+    - `e1` is 5, `e2` in the inner loop is 1.
+    - `e1` is 5, `e2` in the inner loop is 5.
+    - `e1` is 5, `e2` in the inner loop is 9.
+    - `e1` is 5, `e2` in the inner loop is 653.
+    - `e1` is 5, `e2` in the inner loop is 121.

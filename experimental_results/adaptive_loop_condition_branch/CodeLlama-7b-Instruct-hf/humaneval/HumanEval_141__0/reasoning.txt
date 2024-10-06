@@ -1,0 +1,11 @@
+The function `file_name_check` is called with ( file_name = 'I563_No.exe' ).
+The variable `suf` is a list of file extensions ['txt', 'exe', 'dll'].
+The variable `lst` is a list of the file name and its extension split by the '.' character.
+The length of `lst` is 2, therefore the if branch is not taken.
+The second element of `lst` is 'exe', which is in the list `suf`.
+The first element of `lst` is 'I563_No', which has a length of 0.
+The first character of 'I563_No' is not a letter.
+The number of digits in the first element of `lst` is 3, which is greater than 3.
+Therefore, the method returns 'No'.
+
+Therefore, the final output of the function `file_name_check('I563_No.exe')` is 'No'.

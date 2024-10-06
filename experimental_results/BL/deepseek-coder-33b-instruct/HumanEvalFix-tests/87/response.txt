@@ -1,0 +1,10 @@
+```response
+    coords = [(j, i) for i in range(len(lst)) for j in range(len(lst[i])) if lst[i][j] == x]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def get_row(lst, x):
+    coords = [(j, i) for i in range(len(lst)) for j in range(len(lst[i])) if lst[i][j

@@ -1,0 +1,61 @@
+<s> [INST]<<SYS>>You are given a piece of Python code and its output. You are asked to complete the following task:
+1. First think step by step and explain the execution process of the code. Enclose your reasoning process between [REASONING] and [/REASONING].
+2. Finally print the output and enclose it with [OUTPUT] and [/OUTPUT].
+            <</SYS>>
+Bellow are some examples:
+
+[CODE]
+def f(s):
+    return s + "a"
+[/CODE]
+
+[INPUT]
+f("hi")
+[/INPUT]
+
+[REASONING]
+The function f takes a string s as input and returns the concatenation of s with the string "a".
+To determine the output of executing the function f on the input "hi", we need to concatenate "hi" with "a".
+Therefore, the output of executing the function f on the input "hi" is "hia".
+[/REASONING]
+
+[OUTPUT]
+"hia"
+[/OUTPUT]
+[CODE]
+from typing import *
+
+
+def get_row(lst, x):
+    coords = [(i, j) for i in range(len(lst))
+              for j in range(len(lst[i])) if lst[i][j] == x]
+    return sorted(
+        sorted(
+            coords,
+            key=lambda x: x[1],
+            reverse=True),
+        key=lambda x: x[0])
+[/CODE]
+
+[INPUT]
+get_row([[], [1], [1, 2, 3]], 3)
+[/INPUT]
+
+[/INST]  
+[PYTHON]
+[REASONING]
+The function get_row takes a 2D list lst and an element x as input. It first initializes an empty list coords.
+Then, it iterates over the rows of lst using a nested loop. For each element in lst that is equal to x, it adds the coordinates of that element to coords.
+Finally, it sorts the list coords first by the second element of each coordinate (i.e., the column index) in descending order, and then by the first element of each coordinate (i.e., the row index) in ascending order.
+The sorted list coords is then returned as the output of the function.
+[/REASONING]
+[PYTHON]
+[TESTS]
+# Test case 1:
+assert get_row([[], [1], [1, 2, 3]], 3) == [(2, 1)]
+# Test case 2:
+assert get_row([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 4) == [(1, 0)]
+# Test case 3:
+assert get_row([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 8) == [(2, 1)]
+[/TESTS]
+</s>

@@ -1,0 +1,45 @@
+The function `change_base` is called with `x = 234` and `base = 2`.
+Inside the function, a variable `ret` is initialized to an empty string.
+The while loop continues as long as `x` is greater than 0.
+
+First Iteration:
+- `x = 234`, `x > 0` is true.
+- `x % base` calculates `234 % 2 = 0`. `ret` becomes "0".
+- `x //= base` updates `x` to `234 // 2 = 117`.
+
+Second Iteration:
+- `x = 117`, `x > 0` is true.
+- `x % base` calculates `117 % 2 = 1`. `ret` becomes "10".
+- `x //= base` updates `x` to `117 // 2 = 58`.
+
+Third Iteration:
+- `x = 58`, `x > 0` is true.
+- `x % base` calculates `58 % 2 = 0`. `ret` becomes "010".
+- `x //= base` updates `x` to `58 // 2 = 29`.
+
+Fourth Iteration:
+- `x = 29`, `x > 0` is true.
+- `x % base` calculates `29 % 2 = 1`. `ret` becomes "1010".
+- `x //= base` updates `x` to `29 // 2 = 14`.
+
+Fifth Iteration:
+- `x = 14`, `x > 0` is true.
+- `x % base` calculates `14 % 2 = 0`. `ret` becomes "01010".
+- `x //= base` updates `x` to `14 // 2 = 7`.
+
+Sixth Iteration:
+- `x = 7`, `x > 0` is true.
+- `x % base` calculates `7 % 2 = 1`. `ret` becomes "101010".
+- `x //= base` updates `x` to `7 // 2 = 3`.
+
+Seventh Iteration:
+- `x = 3`, `x > 0` is true.
+- `x % base` calculates `3 % 2 = 1`. `ret` becomes "1101010".
+- `x //= base` updates `x` to `3 // 2 = 1`.
+
+Eighth Iteration:
+- `x = 1`, `x > 0` is true.
+- `x % base` calculates `1 % 2 = 1`. `ret` becomes "11101010".
+- `x //= base` updates `x` to `1 // 2 = 0`.
+
+The loop terminates as `x` is now 0. The function returns the value of `ret`, which is now "11101010".

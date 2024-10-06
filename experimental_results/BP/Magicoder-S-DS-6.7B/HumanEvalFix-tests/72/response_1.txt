@@ -1,0 +1,89 @@
+<｜begin▁of▁sentence｜>
+
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def will_it_fly(q,w):
+    if sum(q) > w:
+        return False
+
+    i, j = 0, len(q)-1
+    while i<j:
+        if q[i] == q[j]:
+            return False
+        i+=1
+        j-=1
+    return True
+
+Tests:
+def check(will_it_fly):
+
+    # Check some simple cases
+    assert will_it_fly([3, 2, 3], 9) is True
+    assert will_it_fly([1, 2], 5) is False
+    assert will_it_fly([3], 5) is True
+    assert will_it_fly([3, 2, 3], 1) is False
+
+
+    # Check some edge cases that are easy to work out by hand.
+    assert will_it_fly([1, 2, 3], 6) is False
+    assert will_it_fly([5], 5) is True
+
+check(will_it_fly)
+
+The code should satisfy the following natural language specification:
+Write a Python function `will_it_fly(q,w)` to solve the following problem:
+Write a function that returns True if the object q will fly, and False otherwise.
+The object q will fly if it's balanced (it is a palindromic list) and the sum of its elements is less than or equal the maximum possible weight w.
+Example:
+will_it_fly([1, 2], 5) ➞ False
+# 1+2 is less than the maximum possible weight, but it's unbalanced.
+will_it_fly([3, 2, 3], 1) ➞ False
+# it's balanced, but 3+2+3 is more than the maximum possible weight.
+will_it_fly([3, 2, 3], 9) ➞ True
+# 3+2+3 is less than the maximum possible weight, and it's balanced.
+will_it_fly([3], 5) ➞ True
+# 3 is less than the maximum possible weight, and it's balanced.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```<｜end▁of▁sentence｜>

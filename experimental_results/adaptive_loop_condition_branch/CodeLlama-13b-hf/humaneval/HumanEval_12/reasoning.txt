@@ -1,0 +1,23 @@
+The function `longest` is called with ( strings = ['x', 'yyy', 'zzzz', 'www', 'kkkk', 'abc'] ).
+Inside the function, a variable `maxlen` is initialized to 0.
+
+Iteration 1:
+    - The length of 'x' is 1, which is greater than 0.
+    - The length of 'x' is assigned to `maxlen`.
+Iteration 2:
+    - The length of 'yyy' is 3, which is greater than 1.
+    - The length of 'yyy' is assigned to `maxlen`.
+Iteration 3:
+    - The length of 'zzzz' is 4, which is greater than 3.
+    - The length of 'zzzz' is assigned to `maxlen`.
+Iteration 4:
+    - The length of 'www' is 4, which is greater than 4.
+    - The length of 'www' is assigned to `maxlen`.
+Iteration 5:
+    - The length of 'kkkk' is 4, which is greater than 4.
+    - The length of 'kkkk' is assigned to `maxlen`.
+Iteration 6:
+    - The length of 'abc' is 3, which is less than 4.
+    - The length of 'abc' is not assigned to `maxlen`.
+
+The function returns the string 'www'.

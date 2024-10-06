@@ -1,0 +1,127 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def cycpattern_check(a , b):
+    l = len(b)
+    pat = b + b
+    for i in range(len(a) - l + 1):
+        for j in range(len(b) - l + 1):
+            if a[i:i+l] == pat[j:j+l]:
+                return True
+    return False
+
+Tests:
+def check(cycpattern_check):
+
+    # Check some simple cases
+    #assert True, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert  cycpattern_check("xyzw","xyw") == False , "test #0"
+    assert  cycpattern_check("yello","ell") == True , "test #1"
+    assert  cycpattern_check("whattup","ptut") == False , "test #2"
+    assert  cycpattern_check("efef","fee") == True , "test #3"
+    assert  cycpattern_check("abab","aabb") == False , "test #4"
+    assert  cycpattern_check("winemtt","tinem") == True , "test #5"
+
+check(cycpattern_check)
+
+The code should satisfy the following natural language specification:
+Write a Python function `cycpattern_check(a , b)` to solve the following problem:
+You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word
+cycpattern_check("abcd","abd") => False
+cycpattern_check("hello","ell") => True
+cycpattern_check("whassup","psus") => False
+cycpattern_check("abab","baa") => True
+cycpattern_check("efef","eeff") => False
+cycpattern_check("himenss","simen") => True
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                if a[i:i+l] == pat[j:j+l]:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_valid_move(board, from_row, from_col, to_row, to_col):
+    if board[from_row][from_col] == ' ':
+        return False
+    if board[to_row][to_col] != ' ':
+        return False
+    if abs(from_row - to_row) > 1 or abs(from_col - to_col) > 1:
+        return False
+    return True
+
+Tests:
+def check(is_valid_move):
+    board = [[' ', ' ', ' ', ' '],
+             [' ', ' ', ' ', ' '],
+             [' ', ' ', ' ', ' '],
+             [' ', ' ', ' ', ' ']]
+
+    assert is_valid_move(board, 1, 1, 0, 0) == False
+    assert is_valid_move(board, 1, 1, 2, 2) == False
+    assert is_valid_move(board, 1, 1, 1, 2) == False
+    assert is_valid_move(board, 1, 1, 2, 1) == True
+
+check(is_valid_move)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_valid_move(board, from_row, from_col, to_row, to_col)` to solve the following problem:
+Check if a move is valid in a game of chess.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    if abs(from_row - to_row) > 1 or abs(from_col - to_col) > 1:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_valid_move(board, from_row, from_col, to_row, to_col):
+    if board[

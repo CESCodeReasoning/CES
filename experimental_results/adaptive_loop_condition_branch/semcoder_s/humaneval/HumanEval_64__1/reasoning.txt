@@ -1,0 +1,8 @@
+The function `vowels_count` is called with ( s = "bye" ).
+A string `vowels` is defined as "aeiouAEIOU".
+The count of vowels in the string `s` is calculated using a generator expression that checks if each character `c` in `s` is in the string `vowels`.
+The last character of the string `s` is checked.
+   - The last character is 'e', which does not equal 'y' or 'Y'.
+   - The condition `s[-1] == 'y' or s[-1] == 'Y'` is false.
+   - The `else` branch is executed, and `n_vowels` remains unchanged.
+The function returns the count of vowels, which is 1 (for 'b').

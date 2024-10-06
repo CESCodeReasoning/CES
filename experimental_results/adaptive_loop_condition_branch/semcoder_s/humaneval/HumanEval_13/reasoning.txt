@@ -1,0 +1,5 @@
+The function `greatest_common_divisor` is called with ( a = 3, b = 7 ).
+Inside the function, a while loop is used to iterate until b becomes 0.
+First Iteration (b = 7):
+    - a, b = b, a % b updates a to 7 and b to 0 ( 7 % 7 = 0 ).
+The loop terminates as b is now 0. The function returns the value of `a`, which is now 7.

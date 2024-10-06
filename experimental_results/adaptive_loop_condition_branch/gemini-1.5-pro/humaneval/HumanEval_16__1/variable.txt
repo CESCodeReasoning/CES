@@ -1,0 +1,10 @@
+from typing import *
+
+
+def count_distinct_characters(string: str) -> int:
+    # Convert the string to lowercase
+    string = string.lower()
+    # Create a set of the characters in the string
+    characters = set(string)
+    # Return the length of the set
+    return len(characters)

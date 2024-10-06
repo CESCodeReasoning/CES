@@ -1,0 +1,5 @@
+The function find_max takes a list of words as input and returns the word with the maximum length that has the most unique characters.
+To determine the output of executing the function find_max on the input ["name", "enam", "game"], we need to find the word with the maximum length that has the most unique characters.
+
+The word "name" has the maximum length of 4 and has 4 unique characters, while the words "enam" and "game" have 3 unique characters each.
+Therefore, the output of executing the function find_max on the input ["name", "enam", "game"] is "name".

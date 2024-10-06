@@ -1,0 +1,21 @@
+from typing import *
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    result = []
+    current_string = []
+    current_depth = 0
+
+    for c in paren_string: ## [STATE]c=['(', ')', '(', ')', '(', '(', '(', '(', ')', ')', ')', ')', '(', ')', '(', ')', '(', ')'][/STATE][STATE]paren_string=['()()((((()()((()))))()()()))'][/STATE]
+        if c == '(': ## [CONDITION](c == '(')=[True, False, True, False, True, True, True, True, False, False, False, False, True, False, True, False, True, False][/CONDITION][BRANCH]taken=[Y, N, Y, N, Y, Y, Y, Y, N, N, N, N, Y, N, Y, N, Y, N][/BRANCH]
+            current_depth += 1
+            current_string.append(c)
+        elif c == ')': ## [CONDITION](c == ')')=[False, True, False, True, False, False, False, False, True, True, True, True, False, True, False, True, False, True][/CONDITION][BRANCH]taken=[N, Y, N, Y, N, N, N, N, Y, Y, Y, Y, N, Y, N, Y, N, Y][/BRANCH]
+            current_depth -= 1
+            current_string.append(c)
+
+            if current_depth == 0: ## [CONDITION](current_depth == 0)=[False, True, False, True, False, False, False, False, False, False, False, True, False, True, False, True, False, True][/CONDITION][BRANCH]taken=[N, Y, N, Y, N, N, N, N, N, N, N, Y, N, Y, N, Y, N, Y][/BRANCH]
+                result.append(''.join(current_string))
+                current_string.clear()
+
+    return result

@@ -1,0 +1,12 @@
+from typing import *
+
+
+def is_happy(s):
+    if len(s) < 3: ## [CONDITION](len(s) < 3)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return False
+
+    for i in range(len(s) - 2): ## [STATE]i=[0, 1][/STATE][STATE]range((len(s) - 2))=[0, 1][/STATE][STATE](len(s) - 2)=[2][/STATE]
+
+        if s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]: ## [CONDITION](s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2])=[True, True, True][/CONDITION][CONDITION](s[i] == s[i + 2])=[True, True][/CONDITION][CONDITION](s[i] == s[i + 1])=[True, True][/CONDITION][CONDITION](s[i + 1] == s[i + 2])=[True, True][/CONDITION][BRANCH]taken=[Y, Y][/BRANCH]
+            return False
+    return True

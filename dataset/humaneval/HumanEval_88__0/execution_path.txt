@@ -1,0 +1,5 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: sort_array
+main.py(5):     return [] if len(array) == 0 else sorted(
+main.py(6):         array, reverse=(array[0] + array[-1]) % 2 == 0)
+main.py(5):     return [] if len(array) == 0 else sorted(

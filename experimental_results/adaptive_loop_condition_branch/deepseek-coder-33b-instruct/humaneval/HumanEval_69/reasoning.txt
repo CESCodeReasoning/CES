@@ -1,0 +1,10 @@
+The function `search` is called with ( lst = [5, 5, 5, 5, 1] ).
+Inside the function, a list `frq` is initialized with zeros.
+The first loop iterates over the elements of `lst`.
+   - For each element `i`, the frequency of `i` in `lst` is incremented in `frq`.
+The second loop iterates from 1 through the length of `frq`.
+   - For each element `i`, if the frequency of `i` in `lst` is greater than or equal to `i`, `i` is assigned to `ans`.
+Return Statement
+   - After the loops complete, the function returns the value of `ans`, which is 5.
+
+Therefore, the final output of the function `search([5, 5, 5, 5, 1])` is 5.

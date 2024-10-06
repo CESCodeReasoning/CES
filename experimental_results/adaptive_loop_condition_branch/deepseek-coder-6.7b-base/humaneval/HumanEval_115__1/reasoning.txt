@@ -1,0 +1,5 @@
+The function max_fill takes a grid of integers and a capacity as input and returns the maximum number of times the capacity can be filled in the grid.
+To determine the output of executing the function max_fill on the input [[1,1,1,1], [1,1,1,1]], capacity 2, we need to calculate the number of times the capacity 2 can be filled in the grid.
+The grid is a 2D array of integers. We need to calculate the sum of each row and divide it by the capacity 2. The result is the number of times the capacity 2 can be filled in each row.
+We then need to round up the result to the nearest integer and add it to the total.
+The total is the maximum number of times the capacity 2 can be filled in the grid.

@@ -1,0 +1,8 @@
+from typing import *
+
+
+def largest_smallest_integers(lst):
+    smallest = list(filter(lambda x: x < 0, lst))  # [STATE]smallest = [-1, -3, -5, -6][/STATE]
+    largest = list(filter(lambda x: x > 0, lst))  # [STATE]largest = [][/STATE]
+    return (max(smallest) if smallest else None,  # [STATE]max(smallest) = -1[/STATE]
+            min(largest) if largest else None)  # [STATE]min(largest) = None[/STATE]

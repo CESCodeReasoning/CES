@@ -1,0 +1,27 @@
+The function `string_xor` is called with ( a = '1', b = '1' ).
+The function `xor` is defined inside `string_xor`. It takes two characters as input and returns '0' if they are the same, and '1' otherwise.
+The `zip` function is used to pair the characters from `a` and `b` together.
+The `join` function is used to concatenate the results of the `xor` function applied to each pair of characters.
+
+In the given example, the input strings are '1' and '1'. The `zip` function pairs these characters together as ('1', '1').
+The `xor` function is applied to each pair of characters. Since '1' is equal to '1', the `xor` function returns '0'.
+
+Therefore, the final output of the function `string_xor('1', '1')` is '0'.
+
+[ANSWER]
+from typing import *
+
+
+def string_xor(a: str, b: str) -> str:
+    def xor(i, j):
+        if i == j: ## [CONDITION](i == j)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+            return '0'
+        else: ## [BRANCH]taken=[N][/BRANCH]
+            return '1'
+
+    return ''.join(xor(x, y) for x, y in zip(a, b))
+
+[OUTPUT]
+'0'
+[/OUTPUT]
+<|EOT|>

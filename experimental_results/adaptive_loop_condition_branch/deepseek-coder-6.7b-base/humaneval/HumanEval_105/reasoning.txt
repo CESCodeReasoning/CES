@@ -1,0 +1,11 @@
+The function `by_length` is called with (arr = [2, 1, 1, 4, 5, 8, 2, 3]).
+The function `sorted` is called with (arr, reverse=True).
+The function `sorted` returns a sorted list of the elements in `arr` in descending order.
+The variable `sorted_arr` is assigned the result of the function `sorted`.
+The variable `new_arr` is initialized as an empty list.
+The for loop iterates over the elements in `sorted_arr`.
+For each element `var` in `sorted_arr`, the function `try` is called with (dic[var]).
+If the key `var` exists in the dictionary `dic`, the value associated with that key is appended to the list `new_arr`.
+If the key `var` does not exist in the dictionary `dic`, the function `except` is called.
+The function `except` does nothing.
+After the for loop completes, the function `by_length` returns the list `new_arr`.

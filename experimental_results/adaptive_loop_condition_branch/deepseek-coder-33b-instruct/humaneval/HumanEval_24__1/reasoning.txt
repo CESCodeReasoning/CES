@@ -1,0 +1,7 @@
+The function `largest_divisor` is called with ( n = 100 ).
+
+Iteration 1:
+    -The number 100 is not divisible by 100, so the condition `n % i == 0` is false.
+Iteration 2:
+    -The number 100 is divisible by 99, so the condition `n % i == 0` is true.
+    -Action: The function returns 99.

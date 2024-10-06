@@ -1,0 +1,17 @@
+[REASONING]
+The function remove_duplicates takes a list of integers numbers as input and returns a new list with all duplicate elements removed.
+To determine the output of executing the function remove_duplicates on the input [1, 2, 3, 2, 4, 3, 5], we need to first create a dictionary c that counts the number of occurrences of each element in the input list.
+Then, we need to iterate over the input list and add each element to the output list if the count of that element in the dictionary is less than or equal to 1.
+Therefore, the output of executing the function remove_duplicates on the input [1, 2, 3, 2, 4, 3, 5] is [1, 2, 4, 5].
+[/REASONING]
+
+[ANSWER]
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    import collections
+    c = collections.Counter(numbers)  # [STATE] c = Counter({1: 1, 2: 2, 3: 2, 4: 1, 5: 1}) [/STATE]
+    return [n for n in numbers if c[n] <= 1]  # [CONDITION] c[n] <= 1 [/CONDITION] [BRANCH] Y [/BRANCH]
+[/ANSWER]
+
+[OUTPUT]
+[1, 2, 4, 5]
+[/OUTPUT]

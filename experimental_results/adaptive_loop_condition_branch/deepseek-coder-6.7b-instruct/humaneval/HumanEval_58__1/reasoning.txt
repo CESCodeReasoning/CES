@@ -1,0 +1,16 @@
+The function common(l1, l2) takes two lists as its parameters.
+The outer loop iterates through each element in the first list to compare it against the elements in the second list.
+In the inner loop, for each element indexed by e1 in the first list, compare it with every element in the second list.
+First Iteration (e1=5):
+    - e1 is 5, e2 in the inner loop is 3 and 2.
+    - 5 is not equal to 3 and 2, so the if branch is not taken.
+Second Iteration (e1=3):
+    - e1 is 3, e2 in the inner loop is 2.
+    - 3 is equal to 2, so the if branch is taken. Add 3 to ret.
+Third Iteration (e1=2):
+    - e1 is 2, e2 in the inner loop is 3.
+    - 2 is equal to 3, so the if branch is taken. Add 2 to ret.
+Forth Iteration (e1=8):
+    - e1 is 8, e2 in the inner loop is 3 and 2.
+    - 8 is not equal to 3 and 2, so the if branch is not taken.
+No more elements to compare.

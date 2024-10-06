@@ -1,0 +1,18 @@
+```response
+            if isinstance(key, str) == False:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def find_max_min(numbers):
+    if len(numbers) == 0:
+        return None, None
+    else:
+        max_num = numbers[0]
+        min_num = numbers[0]
+        for num in numbers:
+            if num > max_num:
+                max_num = num
+            elif num < min_

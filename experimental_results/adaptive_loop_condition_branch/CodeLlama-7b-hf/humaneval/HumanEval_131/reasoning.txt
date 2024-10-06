@@ -1,0 +1,38 @@
+The function `digits` is called with ( n = 5 ).
+Inside the function, a variable `product` is initialized to 1.
+A variable `odd_count` is initialized to 0.
+The loop iterates through the string representation of `n` (which is "5").
+First Iteration (digit = "5")
+   - `digit` is "5", which is an integer.
+   - `int_digit` is 5, which is an odd integer.
+   - The condition `int_digit%2 == 1` is true.
+   - Action: `product= product*int_digit` results in `product = 5`.
+   - Action: `odd_count+=1` results in `odd_count = 1`.
+Second Iteration (digit = "5")
+   - `digit` is "5", which is an integer.
+   - `int_digit` is 5, which is an odd integer.
+   - The condition `int_digit%2 == 1` is true.
+   - Action: `product= product*int_digit` results in `product = 5`.
+   - Action: `odd_count+=1` results in `odd_count = 2`.
+Third Iteration (digit = "5")
+   - `digit` is "5", which is an integer.
+   - `int_digit` is 5, which is an odd integer.
+   - The condition `int_digit%2 == 1` is true.
+   - Action: `product= product*int_digit` results in `product = 5`.
+   - Action: `odd_count+=1` results in `odd_count = 3`.
+Fourth Iteration (digit = "5")
+   - `digit` is "5", which is an integer.
+   - `int_digit` is 5, which is an odd integer.
+   - The condition `int_digit%2 == 1` is true.
+   - Action: `product= product*int_digit` results in `product = 5`.
+   - Action: `odd_count+=1` results in `odd_count = 4`.
+Fifth Iteration (digit = "5")
+   - `digit` is "5", which is an integer.
+   - `int_digit` is 5, which is an odd integer.
+   - The condition `int_digit%2 == 1` is true.
+   - Action: `product= product*int_digit` results in `product = 5`.
+   - Action: `odd_count+=1` results in `odd_count = 5`.
+Return Statement
+   - After the loop completes, the function returns the value of `product`, which is 5.
+
+Therefore, the final output of the function `digits(5)` is 5.

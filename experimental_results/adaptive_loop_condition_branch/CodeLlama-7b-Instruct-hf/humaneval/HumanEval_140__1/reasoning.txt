@@ -1,0 +1,30 @@
+The function `fix_spaces` is called with the argument `text = "Yellow Yellow  Dirty  Fellow"`.
+Inside the function, a variable `new_text` is initialized to an empty string.
+The loop iterates through the characters in `text`.
+First Iteration (i = 0):
+    - `text[i] == " "` is false. The else branch is taken. `new_text += text[i]` updates `new_text` to "Yellow Yellow  Dirty  Fellow".
+    - `start` and `end` are both set to 0.
+Second Iteration (i = 1):
+    - `text[i] == " "` is false. The else branch is taken. `new_text += text[i]` updates `new_text` to "Yellow Yellow  Dirty  FellowY".
+    - `start` and `end` are both set to 1.
+Third Iteration (i = 2):
+    - `text[i] == " "` is true. The first branch is taken. `end += 1` updates `end` to 2.
+Fourth Iteration (i = 3):
+    - `text[i] == " "` is false. The else branch is taken. `new_text += text[i]` updates `new_text` to "Yellow Yellow  Dirty  FellowYellow".
+    - `start` and `end` are both set to 3.
+Fifth Iteration (i = 4):
+    - `text[i] == " "` is true. The first branch is taken. `end += 1` updates `end` to 4.
+Sixth Iteration (i = 5):
+    - `text[i] == " "` is false. The else branch is taken. `new_text += text[i]` updates `new_text` to "Yellow Yellow  Dirty  FellowYellowYellow".
+    - `start` and `end` are both set to 5.
+Seventh Iteration (i = 6):
+    - `text[i] == " "` is true. The first branch is taken. `end += 1` updates `end` to 6.
+Eighth Iteration (i = 7):
+    - `text[i] == " "` is false. The else branch is taken. `new_text += text[i]` updates `new_text` to "Yellow Yellow  Dirty  FellowYellowYellowDirty".
+    - `start` and `end` are both set to 7.
+Ninth Iteration (i = 8):
+    - `text[i] == " "` is true. The first branch is taken. `end += 1` updates `end` to 8.
+Tenth Iteration (i = 9):
+    - `text[i] == " "` is false. The else branch is taken. `new_text += text[i]` updates `new_text` to "Yellow Yellow  Dirty  FellowYellowYellowDirtyFellow".
+    - `start` and `end` are both set to 9.
+After the loop completes, the function returns the value of `new_text`, which is now "Yellow Yellow  Dirty  FellowYellowYellowDirtyFellow".

@@ -1,0 +1,10 @@
+from typing import *
+
+
+def same_chars(s0: str, s1: str):
+    # [STATE] s0_set = {'e', 'a', 'b', 'c', 'd'}, s1_set = {'a', 'b', 'c', 'd'} [/STATE]
+    s0_set = set(s0)
+    s1_set = set(s1)
+    # [CONDITION] s0_set == s1_set evaluates to False [/CONDITION]
+    # [BRANCH] N [/BRANCH]
+    return s0_set == s1_set

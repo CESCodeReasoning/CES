@@ -1,0 +1,11 @@
+The function `order_by_points` is called with ( nums = [1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46] ).
+The function `digits_sum` is defined inside the function `order_by_points`.
+The function `digits_sum` takes a number `n` as input.
+The variable `neg` is initialized to 1.
+If `n` is negative, then `n` is multiplied by -1 and `neg` is set to -1.
+The variable `n` is converted to a list of digits.
+The first digit is multiplied by `neg`.
+The sum of the digits is returned.
+The function `order_by_points` returns the sorted list of numbers.
+
+Therefore, the final output of the function `order_by_points([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46])` is [0, 2, 3, 4, 5, 6, 145, 1234, 423, 423, 463, 3457, 3, 56, 37].

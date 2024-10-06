@@ -1,0 +1,43 @@
+[REASONING]
+The function `largest_prime_factor` is called with `n = 63`.
+Inside the function, a variable `largest` is initialized to 1.
+The loop iterates from 2 through 63 (since `n = 63`).
+
+Iteration 1 (j = 2):
+   - `j` is 2, `n % j == 0` is False (63 is not divisible by 2).
+   - The condition `n % j == 0 and is_prime(j)` is False.
+   - No update to `largest`.
+
+Iteration 2 (j = 3):
+   - `j` is 3, `n % j == 0` is True (63 is divisible by 3).
+   - `is_prime(3)` is True (3 is a prime number).
+   - The condition `n % j == 0 and is_prime(j)` is True.
+   - `largest` is updated to 3.
+
+Iteration 3 (j = 4):
+   - `j` is 4, `n % j == 0` is False (63 is not divisible by 4).
+   - The condition `n % j == 0 and is_prime(j)` is False.
+   - No update to `largest`.
+
+... (similar checks for j = 5 to j = 62) ...
+
+Iteration 61 (j = 63):
+   - `j` is 63, `n % j == 0` is True (63 is divisible by 63).
+   - `is_prime(63)` is False (63 is not a prime number).
+   - The condition `n % j == 0 and is_prime(j)` is False.
+   - No update to `largest`.
+
+The largest prime factor found is 7, which is the highest prime number that divides 63.
+
+Therefore, the final output of the function `largest_prime_factor(63)` is 7.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def largest_prime_factor(n: int):
+    def is_prime(k):
+        if k < 2: ## [CONDITION](k < 2)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+            return False
+        for i in range(2, k - 1): ## [STATE]i=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62][/STATE][STATE]range(2, (k - 1))=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62][/STATE][STATE](k - 1)=[62][/STATE]
+            if k % i == 0: ## [CONDITION](k % i == 0)=[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False

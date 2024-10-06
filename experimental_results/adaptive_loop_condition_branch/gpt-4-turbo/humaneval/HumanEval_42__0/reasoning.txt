@@ -1,0 +1,8 @@
+The function `incr_list` takes a list `l` as input and returns a new list where each element is the original element incremented by 1. The function uses a list comprehension to iterate over each element `e` in the list `l`, and for each element, it adds 1 to `e` and includes the result in the new list.
+
+To determine the output of executing the function `incr_list` on the input `[3, 2, 1]`, we need to increment each element of the list by 1:
+- The first element is 3, incremented by 1 becomes 4.
+- The second element is 2, incremented by 1 becomes 3.
+- The third element is 1, incremented by 1 becomes 2.
+
+Therefore, the output of executing the function `incr_list` on the input `[3, 2, 1]` is `[4, 3, 2]`.

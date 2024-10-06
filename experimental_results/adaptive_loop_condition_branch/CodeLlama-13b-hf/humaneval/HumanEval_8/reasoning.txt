@@ -1,0 +1,17 @@
+The function `sum_product` is called with (numbers = [1, 1, 1]).
+Inside the function, a variable `sum_value` is initialized to 0.
+A variable `prod_value` is initialized to 1.
+The loop iterates from 0 to 2 since `range(len(numbers))` = [0, 1, 2].
+
+First Iteration(i = 0):
+    n = 1
+    sum_value = 1
+    prod_value = 1
+Second Iteration(i = 1):
+    n = 1
+    sum_value = 2
+    prod_value = 1
+Third Iteration(i = 2):
+    n = 1
+    sum_value = 3
+    prod_value = 1

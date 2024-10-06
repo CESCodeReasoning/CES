@@ -1,0 +1,33 @@
+[REASONING]
+The function `mean_absolute_deviation` calculates the mean absolute deviation of a list of numbers. The steps involved are:
+1. Calculate the mean of the numbers by summing all elements and dividing by the number of elements.
+2. For each number in the list, compute the absolute difference between the number and the mean.
+3. Sum all the absolute differences.
+4. Divide the sum of absolute differences by the number of elements to get the mean absolute deviation.
+
+For the input list [1.0, 2.0, 3.0, 4.0]:
+- The mean is calculated as (1.0 + 2.0 + 3.0 + 4.0) / 4 = 2.5.
+- The absolute differences from the mean are:
+  - |1.0 - 2.5| = 1.5
+  - |2.0 - 2.5| = 0.5
+  - |3.0 - 2.5| = 0.5
+  - |4.0 - 2.5| = 1.5
+- The sum of these absolute differences is 1.5 + 0.5 + 0.5 + 1.5 = 4.0.
+- The mean absolute deviation is 4.0 / 4 = 1.0.
+
+Thus, the output for the given input is 1.0.
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    mean = sum(numbers) / len(numbers)  # [STATE] mean = 2.5 [/STATE]
+    return sum(abs(x - mean) for x in numbers) / len(numbers)  # [STATE] return value = 1.0 [/STATE]
+```
+[/ANSWER]
+
+[OUTPUT]
+1.0
+[/OUTPUT]

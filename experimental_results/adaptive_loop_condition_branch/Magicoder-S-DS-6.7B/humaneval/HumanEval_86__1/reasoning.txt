@@ -1,0 +1,15 @@
+The function anti_shuffle takes a string s as input and returns a new string.
+
+The function splits the input string into words using the split() method.
+
+For each word, it sorts the characters in the word using the sorted() function and joins them back together using the join() method.
+
+Finally, it joins all the sorted words back together using the join() method with a space as the separator.
+
+The input 'Hello World!!!' is split into the words 'Hello' and 'World!!!'.
+
+For 'Hello', the sorted characters are 'e', 'h', 'l', 'l', 'o'. So, the sorted word is 'ehllo'.
+
+For 'World!!!', the sorted characters are 'W', 'd', 'e', 'l', 'o', 'r', '!!!'. So, the sorted word is '!!!DeelorW'.
+
+So, the output of executing the function anti_shuffle on the input 'Hello World!!!' is 'ehllo !!!DeelorW'.

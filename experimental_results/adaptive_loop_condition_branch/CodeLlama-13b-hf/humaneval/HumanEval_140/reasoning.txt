@@ -1,0 +1,34 @@
+The function `fix_spaces` is called with ( text = "Example" ).
+Inside the function, a variable `new_text` is initialized to "".
+The loop iterates from 0 through 6 (since ( len(text) = 6 )).
+First Iteration (i = 0):
+    - i <= 6 when i=0
+    - The conditin `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "E" ( "" + "E" = "E" ).
+    - `start, end = i+1, i+1` updates `start` to 1 and `end` to 1.
+Second Iteration (i = 1):
+    - i <= 6 when i=1
+    - The conditin `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Ex" ( "E" + "x" = "Ex" ).
+    - `start, end = i+1, i+1` updates `start` to 2 and `end` to 2.
+Third Iteration (i = 2):
+    - i <= 6 when i=2
+    - The conditin `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Exa" ( "Ex" + "a" = "Exa" ).
+    - `start, end = i+1, i+1` updates `start` to 3 and `end` to 3.
+Fourth Iteration (i = 3):
+    - i <= 6 when i=3
+    - The conditin `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Exam" ( "Exa" + "m" = "Exam" ).
+    - `start, end = i+1, i+1` updates `start` to 4 and `end` to 4.
+Fifth Iteration (i = 4):
+    - i <= 6 when i=4
+    - The conditin `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Examp" ( "Exam" + "p" = "Examp" ).
+    - `start, end = i+1, i+1` updates `start` to 5 and `end` to 5.
+Sixth Iteration (i = 5):
+    - i <= 6 when i=5
+    - The conditin `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Example" ( "Examp" + "l" = "Example" ).
+    - `start, end = i+1, i+1` updates `start` to 6 and `end` to 6.
+After the loop completes, the function returns the value of `new_text`, which is now "Example".

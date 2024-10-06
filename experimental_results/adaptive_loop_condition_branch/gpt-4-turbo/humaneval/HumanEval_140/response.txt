@@ -1,0 +1,50 @@
+[REASONING]
+The function `fix_spaces` is called with the input string "Example".
+The function initializes `new_text` as an empty string, and `i`, `start`, and `end` are all set to 0.
+The function then enters a while loop that iterates over each character in the input string based on the condition `i < len(text)`, where `len(text)` is 7 for "Example".
+
+Iteration 1 (i = 0):
+- The character at index 0 is 'E', which is not a space.
+- Since `end - start` is 0 (no spaces found yet), the character 'E' is directly added to `new_text`.
+- `start` and `end` are updated to 1.
+
+Iteration 2 (i = 1):
+- The character at index 1 is 'x', which is not a space.
+- Since `end - start` is 0, the character 'x' is directly added to `new_text`.
+- `start` and `end` are updated to 2.
+
+This process continues for each character in the string "Example", with each character being added directly to `new_text` because there are no spaces in the string.
+
+After the loop, the function checks if there are trailing spaces by evaluating `end - start`. Since there are no trailing spaces, nothing additional is added to `new_text`.
+
+The function returns `new_text`, which is "Example", the same as the input string.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def fix_spaces(text):
+    new_text = ""
+    i = 0
+    start, end = 0, 0
+    while i < len(text): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6][/STATE][STATE]len(text)=[7][/STATE]
+        if text[i] == " ": ## [CONDITION](text[i] == " ")=[False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N][/BRANCH]
+            end += 1
+        else: ## [BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+            if end - start > 2: ## [CONDITION](end - start > 2)=[False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N][/BRANCH]
+                new_text += "-"+text[i]
+            elif end - start > 0: ## [CONDITION](end - start > 0)=[False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N][/BRANCH]
+                new_text += "_"*(end - start)+text[i]
+            else: ## [BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+                new_text += text[i]
+            start, end = i+1, i+1
+        i+=1
+    if end - start > 2: ## [CONDITION](end - start > 2)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        new_text += "-"
+    elif end - start > 0: ## [CONDITION](end - start > 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        new_text += "_"
+    return new_text
+[/PYTHON]
+
+[OUTPUT]
+Example
+[/OUTPUT]

@@ -1,0 +1,5 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: median
+main.py(3):     l = sorted(l)
+main.py(4):     if len(l) % 2 == 1:
+main.py(5):         return l[len(l) // 2]

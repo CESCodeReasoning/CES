@@ -1,0 +1,12 @@
+The function reverse_delete takes a string s and a string c as inputs. The function should return a tuple where the first element is the string s with all characters in c removed, and the second element is a boolean indicating whether the resulting string is the same when reversed.
+
+In the given input, s is "abcde" and c is "ae". The function should remove all occurrences of 'a' and 'e' from s and return a tuple with the resulting string and a boolean indicating whether the resulting string is the same when reversed.
+
+To achieve this, we can use a list comprehension to iterate over the characters in s and only include those that are not in c. Then, we can join these characters together to form the new string. Finally, we can compare this string with its reverse to determine the boolean value.
+
+The output of executing the function reverse_delete on the input "abcde","ae" is ('bcd', False).
+
+This is because after removing 'a' and 'e' from "abcde", we get "bcd". However, "bcd" is not the same as its reverse "dcb", so the boolean value is False.
+
+So, the output of the function reverse_delete("abcde","ae") is ('bcd', False).
+

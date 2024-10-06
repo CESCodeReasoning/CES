@@ -1,0 +1,4 @@
+The function unique takes a list l as input and returns a sorted list of the unique elements in l.
+To determine the output of executing the function unique on the input ['a', 'b', 'b', 'c', 'd', 'd'], we need to first find the set of unique elements in the list, which is {'a', 'b', 'c', 'd'}.
+Then, we need to sort the set of unique elements, which gives us ['a', 'b', 'c', 'd'].
+Therefore, the output of executing the function unique on the input ['a', 'b', 'b', 'c', 'd', 'd'] is ['a', 'b', 'c', 'd'].

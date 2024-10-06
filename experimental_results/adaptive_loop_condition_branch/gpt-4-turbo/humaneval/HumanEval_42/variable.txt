@@ -1,0 +1,4 @@
+from typing import *
+def incr_list(l: list):
+    # [STATE] l = [5, 2, 5, 2, 3, 3, 9, 0, 123] [/STATE]
+    return [(e + 1) for e in l]  # [STATE] e = 123, e + 1 = 124 [/STATE]

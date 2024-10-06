@@ -1,0 +1,3 @@
+The function parse_music takes a string music_string as input and returns a list of integers representing the notes in the music.
+To determine the output of executing the function parse_music on the input "o| .| o| .| o o| o o|", we need to parse the music string and convert the notes to integers.
+Therefore, the output of executing the function parse_music on the input "o| .| o| .| o o| o o|" is [4, 2, 1, 4, 4, 4].

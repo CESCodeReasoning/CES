@@ -1,0 +1,23 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: below_zero
+main.py(3):     balance = 0
+main.py(5):     for op in operations:
+main.py(6):         balance += op
+main.py(7):         if balance < 0:
+main.py(5):     for op in operations:
+main.py(6):         balance += op
+main.py(7):         if balance < 0:
+main.py(5):     for op in operations:
+main.py(6):         balance += op
+main.py(7):         if balance < 0:
+main.py(5):     for op in operations:
+main.py(6):         balance += op
+main.py(7):         if balance < 0:
+main.py(5):     for op in operations:
+main.py(6):         balance += op
+main.py(7):         if balance < 0:
+main.py(5):     for op in operations:
+main.py(6):         balance += op
+main.py(7):         if balance < 0:
+main.py(5):     for op in operations:
+main.py(10):     return False

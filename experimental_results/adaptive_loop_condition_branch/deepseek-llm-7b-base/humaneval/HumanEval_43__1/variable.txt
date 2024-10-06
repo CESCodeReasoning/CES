@@ -1,0 +1,9 @@
+from typing import *
+
+
+def pairs_sum_to_zero(l):
+    for i, l1 in enumerate(l): ## [STATE]i=??[/STATE][STATE]l1=??[/STATE][STATE]enumerate(l)=??[/STATE][STATE]l=??[/STATE]
+        for j in range(i + 1, len(l)): ## [STATE]j=??[/STATE][STATE]range((i + 1), len(l))=??[/STATE][STATE](i + 1)=??[/STATE][STATE]len(l)=??[/STATE]
+            if l1 + l[j] == 0: ## [CONDITION](l1 + l[j] == 0)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                return True
+    return False

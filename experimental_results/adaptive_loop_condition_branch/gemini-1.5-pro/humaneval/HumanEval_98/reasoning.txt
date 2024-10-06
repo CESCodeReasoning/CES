@@ -1,0 +1,15 @@
+The function `count_upper` is called with ( s = 'aBCdEf' ).
+Inside the function, a variable `count` is initialized to 0.
+The loop iterates from 0 to the length of the string (5) with a step of 2.
+First Iteration (i = 0)
+   - `s[i]` is 'a', which is not in "AEIOU".
+   - The condition `s[i] in "AEIOU"` is false.
+   - Action: `count` remains 0.
+Second Iteration (i = 2)
+   - `s[i]` is 'C', which is not in "AEIOU".
+   - The condition `s[i] in "AEIOU"` is false.
+   - Action: `count` remains 0.
+Third Iteration (i = 4)
+   - `s[i]` is 'E', which is in "AEIOU".
+   - The condition `s[i] in "AEIOU"` is true.
+   - Action: `count` is incremented to 1 (`0 + 1 = 1`).

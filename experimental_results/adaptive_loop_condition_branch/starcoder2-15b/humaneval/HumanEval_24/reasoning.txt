@@ -1,0 +1,8 @@
+The function `largest_divisor` is called with ( n = 3 ).
+Inside the function, the loop iterates from n to 1 in reverse order (3, 2, 1).
+Iteration 1:
+    -The condition (3 % 3 == 0) is true, so the function returns 3.
+Iteration 2:
+    -The condition (3 % 2 == 0) is false, so the loop continues.
+Iteration 3:
+    -The condition (3 % 1 == 0) is true, so the function returns 1.

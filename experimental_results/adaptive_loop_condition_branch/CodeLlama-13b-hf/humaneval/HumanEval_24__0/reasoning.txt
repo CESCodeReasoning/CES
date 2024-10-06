@@ -1,0 +1,123 @@
+The function `largest_divisor` is called with ( n = 49 ).
+Inside the function, a variable `i` is initialized to 0.
+The loop iterates from 49 through 0 (since ( n = 49 )).
+First Iteration (i = 49)
+   - `i` is 49, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 49.
+Second Iteration (i = 48)
+   - `i` is 48, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 48.
+Third Iteration (i = 47)
+   - `i` is 47, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 47.
+Fourth Iteration (i = 46)
+   - `i` is 46, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 46.
+Fifth Iteration (i = 45)
+   - `i` is 45, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 45.
+Sixth Iteration (i = 44)
+   - `i` is 44, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 44.
+Seventh Iteration (i = 43)
+   - `i` is 43, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 43.
+Eighth Iteration (i = 42)
+   - `i` is 42, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 42.
+Ninth Iteration (i = 41)
+   - `i` is 41, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 41.
+Tenth Iteration (i = 40)
+   - `i` is 40, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 40.
+Eleventh Iteration (i = 39)
+   - `i` is 39, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 39.
+Twelfth Iteration (i = 38)
+   - `i` is 38, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 38.
+Thirteenth Iteration (i = 37)
+   - `i` is 37, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 37.
+Fourteenth Iteration (i = 36)
+   - `i` is 36, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 36.
+Fifteenth Iteration (i = 35)
+   - `i` is 35, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 35.
+Sixteenth Iteration (i = 34)
+   - `i` is 34, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 34.
+Seventeenth Iteration (i = 33)
+   - `i` is 33, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 33.
+Eighteenth Iteration (i = 32)
+   - `i` is 32, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 32.
+Nineteenth Iteration (i = 31)
+   - `i` is 31, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 31.
+Twentieth Iteration (i = 30)
+   - `i` is 30, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 30.
+Twenty-first Iteration (i = 29)
+   - `i` is 29, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 29.
+Twenty-second Iteration (i = 28)
+   - `i` is 28, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 28.
+Twenty-third Iteration (i = 27)
+   - `i` is 27, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 27.
+Twenty-fourth Iteration (i = 26)
+   - `i` is 26, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 26.
+Twenty-fifth Iteration (i = 25)
+   - `i` is 25, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 25.
+Twenty-sixth Iteration (i = 24)
+   - `i` is 24, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 24.
+Twenty-seventh Iteration (i = 23)
+   - `i` is 23, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 23.
+Twenty-eighth Iteration (i = 22)
+   - `i` is 22, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 22.
+Twenty-ninth Iteration (i = 21)
+   - `i` is 21, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 21.
+Thirtieth Iteration (i = 20)
+   - `i` is 20, which satisfies ( 49 % i == 0 ).
+   - The condition `n % i == 0` is true.
+  

@@ -1,0 +1,112 @@
+[REASONING]
+The function `largest_prime_factor` is called with ( n = 63 ).
+Inside the function, a nested function `is_prime` is defined to check if a number is prime.
+The function `largest_prime_factor` initializes a variable `largest` to 1.
+The loop iterates from 2 through 63 (since ( n = 63 )).
+First Iteration (j = 2)
+   - `n % j == 0` is true (since 63 is divisible by 2).
+   - `is_prime(j)` is true (since 2 is prime).
+   - Action: `largest` is updated to 2 (since 2 is the largest prime factor found so far).
+Second Iteration (j = 3)
+   - `n % j == 0` is true (since 63 is divisible by 3).
+   - `is_prime(j)` is true (since 3 is prime).
+   - Action: `largest` is updated to 3 (since 3 is the largest prime factor found so far).
+Third Iteration (j = 4)
+   - `n % j == 0` is false (since 63 is not divisible by 4).
+   - The condition `n % j == 0 and is_prime(j)` is false.
+   - Action: `largest` is not updated.
+Fourth Iteration (j = 5)
+   - `n % j == 0` is true (since 63 is divisible by 5).
+   - `is_prime(j)` is true (since 5 is prime).
+   - Action: `largest` is updated to 5 (since 5 is the largest prime factor found so far).
+Fifth Iteration (j = 6)
+   - `n % j == 0` is true (since 63 is divisible by 6).
+   - `is_prime(j)` is false (since 6 is not prime).
+   - Action: `largest` is not updated.
+Sixth Iteration (j = 7)
+   - `n % j == 0` is true (since 63 is divisible by 7).
+   - `is_prime(j)` is true (since 7 is prime).
+   - Action: `largest` is updated to 7 (since 7 is the largest prime factor found so far).
+Seventh Iteration (j = 8)
+   - `n % j == 0` is false (since 63 is not divisible by 8).
+   - The condition `n % j == 0 and is_prime(j)` is false.
+   - Action: `largest` is not updated.
+Eighth Iteration (j = 9)
+   - `n % j == 0` is true (since 63 is divisible by 9).
+   - `is_prime(j)` is false (since 9 is not prime).
+   - Action: `largest` is not updated.
+Ninth Iteration (j = 10)
+   - `n % j == 0` is true (since 63 is divisible by 10).
+   - `is_prime(j)` is false (since 10 is not prime).
+   - Action: `largest` is not updated.
+Tenth Iteration (j = 11)
+   - `n % j == 0` is true (since 63 is divisible by 11).
+   - `is_prime(j)` is true (since 11 is prime).
+   - Action: `largest` is updated to 11 (since 11 is the largest prime factor found so far).
+Eleventh Iteration (j = 12)
+   - `n % j == 0` is true (since 63 is divisible by 12).
+   - `is_prime(j)` is false (since 12 is not prime).
+   - Action: `largest` is not updated.
+Twelfth Iteration (j = 13)
+   - `n % j == 0` is true (since 63 is divisible by 13).
+   - `is_prime(j)` is true (since 13 is prime).
+   - Action: `largest` is updated to 13 (since 13 is the largest prime factor found so far).
+Thirteenth Iteration (j = 14)
+   - `n % j == 0` is false (since 63 is not divisible by 14).
+   - The condition `n % j == 0 and is_prime(j)` is false.
+   - Action: `largest` is not updated.
+Fourteenth Iteration (j = 15)
+   - `n % j == 0` is true (since 63 is divisible by 15).
+   - `is_prime(j)` is false (since 15 is not prime).
+   - Action: `largest` is not updated.
+Fifteenth Iteration (j = 16)
+   - `n % j == 0` is true (since 63 is divisible by 16).
+   - `is_prime(j)` is false (since 16 is not prime).
+   - Action: `largest` is not updated.
+Sixteenth Iteration (j = 17)
+   - `n % j == 0` is true (since 63 is divisible by 17).
+   - `is_prime(j)` is true (since 17 is prime).
+   - Action: `largest` is updated to 17 (since 17 is the largest prime factor found so far).
+Seventeenth Iteration (j = 18)
+   - `n % j == 0` is true (since 63 is divisible by 18).
+   - `is_prime(j)` is false (since 18 is not prime).
+   - Action: `largest` is not updated.
+Eighteenth Iteration (j = 19)
+   - `n % j == 0` is true (since 63 is divisible by 19).
+   - `is_prime(j)` is true (since 19 is prime).
+   - Action: `largest` is updated to 19 (since 19 is the largest prime factor found so far).
+Nineteenth Iteration (j = 20)
+   - `n % j == 0` is true (since 63 is divisible by 20).
+   - `is_prime(j)` is false (since 20 is not prime).
+   - Action: `largest` is not updated.
+Twentieth Iteration (j = 21)
+   - `n % j == 0` is true (since 63 is divisible by 21).
+   - `is_prime(j)` is false (since 21 is not prime).
+   - Action: `largest` is not updated.
+Twenty-First Iteration (j = 22)
+   - `n % j == 0` is true (since 63 is divisible by 22).
+   - `is_prime(j)` is false (since 22 is not prime).
+   - Action: `largest` is not updated.
+Twenty-Second Iteration (j = 23)
+   - `n % j == 0` is true (since 63 is divisible by 23).
+   - `is_prime(j)` is true (since 23 is prime).
+   - Action: `largest` is updated to 23 (since 23 is the largest prime factor found so far).
+Twenty-Third Iteration (j = 24)
+   - `n % j == 0` is true (since 63 is divisible by 24).
+   - `is_prime(j)` is false (since 24 is not prime).
+   - Action: `largest` is not updated.
+Twenty-Fourth Iteration (j = 25)
+   - `n % j == 0` is true (since 63 is divisible by 25).
+   - `is_prime(j)` is false (since 25 is not prime).
+   - Action: `largest` is not updated.
+Twenty-Fifth Iteration (j = 26)
+   - `n % j == 0` is true (since 63 is divisible by 26).
+   - `is_prime(j)` is false (since 26 is not prime).
+   - Action: `largest` is not updated.
+Twenty-Sixth Iteration (j = 27)
+   - `n % j == 0` is true (since 63 is divisible by 27).
+   - `is_prime(j)` is false (since 27 is not prime).
+   - Action: `largest` is not updated.
+Twenty-Seventh Iteration (j = 28)
+   - `n % j == 0` is true (since 63 is divisible by 28).
+   - `is_prime(j)` is false (since 28

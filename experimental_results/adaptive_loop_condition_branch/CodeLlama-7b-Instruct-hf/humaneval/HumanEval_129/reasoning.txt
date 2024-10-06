@@ -1,0 +1,9 @@
+The function `minPath` takes a grid and a number of paths as input.
+The function first initializes a variable `val` to a large value.
+The outer loop iterates through each row of the grid.
+In the inner loop, the function iterates through each column of the grid.
+For each cell in the grid, the function checks if the cell has a value of 1.
+If the cell has a value of 1, the function initializes a temporary list `temp` and appends the values of the cells in the same row and column as the current cell.
+The function then sets the value of `val` to the minimum of the values in the `temp` list.
+The function then initializes a list `ans` and appends the value of `val` to it.
+The function then repeats the process for the next `k` paths.

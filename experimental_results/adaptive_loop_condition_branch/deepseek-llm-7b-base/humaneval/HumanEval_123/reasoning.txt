@@ -1,0 +1,38 @@
+The function `get_odd_collatz` is called with ( n = 14 ).
+Inside the function, a variable `odd_collatz` is initialized to an empty list.
+The loop iterates from 1 through 14 (since ( n = 14 )).
+First Iteration (n = 1):
+    - n <= 14 when n=1
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The condition `n % 2 == 1` is true. The second branch is taken.
+    -`odd_collatz.append(n)` updates `odd_collatz` to [1].
+Second Iteration (n = 2):
+    - n <= 14 when n=2
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The condition `n % 2 == 1` is true. The second branch is taken.
+    -`odd_collatz.append(n)` updates `odd_collatz` to [1, 2].
+Third Iteration (n = 3):
+    - n <= 14 when n=3
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The condition `n % 2 == 1` is true. The second branch is taken.
+    -`odd_collatz.append(n)` updates `odd_collatz` to [1, 2, 3].
+Fourth Iteration (n = 4):
+    - n <= 14 when n=4
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The condition `n % 2 == 1` is true. The second branch is taken.
+    -`odd_collatz.append(n)` updates `odd_collatz` to [1, 2, 3, 4].
+Fifth Iteration (n = 5):
+    - n <= 14 when n=5
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The condition `n % 2 == 1` is true. The second branch is taken.
+    -`odd_collatz.append(n)` updates `odd_collatz` to [1, 2, 3, 4, 5].
+Sixth Iteration (n = 6):
+    - n <= 14 when n=6
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The condition `n % 2 == 1` is true. The second branch is taken.
+    -`odd_collatz.append(n)` updates `odd_collatz` to [1, 2, 3, 4, 5, 6].
+Seventh Iteration (n = 7):
+    - n <= 14 when n=7
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The condition `n % 2 == 1` is true. The second branch is taken.
+    -`odd_collatz.append(n)` updates `odd

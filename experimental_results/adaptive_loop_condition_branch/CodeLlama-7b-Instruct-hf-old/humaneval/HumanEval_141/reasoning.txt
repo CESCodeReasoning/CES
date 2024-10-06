@@ -1,0 +1,9 @@
+The function `file_name_check` is called with ( file_name = "example.txt" ).
+The function first splits the file name into a list using the separator '.'.
+The list has two elements: "example" and "txt".
+The condition `len(lst) != 2` is false, therefore the if branch is not taken.
+The condition `not lst[1] in suf` is false, therefore the if branch is not taken.
+The condition `len(lst[0]) == 0` is false, therefore the if branch is not taken.
+The condition `not lst[0][0].isalpha()` is false, therefore the if branch is not taken.
+The condition `t > 3` is false, therefore the if branch is not taken.
+Therefore, the final output of the function `file_name_check("example.txt")` is "Yes".

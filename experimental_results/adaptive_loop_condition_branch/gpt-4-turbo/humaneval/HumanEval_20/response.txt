@@ -1,0 +1,44 @@
+[REASONING]
+The function `find_closest_elements(numbers)` takes a list of floating-point numbers as its parameter. The goal is to find the pair of elements in the list that have the smallest absolute difference between them.
+
+The function initializes `closest_pair` to `None` and `distance` to `None`. It then uses two nested loops to compare each element with every other element in the list. The outer loop iterates over each element and its index, and the inner loop does the same.
+
+For each pair of elements (where the indices are not the same), the function calculates the absolute difference between the two elements. If `distance` is `None` (which is true for the first valid comparison), it sets `distance` to this difference and `closest_pair` to the sorted tuple of the two elements.
+
+For subsequent comparisons, if the new calculated distance is smaller than the current `distance`, the function updates `distance` and `closest_pair` to reflect this new closest pair.
+
+The function finally returns the `closest_pair` which has the smallest difference among all pairs.
+
+Let's consider the input `[1.0, 2.0, 3.9, 4.0, 5.0, 2.2]`:
+- The first valid comparison is between `1.0` and `2.0`, setting the initial `distance` to `1.0`.
+- Comparing `1.0` with `2.2` gives a smaller distance of `1.2`, but it's not smaller than the current `distance`.
+- The comparison between `2.0` and `2.2` gives a distance of `0.2`, which is the smallest so far, so `distance` is updated to `0.2` and `closest_pair` to `(2.0, 2.2)`.
+- No subsequent comparisons yield a smaller distance than `0.2`.
+
+Thus, the closest pair is `(2.0, 2.2)` with a distance of `0.2`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    closest_pair = None
+    distance = None
+
+    for idx, elem in enumerate(numbers): ## [STATE]idx=[0, 1, 2, 3, 4, 5][/STATE][STATE]elem=[1.0, 2.0, 3.9, 4.0, 5.0, 2.2][/STATE][STATE]enumerate(numbers)=[(0, 1.0), (1, 2.0), (2, 3.9), (3, 4.0), (4, 5.0), (5, 2.2)][/STATE][STATE]numbers=[1.0, 2.0, 3.9, 4.0, 5.0, 2.2][/STATE]
+        for idx2, elem2 in enumerate(numbers): ## [STATE]idx2=[0, 1, 2, 3, 4, 5][/STATE][STATE]elem2=[1.0, 2.0, 3.9, 4.0, 5.0, 2.2][/STATE][STATE]enumerate(numbers)=[(0, 1.0), (1, 2.0), (2, 3.9), (3, 4.0), (4, 5.0), (5, 2.2)][/STATE][STATE]numbers=[1.0, 2.0, 3.9, 4.0, 5.0, 2.2][/STATE]
+            if idx != idx2: ## [CONDITION](idx != idx2)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+                if distance is None: ## [CONDITION](distance is None)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+                    distance = abs(elem - elem2)
+                    closest_pair = tuple(sorted([elem, elem2]))
+                else: ## [BRANCH]taken=N[/BRANCH]
+                    new_distance = abs(elem - elem2)
+                    if new_distance < distance: ## [CONDITION](new_distance < distance)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+                        distance = new_distance
+                        closest_pair = tuple(sorted([elem, elem2]))
+
+    return closest_pair
+[/PYTHON]
+
+[OUTPUT]
+(2.0, 2.2)
+[/OUTPUT]

@@ -1,0 +1,7 @@
+The function `even_odd_count` is called with ( num = -78 ).
+Inside the function, two variables `even_count` and `odd_count` are initialized to 0.
+The function converts the absolute value of the input number to a string and iterates over each character in the string.
+Iteration 1:
+    -The character '7' is converted to an integer and checked for evenness. Since 7 is not even, `odd_count` is incremented by 1.
+Iteration 2:
+    -The character '8' is converted to an integer and checked for evenness. Since 8 is even, `even_count` is incremented by 1.

@@ -1,0 +1,20 @@
+The function `search` is called with ( lst = [5, 5, 5, 5, 1] ).
+Inside the function, a list `frq` is initialized with zeros of size `max(lst) + 1`.
+The first loop iterates over the list `lst` and increments the frequency count of each element in the `frq` list.
+The second loop iterates over the range from 1 to the length of `frq`.
+First Iteration (i = 1):
+   - The condition `frq[1] >= 1` is true (since `frq[1] = 1`).
+   - Action: `ans` is updated to 1.
+Second Iteration (i = 2):
+   - The condition `frq[2] >= 2` is false (since `frq[2] = 0`).
+Third Iteration (i = 3):
+   - The condition `frq[3] >= 3` is false (since `frq[3] = 0`).
+Fourth Iteration (i = 4):
+   - The condition `frq[4] >= 4` is false (since `frq[4] = 0`).
+Fifth Iteration (i = 5):
+   - The condition `frq[5] >= 5` is true (since `frq[5] = 4`).
+   - Action: `ans` is updated to 5.
+Return Statement
+   - After the loop completes, the function returns the value of `ans`, which is now 5.
+
+Therefore, the final output of the function `search([5, 5, 5, 5, 1])` is 5.

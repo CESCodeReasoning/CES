@@ -1,0 +1,108 @@
+The function `solve` is called with ( s = "#a@C" ).
+Inside the function, a variable `flg` is initialized to 0.
+A variable `idx` is initialized to 0.
+A variable `new_str` is initialized to a list of the characters in `s`.
+
+Iteration 1:
+    -The character '#' is not a letter, so `flg` remains 0.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 2:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 3:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 4:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 5:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 6:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 7:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 8:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 9:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 10:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 11:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 12:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+Iteration 13:
+    -The character '#' is not a letter, so `flg` remains 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 1.
+    -The character 'C' is a letter, so `flg` becomes 1.
+    -The character 'a' is a letter, so `flg` becomes 1.
+    -The character '@' is not a letter, so `flg` remains 

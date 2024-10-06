@@ -1,0 +1,9 @@
+from typing import *
+def count_nums(arr):
+    def digits_sum(n):
+        neg = 1
+        if n < 0: n, neg = -1 * n, -1  ## [CONDITION](n < 0)=[False, False, True, True, False, False, False][/CONDITION][BRANCH]taken=[N, N, Y, Y, N, N, N][/BRANCH]
+        n = [int(i) for i in str(n)]  ## [STATE]n=[1, 1, 2, 2, 3, 4, 5][/STATE]
+        n[0] = n[0] * neg  ## [STATE]n[0]=[1, 1, 2, 2, 3, 4, 5][/STATE]
+        return sum(n)  ## [STATE]sum(n)=[1, 1, 4, 4, 6, 9, 14][/STATE]
+    return len(list(filter(lambda x: x > 0, [digits_sum(i) for i in arr])))  ## [STATE]len(list(filter(lambda x: x > 0, [1, 1, 4, 4, 6, 9, 14])))=[5][/STATE]

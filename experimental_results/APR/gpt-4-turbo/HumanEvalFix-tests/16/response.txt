@@ -1,0 +1,26 @@
+Here are the fixed versions of the two functions, `has_close_elements` and `count_distinct_characters`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to calculate the correct distance
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `count_distinct_characters`
+```python
+def count_distinct_characters(string: str) -> int:
+    # Convert string to lower case to ensure case insensitivity
+    return len(set(string.lower()))
+```
+
+These fixes address the issues in the original code:
+- In `has_close_elements`, the absolute value is used to correctly calculate the distance between two numbers.
+- In `count_distinct_characters`, the string is converted to lowercase to count distinct characters without considering case differences.

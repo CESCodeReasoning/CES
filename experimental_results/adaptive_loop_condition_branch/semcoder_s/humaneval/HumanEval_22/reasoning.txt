@@ -1,0 +1,8 @@
+The function `filter_integers` takes a list of values as input and returns a new list containing only the integers from the input list.
+
+- The list comprehension `[x for x in values if isinstance(x, int)]` iterates over each value in the input list.
+- For each value, it checks if the value is an instance of the `int` class using the `isinstance` function.
+- If the value is an integer (i.e., it is an instance of `int`), it is included in the new list.
+- If the value is not an integer, it is skipped.
+
+Therefore, the output of executing the function `filter_integers` on the input list `[3, 'c', 3, 3, 'a', 'b']` is `[3, 3, 3]`.

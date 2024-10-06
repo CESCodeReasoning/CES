@@ -1,0 +1,44 @@
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The outer loop iterates through each word in the sentence.
+In the inner loop, for each word indexed by i in the outer loop, check if the word is a palindrome.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 2, 3, 4, 5.
+    - word[i]=g: check if it is a palindrome:
+        - When j = 2 (word[j]=o), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - When j = 3 (word[j]=f), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - When j = 4 (word[j]=r), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - When j = 5 (word[j]=i), the condition `word[i] == word[j]` is True, the if branch is taken.
+        - The word is not a palindrome.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4, 5.
+    - word[i]=o: check if it is a palindrome:
+        - When j = 2 (word[j]=f), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - When j = 3 (word[j]=r), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - When j = 4 (word[j]=i), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - When j = 5 (word[j]=t), the condition `word[i] == word[j]` is True, the if branch is taken.
+        - The word is not a palindrome.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, 5.
+    - word[i]=f: check if it is a palindrome:
+        - When j = 3 (word[j]=r), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - When j = 4 (word[j]=i), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - When j = 5 (word[j]=t), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - The word is not a palindrome.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4, 5.
+    - word[i]=r: check if it is a palindrome:
+        - When j = 4 (word[j]=i), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - When j = 5 (word[j]=t), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - The word is not a palindrome.
+Fifth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5.
+    - word[i]=i: check if it is a palindrome:
+        - When j = 5 (word[j]=t), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - The word is not a palindrome.
+Sixth iteration (i=5):
+    - `i` is 5, j in the inner loop is 6.
+    - word[i]=t: check if it is a palindrome:
+        - When j = 6 (word[j]=), the condition `word[i] == word[j]` is False, the if branch is not taken.
+        - The word is not a palindrome.
+Seventh iteration (i=6):
+    No more elements to compare.

@@ -1,0 +1,31 @@
+```response
+        assert decode_shift(copy.deepcopy(encoded_str)) == str
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+
+def get_prime_numbers(numbers: List[int]) -> List[int]:
+    return [n for n in numbers if is_prime(n)]
+
+Tests:
+def check(get_prime_numbers):
+    assert get_prime_numbers([]) == []
+    assert get_prime_numbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == [2, 3, 5, 7]
+    assert get_prime_numbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+
+check(get_prime_numbers)
+
+The code should satisfy the following natural language specification:
+Write a Python function `get_prime_numbers(numbers: List[int]) -> List[int]` to solve the following problem:
+takes as input list of integers. Returns list of prime numbers from the input list.

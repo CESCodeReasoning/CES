@@ -1,0 +1,35 @@
+[REASONING]
+The function `skjkasdkd` is called with a list of integers. The function defines a nested function `isPrime` to check if a number is prime. The main function initializes `maxx` to 0 and iterates through the list `lst`. For each element, it checks if the element is greater than `maxx` and if it is a prime number. If both conditions are met, `maxx` is updated to this element. After the loop, the function calculates the sum of the digits of `maxx` and returns this sum.
+
+Detailed Iteration:
+- The function starts with `maxx` set to 0.
+- It checks each element in the list:
+  - For 0, 1, 4, 32, 324: These are not prime.
+  - For 2, 3, 5, 7, 181: These are prime and checked against `maxx`.
+  - `maxx` updates to 2, then 3, then 5, then 7, and finally 181 as these are all prime and greater than the previous `maxx`.
+- After determining that 181 is the largest prime in the list, the function calculates the sum of its digits: `1 + 8 + 1 = 10`.
+- The function returns 10.
+
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def skjkasdkd(lst):
+    def isPrime(n):
+        for i in range(2,int(n**0.5)+1): ## [STATE]i=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13][/STATE][STATE]range(2, (int((n ** 0.5)) + 1))=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13][/STATE][STATE](int((n ** 0.5)) + 1)=[14][/STATE]
+            if n%i==0: ## [CONDITION](n%i==0)=[False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N, N, N, N, N][/BRANCH]
+                return False
+        return True
+    maxx = 0
+    i = 0
+    while i < len(lst): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21][/STATE][STATE]len(lst)=[22][/STATE]
+        if(lst[i] > maxx and isPrime(lst[i])): ## [CONDITION]((lst[i] > maxx and isPrime(lst[i])))=[False, True, True, False, True, True, True, False, True, True, True, True, True, False, False, False, True, True, False, False, False, True][/CONDITION][CONDITION](lst[i] > maxx)=[False, True, True, False, True, True, True, False, True, True, True, True, True, False, False, False, True, True, False, False, False, True][/CONDITION][CONDITION](isPrime(lst[i]))=[False, True, True, False, False, True, True, False, True, True, True, True, True, False, False, False, True, True, False, False, False, True][/CONDITION][BRANCH]taken=[N, Y, Y, N, Y, Y, Y, N, Y, Y, Y, Y, Y, N, N, N, Y, Y, N, N, N, Y][/BRANCH]
+            maxx = lst[i]
+        i+=1
+    result = sum(int(digit) for digit in str(maxx))
+    return result
+[/PYTHON]
+
+[OUTPUT]
+10
+[/OUTPUT]

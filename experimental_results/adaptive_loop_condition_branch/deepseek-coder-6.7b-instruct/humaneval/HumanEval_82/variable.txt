@@ -1,0 +1,9 @@
+from typing import *
+def prime_length(string):
+    l = len(string)
+    if l == 0 or l == 1: ## [CONDITION](l == 0 or l == 1)=[False, False][/CONDITION][CONDITION](l == 0)=[True, False][/CONDITION][CONDITION](l == 1)=[False, True][/CONDITION][BRANCH]taken=[N, N][/BRANCH]
+        return False
+    for i in range(2, l): ## [STATE]i=[2, 3, 4][/STATE][STATE]range(2, l)=[2, 3, 4][/STATE][STATE]l=[5][/STATE]
+        if l % i == 0: ## [CONDITION](l % i == 0)=[False, False, True][/CONDITION][BRANCH]taken=[N, N, Y][/BRANCH]
+            return False
+    return True

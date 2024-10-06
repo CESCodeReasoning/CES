@@ -1,0 +1,53 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: skjkasdkd
+main.py(5):     def isPrime(n):
+main.py(11):     maxx = 0
+main.py(12):     i = 0
+main.py(13):     while i < len(lst):
+main.py(14):         if (lst[i] > maxx and isPrime(lst[i])):
+ --- modulename: main, funcname: isPrime
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(10):         return True
+main.py(15):             maxx = lst[i]
+main.py(16):         i += 1
+main.py(13):     while i < len(lst):
+main.py(14):         if (lst[i] > maxx and isPrime(lst[i])):
+main.py(16):         i += 1
+main.py(13):     while i < len(lst):
+main.py(14):         if (lst[i] > maxx and isPrime(lst[i])):
+ --- modulename: main, funcname: isPrime
+main.py(6):         for i in range(2, int(n**0.5) + 1):
+main.py(7):             if n % i == 0:
+main.py(8):                 return False
+main.py(16):         i += 1
+main.py(13):     while i < len(lst):
+main.py(17):     result = sum(int(digit) for digit in str(maxx))
+ --- modulename: main, funcname: <genexpr>
+main.py(17):     result = sum(int(digit) for digit in str(maxx))
+ --- modulename: main, funcname: <genexpr>
+main.py(17):     result = sum(int(digit) for digit in str(maxx))
+ --- modulename: main, funcname: <genexpr>
+main.py(17):     result = sum(int(digit) for digit in str(maxx))
+ --- modulename: main, funcname: <genexpr>
+main.py(17):     result = sum(int(digit) for digit in str(maxx))
+main.py(18):     return result

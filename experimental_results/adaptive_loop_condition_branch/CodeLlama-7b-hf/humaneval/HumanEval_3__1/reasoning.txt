@@ -1,0 +1,37 @@
+The function `below_zero` is called with ( operations = [1, -1, 2, -2, 5, -5, 4, -4] ).
+Inside the function, a variable `balance` is initialized to 0.
+The loop iterates through the list of operations.
+First Iteration (op = 1)
+   - `balance` is 0, so `balance += op` results in `balance = 1`.
+   - The condition `balance < 0` is false.
+   - Action: `return False` returns `False`.
+Second Iteration (op = -1)
+   - `balance` is 1, so `balance += op` results in `balance = 0`.
+   - The condition `balance < 0` is true.
+   - Action: `return True` returns `True`.
+Third Iteration (op = 2)
+   - `balance` is 0, so `balance += op` results in `balance = 2`.
+   - The condition `balance < 0` is false.
+   - Action: `return False` returns `False`.
+Fourth Iteration (op = -2)
+   - `balance` is 2, so `balance += op` results in `balance = 0`.
+   - The condition `balance < 0` is true.
+   - Action: `return True` returns `True`.
+Fifth Iteration (op = 5)
+   - `balance` is 0, so `balance += op` results in `balance = 5`.
+   - The condition `balance < 0` is false.
+   - Action: `return False` returns `False`.
+Sixth Iteration (op = -5)
+   - `balance` is 5, so `balance += op` results in `balance = 0`.
+   - The condition `balance < 0` is true.
+   - Action: `return True` returns `True`.
+Seventh Iteration (op = 4)
+   - `balance` is 0, so `balance += op` results in `balance = 4`.
+   - The condition `balance < 0` is false.
+   - Action: `return False` returns `False`.
+Eighth Iteration (op = -4)
+   - `balance` is 4, so `balance += op` results in `balance = 0`.
+   - The condition `balance < 0` is true.
+   - Action: `return True` returns `True`.
+
+Therefore, the final output of the function `below_zero([1, -1, 2, -2, 5, -5, 4, -4])` is `True`.

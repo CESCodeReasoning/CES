@@ -1,0 +1,36 @@
+The function `largest_prime_factor` is called with ( n = 15 ).
+Inside the function, a variable `largest` is initialized to 1.
+The loop iterates from 2 through 15 (since ( n = 15 )).
+First Iteration (j = 2)
+   - `j` is 2, which satisfies ( 2 <= j < 3 ).
+   - The condition `j < 3` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 2 (`1 < 2 = 2`).
+Second Iteration (j = 3)
+   - `j` is 3, which satisfies ( 3 <= j < 5 ).
+   - The condition `j < 5` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 3 (`2 < 3 = 3`).
+Third Iteration (j = 4)
+   - `j` is 4, which satisfies ( 4 <= j < 7 ).
+   - The condition `j < 7` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 4 (`3 < 4 = 4`).
+Fourth Iteration (j = 5)
+   - `j` is 5, which satisfies ( 5 <= j < 11 ).
+   - The condition `j < 11` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 5 (`4 < 5 = 5`).
+Fifth Iteration (j = 6)
+   - `j` is 6, which satisfies ( 6 <= j < 13 ).
+   - The condition `j < 13` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 6 (`5 < 6 = 6`).
+Sixth Iteration (j = 7)
+   - `j` is 7, which satisfies ( 7 <= j < 17 ).
+   - The condition `j < 17` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 7 (`6 < 7 = 7`).
+Seventh Iteration (j = 8)
+   - `j` is 8, which satisfies ( 8 <= j < 23 ).
+   - The condition `j < 23` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 8 (`7 < 8 = 8`).
+Eighth Iteration (j = 9)
+   - `j` is 9, which satisfies ( 9 <= j < 31 ).
+   - The condition `j < 31` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 9 (`8 < 9 = 9`).
+Ninth Iteration (j = 10)

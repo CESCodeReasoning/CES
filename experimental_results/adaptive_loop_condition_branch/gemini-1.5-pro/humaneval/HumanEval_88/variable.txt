@@ -1,0 +1,10 @@
+from typing import *
+def sort_array(array):
+    # [STATE]len(array) == 0[/STATE]
+    if [CONDITION]len(array) == 0[/CONDITION]:
+        # [BRANCH]Y[/BRANCH]
+        return []
+    else:
+        # [BRANCH]N[/BRANCH]
+        # [STATE](array[0]+array[-1]) % 2 == 0[/STATE]
+        return sorted(array, reverse= [CONDITION](array[0]+array[-1]) % 2 == 0[/CONDITION]) 

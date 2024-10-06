@@ -1,0 +1,36 @@
+[REASONING]
+The function `total_match` is called with ( lst1 = ['hi', 'admin'], lst2 = ['hi', 'hi'] ).
+Inside the function, two variables `l1` and `l2` are initialized to 0.
+The first loop iterates over the elements of `lst1` and adds the length of each element to `l1`.
+First Iteration (st = 'hi'):
+    `l1 += len(st)` updates `l1` to 2 ( 0 + 2 = 2 ).
+Second Iteration (st = 'admin'):
+    `l1 += len(st)` updates `l1` to 6 ( 2 + 4 = 6 ).
+The second loop iterates over the elements of `lst2` and adds the length of each element to `l2`.
+First Iteration (st = 'hi'):
+    `l2 += len(st)` updates `l2` to 2 ( 0 + 2 = 2 ).
+Second Iteration (st = 'hi'):
+    `l2 += len(st)` updates `l2` to 4 ( 2 + 2 = 4 ).
+After the loops complete, the condition ( l1 <= l2 ) is satisfied, therefore the if branch is taken and the function returns `lst1` as the output.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def total_match(lst1, lst2):
+    l1 = 0 ## [STATE]st=['hi', 'admin'][/STATE]
+    for st in lst1: ## [STATE]lst1=['hi', 'admin'][/STATE]
+        l1 += len(st)
+    
+    l2 = 0 ## [STATE]st=['hi', 'hi'][/STATE]
+    for st in lst2: ## [STATE]lst2=['hi', 'hi'][/STATE]
+        l2 += len(st)
+    
+    if l1 <= l2: ## [CONDITION](l1 <= l2)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return lst1
+    else: ## [BRANCH]taken=[N][/BRANCH]
+        return lst2
+[/ANSWER]
+
+[OUTPUT]
+['hi', 'admin']
+[/OUTPUT]

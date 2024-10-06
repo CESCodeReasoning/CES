@@ -1,0 +1,29 @@
+The function select_words(s, n) takes a string s and an integer n as its parameters.
+The outer loop iterates through each word in the string s.
+For each word, it counts the number of consonants in the word.
+If the number of consonants equals to n, it appends the word to the result list.
+First Iteration (word="Mary"):
+    - `word` is "Mary", i in the inner loop is 0, 1, 2, 3.
+    - word[i].lower() not in ["a","e","i","o","u"]: compare with "a", "e", "i", "o", "u":
+        - When i = 0 (word[i]="M"), the condition `word[i].lower() not in ["a","e","i","o","u"]` is True, the if branch is taken. n_consonants is incremented to 1.
+        - When i = 1 (word[i]="a"), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 2 (word[i]="r"), the condition `word[i].lower() not in ["a","e","i","o","u"]` is True, the if branch is taken. n_consonants is incremented to 2.
+        - When i = 3 (word[i]="y"), the condition `word[i].lower() not in ["a","e","i","o","u"]` is True, the if branch is taken. n_consonants is incremented to 3.
+    - The condition `n_consonants == n` is False, the if branch is not taken.
+Second Iteration (word="had"):
+    - `word` is "had", i in the inner loop is 0, 1, 2.
+    - word[i].lower() not in ["a","e","i","o","u"]: compare with "a", "e", "i", "o", "u":
+        - When i = 0 (word[i]="h"), the condition `word[i].lower() not in ["a","e","i","o","u"]` is True, the if branch is taken. n_consonants is incremented to 1.
+        - When i = 1 (word[i]="a"), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 2 (word[i]="d"), the condition `word[i].lower() not in ["a","e","i","o","u"]` is True, the if branch is taken. n_consonants is incremented to 2.
+    - The condition `n_consonants == n` is False, the if branch is not taken.
+Third Iteration (word="a"):
+    - `word` is "a", i in the inner loop is 0.
+    - word[i].lower() not in ["a","e","i","o","u"]: compare with "a", "e", "i", "o", "u":
+        - When i = 0 (word[i]="a"), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+    - The condition `n_consonants == n` is False, the if branch is not taken.
+Fourth Iteration (word="little"):
+    - `word` is "little", i in the inner loop is 0, 1, 2, 3, 4, 5.
+    - word[i].lower() not in ["a","e","i","o","u"]: compare with "a", "e", "i", "o", "u":
+        - When i = 0 (word[i]="l"), the condition `word[i].lower() not in ["a","e","i","o","u"]` is True, the if branch is taken. n_consonants is incremented to 1.
+        - When i = 1 (word[i]="i"), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.

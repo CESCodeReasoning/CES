@@ -1,0 +1,13 @@
+The function `minSubArraySum` is called with ( nums = [1, -1] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+
+Iteration 1:
+    -The number 1 is added to `s`, so `s` becomes 1.
+    -Since `s` is not less than 0, `s` remains 1.
+    -`max_sum` is updated to the maximum of `s` and `max_sum`, which is 1.
+Iteration 2:
+    -The number -1 is added to `s`, so `s` becomes 0.
+    -Since `s` is less than 0, `s` is reset to 0.
+    -`max_sum` is updated to the maximum of `s` and `max_sum`, which is 0.
+
+Since `max_sum` is 0, the function returns the maximum negative number in `nums`, which is -1.

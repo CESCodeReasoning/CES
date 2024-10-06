@@ -1,0 +1,19 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```
+
+
+```python
+def closest_integer(value):
+    from math import floor, ceil
+
+    num = float(value)
+    return int(floor(num + 0.5)) if num >= 0 else int(ceil(num - 0.5))
+
+```

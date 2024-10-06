@@ -1,0 +1,21 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```
+
+
+```python
+def prime_length(string):
+    l = len(string)
+    if l <= 1:
+        return False
+    for i in range(2, int(l**0.5) + 1):
+        if l % i == 0:
+            return False
+    return True
+```

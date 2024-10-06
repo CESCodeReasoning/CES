@@ -1,0 +1,6 @@
+The function `triangle_area` is called with ( a = 1, b = 2, c = 10 ).
+The condition `a + b <= c or a + c <= b or b + c <= a` is false, so the else branch is taken.
+The formula for the semi-perimeter of a triangle is `s = (a + b + c) / 2`.
+The formula for the area of a triangle is `area = (s * (s - a) * (s - b) * (s - c)) ** 0.5`.
+The area is then rounded to 2 decimal places.
+The function returns -1, indicating that the triangle is not valid.

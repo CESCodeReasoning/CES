@@ -1,0 +1,21 @@
+The function `greatest_common_divisor` is called with ( a = 144, b = 60 ).
+Inside the function, a while loop is used to calculate the greatest common divisor (GCD) of the two numbers.
+
+First Iteration:
+    - b != 0, so the loop continues.
+    - a = 60, b = 144 % 60 = 144.
+    - a and b are updated to b and a % b respectively.
+    - Now, a = 144, b = 60.
+
+Second Iteration:
+    - b != 0, so the loop continues.
+    - a = 60, b = 144 % 60 = 0.
+    - a and b are updated to b and a % b respectively.
+    - Now, a = 0, b = 60.
+
+The loop terminates because b is 0.
+
+The function returns the value of `a`, which is now 60.
+
+So, the greatest common divisor of 144 and 60 is 60.
+

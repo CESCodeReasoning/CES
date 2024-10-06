@@ -1,0 +1,5 @@
+The function `vowels_count` is called with ( s = "bYe" ).
+`s` is "bYe", which satisfies ( s[-1] == 'y' or s[-1] == 'Y' ).
+The condition `s[-1] == 'y'` is true, therefore the if branch is taken and the method returns True
+
+Therefore, the final output of the function `vowels_count("bYe")` is 1.

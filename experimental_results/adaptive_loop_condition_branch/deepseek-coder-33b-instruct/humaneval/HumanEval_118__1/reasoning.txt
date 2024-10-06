@@ -1,0 +1,4 @@
+The function `get_closest_vowel` is called with ( word = "ba" ).
+The length of the word is 2, which is less than 3.
+The loop iterates from 0 to 0 (since ( len(word) - 2 ) is 0).
+Since there are no iterations, the function returns an empty string.

@@ -1,0 +1,30 @@
+The function `exchange` is called with two lists, `lst1 = [1, 2, 3, 4]` and `lst2 = [1, 2, 3, 4]`.
+Inside the function, two variables `odd` and `even` are initialized to 0.
+The first loop iterates over the elements of `lst1`.
+Iteration 1:
+    - The element is 1, which is odd.
+    - `odd` is incremented to 1.
+Iteration 2:
+    - The element is 2, which is even.
+    - `even` is incremented to 1.
+Iteration 3:
+    - The element is 3, which is odd.
+    - `odd` is incremented to 2.
+Iteration 4:
+    - The element is 4, which is even.
+    - `even` is incremented to 2.
+The second loop iterates over the elements of `lst2`.
+Iteration 1:
+    - The element is 1, which is odd.
+    - `odd` is incremented to 3.
+Iteration 2:
+    - The element is 2, which is even.
+    - `even` is incremented to 3.
+Iteration 3:
+    - The element is 3, which is odd.
+    - `odd` is incremented to 4.
+Iteration 4:
+    - The element is 4, which is even.
+    - `even` is incremented to 4.
+After both loops have completed, `even` is 4 and `odd` is 4.
+The condition `even >= odd` is true, so the function returns "YES".

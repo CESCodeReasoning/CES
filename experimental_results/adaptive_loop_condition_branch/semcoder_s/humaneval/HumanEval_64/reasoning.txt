@@ -1,0 +1,7 @@
+The function `vowels_count` is called with ( s = "abcde" ).
+A string `vowels` is defined as "aeiouAEIOU".
+The sum of characters in `s` that are in `vowels` is calculated and stored in `n_vowels`.
+The last character of `s` is checked. If it is 'y' or 'Y', 1 is added to `n_vowels`.
+The function returns the value of `n_vowels`.
+
+Therefore, the final output of the function `vowels_count("abcde")` is 2.

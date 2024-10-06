@@ -1,0 +1,41 @@
+The function count_up_to(n) takes a number n as its parameter.
+The outer loop iterates through each number from 2 to n-1.
+In the inner loop, for each number indexed by i in the outer loop, check if it is a prime number.
+First Iteration (i=2):
+    - `i` is 2, j in the inner loop is 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21.
+    - is_prime is True, the condition `i % j == 0` is False for all j in the inner loop.
+    - Append 2 to primes.
+Second Iteration (i=3):
+    - `i` is 3, j in the inner loop is 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21.
+    - is_prime is True, the condition `i % j == 0` is False for all j in the inner loop.
+    - Append 3 to primes.
+Third Iteration (i=4):
+    - `i` is 4, j in the inner loop is 2, 3, 4.
+    - is_prime is False, the condition `i % j == 0` is True for j = 2, 3, 4.
+    - Break out of the inner loop.
+Forth Iteration (i=5):
+    - `i` is 5, j in the inner loop is 2, 3, 4, 5.
+    - is_prime is True, the condition `i % j == 0` is False for all j in the inner loop.
+    - Append 5 to primes.
+Fifth Iteration (i=6):
+    - `i` is 6, j in the inner loop is 2, 3, 4, 5, 6.
+    - is_prime is False, the condition `i % j == 0` is True for j = 2, 3, 4, 5, 6.
+    - Break out of the inner loop.
+Sixth Iteration (i=7):
+    - `i` is 7, j in the inner loop is 2, 3, 4, 5, 6, 7.
+    - is_prime is True, the condition `i % j == 0` is False for all j in the inner loop.
+    - Append 7 to primes.
+Seventh Iteration (i=8):
+    - `i` is 8, j in the inner loop is 2, 3, 4, 5, 6, 7, 8.
+    - is_prime is False, the condition `i % j == 0` is True for j = 2, 3, 4, 5, 6, 7, 8.
+    - Break out of the inner loop.
+Eighth Iteration (i=9):
+    - `i` is 9, j in the inner loop is 2, 3, 4, 5, 6, 7, 8, 9.
+    - is_prime is False, the condition `i % j == 0` is True for j = 2, 3, 4, 5, 6, 7, 8, 9.
+    - Break out of the inner loop.
+Ninth Iteration (i=10):
+    - `i` is 10, j in the inner loop is 2, 3, 4, 5, 6, 7, 8, 9, 10.
+    - is_prime is False, the condition `i % j == 0` is True for j = 2, 3, 4, 5, 6, 7, 8, 9, 10.
+    - Break out of the inner loop.
+Tenth Iteration (i=11):
+    - `i` is 11, j in the inner loop is 2, 3,

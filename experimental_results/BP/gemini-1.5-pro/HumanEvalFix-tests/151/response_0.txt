@@ -1,0 +1,4 @@
+```response
+Yes
+``` 
+The code is buggy because it unnecessarily checks for the presence of "." in the string representation of a number to determine if it's an integer. This approach would fail for larger integers that are not represented with a decimal point in Python. 

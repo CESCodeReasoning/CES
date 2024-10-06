@@ -1,0 +1,24 @@
+```response
+                frq[i] += 1;
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def search(lst):
+    frq = [0] * (max(lst) + 1)
+    for i in lst:
+        frq[i] += 1;
+
+    ans = 0
+    for i in range(1, len(frq)):
+        if frq[i] >= i:
+            ans = i
+    
+    return ans
+
+Tests:
+def check(search):
+
+    # manually generated

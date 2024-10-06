@@ -1,0 +1,5 @@
+The function `triangle_area` is called with ( a = 3, b = 4, c = 5 ).
+The condition `a + b <= c or a + c <= b or b + c <= a` is false, therefore the if branch is not taken.
+The function calculates the area of the triangle using the Heron's formula and returns the result.
+
+Therefore, the final output of the function `triangle_area(3, 4, 5)` is 6.0.

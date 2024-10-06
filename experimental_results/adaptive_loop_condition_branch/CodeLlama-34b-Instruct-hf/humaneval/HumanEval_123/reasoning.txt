@@ -1,0 +1,59 @@
+The function `get_odd_collatz` is called with ( n = 14 ).
+Inside the function, a variable `odd_collatz` is initialized to an empty list.
+The loop iterates from 14 through 1 (since ( n = 14 )).
+First Iteration (n = 14):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14].
+Second Iteration (n = 7):
+    - The condition `n%2==0` is false. The first branch is not taken.
+    - The condition `n%2==1` is true. The second branch is taken.
+    - `odd_collatz` is updated to [14, 7].
+Third Iteration (n = 22):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22].
+Fourth Iteration (n = 11):
+    - The condition `n%2==0` is false. The first branch is not taken.
+    - The condition `n%2==1` is true. The second branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11].
+Fifth Iteration (n = 34):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34].
+Sixth Iteration (n = 17):
+    - The condition `n%2==0` is false. The first branch is not taken.
+    - The condition `n%2==1` is true. The second branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17].
+Seventh Iteration (n = 52):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52].
+Eighth Iteration (n = 26):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52, 26].
+Ninth Iteration (n = 13):
+    - The condition `n%2==0` is false. The first branch is not taken.
+    - The condition `n%2==1` is true. The second branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52, 26, 13].
+Tenth Iteration (n = 40):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52, 26, 13, 40].
+Eleventh Iteration (n = 20):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20].
+Twelfth Iteration (n = 10):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10].
+Thirteenth Iteration (n = 5):
+    - The condition `n%2==0` is false. The first branch is not taken.
+    - The condition `n%2==1` is true. The second branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5].
+Fourteenth Iteration (n = 16):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16].
+Fifteenth Iteration (n = 8):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8].
+Sixteenth Iteration (n = 4):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4].
+Seventeenth Iteration (n = 2):
+    - The condition `n%2==0` is true. The first branch is taken.
+    - `odd_collatz` is updated to [14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4,

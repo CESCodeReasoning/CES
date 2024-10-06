@@ -1,0 +1,27 @@
+The function `order_by_points` is called with a list of numbers.
+The function `digits_sum` is defined inside `order_by_points`. This function calculates the sum of the digits of a number.
+If the number is negative, it multiplies the first digit by -1 to keep track of the sign.
+Then it converts the number to a string, splits it into digits, converts them back to integers, and sums them.
+The `order_by_points` function sorts the input list of numbers based on the sum of their digits.
+
+For example, for the input `[1, 11, -1, -11, -12]`, the sums of the digits are `[1, 2, 1, 2, 3]`.
+The sorted list based on these sums is `[-12, -11, -1, 1, 11]`.
+
+Therefore, the final output of the function `order_by_points([1, 11, -1, -11, -12])` is `[-12, -11, -1, 1, 11]`.
+
+[ANSWER]
+from typing import *
+def order_by_points(nums):
+    def digits_sum(n):
+        neg = 1
+        if n < 0: n, neg = -1 * n, -1  ## [CONDITION](n < 0)=[True, True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, Y][/BRANCH]
+        n = [int(i) for i in str(n)]
+        n[0] = n[0] * neg
+        return sum(n)
+    return sorted(nums, key=digits_sum)
+[/ANSWER]
+
+[OUTPUT]
+[-12, -11, -1, 1, 11]
+[/OUTPUT]
+<|EOT|>

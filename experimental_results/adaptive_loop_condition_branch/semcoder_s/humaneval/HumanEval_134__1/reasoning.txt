@@ -1,0 +1,7 @@
+The function `check_if_last_char_is_a_letter` takes a string `txt` as input and checks if the last character in the string is a letter.
+
+- The function splits the input string `txt` by space and selects the last element using `split(' ')[-1]`.
+- It then checks if the length of the selected element is 1 and if the ASCII value of the lowercase version of the selected element falls within the range of lowercase letters (97 to 122).
+- If both conditions are met, it returns `True`, otherwise it returns `False`.
+
+Given the input "A", the function will split the string into ["A"] and check if the length of the last element "A" is 1 and if the ASCII value of the lowercase version of "A" (97) falls within the range of lowercase letters (97 to 122). Since both conditions are met, the function will return `True`.

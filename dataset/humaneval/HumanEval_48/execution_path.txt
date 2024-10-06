@@ -1,0 +1,14 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: is_palindrome
+main.py(3):     for i in range(len(text)):
+main.py(4):         if text[i] != text[len(text) - 1 - i]:
+main.py(3):     for i in range(len(text)):
+main.py(4):         if text[i] != text[len(text) - 1 - i]:
+main.py(3):     for i in range(len(text)):
+main.py(4):         if text[i] != text[len(text) - 1 - i]:
+main.py(3):     for i in range(len(text)):
+main.py(4):         if text[i] != text[len(text) - 1 - i]:
+main.py(3):     for i in range(len(text)):
+main.py(4):         if text[i] != text[len(text) - 1 - i]:
+main.py(3):     for i in range(len(text)):
+main.py(6):     return True

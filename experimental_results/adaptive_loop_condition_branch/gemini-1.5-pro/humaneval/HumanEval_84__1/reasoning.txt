@@ -1,0 +1,6 @@
+The function solve takes an integer N as input and returns the binary representation of the sum of the digits of N.
+To determine the output of executing the function solve on the input 147, we need to first convert 147 to a string, which is "147".
+Then, we need to iterate over the characters in the string "147" and convert each character to an integer.
+The sum of the integers is 1 + 4 + 7 = 12.
+Finally, we need to convert 12 to binary, which is 1100.
+Therefore, the output of executing the function solve on the input 147 is "1100".

@@ -1,0 +1,5 @@
+The function `count_distinct_characters` takes a string as input and returns the number of distinct characters in the string, ignoring case differences. Here's the step-by-step reasoning for the input 'abcde':
+1. The input string 'abcde' is converted to lowercase, which remains 'abcde' since all characters are already in lowercase.
+2. A set is created from the lowercase string. Sets automatically remove any duplicate elements, so the set created from 'abcde' contains the characters {'a', 'b', 'c', 'd', 'e'}.
+3. The length of this set is calculated. Since there are five unique characters, the length is 5.
+4. The function returns the integer 5, representing the number of distinct characters in the input string.

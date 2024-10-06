@@ -1,0 +1,12 @@
+The function `encode` takes a message as input and performs the following operations:
+1. It creates a dictionary `vowels_replace` that maps each vowel to its ASCII character after adding 2.
+2. It swaps the case of all characters in the message.
+3. It iterates over each character in the message and replaces it with its encoded value from the dictionary if it is a vowel, otherwise it keeps the character as it is.
+4. Finally, it joins all the encoded characters together to form the encoded message and returns it.
+
+For the input 'TEST', the steps to encode it are:
+- The vowels 'a', 'e', 'i', 'o', 'u' are replaced by 'c', 'g', 'k', 'q', 'u' respectively.
+- The case of all characters is swapped, so 'T' becomes 't', 'E' becomes 'e', 'S' becomes 's', 'T' becomes 't'.
+- The encoded message is 'tgskt'.
+
+Therefore, the output of executing the function `encode` on the input 'TEST' is 'tgskt'.

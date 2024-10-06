@@ -1,0 +1,29 @@
+from typing import *
+def minPath(grid, k):
+    n = len(grid)
+    val = n * n + 1 ## [STATE]val=10[/STATE]
+    for i in range(n): ## [STATE]i=[0, 1, 2][/STATE][STATE]range(n)=[0, 1, 2][/STATE][STATE]n=3[/STATE]
+        for j in range(n): ## [STATE]j=[0, 1, 2][/STATE][STATE]range(n)=[0, 1, 2][/STATE][STATE]n=3[/STATE]
+            if grid[i][j] == 1: ## [CONDITION](grid[i][j] == 1)=[True, False, False][/CONDITION][BRANCH]taken=[Y, N, N][/BRANCH]
+                temp = []
+                if i != 0: ## [CONDITION](i != 0)=[True, False, False][/CONDITION][BRANCH]taken=[Y, N, N][/BRANCH]
+                    temp.append(grid[i - 1][j])
+
+                if j != 0: ## [CONDITION](j != 0)=[True, True, False][/CONDITION][BRANCH]taken=[Y, Y, N][/BRANCH]
+                    temp.append(grid[i][j - 1])
+
+                if i != n - 1: ## [CONDITION](i != n - 1)=[False, True, False][/CONDITION][BRANCH]taken=[N, Y, N][/BRANCH]
+                    temp.append(grid[i + 1][j])
+
+                if j != n - 1: ## [CONDITION](j != n - 1)=[False, False, True][/CONDITION][BRANCH]taken=[N, N, Y][/BRANCH]
+                    temp.append(grid[i][j + 1])
+
+                val = min(temp)
+
+    ans = [] ## [STATE]ans=[][/STATE]
+    for i in range(k): ## [STATE]i=[0, 1, 2][/STATE][STATE]range(k)=[0, 1, 2][/STATE][STATE]k=3[/STATE]
+        if i % 2 == 0: ## [CONDITION](i % 2 == 0)=[True, False, True][/CONDITION][BRANCH]taken=[Y, N, Y][/BRANCH]
+            ans.append(1)
+        else: ## [BRANCH]taken=[N, Y, N][/BRANCH]
+            ans.append(val)
+    return ans

@@ -1,0 +1,22 @@
+The function `by_length` is called with (arr = [2, 1, 1, 4, 5, 8, 2, 3]).
+A dictionary `dic` is defined with keys as integer and values as corresponding string representation.
+The list `arr` is sorted in reverse order and stored in `sorted_arr`.
+A new list `new_arr` is initialized.
+The loop iterates over each element in `sorted_arr`.
+First Iteration (var = 8):
+    '8' is present in the dictionary, so 'Eight' is appended to `new_arr`.
+Second Iteration (var = 5):
+    '5' is present in the dictionary, so 'Five' is appended to `new_arr`.
+Third Iteration (var = 4):
+    '4' is present in the dictionary, so 'Four' is appended to `new_arr`.
+Fourth Iteration (var = 3):
+    '3' is present in the dictionary, so 'Three' is appended to `new_arr`.
+Fifth Iteration (var = 2):
+    '2' is present in the dictionary, so 'Two' is appended to `new_arr`.
+Sixth Iteration (var = 1):
+    '1' is present in the dictionary, so 'One' is appended to `new_arr`.
+Seventh Iteration (var = 1):
+    '1' is present in the dictionary, so 'One' is appended to `new_arr`.
+Eighth Iteration (var = 2):
+    '2' is present in the dictionary, so 'Two' is appended to `new_arr`.
+The loop ends and the function returns `new_arr` which is ['Eight', 'Five', 'Four', 'Three', 'Two', 'One', 'One', 'Two'].

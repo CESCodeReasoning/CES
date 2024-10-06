@@ -1,0 +1,32 @@
+Here are the fixed versions of the two functions, `has_close_elements` and `sum_to_n`, along with the corrections made to address the issues in the original code.
+
+### Fixed Code for `has_close_elements`
+
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to calculate the correct distance
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `sum_to_n`
+
+```python
+def sum_to_n(n: int) -> int:
+    return sum(range(1, n + 1))  # Correct the range to include n
+```
+
+### Explanation of Fixes
+
+1. **has_close_elements**:
+   - The main issue was the lack of absolute value in calculating the distance between two elements. Without using `abs()`, the function could incorrectly calculate distances as negative values, which would not correctly compare against the threshold.
+   - The logic to check different indices (`idx != idx2`) was correct to ensure the same element is not compared with itself.
+
+2. **sum_to_n**:
+   - The original function incorrectly used `range(n)` which sums numbers from 0 to n-1. To correctly sum numbers from 1 to n, it should use `range(1, n+1)`. This ensures that the number `n` is included in the sum.

@@ -1,0 +1,27 @@
+[REASONING]
+The function `is_equal_to_sum_even` checks if a given integer `n` is both even and greater than or equal to 8. The function uses a logical AND operator to combine two conditions:
+1. `n % 2 == 0` checks if `n` is even.
+2. `n >= 8` checks if `n` is greater than or equal to 8.
+
+For the input `4`, the function evaluates the conditions as follows:
+- `4 % 2 == 0` evaluates to `True` because 4 is even.
+- `4 >= 8` evaluates to `False` because 4 is less than 8.
+
+Since the second condition fails, the overall result of the AND operation is `False`. Therefore, the function returns `False` for the input `4`.
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def is_equal_to_sum_even(n):
+    # [STATE] n = 4 [/STATE]
+    # [CONDITION] n % 2 == 0 and n >= 8 [/CONDITION]
+    # [BRANCH] Y, N [/BRANCH]
+    return n % 2 == 0 and n >= 8
+```
+[/ANSWER]
+
+[OUTPUT]
+False
+[/OUTPUT]

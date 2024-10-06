@@ -1,0 +1,7 @@
+The function `will_it_fly` is called with ( q = [1, 2, 3], w = 6 ).
+The condition `sum(q) > w` is false. The first branch is not taken.
+The loop iterates from 0 through 2 (since ( len(q) - 1 = 2 )).
+First Iteration (i = 0, j = 2):
+    - q[i] != q[j] when i=0 and j=2
+    - The conditin `q[i] != q[j]` is true. The first branch is taken.
+    - The function returns False.

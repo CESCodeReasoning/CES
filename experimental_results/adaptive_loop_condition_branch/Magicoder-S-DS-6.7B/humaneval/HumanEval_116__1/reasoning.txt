@@ -1,0 +1,11 @@
+The function sort_array takes a list of integers as input and returns a sorted list.
+The sorted function in Python sorts the elements of the list in ascending order.
+The lambda function in Python is an anonymous function that can take any number of arguments, but can only have one expression.
+The bin function in Python converts an integer number to a binary string prefixed with "0b".
+The count method in Python returns the number of times a specified value appears in the string.
+
+The sorted function is applied twice to the input list. The first sorted function sorts the list in ascending order. The second sorted function sorts the list based on the number of '1's in the binary representation of each number.
+
+For example, if the input list is [3, 1, 2], the binary representation of each number is ['11', '1', '10']. The number of '1's in each binary representation is [2, 1, 1]. Therefore, the sorted list based on the number of '1's in the binary representation is [1, 2, 3].
+
+If the input list is empty, the sorted function will return an empty list. Therefore, the output of executing the function sort_array on the input [] is [].

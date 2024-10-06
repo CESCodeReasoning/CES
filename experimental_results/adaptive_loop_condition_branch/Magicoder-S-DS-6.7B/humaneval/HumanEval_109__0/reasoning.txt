@@ -1,0 +1,12 @@
+The function `move_one_ball` is called with ( arr = [4, 3, 1, 2] ).
+The function checks if the length of the array is 0.
+    - The length of the array is not 0, so it proceeds to the next step.
+The function sorts the array and stores it in `sorted_array`.
+The function finds the minimum value in the array and its index.
+The function rearranges the array so that the minimum value is at the beginning.
+The function checks if the rearranged array is the same as the sorted array.
+    - The first element of the rearranged array is not equal to the first element of the sorted array.
+    - The second element of the rearranged array is equal to the second element of the sorted array.
+    - The third element of the rearranged array is equal to the third element of the sorted array.
+    - The fourth element of the rearranged array is equal to the fourth element of the sorted array.
+    - Therefore, the function returns False.

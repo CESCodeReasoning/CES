@@ -1,0 +1,31 @@
+[REASONING]
+The function select_words(s, n) takes a string s and an integer n as its parameters.
+It returns a list of words from the string that have exactly n consonants.
+The function first splits the string into a list of words.
+Then, for each word in the list, it counts the number of consonants in the word.
+If the number of consonants is equal to n, the word is added to the result list.
+In this case, the input string is "Mary had a little lamb" and the value of n is 4.
+The function first splits the string into the following list of words: ["Mary", "had", "a", "little", "lamb"].
+Then, for each word in the list, it counts the number of consonants in the word.
+The number of consonants in "Mary" is 2, the number of consonants in "had" is 1, the number of consonants in "a" is 0, the number of consonants in "little" is 3, and the number of consonants in "lamb" is 2.
+The only word that has exactly 4 consonants is "little", so the function returns the list ["little"].
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def select_words(s, n):
+    result = [] ## [STATE]word=??[/STATE]
+    for word in s.split(): ## [STATE]s.split()=["Mary", "had", "a", "little", "lamb"][/STATE]
+        n_consonants = 0 ## [STATE]i=??[/STATE]
+        for i in range(0, len(word)): ## [STATE]range(0, len(word))=[0, 1, 2, 3, 4][/STATE][STATE]len(word)=[5][/STATE]
+            if word[i].lower() not in ["a","e","i","o","u"]: ## [CONDITION](word[i].lower() not in ["a","e","i","o","u"])=[False, False, True, False, False][/CONDITION][BRANCH]taken=[F, F, T, F, F][/BRANCH]
+                n_consonants += 1 
+        if n_consonants == n: ## [CONDITION](n_consonants == n)=[False][/CONDITION][BRANCH]taken=[F][/BRANCH]
+            result.append(word)
+    return result
+
+[/ANSWER]
+
+[OUTPUT]
+[]
+[/OUTPUT]

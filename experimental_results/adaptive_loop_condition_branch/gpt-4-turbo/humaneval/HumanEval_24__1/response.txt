@@ -1,0 +1,37 @@
+[REASONING]
+The function `largest_divisor` is called with ( n = 100 ).
+Inside the function, a loop iterates over the numbers from `n-1` to 1 in reverse order (since `range(n)` generates numbers from 0 to `n-1` and `reversed(range(n))` reverses this sequence).
+
+Iteration 1:
+   - `i` is 99.
+   - The condition `100 % 99 == 0` is false.
+Iteration 2:
+   - `i` is 98.
+   - The condition `100 % 98 == 0` is false.
+Iteration 3:
+   - `i` is 97.
+   - The condition `100 % 97 == 0` is false.
+...
+Iteration 49:
+   - `i` is 51.
+   - The condition `100 % 51 == 0` is false.
+Iteration 50:
+   - `i` is 50.
+   - The condition `100 % 50 == 0` is true.
+   - Since the condition is true, the function returns `i` which is 50.
+
+Therefore, the largest divisor of 100, other than itself, is 50.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def largest_divisor(n: int) -> int:
+    for i in reversed(range(n)): ## [STATE]i=[99, 98, 97, ..., 51, 50][/STATE][STATE]reversed(range(n))=[99, 98, 97, ..., 51, 50][/STATE][STATE]range(n)=[0, 1, 2, ..., 98, 99][/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[False, False, False, ..., False, True][/CONDITION][BRANCH]taken=[N, N, N, ..., N, Y][/BRANCH]
+            return i
+[/PYTHON]
+
+[OUTPUT]
+50
+[/OUTPUT]

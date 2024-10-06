@@ -1,0 +1,7 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: triangle_area
+main.py(3):     if a + b <= c or a + c <= b or b + c <= a:
+main.py(5):     s = (a + b + c)/2    
+main.py(6):     area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+main.py(7):     area = round(area, 2)
+main.py(8):     return area

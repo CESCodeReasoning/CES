@@ -1,0 +1,37 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: unique_digits
+main.py(3):     odd_digit_elements = []
+main.py(4):     for i in x:
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+main.py(6):             odd_digit_elements.append(i)
+main.py(4):     for i in x:
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+main.py(6):             odd_digit_elements.append(i)
+main.py(4):     for i in x:
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     for i in x:
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         if all (int(c) % 2 == 1 for c in str(i)):
+main.py(6):             odd_digit_elements.append(i)
+main.py(4):     for i in x:
+main.py(7):     return sorted(odd_digit_elements)

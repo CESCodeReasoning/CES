@@ -1,0 +1,7 @@
+The function `encrypt` is called with ( s = "hi" ).
+Inside the function, a variable `out` is initialized to "".
+
+Iteration 1:
+    -The character 'h' is in d, so out becomes "j".
+Iteration 2:
+    -The character 'i' is in d, so out becomes "jj".

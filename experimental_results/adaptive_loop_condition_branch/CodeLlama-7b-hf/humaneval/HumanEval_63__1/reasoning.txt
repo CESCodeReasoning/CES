@@ -1,0 +1,85 @@
+The function `fibfib` is called with ( n = 10 ).
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 10 - 1 ) = 9.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 9 - 1 ) = 8.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 8 - 1 ) = 7.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 7 - 1 ) = 6.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 6 - 1 ) = 5.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 5 - 1 ) = 4.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 4 - 1 ) = 3.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 3 - 1 ) = 2.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 2 - 1 ) = 1.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 1 - 1 ) = 0.
+The condition `n == 0` is true, therefore the first branch is taken and the method returns 0.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = 0 - 1 ) = -1.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = -1 - 1 ) = -2.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = -2 - 1 ) = -3.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = -3 - 1 ) = -4.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = -4 - 1 ) = -5.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = -5 - 1 ) = -6.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = -6 - 1 ) = -7.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = -7 - 1 ) = -8.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = -8 - 1 ) = -9.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = -9 - 1 ) = -10.
+The condition `n == 0` is false, therefore the first branch is not taken.
+The condition `n == 1` is false, therefore the second branch is not taken.
+The condition `n == 2` is false, therefore the third branch is not taken.
+The fourth branch is taken, therefore the function calls itself with ( n = -10 - 1 ) = -1

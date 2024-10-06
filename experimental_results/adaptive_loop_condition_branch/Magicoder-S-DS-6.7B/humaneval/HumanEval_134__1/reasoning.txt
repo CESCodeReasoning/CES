@@ -1,0 +1,7 @@
+The function check_if_last_char_is_a_letter takes a string txt as input and checks if the last character in the string is a letter.
+
+To determine the output of executing the function check_if_last_char_is_a_letter on the input "A", we need to split the string into words and check the last word. Then we need to check if the last word has only one character and if that character is a letter.
+
+The function ord() returns an integer representing the Unicode character. The lower() function converts all uppercase characters in a string into lowercase characters.
+
+Therefore, the output of executing the function check_if_last_char_is_a_letter on the input "A" is True.

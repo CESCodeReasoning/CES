@@ -1,0 +1,130 @@
+<fim_prefix>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx!= idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx!= idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in sort_array.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def sort_array(arr):
+    return sorted(sorted(arr), key=lambda x: arr.count('1'))
+
+Tests:
+def check(sort_array):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert sort_array([1,5,2,3,4]) == [1, 2, 4, 3, 5]
+    assert sort_array([-2,-3,-4,-5,-6]) == [-4, -2, -6, -5, -3]
+    assert sort_array([1,0,2,3,4]) == [0, 1, 2, 4, 3]
+    assert sort_array([]) == []
+    assert sort_array([2,5,77,4,5,3,5,7,2,3,4]) == [2, 2, 4, 4, 3, 3, 5, 5, 5, 7, 77]
+    assert sort_array([3,6,44,12,32,5]) == [32, 3, 5, 6, 12, 44]
+    assert sort_array([2,4,8,16,32]) == [2, 4, 8, 16, 32]
+    assert sort_array([2,4,8,16,32]) == [2, 4, 8, 16, 32]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+check(sort_array)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `sort_array(arr)` to solve the following problem:
+In this Kata, you have to sort an array of non-negative integers according to
+number of ones in their binary representation in ascending order.
+For similar number of ones, sort based on decimal value.
+It must be implemented like this:
+<fim_suffix><fim_middle>
+def sort_array(arr):
+    # your code here
+
+Fixed Code:
+```python
+def sort_array(arr):
+    return sorted(arr, key=lambda x: (bin(x).count('1'), x))
+```
+
+
+    
+Fix bugs in is_palindrome.
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def is_palindrome(s):
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("a") == True
+    assert is_palindrome("aba") == True
+    assert is_palindrome("abba") == True
+    assert is_palindrome("abcba") == True
+    assert is_palindrome("abccba") == True
+    assert is_palindrome("abcccba") == True
+    assert is_palindrome("abccbbca") == True
+    assert is_palindrome("abccbbcaa") == True
+    assert is_palindrome("abccbbcaaa") == True
+    assert is_palindrome("abccbbcaaaa") == True
+    assert is_palindrome("abccbbcaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaaaaaaaaaaa") == True
+    assert is_palindrome("abccbbcaaaaaaaaaaaaaaaaaaaaa")

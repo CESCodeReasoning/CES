@@ -1,0 +1,32 @@
+The function `strange_sort_list` is called with the list `[1, 2, 3, 4]`.
+Inside the function, two variables are initialized: `res` as an empty list to store the result, and `switch` as `True` to control the alternating behavior between selecting the minimum and maximum elements.
+
+First Iteration:
+- `lst` = [1, 2, 3, 4], `switch` = True.
+- Since `switch` is True, `min(lst)` is selected, which is 1.
+- 1 is appended to `res`, making `res` = [1].
+- 1 is removed from `lst`, updating `lst` to [2, 3, 4].
+- `switch` is toggled to False.
+
+Second Iteration:
+- `lst` = [2, 3, 4], `switch` = False.
+- Since `switch` is False, `max(lst)` is selected, which is 4.
+- 4 is appended to `res`, making `res` = [1, 4].
+- 4 is removed from `lst`, updating `lst` to [2, 3].
+- `switch` is toggled to True.
+
+Third Iteration:
+- `lst` = [2, 3], `switch` = True.
+- Since `switch` is True, `min(lst)` is selected, which is 2.
+- 2 is appended to `res`, making `res` = [1, 4, 2].
+- 2 is removed from `lst`, updating `lst` to [3].
+- `switch` is toggled to False.
+
+Fourth Iteration:
+- `lst` = [3], `switch` = False.
+- Since `switch` is False, `max(lst)` is selected, which is 3.
+- 3 is appended to `res`, making `res` = [1, 4, 2, 3].
+- 3 is removed from `lst`, updating `lst` to [].
+- `switch` is toggled to True.
+
+The while loop terminates as `lst` is empty. The function returns the value of `res`, which is now [1, 4, 2, 3].

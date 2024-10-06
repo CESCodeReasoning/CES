@@ -1,0 +1,37 @@
+The function `by_length` is called with (arr = [2, 1, 1, 4, 5, 8, 2, 3]).
+Inside the function, a dictionary `dic` is created with key-value pairs of length-string.
+The list `sorted_arr` is sorted in reverse order using the `sorted` function.
+The loop iterates over the sorted list `sorted_arr`.
+
+First Iteration(var = 9):
+    `dic[var]` is not found in the dictionary, so the `try` block is skipped.
+    `new_arr` is not modified.
+Second Iteration(var = 8):
+    `dic[var]` is not found in the dictionary, so the `try` block is skipped.
+    `new_arr` is not modified.
+Third Iteration(var = 7):
+    `dic[var]` is not found in the dictionary, so the `try` block is skipped.
+    `new_arr` is not modified.
+Fourth Iteration(var = 6):
+    `dic[var]` is not found in the dictionary, so the `try` block is skipped.
+    `new_arr` is not modified.
+Fifth Iteration(var = 5):
+    `dic[var]` is not found in the dictionary, so the `try` block is skipped.
+    `new_arr` is not modified.
+Sixth Iteration(var = 4):
+    `dic[var]` is not found in the dictionary, so the `try` block is skipped.
+    `new_arr` is not modified.
+Seventh Iteration(var = 3):
+    `dic[var]` is not found in the dictionary, so the `try` block is skipped.
+    `new_arr` is not modified.
+Eighth Iteration(var = 2):
+    `dic[var]` is not found in the dictionary, so the `try` block is skipped.
+    `new_arr` is not modified.
+Ninth Iteration(var = 1):
+    `dic[var]` is not found in the dictionary, so the `try` block is skipped.
+    `new_arr` is not modified.
+Tenth Iteration(var = 1):
+    `dic[var]` is not found in the dictionary, so the `try` block is skipped.
+    `new_arr` is not modified.
+
+After the loop completes, the function returns the value of `new_arr`, which is an empty list.

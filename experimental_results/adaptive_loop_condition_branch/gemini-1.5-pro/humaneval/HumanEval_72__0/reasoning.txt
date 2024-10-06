@@ -1,0 +1,2 @@
+The function `will_it_fly` is called with ( q = [3, 2, 3], w = 1 ).
+First, the function checks if the sum of the elements in `q` is greater than `w`. Since the sum of the elements in `q` ( 3 + 2 + 3 = 8 ) is greater than `w` ( 1 ), the first branch is taken and the function returns False.

@@ -1,0 +1,11 @@
+The function `count_upper` is called with ( s = 'dBBE' ).
+Inside the function, a variable `count` is initialized to 0.
+The loop iterates from 0 to the length of the string ( 4 ) with a step of 2.
+First Iteration (i = 0)
+   - `s[i]` is 'd', which is not in "AEIOU".
+   - The condition `s[i] in "AEIOU"` is false.
+   - Action: `count` remains 0.
+Second Iteration (i = 2)
+   - `s[i]` is 'B', which is not in "AEIOU".
+   - The condition `s[i] in "AEIOU"` is false.
+   - Action: `count` remains 0.

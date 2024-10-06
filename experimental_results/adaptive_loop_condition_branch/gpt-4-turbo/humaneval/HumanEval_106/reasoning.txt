@@ -1,0 +1,12 @@
+The function `f(n)` takes an integer `n` and returns a list of integers. The function iterates from 1 to `n` inclusive. For each integer `i`:
+- If `i` is even (`i % 2 == 0`), it calculates the factorial of `i` (product of all integers from 1 to `i`) and appends the result to the list `ret`.
+- If `i` is odd, it calculates the sum of all integers from 1 to `i` and appends the result to the list `ret`.
+
+Let's walk through the function with `n = 5`:
+1. `i = 1` (odd): Calculate the sum of numbers from 1 to 1, which is 1. Append 1 to `ret`.
+2. `i = 2` (even): Calculate the factorial of 2, which is 2. Append 2 to `ret`.
+3. `i = 3` (odd): Calculate the sum of numbers from 1 to 3, which is 6. Append 6 to `ret`.
+4. `i = 4` (even): Calculate the factorial of 4, which is 24. Append 24 to `ret`.
+5. `i = 5` (odd): Calculate the sum of numbers from 1 to 5, which is 15. Append 15 to `ret`.
+
+The final list `ret` will be `[1, 2, 6, 24, 15]`.

@@ -1,0 +1,7 @@
+from typing import *
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    closest_pair = None
+    distance = None
+ ## [STATE]idx=[0, 1, 2, 3, 4, 5][/STATE][STATE]elem=[1.0, 2.0, 3.9, 4.0, 5.0, 2.2][/STATE]
+    for idx, elem in enumerate(numbers): ## [STATE]idx2=[1, 2, 3, 4, 5, 2, 3, 4, 5, 3, 4, 5, 4, 5, 5][/STATE][STATE]elem2=[2.0, 3.9, 4.0, 5.0, 2.2, 3.9, 4.0, 5.0, 2.2, 4.0, 5.0, 2.2, 5.0, 2.2, 2.2][/STATE][STATE]enumerate(numbers)=[(0, 1.0), (1, 2.0), (2, 3.9), (3, 4.0), (4, 5.0), (5, 2.2)]][/STATE][STATE]numbers=[1.0, 2.0, 3.9, 4.0, 5.0, 2.2][/STATE]
+        for idx2, elem2 in enumerate(numbers): ## [STATE]enumerate(numbers)=[(0, 1.0), (1, 2.0), (2, 3.9), (3, 4.0), (4, 5.0), (

@@ -1,0 +1,9 @@
+The function `numerical_letter_grade` is called with ( grades = [0, 0.7] ).
+Inside the function, a variable `letter_grade` is initialized to an empty list.
+
+Iteration 1:
+    -The value of `gpa` is 0, which falls into the `else` block.
+    -The `else` block's action: `letter_grade.append("E")` updates `letter_grade` to `["E"]`.
+Iteration 2:
+    -The value of `gpa` is 0.7, which falls into the `elif gpa > 0.7` block.
+    -The `elif gpa > 0.7` block's action: `letter_grade.append("D-")` updates `letter_grade` to `["E", "D-"]`.

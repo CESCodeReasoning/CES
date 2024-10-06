@@ -1,0 +1,13 @@
+The function right_angle_triangle takes three integer arguments a, b, and c. It returns True if the given three sides form a right-angled triangle, and False otherwise.
+
+To determine if the given three sides form a right-angled triangle, we need to check if any of the following conditions is true:
+
+a^2 = b^2 + c^2
+b^2 = a^2 + c^2
+c^2 = a^2 + b^2
+
+In the given example, a = 1, b = 1, and c = 1.
+
+a^2 = b^2 + c^2 is true, so the given three sides form a right-angled triangle.
+
+Therefore, the function right_angle_triangle returns True.

@@ -1,0 +1,36 @@
+[REASONING]
+The function `fruit_distribution` is called with the string "5 apples and 6 oranges" and the number 21.
+Inside the function:
+- The string is split into a list of words: `['5', 'apples', 'and', '6', 'oranges']`.
+- An empty list `lis` is initialized to store the numbers found in the string.
+- The function iterates over each word in the split list:
+  - First Iteration (i = '5'):
+    - '5' is a digit, so it is converted to integer and added to `lis` (lis = [5]).
+  - Second Iteration (i = 'apples'):
+    - 'apples' is not a digit, so it is skipped.
+  - Third Iteration (i = 'and'):
+    - 'and' is not a digit, so it is skipped.
+  - Fourth Iteration (i = '6'):
+    - '6' is a digit, so it is converted to integer and added to `lis` (lis = [5, 6]).
+  - Fifth Iteration (i = 'oranges'):
+    - 'oranges' is not a digit, so it is skipped.
+- The sum of the list `lis` (which contains [5, 6]) is 11.
+- The function returns `n - sum(lis)`, which is `21 - 11 = 10`.
+
+Therefore, the final output of the function `fruit_distribution("5 apples and 6 oranges", 21)` is 10.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def fruit_distribution(s, n):
+    lis = list()
+    for i in s.split(' '): ## [STATE]i=['5', 'apples', 'and', '6', 'oranges'][/STATE][STATE]s.split(' ')=['5', 'apples', 'and', '6', 'oranges'][/STATE]
+        if i.isdigit(): ## [CONDITION](i.isdigit())=[True, False, False, True, False][/CONDITION][BRANCH]taken=[Y, N, N, Y, N][/BRANCH]
+            lis.append(int(i))
+    return n - sum(lis)
+[/PYTHON]
+
+[OUTPUT]
+10
+[/OUTPUT]

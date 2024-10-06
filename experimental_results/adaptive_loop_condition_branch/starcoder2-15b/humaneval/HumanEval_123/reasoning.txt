@@ -1,0 +1,99 @@
+The function `get_odd_collatz` is called with ( n = 14 ).
+Inside the function, a variable `odd_collatz` is initialized to an empty list.
+The condition `n%2==0` is false. The else branch is taken.
+`odd_collatz` is set to `[14]`.
+The loop iterates while `n` is greater than 1.
+First Iteration (n = 14):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to `n*3 + 1` ( 14 * 3 + 1 = 43 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 43 ).
+Second Iteration (n = 43):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to `n*3 + 1` ( 43 * 3 + 1 = 130 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 130 ).
+Third Iteration (n = 130):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n/2` ( 130 / 2 = 65 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 65 ).
+Fourth Iteration (n = 65):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to `n*3 + 1` ( 65 * 3 + 1 = 196 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 196 ).
+Fifth Iteration (n = 196):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n/2` ( 196 / 2 = 98 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 98 ).
+Sixth Iteration (n = 98):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n/2` ( 98 / 2 = 49 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 49 ).
+Seventh Iteration (n = 49):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to `n*3 + 1` ( 49 * 3 + 1 = 148 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 148 ).
+Eighth Iteration (n = 148):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n/2` ( 148 / 2 = 74 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 74 ).
+Ninth Iteration (n = 74):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n/2` ( 74 / 2 = 37 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 37 ).
+Tenth Iteration (n = 37):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to `n*3 + 1` ( 37 * 3 + 1 = 112 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 112 ).
+Eleventh Iteration (n = 112):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n/2` ( 112 / 2 = 56 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 56 ).
+Twelfth Iteration (n = 56):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n/2` ( 56 / 2 = 28 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 28 ).
+Thirteenth Iteration (n = 28):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n/2` ( 28 / 2 = 14 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 14 ).
+Fourteenth Iteration (n = 14):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n/2` ( 14 / 2 = 7 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 7 ).
+Fifteenth Iteration (n = 7):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to `n*3 + 1` ( 7 * 3 + 1 = 22 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 22 ).
+Sixteenth Iteration (n = 22):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to `n*3 + 1` ( 22 * 3 + 1 = 67 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 67 ).
+Seventeenth Iteration (n = 67):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to `n*3 + 1` ( 67 * 3 + 1 = 202 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 202 ).
+Eighteenth Iteration (n = 202):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n/2` ( 202 / 2 = 101 ).
+    - The condition `n%2 == 1` is true. The else branch is taken.
+    - `odd_collatz` is appended with `int(n)` ( 101 ).
+Nineteenth Iteration (n = 101):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to `n*3 + 1` ( 101 * 3 + 1 = 304 ).
+    - The condition `n%2 ==

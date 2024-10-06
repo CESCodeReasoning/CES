@@ -1,0 +1,12 @@
+The function `digits` is called with ( n = 120 ).
+Inside the function, a variable `product` and `odd_count` are initialized to 1 and 0 respectively.
+
+Iteration 1:
+    -The digit '1' is not odd, so the product and odd_count remain the same.
+Iteration 2:
+    -The digit '2' is not odd, so the product and odd_count remain the same.
+Iteration 3:
+    -The digit '0' is not odd, so the product and odd_count remain the same.
+
+The condition `odd_count == 0` is false, so the `else` block is executed.
+The function returns the value of `product`, which is 1.

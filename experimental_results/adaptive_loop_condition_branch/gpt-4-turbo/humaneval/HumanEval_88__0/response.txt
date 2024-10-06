@@ -1,0 +1,27 @@
+[REASONING]
+The function `sort_array` takes an array as input and returns a sorted version of the array. The sorting order (ascending or descending) is determined by a condition based on the sum of the first and last elements of the array. If the sum of the first and last elements is even, the array is sorted in descending order; otherwise, it is sorted in ascending order.
+
+For the input array [2, 4, 3, 0, 1, 5, 6]:
+1. The first element is 2 and the last element is 6.
+2. The sum of the first and last elements is 2 + 6 = 8.
+3. Since 8 is even, the condition `(array[0] + array[-1]) % 2 == 0` evaluates to True.
+4. Therefore, the array is sorted in descending order.
+5. The sorted array in descending order is [6, 5, 4, 3, 2, 1, 0].
+
+Thus, the output of executing `sort_array` on the input [2, 4, 3, 0, 1, 5, 6] is [6, 5, 4, 3, 2, 1, 0].
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def sort_array(array):
+    # [STATE] array = [2, 4, 3, 0, 1, 5, 6] [/STATE]
+    return [] if len(array) == 0 else sorted(
+        array, reverse=(array[0] + array[-1]) % 2 == 0)  # [CONDITION] (array[0] + array[-1]) % 2 == 0 [/CONDITION] [BRANCH] Y [/BRANCH]
+```
+[/ANSWER]
+
+[OUTPUT]
+[6, 5, 4, 3, 2, 1, 0]
+[/OUTPUT]

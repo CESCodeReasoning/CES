@@ -1,0 +1,5 @@
+The function remove_duplicates takes a list of integers as input and returns a new list that contains the same integers as the input list, but with all duplicates removed.
+To achieve this, the function first imports the collections module and creates a counter object c that counts the frequency of each integer in the input list.
+Then, the function creates a new list that contains only the integers that appear in the input list at most once.
+To do this, the function uses a list comprehension that iterates over the input list and adds each integer to the new list only if its frequency in the counter object c is less than or equal to 1.
+Therefore, the output of executing the function remove_duplicates on the input [] is also [].

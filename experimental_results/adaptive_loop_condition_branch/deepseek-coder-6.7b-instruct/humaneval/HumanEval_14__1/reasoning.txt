@@ -1,0 +1,20 @@
+The function `all_prefixes` is called with (string = '').
+Inside the function, an empty list `result` is initialized.
+`len(string)` = 0 since the input string is empty.
+The loop does not execute since `range(len(string))` is an empty range.
+
+The function returns the list `result`, which is still empty.
+
+[ANSWER]
+def all_prefixes(string: str) -> List[str]:
+    result = []
+
+    for i in range(len(string)): ## [STATE]i=[][/STATE][STATE]len(string)=[0][/STATE][STATE]range(len(string))=[][/STATE]
+        result.append(string[:i + 1])
+    return result
+[/ANSWER]
+
+[OUTPUT]
+[]
+[/OUTPUT]
+<|EOT|>

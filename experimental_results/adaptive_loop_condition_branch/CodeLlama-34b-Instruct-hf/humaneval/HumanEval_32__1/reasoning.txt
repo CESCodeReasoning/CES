@@ -1,0 +1,11 @@
+The function `find_zero` is called with a list of coefficients for a polynomial equation. The function uses the bisection method to find a zero of the polynomial.
+
+The function starts by setting the initial bounds for the bisection method. The variable `begin` is set to -1.0, and the variable `end` is set to 1.0.
+
+The first loop iterates while the product of the polynomial values at the beginning and end points is positive. This ensures that the zero is within the bounds of the interval.
+
+Inside the loop, the variable `center` is set to the midpoint of the current interval. The function then checks if the product of the polynomial values at the center and beginning points is positive. If it is, then the zero must be in the lower half of the interval, so the variable `end` is set to the center point. If it is not, then the zero must be in the upper half of the interval, so the variable `begin` is set to the center point.
+
+The loop continues until the difference between the beginning and end points is less than 1e-10. This is the stopping criterion for the bisection method.
+
+Finally, the function returns the value of the variable `begin`, which should now be very close to a zero of the polynomial.

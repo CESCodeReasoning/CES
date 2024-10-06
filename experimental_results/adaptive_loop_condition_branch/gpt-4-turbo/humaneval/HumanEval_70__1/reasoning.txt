@@ -1,0 +1,15 @@
+The function `strange_sort_list` is called with the input list containing a single element, `[111111]`.
+Inside the function:
+- `res` is initialized as an empty list.
+- `switch` is initialized as `True`.
+
+First Iteration:
+- `lst` is `[111111]`.
+- Since `switch` is `True`, the function appends the minimum value of `lst` to `res`. The minimum (and only) value is `111111`.
+- `res` is updated to `[111111]`.
+- The value `111111` is then removed from `lst`, making `lst` empty (`[]`).
+- `switch` is toggled to `False`.
+
+The while loop condition (`lst`) is now `False` because `lst` is empty. The loop terminates.
+
+The function returns the list `res`, which contains `[111111]`.

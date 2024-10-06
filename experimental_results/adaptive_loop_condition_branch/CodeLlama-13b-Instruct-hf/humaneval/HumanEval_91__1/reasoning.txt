@@ -1,0 +1,7 @@
+The function is_bored takes a string S as input and returns the number of sentences in S that start with "I ".
+To determine the output of executing the function is_bored on the input "I love It !", we need to split the string into sentences using the regular expression r'[.?!]\s*'.
+This will give us a list of sentences, where each sentence is a substring of the original string.
+Next, we need to count the number of sentences that start with "I ".
+We can do this by iterating over the list of sentences and checking if the first two characters of each sentence are "I ".
+If a sentence starts with "I ", we add 1 to the count.
+Finally, we return the count.

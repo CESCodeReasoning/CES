@@ -1,0 +1,9 @@
+The function `solve` takes an integer `N` as input and returns the binary representation of the sum of the digits of `N`.
+
+Here's the step-by-step reasoning:
+1. Convert the integer `N` to a string to easily access each digit.
+2. Convert each digit back to an integer and sum them up.
+3. Convert the sum to binary using the `bin` function, which returns a string starting with '0b' to indicate that it's a binary number. We remove the first two characters to get the binary representation.
+4. Return the binary representation.
+
+Therefore, the output of executing the function `solve` on the input `963` is `'1001001001'`.

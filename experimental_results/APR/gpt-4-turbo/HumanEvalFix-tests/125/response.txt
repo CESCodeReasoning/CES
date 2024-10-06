@@ -1,0 +1,44 @@
+Here are the fixed versions of the two functions `has_close_elements` and `split_words` based on the specifications and test cases provided:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `split_words`
+```python
+def split_words(txt: str):
+    if " " in txt:
+        return txt.split()
+    elif "," in txt:
+        return txt.replace(',', ' ').split()  # Replace commas with spaces before splitting
+    else:
+        # Count lower-case letters with odd order in the alphabet
+        return len([i for i in txt if i.islower() and ord(i) % 2 == 1])
+
+# Tests
+def check(split_words):
+    assert split_words("Hello world!") == ["Hello", "world!"]
+    assert split_words("Hello,world!") == ["Hello", "world!"]
+    assert split_words("Hello world,!") == ["Hello", "world,!"]
+    assert split_words("Hello,Hello,world !") == ["Hello,Hello,world", "!"]
+    assert split_words("abcdef") == 3
+    assert split_words("aaabb") == 2
+    assert split_words("aaaBb") == 1
+    assert split_words("") == 0
+
+check(split_words)
+```
+
+These fixes address the issues in the original code:
+- For `has_close_elements`, the absolute value is used to correctly calculate the distance between two numbers.
+- For `split_words`, the function now correctly handles splitting by commas and counts lowercase letters with odd order in the alphabet.

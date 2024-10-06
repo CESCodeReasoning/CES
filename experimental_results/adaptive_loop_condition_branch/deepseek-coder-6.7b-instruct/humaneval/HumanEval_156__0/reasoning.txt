@@ -1,0 +1,18 @@
+The function `int_to_mini_roman` is called with ( number = 900 ).
+Inside the function, there are two lists: `num` and `sym`. `num` contains the decimal values of the roman numerals and `sym` contains the corresponding roman numeral symbols.
+The while loop iterates from the highest decimal value in `num` down to 0.
+First Iteration (i = 12):
+    - number // num[i] = 900 // 1000 = 0 (no division)
+    - number % num[i] = 900 % 1000 = 900 (no change)
+    - div is 0, so the while loop is skipped.
+Second Iteration (i = 11):
+    - number // num[i] = 900 // 900 = 1 (1 division)
+    - number % num[i] = 900 % 900 = 0 (no change)
+    - res += sym[i] updates res to 'CM' ( 'CM' )
+    - div is 1, so the while loop is executed once.
+Third Iteration (i = 8):
+    - number // num[i] = 0 // 100 = 0 (no division)
+    - number % num[i] = 0 % 100 = 0 (no change)
+    - div is 0, so the while loop is skipped.
+The while loop terminates because i is less than 0.
+The function returns the value of `res`, which is now 'CM'.

@@ -1,0 +1,19 @@
+The function `digitSum` is called with the string "aAaaaXa".
+1. The function first checks if the input string `s` is empty. In this case, `s` is "aAaaaXa", so it is not empty.
+   - The condition `(s == "")` is false.
+   - Therefore, the branch for this condition is not taken.
+2. The function then proceeds to calculate the sum of the ASCII values of uppercase characters in the string. It uses a generator expression that iterates over each character in the string:
+   - For each character, it checks if the character is uppercase using `char.isupper()`.
+   - If the character is uppercase, it returns the ASCII value of the character using `ord(char)`. If not, it returns 0.
+   - The characters in "aAaaaXa" are evaluated as follows:
+     - 'a' is not uppercase, contributes 0.
+     - 'A' is uppercase, contributes ord('A') = 65.
+     - 'a' is not uppercase, contributes 0.
+     - 'a' is not uppercase, contributes 0.
+     - 'a' is not uppercase, contributes 0.
+     - 'X' is uppercase, contributes ord('X') = 88.
+     - 'a' is not uppercase, contributes 0.
+   - The sum of these values is 65 + 88 = 153.
+3. The function returns the calculated sum, which is 153.
+
+Therefore, the final output of the function `digitSum("aAaaaXa")` is 153.

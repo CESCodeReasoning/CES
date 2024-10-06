@@ -1,0 +1,13 @@
+The function `mean_absolute_deviation` calculates the mean absolute deviation of a list of numbers.
+
+1. Calculate the mean of the numbers by summing all the numbers and dividing by the total number of elements.
+2. Calculate the absolute deviation for each number by subtracting the mean and taking the absolute value.
+3. Sum up all the absolute deviations and divide by the total number of elements to get the mean absolute deviation.
+
+For the input `[1.0, 2.0, 3.0, 4.0]`:
+- The mean is calculated as `(1.0 + 2.0 + 3.0 + 4.0) / 4 = 2.5`.
+- The absolute deviations are calculated as `abs(1.0 - 2.5) = 1.5`, `abs(2.0 - 2.5) = 0.5`, `abs(3.0 - 2.5) = 0.5`, `abs(4.0 - 2.5) = 1.5`.
+- The sum of absolute deviations is `1.5 + 0.5 + 0.5 + 1.5 = 4.0`.
+- The mean absolute deviation is `4.0 / 4 = 1.0`.
+
+Therefore, the output of `mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])` is `1.0`.

@@ -1,0 +1,10 @@
+The function right_angle_triangle takes three parameters a, b, and c. It checks if any of the two sides of a right-angled triangle (hypotenuse and one of the two other sides) are squares of each other.
+
+To determine the output of executing the function right_angle_triangle on the input (3, 4, 5), we need to check if the square of the hypotenuse (5) is equal to the sum of the squares of the other two sides (3*3 + 4*4).
+
+Therefore, the output of executing the function right_angle_triangle on the input (3, 4, 5) is True.
+
+This is because 5*5 = 25 and 3*3 + 4*4 = 9 + 16 = 25, which is the definition of a right-angled triangle.
+
+So, the output is True.
+

@@ -1,0 +1,7 @@
+The function `compare_one` is called with ( a = "1", b = "2" ).
+`a` and `b` are both strings, therefore the first two if statements are executed.
+The first if statement replaces the comma in "1" with a period, resulting in "1.0".
+The second if statement replaces the comma in "2" with a period, resulting in "2.0".
+Since "1.0" and "2.0" are not equal, the third if statement is not executed and the method returns None.
+
+Therefore, the final output of the function `compare_one("1", "2")` is None.

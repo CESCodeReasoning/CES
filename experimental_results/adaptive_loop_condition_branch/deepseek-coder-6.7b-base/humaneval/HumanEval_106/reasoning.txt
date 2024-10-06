@@ -1,0 +1,32 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterates from 1 to n+1.
+In the inner loop, for each element indexed by i in the outer loop, if i is even, calculate the product of all numbers from 1 to i, and append the result to ret. If i is odd, calculate the sum of all numbers from 1 to i, and append the result to ret.
+First Iteration (i=1):
+    - `i` is 1, the condition `i%2 == 0` is False, the if branch is not taken.
+    - x = 0, the inner loop iterates from 1 to 1.
+    - x = 0 + 1 = 1
+Second Iteration (i=2):
+    - `i` is 2, the condition `i%2 == 0` is True, the if branch is taken.
+    - x = 1, the inner loop iterates from 1 to 2.
+    - x = 1 * 1 = 1
+    - x = 1 * 2 = 2
+Third Iteration (i=3):
+    - `i` is 3, the condition `i%2 == 0` is False, the if branch is not taken.
+    - x = 0, the inner loop iterates from 1 to 3.
+    - x = 0 + 1 = 1
+    - x = 1 + 2 = 3
+Forth Iteration (i=4):
+    - `i` is 4, the condition `i%2 == 0` is True, the if branch is taken.
+    - x = 1, the inner loop iterates from 1 to 4.
+    - x = 1 * 1 = 1
+    - x = 1 * 2 = 2
+    - x = 2 * 3 = 6
+Fifth Iteration (i=5):
+    - `i` is 5, the condition `i%2 == 0` is False, the if branch is not taken.
+    - x = 0, the inner loop iterates from 1 to 5.
+    - x = 0 + 1 = 1
+    - x = 1 + 2 = 3
+    - x = 3 + 3 = 6
+    - x = 6 + 4 = 10
+Sixth iteration (i=6):
+    No more elements to compare.

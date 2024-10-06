@@ -1,0 +1,121 @@
+The function `strange_sort_list` is called with ( lst = [1, 2, 3, 4]).
+Inside the function, a variable `res` is initialized to an empty list.
+Inside the function, a variable `switch` is initialized to True.
+First Iteration:
+    - lst = [1, 2, 3, 4], min(lst) = 1, max(lst) = 4.
+    - `res.append(min(lst) if switch else max(lst))` updates `res` to [1].
+    - `lst.remove(res[-1])` updates `lst` to [2, 3, 4].
+    - `switch = not switch` updates `switch` to False.
+Second Iteration:
+    - lst = [2, 3, 4], min(lst) = 2, max(lst) = 4.
+    - `res.append(min(lst) if switch else max(lst))` updates `res` to [1, 2].
+    - `lst.remove(res[-1])` updates `lst` to [3, 4].
+    - `switch = not switch` updates `switch` to True.
+Third Iteration:
+    - lst = [3, 4], min(lst) = 3, max(lst) = 4.
+    - `res.append(min(lst) if switch else max(lst))` updates `res` to [1, 2, 3].
+    - `lst.remove(res[-1])` updates `lst` to [4].
+    - `switch = not switch` updates `switch` to False.
+Fourth Iteration:
+    - lst = [4], min(lst) = 4, max(lst) = 4.
+    - `res.append(min(lst) if switch else max(lst))` updates `res` to [1, 2, 3, 4].
+    - `lst.remove(res[-1])` updates `lst` to [].
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch = not switch` updates `switch` to True.
+    - `switch = not switch` updates `switch` to False.
+    - `switch =

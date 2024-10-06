@@ -1,0 +1,6 @@
+The function `pluck` is called with ( arr = [5, 0, 3, 0, 4, 2] ).
+The length of `arr` is 6, which is not equal to 0. Therefore, the first if branch is not taken.
+The second if branch is not taken because `evens` is not an empty list.
+The method returns [2, 4].
+
+Therefore, the final output of the function `pluck([5, 0, 3, 0, 4, 2])` is [2, 4].

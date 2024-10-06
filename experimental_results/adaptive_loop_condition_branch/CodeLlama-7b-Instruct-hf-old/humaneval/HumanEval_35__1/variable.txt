@@ -1,0 +1,9 @@
+from typing import *
+
+
+def max_element(l: list):
+    m = l[0]
+    for e in l: ## [STATE]e=??[/STATE][STATE]l=??[/STATE]
+        if e > m: ## [CONDITION](e > m)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            m = e
+    return m

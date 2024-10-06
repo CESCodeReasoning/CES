@@ -1,0 +1,6 @@
+The function `compare_one` is called with ( a = 5, b = 6 ).
+`a` and `b` are both integers, so the first two if conditions are not met.
+The third if condition is met, since `float(5) == float(6)` is `True`.
+Therefore, the method returns `None`.
+
+Therefore, the final output of the function `compare_one(5, 6)` is `None`.

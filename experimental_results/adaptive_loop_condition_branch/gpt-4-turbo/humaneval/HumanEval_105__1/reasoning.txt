@@ -1,0 +1,7 @@
+The function `by_length` is called with an empty list `arr = []`.
+Inside the function, a dictionary `dic` is defined which maps integers to their corresponding English words from one to nine.
+The list `arr` is sorted in reverse order, but since it is empty, `sorted_arr` remains an empty list `[]`.
+The variable `new_arr` is initialized as an empty list.
+The for loop attempts to iterate over `sorted_arr`, but since `sorted_arr` is empty, the loop does not execute any iterations.
+No exceptions are raised because the loop body does not execute.
+Finally, the function returns `new_arr`, which is still an empty list.

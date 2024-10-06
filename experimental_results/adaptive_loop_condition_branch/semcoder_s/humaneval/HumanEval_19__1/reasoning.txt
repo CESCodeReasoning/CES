@@ -1,0 +1,9 @@
+The function `sort_numbers` takes a string of space-separated numbers in words as input and returns the numbers sorted in ascending order.
+
+Here's the step-by-step reasoning:
+1. A dictionary `value_map` is created to map the word numbers to their corresponding integer values.
+2. The input string is split by space and filtered to remove any empty strings.
+3. The list of numbers is sorted based on the corresponding integer values from the `value_map` dictionary.
+4. The sorted list of numbers is joined back into a string with spaces and returned as the output.
+
+For the input 'three five nine', the numbers are 'three', 'five', and 'nine'. After sorting them based on their corresponding integer values, the output will be 'five nine three'.

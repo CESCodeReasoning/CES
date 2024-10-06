@@ -1,0 +1,25 @@
+The function `all_prefixes` is called with the argument (string = 'asdfgh').
+Inside the function, an empty list `result` is initialized.
+`len(string)` is calculated to be 6, as there are 6 characters in 'asdfgh'.
+The loop iterates from 0 to 5, since `range(len(string))` generates numbers from 0 to 5.
+
+First Iteration (i = 0):
+    `string[:i+1]` results in 'a'
+    'a' is appended to `result`, making it ['a'].
+Second Iteration (i = 1):
+    `string[:i+1]` results in 'as'
+    'as' is appended to `result`, making it ['a', 'as'].
+Third Iteration (i = 2):
+    `string[:i+1]` results in 'asd'
+    'asd' is appended to `result`, making it ['a', 'as', 'asd'].
+Fourth Iteration (i = 3):
+    `string[:i+1]` results in 'asdf'
+    'asdf' is appended to `result`, making it ['a', 'as', 'asd', 'asdf'].
+Fifth Iteration (i = 4):
+    `string[:i+1]` results in 'asdfg'
+    'asdfg' is appended to `result`, making it ['a', 'as', 'asd', 'asdf', 'asdfg'].
+Sixth Iteration (i = 5):
+    `string[:i+1]` results in 'asdfgh'
+    'asdfgh' is appended to `result`, making it ['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh'].
+
+After the loop completes, the function returns the `result` list containing all prefixes of the input string.

@@ -1,0 +1,76 @@
+[REASONING]
+The function find_closest_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2]) takes a list of float numbers as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (idx=0, elem=1.0):
+    - Compare with 2.0, 3.9, 4.0, 5.0, 2.2:
+        - When idx2 = 1 (elem2=2.0), the condition `idx != idx2` is True, the if branch is taken.
+            - Since `distance` is None, the if branch of the inner if statement is taken.
+            - Calculate the distance between 1.0 and 2.0, which is 1.0.
+            - Update `closest_pair` to be (1.0, 2.0).
+        - When idx2 = 2 (elem2=3.9), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 1.0 and 3.9, which is 2.9.
+            - Since the new distance is greater than the current distance, the else branch of the inner if statement is taken.
+        - When idx2 = 3 (elem2=4.0), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 1.0 and 4.0, which is 3.0.
+            - Since the new distance is greater than the current distance, the else branch of the inner if statement is taken.
+        - When idx2 = 4 (elem2=5.0), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 1.0 and 5.0, which is 4.0.
+            - Since the new distance is greater than the current distance, the else branch of the inner if statement is taken.
+        - When idx2 = 5 (elem2=2.2), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 1.0 and 2.2, which is 1.2.
+            - Since the new distance is less than the current distance, the if branch of the inner if statement is taken.
+            - Update `closest_pair` to be (1.0, 2.2).
+Second Iteration (idx=1, elem=2.0):
+    - Compare with 3.9, 4.0, 5.0, 2.2:
+        - When idx2 = 2 (elem2=3.9), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 2.0 and 3.9, which is 1.9.
+            - Since the new distance is less than the current distance, the if branch of the inner if statement is taken.
+            - Update `closest_pair` to be (2.0, 3.9).
+        - When idx2 = 3 (elem2=4.0), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 2.0 and 4.0, which is 2.0.
+            - Since the new distance is greater than the current distance, the else branch of the inner if statement is taken.
+        - When idx2 = 4 (elem2=5.0), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 2.0 and 5.0, which is 3.0.
+            - Since the new distance is greater than the current distance, the else branch of the inner if statement is taken.
+        - When idx2 = 5 (elem2=2.2), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 2.0 and 2.2, which is 0.2.
+            - Since the new distance is less than the current distance, the if branch of the inner if statement is taken.
+            - Update `closest_pair` to be (2.0, 2.2).
+Third Iteration (idx=2, elem=3.9):
+    - Compare with 4.0, 5.0, 2.2:
+        - When idx2 = 3 (elem2=4.0), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 3.9 and 4.0, which is 0.1.
+            - Since the new distance is less than the current distance, the if branch of the inner if statement is taken.
+            - Update `closest_pair` to be (3.9, 4.0).
+        - When idx2 = 4 (elem2=5.0), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 3.9 and 5.0, which is 1.1.
+            - Since the new distance is greater than the current distance, the else branch of the inner if statement is taken.
+        - When idx2 = 5 (elem2=2.2), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 3.9 and 2.2, which is 1.7.
+            - Since the new distance is greater than the current distance, the else branch of the inner if statement is taken.
+Fourth Iteration (idx=3, elem=4.0):
+    - Compare with 5.0, 2.2:
+        - When idx2 = 4 (elem2=5.0), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 4.0 and 5.0, which is 1.0.
+            - Since the new distance is greater than the current distance, the else branch of the inner if statement is taken.
+        - When idx2 = 5 (elem2=2.2), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 4.0 and 2.2, which is 1.8.
+            - Since the new distance is greater than the current distance, the else branch of the inner if statement is taken.
+Fifth Iteration (idx=4, elem=5.0):
+    - Compare with 2.2:
+        - When idx2 = 5 (elem2=2.2), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 5.0 and 2.2, which is 2.8.
+            - Since the new distance is greater than the current distance, the else branch of the inner if statement is taken.
+Sixth Iteration (idx=5, elem=2.2):
+    - No more elements to compare.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    closest_pair = None
+    distance = None
+ ## [STATE]idx=[0, 1, 2, 3, 4, 5][/STATE][STATE]elem=[1.0, 2.0, 3.9, 4.0, 5.0, 2.2][/STATE]
+    for idx, elem in enumerate(numbers): ## [STATE]idx2=[1, 2, 3, 4, 5, 2, 3, 4, 5, 3, 4, 5, 4, 5, 5][/STATE][STATE]elem2=[2.0, 3.9, 4.0, 5.0, 2.2, 3.9, 4.0, 5.0, 2.2, 4.0, 5.0, 2.2, 5.0, 2.2, 2.2][/STATE][STATE]enumerate(numbers)=[(0, 1.0), (1, 2.0), (2, 3.9), (3, 4.0), (4, 5.0), (5, 2.2)]][/STATE][STATE]numbers=[1.0, 2.0, 3.9, 4.0, 5.0, 2.2][/STATE]
+        for idx2, elem2 in enumerate(numbers): ## [STATE]enumerate(numbers)=[(0, 1.0), (1, 2.0), (2, 3.9), (3, 4.0), (4, 5.0), (

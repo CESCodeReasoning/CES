@@ -1,0 +1,18 @@
+from typing import *
+
+
+def poly(xs: list, x: float):
+    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])
+
+def find_zero(xs: list):
+    begin, end = -1., 1.
+    while poly(xs, begin) * poly(xs, end) > 0: ## [STATE]((poly(xs, begin) * poly(xs, end)) > 0)=[True][/STATE][STATE](poly(xs, begin) * poly(xs, end))=[value depends on polynomial evaluation][/STATE]
+        begin *= 2.0
+        end *= 2.0
+    while end - begin > 1e-10: ## [STATE]((end - begin) > 1e-10)=[True][/STATE][STATE](end - begin)=[value decreases progressively][/STATE]
+        center = (begin + end) / 2.0
+        if poly(xs, center) * poly(xs, begin) > 0: ## [CONDITION](poly(xs, center) * poly(xs, begin) > 0)=[True or False, depends on iteration][/CONDITION][BRANCH]taken=[Y or N, depends on iteration][/BRANCH]
+            begin = center
+        else: ## [BRANCH]taken=[Y or N, opposite of above][/BRANCH]
+            end = center
+    return begin

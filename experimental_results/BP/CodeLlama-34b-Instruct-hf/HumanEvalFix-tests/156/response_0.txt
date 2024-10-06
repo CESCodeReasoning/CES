@@ -1,0 +1,7 @@
+```response
+No
+```
+
+The code is not buggy. It correctly converts the given positive integers to their Roman numeral equivalents in lowercase. The function uses a list of numbers and their corresponding Roman numeral symbols to perform the conversion. The function works by dividing the input number by the largest number in the list that is less than or equal to the input number, and then appending the corresponding Roman numeral symbol to the result. The function then repeats this process with the remaining numbers in the list until the input number is 0.
+
+The tests provided in the code snippet also confirm that the function works correctly for a variety of inputs.

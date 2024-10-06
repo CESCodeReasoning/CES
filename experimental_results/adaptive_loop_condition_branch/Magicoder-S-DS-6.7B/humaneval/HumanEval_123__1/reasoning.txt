@@ -1,0 +1,63 @@
+The function `get_odd_collatz` is called with ( n = 5 ).
+The first condition `n % 2 == 0` is false, so the else branch is taken.
+The list `odd_collatz` is initialized with the value of `n`, which is 5.
+The while loop iterates until `n` becomes 1.
+First Iteration (n = 5):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to 15 ( 5 * 3 + 1 = 15 ).
+Second Iteration (n = 15):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to 46 ( 15 * 3 + 1 = 46 ).
+Third Iteration (n = 46):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 23 ( 46 / 2 = 23 ).
+Fourth Iteration (n = 23):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to 70 ( 23 * 3 + 1 = 70 ).
+Fifth Iteration (n = 70):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 35 ( 70 / 2 = 35 ).
+Sixth Iteration (n = 35):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to 106 ( 35 * 3 + 1 = 106 ).
+Seventh Iteration (n = 106):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 53 ( 106 / 2 = 53 ).
+Eighth Iteration (n = 53):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to 160 ( 53 * 3 + 1 = 160 ).
+Ninth Iteration (n = 160):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 80 ( 160 / 2 = 80 ).
+Tenth Iteration (n = 80):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 40 ( 80 / 2 = 40 ).
+Eleventh Iteration (n = 40):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 20 ( 40 / 2 = 20 ).
+Twelfth Iteration (n = 20):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 10 ( 20 / 2 = 10 ).
+Thirteenth Iteration (n = 10):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 5 ( 10 / 2 = 5 ).
+Fourteenth Iteration (n = 5):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to 16 ( 5 * 3 + 1 = 16 ).
+Fifteenth Iteration (n = 16):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 8 ( 16 / 2 = 8 ).
+Sixteenth Iteration (n = 8):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 4 ( 8 / 2 = 4 ).
+Seventeenth Iteration (n = 4):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 2 ( 4 / 2 = 2 ).
+Eighteenth Iteration (n = 2):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 1 ( 2 / 2 = 1 ).
+Nineteenth Iteration (n = 1):
+    - The condition `n % 2 == 0` is true. The first branch is taken.
+    - `n` is updated to 0 ( 1 / 2 = 0 ).
+The while loop ends as `n` becomes 0.
+The function returns the sorted list `odd_collatz`, which is [5, 16, 8, 4, 2].

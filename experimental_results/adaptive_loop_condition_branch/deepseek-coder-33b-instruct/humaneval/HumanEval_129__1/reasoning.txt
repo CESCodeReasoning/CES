@@ -1,0 +1,29 @@
+The function `minPath` is called with ( grid = [[8, 14, 9, 2], [6, 4, 13, 15], [5, 7, 1, 12], [3, 10, 11, 16]], k = 5 ).
+Inside the function, a variable `val` is initialized to `n * n + 1`.
+
+Iteration 1:
+    -The character '8' is not in vowels,so consonant_count becomes 1.
+Iteration 2:
+    -The character 'e' is in vowels, so vowel_count becomes 1.
+Iteration 3:
+    -The character 'l' is not in vowels, so consonant_count becomes 2.
+Iteration 4:
+    -The character 'l' is not in vowels, so consonant_count becomes 3.
+Iteration 5:
+    -The character 'o' is in vowels, so vowel_count becomes 2.
+Iteration 6:
+    -The character ',' is not in vowels, so consonant_count becomes 4.
+Iteration 7:
+    -The character ' ' (space) is not in vowels, so consonant_count becomes 5.
+Iteration 8:
+    -The character 'W' is not in vowels, so consonant_count becomes 6.
+Iteration 9:
+    -The character 'o' is in vowels, so vowel_count becomes 3.
+Iteration 10:
+    -The character 'r' is not in vowels, so consonant_count becomes 7.
+Iteration 11:
+    -The character 'l' is not in vowels, so consonant_count becomes 8.
+Iteration 12:
+    -The character 'd' is not in vowels, so consonant_count becomes 9.
+Iteration 13:
+    -The character '!' is not in vowels, so consonant_count becomes 10.

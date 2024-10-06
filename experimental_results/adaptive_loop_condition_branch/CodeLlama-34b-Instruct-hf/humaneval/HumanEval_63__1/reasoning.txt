@@ -1,0 +1,24 @@
+The function `fibfib` is called with ( n = 10 ).
+Inside the function, the first condition `n == 0` is checked.
+Since `n` is 10, this condition is false.
+The second condition `n == 1` is checked.
+Since `n` is 10, this condition is also false.
+The third condition `n == 2` is checked.
+Since `n` is 10, this condition is also false.
+The fourth condition `n == 3` is checked.
+Since `n` is 10, this condition is also false.
+The fifth condition `n == 4` is checked.
+Since `n` is 10, this condition is also false.
+The sixth condition `n == 5` is checked.
+Since `n` is 10, this condition is also false.
+The seventh condition `n == 6` is checked.
+Since `n` is 10, this condition is also false.
+The eighth condition `n == 7` is checked.
+Since `n` is 10, this condition is also false.
+The ninth condition `n == 8` is checked.
+Since `n` is 10, this condition is also false.
+The tenth condition `n == 9` is checked.
+Since `n` is 10, this condition is also false.
+The eleventh condition `n == 10` is checked.
+Since `n` is 10, this condition is true.
+The function returns the value of `fibfib(n - 1) + fibfib(n - 2) + fibfib(n - 3)`, which is 55.

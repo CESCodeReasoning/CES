@@ -1,0 +1,47 @@
+[REASONING]
+The function select_words(s, n) takes a string s("Hello world") and an integer n(4) as its parameters.
+The function splits the string into a list of words using the split() method.
+For each word in the list, the function counts the number of consonants in the word.
+If the number of consonants in the word is equal to n, the function adds the word to the result list.
+The function returns the result list.
+First Iteration (word="Hello"):
+    - `word` is "Hello", len(word) is 5.
+    - `i` is 0, 1, 2, 3, 4.
+    - word[i].lower() is "h", "e", "l", "l", "o".
+    - "h" is not in ["a", "e", "i", "o", "u"], so n_consonants is 1.
+    - "e" is in ["a", "e", "i", "o", "u"], so n_consonants is still 1.
+    - "l" is not in ["a", "e", "i", "o", "u"], so n_consonants is 2.
+    - "l" is not in ["a", "e", "i", "o", "u"], so n_consonants is still 2.
+    - "o" is in ["a", "e", "i", "o", "u"], so n_consonants is still 2.
+    - n_consonants is not equal to n, so the word is not added to the result list.
+Second Iteration (word="world"):
+    - `word` is "world", len(word) is 5.
+    - `i` is 0, 1, 2, 3, 4.
+    - word[i].lower() is "w", "o", "r", "l", "d".
+    - "w" is not in ["a", "e", "i", "o", "u"], so n_consonants is 1.
+    - "o" is in ["a", "e", "i", "o", "u"], so n_consonants is still 1.
+    - "r" is not in ["a", "e", "i", "o", "u"], so n_consonants is 2.
+    - "l" is not in ["a", "e", "i", "o", "u"], so n_consonants is 3.
+    - "d" is not in ["a", "e", "i", "o", "u"], so n_consonants is 4.
+    - n_consonants is equal to n, so the word is added to the result list.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def select_words(s, n):
+    result = []
+    for word in s.split(): ## [STATE]word=["Hello", "world"][/STATE][STATE]s.split()=["Hello", "world"][/STATE]
+        n_consonants = 0
+        for i in range(0, len(word)): ## [STATE]i=[0, 1, 2, 3, 4, 0, 1, 2, 3, 4][/STATE][STATE]range(0, len(word))=[[0, 1, 2, 3, 4], [0, 1, 2, 3, 4]][/STATE][STATE]len(word)=[5, 5][/STATE]
+            if word[i].lower() not in ["a", "e", "i", "o", "u"]: ## [CONDITION](word[i].lower() not in ["a", "e", "i", "o", "u"])=[True, False, True, True, False, True, False, True, True, True][/CONDITION][BRANCH]taken=[T, F, T, T, F, T, F, T, T, T][/BRANCH]
+                n_consonants += 1
+        if n_consonants == n: ## [CONDITION](n_consonants == n)=[F, T][/CONDITION][BRANCH]taken=[F, T][/BRANCH]
+            result.append(word)
+    return result
+[/ANSWER]
+
+[OUTPUT]
+['world']
+[/OUTPUT]

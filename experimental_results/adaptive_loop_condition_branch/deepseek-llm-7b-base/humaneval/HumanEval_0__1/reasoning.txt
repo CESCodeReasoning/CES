@@ -1,0 +1,37 @@
+The function has_close_elements(numbers, threshold) takes two parameters: numbers, a list of floats, and threshold, a float.
+The function iterates through each element in the list numbers.
+For each element, it iterates through the remaining elements in the list.
+If the current element is not equal to the current index in the list, it calculates the distance between the current element and the current index.
+If the distance is less than the threshold, it returns True.
+If the loop completes without returning True, it returns False.
+
+[ANSWER]
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers): ## [STATE]idx=[0, 1, 2, 3, 4, 5][/STATE][STATE]elem=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE][STATE]enumerate(numbers)=??[/STATE][STATE]numbers=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE][STATE]len(numbers)=[5][/STATE]
+        for idx2, elem2 in enumerate(numbers): ## [STATE]idx2=[1, 2, 3, 4, 5][/STATE][STATE]elem2=[2.2, 3.1, 4.1, 5.1][/STATE][STATE]enumerate(numbers)=??[/STATE][STATE]numbers=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE][STATE]len(numbers)=[5][/STATE]
+            if idx != idx2: ## [CONDITION](idx != idx2)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                distance = abs(elem - elem2)
+                if distance < threshold: ## [CONDITION](distance < threshold)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                    return True
+
+    return False
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]
+
+[CODE]
+def find_all_duplicate(numbers: List[float]) -> List[float]:
+    duplicates = []
+    for i in range(len(numbers)): ## [STATE]i=[0, 1, 2, 3, 4, 5][/STATE][STATE]range(len(numbers))=??[/STATE][STATE]len(numbers)=??[/STATE]
+        for j in range(i + 1, len(numbers)): ## [STATE]j=[1, 2, 3, 4, 5][/STATE][STATE]range(i + 1, len(numbers))=??[/STATE][STATE]len(numbers)=??[/STATE]
+            if numbers[i] == numbers[j]: ## [CONDITION](numbers[i] == numbers[j])=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                duplicates.append(numbers[i])
+    return duplicates
+[/CODE]
+
+[INPUT]
+find_all_duplicate([3, 5, 4, 3, 7, 4])
+[/INPUT]
+

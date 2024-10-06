@@ -1,0 +1,22 @@
+The function `exchange` is called with ( lst1 = [100, 200], lst2 = [200, 200] ).
+Inside the function, two variables `odd` and `even` are initialized to 0.
+
+First, the function counts the number of odd numbers in `lst1`.
+Iteration 1:
+    -The number 100 is even, so it is not counted.
+Iteration 2:
+    -The number 200 is even, so it is not counted.
+So, `odd` is 0.
+
+Next, the function counts the number of even numbers in `lst2`.
+Iteration 1:
+    -The number 200 is even, so it is counted.
+Iteration 2:
+    -The number 200 is even, so it is counted.
+So, `even` is 2.
+
+Finally, the function checks if `even` is greater than or equal to `odd`.
+Since `even` is 2 and `odd` is 0, the condition `even >= odd` is True.
+So, the function returns "YES".
+
+Therefore, the final output of the function `exchange([100, 200], [200, 200])` is "YES".

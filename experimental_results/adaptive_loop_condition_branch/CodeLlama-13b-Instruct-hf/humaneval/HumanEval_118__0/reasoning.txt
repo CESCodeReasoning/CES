@@ -1,0 +1,6 @@
+The function `get_closest_vowel` is called with ( word = "full" ).
+Inside the function, a variable `vowels` is initialized to a set of vowels.
+
+The first condition `len(word) < 3` is true, so the function returns an empty string.
+
+Therefore, the final output of the function `get_closest_vowel("full")` is "".

@@ -1,0 +1,24 @@
+[REASONING]
+The function `sort_array` takes a list `array` as input. It first checks if the list is empty. If it is, the function returns an empty list. If the list is not empty, it sorts the list. The sorting order (ascending or descending) is determined by the sum of the first and last elements of the list. If this sum is even, the list is sorted in descending order; otherwise, it is sorted in ascending order.
+
+For the input `[15, 42, 87, 32, 11, 0]`, the function checks if the list is empty. Since it is not, it proceeds to determine the sorting order. The sum of the first element (15) and the last element (0) is 15, which is odd. Therefore, the list is sorted in ascending order.
+
+The sorted list in ascending order is `[0, 11, 15, 32, 42, 87]`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def sort_array(array):
+    # [STATE] array = [15, 42, 87, 32, 11, 0] [/STATE]
+    # [CONDITION] len(array) == 0 [/CONDITION]
+    # [BRANCH] N [/BRANCH]
+    return [] if len(array) == 0 else sorted(array, reverse= (array[0]+array[-1]) % 2 == 0) 
+    # [STATE] array[0] = 15, array[-1] = 0, (array[0]+array[-1]) % 2 = 15 % 2 = 1 [/STATE]
+    # [CONDITION] (array[0]+array[-1]) % 2 == 0 [/CONDITION]
+    # [BRANCH] N [/BRANCH]
+[/PYTHON]
+
+[OUTPUT]
+[0, 11, 15, 32, 42, 87]
+[/OUTPUT]

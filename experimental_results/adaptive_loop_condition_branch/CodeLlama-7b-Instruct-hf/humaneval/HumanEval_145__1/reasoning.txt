@@ -1,0 +1,7 @@
+The function `order_by_points` takes a list of numbers as input and returns a sorted list of the same numbers, ordered by the sum of their digits.
+
+The function first defines a helper function `digits_sum` that takes a number as input and returns the sum of its digits. If the number is negative, the function negates it and then calculates the sum of its digits.
+
+The function then uses the `sorted` function to sort the input list `nums` based on the `key` function `digits_sum`. The `key` function is a lambda function that takes a number `n` and returns the sum of its digits.
+
+Therefore, the final output of the function `order_by_points([])` is an empty list, since the input list is empty.

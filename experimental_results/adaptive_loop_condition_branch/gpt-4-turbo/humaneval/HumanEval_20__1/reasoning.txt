@@ -1,0 +1,15 @@
+The function `find_closest_elements(numbers)` takes a list of floating-point numbers ([1.0, 2.0, 3.0, 4.0, 5.0, 2.2]) as its parameter.
+The goal is to find the pair of elements with the smallest absolute difference between them.
+
+The function initializes `closest_pair` and `distance` to `None`.
+
+The outer loop iterates through each element in the list, using `enumerate` to get both the index (`idx`) and the value (`elem`) of each element.
+The inner loop does the same, providing `idx2` and `elem2` for comparison against `idx` and `elem`.
+
+For each pair of elements (where `idx` is not equal to `idx2`), the function calculates the absolute difference between the two elements. If `distance` is `None` (which is true for the first valid comparison), it sets `distance` to this difference and records the pair as `closest_pair`.
+
+If `distance` is not `None`, the function checks if the newly calculated difference (`new_distance`) is smaller than the current `distance`. If it is, it updates `distance` and `closest_pair` to reflect this new closest pair.
+
+The function continues this process for all pairs and returns the `closest_pair` with the smallest difference.
+
+For the given input, the closest pair is `(2.0, 2.2)` with a difference of `0.2`.

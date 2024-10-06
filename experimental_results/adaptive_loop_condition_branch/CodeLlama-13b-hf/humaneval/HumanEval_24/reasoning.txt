@@ -1,0 +1,19 @@
+The function `largest_divisor` is called with ( n = 3 ).
+Inside the function, a variable `i` is initialized to 0.
+The loop iterates from 3 through 0 (since ( n = 3 )).
+First Iteration (i = 3)
+   - `i` is 3, which satisfies ( 3 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 3.
+Second Iteration (i = 2)
+   - `i` is 2, which satisfies ( 3 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 2.
+Third Iteration (i = 1)
+   - `i` is 1, which satisfies ( 3 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 1.
+Fourth Iteration (i = 0)
+   - `i` is 0, which satisfies ( 3 % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 0.

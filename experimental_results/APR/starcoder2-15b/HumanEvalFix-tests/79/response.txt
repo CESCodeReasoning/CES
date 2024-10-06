@@ -1,0 +1,132 @@
+<fim_prefix>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx!= idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx!= idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in decimal_to_binary.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def decimal_to_binary(decimal):
+    return "db" + bin(decimal)[2:] + "d"
+
+Tests:
+def check(decimal_to_binary):
+
+    # Check some simple cases
+    assert decimal_to_binary(0) == "db0db"
+    assert decimal_to_binary(32) == "db100000db"
+    assert decimal_to_binary(103) == "db1100111db"
+    assert decimal_to_binary(15) == "db1111db", "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+check(decimal_to_binary)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `decimal_to_binary(decimal)` to solve the following problem:
+You will be given a number in decimal form and your task is to convert it to
+binary format. The function should return a string, with each character representing a binary
+number. Each character in the string will be '0' or '1'.
+There will be an extra couple of characters 'db' at the beginning and at the end of the string.
+The extra characters are there to help with the format.
+Examples:
+decimal_to_binary(15)   # returns "db1111db"
+decimal_to_binary(32)   # returns "db100000db"
+<fim_suffix><fim_middle>
+Fixed Code:
+```python
+def decimal_to_binary(decimal):
+    return "db" + bin(decimal)[2:] + "d"
+```
+
+
+    
+Fix bugs in is_palindrome.
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def is_palindrome(word):
+    return word == word[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("abba") == True
+    assert is_palindrome("abcba") == True
+    assert is_palindrome("abccba") == True
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_

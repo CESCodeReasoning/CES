@@ -1,0 +1,7 @@
+The function `numerical_letter_grade` is called with ( grades = [1.2] ).
+Inside the function, an empty list `letter_grade` is initialized.
+
+Iteration 1:
+    -The value of `gpa` is 1.2.
+    -The condition `gpa > 1.0` is false, so the `else` block is executed.
+    -The letter grade "D-" is appended to the `letter_grade` list.

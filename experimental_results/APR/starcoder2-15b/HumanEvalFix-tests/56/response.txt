@@ -1,0 +1,143 @@
+<fim_prefix>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx!= idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx!= idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in correct_bracketing.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets:
+        if b == ">":
+            depth += 1
+        else:
+            depth -= 1
+        if depth < 0:
+            return False
+    return depth == 0
+
+Tests:
+def check(correct_bracketing):
+    assert correct_bracketing("<>")
+    assert correct_bracketing("<<><>>")
+    assert correct_bracketing("<><><<><>><>")
+    assert correct_bracketing("<><><<<><><>><>><<><><<>>>")
+    assert not correct_bracketing("<<<><>>>>")
+    assert not correct_bracketing("><<>")
+    assert not correct_bracketing("<")
+    assert not correct_bracketing("<<<<")
+    assert not correct_bracketing(">")
+    assert not correct_bracketing("<<>")
+    assert not correct_bracketing("<><><<><>><>><<>")
+    assert not correct_bracketing("<><><<><>><>>><>")
+
+check(correct_bracketing)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `correct_bracketing(brackets: str)` to solve the following problem:
+brackets is a string of "<" and ">".
+return True if every opening bracket has a corresponding closing bracket.
+<fim_suffix><fim_middle>
+Fixed Code:
+```python
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets:
+        if b == ">":
+            depth += 1
+        else:
+            depth -= 1
+        if depth < 0:
+            return False
+    return depth == 0
+```
+
+
+    
+Fix bugs in is_palindrome.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+def is_palindrome(word: str) -> bool:
+    for idx, char in enumerate(word):
+        if char!= word[len(word) - idx - 1]:
+            return False
+    return True
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("abba")
+    assert is_palindrome("abcba")
+    assert is_palindrome("abccba")
+    assert is_palindrome("abcccba")
+    assert is_palindrome("abcccbba")
+    assert is_palindrome("abcccbbaa")
+    assert is_palindrome("abcccbbaab")
+    assert is_palindrome("abcccbbaaba")
+    assert is_palindrome("abcccbbaabab")
+    assert is_palindrome("abcccbbaababa")
+    assert not is_palindrome("abb")
+    assert not is_palindrome("abbc")
+    assert not is_palindrome("abbbc")
+    assert not is_palindrome("abbbbc")
+    assert not is_palindrome("abbbbca")
+    assert not is_palindrome("abbbbcab")
+    assert not is_palindrome("abbbbcaba")
+    assert not is_palindrome("abbbbcabab")
+    assert not is_palindrome("abbbbcababa")
+    assert not is_palindrome("abbbbcababaa")
+    assert not is_palindrome("abbbbcababaab")
+    assert not is_palindrome("abbbbcababaaba")
+    assert not is_palindrome("abbbbcababaabaa")
+    assert not is_palindrome("abbbbcababaabaab")
+    assert not is_palindrome("abbbbcababaabaaba")
+    assert not is_palindrome("abbbbcababaabaabab")
+    assert not is_palindrome("abbbbcababaabaababa")
+    assert not is_palindrome

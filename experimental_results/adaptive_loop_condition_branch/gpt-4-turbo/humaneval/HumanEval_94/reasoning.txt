@@ -1,0 +1,11 @@
+The function `skjkasdkd` is called with a list of integers. The function defines a nested function `isPrime` to check if a number is prime. The main function initializes `maxx` to 0 and iterates through the list `lst`. For each element, it checks if the element is greater than `maxx` and if it is a prime number. If both conditions are met, `maxx` is updated to this element. After the loop, the function calculates the sum of the digits of `maxx` and returns this sum.
+
+Detailed Iteration:
+- The function starts with `maxx` set to 0.
+- It checks each element in the list:
+  - For 0, 1, 4, 32, 324: These are not prime.
+  - For 2, 3, 5, 7, 181: These are prime and checked against `maxx`.
+  - `maxx` updates to 2, then 3, then 5, then 7, and finally 181 as these are all prime and greater than the previous `maxx`.
+- After determining that 181 is the largest prime in the list, the function calculates the sum of its digits: `1 + 8 + 1 = 10`.
+- The function returns 10.
+

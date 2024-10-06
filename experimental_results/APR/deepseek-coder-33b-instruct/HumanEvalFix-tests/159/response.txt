@@ -1,0 +1,24 @@
+The bug in the `has_close_elements` function is that it is calculating the distance as `elem - elem2`, but it should be `abs(elem - elem2)` to get the absolute distance.
+
+The bug in the `eat` function is that it is returning `[ number + need + remaining , 0]` when `need <= remaining`, but it should be `[ number + need , number + remaining-need ]`.
+
+Here is the fixed code:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def eat(number, need, remaining):
+    if(need <= remaining):
+        return [ number + need , remaining-need ]
+    else:
+        return [ number + need + remaining , 0]
+```

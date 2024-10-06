@@ -1,0 +1,18 @@
+The function `can_arrange` is called with an array `arr` of length 4.
+Inside the function, a variable `ind` is initialized to -1.
+The loop iterates from 1 through 3 (since the length of the array is 4).
+First Iteration (i = 1):
+    - i < len(arr) when i=1
+    - The condition `arr[i] < arr[i - 1]` is true. The first branch is taken.
+    - `ind` is updated to 1.
+Second Iteration (i = 2):
+    - i < len(arr) when i=2
+    - The condition `arr[i] < arr[i - 1]` is false. The first branch is not taken.
+    - The condition `arr[i] < arr[i - 1]` is false. The second branch is not taken.
+    - The else branch is not taken.
+Third Iteration (i = 3):
+    - i < len(arr) when i=3
+    - The condition `arr[i] < arr[i - 1]` is false. The first branch is not taken.
+    - The condition `arr[i] < arr[i - 1]` is false. The second branch is not taken.
+    - The else branch is not taken.
+After the loop completes, the function returns the value of `ind`, which is now 1.

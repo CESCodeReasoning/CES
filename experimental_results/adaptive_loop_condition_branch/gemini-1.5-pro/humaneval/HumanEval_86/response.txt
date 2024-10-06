@@ -1,0 +1,14 @@
+[REASONING]
+The function anti_shuffle takes a string s as input and returns a new string where each word in s is replaced by the same word with its characters sorted in alphabetical order.
+To determine the output of executing the function anti_shuffle on the input "Hi", we need to split the input string into a list of words, sort the characters in each word, and then join the sorted words back into a single string.
+Therefore, the output of executing the function anti_shuffle on the input "Hi" is "Hi".
+[/REASONING]
+
+[ANSWER]
+def anti_shuffle(s):
+    return ' '.join([''.join(sorted(list(i))) for i in s.split(' ')])
+[/ANSWER]
+
+[OUTPUT]
+Hi
+[/OUTPUT]

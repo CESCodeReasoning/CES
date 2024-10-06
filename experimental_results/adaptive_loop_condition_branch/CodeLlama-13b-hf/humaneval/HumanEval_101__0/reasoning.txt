@@ -1,0 +1,67 @@
+The function `words_string` is called with ( s = "One, two, three, four, five, six" ).
+Inside the function, a variable `s_list` is initialized to an empty list.
+
+Iteration 1:
+    - The character 'O' is not equal to ',', so the list is appended with 'O'.
+Iteration 2:
+    - The character 'n' is not equal to ',', so the list is appended with 'n'.
+Iteration 3:
+    - The character 'e' is not equal to ',', so the list is appended with 'e'.
+Iteration 4:
+    - The character ',' is equal to ',', so the list is appended with ' '.
+Iteration 5:
+    - The character ' ' is not equal to ',', so the list is appended with ' '.
+Iteration 6:
+    - The character 't' is not equal to ',', so the list is appended with 't'.
+Iteration 7:
+    - The character 'w' is not equal to ',', so the list is appended with 'w'.
+Iteration 8:
+    - The character 'o' is not equal to ',', so the list is appended with 'o'.
+Iteration 9:
+    - The character ',' is equal to ',', so the list is appended with ' '.
+Iteration 10:
+    - The character ' ' is not equal to ',', so the list is appended with ' '.
+Iteration 11:
+    - The character 't' is not equal to ',', so the list is appended with 't'.
+Iteration 12:
+    - The character 'h' is not equal to ',', so the list is appended with 'h'.
+Iteration 13:
+    - The character 'r' is not equal to ',', so the list is appended with 'r'.
+Iteration 14:
+    - The character 'e' is not equal to ',', so the list is appended with 'e'.
+Iteration 15:
+    - The character 'e' is not equal to ',', so the list is appended with 'e'.
+Iteration 16:
+    - The character ',' is equal to ',', so the list is appended with ' '.
+Iteration 17:
+    - The character ' ' is not equal to ',', so the list is appended with ' '.
+Iteration 18:
+    - The character 'f' is not equal to ',', so the list is appended with 'f'.
+Iteration 19:
+    - The character 'o' is not equal to ',', so the list is appended with 'o'.
+Iteration 20:
+    - The character 'u' is not equal to ',', so the list is appended with 'u'.
+Iteration 21:
+    - The character 'r' is not equal to ',', so the list is appended with 'r'.
+Iteration 22:
+    - The character ',' is equal to ',', so the list is appended with ' '.
+Iteration 23:
+    - The character ' ' is not equal to ',', so the list is appended with ' '.
+Iteration 24:
+    - The character 'f' is not equal to ',', so the list is appended with 'f'.
+Iteration 25:
+    - The character 'i' is not equal to ',', so the list is appended with 'i'.
+Iteration 26:
+    - The character 'v' is not equal to ',', so the list is appended with 'v'.
+Iteration 27:
+    - The character 'e' is not equal to ',', so the list is appended with 'e'.
+Iteration 28:
+    - The character ',' is equal to ',', so the list is appended with ' '.
+Iteration 29:
+    - The character ' ' is not equal to ',', so the list is appended with ' '.
+Iteration 30:
+    - The character 's' is not equal to ',', so the list is appended with 's'.
+Iteration 31:
+    - The character 'i' is not equal to ',', so the list is appended with 'i'.
+Iteration 32:
+    - The character 'x' is not equal to ',', so the list is appended with 'x'.

@@ -1,0 +1,6 @@
+The function `x_or_y` is called with ( n = 3, x = 33, y = 5212 ).
+The first condition ( n == 1 ) is false, so the function proceeds to the loop.
+The loop iterates from 2 to n (which is 3).
+The first iteration ( i = 2 ) checks if ( n % i == 0 ), which is false.
+The second iteration ( i = 3 ) checks if ( n % i == 0 ), which is true.
+Since the condition is true, the function returns y (which is 5212).

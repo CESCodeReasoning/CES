@@ -1,0 +1,8 @@
+def choose_num(x, y):
+    if x > y: ## [CONDITION](x > y)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return -1
+    if y % 2 == 0: ## [CONDITION](y % 2 == 0)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return y
+    if x == y: ## [CONDITION](x == y)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return -1
+    return y - 1

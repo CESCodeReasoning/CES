@@ -1,0 +1,9 @@
+The function largest_smallest_integers takes a list of integers as input and returns a tuple containing the largest and smallest non-zero integers in the list.
+
+The function first filters the list to extract only the negative and positive integers using the filter() method.
+
+The smallest non-zero negative integer is then obtained by calling the max() method on the filtered list of negative integers. If the list is empty, None is returned.
+
+The largest non-zero positive integer is then obtained by calling the min() method on the filtered list of positive integers. If the list is empty, None is returned.
+
+The function returns a tuple containing the largest and smallest non-zero integers in the list.

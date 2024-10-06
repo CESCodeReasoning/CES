@@ -1,0 +1,44 @@
+Here is the fixed code for both functions, `has_close_elements` and `by_length`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `by_length`
+```python
+def by_length(arr):
+    dic = {
+        1: "One",
+        2: "Two",
+        3: "Three",
+        4: "Four",
+        5: "Five",
+        6: "Six",
+        7: "Seven",
+        8: "Eight",
+        9: "Nine",
+    }
+    # Filter the array to include only numbers between 1 and 9
+    filtered_arr = [num for num in arr if 1 <= num <= 9]
+    # Sort the filtered array
+    sorted_arr = sorted(filtered_arr)
+    # Reverse the sorted array
+    reversed_arr = sorted_arr[::-1]
+    # Replace each number with its corresponding name
+    new_arr = [dic[num] for num in reversed_arr]
+    return new_arr
+```
+
+These fixes address the issues in the original code:
+- For `has_close_elements`, the absolute value is used to correctly calculate the distance between two numbers.
+- For `by_length`, the function now filters out numbers outside the range 1 to 9 before sorting, reversing, and mapping to names, ensuring that only valid numbers are processed and returned in the correct order.

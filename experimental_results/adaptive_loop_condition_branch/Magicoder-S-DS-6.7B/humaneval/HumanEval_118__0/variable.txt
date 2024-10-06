@@ -1,0 +1,13 @@
+from typing import *
+
+
+def get_closest_vowel(word):
+    if len(word) < 3: ## [CONDITION](len(word) < 3)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return ""
+
+    vowels = {"a", "e", "i", "o", "u", "A", "E", 'O', 'U', 'I'}
+    for i in range(len(word) - 2, 0, -1): ## [STATE]i=[2, 1, 0][/STATE][STATE]range((len(word) - 2), 0, (- 1))=[2, 1, 0][/STATE][STATE](len(word) - 2)=[2][/STATE]
+        if word[i] in vowels: ## [CONDITION](word[i] in vowels)=[False, True, False][/CONDITION][BRANCH]taken=[N, Y, N][/BRANCH]
+            if (word[i + 1] not in vowels) and (word[i - 1] not in vowels): ## [CONDITION]((word[i + 1] not in vowels) and (word[i - 1] not in vowels))=[False, False, False][/CONDITION][CONDITION](word[i + 1] not in vowels)=[False, False, False][/CONDITION][CONDITION](word[i - 1] not in vowels)=[False, False, False][/CONDITION][BRANCH]taken=[N, N, N][/BRANCH]
+                return word[i]
+    return ""

@@ -1,0 +1,13 @@
+The function `sort_even` is called with the list `[5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]`.
+Inside the function:
+1. `evens` is initialized by slicing the list to get elements at even indices: `[5, -5, -3, 9, 123, -10]`.
+2. `odds` is initialized by slicing the list to get elements at odd indices: `[3, 2, 3, 0, 1]`.
+3. Both `evens` and `odds` are sorted. `evens` becomes `[-10, -5, -3, 5, 9, 123]` and `odds` becomes `[0, 1, 2, 3, 3]`.
+4. An empty list `ans` is initialized.
+5. A loop iterates over pairs of elements from `evens` and `odds` using `zip`, which pairs up elements from both lists.
+   - In each iteration, elements from `evens` and `odds` are added to `ans` in pairs.
+6. After the loop, the function checks if the length of `evens` is greater than `odds`. Since `len(evens) = 6` and `len(odds) = 5`, the condition is true.
+   - The last element of `evens` (`123`) is appended to `ans`.
+7. The function returns the list `ans`.
+
+The final sorted and interleaved list is `[-10, 0, -5, 1, -3, 2, 5, 3, 9, 3, 123]`.

@@ -1,0 +1,38 @@
+The function `parse_nested_parens` is called with ( paren_string = '(()(())((())))' ).
+The string is split into '()', '(())', '((()))', '(())' and '()'.
+
+For each group:
+1. Iteration 1:
+    - The character '(' is encountered, so depth becomes 1 and max_depth becomes 1.
+2. Iteration 2:
+    - The character ')' is encountered, so depth becomes 0.
+3. Iteration 3:
+    - The character '(' is encountered, so depth becomes 1 and max_depth remains 1.
+4. Iteration 4:
+    - The character '(' is encountered, so depth becomes 2 and max_depth becomes 2.
+5. Iteration 5:
+    - The character ')' is encountered, so depth becomes 1.
+6. Iteration 6:
+    - The character ')' is encountered, so depth becomes 0.
+7. Iteration 7:
+    - The character '(' is encountered, so depth becomes 1 and max_depth remains 2.
+8. Iteration 8:
+    - The character '(' is encountered, so depth becomes 2 and max_depth becomes 2.
+9. Iteration 9:
+    - The character ')' is encountered, so depth becomes 1.
+10. Iteration 10:
+    - The character ')' is encountered, so depth becomes 0.
+11. Iteration 11:
+    - The character '(' is encountered, so depth becomes 1 and max_depth remains 2.
+12. Iteration 12:
+    - The character ')' is encountered, so depth becomes 0.
+13. Iteration 13:
+    - The character '(' is encountered, so depth becomes 1 and max_depth remains 2.
+14. Iteration 14:
+    - The character ')' is encountered, so depth becomes 0.
+15. Iteration 15:
+    - The character '(' is encountered, so depth becomes 1 and max_depth remains 2.
+16. Iteration 16:
+    - The character ')' is encountered, so depth becomes 0.
+
+Therefore, the function returns [2, 2, 2, 2] for the input string '(()(())((())))'.

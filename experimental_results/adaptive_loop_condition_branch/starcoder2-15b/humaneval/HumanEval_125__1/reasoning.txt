@@ -1,0 +1,9 @@
+The function `split_words` is called with ( txt = "Hello world,!" ).
+`txt` contains a comma (","), which satisfies ( "," in txt ).
+The condition ( "," in txt ) is True.
+The first branch is taken.
+
+The function returns the result of calling the `split` method on `txt` with no arguments.
+The `split` method splits the string into a list of words, using the space character (" ") as the delimiter.
+
+Therefore, the final output of the function `split_words("Hello world,!")` is a list of words: ["Hello", "world", "!"].

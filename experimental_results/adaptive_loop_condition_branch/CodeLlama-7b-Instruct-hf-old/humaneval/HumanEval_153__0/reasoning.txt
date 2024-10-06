@@ -1,0 +1,14 @@
+The function `Strongest_Extension` is called with ( class_name = 'Sp', extensions = ['671235', 'Bb'] ).
+Inside the function, a variable `strong` is initialized to the first element of the list `extensions`, which is '671235'.
+A variable `my_val` is initialized to the length of the list comprehension `[x for x in '671235' if x.isalpha() and x.isupper()]` minus the length of the list comprehension `[x for x in '671235' if x.isalpha() and x.islower()]`.
+The loop iterates over the list `extensions`.
+First Iteration (s = '671235')
+   - The condition `val > my_val` is false.
+   - Action: `strong` remains '671235' and `my_val` remains 3.
+Second Iteration (s = 'Bb')
+   - The condition `val > my_val` is true.
+   - Action: `strong` becomes 'Bb' and `my_val` becomes 0.
+Return Statement
+   - After the loop completes, the function returns the concatenation of `class_name` and `strong`, which is 'Sp.Bb'.
+
+Therefore, the final output of the function `Strongest_Extension('Sp', ['671235', 'Bb'])` is 'Sp.Bb'.

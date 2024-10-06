@@ -1,0 +1,14 @@
+from typing import *
+def even_odd_palindrome(n):
+    def is_palindrome(n):
+        return str(n) == str(n)[::-1]
+
+    even_palindrome_count = 0
+    odd_palindrome_count = 0 ## [CONDITION](gpa == 4.0)=[False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][CONDITION](text[i] == " ")=[False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION]
+
+    for i in range(1, n+1): ## [STATE]range(1, (n + 1))=[1, 2, 3][/STATE][STATE](n + 1)=[4][/STATE][CONDITION](gpa > 3.7)=[False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION]
+        if i%2 == 1 and is_palindrome(i): ## [CONDITION](end - start > 2)=[False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][CONDITION](i%2 == 1 and is_palindrome(i))=[False, True, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][CONDITION](i%2 == 1)=[True, True, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][CONDITION](is_palindrome(i))=[False, True, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, Y, N][/BRANCH]
+                odd_palindrome_count += 1 ## [CONDITION](gpa > 3.3)=[False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION]
+        elif i%2 == 0 and is_palindrome(i): ## [CONDITION](end - start > 0)=[False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][CONDITION](i%2 == 0 and is_palindrome(i))=[False, False, True, False, False, False, False, False, False, False, False, False, False][/CONDITION][CONDITION](i%2 == 0)=[False, True, True, False, False, False, False, False, False, False, False, False, False][/CONDITION][CONDITION](is_palindrome(i))=[False, False, True, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, Y][/BRANCH]
+            even_palindrome_count += 1 ## [CONDITION](gpa > 3.0)=[False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION]
+    return

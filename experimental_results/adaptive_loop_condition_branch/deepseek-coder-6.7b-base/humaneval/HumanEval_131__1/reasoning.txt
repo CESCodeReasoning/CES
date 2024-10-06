@@ -1,0 +1,28 @@
+The function `digits` is called with ( n = 5576543 ).
+Inside the function, a variable `product` is initialized to 1.
+The loop iterates over the digits of the number (5576543).
+
+Iteration 1:
+    -The digit '5' is an odd number, so product becomes 5.
+    -The odd_count is incremented by 1.
+Iteration 2:
+    -The digit '5' is an odd number, so product becomes 25.
+    -The odd_count is incremented by 1.
+Iteration 3:
+    -The digit '7' is an odd number, so product becomes 175.
+    -The odd_count is incremented by 1.
+Iteration 4:
+    -The digit '6' is an even number, so no action is taken.
+    -The odd_count remains the same.
+Iteration 5:
+    -The digit '5' is an odd number, so product becomes 175.
+    -The odd_count is incremented by 1.
+Iteration 6:
+    -The digit '4' is an even number, so no action is taken.
+    -The odd_count remains the same.
+Iteration 7:
+    -The digit '3' is an odd number, so product becomes 525.
+    -The odd_count is incremented by 1.
+
+After the loop completes, the function checks if the odd_count is 0.
+Since the odd_count is not 0, the function returns the value of product, which is 525.

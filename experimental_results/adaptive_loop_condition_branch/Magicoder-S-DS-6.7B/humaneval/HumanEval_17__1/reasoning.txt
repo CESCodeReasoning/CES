@@ -1,0 +1,7 @@
+The function parse_music takes a string music_string as input and returns a list of integers. The string is split into a list of strings using the split function, and then each string is mapped to an integer using the note_map dictionary.
+
+The note_map dictionary maps the strings '.|', 'o|', and 'o' to the integers 1, 2, and 4 respectively.
+
+To determine the output of executing the function parse_music on the input '.| .| .| .|', we need to map each string in the input string to its corresponding integer.
+
+Therefore, the output of executing the function parse_music on the input '.| .| .| .|' is [1, 1, 1, 1].

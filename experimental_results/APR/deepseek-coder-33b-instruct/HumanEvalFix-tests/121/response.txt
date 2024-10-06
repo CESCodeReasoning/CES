@@ -1,0 +1,7 @@
+Fixed Code:
+```python
+def solution(lst):
+    return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])
+```
+
+The bug in the original code was that it was checking if the index was odd and the element was odd, but it should be checking if the index was even and the element was odd. The index is 0-based, so even positions are actually the odd indices. Therefore, the condition should be `idx%2==0` instead of `idx%2==1`.

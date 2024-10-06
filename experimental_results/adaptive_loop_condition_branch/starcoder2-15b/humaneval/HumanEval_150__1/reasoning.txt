@@ -1,0 +1,29 @@
+The function `x_or_y` is called with ( n = 91, x = 56, y = 129 ).
+Inside the function, the condition `n == 1` is evaluated.
+Since `n` is not equal to 1, the condition is false.
+The loop iterates from 2 to 90 (since `n` is 91).
+Iteration 1:
+    - `i` is 2, and `n` is not divisible by 2 (91 % 2 = 1).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+Iteration 2:
+    - `i` is 3, and `n` is not divisible by 3 (91 % 3 = 1).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+Iteration 3:
+    - `i` is 4, and `n` is not divisible by 4 (91 % 4 = 3).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+Iteration 4:
+    - `i` is 5, and `n` is not divisible by 5 (91 % 5 = 1).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+Iteration 5:
+    - `i` is 6, and `n` is not divisible by 6 (91 % 6 = 1).
+    - The condition `n % i == 0` is false.
+    - The loop continues to the next iteration.
+Iteration 6:
+    - `i` is 7, and `n` is not divisible by 7 (91 % 7 = 0).
+    - The condition `n % i == 0` is true.
+    - The loop breaks and the `else` block is skipped.
+    - The function returns the value of `y`, which is 129.

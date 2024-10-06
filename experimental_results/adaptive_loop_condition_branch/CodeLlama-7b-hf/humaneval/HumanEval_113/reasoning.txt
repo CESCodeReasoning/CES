@@ -1,0 +1,7 @@
+The function `odd_count` is called with (lst = ['1234567']).
+Inside the function, a variable `res` is initialized to an empty list.
+The loop iterates through the list `lst` which has one element.
+First Iteration (arr = '1234567'):
+    `sum(int(d)%2==1 for d in arr)` returns 4 since there are 4 odd numbers in '1234567'.
+    `res.append("the number of odd elements " + str(n) + "n the str"+ str(n) +"ng "+ str(n) +" of the "+ str(n) +"nput."` appends the string to the list.
+After the loop completes, the function returns the list.

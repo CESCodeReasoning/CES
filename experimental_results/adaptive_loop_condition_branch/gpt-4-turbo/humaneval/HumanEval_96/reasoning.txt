@@ -1,0 +1,15 @@
+The function `count_up_to(n)` is designed to find all prime numbers up to a given number `n` (exclusive). In this case, `n` is 5.
+
+1. The function initializes an empty list `primes` to store the prime numbers.
+2. The outer loop iterates over each number `i` from 2 to `n-1` (i.e., 2 to 4 in this case).
+3. For each number `i`, it assumes `i` is prime (`is_prime = True`).
+4. The inner loop checks if `i` can be divided evenly by any number `j` from 2 to `i-1`.
+5. If `i` is divisible by any `j`, it sets `is_prime` to `False` and breaks out of the inner loop.
+6. After the inner loop, if `is_prime` is still `True`, `i` is appended to the `primes` list.
+
+Detailed Iterations:
+- For `i=2`: The inner loop does not execute because `range(2, 2)` is empty. `is_prime` remains `True`, so 2 is appended to `primes`.
+- For `i=3`: The inner loop checks `j=2`. `3 % 2` is not 0, so `is_prime` remains `True`. 3 is appended to `primes`.
+- For `i=4`: The inner loop checks `j=2`. `4 % 2` is 0, so `is_prime` is set to `False`. The loop breaks and 4 is not appended.
+
+The function returns the list `[2, 3]` as the prime numbers less than 5.

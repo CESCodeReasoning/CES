@@ -1,0 +1,14 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: is_simple_power
+main.py(5):     if (n == 1):
+main.py(7):     power = 1
+main.py(8):     while (power < x):
+main.py(9):         power = power * n
+main.py(8):     while (power < x):
+main.py(9):         power = power * n
+main.py(8):     while (power < x):
+main.py(9):         power = power * n
+main.py(8):     while (power < x):
+main.py(9):         power = power * n
+main.py(8):     while (power < x):
+main.py(10):     return (power == x)

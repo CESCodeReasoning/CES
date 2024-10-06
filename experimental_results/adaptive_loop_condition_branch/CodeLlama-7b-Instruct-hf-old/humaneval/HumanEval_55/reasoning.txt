@@ -1,0 +1,119 @@
+The function `fib` is called with ( n = 10 ).
+The first if statement is evaluated:
+   - `n` is 10, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+The second if statement is evaluated:
+   - `n` is 10, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+The function recursively calls itself with ( n - 1 ) and ( n - 2 ):
+   - `n - 1` is 9, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 8.
+   - `n - 2` is 8, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 7.
+   - `n - 2` is 7, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 6.
+   - `n - 2` is 6, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 5.
+   - `n - 2` is 5, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 4.
+   - `n - 2` is 4, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 3.
+   - `n - 2` is 3, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 2.
+   - `n - 2` is 2, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 1.
+   - `n - 2` is 1, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 0.
+   - `n - 2` is 0, which satisfies ( n == 0 ).
+   - The condition `n == 0` is true.
+   - The branch is taken.
+   - The function returns 0.
+The function recursively calls itself with ( n - 1 ) = 9.
+   - `n - 1` is 9, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 8.
+   - `n - 2` is 8, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 7.
+   - `n - 2` is 7, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 6.
+   - `n - 2` is 6, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 5.
+   - `n - 2` is 5, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 4.
+   - `n - 2` is 4, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 3.
+   - `n - 2` is 3, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 2.
+   - `n - 2` is 2, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 1.
+   - `n - 2` is 1, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 0.
+   - `n - 2` is 0, which satisfies ( n == 0 ).
+   - The condition `n == 0` is true.
+   - The branch is taken.
+   - The function returns 0.
+The function recursively calls itself with ( n - 1 ) = 8.
+   - `n - 1` is 8, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 7.
+   - `n - 2` is 7, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 6.
+   - `n - 2` is 6, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 5.
+   - `n - 2` is 5, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 4.
+   - `n - 2` is 4, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 3.
+   - `n - 2` is 3, which does not satisfy ( n == 0 ).
+   - The condition `n == 0` is false.
+   - The branch is not taken.
+   - The function recursively calls itself with ( n - 2 ) = 2.
+   - `n - 2` is 2, which does not satisfy ( n == 1 ).
+   - The condition `n == 1` is false.
+   - The branch is

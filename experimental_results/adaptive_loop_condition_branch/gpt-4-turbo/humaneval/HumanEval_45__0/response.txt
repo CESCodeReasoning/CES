@@ -1,0 +1,21 @@
+[REASONING]
+The function `triangle_area` calculates the area of a triangle given the base `a` and the height `h`. The formula for the area of a triangle is (base * height) / 2. 
+For the input values `a = 10` and `h = 8`, the calculation proceeds as follows:
+1. Multiply the base `a` (10) by the height `h` (8), which results in 80.
+2. Divide the result (80) by 2.0 to get the area of the triangle, which is 40.0.
+Thus, the output of executing the function `triangle_area` on the inputs 10 and 8 is 40.0.
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def triangle_area(a, h):
+    # [STATE] a = 10, h = 8 [/STATE]
+    return a * h / 2.0  # [STATE] return value = 40.0 [/STATE]
+```
+[/ANSWER]
+
+[OUTPUT]
+40.0
+[/OUTPUT]

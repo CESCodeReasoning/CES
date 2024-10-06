@@ -1,0 +1,13 @@
+from typing import *
+def words_in_sentence(sentence):
+    new_lst = []
+    for word in sentence.split(): ## [STATE]word=['This', 'is', 'a', 'test'][/STATE][STATE]sentence.split()=['This', 'is', 'a', 'test'][/STATE]
+        flg = 0
+        if len(word) == 1: ## [CONDITION](len(word) == 1)=False, False, True, False[/CONDITION][BRANCH]taken=N, N, Y, N[/BRANCH]
+            flg = 1
+        for i in range(2, len(word)): ## [STATE]i=[2, 3], [2], [], [2, 3][/STATE][STATE]range(2, len(word))=[[2, 3], [2], [], [2, 3]][/STATE][STATE]len(word)=[4, 2, 1, 4][/STATE]
+            if len(word)%i == 0: ## [CONDITION](len(word)%i == 0)=True, False, False, True[/CONDITION][BRANCH]taken=Y, N, N, Y[/BRANCH]
+                flg = 1
+        if flg == 0 or len(word) == 2: ## [CONDITION](flg == 0 or len(word) == 2)=False, True, False, False[/CONDITION][CONDITION](flg == 0)=False, False, False, False[/CONDITION][CONDITION](len(word) == 2)=False, True, False, False[/CONDITION][BRANCH]taken=N, Y, N, N[/BRANCH]
+            new_lst.append(word)
+    return " ".join(new_lst)

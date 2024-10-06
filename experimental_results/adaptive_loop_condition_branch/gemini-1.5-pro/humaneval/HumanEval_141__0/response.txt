@@ -1,0 +1,37 @@
+[REASONING]
+The function `file_name_check` is called with ( file_name = 'I563_No.exe' ).
+The file name is split into two parts by the '.' character, resulting in ['I563_No', 'exe'].
+The length of the list is 2, which satisfies the first condition.
+The second part of the file name ('exe') is in the list of valid suffixes.
+The first part of the file name ('I563_No') is not empty.
+The first character of the first part ('I') is alphabetic.
+The number of digits in the first part is 3, which is less than or equal to 3.
+Therefore, all the conditions are met and the function returns 'Yes'.
+
+Therefore, the final output of the function `file_name_check('I563_No.exe')` is 'Yes'.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def file_name_check(file_name):
+    suf = ['txt', 'exe', 'dll']
+    lst = file_name.split(sep='.')
+    if len(lst) != 2: ## [CONDITION](len(lst) != 2)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    if not lst[1] in suf: ## [CONDITION](not lst[1] in suf)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    if len(lst[0]) == 0: ## [CONDITION](len(lst[0]) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    if not lst[0][0].isalpha(): ## [CONDITION](not lst[0][0].isalpha())= [False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    t = len([x for x in lst[0] if x.isdigit()])
+    if t > 3: ## [CONDITION](t > 3)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    return 'Yes'
+[/ANSWER]
+
+[OUTPUT]
+Yes
+[/OUTPUT]

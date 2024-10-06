@@ -1,0 +1,18 @@
+The function `move_one_ball` is called with ( arr = [3, 4, 5, 1, 2] ).
+Inside the function, the condition `len(arr)==0` is false.
+The function `sorted` is called with ( arr = [3, 4, 5, 1, 2] ).
+The function `min` is called with ( arr = [3, 4, 5, 1, 2] ).
+The function `index` is called with ( arr = [3, 4, 5, 1, 2], value = 1 ).
+The variable `my_arr` is assigned the value of `arr[min_index:]+arr[0:min_index]`, which is [1, 2, 3, 4, 5].
+The loop iterates from 0 through 4 (since `len(arr) = 5`).
+Iteration 1:
+    - `my_arr[0] = 1` and `sorted_array[0] = 1`, so the condition `my_arr[i]!=sorted_array[i]` is false.
+Iteration 2:
+    - `my_arr[1] = 2` and `sorted_array[1] = 2`, so the condition `my_arr[i]!=sorted_array[i]` is false.
+Iteration 3:
+    - `my_arr[2] = 3` and `sorted_array[2] = 3`, so the condition `my_arr[i]!=sorted_array[i]` is false.
+Iteration 4:
+    - `my_arr[3] = 4` and `sorted_array[3] = 4`, so the condition `my_arr[i]!=sorted_array[i]` is false.
+Iteration 5:
+    - `my_arr[4] = 5` and `sorted_array[4] = 5`, so the condition `my_arr[i]!=sorted_array[i]` is false.
+Since all the elements in `my_arr` are equal to the corresponding elements in `sorted_array`, the function returns `True`.

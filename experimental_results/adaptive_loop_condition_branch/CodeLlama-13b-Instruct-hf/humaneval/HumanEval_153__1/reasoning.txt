@@ -1,0 +1,18 @@
+The function `Strongest_Extension` is called with ( class_name = 'finNNalLLly', extensions = ['Die', 'NowW', 'Wow', 'WoW'] ).
+Inside the function, a variable `strong` is initialized to the first element of `extensions`, which is 'Die'.
+A variable `my_val` is initialized to the difference between the number of uppercase letters and the number of lowercase letters in 'Die'.
+
+Iteration 1:
+    - `s` is 'Die', `val` is 0 (since there are no uppercase letters).
+    - `my_val` is 0, so `strong` is still 'Die'.
+Iteration 2:
+    - `s` is 'NowW', `val` is 2 (since there are 2 uppercase letters).
+    - `my_val` is 0, so `strong` is still 'Die'.
+Iteration 3:
+    - `s` is 'Wow', `val` is 1 (since there is 1 uppercase letter).
+    - `my_val` is 0, so `strong` is still 'Die'.
+Iteration 4:
+    - `s` is 'WoW', `val` is 2 (since there are 2 uppercase letters).
+    - `my_val` is 0, so `strong` is still 'Die'.
+
+Therefore, the final output of the function `Strongest_Extension('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW'])` is 'finNNalLLly.WoW'.

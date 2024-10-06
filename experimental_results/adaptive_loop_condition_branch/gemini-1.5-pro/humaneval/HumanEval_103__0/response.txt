@@ -1,0 +1,35 @@
+[REASONING]
+The function `rounded_avg` is called with ( n = 560, m = 851 ).
+First, the condition ( m < n ) is checked, which is False, so the if branch is not taken.
+Next, the variable `summation` is initialized to 0.
+The loop iterates from 560 through 851 (since ( n = 560 ) and ( m = 851 )).
+First Iteration (i = 560):
+    `summation += i` updates `summation` to 560 ( 0 + 560 = 560 ).
+Second Iteration (i = 561):
+    `summation += i` updates `summation` to 1121 ( 560 + 561 = 1121 ).
+Third Iteration (i = 562)
+    `summation += i` updates `summation` to 1682 ( 1121 + 561 = 1682 ).
+...
+292nd Iteration (i = 851)
+    `summation += i` updates `summation` to 363321 ( 362470 + 851 = 363321 ).
+After the loop completes, the function returns `bin(round(summation / (m - n + 1)))`.
+The value of `summation` is 363321, and the value of `(m - n + 1)` is ( 851 - 560 + 1 ) = 292.
+Therefore, the function returns `bin(round(363321 / 292))`, which is `bin(1244)`.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def rounded_avg(n, m):
+    if m < n: ## [CONDITION](m < n)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return -1
+    summation = 0
+    for i in range(n, m + 1): ## [STATE]i=[560, 561, 562, ..., 851][/STATE][STATE]range(n, (m + 1))=[560, 561, 562, ..., 851][/STATE][STATE]n=[560][/STATE][STATE](m + 1)=[852][/STATE]
+        summation += i
+    return bin(round(summation / (m - n + 1)))
+[/ANSWER]
+
+[OUTPUT]
+0b10011010100
+[/OUTPUT]

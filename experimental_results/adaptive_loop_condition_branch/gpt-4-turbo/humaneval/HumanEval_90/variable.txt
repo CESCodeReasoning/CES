@@ -1,0 +1,10 @@
+from typing import *
+
+def next_smallest(lst):
+    # [STATE] lst is initially [1, 2, 3, 4, 5] [/STATE]
+    lst = sorted(set(lst))
+    # [STATE] lst is now [1, 2, 3, 4, 5] after removing duplicates and sorting [/STATE]
+    # [CONDITION] len(lst) < 2 [/CONDITION]
+    # [BRANCH] N [/BRANCH]
+    return None if len(lst) < 2 else lst[1]
+    # [STATE] return value is 2 [/STATE]

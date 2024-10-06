@@ -1,0 +1,9 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: solution
+main.py(3):     return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])
+ --- modulename: main, funcname: <listcomp>
+main.py(3):     return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])
+main.py(3):     return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])
+main.py(3):     return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])
+main.py(3):     return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])
+main.py(3):     return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])

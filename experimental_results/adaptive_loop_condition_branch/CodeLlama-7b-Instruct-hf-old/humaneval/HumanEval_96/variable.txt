@@ -1,0 +1,12 @@
+from typing import *
+def count_up_to(n):
+    primes = [] ## [STATE]i=??[/STATE]
+    for i in range(2, n): ## [STATE]range(2, n)=??[/STATE][STATE]n=??[/STATE]
+        is_prime = True ## [STATE]j=??[/STATE]
+        for j in range(2, i): ## [STATE]range(2, i)=??[/STATE][STATE]i=??[/STATE]
+            if i % j == 0: ## [CONDITION](i % j == 0)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                is_prime = False
+                break
+        if is_prime: ## [CONDITION](is_prime)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            primes.append(i)
+    return primes

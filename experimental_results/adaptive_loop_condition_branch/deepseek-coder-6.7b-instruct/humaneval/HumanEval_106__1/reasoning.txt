@@ -1,0 +1,4 @@
+The function f(n) takes an integer n as its parameter.
+The function iterates from 1 to n (inclusive).
+If the current number is even, it calculates the factorial of the number and appends it to the list ret.
+If the current number is odd, it calculates the sum of all numbers from 1 to the current number and appends it to the list ret.

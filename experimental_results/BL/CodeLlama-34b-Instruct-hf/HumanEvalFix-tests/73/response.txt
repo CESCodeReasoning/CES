@@ -1,0 +1,58 @@
+```response
+    for i in range(len(arr) // 2):
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s):
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("racecar") == True
+    assert is_palindrome("level") == True
+    assert is_palindrome("radar") == True
+    assert is_palindrome("hello") == False
+    assert is_palindrome("") == True
+
+check(is_palindrome)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(s)` to solve the following problem:
+Given a string s, return True if s is a palindrome, and False otherwise.
+A palindrome is a string that reads the same backwards and forwards.
+For example:
+is_palindrome("racecar") == True
+is_palindrome("level") == True
+is_palindrome("radar") == True
+is_palindrome("hello") == False
+is_palindrome("") == True
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return s == s[::-1]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s):
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("racecar") == True
+    assert is_palindrome("level") == True
+    assert is_palindrome("radar") == True
+    assert is_palindrome("hello") == False
+    assert is_palindrome("") == True
+
+check(is_palindrome)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(s)` to solve the following problem:
+Given a string s,

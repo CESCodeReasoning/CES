@@ -1,0 +1,8 @@
+The function words_in_sentence(sentence) takes a string sentence as its parameter.
+The function splits the sentence into a list of words using the split() method.
+The function then iterates through each word in the list.
+For each word, the function checks if the length of the word is 1. If it is, the function sets the flag flg to 1.
+The function then iterates through the range from 2 to the length of the word.
+For each value of i in the range, the function checks if the length of the word is divisible by i. If it is, the function sets the flag flg to 1.
+The function then checks if the flag flg is 0 or the length of the word is 2. If it is, the function appends the word to the new_lst list.
+Finally, the function returns the new_lst list joined by a space.

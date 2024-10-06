@@ -1,0 +1,9 @@
+from typing import *
+
+def parse_music(music_string: str) -> List[int]:
+    # [STATE] note_map = {'o': 4, 'o|': 2, '.|': 1} [/STATE]
+    note_map = {'o': 4, 'o|': 2, '.|': 1}
+    # [STATE] music_string.split(' ') = [''] [/STATE]
+    # [CONDITION] x (in the list comprehension) is '' [/CONDITION]
+    # [BRANCH] N [/BRANCH] (since '' is not a key in note_map)
+    return [note_map[x] for x in music_string.split(' ') if x]

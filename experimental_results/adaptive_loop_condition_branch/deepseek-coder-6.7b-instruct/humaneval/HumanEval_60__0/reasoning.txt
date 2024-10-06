@@ -1,0 +1,6 @@
+The function sum_to_n takes an integer n as input and returns the sum of all integers from 0 to n (inclusive).
+To determine the output of executing the function sum_to_n on the input 6, we need to sum all integers from 0 to 6.
+The range function in Python generates a sequence of numbers starting from 0 up to but not including the specified number. In this case, the range is from 0 to 6. The sum function then adds up all the numbers in this range, giving us the sum of all integers from 0 to 6.
+
+The sum of all integers from 0 to 6 is 21.
+So, the output of executing the function sum_to_n on the input 6 is 21.

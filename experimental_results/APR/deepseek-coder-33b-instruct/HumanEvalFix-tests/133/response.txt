@@ -1,0 +1,27 @@
+The bug in the `has_close_elements` function is that it is not taking the absolute value of the distance between two elements. This means that if the distance is negative, it will not be considered as close.
+
+The bug in the `sum_squares` function is that it is not rounding the elements in the list to the upper int(Ceiling) first. This means that if the element is a float, it will not be rounded up to the next integer, which is the requirement of the problem.
+
+Here is the fixed code:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+```python
+def sum_squares(lst):
+    import math
+    squared = 0
+    for i in lst:
+        squared += math.ceil(i)**2
+    return squared
+```

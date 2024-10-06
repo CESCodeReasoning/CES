@@ -1,0 +1,8 @@
+The function `split_words` is called with ( txt = "Hello world!" ).
+The condition `" " in txt` is False, so the first branch is not taken.
+The condition `"," in txt` is also False, so the second branch is not taken.
+The `else` branch is taken.
+In the `else` branch, the function returns the length of a list comprehension. The list comprehension iterates over each character in `txt`, and includes the character in the list if it is a lowercase letter and its ASCII value is even.
+In "Hello world!", the lowercase letters are 'e', 'o', 'o', 'r', 'l', 'd', and '!', but only 'o', 'o', 'r', 'l', 'd', and '!' have even ASCII values.
+
+Therefore, the final output of the function `split_words("Hello world!")` is 6.

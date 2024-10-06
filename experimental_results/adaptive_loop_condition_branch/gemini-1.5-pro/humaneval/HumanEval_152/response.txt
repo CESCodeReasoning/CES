@@ -1,0 +1,14 @@
+[REASONING]
+The function compare takes two lists of integers, game and guess, as input and returns a list of the absolute differences between the corresponding elements in the two lists.
+To determine the output of executing the function compare on the input ([1,2,3,4,5,1], [1,2,3,4,2,-2]), we need to compute the absolute difference between each corresponding element in the two lists.
+Therefore, the output of executing the function compare on the input ([1,2,3,4,5,1], [1,2,3,4,2,-2]) is [0, 0, 0, 0, 3, 3].
+[/REASONING]
+
+[ANSWER]
+def compare(game,guess):
+    return [abs(x-y) for x,y in zip(game,guess)]
+[/ANSWER]
+
+[OUTPUT]
+[0, 0, 0, 0, 3, 3]
+[/OUTPUT]

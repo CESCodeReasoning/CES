@@ -1,0 +1,7 @@
+def is_simple_power(x, n):
+    if (n == 1): ## [CONDITION](n == 1)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+        return (x == 1)
+    power = 1
+    while (power < x): ## [STATE](power < x)=True[/STATE][STATE]power=1[/STATE][STATE]x=128[/STATE]
+        power = power * n
+    return (power == x)

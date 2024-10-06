@@ -1,0 +1,5 @@
+The function `is_palindrome` is called with ( s = "racecar" ).
+Inside the function, a variable `s` is initialized to `"racecar"`.
+The condition `s == s[::-1]` is evaluated.
+If the condition is true, then the function returns `True`.
+Otherwise, the function returns `False`.

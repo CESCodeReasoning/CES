@@ -1,0 +1,105 @@
+The function `search` is called with ( lst = [2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1] ).
+Inside the function, a variable `frq` is initialized to a list of 0s with the length of the maximum value in `lst` plus 1.
+
+Iteration 1:
+    -The value of `i` is 2, which is the first element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented to 1.
+Iteration 2:
+    -The value of `i` is 7, which is the second element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented to 1.
+Iteration 3:
+    -The value of `i` is 8, which is the third element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented to 1.
+Iteration 4:
+    -The value of `i` is 8, which is the fourth element of `lst`.
+    -The value of `frq[i]` is 1, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 2.
+Iteration 5:
+    -The value of `i` is 4, which is the fifth element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented to 1.
+Iteration 6:
+    -The value of `i` is 8, which is the sixth element of `lst`.
+    -The value of `frq[i]` is 2, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 3.
+Iteration 7:
+    -The value of `i` is 7, which is the seventh element of `lst`.
+    -The value of `frq[i]` is 1, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 2.
+Iteration 8:
+    -The value of `i` is 3, which is the eighth element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented to 1.
+Iteration 9:
+    -The value of `i` is 9, which is the ninth element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented to 1.
+Iteration 10:
+    -The value of `i` is 6, which is the tenth element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented to 1.
+Iteration 11:
+    -The value of `i` is 5, which is the eleventh element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented to 1.
+Iteration 12:
+    -The value of `i` is 10, which is the twelfth element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented to 1.
+Iteration 13:
+    -The value of `i` is 4, which is the thirteenth element of `lst`.
+    -The value of `frq[i]` is 1, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 2.
+Iteration 14:
+    -The value of `i` is 3, which is the fourteenth element of `lst`.
+    -The value of `frq[i]` is 1, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 2.
+Iteration 15:
+    -The value of `i` is 6, which is the fifteenth element of `lst`.
+    -The value of `frq[i]` is 1, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 2.
+Iteration 16:
+    -The value of `i` is 7, which is the sixteenth element of `lst`.
+    -The value of `frq[i]` is 2, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 3.
+Iteration 17:
+    -The value of `i` is 4, which is the seventeenth element of `lst`.
+    -The value of `frq[i]` is 2, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 3.
+Iteration 18:
+    -The value of `i` is 10, which is the eighteenth element of `lst`.
+    -The value of `frq[i]` is 1, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 2.
+Iteration 19:
+    -The value of `i` is 8, which is the nineteenth element of `lst`.
+    -The value of `frq[i]` is 3, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 4.
+Iteration 20:
+    -The value of `i` is 1, which is the twentieth element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented to 1.
+Iteration 21:
+    -The value of `i` is 7, which is the twenty-first element of `lst`.
+    -The value of `frq[i]` is 1, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 2.
+Iteration 22:
+    -The value of `i` is 4, which is the twenty-second element of `lst`.
+    -The value of `frq[i]` is 2, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 3.
+Iteration 23:
+    -The value of `i` is 10, which is the twenty-third element of `lst`.
+    -The value of `frq[i]` is 2, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 3.
+Iteration 24:
+    -The value of `i` is 8, which is the twenty-fourth element of `lst`.
+    -The value of `frq[i]` is 3, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 4.
+Iteration 25:
+    -The value of `i` is 1, which is the twenty-fifth element of `lst`.
+    -The value of `frq[i]` is 1, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented to 2.
+
+After

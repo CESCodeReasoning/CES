@@ -1,0 +1,6 @@
+from typing import *
+def starts_one_ends(n)
+    if n == 1: ## [CONDITION](n == 1)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return 1
+    else: ## [BRANCH]taken=[N][/BRANCH]
+        return 18 * (10 ** (n - 2))

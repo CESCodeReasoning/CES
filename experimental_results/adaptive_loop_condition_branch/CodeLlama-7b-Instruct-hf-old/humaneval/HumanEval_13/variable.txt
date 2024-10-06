@@ -1,0 +1,4 @@
+def greatest_common_divisor(a, b):
+    while b: ## [STATE]b=??[/STATE]
+        a, b = b, a % b
+    return a

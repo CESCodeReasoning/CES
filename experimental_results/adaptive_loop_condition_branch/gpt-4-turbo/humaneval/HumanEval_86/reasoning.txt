@@ -1,0 +1,9 @@
+The function `anti_shuffle` takes a string `s` as input and returns a string where each word in `s` is sorted alphabetically and then joined back with spaces. Here's the step-by-step breakdown:
+1. The input string `s` is "Hi".
+2. The `split(' ')` method is used to split the string into words based on spaces. Since there's only one word "Hi", the result is a list containing the single element ["Hi"].
+3. A list comprehension iterates over each word in the list. For the word "Hi", the following steps occur:
+   - The word "Hi" is converted into a list of characters: ['H', 'i'].
+   - The `sorted()` function sorts the list of characters alphabetically, resulting in ['H', 'i'] (since 'H' is considered less than 'i' in ASCII).
+   - The `join()` method concatenates the sorted characters back into a string, resulting in "Hi".
+4. The outer `join(' ')` method then joins the sorted words back into a single string with spaces in between. Since there's only one word, the result is "Hi".
+5. The function returns the string "Hi".

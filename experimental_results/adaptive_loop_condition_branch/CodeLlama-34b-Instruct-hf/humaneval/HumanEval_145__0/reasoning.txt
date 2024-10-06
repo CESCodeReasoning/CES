@@ -1,0 +1,8 @@
+The function `order_by_points` is called with a list of integers.
+The function first defines a helper function `digits_sum` that takes an integer `n` as input.
+The `digits_sum` function first checks if `n` is negative. If it is, it multiplies `n` by -1 to make it positive and sets `neg` to -1.
+It then converts `n` to a list of integers, with each digit of `n` as an element of the list.
+It then multiplies the first element of the list by `neg` to ensure that the sign of the first digit is correct.
+It then returns the sum of the elements of the list.
+The `order_by_points` function then sorts the input list using the `digits_sum` function as the key.
+It returns the sorted list.

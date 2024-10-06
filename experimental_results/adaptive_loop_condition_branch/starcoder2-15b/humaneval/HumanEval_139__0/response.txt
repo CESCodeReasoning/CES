@@ -1,0 +1,276 @@
+<fim_prefix>You are given a piece of Python code and its output. You are asked to complete the following task:
+1. Replace the "??" between [STATE] and [/STATE] in the comment with the state of a variable or the return value of a method call/expression.
+2. Replace the "??" between [CONDITION] and [/CONDITION] in the comment with the the value of a predicate in the conditional statement.
+3. Replace the "??" between [BRANCH] and [/BRANCH] in the comment with `Y` and `N`. If a branch is hit during the execution, then mark it with `Y`, otherwise mark it with `N`.
+4. Enclose the annotated code with [ANSWER] AND [/ANSWER]
+5. Think step by step and print you reasoning process of the code execution.
+6. Print the output and enclose it with [OUTPUT] and [/OUTPUT].
+
+[CODE]
+def sum_of_integer(N):
+    sum_1 = 0
+    for i in range(1,N+1): ## [STATE]i=??[/STATE][STATE]range(1,N+1)=??[/STATE][STATE]N+1=??[/STATE]
+        sum += i
+    return sum
+[/CODE]
+[INPUT]
+sum_of_integer(5)
+[/INPUT]
+
+[REASONING]
+The function `sum_of_integer` is called with ( N = 5 ).
+Inside the function, a variable `sum` is initialized to 0.
+The loop iterates from 1 through 5 (since ( N = 5 )).
+First Iteration (i = 1):
+    `sum += i` updates `sum` to 1 ( 0 + 1 = 1 ).
+Second Iteration (i = 2):
+    `sum += i` updates `sum` to 3 ( 1 + 2 = 3 ).
+Third Iteration (i = 3)
+    `sum += i` updates `sum` to 6 ( 3 + 3 = 6 ).
+Fourth Iteration (i = 4)
+    `sum += i` updates `sum` to 10 ( 6 + 4 = 10 ).
+Fifth Iteration (i = 5)
+    `sum += i` updates `sum` to 15 ( 10 + 5 = 1 ).
+After the loop completes, the function returns the value of `sum`, which is now 15.
+[/REASONING]
+
+[ANSWER]
+def sum_of_integer(N):
+    sum_1 = 0
+    for i in range(1,N+1): ## [STATE]i=[1, 2, 3, 4, 5][/STATE][STATE]range(1,N+1)=[1, 2, 3, 4, 5][/STATE][STATE]N+1=[6][/STATE]
+        sum += i
+    return sum
+[/ANSWER]
+
+[OUTPUT]
+15
+[/OUTPUT]
+
+[CODE]
+def reverse_string(input_string):
+    reversed_string = ''
+    for i in range(len(input_string)): ##[STATE]i=??[/STATE][STATE]len(input_string)=??[/STATE][STATE]range(len(input_string))=??[/STATE]
+        reversed_string = input_string[i] + reversed_string
+    return reversed_string
+[/CODE]
+[INPUT]
+reverse_string("hello")
+[/INPUT]
+
+[REASONING]
+The function `reverse_string` is called with (input_string = 'hello' ).
+Inside the function, a variable `reversed_string` is initialized to ''.
+`len(input_string)` = 5 since there are 5 characters in 'hello'.
+The loop iterates from 0 to 4 since `range(len(input_string))`= [0, 1, 2, 3, 4]
+
+First Iteration(i = 0):
+    input_string[i] = 'h'
+    reversed_string = 'h' + '' results in reversed_string = 'h'
+Second Iteration(i = 1):
+    input_string[i] = 'e'
+    reversed_string = 'e' + 'h' results in reversed_string = 'eh'
+Third Iteration(i = 2):
+    i = 2, input_string[i] = 'l'
+    reversed_string = 'l' + 'eh' results in reversed_string = 'leh'
+Forth Iteration(i = 3): 
+    i = 3, input_string[i] = 'l'
+    reversed_string = 'l' + 'leh' results in reversed_string = 'lleh'
+Fifth Iteration(i = 4): 
+    i = 4, input_string[i] = 'o'
+    reversed_string = 'o' + 'lleh' results in reversed_string = 'olleh'
+[/REASONING]
+
+
+[ANSWER]
+def reverse_string(input_string):
+    reversed_string = ''
+    for i in range(len(input_string)): ##[STATE]i=[0, 1, 2, 3, 4][/STATE][STATE]len(input_string)=[5][/STATE][STATE]range(len(input_string))=[0, 1, 2, 3, 4][/STATE]
+        reversed_string = input_string[i] + reversed_string
+    return reversed_string
+[/ANSWER]
+
+[OUTPUT]
+olleh
+[/OUTPUT]
+[CODE]
+from typing import *
+
+
+def special_factorial(n):
+    fact_i = 1
+    special_fact = 1
+    for i in range(1, n + 1): ## [STATE]i=??[/STATE][STATE]range(1, (n + 1))=??[/STATE][STATE](n + 1)=??[/STATE]
+        fact_i *= i
+        special_fact *= fact_i
+    return special_fact
+[/CODE]
+
+[INPUT]
+special_factorial(7)
+[/INPUT]
+<fim_suffix><fim_middle>
+[REASONING]
+The function `special_factorial` is called with (n = 7).
+Inside the function, a variable `fact_i` is initialized to 1.
+A variable `special_fact` is initialized to 1.
+The loop iterates from 1 to 7 (since (n = 7)).
+
+First Iteration (i = 1):
+    fact_i = 1 * 1 = 1
+    special_fact = 1 * 1 = 1
+Second Iteration (i = 2):
+    fact_i = 1 * 2 = 2
+    special_fact = 1 * 2 = 2
+Third Iteration (i = 3):
+    fact_i = 2 * 3 = 6
+    special_fact = 2 * 6 = 12
+Fourth Iteration (i = 4):
+    fact_i = 6 * 4 = 24
+    special_fact = 12 * 24 = 288
+Fifth Iteration (i = 5):
+    fact_i = 24 * 5 = 120
+    special_fact = 288 * 120 = 34560
+Sixth Iteration (i = 6):
+    fact_i = 120 * 6 = 720
+    special_fact = 34560 * 720 = 24883200
+Seventh Iteration (i = 7):
+    fact_i = 720 * 7 = 5040
+    special_fact = 24883200 * 5040 = 12541132800
+After the loop completes, the function returns the value of `special_fact`, which is now 12541132800.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def special_factorial(n):
+    fact_i = 1
+    special_fact = 1
+    for i in range(1, n + 1): ## [STATE]i=[1, 2, 3, 4, 5, 6, 7][/STATE][STATE]range(1, (n + 1))=[1, 2, 3, 4, 5, 6, 7][/STATE][STATE](n + 1)=[8][/STATE]
+        fact_i *= i
+        special_fact *= fact_i
+    return special_fact
+[/ANSWER]
+
+[OUTPUT]
+12541132800
+[/OUTPUT]
+
+[CODE]
+def sum_of_squares(n):
+    sum_of_squares = 0
+    for i in range(1, n + 1): ## [STATE]i=??[/STATE][STATE]range(1, (n + 1))=??[/STATE][STATE](n + 1)=??[/STATE]
+        sum_of_squares += i * i
+    return sum_of_squares
+[/CODE]
+
+[INPUT]
+sum_of_squares(5)
+[/INPUT]
+
+[REASONING]
+The function `sum_of_squares` is called with (n = 5).
+Inside the function, a variable `sum_of_squares` is initialized to 0.
+The loop iterates from 1 to 5 (since (n = 5)).
+
+First Iteration (i = 1):
+    sum_of_squares = 0 + 1 * 1 = 1
+Second Iteration (i = 2):
+    sum_of_squares = 1 + 2 * 2 = 5
+Third Iteration (i = 3):
+    sum_of_squares = 5 + 3 * 3 = 14
+Fourth Iteration (i = 4):
+    sum_of_squares = 14 + 4 * 4 = 30
+Fifth Iteration (i = 5):
+    sum_of_squares = 30 + 5 * 5 = 55
+After the loop completes, the function returns the value of `sum_of_squares`, which is now 55.
+[/REASONING]
+
+[ANSWER]
+def sum_of_squares(n):
+    sum_of_squares = 0
+    for i in range(1, n + 1): ## [STATE]i=[1, 2, 3, 4, 5][/STATE][STATE]range(1, (n + 1))=[1, 2, 3, 4, 5][/STATE][STATE](n + 1)=[6][/STATE]
+        sum_of_squares += i * i
+    return sum_of_squares
+[/ANSWER]
+
+[OUTPUT]
+55
+[/OUTPUT]
+
+[CODE]
+def sum_of_cubes(n):
+    sum_of_cubes = 0
+    for i in range(1, n + 1): ## [STATE]i=??[/STATE][STATE]range(1, (n + 1))=??[/STATE][STATE](n + 1)=??[/STATE]
+        sum_of_cubes += i * i * i
+    return sum_of_cubes
+[/CODE]
+
+[INPUT]
+sum_of_cubes(5)
+[/INPUT]
+
+[REASONING]
+The function `sum_of_cubes` is called with (n = 5).
+Inside the function, a variable `sum_of_cubes` is initialized to 0.
+The loop iterates from 1 to 5 (since (n = 5)).
+
+First Iteration (i = 1):
+    sum_of_cubes = 0 + 1 * 1 * 1 = 1
+Second Iteration (i = 2):
+    sum_of_cubes = 1 + 2 * 2 * 2 = 9
+Third Iteration (i = 3):
+    sum_of_cubes = 9 + 3 * 3 * 3 = 36
+Fourth Iteration (i = 4):
+    sum_of_cubes = 36 + 4 * 4 * 4 = 80
+Fifth Iteration (i = 5):
+    sum_of_cubes = 80 + 5 * 5 * 5 = 175
+After the loop completes, the function returns the value of `sum_of_cubes`, which is now 175.
+[/REASONING]
+
+[ANSWER]
+def sum_of_cubes(n):
+    sum_of_cubes = 0
+    for i in range(1, n + 1): ## [STATE]i=[1, 2, 3, 4, 5][/STATE][STATE]range(1, (n + 1))=[1, 2, 3, 4, 5][/STATE][STATE](n + 1)=[6][/STATE]
+        sum_of_cubes += i * i * i
+    return sum_of_cubes
+[/ANSWER]
+
+[OUTPUT]
+175
+[/OUTPUT]
+
+[CODE]
+def sum_of_powers(n, power):
+    sum_of_powers = 0
+    for i in range(1, n + 1): ## [STATE]i=??[/STATE][STATE]range(1, (n + 1))=??[/STATE][STATE](n + 1)=??[/STATE]
+        sum_of_powers += i ** power
+    return sum_of_powers
+[/CODE]
+
+[INPUT]
+sum_of_powers(5, 3)
+[/INPUT]
+
+[REASONING]
+The function `sum_of_powers` is called with (n = 5, power = 3).
+Inside the function, a variable `sum_of_powers` is initialized to 0.
+The loop iterates from 1 to 5 (since (n = 5)).
+
+First Iteration (i = 1):
+    sum_of_powers = 0 + 1 ** 3 = 1
+Second Iteration (i = 2):
+    sum_of_powers = 1 + 2 ** 3 = 9
+Third Iteration (i = 3):
+    sum_of_powers = 9 + 3 ** 3 = 36
+Fourth Iteration (i = 4):
+    sum_of_powers = 36 + 4 ** 3 = 80
+Fifth Iteration (i = 5):
+    sum_of_powers = 80 + 5 ** 3 = 175
+After the loop completes, the function returns the value of `sum_of_powers`, which is now 175.
+[/REASONING]
+
+[ANSWER]
+def sum_of_powers(n, power):
+    sum_of_powers = 0
+    for i in range(1, n + 1): ## [STATE]i=[1, 2,

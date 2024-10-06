@@ -1,0 +1,34 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: sort_numbers
+main.py(4):         'zero': 0,
+main.py(5):         'one': 1,
+main.py(6):         'two': 2,
+main.py(7):         'three': 3,
+main.py(8):         'four': 4,
+main.py(9):         'five': 5,
+main.py(10):         'six': 6,
+main.py(11):         'seven': 7,
+main.py(12):         'eight': 8,
+main.py(13):         'nine': 9
+main.py(3):     value_map = {
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+ --- modulename: main, funcname: <listcomp>
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+ --- modulename: main, funcname: <lambda>
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+ --- modulename: main, funcname: <lambda>
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+ --- modulename: main, funcname: <lambda>
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+ --- modulename: main, funcname: <lambda>
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+ --- modulename: main, funcname: <lambda>
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+ --- modulename: main, funcname: <lambda>
+main.py(15):     return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))

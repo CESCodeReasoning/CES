@@ -1,0 +1,146 @@
+[REASONING]
+The function `x_or_y` is called with ( n = 91, x = 56, y = 129 ).
+The first condition ( n == 1 ) is false, so the function proceeds to the loop.
+The loop iterates from 2 to 90 (since n = 91).
+Iteration 1:
+    - i = 2, and n % i != 0, so the loop continues.
+Iteration 2:
+    - i = 3, and n % i != 0, so the loop continues.
+Iteration 3:
+    - i = 4, and n % i != 0, so the loop continues.
+Iteration 4:
+    - i = 5, and n % i != 0, so the loop continues.
+Iteration 5:
+    - i = 6, and n % i != 0, so the loop continues.
+Iteration 6:
+    - i = 7, and n % i != 0, so the loop continues.
+Iteration 7:
+    - i = 8, and n % i != 0, so the loop continues.
+Iteration 8:
+    - i = 9, and n % i != 0, so the loop continues.
+Iteration 9:
+    - i = 10, and n % i != 0, so the loop continues.
+Iteration 10:
+    - i = 11, and n % i != 0, so the loop continues.
+Iteration 11:
+    - i = 12, and n % i != 0, so the loop continues.
+Iteration 12:
+    - i = 13, and n % i != 0, so the loop continues.
+Iteration 13:
+    - i = 14, and n % i != 0, so the loop continues.
+Iteration 14:
+    - i = 15, and n % i != 0, so the loop continues.
+Iteration 15:
+    - i = 16, and n % i != 0, so the loop continues.
+Iteration 16:
+    - i = 17, and n % i != 0, so the loop continues.
+Iteration 17:
+    - i = 18, and n % i != 0, so the loop continues.
+Iteration 18:
+    - i = 19, and n % i != 0, so the loop continues.
+Iteration 19:
+    - i = 20, and n % i != 0, so the loop continues.
+Iteration 20:
+    - i = 21, and n % i != 0, so the loop continues.
+Iteration 21:
+    - i = 22, and n % i != 0, so the loop continues.
+Iteration 22:
+    - i = 23, and n % i != 0, so the loop continues.
+Iteration 23:
+    - i = 24, and n % i != 0, so the loop continues.
+Iteration 24:
+    - i = 25, and n % i != 0, so the loop continues.
+Iteration 25:
+    - i = 26, and n % i != 0, so the loop continues.
+Iteration 26:
+    - i = 27, and n % i != 0, so the loop continues.
+Iteration 27:
+    - i = 28, and n % i != 0, so the loop continues.
+Iteration 28:
+    - i = 29, and n % i != 0, so the loop continues.
+Iteration 29:
+    - i = 30, and n % i != 0, so the loop continues.
+Iteration 30:
+    - i = 31, and n % i != 0, so the loop continues.
+Iteration 31:
+    - i = 32, and n % i != 0, so the loop continues.
+Iteration 32:
+    - i = 33, and n % i != 0, so the loop continues.
+Iteration 33:
+    - i = 34, and n % i != 0, so the loop continues.
+Iteration 34:
+    - i = 35, and n % i != 0, so the loop continues.
+Iteration 35:
+    - i = 36, and n % i != 0, so the loop continues.
+Iteration 36:
+    - i = 37, and n % i != 0, so the loop continues.
+Iteration 37:
+    - i = 38, and n % i != 0, so the loop continues.
+Iteration 38:
+    - i = 39, and n % i != 0, so the loop continues.
+Iteration 39:
+    - i = 40, and n % i != 0, so the loop continues.
+Iteration 40:
+    - i = 41, and n % i != 0, so the loop continues.
+Iteration 41:
+    - i = 42, and n % i != 0, so the loop continues.
+Iteration 42:
+    - i = 43, and n % i != 0, so the loop continues.
+Iteration 43:
+    - i = 44, and n % i != 0, so the loop continues.
+Iteration 44:
+    - i = 45, and n % i != 0, so the loop continues.
+Iteration 45:
+    - i = 46, and n % i != 0, so the loop continues.
+Iteration 46:
+    - i = 47, and n % i != 0, so the loop continues.
+Iteration 47:
+    - i = 48, and n % i != 0, so the loop continues.
+Iteration 48:
+    - i = 49, and n % i != 0, so the loop continues.
+Iteration 49:
+    - i = 50, and n % i != 0, so the loop continues.
+Iteration 50:
+    - i = 51, and n % i != 0, so the loop continues.
+Iteration 51:
+    - i = 52, and n % i != 0, so the loop continues.
+Iteration 52:
+    - i = 53, and n % i != 0, so the loop continues.
+Iteration 53:
+    - i = 54, and n % i != 0, so the loop continues.
+Iteration 54:
+    - i = 55, and n % i != 0, so the loop continues.
+Iteration 55:
+    - i = 56, and n % i != 0, so the loop continues.
+Iteration 56:
+    - i = 57, and n % i != 0, so the loop continues.
+Iteration 57:
+    - i = 58, and n % i != 0, so the loop continues.
+Iteration 58:
+    - i = 59, and n % i != 0, so the loop continues.
+Iteration 59:
+    - i = 60, and n % i != 0, so the loop continues.
+Iteration 60:
+    - i = 61, and n % i != 0, so the loop continues.
+Iteration 61:
+    - i = 62, and n % i != 0, so the loop continues.
+Iteration 62:
+    - i = 63, and n % i != 0, so the loop continues.
+Iteration 63:
+    - i = 64, and n % i != 0, so the loop continues.
+Iteration 64:
+    - i = 65, and n % i != 0, so the loop continues.
+Iteration 65:
+    - i = 66, and n % i != 0, so the loop continues.
+Iteration 66:
+    - i = 67, and n % i != 0, so the loop continues.
+Iteration 67:
+    - i = 68, and n % i != 0, so the loop continues.
+Iteration 68:
+    - i = 69, and n % i != 0, so the loop continues.
+Iteration 69:
+    - i = 70, and n % i != 0, so the loop continues.
+Iteration 70:
+    - i = 71, and n % i != 0, so the loop continues.
+Iteration 71:
+    - i = 72, and n % i != 0, so the loop continues

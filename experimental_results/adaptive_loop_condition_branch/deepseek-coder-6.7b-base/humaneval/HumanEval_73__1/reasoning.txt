@@ -1,0 +1,26 @@
+The function `smallest_change` is called with ( arr = [1, 2, 3, 4, 3, 2, 2] ).
+Inside the function, a variable `ans` is initialized to 0.
+
+Iteration 1:
+    -The first element of the array is 1, and the last element is 2.
+    -Since they are not equal, ans is incremented by 1.
+Iteration 2:
+    -The second element of the array is 2, and the second-last element is 2.
+    -Since they are equal, no change is made to ans.
+Iteration 3:
+    -The third element of the array is 3, and the third-last element is 3.
+    -Since they are equal, no change is made to ans.
+Iteration 4:
+    -The fourth element of the array is 4, and the fourth-last element is 4.
+    -Since they are equal, no change is made to ans.
+Iteration 5:
+    -The fifth element of the array is 3, and the fifth-last element is 2.
+    -Since they are not equal, ans is incremented by 1.
+Iteration 6:
+    -The sixth element of the array is 2, and the sixth-last element is 2.
+    -Since they are equal, no change is made to ans.
+Iteration 7:
+    -The seventh element of the array is 2, and the seventh-last element is 2.
+    -Since they are equal, no change is made to ans.
+
+Therefore, the final value of ans is 1.

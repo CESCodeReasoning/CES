@@ -1,0 +1,8 @@
+The function `compare_one` is called with ( a = "1", b = "2" ).
+`a` and `b` are strings, therefore the first two if branches are taken.
+`temp_a` and `temp_b` are assigned to `a` and `b` respectively.
+`temp_a` and `temp_b` are strings, therefore the second two if branches are taken.
+`temp_a` and `temp_b` are strings, therefore the third if branch is taken.
+The condition `float(temp_a) == float(temp_b)` is false, therefore the else branch is taken.
+
+Therefore, the final output of the function `compare_one("1", "2")` is "1".

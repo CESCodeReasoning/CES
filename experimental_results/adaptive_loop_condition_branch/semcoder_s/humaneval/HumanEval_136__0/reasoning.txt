@@ -1,0 +1,8 @@
+The function `largest_smallest_integers` takes a list of integers as input and returns a tuple containing the largest negative integer and the smallest positive integer in the list.
+
+- The function first filters out all negative numbers from the list and assigns them to the variable `smallest`.
+- It then filters out all positive numbers from the list and assigns them to the variable `largest`.
+- The function returns a tuple containing the maximum value from `smallest` if `smallest` is not empty, otherwise it returns `None`.
+- Similarly, it returns a tuple containing the minimum value from `largest` if `largest` is not empty, otherwise it returns `None`.
+
+Since the input list is empty, both `smallest` and `largest` will be empty lists, and the function will return `(None, None)`.

@@ -1,0 +1,29 @@
+The function `by_length` is called with (arr = [2, 1, 1, 4, 5, 8, 2, 3] ).
+Inside the function, a variable `dic` is initialized to a dictionary.
+`sorted_arr` is initialized to the sorted version of `arr` in descending order.
+`new_arr` is initialized to an empty list.
+The loop iterates through the elements of `sorted_arr`.
+First Iteration(var = 8):
+    `dic[var]` = 'Eight'
+    `new_arr.append(dic[var])` appends 'Eight' to `new_arr`.
+Second Iteration(var = 5):
+    `dic[var]` = 'Five'
+    `new_arr.append(dic[var])` appends 'Five' to `new_arr`.
+Third Iteration(var = 4):
+    `dic[var]` = 'Four'
+    `new_arr.append(dic[var])` appends 'Four' to `new_arr`.
+Forth Iteration(var = 3):
+    `dic[var]` = 'Three'
+    `new_arr.append(dic[var])` appends 'Three' to `new_arr`.
+Fifth Iteration(var = 2):
+    `dic[var]` = 'Two'
+    `new_arr.append(dic[var])` appends 'Two' to `new_arr`.
+Sixth Iteration(var = 2):
+    `dic[var]` = 'Two'
+    `new_arr.append(dic[var])` appends 'Two' to `new_arr`.
+Seventh Iteration(var = 1):
+    `dic[var]` = 'One'
+    `new_arr.append(dic[var])` appends 'One' to `new_arr`.
+Eighth Iteration(var = 1):
+    `dic[var]` = 'One'
+    `new_arr.append(dic[var])` appends 'One' to `new_arr`.

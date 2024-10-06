@@ -1,0 +1,14 @@
+The function `all_prefixes` is called with (string = 'WWW' ).
+Inside the function, a variable `result` is initialized to an empty list.
+`len(string)` = 3 since there are 3 characters in 'WWW'.
+The loop iterates from 0 to 2 since `range(len(string))`= [0, 1, 2]
+
+First Iteration(i = 0):
+    string[:i + 1] = 'W'
+    result = ['W']
+Second Iteration(i = 1):
+    string[:i + 1] = 'WW'
+    result = ['W', 'WW']
+Third Iteration(i = 2):
+    string[:i + 1] = 'WWW'
+    result = ['W', 'WW', 'WWW']

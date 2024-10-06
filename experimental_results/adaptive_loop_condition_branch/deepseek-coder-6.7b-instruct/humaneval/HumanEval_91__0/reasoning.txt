@@ -1,0 +1,33 @@
+The function is_bored takes a string S as input and returns the number of sentences in S that start with "I ".
+To determine the output of executing the function is_bored on the input "You and I are going for a walk", we need to split the string S into sentences and count the number of sentences that start with "I ".
+
+The string S is split into sentences using the re.split function, which splits the string at each occurrence of a period, question mark, or exclamation mark followed by zero or more whitespace characters. The resulting list of sentences is then iterated over, and for each sentence, the first two characters are checked. If they are "I ", the sentence is counted.
+
+In the given input, there is one sentence that starts with "I ": "I am going for a walk". Therefore, the output of executing the function is_bored on the input "You and I are going for a walk" is 1.
+
+Here is the Python code:
+
+```python
+from typing import *
+
+
+def is_bored(S):
+    import re
+    sentences = re.split(r'[.?!]\s*', S)
+    return sum(sentence[0:2] == 'I ' for sentence in sentences)
+```
+
+And the input:
+
+```python
+is_bored("You and I are going for a walk")
+```
+
+The output of this code will be:
+
+```python
+1
+```
+
+So the output of the function is_bored on the input "You and I are going for a walk" is 1.
+<|EOT|>

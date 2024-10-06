@@ -1,0 +1,48 @@
+[REASONING]
+The function `rolling_max` is called with ( numbers = [3,2,3,100,3] ).
+Inside the function, a variable `running_max` is initialized to None.
+A new list `result` is created to store the rolling maximums.
+
+Iteration 1:
+    - The first element of `numbers` is 3. Since `running_max` is None, it is set to 3.
+    - The rolling maximum for the first element is 3, so it is appended to `result`.
+
+Iteration 2:
+    - The second element of `numbers` is 2. Since `running_max` is not None, it is compared with 2. The maximum of 3 and 2 is 3, so `running_max` remains 3.
+    - The rolling maximum for the second element is still 3, so it is appended to `result`.
+
+Iteration 3:
+    - The third element of `numbers` is 3. Since `running_max` is not None, it is compared with 3. The maximum of 3 and 3 is 3, so `running_max` remains 3.
+    - The rolling maximum for the third element is still 3, so it is appended to `result`.
+
+Iteration 4:
+    - The fourth element of `numbers` is 100. Since `running_max` is not None, it is compared with 100. The maximum of 3 and 100 is 100, so `running_max` is updated to 100.
+    - The rolling maximum for the fourth element is 100, so it is appended to `result`.
+
+Iteration 5:
+    - The fifth element of `numbers` is 3. Since `running_max` is not None, it is compared with 3. The maximum of 100 and 3 is 100, so `running_max` remains 100.
+    - The rolling maximum for the fifth element is still 100, so it is appended to `result`.
+
+After the loop completes, the function returns the list `result`, which contains the rolling maximums for each element in `numbers`.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def rolling_max(numbers: List[int]) -> List[int]:
+    running_max = None
+    result = []
+ ## [STATE]n=[3, 2, 3, 100, 3][/STATE]
+    for n in numbers: ## [STATE]numbers=[3, 2, 3, 100, 3][/STATE]
+        if running_max is None: ## [CONDITION](running_max is None)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+            running_max = n
+        else: ## [BRANCH]taken=[N, N, N, N][/BRANCH]
+            running_max = max(running_max, n)
+
+        result.append(running_max)
+
+    return result
+[/ANSWER]
+
+[OUTPUT]
+[3, 3, 3, 100, 100]
+[/OUTPUT]

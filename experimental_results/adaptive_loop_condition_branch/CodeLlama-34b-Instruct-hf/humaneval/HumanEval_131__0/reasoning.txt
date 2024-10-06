@@ -1,0 +1,24 @@
+The function `digits` is called with ( n = 120 ).
+Inside the function, a variable `product` is initialized to 1.
+A variable `odd_count` is initialized to 0.
+
+The loop iterates over the digits of `n`.
+First Iteration (digit = '1')
+   - `digit` is '1', which is an odd number.
+   - The condition `int_digit % 2 == 1` is true.
+   - Action: `product` is updated to 1 * 1 = 1.
+   - Action: `odd_count` is updated to 1.
+Second Iteration (digit = '2')
+   - `digit` is '2', which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product` remains unchanged.
+   - Action: `odd_count` remains unchanged.
+Third Iteration (digit = '0')
+   - `digit` is '0', which is an even number.
+   - The condition `int_digit % 2 == 1` is false.
+   - Action: `product` remains unchanged.
+   - Action: `odd_count` remains unchanged.
+
+After the loop completes, the function checks if `odd_count` is 0.
+Since `odd_count` is 1, the `else` block is executed.
+The function returns `product`, which is 1.

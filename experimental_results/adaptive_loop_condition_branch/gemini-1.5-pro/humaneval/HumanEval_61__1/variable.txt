@@ -1,0 +1,13 @@
+from typing import *
+
+
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets: ## [STATE]b=["(", ")"][/STATE][STATE]brackets=["("][/STATE]
+        if b == "(": ## [CONDITION](b == "(")=[True, False][/CONDITION][BRANCH]taken=[Y, N][/BRANCH]
+            depth += 1
+        else: ## [BRANCH]taken=[N, Y][/BRANCH]
+            depth -= 1
+        if depth < 0: ## [CONDITION](depth < 0)=[False, True][/CONDITION][BRANCH]taken=[N, Y][/BRANCH]
+            return False
+    return depth == 0

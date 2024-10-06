@@ -1,0 +1,50 @@
+The function `fix_spaces` is called with ( text = "Yellow Yellow  Dirty  Fellow" ).
+Inside the function, a variable `new_text` is initialized to an empty string.
+The loop iterates through each character in the string.
+First Iteration (i = 0):
+    - `i < len(text)` when i=0
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Y" ( "" + "Y" = "Y" ).
+Second Iteration (i = 1):
+    - `i < len(text)` when i=1
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Ye" ( "Y" + "e" = "Ye" ).
+Third Iteration (i = 2):
+    - `i < len(text)` when i=2
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 1.
+Fourth Iteration (i = 3):
+    - `i < len(text)` when i=3
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel" ( "Ye" + "l" = "Yel" ).
+Fifth Iteration (i = 4):
+    - `i < len(text)` when i=4
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yell" ( "Yel" + "l" = "Yell" ).
+Sixth Iteration (i = 5):
+    - `i < len(text)` when i=5
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 2.
+Seventh Iteration (i = 6):
+    - `i < len(text)` when i=6
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yellow" ( "Yell" + "o" = "Yellow" ).
+Eighth Iteration (i = 7):
+    - `i < len(text)` when i=7
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 3.
+Ninth Iteration (i = 8):
+    - `i < len(text)` when i=8
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yellow_" ( "Yellow" + "_" = "Yellow_" ).
+Tenth Iteration (i = 9):
+    - `i < len(text)` when i=9
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yellow_Y" ( "Yellow_" + "Y" = "Yellow_Y" ).
+Eleventh Iteration (i = 10):
+    - `i < len(text)` when i=10
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 4.
+Twelfth Iteration (i = 11):
+    - `i < len(text)` when i=11
+    - The condition `text[i] == " "` is false. The

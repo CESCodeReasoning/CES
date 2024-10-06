@@ -1,0 +1,20 @@
+[REASONING]
+The function `string_sequence` takes an integer `n` as input and returns a string that contains a sequence of numbers from 0 to `n` inclusive, separated by spaces.
+To determine the output of executing the function `string_sequence` on the input `10`, we need to generate a list of numbers from 0 to 10. This list is `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+Next, we convert each number in the list to a string and join them with spaces to form the final string.
+Therefore, the output of executing the function `string_sequence` on the input `10` is "0 1 2 3 4 5 6 7 8 9 10".
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def string_sequence(n: int) -> str:
+    # [STATE] n = 10 [/STATE]
+    return ' '.join([str(x) for x in range(n + 1)])  # [STATE] range(n + 1) = range(11) [/STATE]
+```
+[/ANSWER]
+
+[OUTPUT]
+"0 1 2 3 4 5 6 7 8 9 10"
+[/OUTPUT]

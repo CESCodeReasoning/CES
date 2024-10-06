@@ -1,0 +1,23 @@
+
+[REASONING]
+The function `largest_divisor` is called with ( n = 3 ).
+
+Iteration 1:
+    -The number '3' is not divisible by '3', so the loop continues.
+Iteration 2:
+    -The number '3' is not divisible by '2', so the loop continues.
+Iteration 3:
+    -The number '3' is divisible by '1', so the function returns '1'.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def largest_divisor(n: int) -> int:
+    for i in reversed(range(n)): ## [STATE]i=[2, 1, 0][/STATE][STATE]reversed(range(n))=[2, 1, 0][/STATE][STATE]range(n)=[3][/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[False, False, True][/CONDITION][BRANCH]taken=[N, N, Y][/BRANCH]
+            return i
+[/ANSWER]
+
+[OUTPUT]
+1
+[/OUTPUT]

@@ -1,0 +1,7 @@
+The function `count_nums` is called with ( arr = [1, 6, 9, -6, 0, 1, 5] ).
+The inner function `digits_sum` is defined to calculate the sum of digits of a number.
+The list comprehension `[digits_sum(i) for i in arr]` calculates the sum of digits for each number in the input list.
+The `filter` function filters out the positive numbers from the list of sums.
+The `len` function returns the count of positive numbers.
+
+Therefore, the final output of the function `count_nums([1, 6, 9, -6, 0, 1, 5])` is 5.

@@ -1,0 +1,4 @@
+The function `split_words` is called with ( txt = "" ).
+The first condition `if " " in txt` is False, the first branch is not taken.
+The second condition `elif "," in txt` is also False, the second branch is not taken.
+The third branch is taken.

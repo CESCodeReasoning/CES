@@ -1,0 +1,18 @@
+```response
+            running_max = max(numbers)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def find_max_subarray(numbers: List[int]) -> List[int]:
+    max_sum = None
+    max_subarray = None
+
+    for i in range(len(numbers)):
+        for j in range(i, len(numbers)):
+            subarray = numbers[i:j+

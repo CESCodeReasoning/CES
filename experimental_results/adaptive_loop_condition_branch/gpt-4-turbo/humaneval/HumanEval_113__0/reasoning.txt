@@ -1,0 +1,16 @@
+The function `odd_count` is called with the list `lst` containing two elements: '3' and "11111111".
+Inside the function, an empty list `res` is initialized to store the results.
+
+The loop iterates over each element in the list `lst`.
+
+First Iteration (arr = '3'):
+- The generator expression `int(d) % 2 == 1 for d in arr` checks each character in the string '3' to see if it is an odd number.
+- Since '3' is odd, the sum `n` becomes 1.
+- A string is constructed and appended to `res` describing the count of odd numbers in the string '3'.
+
+Second Iteration (arr = "11111111"):
+- The generator expression iterates over each character in the string "11111111".
+- All characters '1' are odd, so the sum `n` becomes 8 (since there are eight '1's).
+- A string is constructed and appended to `res` describing the count of odd numbers in the string "11111111".
+
+After the loop completes, the function returns the list `res` containing the results for each input string.

@@ -1,0 +1,6 @@
+from typing import *
+
+
+def solve(N: int) -> str:
+    # [STATE] N is 963 [/STATE]
+    return bin(sum(int(i) for i in str(N)))[2:]  # [STATE] sum(int(i) for i in str(N)) is 18, bin(18) is '0b10010', bin(18)[2:] is '10010' [/STATE]

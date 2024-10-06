@@ -1,0 +1,34 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: histogram
+main.py(5):     dict1 = {}
+main.py(6):     list1 = test.split(" ")
+main.py(7):     t = 0
+main.py(9):     for i in list1:
+main.py(10):         if (list1.count(i) > t) and i != '':
+main.py(11):             t = list1.count(i)
+main.py(9):     for i in list1:
+main.py(10):         if (list1.count(i) > t) and i != '':
+main.py(9):     for i in list1:
+main.py(10):         if (list1.count(i) > t) and i != '':
+main.py(9):     for i in list1:
+main.py(10):         if (list1.count(i) > t) and i != '':
+main.py(9):     for i in list1:
+main.py(10):         if (list1.count(i) > t) and i != '':
+main.py(9):     for i in list1:
+main.py(12):     if t > 0:
+main.py(13):         for i in list1:
+main.py(14):             if (list1.count(i) == t):
+main.py(16):                 dict1[i] = t
+main.py(13):         for i in list1:
+main.py(14):             if (list1.count(i) == t):
+main.py(16):                 dict1[i] = t
+main.py(13):         for i in list1:
+main.py(14):             if (list1.count(i) == t):
+main.py(16):                 dict1[i] = t
+main.py(13):         for i in list1:
+main.py(14):             if (list1.count(i) == t):
+main.py(16):                 dict1[i] = t
+main.py(13):         for i in list1:
+main.py(14):             if (list1.count(i) == t):
+main.py(13):         for i in list1:
+main.py(17):     return dict1

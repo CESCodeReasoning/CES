@@ -1,0 +1,16 @@
+The function `get_row` takes a 2D list `lst` and a number `x` as input. It returns a sorted list of tuples, where each tuple represents the coordinates of the number `x` in the 2D list `lst`.
+
+To determine the output of executing the function `get_row` on the input `[[], [1], [1, 2, 3]]` and `3`, we need to find the coordinates of the number `3` in the 2D list `lst`.
+
+The 2D list `lst` is a list of lists, where each inner list represents a row in the 2D list. The coordinates of a number `x` in the 2D list `lst` are the indices of `x` in the 2D list.
+
+In the 2D list `[[], [1], [1, 2, 3]]`, the number `3` is at the position `(2, 2)`.
+
+Therefore, the output of executing the function `get_row` on the input `[[], [1], [1, 2, 3]]` and `3` is `[(2, 2)]`.
+
+The function `get_row` sorts the list of tuples by the first element of each tuple (i.e., the row index) in ascending order, and then sorts the list of tuples by the second element of each tuple (i.e., the column index) in descending order.
+
+Since the number `3` is the only number in the 2D list `lst`, the output list `[(2, 2)]` is the sorted list of tuples representing the coordinates of the number `3` in the 2D list `lst`.
+
+Note: The indices are 0-based, meaning the first element is at position 0.
+<|EOT|>

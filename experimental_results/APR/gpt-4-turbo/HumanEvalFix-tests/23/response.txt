@@ -1,0 +1,8 @@
+Here's the fixed code for the `strlen` function:
+
+```python
+def strlen(string: str) -> int:
+    return len(string)
+```
+
+This function correctly returns the length of the given string without subtracting one, which was the error in the original buggy code.

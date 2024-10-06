@@ -1,0 +1,12 @@
+from typing import *
+
+
+def sort_third(l: list):
+    # [STATE] l before modification: [5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10] [/STATE]
+    l = list(l)  # Make a copy of the list to avoid modifying the original list
+    # [STATE] l after copying: [5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10] [/STATE]
+    l[::3] = sorted(l[::3])  # Sort every third element starting from index 0
+    # [STATE] l[::3] before sorting: [5, 2, 9, 1] [/STATE]
+    # [STATE] l[::3] after sorting: [1, 2, 5, 9] [/STATE]
+    # [STATE] l after sorting third elements: [1, 3, -5, 2, -3, 3, 5, 0, 123, 9, -10] [/STATE]
+    return l

@@ -1,0 +1,7 @@
+The function `prime_length` is called with ( string = 'Hello' ).
+The length of the string 'Hello' is 5.
+The function checks if the length is 0 or 1, which is not the case here.
+The function then iterates from 2 to 5 (length of the string).
+   - For i = 2, 3, and 4, it checks if 5 is divisible by i (2, 3, and 4).
+   - Since 5 is not divisible by 2, 3, or 4, the function returns True.
+Therefore, the function `prime_length('Hello')` returns True.

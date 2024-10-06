@@ -1,0 +1,11 @@
+The function `sum_of_squares` is called with ( lst = [-16, -9, -2, 36, 36, 26, -20, 25, -40, 20, -4, 12, -26, 35, 37] ).
+Inside the function, a variable `result` is initialized to 0.
+For each element in the list `lst`, the loop iterates through the list.
+Iteration 1:
+    - The element `-16` is not divisible by 3, so the condition `i % 3 == 0` is false.
+    - The condition `i % 4 == 0 and i % 3 != 0` is false, so the condition `i % 3 == 0` is false.
+    - The condition `i % 3 == 0` is false, so the action `result += lst[i]**2` is not executed.
+Iteration 2:
+    - The element `-9` is not divisible by 3, so the condition `i % 3 == 0` is false.
+    - The condition `i % 4 == 0 and i % 3 != 0` is false, so the condition `i % 3 == 0` is false.
+    - The condition `i % 3 == 

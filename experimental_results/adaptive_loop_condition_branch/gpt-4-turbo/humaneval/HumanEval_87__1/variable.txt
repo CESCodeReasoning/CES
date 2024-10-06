@@ -1,0 +1,15 @@
+from typing import *
+
+
+def get_row(lst, x):
+    # [STATE] lst = [[], [1], [1, 2, 3]], x = 3 [/STATE]
+    coords = [(i, j) for i in range(len(lst))
+              for j in range(len(lst[i])) if lst[i][j] == x]  # [CONDITION] lst[i][j] == 3 [/CONDITION]
+    # [STATE] coords = [(2, 2)] [/STATE]
+    return sorted(
+        sorted(
+            coords,
+            key=lambda x: x[1],  # [STATE] x = (2, 2), x[1] = 2 [/STATE]
+            reverse=True),  # [BRANCH] Y [/BRANCH]
+        key=lambda x: x[0])  # [STATE] x = (2, 2), x[0] = 2 [/STATE]
+    # [BRANCH] Y [/BRANCH]

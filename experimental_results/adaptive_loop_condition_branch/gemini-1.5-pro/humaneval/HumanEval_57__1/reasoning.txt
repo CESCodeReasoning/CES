@@ -1,0 +1,6 @@
+The function `monotonic` is called with the list `l = [1, 2, 4, 20]`.
+The condition `l == sorted(l)` checks if the list `l` is equal to its sorted version.
+The condition `l == sorted(l, reverse=True)` checks if the list `l` is equal to its reverse sorted version.
+Since `l = [1, 2, 4, 20]` is not equal to its sorted version `[1, 2, 4, 20]` and not equal to its reverse sorted version `[20, 4, 2, 1]`, the condition `l == sorted(l) or l == sorted(l, reverse=True)` is false, therefore the function returns False.
+
+Therefore, the final output of the function `monotonic([1, 2, 4, 20])` is False.

@@ -1,0 +1,39 @@
+The function `minSubArraySum` is called with ( nums = [2, 3, 4, 1, 2, 4] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+The loop iterates through the list `nums`.
+First Iteration (num = 2)
+   - `num` is 2, so `s` becomes -2.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 2.
+Second Iteration (num = 3)
+   - `num` is 3, so `s` becomes -5.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 5.
+Third Iteration (num = 4)
+   - `num` is 4, so `s` becomes -9.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 9.
+Fourth Iteration (num = 1)
+   - `num` is 1, so `s` becomes -10.
+   - The condition `s < 0` is true, so the branch is taken.
+   - Action: `s = 0` sets `s` to 0.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 9.
+Fifth Iteration (num = 2)
+   - `num` is 2, so `s` becomes -12.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 12.
+Sixth Iteration (num = 4)
+   - `num` is 4, so `s` becomes -16.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 16.
+Seventh Iteration (num = 1)
+   - `num` is 1, so `s` becomes -17.
+   - The condition `s < 0` is true, so the branch is taken.
+   - Action: `s = 0` sets `s` to 0.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 16.
+Eighth Iteration (num = 4)
+   - `num` is 4, so `s` becomes -20.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 20.
+
+Therefore, the final output of the function `minSubArraySum([2, 3, 4, 1, 2, 4])` is -20.

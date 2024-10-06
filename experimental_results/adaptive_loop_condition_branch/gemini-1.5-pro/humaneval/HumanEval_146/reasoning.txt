@@ -1,0 +1,21 @@
+The function `specialFilter` is called with ( nums = [5, -2, 1, -5] ).
+Inside the function, a variable `count` is initialized to 0.
+The loop iterates over the elements of `nums`.
+First Iteration ( num = 5 )
+   - `num` is 5, which is not greater than 10.
+   - The condition `num > 10` is false.
+   - Action: The loop continues to the next iteration without incrementing `count`.
+Second Iteration ( num = -2 )
+   - `num` is -2, which is not greater than 10.
+   - The condition `num > 10` is false.
+   - Action: The loop continues to the next iteration without incrementing `count`.
+Third Iteration ( num = 1 )
+   - `num` is 1, which is not greater than 10.
+   - The condition `num > 10` is false.
+   - Action: The loop continues to the next iteration without incrementing `count`.
+Fourth Iteration ( num = -5 )
+   - `num` is -5, which is not greater than 10.
+   - The condition `num > 10` is false.
+   - Action: The loop terminates without incrementing `count`.
+Return Statement
+   - After the loop completes, the function returns the value of `count`, which is 0.

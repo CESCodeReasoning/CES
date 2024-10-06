@@ -1,0 +1,69 @@
+The function common(l1, l2) takes two lists as its parameters.
+The outer loop iterates through each element in the first list to compare it against the elements in the second list.
+In the inner loop, for each element indexed by e1 in the outer loop, compare it with every element in the second list.
+First Iteration (e1=5):
+    - `e1` is 5, e2 in the inner loop is 3, 2, 8.
+    - 5 is not equal to 3, 2, 8.
+    - 5 is not equal to 2, 8.
+    - 5 is not equal to 8.
+Second Iteration (e1=3):
+    - `e1` is 3, e2 in the inner loop is 2, 8.
+    - 3 is equal to 2, 8.
+    - 3 is equal to 8.
+Third Iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 8.
+    - 2 is equal to 8.
+Forth Iteration (e1=8):
+    - `e1` is 8, e2 in the inner loop is 8.
+    - 8 is equal to 8.
+Fifth Iteration (e1=3):
+    - `e1` is 3, e2 in the inner loop is 2, 8.
+    - 3 is equal to 2, 8.
+    - 3 is equal to 8.
+Sixth iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 8.
+    - 2 is equal to 8.
+Seventh iteration (e1=8):
+    - `e1` is 8, e2 in the inner loop is 8.
+    - 8 is equal to 8.
+Eighth iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 8.
+    - 2 is equal to 8.
+Ninth iteration (e1=8):
+    - `e1` is 8, e2 in the inner loop is 8.
+    - 8 is equal to 8.
+Tenth iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 8.
+    - 2 is equal to 8.
+Eleventh iteration (e1=8):
+    - `e1` is 8, e2 in the inner loop is 8.
+    - 8 is equal to 8.
+Twelfth iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 8.
+    - 2 is equal to 8.
+Thirteenth iteration (e1=8):
+    - `e1` is 8, e2 in the inner loop is 8.
+    - 8 is equal to 8.
+Fourteenth iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 8.
+    - 2 is equal to 8.
+Fifteenth iteration (e1=8):
+    - `e1` is 8, e2 in the inner loop is 8.
+    - 8 is equal to 8.
+Sixteenth iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 8.
+    - 2 is equal to 8.
+Seventeenth iteration (e1=8):
+    - `e1` is 8, e2 in the inner loop is 8.
+    - 8 is equal to 8.
+Eighteenth iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 8.
+    - 2 is equal to 8.
+Nineteenth iteration (e1=8):
+    - `e1` is 8, e2 in the inner loop is 8.
+    - 8 is equal to 8.
+Twentieth iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 8.
+    - 2 is equal to 8.
+Twenty-first iteration (e1=8):
+    - `

@@ -1,0 +1,6 @@
+The function `median` is called with ( l = [-10, 4, 6, 1000, 10, 20] ).
+The list `l` is sorted.
+The length of the list `l` is 6, which is an odd number.
+The condition `len(l) % 2 == 1` is true, therefore the if branch is taken and the method returns `l[len(l) // 2]`, which is 6.
+
+Therefore, the final output of the function `median([-10, 4, 6, 1000, 10, 20])` is 6.

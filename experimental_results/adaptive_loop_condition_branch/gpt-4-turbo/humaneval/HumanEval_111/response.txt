@@ -1,0 +1,45 @@
+[REASONING]
+The function `histogram` is called with the input string 'a b b a'.
+1. The string is split into a list `list1` containing the elements ['a', 'b', 'b', 'a'].
+2. A dictionary `dict1` is initialized to store the results.
+3. A variable `t` is initialized to 0 to keep track of the highest frequency of any word in the list.
+
+First loop:
+- Iterates over each word in `list1`.
+- For each word, it checks if the count of that word in `list1` is greater than `t` and if the word is not an empty string.
+- For 'a', the count is 2, which is greater than `t` (0), so `t` is updated to 2.
+- For 'b', the count is also 2, but since `t` is already 2, `t` remains unchanged.
+- The loop completes with `t` equal to 2.
+
+Second loop:
+- Checks if `t` is greater than 0, which it is.
+- Iterates again over each word in `list1`.
+- For each word, it checks if the count of that word in `list1` is equal to `t`.
+- Both 'a' and 'b' have counts equal to `t` (2), so they are added to `dict1` with their counts.
+
+The function returns the dictionary `dict1` containing the words with the highest frequency and their counts.
+
+Therefore, the output of the function `histogram('a b b a')` is `{'a': 2, 'b': 2}`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def histogram(test):
+    dict1={}
+    list1=test.split(" ")
+    t=0
+
+    for i in list1: ## [STATE]i=['a', 'b', 'b', 'a'][/STATE][STATE]list1=['a', 'b', 'b', 'a'][/STATE]
+        if(list1.count(i)>t) and i!='': ## [CONDITION]((list1.count(i)>t) and i!='')=[True, True, False, False][/CONDITION][CONDITION](i!='')=[True, True, True, True][/CONDITION][CONDITION](list1.count(i)>t)=[True, True, False, False][/CONDITION][BRANCH]taken=[Y, Y, N, N][/BRANCH]
+            t=list1.count(i)
+    if t>0: ## [CONDITION](t>0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        for i in list1: ## [STATE]i=['a', 'b', 'b', 'a'][/STATE][STATE]list1=['a', 'b', 'b', 'a'][/STATE]
+            if(list1.count(i)==t): ## [CONDITION](list1.count(i)==t)=[True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y][/BRANCH]
+                
+                dict1[i]=t
+    return dict1
+[/PYTHON]
+
+[OUTPUT]
+{'a': 2, 'b': 2}
+[/OUTPUT]

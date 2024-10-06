@@ -1,0 +1,4 @@
+The function `digitSum` is called with ( s = "You arE Very Smart" ).
+The condition `s == ""` is false, therefore the if branch is not taken and the method returns the sum of the ASCII values of the uppercase letters in the string.
+
+Therefore, the final output of the function `digitSum("You arE Very Smart")` is 10.

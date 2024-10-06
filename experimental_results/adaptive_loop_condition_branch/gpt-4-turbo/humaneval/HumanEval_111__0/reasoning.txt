@@ -1,0 +1,16 @@
+The function `histogram` is called with the input string 'a b c d g'.
+1. The function splits the input string into a list `list1` containing the elements ['a', 'b', 'c', 'd', 'g'].
+2. A dictionary `dict1` is initialized to store the results, and a variable `t` is initialized to 0 to keep track of the maximum count of any word in the list.
+
+First Loop:
+- The loop iterates over each element in `list1`.
+- For each element `i`, it checks if the count of `i` in `list1` is greater than `t` and if `i` is not an empty string.
+- Since all elements appear exactly once and `t` is initially 0, `t` is updated to 1 for each element.
+
+Second Loop:
+- The loop iterates again over each element in `list1`.
+- For each element `i`, it checks if the count of `i` in `list1` equals `t` (which is 1).
+- Since all elements have a count equal to `t`, each element is added to `dict1` with the value of `t`.
+
+Finally, the function returns the dictionary `dict1` which contains each word from the input string mapped to the number 1, indicating each word appears exactly once.
+

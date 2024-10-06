@@ -1,0 +1,7 @@
+The function `closest_integer` is called with ( value = "10" ).
+The condition `value.count('.') == 1` is true, so the if branch is taken.
+The while loop removes trailing zeros from the value.
+The number is converted to a float.
+The condition `value[-2:] == '.5'` is false, so the else branch is taken.
+The number is rounded to the nearest integer using `int(round(num))`.
+The function returns the rounded integer.

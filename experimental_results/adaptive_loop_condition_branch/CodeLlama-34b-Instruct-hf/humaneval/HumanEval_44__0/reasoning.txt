@@ -1,0 +1,35 @@
+The function `change_base` is called with ( x = 234, base = 2).
+Inside the function, a variable `ret` is initialized to an empty string.
+First Iteration:
+    - x > 0 when x=234.
+    -`ret = str(x % base) + ret` updates `ret` to "11110110".
+    -`x //= base` updates `x` to 111.
+Second Iteration:
+    - x > 0 when x=111.
+    -`ret = str(x % base) + ret` updates `ret` to "1111011011".
+    -`x //= base` updates `x` to 55.
+Third Iteration:
+    - x > 0 when x=55.
+    -`ret = str(x % base) + ret` updates `ret` to "111101101111".
+    -`x //= base` updates `x` to 27.
+Fourth Iteration:
+    - x > 0 when x=27.
+    -`ret = str(x % base) + ret` updates `ret` to "11110110111111".
+    -`x //= base` updates `x` to 13.
+Fifth Iteration:
+    - x > 0 when x=13.
+    -`ret = str(x % base) + ret` updates `ret` to "111101101111111".
+    -`x //= base` updates `x` to 6.
+Sixth Iteration:
+    - x > 0 when x=6.
+    -`ret = str(x % base) + ret` updates `ret` to "1111011011111111".
+    -`x //= base` updates `x` to 3.
+Seventh Iteration:
+    - x > 0 when x=3.
+    -`ret = str(x % base) + ret` updates `ret` to "11110110111111111".
+    -`x //= base` updates `x` to 1.
+Eighth Iteration:
+    - x > 0 when x=1.
+    -`ret = str(x % base) + ret` updates `ret` to "111101101111111111".
+    -`x //= base` updates `x` to 0.
+After the loop completes, the function returns the value of `ret`, which is now "111101101111111111".

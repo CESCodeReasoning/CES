@@ -1,0 +1,21 @@
+The function `encrypt` is called with ( s = 'asdfghjkl' ).
+Inside the function, a variable `out` is initialized to an empty string.
+
+Iteration 1:
+    -The character 'a' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right (which is 'c').
+Iteration 2:
+    -The character 's' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right (which is 'u').
+Iteration 3:
+    -The character 'd' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right (which is 'f').
+Iteration 4:
+    -The character 'f' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right (which is 'h').
+Iteration 5:
+    -The character 'g' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right (which is 'j').
+Iteration 6:
+    -The character 'h' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right (which is 'l').
+Iteration 7:
+    -The character 'j' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right (which is 'n').
+Iteration 8:
+    -The character 'k' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right (which is 'p').
+Iteration 9:
+    -The character 'l' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right (which is 'r').

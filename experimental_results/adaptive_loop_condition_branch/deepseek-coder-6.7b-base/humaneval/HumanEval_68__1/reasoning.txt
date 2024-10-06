@@ -1,0 +1,9 @@
+The function `pluck` is called with ( arr = [5, 0, 3, 0, 4, 2] ).
+The condition `len(arr) == 0` is false, so the if branch is not taken.
+The `filter` function is called with the lambda function `lambda x: x % 2 == 0` and the list `arr`.
+The lambda function returns a list of all elements in `arr` that are even.
+The `min` function is called with the list of even numbers.
+The `index` function is called with the minimum even number and the list `arr`.
+The index of the minimum even number in `arr` is returned.
+
+Therefore, the final output of the function `pluck([5, 0, 3, 0, 4, 2])` is [0, 1].

@@ -1,0 +1,24 @@
+The function `unique_digits` is called with the list `[15, 33, 1422, 1]`.
+Inside the function, an empty list `odd_digit_elements` is initialized to store numbers that consist only of odd digits.
+
+Iteration 1:
+    - The number 15 is checked. Both digits (1 and 5) are odd.
+    - The condition `all(int(c) % 2 == 1 for c in str(i))` is true.
+    - 15 is added to `odd_digit_elements`.
+
+Iteration 2:
+    - The number 33 is checked. Both digits (3 and 3) are odd.
+    - The condition is true again.
+    - 33 is added to `odd_digit_elements`.
+
+Iteration 3:
+    - The number 1422 is checked. It contains even digits (4 and 2).
+    - The condition is false.
+    - 1422 is not added to `odd_digit_elements`.
+
+Iteration 4:
+    - The number 1 is checked. It is a single odd digit.
+    - The condition is true.
+    - 1 is added to `odd_digit_elements`.
+
+After the loop, the list `odd_digit_elements` contains [15, 33, 1]. This list is then sorted to [1, 15, 33] and returned.

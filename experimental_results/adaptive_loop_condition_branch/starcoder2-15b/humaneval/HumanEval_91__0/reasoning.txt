@@ -1,0 +1,3 @@
+The function is_bored takes a string S as input and returns True if the string starts with "I " and False otherwise.
+To determine the output of executing the function is_bored on the input "You and I are going for a walk", we need to check if the first two characters of the string are "I ".
+Since the first two characters of the string are "You", the output of executing the function is_bored on the input "You and I are going for a walk" is False.

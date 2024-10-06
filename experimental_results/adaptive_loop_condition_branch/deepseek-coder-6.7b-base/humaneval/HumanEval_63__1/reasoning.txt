@@ -1,0 +1,11 @@
+The function `fibfib` is called with ( n = 10 ).
+The first condition `n == 0` is false.
+The second condition `n == 1` is false.
+The third condition `n == 2` is false.
+The function recursively calls itself with ( n = 10 - 1 ), ( n = 10 - 2 ), and ( n = 10 - 3 ).
+The first recursive call returns `fibfib(9)`.
+The second recursive call returns `fibfib(8)`.
+The third recursive call returns `fibfib(7)`.
+The function adds the three returned values and returns the result.
+
+Therefore, the final output of the function `fibfib(10)` is 13.

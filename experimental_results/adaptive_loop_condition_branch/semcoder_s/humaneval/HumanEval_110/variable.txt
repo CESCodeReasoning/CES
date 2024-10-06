@@ -1,0 +1,13 @@
+from typing import *
+def exchange(lst1, lst2):
+    odd = 0
+    even = 0
+    for i in lst1: ## [STATE]i=[1, 2, 3, 4][/STATE][STATE]lst1=[[1, 2, 3, 4]][/STATE]
+        if i%2 == 1: ## [CONDITION](i%2 == 1)=[True, False, True, False][/CONDITION][BRANCH]taken=[Y, N, Y, N][/BRANCH]
+            odd += 1
+    for i in lst2: ## [STATE]i=[1, 2, 3, 4][/STATE][STATE]lst2=[[1, 2, 3, 4]][/STATE]
+        if i%2 == 0: ## [CONDITION](i%2 == 0)=[False, True, False, True][/CONDITION][BRANCH]taken=[N, Y, N, Y][/BRANCH]
+            even += 1
+    if even >= odd: ## [CONDITION](even >= odd)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return "YES"
+    return "NO"

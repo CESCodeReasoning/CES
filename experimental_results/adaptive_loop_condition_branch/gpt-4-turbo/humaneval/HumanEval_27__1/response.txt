@@ -1,0 +1,57 @@
+[REASONING]
+The function `flip_case` takes a string as input and returns a new string where the case of each character in the input string is flipped. This is achieved using the `swapcase()` method of the string class in Python, which converts all lowercase letters to uppercase and all uppercase letters to lowercase.
+To determine the output of executing the function `flip_case` on the input "These violent delights have violent ends", we apply the `swapcase()` method:
+- 'T' becomes 't'
+- 'h' becomes 'H'
+- 'e' becomes 'E'
+- 's' becomes 'S'
+- 'e' becomes 'E'
+- ' ' remains ' '
+- 'v' becomes 'V'
+- 'i' becomes 'I'
+- 'o' becomes 'O'
+- 'l' becomes 'L'
+- 'e' becomes 'E'
+- 'n' becomes 'N'
+- 't' becomes 'T'
+- ' ' remains ' '
+- 'd' becomes 'D'
+- 'e' becomes 'E'
+- 'l' becomes 'L'
+- 'i' becomes 'I'
+- 'g' becomes 'G'
+- 'h' becomes 'H'
+- 't' becomes 'T'
+- 's' becomes 'S'
+- ' ' remains ' '
+- 'h' becomes 'H'
+- 'a' becomes 'A'
+- 'v' becomes 'V'
+- 'e' becomes 'E'
+- ' ' remains ' '
+- 'v' becomes 'V'
+- 'i' becomes 'I'
+- 'o' becomes 'O'
+- 'l' becomes 'L'
+- 'e' becomes 'E'
+- 'n' becomes 'N'
+- 't' becomes 'T'
+- ' ' remains ' '
+- 'e' becomes 'E'
+- 'n' becomes 'N'
+- 'd' becomes 'D'
+- 's' becomes 'S'
+Thus, the output of executing the function `flip_case` on the input "These violent delights have violent ends" is "tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS".
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def flip_case(string: str) -> str:
+    # [STATE] string = "These violent delights have violent ends" [/STATE]
+    return string.swapcase()  # [STATE] return value = "tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS" [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+"tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS"
+[/OUTPUT]

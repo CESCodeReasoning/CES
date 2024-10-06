@@ -1,0 +1,26 @@
+The bug in the `has_close_elements` function is that it is calculating the distance as `elem - elem2`, but it should be calculating the absolute distance as `abs(elem - elem2)`. This is because the distance between two numbers should always be a positive value, regardless of which number is larger.
+
+The bug in the `change_base` function is that it is subtracting `base` from `x` in each iteration of the loop, but it should be dividing `x` by `base`. This is because the change of base operation is essentially a division operation.
+
+Here is the corrected code:
+
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def change_base(x: int, base: int):
+    ret = ""
+    while x > 0:
+        ret = str(x % base) + ret
+        x //= base
+    return ret
+```

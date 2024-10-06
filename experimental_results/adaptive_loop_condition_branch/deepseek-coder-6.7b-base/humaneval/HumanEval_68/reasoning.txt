@@ -1,0 +1,9 @@
+The function `pluck` is called with ( arr = [4,2,3] ).
+The condition `len(arr) == 0` is false, therefore the if branch is not taken.
+The `filter` function is called with ( lambda x: x%2 == 0, arr ) and returns [2, 4].
+The condition `evens == []` is false, therefore the if branch is not taken.
+The `min` function is called with ( [2, 4] ) and returns 2.
+The `index` function is called with ( 2, arr ) and returns 1.
+The function returns [2, 1].
+
+Therefore, the final output of the function `pluck([4,2,3])` is [2, 1].

@@ -1,0 +1,12 @@
+def digits(n):
+    product = 1
+    odd_count = 0
+    for digit in str(n): ## [STATE]digit=['5', '5', '7', '6', '5', '4', '3'][/STATE][STATE]str(n)=['5', '5', '7', '6', '5', '4', '3'][/STATE][STATE]n=5576543[/STATE]
+        int_digit = int(digit)
+        if int_digit % 2 == 1: ## [CONDITION](int_digit % 2 == 1)=[True, True, True, False, True, False, True][/CONDITION][BRANCH]taken=[Y, Y, Y, N, Y, N, Y][/BRANCH]
+            product = product * int_digit
+            odd_count += 1
+    if odd_count == 0: ## [CONDITION](odd_count == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 0
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        return product

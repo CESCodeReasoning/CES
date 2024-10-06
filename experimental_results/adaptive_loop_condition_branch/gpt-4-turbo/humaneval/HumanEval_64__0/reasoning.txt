@@ -1,0 +1,7 @@
+The function `vowels_count` is called with the string "bYe".
+The variable `vowels` is initialized with the string "aeiouAEIOU" to identify vowels in the input string.
+The variable `n_vowels` is calculated using a generator expression that iterates over each character in the string "bYe" and checks if it is in the `vowels` string. The characters 'e' and 'Y' are vowels, so `n_vowels` becomes 2.
+The last character of the string "bYe" is 'e'. The condition checks if the last character is 'y' or 'Y'. Since it is neither 'y' nor 'Y', the condition is false.
+Since the condition is false, `n_vowels` remains 2 and is returned by the function.
+
+Therefore, the final output of the function `vowels_count("bYe")` is 2.

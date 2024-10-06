@@ -1,0 +1,9 @@
+The function `is_bored` takes a string `S` as input and checks how many sentences in `S` start with "I ". The function uses the `re.split` method to split the input string into sentences based on punctuation marks followed by whitespace (i.e., '.', '?', '!'). After splitting, it counts the number of sentences that start with "I " using a generator expression inside the `sum` function.
+
+For the input "I love It !", the `re.split` method will split the string into two sentences: ["I love It", ""]. The second element is an empty string resulting from the space after the exclamation mark.
+
+The generator expression checks each sentence:
+1. "I love It" starts with "I ", so it contributes 1 to the sum.
+2. The empty string "" does not start with "I ", so it contributes 0 to the sum.
+
+Thus, the total sum returned by the function is 1, indicating that there is one sentence starting with "I ".

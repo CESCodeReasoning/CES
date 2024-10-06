@@ -1,0 +1,9 @@
+The function `change_base` is called with ( x = 8, base = 3 ).
+Inside the function, a variable `ret` is initialized to an empty string.
+First Iteration:
+    - x = 8, x % base = 2, ret = "2" ( "2" + "" = "2" ).
+    - x //= base updates x to 2 ( 8 // 3 = 2 ).
+Second Iteration:
+    - x = 2, x % base = 2, ret = "22" ( "2" + "22" = "22" ).
+    - x //= base updates x to 0 ( 2 // 3 = 0 ).
+The while loop terminates, the function returns the value of `ret`, which is now "22".

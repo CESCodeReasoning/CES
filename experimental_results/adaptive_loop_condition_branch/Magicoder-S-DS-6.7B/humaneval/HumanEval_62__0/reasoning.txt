@@ -1,0 +1,7 @@
+The function derivative takes a list of numbers xs as input and returns a list of the derivatives of the input list.
+
+The derivative of a function at a point is the limit of the difference quotient as the increment of the point tends to zero. In this case, the derivative of a function at a point is the function itself.
+
+The derivative of a constant function is zero. Therefore, the derivative of the input list [1] is [0].
+
+The output of executing the function derivative on the input [1] is [0].

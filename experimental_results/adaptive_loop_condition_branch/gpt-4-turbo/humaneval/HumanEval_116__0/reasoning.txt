@@ -1,0 +1,16 @@
+The function `sort_array` takes a list of integers `arr` as input and returns a sorted version of the list. The sorting is done in two steps:
+1. The list is first sorted in ascending order.
+2. The list is then sorted based on the count of '1's in the binary representation of each number, using a lambda function as the key for sorting.
+
+Let's break down the sorting process for the input `[3, 6, 44, 12, 32, 5]`:
+- First, the list is sorted in ascending order: `[3, 5, 6, 12, 32, 44]`.
+- Next, we sort the list based on the count of '1's in their binary representations:
+  - `3` in binary is `11`, which has 2 '1's.
+  - `5` in binary is `101`, which has 2 '1's.
+  - `6` in binary is `110`, which has 2 '1's.
+  - `12` in binary is `1100`, which has 2 '1's.
+  - `32` in binary is `100000`, which has 1 '1'.
+  - `44` in binary is `101100`, which has 3 '1's.
+- Sorting by the count of '1's, we get: `[32, 3, 5, 6, 12, 44]`.
+
+Therefore, the output of executing the function `sort_array` on the input `[3, 6, 44, 12, 32, 5]` is `[32, 3, 5, 6, 12, 44]`.

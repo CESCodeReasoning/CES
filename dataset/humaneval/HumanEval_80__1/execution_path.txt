@@ -1,0 +1,6 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: is_happy
+main.py(5):     if len(s) < 3:
+main.py(8):     for i in range(len(s) - 2):
+main.py(10):         if s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]:
+main.py(11):             return False

@@ -1,0 +1,75 @@
+The function `is_simple_power` is called with ( x = 128, n = 4 ).
+Inside the function, the condition ( n == 1 ) is evaluated to False.
+The while loop iterates from 1 to 128 (since ( x = 128 )).
+First Iteration (power = 1):
+    - power < x when power=1
+    - power = power * n updates power to 4 ( 1 * 4 = 4 ).
+Second Iteration (power = 4):
+    - power < x when power=4
+    - power = power * n updates power to 16 ( 4 * 4 = 16 ).
+Third Iteration (power = 16):
+    - power < x when power=16
+    - power = power * n updates power to 64 ( 16 * 4 = 64 ).
+Fourth Iteration (power = 64):
+    - power < x when power=64
+    - power = power * n updates power to 256 ( 64 * 4 = 256 ).
+Fifth Iteration (power = 256):
+    - power < x when power=256
+    - power = power * n updates power to 1024 ( 256 * 4 = 1024 ).
+Sixth Iteration (power = 1024):
+    - power < x when power=1024
+    - power = power * n updates power to 4096 ( 1024 * 4 = 4096 ).
+Seventh Iteration (power = 4096):
+    - power < x when power=4096
+    - power = power * n updates power to 16384 ( 4096 * 4 = 16384 ).
+Eighth Iteration (power = 16384):
+    - power < x when power=16384
+    - power = power * n updates power to 65536 ( 16384 * 4 = 65536 ).
+Ninth Iteration (power = 65536):
+    - power < x when power=65536
+    - power = power * n updates power to 262144 ( 65536 * 4 = 262144 ).
+Tenth Iteration (power = 262144):
+    - power < x when power=262144
+    - power = power * n updates power to 1048576 ( 262144 * 4 = 1048576 ).
+Eleventh Iteration (power = 1048576):
+    - power < x when power=1048576
+    - power = power * n updates power to 4194304 ( 1048576 * 4 = 4194304 ).
+Twelfth Iteration (power = 4194304):
+    - power < x when power=4194304
+    - power = power * n updates power to 16777216 ( 4194304 * 4 = 16777216 ).
+Thirteenth Iteration (power = 16777216):
+    - power < x when power=16777216
+    - power = power * n updates power to 67108864 ( 16777216 * 4 = 67108864 ).
+Fourteenth Iteration (power = 67108864):
+    - power < x when power=67108864
+    - power = power * n updates power to 268435456 ( 67108864 * 4 = 268435456 ).
+Fifteenth Iteration (power = 268435456):
+    - power < x when power=268435456
+    - power = power * n updates power to 1073741824 ( 268435456 * 4 = 1073741824 ).
+Sixteenth Iteration (power = 1073741824):
+    - power < x when power=1073741824
+    - power = power * n updates power to 4294967296 ( 1073741824 * 4 = 4294967296 ).
+Seventeenth Iteration (power = 4294967296):
+    - power < x when power=4294967296
+    - power = power * n updates power to 17179869184 ( 4294967296 * 4 = 17179869184 ).
+Eighteenth Iteration (power = 17179869184):
+    - power < x when power=17179869184
+    - power = power * n updates power to 68719476736 ( 17179869184 * 4 = 68719476736 ).
+Nineteenth Iteration (power = 68719476736):
+    - power < x when power=68719476736
+    - power = power * n updates power to 274877906944 ( 68719476736 * 4 = 274877906944 ).
+Twentieth Iteration (power = 274877906944):
+    - power < x when power=274877906944
+    - power = power * n updates power to 1099511627776 ( 274877906944 * 4 = 1099511627776 ).
+Twenty-first Iteration (power = 1099511627776):
+    - power < x when power=1099511627776
+    - power = power * n updates power to 4398046511104 ( 1099511627776 * 4 = 4398046511104 ).
+Twenty-second Iteration (power = 4398046511104):
+    - power < x when power=4398046511104
+    - power = power * n updates power to 17592186044416 ( 4398046511104 * 4 = 17592186044416 ).
+Twenty-third Iteration (power = 17592186044416):
+    - power < x when power=17592186044416
+    - power = power * n updates power to 69175290276832 ( 17592186044416 * 4 = 69175290276832 ).
+Twenty-fourth Iteration (power = 69175290276832):
+    - power < x when power=69175290276832
+    - power = power * n updates

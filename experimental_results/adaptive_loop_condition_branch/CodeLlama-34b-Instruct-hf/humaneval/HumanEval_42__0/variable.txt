@@ -1,0 +1,5 @@
+from typing import *
+
+
+def incr_list(my_list: list):
+    return [e + 1 for e in my_list]

@@ -1,0 +1,14 @@
+The function `string_xor` is called with two binary strings `a = '111000'` and `b = '101010'`.
+The function defines a nested function `xor` which takes two characters `i` and `j` and returns '0' if they are equal, otherwise '1'.
+The `string_xor` function uses a generator expression inside `join` to iterate over pairs of characters from `a` and `b` using `zip`. For each pair `(x, y)`, it calls the `xor` function.
+Here's the step-by-step XOR operation:
+1. Pair ('1', '1'): Both are equal, so `xor` returns '0'.
+2. Pair ('1', '0'): They are different, so `xor` returns '1'.
+3. Pair ('1', '0'): They are different, so `xor` returns '1'.
+4. Pair ('0', '1'): They are different, so `xor` returns '1'.
+5. Pair ('0', '0'): Both are equal, so `xor` returns '0'.
+6. Pair ('0', '1'): They are different, so `xor` returns '1'.
+
+The results of these XOR operations are concatenated to form the final result '011101'.
+
+Therefore, the final output of the function `string_xor('111000', '101010')` is '011101'.

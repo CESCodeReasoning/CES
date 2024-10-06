@@ -1,0 +1,18 @@
+from typing import *
+
+
+def skjkasdkd(lst):
+    def isPrime(n):
+        for i in range(2, int(n**0.5) + 1): ## [STATE]i=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11][/STATE][STATE]range(2, (int((n ** 0.5)) + 1))= [2, 3, 4, 5, 6, 7, 8, 9, 10, 11][/STATE][STATE](int((n ** 0.5)) + 1)=[12][/STATE]
+            if n % i == 0: ## [CONDITION](n % i == 0)=[False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N, N, N][/BRANCH]
+                return False
+
+        return True
+    maxx = 0
+    i = 0
+    while i < len(lst): ## [STATE](i < len(lst))= [True, True, True][/STATE][STATE]i=[0, 1, 2][/STATE][STATE]len(lst)=[3][/STATE]
+        if (lst[i] > maxx and isPrime(lst[i])): ## [CONDITION]((lst[i] > maxx and isPrime(lst[i])))=[True, False, False][/CONDITION][CONDITION](lst[i] > maxx)=[True, False, False][/CONDITION][CONDITION](isPrime(lst[i]))=[True, False, False][/CONDITION][BRANCH]taken=[Y, N, N][/BRANCH]
+            maxx = lst[i]
+        i += 1
+    result = sum(int(digit) for digit in str(maxx))
+    return result

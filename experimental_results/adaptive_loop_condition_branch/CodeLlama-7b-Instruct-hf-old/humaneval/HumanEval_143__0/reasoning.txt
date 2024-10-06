@@ -1,0 +1,39 @@
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The outer loop iterates through each word in the sentence.
+In the inner loop, for each word indexed by i, compare its length with every other number that is greater than 2.
+First Iteration (i=0):
+    - `i` is 0, `word` is "there".
+    - `flg` is 0, `len(word)` is 5.
+    - `range(2, len(word))` is [2, 3, 4].
+    - `len(word) % i` is 5 % 2 = 1, `flg` is 1.
+    - `flg` is 1 or `len(word)` is 2, `new_lst.append(word)` is called.
+Second Iteration (i=1):
+    - `i` is 1, `word` is "is".
+    - `flg` is 0, `len(word)` is 2.
+    - `range(2, len(word))` is [2, 3].
+    - `len(word) % i` is 2 % 2 = 0, `flg` is 0.
+    - `flg` is 0 or `len(word)` is 2, `new_lst.append(word)` is not called.
+Third Iteration (i=2):
+    - `i` is 2, `word` is "no".
+    - `flg` is 0, `len(word)` is 2.
+    - `range(2, len(word))` is [2, 3].
+    - `len(word) % i` is 2 % 2 = 0, `flg` is 0.
+    - `flg` is 0 or `len(word)` is 2, `new_lst.append(word)` is not called.
+Forth Iteration (i=3):
+    - `i` is 3, `word` is "place".
+    - `flg` is 0, `len(word)` is 5.
+    - `range(2, len(word))` is [2, 3, 4].
+    - `len(word) % i` is 5 % 2 = 1, `flg` is 1.
+    - `flg` is 1 or `len(word)` is 2, `new_lst.append(word)` is called.
+Fifth Iteration (i=4):
+    - `i` is 4, `word` is "available".
+    - `flg` is 0, `len(word)` is 9.
+    - `range(2, len(word))` is [2, 3, 4, 5, 6, 7, 8].
+    - `len(word) % i` is 9 % 2 = 1, `flg` is 1.
+    - `flg` is 1 or `len(word)` is 2, `new_lst.append(word)` is called.
+Sixth Iteration (i=5):
+    - `i` is 5, `word` is "here".
+    - `flg` is 0, `len(word)` is 4.
+    - `range(2, len(word))` is [2, 3, 4].
+    - `len(word) % i` is 4 % 2 = 0, `flg` is 0.
+    - `flg` is 0 or `len(word)` is 2, `new_lst.append(word)` is not called.

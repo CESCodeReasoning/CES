@@ -1,0 +1,8 @@
+The function `greatest_common_divisor` is called with ( a = 144, b = 60 ).
+Inside the function, the while loop iterates until b is 0.
+First Iteration:
+    - b = 60, a = 144, b = 60, a % b = 0.
+    - a, b = b, a % b updates a to 60 and b to 0.
+Second Iteration:
+    - b = 0, the while loop terminates.
+The function returns the value of a, which is now 60.

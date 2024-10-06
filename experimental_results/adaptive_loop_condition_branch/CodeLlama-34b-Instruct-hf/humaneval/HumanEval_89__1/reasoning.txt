@@ -1,0 +1,57 @@
+The function `encrypt` is called with ( s = 'asdfghjkl' ).
+Inside the function, a variable `out` is initialized to an empty string.
+
+Iteration 1:
+    -The character 'a' is in the string `d`, so the index of 'a' in `d` is found (which is 0).
+    -The encrypted character is found by adding 2 * 2 to the index (which is 4).
+    -The encrypted character is then found by taking the modulo 26 of the index (which is 0).
+    -The encrypted character is then found by indexing into `d` with the modulo index (which is 'a').
+    -The encrypted character is then added to `out`.
+Iteration 2:
+    -The character 's' is in the string `d`, so the index of 's' in `d` is found (which is 18).
+    -The encrypted character is found by adding 2 * 2 to the index (which is 20).
+    -The encrypted character is then found by taking the modulo 26 of the index (which is 4).
+    -The encrypted character is then found by indexing into `d` with the modulo index (which is 'e').
+    -The encrypted character is then added to `out`.
+Iteration 3:
+    -The character 'd' is in the string `d`, so the index of 'd' in `d` is found (which is 3).
+    -The encrypted character is found by adding 2 * 2 to the index (which is 6).
+    -The encrypted character is then found by taking the modulo 26 of the index (which is 1).
+    -The encrypted character is then found by indexing into `d` with the modulo index (which is 'b').
+    -The encrypted character is then added to `out`.
+Iteration 4:
+    -The character 'f' is in the string `d`, so the index of 'f' in `d` is found (which is 5).
+    -The encrypted character is found by adding 2 * 2 to the index (which is 8).
+    -The encrypted character is then found by taking the modulo 26 of the index (which is 2).
+    -The encrypted character is then found by indexing into `d` with the modulo index (which is 'c').
+    -The encrypted character is then added to `out`.
+Iteration 5:
+    -The character 'g' is in the string `d`, so the index of 'g' in `d` is found (which is 6).
+    -The encrypted character is found by adding 2 * 2 to the index (which is 10).
+    -The encrypted character is then found by taking the modulo 26 of the index (which is 4).
+    -The encrypted character is then found by indexing into `d` with the modulo index (which is 'e').
+    -The encrypted character is then added to `out`.
+Iteration 6:
+    -The character 'h' is in the string `d`, so the index of 'h' in `d` is found (which is 7).
+    -The encrypted character is found by adding 2 * 2 to the index (which is 12).
+    -The encrypted character is then found by taking the modulo 26 of the index (which is 6).
+    -The encrypted character is then found by indexing into `d` with the modulo index (which is 'g').
+    -The encrypted character is then added to `out`.
+Iteration 7:
+    -The character 'j' is in the string `d`, so the index of 'j' in `d` is found (which is 9).
+    -The encrypted character is found by adding 2 * 2 to the index (which is 16).
+    -The encrypted character is then found by taking the modulo 26 of the index (which is 10).
+    -The encrypted character is then found by indexing into `d` with the modulo index (which is 'k').
+    -The encrypted character is then added to `out`.
+Iteration 8:
+    -The character 'k' is in the string `d`, so the index of 'k' in `d` is found (which is 10).
+    -The encrypted character is found by adding 2 * 2 to the index (which is 18).
+    -The encrypted character is then found by taking the modulo 26 of the index (which is 2).
+    -The encrypted character is then found by indexing into `d` with the modulo index (which is 'c').
+    -The encrypted character is then added to `out`.
+Iteration 9:
+    -The character 'l' is in the string `d`, so the index of 'l' in `d` is found (which is 11).
+    -The encrypted character is found by adding 2 * 2 to the index (which is 22).
+    -The encrypted character is then found by taking the modulo 26 of the index (which is 6).
+    -The encrypted character is then found by indexing into `d` with the modulo index (which is 'g').
+    -The encrypted character is then added to `out`.

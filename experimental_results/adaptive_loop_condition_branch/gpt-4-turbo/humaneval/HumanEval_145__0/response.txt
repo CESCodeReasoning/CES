@@ -1,0 +1,39 @@
+[REASONING]
+The function `order_by_points` is called with a list of integers. The function sorts these integers based on the sum of their digits, which is calculated by the nested function `digits_sum`.
+
+For each number in the list:
+1. If the number is negative, it is converted to positive, and a flag `neg` is set to -1 to remember that it was originally negative.
+2. The number is then converted to a list of its digits.
+3. If the number was originally negative, the first digit is multiplied by -1 to reflect the original sign in the sum.
+4. The sum of the digits is calculated and returned.
+5. The outer function sorts the list of numbers based on these sums.
+
+The sorting is done in ascending order based on the sum of the digits. The function returns the sorted list.
+
+For example, for the number 1234:
+- It is positive, so `neg` remains 1.
+- It is converted to the list of digits [1, 2, 3, 4].
+- The sum of these digits is 10.
+
+This process is repeated for each number in the list, and finally, the list is sorted based on these sums.
+
+Therefore, the final output of the function `order_by_points` with the given list of integers will be a list sorted by the sum of the digits of each number.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def order_by_points(nums):
+    def digits_sum(n):
+        neg = 1
+        if n < 0: ## [CONDITION](n < 0)=[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N, N, N, N, N, N, N, N][/BRANCH]
+            n, neg = -1 * n, -1
+        n = [int(i) for i in str(n)]
+        n[0] = n[0] * neg
+        return sum(n)
+    return sorted(nums, key=digits_sum)
+[/PYTHON]
+
+[OUTPUT]
+[2, 3, 6, 0, 37, 53, 56, 46, 145, 423, 423, 423, 463, 1234, 3457]
+[/OUTPUT]

@@ -1,0 +1,6 @@
+from typing import *
+
+def greatest_common_divisor(a: int, b: int) -> int:
+    while b: ## [STATE]b=[60, 144, 0][/STATE]
+        a, b = b, a % b
+    return a

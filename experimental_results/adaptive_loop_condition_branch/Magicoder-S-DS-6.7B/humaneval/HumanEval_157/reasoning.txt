@@ -1,0 +1,11 @@
+The function right_angle_triangle checks if a, b, and c can form a right-angled triangle. It does this by using the Pythagorean theorem, which states that in a right-angled triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides.
+
+To determine if a, b, and c can form a right-angled triangle, we need to check if a*a equals the sum of b*b and c*c, or if b*b equals the sum of a*a and c*c, or if c*c equals the sum of a*a and b*b.
+
+For the input right_angle_triangle(3, 4, 5), we need to check if 3*3 equals 4*4 + 5*5, or if 4*4 equals 3*3 + 5*5, or if 5*5 equals 3*3 + 4*4.
+
+The first equation is 9 == 16 + 25, which is false.
+The second equation is 16 == 9 + 25, which is false.
+The third equation is 25 == 9 + 16, which is true.
+
+Therefore, the output of executing the function right_angle_triangle on the input right_angle_triangle(3, 4, 5) is True.

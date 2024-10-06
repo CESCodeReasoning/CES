@@ -1,0 +1,27 @@
+The function `match_parens` is called with ( lst = ['(()(())', '())())'] ).
+Inside the function, a nested function `check` is defined.
+The nested function `check` takes a string `s` as input.
+
+Iteration 1:
+    -The string `s` is "(()(())".
+    -The first character of `s` is '('.
+    -The value of `val` is 0.
+    -The condition `i == '('` is true.
+    -The action `val = val + 1` updates `val` to 1.
+    -The condition `val < 0` is false.
+    -The action `val = val - 1` updates `val` to 0.
+    -The condition `val < 0` is false.
+    -The action `val = val - 1` updates `val` to -1.
+    -The condition `val < 0` is true.
+    -The function returns False.
+
+Iteration 2:
+    -The string `s` is "())())".
+    -The first character of `s` is ')'.
+    -The value of `val` is 0.
+    -The condition `i == '('` is false.
+    -The action `val = val - 1` updates `val` to -1.
+    -The condition `val < 0` is true.
+    -The function returns False.
+
+Therefore, the final output of the function `match_parens(['(()(())', '())())'])` is "No".

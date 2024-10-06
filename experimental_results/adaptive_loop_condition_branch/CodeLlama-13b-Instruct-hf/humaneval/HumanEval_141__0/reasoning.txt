@@ -1,0 +1,9 @@
+The function `file_name_check` is called with ( file_name = 'I563_No.exe' ).
+The function splits the file name into a list of two elements using the dot ('.') as the separator.
+The list is [ 'I563_No', 'exe' ].
+The length of the list is 2, which satisfies the condition ( len(lst) != 2 ).
+The second element of the list is 'exe', which is not in the list of allowed file extensions (suf).
+The first element of the list is 'I563_No', which is not empty.
+The first character of the first element is 'I', which is not a letter.
+The number of digits in the first element is 3, which is less than 4.
+Therefore, the function returns 'Yes'.

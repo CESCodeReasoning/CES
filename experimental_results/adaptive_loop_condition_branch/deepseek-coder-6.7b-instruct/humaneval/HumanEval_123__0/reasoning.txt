@@ -1,0 +1,16 @@
+The function `get_odd_collatz` is called with ( n = 1 ).
+Inside the function, a variable `odd_collatz` is initialized as an empty list.
+The loop continues until ( n > 1 ).
+First Iteration (n = 1):
+    - n is odd, so the condition `n % 2 == 0` is false. The else branch is taken.
+    - `odd_collatz` is updated to include the value of `n`, which is 1.
+    - The next value of `n` is calculated as `n * 3 + 1`, which is 4.
+    - Since 4 is even, the condition `n % 2 == 1` is false. The branch is not taken.
+Second Iteration (n = 4):
+    - `n` is divided by 2, which results in 2.
+    - Since 2 is even, the condition `n % 2 == 1` is false. The branch is not taken.
+Third Iteration (n = 2):
+    - `n` is divided by 2, which results in 1.
+    - The condition `n % 2 == 1` is true. The branch is taken.
+    - `odd_collatz` is updated to include the value of `n`, which is 1.
+After the loop completes, the function returns the sorted values of `odd_collatz`, which is [1].

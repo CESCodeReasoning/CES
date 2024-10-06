@@ -1,0 +1,40 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: by_length
+main.py(4):         1: "One",
+main.py(5):         2: "Two",
+main.py(6):         3: "Three",
+main.py(7):         4: "Four",
+main.py(8):         5: "Five",
+main.py(9):         6: "Six",
+main.py(10):         7: "Seven",
+main.py(11):         8: "Eight",
+main.py(12):         9: "Nine",
+main.py(3):     dic = {
+main.py(14):     sorted_arr = sorted(arr, reverse=True)
+main.py(15):     new_arr = []
+main.py(16):     for var in sorted_arr:
+main.py(17):         try:
+main.py(18):             new_arr.append(dic[var])
+main.py(16):     for var in sorted_arr:
+main.py(17):         try:
+main.py(18):             new_arr.append(dic[var])
+main.py(16):     for var in sorted_arr:
+main.py(17):         try:
+main.py(18):             new_arr.append(dic[var])
+main.py(16):     for var in sorted_arr:
+main.py(17):         try:
+main.py(18):             new_arr.append(dic[var])
+main.py(16):     for var in sorted_arr:
+main.py(17):         try:
+main.py(18):             new_arr.append(dic[var])
+main.py(16):     for var in sorted_arr:
+main.py(17):         try:
+main.py(18):             new_arr.append(dic[var])
+main.py(16):     for var in sorted_arr:
+main.py(17):         try:
+main.py(18):             new_arr.append(dic[var])
+main.py(16):     for var in sorted_arr:
+main.py(17):         try:
+main.py(18):             new_arr.append(dic[var])
+main.py(16):     for var in sorted_arr:
+main.py(21):     return new_arr

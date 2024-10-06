@@ -1,0 +1,29 @@
+The bug in the `has_close_elements` function is that it is not taking the absolute value of the difference between two numbers. This means that if the first number is larger than the second, the difference will be negative, and the function will incorrectly return True.
+
+The bug in the `correct_bracketing` function is that it is not checking if the depth is less than 0. If there are more closing brackets than opening brackets, the depth will become negative, but the function will not return False.
+
+Here is the fixed code:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def correct_bracketing(brackets: str) -> bool:
+    depth = 0
+    for b in brackets:
+        if b == ">":
+            depth += 1
+        else:
+            depth -= 1
+        if depth < 0:
+            return False
+    return depth == 0
+```

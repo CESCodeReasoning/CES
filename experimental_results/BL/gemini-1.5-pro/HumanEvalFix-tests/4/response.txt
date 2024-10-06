@@ -1,0 +1,3 @@
+```response
+    return sum(abs(x - mean) for x in numbers) / mean
+```

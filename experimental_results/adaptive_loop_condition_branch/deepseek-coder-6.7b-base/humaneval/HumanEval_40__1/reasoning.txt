@@ -1,0 +1,33 @@
+The function triples_sum_to_zero(l) takes a list of numbers as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+In the inner inner loop, for each element indexed by j in the inner loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4 and 5.
+    - l[i]=2: compare with 4, -5, 3, 9, 7:
+        - When j = 1 (l[j]=4), k in the inner inner loop is 2, 3, 4 and 5.
+        - l[j]=4: compare with -5, 3, 9, 7:
+            - When k = 2 (l[k]=-5), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+            - When k = 3 (l[k]=3), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+            - When k = 4 (l[k]=9), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+            - When k = 5 (l[k]=7), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+        - When j = 2 (l[j]=-5), k in the inner inner loop is 3, 4 and 5.
+        - l[j]=-5: compare with 3, 9, 7:
+            - When k = 3 (l[k]=3), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+            - When k = 4 (l[k]=9), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+            - When k = 5 (l[k]=7), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+        - When j = 3 (l[j]=3), k in the inner inner loop is 4 and 5.
+        - l[j]=3: compare with 9, 7:
+            - When k = 4 (l[k]=9), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+            - When k = 5 (l[k]=7), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+        - When j = 4 (l[j]=9), k in the inner inner loop is 5.
+        - l[j]=9: compare with 7:
+            - When k = 5 (l[k]=7), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+        - When j = 5 (l[j]=7), k in the inner inner loop is 5.
+        - l[j]=7: compare with 7:
+            - When k = 5 (l[k]=7), the condition `l[i] + l[j] + l[k] == 0` is True, the if branch is taken. Return True.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4 and 5.
+    - l[i]=4: compare with -5, 3, 9, 7:
+        - When j = 2 (l[j]=-5), k in the inner inner loop is 3, 4 and 5.
+        - l[j]=-5: compare with 

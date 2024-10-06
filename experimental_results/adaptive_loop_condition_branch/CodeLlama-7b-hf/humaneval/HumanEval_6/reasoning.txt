@@ -1,0 +1,48 @@
+The function `parse_nested_parens` is called with ( paren_string = '(()()) ((())) () ((())()())' ).
+Inside the function, a variable `depth` and `max_depth` are initialized to 0.
+
+Iteration 1:
+    -The string '(()())' is split into ['(', ')', '(', ')', ')']
+    -The first character '(' is not equal to ')', so depth becomes 1.
+    -The second character ')' is not equal to ')', so depth becomes 2.
+    -The third character '(' is not equal to ')', so depth becomes 3.
+    -The fourth character ')' is not equal to ')', so depth becomes 4.
+    -The fifth character ')' is not equal to ')', so depth becomes 5.
+    -The function `max` is called with ( depth = 5, max_depth = 0 ).
+    -The function `max` returns 5.
+    -The variable `max_depth` is updated to 5.
+Iteration 2:
+    -The string ' ((()))' is split into [' ', '(', '(', ')', ')', ')']
+    -The first character ' ' is not equal to ')', so depth becomes 1.
+    -The second character '(' is not equal to ')', so depth becomes 2.
+    -The third character '(' is not equal to ')', so depth becomes 3.
+    -The fourth character ')' is not equal to ')', so depth becomes 4.
+    -The fifth character ')' is not equal to ')', so depth becomes 5.
+    -The function `max` is called with ( depth = 5, max_depth = 5 ).
+    -The function `max` returns 5.
+    -The variable `max_depth` is updated to 5.
+Iteration 3:
+    -The string ' ()' is split into [' ', '(', ')']
+    -The first character ' ' is not equal to ')', so depth becomes 1.
+    -The second character '(' is not equal to ')', so depth becomes 2.
+    -The third character ')' is not equal to ')', so depth becomes 1.
+    -The function `max` is called with ( depth = 1, max_depth = 5 ).
+    -The function `max` returns 5.
+    -The variable `max_depth` is updated to 5.
+Iteration 4:
+    -The string ' ((())()())' is split into [' ', '(', '(', ')', ')', '(', '(', ')', ')', ')', '(', ')', ')', ')']
+    -The first character ' ' is not equal to ')', so depth becomes 1.
+    -The second character '(' is not equal to ')', so depth becomes 2.
+    -The third character '(' is not equal to ')', so depth becomes 3.
+    -The fourth character ')' is not equal to ')', so depth becomes 4.
+    -The fifth character ')' is not equal to ')', so depth becomes 5.
+    -The sixth character '(' is not equal to ')', so depth becomes 6.
+    -The seventh character '(' is not equal to ')', so depth becomes 7.
+    -The eighth character ')' is not equal to ')', so depth becomes 8.
+    -The ninth character ')' is not equal to ')', so depth becomes 9.
+    -The tenth character '(' is not equal to ')', so depth becomes 10.
+    -The eleventh character ')' is not equal to ')', so depth becomes 11.
+    -The twelfth character ')' is not equal to ')', so depth becomes 12.
+    -The function `max` is called with ( depth = 12, max_depth = 5 ).
+    -The function `max` returns 12.
+    -The variable `max_depth` is updated to 12.

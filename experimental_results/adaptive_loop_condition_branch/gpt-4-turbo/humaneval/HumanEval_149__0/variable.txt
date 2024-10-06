@@ -1,0 +1,10 @@
+from typing import *
+
+
+def sorted_list_sum(lst):
+    lst.sort()  ## [STATE]lst=['a', 'abcd', 'd', 'dcba'][/STATE]
+    new_lst = []
+    for i in lst: ## [STATE]i=['a', 'abcd', 'd', 'dcba'][/STATE]
+        if len(i) % 2 == 0: ## [CONDITION](len(i) % 2 == 0)=[False, True, False, True][/CONDITION][BRANCH]taken=[N, Y, N, Y][/BRANCH]
+            new_lst.append(i)
+    return sorted(new_lst, key=len)  ## [STATE]new_lst=['abcd', 'dcba'][/STATE]

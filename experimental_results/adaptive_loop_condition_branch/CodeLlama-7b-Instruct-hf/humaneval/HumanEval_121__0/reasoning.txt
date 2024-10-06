@@ -1,0 +1,8 @@
+The function solution takes a list of integers lst as input and returns the sum of all the even indices that contain odd numbers.
+To determine the output of executing the function solution on the input [2, 4, 8], we need to follow the steps below:
+
+1. The list [2, 4, 8] has three elements.
+2. The even indices of the list are 0, 2, and 4.
+3. The odd numbers in the list are 2, 4, and 8.
+4. The sum of the even indices that contain odd numbers is 2 + 4 + 8 = 14.
+Therefore, the output of executing the function solution on the input [2, 4, 8] is 14.

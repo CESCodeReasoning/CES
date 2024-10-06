@@ -1,0 +1,7 @@
+from typing import *
+def compare_one(a, b):
+    temp_a, temp_b = a, b
+    if isinstance(temp_a, str): temp_a = temp_a.replace(',','.') ## [CONDITION](isinstance(temp_a, str))=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+    if isinstance(temp_b, str): temp_b = temp_b.replace(',','.') ## [CONDITION](isinstance(temp_b, str))=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+    if float(temp_a) == float(temp_b): return None ## [CONDITION](float(temp_a) == float(temp_b))=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+    return a if float(temp_a) > float(temp_b) else b 

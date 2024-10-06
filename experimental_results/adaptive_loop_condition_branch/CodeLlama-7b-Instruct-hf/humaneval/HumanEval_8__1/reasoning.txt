@@ -1,0 +1,12 @@
+The function `sum_product` is called with (numbers = [100, 0]).
+Inside the function, two variables `sum_value` and `prod_value` are initialized to 0.
+The loop iterates from 0 to 2 since `range(len(numbers))` = [0, 1].
+
+First Iteration(n = 100):
+    `sum_value` = 0 + 100 = 100
+    `prod_value` = 1 * 100 = 100
+Second Iteration(n = 0):
+    `sum_value` = 100 + 0 = 100
+    `prod_value` = 100 * 0 = 0
+
+After the loop completes, the function returns a tuple containing the sum and product of the list.

@@ -1,0 +1,8 @@
+The function multiply takes two integers a and b as input.
+To determine the output of executing the function multiply on the input (76, 67), we need to perform the following operations:
+
+1. Calculate the absolute value of a % 10, which is 6.
+2. Calculate the absolute value of b % 10, which is 7.
+3. Multiply the results of step 1 and step 2, which is 6 * 7 = 42.
+
+Therefore, the output of executing the function multiply on the input (76, 67) is 42.

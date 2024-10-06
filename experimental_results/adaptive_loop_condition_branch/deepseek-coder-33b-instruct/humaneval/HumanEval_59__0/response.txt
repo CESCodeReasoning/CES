@@ -1,0 +1,42 @@
+
+[REASONING]
+The function `largest_prime_factor` is called with ( n = 330 ).
+Inside the function, a nested function `is_prime` is defined.
+The function `is_prime` checks if a number is prime.
+The outer loop iterates from 2 through 330 (since ( n = 330 )).
+First Iteration (j = 2)
+   - `j` is 2, which is a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 2.
+Second Iteration (j = 3)
+   - `j` is 3, which is a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 3.
+Third Iteration (j = 5)
+   - `j` is 5, which is a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 5.
+Fourth Iteration (j = 11)
+   - `j` is 11, which is a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 11.
+Fifth Iteration (j = 330)
+   - `j` is 330, which is not a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is false.
+   - No action is taken.
+Return Statement
+   - After the loop completes, the function returns the value of `largest`, which is now 11.
+
+Therefore, the final output of the function `largest_prime_factor(330)` is 11.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def largest_prime_factor(n: int):
+    def is_prime(k):
+        if k < 2: ## [CONDITION](k < 2)=[False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N, N, N, N, N][/BRANCH]
+            return False
+        for i in range(2, k - 1): ## [STATE]i=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29][/STATE][STATE]range(2, (k - 1))=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29][/STATE][STATE](k - 1)=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29][/STATE]
+            if k % i == 0: ## [CONDITION](k % i == 0)=[False, False

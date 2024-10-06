@@ -1,0 +1,18 @@
+The function `unique_digits` is called with ( x = [135, 103, 31] ).
+Inside the function, an empty list `odd_digit_elements` is initialized.
+The loop iterates over each element `i` in the list `x`.
+First Iteration (i = 135)
+   - The condition `all(int(c) % 2 == 1 for c in str(i))` is checked.
+   - The condition checks if all the digits in the string representation of `i` are odd.
+   - In this case, `i` is 135, and the digits are '1', '3', and '5', which are all odd.
+   - The condition is true, so `i` is appended to the `odd_digit_elements` list.
+Second Iteration (i = 103)
+   - The condition `all(int(c) % 2 == 1 for c in str(i))` is checked again.
+   - This time, `i` is 103, and the digits are '1', '0', and '3'.
+   - The digit '0' is even, so the condition is false, and `i` is not appended to the `odd_digit_elements` list.
+Third Iteration (i = 31)
+   - The condition `all(int(c) % 2 == 1 for c in str(i))` is checked one last time.
+   - `i` is 31, and the digits are '3' and '1', which are both odd.
+   - The condition is true, so `i` is appended to the `odd_digit_elements` list.
+After the loop completes, the `odd_digit_elements` list contains [135, 31].
+The list is then sorted, resulting in the final output [31, 135].

@@ -1,0 +1,22 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def maximum(arr, k):
+    if k == 0:
+        return []
+    arr.sort()
+    ans = arr[-k:]
+    return ans[::-1]
+```

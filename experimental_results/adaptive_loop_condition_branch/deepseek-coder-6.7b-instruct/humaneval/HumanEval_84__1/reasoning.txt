@@ -1,0 +1,22 @@
+The function solve takes an integer N as input and returns a binary string.
+
+The function works in the following steps:
+
+1. Convert the integer N to a string.
+2. Sum all the digits in the string.
+3. Convert the sum to a binary string.
+4. Remove the '0b' prefix from the binary string.
+
+To determine the output of executing the function solve on the input 147, we need to follow these steps:
+
+1. Convert 147 to a string: "147"
+2. Sum all the digits in the string: 1 + 4 + 7 = 12
+3. Convert the sum to a binary string: "1100"
+4. Remove the '0b' prefix from the binary string: "1100"
+
+Therefore, the output of executing the function solve on the input 147 is "1100".
+
+[OUTPUT]
+"1100"
+[/OUTPUT]
+<|EOT|>

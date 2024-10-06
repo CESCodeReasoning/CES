@@ -1,0 +1,50 @@
+
+[REASONING]
+The function `minSubArraySum` is called with ( nums = [0, 10, 20, 1000000] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+
+Iteration 1:
+    -The number 0 is added to `s`, which becomes -0.
+    -Since `s` is not less than 0, `max_sum` remains 0.
+Iteration 2:
+    -The number 10 is added to `s`, which becomes -10.
+    -Since `s` is less than 0, `s` is reset to 0.
+    -`max_sum` remains 0.
+Iteration 3:
+    -The number 20 is added to `s`, which becomes -20.
+    -Since `s` is less than 0, `s` is reset to 0.
+    -`max_sum` remains 0.
+Iteration 4:
+    -The number 1000000 is added to `s`, which becomes -1000020.
+    -Since `s` is less than 0, `s` is reset to 0.
+    -`max_sum` remains 0.
+
+Since `max_sum` is still 0 after the loop, the condition `max_sum == 0` is true.
+Therefore, `max_sum` is set to the maximum negative number in `nums`, which is -0.
+
+Finally, `min_sum` is set to -`max_sum`, which is 0.
+
+Therefore, the final output of the function `minSubArraySum([0, 10, 20, 1000000])` is 0.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def minSubArraySum(nums):
+    max_sum = 0
+    s = 0
+    for num in nums: ## [STATE]num=[0, 10, 20, 1000000][/STATE][STATE]nums=[[0, 10, 20, 1000000]][/STATE]
+        s += -num
+        if (s < 0): ## [CONDITION](s < 0)=[False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N][/BRANCH]
+            s = 0
+        max_sum = max(s, max_sum)
+    if max_sum == 0: ## [CONDITION](max_sum == 0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        max_sum = max(-i for i in nums)
+    min_sum = -max_sum
+    return min_sum
+[/ANSWER]
+
+[OUTPUT]
+0
+[/OUTPUT]

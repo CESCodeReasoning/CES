@@ -1,0 +1,13 @@
+The function `sorted_list_sum` is called with ( lst = ["school", "AI", "asdf", "b"] ).
+Inside the function, the list `lst` is sorted.
+
+Iteration 1:
+    -The length of 'school' is 6, which is not even, so it is not appended to `new_lst`.
+Iteration 2:
+    -The length of 'AI' is 2, which is even, so it is appended to `new_lst`.
+Iteration 3:
+    -The length of 'asdf' is 4, which is even, so it is appended to `new_lst`.
+Iteration 4:
+    -The length of 'b' is 1, which is not even, so it is not appended to `new_lst`.
+
+After the loop, `new_lst` is sorted by length and returned.

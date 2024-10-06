@@ -1,0 +1,8 @@
+The function reverse_delete takes two arguments: a string s and a string c.
+It removes all characters in s that are also in c, and then checks if the resulting string is a palindrome.
+
+In this case, the input string s is "mamma" and the input string c is "mia".
+The function removes all characters in s that are also in c, which results in the string "mma".
+It then checks if the resulting string "mma" is a palindrome, which it is not.
+
+Therefore, the output of the function reverse_delete("mamma", "mia") is ("mma", False).

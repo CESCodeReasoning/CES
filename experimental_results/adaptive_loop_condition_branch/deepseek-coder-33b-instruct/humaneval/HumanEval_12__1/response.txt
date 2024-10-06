@@ -1,0 +1,24 @@
+
+[REASONING]
+The function `longest` is called with an empty list.
+The condition `not strings` is true, so the function returns `None`.
+Therefore, the final output of the function `longest([])` is `None`.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def longest(strings: List[str]) -> Optional[str]:
+    if not strings: ## [CONDITION](not strings)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return None
+
+    maxlen = max(len(x) for x in strings)
+    for s in strings: ## [STATE]strings=[][/STATE]
+        if len(s) == maxlen:
+            return s
+[/ANSWER]
+
+[OUTPUT]
+None
+[/OUTPUT]

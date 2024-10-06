@@ -1,0 +1,35 @@
+The function `search` is called with ( lst = [5, 5, 5, 5, 1] ).
+Inside the function, a variable `frq` is initialized to a list of 0s with length equal to the maximum value in `lst` plus 1.
+
+Iteration 1:
+    - `i` is 5, `frq[i]` is 0, so `frq[i] += 1` updates `frq[i]` to 1.
+Iteration 2:
+    - `i` is 5, `frq[i]` is 1, so `frq[i] += 1` updates `frq[i]` to 2.
+Iteration 3:
+    - `i` is 5, `frq[i]` is 2, so `frq[i] += 1` updates `frq[i]` to 3.
+Iteration 4:
+    - `i` is 5, `frq[i]` is 3, so `frq[i] += 1` updates `frq[i]` to 4.
+Iteration 5:
+    - `i` is 1, `frq[i]` is 0, so `frq[i] += 1` updates `frq[i]` to 1.
+
+The loop iterates from 1 to 5 (since `len(frq)` is 6).
+
+In the second loop, the variable `ans` is initialized to -1.
+
+Iteration 1:
+    - `i` is 1, `frq[i]` is 1, so `frq[i] >= i` is true.
+    - `ans` is updated to 1.
+Iteration 2:
+    - `i` is 2, `frq[i]` is 2, so `frq[i] >= i` is true.
+    - `ans` is updated to 2.
+Iteration 3:
+    - `i` is 3, `frq[i]` is 3, so `frq[i] >= i` is true.
+    - `ans` is updated to 3.
+Iteration 4:
+    - `i` is 4, `frq[i]` is 4, so `frq[i] >= i` is true.
+    - `ans` is updated to 4.
+Iteration 5:
+    - `i` is 5, `frq[i]` is 5, so `frq[i] >= i` is false.
+    - `ans` remains unchanged.
+
+Therefore, the final output of the function `search([5, 5, 5, 5, 1])` is 5.

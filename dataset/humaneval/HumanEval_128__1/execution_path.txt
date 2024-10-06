@@ -1,0 +1,28 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: prod_signs
+main.py(5):     if not arr:
+main.py(7):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(7):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(7):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(7):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(7):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(7):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(7):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(7):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+main.py(8):     return prod * sum([abs(i) for i in arr])
+ --- modulename: main, funcname: <listcomp>
+main.py(8):     return prod * sum([abs(i) for i in arr])
+main.py(8):     return prod * sum([abs(i) for i in arr])
+main.py(8):     return prod * sum([abs(i) for i in arr])
+main.py(8):     return prod * sum([abs(i) for i in arr])
+main.py(8):     return prod * sum([abs(i) for i in arr])
+main.py(8):     return prod * sum([abs(i) for i in arr])
+main.py(8):     return prod * sum([abs(i) for i in arr])
+main.py(8):     return prod * sum([abs(i) for i in arr])

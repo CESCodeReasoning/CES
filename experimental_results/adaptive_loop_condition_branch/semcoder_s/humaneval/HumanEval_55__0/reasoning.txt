@@ -1,0 +1,12 @@
+The function `fib` is called with ( n = 12 ).
+The function checks if `n` is 0, 1, or neither.
+Since `n` is 12, it does not satisfy either condition, so the function proceeds to calculate `fib(12)` using the recursive formula `fib(n - 1) + fib(n - 2)`.
+
+To calculate `fib(12)`, it first calculates `fib(11)` and `fib(10)`.
+To calculate `fib(11)`, it first calculates `fib(10)` and `fib(9)`.
+To calculate `fib(10)`, it first calculates `fib(9)` and `fib(8)`.
+This pattern continues until it reaches the base cases (`n = 0` and `n = 1`).
+
+After calculating all the necessary fibonacci numbers, it sums them up and returns the result.
+
+Therefore, the final output of the function `fib(12)` is the 12th fibonacci number, which is 144.

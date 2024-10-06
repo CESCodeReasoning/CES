@@ -1,0 +1,12 @@
+The function `do_algebra` is called with (operator = ['+', '*', '-'], operand = [2, 3, 4, 5]).
+Inside the function, a variable `expression` is initialized to '2'.
+`zip(operator, operand[1:])` pairs each operator with the corresponding operand.
+
+First Iteration(oprt = '+', oprn = 3):
+    expression = '2' + '+' + '3' results in expression = '2+3'
+Second Iteration(oprt = '*', oprn = 4):
+    expression = '2+3' + '*' + '4' results in expression = '2+3*4'
+Third Iteration(oprt = '-', oprn = 5):
+    expression = '2+3*4' + '-' + '5' results in expression = '2+3*4-5'
+
+Finally, `eval(expression)` is called which evaluates the string as a Python expression and returns the result.

@@ -1,0 +1,22 @@
+from typing import *
+def check_dict_case(dict):
+    if len(dict.keys()) == 0: ## [CONDITION](len(dict.keys()) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return False
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        state = "start"
+        for key in dict.keys(): ## [STATE]dict.keys()=["p", "b"][/STATE]
+
+            if isinstance(key, str) == False: ## [CONDITION](isinstance(key, str) == False)=[False, False][/CONDITION][BRANCH]taken=[N, N][/BRANCH]
+                state = "mixed"
+                break
+            if state == "start": ## [CONDITION](state == "start")=[True, False][/CONDITION][BRANCH]taken=[Y, N][/BRANCH]
+                if key.isupper(): ## [CONDITION](key.isupper())=[False, False][/CONDITION][BRANCH]taken=[N, N][/BRANCH]
+                    state = "upper"
+                elif key.islower(): ## [CONDITION](key.islower())=[True, False][/CONDITION][BRANCH]taken=[Y, N][/BRANCH]
+                    state = "lower"
+                else: ## [BRANCH]taken=[N, N][/BRANCH]
+                    break
+            elif (state == "upper" and not key.isupper()) or (state == "lower" and not key.islower()): ## [CONDITION]((state == "upper" and not key.isupper()) or (state == "lower" and not key.islower()))=[False, False][/CONDITION][CONDITION]((state == "upper" and not key.isupper()))=[False, False][/CONDITION][CONDITION](state == "upper")=[False, False][/CONDITION][CONDITION](not key.isupper())=[False, False][/CONDITION][CONDITION]((state == "lower" and not key.islower()))=[False, False][/CONDITION][CONDITION](state == "lower")=[False, False][/CONDITION][CONDITION](not key.islower())=[False, False][/CONDITION][BRANCH]taken=[N, N][/BRANCH]
+                    state = "mixed"
+                    break
+            else: ## [BRANCH]taken

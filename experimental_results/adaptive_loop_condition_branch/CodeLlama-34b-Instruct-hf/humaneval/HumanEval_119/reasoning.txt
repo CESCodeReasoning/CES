@@ -1,0 +1,10 @@
+The function `match_parens` is called with the input `['()(', ')']`.
+Inside the function, the first two elements of the input list are concatenated using the `+` operator, resulting in the string "()(".
+The `check` function is called with the string "()(".
+Inside the `check` function, the string is iterated over character by character.
+The first character is '('. The number of unmatched opening parentheses is incremented to 1.
+The second character is ')'. The number of unmatched opening parentheses is decremented to 0.
+The third character is '('. The number of unmatched opening parentheses is incremented to 1.
+The fourth character is ')'. The number of unmatched opening parentheses is decremented to 0.
+Since the number of unmatched opening parentheses is 0 at the end of the iteration, the `check` function returns "Yes".
+The `match_parens` function returns "Yes".

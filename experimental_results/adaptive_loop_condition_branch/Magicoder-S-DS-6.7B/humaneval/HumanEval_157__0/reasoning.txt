@@ -1,0 +1,17 @@
+The function right_angle_triangle checks if a, b, and c can form a right-angled triangle. It does this by using the Pythagorean theorem, which states that in a right-angled triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides.
+
+To determine if a, b, and c can form a right-angled triangle, we need to check if any of the following is true:
+
+a^2 = b^2 + c^2
+b^2 = a^2 + c^2
+c^2 = a^2 + b^2
+
+If any of these conditions is true, then a, b, and c can form a right-angled triangle.
+
+For the input (7, 24, 25), we can substitute the values into the conditions:
+
+7^2 = 24^2 + 25^2
+24^2 = 7^2 + 25^2
+25^2 = 7^2 + 24^2
+
+Since all of these conditions are true, the output of executing the function right_angle_triangle on the input (7, 24, 25) is True.

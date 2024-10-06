@@ -1,0 +1,8 @@
+The function `sort_even` is called with ( l = [1, 2, 3] ).
+Inside the function, a variable `evens` is initialized to l[::2] ( [1, 2, 3][::2] = [1, 3] ).
+Inside the function, a variable `odds` is initialized to l[1::2] ( [1, 2, 3][1::2] = [2] ).
+Inside the function, a variable `ans` is initialized to [].
+The loop iterates from 0 through 0 (since ( len(evens) = 2 )).
+First Iteration (e = 1, o = 2):
+    `ans.extend([e, o])` updates `ans` to [1, 2] ( [ ] + [1, 2] = [1, 2] ).
+After the loop completes, the condition ( len(evens) > len(odds) ) is satisfied, therefore the if branch is taken and the function returns [1, 2, 3] as the output.

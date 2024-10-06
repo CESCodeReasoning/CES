@@ -1,0 +1,11 @@
+The function `prime_length` is called with ( string = 'Wow' ).
+Inside the function, a variable `l` is initialized to the length of the input string.
+
+Iteration 1:
+    -The length of the input string is 3, so `l` becomes 3.
+Iteration 2:
+    -The length of the input string is 3, so `l` remains 3.
+Iteration 3:
+    -The length of the input string is 3, so `l` remains 3.
+
+The function returns `True` because the length of the input string is 3, which is a prime number.

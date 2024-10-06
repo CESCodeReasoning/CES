@@ -1,0 +1,6 @@
+[REASONING]
+The function get_row takes a 2D list lst and an integer x as input. It first initializes an empty list coords.
+Then, it iterates over the rows of lst using a nested loop. For each element in lst that is equal to x, it adds the coordinates of that element to coords.
+Finally, it sorts coords first by the second element of each coordinate (i.e., the column index) in descending order, and then by the first element of each coordinate (i.e., the row index) in ascending order.
+The sorted coordinates are then returned as the output.
+[/REASONING]

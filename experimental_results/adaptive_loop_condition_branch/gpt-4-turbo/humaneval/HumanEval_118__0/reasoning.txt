@@ -1,0 +1,18 @@
+The function `get_closest_vowel` is called with the input string "full".
+The function first checks if the length of the word is less than 3. Since "full" has a length of 4, this condition is false, and the function proceeds.
+
+The set `vowels` contains all the vowels (both lowercase and uppercase).
+
+The function then iterates over the string from the second last character to the second character (indices from 2 to 1 in this case, because Python's range is exclusive of the stop value). The iteration is in reverse order.
+
+Iteration 1 (i = 2):
+   - The character at index 2 is 'l', which is not a vowel. The condition `word[i] in vowels` is false.
+
+Iteration 2 (i = 1):
+   - The character at index 1 is 'u', which is a vowel. The condition `word[i] in vowels` is true.
+   - The next character (i + 1) is 'l' and the previous character (i - 1) is 'f', neither of which are vowels. Both conditions `word[i + 1] not in vowels` and `word[i - 1] not in vowels` are true.
+   - Since all conditions are met, the function returns 'u'.
+
+No further iterations are needed as the function has already returned a result.
+
+Therefore, the output of the function `get_closest_vowel("full")` is 'u'.

@@ -1,0 +1,8 @@
+The function `can_arrange` takes an array of integers as input.
+The function returns the index of the first element in the array that is smaller than the previous element, or -1 if no such element is found.
+The function uses a while loop to iterate through the array.
+The loop starts at index 1 and continues until the end of the array is reached.
+Inside the loop, the function checks if the current element is smaller than the previous element.
+If the condition is true, the function sets the variable `ind` to the current index.
+Otherwise, the function increments the variable `i` by 1 and continues the loop.
+After the loop completes, the function returns the value of `ind`.

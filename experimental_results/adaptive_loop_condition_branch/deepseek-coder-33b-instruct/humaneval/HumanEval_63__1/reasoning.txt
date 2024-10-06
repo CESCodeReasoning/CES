@@ -1,0 +1,13 @@
+The function `fibfib` is called with ( n = 10 ).
+`n` is 10, which does not satisfy any of the conditions (n == 0, n == 1, n == 2).
+Therefore, none of the if branches are taken.
+The function then recursively calls itself with (n - 1), (n - 2), and (n - 3) as arguments.
+
+The recursive calls are:
+1. fibfib(9)
+2. fibfib(8)
+3. fibfib(7)
+
+Each of these calls will again make recursive calls until the base cases are reached.
+
+The final output of the function `fibfib(10)` is the sum of the outputs of the recursive calls.

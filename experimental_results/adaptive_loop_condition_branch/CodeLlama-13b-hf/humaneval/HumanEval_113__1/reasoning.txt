@@ -1,0 +1,75 @@
+The function `odd_count` is called with (lst = ['271', '137', '314'] ).
+Inside the function, a variable `res` is initialized to [].
+The loop iterates through the elements of the list `lst` = ['271', '137', '314'].
+First Iteration(arr = '271'):
+    `n` = sum(int(d) % 2 == 1 for d in arr)
+    `n` = sum(int(d) % 2 == 1 for d in '271')
+    `n` = sum(int('2') % 2 == 1 for d in '271')
+    `n` = sum(int(1) % 2 == 1 for d in '271')
+    `n` = sum(0 % 2 == 1 for d in '271')
+    `n` = sum(0 == 1 for d in '271')
+    `n` = sum(False for d in '271')
+    `n` = sum([])
+    `n` = 0
+    res.append(
+        "the number of odd elements " +
+        str(n) +
+        "n the str" +
+        str(n) +
+        "ng " +
+        str(n) +
+        " of the " +
+        str(n) +
+        "nput.")
+    res = [
+        "the number of odd elements 0n the str0ng 0 of the 0nput."
+    ]
+Second Iteration(arr = '137'):
+    `n` = sum(int(d) % 2 == 1 for d in arr)
+    `n` = sum(int(d) % 2 == 1 for d in '137')
+    `n` = sum(int('1') % 2 == 1 for d in '137')
+    `n` = sum(int(1) % 2 == 1 for d in '137')
+    `n` = sum(1 % 2 == 1 for d in '137')
+    `n` = sum(1 == 1 for d in '137')
+    `n` = sum(True for d in '137')
+    `n` = sum([True])
+    `n` = 1
+    res.append(
+        "the number of odd elements " +
+        str(n) +
+        "n the str" +
+        str(n) +
+        "ng " +
+        str(n) +
+        " of the " +
+        str(n) +
+        "nput.")
+    res = [
+        "the number of odd elements 0n the str0ng 0 of the 0nput.",
+        "the number of odd elements 1n the str1ng 1 of the 1nput."
+    ]
+Third Iteration(arr = '314'):
+    `n` = sum(int(d) % 2 == 1 for d in arr)
+    `n` = sum(int(d) % 2 == 1 for d in '314')
+    `n` = sum(int('3') % 2 == 1 for d in '314')
+    `n` = sum(int(1) % 2 == 1 for d in '314')
+    `n` = sum(1 % 2 == 1 for d in '314')
+    `n` = sum(1 == 1 for d in '314')
+    `n` = sum(True for d in '314')
+    `n` = sum([True])
+    `n` = 1
+    res.append(
+        "the number of odd elements " +
+        str(n) +
+        "n the str" +
+        str(n) +
+        "ng " +
+        str(n) +
+        " of the " +
+        str(n) +
+        "nput.")
+    res = [
+        "the number of odd elements 0n the str0ng 0 of the 0nput.",
+        "the number of odd elements 1n the str1ng 1 of the 1nput.",
+        "the number of odd elements 1n the str1ng 1 of the 1nput."
+    ]

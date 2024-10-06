@@ -1,0 +1,3 @@
+The function remove_vowels takes a string text as input and returns a new string that contains all the characters from text except for the vowels (a, e, i, o, and u).
+To determine the output of executing the function remove_vowels on the input 'fedcba', we need to iterate through each character in 'fedcba' and check if it is a vowel. If it is not a vowel, we add it to the new string.
+Therefore, the output of executing the function remove_vowels on the input 'fedcba' is 'fdb'.

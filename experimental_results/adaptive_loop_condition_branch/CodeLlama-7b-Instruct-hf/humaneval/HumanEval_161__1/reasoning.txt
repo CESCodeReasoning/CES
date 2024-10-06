@@ -1,0 +1,26 @@
+The function `solve` is called with ( s = "ab" ).
+Inside the function, a variable `flg` is initialized to 0.
+A variable `idx` is initialized to 0.
+A variable `new_str` is initialized to a list of the characters in `s`.
+
+Iteration 1:
+    -The character 'a' is an alphabetical character, so `flg` becomes 1.
+    -The character 'a' is swapped to its uppercase equivalent 'A'.
+    -The list `new_str` is updated with the new character 'A'.
+Iteration 2:
+    -The character 'b' is not an alphabetical character, so `flg` remains 1.
+    -The character 'b' is not swapped.
+    -The list `new_str` is updated with the character 'b'.
+
+The variable `s` is initialized to an empty string.
+A for loop iterates over the characters in `new_str`.
+
+Iteration 1:
+    -The character 'A' is added to the empty string `s`.
+Iteration 2:
+    -The character 'b' is added to the string `s`.
+
+If `flg` is 0, then the function returns `s` in reverse order.
+If `flg` is not 0, then the function returns `s` in its original order.
+
+Therefore, the final output of the function `solve("ab")` is "ba".

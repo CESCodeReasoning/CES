@@ -1,0 +1,8 @@
+state = "mixed"
+                    break
+            elif (state == "upper" and not key.isupper()) and (state == "lower" and not key.islower()):
+                    state = "mixed"
+                    break
+            else:
+                break
+        return state == "upper" or state == "lower"

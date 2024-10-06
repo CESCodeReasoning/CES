@@ -1,0 +1,9 @@
+from typing import *
+
+
+def change_base(x: int, base: int):
+    ret = ""
+    while x > 0: ## [STATE](x > 0)=Y[/STATE][STATE]x=9[/STATE]
+        ret = str(x % base) + ret
+        x //= base
+    return ret

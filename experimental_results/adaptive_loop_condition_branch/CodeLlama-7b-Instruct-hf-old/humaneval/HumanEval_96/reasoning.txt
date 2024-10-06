@@ -1,0 +1,24 @@
+The function count_up_to(n) takes an integer n as its parameter.
+The outer loop iterats through each element in the range(2, n) to check if it is a prime number.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the range(2, i).
+First Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, 5.
+    - numbers[i]=2: compare with 3, 4, 5:
+        - When j = 3 (numbers[j]=3), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 4 (numbers[j]=4), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 5 (numbers[j]=5), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+Second Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4, 5.
+    - numbers[i]=3, Compare with 4, 5:
+        - When j = 4 (numbers[j]=4), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 5 (numbers[j]=5), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+Third Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5.
+    - numbers[i]=4, compare with 5:
+        - When j = 5 (numbers[j]=5), the condition `numbers[i] == numbers[j]` is True, the if branch is taken. Append 4 to primes.
+Forth Iteration (i=5):
+    - `i` is 5, j in the inner loop is 5.
+    - numbers[i]=5, compare with 5:
+        - When j = 5 (numbers[j]=5), the condition `numbers[i] == numbers[j]` is True, the if branch is taken. Append 5 to primes.
+Fifth iteration (i=6):
+    No more elements to compare.

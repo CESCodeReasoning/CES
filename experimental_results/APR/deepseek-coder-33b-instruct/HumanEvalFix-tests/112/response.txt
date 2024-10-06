@@ -1,0 +1,6 @@
+Fixed Code:
+```python
+def reverse_delete(s,c):
+    s = ''.join([char for char in s if char not in c])
+    return (s,s == s[::-1])
+```

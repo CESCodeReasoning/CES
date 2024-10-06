@@ -1,0 +1,6 @@
+from typing import *
+
+
+def concatenate(strings: List[str]) -> str:
+    # [STATE] strings = ['x', 'y', 'z', 'w', 'k'] [/STATE]
+    return ''.join(strings)  # [STATE] return value = 'xyzwk' [/STATE]

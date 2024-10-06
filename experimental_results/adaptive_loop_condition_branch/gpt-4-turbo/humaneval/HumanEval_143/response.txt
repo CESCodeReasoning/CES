@@ -1,0 +1,37 @@
+[REASONING]
+The function `words_in_sentence(sentence)` takes a string `sentence` and processes it to filter out certain words based on specific conditions:
+1. The function splits the sentence into words.
+2. It iterates over each word:
+   - If the word has a length of 1, it sets a flag `flg` to 1.
+   - For words longer than 1 character, it checks if the length of the word is divisible by any number from 2 up to the length of the word minus one. If it is divisible, it sets the flag `flg` to 1.
+   - Finally, if the flag `flg` is still 0 or the word has a length of 2, the word is added to the result list `new_lst`.
+3. The function returns the words in `new_lst` joined as a single string.
+
+For the input "This is a test":
+- "This" has a length of 4. It checks divisibility for 2 and 3. Since 4 is divisible by 2, `flg` is set to 1.
+- "is" has a length of 2. It doesn't check divisibility because there's no number between 2 and 1 (exclusive). It is added to `new_lst` because its length is 2.
+- "a" has a length of 1. `flg` is set to 1 immediately.
+- "test" has a length of 4. It checks divisibility for 2 and 3. Since 4 is divisible by 2, `flg` is set to 1.
+
+The final output is "is" because it's the only word that meets the condition of having a length of 2 or not being divisible by any number from 2 to its length minus one.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def words_in_sentence(sentence):
+    new_lst = []
+    for word in sentence.split(): ## [STATE]word=['This', 'is', 'a', 'test'][/STATE][STATE]sentence.split()=['This', 'is', 'a', 'test'][/STATE]
+        flg = 0
+        if len(word) == 1: ## [CONDITION](len(word) == 1)=False, False, True, False[/CONDITION][BRANCH]taken=N, N, Y, N[/BRANCH]
+            flg = 1
+        for i in range(2, len(word)): ## [STATE]i=[2, 3], [2], [], [2, 3][/STATE][STATE]range(2, len(word))=[[2, 3], [2], [], [2, 3]][/STATE][STATE]len(word)=[4, 2, 1, 4][/STATE]
+            if len(word)%i == 0: ## [CONDITION](len(word)%i == 0)=True, False, False, True[/CONDITION][BRANCH]taken=Y, N, N, Y[/BRANCH]
+                flg = 1
+        if flg == 0 or len(word) == 2: ## [CONDITION](flg == 0 or len(word) == 2)=False, True, False, False[/CONDITION][CONDITION](flg == 0)=False, False, False, False[/CONDITION][CONDITION](len(word) == 2)=False, True, False, False[/CONDITION][BRANCH]taken=N, Y, N, N[/BRANCH]
+            new_lst.append(word)
+    return " ".join(new_lst)
+[/PYTHON]
+
+[OUTPUT]
+is
+[/OUTPUT]

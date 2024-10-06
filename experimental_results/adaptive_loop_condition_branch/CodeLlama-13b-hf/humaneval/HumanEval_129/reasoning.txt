@@ -1,0 +1,48 @@
+The function `minPath` is called with ( grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], k = 3 ).
+Inside the function, a variable `val` is initialized to n * n + 1.
+
+Iteration 1:
+    - The value of `i` is 0.
+    - The value of `j` is 0.
+    - The value of `grid[i][j]` is 1.
+    - The value of `val` is 1.
+Iteration 2:
+    - The value of `i` is 0.
+    - The value of `j` is 1.
+    - The value of `grid[i][j]` is 2.
+    - The value of `val` is 2.
+Iteration 3:
+    - The value of `i` is 0.
+    - The value of `j` is 2.
+    - The value of `grid[i][j]` is 3.
+    - The value of `val` is 3.
+Iteration 4:
+    - The value of `i` is 1.
+    - The value of `j` is 0.
+    - The value of `grid[i][j]` is 4.
+    - The value of `val` is 4.
+Iteration 5:
+    - The value of `i` is 1.
+    - The value of `j` is 1.
+    - The value of `grid[i][j]` is 5.
+    - The value of `val` is 5.
+Iteration 6:
+    - The value of `i` is 1.
+    - The value of `j` is 2.
+    - The value of `grid[i][j]` is 6.
+    - The value of `val` is 6.
+Iteration 7:
+    - The value of `i` is 2.
+    - The value of `j` is 0.
+    - The value of `grid[i][j]` is 7.
+    - The value of `val` is 7.
+Iteration 8:
+    - The value of `i` is 2.
+    - The value of `j` is 1.
+    - The value of `grid[i][j]` is 8.
+    - The value of `val` is 8.
+Iteration 9:
+    - The value of `i` is 2.
+    - The value of `j` is 2.
+    - The value of `grid[i][j]` is 9.
+    - The value of `val` is 9.

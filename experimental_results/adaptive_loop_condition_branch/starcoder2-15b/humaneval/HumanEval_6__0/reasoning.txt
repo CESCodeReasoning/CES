@@ -1,0 +1,17 @@
+The function `parse_nested_parens` is called with ( paren_string = "((()))" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The character '(' is encountered, so depth becomes 1.
+Iteration 2:
+    -The character '(' is encountered, so depth becomes 2.
+Iteration 3:
+    -The character '(' is encountered, so depth becomes 3.
+Iteration 4:
+    -The character ')' is encountered, so depth becomes 2.
+Iteration 5:
+    -The character ')' is encountered, so depth becomes 1.
+Iteration 6:
+    -The character ')' is encountered, so depth becomes 0.
+
+The function returns a list containing the maximum depth of each group of parentheses in the input string. In this case, the input string has only one group of parentheses, so the function returns a list containing the maximum depth of that group, which is 3.

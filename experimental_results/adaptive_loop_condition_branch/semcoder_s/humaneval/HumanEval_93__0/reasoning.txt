@@ -1,0 +1,12 @@
+The function `encode` takes a message as input and performs the following operations:
+1. It creates a dictionary `vowels_replace` that maps each vowel to its ASCII character after adding 2.
+2. It swaps the case of all characters in the message.
+3. It iterates over each character in the message and replaces it with its encoded value from the dictionary if it is a vowel, otherwise it keeps the character as it is.
+4. Finally, it joins all the encoded characters together to form the encoded message and returns it.
+
+For the input 'YES':
+- The vowels are 'a', 'e', 'i', 'o', 'u' and their encoded values are 'c', 'g', 'k', 'q', 'u'.
+- The message 'YES' becomes 'yes' after swapping the case.
+- The encoded message is obtained by replacing 'y' with 'c', 'e' with 'g', 's' with 'k'.
+
+Therefore, the output of executing the function `encode` on the input 'YES' is 'cgk'.

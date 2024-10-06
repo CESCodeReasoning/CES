@@ -1,0 +1,45 @@
+The function `get_closest_vowel` is called with ( word = "yogurt" ).
+Inside the function, a set `vowels` is created with the vowels in it.
+
+Iteration 1:
+    -The length of word is 6, so the condition (len(word) < 3) is false.
+    -The loop iterates from (len(word)-2) to 0 with a step of -1.
+    -The first iteration checks if the character at index 4 (i) is in vowels.
+    -The character at index 4 is 'r', which is not in vowels.
+    -The second condition (word[i+1] not in vowels) is true, since word[i+1] = 't' is not in vowels.
+    -The third condition (word[i-1] not in vowels) is true, since word[i-1] = 'o' is not in vowels.
+    -The loop continues to the next iteration.
+
+Iteration 2:
+    -The character at index 3 (i) is 'g', which is not in vowels.
+    -The second condition (word[i+1] not in vowels) is true, since word[i+1] = 't' is not in vowels.
+    -The third condition (word[i-1] not in vowels) is true, since word[i-1] = 'o' is not in vowels.
+    -The loop continues to the next iteration.
+
+Iteration 3:
+    -The character at index 2 (i) is 'o', which is in vowels.
+    -The second condition (word[i+1] not in vowels) is true, since word[i+1] = 'g' is not in vowels.
+    -The third condition (word[i-1] not in vowels) is true, since word[i-1] = 'r' is not in vowels.
+    -The loop continues to the next iteration.
+
+Iteration 4:
+    -The character at index 1 (i) is 'g', which is not in vowels.
+    -The second condition (word[i+1] not in vowels) is true, since word[i+1] = 't' is not in vowels.
+    -The third condition (word[i-1] not in vowels) is true, since word[i-1] = 'o' is not in vowels.
+    -The loop continues to the next iteration.
+
+Iteration 5:
+    -The character at index 0 (i) is 'y', which is in vowels.
+    -The second condition (word[i+1] not in vowels) is true, since word[i+1] = 'g' is not in vowels.
+    -The third condition (word[i-1] not in vowels) is true, since word[i-1] = 'o' is not in vowels.
+    -The loop continues to the next iteration.
+
+Iteration 6:
+    -The character at index -1 (i) is 't', which is not in vowels.
+    -The second condition (word[i+1] not in vowels) is true, since word[i+1] = 't' is not in vowels.
+    -The third condition (word[i-1] not in vowels) is true, since word[i-1] = 'o' is not in vowels.
+    -The loop continues to the next iteration.
+
+The loop continues until the end of the word is reached.
+
+Therefore, the function returns the empty string "" because no vowel is found.

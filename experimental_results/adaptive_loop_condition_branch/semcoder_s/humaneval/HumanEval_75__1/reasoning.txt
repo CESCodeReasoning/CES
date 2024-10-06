@@ -1,0 +1,112 @@
+The function `is_multiply_prime(a)` is called with ( a = 125 ).
+Inside the function, a nested function `is_prime(n)` is defined to check if a number is prime.
+The outer loop iterates from 2 to 100 (since the range is 101).
+The inner loop iterates from 2 to 100.
+The innermost loop iterates from 2 to 100.
+First Iteration (i = 2):
+   - `i` is 2, which is a prime number.
+   - The inner loop starts with j = 2.
+   - The innermost loop starts with k = 2.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 3.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 4.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 5.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 6.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 7.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 8.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 9.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 10.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 11.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 12.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 13.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 14.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 15.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 16.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 17.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 18.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 19.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 20.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 21.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 22.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 23.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 24.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 25.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 26.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 27.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 28.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 29.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 30.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 31.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 32.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 33.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 34.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 35.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 36.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 37.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 38.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 39.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 40.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 41.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 42.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 43.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 44.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 45.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 46.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 47.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 48.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 49.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 50.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 51.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 52.
+   - The product of i, j, and k is not equal to a (125).
+   - The innermost loop continues with k = 53.
+   -

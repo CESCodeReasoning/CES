@@ -1,0 +1,24 @@
+The function `fix_spaces` is called with the input string "Yellow Yellow  Dirty  Fellow".
+The function initializes `new_text` as an empty string, and `i`, `start`, and `end` are all set to 0.
+The function then enters a while loop that iterates over each character in the input string based on the condition `(i < len(text))`.
+
+First Iteration (i = 0):
+- The character at index 0 is 'Y', which is not a space. The else branch is taken.
+- Since `end - start` is 0, the character 'Y' is added directly to `new_text`.
+
+Second Iteration (i = 1 to 6):
+- Characters from index 1 to 6 are "ellow ", none of which are spaces until index 6. The else branch is taken for each non-space character, adding them directly to `new_text`.
+- At index 6, the character is a space, the if branch is taken, and `end` is incremented.
+
+Third Iteration (i = 7 to 13):
+- Characters from index 7 to 13 are "Yellow ", similar to the previous sequence, characters are added until a space is encountered at index 13.
+
+Fourth Iteration (i = 14 to 19):
+- Characters from index 14 to 19 are "Dirty ", similar to previous sequences, characters are added until a space is encountered at index 19.
+
+Fifth Iteration (i = 20 to 26):
+- Characters from index 20 to 26 are " Fellow". The first character is a space, and subsequent characters are added until the end of the string.
+
+After the loop, the function checks if there are trailing spaces. Since `end - start` is greater than 2, a "-" is added to `new_text`.
+
+The function returns the modified string `new_text`.

@@ -1,0 +1,5 @@
+The function largest_smallest_integers takes a list of integers as input and returns a tuple containing the largest negative integer in the list and the smallest positive integer in the list.
+To determine the output of executing the function largest_smallest_integers on the input [], we need to find the largest negative integer in the list and the smallest positive integer in the list.
+Since the input list is empty, there are no negative integers in the list, so the largest negative integer is None.
+Similarly, since the input list is empty, there are no positive integers in the list, so the smallest positive integer is None.
+Therefore, the output of executing the function largest_smallest_integers on the input [] is (None, None).

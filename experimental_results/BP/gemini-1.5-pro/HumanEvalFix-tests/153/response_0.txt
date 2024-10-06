@@ -1,0 +1,15 @@
+```response
+Yes
+```
+
+The code has a bug in how it handles ties in strength.  Let's break down why:
+
+* **The Problem:** The code is supposed to select the extension that appears *first* in the list if multiple extensions have the same strength. However, it always prioritizes extensions that come later if they have the same calculated strength.
+
+* **Example:** Consider the test case: 
+   `assert Strongest_Extension('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW']) == 'finNNalLLly.WoW'`
+
+   - 'Wow' and 'WoW' both have a strength of 1. 
+   - The code incorrectly returns 'finNNalLLly.WoW' because it encounters 'WoW' later in the loop. The correct answer should be 'finNNalLLly.Wow'.
+
+* **The Fix:**  To resolve this, instead of updating `strong` only if `val` is strictly greater than `my_val`, update it if `val` is greater than or *equal* to `my_val`. This will ensure that the first encountered extension with the maximum strength is chosen. 

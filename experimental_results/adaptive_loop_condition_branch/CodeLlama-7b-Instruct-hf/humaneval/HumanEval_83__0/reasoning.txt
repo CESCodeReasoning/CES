@@ -1,0 +1,5 @@
+The function `starts_one_ends` is called with ( n = 4 ).
+`n` is 4, which does not equal 1.
+Therefore, the else branch is taken and the method returns 18 * (10 ** (n - 2)) = 18 * (10 ** 2) = 18 * 100 = 1800.
+
+Therefore, the final output of the function `starts_one_ends(4)` is 1800.

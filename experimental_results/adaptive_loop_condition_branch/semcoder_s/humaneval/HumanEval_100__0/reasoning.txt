@@ -1,0 +1,7 @@
+The function `make_a_pile(n)` creates a list of integers starting from 0 to n-1, each multiplied by 2 and then added to n.
+
+For example, if n is 4, the function will return the list `[4, 6, 8, 10]`.
+
+To create this list, the function uses a list comprehension to generate the list. The expression `n + 2 * i` generates each element of the list, where `i` ranges from 0 to n-1.
+
+Therefore, the output of `make_a_pile(4)` will be `[4, 6, 8, 10]`.

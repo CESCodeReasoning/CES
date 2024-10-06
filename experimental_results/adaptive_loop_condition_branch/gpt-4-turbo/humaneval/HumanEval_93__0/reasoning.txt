@@ -1,0 +1,14 @@
+The function `encode` takes a string `message` as input. The function first defines a set of vowels both in lowercase and uppercase. It then creates a dictionary `vowels_replace` where each vowel is mapped to a character that is two positions ahead in the ASCII table.
+
+Next, the function converts the case of each character in the input message using `swapcase()`, which swaps uppercase letters to lowercase and vice versa.
+
+The function then iterates over each character in the swapped case message. If the character is a vowel (as per the `vowels_replace` dictionary), it replaces the character with its corresponding value from the dictionary. If the character is not a vowel, it remains unchanged.
+
+For the input 'YES', the steps are as follows:
+1. Convert 'YES' to 'yes' using `swapcase()`.
+2. Check each character in 'yes':
+   - 'y' is not a vowel, so it remains 'y'.
+   - 'e' is a vowel, so it is replaced by 'g' (ASCII value of 'e' is 101, and 101 + 2 = 103, which is 'g').
+   - 's' is not a vowel, so it remains 's'.
+
+Thus, the output of the function for the input 'YES' is 'ygs'.

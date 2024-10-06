@@ -1,0 +1,21 @@
+The function `exchange` is called with two lists ( lst1 = [3, 2, 6, 1, 8, 9] and lst2 = [3, 5, 5, 1, 1, 1] ).
+Inside the function, two variables `odd` and `even` are initialized to 0.
+
+The first loop iterates through the elements of lst1 and checks if each element is odd or even.
+    - The first element is 3, which is odd.
+    - The second element is 2, which is even.
+    - The third element is 6, which is odd.
+    - The fourth element is 1, which is odd.
+    - The fifth element is 8, which is even.
+    - The sixth element is 9, which is odd.
+
+The second loop iterates through the elements of lst2 and checks if each element is odd or even.
+    - The first element is 3, which is odd.
+    - The second element is 5, which is even.
+    - The third element is 5, which is even.
+    - The fourth element is 1, which is odd.
+    - The fifth element is 1, which is even.
+    - The sixth element is 1, which is even.
+
+The `even` variable is 5, while the `odd` variable is 4.
+The condition `even >= odd` is true, so the function returns "YES".

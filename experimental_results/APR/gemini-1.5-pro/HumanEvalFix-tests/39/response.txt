@@ -1,0 +1,34 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def prime_fib(n: int):
+    import math
+
+    def is_prime(p):
+        if p < 2:
+            return False
+        for k in range(2, int(math.sqrt(p)) + 1):
+            if p % k == 0:
+                return False
+        return True
+    f = [0, 1]
+    cnt = 0
+    while True:
+        f.append(f[-1] + f[-2])
+        if is_prime(f[-1]):
+            cnt += 1
+        if cnt == n:
+            return f[-1]
+```

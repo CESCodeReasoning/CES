@@ -1,0 +1,43 @@
+[REASONING]
+The function `find_closest_elements(numbers)` takes a list of floating-point numbers ([1.0, 2.0, 3.0, 4.0, 5.0, 2.2]) as its parameter.
+The goal is to find the pair of elements with the smallest absolute difference between them.
+
+The function initializes `closest_pair` and `distance` to `None`.
+
+The outer loop iterates through each element in the list, using `enumerate` to get both the index (`idx`) and the value (`elem`) of each element.
+The inner loop does the same, providing `idx2` and `elem2` for comparison against `idx` and `elem`.
+
+For each pair of elements (where `idx` is not equal to `idx2`), the function calculates the absolute difference between the two elements. If `distance` is `None` (which is true for the first valid comparison), it sets `distance` to this difference and records the pair as `closest_pair`.
+
+If `distance` is not `None`, the function checks if the newly calculated difference (`new_distance`) is smaller than the current `distance`. If it is, it updates `distance` and `closest_pair` to reflect this new closest pair.
+
+The function continues this process for all pairs and returns the `closest_pair` with the smallest difference.
+
+For the given input, the closest pair is `(2.0, 2.2)` with a difference of `0.2`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    closest_pair = None
+    distance = None
+
+    for idx, elem in enumerate(numbers): ## [STATE]idx=[0, 1, 2, 3, 4, 5][/STATE][STATE]elem=[1.0, 2.0, 3.0, 4.0, 5.0, 2.2][/STATE][STATE]enumerate(numbers)=[(0, 1.0), (1, 2.0), (2, 3.0), (3, 4.0), (4, 5.0), (5, 2.2)][/STATE][STATE]numbers=[1.0, 2.0, 3.0, 4.0, 5.0, 2.2][/STATE]
+        for idx2, elem2 in enumerate(numbers): ## [STATE]idx2=[0, 1, 2, 3, 4, 5][/STATE][STATE]elem2=[1.0, 2.0, 3.0, 4.0, 5.0, 2.2][/STATE][STATE]enumerate(numbers)=[(0, 1.0), (1, 2.0), (2, 3.0), (3, 4.0), (4, 5.0), (5, 2.2)][/STATE][STATE]numbers=[1.0, 2.0, 3.0, 4.0, 5.0, 2.2][/STATE]
+            if idx != idx2: ## [CONDITION](idx != idx2)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+                if distance is None: ## [CONDITION](distance is None)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+                    distance = abs(elem - elem2)
+                    closest_pair = tuple(sorted([elem, elem2]))
+                else: ## [BRANCH]taken=N[/BRANCH]
+                    new_distance = abs(elem - elem2)
+                    if new_distance < distance: ## [CONDITION](new_distance < distance)=True/False[/CONDITION][BRANCH]taken=Y/N[/BRANCH]
+                        distance = new_distance
+                        closest_pair = tuple(sorted([elem, elem2]))
+
+    return closest_pair
+[/PYTHON]
+
+[OUTPUT]
+(2.0, 2.2)
+[/OUTPUT]

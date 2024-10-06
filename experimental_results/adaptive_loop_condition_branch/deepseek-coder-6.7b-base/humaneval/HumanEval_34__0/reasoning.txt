@@ -1,0 +1,4 @@
+The function unique takes a list l as input and returns a new list that contains only the unique elements of l.
+To determine the output of executing the function unique on the input ['a', 'b', 'b', 'c', 'd', 'd'], we need to remove the duplicates from the input list.
+The unique elements of the input list are ['a', 'b', 'c', 'd'].
+Therefore, the output of executing the function unique on the input ['a', 'b', 'b', 'c', 'd', 'd'] is ['a', 'b', 'c', 'd'].

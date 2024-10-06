@@ -1,0 +1,7 @@
+The function sort_numbers takes a string of numbers as input and returns a string of the sorted numbers.
+
+The function first splits the input string into a list of words. Then, it filters out any empty strings from the list. After that, it sorts the list of words based on their corresponding numerical values in the value_map dictionary. Finally, it joins the sorted list of words into a single string with spaces in between and returns it.
+
+For the input 'three five nine', the function first splits the string into the list ['three', 'five', 'nine']. Then, it filters out any empty strings from the list. After that, it sorts the list of words based on their corresponding numerical values in the value_map dictionary. The sorted list is ['nine', 'five', 'three']. Finally, it joins the sorted list of words into a single string with spaces in between and returns it.
+
+So, the output of executing the function sort_numbers on the input 'three five nine' is 'nine five three'.

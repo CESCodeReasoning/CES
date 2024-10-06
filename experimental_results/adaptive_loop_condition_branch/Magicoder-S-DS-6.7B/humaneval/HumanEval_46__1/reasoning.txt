@@ -1,0 +1,23 @@
+The function `fib4` is called with ( n = 12 ).
+The condition ( n < 4 ) is not satisfied, so the else branch is taken.
+Inside the else branch, a list `results` is initialized with the first four Fibonacci numbers [0, 0, 2, 0].
+The loop iterates from 4 through 12 (since ( n = 12 )).
+First Iteration (_ = 4):
+    results[-1] = 0, results[-2] = 0, results[-3] = 2, results[-4] = 0, `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 2] ( 0 + 0 + 2 + 0 = 2 ).
+Second Iteration (_ = 5):
+    results[-1] = 2, results[-2] = 0, results[-3] = 2, results[-4] = 0, `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [2, 0, 2, 0, 2, 4] ( 2 + 0 + 2 + 0 = 4 ).
+Third Iteration (_ = 6)
+    results[-1] = 4, results[-2] = 2, results[-3] = 2, results[-4] = 0, `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [4, 2, 2, 0, 2, 4, 6] ( 4 + 2 + 2 + 0 = 8 ).
+Fourth Iteration (_ = 7)
+    results[-1] = 6, results[-2] = 4, results[-3] = 2, results[-4] = 2, `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [6, 4, 2, 0, 2, 4, 6, 10] ( 6 + 4 + 2 + 0 = 12 ).
+Fifth Iteration (_ = 8)
+    results[-1] = 10, results[-2] = 6, results[-3] = 4, results[-4] = 2, `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [10, 6, 4, 2, 2, 4, 6, 10, 16] ( 10 + 6 + 4 + 2 = 22 ).
+Sixth Iteration (_ = 9)
+    results[-1] = 16, results[-2] = 10, results[-3] = 6, results[-4] = 4, `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [16, 10, 6, 4, 2, 4, 6, 10, 16, 26] ( 16 + 10 + 6 + 4 = 36 ).
+Seventh Iteration (_ = 10)
+    results[-1] = 26, results[-2] = 16, results[-3] = 10, results[-4] = 6, `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [26, 16, 10, 6, 4, 2, 4, 6, 10, 16, 26] ( 26 + 16 + 10 + 6 = 52 ).
+Eighth Iteration (_ = 11)
+    results[-1] = 42, results[-2] = 26, results[-3] = 16, results[-4] = 10, `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [42, 26, 16, 10, 6, 4, 2, 4, 6, 10, 16, 26] ( 42 + 26 + 16 + 10 = 74 ).
+Ninth Iteration (_ = 12)
+    results[-1] = 68, results[-2] = 42, results[-3] = 26, results[-4] = 16, `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [68, 42, 26, 16, 10, 6, 4, 2, 4, 6, 10, 16, 26] ( 68 + 42 + 26 + 16 = 114 ).
+After the loop completes, the function returns the last element of `results` which is 114.

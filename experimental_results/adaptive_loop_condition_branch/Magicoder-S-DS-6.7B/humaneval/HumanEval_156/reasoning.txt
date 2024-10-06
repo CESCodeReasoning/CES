@@ -1,0 +1,67 @@
+The function `int_to_mini_roman` is called with ( number = 19 ).
+The function `int_to_mini_roman` converts an integer to a roman numeral.
+The while loop iterates from 12 to 0 (since the largest roman numeral is M).
+First Iteration (i = 12):
+    - number // num[i] = 19 // 1000 = 1
+    - number %= num[i] = 19 % 1000 = 19
+    - div = 1
+    - while div:
+        - res += sym[i] = 'M'
+        - div -= 1
+Second Iteration (i = 11):
+    - number // num[i] = 19 // 900 = 2
+    - number %= num[i] = 19 % 900 = 19
+    - div = 2
+    - while div:
+        - res += sym[i] = 'CM'
+        - div -= 1
+Third Iteration (i = 10):
+    - number // num[i] = 19 // 500 = 3
+    - number %= num[i] = 19 % 500 = 19
+    - div = 3
+    - while div:
+        - res += sym[i] = 'D'
+        - div -= 1
+Fourth Iteration (i = 9):
+    - number // num[i] = 19 // 100 = 1
+    - number %= num[i] = 19 % 100 = 19
+    - div = 1
+    - while div:
+        - res += sym[i] = 'C'
+        - div -= 1
+Fifth Iteration (i = 8):
+    - number // num[i] = 19 // 90 = 2
+    - number %= num[i] = 19 % 90 = 19
+    - div = 2
+    - while div:
+        - res += sym[i] = 'XC'
+        - div -= 1
+Sixth Iteration (i = 7):
+    - number // num[i] = 19 // 50 = 3
+    - number %= num[i] = 19 % 50 = 19
+    - div = 3
+    - while div:
+        - res += sym[i] = 'L'
+        - div -= 1
+Seventh Iteration (i = 6):
+    - number // num[i] = 19 // 40 = 4
+    - number %= num[i] = 19 % 40 = 19
+    - div = 4
+    - while div:
+        - res += sym[i] = 'XL'
+        - div -= 1
+Eighth Iteration (i = 5):
+    - number // num[i] = 19 // 10 = 1
+    - number %= num[i] = 19 % 10 = 9
+    - div = 1
+    - while div:
+        - res += sym[i] = 'X'
+        - div -= 1
+Ninth Iteration (i = 4):
+    - number // num[i] = 9 // 9 = 1
+    - number %= num[i] = 9 % 9 = 0
+    - div = 1
+    - while div:
+        - res += sym[i] = 'IX'
+        - div -= 1
+After the loop completes, the function returns the value of `res`, which is now 'mcmxcix'.

@@ -1,0 +1,30 @@
+
+[REASONING]
+The function `correct_bracketing` is called with ( brackets = "(" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The character '(' is an opening bracket, so depth becomes 1.
+
+After the loop completes, the function returns the value of `depth == 0`, which is False.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets: ## [STATE]b=['('][/STATE][STATE]brackets=["("][/STATE]
+        if b == "(": ## [CONDITION](b == "(")=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+            depth += 1
+        else: ## [BRANCH]taken=[N][/BRANCH]
+            depth -= 1
+        if depth < 0: ## [CONDITION](depth < 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+            return False
+    return depth == 0
+[/ANSWER]
+
+[OUTPUT]
+False
+[/OUTPUT]

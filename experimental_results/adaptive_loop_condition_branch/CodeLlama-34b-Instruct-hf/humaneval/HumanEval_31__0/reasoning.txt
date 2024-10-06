@@ -1,0 +1,127 @@
+The function `is_prime` is called with ( n = 5 * 17 ).
+Inside the function, the first condition checks if ( n < 2 ).
+Since ( 5 * 17 = 85 ) is greater than 2, the condition is false.
+The loop iterates from 2 through 84 (since ( n = 85 )).
+First Iteration (k = 2)
+   - `k` is 2, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Second Iteration (k = 3)
+   - `k` is 3, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Third Iteration (k = 4)
+   - `k` is 4, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Fourth Iteration (k = 5)
+   - `k` is 5, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Fifth Iteration (k = 6)
+   - `k` is 6, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Sixth Iteration (k = 7)
+   - `k` is 7, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Seventh Iteration (k = 8)
+   - `k` is 8, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Eighth Iteration (k = 9)
+   - `k` is 9, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Ninth Iteration (k = 10)
+   - `k` is 10, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Tenth Iteration (k = 11)
+   - `k` is 11, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Eleventh Iteration (k = 12)
+   - `k` is 12, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twelfth Iteration (k = 13)
+   - `k` is 13, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirteenth Iteration (k = 14)
+   - `k` is 14, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Fourteenth Iteration (k = 15)
+   - `k` is 15, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Fifteenth Iteration (k = 16)
+   - `k` is 16, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Sixteenth Iteration (k = 17)
+   - `k` is 17, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Seventeenth Iteration (k = 18)
+   - `k` is 18, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Eighteenth Iteration (k = 19)
+   - `k` is 19, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Nineteenth Iteration (k = 20)
+   - `k` is 20, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twentieth Iteration (k = 21)
+   - `k` is 21, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twenty-first Iteration (k = 22)
+   - `k` is 22, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twenty-second Iteration (k = 23)
+   - `k` is 23, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twenty-third Iteration (k = 24)
+   - `k` is 24, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twenty-fourth Iteration (k = 25)
+   - `k` is 25, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twenty-fifth Iteration (k = 26)
+   - `k` is 26, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twenty-sixth Iteration (k = 27)
+   - `k` is 27, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twenty-seventh Iteration (k = 28)
+   - `k` is 28, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twenty-eighth Iteration (k = 29)
+   - `k` is 29, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Twenty-ninth Iteration (k = 30)
+   - `k` is 30, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirtieth Iteration (k = 31)
+   - `k` is 31, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirty-first Iteration (k = 32)
+   - `k` is 32, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirty-second Iteration (k = 33)
+   - `k` is 33, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirty-third Iteration (k = 34)
+   - `k` is 34, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirty-fourth Iteration (k = 35)
+   - `k` is 35, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirty-fifth Iteration (k = 36)
+   - `k` is 36, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirty-sixth Iteration (k = 37)
+   - `k` is 37, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirty-seventh Iteration (k = 38)
+   - `k` is 38, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirty-eighth Iteration (k = 39)
+   - `k` is 39, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Thirty-ninth Iteration (k = 40)
+   - `k` is 40, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Fortieth Iteration (k = 41)
+   - `k` is 41, which is less than `n`.
+   - The condition `n % k == 0` is false.
+Forty-first Iteration (k = 42)
+   - `k` is 42, which is less than `n`.
+   - The condition `

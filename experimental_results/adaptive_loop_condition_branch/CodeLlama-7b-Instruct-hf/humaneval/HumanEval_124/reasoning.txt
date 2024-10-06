@@ -1,0 +1,12 @@
+The function `valid_date` is called with ( date = '03-11-2000' ).
+`date` is '03-11-2000', which is a string.
+The try block is executed.
+`date` is stripped of whitespace characters.
+`date` is split into three parts: month, day, and year.
+`month`, `day`, and `year` are assigned the values 03, 11, and 2000, respectively.
+`month`, `day`, and `year` are converted to integers.
+The condition `month < 1 or month > 12` is false, therefore the first if branch is not taken.
+The condition `month in [1,3,5,7,8,10,12] and day < 1 or day > 31` is true, therefore the second if branch is taken.
+The method returns False.
+
+Therefore, the final output of the function `valid_date('03-11-2000')` is False.

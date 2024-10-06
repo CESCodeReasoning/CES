@@ -1,0 +1,7 @@
+The function `by_length` is called with an empty list (arr = []).
+A dictionary `dic` is defined with keys as integer lengths and values as corresponding strings.
+The `sorted` function is used to sort the input list `arr` in reverse order.
+An empty list `new_arr` is initialized to store the values from the dictionary `dic`.
+The loop iterates over each element in `sorted_arr`.
+Since `sorted_arr` is empty, the loop does not execute.
+The function returns `new_arr`, which is also empty.

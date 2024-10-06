@@ -1,0 +1,12 @@
+The function `is_happy` is called with ( s = "aabb" ).
+The length of the string is 4, which is greater than 3, so the first condition `len(s) < 3` is False.
+
+The loop iterates over the string, comparing each character with the next two characters.
+Iteration 1:
+    -The characters 'a' and 'a' are the same, so the function returns False.
+Iteration 2:
+    -The characters 'a' and 'b' are not the same, so the function continues.
+Iteration 3:
+    -The characters 'b' and 'b' are the same, so the function returns False.
+
+Therefore, the final output of the function `is_happy("aabb")` is False.

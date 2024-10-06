@@ -1,0 +1,11 @@
+The function `solution` takes a list `lst` as input. It returns the sum of elements in the list that are both at an odd index and are odd numbers themselves. The function uses list comprehension to filter and sum the elements based on these conditions:
+1. `idx%2==0` checks if the index is even (since Python uses 0-based indexing, even indices represent odd positions in 1-based indexing).
+2. `x%2==1` checks if the element at that index is an odd number.
+
+For the input list `[5, 8, 7, 1]`:
+- Index 0: Element is 5, which is odd, and the index is even (0%2==0). This element is included.
+- Index 1: Element is 8, which is even, so it is not included.
+- Index 2: Element is 7, which is odd, and the index is even (2%2==0). This element is included.
+- Index 3: Element is 1, which is odd, but the index is odd (3%2==1), so it is not included.
+
+The sum of the included elements (5 and 7) is 12.

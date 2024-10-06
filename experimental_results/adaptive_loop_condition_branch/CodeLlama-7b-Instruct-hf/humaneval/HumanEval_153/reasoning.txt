@@ -1,0 +1,25 @@
+The function `Strongest_Extension` is called with ( class_name = 'Watashi', extensions = ['tEN', 'niNE', 'eIGHt8OKe'] ).
+Inside the function, a variable `strong` is initialized to the first element of the `extensions` list.
+A variable `my_val` is initialized to the length of the list comprehension `[x for x in extensions[0] if x.isalpha() and x.isupper()]` minus the length of the list comprehension `[x for x in extensions[0] if x.isalpha() and x.islower()]`.
+The loop iterates over the elements of the `extensions` list.
+First Iteration:
+   - The current element of the loop is 'tEN'.
+   - The list comprehension `[x for x in 'tEN' if x.isalpha() and x.isupper()]` evaluates to ['T', 'E', 'N'].
+   - The list comprehension `[x for x in 'tEN' if x.isalpha() and x.islower()]` evaluates to ['e'].
+   - The value of `val` is 2 - 1 = 1.
+   - The condition `val > my_val` is true, so the branch is taken.
+   - The value of `strong` is updated to 'tEN'.
+   - The value of `my_val` is updated to 1.
+Second Iteration:
+   - The current element of the loop is 'niNE'.
+   - The list comprehension `[x for x in 'niNE' if x.isalpha() and x.isupper()]` evaluates to ['N', 'I', 'N', 'E'].
+   - The list comprehension `[x for x in 'niNE' if x.isalpha() and x.islower()]` evaluates to ['n', 'i', 'n', 'e'].
+   - The value of `val` is 4 - 4 = 0.
+   - The condition `val > my_val` is false, so the branch is not taken.
+Third Iteration:
+   - The current element of the loop is 'eIGHt8OKe'.
+   - The list comprehension `[x for x in 'eIGHt8OKe' if x.isalpha() and x.isupper()]` evaluates to ['E', 'I', 'G', 'H', 'T', '8', 'O', 'K', 'E'].
+   - The list comprehension `[x for x in 'eIGHt8OKe' if x.isalpha() and x.islower()]` evaluates to ['e', 'i', 'g', 'h', 't', '8', 'o', 'k', 'e'].
+   - The value of `val` is 9 - 9 = 0.
+   - The condition `val > my_val` is false, so the branch is not taken.
+The loop completes, and the function returns the concatenation of `class_name` and `strong`, which is 'Watashi.eIGHt8OKe'.

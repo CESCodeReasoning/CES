@@ -1,0 +1,8 @@
+The function `do_algebra` is called with (operator = ['//', '*'], operand = [7, 3, 4]).
+Inside the function, a variable `expression` is initialized to '7'.
+The loop iterates over the pairs of elements in `operator` and `operand[1:]`.
+First Iteration (oprt = '//', oprn = 3):
+    `expression += oprt + str(oprn)` results in `expression = '7//3'`.
+Second Iteration (oprt = '*', oprn = 4):
+    `expression += oprt + str(oprn)` results in `expression = '7//3*4'`.
+The function returns the result of evaluating the expression, which is 2.

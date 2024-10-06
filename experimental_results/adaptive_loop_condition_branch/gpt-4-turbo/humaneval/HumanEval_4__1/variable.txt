@@ -1,0 +1,6 @@
+from typing import *
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    mean = sum(numbers) / len(numbers)  # [STATE] mean = 3.0 [/STATE]
+    return sum(abs(x - mean) for x in numbers) / len(numbers)  # [STATE] return value = 1.2 [/STATE]

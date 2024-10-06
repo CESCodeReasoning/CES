@@ -1,0 +1,13 @@
+The function `Strongest_Extension` is called with ( class_name = 'Watashi', extensions = ['tEN', 'niNE', 'eIGHt8OKe'] ).
+Inside the function, a variable `strong` is initialized to the first element of the `extensions` list.
+
+Iteration 1:
+    -The string 'tEN' has 1 uppercase letter and 2 lowercase letters, so the difference is 1.
+Iteration 2:
+    -The string 'niNE' has 1 uppercase letter and 3 lowercase letters, so the difference is 2.
+Iteration 3:
+    -The string 'eIGHt8OKe' has 1 uppercase letter and 7 lowercase letters, so the difference is 6.
+
+The string 'eIGHt8OKe' has the highest difference, so it becomes the new `strong`.
+
+The final output of the function `Strongest_Extension('Watashi', ['tEN', 'niNE', 'eIGHt8OKe'])` is 'Watashi.eIGHt8OKe'.

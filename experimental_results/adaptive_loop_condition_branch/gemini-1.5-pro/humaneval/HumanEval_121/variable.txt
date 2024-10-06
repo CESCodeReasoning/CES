@@ -1,0 +1,4 @@
+from typing import *
+def solution(lst):
+    return sum([x for [STATE]idx, x in enumerate(lst) if [CONDITION]idx%2==0 and x%2==1[/CONDITION]])
+[/STATE]

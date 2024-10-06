@@ -1,0 +1,4 @@
+The function starts by splitting the input string into a list of words using the space character as the delimiter. The list of words is stored in the variable check.
+The function then takes the last word from the list and checks if it has only one character. This is done by checking the length of the last word, which is stored in the variable check.
+If the length of the last word is 1, the function checks if the character is a letter by converting it to lowercase and checking if its ASCII value is between 97 and 122.
+If the last word has more than one character, the function returns False.

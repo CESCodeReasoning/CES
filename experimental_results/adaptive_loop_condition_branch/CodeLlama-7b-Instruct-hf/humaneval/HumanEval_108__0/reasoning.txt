@@ -1,0 +1,13 @@
+The function `count_nums` is called with ( arr = [1] ).
+Inside the function, a nested function `digits_sum` is defined.
+The `digits_sum` function takes an integer `n` as input.
+The function first checks if `n` is negative.
+If `n` is negative, the function negates `n` and sets `neg` to -1.
+Then, the function converts `n` to a list of its digits.
+Finally, the function returns the sum of the digits of `n`.
+
+The outer function `count_nums` then applies the `digits_sum` function to each element of the input list `arr`.
+The `filter` function is then used to filter out any elements of `arr` that are not positive.
+Finally, the length of the filtered list is returned.
+
+Therefore, the final output of the function `count_nums([1])` is 1.

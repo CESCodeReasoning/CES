@@ -1,0 +1,8 @@
+The function `digitSum` is called with ( s = "You arE Very Smart" ).
+`s` is not an empty string, therefore the if branch is not taken.
+The return statement evaluates the sum of the ord(char) if char.isupper() else 0 for char in s.
+ord(char) returns the Unicode code point for a one-character string.
+char.isupper() returns True if all characters in the string are uppercase, otherwise False.
+The sum of the ord(char) if char.isupper() else 0 for char in s is 1140.
+
+Therefore, the final output of the function `digitSum("You arE Very Smart")` is 1140.

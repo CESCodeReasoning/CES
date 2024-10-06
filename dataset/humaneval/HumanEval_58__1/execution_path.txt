@@ -1,0 +1,31 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: common
+main.py(5):     ret = set()
+main.py(6):     for e1 in l1:
+main.py(7):         for e2 in l2:
+main.py(8):             if e1 == e2:
+main.py(7):         for e2 in l2:
+main.py(8):             if e1 == e2:
+main.py(7):         for e2 in l2:
+main.py(6):     for e1 in l1:
+main.py(7):         for e2 in l2:
+main.py(8):             if e1 == e2:
+main.py(9):                 ret.add(e1)
+main.py(7):         for e2 in l2:
+main.py(8):             if e1 == e2:
+main.py(7):         for e2 in l2:
+main.py(6):     for e1 in l1:
+main.py(7):         for e2 in l2:
+main.py(8):             if e1 == e2:
+main.py(7):         for e2 in l2:
+main.py(8):             if e1 == e2:
+main.py(9):                 ret.add(e1)
+main.py(7):         for e2 in l2:
+main.py(6):     for e1 in l1:
+main.py(7):         for e2 in l2:
+main.py(8):             if e1 == e2:
+main.py(7):         for e2 in l2:
+main.py(8):             if e1 == e2:
+main.py(7):         for e2 in l2:
+main.py(6):     for e1 in l1:
+main.py(10):     return sorted(list(ret))

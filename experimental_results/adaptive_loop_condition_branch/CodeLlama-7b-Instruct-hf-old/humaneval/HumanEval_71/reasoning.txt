@@ -1,0 +1,8 @@
+The function `triangle_area` is called with ( a = 3, b = 4, c = 5 ).
+The condition `a + b <= c or a + c <= b or b + c <= a` is evaluated.
+   - `a + b` is 7, which is greater than `c` (5).
+   - `a + c` is 8, which is greater than `b` (4).
+   - `b + c` is 9, which is greater than `a` (3).
+Therefore, the condition is true, and the method returns -1.
+
+Therefore, the final output of the function `triangle_area(3, 4, 5)` is -1.

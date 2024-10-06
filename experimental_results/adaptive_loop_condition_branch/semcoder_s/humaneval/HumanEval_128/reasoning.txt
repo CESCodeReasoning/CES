@@ -1,0 +1,13 @@
+The function `prod_signs` is called with ( arr = [1, 2, 2, -4] ).
+The function checks if the input list `arr` is empty.
+   - The condition `not arr` is false (as the list is not empty).
+The function calculates the product of the signs based on the number of negative elements in the list.
+   - The list `[1, 2, 2, -4]` contains one negative element (-4).
+   - The number of negative elements is 1.
+   - The product of signs is `(-1) ** 1 = -1`.
+The function calculates the sum of absolute values of elements in the list.
+   - The sum of absolute values of `[1, 2, 2, -4]` is `1 + 2 + 2 + 4 = 9`.
+The function returns the product of the sign and the sum of absolute values.
+   - The final result is `-1 * 9 = -9`.
+
+Therefore, the final output of the function `prod_signs([1, 2, 2, -4])` is -9.

@@ -1,0 +1,30 @@
+Here's the fixed code for the `has_close_elements` function:
+
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+```
+
+And here's the corrected version of the `simplify` function:
+
+```python
+def simplify(x: str, n: str) -> bool:
+    a, b = x.split("/")
+    c, d = n.split("/")
+    a, b, c, d = int(a), int(b), int(c), int(d)
+    numerator = a * c
+    denom = b * d
+    if numerator % denom == 0:
+        return True
+    return False
+```
+
+These corrections address the logical errors in the original implementations and ensure that the functions behave as specified in the problem descriptions.

@@ -1,0 +1,7 @@
+The function `string_xor` takes two strings `a` and `b` as input, and returns their bitwise XOR.
+The function uses a nested loop to iterate over the characters of both strings simultaneously.
+For each pair of characters `x` and `y` from the two strings, the function calls the `xor` function, which returns the bitwise XOR of `x` and `y`.
+The `xor` function uses a conditional statement to check if `x` and `y` are equal.
+If they are equal, the function returns '0', otherwise it returns '1'.
+The outer loop iterates over the characters of both strings, and the inner loop iterates over the characters of each string.
+Therefore, the function returns a string of the same length as the input strings, where each character is the bitwise XOR of the corresponding characters from the input strings.

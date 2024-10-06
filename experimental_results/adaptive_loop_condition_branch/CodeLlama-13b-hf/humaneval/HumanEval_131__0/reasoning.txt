@@ -1,0 +1,15 @@
+The function `digits` is called with ( n = 120 ).
+Inside the function, a variable `product` and `odd_count` are initialized to 1.
+
+Iteration 1:
+    -The character '1' is converted to 1, so int_digit becomes 1.
+    -The condition `int_digit % 2 == 1` is true, so product becomes 1.
+    -The condition `odd_count == 0` is false, so the `else` block is not executed.
+Iteration 2:
+    -The character '2' is converted to 2, so int_digit becomes 2.
+    -The condition `int_digit % 2 == 1` is true, so product becomes 2.
+    -The condition `odd_count == 0` is false, so the `else` block is not executed.
+Iteration 3:
+    -The character '0' is converted to 0, so int_digit becomes 0.
+    -The condition `int_digit % 2 == 1` is false, so the `if` block is not executed.
+    -The condition `odd_count == 0` is false, so the `else` block is not executed.

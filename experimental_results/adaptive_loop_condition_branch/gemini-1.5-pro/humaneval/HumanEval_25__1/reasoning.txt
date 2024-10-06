@@ -1,0 +1,80 @@
+The function `factorize` is called with ( n = 3 * 19 * 3 * 19 ).
+Inside the function, a list `fact` is initialized to store the factors of `n`.
+The loop iterates from 2 to the square root of `n` (since any factor of `n` greater than its square root must have a corresponding factor less than its square root).
+First Iteration ( i = 2 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 2` and `n = 3 * 19 * 3 * 19`.
+    - `n % i == 0` is true when `i = 2` and `n = 3 * 19 * 3 * 19`.
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends `i` (which is 2) to the list `fact`.
+    - `n //= i` updates `n` to 3 * 19 * 19 (since 3 * 19 * 3 * 19 / 2 = 3 * 19 * 19).
+Second Iteration ( i = 3 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 3` and `n = 3 * 19 * 19`.
+    - `n % i == 0` is true when `i = 3` and `n = 3 * 19 * 19`.
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends `i` (which is 3) to the list `fact`.
+    - `n //= i` updates `n` to 19 * 19 (since 3 * 19 * 19 / 3 = 19 * 19).
+Third Iteration ( i = 5 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 5` and `n = 19 * 19`.
+    - `n % i == 0` is false when `i = 5` and `n = 19 * 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 6.
+Fourth Iteration ( i = 7 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 7` and `n = 19 * 19`.
+    - `n % i == 0` is false when `i = 7` and `n = 19 * 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 8.
+Fifth Iteration ( i = 9 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 9` and `n = 19 * 19`.
+    - `n % i == 0` is false when `i = 9` and `n = 19 * 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 10.
+Sixth Iteration ( i = 11 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 11` and `n = 19 * 19`.
+    - `n % i == 0` is false when `i = 11` and `n = 19 * 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 12.
+Seventh Iteration ( i = 13 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 13` and `n = 19 * 19`.
+    - `n % i == 0` is false when `i = 13` and `n = 19 * 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 14.
+Eighth Iteration ( i = 15 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 15` and `n = 19 * 19`.
+    - `n % i == 0` is false when `i = 15` and `n = 19 * 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 16.
+Ninth Iteration ( i = 17 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 17` and `n = 19 * 19`.
+    - `n % i == 0` is false when `i = 17` and `n = 19 * 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 18.
+Tenth Iteration ( i = 19 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 19` and `n = 19 * 19`.
+    - `n % i == 0` is true when `i = 19` and `n = 19 * 19`.
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends `i` (which is 19) to the list `fact`.
+    - `n //= i` updates `n` to 19 (since 19 * 19 / 19 = 19).
+Eleventh Iteration ( i = 23 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 23` and `n = 19`.
+    - `n % i == 0` is false when `i = 23` and `n = 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 24.
+Twelfth Iteration ( i = 25 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 25` and `n = 19`.
+    - `n % i == 0` is false when `i = 25` and `n = 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 26.
+Thirteenth Iteration ( i = 29 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 29` and `n = 19`.
+    - `n % i == 0` is false when `i = 29` and `n = 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 30.
+Fourteenth Iteration ( i = 31 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 31` and `n = 19`.
+    - `n % i == 0` is false when `i = 31` and `n = 19`.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - `i += 1` updates `i` to 32.
+Fifteenth Iteration ( i = 37 ):
+    - `i <= int(math.sqrt(n) + 1)` is true when `i = 37` and `n = 19`.
+    - `n % i == 0` is false when `i = 37` and `n = 19`.
+    - The condition `n % i ==

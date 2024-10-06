@@ -1,0 +1,47 @@
+
+[REASONING]
+The function `x_or_y` is called with ( n = 91, x = 56, y = 129 ).
+
+First Condition:
+    - `n` is 91, which is not equal to 1.
+    - The condition `n == 1` is false.
+    - Action: The loop starts.
+
+Iteration 1:
+    - `i` is 2, which is not a factor of 91.
+    - The condition `n % i == 0` is false.
+    - Action: The loop continues.
+
+Iteration 2:
+    - `i` is 3, which is not a factor of 91.
+    - The condition `n % i == 0` is false.
+    - Action: The loop continues.
+
+...
+
+Iteration 39:
+    - `i` is 40, which is a factor of 91.
+    - The condition `n % i == 0` is true.
+    - Action: The function returns `y`.
+
+Therefore, the final output of the function `x_or_y(91, 56, 129)` is 129.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def x_or_y(n, x, y):
+    if n == 1: ## [CONDITION](n == 1)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return y
+    for i in range(2, n): ## [STATE]i=[2, 3, ..., 39, 40][/STATE][STATE]range(2, n)=[2, 3, ..., 39, 40][/STATE][STATE]n=[91][/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[False, False, ..., False, True][/CONDITION][BRANCH]taken=[N, N, ..., N, Y][/BRANCH]
+            return y
+            break
+    else:
+        return x
+[/ANSWER]
+
+[OUTPUT]
+129
+[/OUTPUT]

@@ -1,0 +1,109 @@
+The function `prime_fib` is called with ( n = 9 ).
+Inside the function, a list `f` is initialized to [0, 1].
+The loop iterates until `n` becomes 0.
+First Iteration:
+    - `f` is [0, 1].
+    - `f[-1]` is 1.
+    - `f[-2]` is 0.
+    - `f[-1] + f[-2]` is 1.
+    - `f` becomes [0, 1, 1].
+    - `is_prime(f[-1])` is True.
+    - `n` becomes 8.
+Second Iteration:
+    - `f` is [0, 1, 1].
+    - `f[-1]` is 1.
+    - `f[-2]` is 1.
+    - `f[-1] + f[-2]` is 2.
+    - `f` becomes [0, 1, 1, 2].
+    - `is_prime(f[-1])` is False.
+    - `n` becomes 8.
+Third Iteration:
+    - `f` is [0, 1, 1, 2].
+    - `f[-1]` is 2.
+    - `f[-2]` is 1.
+    - `f[-1] + f[-2]` is 3.
+    - `f` becomes [0, 1, 1, 2, 3].
+    - `is_prime(f[-1])` is True.
+    - `n` becomes 7.
+Fourth Iteration:
+    - `f` is [0, 1, 1, 2, 3].
+    - `f[-1]` is 3.
+    - `f[-2]` is 2.
+    - `f[-1] + f[-2]` is 5.
+    - `f` becomes [0, 1, 1, 2, 3, 5].
+    - `is_prime(f[-1])` is False.
+    - `n` becomes 7.
+Fifth Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5].
+    - `f[-1]` is 5.
+    - `f[-2]` is 3.
+    - `f[-1] + f[-2]` is 8.
+    - `f` becomes [0, 1, 1, 2, 3, 5, 8].
+    - `is_prime(f[-1])` is True.
+    - `n` becomes 6.
+Sixth Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8].
+    - `f[-1]` is 8.
+    - `f[-2]` is 5.
+    - `f[-1] + f[-2]` is 13.
+    - `f` becomes [0, 1, 1, 2, 3, 5, 8, 13].
+    - `is_prime(f[-1])` is False.
+    - `n` becomes 6.
+Seventh Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13].
+    - `f[-1]` is 13.
+    - `f[-2]` is 8.
+    - `f[-1] + f[-2]` is 21.
+    - `f` becomes [0, 1, 1, 2, 3, 5, 8, 13, 21].
+    - `is_prime(f[-1])` is True.
+    - `n` becomes 5.
+Eighth Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21].
+    - `f[-1]` is 21.
+    - `f[-2]` is 13.
+    - `f[-1] + f[-2]` is 34.
+    - `f` becomes [0, 1, 1, 2, 3, 5, 8, 13, 21, 34].
+    - `is_prime(f[-1])` is False.
+    - `n` becomes 5.
+Ninth Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21, 34].
+    - `f[-1]` is 34.
+    - `f[-2]` is 21.
+    - `f[-1] + f[-2]` is 55.
+    - `f` becomes [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55].
+    - `is_prime(f[-1])` is True.
+    - `n` becomes 4.
+Tenth Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55].
+    - `f[-1]` is 55.
+    - `f[-2]` is 34.
+    - `f[-1] + f[-2]` is 89.
+    - `f` becomes [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89].
+    - `is_prime(f[-1])` is False.
+    - `n` becomes 4.
+Eleventh Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89].
+    - `f[-1]` is 89.
+    - `f[-2]` is 55.
+    - `f[-1] + f[-2]` is 144.
+    - `f` becomes [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144].
+    - `is_prime(f[-1])` is True.
+    - `n` becomes 3.
+Twelfth Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144].
+    - `f[-1]` is 144.
+    - `f[-2]` is 89.
+    - `f[-1] + f[-2]` is 233.
+    - `f` becomes [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233].
+    - `is_prime(f[-1])` is False.
+    - `n` becomes 3.
+Thirteenth Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233].
+    - `f[-1]` is 233.
+    - `f[-2]` is 144.
+    - `f[-1] + f[-2]` is 377.
+    - `f` becomes [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377].
+    - `is_prime(f[-1])` is True.
+    - `n` becomes 2.
+Fourteenth Iteration:
+    - `f` is [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 

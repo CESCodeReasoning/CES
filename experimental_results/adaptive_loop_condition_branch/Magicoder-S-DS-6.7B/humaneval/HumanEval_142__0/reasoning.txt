@@ -1,0 +1,7 @@
+The function `sum_squares` is called with ( lst = [0] ).
+Inside the function, an empty list `result` is initialized.
+
+Iteration 1:
+    -The index '0' is divisible by 3, so the square of the element at index 0 is appended to the result list.
+
+Therefore, the final output of the function `sum_squares([0])` is 0.

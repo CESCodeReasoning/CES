@@ -1,0 +1,9 @@
+The function `parse_music` takes a string `music_string` as input and returns a list of integers. Each integer represents a musical note value mapped from a specific string representation of the note. The mapping is defined in the dictionary `note_map` where 'o' maps to 4, 'o|' maps to 2, and '.|' maps to 1.
+
+The function works as follows:
+1. It defines a dictionary `note_map` with mappings from string representations of musical notes to their respective integer values.
+2. It splits the input string `music_string` by spaces to separate individual note representations.
+3. It uses a list comprehension to iterate over the split strings. For each string (note representation) that is not empty, it looks up its corresponding value in `note_map` and includes this value in the resulting list.
+4. If the input string is empty, the split operation results in a list containing one empty string. The list comprehension checks each element, and since the empty string does not match any key in `note_map`, the resulting list is empty.
+
+For the input '', the `music_string.split(' ')` results in `['']`. The list comprehension checks this single empty string, finds no corresponding entry in `note_map`, and thus the resulting list is empty.

@@ -1,0 +1,5 @@
+The function check_if_last_char_is_a_letter takes a string txt as input and returns a boolean value indicating whether the last character of the string is a letter.
+To determine the output of executing the function on the input "apple pi e ", we need to split the string into individual words using the space character as the delimiter.
+The last word in the list of words is "e".
+To determine whether the last character of the word "e" is a letter, we need to check whether the length of the word is 1 and whether the ASCII value of the first character of the word is between 97 and 122 (inclusive).
+Therefore, the output of executing the function on the input "apple pi e " is True.

@@ -1,0 +1,28 @@
+The function `Strongest_Extension` is called with ( class_name = 'Watashi', extensions = ['TEN', 'niNE', 'eIGHt8OKe'] ).
+The variable `strong` is initialized to the first element of the `extensions` list (`TEN`).
+The variable `my_val` is calculated by subtracting the number of lowercase letters from the number of uppercase letters in the first element of the `extensions` list (`TEN`).
+
+Iteration 1:
+    -The extension 'niNE' has more uppercase letters than lowercase letters (1 uppercase, 2 lowercase), so it becomes the new `strong` and `my_val` is updated.
+Iteration 2:
+    -The extension 'eIGHt8OKe' has more uppercase letters than lowercase letters (4 uppercase, 5 lowercase), so it becomes the new `strong` and `my_val` is updated.
+
+Therefore, the final output of the function `Strongest_Extension('Watashi', ['TEN', 'niNE', 'eIGHt8OKe'])` is 'Watashi.eIGHt8OKe'.
+
+[ANSWER]
+def Strongest_Extension(class_name, extensions):
+    strong = extensions[0]
+    my_val = len([x for x in extensions[0] if x.isalpha() and x.isupper()]) - len([x for x in extensions[0] if x.isalpha() and x.islower()])
+    for s in extensions: ## [STATE]extensions=['TEN', 'niNE', 'eIGHt8OKe'][/STATE]
+        val = len([x for x in s if x.isalpha() and x.isupper()]) - len([x for x in s if x.isalpha() and x.islower()])
+        if val > my_val: ## [CONDITION](val > my_val)=[False, True, True][/CONDITION][BRANCH]taken=[N, Y, Y][/BRANCH]
+            strong = s
+            my_val = val
+
+    ans = class_name + "." + strong
+    return ans
+
+[OUTPUT]
+'Watashi.eIGHt8OKe'
+[/OUTPUT]
+<|EOT|>

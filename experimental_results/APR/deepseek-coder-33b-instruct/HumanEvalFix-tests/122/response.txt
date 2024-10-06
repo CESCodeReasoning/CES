@@ -1,0 +1,5 @@
+Fixed Code:
+```python
+def add_elements(arr, k):
+    return sum(elem for elem in arr[:k] if len(str(abs(elem))) <= 2)
+```

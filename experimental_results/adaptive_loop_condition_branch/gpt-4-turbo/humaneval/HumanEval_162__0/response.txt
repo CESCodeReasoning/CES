@@ -1,0 +1,25 @@
+[REASONING]
+The function `string_to_md5` takes a string `text` as input. It uses the hashlib library to compute the MD5 hash of the string after encoding it to ASCII format. If the input string is empty, the function returns `None` instead of computing the hash.
+
+In this specific case, the input to the function is an empty string (''). According to the function's logic:
+1. The function checks if the input string `text` is truthy. Since an empty string is falsy, this check will fail.
+2. As a result of the check failing, the function returns `None` without attempting to compute the MD5 hash.
+
+Thus, the output of the function when called with an empty string is `None`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def string_to_md5(text):
+    import hashlib
+    # [STATE] text is '' [/STATE]
+    # [CONDITION] text is falsy (empty string) [/CONDITION]
+    # [BRANCH] N [/BRANCH]
+    return hashlib.md5(text.encode('ascii')).hexdigest() if text else None
+    # [BRANCH] Y [/BRANCH]
+[/PYTHON]
+
+[OUTPUT]
+None
+[/OUTPUT]

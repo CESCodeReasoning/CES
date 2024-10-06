@@ -1,0 +1,37 @@
+The function `int_to_mini_roman` is called with the argument ( number = 152 ).
+Inside the function, two lists `num` and `sym` are defined, representing the Roman numeral values and their corresponding symbols respectively. The variable `i` is initialized to 12, pointing to the last element of the lists, and `res` is initialized as an empty string to accumulate the result.
+
+The outer while loop checks if `number` is non-zero:
+- First Iteration (i = 12, number = 152):
+    - `div = number // num[i]` calculates `152 // 1000` which is 0.
+    - `number %= num[i]` updates `number` to 152.
+    - The inner while loop does not execute because `div` is 0.
+    - `i` is decremented to 11.
+- Second Iteration (i = 11, number = 152):
+    - `div = number // num[i]` calculates `152 // 900` which is 0.
+    - `number` remains 152.
+    - The inner while loop does not execute.
+    - `i` is decremented to 10.
+- Third Iteration (i = 10, number = 152):
+    - `div = number // num[i]` calculates `152 // 500` which is 0.
+    - `number` remains 152.
+    - The inner while loop does not execute.
+    - `i` is decremented to 9.
+- Fourth Iteration (i = 9, number = 152):
+    - `div = number // num[i]` calculates `152 // 400` which is 0.
+    - `number` remains 152.
+    - The inner while loop does not execute.
+    - `i` is decremented to 8.
+- Fifth Iteration (i = 8, number = 152):
+    - `div = number // num[i]` calculates `152 // 100` which is 1.
+    - `number %= num[i]` updates `number` to 52.
+    - The inner while loop executes once, adding "C" to `res`.
+    - `i` is decremented to 7.
+- Subsequent Iterations:
+    - Continue similarly, calculating `div` for 50, 40, 10, 9, 5, 4, and 1.
+    - For `num[i] = 50`, `div = 1`, "L" is added to `res`.
+    - For `num[i] = 10`, `div = 0`, "X" is added to `res`.
+    - For `num[i] = 1`, `div = 2`, "II" is added to `res`.
+
+After all iterations, the result `res` is "CLII", which is then converted to lowercase "clii" and returned.
+

@@ -1,0 +1,15 @@
+The function `encrypt` is called with ( s = 'et' ).
+Inside the function, a variable `d` is initialized to 'abcdefghijklmnopqrstuvwxyz'.
+A variable `out` is initialized to an empty string.
+The loop iterates over each character in `s`.
+First Iteration (c = 'e'):
+   - `c` is 'e', which is not in `d`.
+   - The condition `c in d` is false.
+   - Action: `out += c` appends 'e' to `out`.
+Second Iteration (c = 't'):
+   - `c` is 't', which is not in `d`.
+   - The condition `c in d` is false.
+   - Action: `out += c` appends 't' to `out`.
+Return Statement
+   - After the loop completes, the function returns the value of `out`, which is 'et'.
+Therefore, the final output of the function `encrypt('et')` is 'et'.

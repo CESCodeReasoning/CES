@@ -1,0 +1,7 @@
+The function `is_sorted` is called with ( lst = [3, 2, 1] ).
+Inside the function, a dictionary `count_digit` is initialized with keys as elements of `lst` and values as 0.
+The loop iterates through each element in `lst`.
+For each element, the count in `count_digit` is incremented by 1.
+After the loop completes, the condition ( any(count_digit[i] > 2 for i in lst) ) is not satisfied, therefore the first if branch is not taken.
+The second condition ( all(lst[i - 1] <= lst[i] for i in range(1, len(lst))) ) is not satisfied either, therefore the second if branch is not taken.
+The else branch is taken and the function returns `False` as the output.

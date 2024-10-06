@@ -1,0 +1,9 @@
+The function add_elements takes two arguments: an array arr and an integer k.
+It returns the sum of the first k elements of arr that have a length of at most 2.
+
+To determine the output of executing the function add_elements on the input [111,21,3,4000,5,6,7,8,9] and 4, we need to:
+1. Determine the first 4 elements of the array [111,21,3,4000,5,6,7,8,9]. These are [111,21,3,4000].
+2. Filter out the elements of the array [111,21,3,4000] that have a length of at most 2. These are [21,3].
+3. Sum the elements of the array [21,3]. This gives 24.
+
+Therefore, the output of executing the function add_elements on the input [111,21,3,4000,5,6,7,8,9] and 4 is 24.

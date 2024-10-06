@@ -1,0 +1,15 @@
+[REASONING]
+The function truncate_number takes a float number as input and returns the fractional part of the number.
+To determine the output of executing the function truncate_number on the input 1.33, we need to find the fractional part of 1.33.
+The fractional part of 1.33 is 0.33.
+Therefore, the output of executing the function truncate_number on the input 1.33 is 0.33.
+[/REASONING]
+
+[ANSWER]
+def truncate_number(number: float) -> float:
+    return number % 1.0
+[/ANSWER]
+
+[OUTPUT]
+0.33
+[/OUTPUT]

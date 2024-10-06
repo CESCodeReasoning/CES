@@ -1,0 +1,18 @@
+The function `find_zero` is called with the polynomial coefficients `[5, 3, -5]`, which represents the polynomial \(5 + 3x - 5x^2\).
+
+1. The initial interval is set from `begin = -1.0` to `end = 1.0`.
+2. The function `poly` is called twice to evaluate the polynomial at `begin` and `end`. The results are:
+   - `poly([-1]) = 5 - 3 - 5 = -3`
+   - `poly([1]) = 5 + 3 - 5 = 3`
+   Since the product of these evaluations is negative (`-3 * 3 = -9`), it indicates that there is a root between `-1.0` and `1.0`.
+
+3. The binary search begins to narrow down the interval:
+   - Calculate `center = 0.0`. Evaluate `poly([0]) = 5`.
+   - Since `poly([0]) * poly([-1]) = 5 * -3 = -15` (negative), update `end = 0.0`.
+   - Next, `center = -0.5`. Evaluate `poly([-0.5]) = 5 - 1.5 - 1.25 = 2.25`.
+   - Since `poly([-0.5]) * poly([-1]) = 2.25 * -3 = -6.75` (negative), update `end = -0.5`.
+   - Continue this process, narrowing down the interval until `end - begin` is less than `1e-10`.
+
+4. The loop exits when the interval is sufficiently small, and `begin` is returned as the approximate location of the root.
+
+The root found is approximately `-0.5`, which is the zero of the polynomial within the given precision.

@@ -1,0 +1,17 @@
+The function `histogram` is called with ( test = 'b b b b a' ).
+Inside the function, a dictionary `dict1` is initialized.
+The input string is split into a list of words: `['b', 'b', 'b', 'b', 'a']`.
+
+Iteration 1:
+    - The word 'b' appears 4 times, which is greater than the current maximum frequency `t` (which is initially 0).
+    - Update `t` to 4.
+Iteration 2:
+    - The word 'a' appears 1 time, which is not greater than the current maximum frequency `t` (which is 4).
+    - No update is made to `t`.
+
+Since `t` is 4, the condition `t > 0` is true.
+Iteration 3:
+    - The word 'b' appears 4 times, which is equal to the current maximum frequency `t`.
+    - Add 'b' to the dictionary `dict1` with a frequency of 4.
+
+The final dictionary `dict1` is `{'b': 4}`.

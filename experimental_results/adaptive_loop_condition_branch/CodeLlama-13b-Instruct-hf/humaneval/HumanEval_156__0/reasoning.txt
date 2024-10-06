@@ -1,0 +1,83 @@
+The function `int_to_mini_roman` is called with ( number = 900 ).
+Inside the function, a variable `num` is initialized to a list of integers representing the Roman numerals.
+A variable `sym` is initialized to a list of strings representing the Roman numerals.
+A variable `i` is initialized to 12.
+A variable `res` is initialized to an empty string.
+The while loop iterates from 12 to 0 (since ( number = 900 )).
+First Iteration (i = 12):
+    - number = 900, num[i] = 1000.
+    - div = number // num[i] = 900 // 1000 = 0.
+    - number %= num[i] = 900 % 1000 = 900.
+    - while div: is False, so the loop is not executed.
+Second Iteration (i = 11):
+    - number = 900, num[i] = 900.
+    - div = number // num[i] = 900 // 900 = 1.
+    - number %= num[i] = 900 % 900 = 0.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "M" (  + "M" = "M" ).
+    - div -= 1 updates div to 0.
+    - while div: is False, so the loop is not executed.
+Third Iteration (i = 10):
+    - number = 900, num[i] = 500.
+    - div = number // num[i] = 900 // 500 = 1.
+    - number %= num[i] = 900 % 500 = 0.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "D" (  + "D" = "MD" ).
+    - div -= 1 updates div to 0.
+    - while div: is False, so the loop is not executed.
+Fourth Iteration (i = 9):
+    - number = 900, num[i] = 100.
+    - div = number // num[i] = 900 // 100 = 9.
+    - number %= num[i] = 900 % 100 = 0.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "XC" (  + "XC" = "MDXC" ).
+    - div -= 1 updates div to 8.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "XC" (  + "XC" = "MDXCXC" ).
+    - div -= 1 updates div to 7.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "XC" (  + "XC" = "MDXCXCXC" ).
+    - div -= 1 updates div to 6.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "XC" (  + "XC" = "MDXCXCXCXC" ).
+    - div -= 1 updates div to 5.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "XC" (  + "XC" = "MDXCXCXCXCXC" ).
+    - div -= 1 updates div to 4.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "XC" (  + "XC" = "MDXCXCXCXCXCXC" ).
+    - div -= 1 updates div to 3.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "XC" (  + "XC" = "MDXCXCXCXCXCXCXC" ).
+    - div -= 1 updates div to 2.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "XC" (  + "XC" = "MDXCXCXCXCXCXCXCXC" ).
+    - div -= 1 updates div to 1.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "XC" (  + "XC" = "MDXCXCXCXCXCXCXCXCXC" ).
+    - div -= 1 updates div to 0.
+    - while div: is False, so the loop is not executed.
+Fifth Iteration (i = 8):
+    - number = 900, num[i] = 50.
+    - div = number // num[i] = 900 // 50 = 18.
+    - number %= num[i] = 900 % 50 = 0.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "L" (  + "L" = "MDXCXCXCXCXCXCXCXCXCL" ).
+    - div -= 1 updates div to 17.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "L" (  + "L" = "MDXCXCXCXCXCXCXCXCXCLXL" ).
+    - div -= 1 updates div to 16.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "L" (  + "L" = "MDXCXCXCXCXCXCXCXCXCLXLXL" ).
+    - div -= 1 updates div to 15.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "L" (  + "L" = "MDXCXCXCXCXCXCXCXCXCLXLXLXL" ).
+    - div -= 1 updates div to 14.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "L" (  + "L" = "MDXCXCXCXCXCXCXCXCXCLXLXLXLXL" ).
+    - div -= 1 updates div to 13.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "L" (  + "L" = "MDXCXCXCXCXCXCXCXCXCLXLXLXLXLXL" ).
+    - div -= 1 updates div to 12.
+    - while div: is True, so the loop is executed.
+    - res += sym[i] updates res to "L" (  + "L" = "MDXCXCXCXCXCX

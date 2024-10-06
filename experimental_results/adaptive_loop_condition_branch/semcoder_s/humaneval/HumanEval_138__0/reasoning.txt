@@ -1,0 +1,8 @@
+The function `is_equal_to_sum_even` takes an integer `n` as input and checks if `n` is even (i.e., `n % 2 == 0`) and greater than or equal to 8. If both conditions are true, it returns `True`; otherwise, it returns `False`.
+
+To determine the output of executing the function `is_equal_to_sum_even` on the input 13, we need to evaluate the conditions `n % 2 == 0` and `n >= 8` for the input value 13.
+
+- `n % 2 == 0` is `False` since 13 is not divisible by 2.
+- `n >= 8` is `True` since 13 is greater than or equal to 8.
+
+Therefore, the output of executing the function `is_equal_to_sum_even` on the input 13 is `False`.

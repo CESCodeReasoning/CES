@@ -1,0 +1,10 @@
+The function `digits` is called with ( n = 120 ).
+Inside the function, a variable `product` is initialized to 1 and `odd_count` is initialized to 0.
+
+Iteration 1:
+    -The first digit of n is '1', which is not odd, so the `if` condition is not met.
+Iteration 2:
+    -The second digit of n is '2', which is not odd, so the `if` condition is not met.
+Iteration 3:
+    -The third digit of n is '0', which is not odd, so the `if` condition is not met.
+Since no odd digits were encountered, the `if` condition in the end is met, and the function returns 0.

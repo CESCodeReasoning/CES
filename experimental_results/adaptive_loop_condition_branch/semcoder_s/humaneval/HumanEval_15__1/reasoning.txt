@@ -1,0 +1,5 @@
+The function `string_sequence` takes an integer `n` as input and returns a string.
+The function uses a list comprehension to generate a list of integers from 0 to `n` (inclusive).
+The `join` method is then used to concatenate the strings in the list with a space in between.
+The list comprehension `[str(x) for x in range(n + 1)]` generates a list of strings where each string is the representation of an integer from 0 to `n`.
+Therefore, the output of `string_sequence(10)` will be the string "0 1 2 3 4 5 6 7 8 9 10".

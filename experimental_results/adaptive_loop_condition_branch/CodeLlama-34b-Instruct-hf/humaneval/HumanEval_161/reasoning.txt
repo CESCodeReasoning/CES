@@ -1,0 +1,23 @@
+The function `solve` is called with ( s = "AsDf" ).
+Inside the function, a variable `flg` is initialized to 0.
+The loop iterates through each character in the input string ( s = "AsDf" ).
+First Iteration (i = 'A')
+   - `i` is 'A', which is an alphabetical character.
+   - The condition `i.isalpha()` is true.
+   - Action: `new_str[idx] = i.swapcase()` updates `new_str` to "aSDf".
+Second Iteration (i = 's')
+   - `i` is 's', which is not an alphabetical character.
+   - The condition `i.isalpha()` is false.
+   - Action: `new_str[idx] = i` updates `new_str` to "aSDf".
+Third Iteration (i = 'D')
+   - `i` is 'D', which is an alphabetical character.
+   - The condition `i.isalpha()` is true.
+   - Action: `new_str[idx] = i.swapcase()` updates `new_str` to "aSdF".
+Fourth Iteration (i = 'f')
+   - `i` is 'f', which is an alphabetical character.
+   - The condition `i.isalpha()` is true.
+   - Action: `new_str[idx] = i.swapcase()` updates `new_str` to "aSdF".
+Return Statement
+   - After the loop completes, the function returns the value of `new_str`, which is now "aSdF".
+
+Therefore, the final output of the function `solve("AsDf")` is "aSdF".

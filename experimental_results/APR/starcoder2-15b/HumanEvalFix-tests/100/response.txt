@@ -1,0 +1,132 @@
+<fim_prefix>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx!= idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx!= idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in make_a_pile.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def make_a_pile(n):
+    return [n + 2*i + i for i in range(n)]
+
+Tests:
+def check(make_a_pile):
+
+    # Check some simple cases
+    assert make_a_pile(3) == [3, 5, 7], "Test 3"
+    assert make_a_pile(4) == [4,6,8,10], "Test 4"
+    assert make_a_pile(5) == [5, 7, 9, 11, 13]
+    assert make_a_pile(6) == [6, 8, 10, 12, 14, 16]
+    assert make_a_pile(8) == [8, 10, 12, 14, 16, 18, 20, 22]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+check(make_a_pile)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `make_a_pile(n)` to solve the following problem:
+Given a positive integer n, you have to make a pile of n levels of stones.
+The first level has n stones.
+The number of stones in the next level is:
+- the next odd number if n is odd.
+- the next even number if n is even.
+Return the number of stones in each level in a list, where element at index
+i represents the number of stones in the level (i+1).
+Examples:
+<fim_suffix><fim_middle>
+Fixed Code:
+```python
+def make_a_pile(n):
+    return [n + 2*i + (i%2) for i in range(n)]
+```
+
+
+    
+Fix bugs in is_palindrome.
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def is_palindrome(s):
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("abba") == True
+    assert is_palindrome("abcba") == True
+    assert is_palindrome("abccba") == True
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb") == False
+    assert is_palindrome("abccbb

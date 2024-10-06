@@ -1,0 +1,96 @@
+The function `find_zero` is called with (xs = [-6, 11, -6, 1]).
+Inside the function, two variables `begin` and `end` are initialized to -1.0 and 1.0, respectively.
+The loop iterates until `poly(xs, begin) * poly(xs, end) <= 0`.
+First Iteration:
+    - `begin` is -1.0 and `end` is 1.0.
+    - `poly(xs, begin)` is -6 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is -6.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Second Iteration:
+    - `begin` is -2.0 and `end` is 2.0.
+    - `poly(xs, begin)` is 11 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is 11.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Third Iteration:
+    - `begin` is -4.0 and `end` is 4.0.
+    - `poly(xs, begin)` is -6 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is -6.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Fourth Iteration:
+    - `begin` is -8.0 and `end` is 8.0.
+    - `poly(xs, begin)` is 11 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is 11.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Fifth Iteration:
+    - `begin` is -16.0 and `end` is 16.0.
+    - `poly(xs, begin)` is -6 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is -6.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Sixth Iteration:
+    - `begin` is -32.0 and `end` is 32.0.
+    - `poly(xs, begin)` is 11 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is 11.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Seventh Iteration:
+    - `begin` is -64.0 and `end` is 64.0.
+    - `poly(xs, begin)` is -6 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is -6.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Eighth Iteration:
+    - `begin` is -128.0 and `end` is 128.0.
+    - `poly(xs, begin)` is 11 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is 11.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Ninth Iteration:
+    - `begin` is -256.0 and `end` is 256.0.
+    - `poly(xs, begin)` is -6 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is -6.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Tenth Iteration:
+    - `begin` is -512.0 and `end` is 512.0.
+    - `poly(xs, begin)` is 11 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is 11.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Eleventh Iteration:
+    - `begin` is -1024.0 and `end` is 1024.0.
+    - `poly(xs, begin)` is -6 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is -6.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Twelfth Iteration:
+    - `begin` is -2048.0 and `end` is 2048.0.
+    - `poly(xs, begin)` is 11 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is 11.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Thirteenth Iteration:
+    - `begin` is -4096.0 and `end` is 4096.0.
+    - `poly(xs, begin)` is -6 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is -6.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Fourteenth Iteration:
+    - `begin` is -8192.0 and `end` is 8192.0.
+    - `poly(xs, begin)` is 11 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is 11.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Fifteenth Iteration:
+    - `begin` is -16384.0 and `end` is 16384.0.
+    - `poly(xs, begin)` is -6 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is -6.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Sixteenth Iteration:
+    - `begin` is -32768.0 and `end` is 32768.0.
+    - `poly(xs, begin)` is 11 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is 11.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Seventeenth Iteration:
+    - `begin` is -65536.0 and `end` is 65536.0.
+    - `poly(xs, begin)` is -6 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is -6.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Eighteenth Iteration:
+    - `begin` is -131072.0 and `end` is 131072.0.
+    - `poly(xs, begin)` is 11 and `poly(xs, end)` is 1.
+    - `poly(xs, begin) * poly(xs, end)` is 11.
+    - The condition `poly(xs, begin) * poly(xs, end) <= 0` is false.
+Nineteenth Iteration:
+    - `begin` is -262144.0 and `end` is 262144.0.
+    - `poly(xs, begin)` is -6 and `poly(xs

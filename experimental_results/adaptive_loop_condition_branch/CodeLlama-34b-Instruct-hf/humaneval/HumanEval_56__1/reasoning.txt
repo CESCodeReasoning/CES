@@ -1,0 +1,29 @@
+The function `correct_bracketing` is called with ( brackets = "<<<><>>>>" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The character '<<' is not in vowels, so consonant_count becomes 1.
+Iteration 2:
+    -The character 'e' is in vowels, so vowel_count becomes 1.
+Iteration 3:
+    -The character 'l' is not in vowels, so consonant_count becomes 2.
+Iteration 4:
+    -The character 'l' is not in vowels, so consonant_count becomes 3.
+Iteration 5:
+    -The character 'o' is in vowels, so vowel_count becomes 2.
+Iteration 6:
+    -The character ',' is not in vowels, so consonant_count becomes 4.
+Iteration 7:
+    -The character ' ' (space) is not in vowels, so consonant_count becomes 5.
+Iteration 8:
+    -The character 'W' is not in vowels, so consonant_count becomes 6.
+Iteration 9:
+    -The character 'o' is in vowels, so vowel_count becomes 3.
+Iteration 10:
+    -The character 'r' is not in vowels, so consonant_count becomes 7.
+Iteration 11:
+    -The character 'l' is not in vowels, so consonant_count becomes 8.
+Iteration 12:
+    -The character 'd' is not in vowels, so consonant_count becomes 9.
+Iteration 13:
+    -The character '!' is not in vowels, so consonant_count becomes 10.

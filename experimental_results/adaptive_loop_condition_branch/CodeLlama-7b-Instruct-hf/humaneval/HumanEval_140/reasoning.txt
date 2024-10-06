@@ -1,0 +1,9 @@
+The function `fix_spaces` takes a string `text` as input.
+The function returns a new string where any sequence of 3 or more spaces is replaced with a hyphen and any sequence of 1 or more spaces is replaced with an underscore.
+The function uses a while loop to iterate through the characters of the input string.
+For each character, the function checks if it is a space.
+If it is a space, the function checks if the previous sequence of spaces is longer than 2.
+If it is, the function adds a hyphen to the new string.
+If the previous sequence of spaces is longer than 0, the function adds an underscore to the new string.
+The function then adds the current character to the new string.
+The function repeats this process until it has iterated through the entire input string.

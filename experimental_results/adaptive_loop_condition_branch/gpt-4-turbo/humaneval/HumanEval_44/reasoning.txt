@@ -1,0 +1,15 @@
+The function `change_base` is called with `x = 8` and `base = 3`.
+Inside the function, a variable `ret` is initialized to an empty string.
+The while loop continues as long as `x` is greater than 0.
+
+First Iteration:
+- `x = 8`, which is greater than 0.
+- `x % base` gives `8 % 3 = 2`. The string "2" is prepended to `ret`.
+- `x` is updated using integer division by `base`: `x //= 3` results in `x = 2`.
+
+Second Iteration:
+- `x = 2`, which is still greater than 0.
+- `x % base` gives `2 % 3 = 2`. The string "2" is prepended to `ret`, making `ret = "22"`.
+- `x` is updated: `x //= 3` results in `x = 0`.
+
+The loop terminates as `x` is now 0. The function returns the value of `ret`, which is "22".

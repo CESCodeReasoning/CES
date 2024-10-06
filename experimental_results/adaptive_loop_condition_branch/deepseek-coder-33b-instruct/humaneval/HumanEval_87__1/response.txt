@@ -1,0 +1,20 @@
+
+[REASONING]
+The function get_row takes a list of lists lst and an integer x as input. It first creates a list of tuples coords where each tuple represents the coordinates (i, j) of the elements in lst that are equal to x.
+
+The list comprehension iterates over the indices i and j of lst. For each element lst[i][j], if it is equal to x, it is added to the list coords as a tuple (i, j).
+
+After creating the list coords, the function sorts it twice. First, it sorts coords by the second element of each tuple in descending order. Then, it sorts coords by the first element of each tuple in ascending order.
+
+To determine the output of executing the function get_row on the input [[], [1], [1, 2, 3]], 3, we need to follow the steps of the function.
+
+First, we create the list coords. The list comprehension iterates over the indices i and j of the input list. For each element lst[i][j], if it is equal to 3, it is added to the list coords as a tuple (i, j). In this case, the only element that is equal to 3 is lst[2][2], so coords is [(2, 2)].
+
+Next, we sort coords. First, we sort coords by the second element of each tuple in descending order. Since there is only one tuple in coords, it remains the same. Then, we sort coords by the first element of each tuple in ascending order. Since there is only one tuple in coords, it remains the same.
+
+Therefore, the output of executing the function get_row on the input [[], [1], [1, 2, 3]], 3 is [(2, 2)].
+[/REASONING]
+
+[OUTPUT]
+[(2, 2)]
+[/OUTPUT]

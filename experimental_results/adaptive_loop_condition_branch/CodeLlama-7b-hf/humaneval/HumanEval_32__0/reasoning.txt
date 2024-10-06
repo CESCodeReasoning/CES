@@ -1,0 +1,31 @@
+The function `find_zero` is called with ( xs = [5, 3, -5] ).
+Inside the function, two variables `begin` and `end` are initialized to -1.0 and 1.0.
+The loop iterates until the condition `poly(xs, begin) * poly(xs, end) > 0` is false.
+First Iteration (begin = -1.0, end = 1.0):
+    - (begin - end) > 1e-10 when begin = -1.0, end = 1.0
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The loop continues.
+    - begin *= 2.0 updates begin to -2.0
+    - end *= 2.0 updates end to 2.0
+Second Iteration (begin = -2.0, end = 2.0):
+    - (begin - end) > 1e-10 when begin = -2.0, end = 2.0
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The loop continues.
+    - begin *= 2.0 updates begin to -4.0
+    - end *= 2.0 updates end to 4.0
+Third Iteration (begin = -4.0, end = 4.0):
+    - (begin - end) > 1e-10 when begin = -4.0, end = 4.0
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The loop continues.
+    - begin *= 2.0 updates begin to -8.0
+    - end *= 2.0 updates end to 8.0
+Fourth Iteration (begin = -8.0, end = 8.0):
+    - (begin - end) > 1e-10 when begin = -8.0, end = 8.0
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true. The loop continues.
+    - begin *= 2.0 updates begin to -16.0
+    - end *= 2.0 updates end to 16.0
+Fifth Iteration (begin = -16.0, end = 16.0):
+    - (begin - end) > 1e-10 when begin = -16.0, end = 16.0
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is false. The loop breaks.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is false. The loop breaks.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is false. The loop breaks.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is false. The loop breaks.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is false. The loop breaks.
+After the loop completes, the function returns the value of `begin`, which is now -16.0.

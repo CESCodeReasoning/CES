@@ -1,0 +1,19 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: can_arrange
+main.py(3):     ind=-1
+main.py(4):     i=1
+main.py(5):     while i<len(arr):
+main.py(6):       if arr[i]<arr[i-1]:
+main.py(8):       i+=1
+main.py(5):     while i<len(arr):
+main.py(6):       if arr[i]<arr[i-1]:
+main.py(8):       i+=1
+main.py(5):     while i<len(arr):
+main.py(6):       if arr[i]<arr[i-1]:
+main.py(7):         ind=i
+main.py(8):       i+=1
+main.py(5):     while i<len(arr):
+main.py(6):       if arr[i]<arr[i-1]:
+main.py(8):       i+=1
+main.py(5):     while i<len(arr):
+main.py(9):     return ind

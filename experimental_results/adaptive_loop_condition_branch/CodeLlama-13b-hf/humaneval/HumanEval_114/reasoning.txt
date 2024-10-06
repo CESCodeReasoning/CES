@@ -1,0 +1,17 @@
+The function `minSubArraySum` is called with ( nums = [2, 3, 4, 1, 2, 4] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+
+Iteration 1:
+    - `s` is 0, `num` is 2, `s` becomes -2.
+Iteration 2:
+    - `s` is -2, `num` is 3, `s` becomes -5.
+Iteration 3:
+    - `s` is -5, `num` is 4, `s` becomes -9.
+Iteration 4:
+    - `s` is -9, `num` is 1, `s` becomes -10.
+Iteration 5:
+    - `s` is -10, `num` is 2, `s` becomes -8.
+Iteration 6:
+    - `s` is -8, `num` is 4, `s` becomes -4.
+
+The maximum sum is 0, so the minimum sum is the negative of the maximum sum, which is 4.

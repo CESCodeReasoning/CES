@@ -1,0 +1,20 @@
+[REASONING]
+The function find_max takes a list of strings words as input and returns the string with the maximum number of unique characters.
+To determine the output of executing the function find_max on the input ["name", "of", "string"], we need to first sort the list of strings by the number of unique characters in each string in descending order.
+Then, we need to return the first string in the sorted list.
+The number of unique characters in "name" is 4, the number of unique characters in "of" is 2, and the number of unique characters in "string" is 6.
+Therefore, the sorted list of strings is ["string", "name", "of"].
+The first string in the sorted list is "string".
+Therefore, the output of executing the function find_max on the input ["name", "of", "string"] is "string".
+[/REASONING]
+
+[ANSWER]
+def find_max(words):
+    # [STATE]words = ["name", "of", "string"]
+    # [STATE]sorted_words = ["string", "name", "of"]
+    return sorted(words, key = lambda x: (-len(set(x)), x))[0]
+[/ANSWER]
+
+[OUTPUT]
+"string"
+[/OUTPUT]

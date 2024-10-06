@@ -1,0 +1,10 @@
+from typing import *
+def x_or_y(n, x, y):
+    if n == 1: ## [CONDITION](n == 1)=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+        return y ## [STATE]i=??[/STATE]
+    for i in range(2, n): ## [STATE]range(2, n)=[2, 3, 4, 5, 6][/STATE][STATE]n=7[/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[False, False, False, False, False][/CONDITION][BRANCH]taken=N[/BRANCH]
+            return y
+            break
+        else:
+            return x

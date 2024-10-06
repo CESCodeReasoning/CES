@@ -1,0 +1,43 @@
+```response
+    return [e for e in l if e < 0]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def get_unique_elements(my_list):
+    return list(set(my_list))
+
+Tests:
+def check(get_unique_elements):
+    assert get_unique_elements([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]
+    assert get_unique_elements([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]) == [1, 2, 3, 4]
+    assert get_unique_elements([1, 1, 1, 1, 1, 1]) == [1]
+    assert get_unique_elements([]) == []
+
+check(get_unique_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `get_unique_elements(my_list)` to solve the following problem:
+Return a list of unique elements in the list.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return list(set(my_list))
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def get_unique_elements(my_list):
+    return list(set(my_list))
+
+Tests:
+def check(get_unique_elements):
+    assert get_unique_elements([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]
+    assert get_unique_elements([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]) == [1, 2, 3, 4]
+    assert get_unique_elements([1, 1, 1, 1, 1, 1]) == [1]
+    assert get_unique_elements([])

@@ -1,0 +1,11 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: modp
+main.py(3):     ret = 1
+main.py(4):     for i in range(n):
+main.py(5):         ret = (2 * ret) % p
+main.py(4):     for i in range(n):
+main.py(5):         ret = (2 * ret) % p
+main.py(4):     for i in range(n):
+main.py(5):         ret = (2 * ret) % p
+main.py(4):     for i in range(n):
+main.py(6):     return ret

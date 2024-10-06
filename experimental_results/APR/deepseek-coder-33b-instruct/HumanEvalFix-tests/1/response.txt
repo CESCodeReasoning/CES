@@ -1,0 +1,38 @@
+The first bug in `has_close_elements` function is that it calculates the distance between two numbers as `elem - elem2`, but it should be `abs(elem - elem2)` to get the absolute distance.
+
+The second bug in `separate_paren_groups` function is that it does not check if the current depth is 0 after processing each group of parentheses. It should reset the current string and depth after appending the current group to the result.
+
+Here is the fixed code:
+
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    result = []
+    current_string = []
+    current_depth = 0
+
+    for c in paren_string:
+        if c == '(':
+            current_depth += 1
+            current_string.append(c)
+        elif c == ')':
+            current_depth -= 1
+            current_string.append(c)
+
+            if current_depth == 0:
+                result.append(''.join(current_string))
+                current_string.clear()
+
+    return result
+```

@@ -1,0 +1,4 @@
+The function get_row takes a list of lists lst and an integer x as input and returns a list of tuples containing the coordinates of the first occurrence of x in lst.
+To determine the output of executing the function get_row on the input [[], [1], [1, 2, 3]], 3, we need to find the coordinates of the first occurrence of 3 in the input list.
+The first occurrence of 3 is at the second row and second column of the input list.
+Therefore, the output of executing the function get_row on the input [[], [1], [1, 2, 3]], 3 is [(1, 1)].

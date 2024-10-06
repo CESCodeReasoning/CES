@@ -1,0 +1,8 @@
+The function `pluck` is called with ( arr = [4,2,3] ).
+The condition `len(arr) == 0` is false, therefore the if branch is not taken.
+The variable `evens` is assigned the result of the `filter` function, which filters out the even numbers from the array `arr`.
+The filtered array `evens` is [4,2].
+The condition `evens == []` is false, therefore the if branch is not taken.
+The function returns a list containing the minimum value of the `evens` array and the index of the minimum value in the original array `arr`.
+
+Therefore, the final output of the function `pluck([4,2,3])` is [2, 1].

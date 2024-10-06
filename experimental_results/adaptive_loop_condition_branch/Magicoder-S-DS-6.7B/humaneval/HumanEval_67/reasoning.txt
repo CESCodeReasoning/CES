@@ -1,0 +1,15 @@
+The function `fruit_distribution` is called with ( s = "5 apples and 6 oranges", n = 19 ).
+Inside the function, a list `lis` is initialized to an empty list.
+
+Iteration 1:
+    -The string '5' is a digit, so it is converted to an integer and appended to the list.
+Iteration 2:
+    -The string 'apples' is not a digit, so it is ignored.
+Iteration 3:
+    -The string 'and' is not a digit, so it is ignored.
+Iteration 4:
+    -The string '6' is a digit, so it is converted to an integer and appended to the list.
+Iteration 5:
+    -The string 'oranges' is not a digit, so it is ignored.
+
+The function returns the difference between `n` and the sum of the elements in the list.

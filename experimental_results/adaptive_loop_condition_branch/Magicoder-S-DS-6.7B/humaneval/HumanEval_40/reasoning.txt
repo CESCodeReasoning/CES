@@ -1,0 +1,27 @@
+The function triples_sum_to_zero(l) takes a list of numbers([1, 3, 5, 0]) as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+In the innermost loop, for each pair of elements indexed by j and k in the inner loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2 and 3.
+    - `j` is 1, k in the innermost loop is 2 and 3.
+    - l[i]=1, l[j]=3, l[k]=5:
+        - When k = 2 (l[k]=5), the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+        - When k = 3 (l[k]=0), the condition `l[i] + l[j] + l[k] == 0` is True, the if branch is taken. Return True.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3.
+    - `j` is 2, k in the innermost loop is 3.
+    - l[i]=3, l[j]=5, l[k]=0:
+        - When k = 3 (l[k]=0), the condition `l[i] + l[j] + l[k] == 0` is True, the if branch is taken. Return True.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3.
+    - `j` is 3, k in the innermost loop is 3.
+    - l[i]=5, l[j]=0, l[k]=0:
+        - When k = 3 (l[k]=0), the condition `l[i] + l[j] + l[k] == 0` is True, the if branch is taken. Return True.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4.
+    - `j` is 4, k in the innermost loop is 4.
+    - l[i]=0, l[j]=0, l[k]=0:
+        - When k = 4 (l[k]=0), the condition `l[i] + l[j] + l[k] == 0` is True, the if branch is taken. Return True.
+Fifth Iteration (i=4):
+    No more elements to compare.

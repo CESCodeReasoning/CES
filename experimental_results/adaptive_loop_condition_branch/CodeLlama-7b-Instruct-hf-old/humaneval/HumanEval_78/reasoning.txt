@@ -1,0 +1,15 @@
+The function `hex_key` is called with ( num = "AB" ).
+Inside the function, a variable `primes` is defined as a tuple of strings ('2', '3', '5', '7', 'B', 'D').
+The variable `total` is initialized to 0.
+The loop iterates from 0 to the length of `num` (which is 2).
+First Iteration (i = 0)
+   - `num[i]` is 'A', which is not in `primes`.
+   - The condition `num[i] in primes` is false.
+   - Action: `total` remains 0.
+Second Iteration (i = 1)
+   - `num[i]` is 'B', which is not in `primes`.
+   - The same condition is false.
+   - Action: `total` remains 0.
+Return Statement
+   - After the loop completes, the function returns the value of `total`, which is 0.
+Therefore, the final output of the function `hex_key("AB")` is 0.

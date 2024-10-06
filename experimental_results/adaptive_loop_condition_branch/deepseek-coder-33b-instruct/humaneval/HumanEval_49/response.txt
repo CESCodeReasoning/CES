@@ -1,0 +1,26 @@
+
+[REASONING]
+The function `modp` is called with (n = 3, p = 5).
+Inside the function, a variable `ret` is initialized to 1.
+The loop iterates from 0 to 2 since `range(n)`= [0, 1, 2]
+
+First Iteration(i = 0):
+    ret = (2 * ret) % p results in ret = (2 * 1) % 5 = 2
+Second Iteration(i = 1):
+    ret = (2 * ret) % p results in ret = (2 * 2) % 5 = 4
+Third Iteration(i = 2):
+    ret = (2 * ret) % p results in ret = (2 * 4) % 5 = 3
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def modp(n: int, p: int):
+    ret = 1
+    for i in range(n): ## [STATE]i=[0, 1, 2][/STATE][STATE]range(n)=[0, 1, 2][/STATE][STATE]n=[3][/STATE]
+        ret = (2 * ret) % p
+    return ret
+[/ANSWER]
+
+[OUTPUT]
+3
+[/OUTPUT]

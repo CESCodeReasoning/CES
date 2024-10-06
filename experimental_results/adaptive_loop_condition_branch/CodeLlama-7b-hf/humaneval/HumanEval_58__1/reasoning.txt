@@ -1,0 +1,45 @@
+The function common(l1, l2) takes two lists as its parameters.
+The outer loop iterates through each element in the first list.
+The inner loop iterates through each element in the second list.
+First Iteration (e1=5, e2=3):
+    - `e1` is 5, `e2` in the inner loop is 3.
+    - `e1` is 5, `e2` in the inner loop is 2.
+    - `e1` is 5, `e2` in the inner loop is 8.
+    - `e1` is 3, `e2` in the inner loop is 3.
+    - `e1` is 3, `e2` in the inner loop is 2.
+    - `e1` is 3, `e2` in the inner loop is 8.
+    - `e1` is 2, `e2` in the inner loop is 3.
+    - `e1` is 2, `e2` in the inner loop is 2.
+    - `e1` is 2, `e2` in the inner loop is 8.
+    - `e1` is 8, `e2` in the inner loop is 3.
+    - `e1` is 8, `e2` in the inner loop is 2.
+    - `e1` is 8, `e2` in the inner loop is 8.
+Second Iteration (e1=3, e2=2):
+    - `e1` is 3, `e2` in the inner loop is 3.
+    - `e1` is 3, `e2` in the inner loop is 2.
+    - `e1` is 3, `e2` in the inner loop is 8.
+    - `e1` is 2, `e2` in the inner loop is 3.
+    - `e1` is 2, `e2` in the inner loop is 2.
+    - `e1` is 2, `e2` in the inner loop is 8.
+    - `e1` is 8, `e2` in the inner loop is 3.
+    - `e1` is 8, `e2` in the inner loop is 2.
+    - `e1` is 8, `e2` in the inner loop is 8.
+Third Iteration (e1=2, e2=8):
+    - `e1` is 2, `e2` in the inner loop is 3.
+    - `e1` is 2, `e2` in the inner loop is 2.
+    - `e1` is 2, `e2` in the inner loop is 8.
+    - `e1` is 8, `e2` in the inner loop is 3.
+    - `e1` is 8, `e2` in the inner loop is 2.
+    - `e1` is 8, `e2` in the inner loop is 8.
+Forth Iteration (e1=8, e2=3):
+    - `e1` is 8, `e2` in the inner loop is 3.
+    - `e1` is 8, `e2` in the inner loop is 2.
+    - `e1` is 8, `e2` in the inner loop is 8.
+Fifth Iteration (e1=8, e2=2):
+    - `e1` is 8, `e2` in the inner loop is 3.
+    - `e1` is 8, `e2` in the inner loop is 2.
+    - `e1` is 8, `e2` in the inner loop is 8.
+Sixth Iteration (e1=8, e2=8):
+    - `e1` is 8, `e2` in the inner loop is 3.
+    - `e1` is 8, `e2` in the inner loop is 2.
+    - `e1` is 8, `e2` in the inner loop is 8.

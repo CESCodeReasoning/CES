@@ -1,0 +1,8 @@
+The function `starts_one_ends` is called with the argument `n = 4`.
+The function first checks if `n` is equal to 1. Since `n` is 4, this condition is false.
+The `else` part of the function is executed, which calculates `18 * (10 ** (n - 2))`.
+Here, `n - 2` equals `4 - 2 = 2`, so `10 ** 2` equals `100`.
+Thus, `18 * 100` equals `1800`.
+Therefore, the function returns `1800`.
+
+Therefore, the final output of the function `starts_one_ends(4)` is 1800.

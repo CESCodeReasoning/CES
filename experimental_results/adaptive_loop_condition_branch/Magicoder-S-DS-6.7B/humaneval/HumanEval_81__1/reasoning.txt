@@ -1,0 +1,7 @@
+The function `numerical_letter_grade` is called with ( grades = [0, 0.7] ).
+Inside the function, a list `letter_grade` is initialized.
+
+Iteration 1:
+    -The gpa is 0, so it falls into the else block and appends "E" to the list.
+Iteration 2:
+    -The gpa is 0.7, so it falls into the else block and appends "E" to the list.

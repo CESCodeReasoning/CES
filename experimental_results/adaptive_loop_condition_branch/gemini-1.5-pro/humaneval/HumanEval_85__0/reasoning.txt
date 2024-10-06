@@ -1,0 +1,7 @@
+The function add takes a list of integers lst as input and returns the sum of all the even numbers in the list at odd indices.
+To determine the output of executing the function add on the input [4, 0, 6, 7], we need to first identify the even numbers at odd indices in the list.
+The first number in the list is 4, which is at an even index, so we skip it.
+The second number in the list is 0, which is at an odd index and is even, so we add it to the sum.
+The third number in the list is 6, which is at an even index, so we skip it.
+The fourth number in the list is 7, which is at an odd index and is odd, so we skip it.
+Therefore, the sum of all the even numbers in the list at odd indices is 0.

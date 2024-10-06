@@ -1,0 +1,29 @@
+Here are the fixed versions of the provided Python functions, `has_close_elements` and `common`, with corrections and improvements based on the specifications and test cases provided:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `common`
+```python
+def common(l1: list, l2: list):
+    ret = set()
+    for e1 in l1:
+        if e1 in l2:  # Check if element is in both lists
+            ret.add(e1)
+    return sorted(list(ret))  # Return sorted list of common elements
+```
+
+These fixes address the issues in the original code:
+- In `has_close_elements`, the absolute value is used to correctly calculate the distance between two numbers.
+- In `common`, the function now correctly identifies elements that are common to both lists before adding them to the set, ensuring that only common elements are included.

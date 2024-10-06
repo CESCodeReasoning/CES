@@ -1,0 +1,51 @@
+The function `even_odd_count` is called with ( num = 7 ).
+Inside the function, two variables `even_count` and `odd_count` are initialized to 0.
+The loop iterates through the digits of the absolute value of `num` (since `num` is a positive integer).
+First Iteration (i = 7)
+   - `i` is 7, which is an odd number.
+   - The condition `int(i)%2==0` is false.
+   - Action: `odd_count += 1` updates `odd_count` to 1.
+Second Iteration (i = 0)
+   - `i` is 0, which is an even number.
+   - The condition `int(i)%2==0` is true.
+   - Action: `even_count += 1` updates `even_count` to 1.
+Third Iteration (i = 0)
+   - `i` is 0, which is an even number.
+   - The condition `int(i)%2==0` is true.
+   - Action: `even_count += 1` updates `even_count` to 2.
+Fourth Iteration (i = 0)
+   - `i` is 0, which is an even number.
+   - The condition `int(i)%2==0` is true.
+   - Action: `even_count += 1` updates `even_count` to 3.
+Fifth Iteration (i = 0)
+   - `i` is 0, which is an even number.
+   - The condition `int(i)%2==0` is true.
+   - Action: `even_count += 1` updates `even_count` to 4.
+Sixth Iteration (i = 0)
+   - `i` is 0, which is an even number.
+   - The condition `int(i)%2==0` is true.
+   - Action: `even_count += 1` updates `even_count` to 5.
+Seventh Iteration (i = 0)
+   - `i` is 0, which is an even number.
+   - The condition `int(i)%2==0` is true.
+   - Action: `even_count += 1` updates `even_count` to 6.
+Eighth Iteration (i = 0)
+   - `i` is 0, which is an even number.
+   - The condition `int(i)%2==0` is true.
+   - Action: `even_count += 1` updates `even_count` to 7.
+Ninth Iteration (i = 0)
+   - `i` is 0, which is an even number.
+   - The condition `int(i)%2==0` is true.
+   - Action: `even_count += 1` updates `even_count` to 8.
+Tenth Iteration (i = 0)
+   - `i` is 0, which is an even number.
+   - The condition `int(i)%2==0` is true.
+   - Action: `even_count += 1` updates `even_count` to 9.
+Eleventh Iteration (i = 0)
+   - `i` is 0, which is an even number.
+   - The condition `int(i)%2==0` is true.
+   - Action: `even_count += 1` updates `even_count` to 10.
+Return Statement
+   - After the loop completes, the function returns the tuple `(even_count, odd_count)`, which is (10, 1) in this case.
+
+Therefore, the final output of the function `even_odd_count(7)` is (10, 1).

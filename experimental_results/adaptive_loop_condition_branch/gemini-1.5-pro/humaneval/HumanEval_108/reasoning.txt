@@ -1,0 +1,27 @@
+The function `count_nums` takes an array of integers as input and returns the count of numbers with a positive sum of digits.
+
+The function `digits_sum` takes an integer as input and returns the sum of its digits. If the input integer is negative, the function multiplies the sum by -1 to make it positive.
+
+The function `count_nums` uses the `filter` function to filter out the numbers with a non-positive sum of digits. The `filter` function takes a lambda function as input, which takes a number as input and returns True if the number is greater than 0, and False otherwise.
+
+The function `count_nums` then returns the length of the list of numbers that passed the filter.
+
+In this example, the input array is [1, 1, 2, -2, 3, 4, 5].
+
+The function `digits_sum` is called on each number in the array.
+
+For the number 1, the sum of its digits is 1.
+For the number 1, the sum of its digits is 1.
+For the number 2, the sum of its digits is 2.
+For the number -2, the sum of its digits is -2.
+For the number 3, the sum of its digits is 3.
+For the number 4, the sum of its digits is 4.
+For the number 5, the sum of its digits is 5.
+
+The `filter` function is then called on the list of sums of digits. The `filter` function removes the numbers that are not greater than 0.
+
+In this example, the numbers that are removed are -2.
+
+The function `count_nums` then returns the length of the list of numbers that passed the filter, which is 6.
+
+Therefore, the output of the function `count_nums([1, 1, 2, -2, 3, 4, 5])` is 6.

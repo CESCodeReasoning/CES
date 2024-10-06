@@ -1,0 +1,22 @@
+from typing import *
+
+
+def is_multiply_prime(a):
+    def is_prime(n):
+        for j in range(2, n): ## [STATE]j=[2, 3, 4, ..., n-1][/STATE][STATE]range(2, n)=[2, 3, 4, ..., n-1][/STATE][STATE]n=??[/STATE]
+            if n % j == 0: ## [CONDITION](n % j == 0)=[False, False, False, ..., False][/CONDITION][BRANCH]taken=[N, N, N, ..., N][/BRANCH]
+                return False
+        return True
+
+    for i in range(2, 101): ## [STATE]i=[2, 3, 4, ..., 100][/STATE][STATE]range(2, 101)=[2, 3, 4, ..., 100][/STATE]
+        if not is_prime(i): ## [CONDITION](not is_prime(i))=[False, False, True, ..., False][/CONDITION][BRANCH]taken=[N, N, Y, ..., N][/BRANCH]
+            continue
+        for j in range(2, 101): ## [STATE]j=[2, 3, 4, ..., 100][/STATE][STATE]range(2, 101)=[2, 3, 4, ..., 100][/STATE]
+            if not is_prime(j): ## [CONDITION](not is_prime(j))=[False, False, True, ..., False][/CONDITION][BRANCH]taken=[N, N, Y, ..., N][/BRANCH]
+                continue
+            for k in range(2, 101): ## [STATE]k=[2, 3, 4, ..., 100][/STATE][STATE]range(2, 101)=[2, 3, 4, ..., 100][/STATE]
+                if not is_prime(k): ## [CONDITION](not is_prime(k))=[False, False, True, ..., False][/CONDITION][BRANCH]taken=[N, N, Y, ..., N][/BRANCH]
+                    continue
+                if i * j * k == a: ## [CONDITION](i * j * k == a)=[False, False, True][/CONDITION][BRANCH]taken=[N, N, Y][/BRANCH]
+                    return True
+    return False

@@ -1,0 +1,7 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: add
+main.py(5):     return sum([lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0])
+ --- modulename: main, funcname: <listcomp>
+main.py(5):     return sum([lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0])
+main.py(5):     return sum([lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0])
+main.py(5):     return sum([lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0])

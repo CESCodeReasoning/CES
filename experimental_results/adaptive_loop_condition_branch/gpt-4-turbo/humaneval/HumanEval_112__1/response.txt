@@ -1,0 +1,26 @@
+[REASONING]
+The function `reverse_delete` takes two parameters: a string `s` and a string `c`. The function first filters out all characters in `s` that are present in `c`, creating a new string. This is done using a list comprehension that iterates through each character in `s` and includes it in the new list only if it is not found in `c`. The list of characters is then joined back into a string.
+
+After filtering, the function checks if the resulting string is a palindrome by comparing the string with its reverse (`s[::-1]`). The function returns a tuple containing the filtered string and a boolean indicating whether the filtered string is a palindrome.
+
+For the input `reverse_delete("mamma", "mia")`:
+1. The characters 'm', 'i', and 'a' from "mamma" are removed because they are present in "mia".
+2. The resulting string after filtering is an empty string "".
+3. The reverse of "" is also "", which is trivially a palindrome.
+
+Thus, the output will be a tuple containing the empty string and `True` indicating that the empty string is a palindrome.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def reverse_delete(s: str, c: str) -> Tuple[str, bool]:
+    # [STATE] s = "mamma", c = "mia" [/STATE]
+    s = ''.join([char for char in s if char not in c])  # [STATE] s = "" [/STATE]
+    # [CONDITION] s[::-1] == s evaluates to True [/CONDITION]
+    return (s, s[::-1] == s)  # [STATE] return value = ("", True) [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+("", True)
+[/OUTPUT]

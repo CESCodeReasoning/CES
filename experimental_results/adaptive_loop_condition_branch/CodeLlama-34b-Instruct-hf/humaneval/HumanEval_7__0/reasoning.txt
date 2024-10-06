@@ -1,0 +1,10 @@
+The function filter_by_substring takes two arguments:
+
+* A list of strings, called strings.
+* A string, called substring.
+
+The function returns a new list containing only the strings from the original list that contain the substring.
+
+To determine the output of executing the function on the input ['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], we need to check which strings in the list contain the substring 'xxx'.
+
+The strings 'xxx', 'xxy', and 'xxxAAA' contain the substring 'xxx', so the output of executing the function on the input is ['xxx', 'xxy', 'xxxAAA'].

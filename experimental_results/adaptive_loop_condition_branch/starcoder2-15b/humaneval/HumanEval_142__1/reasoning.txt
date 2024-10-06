@@ -1,0 +1,73 @@
+The function `sum_squares` is called with ( lst = [-16, -9, -2, 36, 36, 26, -20, 25, -40, 20, -4, 12, -26, 35, 37] ).
+Inside the function, a variable `result` is initialized to an empty list.
+
+Iteration 1:
+    -The condition `i % 3 == 0` is false, so the `elif` block is executed.
+    -The condition `i % 4 == 0 and i % 3!= 0` is true, so the `result.append(lst[i]**3)` statement is executed.
+    -The value of `lst[i]` is -16, and its cube is -4096.
+    -The `result` list becomes [-4096].
+Iteration 2:
+    -The condition `i % 3 == 0` is false, so the `elif` block is executed.
+    -The condition `i % 4 == 0 and i % 3!= 0` is false, so the `result.append(lst[i])` statement is executed.
+    -The value of `lst[i]` is -9, and it is appended to the `result` list.
+    -The `result` list becomes [-4096, -9].
+Iteration 3:
+    -The condition `i % 3 == 0` is true, so the `result.append(lst[i]**2)` statement is executed.
+    -The value of `lst[i]` is -2, and its square is 4.
+    -The `result` list becomes [-4096, -9, 4].
+Iteration 4:
+    -The condition `i % 3 == 0` is true, so the `result.append(lst[i]**2)` statement is executed.
+    -The value of `lst[i]` is 36, and its square is 1296.
+    -The `result` list becomes [-4096, -9, 4, 1296].
+Iteration 5:
+    -The condition `i % 3 == 0` is true, so the `result.append(lst[i]**2)` statement is executed.
+    -The value of `lst[i]` is 36, and its square is 1296.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296].
+Iteration 6:
+    -The condition `i % 3 == 0` is false, so the `elif` block is executed.
+    -The condition `i % 4 == 0 and i % 3!= 0` is false, so the `result.append(lst[i])` statement is executed.
+    -The value of `lst[i]` is 26, and it is appended to the `result` list.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296, 26].
+Iteration 7:
+    -The condition `i % 3 == 0` is false, so the `elif` block is executed.
+    -The condition `i % 4 == 0 and i % 3!= 0` is true, so the `result.append(lst[i]**3)` statement is executed.
+    -The value of `lst[i]` is -20, and its cube is -8000.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296, 26, -8000].
+Iteration 8:
+    -The condition `i % 3 == 0` is false, so the `elif` block is executed.
+    -The condition `i % 4 == 0 and i % 3!= 0` is false, so the `result.append(lst[i])` statement is executed.
+    -The value of `lst[i]` is 25, and it is appended to the `result` list.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296, 26, -8000, 25].
+Iteration 9:
+    -The condition `i % 3 == 0` is false, so the `elif` block is executed.
+    -The condition `i % 4 == 0 and i % 3!= 0` is true, so the `result.append(lst[i]**3)` statement is executed.
+    -The value of `lst[i]` is -40, and its cube is -64000.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296, 26, -8000, 25, -64000].
+Iteration 10:
+    -The condition `i % 3 == 0` is false, so the `elif` block is executed.
+    -The condition `i % 4 == 0 and i % 3!= 0` is false, so the `result.append(lst[i])` statement is executed.
+    -The value of `lst[i]` is 20, and it is appended to the `result` list.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296, 26, -8000, 25, -64000, 20].
+Iteration 11:
+    -The condition `i % 3 == 0` is false, so the `elif` block is executed.
+    -The condition `i % 4 == 0 and i % 3!= 0` is false, so the `result.append(lst[i])` statement is executed.
+    -The value of `lst[i]` is -4, and it is appended to the `result` list.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296, 26, -8000, 25, -64000, 20, -4].
+Iteration 12:
+    -The condition `i % 3 == 0` is true, so the `result.append(lst[i]**2)` statement is executed.
+    -The value of `lst[i]` is 12, and its square is 144.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296, 26, -8000, 25, -64000, 20, -4, 144].
+Iteration 13:
+    -The condition `i % 3 == 0` is false, so the `elif` block is executed.
+    -The condition `i % 4 == 0 and i % 3!= 0` is true, so the `result.append(lst[i]**3)` statement is executed.
+    -The value of `lst[i]` is -26, and its cube is -17576.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296, 26, -8000, 25, -64000, 20, -4, 144, -17576].
+Iteration 14:
+    -The condition `i % 3 == 0` is false, so the `elif` block is executed.
+    -The condition `i % 4 == 0 and i % 3!= 0` is false, so the `result.append(lst[i])` statement is executed.
+    -The value of `lst[i]` is 35, and it is appended to the `result` list.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296, 26, -8000, 25, -64000, 20, -4, 144, -17576, 35].
+Iteration 15:
+    -The condition `i % 3 == 0` is true, so the `result.append(lst[i]**2)` statement is executed.
+    -The value of `lst[i]` is 37, and its square is 1369.
+    -The `result` list becomes [-4096, -9, 4, 1296, 1296, 26, -8000, 25, -64000, 20, -4, 1

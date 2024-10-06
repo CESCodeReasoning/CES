@@ -1,0 +1,56 @@
+
+[REASONING]
+The function `match_parens` is called with ( lst = ['(()(())', '())())'] ).
+
+The function `check` is defined inside `match_parens`. It takes a string `s` as input and checks if the parentheses in `s` are balanced.
+
+Iteration 1:
+    -The character '(' is in S1, so val becomes 1.
+Iteration 2:
+    -The character '(' is in S1, so val becomes 2.
+Iteration 3:
+    -The character '(' is in S1, so val becomes 3.
+Iteration 4:
+    -The character ')' is not in S1, so val becomes 2.
+Iteration 5:
+    -The character ')' is not in S1, so val becomes 1.
+Iteration 6:
+    -The character ')' is not in S1, so val becomes 0.
+Iteration 7:
+    -The character ')' is not in S1, so val becomes -1.
+Iteration 8:
+    -The character '(' is in S1, so val becomes 0.
+Iteration 9:
+    -The character ')' is not in S1, so val becomes -1.
+Iteration 10:
+    -The character ')' is not in S1, so val becomes -2.
+Iteration 11:
+    -The character ')' is not in S1, so val becomes -3.
+Iteration 12:
+    -The character ')' is not in S1, so val becomes -4.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def match_parens(lst):
+    def check(s):
+        val = 0
+        for i in s: ## [STATE]i=['(', '(', '(', ')', ')', ')', ')', '(', ')', ')', ')'][/STATE][STATE]s=["(()(())", "())())"]
+            if i == '(': ## [CONDITION](i == '(')=[True, True, True, False, False, False, False, True, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, Y, N, N, N, N, Y, N, N, N][/BRANCH]
+                val = val + 1
+            else: ## [BRANCH]taken=[N, N, N, Y, Y, Y, Y, N, Y, Y, Y][/BRANCH]
+                val = val - 1
+            if val < 0: ## [CONDITION](val < 0)=[False, False, False, False, False, False, False, False, True, True, True][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N, Y, Y, Y][/BRANCH]
+                return False
+        return True if val == 0 else False
+
+    S1 = lst[0] + lst[1]
+    S2 = lst[1] + lst[0]
+    return 'Yes' if check(S1) or check(S2) else 'No'
+[/ANSWER]
+
+[OUTPUT]
+'Yes'
+[/OUTPUT]

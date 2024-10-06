@@ -1,0 +1,3 @@
+```response
+        return s[:len(s) - shift] + s[len(s) - shift:]
+```

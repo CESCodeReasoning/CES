@@ -1,0 +1,9 @@
+The function `fib4` is called with ( n = 5 ).
+Inside the function, a list `results` is initialized with the first four Fibonacci numbers [0, 0, 2, 0].
+The condition ( n < 4 ) is not satisfied, so the else branch is taken.
+The loop iterates from 4 through 5 (since ( n = 5 )).
+First Iteration (_ = 4):
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 0, 2, 0, 4] ( 2 + 0 + 0 + 0 = 4 ).
+Second Iteration (_ = 5):
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates `results` to [0, 0, 2, 0, 4, 8] ( 4 + 4 + 2 + 0 = 8 ).
+After the loop completes, the function returns `results[-1]` which is 8 as the output.

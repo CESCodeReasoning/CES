@@ -1,0 +1,12 @@
+The function `hex_key` is called with ( num = "AB" ).
+Inside the function, a variable `primes` is initialized to a tuple of prime numbers.
+The loop iterates through the characters of the input string `num`.
+First Iteration (i = 0)
+   - `num[i]` is 'A', which is not in `primes`.
+   - The condition `num[i] in primes` is false.
+   - The loop continues to the next iteration.
+Second Iteration (i = 1)
+   - `num[i]` is 'B', which is in `primes`.
+   - The condition `num[i] in primes` is true.
+   - The loop continues to the next iteration.
+The loop completes, and the function returns the value of `total`, which is 1.

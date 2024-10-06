@@ -1,0 +1,15 @@
+The function `numerical_letter_grade` is called with ( grades = [4.0, 3, 1.7, 2, 3.5] ).
+Inside the function, a variable `letter_grade` is initialized to an empty list.
+
+Iteration 1:
+    -The GPA is 4.0, so the letter grade is "A+".
+Iteration 2:
+    -The GPA is 3.0, so the letter grade is "B-".
+Iteration 3:
+    -The GPA is 1.7, so the letter grade is "D+".
+Iteration 4:
+    -The GPA is 2.0, so the letter grade is "C".
+Iteration 5:
+    -The GPA is 3.5, so the letter grade is "B".
+
+Therefore, the final output of the function `numerical_letter_grade([4.0, 3, 1.7, 2, 3.5])` is ["A+", "B-", "D+", "C", "B"].

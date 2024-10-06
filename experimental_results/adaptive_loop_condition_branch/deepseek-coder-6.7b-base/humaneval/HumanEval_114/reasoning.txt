@@ -1,0 +1,24 @@
+The function `minSubArraySum` is called with ( nums = [2, 3, 4, 1, 2, 4] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+
+Iteration 1:
+    -The value of `s` is updated to 2.
+    -The value of `max_sum` is updated to 2.
+Iteration 2:
+    -The value of `s` is updated to 5.
+    -The value of `max_sum` is updated to 5.
+Iteration 3:
+    -The value of `s` is updated to 9.
+    -The value of `max_sum` is updated to 9.
+Iteration 4:
+    -The value of `s` is updated to 8.
+    -The value of `max_sum` is not updated.
+Iteration 5:
+    -The value of `s` is updated to 10.
+    -The value of `max_sum` is not updated.
+Iteration 6:
+    -The value of `s` is updated to 14.
+    -The value of `max_sum` is updated to 14.
+
+The final value of `max_sum` is 14.
+The final value of `min_sum` is -14.

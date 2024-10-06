@@ -1,0 +1,9 @@
+The function sort_numbers takes a string of numbers in words as input and returns a string of the numbers sorted in ascending order.
+
+The function first splits the input string into a list of words. Then, it filters out any empty strings from the list. After that, it sorts the list of words based on their corresponding numerical values in the value_map dictionary.
+
+The value_map dictionary maps each word to its corresponding numerical value.
+
+For example, if the input string is 'five zero four seven nine eight', the function will return 'zero four five seven eight nine'.
+
+The output of executing the function sort_numbers on the input 'five zero four seven nine eight' is 'zero four five seven eight nine'.

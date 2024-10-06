@@ -1,0 +1,10 @@
+The function `x_or_y` is called with ( n = 91, x = 56, y = 129 ).
+
+First Condition:
+    -The condition `n == 1` is false.
+Second Condition:
+    -The condition `n % i == 0` is false for all i in range(2, n).
+Third Condition:
+    -The else block is executed.
+
+Therefore, the final output of the function `x_or_y(91, 56, 129)` is 56.

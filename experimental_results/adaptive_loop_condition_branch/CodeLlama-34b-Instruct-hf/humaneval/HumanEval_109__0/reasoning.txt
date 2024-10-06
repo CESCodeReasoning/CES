@@ -1,0 +1,8 @@
+The function `move_one_ball` is called with ( arr = [4, 3, 1, 2] ).
+Inside the function, the length of the array is checked. If it is 0, the function returns True.
+Since the length of the array is 4, the function continues.
+The array is sorted and the minimum value is found.
+The minimum value is 1, and its index is 2.
+The array is rearranged so that the minimum value is at the end.
+The function then iterates through the array and checks if each element is in the correct position.
+Since the array is already sorted, all elements are in the correct position, and the function returns True.

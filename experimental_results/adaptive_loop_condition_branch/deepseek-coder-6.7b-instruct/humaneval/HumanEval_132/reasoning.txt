@@ -1,0 +1,46 @@
+The function `is_nested` is called with ( string = '[[]]' ).
+Inside the function, two empty lists `opening_bracket_index` and `closing_bracket_index` are initialized.
+
+Iteration 1:
+    -The character '[' is found, so its index is appended to `opening_bracket_index`.
+Iteration 2:
+    -The character '[' is found, so its index is appended to `opening_bracket_index`.
+Iteration 3:
+    -The character ']' is found, so its index is appended to `closing_bracket_index`.
+Iteration 4:
+    -The character ']' is found, so its index is appended to `closing_bracket_index`.
+
+After reversing `closing_bracket_index`, we get `closing_bracket_index` = [3, 2].
+
+Iteration 1:
+    -The first index in `opening_bracket_index` (0) is less than the first index in `closing_bracket_index` (3), so `cnt` is incremented by 1.
+Iteration 2:
+    -The second index in `opening_bracket_index` (1) is not less than the first index in `closing_bracket_index` (3), so `cnt` remains 1.
+
+Finally, the function returns `cnt >= 2`, which is `False`.
+
+Therefore, the final output of the function `is_nested('[[]]')` is `False`.
+
+[ANSWER]
+def is_nested(string):
+    opening_bracket_index = []
+    closing_bracket_index = []
+    for i in range(len(string)): ## [STATE]i=[0, 1, 2, 3][/STATE][STATE]range(len(string))=[0, 1, 2, 3][/STATE][STATE]len(string)=[4][/STATE]
+        if string[i] == '[': ## [CONDITION](string[i] == '[')=[True, False, False, False][/CONDITION][BRANCH]taken=[Y, N, N, N][/BRANCH]
+            opening_bracket_index.append(i)
+        else: ## [BRANCH]taken=[N, Y, Y, Y][/BRANCH]
+            closing_bracket_index.append(i)
+    closing_bracket_index.reverse()
+    cnt = 0
+    i = 0
+    l = len(closing_bracket_index)
+    for idx in opening_bracket_index: ## [STATE]idx=[0, 1][/STATE][STATE]opening_bracket_index=[0, 1][/STATE]
+        if i < l and idx < closing_bracket_index[i]: ## [CONDITION](i < l and idx < closing_bracket_index[i])=[True, False][/CONDITION][CONDITION](i < l)=[True, True][/CONDITION][CONDITION](idx < closing_bracket_index[i])=[True, False][/CONDITION][BRANCH]taken=[Y, N][/BRANCH]
+            cnt += 1
+            i += 1
+    return cnt >= 2
+
+[OUTPUT]
+False
+[/OUTPUT]
+<|EOT|>

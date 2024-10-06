@@ -1,0 +1,48 @@
+The function `count_nums` is called with ( arr = [1, 6, 9, -6, 0, 1, 5] ).
+Inside the function, a variable `digits_sum` is defined.
+The function `digits_sum` is called with ( n = 1 ).
+`n` is 1, which is not negative.
+`n` is converted to a string, which is [1].
+`n` is converted to a list, which is [1].
+`n` is multiplied by `neg`, which is 1.
+The sum of `n` is 1.
+The function `digits_sum` is called with ( n = 6 ).
+`n` is 6, which is not negative.
+`n` is converted to a string, which is [6].
+`n` is converted to a list, which is [6].
+`n` is multiplied by `neg`, which is 1.
+The sum of `n` is 6.
+The function `digits_sum` is called with ( n = 9 ).
+`n` is 9, which is not negative.
+`n` is converted to a string, which is [9].
+`n` is converted to a list, which is [9].
+`n` is multiplied by `neg`, which is 1.
+The sum of `n` is 9.
+The function `digits_sum` is called with ( n = -6 ).
+`n` is -6, which is negative.
+`n` is multiplied by -1, which is 6.
+`n` is converted to a string, which is [6].
+`n` is converted to a list, which is [6].
+`n` is multiplied by `neg`, which is -1.
+The sum of `n` is 5.
+The function `digits_sum` is called with ( n = 0 ).
+`n` is 0, which is not negative.
+`n` is converted to a string, which is [0].
+`n` is converted to a list, which is [0].
+`n` is multiplied by `neg`, which is 1.
+The sum of `n` is 0.
+The function `digits_sum` is called with ( n = 1 ).
+`n` is 1, which is not negative.
+`n` is converted to a string, which is [1].
+`n` is converted to a list, which is [1].
+`n` is multiplied by `neg`, which is 1.
+The sum of `n` is 1.
+The function `digits_sum` is called with ( n = 5 ).
+`n` is 5, which is not negative.
+`n` is converted to a string, which is [5].
+`n` is converted to a list, which is [5].
+`n` is multiplied by `neg`, which is 1.
+The sum of `n` is 5.
+The function `count_nums` returns the length of the list [1, 6, 9, 5, 1, 5], which is 6.
+
+Therefore, the final output of the function `count_nums([1, 6, 9, -6, 0, 1, 5])` is 6.

@@ -1,0 +1,7 @@
+The function `check_if_last_char_is_a_letter` takes a string `txt` as input and checks if the last character in the string is a letter.
+
+- The function splits the input string `txt` by space and selects the last element using `[-1]`. This gives us the last word in the string.
+- It then checks if the length of the last word is 1. If not, it returns `False`.
+- It then checks if the ASCII value of the lowercase version of the last character falls between 97 (ASCII value of 'a') and 122 (ASCII value of 'z'). If it does, it returns `True`, otherwise it returns `False`.
+
+Therefore, the output of executing the function `check_if_last_char_is_a_letter("apple")` is `False` because the last character 'e' is not a letter.

@@ -1,0 +1,7 @@
+The function `next_smallest` takes a list of integers as input and returns the second smallest element in the list.
+
+- The list `[1, 2, 3, 4, 5]` is passed to the function.
+- The set of the list is used to remove duplicates, resulting in `{1, 2, 3, 4, 5}`.
+- The sorted function is used to sort the set, resulting in `[1, 2, 3, 4, 5]`.
+- The function checks if the length of the sorted list is less than 2, which is False in this case.
+- The function returns the second element of the sorted list, which is `2`.

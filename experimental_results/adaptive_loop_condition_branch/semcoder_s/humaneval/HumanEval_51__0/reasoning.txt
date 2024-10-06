@@ -1,0 +1,9 @@
+The function `remove_vowels` takes a string `text` as input and returns a new string with all vowels (a, e, i, o, u) removed.
+
+- The function uses a list comprehension to iterate over each character `s` in the input `text`.
+- It checks if the lowercase version of the character `s` is not in the list of vowels.
+- If the character is not a vowel, it is included in the new string.
+- If the character is a vowel, it is not included in the new string.
+- The function then joins all the non-vowel characters together to form the new string.
+
+Since the input is an empty string, there are no vowels to remove, so the output will be an empty string as well.

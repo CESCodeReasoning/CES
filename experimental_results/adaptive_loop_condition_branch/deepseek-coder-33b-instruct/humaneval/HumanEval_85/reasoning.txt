@@ -1,0 +1,3 @@
+The function add takes a list of integers as input. It then creates a new list that includes only the elements at odd indices (1-indexed) that are even. It then returns the sum of this new list.
+
+In the given list [4, 88], the element at index 1 (0-indexed) is 88, which is even. Therefore, the new list is [88]. The sum of this list is 88.

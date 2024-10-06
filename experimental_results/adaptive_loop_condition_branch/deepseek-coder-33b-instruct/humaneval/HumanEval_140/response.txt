@@ -1,0 +1,52 @@
+
+[REASONING]
+The function `fix_spaces` is called with ( text = "Example" ).
+Inside the function, a variable `new_text` is initialized to an empty string.
+The loop iterates through each character in the string.
+First Iteration (i = 0):
+    - i < len(text) when i=0
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "E" ( "" + "E" = "E" ).
+Second Iteration (i = 1):
+    - i < len(text) when i=1
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Ex" ( "E" + "a" = "Ex" ).
+Third Iteration (i = 2):
+    - i < len(text) when i=2
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Exa" ( "Ex" + "m" = "Exa" ).
+Fourth Iteration (i = 3):
+    - i < len(text) when i=3
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 1.
+Fifth Iteration (i = 4):
+    - i < len(text) when i=4
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Exam" ( "Exa" + "p" = "Exam" ).
+Sixth Iteration (i = 5):
+    - i < len(text) when i=5
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 2.
+Seventh Iteration (i = 6):
+    - i < len(text) when i=6
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Examp" ( "Exam" + "l" = "Examp" ).
+Eighth Iteration (i = 7):
+    - i < len(text) when i=7
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Example" ( "Examp" + "e" = "Example" ).
+After the loop completes, the function returns the value of `new_text`, which is now "Example".
+[/REASONING]
+
+
+[ANSWER]
+from typing import *
+def fix_spaces(text):
+    new_text = ""
+    i = 0
+    start, end = 0, 0
+    while i < len(text): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6, 7][/STATE][STATE]len(text)=[8][/STATE]
+        if text[i] == " ": ## [CONDITION](text[i] == " ")=[False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N][/BRANCH]
+            end += 1
+        else: ## [BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+            if end - start > 2: ## [CONDITION](end - start > 2)=[False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N

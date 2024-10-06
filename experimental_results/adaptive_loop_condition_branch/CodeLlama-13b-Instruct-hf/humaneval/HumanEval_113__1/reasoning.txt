@@ -1,0 +1,13 @@
+The function `odd_count` is called with (lst = ['271', '137', '314']).
+Inside the function, a variable `res` is initialized to an empty list.
+The loop iterates through the elements of `lst` which are strings.
+First Iteration (arr = '271'):
+    `n` is calculated as the sum of the odd digits in '271' which is 1.
+    A string is appended to `res` with the message "the number of odd elements 1 in the string 271".
+Second Iteration (arr = '137'):
+    `n` is calculated as the sum of the odd digits in '137' which is 1.
+    A string is appended to `res` with the message "the number of odd elements 1 in the string 137".
+Third Iteration (arr = '314'):
+    `n` is calculated as the sum of the odd digits in '314' which is 1.
+    A string is appended to `res` with the message "the number of odd elements 1 in the string 314".
+After the loop completes, the function returns the value of `res`, which is now ['the number of odd elements 1 in the string 271', 'the number of odd elements 1 in the string 137', 'the number of odd elements 1 in the string 314'].

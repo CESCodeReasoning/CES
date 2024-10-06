@@ -1,0 +1,27 @@
+The function `smallest_change` is called with ( arr = [1, 2, 3, 4, 3, 2, 2] ).
+Inside the function, a variable `ans` is initialized to 0.
+The loop iterates over the first half of the array.
+First Iteration (i = 0):
+   - The condition `arr[0] != arr[len(arr) - 0 - 1]` is `1 != 2`, which is `True`.
+   - Action: `ans += 1` updates `ans` to 1.
+Second Iteration (i = 1):
+   - The condition `arr[1] != arr[len(arr) - 1 - 1]` is `2 != 3`, which is `True`.
+   - Action: `ans += 1` updates `ans` to 2.
+Third Iteration (i = 2):
+   - The condition `arr[2] != arr[len(arr) - 2 - 1]` is `3 != 4`, which is `True`.
+   - Action: `ans += 1` updates `ans` to 3.
+Fourth Iteration (i = 3):
+   - The condition `arr[3] != arr[len(arr) - 3 - 1]` is `4 != 3`, which is `True`.
+   - Action: `ans += 1` updates `ans` to 4.
+Fifth Iteration (i = 4):
+   - The condition `arr[4] != arr[len(arr) - 4 - 1]` is `3 != 2`, which is `True`.
+   - Action: `ans += 1` updates `ans` to 5.
+Sixth Iteration (i = 5):
+   - The condition `arr[5] != arr[len(arr) - 5 - 1]` is `2 != 2`, which is `False`.
+   - No change in `ans`.
+Seventh Iteration (i = 6):
+   - The loop stops as `i` exceeds the length of the array.
+Return Statement
+   - After the loop completes, the function returns the value of `ans`, which is now 5.
+
+Therefore, the final output of the function `smallest_change([1, 2, 3, 4, 3, 2, 2])` is 5.

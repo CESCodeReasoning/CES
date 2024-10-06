@@ -1,0 +1,37 @@
+The function `change_base` is called with ( x = 234, base = 2 ).
+Inside the function, a variable `ret` is initialized to an empty string.
+First Iteration:
+    - ( x > 0 ) is True when x = 234.
+    - `ret = str(x % base) + ret` updates `ret` to "0" + "" = "0".
+    - `x //= base` updates `x` to 234 // 2 = 117.
+Second Iteration:
+    - ( x > 0 ) is True when x = 117.
+    - `ret = str(x % base) + ret` updates `ret` to "1" + "0" = "10".
+    - `x //= base` updates `x` to 117 // 2 = 58.
+Third Iteration:
+    - ( x > 0 ) is True when x = 58.
+    - `ret = str(x % base) + ret` updates `ret` to "0" + "10" = "010".
+    - `x //= base` updates `x` to 58 // 2 = 29.
+Fourth Iteration:
+    - ( x > 0 ) is True when x = 29.
+    - `ret = str(x % base) + ret` updates `ret` to "1" + "010" = "1010".
+    - `x //= base` updates `x` to 29 // 2 = 14.
+Fifth Iteration:
+    - ( x > 0 ) is True when x = 14.
+    - `ret = str(x % base) + ret` updates `ret` to "0" + "1010" = "01010".
+    - `x //= base` updates `x` to 14 // 2 = 7.
+Sixth Iteration:
+    - ( x > 0 ) is True when x = 7.
+    - `ret = str(x % base) + ret` updates `ret` to "1" + "01010" = "101010".
+    - `x //= base` updates `x` to 7 // 2 = 3.
+Seventh Iteration:
+    - ( x > 0 ) is True when x = 3.
+    - `ret = str(x % base) + ret` updates `ret` to "1" + "101010" = "1101010".
+    - `x //= base` updates `x` to 3 // 2 = 1.
+Eighth Iteration:
+    - ( x > 0 ) is True when x = 1.
+    - `ret = str(x % base) + ret` updates `ret` to "1" + "1101010" = "11101010".
+    - `x //= base` updates `x` to 1 // 2 = 0.
+Ninth Iteration:
+    - ( x > 0 ) is False when x = 0.
+The while loop terminates. The function returns the value of `ret`, which is now "11101010".

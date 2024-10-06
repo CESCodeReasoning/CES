@@ -1,0 +1,6 @@
+```python
+def make_a_pile(n):
+    return [n + 2*i for i in range(n)]
+```
+
+The fixed code for `make_a_pile` function is now correct. The original code was incorrect because it was adding `i` to the number of stones in each level, which is not correct as the number of stones in each level should increase by 2. The corrected code now correctly adds 2 to the number of stones in each level.

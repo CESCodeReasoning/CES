@@ -1,0 +1,33 @@
+[REASONING]
+The function `all_prefixes` is called with (string = 'WWW' ).
+Inside the function, a variable `result` is initialized to [].
+`len(string)` = 3 since there are 3 characters in 'WWW'.
+The loop iterates from 0 to 2 since `range(len(string))`= [0, 1, 2]
+
+First Iteration(i = 0):
+    string[:i + 1] = 'W'
+    result.append('W') results in result = ['W']
+Second Iteration(i = 1):
+    string[:i + 1] = 'WW'
+    result.append('WW') results in result = ['W', 'WW']
+Third Iteration(i = 2): 
+    string[:i + 1] = 'WWW'
+    result.append('WWW') results in result = ['W', 'WW', 'WWW']
+[/REASONING]
+
+
+[ANSWER]
+from typing import *
+
+
+def all_prefixes(string: str) -> List[str]:
+    result = []
+
+    for i in range(len(string)): ## [STATE]i=[0, 1, 2][/STATE][STATE]range(len(string))=[0, 1, 2][/STATE][STATE]len(string)=[3][/STATE]
+        result.append(string[:i + 1])
+    return result
+[/ANSWER]
+
+[OUTPUT]
+['W', 'WW', 'WWW']
+[/OUTPUT]

@@ -1,0 +1,18 @@
+```response
+                expression+=expression + oprt + str(oprn)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(word):
+    return word == word[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("abba") == True
+    assert is_palindrome("abcba") == True
+    assert is_palindrome("abccba") == True
+    assert is_palindrome("abcccba") == True
+    assert is_

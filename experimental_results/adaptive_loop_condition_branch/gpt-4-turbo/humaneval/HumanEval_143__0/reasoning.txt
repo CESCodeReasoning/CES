@@ -1,0 +1,17 @@
+The function `words_in_sentence(sentence)` takes a sentence as input and processes each word to determine if it should be included in the output based on specific conditions:
+1. The sentence is split into words.
+2. For each word:
+   - If the word has a length of 1, it is immediately flagged (`flg` is set to 1).
+   - For words longer than 1, it checks if the length of the word is divisible by any number starting from 2 up to the length of the word minus one. If it is divisible, the word is flagged.
+   - If the word is not flagged (`flg` is 0) or the word has a length of 2, it is added to the result list `new_lst`.
+3. The words in `new_lst` are joined into a single string separated by spaces and returned.
+
+For the input "there is no place available here":
+- "there": Length is 5, checks divisibility from 2 to 4. It's divisible by 5, so flagged.
+- "is": Length is 2, added to `new_lst` because it meets the condition of length 2.
+- "no": Length is 2, added to `new_lst` because it meets the condition of length 2.
+- "place": Length is 5, checks divisibility from 2 to 4. It's divisible by 5, so flagged.
+- "available": Length is 9, checks divisibility from 2 to 8. It's divisible by 3 and 9, so flagged.
+- "here": Length is 4, checks divisibility from 2 to 3. It's divisible by 2 and 4, so flagged.
+
+The output will be the words "is no" joined by a space.

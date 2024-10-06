@@ -1,0 +1,38 @@
+[REASONING]
+The function `encode` takes a string `message` as input. The process involves several steps:
+1. Define a string `vowels` containing all lowercase and uppercase vowels.
+2. Create a dictionary `vowels_replace` where each vowel is mapped to a character that is two positions ahead in the ASCII table.
+3. Convert the case of each character in the input `message` using the `swapcase()` method. This changes all uppercase letters to lowercase and vice versa.
+4. Iterate over each character in the swapped case message. If the character is a vowel (as per the `vowels_replace` dictionary), replace it with the corresponding mapped character. If it's not a vowel, keep it unchanged.
+5. Join all characters to form the final encoded message.
+
+For the input "I DoNt KnOw WhAt tO WrItE":
+- After `swapcase()`, the message becomes "i dOnT kNoW wHaT To wRiTe".
+- Each vowel in this swapped message is then replaced according to the `vowels_replace` dictionary:
+  - 'i' becomes 'k'
+  - 'o' becomes 'q'
+  - 'e' becomes 'g'
+  - 'a' becomes 'c'
+  - 'u' becomes 'w'
+  - 'I' becomes 'K'
+  - 'O' becomes 'Q'
+  - 'E' becomes 'G'
+  - 'A' becomes 'C'
+  - 'U' becomes 'W'
+- Non-vowel characters remain unchanged.
+- The final encoded message is "k dQnT kNqW wHcT Tq wRgTg".
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def encode(message):
+    vowels = "aeiouAEIOU"  # [STATE] "aeiouAEIOU" [/STATE]
+    vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])  # [STATE] {'a': 'c', 'e': 'g', 'i': 'k', 'o': 'q', 'u': 'w', 'A': 'C', 'E': 'G', 'I': 'K', 'O': 'Q', 'U': 'W'} [/STATE]
+    message = message.swapcase()  # [STATE] "i dOnT kNoW wHaT To wRiTe" [/STATE]
+    return ''.join([vowels_replace[i] if i in vowels else i for i in message])  # [STATE] "k dQnT kNqW wHcT Tq wRgTg" [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+"k dQnT kNqW wHcT Tq wRgTg"
+[/OUTPUT]

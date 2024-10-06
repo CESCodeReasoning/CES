@@ -1,0 +1,8 @@
+The function `fibfib` is called with ( n = 10 ).
+The first if branch is not taken since ( n != 0 ).
+The second if branch is not taken since ( n != 1 ).
+The third if branch is not taken since ( n != 2 ).
+The function recursively calls itself with ( n - 1 ), ( n - 2 ), and ( n - 3 ).
+The function returns the sum of the results of these recursive calls.
+
+Therefore, the final output of the function `fibfib(10)` is 144.

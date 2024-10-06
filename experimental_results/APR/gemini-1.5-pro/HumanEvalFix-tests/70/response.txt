@@ -1,0 +1,28 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def strange_sort_list(lst):
+    lst.sort()
+    res = []
+    left, right = 0, len(lst) - 1
+    while left <= right:
+        if left <= right:
+            res.append(lst[left])
+            left += 1
+        if left <= right:
+            res.append(lst[right])
+            right -= 1
+    return res
+```

@@ -1,0 +1,7 @@
+The function `prime_length` is called with ( string = '0' ).
+Inside the function, a variable `l` is initialized to the length of `string`.
+Since `string` is a single character, `l` is 1.
+
+The first condition checks if `l` is equal to 0 or 1.
+Since `l` is 1, the first condition is true.
+The function returns `False`.

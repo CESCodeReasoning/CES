@@ -1,0 +1,11 @@
+The function `count_nums` is called with ( arr = [1, 1, 2, -2, 3, 4, 5] ).
+The function `digits_sum` is defined inside `count_nums`.
+The function `digits_sum` is called for each element in the input list.
+For each element, if the number is negative, the sign is removed and stored in `neg`.
+The number is then converted to a list of digits.
+The first digit is multiplied by `neg` to preserve the sign.
+The sum of the digits is calculated and returned.
+The function `filter` is used to filter out the positive numbers from the list of sums.
+The length of the resulting list is returned, which is the count of positive numbers in the input list.
+
+Therefore, the final output of the function `count_nums([1, 1, 2, -2, 3, 4, 5])` is 5.

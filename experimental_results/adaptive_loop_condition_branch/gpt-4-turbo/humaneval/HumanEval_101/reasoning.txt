@@ -1,0 +1,28 @@
+The function `words_string` is called with the string "Hi, my name is John".
+1. The function first checks if the string `s` is empty. Since it is not, the condition `(not s)` evaluates to `False`, and the branch is not taken.
+2. An empty list `s_list` is initialized to store characters from the string `s`.
+3. The function iterates over each character in the string `s`.
+   - For each character, it checks if the character is a comma (`,`). If it is, it appends a space (`' '`) to `s_list`. If not, it appends the character itself.
+   - Iteration over characters:
+     - 'H' is not a comma, so 'H' is appended.
+     - 'i' is not a comma, so 'i' is appended.
+     - ',' is a comma, so a space ' ' is appended.
+     - ' ' (space) is not a comma, so ' ' is appended.
+     - 'm' is not a comma, so 'm' is appended.
+     - 'y' is not a comma, so 'y' is appended.
+     - ' ' (space) is not a comma, so ' ' is appended.
+     - 'n' is not a comma, so 'n' is appended.
+     - 'a' is not a comma, so 'a' is appended.
+     - 'm' is not a comma, so 'm' is appended.
+     - 'e' is not a comma, so 'e' is appended.
+     - ' ' (space) is not a comma, so ' ' is appended.
+     - 'i' is not a comma, so 'i' is appended.
+     - 's' is not a comma, so 's' is appended.
+     - ' ' (space) is not a comma, so ' ' is appended.
+     - 'J' is not a comma, so 'J' is appended.
+     - 'o' is not a comma, so 'o' is appended.
+     - 'h' is not a comma, so 'h' is appended.
+     - 'n' is not a comma, so 'n' is appended.
+4. After the loop, `s_list` is converted to a string using `"".join(s_list)`.
+5. The resulting string is then split into words using the `split()` method, which splits the string at spaces.
+6. The list of words `['Hi', 'my', 'name', 'is', 'John']` is returned.

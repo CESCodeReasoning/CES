@@ -1,0 +1,6 @@
+The function `largest_divisor` is called with ( n = 49 ).
+Inside the function, a loop iterates from 49 to 1 (since ( n = 49 )).
+First Iteration (i = 49)
+   - `i` is 49, which satisfies ( n % i == 0 ).
+   - The condition `n % i == 0` is true.
+   - Action: `return i` returns 49.

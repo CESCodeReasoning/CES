@@ -1,0 +1,20 @@
+```response
+                my_arr=arr[min_index:]+arr[0:min_index]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s):
+    if len(s) == 0:
+        return True
+    if s[0] == s[-1]:
+        return is_palindrome(s[1:-1])
+    else:
+        return False
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("abba") == True
+   

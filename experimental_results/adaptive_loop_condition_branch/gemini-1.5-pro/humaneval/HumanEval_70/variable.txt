@@ -1,0 +1,8 @@
+from typing import *
+def strange_sort_list(lst):
+    res, switch = [], True
+    while lst: ## [STATE]lst=[[1, 2, 3, 4], [2, 3, 4], [2, 3], [3], []][/STATE]
+        res.append(min(lst) if switch else max(lst))
+        lst.remove(res[-1])
+        switch = not switch
+    return res

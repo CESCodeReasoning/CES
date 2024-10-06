@@ -1,0 +1,19 @@
+```python
+def solve(N):
+    sum = 0
+    for i in bin(N)[2:]:
+        sum += int(i)
+    return bin(sum)[2:]
+```
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```

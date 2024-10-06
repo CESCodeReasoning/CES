@@ -1,0 +1,28 @@
+The function `skjkasdkd` is called with ( lst = [0,8,1,2,1,7] ).
+Inside the function, a variable `maxx` is initialized to 0.
+The loop iterates over the elements of the list.
+First Iteration (i = 0):
+    - The element at index 0 is 0.
+    - 0 is not greater than maxx (0) and is not a prime number.
+    - No update to maxx.
+Second Iteration (i = 1):
+    - The element at index 1 is 8.
+    - 8 is greater than maxx (0) and is a prime number.
+    - Update maxx to 8.
+Third Iteration (i = 2):
+    - The element at index 2 is 1.
+    - 1 is not greater than maxx (8) and is not a prime number.
+    - No update to maxx.
+Fourth Iteration (i = 3):
+    - The element at index 3 is 2.
+    - 2 is not greater than maxx (8) and is a prime number.
+    - No update to maxx.
+Fifth Iteration (i = 4):
+    - The element at index 4 is 1.
+    - 1 is not greater than maxx (8) and is not a prime number.
+    - No update to maxx.
+Sixth Iteration (i = 5):
+    - The element at index 5 is 7.
+    - 7 is greater than maxx (8) and is a prime number.
+    - Update maxx to 7.
+After the loop completes, the function calculates the sum of the digits of maxx (7) and returns it.

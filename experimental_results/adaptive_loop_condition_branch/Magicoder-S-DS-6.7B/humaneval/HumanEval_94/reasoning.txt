@@ -1,0 +1,268 @@
+The function `skjkasdkd` is called with ( lst = [0,3,2,1,3,5,7,4,5,5,5,2,181,32,4,32,3,2,32,324,4,3] ).
+Inside the function, a variable `maxx` is initialized to 0.
+The loop iterates through the list `lst`.
+First Iteration (i = 0):
+    - The number 0 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Second Iteration (i = 1):
+    - The number 3 is greater than `maxx` and is a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - `maxx` is updated to 3.
+Third Iteration (i = 2):
+    - The number 2 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Fourth Iteration (i = 3):
+    - The number 1 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Fifth Iteration (i = 4):
+    - The number 3 is greater than `maxx` and is a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - `maxx` is updated to 3.
+Sixth Iteration (i = 5):
+    - The number 5 is greater than `maxx` and is a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - `maxx` is updated to 5.
+Seventh Iteration (i = 6):
+    - The number 7 is greater than `maxx` and is a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - `maxx` is updated to 7.
+Eighth Iteration (i = 7):
+    - The number 4 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Ninth Iteration (i = 8):
+    - The number 5 is greater than `maxx` and is a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - `maxx` is updated to 5.
+Tenth Iteration (i = 9):
+    - The number 5 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Eleventh Iteration (i = 10):
+    - The number 5 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Twelfth Iteration (i = 11):
+    - The number 2 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Thirteenth Iteration (i = 12):
+    - The number 181 is greater than `maxx` and is a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - `maxx` is updated to 181.
+Fourteenth Iteration (i = 13):
+    - The number 32 is greater than `maxx` and is a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - `maxx` is updated to 32.
+Fifteenth Iteration (i = 14):
+    - The number 4 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Sixteenth Iteration (i = 15):
+    - The number 32 is greater than `maxx` and is a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - `maxx` is updated to 32.
+Seventeenth Iteration (i = 16):
+    - The number 3 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Eighteenth Iteration (i = 17):
+    - The number 2 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Nineteenth Iteration (i = 18):
+    - The number 32 is greater than `maxx` and is a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - `maxx` is updated to 32.
+Twentieth Iteration (i = 19):
+    - The number 324 is greater than `maxx` and is a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - `maxx` is updated to 324.
+Twenty-First Iteration (i = 20):
+    - The number 4 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+Twenty-Second Iteration (i = 21):
+    - The number 3 is not greater than `maxx` and is not a prime number.
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The loop continues to the next iteration.
+The loop ends after 21 iterations.
+The function `isPrime` is called with ( n = 324 ).
+The loop iterates from 2 through the square root of 324 (since ( n = 324 )).
+First Iteration (i = 2):
+    - 324 is not divisible by 2.
+    - The loop continues to the next iteration.
+Second Iteration (i = 3):
+    - 324 is not divisible by 3.
+    - The loop continues to the next iteration.
+Third Iteration (i = 4):
+    - 324 is divisible by 4.
+    - The function returns False.
+Fourth Iteration (i = 5):
+    - 324 is not divisible by 5.
+    - The loop continues to the next iteration.
+Fifth Iteration (i = 6):
+    - 324 is not divisible by 6.
+    - The loop continues to the next iteration.
+Sixth Iteration (i = 7):
+    - 324 is not divisible by 7.
+    - The loop continues to the next iteration.
+Seventh Iteration (i = 8):
+    - 324 is not divisible by 8.
+    - The loop continues to the next iteration.
+Eighth Iteration (i = 9):
+    - 324 is not divisible by 9.
+    - The loop continues to the next iteration.
+Ninth Iteration (i = 10):
+    - 324 is not divisible by 10.
+    - The loop continues to the next iteration.
+Tenth Iteration (i = 11):
+    - 324 is not divisible by 11.
+    - The loop continues to the next iteration.
+Eleventh Iteration (i = 12):
+    - 324 is not divisible by 12.
+    - The loop continues to the next iteration.
+Twelfth Iteration (i = 13):
+    - 324 is not divisible by 13.
+    - The loop continues to the next iteration.
+Thirteenth Iteration (i = 14):
+    - 324 is not divisible by 14.
+    - The loop continues to the next iteration.
+Fourteenth Iteration (i = 15):
+    - 324 is not divisible by 15.
+    - The loop continues to the next iteration.
+Fifteenth Iteration (i = 16):
+    - 324 is not divisible by 16.
+    - The loop continues to the next iteration.
+Sixteenth Iteration (i = 17):
+    - 324 is not divisible by 17.
+    - The loop continues to the next iteration.
+Seventeenth Iteration (i = 18):
+    - 324 is not divisible by 18.
+    - The loop continues to the next iteration.
+Eighteenth Iteration (i = 19):
+    - 324 is not divisible by 19.
+    - The loop continues to the next iteration.
+Nineteenth Iteration (i = 20):
+    - 324 is not divisible by 20.
+    - The loop continues to the next iteration.
+Twentieth Iteration (i = 21):
+    - 324 is not divisible by 21.
+    - The loop continues to the next iteration.
+Twenty-First Iteration (i = 22):
+    - 324 is not divisible by 22.
+    - The loop continues to the next iteration.
+Twenty-Second Iteration (i = 23):
+    - 324 is not divisible by 23.
+    - The loop continues to the next iteration.
+Twenty-Third Iteration (i = 24):
+    - 324 is not divisible by 24.
+    - The loop continues to the next iteration.
+Twenty-Fourth Iteration (i = 25):
+    - 324 is not divisible by 25.
+    - The loop continues to the next iteration.
+Twenty-Fifth Iteration (i = 26):
+    - 324 is not divisible by 26.
+    - The loop continues to the next iteration.
+Twenty-Sixth Iteration (i = 27):
+    - 324 is not divisible by 27.
+    - The loop continues to the next iteration.
+Twenty-Seventh Iteration (i = 28):
+    - 324 is not divisible by 28.
+    - The loop continues to the next iteration.
+Twenty-Eighth Iteration (i = 29):
+    - 324 is not divisible by 29.
+    - The loop continues to the next iteration.
+Twenty-Ninth Iteration (i = 30):
+    - 324 is not divisible by 30.
+    - The loop continues to the next iteration.
+Thirty-First Iteration (i = 31):
+    - 324 is not divisible by 31.
+    - The loop continues to the next iteration.
+Thirty-Second Iteration (i = 32):
+    - 324 is not divisible by 32.
+    - The loop continues to the next iteration.
+Thirty-Third Iteration (i = 33):
+    - 324 is not divisible by 33.
+    - The loop continues to the next iteration.
+Thirty-Fourth Iteration (i = 34):
+    - 324 is not divisible by 34.
+    - The loop continues to the next iteration.
+Thirty-Fifth Iteration (i = 35):
+    - 324 is not divisible by 35.
+    - The loop continues to the next iteration.
+Thirty-Sixth Iteration (i = 36):
+    - 324 is not divisible by 36.
+    - The loop continues to the next iteration.
+Thirty-Seventh Iteration (i = 37):
+    - 324 is not divisible by 37.
+    - The loop continues to the next iteration.
+Thirty-Eighth Iteration (i = 38):
+    - 324 is not divisible by 38.
+    - The loop continues to the next iteration.
+Thirty-Ninth Iteration (i = 39):
+    - 324 is not divisible by 39.
+    - The loop continues to the next iteration.
+Forty-First Iteration (i = 40):
+    - 324 is not divisible by 40.
+    - The loop continues to the next iteration.
+Forty-Second Iteration (i = 41):
+    - 324 is not divisible by 41.
+    - The loop continues to the next iteration.
+Forty-Third Iteration (i = 42):
+    - 324 is not divisible by 42.
+    - The loop continues to the next iteration.
+Forty-Fourth Iteration (i = 43):
+    - 324 is not divisible by 43.
+    - The loop continues to the next iteration.
+Forty-Fifth Iteration (i = 44):
+    - 324 is not divisible by 44.
+    - The loop continues to the next iteration.
+Forty-Sixth Iteration (i = 45):
+    - 324 is not divisible by 45.
+    - The loop continues to the next iteration.
+Forty-Seventh Iteration (i = 46):
+    - 324 is not divisible by 46.
+    - The loop continues to the next iteration.
+Forty-Eighth Iteration (i = 47):
+    - 324 is not divisible by 47.
+    - The loop continues to the next iteration.
+Forty-Ninth Iteration (i = 48):
+    - 324 is not divisible by 48.
+    - The loop continues to the next iteration.
+Fifty-First Iteration (i = 49):
+    - 324 is not divisible by 49.
+    - The loop continues to the next iteration.
+Fifty-Second Iteration (i = 50):
+    - 324 is not divisible by 50.
+    - The loop continues to the next iteration.
+Fifty-Third Iteration (i = 51):
+    - 324 is not divisible by 51.
+    - The loop continues to the next iteration.
+Fifty-Fourth Iteration (i = 52):
+    - 324 is not divisible by 52.
+    - The loop continues to the next iteration.
+Fifty-Fifth Iteration (i = 53):
+    - 324 is not divisible by 53.
+    - The loop continues to the next iteration.
+Fifty-Sixth Iteration (i = 54):
+    - 324 is not divisible by 54.
+    - The loop continues to the next iteration.
+Fifty-Seventh Iteration (i = 55):
+    - 324 is not divisible by 55.
+    - The loop continues to the next iteration.
+Fifty-Eighth Iteration (i = 56):
+    - 324 is not divisible by 56.
+    - The loop continues to the next iteration.
+Fifty-Ninth Iteration (i = 57):
+    - 324 is not divisible by 57.
+    - The loop continues to the next iteration.
+Sixty-First Iteration (i = 58):
+    - 324 is not divisible by 58.
+    - The loop continues to the next iteration.
+Sixty-Second Iteration (i = 59):
+    - 324 is not divisible by 59.
+    - The loop continues to the

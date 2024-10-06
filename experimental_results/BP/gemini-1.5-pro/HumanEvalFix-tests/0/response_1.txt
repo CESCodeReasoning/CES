@@ -1,0 +1,5 @@
+```response
+Yes
+```
+
+The code is buggy because it doesn't consider the absolute difference between two numbers. For example, `5.0` and `4.0` are closer than `0.95`, but the code wrongly returns `False`. 

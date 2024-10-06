@@ -1,0 +1,18 @@
+The function `common(l1, l2)` takes two lists as parameters and returns a sorted list of common elements between them. The function uses a set to store common elements to avoid duplicates.
+
+1. The outer loop iterates over each element `e1` in the first list `l1`.
+2. The inner loop iterates over each element `e2` in the second list `l2`.
+3. For each pair `(e1, e2)`, it checks if `e1` is equal to `e2`.
+4. If they are equal, `e1` is added to the set `ret`.
+5. After all iterations, the set `ret` is converted to a list, sorted, and returned.
+
+Detailed Iteration:
+- `e1 = 1`: Compare with `5, 7, 1, 5, 9, 653, 121`. Matches with `1`.
+- `e1 = 4`: Compare with `5, 7, 1, 5, 9, 653, 121`. No match.
+- `e1 = 3`: Compare with `5, 7, 1, 5, 9, 653, 121`. No match.
+- `e1 = 34`: Compare with `5, 7, 1, 5, 9, 653, 121`. No match.
+- `e1 = 653`: Compare with `5, 7, 1, 5, 9, 653, 121`. Matches with `653`.
+- `e1 = 2`: Compare with `5, 7, 1, 5, 9, 653, 121`. No match.
+- `e1 = 5`: Compare with `5, 7, 1, 5, 9, 653, 121`. Matches with `5`.
+
+The common elements found are `1, 5, 653`. These are sorted and returned as `[1, 5, 653]`.

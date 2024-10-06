@@ -1,0 +1,10 @@
+The function `count_upper` is called with ( s = 'aBCdEf' ).
+Inside the function, a variable `count` is initialized to 0.
+The loop iterates over the characters of the string 'aBCdEf' with a step of 2.
+Iteration 1:
+    -The character 'a' is not in "AEIOU", so no change in count.
+Iteration 3:
+    -The character 'd' is not in "AEIOU", so no change in count.
+Iteration 5:
+    -The character 'f' is not in "AEIOU", so no change in count.
+The loop ends, and the function returns the value of `count`, which is 0.

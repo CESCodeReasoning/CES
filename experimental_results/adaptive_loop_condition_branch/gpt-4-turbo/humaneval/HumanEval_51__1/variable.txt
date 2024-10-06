@@ -1,0 +1,8 @@
+from typing import *
+
+
+def remove_vowels(text: str) -> str:
+    # [STATE] text = 'ybcd' [/STATE]
+    return "".join([s for s in text if s.lower()  # [STATE] s = 'd' [/STATE]
+                   not in ["a", "e", "i", "o", "u"]])  # [CONDITION] s.lower() not in ["a", "e", "i", "o", "u"] [/CONDITION]
+# [BRANCH] Y [/BRANCH] (All characters are processed and included since none are vowels)

@@ -1,0 +1,25 @@
+[REASONING]
+The function `rounded_avg` is called with parameters (n = 560, m = 851).
+1. The function first checks if `m < n`. In this case, since 851 is not less than 560, the condition is false.
+2. The function then initializes a variable `summation` to 0.
+3. A loop iterates from `n` to `m + 1` (i.e., from 560 to 852). The loop calculates the sum of all integers from 560 to 851.
+4. After the loop, the function calculates the average of these numbers by dividing `summation` by `(m - n + 1)` (which is the count of numbers from 560 to 851 inclusive).
+5. The average is then rounded using the `round()` function.
+6. Finally, the function returns the binary representation of this rounded average using the `bin()` function.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def rounded_avg(n, m):
+    if m < n: ## [CONDITION](m < n)=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+        return -1
+    summation = 0
+    for i in range(n, m + 1): ## [STATE]i=range(560, 852)[/STATE][STATE]range(n, (m + 1))=range(560, 852)[/STATE][STATE]n=560[/STATE][STATE](m + 1)=852[/STATE]
+        summation += i
+    return bin(round(summation / (m - n + 1)))
+[/PYTHON]
+
+[OUTPUT]
+0b110100110
+[/OUTPUT]

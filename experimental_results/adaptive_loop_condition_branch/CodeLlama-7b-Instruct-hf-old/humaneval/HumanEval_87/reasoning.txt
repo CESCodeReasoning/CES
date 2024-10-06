@@ -1,0 +1,2 @@
+The function get_row takes a list of lists lst and an integer x as input. It returns a list of tuples, where each tuple contains the row and column indices of the elements in lst that have the value x.
+To determine the output of executing the function get_row on the input ([], 1), we need to find the row and column indices of the elements in lst that have the value x. Since lst is an empty list, there are no elements with the value x, and therefore the output is an empty list.

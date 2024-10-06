@@ -1,0 +1,6 @@
+The function `compare_one` is called with ( a = "1", b = "2" ).
+`a` and `b` are strings, so the condition `isinstance(temp_a, str)` and `isinstance(temp_b, str)` are both true.
+The if branches are taken and the strings are replaced with the same strings but with '.' instead of ','.
+The condition `float(temp_a) == float(temp_b)` is false, so the function returns the value of `a`.
+
+Therefore, the final output of the function `compare_one("1", "2")` is "1".

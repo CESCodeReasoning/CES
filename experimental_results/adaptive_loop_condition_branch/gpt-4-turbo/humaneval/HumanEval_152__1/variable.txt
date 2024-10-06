@@ -1,0 +1,7 @@
+from typing import *
+
+
+def compare(game: List[int], guess: List[int]) -> List[int]:
+    # [STATE] game = [0,0,0,0,0,0], guess = [0,0,0,0,0,0] [/STATE]
+    return [abs(x - y) for x, y in zip(game, guess)]  # [CONDITION] x - y == 0 for all pairs (x, y) [/CONDITION]
+# [BRANCH] There are no conditional branches in this code, so no Y/N marking is applicable. [/BRANCH]

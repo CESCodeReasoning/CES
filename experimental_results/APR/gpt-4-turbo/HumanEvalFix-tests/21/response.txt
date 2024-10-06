@@ -1,0 +1,30 @@
+Here are the fixed versions of the two functions, `has_close_elements` and `rescale_to_unit`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to calculate the correct distance
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `rescale_to_unit`
+```python
+from typing import List
+
+def rescale_to_unit(numbers: List[float]) -> List[float]:
+    min_number = min(numbers)
+    max_number = max(numbers)
+    range_number = max_number - min_number  # Calculate the range of the numbers
+    return [(x - min_number) / range_number for x in numbers]  # Normalize by dividing by the range, not by adding min and max
+```
+
+These fixes address the issues in the original code:
+- For `has_close_elements`, the distance calculation now correctly uses the absolute value to ensure that the distance is always non-negative.
+- For `rescale_to_unit`, the normalization formula is corrected to divide by the range of the numbers (difference between max and min), ensuring that the smallest number maps to 0 and the largest to 1.

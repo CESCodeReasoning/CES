@@ -1,0 +1,7 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: x_or_y
+main.py(5):     if n == 1:
+main.py(7):     for i in range(2, n):
+main.py(8):         if n % i == 0:
+main.py(7):     for i in range(2, n):
+main.py(12):         return x

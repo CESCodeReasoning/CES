@@ -1,0 +1,53 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterats through each element in the range(1, n + 1) to calculate the factorial of each number.
+In the inner loop, for each element indexed by i in the outer loop, calculate the factorial of i.
+First Iteration (i=1):
+    - `i` is 1, j in the inner loop is 1, 2, 3, 4, and 5.
+    - `x` is 1, `j` is 1, 2, 3, 4, and 5.
+    - `x` is multiplied by `j` for each iteration.
+    - `ret` is appended with `x` at the end of the inner loop.
+Second Iteration (i=2):
+    - `i` is 2, j in the inner loop is 2, 3, 4, 5, and 6.
+    - `x` is 2, `j` is 2, 3, 4, 5, and 6.
+    - `x` is multiplied by `j` for each iteration.
+    - `ret` is appended with `x` at the end of the inner loop.
+Third Iteration (i=3):
+    - `i` is 3, j in the inner loop is 3, 4, 5, 6, and 7.
+    - `x` is 6, `j` is 3, 4, 5, 6, and 7.
+    - `x` is multiplied by `j` for each iteration.
+    - `ret` is appended with `x` at the end of the inner loop.
+Forth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 4, 5, 6, 7, and 8.
+    - `x` is 24, `j` is 4, 5, 6, 7, and 8.
+    - `x` is multiplied by `j` for each iteration.
+    - `ret` is appended with `x` at the end of the inner loop.
+Fifth Iteration (i=5):
+    - `i` is 5, j in the inner loop is 5, 6, 7, 8, and 9.
+    - `x` is 120, `j` is 5, 6, 7, 8, and 9.
+    - `x` is multiplied by `j` for each iteration.
+    - `ret` is appended with `x` at the end of the inner loop.
+Sixth Iteration (i=6):
+    - `i` is 6, j in the inner loop is 6, 7, 8, 9, and 10.
+    - `x` is 720, `j` is 6, 7, 8, 9, and 10.
+    - `x` is multiplied by `j` for each iteration.
+    - `ret` is appended with `x` at the end of the inner loop.
+Seventh Iteration (i=7):
+    - `i` is 7, j in the inner loop is 7, 8, 9, 10, and 11.
+    - `x` is 5040, `j` is 7, 8, 9, 10, and 11.
+    - `x` is multiplied by `j` for each iteration.
+    - `ret` is appended with `x` at the end of the inner loop.
+Eighth Iteration (i=8):
+    - `i` is 8, j in the inner loop is 8, 9, 10, 11, and 12.
+    - `x` is 40320, `j` is 8, 9, 10, 11, and 12.
+    - `x` is multiplied by `j` for each iteration.
+    - `ret` is appended with `x` at the end of the inner loop.
+Ninth Iteration (i=9):
+    - `i` is 9, j in the inner loop is 9, 10, 11, 12, and 13.
+    - `x` is 362880, `j` is 9, 10, 11, 12, and 13.
+    - `x` is multiplied by `j` for each iteration.
+    - `ret` is appended with `x` at the end of the inner loop.
+Tenth Iteration (i=10):
+    - `i` is 10, j in the inner loop is 10, 11, 12, 13, and 14.
+    - `x` is 3628800, `j` is 10, 11, 12, 13, and 14.
+    - `x` is multiplied by `j` for each iteration.
+    - `ret` is appended with `x` at the end of the inner loop.

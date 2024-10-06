@@ -1,0 +1,9 @@
+The function `file_name_check` is called with ( file_name = "example.txt" ).
+The file name is "example.txt".
+The file name is split into two parts using the period as the separator.
+The length of the split list is 2, which satisfies ( len(lst) != 2 ).
+The second part of the split list (i.e., the file extension) is "txt", which is in the list of allowed file extensions (suf).
+The first part of the split list (i.e., the file name) is "example", which is not empty.
+The first character of the file name is "e", which is an alphabet.
+The number of digits in the file name is 0, which is less than or equal to 3.
+Therefore, the function returns 'Yes'.

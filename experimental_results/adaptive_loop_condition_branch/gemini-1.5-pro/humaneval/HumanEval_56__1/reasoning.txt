@@ -1,0 +1,22 @@
+The function `correct_bracketing` is called with ( brackets = "<<<><>>>>" ).
+Inside the function, a variable `depth` is initialized to 0.
+The loop iterates over each character in the string.
+First Iteration (b = "<")
+   - The character is "<", so the depth is incremented to 1.
+Second Iteration (b = "<")
+   - The character is "<", so the depth is incremented to 2.
+Third Iteration (b = "<")
+   - The character is "<", so the depth is incremented to 3.
+Fourth Iteration (b = ">")
+   - The character is ">", so the depth is decremented to 2.
+Fifth Iteration (b = "<")
+   - The character is "<", so the depth is incremented to 3.
+Sixth Iteration (b = ">")
+   - The character is ">", so the depth is decremented to 2.
+Seventh Iteration (b = ">")
+   - The character is ">", so the depth is decremented to 1.
+Eighth Iteration (b = ">")
+   - The character is ">", so the depth is decremented to 0.
+Ninth Iteration (b = ">")
+   - The character is ">", so the depth is decremented to -1.
+   - The condition `depth < 0` is true, so the function returns False.

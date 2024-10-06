@@ -1,0 +1,5 @@
+The function `closest_integer` is called with the input string "10".
+Inside the function, the input string is first checked if it contains a decimal point. Since the input string "10" does not contain a decimal point, the if branch is not taken.
+Then, the input string is converted to a float using the `float()` function.
+Since the float value of "10" is greater than 0.5, the if branch is taken.
+The function returns the ceiling of the float value, which is 10.

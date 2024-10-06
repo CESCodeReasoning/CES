@@ -1,0 +1,39 @@
+
+[REASONING]
+The function `fib` is called with ( n = 11 ).
+`n` is 11, which does not satisfy the condition `n == 0` or `n == 1`.
+Therefore, the if branches are not taken and the function recursively calls itself with `n - 1` and `n - 2`.
+
+The recursive calls are:
+1. `fib(10)`
+2. `fib(9)`
+3. `fib(8)`
+4. `fib(7)`
+5. `fib(6)`
+6. `fib(5)`
+7. `fib(4)`
+8. `fib(3)`
+9. `fib(2)`
+10. `fib(1)`
+11. `fib(0)`
+
+Each of these calls will continue to make recursive calls until they reach the base cases `n == 0` or `n == 1`.
+
+The final output of the function `fib(11)` is the sum of the outputs of all these recursive calls.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def fib(n: int):
+    if n == 0: ## [CONDITION](n == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 0
+    if n == 1: ## [CONDITION](n == 1)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 1
+    return fib(n - 1) + fib(n - 2)
+[/ANSWER]
+
+[OUTPUT]
+89
+[/OUTPUT]

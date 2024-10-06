@@ -1,0 +1,142 @@
+The function `is_multiply_prime` is called with ( a = 5 ).
+Inside the function, a variable `is_prime` is defined.
+The function `is_prime` is called with ( n = 2 ).
+Inside the function, a variable `j` is defined.
+The loop iterates from 2 through 2 (since ( n = 2 )).
+First Iteration (j = 2)
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Second Iteration (j = 3)
+   - `j` is 3, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Third Iteration (j = 4)
+   - `j` is 4, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Fourth Iteration (j = 5)
+   - `j` is 5, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Fifth Iteration (j = 6)
+   - `j` is 6, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Sixth Iteration (j = 7)
+   - `j` is 7, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Seventh Iteration (j = 8)
+   - `j` is 8, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Eighth Iteration (j = 9)
+   - `j` is 9, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Ninth Iteration (j = 10)
+   - `j` is 10, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Tenth Iteration (j = 11)
+   - `j` is 11, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Eleventh Iteration (j = 12)
+   - `j` is 12, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twelfth Iteration (j = 13)
+   - `j` is 13, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Thirteenth Iteration (j = 14)
+   - `j` is 14, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Fourteenth Iteration (j = 15)
+   - `j` is 15, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Fifteenth Iteration (j = 16)
+   - `j` is 16, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Sixteenth Iteration (j = 17)
+   - `j` is 17, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Seventeenth Iteration (j = 18)
+   - `j` is 18, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Eighteenth Iteration (j = 19)
+   - `j` is 19, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Nineteenth Iteration (j = 20)
+   - `j` is 20, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twentieth Iteration (j = 21)
+   - `j` is 21, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twenty-first Iteration (j = 22)
+   - `j` is 22, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twenty-second Iteration (j = 23)
+   - `j` is 23, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twenty-third Iteration (j = 24)
+   - `j` is 24, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twenty-fourth Iteration (j = 25)
+   - `j` is 25, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twenty-fifth Iteration (j = 26)
+   - `j` is 26, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twenty-sixth Iteration (j = 27)
+   - `j` is 27, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twenty-seventh Iteration (j = 28)
+   - `j` is 28, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twenty-eighth Iteration (j = 29)
+   - `j` is 29, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Twenty-ninth Iteration (j = 30)
+   - `j` is 30, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Thirtieth Iteration (j = 31)
+   - `j` is 31, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Thirty-first Iteration (j = 32)
+   - `j` is 32, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Thirty-second Iteration (j = 33)
+   - `j` is 33, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Thirty-third Iteration (j = 34)
+   - `j` is 34, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Thirty-fourth Iteration (j = 35)
+   - `j` is 35, which satisfies ( 2 <= j < n ).
+   - The condition `n%j == 0` is false.
+   - The loop continues.
+Thirty-fifth Iteration (j = 36

@@ -1,0 +1,49 @@
+Here are the fixed versions of the two functions, `has_close_elements` and `starts_one_ends`, along with their respective test cases:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+
+# Tests
+def check_has_close_elements(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check_has_close_elements(has_close_elements)
+```
+
+### Fixed Code for `starts_one_ends`
+```python
+def starts_one_ends(n: int) -> int:
+    if n == 1:
+        return 1
+    return 18 * (10 ** (n - 2))
+
+# Tests
+def check_starts_one_ends(starts_one_ends):
+    assert starts_one_ends(1) == 1, "Failed on n=1"
+    assert starts_one_ends(2) == 18, "Failed on n=2"
+    assert starts_one_ends(3) == 180, "Failed on n=3"
+    assert starts_one_ends(4) == 1800, "Failed on n=4"
+    assert starts_one_ends(5) == 18000, "Failed on n=5"
+
+check_starts_one_ends(starts_one_ends)
+```
+
+These fixes address the issues in the original code:
+- For `has_close_elements`, the absolute value is used to correctly calculate the distance between two numbers.
+- For `starts_one_ends`, the formula was corrected to properly calculate the count of n-digit numbers that start or end with 1, excluding the case when `n=1` which is handled separately.

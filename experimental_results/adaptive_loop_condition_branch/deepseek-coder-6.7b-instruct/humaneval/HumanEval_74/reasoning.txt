@@ -1,0 +1,11 @@
+The function `total_match` is called with ( lst1 = ['hi', 'admin'], lst2 = ['hi', 'hi'] ).
+First, we calculate the length of each list in `lst1` and `lst2` separately.
+For `lst1`:
+    len('hi') = 2
+    len('admin') = 5
+So, l1 = 2 + 5 = 7.
+For `lst2`:
+    len('hi') = 2
+    len('hi') = 2
+So, l2 = 2 + 2 = 4.
+After calculating the lengths, the condition ( l1 <= l2 ) is not satisfied, therefore the else branch is taken and the function returns `lst2` as the output.

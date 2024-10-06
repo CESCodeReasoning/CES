@@ -1,0 +1,40 @@
+Buggy Code:
+```python
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+Buggy Code:
+```python
+def digitSum(s):
+    if s == "": return 0
+    return sum(ord(char) if char.islower() else 0 for char in s)
+```
+
+Fixed Code:
+```python
+def digitSum(s):
+    if s == "": return 0
+    return sum(ord(char) for char in s if char.isupper())
+```

@@ -1,0 +1,9 @@
+The function `largest_divisor` is called with ( n = 3 ).
+The loop iterates from 2 through 3 (since ( n = 3 )).
+First Iteration (i = 2)
+   - `n` is not divisible by 2, so the condition `n % i == 0` is false.
+   - The `else` block's action: `return i` is skipped.
+Second Iteration (i = 1)
+   - `n` is divisible by 1, so the condition `n % i == 0` is true.
+   - The `if` block's action: `return i` returns 1.
+Therefore, the final output of the function `largest_divisor(3)` is 1.

@@ -1,0 +1,11 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: check_dict_case
+main.py(5):     if len(dict.keys()) == 0:
+main.py(8):         state = "start"
+main.py(9):         for key in dict.keys():
+main.py(11):             if isinstance(key, str) == False:
+main.py(14):             if state == "start":
+main.py(15):                 if key.isupper():
+main.py(17):                 elif key.islower():
+main.py(20):                     break
+main.py(26):         return state == "upper" or state == "lower"

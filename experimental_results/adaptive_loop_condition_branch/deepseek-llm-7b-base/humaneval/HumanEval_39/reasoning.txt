@@ -1,0 +1,27 @@
+The function `prime_fib` is called with ( n = 1 ).
+Inside the function, a variable `f` is initialized to [0, 1].
+The loop iterates from 1 through 1 (since ( n = 1 )).
+First Iteration (f = [0, 1]):
+    - The condition `f[-1] + f[-2]` is true.
+    - The condition `is_prime(f[-1])` is true.
+    - The condition `n -= 1` is true.
+    - The condition `n == 0` is true.
+    - The function returns the value of `f[-1]`, which is now 2.
+Second Iteration (f = [0, 1, 2]):
+    - The condition `f[-1] + f[-2]` is true.
+    - The condition `is_prime(f[-1])` is true.
+    - The condition `n -= 1` is true.
+    - The condition `n == 0` is true.
+    - The function returns the value of `f[-1]`, which is now 3.
+Third Iteration (f = [0, 1, 2, 3]):
+    - The condition `f[-1] + f[-2]` is true.
+    - The condition `is_prime(f[-1])` is true.
+    - The condition `n -= 1` is true.
+    - The condition `n == 0` is true.
+    - The function returns the value of `f[-1]`, which is now 5.
+Fourth Iteration (f = [0, 1, 2, 3, 5]):
+    - The condition `f[-1] + f[-2]` is true.
+    - The condition `is_prime(f[-1])` is true.
+    - The condition `n -= 1` is true.
+    - The condition `n == 0` is true.
+    - The function returns the value of `f[-1]`, which is now 5.

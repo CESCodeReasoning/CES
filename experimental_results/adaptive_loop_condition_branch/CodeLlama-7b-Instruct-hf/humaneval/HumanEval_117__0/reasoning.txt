@@ -1,0 +1,41 @@
+The function select_words(s, n) takes a string s and an integer n as its parameters.
+The function splits the string s into a list of words using the space character as the delimiter.
+The outer loop iterates through each word in the list of words.
+In the inner loop, for each word indexed by i in the outer loop, count the number of consonants in the word.
+First Iteration (i=0):
+    - `i` is 0, word in the inner loop is "Hello".
+    - n_consonants = 0
+    - For each character in the word, check if it is a consonant.
+    - When i = 0 (word[i] = "H"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 1 (word[i] = "e"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 2 (word[i] = "l"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 3 (word[i] = "l"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 4 (word[i] = "o"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 5 (word[i] = " "), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 6 (word[i] = "w"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 7 (word[i] = "o"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 8 (word[i] = "r"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 9 (word[i] = "l"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 10 (word[i] = "d"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 11 (word[i] = " "), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 12 (word[i] = "w"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 13 (word[i] = "o"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 14 (word[i] = "r"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 15 (word[i] = "l"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 16 (word[i] = "d"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 17 (word[i] = " "), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 18 (word[i] = "w"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 19 (word[i] = "o"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 20 (word[i] = "r"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 21 (word[i] = "l"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 22 (word[i] = "d"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 23 (word[i] = " "), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 24 (word[i] = "w"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 25 (word[i] = "o"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 26 (word[i] = "r"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 27 (word[i] = "l"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 28 (word[i] = "d"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 29 (word[i] = " "), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False, so n_consonants does not change.
+    - When i = 30 (word[i] = "w"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 31 (word[i] = "o"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so n_consonants += 1.
+    - When i = 32 (word[i] = "r"), the condition `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, so

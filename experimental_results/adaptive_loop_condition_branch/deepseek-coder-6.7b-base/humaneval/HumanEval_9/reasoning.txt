@@ -1,0 +1,13 @@
+The function `rolling_max` is called with ( numbers = [3,2,3,100,3] ).
+Inside the function, a variable `running_max` is initialized to None.
+
+Iteration 1:
+    -The running_max is None, so it becomes 3.
+Iteration 2:
+    -The running_max is 3, so it remains 3.
+Iteration 3:
+    -The running_max is 3, so it remains 3.
+Iteration 4:
+    -The running_max is 3, so it becomes 100.
+Iteration 5:
+    -The running_max is 100, so it remains 100.

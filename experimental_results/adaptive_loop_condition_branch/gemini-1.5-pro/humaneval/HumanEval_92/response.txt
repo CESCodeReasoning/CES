@@ -1,0 +1,25 @@
+[REASONING]
+The function `any_int` is called with ( x = 2, y = 3, z = 1 ).
+The first condition checks if all three arguments are integers, which is true.
+The second condition checks if any two of the three arguments add up to the third argument.
+(2 + 3 == 1) is False, (2 + 1 == 3) is False, and (3 + 1 == 2) is True.
+Therefore, the second condition is True.
+The function returns True.
+
+Therefore, the final output of the function `any_int(2, 3, 1)` is True.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def any_int(x, y, z):
+    
+    if isinstance(x,int) and isinstance(y,int) and isinstance(z,int): ## [CONDITION](isinstance(x,int) and isinstance(y,int) and isinstance(z,int))=[True][/CONDITION][CONDITION](isinstance(z,int))=[True][/CONDITION][CONDITION](isinstance(x,int))=[True][/CONDITION][CONDITION](isinstance(y,int))=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        if (x+y==z) or (x+z==y) or (y+z==x): ## [CONDITION]((x+y==z) or (x+z==y) or (y+z==x))=[True][/CONDITION][CONDITION](x+y==z)=[False][/CONDITION][CONDITION](x+z==y)=[False][/CONDITION][CONDITION](y+z==x)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+            return True
+        return False
+    return False
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]

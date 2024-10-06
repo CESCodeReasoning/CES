@@ -1,0 +1,43 @@
+The function cycpattern_check(a, b) takes two strings as its parameters.
+The function checks if the string b is a cyclic pattern of string a.
+A cyclic pattern means that the string b can be formed by concatenating multiple copies of string a.
+The function first calculates the length of string b and stores it in the variable l.
+Then, it creates a new string pat by concatenating string b with itself.
+The function then iterates over the string a using a for loop.
+For each iteration, the function checks if the substring of string a starting at index i and ending at index i + l is equal to the substring of string pat starting at index j and ending at index j + l.
+If the two substrings are equal, the function returns True.
+Otherwise, the function continues to the next iteration of the loop.
+If the loop completes without finding a match, the function returns False.
+In this case, a = "winemtt" and b = "tinem".
+The length of b is 5.
+The string pat is "tinemtinem".
+The function iterates over the string a using a for loop.
+For the first iteration, i = 0.
+The substring of string a starting at index i and ending at index i + l is "winem".
+The substring of string pat starting at index j and ending at index j + l is "tinem".
+The two substrings are not equal, so the function continues to the next iteration of the loop.
+For the second iteration, i = 1.
+The substring of string a starting at index i and ending at index i + l is "inemt".
+The substring of string pat starting at index j and ending at index j + l is "tinem".
+The two substrings are not equal, so the function continues to the next iteration of the loop.
+For the third iteration, i = 2.
+The substring of string a starting at index i and ending at index i + l is "nemtt".
+The substring of string pat starting at index j and ending at index j + l is "tinem".
+The two substrings are not equal, so the function continues to the next iteration of the loop.
+For the fourth iteration, i = 3.
+The substring of string a starting at index i and ending at index i + l is "emttt".
+The substring of string pat starting at index j and ending at index j + l is "tinem".
+The two substrings are not equal, so the function continues to the next iteration of the loop.
+For the fifth iteration, i = 4.
+The substring of string a starting at index i and ending at index i + l is "mttti".
+The substring of string pat starting at index j and ending at index j + l is "tinem".
+The two substrings are not equal, so the function continues to the next iteration of the loop.
+For the sixth iteration, i = 5.
+The substring of string a starting at index i and ending at index i + l is "tttin".
+The substring of string pat starting at index j and ending at index j + l is "tinem".
+The two substrings are not equal, so the function continues to the next iteration of the loop.
+For the seventh iteration, i = 6.
+The substring of string a starting at index i and ending at index i + l is "ttine".
+The substring of string pat starting at index j and ending at index j + l is "tinem".
+The two substrings are not equal, so the function continues to the next iteration of the loop.
+The loop completes without finding a match, so the function returns False.

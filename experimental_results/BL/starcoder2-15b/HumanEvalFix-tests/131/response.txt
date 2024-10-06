@@ -1,0 +1,19 @@
+```response
+                product*= product*int_digit
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s):
+    s = s.lower()
+    s = s.replace(" ", "")
+    s = s.replace(",", "")
+    s = s.replace(".", "")
+    s = s.replace("!", "")
+    s = s.replace("?", "")
+    s = s.replace("'", "")
+    s = s.replace('"', "")
+    s = s.replace("-", "")
+    s = s

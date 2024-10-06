@@ -1,0 +1,5 @@
+The function filter_integers takes a list of values as input and returns a new list that contains only the integers from the input list.
+
+To determine the output of executing the function filter_integers on the input [3, 'c', 3, 3, 'a', 'b'], we need to filter out the integers from the list.
+
+The integers in the input list are 3, 3, 3. Therefore, the output of executing the function filter_integers on the input [3, 'c', 3, 3, 'a', 'b'] is [3, 3, 3].

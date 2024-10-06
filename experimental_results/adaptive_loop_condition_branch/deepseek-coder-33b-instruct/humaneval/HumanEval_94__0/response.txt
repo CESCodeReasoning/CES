@@ -1,0 +1,29 @@
+
+[REASONING]
+The function `skjkasdkd` is called with ( lst = [127, 97, 8192] ).
+Inside the function, a variable `maxx` is initialized to 0.
+The loop iterates over the list `lst`.
+First Iteration (i = 0):
+    - `lst[i]` is 127, which is not a prime number.
+    - The condition `lst[i] > maxx and isPrime(lst[i])` is false.
+    - The `if` condition is not satisfied.
+Second Iteration (i = 1):
+    - `lst[i]` is 97, which is a prime number.
+    - The condition `lst[i] > maxx and isPrime(lst[i])` is true.
+    - The `if` condition is satisfied.
+    - `maxx` is updated to 97.
+Third Iteration (i = 2):
+    - `lst[i]` is 8192, which is not a prime number.
+    - The condition `lst[i] > maxx and isPrime(lst[i])` is false.
+    - The `if` condition is not satisfied.
+After the loop completes, the function returns the sum of the digits of `maxx`, which is 16 (9 + 7).
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def skjkasdkd(lst):
+    def isPrime(n):
+        for i in range(2, int(n**0.5) + 1): ## [STATE]i=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+[/ANSWER]

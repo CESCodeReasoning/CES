@@ -1,0 +1,28 @@
+The function `factorize` is called with ( n = 3 * 2 * 3 = 18 ).
+Inside the function, a variable `fact` is initialized to an empty list.
+The loop iterates from 2 through the square root of 18 (since ( n = 18 )).
+First Iteration (i = 2):
+    - 18 % 2 == 0. The condition is true.
+    - 18 // 2 = 9. The value of n is updated.
+Second Iteration (i = 3):
+    - 9 % 3 == 0. The condition is true.
+    - 9 // 3 = 3. The value of n is updated.
+Third Iteration (i = 4):
+    - 3 % 4 != 0. The condition is false.
+    - i is incremented to 5.
+Fourth Iteration (i = 5):
+    - 3 % 5 == 0. The condition is true.
+    - 3 // 5 = 0. The value of n is updated.
+After the loop completes, the function returns the value of `fact`, which is now [2, 3].
+
+However, the value of n is still 0. So, the else branch is taken.
+The value of n (which is 0) is appended to the list `fact`.
+So, the final list returned by the function is [2, 3, 0].
+
+The output of the function is [2, 3, 0], which is not the same as the input (3 * 2 * 3 = 18).
+This suggests that the function is not correctly factoring the input.
+
+The function `factorize` is not correctly factoring the input. It is appending 0 to the list, which is not a factor of the input.
+
+The function `factorize` is not correctly factoring the input. It is appending 0 to the list, which is not a factor of the input.
+

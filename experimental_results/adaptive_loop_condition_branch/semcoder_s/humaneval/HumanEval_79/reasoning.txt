@@ -1,0 +1,6 @@
+The function `decimal_to_binary` takes an integer `decimal` as input and returns the binary representation of the decimal number as a string.
+
+- The function uses the built-in `bin` function to convert the decimal number to binary.
+- The binary representation is returned as a string prefixed with "db" and suffixed with "db".
+
+Therefore, the output of executing the function `decimal_to_binary(0)` is "db0db".

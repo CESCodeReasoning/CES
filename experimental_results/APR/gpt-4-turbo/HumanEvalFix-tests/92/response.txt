@@ -1,0 +1,30 @@
+Here is the fixed code for both functions, `has_close_elements` and `any_int`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `any_int`
+```python
+def any_int(x, y, z):
+    # Check if all inputs are integers
+    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):
+        # Check if any number is the sum of the other two
+        if (x + y == z) or (y + z == x) or (x + z == y):
+            return True
+    return False
+```
+
+These corrections ensure that the functions behave as specified:
+- `has_close_elements` now correctly calculates the absolute distance between elements to check if they are within the given threshold.
+- `any_int` now includes all possible combinations of sums and checks if all inputs are integers before performing the sum checks.

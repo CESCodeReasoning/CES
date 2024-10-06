@@ -1,0 +1,9 @@
+The function `max_element` is called with ( l = [3, 2, -3.5, 0] ).
+Inside the function, a variable `m` is initialized to the first element of the list (l[0] = 3).
+
+Iteration 1:
+    -The element 2 is greater than the current maximum (m = 3), so m becomes 2.
+Iteration 2:
+    -The element -3.5 is less than the current maximum (m = 2), so m remains unchanged.
+Iteration 3:
+    -The element 0 is less than the current maximum (m = 2), so m remains unchanged.

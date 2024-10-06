@@ -1,0 +1,5 @@
+```response
+Yes
+```
+
+The code is buggy because it does not correctly handle cases where there are more closing brackets than opening brackets. For instance, it fails for the input "[][]]]]]]]]]", which should return False. 

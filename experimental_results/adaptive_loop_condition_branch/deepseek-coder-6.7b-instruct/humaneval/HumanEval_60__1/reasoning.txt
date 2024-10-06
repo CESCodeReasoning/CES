@@ -1,0 +1,13 @@
+The function sum_to_n takes an integer n as input and returns the sum of all integers from 0 to n (inclusive).
+To determine the output of executing the function sum_to_n on the input 100, we need to calculate the sum of all integers from 0 to 100 (inclusive).
+
+The sum of all integers from 0 to n can be calculated using the formula n*(n+1)/2.
+
+So, to calculate the sum of all integers from 0 to 100, we substitute n with 100 in the formula.
+
+The calculation is as follows:
+
+100*(100+1)/2 = 50*51/2 = 2550
+
+Therefore, the output of executing the function sum_to_n on the input 100 is 2550.
+

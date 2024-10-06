@@ -1,0 +1,7 @@
+The function get_row takes a 2D list lst and a number x as input. It returns a sorted list of tuples where each tuple represents the coordinates of the number x in the 2D list.
+
+To determine the output of executing the function get_row on the input [[], [1], [1, 2, 3]], 3, we need to find the coordinates of the number 3 in the 2D list.
+
+The 2D list is [[], [1], [1, 2, 3]]. The number 3 is at the coordinates (2, 2) in the 2D list.
+
+Therefore, the output of executing the function get_row on the input [[], [1], [1, 2, 3]], 3 is [(2, 2)].

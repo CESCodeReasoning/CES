@@ -1,0 +1,5 @@
+from typing import *
+def iscube(a):
+    a = abs(a)
+    # [STATE] a = 1 [/STATE]
+    return int(round(a ** (1. / 3))) ** 3 == a

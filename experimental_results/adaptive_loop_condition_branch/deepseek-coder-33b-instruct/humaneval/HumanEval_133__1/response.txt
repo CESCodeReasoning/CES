@@ -1,0 +1,32 @@
+
+[REASONING]
+The function `sum_squares` is called with (lst = [-2.4,1,1] ).
+Inside the function, a variable `squared` is initialized to 0.
+The loop iterates through each element in the list.
+
+First Iteration(i = -2.4):
+    math.ceil(i)**2 = 4
+    squared = 0 + 4 results in squared = 4
+Second Iteration(i = 1):
+    math.ceil(i)**2 = 1
+    squared = 4 + 1 results in squared = 5
+Third Iteration(i = 1):
+    math.ceil(i)**2 = 1
+    squared = 5 + 1 results in squared = 6
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def sum_squares(lst):
+    import math
+    squared = 0
+    for i in lst: ## [STATE]i=[-2.4, 1, 1][/STATE][STATE]lst=[-2.4, 1, 1][/STATE]
+        squared += math.ceil(i)**2
+    return squared
+[/ANSWER]
+
+[OUTPUT]
+6
+[/OUTPUT]

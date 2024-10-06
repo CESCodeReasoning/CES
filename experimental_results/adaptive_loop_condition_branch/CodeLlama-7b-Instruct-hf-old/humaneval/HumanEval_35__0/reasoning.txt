@@ -1,0 +1,29 @@
+The function `max_element` is called with ( l = [-5, 2, 48, 9, 4, 0, 6, 7] ).
+Inside the function, a variable `m` is initialized to the first element of the list `l`.
+
+Iteration 1:
+    -The element -5 is compared with the current maximum `m`, which is the first element of the list.
+    -Since -5 is less than the current maximum, the current maximum remains the same.
+Iteration 2:
+    -The element 2 is compared with the current maximum `m`, which is still the first element of the list.
+    -Since 2 is greater than the current maximum, the current maximum becomes 2.
+Iteration 3:
+    -The element 48 is compared with the current maximum `m`, which is now 2.
+    -Since 48 is greater than the current maximum, the current maximum becomes 48.
+Iteration 4:
+    -The element 9 is compared with the current maximum `m`, which is now 48.
+    -Since 9 is greater than the current maximum, the current maximum becomes 9.
+Iteration 5:
+    -The element 4 is compared with the current maximum `m`, which is now 9.
+    -Since 4 is less than the current maximum, the current maximum remains the same.
+Iteration 6:
+    -The element 0 is compared with the current maximum `m`, which is still 9.
+    -Since 0 is less than the current maximum, the current maximum remains the same.
+Iteration 7:
+    -The element 6 is compared with the current maximum `m`, which is still 9.
+    -Since 6 is greater than the current maximum, the current maximum becomes 6.
+Iteration 8:
+    -The element 7 is compared with the current maximum `m`, which is now 6.
+    -Since 7 is greater than the current maximum, the current maximum becomes 7.
+
+Therefore, the final output of the function `max_element([-5, 2, 48, 9, 4, 0, 6, 7])` is 7.

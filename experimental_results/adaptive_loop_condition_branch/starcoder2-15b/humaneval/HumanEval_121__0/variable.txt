@@ -1,0 +1,5 @@
+from typing import *
+
+
+def solution(n):
+    return n * (n + 1) // 2

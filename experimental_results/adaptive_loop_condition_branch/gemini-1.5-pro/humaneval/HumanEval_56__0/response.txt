@@ -1,0 +1,48 @@
+[REASONING]
+The function `correct_bracketing` is called with ( brackets = "<><><<><>><>>><>" ).
+Inside the function, a variable `depth` is initialized to 0.
+The loop iterates over each character in the string.
+First Iteration (b = "<"):
+   - The character is "<", so the depth is incremented to 1.
+Second Iteration (b = "<"):
+   - The character is "<", so the depth is incremented to 2.
+Third Iteration (b = "<"):
+   - The character is "<", so the depth is incremented to 3.
+Fourth Iteration (b = "<"):
+   - The character is "<", so the depth is incremented to 4.
+Fifth Iteration (b = "<"):
+   - The character is "<", so the depth is incremented to 5.
+Sixth Iteration (b = ">"):
+   - The character is ">", so the depth is decremented to 4.
+Seventh Iteration (b = ">"):
+   - The character is ">", so the depth is decremented to 3.
+Eighth Iteration (b = ">"):
+   - The character is ">", so the depth is decremented to 2.
+Ninth Iteration (b = ">"):
+   - The character is ">", so the depth is decremented to 1.
+Tenth Iteration (b = ">"):
+   - The character is ">", so the depth is decremented to 0.
+Eleventh Iteration (b = ">"):
+   - The character is ">", so the depth is decremented to -1.
+   - The condition `depth < 0` is true, so the function returns False.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets: ## [STATE]b=['<', '<', '<', '<', '<', '>', '>', '>', '>', '>', '>'][/STATE][STATE]brackets=["<><><<><>><>>><>][/STATE]
+        if b == "<": ## [CONDITION](b == "<")=[True, True, True, True, True, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, Y, N, N, N, N, N, N][/BRANCH]
+            depth += 1
+        else: ## [BRANCH]taken=[N, N, N, N, N, Y, Y, Y, Y, Y, Y][/BRANCH]
+            depth -= 1
+        if depth < 0: ## [CONDITION](depth < 0)=[False, False, False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, N, N, Y][/BRANCH]
+            return False
+    return depth == 0
+[/ANSWER]
+
+[OUTPUT]
+False
+[/OUTPUT]

@@ -1,0 +1,43 @@
+
+[REASONING]
+The function `minSubArraySum` is called with ( nums = [1, -1] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+
+Iteration 1:
+    -The number 1 is added to `s`, which becomes -1.
+    -Since `s` is less than 0, `s` is reset to 0.
+    -`max_sum` is updated to 0.
+Iteration 2:
+    -The number -1 is added to `s`, which becomes -2.
+    -Since `s` is less than 0, `s` is reset to 0.
+    -`max_sum` is updated to 0.
+
+Since `max_sum` is still 0, the condition `max_sum == 0` is true.
+    -The `max_sum` is updated to the maximum negative number in `nums`, which is -1.
+
+The `min_sum` is then calculated as -`max_sum`, which is 1.
+
+Therefore, the final output of the function `minSubArraySum([1, -1])` is 1.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def minSubArraySum(nums):
+    max_sum = 0
+    s = 0
+    for num in nums: ## [STATE]num=[1, -1][/STATE][STATE]nums=[[1, -1]][/STATE]
+        s += -num
+        if (s < 0): ## [CONDITION](s < 0)=[True, True][/CONDITION][BRANCH]taken=[Y, Y][/BRANCH]
+            s = 0
+        max_sum = max(s, max_sum)
+    if max_sum == 0: ## [CONDITION](max_sum == 0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        max_sum = max(-i for i in nums)
+    min_sum = -max_sum
+    return min_sum
+[/ANSWER]
+
+[OUTPUT]
+1
+[/OUTPUT]

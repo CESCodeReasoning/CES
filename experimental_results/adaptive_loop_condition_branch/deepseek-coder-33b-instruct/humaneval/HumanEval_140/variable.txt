@@ -1,0 +1,10 @@
+from typing import *
+def fix_spaces(text):
+    new_text = ""
+    i = 0
+    start, end = 0, 0
+    while i < len(text): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6, 7][/STATE][STATE]len(text)=[8][/STATE]
+        if text[i] == " ": ## [CONDITION](text[i] == " ")=[False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N][/BRANCH]
+            end += 1
+        else: ## [BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+            if end - start > 2: ## [CONDITION](end - start > 2)=[False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N

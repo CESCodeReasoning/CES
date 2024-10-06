@@ -1,0 +1,8 @@
+from typing import *
+def string_to_md5(text):
+    import hashlib
+    [STATE]text_is_not_empty = text else False[/STATE]
+    [BRANCH]if text_is_not_empty:[/BRANCH]
+        return hashlib.md5(text.encode('ascii')).hexdigest()
+    [BRANCH]else:[/BRANCH]
+        return None

@@ -1,0 +1,13 @@
+The function `unique_digits` is called with ( x = [12345, 2033, 111, 151] ).
+Inside the function, an empty list `odd_digit_elements` is initialized.
+
+Iteration 1:
+    -The number 12345 has all digits odd, so it is appended to `odd_digit_elements`.
+Iteration 2:
+    -The number 2033 has even digits, so it is not appended.
+Iteration 3:
+    -The number 111 has all digits odd, so it is appended to `odd_digit_elements`.
+Iteration 4:
+    -The number 151 has even digits, so it is not appended.
+
+Finally, the function returns the sorted `odd_digit_elements`, which is [111, 12345].

@@ -1,0 +1,31 @@
+
+[REASONING]
+The function `get_odd_collatz` is called with ( n = 14 ).
+First, it checks if `n` is even or odd. If `n` is even, it initializes an empty list `odd_collatz`. If `n` is odd, it initializes `odd_collatz` with `n`.
+Then, it enters a loop where it repeatedly divides `n` by 2 if it's even, or multiplies `n` by 3 and adds 1 if it's odd.
+If `n` becomes odd during this process, it is appended to `odd_collatz`.
+The loop continues until `n` becomes 1.
+Finally, it returns the sorted list `odd_collatz`.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def get_odd_collatz(n):
+    if n%2==0: ## [CONDITION](n%2==0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        odd_collatz = [] 
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        odd_collatz = [n]
+    while n > 1: ## [STATE]n=[14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1][/STATE]
+        if n % 2 == 0: ## [CONDITION](n % 2 == 0)=[False, False, True, False, True, False, True, False, True, False, True, False, False, False, True, True, True, True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[N, N, Y, N, Y, N, Y, N, Y, N, Y, N, N, N, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+            n = n/2
+        else: ## [BRANCH]taken=[Y, Y, N, Y, N, Y, N, Y, N, Y, N, Y, Y, Y, N, N, N, N, N, N, N, N, N, N][/BRANCH]
+            n = n*3 + 1
+            
+        if n%2 == 1: ## [CONDITION](n%2 == 1)=[False, True, False, True, False, True, False, True, False, True, False, True, False, False, True, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, Y, N, Y, N, Y, N, Y, N, Y, N, Y, N, N, Y, N, N, N, N, N, N, N, N, N, N][/BRANCH]
+            odd_collatz.append(int(n))
+
+    return sorted(odd_collatz)
+[/ANSWER]
+
+[OUTPUT]
+[1, 3, 5, 7, 11, 13, 17, 23, 35, 43, 55, 75, 91, 119, 163, 235, 323, 403, 485, 571, 615, 667, 711, 755, 807, 867, 923, 935, 943, 955, 967, 971, 975, 983, 995, 1003, 1015, 1027, 1031, 1035, 1043, 1055, 1063, 1075, 1087, 1091, 1095, 1103, 1115

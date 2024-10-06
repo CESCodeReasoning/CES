@@ -1,0 +1,5 @@
+The function `vowels_count` is called with ( s = "abcde" ).
+`s` is "abcde", which does not contain any vowels.
+The condition `s[-1] == 'y' or s[-1] == 'Y'` is true, therefore the if branch is taken and the method returns 1
+
+Therefore, the final output of the function `vowels_count("abcde")` is 1.

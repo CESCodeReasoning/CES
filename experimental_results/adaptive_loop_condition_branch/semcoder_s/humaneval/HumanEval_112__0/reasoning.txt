@@ -1,0 +1,8 @@
+The function `reverse_delete` takes two arguments `s` and `c`. It first removes all occurrences of characters in `c` from `s`. Then, it checks if the resulting string `s` is the same when reversed as it is forward.
+
+For the input `reverse_delete("abcdedcba","v")`:
+- The string `s` after removing characters in `c` is `"abcdedcba"`.
+- The reversed string `s[::-1]` is also `"abcdedcba"`.
+- Therefore, the second element of the tuple returned by the function is `True`.
+
+So, the output of the function `reverse_delete("abcdedcba","v")` is `("abcdedcba", True)`.

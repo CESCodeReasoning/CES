@@ -1,0 +1,29 @@
+The function common(l1, l2) takes two lists as its parameters.
+The outer loop iterates through each element in the first list, l1.
+The inner loop iterates through each element in the second list, l2.
+First Iteration (l1=[5, 3, 2, 8], l2=[3, 2]):
+    - `l1[i]=5`: compare with `l2[j]=3`:
+        - When `j=0`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=1`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=2`, the condition `l1[i] == l2[j]` is True, the if branch is taken. Add 5 to ret.
+    - `l1[i]=3`: compare with `l2[j]=2`:
+        - When `j=0`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=1`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=2`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+    - `l1[i]=2`: compare with `l2[j]=8`:
+        - When `j=0`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=1`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=2`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+    - `l1[i]=8`: compare with `l2[j]=2`:
+        - When `j=0`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=1`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=2`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+Second Iteration (l1=[5, 3, 2, 8], l2=[3, 2]):
+    - `l1[i]=5`: compare with `l2[j]=3`:
+        - When `j=0`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=1`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=2`, the condition `l1[i] == l2[j]` is True, the if branch is taken. Add 5 to ret.
+    - `l1[i]=3`: compare with `l2[j]=2`:
+        - When `j=0`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=1`, the condition `l1[i] == l2[j]` is False, the if branch is not taken.
+        - When `j=2`, the condition `l1[i] == l2[j]` is False, the if branch

@@ -1,0 +1,20 @@
+```response
+                if i%2 == 1:
+                    even -= 1
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(word):
+    if len(word) == 0:
+        return True
+    if word[0] == word[-1]:
+        return is_palindrome(word[1:-1])
+    return False
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("a") == True
+    assert is_palindrome("ab") == False

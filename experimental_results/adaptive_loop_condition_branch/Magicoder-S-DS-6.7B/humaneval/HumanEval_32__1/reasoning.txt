@@ -1,0 +1,129 @@
+The function `find_zero` is called with ( xs = [5, 8, -12, 4, 23, 2, 3, 11, 12, -10] ).
+The function `poly` is used to calculate the value of the polynomial at a given point.
+The function `find_zero` uses a binary search algorithm to find a root of the polynomial.
+The loop iterates until the difference between `begin` and `end` is less than 1e-10.
+First Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Second Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Third Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Fourth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Fifth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Sixth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Seventh Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Eighth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Ninth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Tenth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Eleventh Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twelfth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirteenth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Fourteenth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Fifteenth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Sixteenth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Seventeenth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Eighteenth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Nineteenth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twentieth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twenty-first Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twenty-second Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twenty-third Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twenty-fourth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twenty-fifth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twenty-sixth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twenty-seventh Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twenty-eighth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Twenty-ninth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirtieth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirty-first Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirty-second Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirty-third Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirty-fourth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirty-fifth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirty-sixth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirty-seventh Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirty-eighth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Thirty-ninth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Fortieth Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Forty-first Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are doubled.
+Forty-second Iteration:
+    - The

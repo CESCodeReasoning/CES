@@ -1,0 +1,64 @@
+The function `fix_spaces` is called with (text = "Yellow Yellow  Dirty  Fellow").
+Inside the function, a variable `new_text` is initialized to an empty string.
+The loop iterates through the characters in `text`.
+First Iteration (i = 0):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Y".
+Second Iteration (i = 1):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Ye".
+Third Iteration (i = 2):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel".
+Fourth Iteration (i = 3):
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 1.
+Fifth Iteration (i = 4):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-".
+Sixth Iteration (i = 5):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-l".
+Seventh Iteration (i = 6):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll".
+Eighth Iteration (i = 7):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_".
+Ninth Iteration (i = 8):
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 2.
+Tenth Iteration (i = 9):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_D".
+Eleventh Iteration (i = 10):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_Di".
+Twelfth Iteration (i = 11):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_Dir".
+Thirteenth Iteration (i = 12):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_Dirt".
+Fourteenth Iteration (i = 13):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_Dirt_".
+Fifteenth Iteration (i = 14):
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 3.
+Sixteenth Iteration (i = 15):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_Dirt_F".
+Seventeenth Iteration (i = 16):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_Dirt_Fe".
+Eighteenth Iteration (i = 17):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_Dirt_Fel".
+Nineteenth Iteration (i = 18):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_Dirt_Fell".
+Twentieth Iteration (i = 19):
+    - The condition `text[i] == " "` is false. The first branch is not taken.
+    - The else branch is taken. `new_text += text[i]` updates `new_text` to "Yel-ll_Dirt_Fellow".
+After the loop completes, the function returns the value of `new_text`, which is now "Yel-ll_Dirt_Fellow".

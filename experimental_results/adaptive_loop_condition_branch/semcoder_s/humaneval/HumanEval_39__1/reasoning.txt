@@ -1,0 +1,139 @@
+The function `prime_fib` is called with ( n = 4 ).
+Inside the function, a list `f` is initialized with the first two Fibonacci numbers: [0, 1].
+The while loop starts an infinite loop that generates Fibonacci numbers and checks if they are prime.
+First Iteration:
+    - The Fibonacci number 1 is generated.
+    - The function `is_prime` is called with ( p = 1 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Second Iteration:
+    - The Fibonacci number 1 is generated.
+    - The function `is_prime` is called with ( p = 1 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Third Iteration:
+    - The Fibonacci number 2 is generated.
+    - The function `is_prime` is called with ( p = 2 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Fourth Iteration:
+    - The Fibonacci number 3 is generated.
+    - The function `is_prime` is called with ( p = 3 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Fifth Iteration:
+    - The Fibonacci number 5 is generated.
+    - The function `is_prime` is called with ( p = 5 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Sixth Iteration:
+    - The Fibonacci number 8 is generated.
+    - The function `is_prime` is called with ( p = 8 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Seventh Iteration:
+    - The Fibonacci number 13 is generated.
+    - The function `is_prime` is called with ( p = 13 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Eighth Iteration:
+    - The Fibonacci number 21 is generated.
+    - The function `is_prime` is called with ( p = 21 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Ninth Iteration:
+    - The Fibonacci number 34 is generated.
+    - The function `is_prime` is called with ( p = 34 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Tenth Iteration:
+    - The Fibonacci number 55 is generated.
+    - The function `is_prime` is called with ( p = 55 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Eleventh Iteration:
+    - The Fibonacci number 89 is generated.
+    - The function `is_prime` is called with ( p = 89 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Twelfth Iteration:
+    - The Fibonacci number 144 is generated.
+    - The function `is_prime` is called with ( p = 144 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Thirteenth Iteration:
+    - The Fibonacci number 233 is generated.
+    - The function `is_prime` is called with ( p = 233 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Fourteenth Iteration:
+    - The Fibonacci number 377 is generated.
+    - The function `is_prime` is called with ( p = 377 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Fifteenth Iteration:
+    - The Fibonacci number 610 is generated.
+    - The function `is_prime` is called with ( p = 610 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Sixteenth Iteration:
+    - The Fibonacci number 987 is generated.
+    - The function `is_prime` is called with ( p = 987 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Seventeenth Iteration:
+    - The Fibonacci number 1597 is generated.
+    - The function `is_prime` is called with ( p = 1597 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Eighteenth Iteration:
+    - The Fibonacci number 2584 is generated.
+    - The function `is_prime` is called with ( p = 2584 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Nineteenth Iteration:
+    - The Fibonacci number 4181 is generated.
+    - The function `is_prime` is called with ( p = 4181 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Twentieth Iteration:
+    - The Fibonacci number 6765 is generated.
+    - The function `is_prime` is called with ( p = 6765 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Twenty-First Iteration:
+    - The Fibonacci number 10946 is generated.
+    - The function `is_prime` is called with ( p = 10946 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Twenty-Second Iteration:
+    - The Fibonacci number 17711 is generated.
+    - The function `is_prime` is called with ( p = 17711 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Twenty-Third Iteration:
+    - The Fibonacci number 28657 is generated.
+    - The function `is_prime` is called with ( p = 28657 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Twenty-Fourth Iteration:
+    - The Fibonacci number 46368 is generated.
+    - The function `is_prime` is called with ( p = 46368 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Twenty-Fifth Iteration:
+    - The Fibonacci number 75025 is generated.
+    - The function `is_prime` is called with ( p = 75025 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Twenty-Sixth Iteration:
+    - The Fibonacci number 121393 is generated.
+    - The function `is_prime` is called with ( p = 121393 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Twenty-Seventh Iteration:
+    - The Fibonacci number 196418 is generated.
+    - The function `is_prime` is called with ( p = 196418 ).
+    - The condition `p < 2` is false, so the first branch is not taken.
+    - The loop continues.
+Twenty-Eighth Iteration:

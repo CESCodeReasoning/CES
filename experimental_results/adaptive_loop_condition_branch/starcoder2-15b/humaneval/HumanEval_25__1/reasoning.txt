@@ -1,0 +1,81 @@
+The function `factorize` is called with ( n = 3 * 19 * 3 * 19 ).
+Inside the function, a variable `fact` is initialized to an empty list.
+The loop iterates from 2 through the square root of 3 * 19 * 3 * 19 + 1 (which is 19.5).
+First Iteration (i = 2):
+    - i <= 19.5 when i=2
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 2 to the list `fact`.
+    - `n //= i` updates `n` to 19 * 3 * 19 ( 3 * 19 * 3 * 19 // 2 = 19 * 3 * 19 ).
+Second Iteration (i = 3):
+    - i <= 19.5 when i=3
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 3 to the list `fact`.
+    - `n //= i` updates `n` to 19 * 19 ( 19 * 3 * 19 // 3 = 19 * 19 ).
+Third Iteration (i = 4)
+    - i <= 19.5 when i=4.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 5.
+Fourth Iteration (i = 5)
+    - i <= 19.5 when i=5.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 6.
+Fifth Iteration (i = 6)
+    - i <= 19.5 when i=6.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 7.
+Sixth Iteration (i = 7)
+    - i <= 19.5 when i=7.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 8.
+Seventh Iteration (i = 8)
+    - i <= 19.5 when i=8.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 9.
+Eighth Iteration (i = 9)
+    - i <= 19.5 when i=9.
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 9 to the list `fact`.
+    - `n //= i` updates `n` to 19 ( 19 * 19 // 9 = 19 ).
+Ninth Iteration (i = 10)
+    - i <= 19.5 when i=10.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 11.
+Tenth Iteration (i = 11)
+    - i <= 19.5 when i=11.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 12.
+Eleventh Iteration (i = 12)
+    - i <= 19.5 when i=12.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 13.
+Twelfth Iteration (i = 13)
+    - i <= 19.5 when i=13.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 14.
+Thirteenth Iteration (i = 14)
+    - i <= 19.5 when i=14.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 15.
+Fourteenth Iteration (i = 15)
+    - i <= 19.5 when i=15.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 16.
+Fifteenth Iteration (i = 16)
+    - i <= 19.5 when i=16.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 17.
+Sixteenth Iteration (i = 17)
+    - i <= 19.5 when i=17.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 18.
+Seventeenth Iteration (i = 18)
+    - i <= 19.5 when i=18.
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 19.
+Eighteenth Iteration (i = 19)
+    - i <= 19.5 when i=19.
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 19 to the list `fact`.
+    - `n //= i` updates `n` to 1 ( 19 // 19 = 1 ).
+After the loop completes, the condition `n > 1` is false. The else branch is not taken.
+The function returns the list `fact`, which is now [2, 3, 3, 19, 9, 19].

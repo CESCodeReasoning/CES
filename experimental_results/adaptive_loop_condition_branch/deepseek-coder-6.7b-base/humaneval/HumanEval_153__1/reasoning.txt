@@ -1,0 +1,16 @@
+The function `Strongest_Extension` is called with ( class_name = 'finNNalLLly', extensions = ['Die', 'NowW', 'Wow', 'WoW'] ).
+
+Iteration 1:
+    -The extension 'Die' has 1 uppercase letter and 2 lowercase letters, so val becomes 1.
+    -Since val is greater than my_val, strong becomes 'Die' and my_val becomes 1.
+Iteration 2:
+    -The extension 'NowW' has 1 uppercase letter and 3 lowercase letters, so val becomes 1.
+    -Since val is greater than my_val, strong becomes 'NowW' and my_val becomes 1.
+Iteration 3:
+    -The extension 'Wow' has 1 uppercase letter and 2 lowercase letters, so val becomes 1.
+    -Since val is greater than my_val, strong becomes 'Wow' and my_val becomes 1.
+Iteration 4:
+    -The extension 'WoW' has 1 uppercase letter and 2 lowercase letters, so val becomes 1.
+    -Since val is greater than my_val, strong becomes 'WoW' and my_val becomes 1.
+
+Therefore, the final output of the function `Strongest_Extension('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW'])` is 'finNNalLLly.WoW'.

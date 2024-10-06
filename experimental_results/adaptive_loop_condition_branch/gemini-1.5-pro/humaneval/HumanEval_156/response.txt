@@ -1,0 +1,71 @@
+[REASONING]
+The function `int_to_mini_roman` is called with ( number = 19 ).
+Inside the function, a list `num` and a list `sym` are initialized with the corresponding values and symbols for Roman numerals.
+A variable `i` is initialized to 12, which is the index of the last element in the `num` list.
+A variable `res` is initialized to an empty string, which will store the Roman numeral representation of the number.
+The while loop continues as long as `number` is not 0.
+First Iteration:
+    - `number // num[i]` is 19 // 1000 = 0, so `div` is 0.
+    - The inner while loop is skipped.
+    - `i` is decremented to 11.
+Second Iteration:
+    - `number // num[i]` is 19 // 900 = 0, so `div` is 0.
+    - The inner while loop is skipped.
+    - `i` is decremented to 10.
+Third Iteration:
+    - `number // num[i]` is 19 // 500 = 0, so `div` is 0.
+    - The inner while loop is skipped.
+    - `i` is decremented to 9.
+Fourth Iteration:
+    - `number // num[i]` is 19 // 100 = 0, so `div` is 0.
+    - The inner while loop is skipped.
+    - `i` is decremented to 8.
+Fifth Iteration:
+    - `number // num[i]` is 19 // 90 = 0, so `div` is 0.
+    - The inner while loop is skipped.
+    - `i` is decremented to 7.
+Sixth Iteration:
+    - `number // num[i]` is 19 // 50 = 0, so `div` is 0.
+    - The inner while loop is skipped.
+    - `i` is decremented to 6.
+Seventh Iteration:
+    - `number // num[i]` is 19 // 40 = 0, so `div` is 0.
+    - The inner while loop is skipped.
+    - `i` is decremented to 5.
+Eighth Iteration:
+    - `number // num[i]` is 19 // 10 = 1, so `div` is 1.
+    - The inner while loop iterates once, appending "X" to `res`.
+    - `div` is decremented to 0.
+    - `number` is updated to 19 % 10 = 9.
+    - `i` is decremented to 4.
+Ninth Iteration:
+    - `number // num[i]` is 9 // 9 = 1, so `div` is 1.
+    - The inner while loop iterates once, appending "IX" to `res`.
+    - `div` is decremented to 0.
+    - `number` is updated to 9 % 9 = 0.
+    - The while loop terminates.
+The function returns the value of `res`, which is "XIX".
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def int_to_mini_roman(number):
+    num = [1, 4, 5, 9, 10, 40, 50, 90,  
+           100, 400, 500, 900, 1000] 
+    sym = ["I", "IV", "V", "IX", "X", "XL",  
+           "L", "XC", "C", "CD", "D", "CM", "M"] 
+    i = 12
+    res = ''
+    while number:  ## [STATE]number=[19, 9][/STATE]
+        div = number // num[i] 
+        number %= num[i] 
+        while div:  ## [STATE]div=[1, 1][/STATE]
+            res += sym[i] 
+            div -= 1
+        i -= 1
+    return res.lower()
+[/ANSWER]
+
+[OUTPUT]
+xix
+[/OUTPUT]

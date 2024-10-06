@@ -1,0 +1,10 @@
+from typing import *
+
+
+def prime_fib(n: int):
+    import math
+
+    def is_prime(p):
+        if p < 2: ## [CONDITION](p < 2)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            return False
+        for k in range(2, min(int(math.sqrt(p)) + 1, p - 1)): ## [STATE]k=??[/STATE][STATE]range(2, min((int(math.sqrt(p)) + 1), (p - 1)))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE][STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE]min((int(math.sqrt(p)) + 1), (p - 1))=??[/STATE]min((int(math.sqrt(p)) + 1), (p) = 1) + 1) = (math.sqrt(p) + 1) = 1) + 1) = (math.sqrt(p) + 1) = 1) + 1) = (math.sqrt(p) + 1) + 1) = (p) + 1) + 1) = 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 

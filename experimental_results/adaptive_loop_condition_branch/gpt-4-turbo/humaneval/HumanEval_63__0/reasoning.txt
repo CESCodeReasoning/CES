@@ -1,0 +1,12 @@
+The function `fibfib` is called with ( n = 1 ).
+The function checks if `n` is 0, 1, or 2, and returns specific values for these cases:
+- If `n == 0`, it returns 0.
+- If `n == 1`, it returns 0.
+- If `n == 2`, it returns 1.
+For any other value of `n`, it calculates the sum of the results of `fibfib(n-1)`, `fibfib(n-2)`, and `fibfib(n-3)`.
+
+In this case, since `n` is 1:
+- The condition `n == 0` is false.
+- The condition `n == 1` is true, so the function returns 0 without further recursion.
+
+Therefore, the final output of the function `fibfib(1)` is 0.

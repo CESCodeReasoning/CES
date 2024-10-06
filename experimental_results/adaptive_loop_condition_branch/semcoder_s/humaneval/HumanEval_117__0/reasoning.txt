@@ -1,0 +1,12 @@
+The function select_words(s, n) takes a string `s` and an integer `n` as its parameters.
+The function splits the string `s` into words and iterates through each word.
+For each word, it counts the number of consonants.
+If the number of consonants in a word is equal to `n`, it appends the word to the result list.
+Finally, it returns the list of words that have `n` consonants.
+
+First Iteration (word="Hello"):
+    - The word "Hello" has 3 consonants (H, l, l).
+    - The condition `n_consonants == n` is False.
+Second Iteration (word="world"):
+    - The word "world" has 3 consonants (w, r, l).
+    - The condition `n_consonants == n` is False.

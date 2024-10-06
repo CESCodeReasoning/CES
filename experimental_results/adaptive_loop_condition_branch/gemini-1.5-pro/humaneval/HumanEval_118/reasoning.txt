@@ -1,0 +1,14 @@
+The function `get_closest_vowel` is called with ( word = "yogurt" ).
+The length of the word is 6, which is greater than 3, so the first condition is false.
+The function initializes a set of vowels.
+The loop iterates from index 4 to 1 (inclusive) in reverse order.
+Iteration 1:
+    - The character at index 4 is 'r', which is not in vowels.
+Iteration 2:
+    - The character at index 3 is 't', which is not in vowels.
+Iteration 3:
+    - The character at index 2 is 'u', which is in vowels.
+    - The character at index 1 is 'o', which is also in vowels.
+    - The character at index 3 is 't', which is not in vowels.
+    - The condition `(word[i+1] not in vowels) and (word[i-1] not in vowels)` is true.
+    - The function returns 'u'.

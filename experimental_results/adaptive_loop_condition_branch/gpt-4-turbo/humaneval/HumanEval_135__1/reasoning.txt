@@ -1,0 +1,25 @@
+The function `can_arrange` is called with the array `[4, 8, 5, 7, 3]`.
+Inside the function, a variable `ind` is initialized to -1.
+The loop iterates from `i = 1` to `i = 4` (since the length of the array is 5).
+
+First Iteration (i = 1):
+    - The condition `i < len(arr)` is true when `i = 1` and `len(arr) = 5`.
+    - The condition `arr[i] < arr[i - 1]` is false because `arr[1] = 8` is not less than `arr[0] = 4`.
+    - The branch is not taken, and `ind` remains -1.
+
+Second Iteration (i = 2):
+    - The condition `i < len(arr)` is true when `i = 2`.
+    - The condition `arr[i] < arr[i - 1]` is true because `arr[2] = 5` is less than `arr[1] = 8`.
+    - The branch is taken, and `ind` is updated to 2.
+
+Third Iteration (i = 3):
+    - The condition `i < len(arr)` is true when `i = 3`.
+    - The condition `arr[i] < arr[i - 1]` is false because `arr[3] = 7` is not less than `arr[2] = 5`.
+    - The branch is not taken, and `ind` remains 2.
+
+Fourth Iteration (i = 4):
+    - The condition `i < len(arr)` is true when `i = 4`.
+    - The condition `arr[i] < arr[i - 1]` is true because `arr[4] = 3` is less than `arr[3] = 7`.
+    - The branch is taken, and `ind` is updated to 4.
+
+After the loop completes, the function returns the value of `ind`, which is now 4.

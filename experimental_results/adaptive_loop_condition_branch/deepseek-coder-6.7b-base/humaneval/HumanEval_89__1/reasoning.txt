@@ -1,0 +1,53 @@
+The function `encrypt` is called with ( s = 'asdfghjkl' ).
+Inside the function, a variable `d` is initialized to the string 'abcdefghijklmnopqrstuvwxyz'.
+
+Iteration 1:
+    -The character 'a' is in d, so the index of 'a' is 0.
+    -The index of 'a' is multiplied by 2, which is 0.
+    -The index of 'a' is added to 0, which is 0.
+    -The index of 'a' is modulo 26, which is 0.
+    -The character at index 0 in d is 'a', so the output is 'a'.
+Iteration 2:
+    -The character 's' is in d, so the index of 's' is 18.
+    -The index of 's' is multiplied by 2, which is 36.
+    -The index of 's' is added to 36, which is 42.
+    -The index of 's' is modulo 26, which is 10.
+    -The character at index 10 in d is 'k', so the output is 'k'.
+Iteration 3:
+    -The character 'd' is in d, so the index of 'd' is 3.
+    -The index of 'd' is multiplied by 2, which is 6.
+    -The index of 'd' is added to 6, which is 12.
+    -The index of 'd' is modulo 26, which is 12.
+    -The character at index 12 in d is 'm', so the output is 'm'.
+Iteration 4:
+    -The character 'f' is in d, so the index of 'f' is 5.
+    -The index of 'f' is multiplied by 2, which is 10.
+    -The index of 'f' is added to 10, which is 20.
+    -The index of 'f' is modulo 26, which is 6.
+    -The character at index 6 in d is 'g', so the output is 'g'.
+Iteration 5:
+    -The character 'g' is in d, so the index of 'g' is 6.
+    -The index of 'g' is multiplied by 2, which is 12.
+    -The index of 'g' is added to 12, which is 24.
+    -The index of 'g' is modulo 26, which is 0.
+    -The character at index 0 in d is 'a', so the output is 'a'.
+Iteration 6:
+    -The character 'h' is in d, so the index of 'h' is 7.
+    -The index of 'h' is multiplied by 2, which is 14.
+    -The index of 'h' is added to 14, which is 28.
+    -The index of 'h' is modulo 26, which is 4.
+    -The character at index 4 in d is 'e', so the output is 'e'.
+Iteration 7:
+    -The character 'j' is in d, so the index of 'j' is 9.
+    -The index of 'j' is multiplied by 2, which is 18.
+    -The index of 'j' is added to 18, which is 36.
+    -The index of 'j' is modulo 26, which is 10.
+    -The character at index 10 in d is 'k', so the output is 'k'.
+Iteration 8:
+    -The character 'k' is in d, so the index of 'k' is 10.
+    -The index of 'k' is multiplied by 2, which is 20.
+    -The index of 'k' is added to 20, which is 40.
+    -The index of 'k' is modulo 26, which is 16.
+    -The character at index 16 in d is 'q', so the output is 'q'.
+Iteration 9:
+    -The character 'l' is in d, so the index of 'l' is 11.

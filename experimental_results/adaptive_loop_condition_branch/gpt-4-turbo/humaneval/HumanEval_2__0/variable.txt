@@ -1,0 +1,6 @@
+from typing import *
+
+
+def truncate_number(number: float) -> float:
+    # [STATE] number is 123.456 [/STATE]
+    return number % 1.0  # [STATE] return value is 0.456 [/STATE]

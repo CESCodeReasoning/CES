@@ -1,0 +1,3 @@
+The function string_to_md5 takes a string text as input and returns the MD5 hash of the string.
+To determine the output of executing the function string_to_md5 on the input "A B C", we need to first encode the string "A B C" to ASCII and then calculate the MD5 hash of the encoded string.
+The MD5 hash of the encoded string is "900150983cd24fb0d6963f7d28e17f72".

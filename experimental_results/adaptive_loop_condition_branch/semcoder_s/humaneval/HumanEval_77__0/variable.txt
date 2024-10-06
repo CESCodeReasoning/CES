@@ -1,0 +1,6 @@
+from typing import *
+
+
+def iscube(a: Union[int, float]) -> bool:
+    a = abs(a)  # [STATE]: The absolute value of the input number `a` is calculated.
+    return int(round(a ** (1. / 3))) ** 3 == a  # [CONDITION]: The condition `int(round(a ** (1. / 3))) ** 3 == a` is checked.

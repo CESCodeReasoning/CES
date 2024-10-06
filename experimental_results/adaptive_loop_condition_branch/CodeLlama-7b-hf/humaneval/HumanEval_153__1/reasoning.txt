@@ -1,0 +1,20 @@
+The function `Strongest_Extension` is called with ( class_name = "finNNalLLly", extensions = ["Die", "NowW", "Wow", "WoW"] ).
+Inside the function, a variable `strong` is initialized to the first element of `extensions`, which is "Die".
+A variable `my_val` is initialized to the difference between the number of uppercase letters and the number of lowercase letters in "Die".
+The loop iterates through the elements of `extensions`.
+First Iteration (s = "Die")
+   - The condition `val > my_val` is true.
+   - Action: `strong` is updated to "Die".
+   - Action: `my_val` is updated to the difference between the number of uppercase letters and the number of lowercase letters in "Die".
+Second Iteration (s = "NowW")
+   - The condition `val > my_val` is false.
+   - Action: `strong` is not updated.
+   - Action: `my_val` is not updated.
+Third Iteration (s = "Wow")
+   - The condition `val > my_val` is false.
+   - Action: `strong` is not updated.
+   - Action: `my_val` is not updated.
+Fourth Iteration (s = "WoW")
+   - The condition `val > my_val` is true.
+   - Action: `strong` is updated to "WoW".
+   - Action: `my_val` is updated to the difference between the number of uppercase letters and the number of lowercase letters in "WoW".

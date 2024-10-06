@@ -1,0 +1,23 @@
+The function `fib4` is called with ( n = 12 ).
+Inside the function, a list `results` is initialized to [0, 0, 2, 0].
+The condition ( n < 4 ) is not satisfied, therefore the if branch is not taken.
+The loop iterates from 4 through 12 (since ( n + 1 = 13 )).
+First Iteration (i = 4):
+    results = [0, 0, 2, 0, 2]
+Second Iteration (i = 5):
+    results = [0, 0, 2, 0, 2, 4]
+Third Iteration (i = 6)
+    results = [0, 0, 2, 0, 2, 4, 6]
+Fourth Iteration (i = 7)
+    results = [0, 0, 2, 0, 2, 4, 6, 8]
+Fifth Iteration (i = 8)
+    results = [0, 0, 2, 0, 2, 4, 6, 8, 10]
+Sixth Iteration (i = 9)
+    results = [0, 0, 2, 0, 2, 4, 6, 8, 10, 12]
+Seventh Iteration (i = 10)
+    results = [0, 0, 2, 0, 2, 4, 6, 8, 10, 12, 14]
+Eighth Iteration (i = 11)
+    results = [0, 0, 2, 0, 2, 4, 6, 8, 10, 12, 14, 16]
+Ninth Iteration (i = 12)
+    results = [0, 0, 2, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+After the loop completes, the function returns `results[-1]` as the output.

@@ -1,0 +1,10 @@
+The function `derivative` calculates the derivative of a list of numbers. The derivative of a list of numbers is calculated by multiplying each element by its index and then removing the first element.
+
+Given the input `[3, 1, 2, 4, 5]`, the derivative calculation is as follows:
+- For the first element `3` at index `0`, the derivative is `0 * 3 = 0`.
+- For the second element `1` at index `1`, the derivative is `1 * 1 = 1`.
+- For the third element `2` at index `2`, the derivative is `2 * 2 = 4`.
+- For the fourth element `4` at index `3`, the derivative is `3 * 4 = 12`.
+- For the fifth element `5` at index `4`, the derivative is `4 * 5 = 20`.
+
+Therefore, the derivative of `[3, 1, 2, 4, 5]` is `[1, 4, 12, 20]`.

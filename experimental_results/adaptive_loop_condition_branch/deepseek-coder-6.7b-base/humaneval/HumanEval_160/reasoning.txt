@@ -1,0 +1,18 @@
+The function `do_algebra` is called with (operator = ['**', '*', '+'], operand = [2, 3, 4, 5]).
+The function `do_algebra` takes two arguments: `operator` and `operand`.
+`operator` is a list of strings that represent the operators to be applied to the operands.
+`operand` is a list of integers that represent the operands to be used in the calculation.
+
+The function `do_algebra` initializes a variable `expression` to the string representation of the first operand in `operand`.
+
+The function then iterates over the `operator` and `operand` lists using the `zip` function.
+
+The `zip` function combines the elements of `operator` and `operand[1:]` into tuples, where the first element of each tuple is the corresponding element from `operator` and the second element is the corresponding element from `operand[1:]`.
+
+For each iteration, the function concatenates the current operator and operand to the `expression` variable using the `+` operator.
+
+After the loop completes, the function evaluates the `expression` variable using the `eval` function and returns the result.
+
+The `eval` function evaluates the string representation of the expression and returns the result of the calculation.
+
+In this example, the function `do_algebra` returns the result of the calculation `2**3*4+5`, which is `41`.

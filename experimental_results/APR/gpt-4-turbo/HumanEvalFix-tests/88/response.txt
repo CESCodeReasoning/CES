@@ -1,0 +1,26 @@
+Here is the fixed code for both functions, `has_close_elements` and `sort_array`, with the corrections applied as per the specifications provided:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `sort_array`
+```python
+def sort_array(array):
+    if len(array) == 0:
+        return []
+    else:
+        return sorted(array, reverse=(array[0] + array[-1]) % 2 == 0)
+```
+
+These corrections ensure that the functions behave as expected based on the problem descriptions and test cases provided. The `has_close_elements` function now correctly calculates the absolute distance between elements to check against the threshold. The `sort_array` function correctly determines the sorting order based on whether the sum of the first and last elements is even or odd.

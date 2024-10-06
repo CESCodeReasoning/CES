@@ -1,0 +1,10 @@
+The function `longest` is called with ( strings = ['x', 'yyy', 'zzzz', 'www', 'kkkk', 'abc'] ).
+The condition `not strings` is `False`, so we proceed to the next line.
+The `maxlen` variable is assigned the maximum length of strings in the list, which is 4 in this case.
+Iteration 1:
+    -The string 'x' has a length of 1, which is not equal to `maxlen`.
+Iteration 2:
+    -The string 'yyy' has a length of 3, which is not equal to `maxlen`.
+Iteration 3:
+    -The string 'zzzz' has a length of 4, which is equal to `maxlen`.
+    -The function returns 'zzzz'.

@@ -1,0 +1,26 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterates through each element in the range(1, n + 1).
+In the inner loop, for each element i in the outer loop, check if i is even.
+If i is even, multiply i by each element in the range(1, i + 1).
+If i is odd, add each element in the range(1, i + 1) to a variable x.
+The function returns a list of all the results.
+First Iteration (i=1):
+    - `i` is 1, j in the inner loop is 1, 2, 3, 4, 5, 6, 7.
+    - `i` is even, multiply `i` by each element in the range(1, i + 1):
+        - `i` is 2, j in the inner loop is 1, 2, 3, 4, 5, 6, 7.
+        - `i` is even, multiply `i` by each element in the range(1, i + 1):
+            - `i` is 4, j in the inner loop is 1, 2, 3, 4, 5, 6, 7.
+            - `i` is even, multiply `i` by each element in the range(1, i + 1):
+                - `i` is 8, j in the inner loop is 1, 2, 3, 4, 5, 6, 7.
+                - `i` is even, multiply `i` by each element in the range(1, i + 1):
+                    - `i` is 16, j in the inner loop is 1, 2, 3, 4, 5, 6, 7.
+                    - `i` is even, multiply `i` by each element in the range(1, i + 1):
+                        - `i` is 32, j in the inner loop is 1, 2, 3, 4, 5, 6, 7.
+                        - `i` is even, multiply `i` by each element in the range(1, i + 1):
+                            - `i` is 64, j in the inner loop is 1, 2, 3, 4, 5, 6, 7.
+                            - `i` is even, multiply `i` by each element in the range(1, i + 1):
+                                - `i` is 128, j in the inner loop is 1, 2, 3, 4, 5, 6, 7.
+                                - `i` is even, multiply `i` by each element in the range(1, i + 1):
+                                    - `i` is 256, j in the inner loop is 1, 2, 3, 4, 5, 6, 7.
+                                    - `i` is even, multiply `i` by each element in the range(1, i + 1):
+                                        - `i` is 512, j in the inner loop is 1, 2, 3, 4,

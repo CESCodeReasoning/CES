@@ -1,0 +1,7 @@
+The function `by_length` is called with (arr = [] ).
+Inside the function, a dictionary `dic` is defined to map numbers to their corresponding string representations.
+A new list `sorted_arr` is created by sorting the input list `arr` in descending order.
+An empty list `new_arr` is created to store the string representations of the numbers in `sorted_arr`.
+The loop iterates over the elements in `sorted_arr`.
+First Iteration (var = 0):
+    `var` is not a key in the `dic` dictionary, so the `except` block is executed and nothing is added to `new_arr`.

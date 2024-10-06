@@ -1,0 +1,16 @@
+The function `match_parens` is called with ( lst = ['())(', '()'] ).
+Inside the function, a helper function `check` is defined.
+The function `check` takes a string `s` as input and returns True if the parentheses in `s` are balanced, and False otherwise.
+The function `match_parens` then creates two strings, `S1` and `S2`, by concatenating the two strings in `lst`.
+It then calls the `check` function on both `S1` and `S2`.
+If either `S1` or `S2` is balanced, the function returns 'Yes', otherwise it returns 'No'.
+
+In this case, `S1` is '())(' and `S2` is '()('.
+The `check` function is called on `S1`.
+The first character of `S1` is ')', which is not a valid opening parenthesis.
+Therefore, the `check` function returns False.
+The `check` function is then called on `S2`.
+The first character of `S2` is '(', which is a valid opening parenthesis.
+The second character of `S2` is ')', which is a valid closing parenthesis.
+Therefore, the `check` function returns True.
+Since one of the strings is balanced, the `match_parens` function returns 'Yes'.

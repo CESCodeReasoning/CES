@@ -1,0 +1,6 @@
+from typing import *
+
+
+def flip_case(string: str) -> str:
+    # [STATE] string = "These violent delights have violent ends" [/STATE]
+    return string.swapcase()  # [STATE] return value = "tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS" [/STATE]

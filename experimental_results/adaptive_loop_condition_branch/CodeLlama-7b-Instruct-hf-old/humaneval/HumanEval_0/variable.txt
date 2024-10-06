@@ -1,0 +1,10 @@
+from typing import *
+def has_close_elements(numbers: List[float], threshold: float) -> bool: ## [STATE]idx=??[/STATE][STATE]elem=??[/STATE]
+    for idx, elem in enumerate(numbers): ## [STATE]idx2=??[/STATE][STATE]elem2=??[/STATE][STATE]enumerate(numbers)=??[/STATE][STATE]numbers=??[/STATE]
+        for idx2, elem2 in enumerate(numbers): ## [STATE]enumerate(numbers)=??[/STATE][STATE]numbers=??[/STATE]
+            if idx != idx2: ## [CONDITION](idx != idx2)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                distance = abs(elem - elem2)
+                if distance < threshold: ## [CONDITION](distance < threshold)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                    return True
+
+    return False

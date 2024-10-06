@@ -1,0 +1,14 @@
+The function `triangle_area` is called with ( a = 1, b = 2, c = 3 ).
+The condition `a + b <= c or a + c <= b or b + c <= a` is false, therefore the if branch is not taken and the method returns the area of the triangle.
+
+The area of the triangle is calculated using Heron's formula:
+
+`s = (a + b + c) / 2`
+
+`area = (s * (s - a) * (s - b) * (s - c)) ** 0.5`
+
+`area = round(area, 2)`
+
+The area of the triangle is rounded to two decimal places using the `round` function.
+
+Therefore, the final output of the function `triangle_area(1, 2, 3)` is 0.99.

@@ -1,0 +1,7 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: compare_one
+main.py(3):     temp_a, temp_b = a, b
+main.py(4):     if isinstance(temp_a, str): temp_a = temp_a.replace(',','.')
+main.py(5):     if isinstance(temp_b, str): temp_b = temp_b.replace(',','.')
+main.py(6):     if float(temp_a) == float(temp_b): return None
+main.py(7):     return a if float(temp_a) > float(temp_b) else b 

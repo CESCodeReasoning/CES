@@ -1,0 +1,16 @@
+```response
+            if n % j == 0 and is_prime(n):
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s: str) -> bool:
+    return s == s[::-1]
+
+def longest_palindrome(s: str) -> str:
+    longest = ""
+    for i in range(len(s)):
+        for j in range(i, len(s)):
+            substring =

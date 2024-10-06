@@ -1,0 +1,16 @@
+The function `sum_squares` is called with (lst = [1, 2, 3]).
+Inside the function, a variable `squared` is initialized to 0.
+The loop iterates through the elements of the list `lst`.
+First Iteration(i = 1):
+    `math.ceil(i)` = 1
+    `i**2` = 1**2 = 1
+    `squared` = 0 + 1 = 1
+Second Iteration(i = 2):
+    `math.ceil(i)` = 2
+    `i**2` = 2**2 = 4
+    `squared` = 1 + 4 = 5
+Third Iteration(i = 3):
+    `math.ceil(i)` = 3
+    `i**2` = 3**2 = 9
+    `squared` = 5 + 9 = 14
+After the loop completes, the function returns the value of `squared`, which is now 14.

@@ -1,0 +1,10 @@
+The function same_chars takes two strings s0 and s1 as input. It returns True if the two strings have the same characters, and False otherwise.
+
+To determine the output of executing the function same_chars on the inputs 'eabcd' and 'dddddddabc', we need to check if the two strings have the same characters.
+
+We can do this by converting each string to a set of characters and comparing the two sets. If the two sets are equal, the two strings have the same characters.
+
+In the first string 'eabcd', the unique characters are 'e', 'a', 'b', and 'c'.
+In the second string 'dddddddabc', the unique characters are 'd', 'a', 'b', and 'c'.
+
+Therefore, the output of executing the function same_chars on the inputs 'eabcd' and 'dddddddabc' is True.

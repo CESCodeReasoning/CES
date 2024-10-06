@@ -1,0 +1,116 @@
+The function select_words(s, n) takes a string s and an integer n as its parameters.
+The function splits the string s into a list of words using the space character as the delimiter.
+The outer loop iterates through each word in the list of words.
+In the inner loop, for each word indexed by i in the outer loop, count the number of consonants in the word.
+First Iteration (i=0):
+    - `i` is 0, word in the inner loop is "Hello".
+    - `n_consonants` is 0.
+    - `word[i].lower()` is "h".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True.
+    - `n_consonants` is incremented to 1.
+    - `n_consonants` is 1.
+Second Iteration (i=1):
+    - `i` is 1, word in the inner loop is "world".
+    - `n_consonants` is 1.
+    - `word[i].lower()` is "w".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True.
+    - `n_consonants` is incremented to 2.
+    - `n_consonants` is 2.
+Third Iteration (i=2):
+    - `i` is 2, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Forth Iteration (i=3):
+    - `i` is 3, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Fifth Iteration (i=4):
+    - `i` is 4, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Sixth Iteration (i=5):
+    - `i` is 5, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Seventh Iteration (i=6):
+    - `i` is 6, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Eighth Iteration (i=7):
+    - `i` is 7, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Ninth Iteration (i=8):
+    - `i` is 8, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Tenth Iteration (i=9):
+    - `i` is 9, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Eleventh Iteration (i=10):
+    - `i` is 10, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Twelfth Iteration (i=11):
+    - `i` is 11, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Thirteenth Iteration (i=12):
+    - `i` is 12, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Fourteenth Iteration (i=13):
+    - `i` is 13, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Fifteenth Iteration (i=14):
+    - `i` is 14, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.
+Sixteenth Iteration (i=15):
+    - `i` is 15, word in the inner loop is "".
+    - `n_consonants` is 2.
+    - `word[i].lower()` is "".
+    - `word[i].lower() not in ["a", "e", "i", "o", "u"]` is False.
+    - `n_consonants` is not incremented.
+    - `n_consonants` is 2.

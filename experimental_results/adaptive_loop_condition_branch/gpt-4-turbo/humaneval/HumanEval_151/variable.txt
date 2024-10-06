@@ -1,0 +1,6 @@
+from typing import *
+def double_the_difference(lst):
+    # [STATE] lst = [0.2, 3, 5] [/STATE]
+    return sum([i**2 for i in lst if i > 0 and i%2!=0 and "." not in str(i)])  # [CONDITION] i > 0 and i%2!=0 and "." not in str(i) [/CONDITION]
+    # [BRANCH] Y [/BRANCH] for i = 3 and i = 5
+    # [BRANCH] N [/BRANCH] for i = 0.2

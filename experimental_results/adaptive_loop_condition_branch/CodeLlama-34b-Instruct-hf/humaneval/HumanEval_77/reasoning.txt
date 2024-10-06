@@ -1,0 +1,7 @@
+The function iscube takes a single argument a and performs the following steps:
+
+1. It calculates the absolute value of a and assigns it to a.
+2. It raises a to the power of 1/3 and rounds it to the nearest integer.
+3. It raises the result of step 2 to the power of 3.
+4. It checks if the result of step 3 is equal to a.
+5. It returns True if the result of step 4 is True, and False otherwise.

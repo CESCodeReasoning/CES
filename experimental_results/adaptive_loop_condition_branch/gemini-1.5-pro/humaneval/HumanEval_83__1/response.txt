@@ -1,0 +1,21 @@
+[REASONING]
+The function `starts_one_ends` is called with ( n = 2 ).
+The condition `n == 1` is false, so the else branch is taken.
+The else branch returns `18 * (10 ** (n - 2))`, which evaluates to `18 * (10 ** (2 - 2)) = 18 * (10 ** 0) = 18`.
+
+Therefore, the final output of the function `starts_one_ends(2)` is 18.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def starts_one_ends(n):
+    if n == 1: ## [CONDITION](n == 1)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 1
+    return 18 * (10 ** (n - 2))
+[/ANSWER]
+
+[OUTPUT]
+18
+[/OUTPUT]

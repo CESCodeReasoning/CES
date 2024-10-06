@@ -1,0 +1,7 @@
+The function `split_words` is called with the string "Hello world,!".
+- The function first checks if there is a space (" ") in the string. Since "Hello world,!" contains a space between "Hello" and "world,!", the condition `" " in txt` evaluates to True.
+- As the condition is True, the first branch is taken, and the function proceeds to split the string based on spaces using `txt.split()`.
+- The string "Hello world,!" is split into the list `['Hello', 'world,!']`.
+- The function then returns this list.
+
+Therefore, the final output of the function `split_words("Hello world,!")` is `['Hello', 'world,!']`.

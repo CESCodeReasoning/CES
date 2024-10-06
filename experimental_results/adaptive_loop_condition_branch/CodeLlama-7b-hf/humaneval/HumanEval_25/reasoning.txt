@@ -1,0 +1,15 @@
+The function `factorize` is called with ( n = 2 ).
+Inside the function, a variable `fact` is initialized to an empty list.
+The loop iterates from 2 through 2 (since ( n = 2 )).
+First Iteration (i = 2):
+    - i <= int(math.sqrt(n) + 1) when i=2 and int(math.sqrt(n) + 1)=2
+    - The conditin `n % i == 0` is false. The first branch is not taken.
+    - The condition `i <= int(math.sqrt(n) + 1)` is true. The second branch is taken.
+    -`fact.append(i)` updates `fact` to [2].
+    -`n //= i` updates `n` to 1.
+Second Iteration (i = 3):
+    - i <= int(math.sqrt(n) + 1) when i=3 and int(math.sqrt(n) + 1)=2
+    - The conditin `n % i == 0` is false. The first branch is not taken.
+    - The condition `i <= int(math.sqrt(n) + 1)` is false. The second branch is not taken.
+    - The else branch is taken. `fact.append(i)` updates `fact` to [2, 3].
+After the loop completes, the function returns the value of `fact`, which is now [2, 3].

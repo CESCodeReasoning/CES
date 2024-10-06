@@ -1,0 +1,41 @@
+Here's the fixed code for both functions, `has_close_elements` and `find_closest_elements`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to get the correct distance
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `find_closest_elements`
+```python
+from typing import List, Tuple
+
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    if len(numbers) < 2:
+        raise ValueError("At least two numbers are required")
+
+    closest_pair = (numbers[0], numbers[1])
+    min_distance = abs(numbers[0] - numbers[1])
+
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                current_distance = abs(elem - elem2)
+                if current_distance < min_distance:
+                    min_distance = current_distance
+                    closest_pair = tuple(sorted([elem, elem2]))
+
+    return closest_pair
+```
+
+These fixes address the following issues:
+1. **has_close_elements**: The distance calculation now correctly uses the absolute value to ensure that the comparison against the threshold is valid regardless of the order of subtraction.
+2. **find_closest_elements**: The logic was inverted in the original code, incorrectly updating the closest pair when the new distance was greater than the current minimum. The corrected version updates the closest pair when the new distance is less than the current minimum. Additionally, the function now initializes with the first two elements to avoid issues with uninitialized variables.

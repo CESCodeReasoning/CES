@@ -1,0 +1,60 @@
+The function `words_string` is called with ( s = "Hi, my name is John" ).
+Inside the function, a variable `s_list` is initialized to an empty list.
+
+Iteration 1:
+    -The character 'H' is not equal to ',', so the else branch is taken.
+    -The character 'H' is appended to `s_list`.
+Iteration 2:
+    -The character 'i' is not equal to ',', so the else branch is taken.
+    -The character 'i' is appended to `s_list`.
+Iteration 3:
+    -The character ',' is equal to ',', so the if branch is taken.
+    -A space is appended to `s_list`.
+Iteration 4:
+    -The character ' ' (space) is not equal to ',', so the else branch is taken.
+    -The character ' ' (space) is appended to `s_list`.
+Iteration 5:
+    -The character 'm' is not equal to ',', so the else branch is taken.
+    -The character 'm' is appended to `s_list`.
+Iteration 6:
+    -The character 'y' is not equal to ',', so the else branch is taken.
+    -The character 'y' is appended to `s_list`.
+Iteration 7:
+    -The character ' ' (space) is not equal to ',', so the else branch is taken.
+    -The character ' ' (space) is appended to `s_list`.
+Iteration 8:
+    -The character 'n' is not equal to ',', so the else branch is taken.
+    -The character 'n' is appended to `s_list`.
+Iteration 9:
+    -The character 'a' is not equal to ',', so the else branch is taken.
+    -The character 'a' is appended to `s_list`.
+Iteration 10:
+    -The character 'm' is not equal to ',', so the else branch is taken.
+    -The character 'm' is appended to `s_list`.
+Iteration 11:
+    -The character 'e' is not equal to ',', so the else branch is taken.
+    -The character 'e' is appended to `s_list`.
+Iteration 12:
+    -The character ' ' (space) is not equal to ',', so the else branch is taken.
+    -The character ' ' (space) is appended to `s_list`.
+Iteration 13:
+    -The character 'i' is not equal to ',', so the else branch is taken.
+    -The character 'i' is appended to `s_list`.
+Iteration 14:
+    -The character 's' is not equal to ',', so the else branch is taken.
+    -The character 's' is appended to `s_list`.
+Iteration 15:
+    -The character ' ' (space) is not equal to ',', so the else branch is taken.
+    -The character ' ' (space) is appended to `s_list`.
+Iteration 16:
+    -The character 'J' is not equal to ',', so the else branch is taken.
+    -The character 'J' is appended to `s_list`.
+Iteration 17:
+    -The character 'o' is not equal to ',', so the else branch is taken.
+    -The character 'o' is appended to `s_list`.
+Iteration 18:
+    -The character 'h' is not equal to ',', so the else branch is taken.
+    -The character 'h' is appended to `s_list`.
+
+After all iterations, the `s_list` is converted to a string and split into a list of words.
+The final output of the function `words_string("Hi, my name is John")` is `['Hi', 'my', 'name', 'is', 'John']`.

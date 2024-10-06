@@ -1,0 +1,7 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: split_words
+main.py(5):     if " " in txt:
+main.py(7):     elif "," in txt:
+main.py(10):         return len([i for i in txt if i.islower() and ord(i) % 2 == 0])
+ --- modulename: main, funcname: <listcomp>
+main.py(10):         return len([i for i in txt if i.islower() and ord(i) % 2 == 0])

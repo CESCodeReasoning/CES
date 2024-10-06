@@ -1,0 +1,21 @@
+The function `histogram` is called with ( test = 'a b b a' ).
+Inside the function, a variable `dict1` is initialized as an empty dictionary.
+The string `test` is split into a list `list1`.
+
+Iteration 1:
+    -The character 'a' is in `list1` twice, so `t` becomes 2.
+Iteration 2:
+    -The character 'b' is in `list1` twice, but `t` is already 2, so `t` remains 2.
+Iteration 3:
+    -The character 'b' is in `list1` twice, but `t` is already 2, so `t` remains 2.
+Iteration 4:
+    -The character 'a' is in `list1` twice, but `t` is already 2, so `t` remains 2.
+
+After the loop, `t` is 2, which is greater than 0.
+
+Iteration 1:
+    -The character 'a' is in `list1` twice, so it is added to `dict1` with a value of 2.
+Iteration 2:
+    -The character 'b' is in `list1` twice, so it is added to `dict1` with a value of 2.
+
+Therefore, the final output of the function `histogram('a b b a')` is {'a': 2, 'b': 2}.

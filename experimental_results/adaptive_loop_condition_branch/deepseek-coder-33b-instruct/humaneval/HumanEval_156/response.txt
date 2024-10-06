@@ -1,0 +1,59 @@
+
+[REASONING]
+The function `int_to_mini_roman` is called with ( number = 19 ).
+Inside the function, a variable `i` is initialized to 12.
+The loop iterates from 12 to 0.
+First Iteration (i = 12):
+    - number = 19, num[i] = 1000, div = number // num[i] = 0.
+    - Since div is 0, the inner loop is skipped.
+Second Iteration (i = 11):
+    - number = 19, num[i] = 900, div = number // num[i] = 0.
+    - Since div is 0, the inner loop is skipped.
+Third Iteration (i = 10):
+    - number = 19, num[i] = 500, div = number // num[i] = 0.
+    - Since div is 0, the inner loop is skipped.
+Fourth Iteration (i = 9):
+    - number = 19, num[i] = 400, div = number // num[i] = 0.
+    - Since div is 0, the inner loop is skipped.
+Fifth Iteration (i = 8):
+    - number = 19, num[i] = 100, div = number // num[i] = 1.
+    - Since div is not 0, the inner loop is executed once and 'C' is added to `res`.
+    - number = 19 % 100 = 19.
+Sixth Iteration (i = 7):
+    - number = 19, num[i] = 90, div = number // num[i] = 0.
+    - Since div is 0, the inner loop is skipped.
+Seventh Iteration (i = 6):
+    - number = 19, num[i] = 50, div = number // num[i] = 0.
+    - Since div is 0, the inner loop is skipped.
+Eighth Iteration (i = 5):
+    - number = 19, num[i] = 40, div = number // num[i] = 0.
+    - Since div is 0, the inner loop is skipped.
+Ninth Iteration (i = 4):
+    - number = 19, num[i] = 10, div = number // num[i] = 1.
+    - Since div is not 0, the inner loop is executed once and 'X' is added to `res`.
+    - number = 19 % 10 = 9.
+Tenth Iteration (i = 3):
+    - number = 9, num[i] = 9, div = number // num[i] = 0.
+    - Since div is 0, the inner loop is skipped.
+Eleventh Iteration (i = 2):
+    - number = 9, num[i] = 5, div = number // num[i] = 1.
+    - Since div is not 0, the inner loop is executed once and 'V' is added to `res`.
+    - number = 9 % 5 = 4.
+Twelfth Iteration (i = 1):
+    - number = 4, num[i] = 4, div = number // num[i] = 1.
+    - Since div is not 0, the inner loop is executed once and 'IV' is added to `res`.
+    - number = 4 % 4 = 0.
+Thirteenth Iteration (i = 0):
+    - number = 0, num[i] = 1, div = number // num[i] = 4.
+    - Since div is not 0, the inner loop is executed four times and 'I' is added to `res`.
+    - number = 0 % 1 = 0.
+The while loop terminates. The function returns the value of `res`, which is now 'ix'.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def int_to_mini_roman(number):
+    num = [1, 4, 5, 9, 10, 40, 50, 90,  
+           100, 400, 500, 900, 1000] 
+    sym = ["I", "IV", "V", "IX", "X", "XL",  
+           "L",

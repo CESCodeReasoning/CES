@@ -1,0 +1,12 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: mean_absolute_deviation
+main.py(3):     mean = sum(numbers) / len(numbers)
+main.py(4):     return sum(abs(x - mean) for x in numbers) / len(numbers)
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     return sum(abs(x - mean) for x in numbers) / len(numbers)
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     return sum(abs(x - mean) for x in numbers) / len(numbers)
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     return sum(abs(x - mean) for x in numbers) / len(numbers)
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     return sum(abs(x - mean) for x in numbers) / len(numbers)

@@ -1,0 +1,33 @@
+[REASONING]
+The function `common(l1, l2)` takes two lists `l1` and `l2` as parameters. The function aims to find common elements between these two lists and return them in sorted order.
+
+The function initializes an empty set `ret` to store unique common elements found during the iteration.
+
+The outer loop iterates through each element `e1` in list `l1`. For each `e1`, the inner loop iterates through each element `e2` in list `l2`.
+
+During each iteration of the inner loop, the function checks if `e1` is equal to `e2`. If they are equal, it means that the element is common to both lists, and it is added to the set `ret`.
+
+Here's the detailed iteration:
+- For `e1=4` from `l1`, it compares with `3`, `2`, and `4` from `l2`. It finds a match with `4`.
+- For `e1=3` from `l1`, it compares with `3`, `2`, and `4` from `l2`. It finds a match with `3`.
+- For `e1=2` from `l1`, it compares with `3`, `2`, and `4` from `l2`. It finds a match with `2`.
+- For `e1=8` from `l1`, it compares with `3`, `2`, and `4` from `l2`. No match is found.
+
+After all iterations, the set `ret` contains `{2, 3, 4}`. The function then converts this set to a list, sorts it, and returns the sorted list `[2, 3, 4]`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def common(l1: list, l2: list):
+    ret = set()
+    for e1 in l1: ## [STATE]e1=[4, 3, 2, 8][/STATE][STATE]l1=[4, 3, 2, 8][/STATE]
+        for e2 in l2: ## [STATE]e2=[3, 2, 4][/STATE][STATE]l2=[3, 2, 4][/STATE]
+            if e1 == e2: ## [CONDITION](e1 == e2)=[False, False, True, True, False, False, True, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, Y, Y, N, N, Y, N, N, N, N, N][/BRANCH]
+                ret.add(e1)
+    return sorted(list(ret))
+[/PYTHON]
+
+[OUTPUT]
+[2, 3, 4]
+[/OUTPUT]

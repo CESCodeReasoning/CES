@@ -1,0 +1,16 @@
+```response
+                return "".join([s for s in text if s.lower() not in ["a", "e", "i", "o", "u", "w", "y"]])
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(text):
+    return text == text[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome('') == True
+    assert is_palindrome('a') == True
+    assert is_palindrome('ab

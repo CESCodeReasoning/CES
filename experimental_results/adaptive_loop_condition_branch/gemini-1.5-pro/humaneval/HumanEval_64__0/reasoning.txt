@@ -1,0 +1,9 @@
+The function `vowels_count` is called with ( s = "bYe" ).
+The function initializes a string `vowels` with all the vowels in both cases.
+Then it counts the number of vowels in the string `s` using a list comprehension and the `in` operator.
+The result is stored in the variable `n_vowels`.
+The function checks if the last character of the string `s` is 'y' or 'Y' using the condition `s[-1] == 'y' or s[-1] == 'Y'`.
+Since the last character of the string `s` is 'e', the condition is false and the `else` branch is taken.
+The function returns the value of `n_vowels`, which is 2.
+
+Therefore, the final output of the function `vowels_count("bYe")` is 2.

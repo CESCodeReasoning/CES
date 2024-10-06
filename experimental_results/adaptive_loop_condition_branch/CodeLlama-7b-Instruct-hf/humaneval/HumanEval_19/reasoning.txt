@@ -1,0 +1,9 @@
+The function sort_numbers takes a string of numbers separated by spaces as input and returns a sorted string of numbers.
+To determine the output of executing the function sort_numbers on the input "five zero four seven nine eight", we need to follow these steps:
+
+1. Split the input string into a list of individual numbers using the space character as the delimiter.
+2. Create a dictionary called value_map that maps each number to its corresponding value.
+3. Sort the list of numbers using the value_map as the key function.
+4. Join the sorted list of numbers into a single string using the space character as the delimiter.
+
+Therefore, the output of executing the function sort_numbers on the input "five zero four seven nine eight" is "eight five four seven nine zero".

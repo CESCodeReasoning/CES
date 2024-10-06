@@ -1,0 +1,4 @@
+from typing import *
+def iscube(a):
+    a = abs(a)  # Takes the absolute value of a
+    return int(round(a ** (1. / 3))) ** 3 == a  # Returns True if a is a cube number, False otherwise

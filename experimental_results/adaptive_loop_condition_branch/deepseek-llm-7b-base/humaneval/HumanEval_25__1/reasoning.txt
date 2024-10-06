@@ -1,0 +1,39 @@
+The function `factorize` is called with ( n = 3 * 19 * 3 * 19 ).
+Inside the function, a variable `fact` is initialized to an empty list.
+The loop iterates from 2 through 19 (since ( n = 3 * 19 * 3 * 19 )).
+First Iteration (i = 2):
+    - i <= 19 when i=2
+    - The conditin `i <= int(math.sqrt(n) + 1)` is true. The first branch is taken.
+    -`fact.append(i)` updates `fact` to [2].
+Second Iteration (i = 3):
+    - i <= 19 when i=3
+    - The conditin `i <= int(math.sqrt(n) + 1)` is true. The first branch is taken.
+    -`fact.append(i)` updates `fact` to [2, 3].
+Third Iteration (i = 4):
+    - i <= 19 when i=4
+    - The conditin `i <= int(math.sqrt(n) + 1)` is true. The first branch is taken.
+    -`fact.append(i)` updates `fact` to [2, 3, 4].
+Fourth Iteration (i = 5):
+    - i <= 19 when i=5
+    - The conditin `i <= int(math.sqrt(n) + 1)` is true. The first branch is taken.
+    -`fact.append(i)` updates `fact` to [2, 3, 4, 5].
+Fifth Iteration (i = 6):
+    - i <= 19 when i=6
+    - The conditin `i <= int(math.sqrt(n) + 1)` is true. The first branch is taken.
+    -`fact.append(i)` updates `fact` to [2, 3, 4, 5, 6].
+Sixth Iteration (i = 7):
+    - i <= 19 when i=7
+    - The conditin `i <= int(math.sqrt(n) + 1)` is true. The first branch is taken.
+    -`fact.append(i)` updates `fact` to [2, 3, 4, 5, 6, 7].
+Seventh Iteration (i = 8):
+    - i <= 19 when i=8
+    - The conditin `i <= int(math.sqrt(n) + 1)` is true. The first branch is taken.
+    -`fact.append(i)` updates `fact` to [2, 3, 4, 5, 6, 7, 8].
+Eighth Iteration (i = 9):
+    - i <= 19 when i=9
+    - The conditin `i <= int(math.sqrt(n) + 1)` is true. The first branch is taken.
+    -`fact.append(i)` updates `fact` to [2, 3, 4, 5, 6, 7, 8, 9].
+Ninth Iteration (i = 10):
+    - i <= 19 when i=10
+    - The conditin `i <= int(math.sqrt(n) + 1)` is true. The first branch is taken.
+    -`fact.append(i)` updates `fact` to

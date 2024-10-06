@@ -1,0 +1,15 @@
+```response
+    result = sum(int(digit) for digit in str(maxx))
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def find_max_min(lst):
+    max_val = lst[0]
+    min_val = lst[0]
+    for i in range(1, len(lst)):
+        if lst[i] > max_val:
+            max_val = lst[i]
+        elif l

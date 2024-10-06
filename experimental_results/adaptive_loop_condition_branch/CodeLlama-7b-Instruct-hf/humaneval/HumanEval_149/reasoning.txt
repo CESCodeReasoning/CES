@@ -1,0 +1,13 @@
+The function `sorted_list_sum` is called with ( lst = ["aa", "a", "aaa"] ).
+Inside the function, the list `lst` is sorted.
+
+Iteration 1:
+    -The first element of `lst` is "a", which is appended to `new_lst`.
+Iteration 2:
+    -The second element of `lst` is "aa", which is appended to `new_lst`.
+Iteration 3:
+    -The third element of `lst` is "aaa", which is appended to `new_lst`.
+
+The `new_lst` is then sorted based on the length of each element.
+
+Therefore, the final output of the function `sorted_list_sum(["aa", "a", "aaa"])` is ["a", "aa", "aaa"].

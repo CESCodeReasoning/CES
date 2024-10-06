@@ -1,0 +1,12 @@
+The function `int_to_mini_roman` is called with ( number = 19 ).
+The function initializes a list of numbers and a list of symbols.
+The function then initializes a variable `i` to 12, which is the index of the last element in the lists.
+The function then initializes a variable `res` to an empty string.
+The function then enters a while loop that continues as long as `number` is greater than 0.
+Inside the while loop, the function divides `number` by `num[i]` and stores the result in `div`.
+The function then updates `number` by taking the remainder of `number` divided by `num[i]`.
+The function then enters another while loop that continues as long as `div` is greater than 0.
+Inside the while loop, the function adds the symbol at index `i` in the `sym` list to the `res` string.
+The function then decrements `div` by 1.
+The function then decrements `i` by 1.
+After the while loop completes, the function returns the value of `res`, which is now "XIX".

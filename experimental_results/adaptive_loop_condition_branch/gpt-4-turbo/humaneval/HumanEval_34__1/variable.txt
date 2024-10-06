@@ -1,0 +1,6 @@
+from typing import *
+
+
+def unique(l: list):
+    # [STATE] l is [2, 1, 1, 2, 1, 1] [/STATE]
+    return sorted(list(set(l)))  # [STATE] set(l) is {1, 2}, list(set(l)) is [1, 2], sorted(list(set(l))) is [1, 2] [/STATE]

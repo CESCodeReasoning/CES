@@ -1,0 +1,16 @@
+```response
+                return (l[len(l) - 1 // 2] + l[len(l) // 2]) / 2.0
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s: str) -> bool:
+    s = s.lower()
+    s = s.replace(" ", "")
+    s = s.replace(",", "")
+    s = s.replace(".", "")
+    s = s.replace("!", "")
+    s = s.replace("?", "")
+    s

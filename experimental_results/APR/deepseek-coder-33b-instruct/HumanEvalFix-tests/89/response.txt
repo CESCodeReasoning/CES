@@ -1,0 +1,30 @@
+The bug in the `has_close_elements` function is that it is not taking the absolute value of the distance between two elements. This means that if the distance is negative, it will not be considered as close.
+
+The bug in the `encrypt` function is that it is rotating the alphabet by two multiplied to two places. This means that the alphabet is rotated by 4 places, not 2.
+
+Here is the fixed code:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+```python
+def encrypt(s):
+    d = 'abcdefghijklmnopqrstuvwxyz'
+    out = ''
+    for c in s:
+        if c in d:
+            out += d[(d.index(c)+2) % 26]
+        else:
+            out += c
+    return out
+```

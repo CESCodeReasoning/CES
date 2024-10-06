@@ -1,0 +1,15 @@
+The function `specialFilter` is called with ( nums = [5, -2, 1, -5] ).
+Inside the function, a variable `count` is initialized to 0.
+
+Iteration 1:
+    - `num` is 5, which is not greater than 10.
+Iteration 2:
+    - `num` is -2, which is not greater than 10.
+Iteration 3:
+    - `num` is 1, which is not greater than 10.
+Iteration 4:
+    - `num` is -5, which is not greater than 10.
+
+Since none of the numbers in the list are greater than 10, the `if` statement is never executed, and `count` remains 0.
+
+Therefore, the final output of the function `specialFilter([5, -2, 1, -5])` is 0.

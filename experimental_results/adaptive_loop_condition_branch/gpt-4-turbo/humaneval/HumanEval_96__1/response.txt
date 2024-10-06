@@ -1,0 +1,39 @@
+[REASONING]
+The function `count_up_to(n)` is designed to find all prime numbers less than a given number `n` (in this case, 22). The function initializes an empty list `primes` to store the prime numbers.
+
+The outer loop iterates over each number `i` starting from 2 up to `n-1` (21 in this case). For each number `i`, it assumes the number is prime (`is_prime = True`).
+
+The inner loop checks if the current number `i` can be divided evenly by any number `j` that is between 2 and `i-1`. If such a `j` is found, it means `i` is not a prime number (`is_prime = False`), and the loop breaks.
+
+If after checking all possible divisors `j` the `is_prime` flag is still `True`, the number `i` is appended to the `primes` list.
+
+The function finally returns the list of prime numbers found.
+
+Step-by-step for `n=22`:
+- For `i=2`, the inner loop does not execute because `range(2, 2)` is empty. `is_prime` remains `True`, so 2 is added to `primes`.
+- For `i=3`, similar to `i=2`, the inner loop does not execute, so 3 is added.
+- For `i=4`, the inner loop checks `j=2`, finds that `4 % 2 == 0`, sets `is_prime` to `False`, and breaks.
+- This process continues, checking each number up to 21, adding prime numbers to the list.
+
+The prime numbers less than 22 are 2, 3, 5, 7, 11, 13, 17, and 19.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def count_up_to(n):
+    primes = []
+    for i in range(2, n): ## [STATE]i=[2 to 21][/STATE][STATE]range(2, n)=[2 to 21][/STATE][STATE]n=[22][/STATE]
+        is_prime = True
+        for j in range(2, i): ## [STATE]j=[2 to i-1][/STATE][STATE]range(2, i)=[2 to i-1][/STATE][STATE]i=[2 to 21][/STATE]
+            if i % j == 0: ## [CONDITION](i % j == 0)=[varies depending on i and j][/CONDITION][BRANCH]taken=[Y or N depending on i and j][/BRANCH]
+                is_prime = False
+                break
+        if is_prime: ## [CONDITION](is_prime)=[True or False depending on inner loop results][/CONDITION][BRANCH]taken=[Y if is_prime else N][/BRANCH]
+            primes.append(i)
+    return primes
+[/PYTHON]
+
+[OUTPUT]
+[2, 3, 5, 7, 11, 13, 17, 19]
+[/OUTPUT]

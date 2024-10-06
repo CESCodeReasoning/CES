@@ -1,0 +1,32 @@
+[REASONING]
+The function `even_odd_count` is called with the argument `num = 7`.
+Inside the function:
+- `even_count` and `odd_count` are initialized to 0.
+- The absolute value of `num` is taken, which is 7 (since 7 is positive, its absolute value is itself).
+- This number is converted to a string, resulting in "7".
+- The loop iterates over the string "7".
+
+Iteration:
+- The character '7' is converted back to an integer and checked if it is even or odd.
+- Since 7 % 2 equals 1, which is not equal to 0, the number 7 is odd.
+- The `else` branch is taken, and `odd_count` is incremented by 1.
+
+After the loop, the function returns a tuple `(even_count, odd_count)`, which is `(0, 1)` because there were no even numbers and one odd number in the input.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def even_odd_count(num):
+    even_count = 0
+    odd_count = 0
+    for i in str(abs(num)): ## [STATE]i=['7'][/STATE][STATE]str(abs(num))=['7'][/STATE][STATE]abs(num)=7[/STATE]
+        if int(i) % 2 == 0: ## [CONDITION](int(i) % 2 == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+            even_count += 1
+        else: ## [BRANCH]taken=[Y][/BRANCH]
+            odd_count += 1
+    return (even_count, odd_count)
+[/PYTHON]
+
+[OUTPUT]
+(0, 1)
+[/OUTPUT]

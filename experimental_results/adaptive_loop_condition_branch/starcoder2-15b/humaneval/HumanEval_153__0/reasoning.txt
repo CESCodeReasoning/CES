@@ -1,0 +1,18 @@
+The function `Strongest_Extension` is called with ( class_name = 'Sp', extensions = ['671235', 'Bb'] ).
+Inside the function, a variable `strong` is initialized to the first element of `extensions` (i.e., '671235').
+
+Iteration 1:
+    -The first element of `extensions` is '671235'.
+    -The number of uppercase letters in '671235' is 0.
+    -The number of lowercase letters in '671235' is 6.
+    -The difference between the number of uppercase and lowercase letters is -6.
+    -Since the difference is less than the current maximum difference (0), the loop continues.
+
+Iteration 2:
+    -The second element of `extensions` is 'Bb'.
+    -The number of uppercase letters in 'Bb' is 1.
+    -The number of lowercase letters in 'Bb' is 1.
+    -The difference between the number of uppercase and lowercase letters is 0.
+    -Since the difference is equal to the current maximum difference (0), the loop continues.
+
+After the loop completes, the function returns the value of `ans`, which is 'Sp.Bb'.

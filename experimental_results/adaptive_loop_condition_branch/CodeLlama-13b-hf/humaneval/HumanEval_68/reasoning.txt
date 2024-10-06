@@ -1,0 +1,7 @@
+The function `pluck` is called with ( arr = [4,2,3] ).
+The condition `len(arr) == 0` is false, therefore the if branch is not taken.
+The variable `evens` is assigned the value of `list(filter(lambda x: x%2 == 0, arr))`, which is [2].
+The condition `evens == []` is false, therefore the if branch is not taken.
+The method returns [2, 1].
+
+Therefore, the final output of the function `pluck([4,2,3])` is [2, 1].

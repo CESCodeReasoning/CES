@@ -1,0 +1,35 @@
+[REASONING]
+The function `anti_shuffle` takes a string `s` as input and processes it to return a new string where each word in the input string is alphabetically sorted. Here's the step-by-step breakdown of the function's execution:
+
+1. The input string `s` is "Hello World!!!".
+2. The `split(' ')` method is used to split the string by spaces, resulting in a list of words: `['Hello', 'World!!!']`.
+3. A list comprehension is used to process each word in the list:
+   - For the word "Hello":
+     - The `list()` function converts the string "Hello" into a list of characters: `['H', 'e', 'l', 'l', 'o']`.
+     - The `sorted()` function sorts these characters alphabetically: `['H', 'e', 'l', 'l', 'o']`.
+     - The `join()` method then concatenates these sorted characters back into a string: "Hello".
+   - For the word "World!!!":
+     - The `list()` function converts the string "World!!!" into a list of characters: `['W', 'o', 'r', 'l', 'd', '!', '!', '!']`.
+     - The `sorted()` function sorts these characters alphabetically: `['!', '!', '!', 'W', 'd', 'l', 'o', 'r']`.
+     - The `join()` method concatenates these sorted characters back into a string: "!!!dlorW".
+4. The outer `join(' ')` method then concatenates the sorted words back into a single string with spaces between them: "Hello !!!dlorW".
+
+Thus, the output of the function when called with the input "Hello World!!!" is "Hello !!!dlorW".
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def anti_shuffle(s):
+    # [STATE] s = 'Hello World!!!' [/STATE]
+    return ' '.join([''.join(sorted(list(i))) for i in s.split(' ')])
+    # [STATE] s.split(' ') = ['Hello', 'World!!!'] [/STATE]
+    # [STATE] list(i) for i in ['Hello', 'World!!!'] = [['H', 'e', 'l', 'l', 'o'], ['W', 'o', 'r', 'l', 'd', '!', '!', '!']] [/STATE]
+    # [STATE] sorted(list(i)) for i in [['H', 'e', 'l', 'l', 'o'], ['W', 'o', 'r', 'l', 'd', '!', '!', '!']] = [['H', 'e', 'l', 'l', 'o'], ['!', '!', '!', 'W', 'd', 'l', 'o', 'r']] [/STATE]
+    # [STATE] ''.join(sorted(list(i))) for i in [['H', 'e', 'l', 'l', 'o'], ['!', '!', '!', 'W', 'd', 'l', 'o', 'r']] = ['Hello', '!!!dlorW'] [/STATE]
+    # [STATE] ' '.join(['Hello', '!!!dlorW']) = 'Hello !!!dlorW' [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+"Hello !!!dlorW"
+[/OUTPUT]

@@ -1,0 +1,21 @@
+The function `fruit_distribution` is called with ( s = "2 apples and 3 oranges", n = 5 ).
+Inside the function, a variable `lis` is initialized to an empty list.
+The string `s` is split into a list of strings, where each string is a word.
+
+Iteration 1:
+    -The string "2" is not a digit, so the condition `i.isdigit()` is false.
+    -The action `lis.append(int(i))` is not executed.
+Iteration 2:
+    -The string "apples" is not a digit, so the condition `i.isdigit()` is false.
+    -The action `lis.append(int(i))` is not executed.
+Iteration 3:
+    -The string "and" is not a digit, so the condition `i.isdigit()` is false.
+    -The action `lis.append(int(i))` is not executed.
+Iteration 4:
+    -The string "3" is a digit, so the condition `i.isdigit()` is true.
+    -The action `lis.append(int(i))` is executed, resulting in `lis = [3]`.
+Iteration 5:
+    -The string "oranges" is not a digit, so the condition `i.isdigit()` is false.
+    -The action `lis.append(int(i))` is not executed.
+
+Therefore, the final value of `lis` is [3].

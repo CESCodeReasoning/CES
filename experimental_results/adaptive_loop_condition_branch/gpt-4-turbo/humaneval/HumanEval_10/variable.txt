@@ -1,0 +1,11 @@
+from typing import *
+def is_palindrome(string: str) -> bool:
+    if not string: ## [CONDITION](not string)=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+        return ''
+
+    beginning_of_suffix = 0
+
+    while not is_palindrome(string[beginning_of_suffix:]): ## [STATE]string[beginning_of_suffix:]=['jerry', 'erry', 'rry', 'ry', 'y'][/STATE]
+        beginning_of_suffix += 1 ## [STATE]beginning_of_suffix=[0, 1, 2, 3, 4][/STATE]
+
+    return string + string[:beginning_of_suffix][::-1] ## [STATE]string='jerry'[/STATE][STATE]string[:beginning_of_suffix][::-1]='rrej'[/STATE]

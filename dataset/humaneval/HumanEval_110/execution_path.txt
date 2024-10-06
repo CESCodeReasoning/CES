@@ -1,0 +1,28 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: exchange
+main.py(3):     odd = 0
+main.py(4):     even = 0
+main.py(5):     for i in lst1:
+main.py(6):         if i%2 == 1:
+main.py(7):             odd += 1
+main.py(5):     for i in lst1:
+main.py(6):         if i%2 == 1:
+main.py(5):     for i in lst1:
+main.py(6):         if i%2 == 1:
+main.py(7):             odd += 1
+main.py(5):     for i in lst1:
+main.py(6):         if i%2 == 1:
+main.py(5):     for i in lst1:
+main.py(8):     for i in lst2:
+main.py(9):         if i%2 == 0:
+main.py(8):     for i in lst2:
+main.py(9):         if i%2 == 0:
+main.py(10):             even += 1
+main.py(8):     for i in lst2:
+main.py(9):         if i%2 == 0:
+main.py(8):     for i in lst2:
+main.py(9):         if i%2 == 0:
+main.py(10):             even += 1
+main.py(8):     for i in lst2:
+main.py(11):     if even >= odd:
+main.py(12):         return "YES"

@@ -1,0 +1,16 @@
+from typing import *
+def solve(s):
+    flg = 0
+    idx = 0
+    new_str = list(s) ## [STATE]i=['A', 's', 'D', 'f'][/STATE]
+    for i in s: ## [STATE]s="AsDf"[/STATE]
+        if i.isalpha(): ## [CONDITION](i.isalpha())=[True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y][/BRANCH]
+            new_str[idx] = i.swapcase()
+            flg = 1
+        idx += 1
+    s = "" ## [STATE]i=""[/STATE]
+    for i in new_str: ## [STATE]new_str=['a', 'S', 'd', 'F'][/STATE]
+        s += i
+    if flg == 0: ## [CONDITION](flg == 0)=[N][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return s[len(s)::-1]
+    return s

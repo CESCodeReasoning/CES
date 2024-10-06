@@ -1,0 +1,11 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: hex_key
+main.py(3):     primes = ('2', '3', '5', '7', 'B', 'D')
+main.py(4):     total = 0
+main.py(5):     for i in range(0, len(num)):
+main.py(6):         if num[i] in primes:
+main.py(5):     for i in range(0, len(num)):
+main.py(6):         if num[i] in primes:
+main.py(7):             total += 1
+main.py(5):     for i in range(0, len(num)):
+main.py(8):     return total

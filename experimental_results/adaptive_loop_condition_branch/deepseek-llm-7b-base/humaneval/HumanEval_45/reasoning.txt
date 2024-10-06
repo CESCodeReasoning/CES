@@ -1,0 +1,13 @@
+The function triangle_area takes two parameters, a and h, representing the length of the base and the height of a triangle, respectively.
+To calculate the area of a triangle, we need to use the formula for the area of a triangle, which is given by the following equation:
+Area = 1/2 * base * height
+
+In this case, the base of the triangle is a and the height is h.
+Therefore, the area of the triangle is given by the following equation:
+Area = 1/2 * a * h
+
+To calculate the area of the triangle, we need to multiply the length of the base, a, by the height, h, and divide the result by 2.0.
+Therefore, the area of the triangle is given by the following equation:
+Area = a * h / 2.0
+
+The function triangle_area returns the area of the triangle as a floating-point number.

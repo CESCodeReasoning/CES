@@ -1,0 +1,28 @@
+[REASONING]
+The function `triangle_area` is called with the sides of a triangle: a = 1, b = 2, and c = 10.
+The function first checks if the given sides can form a triangle using the triangle inequality theorem, which states that the sum of the lengths of any two sides of a triangle must be greater than the length of the third side.
+Here, the conditions checked are:
+- a + b <= c (1 + 2 <= 10) which is True,
+- a + c <= b (1 + 10 <= 2) which is False,
+- b + c <= a (2 + 10 <= 1) which is False.
+
+Since one of the conditions (a + b <= c) is True, the function concludes that the sides cannot form a triangle. Therefore, the function returns -1 immediately without calculating the area.
+
+Thus, the output of the function `triangle_area(1, 2, 10)` is -1.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def triangle_area(a, b, c):
+    if a + b <= c or a + c <= b or b + c <= a: ## [CONDITION](a + b <= c or a + c <= b or b + c <= a)=[True][/CONDITION][CONDITION](b + c <= a)=[False][/CONDITION][CONDITION](a + b <= c)=[True][/CONDITION][CONDITION](a + c <= b)=[False][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return -1
+    s = (a + b + c) / 2
+    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+    area = round(area, 2)
+    return area
+[/PYTHON]
+
+[OUTPUT]
+-1
+[/OUTPUT]

@@ -1,0 +1,9 @@
+The function check_if_last_char_is_a_letter takes a string txt as input. It splits the string into a list of words using the split(' ') method. The last word in the list is then accessed using the index -1.
+
+The function then checks if the length of the last word is 1 (i.e., it's a single character) and if the ASCII value of the lowercase version of the last character is between 97 and 122 (inclusive), which are the ASCII values for lowercase letters.
+
+If both conditions are met, the function returns True. Otherwise, it returns False.
+
+To determine the output of executing the function check_if_last_char_is_a_letter on the input "apple", we need to follow the steps above.
+
+The last word in the string "apple" is "apple". The length of "apple" is 5, so the first condition is not met. Therefore, the function returns False.

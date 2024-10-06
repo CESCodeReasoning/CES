@@ -1,0 +1,61 @@
+The function `int_to_mini_roman` is called with ( number = 152 ).
+Inside the function, a list `num` is initialized to [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000].
+A list `sym` is initialized to ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"].
+A variable `i` is initialized to 12.
+A variable `res` is initialized to ''.
+First Iteration:
+    - number = 152, number // num[i] = 152 // 1000 = 0, number %= num[i] = 152 % 1000 = 152.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = ''.lower() + 'M' = 'M'.
+    - i -= 1 = 12 - 1 = 11.
+Second Iteration:
+    - number = 152, number // num[i] = 152 // 100 = 15, number %= num[i] = 152 % 100 = 2.
+    - div = 15, div -= 1 = 15 - 1 = 14.
+    - res += sym[i] = 'M'.lower() + 'C' = 'M'.lower() + 'C' = 'MC'.
+    - i -= 1 = 11 - 1 = 10.
+Third Iteration:
+    - number = 152, number // num[i] = 152 // 10 = 152 // 10 = 15, number %= num[i] = 152 % 10 = 2.
+    - div = 15, div -= 1 = 15 - 1 = 14.
+    - res += sym[i] = 'MC'.lower() + 'L' = 'MC'.lower() + 'L' = 'MLC'.
+    - i -= 1 = 10 - 1 = 9.
+Fourth Iteration:
+    - number = 152, number // num[i] = 152 // 1 = 152 // 1 = 152, number %= num[i] = 152 % 1 = 0.
+    - div = 152, div -= 1 = 152 - 1 = 151.
+    - res += sym[i] = 'MLC'.lower() + 'X' = 'MLC'.lower() + 'X' = 'MLCX'.
+    - i -= 1 = 9 - 1 = 8.
+Fifth Iteration:
+    - number = 152, number // num[i] = 152 // 1 = 152 // 1 = 152, number %= num[i] = 152 % 1 = 0.
+    - div = 152, div -= 1 = 152 - 1 = 151.
+    - res += sym[i] = 'MLCX'.lower() + 'C' = 'MLCX'.lower() + 'C' = 'MLCXC'.
+    - i -= 1 = 8 - 1 = 7.
+Sixth Iteration:
+    - number = 152, number // num[i] = 152 // 1 = 152 // 1 = 152, number %= num[i] = 152 % 1 = 0.
+    - div = 152, div -= 1 = 152 - 1 = 151.
+    - res += sym[i] = 'MLCXC'.lower() + 'I' = 'MLCXC'.lower() + 'I' = 'MLCXCI'.
+    - i -= 1 = 7 - 1 = 6.
+Seventh Iteration:
+    - number = 152, number // num[i] = 152 // 1 = 152 // 1 = 152, number %= num[i] = 152 % 1 = 0.
+    - div = 152, div -= 1 = 152 - 1 = 151.
+    - res += sym[i] = 'MLCXCI'.lower() + 'V' = 'MLCXCI'.lower() + 'V' = 'MLCXCIV'.
+    - i -= 1 = 6 - 1 = 5.
+Eighth Iteration:
+    - number = 152, number // num[i] = 152 // 1 = 152 // 1 = 152, number %= num[i] = 152 % 1 = 0.
+    - div = 152, div -= 1 = 152 - 1 = 151.
+    - res += sym[i] = 'MLCXCIV'.lower() + 'I' = 'MLCXCIV'.lower() + 'I' = 'MLCXCIVI'.
+    - i -= 1 = 5 - 1 = 4.
+Ninth Iteration:
+    - number = 152, number // num[i] = 152 // 1 = 152 // 1 = 152, number %= num[i] = 152 % 1 = 0.
+    - div = 152, div -= 1 = 152 - 1 = 151.
+    - res += sym[i] = 'MLCXCIVI'.lower() + 'I' = 'MLCXCIVI'.lower() + 'I' = 'MLCXCIVII'.
+    - i -= 1 = 4 - 1 = 3.
+Tenth Iteration:
+    - number = 152, number // num[i] = 152 // 1 = 152 // 1 = 152, number %= num[i] = 152 % 1 = 0.
+    - div = 152, div -= 1 = 152 - 1 = 151.
+    - res += sym[i] = 'MLCXCIVII'.lower() + 'I' = 'MLCXCIVII'.lower() + 'I' = 'MLCXCIVII'.
+    - i -= 1 = 3 - 1 = 2.
+Eleventh Iteration:
+    - number = 152, number // num[i] = 152 // 1 = 152 // 1 = 152, number %= num[i] = 152 % 1 = 0.
+    - div = 152, div -= 1 = 152 - 1 = 151.
+    - res += sym[i] = 'MLCXCIVII'.lower() + 'I' = 'MLCXCIVII'.lower() + 'I' = 'MLCXCIVII'.
+    - i -= 1 = 2 - 1 = 1.
+Twelfth Iter

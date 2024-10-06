@@ -1,0 +1,67 @@
+The function common(l1, l2) takes two lists as its parameters.
+The outer loop iterates through each element in the first list.
+In the inner loop, for each element indexed by e1 in the outer loop, compare it with every element in the second list.
+First Iteration (e1=4):
+    - `e1` is 4, `e2` in the inner loop is 3, 2, 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the first iteration, so the if branch is not taken.
+Second Iteration (e1=3):
+    - `e1` is 3, `e2` in the inner loop is 2, 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the second iteration, so the if branch is not taken.
+Third Iteration (e1=2):
+    - `e1` is 2, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is equal to `e2` in the third iteration, so the if branch is taken. Append 2 to the return set.
+Forth Iteration (e1=8):
+    - `e1` is 8, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the forth iteration, so the if branch is not taken.
+Fifth Iteration (e1=4):
+    - `e1` is 4, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is equal to `e2` in the fifth iteration, so the if branch is taken. Append 4 to the return set.
+Sixth Iteration (e1=3):
+    - `e1` is 3, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the sixth iteration, so the if branch is not taken.
+Seventh Iteration (e1=2):
+    - `e1` is 2, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the seventh iteration, so the if branch is not taken.
+Eighth Iteration (e1=8):
+    - `e1` is 8, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the eighth iteration, so the if branch is not taken.
+Ninth Iteration (e1=4):
+    - `e1` is 4, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is equal to `e2` in the ninth iteration, so the if branch is taken. Append 4 to the return set.
+Tenth Iteration (e1=3):
+    - `e1` is 3, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the tenth iteration, so the if branch is not taken.
+Eleventh Iteration (e1=2):
+    - `e1` is 2, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the eleventh iteration, so the if branch is not taken.
+Twelfth Iteration (e1=8):
+    - `e1` is 8, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the twelfth iteration, so the if branch is not taken.
+Thirteenth Iteration (e1=4):
+    - `e1` is 4, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is equal to `e2` in the thirteenth iteration, so the if branch is taken. Append 4 to the return set.
+Fourteenth Iteration (e1=3):
+    - `e1` is 3, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the fourteenth iteration, so the if branch is not taken.
+Fifteenth Iteration (e1=2):
+    - `e1` is 2, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the fifteenth iteration, so the if branch is not taken.
+Sixteenth Iteration (e1=8):
+    - `e1` is 8, `e2` in the inner loop is 4.
+    - `l1` is [4, 3, 2, 8], `l2` is [3, 2, 4].
+    - `e1` is not equal to `e2` in the sixteenth iteration, so the if branch is not taken.

@@ -1,0 +1,12 @@
+The function `string_xor` is called with ( a = '1', b = '1' ).
+The inner function `xor` is defined.
+The zip function is used to iterate over two strings simultaneously.
+The first iteration (x = '1', y = '1')
+   - `x` and `y` are both '1', which satisfies ( x == y ).
+   - The condition `x == y` is true.
+   - Action: `xor(x, y)` returns '0'.
+The second iteration (x = ' ', y = ' ')
+   - `x` and `y` are both ' ', which does not satisfy ( x == y ).
+   - The condition `x == y` is false.
+   - Action: `xor(x, y)` returns '1'.
+Therefore, the final output of the function `string_xor('1', '1')` is '01'.

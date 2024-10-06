@@ -1,0 +1,6 @@
+The function `move_one_ball` is called with ( arr = [3, 5, 4, 1, 2] ).
+First, it checks if the length of the array is 0. If it is, it returns True because there are no balls to move.
+If the array is not empty, it sorts the array and creates a new array `my_arr` by shifting the minimum value to the front.
+Then, it iterates over the array and checks if each element in `my_arr` is equal to the corresponding element in the sorted array.
+If there is any element in `my_arr` that is not equal to the corresponding element in the sorted array, it returns False.
+If all elements in `my_arr` are equal to the corresponding elements in the sorted array, it returns True.

@@ -1,0 +1,3 @@
+The function sort_numbers takes a string of numbers as input and returns a string of sorted numbers.
+To determine the output of executing the function sort_numbers on the input '', we need to split the input string into a list of numbers, sort the list of numbers, and join the sorted list of numbers back into a string.
+Since the input string is empty, the list of numbers is empty, and the sorted list of numbers is also empty. Therefore, the output of executing the function sort_numbers on the input '' is an empty string.

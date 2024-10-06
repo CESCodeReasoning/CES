@@ -1,0 +1,17 @@
+The function `sorted_list_sum` is called with ( lst = ["aa", "a", "aaa"] ).
+Inside the function, the list `lst` is sorted.
+The variable `new_lst` is initialized to an empty list.
+The loop iterates through the list `lst`.
+First Iteration (i = "aa")
+   - The condition `len(i)%2 == 0` is true.
+   - Action: `new_lst.append(i)` appends "aa" to `new_lst`.
+Second Iteration (i = "a")
+   - The condition `len(i)%2 == 0` is false.
+   - Action: `new_lst.append(i)` does not append anything to `new_lst`.
+Third Iteration (i = "aaa")
+   - The condition `len(i)%2 == 0` is true.
+   - Action: `new_lst.append(i)` appends "aaa" to `new_lst`.
+Return Statement
+   - After the loop completes, the function returns the sorted list `new_lst`, which is ["aa", "aaa"].
+
+Therefore, the final output of the function `sorted_list_sum(["aa", "a", "aaa"])` is ["aa", "aaa"].

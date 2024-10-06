@@ -1,0 +1,35 @@
+The function `fib` is called with ( n = 12 ).
+`n` is 12, which satisfies ( n == 0 ).
+The condition `n == 0` is false, therefore the if branch is not taken.
+`n` is 12, which satisfies ( n == 1 ).
+The condition `n == 1` is false, therefore the if branch is not taken.
+The function `fib` is called with ( n = 10 ).
+`n` is 10, which satisfies ( n == 0 ).
+The condition `n == 0` is false, therefore the if branch is not taken.
+`n` is 10, which satisfies ( n == 1 ).
+The condition `n == 1` is false, therefore the if branch is not taken.
+The function `fib` is called with ( n = 8 ).
+`n` is 8, which satisfies ( n == 0 ).
+The condition `n == 0` is false, therefore the if branch is not taken.
+`n` is 8, which satisfies ( n == 1 ).
+The condition `n == 1` is false, therefore the if branch is not taken.
+The function `fib` is called with ( n = 6 ).
+`n` is 6, which satisfies ( n == 0 ).
+The condition `n == 0` is false, therefore the if branch is not taken.
+`n` is 6, which satisfies ( n == 1 ).
+The condition `n == 1` is false, therefore the if branch is not taken.
+The function `fib` is called with ( n = 4 ).
+`n` is 4, which satisfies ( n == 0 ).
+The condition `n == 0` is false, therefore the if branch is not taken.
+`n` is 4, which satisfies ( n == 1 ).
+The condition `n == 1` is false, therefore the if branch is not taken.
+The function `fib` is called with ( n = 2 ).
+`n` is 2, which satisfies ( n == 0 ).
+The condition `n == 0` is false, therefore the if branch is not taken.
+`n` is 2, which satisfies ( n == 1 ).
+The condition `n == 1` is false, therefore the if branch is not taken.
+The function `fib` is called with ( n = 0 ).
+`n` is 0, which satisfies ( n == 0 ).
+The condition `n == 0` is true, therefore the if branch is taken and the method returns 0.
+
+Therefore, the final output of the function `fib(12)` is 144.

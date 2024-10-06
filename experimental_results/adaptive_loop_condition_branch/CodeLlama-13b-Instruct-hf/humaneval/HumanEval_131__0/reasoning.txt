@@ -1,0 +1,20 @@
+The function `digits` is called with ( n = 120 ).
+Inside the function, a variable `product` is initialized to 1.
+A variable `odd_count` is initialized to 0.
+
+Iteration 1:
+    - The character '1' is converted to an integer and assigned to `int_digit`.
+    - Since `int_digit` is odd, `product` is updated to 1 * 1 = 1.
+    - `odd_count` is incremented to 1.
+Iteration 2:
+    - The character '2' is converted to an integer and assigned to `int_digit`.
+    - Since `int_digit` is even, `product` remains 1.
+    - `odd_count` remains 1.
+Iteration 3:
+    - The character '0' is converted to an integer and assigned to `int_digit`.
+    - Since `int_digit` is even, `product` remains 1.
+    - `odd_count` remains 1.
+
+Since `odd_count` is not 0, the function returns `product`, which is 1.
+
+Therefore, the final output of the function `digits(120)` is 180.

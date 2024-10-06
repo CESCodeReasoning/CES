@@ -1,0 +1,14 @@
+The function `count_nums` is called with ( arr = [1, 1, 2, -2, 3, 4, 5] ).
+The inner function `digits_sum` is defined to calculate the sum of digits of a number.
+The outer function iterates over the elements of the input list.
+For each element, the `digits_sum` function is applied to get the sum of its digits.
+If the sum is greater than 0, it is added to the count.
+Finally, the function returns the count of numbers for which the sum of digits is greater than 0.
+
+The `digits_sum` function:
+- If the input number is negative, it multiplies the first digit by -1 to keep track of the sign and makes the number positive for processing.
+- Converts the number to a list of digits.
+- Updates the first digit by multiplying it with the sign.
+- Returns the sum of the digits.
+
+Therefore, the final output of the function `count_nums([1, 1, 2, -2, 3, 4, 5])` is 5.

@@ -1,0 +1,5 @@
+The function `split_words` is called with ( txt = "Hello world,!" ).
+The condition `" " in txt` is False, the first branch is not taken.
+The condition `"," in txt` is True, the second branch is taken.
+
+Therefore, the final output of the function `split_words("Hello world,!")` is ['Hello', 'world', '!']

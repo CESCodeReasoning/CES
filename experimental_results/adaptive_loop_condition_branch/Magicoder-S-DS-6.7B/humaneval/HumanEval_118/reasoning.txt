@@ -1,0 +1,14 @@
+The function `get_closest_vowel` is called with ( word = "yogurt" ).
+The condition `len(word) < 3` is false, so the function proceeds to the next step.
+The loop iterates from the second last character to the first character of the word.
+Iteration 1:
+    -The character 'u' is not in vowels, so it moves to the next iteration.
+Iteration 2:
+    -The character 'r' is not in vowels, so it moves to the next iteration.
+Iteration 3:
+    -The character 't' is not in vowels, so it moves to the next iteration.
+Iteration 4:
+    -The character 'o' is in vowels, so it checks the characters before and after it.
+    -The character before 'o' is 'y', which is in vowels.
+    -The character after 'o' is 'g', which is in vowels.
+    -So, the function returns 'o'.

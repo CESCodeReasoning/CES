@@ -1,0 +1,26 @@
+The function `special_factorial` is called with ( n = 7 ).
+Inside the function, a variable `fact_i` is initialized to 1.
+A variable `special_fact` is initialized to 1.
+The loop iterates from 1 to 8 (since ( n = 7 )).
+First Iteration (i = 1):
+    `fact_i *= i` updates `fact_i` to 1 ( 1 * 1 = 1 ).
+    `special_fact *= fact_i` updates `special_fact` to 1 ( 1 * 1 = 1 ).
+Second Iteration (i = 2):
+    `fact_i *= i` updates `fact_i` to 2 ( 1 * 2 = 2 ).
+    `special_fact *= fact_i` updates `special_fact` to 2 ( 2 * 2 = 4 ).
+Third Iteration (i = 3):
+    `fact_i *= i` updates `fact_i` to 6 ( 2 * 3 = 6 ).
+    `special_fact *= fact_i` updates `special_fact` to 6 ( 4 * 6 = 24 ).
+Fourth Iteration (i = 4):
+    `fact_i *= i` updates `fact_i` to 24 ( 6 * 4 = 24 ).
+    `special_fact *= fact_i` updates `special_fact` to 24 ( 24 * 24 = 576 ).
+Fifth Iteration (i = 5):
+    `fact_i *= i` updates `fact_i` to 120 ( 24 * 5 = 120 ).
+    `special_fact *= fact_i` updates `special_fact` to 120 ( 576 * 120 = 70,880 ).
+Sixth Iteration (i = 6):
+    `fact_i *= i` updates `fact_i` to 720 ( 120 * 6 = 720 ).
+    `special_fact *= fact_i` updates `special_fact` to 720 ( 70,880 * 720 = 5,592,000 ).
+Seventh Iteration (i = 7):
+    `fact_i *= i` updates `fact_i` to 5,040 ( 720 * 7 = 5,040 ).
+    `special_fact *= fact_i` updates `special_fact` to 5,040 ( 5,592,000 * 5,040 = 2,772,000,000 ).
+After the loop completes, the function returns the value of `special_fact`, which is now 2,772,000,000.

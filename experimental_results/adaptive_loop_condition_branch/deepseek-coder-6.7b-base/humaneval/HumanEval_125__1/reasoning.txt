@@ -1,0 +1,6 @@
+The function `split_words` is called with ( txt = "Hello world,!" ).
+The condition `" " in txt` is True, the first branch is taken.
+The function `split` is called on the string `txt` with the argument `" "`, which splits the string into a list of substrings based on the space character.
+The resulting list is returned as the output of the function.
+
+Therefore, the final output of the function `split_words("Hello world,!" )` is ['Hello', 'world,!'].

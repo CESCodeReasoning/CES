@@ -1,0 +1,5 @@
+from typing import *
+
+
+def add(x: int, y: int):  # [STATE] x=7, y=5 [/STATE]
+    return x + y  # [STATE] return value of x+y is 12 [/STATE]

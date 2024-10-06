@@ -1,0 +1,60 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: sum_squares
+main.py(5):     result = []
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(8):             result.append(lst[i]**2)
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(9):         elif i % 4 == 0 and i % 3 != 0:
+main.py(12):             result.append(lst[i])
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(9):         elif i % 4 == 0 and i % 3 != 0:
+main.py(12):             result.append(lst[i])
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(8):             result.append(lst[i]**2)
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(9):         elif i % 4 == 0 and i % 3 != 0:
+main.py(10):             result.append(lst[i]**3)
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(9):         elif i % 4 == 0 and i % 3 != 0:
+main.py(12):             result.append(lst[i])
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(8):             result.append(lst[i]**2)
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(9):         elif i % 4 == 0 and i % 3 != 0:
+main.py(12):             result.append(lst[i])
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(9):         elif i % 4 == 0 and i % 3 != 0:
+main.py(10):             result.append(lst[i]**3)
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(8):             result.append(lst[i]**2)
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(9):         elif i % 4 == 0 and i % 3 != 0:
+main.py(12):             result.append(lst[i])
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(9):         elif i % 4 == 0 and i % 3 != 0:
+main.py(12):             result.append(lst[i])
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(8):             result.append(lst[i]**2)
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(9):         elif i % 4 == 0 and i % 3 != 0:
+main.py(12):             result.append(lst[i])
+main.py(6):     for i in range(len(lst)):
+main.py(7):         if i % 3 == 0:
+main.py(9):         elif i % 4 == 0 and i % 3 != 0:
+main.py(12):             result.append(lst[i])
+main.py(6):     for i in range(len(lst)):
+main.py(13):     return sum(result)

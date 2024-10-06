@@ -1,0 +1,124 @@
+<｜begin▁of▁sentence｜>
+
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def same_chars(s0: str, s1: str):
+    return set(s0) == set(s1)
+
+Tests:
+def check(same_chars):
+    assert same_chars('eabcdzzzz', 'dddzzzzzzzddeddabc') == True
+    assert same_chars('abcd', 'dddddddabc') == True
+    assert same_chars('dddddddabc', 'abcd') == True
+    assert same_chars('eabcd', 'dddddddabc') == False
+    assert same_chars('abcd', 'dddddddabcf') == False
+    assert same_chars('eabcdzzzz', 'dddzzzzzzzddddabc') == False
+    assert same_chars('aabb', 'aaccc') == False
+
+check(same_chars)
+
+The code should satisfy the following natural language specification:
+Write a Python function `same_chars(s0: str, s1: str)` to solve the following problem:
+Check if two words have the same characters.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def is_palindrome(s: str) -> bool:
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome('radar') == True
+    assert is_palindrome('python') == False
+    assert is_palindrome('madam') == True
+    assert is_palindrome('level') == True
+    assert is_palindrome('refer') == True
+    assert is_palindrome('deed') == True
+    assert is_palindrome('rotator') == True
+    assert is_palindrome('racecar') == True
+
+check(is_palindrome)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(s: str) -> bool` to solve the following problem:
+Check if a given string is a palindrome.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def is_prime(n: int) -> bool:
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(2) == True
+    assert is_prime(3) == True
+    assert is_prime(4) == False
+    assert is_prime(5) == True
+    assert is_prime(6) == False
+    assert is_prime(7) == True
+    assert

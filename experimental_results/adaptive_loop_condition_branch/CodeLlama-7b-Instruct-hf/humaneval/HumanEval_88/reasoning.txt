@@ -1,0 +1,5 @@
+The function sort_array takes an array of integers as input and returns a sorted array of the same integers.
+The function uses the sorted() function from the typing module to sort the array.
+The sorted() function takes two arguments: the first is the array to be sorted, and the second is a boolean value indicating whether to sort the array in ascending or descending order.
+In this case, the array is sorted in descending order because the expression (array[0]+array[-1]) % 2 == 0 is true.
+The expression checks whether the sum of the first and last elements of the array is even, and if it is, the array is sorted in descending order.

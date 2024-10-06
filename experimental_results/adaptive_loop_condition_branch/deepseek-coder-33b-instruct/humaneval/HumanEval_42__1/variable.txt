@@ -1,0 +1,9 @@
+from typing import *
+
+
+def f(s):
+    return s + "a"
+
+
+def incr_list(l: list):
+    return [(e + 1) for e in l]

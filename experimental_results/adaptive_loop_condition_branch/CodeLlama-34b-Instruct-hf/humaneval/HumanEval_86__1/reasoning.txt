@@ -1,0 +1,3 @@
+The function anti_shuffle takes a string s as input and returns a new string with the same words as s, but with the letters of each word sorted alphabetically.
+To determine the output of executing the function anti_shuffle on the input 'Hello World!!!', we need to split the string into individual words, sort the letters of each word alphabetically, and then join the words back together with a space between them.
+Therefore, the output of executing the function anti_shuffle on the input 'Hello World!!!' is 'eHll oWd!rl'.

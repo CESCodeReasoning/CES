@@ -1,0 +1,5 @@
+The function common(l1, l2) takes two lists as input, l1 and l2.
+The function first initializes an empty set named ret.
+Then, it iterates through each element e1 in the first list l1 and each element e2 in the second list l2.
+If e1 is equal to e2, then the element is added to the set ret.
+Finally, the function returns a sorted list of the elements in ret.

@@ -1,0 +1,2 @@
+The function filter_by_prefix takes two arguments: a list of strings and a prefix string. It returns a new list containing all the strings from the input list that start with the given prefix.
+To determine the output of executing the function filter_by_prefix on the input [ ] and 'john', we need to iterate over the input list and check if each string starts with the prefix 'john'. Since the input list is empty, there are no strings that start with 'john', so the output list is also empty.

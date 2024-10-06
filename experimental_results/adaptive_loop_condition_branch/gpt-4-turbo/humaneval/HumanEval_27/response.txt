@@ -1,0 +1,25 @@
+[REASONING]
+The function `flip_case` takes a string as input and returns a new string where each uppercase letter in the original string is converted to lowercase, and each lowercase letter is converted to uppercase. This is achieved using the `swapcase()` method of the string class in Python.
+To determine the output of executing the function `flip_case` on the input "Hello!", we need to apply the `swapcase()` method:
+- 'H' (uppercase) becomes 'h' (lowercase)
+- 'e' (lowercase) becomes 'E' (uppercase)
+- 'l' (lowercase) becomes 'L' (uppercase)
+- 'l' (lowercase) becomes 'L' (uppercase)
+- 'o' (lowercase) becomes 'O' (uppercase)
+- '!' remains unchanged as it is not a letter.
+Therefore, the output of executing the function `flip_case` on the input "Hello!" is "hELLO!".
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def flip_case(string: str) -> str:
+    # [STATE] string is 'Hello!' [/STATE]
+    return string.swapcase()  # [STATE] return value is 'hELLO!' [/STATE]
+```
+[/ANSWER]
+
+[OUTPUT]
+"hELLO!"
+[/OUTPUT]

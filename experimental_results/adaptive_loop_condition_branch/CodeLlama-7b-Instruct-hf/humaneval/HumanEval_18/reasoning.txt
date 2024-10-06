@@ -1,0 +1,6 @@
+The function `how_many_times` is called with ( string = '', substring = 'x' ).
+Inside the function, a variable `times` is initialized to 0.
+
+The loop iterates from 0 to (len(string) - len(substring) + 1), which is 0 since ( len(string) = 0 and len(substring) = 1 ).
+
+Therefore, the function returns 0.

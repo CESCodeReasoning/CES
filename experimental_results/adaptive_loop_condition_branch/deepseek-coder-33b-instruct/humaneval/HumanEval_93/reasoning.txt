@@ -1,0 +1,14 @@
+The function encode takes a string message as input. It first defines a string of vowels (both lowercase and uppercase) and creates a dictionary vowels_replace where each vowel is mapped to its corresponding character two positions down the ASCII table.
+
+Next, the function swaps the case of the message (converting all uppercase letters to lowercase and vice versa).
+
+Finally, it iterates over each character in the message. If the character is a vowel (i.e., it is in the vowels_replace dictionary), it replaces the vowel with the corresponding character from the dictionary. If the character is not a vowel, it leaves the character as is.
+
+To determine the output of executing the function encode on the input 'TEST', we need to follow the steps outlined above.
+
+1. 'T' is not a vowel, so it remains 'T'.
+2. 'E' is a vowel, so it is replaced with 'G' (the character two positions down from 'E' in the ASCII table).
+3. 'S' is not a vowel, so it remains 'S'.
+4. 'T' is not a vowel, so it remains 'T'.
+
+Therefore, the output of executing the function encode on the input 'TEST' is 'tGSt'.

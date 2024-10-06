@@ -1,0 +1,18 @@
+The function `do_algebra` is called with (operator = ['**', '*', '+'], operand = [2, 3, 4, 5]).
+The `operand` list contains the numbers to be operated on. The `operator` list contains the operators to be applied.
+The `expression` is initialized as the string representation of the first number in the `operand` list.
+The `zip(operator, operand[1:])` creates a list of tuples where each tuple contains an operator and a number from the `operand` list.
+
+The loop iterates over the `zip(operator, operand[1:])`.
+
+First Iteration (oprt = '**', oprn = 3):
+    The expression is updated to '2**3'
+Second Iteration (oprt = '*', oprn = 4):
+    The expression is updated to '2**3*4'
+Third Iteration (oprt = '+', oprn = 5):
+    The expression is updated to '2**3*4+5'
+
+After the loop completes, the `eval` function is used to evaluate the expression and the result is returned.
+
+The expression '2**3*4+5' equals 57 when evaluated.
+

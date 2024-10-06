@@ -1,0 +1,16 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: get_row
+main.py(5):     coords = [(i, j) for i in range(len(lst))
+ --- modulename: main, funcname: <listcomp>
+main.py(5):     coords = [(i, j) for i in range(len(lst))
+main.py(6):               for j in range(len(lst[i])) if lst[i][j] == x]
+main.py(6):               for j in range(len(lst[i])) if lst[i][j] == x]
+main.py(5):     coords = [(i, j) for i in range(len(lst))
+main.py(7):     return sorted(
+main.py(8):         sorted(
+main.py(9):             coords,
+main.py(10):             key=lambda x: x[1],
+main.py(11):             reverse=True),
+main.py(8):         sorted(
+main.py(12):         key=lambda x: x[0])
+main.py(7):     return sorted(

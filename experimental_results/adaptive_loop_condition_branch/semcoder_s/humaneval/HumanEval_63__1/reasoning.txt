@@ -1,0 +1,18 @@
+The function `fibfib` is called with ( n = 10 ).
+The function checks the base cases:
+   - If `n` is 0, it returns 0.
+   - If `n` is 1, it returns 0.
+   - If `n` is 2, it returns 1.
+For all other values of `n`, it recursively calls `fibfib(n - 1)`, `fibfib(n - 2)`, and `fibfib(n - 3)` and returns their sum.
+
+The function will recursively call itself with decreasing values of `n` until it reaches the base cases.
+
+For `n = 10`, the function will recursively call itself as follows:
+   - `fibfib(10) = fibfib(9) + fibfib(8) + fibfib(7)`
+   - `fibfib(9) = fibfib(8) + fibfib(7) + fibfib(6)`
+   - `fibfib(8) = fibfib(7) + fibfib(6) + fibfib(5)`
+   - and so on until `fibfib(2) = fibfib(1) + fibfib(0) + 1`
+
+After the recursive calls, the function will start returning the values and summing them up.
+
+Therefore, the final output of the function `fibfib(10)` is the result of the recursive calls.

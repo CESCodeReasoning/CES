@@ -1,0 +1,18 @@
+The function `parse_nested_parens` is called with the input string `'(()()) ((())) () ((())()())'`.
+This string represents groups of nested parentheses separated by spaces.
+
+1. The string is split by spaces into the list `['(()())', '((()))', '()', '((())()())']`.
+2. The function then iterates over each group of parentheses to determine the maximum depth of nested parentheses for each group using the helper function `parse_paren_group`.
+
+For each group:
+- '(()())':
+  - Iterates over each character, adjusting the depth for each '(' and ')'.
+  - Maximum depth reached is 2.
+- '((()))':
+  - Maximum depth reached is 3.
+- '()':
+  - Maximum depth reached is 1.
+- '((())()())':
+  - Maximum depth reached is 3.
+
+The function returns a list of these maximum depths for each group.

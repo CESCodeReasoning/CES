@@ -1,0 +1,12 @@
+The function `factorize` is called with `n = 2`.
+Inside the function:
+- A list `fact` is initialized to store the factors of `n`.
+- A variable `i` is initialized to 2 to start checking for factors from 2 onwards.
+- The loop condition checks if `i` is less than or equal to the square root of `n` plus 1. Since `n = 2`, `math.sqrt(2) + 1` is approximately 2.41, so `int(math.sqrt(n) + 1)` is 3.
+- The loop runs with `i = 2`:
+    - The condition `n % i == 0` checks if `n` is divisible by `i`. Since `2 % 2 == 0` is true, the branch is taken.
+    - `i` is appended to `fact`, making `fact = [2]`.
+    - `n` is updated to `n // i`, which results in `n = 1`.
+- The loop condition is checked again, but now `i = 3` which is greater than `int(math.sqrt(1) + 1)`, so the loop exits.
+- After the loop, there is a check if `n > 1`. Since `n = 1`, this condition is false, and the branch is not taken.
+- The function returns the list `fact` containing `[2]`.

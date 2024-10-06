@@ -1,0 +1,11 @@
+The function `file_name_check` is called with ( file_name = "example.txt" ).
+The variable `suf` is a list of file extensions (['txt', 'exe', 'dll']).
+The variable `lst` is a list of the file name and its extension (['example', 'txt']).
+The length of `lst` is 2, therefore the if branch is not taken.
+The condition `not lst[1] in suf` is false, therefore the if branch is not taken.
+The length of `lst[0]` is not 0, therefore the if branch is not taken.
+The condition `not lst[0][0].isalpha()` is false, therefore the if branch is not taken.
+The length of the number of digits in `lst[0]` is less than 3, therefore the if branch is not taken.
+The method returns 'Yes'.
+
+Therefore, the final output of the function `file_name_check("example.txt")` is 'Yes'.

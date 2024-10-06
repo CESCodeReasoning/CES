@@ -1,0 +1,38 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: minSubArraySum
+main.py(5):     max_sum = 0
+main.py(6):     s = 0
+main.py(7):     for num in nums:
+main.py(8):         s += -num
+main.py(9):         if (s < 0):
+main.py(11):         max_sum = max(s, max_sum)
+main.py(7):     for num in nums:
+main.py(8):         s += -num
+main.py(9):         if (s < 0):
+main.py(10):             s = 0
+main.py(11):         max_sum = max(s, max_sum)
+main.py(7):     for num in nums:
+main.py(8):         s += -num
+main.py(9):         if (s < 0):
+main.py(10):             s = 0
+main.py(11):         max_sum = max(s, max_sum)
+main.py(7):     for num in nums:
+main.py(8):         s += -num
+main.py(9):         if (s < 0):
+main.py(10):             s = 0
+main.py(11):         max_sum = max(s, max_sum)
+main.py(7):     for num in nums:
+main.py(12):     if max_sum == 0:
+main.py(13):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(13):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(13):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(13):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(13):         max_sum = max(-i for i in nums)
+ --- modulename: main, funcname: <genexpr>
+main.py(13):         max_sum = max(-i for i in nums)
+main.py(14):     min_sum = -max_sum
+main.py(15):     return min_sum

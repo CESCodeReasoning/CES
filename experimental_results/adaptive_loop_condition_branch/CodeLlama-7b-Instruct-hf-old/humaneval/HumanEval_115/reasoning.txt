@@ -1,0 +1,7 @@
+The function max_fill takes a 2D array of integers and an integer capacity as input. It returns the maximum number of buckets that can be filled using the given array and capacity.
+
+The function first iterates over each row of the 2D array and calculates the sum of the elements in that row. It then divides the sum by the capacity and takes the ceiling of the result using the math.ceil function. This is done to ensure that the number of buckets filled in each row is always greater than or equal to the capacity.
+
+The function then iterates over each column of the 2D array and calculates the sum of the elements in that column. It then divides the sum by the capacity and takes the ceiling of the result using the math.ceil function. This is done to ensure that the number of buckets filled in each column is always greater than or equal to the capacity.
+
+The function then returns the sum of the maximum number of buckets that can be filled in each row and column.

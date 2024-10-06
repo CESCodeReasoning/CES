@@ -1,0 +1,129 @@
+The function `parse_nested_parens` is called with ( paren_string = '(()()) ((())) () ((())()())' ).
+Inside the function, a variable `max_depth` is initialized to 0.
+
+Iteration 1:
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.
+    -The depth is decremented to 0.
+    -The string '(()())' is passed to `parse_paren_group`.
+    -The function `parse_paren_group` starts with a depth of 0.
+    -The string '(()())' is split into '(' and ')'.
+    -The depth is incremented to 1.
+    -The maximum depth is updated to 1.

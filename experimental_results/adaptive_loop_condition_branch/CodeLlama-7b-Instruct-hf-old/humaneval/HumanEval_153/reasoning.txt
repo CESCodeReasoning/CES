@@ -1,0 +1,30 @@
+The function `Strongest_Extension` is called with ( class_name = 'Watashi', extensions = ['tEN', 'niNE', 'eIGHt8OKe'] ).
+Inside the function, a variable `strong` is initialized to the first element of the `extensions` list.
+The variable `my_val` is initialized to the difference between the number of uppercase letters and the number of lowercase letters in the first element of the `extensions` list.
+The loop iterates over the remaining elements of the `extensions` list.
+First Iteration (s = 'tEN')
+   - The condition `val > my_val` is evaluated.
+   - The value of `val` is 2 (since 'tEN' has 2 uppercase letters and 0 lowercase letters).
+   - The value of `my_val` is -2 (since 'tEN' has 0 uppercase letters and 2 lowercase letters).
+   - The branch is not taken since 2 > -2 is false.
+Second Iteration (s = 'niNE')
+   - The condition `val > my_val` is evaluated.
+   - The value of `val` is 3 (since 'niNE' has 3 uppercase letters and 0 lowercase letters).
+   - The value of `my_val` is -2 (since 'niNE' has 0 uppercase letters and 2 lowercase letters).
+   - The branch is not taken since 3 > -2 is false.
+Third Iteration (s = 'eIGHt8OKe')
+   - The condition `val > my_val` is evaluated.
+   - The value of `val` is 8 (since 'eIGHt8OKe' has 8 uppercase letters and 0 lowercase letters).
+   - The value of `my_val` is -2 (since 'eIGHt8OKe' has 0 uppercase letters and 2 lowercase letters).
+   - The branch is taken since 8 > -2 is true.
+   - The value of `strong` is updated to 'eIGHt8OKe'.
+   - The value of `my_val` is updated to 8 (since 'eIGHt8OKe' has 8 uppercase letters and 0 lowercase letters).
+Fourth Iteration (s = 'Watashi')
+   - The condition `val > my_val` is evaluated.
+   - The value of `val` is 0 (since 'Watashi' has 0 uppercase letters and 0 lowercase letters).
+   - The value of `my_val` is 0 (since 'Watashi' has 0 uppercase letters and 0 lowercase letters).
+   - The branch is not taken since 0 > 0 is false.
+Return Statement
+   - After the loop completes, the function returns the concatenation of `class_name` and `strong`, which is 'Watashi.eIGHt8OKe'.
+
+Therefore, the final output of the function `Strongest_Extension('Watashi', ['tEN', 'niNE', 'eIGHt8OKe'])` is 'Watashi.eIGHt8OKe'.

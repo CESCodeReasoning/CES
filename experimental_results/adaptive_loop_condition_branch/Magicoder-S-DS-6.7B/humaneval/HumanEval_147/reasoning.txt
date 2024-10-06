@@ -1,0 +1,49 @@
+The function get_max_triples(n) takes an integer n as its parameter.
+The list A is created by generating the sequence of numbers (i*i - i + 1) for i from 1 to n.
+The outer loop iterates through each element in the list A to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+In the innermost loop, for each pair of elements indexed by j and k in the inner loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3 and 4.
+    - `k` in the innermost loop is 1, 2, 3, 4 and 5.
+    - A[i]=1, A[j]=2, A[k]=3:
+        - When k = 1 (A[k]=2), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 2 (A[k]=3), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 3 (A[k]=4), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 4 (A[k]=5), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 5 (A[k]=6), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4 and 5.
+    - `k` in the innermost loop is 2, 3, 4, 5 and 6.
+    - A[i]=2, A[j]=3, A[k]=4:
+        - When k = 2 (A[k]=3), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 3 (A[k]=4), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 4 (A[k]=5), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 5 (A[k]=6), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 6 (A[k]=7), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, 5 and 6.
+    - `k` in the innermost loop is 3, 4, 5, 6 and 7.
+    - A[i]=3, A[j]=4, A[k]=5:
+        - When k = 3 (A[k]=4), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 4 (A[k]=5), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 5 (A[k]=6), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 6 (A[k]=7), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 7 (A[k]=8), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4, 5 and 6.
+    - `k` in the innermost loop is 4, 5, 6 and 7.
+    - A[i]=4, A[j]=5, A[k]=6:
+        - When k = 4 (A[k]=5), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 5 (A[k]=6), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 6 (A[k]=7), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 7 (A[k]=8), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+Fifth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5 and 6.
+    - `k` in the innermost loop is 5, 6 and 7.
+    - A[i]=5, A[j]=6, A[k]=7:
+        - When k = 5 (A[k]=6), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 6 (A[k]=7), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+        - When k = 7 (A[k]=8), the condition `(A[i]+A[j]+A[k])%3 == 0` is False, the if branch is not taken.
+Sixth iteration (i=5):
+    No more elements to compare.

@@ -1,0 +1,12 @@
+The function `count_nums` takes an array of integers as input.
+The function first defines a nested function `digits_sum` that takes an integer `n` as input and returns the sum of its digits.
+The function then uses a list comprehension to create a new list of the results of calling `digits_sum` on each element of the input array.
+The function then uses the `filter` method to create a new list that contains only the elements of the previous list that are greater than 0.
+Finally, the function returns the length of the new list.
+
+The function `digits_sum` first checks if the input `n` is negative.
+If it is, it multiplies it by -1 and sets a variable `neg` to -1.
+It then converts the input `n` to a list of its digits using the `str` method and the `split` method.
+It then multiplies the first element of the list by `neg` and returns the sum of the remaining elements using the `sum` method.
+
+Therefore, the final output of the function `count_nums([1, 1, 2, -2, 3, 4, 5])` is 4.

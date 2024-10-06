@@ -1,0 +1,38 @@
+
+[REASONING]
+The function `file_name_check` is called with ( file_name = 'I563_No.exe' ).
+The file name is split into two parts by the '.' separator.
+The length of the resulting list is checked. If it's not 2, the function returns 'No'.
+The second part of the file name is checked to see if it's in the list of valid suffixes. If it's not, the function returns 'No'.
+The first part of the file name is checked to see if it's empty. If it is, the function returns 'No'.
+The first character of the first part of the file name is checked to see if it's a letter. If it's not, the function returns 'No'.
+The number of digits in the first part of the file name is counted. If it's more than 3, the function returns 'No'.
+If all these conditions are met, the function returns 'Yes'.
+
+Therefore, the final output of the function `file_name_check('I563_No.exe')` is 'Yes'.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def file_name_check(file_name):
+    suf = ['txt', 'exe', 'dll']
+    lst = file_name.split(sep='.')
+    if len(lst) != 2: ## [CONDITION](len(lst) != 2)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    if not lst[1] in suf: ## [CONDITION](not lst[1] in suf)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    if len(lst[0]) == 0: ## [CONDITION](len(lst[0]) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    if not lst[0][0].isalpha(): ## [CONDITION](not lst[0][0].isalpha())=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return 'No'
+    t = len([x for x in lst[0] if x.isdigit()])
+    if t > 3: ## [CONDITION](t > 3)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 'No'
+    return 'Yes'
+[/ANSWER]
+
+[OUTPUT]
+Yes
+[/OUTPUT]

@@ -1,0 +1,11 @@
+The function `file_name_check` is called with ( file_name = "example.txt" ).
+A list `suf` is defined with file extensions that are allowed.
+The file name is split by '.' and stored in `lst`.
+The first condition checks if the length of `lst` is not equal to 2, which is False in this case.
+The second condition checks if the second element of `lst` (file extension) is in the list `suf`, which is True in this case.
+The third condition checks if the first element of `lst` (file name) is not empty, which is True in this case.
+The fourth condition checks if the first character of the first element of `lst` is an alphabet, which is True in this case.
+The fifth condition counts the number of digits in the first element of `lst` and checks if it is greater than 3, which is False in this case.
+Since all conditions are met, the function returns 'Yes'.
+
+Therefore, the final output of the function `file_name_check("example.txt")` is 'Yes'.

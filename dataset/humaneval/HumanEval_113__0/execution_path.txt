@@ -1,0 +1,69 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: odd_count
+main.py(5):     res = []
+main.py(6):     for arr in lst:
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+main.py(8):         res.append(
+main.py(9):             "the number of odd elements " +
+main.py(10):             str(n) +
+main.py(9):             "the number of odd elements " +
+main.py(11):             "n the str" +
+main.py(9):             "the number of odd elements " +
+main.py(12):             str(n) +
+main.py(9):             "the number of odd elements " +
+main.py(13):             "ng " +
+main.py(9):             "the number of odd elements " +
+main.py(14):             str(n) +
+main.py(9):             "the number of odd elements " +
+main.py(15):             " of the " +
+main.py(9):             "the number of odd elements " +
+main.py(16):             str(n) +
+main.py(9):             "the number of odd elements " +
+main.py(17):             "nput.")
+main.py(9):             "the number of odd elements " +
+main.py(8):         res.append(
+main.py(6):     for arr in lst:
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):         n = sum(int(d) % 2 == 1 for d in arr)
+main.py(8):         res.append(
+main.py(9):             "the number of odd elements " +
+main.py(10):             str(n) +
+main.py(9):             "the number of odd elements " +
+main.py(11):             "n the str" +
+main.py(9):             "the number of odd elements " +
+main.py(12):             str(n) +
+main.py(9):             "the number of odd elements " +
+main.py(13):             "ng " +
+main.py(9):             "the number of odd elements " +
+main.py(14):             str(n) +
+main.py(9):             "the number of odd elements " +
+main.py(15):             " of the " +
+main.py(9):             "the number of odd elements " +
+main.py(16):             str(n) +
+main.py(9):             "the number of odd elements " +
+main.py(17):             "nput.")
+main.py(9):             "the number of odd elements " +
+main.py(8):         res.append(
+main.py(6):     for arr in lst:
+main.py(18):     return res

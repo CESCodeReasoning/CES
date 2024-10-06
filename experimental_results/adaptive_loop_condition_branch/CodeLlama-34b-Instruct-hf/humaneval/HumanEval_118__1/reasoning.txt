@@ -1,0 +1,11 @@
+The function `get_closest_vowel` is called with ( word = "ba" ).
+Inside the function, a variable `vowels` is initialized to a set of vowel characters.
+The length of the `word` is checked, and if it is less than 3, the function returns an empty string.
+
+Iteration 1:
+    -The character 'b' is not in vowels, so the condition `word[i] in vowels` is false.
+Iteration 2:
+    -The character 'a' is in vowels, so the condition `word[i] in vowels` is true.
+    -The character 'a' is not followed by a vowel, so the condition `word[i + 1] not in vowels` is true.
+    -The character 'a' is not preceded by a vowel, so the condition `word[i - 1] not in vowels` is true.
+    -The function returns the character 'a'.

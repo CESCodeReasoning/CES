@@ -1,0 +1,129 @@
+The function `is_multiply_prime(a)` is called with ( a = 125 ).
+The function `is_multiply_prime(a)` calls the nested function `is_prime(n)`.
+The function `is_prime(n)` checks if a number is prime.
+The function `is_multiply_prime(a)` checks if there are three prime numbers (i, j, k) such that i * j * k = a.
+
+Iteration 1:
+    - The number 2 is prime, so i = 2.
+    - The number 3 is prime, so j = 3.
+    - The number 5 is prime, so k = 5.
+    - 2 * 3 * 5 = 30, which is not equal to 125.
+Iteration 2:
+    - The number 2 is prime, so i = 2.
+    - The number 3 is prime, so j = 3.
+    - The number 7 is prime, so k = 7.
+    - 2 * 3 * 7 = 42, which is not equal to 125.
+Iteration 3:
+    - The number 2 is prime, so i = 2.
+    - The number 3 is prime, so j = 3.
+    - The number 11 is prime, so k = 11.
+    - 2 * 3 * 11 = 66, which is not equal to 125.
+Iteration 4:
+    - The number 2 is prime, so i = 2.
+    - The number 5 is prime, so j = 5.
+    - The number 3 is prime, so k = 3.
+    - 2 * 5 * 3 = 30, which is not equal to 125.
+Iteration 5:
+    - The number 2 is prime, so i = 2.
+    - The number 5 is prime, so j = 5.
+    - The number 7 is prime, so k = 7.
+    - 2 * 5 * 7 = 70, which is not equal to 125.
+Iteration 6:
+    - The number 2 is prime, so i = 2.
+    - The number 5 is prime, so j = 5.
+    - The number 11 is prime, so k = 11.
+    - 2 * 5 * 11 = 110, which is not equal to 125.
+Iteration 7:
+    - The number 2 is prime, so i = 2.
+    - The number 7 is prime, so j = 7.
+    - The number 3 is prime, so k = 3.
+    - 2 * 7 * 3 = 42, which is not equal to 125.
+Iteration 8:
+    - The number 2 is prime, so i = 2.
+    - The number 7 is prime, so j = 7.
+    - The number 5 is prime, so k = 5.
+    - 2 * 7 * 5 = 70, which is not equal to 125.
+Iteration 9:
+    - The number 2 is prime, so i = 2.
+    - The number 7 is prime, so j = 7.
+    - The number 11 is prime, so k = 11.
+    - 2 * 7 * 11 = 154, which is not equal to 125.
+Iteration 10:
+    - The number 2 is prime, so i = 2.
+    - The number 11 is prime, so j = 11.
+    - The number 3 is prime, so k = 3.
+    - 2 * 11 * 3 = 66, which is not equal to 125.
+Iteration 11:
+    - The number 2 is prime, so i = 2.
+    - The number 11 is prime, so j = 11.
+    - The number 5 is prime, so k = 5.
+    - 2 * 11 * 5 = 110, which is not equal to 125.
+Iteration 12:
+    - The number 2 is prime, so i = 2.
+    - The number 11 is prime, so j = 11.
+    - The number 7 is prime, so k = 7.
+    - 2 * 11 * 7 = 154, which is not equal to 125.
+Iteration 13:
+    - The number 3 is prime, so i = 3.
+    - The number 5 is prime, so j = 5.
+    - The number 2 is prime, so k = 2.
+    - 3 * 5 * 2 = 30, which is not equal to 125.
+Iteration 14:
+    - The number 3 is prime, so i = 3.
+    - The number 5 is prime, so j = 5.
+    - The number 3 is prime, so k = 3.
+    - 3 * 5 * 3 = 75, which is not equal to 125.
+Iteration 15:
+    - The number 3 is prime, so i = 3.
+    - The number 5 is prime, so j = 5.
+    - The number 7 is prime, so k = 7.
+    - 3 * 5 * 7 = 105, which is not equal to 125.
+Iteration 16:
+    - The number 3 is prime, so i = 3.
+    - The number 5 is prime, so j = 5.
+    - The number 11 is prime, so k = 11.
+    - 3 * 5 * 11 = 165, which is not equal to 125.
+Iteration 17:
+    - The number 3 is prime, so i = 3.
+    - The number 7 is prime, so j = 7.
+    - The number 2 is prime, so k = 2.
+    - 3 * 7 * 2 = 42, which is not equal to 125.
+Iteration 18:
+    - The number 3 is prime, so i = 3.
+    - The number 7 is prime, so j = 7.
+    - The number 3 is prime, so k = 3.
+    - 3 * 7 * 3 = 21, which is not equal to 125.
+Iteration 19:
+    - The number 3 is prime, so i = 3.
+    - The number 7 is prime, so j = 7.
+    - The number 5 is prime, so k = 5.
+    - 3 * 7 * 5 = 175, which is not equal to 125.
+Iteration 20:
+    - The number 3 is prime, so i = 3.
+    - The number 7 is prime, so j = 7.
+    - The number 11 is prime, so k = 11.
+    - 3 * 7 * 11 = 231, which is not equal to 125.
+Iteration 21:
+    - The number 3 is prime, so i = 3.
+    - The number 11 is prime, so j = 11.
+    - The number 2 is prime, so k = 2.
+    - 3 * 11 * 2 = 66, which is not equal to 125.
+Iteration 22:
+    - The number 3 is prime, so i = 3.
+    - The number 11 is prime, so j = 11.
+    - The number 3 is prime, so k = 3.
+    - 3 * 11 * 3 = 39, which is not equal to 125.
+Iteration 23:
+    - The number 3 is prime, so i = 3.
+    - The number 11 is prime, so j = 11.
+    - The number 5 is prime, so k = 5.
+    - 3 * 11 * 5 = 165, which is not equal to 125.
+Iteration 24:
+    - The number 3 is prime, so i = 3.
+    - The number 11 is prime, so j = 11.
+    - The number 7 is prime, so k = 7.
+    - 3 * 11 * 7 = 231, which is not equal to 125.
+Iteration 25:
+    - The number 5 is prime, so i = 5.
+    - The number 7 is prime, so j = 7.
+    - The number 2 is

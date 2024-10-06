@@ -1,0 +1,70 @@
+The function `encrypt` is called with ( s = 'et' ).
+Inside the function, a variable `d` is initialized to 'abcdefghijklmnopqrstuvwxyz'.
+
+Iteration 1:
+    -The character 'e' is in 'abcdefghijklmnopqrstuvwxyz', so the condition (c in d) is true.
+    -The index of 'e' in 'abcdefghijklmnopqrstuvwxyz' is 4, so the expression (d.index(c) + 2 * 2) % 26 is 6.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d[(d.index(c) + 2 * 2) % 26]) is 'g'.
+    -The expression (d

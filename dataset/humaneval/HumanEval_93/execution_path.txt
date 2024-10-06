@@ -1,0 +1,24 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: encode
+main.py(3):     vowels = "aeiouAEIOU"
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+ --- modulename: main, funcname: <listcomp>
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(4):     vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+main.py(5):     message = message.swapcase()
+main.py(6):     return ''.join([vowels_replace[i] if i in vowels else i for i in message])
+ --- modulename: main, funcname: <listcomp>
+main.py(6):     return ''.join([vowels_replace[i] if i in vowels else i for i in message])
+main.py(6):     return ''.join([vowels_replace[i] if i in vowels else i for i in message])
+main.py(6):     return ''.join([vowels_replace[i] if i in vowels else i for i in message])
+main.py(6):     return ''.join([vowels_replace[i] if i in vowels else i for i in message])
+main.py(6):     return ''.join([vowels_replace[i] if i in vowels else i for i in message])

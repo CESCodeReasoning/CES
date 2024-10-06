@@ -1,0 +1,9 @@
+The function `vowels_count` is called with ( s = "abcde" ).
+The string "abcde" is passed to the function.
+The variable `vowels` is initialized with all the vowels (both lowercase and uppercase).
+The variable `n_vowels` is initialized with the count of vowels in the string.
+The condition `s[-1] == 'y' or s[-1] == 'Y'` is checked.
+The last character of the string is 'e', which is not 'y' or 'Y'.
+Therefore, the else branch is taken and the function returns the value of `n_vowels`, which is 2.
+
+Therefore, the final output of the function `vowels_count("abcde")` is 2.

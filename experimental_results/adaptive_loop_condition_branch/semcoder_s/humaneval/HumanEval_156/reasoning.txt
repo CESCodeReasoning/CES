@@ -1,0 +1,56 @@
+The function `int_to_mini_roman` is called with ( number = 19 ).
+Inside the function, two lists `num` and `sym` are defined to map integers to roman numerals.
+The while loop iterates from the largest number in `num` (1000) down to 1 (I).
+First Iteration (i = 12):
+    - div = 19 // 1000 = 1
+    - number = 19 % 1000 = 19
+    - res += 'M'
+Second Iteration (i = 11):
+    - div = 19 // 900 = 2
+    - number = 19 % 900 = 10
+    - res += 'CM'
+Third Iteration (i = 10):
+    - div = 10 // 500 = 2
+    - number = 10 % 500 = 0
+    - res += 'D'
+Fourth Iteration (i = 9):
+    - div = 0 // 100 = 0
+    - number = 0 % 100 = 0
+    - res += ''
+Fifth Iteration (i = 8):
+    - div = 0 // 90 = 0
+    - number = 0 % 90 = 0
+    - res += ''
+Sixth Iteration (i = 7):
+    - div = 0 // 50 = 0
+    - number = 0 % 50 = 0
+    - res += ''
+Seventh Iteration (i = 6):
+    - div = 0 // 40 = 0
+    - number = 0 % 40 = 0
+    - res += ''
+Eighth Iteration (i = 5):
+    - div = 0 // 10 = 0
+    - number = 0 % 10 = 0
+    - res += ''
+Ninth Iteration (i = 4):
+    - div = 0 // 9 = 0
+    - number = 0 % 9 = 0
+    - res += ''
+Tenth Iteration (i = 3):
+    - div = 0 // 5 = 0
+    - number = 0 % 5 = 0
+    - res += ''
+Eleventh Iteration (i = 2):
+    - div = 0 // 4 = 0
+    - number = 0 % 4 = 0
+    - res += ''
+Twelfth Iteration (i = 1):
+    - div = 0 // 1 = 0
+    - number = 0 % 1 = 0
+    - res += ''
+Thirteenth Iteration (i = 0):
+    - div = 0 // 1 = 0
+    - number = 0 % 1 = 0
+    - res += ''
+The while loop completes, the function returns the value of `res`, which is now 'MCMXIX'.

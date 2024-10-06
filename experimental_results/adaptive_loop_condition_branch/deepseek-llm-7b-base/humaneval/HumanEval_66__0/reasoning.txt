@@ -1,0 +1,5 @@
+The function `digitSum` is called with ( s = "abcCd" ).
+The variable `s` is "abcCd", which satisfies ( s == "" ).
+The condition `s == ""` is true, therefore the if branch is taken and the method returns 0.
+
+Therefore, the final output of the function `digitSum("abcCd")` is 0.

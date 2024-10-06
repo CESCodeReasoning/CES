@@ -1,0 +1,4 @@
+The function `monotonic` is called with ( l = [1, 2, 4, 20] ).
+The list `l` is not sorted in ascending order and not sorted in descending order.
+The condition `l == sorted(l)` is false, and the condition `l == sorted(l, reverse=True)` is also false.
+Therefore, the function returns False.

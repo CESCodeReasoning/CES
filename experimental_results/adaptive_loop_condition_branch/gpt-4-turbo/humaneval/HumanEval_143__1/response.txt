@@ -1,0 +1,45 @@
+[REASONING]
+The function `words_in_sentence(sentence)` takes a string `sentence` as its parameter. The function processes the sentence to filter out words based on specific conditions and returns the filtered words as a single string.
+
+The input sentence is "go for it". The function first splits this sentence into words, resulting in the list `['go', 'for', 'it']`.
+
+The function then iterates over each word in the list:
+1. For the word "go":
+   - The length of "go" is 2. The condition `len(word) == 1` is False, so the branch is not taken.
+   - The loop `for i in range(2, len(word))` does not execute because `range(2, 2)` is empty.
+   - The condition `flg == 0 or len(word) == 2` evaluates to True because `len(word) == 2` is True. The word "go" is added to `new_lst`.
+
+2. For the word "for":
+   - The length of "for" is 3. The condition `len(word) == 1` is False, so the branch is not taken.
+   - The loop `for i in range(2, len(word))` iterates with `i = 2`.
+   - The condition `len(word) % i == 0` evaluates to True because 3 % 2 is 1 (False), so the branch is not taken.
+   - The condition `flg == 0 or len(word) == 2` evaluates to False because `flg` is 0 and `len(word) == 2` is False. The word "for" is not added to `new_lst`.
+
+3. For the word "it":
+   - The length of "it" is 2. The condition `len(word) == 1` is False, so the branch is not taken.
+   - The loop `for i in range(2, len(word))` does not execute because `range(2, 2)` is empty.
+   - The condition `flg == 0 or len(word) == 2` evaluates to True because `len(word) == 2` is True. The word "it" is added to `new_lst`.
+
+Finally, the function joins the words in `new_lst` ("go" and "it") into a single string separated by spaces and returns "go it".
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def words_in_sentence(sentence):
+    new_lst = []
+    for word in sentence.split(): ## [STATE]word=['go', 'for', 'it'][/STATE][STATE]sentence.split()=['go', 'for', 'it'][/STATE]
+        flg = 0
+        if len(word) == 1: ## [CONDITION](len(word) == 1)=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+            flg = 1
+        for i in range(2, len(word)): ## [STATE]i=[2][/STATE][STATE]range(2, len(word))=[2, 2, 2][/STATE][STATE]len(word)=[2, 3, 2][/STATE]
+            if len(word) % i == 0: ## [CONDITION](len(word) % i == 0)=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+                flg = 1
+        if flg == 0 or len(word) == 2: ## [CONDITION](flg == 0 or len(word) == 2)=True[/CONDITION][CONDITION](flg == 0)=True[/CONDITION][CONDITION](len(word) == 2)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+            new_lst.append(word)
+    return " ".join(new_lst)
+[/PYTHON]
+
+[OUTPUT]
+go it
+[/OUTPUT]

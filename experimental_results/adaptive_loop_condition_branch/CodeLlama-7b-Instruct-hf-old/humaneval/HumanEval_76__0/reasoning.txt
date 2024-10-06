@@ -1,0 +1,7 @@
+The function `is_simple_power` is called with ( x = 1, n = 1 ).
+Inside the function, a variable `power` is initialized to 1.
+The loop iterates from 1 through 1 (since ( n = 1 )).
+First Iteration (power = 1):
+    - power < x when power=1 and x=1
+    -`power = power * n` updates `power` to 1 ( 1 * 1 = 1 ).
+After the loop completes, the condition ( power == x ) is satisfied, therefore the if branch is taken and the function returns `True` as the output.

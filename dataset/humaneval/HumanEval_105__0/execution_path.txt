@@ -1,0 +1,30 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: by_length
+main.py(6):         1: "One",
+main.py(7):         2: "Two",
+main.py(8):         3: "Three",
+main.py(9):         4: "Four",
+main.py(10):         5: "Five",
+main.py(11):         6: "Six",
+main.py(12):         7: "Seven",
+main.py(13):         8: "Eight",
+main.py(14):         9: "Nine",
+main.py(5):     dic = {
+main.py(16):     sorted_arr = sorted(arr, reverse=True)
+main.py(17):     new_arr = []
+main.py(18):     for var in sorted_arr:
+main.py(19):         try:
+main.py(20):             new_arr.append(dic[var])
+main.py(18):     for var in sorted_arr:
+main.py(19):         try:
+main.py(20):             new_arr.append(dic[var])
+main.py(18):     for var in sorted_arr:
+main.py(19):         try:
+main.py(20):             new_arr.append(dic[var])
+main.py(18):     for var in sorted_arr:
+main.py(19):         try:
+main.py(20):             new_arr.append(dic[var])
+main.py(21):         except BaseException:
+main.py(22):             pass
+main.py(18):     for var in sorted_arr:
+main.py(23):     return new_arr

@@ -1,0 +1,4 @@
+The function `will_it_fly` is called with ( q = [3, 2, 3], w = 1 ).
+Inside the function, the condition `sum(q) > w` is evaluated.
+The sum of the elements in `q` is 8, which is greater than `w` (1).
+The condition is true, and the function returns `False`.

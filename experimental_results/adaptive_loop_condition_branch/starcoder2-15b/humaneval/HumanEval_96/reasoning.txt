@@ -1,0 +1,21 @@
+The function count_up_to(n) takes an integer n as its parameter.
+The outer loop iterates through the range of integers from 2 to n-1.
+The inner loop iterates through the range of integers from 2 to i-1.
+For each integer i in the outer loop, the inner loop checks if i is divisible by any integer j in the range from 2 to i-1.
+If i is divisible by any integer j, then i is not a prime number, and the inner loop breaks.
+If i is not divisible by any integer j, then i is a prime number, and it is appended to the list primes.
+First Iteration (i=2):
+    - `i` is 2, j in the inner loop is 2.
+    - 2 % 2 == 0 is False, the if branch is not taken.
+    - is_prime is True, the if branch is taken. Append 2 to primes.
+Second Iteration (i=3):
+    - `i` is 3, j in the inner loop is 2.
+    - 3 % 2 == 0 is False, the if branch is not taken.
+    - is_prime is True, the if branch is taken. Append 3 to primes.
+Third Iteration (i=4):
+    - `i` is 4, j in the inner loop is 2.
+    - 4 % 2 == 0 is True, the if branch is taken. is_prime is False, the if branch is not taken.
+Forth Iteration (i=5):
+    - `i` is 5, j in the inner loop is 2.
+    - 5 % 2 == 0 is False, the if branch is not taken.
+    - is_prime is True, the if branch is taken. Append 5 to primes.

@@ -1,0 +1,57 @@
+```response
+    return ''.join(xor(x, y) for x, y in zip(a, b))
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def is_sorted(numbers: List[int]) -> bool:
+    for i in range(len(numbers) - 1):
+        if numbers[i] > numbers[i + 1]:
+            return False
+
+    return True
+
+Tests:
+def check(is_sorted):
+    assert is_sorted([1, 2, 3, 4, 5]) == True
+    assert is_sorted([1, 2, 3, 4, 5, 6]) == True
+    assert is_sorted([1, 2, 3, 4, 5, 4]) == False
+    assert is_sorted([1, 2, 3, 4, 5, 3]) == False
+    assert is_sorted([1, 2, 3, 4, 5, 2]) == False
+    assert is_sorted([1, 2, 3, 4, 5, 1]) == False
+
+check(is_sorted)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_sorted(numbers: List[int]) -> bool` to solve the following problem:
+Input is a list of integers.
+Return True if the list is sorted in ascending order, False otherwise.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    for i in range(len(numbers) - 1):
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def is_sorted(numbers: List[int]) -> bool:
+    for i in range(len(numbers) - 1):
+        if numbers[i] > numbers[i + 1]:
+            return False
+
+    return True
+
+Tests:
+def check(is_sorted):
+    assert is_sorted([1,

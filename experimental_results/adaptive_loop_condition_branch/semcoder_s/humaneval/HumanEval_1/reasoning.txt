@@ -1,0 +1,41 @@
+The function `separate_paren_groups` is called with ( paren_string = '(()()) ((())) () ((())()())' ).
+Inside the function, an empty list `result` is initialized to store the separate groups, an empty list `current_string` is initialized to store the characters of the current group, and `current_depth` is initialized to 0 to track the depth of parentheses.
+
+Iteration 1:
+    -The character '(' is encountered, so `current_depth` is incremented to 1 and '(' is appended to `current_string`.
+Iteration 2:
+    -The character '(' is encountered, so `current_depth` is incremented to 2 and '(' is appended to `current_string`.
+Iteration 3:
+    -The character ')' is encountered, so `current_depth` is decremented to 1 and ')' is appended to `current_string`.
+Iteration 4:
+    -The character ' ' is encountered, so no action is taken.
+Iteration 5:
+    -The character '(' is encountered, so `current_depth` is incremented to 1 and '(' is appended to `current_string`.
+Iteration 6:
+    -The character ')' is encountered, so `current_depth` is decremented to 0 and ')' is appended to `current_string`.
+Iteration 7:
+    -The character ' ' is encountered, so no action is taken.
+Iteration 8:
+    -The character '(' is encountered, so `current_depth` is incremented to 1 and '(' is appended to `current_string`.
+Iteration 9:
+    -The character '(' is encountered, so `current_depth` is incremented to 2 and '(' is appended to `current_string`.
+Iteration 10:
+    -The character ')' is encountered, so `current_depth` is decremented to 1 and ')' is appended to `current_string`.
+Iteration 11:
+    -The character ')' is encountered, so `current_depth` is decremented to 0 and ')' is appended to `current_string`.
+Iteration 12:
+    -The character ' ' is encountered, so no action is taken.
+Iteration 13:
+    -The character '(' is encountered, so `current_depth` is incremented to 1 and '(' is appended to `current_string`.
+Iteration 14:
+    -The character '(' is encountered, so `current_depth` is incremented to 2 and '(' is appended to `current_string`.
+Iteration 15:
+    -The character ')' is encountered, so `current_depth` is decremented to 1 and ')' is appended to `current_string`.
+Iteration 16:
+    -The character ')' is encountered, so `current_depth` is decremented to 0 and ')' is appended to `current_string`.
+Iteration 17:
+    -The character ' ' is encountered, so no action is taken.
+Iteration 18:
+    -The character ')' is encountered, so `current_depth` is decremented to -1 and ')' is appended to `current_string`.
+
+The loop ends, and the function returns the list `result` containing the separate groups: ['()()', '(())', '()', '(())()'].

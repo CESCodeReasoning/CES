@@ -1,0 +1,6 @@
+from typing import *
+
+def solve(N: int) -> str:
+    # [STATE] N is 1000 [/STATE]
+    # Convert N to string, sum the integer values of its digits, convert the sum to binary, and slice off the '0b' prefix
+    return bin(sum(int(i) for i in str(N)))[2:]  # [STATE] sum(int(i) for i in str(N)) is 1, bin(...) is '0b1', [2:] slices to '1' [/STATE]

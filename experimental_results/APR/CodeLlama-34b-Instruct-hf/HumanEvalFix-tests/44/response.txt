@@ -1,0 +1,104 @@
+<s> [INST]<<SYS>>
+You are an expert Python programmer.
+<</SYS>>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+
+Fix bugs in change_base. 
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def change_base(x: int, base: int):
+    ret = ""
+    while x > 0:
+        ret = str(x % base) + ret
+        x -= base
+    return ret
+
+Tests:
+def check(change_base):
+    assert change_base(8, 3) == "22"
+    assert change_base(9, 3) == "100"
+    assert change_base(234, 2) == "11101010"
+    assert change_base(16, 2) == "10000"
+    assert change_base(8, 2) == "1000"
+    assert change_base(7, 2) == "111"
+    for x in range(2, 8):
+        assert change_base(x, x + 1) == str(x)
+
+check(change_base)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `change_base(x: int, base: int)` to solve the following problem:
+Change numerical base of input number x to base.
+return string representation after the conversion.
+base numbers are less than 10.
+[/INST]
+```python
+def change_base(x: int, base: int):
+    ret = ""
+    while x > 0:
+        ret = str(x % base) + ret
+        x //= base
+    return ret
+```
+
+The fixed code is as follows:
+```python
+def change_base(x: int, base: int):
+    ret = ""
+    while x > 0:
+        ret = str(x % base) + ret
+        x //= base
+    return ret
+```
+
+The bug in the original code was that the `x -= base` statement was not correct. The correct statement is `x //= base`, which performs integer division and assigns the result to `x`. This ensures that the loop will terminate correctly when `x` is less than `base`.
+
+The fixed code satisfies the natural language specification, which is to change the numerical base of the input number `x` to `base`. The function returns a string representation of the number after the conversion. The base numbers are less than 10.</s>

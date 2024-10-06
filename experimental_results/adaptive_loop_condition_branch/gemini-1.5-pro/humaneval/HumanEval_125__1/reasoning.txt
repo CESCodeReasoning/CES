@@ -1,0 +1,5 @@
+The function `split_words` is called with ( txt = "Hello world,!" ).
+The first condition `if " " in txt` is True, since there is a space in the string.
+The first branch is taken.
+The string is split by the space, resulting in ['Hello', 'world,!'].
+Therefore, the final output of the function `split_words("Hello world,!")` is ['Hello', 'world,!'].

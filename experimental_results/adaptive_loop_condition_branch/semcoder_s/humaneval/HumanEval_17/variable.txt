@@ -1,0 +1,4 @@
+from typing import *
+def parse_music(music_string: str) -> List[int]:
+    note_map = {'o': 4, 'o|': 2, '.|': 1}  # [STATE] The note_map dictionary is defined to map note strings to their corresponding integer values. [/STATE]
+    return [note_map[x] for x in music_string.split(' ') if x]  # [STATE] The function splits the music_string by spaces, filters out any empty strings, and replaces each note with its corresponding integer value from the note_map. Finally, it returns the list of integer values representing the music notes. [/STATE]

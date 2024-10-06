@@ -1,0 +1,10 @@
+The function unique takes a list of integers as input and returns a sorted list of unique integers.
+To determine the output of executing the function unique on the input [5, 3, 5, 2, 3, 3, 9, 0, 123], we need to remove duplicates from the list and sort the list in ascending order.
+
+First, we convert the list to a set to remove duplicates. A set in Python is an unordered collection of unique elements.
+
+Next, we convert the set back to a list.
+
+Finally, we sort the list in ascending order.
+
+The output of executing the function unique on the input [5, 3, 5, 2, 3, 3, 9, 0, 123] is [0, 2, 3, 5, 9, 123].

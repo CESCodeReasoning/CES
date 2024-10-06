@@ -1,0 +1,37 @@
+Here's the fixed code for both functions, `has_close_elements` and `is_bored`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `is_bored`
+```python
+def is_bored(S: str) -> int:
+    import re
+    # Correctly split sentences and handle cases where spaces might not follow punctuation
+    sentences = re.split(r'[.?!]\s*', S.strip())
+    # Count sentences starting with 'I ' or 'I' at the beginning of the string
+    return sum(1 for sentence in sentences if sentence.startswith('I '))
+```
+
+### Explanation of Fixes
+
+#### `has_close_elements`
+- The main issue was the lack of `abs()` function to correctly calculate the absolute distance between two numbers. Without it, the function could incorrectly assess distances as it would consider negative values.
+
+#### `is_bored`
+- The regular expression used to split the sentences now correctly handles cases where there might not be a space following the punctuation.
+- The counting mechanism now checks if the sentence starts with 'I ' to ensure it captures sentences starting with the pronoun "I" followed by a space, which indicates a separate word. This avoids false positives from words that merely begin with 'I' but are not the pronoun.
+- The use of `sum(1 for ...)` is a more Pythonic way to count items that match a condition in a list comprehension.
+
+These fixes ensure that both functions now adhere to their specifications and pass the provided tests.

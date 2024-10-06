@@ -1,0 +1,12 @@
+The function `closest_integer` is called with ( value = "10" ).
+Inside the function, the value is converted to a float.
+The condition ( value.count('.') == 1 ) is satisfied, therefore the if branch is taken.
+The trailing zeros are removed from the value.
+The value is converted to a float.
+The condition ( value[-2:] == '.5' ) is satisfied, therefore the if branch is taken.
+The value is converted to a float.
+The condition ( num > 0 ) is satisfied, therefore the if branch is taken.
+The value is converted to a float.
+The function `ceil` is called with ( num ).
+The function `ceil` returns the ceiling of the value.
+The function `closest_integer` returns the ceiling of the value.

@@ -1,0 +1,53 @@
+The function `parse_nested_parens` is called with ( paren_string = '(()()) ((())) () ((())()())' ).
+Inside the function, a variable `depth` and `max_depth` are initialized to 0.
+
+Iteration 1:
+    -The character '(' is encountered, so depth becomes 1.
+    -max_depth becomes 1.
+Iteration 2:
+    -The character '(' is encountered, so depth becomes 2.
+    -max_depth becomes 2.
+Iteration 3:
+    -The character ')' is encountered, so depth becomes 1.
+    -max_depth becomes 2.
+Iteration 4:
+    -The character ' ' is encountered, so the current group is parsed.
+    -The current group has a depth of 2, so max_depth becomes 2.
+Iteration 5:
+    -The character '(' is encountered, so depth becomes 1.
+    -max_depth becomes 2.
+Iteration 6:
+    -The character '(' is encountered, so depth becomes 2.
+    -max_depth becomes 2.
+Iteration 7:
+    -The character ')' is encountered, so depth becomes 1.
+    -max_depth becomes 2.
+Iteration 8:
+    -The character ' ' is encountered, so the current group is parsed.
+    -The current group has a depth of 1, so max_depth becomes 1.
+Iteration 9:
+    -The character '(' is encountered, so depth becomes 1.
+    -max_depth becomes 1.
+Iteration 10:
+    -The character '(' is encountered, so depth becomes 2.
+    -max_depth becomes 2.
+Iteration 11:
+    -The character ')' is encountered, so depth becomes 1.
+    -max_depth becomes 2.
+Iteration 12:
+    -The character ' ' is encountered, so the current group is parsed.
+    -The current group has a depth of 2, so max_depth becomes 2.
+Iteration 13:
+    -The character '(' is encountered, so depth becomes 1.
+    -max_depth becomes 2.
+Iteration 14:
+    -The character '(' is encountered, so depth becomes 2.
+    -max_depth becomes 2.
+Iteration 15:
+    -The character ')' is encountered, so depth becomes 1.
+    -max_depth becomes 2.
+Iteration 16:
+    -The character ')' is encountered, so depth becomes 0.
+    -max_depth becomes 2.
+
+The final output of the function `parse_nested_parens` is [2, 2, 2, 1, 2].

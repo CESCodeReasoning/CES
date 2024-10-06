@@ -1,0 +1,22 @@
+The function `skjkasdkd` is called with ( lst = [127, 97, 8192] ).
+Inside the function, a function `isPrime` is defined.
+The function `isPrime` takes an integer `n` as input and returns `True` if `n` is prime, and `False` otherwise.
+The function `isPrime` uses a loop to check if `n` is divisible by any number between 2 and the square root of `n`.
+If `n` is not divisible by any number between 2 and the square root of `n`, then `n` must be prime.
+
+The variable `maxx` is initialized to 0.
+The variable `i` is initialized to 0.
+The loop iterates from 0 through the length of `lst` (since ( i < len(lst) )).
+First Iteration (i = 0):
+    - `lst[i]` is 127, which is greater than `maxx` (0).
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - Action: `maxx` is updated to 127.
+Second Iteration (i = 1):
+    - `lst[i]` is 97, which is greater than `maxx` (127).
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - Action: `maxx` is updated to 97.
+Third Iteration (i = 2):
+    - `lst[i]` is 8192, which is greater than `maxx` (97).
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - Action: `maxx` is updated to 8192.
+After the loop completes, the function returns the sum of the digits of `maxx`.

@@ -1,0 +1,139 @@
+The function `solve` is called with ( s = "ab" ).
+Inside the function, a variable `flg` is initialized to 0.
+The loop iterates through each character in `s`.
+First Iteration (i = 'a')
+   - `i` is 'a', which satisfies ( i.isalpha() ).
+   - The condition `i.isalpha()` is true.
+   - Action: `new_str[idx] = i.swapcase()` updates `new_str` to ['A', 'b'].
+   - `flg` is updated to 1.
+Second Iteration (i = 'b')
+   - `i` is 'b', which still satisfies ( i.isalpha() ).
+   - The same condition is true.
+   - Action: `new_str[idx] = i.swapcase()` updates `new_str` to ['A', 'B'].
+   - `flg` is still 1.
+Third Iteration (i = 'c')
+   - `i` is 'c', which does not satisfy ( i.isalpha() ).
+   - The condition `i.isalpha()` is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Fourth Iteration (i = 'd')
+   - `i` is 'd', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Fifth Iteration (i = 'e')
+   - `i` is 'e', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Sixth Iteration (i = 'f')
+   - `i` is 'f', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Seventh Iteration (i = 'g')
+   - `i` is 'g', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Eighth Iteration (i = 'h')
+   - `i` is 'h', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Ninth Iteration (i = 'i')
+   - `i` is 'i', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Tenth Iteration (i = 'j')
+   - `i` is 'j', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Eleventh Iteration (i = 'k')
+   - `i` is 'k', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Twelfth Iteration (i = 'l')
+   - `i` is 'l', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Thirteenth Iteration (i = 'm')
+   - `i` is 'm', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Fourteenth Iteration (i = 'n')
+   - `i` is 'n', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Fifteenth Iteration (i = 'o')
+   - `i` is 'o', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Sixteenth Iteration (i = 'p')
+   - `i` is 'p', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Seventeenth Iteration (i = 'q')
+   - `i` is 'q', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Eighteenth Iteration (i = 'r')
+   - `i` is 'r', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Nineteenth Iteration (i = 's')
+   - `i` is 's', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Twentieth Iteration (i = 't')
+   - `i` is 't', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Twenty-first Iteration (i = 'u')
+   - `i` is 'u', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Twenty-second Iteration (i = 'v')
+   - `i` is 'v', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Twenty-third Iteration (i = 'w')
+   - `i` is 'w', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Twenty-fourth Iteration (i = 'x')
+   - `i` is 'x', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Twenty-fifth Iteration (i = 'y')
+   - `i` is 'y', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Twenty-sixth Iteration (i = 'z')
+   - `i` is 'z', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Twenty-seventh Iteration (i = 'aa')
+   - `i` is 'aa', which does not satisfy ( i.isalpha() ).
+   - The same condition is false.
+   - Action: `s = ""` updates `s` to "".
+   - `flg` is still 1.
+Twenty-eighth Iteration (i

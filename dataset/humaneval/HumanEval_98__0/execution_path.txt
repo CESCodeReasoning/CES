@@ -1,0 +1,9 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: count_upper
+main.py(5):     count = 0
+main.py(6):     for i in range(0, len(s), 2):
+main.py(7):         if s[i] in "AEIOU":
+main.py(6):     for i in range(0, len(s), 2):
+main.py(7):         if s[i] in "AEIOU":
+main.py(6):     for i in range(0, len(s), 2):
+main.py(9):     return count

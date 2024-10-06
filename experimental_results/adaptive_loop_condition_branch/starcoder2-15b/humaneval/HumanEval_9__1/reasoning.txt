@@ -1,0 +1,25 @@
+The function `rolling_max` is called with ( numbers = [1, 2, 3, 4] ).
+Inside the function, a variable `running_max` is initialized to None.
+A variable `result` is initialized to an empty list.
+
+Iteration 1:
+    -The first element of the list is 1.
+    -Since `running_max` is None, it is set to 1.
+    -The element 1 is appended to the `result` list.
+Iteration 2:
+    -The second element of the list is 2.
+    -Since `running_max` is not None, it is compared with 2 using the `max` function.
+    -The maximum value of 2 and `running_max` is 2.
+    -The element 2 is appended to the `result` list.
+Iteration 3:
+    -The third element of the list is 3.
+    -Since `running_max` is not None, it is compared with 3 using the `max` function.
+    -The maximum value of 3 and `running_max` is 3.
+    -The element 3 is appended to the `result` list.
+Iteration 4:
+    -The fourth and last element of the list is 4.
+    -Since `running_max` is not None, it is compared with 4 using the `max` function.
+    -The maximum value of 4 and `running_max` is 4.
+    -The element 4 is appended to the `result` list.
+
+The function returns the `result` list, which contains the running maximum values of the input list.

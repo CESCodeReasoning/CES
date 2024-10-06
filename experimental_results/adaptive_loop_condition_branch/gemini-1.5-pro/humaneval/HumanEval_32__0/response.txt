@@ -1,0 +1,55 @@
+[REASONING]
+The function `find_zero` is called with `xs = [-6, 11, -6, 1]`.
+The function initializes `begin` to -1 and `end` to 1.
+The function enters the while loop, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -1) = -6` and `poly(xs, 1) = 1`, the product is negative, so the loop continues.
+The function updates `begin` to -2 and `end` to 2.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -2) = 4` and `poly(xs, 2) = 16`, the product is positive, so the loop continues.
+The function updates `begin` to -4 and `end` to 4.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -4) = -24` and `poly(xs, 4) = 256`, the product is negative, so the loop continues.
+The function updates `begin` to -8 and `end` to 8.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -8) = 96` and `poly(xs, 8) = 1024`, the product is positive, so the loop continues.
+The function updates `begin` to -16 and `end` to 16.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -16) = -4096` and `poly(xs, 16) = 16384`, the product is negative, so the loop continues.
+The function updates `begin` to -32 and `end` to 32.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -32) = 16384` and `poly(xs, 32) = 1048576`, the product is positive, so the loop continues.
+The function updates `begin` to -64 and `end` to 64.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -64) = -262144` and `poly(xs, 64) = 262144`, the product is negative, so the loop continues.
+The function updates `begin` to -128 and `end` to 128.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -128) = 1048576` and `poly(xs, 128) = 2097152`, the product is positive, so the loop continues.
+The function updates `begin` to -256 and `end` to 256.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -256) = -4294967296` and `poly(xs, 256) = 4294967296`, the product is negative, so the loop continues.
+The function updates `begin` to -512 and `end` to 512.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -512) = 17179869184` and `poly(xs, 512) = 17179869184`, the product is positive, so the loop continues.
+The function updates `begin` to -1024 and `end` to 1024.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -1024) = -70368744177664` and `poly(xs, 1024) = 70368744177664`, the product is negative, so the loop continues.
+The function updates `begin` to -2048 and `end` to 2048.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -2048) = 281474976710656` and `poly(xs, 2048) = 281474976710656`, the product is positive, so the loop continues.
+The function updates `begin` to -4096 and `end` to 4096.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -4096) = -1125899906842624` and `poly(xs, 4096) = 1125899906842624`, the product is negative, so the loop continues.
+The function updates `begin` to -8192 and `end` to 8192.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -8192) = 4503599627370496` and `poly(xs, 8192) = 4503599627370496`, the product is positive, so the loop continues.
+The function updates `begin` to -16384 and `end` to 16384.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -16384) = -18014398509481984` and `poly(xs, 16384) = 18014398509481984`, the product is negative, so the loop continues.
+The function updates `begin` to -32768 and `end` to 32768.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -32768) = 72057594037927936` and `poly(xs, 32768) = 72057594037927936`, the product is positive, so the loop continues.
+The function updates `begin` to -65536 and `end` to 65536.
+The function enters the while loop again, which checks if the product of `poly(xs, begin)` and `poly(xs, end)` is greater than 0.
+Since `poly(xs, -65536) = -288230376151711744` and `poly(xs, 65536) = 288230376151711744`, the product is negative, so the loop continues.
+The function updates `begin` to -131072 and `end` to 131072.
+The function enters the while loop again, which checks if the

@@ -1,0 +1,26 @@
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+For the `unique_digits` function, here is the corrected version:
+
+```python
+def unique_digits(x):
+    odd_digit_elements = []
+    for i in x:
+        if all(int(c) % 2 == 1 for c in str(i)):
+            odd_digit_elements.append(i)
+    return sorted(odd_digit_elements)
+```
+
+The corrected `unique_digits` function now correctly checks each number in the list `x` to see if all its digits are odd. If they are, it adds the number to the `odd_digit_elements` list. After processing all numbers, it returns a sorted list of these numbers. The previous buggy version incorrectly appended both the number and its index to the list, which was not required by the problem statement.

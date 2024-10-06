@@ -1,0 +1,139 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def any_int(x, y, z):
+    
+    if isinstance(x,int) and isinstance(y,int) and isinstance(z,int):
+        if (x+y==z) or (y+z==x):
+            return True
+        return False
+    return False
+
+Tests:
+def check(any_int):
+
+    # Check some simple cases
+    assert any_int(2, 3, 1)==True, "This prints if this assert fails 1 (good for debugging!)"
+    assert any_int(2.5, 2, 3)==False, "This prints if this assert fails 2 (good for debugging!)"
+    assert any_int(1.5, 5, 3.5)==False, "This prints if this assert fails 3 (good for debugging!)"
+    assert any_int(2, 6, 2)==False, "This prints if this assert fails 4 (good for debugging!)"
+    assert any_int(4, 2, 2)==True, "This prints if this assert fails 5 (good for debugging!)"
+    assert any_int(2.2, 2.2, 2.2)==False, "This prints if this assert fails 6 (good for debugging!)"
+    assert any_int(-4, 6, 2)==True, "This prints if this assert fails 7 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert any_int(2,1,1)==True, "This prints if this assert fails 8 (also good for debugging!)"
+    assert any_int(3,4,7)==True, "This prints if this assert fails 9 (also good for debugging!)"
+    assert any_int(3.0,4,7)==False, "This prints if this assert fails 10 (also good for debugging!)"
+
+check(any_int)
+
+The code should satisfy the following natural language specification:
+Write a Python function `any_int(x, y, z)` to solve the following problem:
+Create a function that takes 3 numbers.
+Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.
+Returns false in any other cases.
+Examples
+any_int(5, 2, 7) ➞ True
+any_int(3, 2, 2) ➞ False
+any_int(3, -2, 1) ➞ True
+any_int(3.6, -2.2, 2) ➞ False
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    if isinstance(x,int) and isinstance(y,int) and isinstance(z,int):
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+def sum_of_primes(n):
+    sum = 0
+    for i in range(2, n+1):
+        if is_prime(i):
+            sum += i
+    return sum
+
+Tests:
+def check(sum_of_primes):
+    assert sum_of_primes(10) == 17
+    assert sum_of_primes(20) == 77
+    assert sum_of_primes(30) == 129
+    assert sum_of_primes(40) == 241
+    assert sum_of_primes(50) == 403
+    assert sum_of_primes(60) == 607
+    assert sum_of_primes(70) == 863
+    assert sum_of_primes(80) == 1217
+    assert sum_of_primes(90) == 1433
+    assert sum_of_primes(100) == 1693
+
+check(sum_of_primes)
+
+The code should satisfy the following natural language specification:
+Write a Python function `sum_of_primes(n)` to solve the following problem:
+Calculate the sum of all prime numbers up to and including the given number n.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    if n <= 1:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the bug

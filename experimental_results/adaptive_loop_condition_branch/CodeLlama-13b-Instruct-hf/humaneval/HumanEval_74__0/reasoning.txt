@@ -1,0 +1,5 @@
+The function `total_match` is called with ( lst1 = ['4'], lst2 = ['1', '2', '3', '4', '5'] ).
+Inside the function, two variables `l1` and `l2` are initialized to 0.
+The first loop iterates through the elements of `lst1` and updates `l1` to 1 (since the length of the first element is 1).
+The second loop iterates through the elements of `lst2` and updates `l2` to 5 (since the length of all the elements is 1).
+Since `l1` is less than or equal to `l2`, the if branch is taken and the function returns `lst1` as the output.

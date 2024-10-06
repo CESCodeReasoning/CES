@@ -1,0 +1,65 @@
+The function `largest_prime_factor` is called with ( n = 15 ).
+Inside the function, a function `is_prime` is defined.
+The function `is_prime` is called with ( k = 15 ).
+Inside the function, a variable `i` is initialized to 2.
+The loop iterates from 2 through 14 (since ( k = 15 )).
+First Iteration (i = 2)
+   - `i` is 2, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Second Iteration (i = 3)
+   - `i` is 3, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Third Iteration (i = 4)
+   - `i` is 4, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Fourth Iteration (i = 5)
+   - `i` is 5, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Fifth Iteration (i = 6)
+   - `i` is 6, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Sixth Iteration (i = 7)
+   - `i` is 7, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Seventh Iteration (i = 8)
+   - `i` is 8, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Eighth Iteration (i = 9)
+   - `i` is 9, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Ninth Iteration (i = 10)
+   - `i` is 10, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Tenth Iteration (i = 11)
+   - `i` is 11, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Eleventh Iteration (i = 12)
+   - `i` is 12, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Twelfth Iteration (i = 13)
+   - `i` is 13, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Thirteenth Iteration (i = 14)
+   - `i` is 14, which satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is false.
+   - Action: `return False` returns `False`.
+Fourteenth Iteration (i = 15)
+   - `i` is 15, which now satisfies ( 2 <= i < 15 ).
+   - The condition `k % i == 0` is true.
+   - Action: `return False` returns `False`.
+Return Statement
+   - After the loop completes, the function returns the value of `largest`, which is now 5.
+
+Therefore, the final output of the function `largest_prime_factor(15)` is 5.

@@ -1,0 +1,147 @@
+The function `separate_paren_groups` is called with ( paren_string = '()()((((()()((()))))()()()))' ).
+Inside the function, a variable `result` is initialized to an empty list.
+Inside the function, a variable `current_string` is initialized to an empty list.
+Inside the function, a variable `current_depth` is initialized to 0.
+
+Iteration 1:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 2:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 3:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 4:
+    - The character '(' is encountered, so the current depth becomes 2.
+    - The character '(' is appended to the current string.
+Iteration 5:
+    - The character '(' is encountered, so the current depth becomes 3.
+    - The character '(' is appended to the current string.
+Iteration 6:
+    - The character '(' is encountered, so the current depth becomes 4.
+    - The character '(' is appended to the current string.
+Iteration 7:
+    - The character '(' is encountered, so the current depth becomes 5.
+    - The character '(' is appended to the current string.
+Iteration 8:
+    - The character '(' is encountered, so the current depth becomes 6.
+    - The character '(' is appended to the current string.
+Iteration 9:
+    - The character ')' is encountered, so the current depth becomes 5.
+    - The character ')' is appended to the current string.
+Iteration 10:
+    - The character ')' is encountered, so the current depth becomes 4.
+    - The character ')' is appended to the current string.
+Iteration 11:
+    - The character ')' is encountered, so the current depth becomes 3.
+    - The character ')' is appended to the current string.
+Iteration 12:
+    - The character ')' is encountered, so the current depth becomes 2.
+    - The character ')' is appended to the current string.
+Iteration 13:
+    - The character ')' is encountered, so the current depth becomes 1.
+    - The character ')' is appended to the current string.
+Iteration 14:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 15:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 16:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 17:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 18:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 19:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 20:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 21:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 22:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 23:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 24:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 25:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 26:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 27:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 28:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 29:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 30:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 31:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 32:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 33:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 34:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 35:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 36:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 37:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 38:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.

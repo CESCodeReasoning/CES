@@ -1,0 +1,26 @@
+The function `even_odd_count` is called with the input `-345821`.
+Inside the function:
+1. The absolute value of the number is taken, resulting in `345821`.
+2. This number is converted to a string to iterate over each digit.
+3. The loop iterates over each character (digit) in the string representation of `345821`.
+
+Iteration 1:
+   - The character '3' is converted to integer 3, which is odd (`3 % 2 != 0`).
+   - The `else` branch is taken, and `odd_count` becomes 1.
+Iteration 2:
+   - The character '4' is converted to integer 4, which is even (`4 % 2 == 0`).
+   - The `if` branch is taken, and `even_count` becomes 1.
+Iteration 3:
+   - The character '5' is converted to integer 5, which is odd (`5 % 2 != 0`).
+   - The `else` branch is taken, and `odd_count` becomes 2.
+Iteration 4:
+   - The character '8' is converted to integer 8, which is even (`8 % 2 == 0`).
+   - The `if` branch is taken, and `even_count` becomes 2.
+Iteration 5:
+   - The character '2' is converted to integer 2, which is even (`2 % 2 == 0`).
+   - The `if` branch is taken, and `even_count` becomes 3.
+Iteration 6:
+   - The character '1' is converted to integer 1, which is odd (`1 % 2 != 0`).
+   - The `else` branch is taken, and `odd_count` becomes 3.
+
+After all iterations, the function returns a tuple containing the counts of even and odd digits, which are 3 and 3, respectively.

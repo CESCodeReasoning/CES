@@ -1,0 +1,7 @@
+The function `by_length` is called with (arr = [] ).
+Inside the function, a dictionary `dic` is created with keys as numbers from 1 to 9 and their corresponding values as strings.
+`sorted_arr` is created by sorting `arr` in descending order using `sorted(arr, reverse=True)`.
+`new_arr` is initialized to an empty list.
+The loop iterates over `sorted_arr` and for each element `var`, it tries to append the corresponding value from `dic` to `new_arr`.
+Since `arr` is an empty list, `sorted_arr` is also an empty list, and the loop does not execute.
+Therefore, `new_arr` remains an empty list and is returned.

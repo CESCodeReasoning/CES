@@ -1,0 +1,23 @@
+The function `Strongest_Extension` is called with ( class_name = 'finNNalLLly', extensions = ['Die', 'NowW', 'Wow', 'WoW'] ).
+Inside the function, a variable `strong` is initialized to the first element of `extensions`.
+
+Iteration 1:
+    - `s` is 'Die', which is not the strongest extension yet.
+    - `val` is 0, since there are no uppercase letters in 'Die'.
+    - The condition `val > my_val` is false, since `my_val` is 0.
+    - The `else` block is not executed.
+Iteration 2:
+    - `s` is 'NowW', which is not the strongest extension yet.
+    - `val` is 0, since there are no uppercase letters in 'NowW'.
+    - The condition `val > my_val` is false, since `my_val` is 0.
+    - The `else` block is not executed.
+Iteration 3:
+    - `s` is 'Wow', which is the strongest extension so far.
+    - `val` is 1, since there is one uppercase letter in 'Wow'.
+    - The condition `val > my_val` is true, since `my_val` is 0.
+    - The `else` block is executed, and `strong` is updated to 'Wow'.
+Iteration 4:
+    - `s` is 'WoW', which is not the strongest extension yet.
+    - `val` is 0, since there are no uppercase letters in 'WoW'.
+    - The condition `val > my_val` is false, since `my_val` is 1.
+    - The `else` block is not executed.

@@ -1,0 +1,87 @@
+The function `fix_spaces` is called with ( text = "Yellow Yellow  Dirty  Fellow" ).
+Inside the function, a variable `new_text` is initialized to an empty string.
+The loop iterates over each character in the input string.
+First Iteration (i = 0):
+    - text[i] == " " when text[0]="Y"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Y" ( "" + "Y" = "Y" ).
+Second Iteration (i = 1):
+    - text[i] == " " when text[1]="e"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Ye" ( "Y" + "e" = "Ye" ).
+Third Iteration (i = 2):
+    - text[i] == " " when text[2]="l"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yel" ( "Ye" + "l" = "Yel" ).
+Fourth Iteration (i = 3):
+    - text[i] == " " when text[3]="l"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yell" ( "Yel" + "l" = "Yell" ).
+Fifth Iteration (i = 4):
+    - text[i] == " " when text[4]="o"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yello" ( "Yell" + "o" = "Yello" ).
+Sixth Iteration (i = 5):
+    - text[i] == " " when text[5]="W"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow" ( "Yello" + "W" = "Yellow" ).
+Seventh Iteration (i = 6):
+    - text[i] == " " when text[6]=" "
+    - The condition `text[i] == " "` is true. The if branch is taken.
+    - `end += 1` updates `end` to 7 ( 7 + 1 = 8 ).
+Eighth Iteration (i = 7):
+    - text[i] == " " when text[7]="Y"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-" ( "Yellow" + "Y" = "Yellow-" ).
+Ninth Iteration (i = 8):
+    - text[i] == " " when text[8]="e"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-e" ( "Yellow-" + "e" = "Yellow-e" ).
+Tenth Iteration (i = 9):
+    - text[i] == " " when text[9]="l"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-el" ( "Yellow-e" + "l" = "Yellow-el" ).
+Eleventh Iteration (i = 10):
+    - text[i] == " " when text[10]="l"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-ell" ( "Yellow-el" + "l" = "Yellow-ell" ).
+Twelfth Iteration (i = 11):
+    - text[i] == " " when text[11]="o"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-ello" ( "Yellow-ell" + "o" = "Yellow-ello" ).
+Thirteenth Iteration (i = 12):
+    - text[i] == " " when text[12]="w"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-ellow" ( "Yellow-ello" + "w" = "Yellow-ellow" ).
+Fourteenth Iteration (i = 13):
+    - text[i] == " " when text[13]=" "
+    - The condition `text[i] == " "` is true. The if branch is taken.
+    - `end += 1` updates `end` to 14 ( 14 + 1 = 15 ).
+Fifteenth Iteration (i = 14):
+    - text[i] == " " when text[14]="D"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-ellow_" ( "Yellow-ellow" + "D" = "Yellow-ellow_" ).
+Sixteenth Iteration (i = 15):
+    - text[i] == " " when text[15]="i"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-ellow_i" ( "Yellow-ellow_" + "i" = "Yellow-ellow_i" ).
+Seventeenth Iteration (i = 16):
+    - text[i] == " " when text[16]="r"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-ellow_ir" ( "Yellow-ellow_i" + "r" = "Yellow-ellow_ir" ).
+Eighteenth Iteration (i = 17):
+    - text[i] == " " when text[17]="t"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-ellow_irt" ( "Yellow-ellow_ir" + "t" = "Yellow-ellow_irt" ).
+Nineteenth Iteration (i = 18):
+    - text[i] == " " when text[18]="y"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-ellow_irty" ( "Yellow-ellow_irt" + "y" = "Yellow-ellow_irty" ).
+Twentieth Iteration (i = 19):
+    - text[i] == " " when text[19]=" "
+    - The condition `text[i] == " "` is true. The if branch is taken.
+    - `end += 1` updates `end` to 20 ( 20 + 1 = 21 ).
+Twenty-first Iteration (i = 20):
+    - text[i] == " " when text[20]="F"
+    - The condition `text[i] == " "` is false. The else branch is taken.
+    - `new_text += text[i]` updates `new_text` to "Yellow-ellow_irtyF" ( "Yellow-ellow_irty" + "F" = "Yellow-ellow_

@@ -1,0 +1,6 @@
+```response
+    largest = list(filter(lambda x: x > 0, smallest))
+```
+```response
+    smallest = list(filter(lambda x: x > 0, largest))
+```

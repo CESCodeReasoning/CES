@@ -1,0 +1,23 @@
+The function `rolling_max` is called with ( numbers = [3,2,3,100,3] ).
+Inside the function, a variable `running_max` and `result` are initialized to None.
+
+Iteration 1:
+    - The variable `running_max` is None, so the condition `running_max is None` is true.
+    - The action `running_max = n` is executed, so `running_max` becomes 3.
+    - The action `result.append(running_max)` is executed, so `result` becomes [3].
+Iteration 2:
+    - The variable `running_max` is 3, so the condition `running_max is None` is false.
+    - The action `running_max = max(running_max, n)` is executed, so `running_max` becomes 3.
+    - The action `result.append(running_max)` is executed, so `result` becomes [3, 3].
+Iteration 3:
+    - The variable `running_max` is 3, so the condition `running_max is None` is false.
+    - The action `running_max = max(running_max, n)` is executed, so `running_max` becomes 3.
+    - The action `result.append(running_max)` is executed, so `result` becomes [3, 3, 3].
+Iteration 4:
+    - The variable `running_max` is 3, so the condition `running_max is None` is false.
+    - The action `running_max = max(running_max, n)` is executed, so `running_max` becomes 100.
+    - The action `result.append(running_max)` is executed, so `result` becomes [3, 3, 3, 100].
+Iteration 5:
+    - The variable `running_max` is 100, so the condition `running_max is None` is false.
+    - The action `running_max = max(running_max, n)` is executed, so `running_max` becomes 100.
+    - The action `result.append(running_max)` is executed, so `result` becomes [3, 3, 3, 100, 100].

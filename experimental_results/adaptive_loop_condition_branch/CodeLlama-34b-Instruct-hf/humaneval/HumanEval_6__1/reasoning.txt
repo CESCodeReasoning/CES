@@ -1,0 +1,8 @@
+The function `parse_nested_parens` is called with ( paren_string = "(()(())((())))" ).
+Inside the function, a nested function `parse_paren_group` is defined.
+The outer function iterates over the input string, splitting it into substrings separated by spaces.
+For each substring, the inner function `parse_paren_group` is called.
+The inner function iterates over the characters in the substring and keeps track of the current depth of nesting.
+When a '(' character is encountered, the depth increases, and when a ')' character is encountered, the depth decreases.
+The maximum depth of nesting is returned as the result of the inner function.
+The outer function returns a list of the maximum depths of nesting for each substring.

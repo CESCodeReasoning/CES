@@ -1,0 +1,8 @@
+The function `rounded_avg` is called with `n = 350` and `m = 902`.
+First, the function checks if `m` is less than `n`. In this case, `m` is greater than `n` (902 > 350), so the condition `(m < n)` is `False` and the corresponding branch is not taken.
+Next, the function initializes a variable `summation` to 0.
+The loop iterates from `n` to `m` inclusive, which means from 350 to 902. The range function generates numbers from 350 to 902.
+During each iteration, the current value of `i` is added to `summation`.
+After the loop completes, the function calculates the average of the numbers from `n` to `m` by dividing `summation` by `(m - n + 1)`, which is the count of numbers in the range.
+The average is then rounded to the nearest integer using the `round` function.
+Finally, the function returns the binary representation of the rounded average using the `bin` function.

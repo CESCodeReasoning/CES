@@ -1,0 +1,13 @@
+The function `digitSum` is called with ( s = "aAaaaXa" ).
+The condition `s == ""` is false, so the else branch is taken.
+The function `ord` returns the ASCII value of a character. If the character is uppercase, its ASCII value is added to the sum. If the character is lowercase or non-alphabetic, 0 is added to the sum.
+The character 'a' is uppercase, so its ASCII value (97) is added to the sum.
+The character 'A' is uppercase, so its ASCII value (65) is added to the sum.
+The character 'a' is uppercase, so its ASCII value (97) is added to the sum.
+The character 'a' is uppercase, so its ASCII value (97) is added to the sum.
+The character 'A' is uppercase, so its ASCII value (65) is added to the sum.
+The character 'X' is not uppercase, so 0 is added to the sum.
+The character 'a' is uppercase, so its ASCII value (97) is added to the sum.
+The sum of these values is 332.
+
+Therefore, the final output of the function `digitSum("aAaaaXa")` is 332.

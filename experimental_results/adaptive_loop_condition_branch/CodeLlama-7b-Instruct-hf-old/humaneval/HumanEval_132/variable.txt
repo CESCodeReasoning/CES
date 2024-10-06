@@ -1,0 +1,20 @@
+from typing import *
+def is_nested(string):
+    opening_bracket_index = []
+    closing_bracket_index = [] ## [STATE]i=??[/STATE]
+    for i in range(len(string)): ## [STATE]range(len(string))=??[/STATE][STATE]len(string)=??[/STATE]
+        if string[i] == '[': ## [CONDITION](string[i] == '[')=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            opening_bracket_index.append(i)
+        else: ## [BRANCH]taken=??[/BRANCH]
+            closing_bracket_index.append(i)
+    closing_bracket_index.reverse()
+    cnt = 0
+    i = 0
+    l = len(closing_bracket_index) ## [STATE]idx=??[/STATE]
+    for idx in opening_bracket_index: ## [STATE]opening_bracket_index=??[/STATE]
+        if i < l and idx < closing_bracket_index[i]: ## [CONDITION](i < l and idx < closing_bracket_index[i])=??[/CONDITION][CONDITION](i < l)=??[/CONDITION][CONDITION](idx < closing_bracket_index[i])=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            cnt += 1
+            i += 1
+    return cnt >= 2
+
+    

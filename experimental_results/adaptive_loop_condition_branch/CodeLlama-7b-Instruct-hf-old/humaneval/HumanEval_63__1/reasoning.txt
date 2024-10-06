@@ -1,0 +1,13 @@
+The function `fibfib` is called with ( n = 10 ).
+The function first checks if `n` is equal to 0.
+   - `n` is not equal to 0, so the condition is false.
+   - The function then checks if `n` is equal to 1.
+   - `n` is not equal to 1, so the condition is false.
+   - The function then checks if `n` is equal to 2.
+   - `n` is equal to 2, so the condition is true.
+   - The function returns 1.
+The function then calls itself with `n - 1`, `n - 2`, and `n - 3`.
+   - `n - 1` is 9, `n - 2` is 8, and `n - 3` is 7.
+   - The function calls itself with these values.
+   - The function returns the sum of the results of these recursive calls.
+Therefore, the final output of the function `fibfib(10)` is 12.

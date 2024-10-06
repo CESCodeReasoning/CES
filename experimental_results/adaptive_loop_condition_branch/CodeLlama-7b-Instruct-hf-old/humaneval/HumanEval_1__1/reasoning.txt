@@ -1,0 +1,142 @@
+The function `separate_paren_groups` is called with ( paren_string = '()()((((()()((()))))()()()))' ).
+Inside the function, a variable `result` is initialized to an empty list.
+A variable `current_string` is initialized to an empty list.
+A variable `current_depth` is initialized to 0.
+
+Iteration 1:
+    -The character '(' is encountered, so `current_depth` becomes 1.
+    -The character '(' is appended to `current_string`.
+Iteration 2:
+    -The character ')' is encountered, so `current_depth` becomes 0.
+    -The character ')' is appended to `current_string`.
+    -The `current_string` is appended to `result`.
+    -`current_string` is cleared.
+Iteration 3:
+    -The character '(' is encountered, so `current_depth` becomes 1.
+    -The character '(' is appended to `current_string`.
+Iteration 4:
+    -The character '(' is encountered, so `current_depth` becomes 2.
+    -The character '(' is appended to `current_string`.
+Iteration 5:
+    -The character '(' is encountered, so `current_depth` becomes 3.
+    -The character '(' is appended to `current_string`.
+Iteration 6:
+    -The character '(' is encountered, so `current_depth` becomes 4.
+    -The character '(' is appended to `current_string`.
+Iteration 7:
+    -The character '(' is encountered, so `current_depth` becomes 5.
+    -The character '(' is appended to `current_string`.
+Iteration 8:
+    -The character '(' is encountered, so `current_depth` becomes 6.
+    -The character '(' is appended to `current_string`.
+Iteration 9:
+    -The character '(' is encountered, so `current_depth` becomes 7.
+    -The character '(' is appended to `current_string`.
+Iteration 10:
+    -The character '(' is encountered, so `current_depth` becomes 8.
+    -The character '(' is appended to `current_string`.
+Iteration 11:
+    -The character '(' is encountered, so `current_depth` becomes 9.
+    -The character '(' is appended to `current_string`.
+Iteration 12:
+    -The character '(' is encountered, so `current_depth` becomes 10.
+    -The character '(' is appended to `current_string`.
+Iteration 13:
+    -The character ')' is encountered, so `current_depth` becomes 9.
+    -The character ')' is appended to `current_string`.
+Iteration 14:
+    -The character ')' is encountered, so `current_depth` becomes 8.
+    -The character ')' is appended to `current_string`.
+Iteration 15:
+    -The character ')' is encountered, so `current_depth` becomes 7.
+    -The character ')' is appended to `current_string`.
+Iteration 16:
+    -The character ')' is encountered, so `current_depth` becomes 6.
+    -The character ')' is appended to `current_string`.
+Iteration 17:
+    -The character ')' is encountered, so `current_depth` becomes 5.
+    -The character ')' is appended to `current_string`.
+Iteration 18:
+    -The character ')' is encountered, so `current_depth` becomes 4.
+    -The character ')' is appended to `current_string`.
+Iteration 19:
+    -The character ')' is encountered, so `current_depth` becomes 3.
+    -The character ')' is appended to `current_string`.
+Iteration 20:
+    -The character ')' is encountered, so `current_depth` becomes 2.
+    -The character ')' is appended to `current_string`.
+Iteration 21:
+    -The character ')' is encountered, so `current_depth` becomes 1.
+    -The character ')' is appended to `current_string`.
+Iteration 22:
+    -The character ')' is encountered, so `current_depth` becomes 0.
+    -The character ')' is appended to `current_string`.
+    -The `current_string` is appended to `result`.
+    -`current_string` is cleared.
+Iteration 23:
+    -The character ')' is encountered, so `current_depth` becomes -1.
+    -The character ')' is appended to `current_string`.
+Iteration 24:
+    -The character ')' is encountered, so `current_depth` becomes -2.
+    -The character ')' is appended to `current_string`.
+Iteration 25:
+    -The character ')' is encountered, so `current_depth` becomes -3.
+    -The character ')' is appended to `current_string`.
+Iteration 26:
+    -The character ')' is encountered, so `current_depth` becomes -4.
+    -The character ')' is appended to `current_string`.
+Iteration 27:
+    -The character ')' is encountered, so `current_depth` becomes -5.
+    -The character ')' is appended to `current_string`.
+Iteration 28:
+    -The character ')' is encountered, so `current_depth` becomes -6.
+    -The character ')' is appended to `current_string`.
+Iteration 29:
+    -The character ')' is encountered, so `current_depth` becomes -7.
+    -The character ')' is appended to `current_string`.
+Iteration 30:
+    -The character ')' is encountered, so `current_depth` becomes -8.
+    -The character ')' is appended to `current_string`.
+Iteration 31:
+    -The character ')' is encountered, so `current_depth` becomes -9.
+    -The character ')' is appended to `current_string`.
+Iteration 32:
+    -The character ')' is encountered, so `current_depth` becomes -10.
+    -The character ')' is appended to `current_string`.
+Iteration 33:
+    -The character ')' is encountered, so `current_depth` becomes -11.
+    -The character ')' is appended to `current_string`.
+Iteration 34:
+    -The character ')' is encountered, so `current_depth` becomes -12.
+    -The character ')' is appended to `current_string`.
+Iteration 35:
+    -The character ')' is encountered, so `current_depth` becomes -13.
+    -The character ')' is appended to `current_string`.
+Iteration 36:
+    -The character ')' is encountered, so `current_depth` becomes -14.
+    -The character ')' is appended to `current_string`.
+Iteration 37:
+    -The character ')' is encountered, so `current_depth` becomes -15.
+    -The character ')' is appended to `current_string`.
+Iteration 38:
+    -The character ')' is encountered, so `current_depth` becomes -16.
+    -The character ')' is appended to `current_string`.
+Iteration 39:
+    -The character ')' is encountered, so `current_depth` becomes -17.
+    -The character ')' is appended to `current_string`.
+Iteration 40:
+    -The character ')' is encountered, so `current_depth` becomes -18.
+    -The character ')' is appended to `current_string`.
+Iteration 41:
+    -The character ')' is encountered, so `current_depth` becomes -19.
+    -The character ')' is appended to `current_string`.
+Iteration 42:
+    -The character ')' is encountered, so `current_depth` becomes -20.
+    -The character ')' is appended to `current_string`.
+Iteration 43:
+    -The character ')' is encountered, so `current_depth` becomes -21.
+    -The character ')' is appended to `current_string`.
+Iteration 44:
+    -The character ')' is encountered, so `current_depth` becomes -22.
+    -The character ')' is appended to `current_string`.
+Iteration 4

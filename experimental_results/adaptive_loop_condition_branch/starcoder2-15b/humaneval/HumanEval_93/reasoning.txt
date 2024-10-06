@@ -1,0 +1,5 @@
+The function encode takes a string message as input and returns an encoded version of the message.
+The function first creates a dictionary vowels_replace that maps each vowel to the character two positions ahead of it in the alphabet.
+It then swaps the case of the message and returns a new string where each vowel is replaced with the corresponding character in vowels_replace.
+To determine the output of executing the function encode on the input "TEST", we need to swap the case of "TEST" and replace each vowel with the character two positions ahead of it in the alphabet.
+Therefore, the output of executing the function encode on the input "TEST" is "VGUV".

@@ -1,0 +1,20 @@
+```response
+                c = collections.Counter(numbers)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    import collections
+    c = collections.Counter(numbers)
+    return [n for n in numbers if c[n] < 1]
+
+Tests:
+def check(remove_duplicates):
+    assert remove_duplicates([]) == []
+    assert remove_duplicates([1, 2, 3, 4])

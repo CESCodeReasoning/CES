@@ -1,0 +1,7 @@
+The function max_fill takes a 2D list grid and an integer capacity as input. It calculates the total number of times the capacity needs to be filled to cover all the elements in the grid.
+
+The function uses a list comprehension to iterate over each sublist in the grid. For each sublist, it calculates the sum of its elements and divides it by the capacity. The result is then rounded up to the nearest integer using the math.ceil function. This gives the number of times the capacity needs to be filled to cover the elements in the sublist.
+
+The function then sums up these values for all sublists in the grid to get the total number of times the capacity needs to be filled.
+
+For the input [[1,1,1,1], [1,1,1,1]], 2, the function calculates that the capacity needs to be filled 4 times to cover all the elements in the grid. Therefore, the output of the function is 4.

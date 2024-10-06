@@ -1,0 +1,7 @@
+The function `count_nums` is called with ( arr = [1] ).
+The function `digits_sum` is called with ( n = 1 ).
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` returns the sum of the digits of `n`, which is 1.
+The function `count_nums` returns the length of the list of positive numbers in `arr`, which is 1.
+
+Therefore, the final output of the function `count_nums([1])` is 1.

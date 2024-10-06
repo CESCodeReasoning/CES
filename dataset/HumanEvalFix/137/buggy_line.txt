@@ -1,0 +1,1 @@
+    if isinstance(temp_a, str): temp_a = temp_a.replace(',','.').replace('.',',')

@@ -1,0 +1,6 @@
+The function `monotonic` is called with ( l = [4, 1, 0, -10] ).
+`l` is not sorted in ascending order, nor is it sorted in descending order.
+The condition `l == sorted(l) or l == sorted(l, reverse=True)` is false.
+The function returns False.
+
+Therefore, the final output of the function `monotonic([4, 1, 0, -10])` is False.

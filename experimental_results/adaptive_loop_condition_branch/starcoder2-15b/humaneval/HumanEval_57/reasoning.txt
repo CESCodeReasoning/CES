@@ -1,0 +1,5 @@
+The function `monotonic` is called with ( l = [1, 2, 4, 10] ).
+`l` is [1, 2, 4, 10], which is not equal to `sorted(l)` or `sorted(l, reverse=True)`.
+The condition `l == sorted(l) or l == sorted(l, reverse=True)` is false, therefore the if branch is not taken and the method returns False.
+
+Therefore, the final output of the function `monotonic([1, 2, 4, 10])` is False.

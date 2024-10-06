@@ -1,0 +1,24 @@
+The bug in the `has_close_elements` function is that it is calculating the distance as `elem - elem2`, but it should be `abs(elem - elem2)` to get the absolute distance.
+
+The bug in the `find_max` function is that it is not correctly finding the word with the maximum number of unique characters. It should be comparing the length of the set of characters in each word, not the length of the word itself.
+
+Here is the corrected code:
+
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def find_max(words):
+    return max(words, key=lambda word: (-len(set(word)), word))
+```
+
+In the `find_max` function, `max` is used with a key function that returns a tuple. The first element of the tuple is the negative length of the set of characters in the word (because `max` sorts in ascending order, and we want the word with the most unique characters), and the second element is the word itself. This ensures that if two words have the same number of unique characters, the one that comes first in lexicographical order is returned.

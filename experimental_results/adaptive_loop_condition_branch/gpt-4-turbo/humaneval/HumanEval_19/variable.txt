@@ -1,0 +1,20 @@
+from typing import *
+
+def sort_numbers(numbers: str) -> str:
+    # [STATE] value_map is a dictionary mapping number words to their numeric values [/STATE]
+    value_map = {
+        'zero': 0,
+        'one': 1,
+        'two': 2,
+        'three': 3,
+        'four': 4,
+        'five': 5,
+        'six': 6,
+        'seven': 7,
+        'eight': 8,
+        'nine': 9
+    }
+    # [STATE] numbers.split(' ') results in ['five', 'zero', 'four', 'seven', 'nine', 'eight'] [/STATE]
+    # [CONDITION] x evaluates to True for all elements in the list, as there are no empty strings [/CONDITION]
+    # [BRANCH] Y [/BRANCH]
+    return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))

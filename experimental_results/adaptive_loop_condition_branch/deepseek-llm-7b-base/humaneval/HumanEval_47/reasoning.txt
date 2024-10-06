@@ -1,0 +1,6 @@
+The function `median` is called with ( l = [3, 1, 2, 4, 5] ).
+The list `l` is sorted using the `sorted` method.
+The condition `len(l) % 2 == 1` is true, which means that the list `l` has an odd number of elements.
+The `if` branch is taken, and the method returns the value of `l[len(l) // 2]`, which is the middle element of the sorted list.
+
+Therefore, the final output of the function `median([3, 1, 2, 4, 5])` is 3.

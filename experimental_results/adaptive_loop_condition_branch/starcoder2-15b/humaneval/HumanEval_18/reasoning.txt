@@ -1,0 +1,5 @@
+The function `how_many_times` is called with ( string = '', substring = 'x' ).
+Inside the function, a variable `times` is initialized to 0.
+
+Iteration 1:
+    -The substring 'x' is not found in the string '', so the condition `string[i:i+len(substring)] == substring` is false.

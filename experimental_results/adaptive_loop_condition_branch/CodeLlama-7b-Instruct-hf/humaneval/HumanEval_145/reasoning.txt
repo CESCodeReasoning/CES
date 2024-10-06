@@ -1,0 +1,5 @@
+The function `order_by_points` takes a list of numbers as input and returns a list of numbers sorted in ascending order based on the sum of their digits.
+The function `digits_sum` is a nested function that takes a number `n` as input and returns the sum of its digits.
+The function `order_by_points` uses the `sorted` method with a key function `digits_sum` to sort the input list `nums` based on the sum of its digits.
+
+Therefore, the final output of the function `order_by_points([1, 11, -1, -11, -12])` is `[-12, -11, -1, 1, 11]`.

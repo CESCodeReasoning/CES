@@ -1,0 +1,6 @@
+The function `starts_one_ends` is called with ( n = 2 ).
+The condition `n == 1` is false, so the function returns `18 * (10 ** (n - 2))`.
+`n - 2` is `2 - 2` which equals `0`.
+So, `18 * (10 ** 0)` equals `18 * 1` equals `18`.
+
+Therefore, the final output of the function `starts_one_ends(2)` is `18`.

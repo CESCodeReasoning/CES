@@ -1,0 +1,31 @@
+The function `sum_squares` is called with ( lst = [1, 2, 3] ).
+Inside the function, a variable `result` is initialized to an empty list.
+The loop iterates through the length of the list (lst).
+First Iteration (i = 0)
+   - `i` is 0, which is not divisible by 3.
+   - The condition `i % 3 == 0` is false.
+   - Action: `result.append(lst[i]**2)` does not occur.
+Second Iteration (i = 1)
+   - `i` is 1, which is not divisible by 3.
+   - The same condition is false.
+   - Action: `result.append(lst[i]**2)` does not occur.
+Third Iteration (i = 2)
+   - `i` is 2, which is divisible by 3.
+   - The condition `i % 3 == 0` is true.
+   - Action: `result.append(lst[i]**2)` occurs, appending `lst[2]**2` to `result`.
+Fourth Iteration (i = 3)
+   - `i` is 3, which is not divisible by 3.
+   - The same condition is false.
+   - Action: `result.append(lst[i]**2)` does not occur.
+Fifth Iteration (i = 4)
+   - `i` is 4, which is not divisible by 3.
+   - The same condition is false.
+   - Action: `result.append(lst[i]**2)` does not occur.
+Sixth Iteration (i = 5)
+   - `i` is 5, which is not divisible by 3.
+   - The same condition is false.
+   - Action: `result.append(lst[i]**2)` does not occur.
+Return Statement
+   - After the loop completes, the function returns the sum of the elements in `result`, which is 14.
+
+Therefore, the final output of the function `sum_squares([1, 2, 3])` is 14.

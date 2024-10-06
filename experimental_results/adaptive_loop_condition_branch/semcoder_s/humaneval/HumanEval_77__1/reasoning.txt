@@ -1,0 +1,7 @@
+The function `iscube(a)` checks if a number is a perfect cube.
+
+- The function starts by taking the absolute value of the input `a`. This is done to handle negative numbers as well.
+- Then, it calculates the cube root of `a` by cubing the result of rounding `a` to the nearest third power.
+- Finally, it checks if the cube of this cube root is equal to `a`. If it is, then `a` is a perfect cube and the function returns `True`. Otherwise, it returns `False`.
+
+For the input `0`, the absolute value of `0` is `0`. The cube root of `0` is `0`. Therefore, the cube of `0` is not equal to `0`, so the function returns `False`.

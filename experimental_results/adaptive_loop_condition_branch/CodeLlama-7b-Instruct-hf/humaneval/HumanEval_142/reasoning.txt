@@ -1,0 +1,20 @@
+The function `sum_squares` is called with ( lst = [1,2,3] ).
+Inside the function, a variable `result` is initialized to an empty list.
+
+Iteration 1:
+    -The value of `i` is 0, which is not divisible by 3.
+    -The condition `i % 3 == 0` is false.
+    -The condition `i % 4 == 0 and i%3 != 0` is false.
+    -The action `result.append(lst[i])` appends the value 1 to `result`.
+Iteration 2:
+    -The value of `i` is 1, which is not divisible by 3.
+    -The condition `i % 3 == 0` is false.
+    -The condition `i % 4 == 0 and i%3 != 0` is false.
+    -The action `result.append(lst[i])` appends the value 2 to `result`.
+Iteration 3:
+    -The value of `i` is 2, which is divisible by 3.
+    -The condition `i % 3 == 0` is true.
+    -The condition `i % 4 == 0 and i%3 != 0` is false.
+    -The action `result.append(lst[i]**2)` appends the value 9 to `result`.
+
+Therefore, the final output of the function `sum_squares([1,2,3])` is 12.

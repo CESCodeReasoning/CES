@@ -1,0 +1,45 @@
+The function `f` takes an integer `n` as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by `i` in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4 and 5.
+    - i % 2 == 0: False, the if branch is not taken.
+    - x = 0:
+        - j in the inner loop is 1, 2, 3, 4 and 5.
+        - x += j: x = 1 + 2 + 3 + 4 + 5 = 15
+    - ret += [x]: ret = [15]
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4 and 5.
+    - i % 2 == 0: True, the if branch is taken.
+    - x = 1:
+        - j in the inner loop is 2, 3, 4 and 5.
+        - x *= j: x = 1 * 2 * 3 * 4 * 5 = 120
+    - ret += [x]: ret = [15, 120]
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4 and 5.
+    - i % 2 == 0: False, the if branch is not taken.
+    - x = 0:
+        - j in the inner loop is 3, 4 and 5.
+        - x += j: x = 3 + 4 + 5 = 12
+    - ret += [x]: ret = [15, 120, 12]
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4 and 5.
+    - i % 2 == 0: True, the if branch is taken.
+    - x = 1:
+        - j in the inner loop is 4 and 5.
+        - x *= j: x = 1 * 4 * 5 = 20
+    - ret += [x]: ret = [15, 120, 12, 20]
+Fifth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5.
+    - i % 2 == 0: False, the if branch is not taken.
+    - x = 0:
+        - j in the inner loop is 5.
+        - x += j: x = 5
+    - ret += [x]: ret = [15, 120, 12, 20, 5]
+Sixth iteration (i=5):
+    - `i` is 5, j in the inner loop is 6.
+    - i % 2 == 0: True, the if branch is taken.
+    - x = 1:
+        - j in the inner loop is 6.
+        - x *= j: x = 1 * 6 = 6
+    - ret += [x]: ret = [15, 120, 12, 20, 5, 6]

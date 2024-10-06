@@ -1,0 +1,11 @@
+The function `words_string` is called with the input string "One, two, three, four, five, six".
+1. The function first checks if the input string `s` is empty. Since it is not, the condition `(not s)` evaluates to `False`, and the branch is not taken.
+2. An empty list `s_list` is initialized to store characters from the input string.
+3. The function iterates over each character in the input string:
+   - For each comma `,`, it appends a space `' '` to `s_list`.
+   - For other characters, it appends the character itself to `s_list`.
+4. After processing all characters, `s_list` is converted back to a string using `"".join(s_list)`.
+5. The resulting string is then split by whitespace using the `.split()` method to create a list of words.
+6. The function returns this list of words.
+
+The expected output is a list of words from the input string, with commas removed and spaces used to separate words.

@@ -1,0 +1,4 @@
+The function iscube takes an integer a as input and returns True if a is a perfect cube, and False otherwise.
+To determine whether 0 is a perfect cube, we need to check if the cube root of 0 is an integer.
+The cube root of 0 is -0.0, which is not an integer.
+Therefore, the output of executing the function iscube on the input 0 is False.

@@ -1,0 +1,15 @@
+[REASONING]
+The function filter_integers takes a list of values as input and returns a new list containing only the integers from the input list.
+To determine the output of executing the function filter_integers on the input list [4, {}, [], 23.2, 9, 'adasd'], we need to iterate over the input list and check if each element is an integer.
+If an element is an integer, we add it to the output list.
+Therefore, the output of executing the function filter_integers on the input list [4, {}, [], 23.2, 9, 'adasd'] is [4, 9].
+[/REASONING]
+
+[ANSWER]
+def filter_integers(values: List[Any]) -> List[int]:
+    return [x for x in values if [CONDITION]isinstance(x, int)[/CONDITION]]
+[/ANSWER]
+
+[OUTPUT]
+[4, 9]
+[/OUTPUT]

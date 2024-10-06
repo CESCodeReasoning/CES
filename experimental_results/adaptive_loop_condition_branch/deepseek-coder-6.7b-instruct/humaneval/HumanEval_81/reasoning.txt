@@ -1,0 +1,54 @@
+The function `numerical_letter_grade` is called with ( grades = [4.0, 3, 1.7, 2, 3.5] ).
+Inside the function, a variable `letter_grade` is initialized as an empty list.
+
+Iteration 1:
+    -The GPA 4.0 is equal to 4.0, so the letter grade is "A+".
+Iteration 2:
+    -The GPA 3 is not greater than 4.0, so it falls into the next condition.
+Iteration 3:
+    -The GPA 1.7 is not greater than 3.7, so it falls into the next condition.
+Iteration 4:
+    -The GPA 2 is not greater than 3.3, so it falls into the next condition.
+Iteration 5:
+    -The GPA 3.5 is greater than 3.0, so the letter grade is "B+".
+
+Therefore, the final output of the function `numerical_letter_grade([4.0, 3, 1.7, 2, 3.5])` is ['A+', 'E', 'E', 'E', 'B+'].
+
+[ANSWER]
+def numerical_letter_grade(grades):
+
+   
+    letter_grade = []
+    for gpa in grades: ## [STATE]gpa=[4.0, 3, 1.7, 2, 3.5][/STATE][STATE]grades=[[4.0, 3, 1.7, 2, 3.5]][/STATE]
+        if gpa == 4.0: ## [CONDITION](gpa == 4.0)=[True, False, False, False, False][/CONDITION][BRANCH]taken=[Y, N, N, N, N][/BRANCH]
+            letter_grade.append("A+")
+        elif gpa > 3.7: ## [CONDITION](gpa > 3.7)=[False, True, False, False, False][/CONDITION][BRANCH]taken=[N, Y, N, N, N][/BRANCH]
+            letter_grade.append("A")
+        elif gpa > 3.3: ## [CONDITION](gpa > 3.3)=[False, False, True, False, False][/CONDITION][BRANCH]taken=[N, N, Y, N, N][/BRANCH]
+            letter_grade.append("A-")
+        elif gpa > 3.0: ## [CONDITION](gpa > 3.0)=[False, False, False, True, False][/CONDITION][BRANCH]taken=[N, N, N, Y, N][/BRANCH]
+            letter_grade.append("B+")
+        elif gpa > 2.7: ## [CONDITION](gpa > 2.7)=[False, False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, N, Y][/BRANCH]
+            letter_grade.append("B")
+        elif gpa > 2.3: ## [CONDITION](gpa > 2.3)=[False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N][/BRANCH]
+            letter_grade.append("B-")
+        elif gpa > 2.0: ## [CONDITION](gpa > 2.0)=[False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N][/BRANCH]
+            letter_grade.append("C+")
+        elif gpa > 1.7: ## [CONDITION](gpa > 1.7)=[False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N][/BRANCH]
+            letter_grade.append("C")
+        elif gpa > 1.3: ## [CONDITION](gpa > 1.3)=[False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N][/BRANCH]
+            letter_grade.append("C-")
+        elif gpa > 1.0: ## [CONDITION](gpa > 1.0)=[False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N][/BRANCH]
+            letter_grade.append("D+")
+        elif gpa > 0.7: ## [CONDITION](gpa > 0.7)=[False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N][/BRANCH]
+            letter_grade.append("D")
+        elif gpa > 0.0: ## [CONDITION](gpa > 0.0)=[False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N][/BRANCH]
+            letter_grade.append("D-")
+        else: ## [BRANCH]taken=[N, N, N, N, N][/BRANCH]
+            letter_grade.append("E")
+    return letter_grade
+
+[OUTPUT]
+['A+', 'E', 'E', 'E', 'B+']
+[/OUTPUT]
+<|EOT|>

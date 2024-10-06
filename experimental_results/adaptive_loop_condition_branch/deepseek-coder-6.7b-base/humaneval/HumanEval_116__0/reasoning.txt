@@ -1,0 +1,18 @@
+The function sort_array takes an array arr as input and returns a sorted array based on the following criteria:
+1. The elements of the array are sorted in ascending order.
+2. If two elements have the same number of 1's in their binary representation, they are sorted in ascending order.
+
+To determine the output of executing the function sort_array on the input [3,6,44,12,32,5], we need to sort the array based on the above criteria.
+
+First, we sort the array in ascending order. This gives us [3,5,6,12,32,44].
+
+Next, we sort the elements of the array based on the number of 1's in their binary representation.
+
+The binary representation of 3 is 011, which has 1 1-bit.
+The binary representation of 5 is 101, which has 2 1-bits.
+The binary representation of 6 is 110, which has 1 1-bit.
+The binary representation of 12 is 1100, which has 2 1-bits.
+The binary representation of 32 is 100000, which has 1 1-bit.
+The binary representation of 44 is 101100, which has 3 1-bits.
+
+Therefore, the sorted array based on the above criteria is [3,6,12,32,5,44].

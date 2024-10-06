@@ -1,0 +1,9 @@
+The function make_a_pile takes an integer n as input and returns a list of n integers, where the i-th integer in the list is equal to n + 2 * i.
+To determine the output of executing the function make_a_pile on the input 4, we need to evaluate the list comprehension [n + 2 * i for i in range(n)].
+The range(n) generates a list of integers from 0 to n-1, which is [0, 1, 2, 3] in this case.
+For each integer i in the list, we evaluate the expression n + 2 * i.
+For i = 0, we get n + 2 * 0 = 4.
+For i = 1, we get n + 2 * 1 = 6.
+For i = 2, we get n + 2 * 2 = 8.
+For i = 3, we get n + 2 * 3 = 10.
+Therefore, the output of executing the function make_a_pile on the input 4 is the list [4, 6, 8, 10].

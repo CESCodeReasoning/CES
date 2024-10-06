@@ -1,0 +1,106 @@
+<｜begin▁of▁sentence｜>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in truncate_number.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def truncate_number(number: float) -> float:
+    return number % 1.0 + 1.0
+
+Tests:
+def check(truncate_number):
+    assert truncate_number(3.5) == 0.5
+    assert abs(truncate_number(1.33) - 0.33) < 1e-6
+    assert abs(truncate_number(123.456) - 0.456) < 1e-6
+
+check(truncate_number)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `truncate_number(number: float) -> float` to solve the following problem:
+Given a positive floating point number, it can be decomposed into
+and integer part (largest integer smaller than given number) and decimals
+(leftover part always smaller than 1).
+Return the decimal part of the number.
+
+Fixed Code:
+```python
+def truncate_number(number: float) -> float:
+    return number % 1.0
+```
+
+
+
+Fix bugs in find_closest_number.
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+from typing import List
+def find_closest_number(numbers: List[float], target: float) -> float:
+    closest_number = numbers[0]
+    for number in numbers:
+        if abs(number - target) < abs(closest_number - target):
+            closest_number = number
+    return closest_number
+
+Tests:
+def check(find_closest_number):
+    assert find_closest_number([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 3.0) == 3.9
+    assert find_closest_number([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 4.5) == 4.0
+    assert find_closest_number([1.0, 2.0, 5.9, 4.0, 5.0], 3.5) == 4.0
+    assert find_closest_number([1.0, 2.0, 5.9, 4.0, 5.0], 5.5) == 5.0
+    assert find_closest_number([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 2.5) == 2.0
+    assert find_closest_number([1.1, 2.2, 3.1, 4.1, 5.1], 3.0) == 3.1
+    assert find_closest_number([1.1, 2.2, 3.1, 4.1, 5.1], 4.5) == 4.1
+
+check(find_closest_number)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `find_closest_

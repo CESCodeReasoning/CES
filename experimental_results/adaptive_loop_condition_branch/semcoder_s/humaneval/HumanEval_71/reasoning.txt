@@ -1,0 +1,7 @@
+The function `triangle_area` is called with ( a = 3, b = 4, c = 5 ).
+The condition `a + b <= c or a + c <= b or b + c <= a` is checked.
+Since none of these conditions are true (a + b > c), the `if` branch is not taken.
+The semi-perimeter `s` is calculated as `(a + b + c) / 2 = 6`.
+The area of the triangle is calculated using Heron's formula: `area = (s * (s - a) * (s - b) * (s - c)) ** 0.5`.
+The area is then rounded to 2 decimal places.
+The function returns the calculated area of the triangle, which is 6.0.

@@ -1,0 +1,135 @@
+<｜begin▁of▁sentence｜>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in is_equal_to_sum_even.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def is_equal_to_sum_even(n):
+    return n%2 == 0 and n >= 8 and n <= 8
+
+Tests:
+def check(is_equal_to_sum_even):
+    assert is_equal_to_sum_even(4) == False
+    assert is_equal_to_sum_even(6) == False
+    assert is_equal_to_sum_even(8) == True
+    assert is_equal_to_sum_even(10) == True
+    assert is_equal_to_sum_even(11) == False
+    assert is_equal_to_sum_even(12) == True
+    assert is_equal_to_sum_even(13) == False
+    assert is_equal_to_sum_even(16) == True
+
+check(is_equal_to_sum_even)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `is_equal_to_sum_even(n)` to solve the following problem:
+Evaluate whether the given number n can be written as the sum of exactly 4 positive even numbers
+Example
+is_equal_to_sum_even(4) == False
+is_equal_to_sum_even(6) == False
+is_equal_to_sum_even(8) == True
+is_equal_to_sum_even(10) == True
+is_equal_to_sum_even(11) == False
+is_equal_to_sum_even(12) == True
+is_equal_to_sum_even(13) == False
+is_equal_to_sum_even(16) == True
+
+Fixed Code:
+```python
+def is_equal_to_sum_even(n):
+    return n%2 == 0 and n >= 8 and n <= 20
+```
+
+
+
+Fix bugs in is_prime.
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n%2 == 0 or n%3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n%i == 0 or n%(i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(2) == True
+    assert is_prime(3) == True
+    assert is_prime(4) == False
+    assert is_prime(5) == True
+    assert is_prime(6) == False
+    assert is_prime(7) == True
+    assert is_prime(8) == False
+    assert is_prime(9) == False
+    assert is_prime(10) == False
+    assert is_prime(11) == True
+    assert is_prime(12) == False
+    assert is_prime(13) == True
+    assert is_prime(14) == False
+    assert is_prime(15) == False
+    assert is_prime(16) == False
+    assert is_prime(17) == True
+    assert is_prime(18) == False
+    assert is_prime(19) == True
+    assert is_prime(20) == False
+
+check(is_prime)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `is_prime(n)

@@ -1,0 +1,9 @@
+The function `multiply` takes two arguments `a` and `b`. It calculates the absolute value of the remainder of `a` divided by 10 (`abs(a % 10)`) and the absolute value of the remainder of `b` divided by 10 (`abs(b % 10)`). It then returns the product of these two values.
+
+To determine the output of executing the function `multiply` on the input `(148, 412)`, we need to calculate the product of the last digits of `148` and `412`.
+
+- `abs(148 % 10) = 8`
+- `abs(412 % 10) = 2`
+- Therefore, the product of `8` and `2` is `16`.
+
+So, the output of executing the function `multiply` on the input `(148, 412)` is `16`.

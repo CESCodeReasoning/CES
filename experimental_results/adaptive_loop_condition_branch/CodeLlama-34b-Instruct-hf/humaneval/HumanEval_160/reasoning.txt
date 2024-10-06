@@ -1,0 +1,12 @@
+The function `do_algebra` is called with (operator = ['**', '*', '+'], operand = [2, 3, 4, 5]).
+Inside the function, a variable `expression` is initialized to an empty string.
+The loop iterates over the `operator` and `operand` lists simultaneously using the `zip` function.
+First Iteration (oprt = '**', oprn = 2):
+    `expression` is updated to '2' (empty string + '2').
+Second Iteration (oprt = '*', oprn = 3):
+    `expression` is updated to '2 * 3' ( '2' + ' * ' + '3').
+Third Iteration (oprt = '+', oprn = 4):
+    `expression` is updated to '2 * 3 + 4' ( '2 * 3' + ' + ' + '4').
+Fourth Iteration (oprt = '+', oprn = 5):
+    `expression` is updated to '2 * 3 + 4 + 5' ( '2 * 3 + 4' + ' + ' + '5').
+After the loop completes, the function returns the value of `expression`, which is now '2 * 3 + 4 + 5'.

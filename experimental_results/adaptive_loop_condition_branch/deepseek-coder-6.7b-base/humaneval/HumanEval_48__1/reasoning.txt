@@ -1,0 +1,8 @@
+The function `is_palindrome` is called with ( text = 'aaaaa' ).
+The length of the input string is 5.
+
+Iteration 1:
+    -The character at index 0 is 'a', which is not equal to the character at index 4 (which is 'a').
+    -The condition `text[i] != text[len(text) - 1 - i]` is true, so the function returns False.
+
+Therefore, the function `is_palindrome('aaaaa')` returns False.

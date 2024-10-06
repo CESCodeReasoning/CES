@@ -1,0 +1,8 @@
+The function `maximum` is called with the arguments `arr = [-3, -4, 5]` and `k = 3`.
+1. The function first checks if `k` is equal to 0. In this case, `k` is 3, so the condition `(k == 0)` is false.
+2. Since the condition is false, the function does not return an empty list and proceeds to the next step.
+3. The array `arr` is sorted. The sorted version of `arr` is `[-4, -3, 5]`.
+4. The function then extracts the last `k` elements from the sorted array. Since `k` is 3, it takes all elements from the sorted array, which are `[-4, -3, 5]`.
+5. The function returns the list `[-4, -3, 5]`.
+
+Therefore, the final output of the function `maximum([-3, -4, 5], 3)` is `[-4, -3, 5]`.

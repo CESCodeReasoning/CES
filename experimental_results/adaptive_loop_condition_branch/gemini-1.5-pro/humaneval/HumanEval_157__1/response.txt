@@ -1,0 +1,17 @@
+[REASONING]
+The function right_angle_triangle takes three integers a, b, and c as input and returns True if the three integers satisfy the Pythagorean theorem, which states that in a right-angle triangle, the square of the length of the hypotenuse is equal to the sum of the squares of the lengths of the other two sides.
+To determine the output of executing the function right_angle_triangle on the input 1, 1, and 1, we need to check if the three integers satisfy the Pythagorean theorem.
+We can do this by checking if a * a == b * b + c * c, or if b * b == a * a + c * c, or if c * c == a * a + b * b.
+Since 1 * 1 == 1 * 1 + 1 * 1, the three integers satisfy the Pythagorean theorem.
+Therefore, the output of executing the function right_angle_triangle on the input 1, 1, and 1 is True.
+[/REASONING]
+
+[ANSWER]
+def right_angle_triangle(a, b, c):
+    # [STATE]a * a == b * b + c * c or b * b == a * a + c * c or c * c == a * a + b * b[/STATE]
+    return a * a == b * b + c * c or b * b == a * a + c * c or c * c == a * a + b * b
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]

@@ -1,0 +1,5 @@
+The function check_if_last_char_is_a_letter takes a string txt as input and returns a boolean value indicating whether the last character of the string is a letter.
+To determine the output of executing the function on the input "A", we need to split the string into words using the space character as the delimiter.
+The last word in the list of words is "A".
+To determine whether the last character of the word "A" is a letter, we need to check whether the length of the word is 1 and whether the character is a lowercase letter.
+Therefore, the output of executing the function on the input "A" is True.

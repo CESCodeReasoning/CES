@@ -1,0 +1,20 @@
+The function `odd_count` is called with (lst = ['3',"11111111"]).
+Inside the function, a variable `res` is initialized to an empty list.
+The loop iterates through the elements of `lst`.
+First Iteration (arr = '3'):
+    `n` is initialized to 0.
+    The loop iterates through the characters of `arr`.
+    First Iteration (d = '3'):
+        `int(d) % 2 == 1` is `True` since `int('3') % 2 == 1`.
+        `n` is updated to 1.
+    Since there is only one character in `arr`, the loop ends.
+    `res` is updated to `['the number of odd elements 1 in the string 1 of the input.']`.
+Second Iteration (arr = "11111111"):
+    `n` is initialized to 0.
+    The loop iterates through the characters of `arr`.
+    First Iteration (d = '1'):
+        `int(d) % 2 == 1` is `True` since `int('1') % 2 == 1`.
+        `n` is updated to 1.
+    Since there are 8 characters in `arr`, the loop iterates 7 more times.
+    Each time, `n` is updated to 1.
+    After the loop completes, `res` is updated to `['the number of odd elements 8 in the string 8 of the input.']`.

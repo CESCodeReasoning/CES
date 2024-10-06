@@ -1,0 +1,30 @@
+The bug in the `has_close_elements` function is that it is not taking the absolute value of the distance between two elements. This means that if the distance is negative, it will not be considered as close.
+
+The bug in the `will_it_fly` function is that it is not correctly updating the indices `i` and `j` in the while loop. It should increment `i` and decrement `j` in each iteration.
+
+Here is the fixed code:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def will_it_fly(q,w):
+    if sum(q) > w:
+        return False
+
+    i, j = 0, len(q)-1
+    while i<j:
+        if q[i] != q[j]:
+            return False
+        i+=1
+        j-=1
+    return True
+```

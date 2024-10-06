@@ -1,0 +1,10 @@
+The function `right_angle_triangle` takes three arguments a, b, and c. It checks if any of the two conditions (a^2 = b^2 + c^2, b^2 = a^2 + c^2, c^2 = a^2 + b^2) are true, which indicates that a, b, and c can form a right-angled triangle.
+
+To determine the output of executing the function `right_angle_triangle` on the input (3, 4, 5), we need to check if any of the conditions are satisfied.
+
+We substitute a=3, b=4, c=5 into the conditions:
+- 3^2 = 4^2 + 5^2 is False
+- 4^2 = 3^2 + 5^2 is False
+- 5^2 = 3^2 + 4^2 is True
+
+Therefore, the output of executing the function `right_angle_triangle` on the input (3, 4, 5) is True.

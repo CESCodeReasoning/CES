@@ -1,0 +1,16 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: total_match
+main.py(3):     l1 = 0
+main.py(4):     for st in lst1:
+main.py(5):         l1 += len(st)
+main.py(4):     for st in lst1:
+main.py(5):         l1 += len(st)
+main.py(4):     for st in lst1:
+main.py(7):     l2 = 0
+main.py(8):     for st in lst2:
+main.py(9):         l2 += len(st)
+main.py(8):     for st in lst2:
+main.py(9):         l2 += len(st)
+main.py(8):     for st in lst2:
+main.py(11):     if l1 <= l2:
+main.py(14):         return lst2

@@ -1,0 +1,19 @@
+The function `how_many_times` is called with ( string = 'xyxyxyx', substring = 'x' ).
+Inside the function, a variable `times` is initialized to 0.
+
+Iteration 1:
+    - The substring 'x' is found at the beginning of the string 'xyxyxyx', so `times` becomes 1.
+Iteration 2:
+    - The substring 'x' is found at the second position of the string 'xyxyxyx', so `times` becomes 2.
+Iteration 3:
+    - The substring 'x' is found at the third position of the string 'xyxyxyx', so `times` becomes 3.
+Iteration 4:
+    - The substring 'x' is found at the fourth position of the string 'xyxyxyx', so `times` becomes 4.
+Iteration 5:
+    - The substring 'x' is found at the fifth position of the string 'xyxyxyx', so `times` becomes 5.
+Iteration 6:
+    - The substring 'x' is found at the sixth position of the string 'xyxyxyx', so `times` becomes 6.
+Iteration 7:
+    - The substring 'x' is found at the seventh position of the string 'xyxyxyx', so `times` becomes 7.
+
+Therefore, the final output of the function `how_many_times('xyxyxyx', 'x')` is 7.

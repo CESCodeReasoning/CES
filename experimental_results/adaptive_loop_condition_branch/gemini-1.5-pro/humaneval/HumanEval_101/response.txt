@@ -1,0 +1,30 @@
+[REASONING]
+The function `words_string` is called with ( s = "Hi, my name is John" ).
+The function first checks if the input string `s` is empty. Since `s` is not empty, the function proceeds to process the string.
+The function iterates through each character in the string `s`.
+For each character, the function checks if the character is a comma (,). If the character is a comma, the function appends a space character to the list `s_list`. Otherwise, the function appends the character to the list `s_list`.
+After iterating through all the characters in the string, the function joins the list `s_list` into a single string and splits the string into a list of words.
+The function returns the list of words.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def words_string(s):
+    if not s: ## [CONDITION](not s)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return []
+
+    s_list = []
+ ## [STATE]letter=['H', 'i', ',', ' ', 'm', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's', ' ', 'J', 'o', 'h', 'n'][/STATE]
+    for letter in s: ## [STATE]s=["Hi, my name is John"][/STATE]
+        if letter == ',': ## [CONDITION](letter == ',')=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+            s_list.append(' ')
+        else: ## [BRANCH]taken=[N][/BRANCH]
+            s_list.append(letter)
+
+    s_list = "".join(s_list)
+    return s_list.split()
+[/ANSWER]
+
+[OUTPUT]
+['Hi', 'my', 'name', 'is', 'John']
+[/OUTPUT]

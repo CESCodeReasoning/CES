@@ -1,0 +1,19 @@
+The function `match_parens` takes a list of strings as input and returns 'Yes' if any of the strings in the list contains a valid arrangement of parentheses, and 'No' otherwise.
+
+A valid arrangement of parentheses is one where every open parenthesis '(' has a corresponding closing parenthesis ')', and the closing parenthesis comes after the open parenthesis.
+
+The function `match_parens` first defines a helper function `check` that takes a string as input and returns True if the string contains a valid arrangement of parentheses, and False otherwise.
+
+The function `check` works by iterating over the characters in the string and keeping track of the number of open parentheses that have been encountered so far. If the number of open parentheses is ever negative, then the string does not contain a valid arrangement of parentheses and the function returns False.
+
+If the number of open parentheses is 0 at the end of the iteration, then the string contains a valid arrangement of parentheses and the function returns True.
+
+The function `match_parens` then creates two new strings, `S1` and `S2`, by concatenating the first and second strings in the input list, and the second and first strings in the input list, respectively.
+
+The function then calls the `check` function on both `S1` and `S2`. If either `S1` or `S2` contains a valid arrangement of parentheses, then the function returns 'Yes'. Otherwise, the function returns 'No'.
+
+In this case, the input list is ['(()(())', '())())']. The function `check` is called on the string '(()(())'. The function iterates over the characters in the string and keeps track of the number of open parentheses that have been encountered so far. The first character is '(', so the number of open parentheses is 1. The second character is '(', so the number of open parentheses is 2. The third character is '(', so the number of open parentheses is 3. The fourth character is ')', so the number of open parentheses is 2. The fifth character is ')', so the number of open parentheses is 1. The sixth character is ')', so the number of open parentheses is 0. The number of open parentheses is never negative, so the string contains a valid arrangement of parentheses and the function returns True.
+
+The function `match_parens` then calls the `check` function on the string '())())'. The function iterates over the characters in the string and keeps track of the number of open parentheses that have been encountered so far. The first character is ')', so the number of open parentheses is -1. The second character is ')', so the number of open parentheses is -2. The third character is ')', so the number of open parentheses is -3. The fourth character is '(', so the number of open parentheses is -2. The fifth character is ')', so the number of open parentheses is -3. The sixth character is ')', so the number of open parentheses is -4. The number of open parentheses is never 0, so the string does not contain a valid arrangement of parentheses and the function returns False.
+
+Since one of the strings in the input list contains a valid arrangement of parentheses, the function `match_parens` returns 'Yes'.

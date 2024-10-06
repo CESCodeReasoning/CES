@@ -1,0 +1,30 @@
+The function `change_base` is called with ( x = 234, base = 2 ).
+Inside the function, a variable `ret` is initialized to an empty string.
+First Iteration (x = 234):
+    - x > 0 when x=234
+    -`ret = str(x % base) + ret` updates `ret` to "0" ( 234 % 2 = 0, "0" + "").
+Second Iteration (x = 117):
+    - x > 0 when x=117
+    -`ret = str(x % base) + ret` updates `ret` to "100" ( 117 % 2 = 1, "1" + "00").
+Third Iteration (x = 58):
+    - x > 0 when x=58
+    -`ret = str(x % base) + ret` updates `ret` to "1100" ( 58 % 2 = 0, "0" + "1100").
+Fourth Iteration (x = 29):
+    - x > 0 when x=29
+    -`ret = str(x % base) + ret` updates `ret` to "11101" ( 29 % 2 = 1, "1" + "1101").
+Fifth Iteration (x = 14):
+    - x > 0 when x=14
+    -`ret = str(x % base) + ret` updates `ret` to "11110" ( 14 % 2 = 0, "0" + "1110").
+Sixth Iteration (x = 7):
+    - x > 0 when x=7
+    -`ret = str(x % base) + ret` updates `ret` to "11111" ( 7 % 2 = 1, "1" + "1111").
+Seventh Iteration (x = 3):
+    - x > 0 when x=3
+    -`ret = str(x % base) + ret` updates `ret` to "111111" ( 3 % 2 = 1, "1" + "11111").
+Eighth Iteration (x = 1):
+    - x > 0 when x=1
+    -`ret = str(x % base) + ret` updates `ret` to "1111111" ( 1 % 2 = 1, "1" + "111111").
+Ninth Iteration (x = 0):
+    - x > 0 when x=0
+    -`ret = str(x % base) + ret` updates `ret` to "11111111" ( 0 % 2 = 0, "0" + "11111111").
+After the loop completes, the function returns the value of `ret`, which is now "11111111".

@@ -1,0 +1,13 @@
+The function `solve` takes an integer `N` as input. The steps executed in the function are as follows:
+1. Convert the integer `N` to a string to iterate over each digit.
+2. Use a generator expression inside the `sum` function to convert each character (digit) back to an integer and sum them up.
+3. Convert the resulting sum to its binary representation using the `bin` function, which returns a string prefixed with '0b'.
+4. Slice the binary string to remove the '0b' prefix and return the result.
+
+For the input `963`:
+- Convert `963` to the string `"963"`.
+- Convert each character to an integer and sum them: `9 + 6 + 3 = 18`.
+- Convert `18` to binary: `bin(18)` results in `'0b10010'`.
+- Slice off the '0b' prefix: `'10010'`.
+
+Thus, the output for the input `963` is `'10010'`.

@@ -1,0 +1,8 @@
+The function `specialFilter` is called with ( nums = [1] ).
+Inside the function, a variable `count` is initialized to 0.
+
+Iteration 1:
+    -The number 1 is not greater than 10, so the condition `num > 10` is false.
+    -The `else` block is executed, and `count` remains 0.
+
+The function returns the value of `count`, which is 0.

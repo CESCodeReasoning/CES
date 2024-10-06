@@ -1,0 +1,61 @@
+The function `how_many_times` is called with ( string = 'john doe', substring = 'john' ).
+Inside the function, a variable `times` is initialized to 0.
+
+Iteration 1:
+    -The substring 'john' is found at index 0 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is true.
+    -Action: `times += 1` updates `times` to 1.
+Iteration 2:
+    -The substring 'john' is not found at index 1 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 3:
+    -The substring 'john' is found at index 3 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is true.
+    -Action: `times += 1` updates `times` to 2.
+Iteration 4:
+    -The substring 'john' is not found at index 4 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 5:
+    -The substring 'john' is not found at index 5 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 6:
+    -The substring 'john' is not found at index 6 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 7:
+    -The substring 'john' is not found at index 7 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 8:
+    -The substring 'john' is not found at index 8 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 9:
+    -The substring 'john' is not found at index 9 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 10:
+    -The substring 'john' is not found at index 10 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 11:
+    -The substring 'john' is not found at index 11 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 12:
+    -The substring 'john' is not found at index 12 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 13:
+    -The substring 'john' is not found at index 13 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 14:
+    -The substring 'john' is not found at index 14 in the string 'john doe'.
+    -The condition `string[i:i + len(substring)] == substring` is false.
+    -Action: `times` remains unchanged.
+Iteration 15:
+   

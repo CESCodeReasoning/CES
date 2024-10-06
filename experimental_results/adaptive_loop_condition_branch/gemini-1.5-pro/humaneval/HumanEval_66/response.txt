@@ -1,0 +1,18 @@
+[REASONING]
+The function `digitSum` is called with ( s = "You arE Very Smart" ).
+The string `s` is not empty, so the if branch is not taken.
+The function returns the sum of the ASCII values of the uppercase characters in the string.
+The uppercase characters in the string are 'E', 'V', 'S', and 'M', which have ASCII values of 69, 86, 83, and 77, respectively.
+The sum of these values is 69 + 86 + 83 + 77 = 315.
+Therefore, the final output of the function `digitSum("You arE Very Smart")` is 315.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def digitSum(s):
+    if s == "": return 0 ## [CONDITION](s == "")=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+    return sum(ord(char) if char.isupper() else 0 for char in s)[/CODE]
+
+[OUTPUT]
+315
+[/OUTPUT]

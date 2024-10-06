@@ -1,0 +1,26 @@
+The function `prime_fib` is called with ( n = 4 ).
+Inside the function, a list `f` is initialized with the first two Fibonacci numbers [0, 1].
+The while loop continues until a prime Fibonacci number is found.
+First Iteration:
+    - The Fibonacci number is 1, which is not a prime number.
+Second Iteration:
+    - The Fibonacci number is 1, which is not a prime number.
+Third Iteration:
+    - The Fibonacci number is 2, which is a prime number.
+    - The condition `is_prime(f[-1])` is true.
+    - `n -= 1` updates `n` to 3.
+Fourth Iteration:
+    - The Fibonacci number is 3, which is a prime number.
+    - The condition `is_prime(f[-1])` is true.
+    - `n -= 1` updates `n` to 2.
+Fifth Iteration:
+    - The Fibonacci number is 5, which is a prime number.
+    - The condition `is_prime(f[-1])` is true.
+    - `n -= 1` updates `n` to 1.
+Sixth Iteration:
+    - The Fibonacci number is 8, which is not a prime number.
+Seventh Iteration:
+    - The Fibonacci number is 13, which is a prime number.
+    - The condition `is_prime(f[-1])` is true.
+    - `n -= 1` updates `n` to 0.
+The loop breaks and the function returns the last Fibonacci number, which is 13.

@@ -1,0 +1,15 @@
+The function `sorted_list_sum` is called with ( lst = ["d", "dcba", "abcd", "a"] ).
+Inside the function, the list `lst` is sorted in ascending order.
+
+Iteration 1:
+    -The string 'd' has an odd length, so it is not appended to `new_lst`.
+Iteration 2:
+    -The string 'dcba' has an even length, so it is appended to `new_lst`.
+Iteration 3:
+    -The string 'abcd' has an even length, so it is appended to `new_lst`.
+Iteration 4:
+    -The string 'a' has an odd length, so it is not appended to `new_lst`.
+
+After the loop, `new_lst` is sorted by length in ascending order.
+
+Therefore, the final output of the function `sorted_list_sum(["d", "dcba", "abcd", "a"])` is ['abcd', 'dcba'].

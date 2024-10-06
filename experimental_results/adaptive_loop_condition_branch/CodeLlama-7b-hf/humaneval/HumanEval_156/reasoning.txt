@@ -1,0 +1,66 @@
+The function `int_to_mini_roman` is called with ( number = 19 ).
+Inside the function, a list `num` is initialized to [1, 4, 5, 9, 10, 40, 50, 90,  100, 400, 500, 900, 1000].
+A list `sym` is initialized to ["I", "IV", "V", "IX", "X", "XL",   "L", "XC", "C", "CD", "D", "CM", "M"].
+A variable `i` is initialized to 12.
+A variable `res` is initialized to ''.
+The while loop iterates from 12 through 0 (since ( number = 19 )).
+First Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number % num[i] = 19 % 1000 = 19.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - res = '', res += sym[i] = '', res = ''.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - i = 12, i -= 1 = 11.
+Second Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number % num[i] = 19 % 1000 = 19.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - res = '', res += sym[i] = '', res = ''.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - i = 11, i -= 1 = 10.
+Third Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number % num[i] = 19 % 1000 = 19.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - res = '', res += sym[i] = '', res = ''.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - i = 10, i -= 1 = 9.
+Fourth Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number % num[i] = 19 % 1000 = 19.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - res = '', res += sym[i] = '', res = ''.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - i = 9, i -= 1 = 8.
+Fifth Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number % num[i] = 19 % 1000 = 19.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - res = '', res += sym[i] = '', res = ''.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - i = 8, i -= 1 = 7.
+Sixth Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number % num[i] = 19 % 1000 = 19.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - res = '', res += sym[i] = '', res = ''.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - i = 7, i -= 1 = 6.
+Seventh Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number % num[i] = 19 % 1000 = 19.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - res = '', res += sym[i] = '', res = ''.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - i = 6, i -= 1 = 5.
+Eighth Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number % num[i] = 19 % 1000 = 19.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - res = '', res += sym[i] = '', res = ''.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - i = 5, i -= 1 = 4.
+Ninth Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number % num[i] = 19 % 1000 = 19.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - res = '', res += sym[i] = '', res = ''.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - i = 4, i -= 1 = 3.
+Tenth Iteration:
+    - number = 19, number // num[i] = 19 // 1000 = 0, number % num[i] = 19 % 1000 = 19.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    - res = '', res += sym[i] = '', res = ''.
+    - div = 0, number = 19, number % num[i] = 19 % 1000 = 19.
+    -

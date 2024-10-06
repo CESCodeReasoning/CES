@@ -1,0 +1,39 @@
+The function `get_odd_collatz` is called with ( n = 14 ).
+Inside the function, a variable `odd_collatz` is initialized to an empty list.
+The loop iterates while ( n > 1 ).
+First Iteration (n = 14):
+    - n % 2 == 0 when n=14
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n = n*3 + 1` updates n to 40.
+    - n % 2 == 1 when n=40
+    - The condition `n % 2 == 1` is true. The if branch is taken.
+    - `odd_collatz.append(int(n))` appends 40 to `odd_collatz`.
+Second Iteration (n = 40):
+    - n % 2 == 0 when n=40
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n = n/2` updates n to 20.
+    - n % 2 == 1 when n=20
+    - The condition `n % 2 == 1` is true. The if branch is taken.
+    - `odd_collatz.append(int(n))` appends 20 to `odd_collatz`.
+Third Iteration (n = 20):
+    - n % 2 == 0 when n=20
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n = n/2` updates n to 10.
+    - n % 2 == 1 when n=10
+    - The condition `n % 2 == 1` is true. The if branch is taken.
+    - `odd_collatz.append(int(n))` appends 10 to `odd_collatz`.
+Fourth Iteration (n = 10):
+    - n % 2 == 0 when n=10
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n = n/2` updates n to 5.
+    - n % 2 == 1 when n=5
+    - The condition `n % 2 == 1` is true. The if branch is taken.
+    - `odd_collatz.append(int(n))` appends 5 to `odd_collatz`.
+Fifth Iteration (n = 5):
+    - n % 2 == 0 when n=5
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n = n/2` updates n to 2.
+    - n % 2 == 1 when n=2
+    - The condition `n % 2 == 1` is true. The if branch is taken.
+    - `odd_collatz.append(int(n))` appends 2 to `odd_collatz`.
+After the loop completes, the function returns the sorted list `odd_collatz`, which is [14, 40, 20, 10, 5, 2].

@@ -1,0 +1,12 @@
+
+[REASONING]
+The function sort_array takes an array as input. If the array is empty, it returns an empty array. If the array is not empty, it sorts the array in descending order if the sum of the first and last elements of the array is even, and in ascending order otherwise.
+
+In the given array [2, 4, 3, 0, 1, 5, 6], the sum of the first and last elements is 2 + 6 = 8, which is even. Therefore, the array should be sorted in descending order.
+
+The sorted array is [6, 5, 4, 3, 2, 1, 0].
+[/REASONING]
+
+[OUTPUT]
+[6, 5, 4, 3, 2, 1, 0]
+[/OUTPUT]

@@ -1,0 +1,17 @@
+from typing import *
+
+
+def words_string(s):
+    if not s: ## [CONDITION](not s)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return []
+
+    s_list = []
+
+    for letter in s: ## [STATE]letter=['O', 'n', 'e', ',', ' ', 't', 'w', 'o', ',', ' ', 't', 'h', 'r', 'e', 'e', ',', ' ', 'f', 'o', 'u', 'r', ',', ' ', 'f', 'i', 'v', 'e', ',', ' ', 's', 'i', 'x', ','][/STATE][STATE]s=["One,, two, three, four, five, six,"][/STATE]
+        if letter == ',': ## [CONDITION](letter == ',')=[False, False, False, True, False, False, False, False, True, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, True, False, False][/CONDITION][BRANCH]taken=[N, N, N, Y, N, N, N, N, Y, N, N, N, N, N, N, N, N, Y, N, N, N, N, N, N, N, N, Y, N, N][/BRANCH]
+            s_list.append(' ')
+        else: ## [BRANCH]taken=[Y, Y, Y, N, Y, Y, Y, Y, N, Y, Y, Y, Y, Y, Y, Y, Y, N, Y, Y, Y, Y, Y, Y, Y, Y, N, Y, Y][/BRANCH]
+            s_list.append(letter)
+
+    s_list = "".join(s_list)
+    return s_list.split()

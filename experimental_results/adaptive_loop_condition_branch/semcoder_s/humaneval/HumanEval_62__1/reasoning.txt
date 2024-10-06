@@ -1,0 +1,9 @@
+The function `derivative` calculates the derivative of a polynomial represented as a list of coefficients.
+The derivative of a polynomial is calculated by multiplying each coefficient by its corresponding power and reducing the power by 1.
+
+For example, if the input list is [3, 2, 1], the derivative is calculated as follows:
+- The first coefficient 3 is multiplied by its power (0) and reduced to 0.
+- The second coefficient 2 is multiplied by its power (1) and reduced to 2.
+- The third coefficient 1 is not used as the power is now less than 0.
+
+Therefore, the derivative of [3, 2, 1] is [0, 2].

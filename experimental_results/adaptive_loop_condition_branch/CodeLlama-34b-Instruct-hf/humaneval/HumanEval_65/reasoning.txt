@@ -1,0 +1,5 @@
+The function `circular_shift` is called with ( x = 100, shift = 2 ).
+The function first converts `x` to a string using `str(x)`, which gives "100".
+The function then checks if `shift` is greater than the length of the string, which is 3.
+Since 2 is less than 3, the `else` block is executed.
+The function returns the string shifted by 2 characters, which gives "001".

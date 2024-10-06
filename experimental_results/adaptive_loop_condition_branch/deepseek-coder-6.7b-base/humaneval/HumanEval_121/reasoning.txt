@@ -1,0 +1,4 @@
+The function solution takes a list of integers lst as input and returns the sum of all odd numbers in the list that have even indices.
+To determine the output of executing the function solution on the input [5, 8, 7, 1], we need to find the sum of all odd numbers in the list that have even indices.
+The first number in the list has index 0, which is even. The second number has index 1, which is odd. The third number has index 2, which is even. The fourth number has index 3, which is odd.
+Therefore, the output of executing the function solution on the input [5, 8, 7, 1] is 1 + 7 = 8.

@@ -1,0 +1,9 @@
+The function `count_nums` is called with ( arr = [1] ).
+The function `digits_sum` is called with ( n = 1 ).
+`n` is 1, which is not less than 0.
+The condition `n < 0` is false.
+The `else` block is not executed.
+The function `digits_sum` returns 1.
+The function `count_nums` returns 1.
+
+Therefore, the final output of the function `count_nums([1])` is 1.

@@ -1,0 +1,3 @@
+t = len([x for x in lst[0] if x.isdigit()])
+    if t > 3:
+        return 'No'

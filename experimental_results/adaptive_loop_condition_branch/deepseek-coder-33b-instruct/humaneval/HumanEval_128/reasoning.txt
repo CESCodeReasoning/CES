@@ -1,0 +1,10 @@
+The function `prod_signs` is called with ( arr = [1, 2, 2, -4] ).
+`arr` is not empty, so the condition `not arr` is false.
+The if branch is not taken.
+The `prod` variable is calculated as `(-1) ** len(list(filter(lambda x: x < 0, arr)))`.
+Here, `filter(lambda x: x < 0, arr)` filters out the negative numbers from the array, and `len(...)` counts the number of such numbers.
+If the number of negative numbers is even, `(-1) ** len(...)` is 1, else it is -1.
+The `prod` variable is then multiplied by the sum of the absolute values of the elements in the array.
+The final result is returned.
+
+Therefore, the final output of the function `prod_signs([1, 2, 2, -4])` is 1 * (1 + 2 + 2 + 4) = 15.

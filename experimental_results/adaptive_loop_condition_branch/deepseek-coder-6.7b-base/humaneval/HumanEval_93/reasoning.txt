@@ -1,0 +1,5 @@
+The function encode takes a string message as input and returns the encoded message.
+The vowels in the message are replaced by their corresponding vowels in the alphabet shifted by 2 positions.
+The message is first converted to uppercase using the swapcase() method.
+The vowels in the message are then replaced by their corresponding vowels in the alphabet shifted by 2 positions.
+The resulting encoded message is returned.

@@ -1,0 +1,9 @@
+from typing import *
+
+
+def vowels_count(s):
+    vowels = "aeiouAEIOU"
+    n_vowels = sum(c in vowels for c in s)
+    if s[-1] == 'y' or s[-1] == 'Y': ## [CONDITION](s[-1] == 'y' or s[-1] == 'Y')=[True][/CONDITION][CONDITION](s[-1] == 'y')=[True][/CONDITION][CONDITION](s[-1] == 'Y')=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        n_vowels += 1
+    return n_vowels

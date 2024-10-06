@@ -1,0 +1,8 @@
+The function `count_nums` is called with ( arr = [1, 1, 2, -2, 3, 4, 5] ).
+Inside the function, a variable `digits_sum` is initialized to a lambda function that takes an integer `n` as input and returns the sum of the digits of `n`.
+The lambda function first checks if `n` is negative. If it is, it multiplies `n` by -1 and sets the variable `neg` to -1.
+The lambda function then converts `n` to a list of digits by converting it to a string and splitting it into individual characters.
+The lambda function then multiplies the first digit of `n` by `neg` and returns the sum of all the digits.
+The function then returns the length of the list of numbers in `arr` that are greater than 0, after applying the `digits_sum` function to each number in `arr`.
+
+Therefore, the final output of the function `count_nums([1, 1, 2, -2, 3, 4, 5])` is 4.

@@ -1,0 +1,22 @@
+[REASONING]
+The function `add_elements` takes two parameters: `arr`, which is a list of integers, and `k`, which is an integer. The function returns the sum of elements from the beginning of the list up to the k-th element (exclusive), but only includes those elements whose string representation is 2 characters long or less.
+
+To determine the output of executing the function `add_elements` on the input `[111, 21, 3, 4000, 5, 6, 7, 8, 9]` with `k` equal to 4:
+1. The function slices the list `arr` up to the 4th index, resulting in the sublist `[111, 21, 3, 4000]`.
+2. It then filters this sublist to include only those elements where the length of their string representation is 2 or less. From the sublist, `21` and `3` meet this condition.
+3. The sum of `21` and `3` is `24`.
+
+Therefore, the output of executing the function `add_elements` with the given input is `24`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def add_elements(arr, k):
+    # [STATE] arr[:k] is [111, 21, 3, 4000] and len(str(elem)) for each elem is [3, 2, 1, 4] [/STATE]
+    return sum(elem for elem in arr[:k] if len(str(elem)) <= 2)  # [CONDITION] len(str(elem)) <= 2 [/CONDITION]
+[/PYTHON]
+
+[OUTPUT]
+24
+[/OUTPUT]

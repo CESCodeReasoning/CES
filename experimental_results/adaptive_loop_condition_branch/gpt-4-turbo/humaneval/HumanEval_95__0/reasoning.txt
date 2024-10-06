@@ -1,0 +1,12 @@
+The function `check_dict_case` is called with a dictionary containing two keys: "STATE" and "ZIP". The function checks if all keys in the dictionary are either all uppercase or all lowercase.
+
+1. The dictionary is not empty, so the first condition `(len(dict.keys()) == 0)` is false.
+2. The function initializes `state` to "start".
+3. The loop iterates over the keys of the dictionary.
+   - First key: "STATE"
+     - It is a string and is uppercase. Since `state` is "start", `state` is updated to "upper".
+   - Second key: "ZIP"
+     - It is a string and is uppercase. Since `state` is "upper" and "ZIP" is also uppercase, `state` remains "upper".
+4. After the loop, the function checks if `state` is either "upper" or "lower". Since `state` is "upper", the function returns `True`.
+
+Therefore, the function returns `True` indicating that all keys in the dictionary are either all uppercase or all lowercase.

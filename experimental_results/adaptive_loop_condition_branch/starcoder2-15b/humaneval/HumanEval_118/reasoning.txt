@@ -1,0 +1,159 @@
+The function `get_closest_vowel` is called with ( word = "yogurt" ).
+Inside the function, a variable `vowels` is initialized to a set of vowels.
+
+Iteration 1:
+    -The character 't' is not in vowels,so the condition is false.
+Iteration 2:
+    -The character 'r' is not in vowels,so the condition is false.
+Iteration 3:
+    -The character 'u' is in vowels,so the condition is true.
+Iteration 4:
+    -The character 'o' is not in vowels,so the condition is false.
+Iteration 5:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 6:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 7:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 8:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 9:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 10:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 11:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 12:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 13:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 14:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 15:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 16:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 17:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 18:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 19:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 20:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 21:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 22:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 23:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 24:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 25:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 26:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 27:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 28:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 29:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 30:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 31:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 32:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 33:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 34:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 35:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 36:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 37:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 38:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 39:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 40:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 41:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 42:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 43:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 44:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 45:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 46:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 47:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 48:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 49:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 50:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 51:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 52:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 53:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 54:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 55:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 56:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 57:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 58:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 59:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 60:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 61:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 62:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 63:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 64:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 65:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 66:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 67:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 68:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 69:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 70:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 71:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 72:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 73:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 74:
+    -The character 'g' is not in vowels,so the condition is false.
+Iteration 75:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 76:
+    -The character 'y' is not in vowels,so the condition is false.
+Iteration 77:
+    -The character 'o' is in vowels,so the condition is true.
+Iteration 78:
+    -The character 'g' is not in vowels,so the condition is

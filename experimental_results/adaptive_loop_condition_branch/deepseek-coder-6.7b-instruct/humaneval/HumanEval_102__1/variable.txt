@@ -1,0 +1,11 @@
+from typing import *
+
+
+def choose_num(x, y):
+    if x > y: ## [CONDITION](x > y)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return -1
+    if y % 2 == 0: ## [CONDITION](y % 2 == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return y
+    if x == y: ## [CONDITION](x == y)=[False][/CONDITION]
+        return -1
+    return y - 1 ## [BRANCH]taken=[Y][/BRANCH]

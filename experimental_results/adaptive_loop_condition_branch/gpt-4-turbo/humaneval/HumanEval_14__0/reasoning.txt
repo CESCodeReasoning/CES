@@ -1,0 +1,18 @@
+The function `all_prefixes` is called with the argument (string = 'WWW').
+Inside the function, an empty list `result` is initialized.
+`len(string)` is calculated to be 3 since there are 3 characters in 'WWW'.
+The loop iterates from 0 to 2 because `range(len(string))` generates [0, 1, 2].
+
+First Iteration (i = 0):
+    `string[:i + 1]` results in `string[:1]` which is 'W'.
+    This substring 'W' is appended to the `result` list.
+
+Second Iteration (i = 1):
+    `string[:i + 1]` results in `string[:2]` which is 'WW'.
+    This substring 'WW' is appended to the `result` list.
+
+Third Iteration (i = 2):
+    `string[:i + 1]` results in `string[:3]` which is 'WWW'.
+    This substring 'WWW' is appended to the `result` list.
+
+After the loop completes, the function returns the `result` list containing all prefixes of the string 'WWW'.

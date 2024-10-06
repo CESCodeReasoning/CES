@@ -1,0 +1,5 @@
+from typing import *
+
+def find_max(words: List[str]) -> str:
+    # [STATE] words = ["name", "of", "string"] [/STATE]
+    return sorted(words, key=lambda x: (-len(set(x)), x))[0]  # [STATE] sorted(words, key=lambda x: (-len(set(x)), x)) = ["string", "name", "of"] [/STATE]

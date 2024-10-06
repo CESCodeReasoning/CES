@@ -1,0 +1,5 @@
+from typing import *
+
+def solution(lst: List[int]) -> int:
+    # [STATE] lst = [5, 8, 7, 1] [/STATE]
+    return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])  # [CONDITION] idx%2==0 and x%2==1 [/CONDITION]

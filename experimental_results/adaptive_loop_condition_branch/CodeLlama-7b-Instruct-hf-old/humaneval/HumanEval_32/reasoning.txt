@@ -1,0 +1,10 @@
+The function `find_zero` takes a list of coefficients `xs` as input.
+The function first initializes two variables `begin` and `end` to -1.0 and 1.0, respectively.
+The function then enters a loop that continues until the product of the values of `poly(xs, begin)` and `poly(xs, end)` is negative.
+Inside the loop, the values of `begin` and `end` are updated using the following formula: `begin *= 2.0` and `end *= 2.0`.
+After the loop exits, the function enters another loop that continues until the difference between `end` and `begin` is less than 1e-10.
+Inside the loop, the function calculates the value of `center` using the formula `(begin + end) / 2.0`.
+The function then checks whether the product of the values of `poly(xs, center)` and `poly(xs, begin)` is positive or negative.
+If the product is positive, the function updates `begin` to `center`.
+Otherwise, the function updates `end` to `center`.
+After the loop exits, the function returns the value of `begin`.

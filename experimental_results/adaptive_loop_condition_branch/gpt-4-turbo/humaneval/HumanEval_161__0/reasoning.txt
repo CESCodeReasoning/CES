@@ -1,0 +1,13 @@
+The function `solve` is called with the input string `s = "#a@C"`.
+Inside the function:
+1. `flg` is initialized to 0, and `idx` to 0. `new_str` is initialized as a list of characters from `s`.
+2. The function iterates over each character in the string `s`.
+   - First character (`i = '#'`): It is not an alphabetic character, so `new_str` remains unchanged for this index. `idx` increments to 1.
+   - Second character (`i = 'a'`): It is an alphabetic character. The character is swapped to uppercase ('A'). `flg` is set to 1. `idx` increments to 2.
+   - Third character (`i = '@'`): It is not an alphabetic character, so `new_str` remains unchanged for this index. `idx` increments to 3.
+   - Fourth character (`i = 'C'`): It is an alphabetic character. The character is swapped to lowercase ('c'). `idx` increments to 4.
+3. After the loop, `s` is reset to an empty string.
+4. The function iterates over `new_str` to concatenate characters back to `s`, resulting in `s = "#A@c"`.
+5. The final check `if flg == 0` is false because `flg` was set to 1 during the iteration. Therefore, the function returns the modified string `s`.
+
+The output of the function `solve("#a@C")` is `#A@c`.

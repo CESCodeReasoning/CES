@@ -1,0 +1,67 @@
+The function `largest_prime_factor` is called with ( n = 63 ).
+Inside the function, a variable `largest` is initialized to 1.
+
+Iteration 1:
+    -The number 2 is a factor of 63, and it is prime, so largest becomes 2.
+Iteration 2:
+    -The number 3 is a factor of 63, and it is prime, so largest becomes 3.
+Iteration 3:
+    -The number 4 is not a factor of 63, so it is not considered.
+Iteration 4:
+    -The number 5 is a factor of 63, and it is prime, so largest becomes 5.
+Iteration 5:
+    -The number 6 is not a factor of 63, so it is not considered.
+Iteration 6:
+    -The number 7 is a factor of 63, and it is prime, so largest becomes 7.
+Iteration 7:
+    -The number 8 is not a factor of 63, so it is not considered.
+Iteration 8:
+    -The number 9 is not a factor of 63, so it is not considered.
+Iteration 9:
+    -The number 10 is not a factor of 63, so it is not considered.
+Iteration 10:
+    -The number 11 is a factor of 63, and it is prime, so largest becomes 11.
+Iteration 11:
+    -The number 12 is not a factor of 63, so it is not considered.
+Iteration 12:
+    -The number 13 is a factor of 63, and it is prime, so largest becomes 13.
+Iteration 13:
+    -The number 14 is not a factor of 63, so it is not considered.
+Iteration 14:
+    -The number 15 is not a factor of 63, so it is not considered.
+Iteration 15:
+    -The number 16 is not a factor of 63, so it is not considered.
+Iteration 16:
+    -The number 17 is a factor of 63, and it is prime, so largest becomes 17.
+Iteration 17:
+    -The number 18 is not a factor of 63, so it is not considered.
+Iteration 18:
+    -The number 19 is a factor of 63, and it is prime, so largest becomes 19.
+Iteration 19:
+    -The number 20 is not a factor of 63, so it is not considered.
+Iteration 20:
+    -The number 21 is not a factor of 63, so it is not considered.
+Iteration 21:
+    -The number 22 is not a factor of 63, so it is not considered.
+Iteration 22:
+    -The number 23 is a factor of 63, and it is prime, so largest becomes 23.
+Iteration 23:
+    -The number 24 is not a factor of 63, so it is not considered.
+Iteration 24:
+    -The number 25 is not a factor of 63, so it is not considered.
+Iteration 25:
+    -The number 26 is not a factor of 63, so it is not considered.
+Iteration 26:
+    -The number 27 is not a factor of 63, so it is not considered.
+Iteration 27:
+    -The number 28 is not a factor of 63, so it is not considered.
+Iteration 28:
+    -The number 29 is a factor of 63, and it is prime, so largest becomes 29.
+Iteration 29:
+    -The number 30 is not a factor of 63, so it is not considered.
+Iteration 30:
+    -The number 31 is a factor of 63, and it is prime, so largest becomes 31.
+Iteration 31:
+    -The number 32 is not a factor of 63, so it is not considered.
+Iteration 32:
+    -The number 3

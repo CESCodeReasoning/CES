@@ -1,0 +1,20 @@
+from typing import *
+
+
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    closest_pair = None
+    distance = None
+
+    for idx, elem in enumerate(numbers): ## [STATE]idx=??[/STATE][STATE]elem=??[/STATE][STATE]enumerate(numbers)=??[/STATE][STATE]numbers=??[/STATE]
+        for idx2, elem2 in enumerate(numbers): ## [STATE]idx2=??[/STATE][STATE]elem2=??[/STATE][STATE]enumerate(numbers)=??[/STATE][STATE]numbers=??[/STATE]
+            if idx != idx2: ## [CONDITION](idx != idx2)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                if distance is None: ## [CONDITION](distance is None)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                    distance = abs(elem - elem2)
+                    closest_pair = tuple(sorted([elem, elem2]))
+                else: ## [BRANCH]taken=??[/BRANCH]
+                    new_distance = abs(elem - elem2)
+                    if new_distance < distance: ## [CONDITION](new_distance < distance)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                        distance = new_distance
+                        closest_pair = tuple(sorted([elem, elem2]))
+
+    return closest_pair

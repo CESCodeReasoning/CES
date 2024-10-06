@@ -1,0 +1,13 @@
+The function `sum_squares` is called with (lst = [-2.4, 1, 1]).
+Inside the function, a variable `squared` is initialized to 0.
+The loop iterates from 0 to 2 since `range(len(lst))`= [0, 1, 2].
+
+First Iteration(i = 0):
+    lst[i] = -2.4
+    squared = 0 + math.ceil(-2.4)**2 results in squared = 16
+Second Iteration(i = 1):
+    lst[i] = 1
+    squared = 16 + math.ceil(1)**2 results in squared = 25
+Third Iteration(i = 2): 
+    lst[i] = 1
+    squared = 25 + math.ceil(1)**2 results in squared = 36

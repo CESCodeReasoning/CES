@@ -1,0 +1,50 @@
+The function `parse_nested_parens` is called with ( paren_string = '(()(())((())))' ).
+The function `parse_nested_parens` calls the helper function `parse_paren_group` for each non-empty substring of `paren_string` separated by spaces.
+
+The first substring is '(()(())((())))'.
+The function `parse_paren_group` is called with ( s = '(()(())((())))' ).
+The function `parse_paren_group` iterates through the characters of `s`.
+The first character is '('.
+The condition ( c == '(' ) is true.
+The depth is incremented to 1.
+The max_depth is updated to 1.
+The next character is '('.
+The condition ( c == '(' ) is true.
+The depth is incremented to 2.
+The max_depth is updated to 2.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to 1.
+The next character is '('.
+The condition ( c == '(' ) is true.
+The depth is incremented to 2.
+The max_depth is updated to 2.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to 1.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to 0.
+The next character is '('.
+The condition ( c == '(' ) is true.
+The depth is incremented to 1.
+The max_depth is updated to 1.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to 0.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to -1.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to -2.
+The next character is ')'.
+The condition ( c == '(' ) is false.
+The depth is decremented to -3.
+The function `parse_paren_group` returns the max_depth, which is 2.
+
+The second substring is empty, so it is skipped.
+
+The third substring is empty, so it is skipped.
+
+The function `parse_nested_parens` returns a list of the max_depths for each non-empty substring of `paren_string` separated by spaces.

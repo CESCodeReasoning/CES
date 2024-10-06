@@ -1,0 +1,58 @@
+The function `largest_prime_factor` is called with ( n = 63 ).
+Inside the function, a nested function `is_prime` is defined.
+The function `is_prime` checks if a number is prime.
+The outer loop iterates from 2 through 63 (since ( n = 63 )).
+First Iteration (j = 2)
+   - `j` is 2, which is a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 2.
+Second Iteration (j = 3)
+   - `j` is 3, which is a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 3.
+Third Iteration (j = 4)
+   - `j` is 4, which is not a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is false.
+Fourth Iteration (j = 5)
+   - `j` is 5, which is a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 5.
+Fifth Iteration (j = 6)
+   - `j` is 6, which is not a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is false.
+Sixth Iteration (j = 7)
+   - `j` is 7, which is a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 7.
+Seventh Iteration (j = 8)
+   - `j` is 8, which is not a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is false.
+Eighth Iteration (j = 9)
+   - `j` is 9, which is not a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is false.
+Ninth Iteration (j = 10)
+   - `j` is 10, which is not a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is false.
+Tenth Iteration (j = 11)
+   - `j` is 11, which is a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 11.
+Eleventh Iteration (j = 12)
+   - `j` is 12, which is not a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is false.
+Twelfth Iteration (j = 13)
+   - `j` is 13, which is a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is true.
+   - Action: `largest = max(largest, j)` updates `largest` to 13.
+Thirteenth Iteration (j = 14)
+   - `j` is 14, which is not a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is false.
+Fourteenth Iteration (j = 15)
+   - `j` is 15, which is not a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is false.
+Fifteenth Iteration (j = 16)
+   - `j` is 16, which is not a prime number.
+   - The condition `n % j == 0 and is_prime(j)` is false.
+Sixteenth Iteration (j = 17)
+   - `j` is 17, which is a prime number.
+   - The condition `n

@@ -1,0 +1,11 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: string_xor
+main.py(5):     def xor(i, j):
+main.py(11):     return ''.join(xor(x, y) for x, y in zip(a, b))
+ --- modulename: main, funcname: <genexpr>
+main.py(11):     return ''.join(xor(x, y) for x, y in zip(a, b))
+ --- modulename: main, funcname: xor
+main.py(6):         if i == j:
+main.py(7):             return '0'
+ --- modulename: main, funcname: <genexpr>
+main.py(11):     return ''.join(xor(x, y) for x, y in zip(a, b))

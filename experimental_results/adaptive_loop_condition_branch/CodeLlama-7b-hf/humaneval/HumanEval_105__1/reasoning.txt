@@ -1,0 +1,42 @@
+The function `by_length` is called with (arr = []).
+The variable `dic` is initialized to a dictionary.
+The variable `sorted_arr` is initialized to the sorted version of `arr` in reverse order.
+The variable `new_arr` is initialized to an empty list.
+The loop iterates through the sorted version of `arr` in reverse order.
+First Iteration:
+    `var` = 9
+    `dic[var]` = "Nine"
+    `new_arr.append(dic[var])` appends "Nine" to `new_arr`
+Second Iteration:
+    `var` = 8
+    `dic[var]` = "Eight"
+    `new_arr.append(dic[var])` appends "Eight" to `new_arr`
+Third Iteration:
+    `var` = 7
+    `dic[var]` = "Seven"
+    `new_arr.append(dic[var])` appends "Seven" to `new_arr`
+Fourth Iteration:
+    `var` = 6
+    `dic[var]` = "Six"
+    `new_arr.append(dic[var])` appends "Six" to `new_arr`
+Fifth Iteration:
+    `var` = 5
+    `dic[var]` = "Five"
+    `new_arr.append(dic[var])` appends "Five" to `new_arr`
+Sixth Iteration:
+    `var` = 4
+    `dic[var]` = "Four"
+    `new_arr.append(dic[var])` appends "Four" to `new_arr`
+Seventh Iteration:
+    `var` = 3
+    `dic[var]` = "Three"
+    `new_arr.append(dic[var])` appends "Three" to `new_arr`
+Eighth Iteration:
+    `var` = 2
+    `dic[var]` = "Two"
+    `new_arr.append(dic[var])` appends "Two" to `new_arr`
+Ninth Iteration:
+    `var` = 1
+    `dic[var]` = "One"
+    `new_arr.append(dic[var])` appends "One" to `new_arr`
+After the loop completes, the function returns the value of `new_arr`, which is now ["Nine", "Eight", "Seven", "Six", "Five", "Four", "Three", "Two", "One"].

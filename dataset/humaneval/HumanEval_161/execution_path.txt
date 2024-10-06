@@ -1,0 +1,38 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: solve
+main.py(3):     flg = 0
+main.py(4):     idx = 0
+main.py(5):     new_str = list(s)
+main.py(6):     for i in s:
+main.py(7):         if i.isalpha():
+main.py(8):             new_str[idx] = i.swapcase()
+main.py(9):             flg = 1
+main.py(10):         idx += 1
+main.py(6):     for i in s:
+main.py(7):         if i.isalpha():
+main.py(8):             new_str[idx] = i.swapcase()
+main.py(9):             flg = 1
+main.py(10):         idx += 1
+main.py(6):     for i in s:
+main.py(7):         if i.isalpha():
+main.py(8):             new_str[idx] = i.swapcase()
+main.py(9):             flg = 1
+main.py(10):         idx += 1
+main.py(6):     for i in s:
+main.py(7):         if i.isalpha():
+main.py(8):             new_str[idx] = i.swapcase()
+main.py(9):             flg = 1
+main.py(10):         idx += 1
+main.py(6):     for i in s:
+main.py(11):     s = ""
+main.py(12):     for i in new_str:
+main.py(13):         s += i
+main.py(12):     for i in new_str:
+main.py(13):         s += i
+main.py(12):     for i in new_str:
+main.py(13):         s += i
+main.py(12):     for i in new_str:
+main.py(13):         s += i
+main.py(12):     for i in new_str:
+main.py(14):     if flg == 0:
+main.py(16):     return s

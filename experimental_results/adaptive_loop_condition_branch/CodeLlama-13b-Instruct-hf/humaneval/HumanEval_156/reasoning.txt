@@ -1,0 +1,73 @@
+The function `int_to_mini_roman` is called with ( number = 19 ).
+Inside the function, a variable `num` is initialized to a list of integers representing the Roman numerals.
+A variable `sym` is initialized to a list of strings representing the Roman numerals.
+A variable `i` is initialized to 12.
+A variable `res` is initialized to an empty string.
+The while loop iterates until `number` is 0.
+First Iteration:
+    - `number` = 19, `num[i]` = 1000.
+    - `div` = 19 // 1000 = 0.
+    - `number` = 19 % 1000 = 19.
+    - `div` = 0, the while loop terminates.
+    - `res` = "M" (since `i` = 12).
+Second Iteration:
+    - `number` = 19, `num[i]` = 900.
+    - `div` = 19 // 900 = 0.
+    - `number` = 19 % 900 = 19.
+    - `div` = 0, the while loop terminates.
+    - `res` = "CM" (since `i` = 11).
+Third Iteration:
+    - `number` = 19, `num[i]` = 500.
+    - `div` = 19 // 500 = 0.
+    - `number` = 19 % 500 = 19.
+    - `div` = 0, the while loop terminates.
+    - `res` = "D" (since `i` = 9).
+Fourth Iteration:
+    - `number` = 19, `num[i]` = 400.
+    - `div` = 19 // 400 = 0.
+    - `number` = 19 % 400 = 19.
+    - `div` = 0, the while loop terminates.
+    - `res` = "CD" (since `i` = 8).
+Fifth Iteration:
+    - `number` = 19, `num[i]` = 100.
+    - `div` = 19 // 100 = 1.
+    - `number` = 19 % 100 = 19.
+    - `div` = 1, the while loop terminates.
+    - `res` = "XC" (since `i` = 7).
+Sixth Iteration:
+    - `number` = 19, `num[i]` = 90.
+    - `div` = 19 // 90 = 2.
+    - `number` = 19 % 90 = 19.
+    - `div` = 2, the while loop terminates.
+    - `res` = "XCIX" (since `i` = 6).
+Seventh Iteration:
+    - `number` = 19, `num[i]` = 50.
+    - `div` = 19 // 50 = 3.
+    - `number` = 19 % 50 = 19.
+    - `div` = 3, the while loop terminates.
+    - `res` = "LXIX" (since `i` = 5).
+Eighth Iteration:
+    - `number` = 19, `num[i]` = 40.
+    - `div` = 19 // 40 = 4.
+    - `number` = 19 % 40 = 19.
+    - `div` = 4, the while loop terminates.
+    - `res` = "XLIX" (since `i` = 4).
+Ninth Iteration:
+    - `number` = 19, `num[i]` = 10.
+    - `div` = 19 // 10 = 1.
+    - `number` = 19 % 10 = 9.
+    - `div` = 1, the while loop terminates.
+    - `res` = "IX" (since `i` = 3).
+Tenth Iteration:
+    - `number` = 9, `num[i]` = 5.
+    - `div` = 9 // 5 = 1.
+    - `number` = 9 % 5 = 4.
+    - `div` = 1, the while loop terminates.
+    - `res` = "IV" (since `i` = 2).
+Eleventh Iteration:
+    - `number` = 4, `num[i]` = 1.
+    - `div` = 4 // 1 = 4.
+    - `number` = 4 % 1 = 0.
+    - `div` = 0, the while loop terminates.
+    - `res` = "I" (since `i` = 1).
+After the loop completes, the function returns the value of `res`, which is now "MCMXCIX".

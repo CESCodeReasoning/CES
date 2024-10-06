@@ -1,0 +1,16 @@
+The function `is_simple_power` is called with ( x = 16, n = 2 ).
+Inside the function, a variable `power` is initialized to 1.
+The loop continues until `power` is greater than or equal to `x`.
+First Iteration (power = 1):
+    - power < x when power=1 and x=16
+    - `power = power * n` updates `power` to 2 ( 1 * 2 = 2 ).
+Second Iteration (power = 2):
+    - power < x when power=2 and x=16
+    - `power = power * n` updates `power` to 4 ( 2 * 2 = 4 ).
+Third Iteration (power = 4)
+    - power < x when power=4 and x=16
+    - `power = power * n` updates `power` to 8 ( 4 * 2 = 8 ).
+Fourth Iteration (power = 8)
+    - power < x when power=8 and x=16
+    - `power = power * n` updates `power` to 16 ( 8 * 2 = 16 ).
+After the loop completes, `power` is equal to `x`, therefore the function returns `True`.

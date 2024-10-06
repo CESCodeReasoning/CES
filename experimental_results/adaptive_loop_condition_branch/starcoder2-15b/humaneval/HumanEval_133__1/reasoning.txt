@@ -1,0 +1,17 @@
+The function `sum_squares` is called with (lst = [-2.4, 1, 1]).
+Inside the function, a variable `squared` is initialized to 0.
+The loop iterates through each element in the list `lst`.
+
+First Iteration (i = -2.4):
+    `math.ceil(i)` returns -2.
+    `-2**2` results in 4.
+    `squared += 4` updates `squared` to 4.
+Second Iteration (i = 1):
+    `math.ceil(i)` returns 1.
+    `1**2` results in 1.
+    `squared += 1` updates `squared` to 5.
+Third Iteration (i = 1):
+    `math.ceil(i)` returns 1.
+    `1**2` results in 1.
+    `squared += 1` updates `squared` to 6.
+After the loop completes, the function returns the value of `squared`, which is now 6.

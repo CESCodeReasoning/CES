@@ -1,0 +1,28 @@
+The function `Strongest_Extension` is called with ( class_name = 'finNNalLLly', extensions = ['Die', 'NowW', 'Wow', 'WoW'] ).
+Inside the function, a variable `strong` is initialized to the first element of the `extensions` list.
+A variable `my_val` is initialized to the length of the list comprehension `[x for x in extensions[0] if x.isalpha() and x.isupper()]` minus the length of the list comprehension `[x for x in extensions[0] if x.isalpha() and x.islower()]`.
+The loop iterates over the elements of the `extensions` list.
+First Iteration:
+   - The current element of the loop is 'Die'.
+   - The length of the list comprehension `[x for x in 'Die' if x.isalpha() and x.isupper()]` is 2.
+   - The length of the list comprehension `[x for x in 'Die' if x.isalpha() and x.islower()]` is 0.
+   - The value of `my_val` is updated to 2 - 0 = 2.
+Second Iteration:
+   - The current element of the loop is 'NowW'.
+   - The length of the list comprehension `[x for x in 'NowW' if x.isalpha() and x.isupper()]` is 3.
+   - The length of the list comprehension `[x for x in 'NowW' if x.isalpha() and x.islower()]` is 1.
+   - The value of `my_val` is updated to 3 - 1 = 2.
+Third Iteration:
+   - The current element of the loop is 'Wow'.
+   - The length of the list comprehension `[x for x in 'Wow' if x.isalpha() and x.isupper()]` is 2.
+   - The length of the list comprehension `[x for x in 'Wow' if x.isalpha() and x.islower()]` is 1.
+   - The value of `my_val` is updated to 2 - 1 = 1.
+Fourth Iteration:
+   - The current element of the loop is 'WoW'.
+   - The length of the list comprehension `[x for x in 'WoW' if x.isalpha() and x.isupper()]` is 3.
+   - The length of the list comprehension `[x for x in 'WoW' if x.isalpha() and x.islower()]` is 0.
+   - The value of `my_val` is updated to 3 - 0 = 3.
+The value of `my_val` is updated to 3.
+The variable `strong` is updated to the current element of the loop, which is 'WoW'.
+The loop continues until all the elements of the `extensions` list have been processed.
+The function returns the concatenation of the `class_name` and the `strong` variable, which is 'finNNalLLly.WoW'.

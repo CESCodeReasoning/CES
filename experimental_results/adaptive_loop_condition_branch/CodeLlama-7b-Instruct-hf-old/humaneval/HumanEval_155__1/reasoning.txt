@@ -1,0 +1,46 @@
+The function `even_odd_count` is called with ( num = -78 ).
+Inside the function, two variables `even_count` and `odd_count` are initialized to 0.
+The loop iterates through the digits of the absolute value of num (since num is negative, the absolute value is taken).
+First Iteration (i = '7'):
+   - `i` is '7', which is an odd digit.
+   - The condition `int(i) % 2 == 0` is false.
+   - Action: `odd_count += 1` updates `odd_count` to 1.
+Second Iteration (i = '8'):
+   - `i` is '8', which is an even digit.
+   - The condition `int(i) % 2 == 0` is true.
+   - Action: `even_count += 1` updates `even_count` to 1.
+Third Iteration (i = '7'):
+   - `i` is '7', which is an odd digit.
+   - The condition `int(i) % 2 == 0` is false.
+   - Action: `odd_count += 1` updates `odd_count` to 2.
+Fourth Iteration (i = '8'):
+   - `i` is '8', which is an even digit.
+   - The condition `int(i) % 2 == 0` is true.
+   - Action: `even_count += 1` updates `even_count` to 2.
+Fifth Iteration (i = '8'):
+   - `i` is '8', which is an even digit.
+   - The condition `int(i) % 2 == 0` is true.
+   - Action: `even_count += 1` updates `even_count` to 3.
+Sixth Iteration (i = '7'):
+   - `i` is '7', which is an odd digit.
+   - The condition `int(i) % 2 == 0` is false.
+   - Action: `odd_count += 1` updates `odd_count` to 3.
+Seventh Iteration (i = '8'):
+   - `i` is '8', which is an even digit.
+   - The condition `int(i) % 2 == 0` is true.
+   - Action: `even_count += 1` updates `even_count` to 4.
+Eighth Iteration (i = '8'):
+   - `i` is '8', which is an even digit.
+   - The condition `int(i) % 2 == 0` is true.
+   - Action: `even_count += 1` updates `even_count` to 5.
+Ninth Iteration (i = '7'):
+   - `i` is '7', which is an odd digit.
+   - The condition `int(i) % 2 == 0` is false.
+   - Action: `odd_count += 1` updates `odd_count` to 4.
+Tenth Iteration (i = '8'):
+   - `i` is '8', which is an even digit.
+   - The condition `int(i) % 2 == 0` is true.
+   - Action: `even_count += 1` updates `even_count` to 6.
+Finally, the function returns a tuple containing the count of even and odd digits.
+
+Therefore, the final output of the function `even_odd_count(-78)` is (2, 4).

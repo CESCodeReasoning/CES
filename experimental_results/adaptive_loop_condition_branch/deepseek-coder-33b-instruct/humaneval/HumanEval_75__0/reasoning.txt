@@ -1,0 +1,17 @@
+The function `is_multiply_prime` checks if a number `a` can be expressed as the product of three prime numbers.
+
+The helper function `is_prime` checks if a number `n` is prime. It does this by checking if `n` is divisible by any number from 2 to `n-1`. If `n` is divisible by any of these numbers, it is not prime and the function returns `False`. If `n` is not divisible by any of these numbers, it is prime and the function returns `True`.
+
+The main function `is_multiply_prime` checks if `a` can be expressed as the product of three prime numbers. It does this by checking all possible combinations of three prime numbers. If it finds a combination that multiplies to `a`, it returns `True`. If it checks all combinations and does not find a match, it returns `False`.
+
+The prime numbers between 2 and 100 are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, and 97.
+
+The number `a` is `3 * 6 * 7`, which is 126.
+
+The combinations of three prime numbers that multiply to 126 are:
+- 2 * 6 * 73
+- 3 * 4 * 11
+- 5 * 2 * 7
+- 7 * 2 * 3
+
+None of these combinations match 126, so the function returns `False`.

@@ -1,0 +1,24 @@
+The function `is_nested` is called with ( string = '[[]]' ).
+Inside the function, a variable `opening_bracket_index` and `closing_bracket_index` are initialized to empty lists.
+
+Iteration 1:
+    -The character '[' is found at index 0, so opening_bracket_index becomes [0].
+Iteration 2:
+    -The character '[' is found at index 1, so opening_bracket_index becomes [0, 1].
+Iteration 3:
+    -The character ']' is found at index 2, so closing_bracket_index becomes [2].
+Iteration 4:
+    -The character ']' is found at index 3, so closing_bracket_index becomes [2, 3].
+
+The closing_bracket_index list is reversed to [3, 2].
+
+The loop iterates over the opening_bracket_index list.
+
+Iteration 1:
+    -The first opening bracket at index 0 is compared with the first closing bracket at index 3.
+    -Since 0 < 3, cnt becomes 1 and i becomes 1.
+Iteration 2:
+    -The second opening bracket at index 1 is compared with the second closing bracket at index 2.
+    -Since 1 < 2, cnt becomes 2 and i becomes 2.
+
+Since cnt is greater than or equal to 2, the function returns True.

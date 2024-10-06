@@ -1,0 +1,19 @@
+```response
+    return sorted(nums, key=digits_sum)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+def primes_in_range(start, end):
+    primes = []
+    for i in range(start, end + 1):

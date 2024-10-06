@@ -1,0 +1,20 @@
+The function count_up_to(n) takes an integer n as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (i=2):
+    - `i` is 2, j in the inner loop is 2, 3, 4.
+    - numbers[i]=2: compare with 3, 4:
+        - When j = 2 (numbers[j]=3), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 3 (numbers[j]=4), the condition `i % j == 0` is False, the if branch is not taken.
+Second Iteration (i=3):
+    - `i` is 3, j in the inner loop is 2, 3.
+    - numbers[i]=3: compare with 2, 3:
+        - When j = 2 (numbers[j]=2), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 3 (numbers[j]=3), the condition `i % j == 0` is False, the if branch is not taken.
+Third Iteration (i=4):
+    - `i` is 4, j in the inner loop is 2, 3.
+    - numbers[i]=4: compare with 2, 3:
+        - When j = 2 (numbers[j]=2), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 3 (numbers[j]=3), the condition `i % j == 0` is False, the if branch is not taken.
+Forth Iteration (i=5):
+    No more elements to compare.

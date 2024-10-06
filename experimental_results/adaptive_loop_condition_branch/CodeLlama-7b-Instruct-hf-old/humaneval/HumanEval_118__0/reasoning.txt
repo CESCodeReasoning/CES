@@ -1,0 +1,17 @@
+The function `get_closest_vowel` is called with ( word = "full" ).
+Inside the function, a set `vowels` is created with the vowels in the English language.
+
+Iteration 1:
+    -The length of word is 4, so the condition (len(word) < 3) is false.
+    -The for loop iterates from (len(word) - 2) to 0, with a step of -1.
+    -The first iteration checks if the letter at index 2 is a vowel.
+    -The letter at index 2 is "l", which is not a vowel.
+    -The condition (word[i] in vowels) is false, so the branch is not taken.
+Iteration 2:
+    -The letter at index 1 is "f", which is not a vowel.
+    -The condition (word[i] in vowels) is false, so the branch is not taken.
+Iteration 3:
+    -The letter at index 0 is "f", which is not a vowel.
+    -The condition (word[i] in vowels) is false, so the branch is not taken.
+
+Therefore, the function returns an empty string.

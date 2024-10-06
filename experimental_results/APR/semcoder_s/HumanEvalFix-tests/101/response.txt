@@ -1,0 +1,111 @@
+<｜begin▁of▁sentence｜>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in words_string.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def words_string(s):
+    if not s:
+        return []
+
+    s_list = []
+
+    for letter in s:
+        if letter == ',':
+            s_list.append(',')
+        else:
+            s_list.append(letter)
+
+    s_list = "".join(s_list)
+    return s_list.split()
+
+Tests:
+def check(words_string):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert words_string("Hi, my name is John") == ["Hi", "my", "name", "is", "John"]
+    assert words_string("One, two, three, four, five, six") == ["One", "two", "three", "four", "five", "six"]
+    assert words_string("Hi, my name") == ["Hi", "my", "name"]
+    assert words_string("One,, two, three, four, five, six,") == ["One", "two", "three", "four", "five", "six"]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert words_string("") == []
+    assert words_string("ahmed     , gamal") == ["ahmed", "gamal"]
+
+check(words_string)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `words_string(s)` to solve the following problem:
+You will be given a string of words separated by commas or spaces. Your task is
+to split the string into words and return an array of the words.
+For example:
+words_string("Hi, my name is John") == ["Hi", "my", "name", "is", "John"]
+words_string("One, two, three, four, five, six") == ["One", "two", "three", "four", "five", "six"]
+
+Fixed Code:
+```python
+def words_string(s):
+    if not s:
+        return []
+
+    s_list = []
+
+    for letter in s:
+        if letter == ',' or letter == ' ':
+            s_list.append(',')
+        else:
+            s_list.append(letter)
+
+    s_list = "".join(s_list)
+    return s_list.split(',')
+```<｜end▁of▁sentence｜>

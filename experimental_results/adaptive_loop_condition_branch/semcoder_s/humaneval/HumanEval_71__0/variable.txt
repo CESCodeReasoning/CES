@@ -1,0 +1,10 @@
+from typing import *
+
+
+def triangle_area(a, b, c):
+    if a + b <= c or a + c <= b or b + c <= a: ## [CONDITION](a + b <= c or a + c <= b or b + c <= a)=[False, False, False][/CONDITION][CONDITION](b + c <= a)=[False][/CONDITION][CONDITION](a + b <= c)=[False][/CONDITION][CONDITION](a + c <= b)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return -1
+    s = (a + b + c) / 2 ## [STATE]s=[1.5][/STATE]
+    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5 ## [STATE]area=[1.5][/STATE]
+    area = round(area, 2) ## [STATE]area=[1.5][/STATE]
+    return area ## [STATE]return=[1.5][/STATE]

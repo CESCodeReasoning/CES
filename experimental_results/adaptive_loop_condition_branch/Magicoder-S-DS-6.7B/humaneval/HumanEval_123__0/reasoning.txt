@@ -1,0 +1,43 @@
+The function `get_odd_collatz` is called with ( n = 1 ).
+The condition `n % 2 == 0` is false, so the else branch is taken.
+The list `odd_collatz` is initialized with the value of `n`, which is 1.
+The while loop iterates until `n` becomes 1.
+In the first iteration, `n` is 1.
+The condition `n % 2 == 0` is false, so the else branch is taken.
+`n` is updated to `n * 3 + 1`, which is 4.
+The condition `n % 2 == 1` is true, so `4` is appended to `odd_collatz`.
+In the second iteration, `n` is 4.
+The condition `n % 2 == 0` is false, so the else branch is taken.
+`n` is updated to `n * 3 + 1`, which is 13.
+The condition `n % 2 == 1` is true, so `13` is appended to `odd_collatz`.
+In the third iteration, `n` is 13.
+The condition `n % 2 == 0` is false, so the else branch is taken.
+`n` is updated to `n * 3 + 1`, which is 40.
+The condition `n % 2 == 1` is true, so `40` is appended to `odd_collatz`.
+In the fourth iteration, `n` is 40.
+The condition `n % 2 == 0` is true, so the if branch is taken.
+`n` is updated to `n / 2`, which is 20.
+In the fifth iteration, `n` is 20.
+The condition `n % 2 == 0` is true, so the if branch is taken.
+`n` is updated to `n / 2`, which is 10.
+In the sixth iteration, `n` is 10.
+The condition `n % 2 == 0` is true, so the if branch is taken.
+`n` is updated to `n / 2`, which is 5.
+In the seventh iteration, `n` is 5.
+The condition `n % 2 == 0` is false, so the else branch is taken.
+`n` is updated to `n * 3 + 1`, which is 16.
+The condition `n % 2 == 1` is true, so `16` is appended to `odd_collatz`.
+In the eighth iteration, `n` is 16.
+The condition `n % 2 == 0` is true, so the if branch is taken.
+`n` is updated to `n / 2`, which is 8.
+In the ninth iteration, `n` is 8.
+The condition `n % 2 == 0` is true, so the if branch is taken.
+`n` is updated to `n / 2`, which is 4.
+In the tenth iteration, `n` is 4.
+The condition `n % 2 == 0` is true, so the if branch is taken.
+`n` is updated to `n / 2`, which is 2.
+In the eleventh iteration, `n` is 2.
+The condition `n % 2 == 0` is true, so the if branch is taken.
+`n` is updated to `n / 2`, which is 1.
+The while loop ends after this iteration.
+The function returns the sorted list `odd_collatz`, which is [1, 13, 40, 16].

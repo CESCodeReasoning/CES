@@ -1,0 +1,20 @@
+[REASONING]
+The function `digitSum` is called with ( s = "abcCd" ).
+The string `s` is not empty, so the if branch is not taken.
+The function returns the sum of the ASCII values of the uppercase characters in the string.
+The string `s` contains two uppercase characters, 'C' and 'D', so the function returns the sum of their ASCII values, which is 132 (67 + 65).
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def digitSum(s):
+    if s == "": ## [CONDITION](s == "")=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+        return 0
+    return sum(ord(char) if char.isupper() else 0 for char in s)
+[/ANSWER]
+
+[OUTPUT]
+132
+[/OUTPUT]

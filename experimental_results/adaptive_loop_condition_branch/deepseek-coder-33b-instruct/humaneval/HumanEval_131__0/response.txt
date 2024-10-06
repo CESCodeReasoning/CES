@@ -1,0 +1,37 @@
+
+[REASONING]
+The function `digits` is called with ( n = 120 ).
+Inside the function, a variable `product` and `odd_count` are initialized to 1 and 0 respectively.
+
+Iteration 1:
+    -The digit '1' is not odd, so the product and odd_count remain the same.
+Iteration 2:
+    -The digit '2' is not odd, so the product and odd_count remain the same.
+Iteration 3:
+    -The digit '0' is not odd, so the product and odd_count remain the same.
+
+The condition `odd_count == 0` is false, so the `else` block is executed.
+The function returns the value of `product`, which is 1.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def digits(n):
+    product = 1
+    odd_count = 0
+    for digit in str(n): ## [STATE]digit=['1', '2', '0'][/STATE][STATE]str(n)=['120'][/STATE][STATE]n=[120][/STATE]
+        int_digit = int(digit)
+        if int_digit % 2 == 1: ## [CONDITION](int_digit % 2 == 1)=[False, False, False][/CONDITION][BRANCH]taken=[N, N, N][/BRANCH]
+            product = product * int_digit
+            odd_count += 1
+    if odd_count == 0: ## [CONDITION](odd_count == 0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return 0
+    else: ## [BRANCH]taken=[N][/BRANCH]
+        return product
+[/ANSWER]
+
+[OUTPUT]
+0
+[/OUTPUT]

@@ -1,0 +1,10 @@
+The function right_angle_triangle takes three arguments a, b, and c. It checks if the input values can form a right-angled triangle.
+To determine the output of executing the function right_angle_triangle on the input (3, 4, 5), we need to check if the following conditions are met:
+
+1. a*a == b*b + c*c
+2. b*b == a*a + c*c
+3. c*c == a*a + b*b
+
+If any of the conditions is met, the function returns True, otherwise it returns False.
+
+In this case, the first condition is met, so the function returns True.

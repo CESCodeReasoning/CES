@@ -1,0 +1,12 @@
+The function `hex_key` is called with ( num = "2020" ).
+Inside the function, a variable `total` is initialized to 0.
+The loop iterates over the characters in the string "2020".
+First Iteration (i = 0):
+   - The character '2' is in the `primes` tuple, so `total` is incremented by 1.
+Second Iteration (i = 1):
+   - The character '0' is not in the `primes` tuple.
+Third Iteration (i = 2):
+   - The character '2' is in the `primes` tuple, so `total` is incremented by 1.
+Fourth Iteration (i = 3):
+   - The character '0' is not in the `primes` tuple.
+The loop ends, and the function returns the value of `total`, which is 2.

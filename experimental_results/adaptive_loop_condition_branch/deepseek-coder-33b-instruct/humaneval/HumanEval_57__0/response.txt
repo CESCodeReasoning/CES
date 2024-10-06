@@ -1,0 +1,22 @@
+
+[REASONING]
+The function `monotonic` is called with ( l = [4, 1, 0, -10] ).
+`l` is not sorted in either ascending or descending order.
+The condition `l == sorted(l) or l == sorted(l, reverse=True)` is false, therefore the if branch is not taken and the method returns False.
+
+Therefore, the final output of the function `monotonic([4, 1, 0, -10])` is False.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def monotonic(l: list):
+    if l == sorted(l) or l == sorted(l, reverse=True): ## [CONDITION](l == sorted(l) or l == sorted(l, reverse=True))=[False][/CONDITION][CONDITION](l == sorted(l))=[False][/CONDITION][CONDITION](l == sorted(l, reverse=True))=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return True
+    return False
+[/ANSWER]
+
+[OUTPUT]
+False
+[/OUTPUT]

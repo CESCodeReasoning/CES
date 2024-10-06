@@ -1,0 +1,41 @@
+
+[REASONING]
+The function `Strongest_Extension` is called with ( class_name = 'Sp', extensions = ['671235', 'Bb'] ).
+
+Inside the function, a variable `strong` is initialized to the first element of `extensions`.
+
+The function calculates the difference between the number of uppercase and lowercase letters in the first extension.
+
+Iteration 1:
+    - The extension '671235' has 0 uppercase letters and 6 lowercase letters.
+    - The difference is 0 - 6 = -6.
+Iteration 2:
+    - The extension 'Bb' has 2 uppercase letters and 1 lowercase letter.
+    - The difference is 2 - 1 = 1.
+    - This difference is greater than the previous difference (-6), so `strong` is updated to 'Bb'.
+
+The function returns the concatenation of `class_name` and `strong`, which is 'Sp.Bb'.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def Strongest_Extension(class_name, extensions):
+    strong = extensions[0]
+    my_val = len([x for x in extensions[0] if x.isalpha() and x.isupper()]) - \
+        len([x for x in extensions[0] if x.isalpha() and x.islower()])
+    for s in extensions: ## [STATE]s=['671235', 'Bb'][/STATE][STATE]extensions=[['671235', 'Bb'][/STATE]
+        val = len([x for x in s if x.isalpha() and x.isupper()]) - \
+            len([x for x in s if x.isalpha() and x.islower()])
+        if val > my_val: ## [CONDITION](val > my_val)=[False, True][/CONDITION][BRANCH]taken=[N, Y][/BRANCH]
+            strong = s
+            my_val = val
+
+    ans = class_name + "." + strong
+    return ans
+[/ANSWER]
+
+[OUTPUT]
+'Sp.Bb'
+[/OUTPUT]

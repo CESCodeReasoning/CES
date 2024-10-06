@@ -1,0 +1,32 @@
+The function `minSubArraySum` is called with ( nums = [2, 3, 4, 1, 2, 4] ).
+Inside the function, a variable `max_sum` is initialized to 0.
+A variable `s` is initialized to 0.
+The loop iterates through the list `nums`.
+First Iteration:
+   - `num` is 2, so `s` becomes 2.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - `max_sum` is updated to 2.
+Second Iteration:
+   - `num` is 3, so `s` becomes 5.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - `max_sum` is updated to 5.
+Third Iteration:
+   - `num` is 4, so `s` becomes 9.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - `max_sum` is updated to 9.
+Fourth Iteration:
+   - `num` is 1, so `s` becomes 10.
+   - The condition `s < 0` is true, so the branch is taken.
+   - `s` becomes 0.
+   - `max_sum` is updated to 10.
+Fifth Iteration:
+   - `num` is 2, so `s` becomes 2.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - `max_sum` is updated to 12.
+Sixth Iteration:
+   - `num` is 4, so `s` becomes 6.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - `max_sum` is updated to 16.
+The loop completes, and `max_sum` is returned as the final output.
+
+Therefore, the final output of the function `minSubArraySum([2, 3, 4, 1, 2, 4])` is 16.

@@ -1,0 +1,14 @@
+from typing import *
+
+
+def sum_up_to_n(n):
+    total = 0
+    current_number = 1
+    while current_number <= n: ## [STATE]current_number=[1, 2, 3, 4, 5][/STATE][STATE]n=[5][/STATE]
+        total += current_number
+        current_number += 1
+    if total > k: ## [CONDITION](sum > k)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return True
+    else: ## [BRANCH]taken=??[/BRANCH]
+        return False
+    return total

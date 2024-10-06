@@ -1,0 +1,17 @@
+```response
+    return sorted(words)[0]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def find_max(words):
+    return sorted(words)[0]
+
+Tests:
+def check(find_max):
+
+    # Check some simple cases
+    assert (find_max(["name", "of", "string"]) == "string"), "t1"
+    assert (find_max(["name", "enam", "game"]) == "enam

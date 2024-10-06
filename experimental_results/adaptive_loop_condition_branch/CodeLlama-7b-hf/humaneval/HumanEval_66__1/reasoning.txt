@@ -1,0 +1,5 @@
+The function `digitSum` is called with ( s = "aAaaaXa" ).
+The condition `s == ""` is false, therefore the if branch is not taken.
+The return statement returns the value of `sum(ord(char) if char.isupper() else 0 for char in s)`, which is 10.
+
+Therefore, the final output of the function `digitSum("aAaaaXa")` is 10.

@@ -1,0 +1,8 @@
+The function `vowels_count` is called with ( s = "bYe" ).
+Inside the function, a variable `vowels` is initialized to "aeiouAEIOU".
+A variable `n_vowels` is initialized to the sum of 1 for each character in `s` that is in `vowels`.
+The if statement checks if the last character of `s` is 'y' or 'Y'.
+If the condition is true, the if branch is taken and `n_vowels` is incremented by 1.
+The function returns `n_vowels`.
+
+Therefore, the final output of the function `vowels_count("bYe")` is 2.

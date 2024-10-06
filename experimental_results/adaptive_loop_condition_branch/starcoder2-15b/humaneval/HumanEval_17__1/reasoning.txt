@@ -1,0 +1,4 @@
+The function parse_music takes a string music_string as input and returns a list of integers.
+The function splits the music_string by spaces and removes empty strings.
+It then creates a dictionary note_map that maps note symbols to their corresponding durations.
+Finally, it returns a list of integers by looking up the duration of each note in the note_map dictionary.

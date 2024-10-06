@@ -1,0 +1,9 @@
+Fixed Code:
+```python
+def count_upper(s):
+    count = 0
+    for i in range(0,len(s)):
+        if i%2 == 0 and s[i] in "AEIOU":
+            count += 1
+    return count
+```

@@ -1,0 +1,10 @@
+The function `odd_count` is called with (lst = ['3', "11111111"]).
+Inside the function, a variable `res` is initialized to an empty list.
+The loop iterates over the elements of `lst`.
+First Iteration(arr = ['3']):
+    `sum(int(d) % 2 == 1 for d in arr)` = 1 since '3' is an odd number.
+    `res.append` adds the string "the number of odd elements 1 in the string 1 of the input." to `res`.
+Second Iteration(arr = ["11111111"]):
+    `sum(int(d) % 2 == 1 for d in arr)` = 8 since "11111111" has 8 odd numbers.
+    `res.append` adds the string "the number of odd elements 8 in the string 8 of the input." to `res`.
+After the loop completes, the function returns `res`, which is ['the number of odd elements 1 in the string 1 of the input.', 'the number of odd elements 8 in the string 8 of the input.'].

@@ -1,0 +1,3 @@
+The function `check_dict_case` is called with ( dict = {"p":"pineapple", "b":"banana"} ).
+The length of the dictionary is 2, which satisfies the condition `len(dict.keys()) == 0`.
+Therefore, the function returns False.

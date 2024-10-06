@@ -1,0 +1,22 @@
+[REASONING]
+The function encode takes a string message as input and returns a string with the following transformations:
+1. All vowels (both uppercase and lowercase) are replaced with the character 2 positions after them in the alphabet.
+2. All other characters are converted to their opposite case.
+To determine the output of executing the function encode on the input 'YES', we need to apply the following transformations:
+1. The vowel 'E' is replaced with 'G'.
+2. The vowel 'Y' is replaced with 'A'.
+3. The consonant 'S' is converted to 's'.
+Therefore, the output of executing the function encode on the input 'YES' is 'gAs'.
+[/REASONING]
+
+[ANSWER]
+def encode(message):
+    vowels = "aeiouAEIOU"
+    vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+    message = message.swapcase()
+    return ''.join([vowels_replace[i] if [CONDITION]i in vowels[/CONDITION] else i for i in message])
+[/ANSWER]
+
+[OUTPUT]
+"gAs"
+[/OUTPUT]

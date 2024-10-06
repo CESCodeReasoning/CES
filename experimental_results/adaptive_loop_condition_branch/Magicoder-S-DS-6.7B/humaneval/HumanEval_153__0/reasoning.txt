@@ -1,0 +1,11 @@
+The function `Strongest_Extension` is called with ( class_name = 'Sp', extensions = ['671235', 'Bb'] ).
+Inside the function, a variable `strong` is initialized to the first element of the `extensions` list.
+
+Iteration 1:
+    -The string '671235' has 0 uppercase letters and 5 lowercase letters, so `my_val` becomes -5.
+Iteration 2:
+    -The string 'Bb' has 2 uppercase letters and 0 lowercase letters, so `my_val` becomes 2.
+
+Since 'Bb' has more uppercase letters than lowercase letters, `strong` becomes 'Bb'.
+
+The final output of the function `Strongest_Extension('Sp', ['671235', 'Bb'])` is 'Sp.Bb'.

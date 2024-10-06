@@ -1,0 +1,14 @@
+Buggy Code:
+```python
+def unique(l: list):
+    return sorted(l)
+```
+
+Fixed Code:
+```python
+def unique(l: list):
+    return sorted(set(l))
+```
+
+Explanation:
+The bug in the original code is that it does not remove duplicates from the list before sorting it. The `set` function is used to remove duplicates from the list.

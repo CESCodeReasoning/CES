@@ -1,0 +1,4 @@
+The function `filter_by_prefix` takes a list of strings and a prefix as input and returns a list of strings that start with the given prefix.
+
+- The list comprehension `[x for x in strings if x.startswith(prefix)]` iterates over each string in the input list and filters out only those strings that start with the given prefix.
+- Since the input list is empty, the output list will also be empty.

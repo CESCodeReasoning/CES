@@ -1,0 +1,5 @@
+The function find_max takes a list of strings as input and returns the longest string that appears only once in the list.
+To determine the output of executing the function find_max on the input ["play", "this", "game", "of","footbott"], we need to:
+
+1. Sort the list of strings by the length of the set of characters in each string. This is done using the sorted() function with the key parameter set to a lambda function that takes a string x and returns the tuple (-len(set(x)), x). The negative length of the set of characters is used to sort the strings in descending order.
+2. Return the first element of the sorted list, which is the longest string that appears only once in the list.

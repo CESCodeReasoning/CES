@@ -1,0 +1,6 @@
+The function `get_odd_collatz` is called with ( n = 14 ).
+First, it checks if `n` is even or odd. If `n` is even, it initializes an empty list `odd_collatz`. If `n` is odd, it initializes `odd_collatz` with `n`.
+Then, it enters a loop where it repeatedly divides `n` by 2 if it's even, or multiplies `n` by 3 and adds 1 if it's odd.
+If `n` becomes odd during this process, it is appended to `odd_collatz`.
+The loop continues until `n` becomes 1.
+Finally, it returns the sorted list `odd_collatz`.

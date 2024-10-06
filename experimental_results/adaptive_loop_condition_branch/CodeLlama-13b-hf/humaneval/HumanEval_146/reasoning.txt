@@ -1,0 +1,14 @@
+The function `specialFilter` is called with ( nums = [5, -2, 1, -5] ).
+Inside the function, a variable `count` is initialized to 0.
+
+Iteration 1:
+    - The number 5 is greater than 10, so the first if statement is true.
+    - The first digit of 5 is 5, which is in the odd_digits list.
+    - The last digit of 5 is 5, which is in the odd_digits list.
+    - The count is incremented by 1.
+Iteration 2:
+    - The number -2 is less than 10, so the first if statement is false.
+Iteration 3:
+    - The number 1 is less than 10, so the first if statement is false.
+Iteration 4:
+    - The number -5 is less than 10, so the first if statement is false.

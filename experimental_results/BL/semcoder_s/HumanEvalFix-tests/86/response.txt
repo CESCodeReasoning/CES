@@ -1,0 +1,130 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def anti_shuffle(s):
+    return ''.join([''.join(sorted(list(i))) for i in s.split(' ')])
+
+Tests:
+def check(anti_shuffle):
+
+    # Check some simple cases
+    assert anti_shuffle('Hi') == 'Hi'
+    assert anti_shuffle('hello') == 'ehllo'
+    assert anti_shuffle('number') == 'bemnru'
+    assert anti_shuffle('abcd') == 'abcd'
+    assert anti_shuffle('Hello World!!!') == 'Hello !!!Wdlor'
+    assert anti_shuffle('') == ''
+    assert anti_shuffle('Hi. My name is Mister Robot. How are you?') == '.Hi My aemn is Meirst .Rboot How aer ?ouy'
+    # Check some edge cases that are easy to work out by hand.
+    assert True
+
+check(anti_shuffle)
+
+The code should satisfy the following natural language specification:
+Write a Python function `anti_shuffle(s)` to solve the following problem:
+Write a function that takes a string and returns an ordered version of it.
+Ordered version of string, is a string where all words (separated by space)
+are replaced by a new word where all the characters arranged in
+ascending order based on ascii value.
+Note: You should keep the order of words and blank spaces in the sentence.
+For example:
+anti_shuffle('Hi') returns 'Hi'
+anti_shuffle('hello') returns 'ehllo'
+anti_shuffle('Hello World!!!') returns 'Hello !!!Wdlor'
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return ''.join([''.join(sorted(list(i))) for i in s.split(' ')])
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s):
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome('a') == True
+    assert is_palindrome('aa') == True
+    assert is_palindrome('ab') == False
+    assert is_palindrome('abcba') == True
+    assert is_palindrome('abcdba') == False
+    assert is_palindrome('') == True
+    assert is_palindrome('aibofobia') == True
+    assert is_palindrome('ananab') == False
+    assert is_palindrome('amanaplanacanalpanama') == True
+    assert is_palindrome('amanaplanacanalpandemonium') == False
+
+check(is_palindrome)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(s)` to solve the following problem:
+Check if a given string is a palindrome.
+A palindrome is a word, phrase, number, or other sequence of characters that reads the same backward as forward.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return s == s[::-1]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(0) == False
+    assert is_prime(1) == False
+    assert is_prime(2) == True
+    assert is_prime(3) ==

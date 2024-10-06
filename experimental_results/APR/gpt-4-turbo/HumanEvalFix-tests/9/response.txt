@@ -1,0 +1,38 @@
+Here are the fixed versions of the two functions, `has_close_elements` and `rolling_max`, with the necessary corrections and improvements:
+
+### Fixed `has_close_elements` Function
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed `rolling_max` Function
+```python
+from typing import List
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    if not numbers:  # Handle empty list case
+        return []
+    
+    result = []
+    running_max = numbers[0]  # Initialize with the first element
+
+    for n in numbers:
+        if running_max is None or n > running_max:
+            running_max = n
+        result.append(running_max)
+
+    return result
+```
+
+These fixes address the logical errors in the original implementations:
+- In `has_close_elements`, the distance calculation now correctly uses the absolute value to ensure that the comparison is based on the magnitude of the difference, not the direction.
+- In `rolling_max`, the function now correctly updates the `running_max` with the maximum value found so far in the list, rather than incorrectly trying to use `max(numbers)` which would not provide the rolling maximum. Additionally, the function now handles empty lists correctly.

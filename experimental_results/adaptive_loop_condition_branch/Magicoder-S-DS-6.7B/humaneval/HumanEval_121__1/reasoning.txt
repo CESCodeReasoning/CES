@@ -1,0 +1,12 @@
+The function solution takes a list of integers as input and returns the sum of all odd numbers at even indices.
+
+The list [30, 13, 23, 32] has the following elements at their respective indices:
+
+- 30 at index 0
+- 13 at index 1
+- 23 at index 2
+- 32 at index 3
+
+The odd numbers at even indices are 13 and 32. Their sum is 45.
+
+Therefore, the output of executing the function solution on the input [30, 13, 23, 32] is 45.

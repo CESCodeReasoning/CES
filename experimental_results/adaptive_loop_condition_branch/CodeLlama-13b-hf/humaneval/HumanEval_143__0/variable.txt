@@ -1,0 +1,10 @@
+from typing import *
+
+
+def words_in_sentence(sentence):
+    new_lst = []
+    for word in sentence.split(): ## [STATE]word=["there", "is", "no", "place", "available", "here"][/STATE][STATE]sentence.split()=["there", "is", "no", "place", "available", "here"][/STATE][STATE]len(word)=[6][/STATE]
+        flg = 0
+        if len(word) == 1: ## [CONDITION](len(word) == 1)=[F, F, F, F, F, F][/CONDITION][BRANCH]taken=[F, F, F, F, F, F][/BRANCH]
+            flg = 1
+        for i in range(2, len(word)): ## [STATE]i=[2, 3, 4, 5, 6, 2, 3, 4, 5, 6, 3, 4, 5, 6, 4, 5, 6, 5, 6, 6][/STATE][STATE]range(2, len(word))=[[2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2,

@@ -1,0 +1,91 @@
+The function `get_odd_collatz` is called with ( n = 1 ).
+Inside the function, a variable `odd_collatz` is initialized to an empty list.
+The loop iterates from 1 through 1 (since ( n = 1 )).
+First Iteration (n = 1):
+    - n > 1 when n=1
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.5 ( 1 / 2 = 0.5 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Second Iteration (n = 0.5):
+    - n > 1 when n=0.5
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.25 ( 0.5 / 2 = 0.25 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Third Iteration (n = 0.25):
+    - n > 1 when n=0.25
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.125 ( 0.25 / 2 = 0.125 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Fourth Iteration (n = 0.125):
+    - n > 1 when n=0.125
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.0625 ( 0.125 / 2 = 0.0625 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Fifth Iteration (n = 0.0625):
+    - n > 1 when n=0.0625
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.03125 ( 0.0625 / 2 = 0.03125 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Sixth Iteration (n = 0.03125):
+    - n > 1 when n=0.03125
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.015625 ( 0.03125 / 2 = 0.015625 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Seventh Iteration (n = 0.015625):
+    - n > 1 when n=0.015625
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.0078125 ( 0.015625 / 2 = 0.0078125 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Eighth Iteration (n = 0.0078125):
+    - n > 1 when n=0.0078125
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.00390625 ( 0.0078125 / 2 = 0.00390625 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Ninth Iteration (n = 0.00390625):
+    - n > 1 when n=0.00390625
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.001953125 ( 0.00390625 / 2 = 0.001953125 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Tenth Iteration (n = 0.001953125):
+    - n > 1 when n=0.001953125
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.0009765625 ( 0.001953125 / 2 = 0.0009765625 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Eleventh Iteration (n = 0.0009765625):
+    - n > 1 when n=0.0009765625
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.00048828125 ( 0.0009765625 / 2 = 0.00048828125 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Twelfth Iteration (n = 0.00048828125):
+    - n > 1 when n=0.00048828125
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.000244140625 ( 0.00048828125 / 2 = 0.000244140625 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Thirteenth Iteration (n = 0.000244140625):
+    - n > 1 when n=0.000244140625
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.0001220703125 ( 0.000244140625 / 2 = 0.0001220703125 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Fourteenth Iteration (n = 0.0001220703125):
+    - n > 1 when n=0.0001220703125
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.00006103515625 ( 0.0001220703125 / 2 = 0.00006103515625 ).
+    - The condition `n % 2 == 1` is false.
+    - The else branch is not taken.
+Fifteenth Iteration (n = 0.00006103515625):
+    - n > 1 when n=0.00006103515625
+    - The condition `n % 2 == 0` is true.
+    - `n = n / 2` updates n to 0.000030517578125 ( 0.00006103515625 / 2 = 0.0000305

@@ -1,0 +1,10 @@
+The function `simplify` is called with ( x = "1/5", n = "5/1" ).
+The function splits the strings into two parts, `a` and `b` for `x` and `c` and `d` for `n`.
+The variables `a` and `b` are assigned the values "1" and "5" respectively.
+The variables `c` and `d` are assigned the values "5" and "1" respectively.
+The variable `numerator` is assigned the value 5.
+The variable `denom` is assigned the value 1.
+The condition `numerator/denom == int(numerator/denom)` is true.
+The if branch is taken and the method returns True.
+
+Therefore, the final output of the function `simplify("1/5", "5/1")` is True.

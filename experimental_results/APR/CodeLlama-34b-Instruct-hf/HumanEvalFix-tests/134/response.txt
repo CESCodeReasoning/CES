@@ -1,0 +1,131 @@
+<s> [INST]<<SYS>>
+You are an expert Python programmer.
+<</SYS>>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+
+Fix bugs in check_if_last_char_is_a_letter. 
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def check_if_last_char_is_a_letter(txt):
+ 
+    check = txt.split(' ')[-1]
+    return True if len(check) == 1 and (97 <= ord(check.upper()) <= 122) else False
+
+Tests:
+def check(check_if_last_char_is_a_letter):
+
+    # Check some simple cases
+    assert check_if_last_char_is_a_letter("apple") == False
+    assert check_if_last_char_is_a_letter("apple pi e") == True
+    assert check_if_last_char_is_a_letter("eeeee") == False
+    assert check_if_last_char_is_a_letter("A") == True
+    assert check_if_last_char_is_a_letter("Pumpkin pie ") == False
+    assert check_if_last_char_is_a_letter("Pumpkin pie 1") == False
+    assert check_if_last_char_is_a_letter("") == False
+    assert check_if_last_char_is_a_letter("eeeee e ") == False
+    assert check_if_last_char_is_a_letter("apple pie") == False
+    assert check_if_last_char_is_a_letter("apple pi e ") == False
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True
+
+check(check_if_last_char_is_a_letter)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `check_if_last_char_is_a_letter(txt)` to solve the following problem:
+Create a function that returns True if the last character
+of a given string is an alphabetical character and is not
+a part of a word, and False otherwise.
+Note: "word" is a group of characters separated by space.
+Examples:
+check_if_last_char_is_a_letter("apple pie") ➞ False
+check_if_last_char_is_a_letter("apple pi e") ➞ True
+check_if_last_char_is_a_letter("apple pi e ") ➞ False
+check_if_last_char_is_a_letter("") ➞ False
+[/INST]
+```python
+def check_if_last_char_is_a_letter(txt):
+    words = txt.split(' ')
+    last_word = words[-1]
+    if len(last_word) == 1 and last_word.isalpha():
+        return True
+    return False
+```
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `check_if_last_char_is_a_letter(txt)` to solve the following problem:
+Create a function that returns True if the last character
+of a given string is an alphabetical character and is not
+a part of a word, and False otherwise.
+Note: "word" is a group of characters separated by space.
+Examples:
+check_if_last_char_is_a_letter("apple pie") ➞ False
+check_if_last_char_is_a_letter("apple pi e") ➞ True
+check_if_last_char_is_a_letter("apple pi e ") ➞ False
+check_if_last_char_is_a_letter("") ➞ False
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `check_if_last_char_is_a_letter(txt)` to solve the following problem:
+Create a function that returns True if the last character
+of a given string is an alphabetical character and is not
+a part of a word, and False otherwise.
+Note: "word" is a group of characters separated by space.
+Examples:
+check_if_last_char_is_a_letter("apple pie") ➞ False
+check_if_last_char_is_a_letter("apple pi e") ➞ True
+check_if_last_char_is_a_letter("apple pi e ") ➞ False
+check_if_last_char_is_a_letter("") ➞ False
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `check_if_last_char_is_a_letter(txt)` to solve the following problem:
+Create a function that returns True if the last character
+of a given string is an alphabetical character and is not
+a part of

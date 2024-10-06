@@ -1,0 +1,17 @@
+The function `how_many_times` is called with ( string = 'john doe', substring = 'john' ).
+Inside the function, a variable `times` is initialized to 0.
+
+Iteration 1:
+    - The substring 'john' is found at the beginning of the string 'john doe'. So, `times` becomes 1.
+Iteration 2:
+    - The substring 'john' is not found in the string 'ohn doe'. So, `times` remains 1.
+Iteration 3:
+    - The substring 'john' is not found in the string 'n doe'. So, `times` remains 1.
+Iteration 4:
+    - The substring 'john' is not found in the string ' doe'. So, `times` remains 1.
+Iteration 5:
+    - The substring 'john' is not found in the string 'o'. So, `times` remains 1.
+Iteration 6:
+    - The substring 'john' is not found in the string ''. So, `times` remains 1.
+
+Therefore, the final output of the function `how_many_times('john doe', 'john')` is 1.

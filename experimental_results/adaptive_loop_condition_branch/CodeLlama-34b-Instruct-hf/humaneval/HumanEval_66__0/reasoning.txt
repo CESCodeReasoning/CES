@@ -1,0 +1,7 @@
+The function `digitSum` is called with ( s = "abcCd" ).
+The function checks if `s` is an empty string.
+Since `s` is not an empty string, the function proceeds to the next step.
+The function uses a list comprehension to iterate over each character in `s`.
+For each character, the function checks if it is an uppercase letter.
+If it is an uppercase letter, the function calculates the ASCII value of the character and adds it to the sum.
+Finally, the function returns the sum.

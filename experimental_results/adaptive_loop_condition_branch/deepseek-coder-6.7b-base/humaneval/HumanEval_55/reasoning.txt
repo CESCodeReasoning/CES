@@ -1,0 +1,50 @@
+The function `fib` is called with ( n = 10 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = 9 ) and ( n = 8 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = 7 ) and ( n = 6 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = 5 ) and ( n = 4 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = 3 ) and ( n = 2 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = 1 ) and ( n = 0 ).
+The condition `n == 0` is true, so the first if branch is taken and the method returns 0.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = 0 ) and ( n = -1 ).
+The condition `n == 0` is true, so the first if branch is taken and the method returns 0.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = -1 ) and ( n = -2 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = -3 ) and ( n = -4 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = -5 ) and ( n = -6 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = -7 ) and ( n = -8 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = -9 ) and ( n = -10 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = -11 ) and ( n = -12 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = -13 ) and ( n = -14 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = -15 ) and ( n = -16 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = -17 ) and ( n = -18 ).
+The condition `n == 0` is false, so the first if branch is not taken.
+The condition `n == 1` is false, so the second if branch is not taken.
+The function calls itself twice, with ( n = -19 ) and ( n = -20 ).
+The condition `n == 0` is false, so the first if

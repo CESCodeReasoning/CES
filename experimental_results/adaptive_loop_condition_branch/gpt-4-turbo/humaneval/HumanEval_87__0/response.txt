@@ -1,0 +1,31 @@
+[REASONING]
+The function `get_row` takes two parameters: `lst`, a list of lists representing a matrix, and `x`, a value to search for within the matrix. The function aims to find all coordinates `(i, j)` where `i` is the row index and `j` is the column index such that the element at these coordinates equals `x`.
+
+1. The function starts by creating a list comprehension that iterates over all elements of the matrix `lst`. For each element, it checks if it equals `x`. If it does, the coordinates `(i, j)` are added to the list `coords`.
+
+2. In this specific case, the input matrix `lst` is `[[1]]` and the value `x` is `2`. The list comprehension will check the only element in the matrix, which is `1`. Since `1` does not equal `2`, the list `coords` will be empty.
+
+3. The function then sorts the `coords` list first by the column index `j` in descending order and then by the row index `i` in ascending order. However, since `coords` is empty, the sorted operations have no effect, and the function returns an empty list.
+
+Thus, the output of the function when called with `get_row([[1]], 2)` is an empty list, as no coordinates match the value `2`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def get_row(lst, x):
+    # [STATE] coords = [] [/STATE]
+    coords = [(i, j) for i in range(len(lst))
+              for j in range(len(lst[i])) if lst[i][j] == x]  # [CONDITION] lst[i][j] == 2 [/CONDITION]
+    # [BRANCH] N [/BRANCH] (No coordinates found matching the condition)
+    return sorted(
+        sorted(
+            coords,
+            key=lambda x: x[1],
+            reverse=True),
+        key=lambda x: x[0])
+[/PYTHON]
+
+[OUTPUT]
+[]
+[/OUTPUT]

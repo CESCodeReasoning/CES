@@ -1,0 +1,6 @@
+The function `intersection` is called with ( interval1 = (1, 2) and interval2 = (2, 3) ).
+Inside the function, a variable `l` and `r` are initialized to the maximum and minimum values of the two intervals, respectively.
+The variable `length` is initialized to the difference between `r` and `l`.
+The function `is_prime` is called with ( num = length ).
+If `length` is greater than 0 and `is_prime` returns `True`, then the function returns `"YES"`.
+Otherwise, the function returns `"NO"`.

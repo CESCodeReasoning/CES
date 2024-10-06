@@ -1,0 +1,14 @@
+The function `sum_of_integer` is called with ( N = 5, K=10).
+Inside the function, a variable `sum` is initialized to 0.
+The loop iterates from 1 through 5 (since ( N = 5 )).
+First Iteration (i = 1):
+    `sum += i` updates `sum` to 1 ( 0 + 1 = 1 ).
+Second Iteration (i = 2):
+    `sum += i` updates `sum` to 3 ( 1 + 2 = 3 ).
+Third Iteration (i = 3)
+    `sum += i` updates `sum` to 6 ( 3 + 3 = 6 ).
+Fourth Iteration (i = 4)
+    `sum += i` updates `sum` to 10 ( 6 + 4 = 10 ).
+Fifth Iteration (i = 5)
+    `sum += i` updates `sum` to 15 ( 10 + 5 = 15 ).
+After the loop completes, the condition ( sum > K ) is satisfied, therefore the if branch is taken and the function returns `True` as the output.

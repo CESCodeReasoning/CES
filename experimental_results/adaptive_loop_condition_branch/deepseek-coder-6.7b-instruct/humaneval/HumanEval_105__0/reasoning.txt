@@ -1,0 +1,19 @@
+The function `by_length` is called with (arr = [1, -1, 3, 2]).
+The input array is first sorted in descending order.
+Then, for each element in the sorted array, it tries to find the corresponding value in the dictionary `dic`.
+If the element is found in the dictionary, it is appended to the new array `new_arr`.
+If the element is not found in the dictionary, it is ignored.
+
+First Iteration (var = -1):
+    Since -1 is not in the dictionary `dic`, it is ignored.
+Second Iteration (var = 1):
+    dic[1] = 'One', so 'One' is appended to `new_arr`.
+Third Iteration (var = 3):
+    dic[3] = 'Three', so 'Three' is appended to `new_arr`.
+Fourth Iteration (var = 2):
+    dic[2] = 'Two', so 'Two' is appended to `new_arr`.
+
+After the loop completes, the function returns the value of `new_arr`, which is now ['Three', 'One', 'Two'].
+
+Note: The input array contains negative numbers and the sorted function sorts in ascending order by default. So, the sorted array will be [1, 2, 3, -1] instead of [3, 2, 1, -1]. But since we are sorting in descending order, the output will still be ['Three', 'One', 'Two'].
+

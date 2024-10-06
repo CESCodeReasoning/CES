@@ -1,0 +1,33 @@
+The function `all_prefixes` is called with (string = 'asdfgh').
+Inside the function, a variable `result` is initialized to an empty list.
+`len(string)` = 7 since there are 7 characters in 'asdfgh'.
+The loop iterates from 0 to 6 since `range(len(string))` = [0, 1, 2, 3, 4, 5, 6].
+
+First Iteration(i = 0):
+    `result.append(string[:i+1])` adds the first character of `string` to `result`.
+    `string[:i+1]` = 'a' since `i` = 0.
+    `result` = ['a']
+Second Iteration(i = 1):
+    `result.append(string[:i+1])` adds the first two characters of `string` to `result`.
+    `string[:i+1]` = 'as' since `i` = 1.
+    `result` = ['a', 'as']
+Third Iteration(i = 2):
+    `result.append(string[:i+1])` adds the first three characters of `string` to `result`.
+    `string[:i+1]` = 'asd' since `i` = 2.
+    `result` = ['a', 'as', 'asd']
+Fourth Iteration(i = 3):
+    `result.append(string[:i+1])` adds the first four characters of `string` to `result`.
+    `string[:i+1]` = 'asdf' since `i` = 3.
+    `result` = ['a', 'as', 'asd', 'asdf']
+Fifth Iteration(i = 4):
+    `result.append(string[:i+1])` adds the first five characters of `string` to `result`.
+    `string[:i+1]` = 'asdfg' since `i` = 4.
+    `result` = ['a', 'as', 'asd', 'asdf', 'asdfg']
+Sixth Iteration(i = 5):
+    `result.append(string[:i+1])` adds the first six characters of `string` to `result`.
+    `string[:i+1]` = 'asdfgh' since `i` = 5.
+    `result` = ['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']
+Seventh Iteration(i = 6):
+    `result.append(string[:i+1])` adds the first seven characters of `string` to `result`.
+    `string[:i+1]` = 'asdfgh' since `i` = 6.
+    `result` = ['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh', 'asdfgh']

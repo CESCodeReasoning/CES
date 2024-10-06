@@ -1,0 +1,5 @@
+The function `choose_num` is called with ( x = 12, y = 15 ).
+First Condition ( x > y ) is not satisfied ( 12 > 15 )
+Second Condition ( y % 2 == 0 ) is not satisfied ( 15 % 2 = 1 )
+Third Condition ( x == y ) is not satisfied ( 12 == 15 )
+Therefore, the function returns `y - 1`, which is `15 - 1 = 14`.

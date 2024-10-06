@@ -1,0 +1,18 @@
+The function `by_length` is called with (arr = [] ).
+Inside the function, a variable `dic` is initialized to { 1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine" }.
+The variable `sorted_arr` is initialized to [1, 2, 3, 4, 5, 6, 7, 8, 9] since arr = [1, 2, 3, 4, 5, 6, 7, 8, 9] is sorted in reverse order.
+The variable `new_arr` is initialized to [] since arr = [1, 2, 3, 4, 5, 6, 7, 8, 9] is sorted in reverse order.
+
+First Iteration (var = 1):
+    `new_arr.append(dic[var])` updates `new_arr` to [1, 2, 3, 4, 5, 6, 7, 8, 9] since `dic[1]` = "One" and `new_arr` = [1, 2, 3, 4, 5, 6, 7, 8, 9].
+Second Iteration (var = 2):
+    `new_arr.append(dic[var])` updates `new_arr` to [1, 2, 3, 4, 5, 6, 7, 8, 9] since `dic[2]` = "Two" and `new_arr` = [1, 2, 3, 4, 5, 6, 7, 8, 9].
+Third Iteration (var = 3):
+    `new_arr.append(dic[var])` updates `new_arr` to [1, 2, 3, 4, 5, 6, 7, 8, 9] since `dic[3]` = "Three" and `new_arr` = [1, 2, 3, 4, 5, 6, 7, 8, 9].
+Fourth Iteration (var = 4):
+    `new_arr.append(dic[var])` updates `new_arr` to [1, 2, 3, 4, 5, 6, 7, 8, 9] since `dic[4]` = "Four" and `new_arr` = [1, 2, 3, 4, 5, 6, 7, 8, 9].
+Fifth Iteration (var = 5):
+    `new_arr.append(dic[var])` updates `new_arr` to [1, 2, 3, 4, 5, 6, 7, 8, 9] since `dic[5]` = "Five" and `new_arr` = [1, 2, 3, 4, 5, 6, 7, 8, 9].
+Sixth Iteration (var = 6):
+    `new_arr.append(dic[var])` updates `new_arr` to [1, 2, 3, 4, 5, 6, 7, 8, 9] since `dic[6]` = "Six" and `new_arr` = [1, 2, 3, 4, 5, 6, 7, 8, 9].
+Sevent

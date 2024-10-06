@@ -1,0 +1,17 @@
+[REASONING]
+The function `truncate_number` takes a floating-point number as input and returns the fractional part of the number by using the modulus operator with 1.0. The modulus operator (%) returns the remainder of the division of the number by another number.
+To determine the output of executing the function `truncate_number` on the input 3.5, we calculate 3.5 % 1.0. The integer part of 3.5 is 3, and the fractional part is 0.5. Therefore, 3.5 % 1.0 results in 0.5, which is the fractional part of the number.
+Thus, the output of executing the function `truncate_number` on the input 3.5 is 0.5.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def truncate_number(number: float) -> float:
+    # [STATE] number = 3.5 [/STATE]
+    return number % 1.0  # [STATE] return value = 0.5 [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+0.5
+[/OUTPUT]

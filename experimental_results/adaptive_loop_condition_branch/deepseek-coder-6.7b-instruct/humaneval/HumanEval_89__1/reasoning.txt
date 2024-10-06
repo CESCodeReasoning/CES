@@ -1,0 +1,23 @@
+The function `encrypt` is called with ( s = 'asdfghjkl' ).
+Inside the function, a variable `out` is initialized to an empty string.
+
+Iteration 1:
+    -The character 'a' is in the string `d`, so it gets replaced by the character two positions after 'a' in `d`.
+Iteration 2:
+    -The character 's' is in the string `d`, so it gets replaced by the character two positions after 's' in `d`.
+Iteration 3:
+    -The character 'd' is in the string `d`, so it gets replaced by the character two positions after 'd' in `d`.
+Iteration 4:
+    -The character 'f' is in the string `d`, so it gets replaced by the character two positions after 'f' in `d`.
+Iteration 5:
+    -The character 'g' is in the string `d`, so it gets replaced by the character two positions after 'g' in `d`.
+Iteration 6:
+    -The character 'h' is in the string `d`, so it gets replaced by the character two positions after 'h' in `d`.
+Iteration 7:
+    -The character 'j' is in the string `d`, so it gets replaced by the character two positions after 'j' in `d`.
+Iteration 8:
+    -The character 'k' is in the string `d`, so it gets replaced by the character two positions after 'k' in `d`.
+Iteration 9:
+    -The character 'l' is in the string `d`, so it gets replaced by the character two positions after 'l' in `d`.
+
+The function returns the encrypted string 'cwfgijkmn'.

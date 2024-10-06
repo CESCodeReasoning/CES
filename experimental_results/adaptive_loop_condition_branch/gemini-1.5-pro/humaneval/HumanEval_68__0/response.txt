@@ -1,0 +1,23 @@
+[REASONING]
+The function `pluck` is called with an empty list.
+The condition `len(arr) == 0` is true, therefore the if branch is taken and the method returns an empty list.
+
+Therefore, the final output of the function `pluck([])` is an empty list.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def pluck(arr):
+    if (len(arr) == 0): ## [CONDITION](len(arr) == 0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return []
+    evens = list(filter(lambda x: x % 2 == 0, arr))
+    if (evens == []):
+        return []
+    return [min(evens), arr.index(min(evens))]
+[/ANSWER]
+
+[OUTPUT]
+[]
+[/OUTPUT]

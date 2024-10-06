@@ -1,0 +1,17 @@
+The function `is_prime` is called with ( n = 77 ).
+The first condition `n < 2` is false, so the function proceeds to the next condition.
+The loop iterates from 2 through 76 (since ( n = 77 )).
+First Iteration (k = 2)
+   - `k` is 2, which satisfies ( 2 <= k < (n - 1) ).
+   - The condition `n % k == 0` is false.
+   - The loop continues to the next iteration.
+Second Iteration (k = 3)
+   - `k` is 3, which still satisfies ( 3 <= k < (n - 1) ).
+   - The same condition is true.
+   - The loop continues to the next iteration.
+Third Iteration (k = 4)
+   - `k` is 4, which now satisfies ( 4 <= k < (n - 1) ).
+   - The condition `n % k == 0` is true (while the first condition `n < 2` is false).
+   - The loop breaks and the function returns False.
+
+Therefore, the final output of the function `is_prime(77)` is False.

@@ -1,0 +1,62 @@
+
+[REASONING]
+The function `check_dict_case` is called with ( dict = {"Name":"John", "Age":"36", "City":"Houston"} ).
+
+First, the function checks if the dictionary is empty. In this case, it is not, so the condition `len(dict.keys()) == 0` is false.
+
+The function then enters a loop that iterates over the keys of the dictionary.
+
+Iteration 1:
+    - The key 'Name' is a string, so the condition `isinstance(key, str) == False` is false.
+    - The state is "start", so the condition `state == "start"` is true.
+    - The key 'Name' is not uppercase, so the condition `key.isupper()` is false.
+    - The key 'Name' is lowercase, so the condition `key.islower()` is true.
+    - The state is updated to "lower".
+Iteration 2:
+    - The key 'Age' is a string, so the condition `isinstance(key, str) == False` is false.
+    - The state is "lower", so the condition `state == "start"` is false.
+    - The key 'Age' is not uppercase, so the condition `key.isupper()` is false.
+    - The key 'Age' is lowercase, so the condition `key.islower()` is true.
+    - The state remains "lower".
+Iteration 3:
+    - The key 'City' is a string, so the condition `isinstance(key, str) == False` is false.
+    - The state is "lower", so the condition `state == "start"` is false.
+    - The key 'City' is not uppercase, so the condition `key.isupper()` is false.
+    - The key 'City' is lowercase, so the condition `key.islower()` is true.
+    - The state remains "lower".
+
+After the loop, the function returns `True`, because the state is "lower" or "upper".
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def check_dict_case(dict):
+    if len(dict.keys()) == 0: ## [CONDITION](len(dict.keys()) == 0)=False[/CONDITION][BRANCH]taken=N[/BRANCH]
+        return False
+    else: ## [BRANCH]taken=Y[/BRANCH]
+        state = "start"
+        for key in dict.keys(): ## [STATE]key=['Name', 'Age', 'City'][/STATE][STATE]dict.keys()=["Name", "Age", "City"][/STATE]
+
+            if isinstance(key, str) == False: ## [CONDITION](isinstance(key, str) == False)=[False, False, False][/CONDITION][BRANCH]taken=[N, N, N][/BRANCH]
+                state = "mixed"
+                break
+            if state == "start": ## [CONDITION](state == "start")=[True, False, False][/CONDITION][BRANCH]taken=[Y, N, N][/BRANCH]
+                if key.isupper(): ## [CONDITION](key.isupper())=[False, False, False][/CONDITION][BRANCH]taken=[N, N, N][/BRANCH]
+                    state = "upper"
+                elif key.islower(): ## [BRANCH]taken=[Y, N, N][/BRANCH]
+                    state = "lower"
+                else: ## [BRANCH]taken=[N, N, N][/BRANCH]
+                    break
+            elif (state == "upper" and not key.isupper()) or (state == "lower" and not key.islower()): ## [BRANCH]taken=[N, N, N][/BRANCH]
+                state = "mixed"
+                break
+            else: ## [BRANCH]taken=[N, N, N][/BRANCH]
+                break
+        return state == "upper" or state == "lower"
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]

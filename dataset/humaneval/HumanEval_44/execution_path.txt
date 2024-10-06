@@ -1,0 +1,11 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: change_base
+main.py(3):     ret = ""
+main.py(4):     while x > 0:
+main.py(5):         ret = str(x % base) + ret
+main.py(6):         x //= base
+main.py(4):     while x > 0:
+main.py(5):         ret = str(x % base) + ret
+main.py(6):         x //= base
+main.py(4):     while x > 0:
+main.py(7):     return ret

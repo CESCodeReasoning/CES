@@ -1,0 +1,33 @@
+The function words_in_sentence(sentence) takes a string as its parameter.
+The outer loop iterates through each word in the sentence.
+In the inner loop, for each word indexed by i in the outer loop, check if it is a palindrome.
+First Iteration (i=0):
+    - `i` is 0, word in the inner loop is "go".
+    - `len(word) = 2`: check if `len(word) % i == 0`.
+        - `len(word) % i = 0`: `flg = 1`.
+        - `len(word) % i != 0`: `flg = 0`.
+    - `flg == 0 or len(word) == 2`: `flg == 0`, append "go" to new_lst.
+Second Iteration (i=1):
+    - `i` is 1, word in the inner loop is "for".
+    - `len(word) = 4`: check if `len(word) % i == 0`.
+        - `len(word) % i = 0`: `flg = 1`.
+        - `len(word) % i != 0`: `flg = 0`.
+    - `flg == 0 or len(word) == 2`: `flg == 0`, append "for" to new_lst.
+Third Iteration (i=2):
+    - `i` is 2, word in the inner loop is "it".
+    - `len(word) = 3`: check if `len(word) % i == 0`.
+        - `len(word) % i = 0`: `flg = 1`.
+        - `len(word) % i != 0`: `flg = 0`.
+    - `flg == 0 or len(word) == 2`: `flg == 0`, append "it" to new_lst.
+Fourth Iteration (i=3):
+    - `i` is 3, word in the inner loop is "go".
+    - `len(word) = 2`: check if `len(word) % i == 0`.
+        - `len(word) % i = 0`: `flg = 1`.
+        - `len(word) % i != 0`: `flg = 0`.
+    - `flg == 0 or len(word) == 2`: `flg == 0`, append "go" to new_lst.
+Fifth Iteration (i=4):
+    - `i` is 4, word in the inner loop is "for".
+    - `len(word) = 4`: check if `len(word) % i == 0`.
+        - `len(word) % i = 0`: `flg = 1`.
+        - `len(word) % i != 0`: `flg = 0`.
+    - `flg == 0 or len(word) == 2`: `flg

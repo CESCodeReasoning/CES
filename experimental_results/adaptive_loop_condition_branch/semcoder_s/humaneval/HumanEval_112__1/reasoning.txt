@@ -1,0 +1,8 @@
+The function `reverse_delete` takes two arguments `s` and `c`. It first removes all occurrences of characters in `c` from `s`. Then, it checks if the resulting string is the same when reversed.
+
+For the input `reverse_delete("mamma", "mia")`:
+- The string "mamma" has characters 'm', 'i', 'a' removed, resulting in "mma".
+- The reversed string of "mma" is "m".
+- The condition `s[::-1] == s` is `False` as "m" is not equal to "mma".
+
+Therefore, the output of `reverse_delete("mamma", "mia")` is `("mma", False)`.

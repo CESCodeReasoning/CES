@@ -1,0 +1,55 @@
+The function `order_by_points` is called with ( nums = [1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46] ).
+The function `order_by_points` sorts the input list `nums` in ascending order based on the sum of its digits.
+
+The function `digits_sum` is called with ( n = 1234 ).
+`n` is 1234, which is not negative.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` converts the input number `n` to a list of digits, and then calculates the sum of the digits.
+
+The function `digits_sum` is called with ( n = 423 ).
+`n` is 423, which is not negative.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` converts the input number `n` to a list of digits, and then calculates the sum of the digits.
+
+The function `digits_sum` is called with ( n = 463 ).
+`n` is 463, which is not negative.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` converts the input number `n` to a list of digits, and then calculates the sum of the digits.
+
+The function `digits_sum` is called with ( n = 145 ).
+`n` is 145, which is not negative.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` converts the input number `n` to a list of digits, and then calculates the sum of the digits.
+
+The function `digits_sum` is called with ( n = 2 ).
+`n` is 2, which is not negative.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` converts the input number `n` to a list of digits, and then calculates the sum of the digits.
+
+The function `digits_sum` is called with ( n = 423 ).
+`n` is 423, which is not negative.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` converts the input number `n` to a list of digits, and then calculates the sum of the digits.
+
+The function `digits_sum` is called with ( n = 423 ).
+`n` is 423, which is not negative.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` converts the input number `n` to a list of digits, and then calculates the sum of the digits.
+
+The function `digits_sum` is called with ( n = 53 ).
+`n` is 53, which is not negative.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` converts the input number `n` to a list of digits, and then calculates the sum of the digits.
+
+The function `digits_sum` is called with ( n = 6 ).
+`n` is 6, which is not negative.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` converts the input number `n` to a list of digits, and then calculates the sum of the digits.
+
+The function `digits_sum` is called with ( n = 37 ).
+`n` is 37, which is not negative.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The function `digits_sum` converts the input number `n` to a list of digits, and then calculates the sum of the digits.
+
+The function `digits_sum` is called with ( n = 3457 ).
+`n` is 3457, which is not negative.

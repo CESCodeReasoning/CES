@@ -1,0 +1,10 @@
+from typing import *
+
+
+def is_simple_power(x, n):
+    if (n == 1): ## [CONDITION](n == 1)=N[/CONDITION][BRANCH]taken=N[/BRANCH]
+        return (x == 1)
+    power = 1
+    while (power < x): ## [STATE](power < x)=[Y, Y, Y, Y, N][/STATE][STATE]power=[1, 4, 16, 64, 256][/STATE][STATE]x=[128][/STATE]
+        power = power * n
+    return (power == x)

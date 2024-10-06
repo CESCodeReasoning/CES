@@ -1,0 +1,9 @@
+from typing import *
+def fibfib(n: int):
+    if n == 0: ## [CONDITION](n == 0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return 0
+    if n == 1: ## [CONDITION](n == 1)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 0
+    if n == 2: ## [CONDITION](n == 2)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return 1
+    return fibfib(n - 1) + fibfib(n - 2) + fibfib(n - 3)

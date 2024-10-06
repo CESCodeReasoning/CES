@@ -1,0 +1,9 @@
+The function `greatest_common_divisor` is called with ( a = 10, b = 15 ).
+Inside the function, a while loop is used to calculate the greatest common divisor (GCD) of two numbers.
+First Iteration:
+    - a = 10, b = 15.
+    - a, b = b, a % b updates a to 15 and b to 10 ( 15 % 10 = 5 ).
+Second Iteration:
+    - a = 15, b = 5.
+    - a, b = b, a % b updates a to 5 and b to 15 ( 5 % 15 = 5 ).
+b becomes 0, the while loop terminates. The function returns the value of `a`, which is now 5.

@@ -1,0 +1,18 @@
+The function `cycpattern_check(a, b)` is designed to check if the string `b` is a cyclic permutation of any substring of `a` of the same length as `b`. The function first calculates the length of `b` and creates a new string `pat` by concatenating `b` with itself. This allows checking for cyclic permutations by simple substring comparison.
+
+Given the input strings `a = "efef"` and `b = "fee"`, the function proceeds as follows:
+- The length `l` of `b` is 3.
+- The concatenated string `pat` becomes "feefee".
+- The function iterates over `a` with possible starting indices for substrings of length `l`. Here, `len(a) - l + 1` equals 2, so `i` takes values 0 and 1.
+- For each `i`, the function iterates over `pat` with possible starting indices for substrings of length `l`. Here, `l + 1` equals 4, so `j` takes values 0, 1, 2, and 3.
+- The function checks if the substring of `a` starting at `i` and of length `l` matches any substring of `pat` starting at `j` and of length `l`.
+
+Detailed Iterations:
+- For `i = 0`:
+  - `a[0:3]` is "efe".
+  - It is compared against "fee", "eef", "eef", and "fee" from `pat`. None of these match "efe".
+- For `i = 1`:
+  - `a[1:4]` is "fef".
+  - It is compared against "fee", "eef", "eef", and "fee" from `pat`. None of these match "fef".
+
+Since no matching cyclic permutation is found, the function returns `False`.

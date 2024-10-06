@@ -1,0 +1,5 @@
+The function right_angle_triangle takes three side lengths a, b, and c as input and returns a boolean value indicating whether the triangle is a right angle triangle.
+To determine whether the triangle is a right angle triangle, we need to check whether the sum of the squares of the two shorter sides is equal to the square of the longest side.
+In this case, the longest side is c, and the two shorter sides are a and b.
+Therefore, we need to check whether a*a + b*b == c*c.
+If this condition is true, then the triangle is a right angle triangle.

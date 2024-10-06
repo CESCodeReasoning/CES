@@ -1,0 +1,13 @@
+The function `hex_key` is called with ( num = "2020" ).
+Inside the function, a variable `total` is initialized to 0.
+
+Iteration 1:
+    -The character '2' is in primes, so total becomes 1.
+Iteration 2:
+    -The character '0' is not in primes, so total remains 1.
+Iteration 3:
+    -The character '2' is in primes, so total becomes 2.
+Iteration 4:
+    -The character '0' is not in primes, so total remains 2.
+
+Therefore, the final output of the function `hex_key("2020")` is 2.

@@ -1,0 +1,48 @@
+The function count_up_to(n) takes an integer n as its parameter.
+The outer loop iterats through each element in the range(2, n) to check if it is a prime number.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the range(2, i).
+First Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22.
+    - is_prime is True.
+    - Compare with 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22:
+        - When j = 3 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 4 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 5 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 6 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 7 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 8 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 9 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 10 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 11 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 12 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 13 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 14 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 15 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 16 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 17 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 18 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 19 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 20 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 21 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 22 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+Second Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22.
+    - is_prime is True.
+    - Compare with 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22:
+        - When j = 4 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 5 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 6 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 7 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 8 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 9 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 10 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 11 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 12 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 13 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 14 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 15 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 16 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 17 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 18 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 19 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.
+        - When j = 20 (i % j == 0), the condition `i % j == 0` is False, the if branch is not taken.

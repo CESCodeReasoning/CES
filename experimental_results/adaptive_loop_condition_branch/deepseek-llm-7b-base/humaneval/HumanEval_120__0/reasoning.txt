@@ -1,0 +1,5 @@
+The function `check_integer` is called with ( i = 2 ).
+`i` is 2, which satisfies ( 1 <= i < 3 ).
+The condition `i >= 1` and `i < 3` is true, therefore the if branch is taken and the method returns True
+
+Therefore, the final output of the function `check_integer(2)` is True.

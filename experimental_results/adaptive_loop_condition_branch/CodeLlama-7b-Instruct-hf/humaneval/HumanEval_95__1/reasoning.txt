@@ -1,0 +1,17 @@
+The function `check_dict_case` is called with ( dict = {"Name":"John", "Age":"36", "City":"Houston"} ).
+Inside the function, a variable `state` is initialized to "start".
+
+Iteration 1:
+    -The key "Name" is a string, so the condition `isinstance(key, str) == False` is false.
+    -The condition `state == "start"` is true, so the state is updated to "upper".
+    -The condition `key.isupper()` is true, so the state is updated to "upper".
+Iteration 2:
+    -The key "Age" is a string, so the condition `isinstance(key, str) == False` is false.
+    -The condition `state == "start"` is false, so the state is not updated.
+    -The condition `key.isupper()` is false, so the state is not updated.
+Iteration 3:
+    -The key "City" is a string, so the condition `isinstance(key, str) == False` is false.
+    -The condition `state == "start"` is false, so the state is not updated.
+    -The condition `key.isupper()` is false, so the state is not updated.
+
+Therefore, the final output of the function `check_dict_case({"Name":"John", "Age":"36", "City":"Houston"})` is "upper".

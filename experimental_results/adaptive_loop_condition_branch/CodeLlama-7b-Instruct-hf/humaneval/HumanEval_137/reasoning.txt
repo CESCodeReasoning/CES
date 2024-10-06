@@ -1,0 +1,4 @@
+The function `compare_one` is called with ( a = 1, b = 2 ).
+`a` and `b` are both integers, so the first two if statements are not taken.
+The third if statement is taken, since `float(1) == float(2)` is False.
+Therefore, the final output of the function `compare_one(1, 2)` is 1.

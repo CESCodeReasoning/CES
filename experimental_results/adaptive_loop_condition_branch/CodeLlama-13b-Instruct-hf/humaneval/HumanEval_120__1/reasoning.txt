@@ -1,0 +1,7 @@
+The function `maximum` is called with ( arr = [123, -123, 20, 0 , 1, 2, -3], k = 3 ).
+The condition `k == 0` is false, therefore the if branch is not taken and the method continues to the next line.
+The `arr.sort()` sorts the array in ascending order.
+The `ans` variable is assigned the last `k` elements of the sorted array, which is [20, 0, 1].
+The method returns `ans`, which is [20, 0, 1].
+
+Therefore, the final output of the function `maximum([123, -123, 20, 0 , 1, 2, -3], 3)` is [20, 0, 1].

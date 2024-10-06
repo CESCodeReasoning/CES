@@ -1,0 +1,32 @@
+[REASONING]
+The function `sort_even` is called with the list `[5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]`.
+The function first creates two lists, `evens` and `odds`, by slicing the input list with a step of 2.
+`evens` contains the even-indexed elements of the input list, and `odds` contains the odd-indexed elements.
+The function then sorts the `evens` list in ascending order.
+Next, the function creates an empty list called `ans`.
+The function then iterates over the `evens` and `odds` lists simultaneously using the `zip` function.
+For each pair of elements, `e` and `o`, the function appends them to the `ans` list.
+After the loop completes, the function checks if the length of the `evens` list is greater than the length of the `odds` list.
+If so, the function appends the last element of the `evens` list to the `ans` list.
+Finally, the function returns the `ans` list.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def sort_even(l: list):
+    evens = l[::2]
+    odds = l[1::2]
+    evens.sort()
+    ans = []
+    for e, o in zip(evens, odds): ## [STATE]e=[-5, 0, 2, 123][/STATE][STATE]o=[3, -3, 3, 1][/STATE][STATE]zip(evens, odds)=[(-5, 3), (0, -3), (2, 3), (123, 1][/STATE][STATE]evens=[-5, 0, 2, 123][/STATE][STATE]odds=[3, -3, 3, 1][/STATE]
+        ans.extend([e, o])
+    if len(evens) > len(odds): ## [CONDITION](len(evens) > len(odds))=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        ans.append(evens[-1])
+    return ans
+[/ANSWER]
+
+[OUTPUT]
+[-5, 3, 0, -3, 2, 3, 123, 1]
+[/OUTPUT]

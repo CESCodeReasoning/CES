@@ -1,0 +1,5 @@
+The function sort_numbers takes a string of numbers as input and returns a sorted string of numbers.
+
+The function first splits the input string into a list of words. Then, it filters out any empty strings from the list. After that, it sorts the list of words based on their corresponding numerical values in the value_map dictionary. Finally, it joins the sorted list of words into a single string with spaces in between and returns it.
+
+The input string is an empty string, so the function returns an empty string.

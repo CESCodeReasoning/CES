@@ -1,0 +1,8 @@
+The function filter_integers takes a list of values of type Any as input and returns a list of integers that are present in the input list.
+To determine the output of executing the function filter_integers on the input [4, {}, [], 23.2, 9, 'adasd'], we need to follow the steps below:
+
+1. First, we need to iterate over the input list and check if each element is an integer.
+2. If an element is an integer, we add it to the output list.
+3. If an element is not an integer, we skip it.
+
+Therefore, the output of executing the function filter_integers on the input [4, {}, [], 23.2, 9, 'adasd'] is [4, 9].

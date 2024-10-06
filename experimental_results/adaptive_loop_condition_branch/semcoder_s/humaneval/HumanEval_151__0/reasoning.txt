@@ -1,0 +1,13 @@
+The function `double_the_difference` takes a list of integers as input and returns the sum of the squares of all positive odd integers in the list that do not contain the decimal point.
+
+- The list `[-10, -20, -30]` is provided as input.
+- The function iterates over each element in the list.
+- For the first element `-10`:
+  - The condition `i > 0 and i % 2 != 0 and "." not in str(i)` is `False` since `-10` is not positive, odd, and does not contain the decimal point.
+- For the second element `-20`:
+  - The condition `i > 0 and i % 2 != 0 and "." not in str(i)` is `False` since `-20` is not positive, odd, and does not contain the decimal point.
+- For the third element `-30`:
+  - The condition `i > 0 and i % 2 != 0 and "." not in str(i)` is `False` since `-30` is not positive, odd, and does not contain the decimal point.
+- The list comprehension `[i**2 for i in lst if i > 0 and i % 2 != 0 and "." not in str(i)]` evaluates to an empty list since no elements satisfy the conditions.
+- The sum of an empty list is `0`.
+- Therefore, the output of `double_the_difference([-10, -20, -30])` is `0`.

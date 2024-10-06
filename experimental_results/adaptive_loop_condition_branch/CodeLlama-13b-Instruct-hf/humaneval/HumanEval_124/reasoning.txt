@@ -1,0 +1,8 @@
+The function `valid_date` is called with ( date = '03-11-2000' ).
+The date is stripped of any leading or trailing whitespace.
+The date is split into its constituent parts (month, day, and year) using the '-' character as the delimiter.
+The month, day, and year are converted to integers.
+The month is checked to ensure it is between 1 and 12.
+The month is not between 1 and 12, therefore the if branch is not taken and the method returns False.
+
+Therefore, the final output of the function `valid_date('03-11-2000')` is False.

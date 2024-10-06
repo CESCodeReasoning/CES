@@ -1,0 +1,9 @@
+from typing import *
+import math
+
+def max_fill(grid: List[List[int]], capacity: int) -> int:
+    # [STATE] grid = [[0,0,1,0], [0,1,0,0], [1,1,1,1]], capacity = 1 [/STATE]
+    return sum([
+        math.ceil(sum(arr) / capacity)  # [STATE] sum(arr) = 1 for first row, 1 for second row, 4 for third row [/STATE]
+        for arr in grid
+    ])

@@ -1,0 +1,5 @@
+The function `minPath` is called with a 2D grid and a positive integer `k`. The function returns a list of length `k` containing the minimum path sum from the top-left corner of the grid to the bottom-right corner.
+
+The function first initializes a variable `val` to the maximum possible value of an integer. It then iterates over each element in the grid using nested loops. For each element, it checks if the element is equal to 1. If it is, it creates a list `temp` and appends the values of the neighboring elements that are not equal to 1. It then updates the minimum value of `val` to be the minimum value in `temp`.
+
+After iterating over the entire grid, the function initializes an empty list `ans` and appends the minimum value of `val` to it `k` times. It then returns `ans`.

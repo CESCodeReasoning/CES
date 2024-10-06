@@ -1,0 +1,5 @@
+The function `maximum` is called with ( arr = [123, -123, 20, 0 , 1, 2, -3], k = 3 ).
+The condition `k == 0` is false, therefore the else branch is taken.
+The array `arr` is sorted in ascending order.
+The last `k` elements of the sorted array are stored in `ans`.
+The function returns `ans`, which is [20, 1, 2].

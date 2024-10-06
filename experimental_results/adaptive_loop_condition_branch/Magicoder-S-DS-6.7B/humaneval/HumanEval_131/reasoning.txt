@@ -1,0 +1,8 @@
+The function `digits` is called with ( n = 5 ).
+Inside the function, a variable `product` is initialized to 1 and `odd_count` is initialized to 0.
+
+Iteration 1:
+    -The digit '5' is converted to integer 5.
+    -5 is not an odd number, so no action is taken.
+
+Therefore, the final output of the function `digits(5)` is 0.

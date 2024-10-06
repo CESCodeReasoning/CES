@@ -1,0 +1,11 @@
+The function `greatest_common_divisor` is called with ( a = 3, b = 7 ).
+First Iteration:
+    - b = 7, a % b = 3.
+    - a, b = b, a % b updates a to 3, b to 3.
+Second Iteration:
+    - b = 3, a % b = 1.
+    - a, b = b, a % b updates a to 3, b to 1.
+Third Iteration:
+    - b = 1, a % b = 0.
+    - a, b = b, a % b updates a to 1, b to 0.
+After the loop completes, the function returns the value of `a`, which is now 1.

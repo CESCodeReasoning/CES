@@ -1,0 +1,143 @@
+<｜begin▁of▁sentence｜>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in greatest_common_divisor.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def greatest_common_divisor(a: int, b: int) -> int:
+    while b:
+        a, b = b, a % b
+    return b
+
+Tests:
+def check(greatest_common_divisor):
+    assert greatest_common_divisor(3, 7) == 1
+    assert greatest_common_divisor(10, 15) == 5
+    assert greatest_common_divisor(49, 14) == 7
+    assert greatest_common_divisor(144, 60) == 12
+
+check(greatest_common_divisor)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `greatest_common_divisor(a: int, b: int) -> int` to solve the following problem:
+Return a greatest common divisor of two integers a and b
+
+Fixed Code:
+```python
+def greatest_common_divisor(a: int, b: int) -> int:
+    while b:
+        a, b = b, a % b
+    return a
+```
+
+
+    
+Fix bugs in is_prime.
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(2) == True
+    assert is_prime(4) == False
+    assert is_prime(17) == True
+    assert is_prime(25) == False
+    assert is_prime(97) == True
+
+check(is_prime)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `is_prime(n: int) -> bool` to solve the following problem:
+Check if a given integer n is a prime number.
+
+Fixed Code:
+```python
+def is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+```
+
+
+    
+Fix bugs in longest_common_prefix.
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+from typing import List
+def longest_common_prefix(strings: List[str]) -> str:
+    if not strings:
+        return ""
+
+    shortest = min(strings, key=len)
+
+    for i, char in enumerate(shortest):
+        for other in strings:
+            if other[i] != char:
+                return shortest[:i]
+
+    return shortest
+
+Tests:
+def check(longest_common_prefix):
+    assert longest_common_prefix(["flower", "flow", "flight"]) == "fl"
+    assert longest_common_prefix(

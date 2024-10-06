@@ -1,0 +1,8 @@
+from typing import *
+
+
+def all_prefixes(string: str) -> List[str]:
+    result = []
+    for i in range(len(string)): ## [STATE]i=[0, 1, 2][/STATE][STATE]range(len(string))=[0, 1, 2][/STATE][STATE]len(string)=[3][/STATE]
+        result.append(string[:i + 1])
+    return result

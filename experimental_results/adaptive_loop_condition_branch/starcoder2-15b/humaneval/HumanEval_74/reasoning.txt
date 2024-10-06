@@ -1,0 +1,8 @@
+The function `total_match` is called with ( lst1 = ['hi', 'admin'], lst2 = ['hi', 'hi'] ).
+Inside the function, a variable `l1` is initialized to 0.
+The loop iterates through the elements of lst1.
+First Iteration (st = 'hi'):
+    len(st) = 2, `l1 += len(st)` updates `l1` to 2 ( 0 + 2 = 2 ).
+Second Iteration (st = 'admin'):
+    len(st) = 5, `l1 += len(st)` updates `l1` to 7 ( 2 + 5 = 7 ).
+After the loop completes, the condition ( l1 <= l2 ) is satisfied, therefore the if branch is taken and the function returns `lst1` as the output.

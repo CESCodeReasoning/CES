@@ -1,0 +1,12 @@
+The function `do_algebra` is called with (operator = ['**', '*', '+'], operand = [2, 3, 4, 5]).
+Inside the function, a variable `expression` is initialized to '2'.
+The loop iterates over the operator and operand lists.
+First Iteration (oprt = '**', oprn = 3):
+    expression += '**' + '3' results in expression = '2**3'.
+Second Iteration (oprt = '*', oprn = 4):
+    expression += '*' + '4' results in expression = '2**3*4'.
+Third Iteration (oprt = '+', oprn = 5):
+    expression += '+' + '5' results in expression = '2**3*4+5'.
+After the loop completes, the function returns the value of `expression`, which is now '2**3*4+5'.
+
+Finally, the function evaluates the expression '2**3*4+5' and returns the result.

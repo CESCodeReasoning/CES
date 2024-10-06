@@ -1,0 +1,51 @@
+[REASONING]
+The function `solve` is called with ( s = "#a@C" ).
+Inside the function, a flag `flg` is initialized to 0, and an index `idx` is initialized to 0.
+A new list `new_str` is created from the string `s`.
+
+Iteration 1:
+    - The first character in `s` is '#', which is not alphabetic. So, the `if` condition is not met, and `idx` is incremented to 1.
+
+Iteration 2:
+    - The second character in `s` is 'a', which is alphabetic. So, the `if` condition is met, and the character at index 1 in `new_str` is replaced with the swapcase of 'a', which is 'A'.
+    - `flg` is set to 1 to indicate that at least one character in `s` is alphabetic.
+    - `idx` is incremented to 2.
+
+Iteration 3:
+    - The third character in `s` is '@', which is not alphabetic. So, the `if` condition is not met, and `idx` is incremented to 3.
+
+Iteration 4:
+    - The fourth character in `s` is 'C', which is alphabetic. So, the `if` condition is met, and the character at index 3 in `new_str` is replaced with the swapcase of 'C', which is 'c'.
+    - `idx` is incremented to 4.
+
+After the loop, the new string `s` is created by joining the characters in `new_str`.
+
+Since `flg` is not equal to 0, the function returns the string `s` without any further modifications.
+
+Therefore, the final output of the function `solve("#a@C")` is "Aa@c".
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def solve(s):
+    flg = 0
+    idx = 0
+    new_str = list(s)
+    for i in s: ## [STATE]i=['#', 'a', '@', 'C'][/STATE][STATE]s=["#a@C"][/STATE]
+        if i.isalpha(): ## [CONDITION](i.isalpha())=[False, True, False, True][/CONDITION][BRANCH]taken=[N, Y, N, Y][/BRANCH]
+            new_str[idx] = i.swapcase()
+            flg = 1
+        idx += 1
+    s = ""
+    for i in new_str: ## [STATE]i=['#', 'A', '@', 'c'][/STATE][STATE]new_str=['#', 'A', '@', 'c'][/STATE]
+        s += i
+    if flg == 0: ## [CONDITION](flg == 0)=[N][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return s[len(s)::-1]
+    return s
+[/ANSWER]
+
+[OUTPUT]
+Aa@c
+[/OUTPUT]

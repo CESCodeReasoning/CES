@@ -1,0 +1,16 @@
+The function `string_xor` is called with ( a = '0101', b = '0000' ).
+Inside the function, the `xor` function is defined.
+The `xor` function takes two arguments, `i` and `j`.
+If `i` and `j` are equal, the function returns '0'.
+Otherwise, it returns '1'.
+The `string_xor` function returns a string formed by concatenating the result of calling the `xor` function on each pair of characters from `a` and `b`.
+
+In this case, the `string_xor` function is called with ( a = '0101', b = '0000' ).
+The `xor` function is called on each pair of characters from `a` and `b`.
+The first pair is ('0', '0'), which results in '0' because both characters are equal.
+The second pair is ('1', '0'), which results in '1' because the characters are different.
+The third pair is ('0', '0'), which results in '0' because both characters are equal.
+The fourth pair is ('1', '0'), which results in '1' because the characters are different.
+The `string_xor` function returns the string formed by concatenating the results of the `xor` function on each pair of characters, which is '0101'.
+
+Therefore, the final output of the function `string_xor('0101', '0000')` is '0101'.

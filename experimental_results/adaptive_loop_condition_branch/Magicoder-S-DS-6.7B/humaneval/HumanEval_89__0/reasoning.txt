@@ -1,0 +1,7 @@
+The function `encrypt` is called with ( s = 'et' ).
+Inside the function, a variable `out` is initialized to an empty string.
+
+Iteration 1:
+    -The character 'e' is in the string 'abcdefghijklmnopqrstuvwxyz', so it is shifted 2 places to the right (which is 'g').
+Iteration 2:
+    -The character 't' is not in the string 'abcdefghijklmnopqrstuvwxyz', so it is not changed.

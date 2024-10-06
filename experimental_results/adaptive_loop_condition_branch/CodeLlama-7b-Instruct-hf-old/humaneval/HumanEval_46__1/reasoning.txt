@@ -1,0 +1,23 @@
+The function `fib4` is called with ( n = 12 ).
+Inside the function, a variable `results` is initialized to [0, 0, 2, 0].
+The condition ( n < 4 ) is evaluated to False, therefore the if branch is not taken.
+The loop iterates from 4 through 12 (since ( n + 1 ) = 13).
+First Iteration ( _ = 4):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6].
+Second Iteration ( _ = 5):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 10].
+Third Iteration ( _ = 6):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 10, 18].
+Fourth Iteration ( _ = 7):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 10, 18, 34].
+Fifth Iteration ( _ = 8):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 10, 18, 34, 60].
+Sixth Iteration ( _ = 9):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 10, 18, 34, 60, 98].
+Seventh Iteration ( _ = 10):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 10, 18, 34, 60, 98, 170].
+Eighth Iteration ( _ = 11):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 10, 18, 34, 60, 98, 170, 286].
+Ninth Iteration ( _ = 12):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` updates `results` to [0, 0, 2, 0, 6, 10, 18, 34, 60, 98, 170, 286, 466].
+After the loop completes, the return statement is executed and the function returns `results[-1]` which is 466.

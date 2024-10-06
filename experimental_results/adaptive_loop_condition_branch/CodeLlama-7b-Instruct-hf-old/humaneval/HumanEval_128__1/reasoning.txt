@@ -1,0 +1,4 @@
+The function `prod_signs` is called with ( arr = [1, 1, 1, 2, 3, -1, 1] ).
+The condition `not arr` is false, therefore the if branch is not taken and the method returns None.
+
+Therefore, the final output of the function `prod_signs([1, 1, 1, 2, 3, -1, 1])` is None.

@@ -1,0 +1,7 @@
+The function check_if_last_char_is_a_letter takes a string txt as input and returns True if the last character of the string is a letter, and False otherwise.
+To determine the output of executing the function check_if_last_char_is_a_letter on the input "apple pi e ", we need to first split the string into a list of words using the split() method.
+The last word in the list of words is "e".
+The length of the string "e" is 1.
+The ASCII code of the lowercase letter "e" is 101, which is between 97 and 122.
+Therefore, the last character of the string "apple pi e " is a letter.
+Therefore, the output of executing the function check_if_last_char_is_a_letter on the input "apple pi e " is True.

@@ -1,0 +1,27 @@
+The function words_in_sentence(sentence) takes a string sentence("This is a test") as its parameter.
+The outer loop iterates through each word in the sentence.
+For each word, it checks if the length of the word is 1 or if the length of the word is divisible by any number from 2 to the length of the word.
+If the word meets either of these conditions, it is not added to the new list.
+First Iteration (word="This"):
+    - `word` is "This", length of "This" is 4.
+    - The condition `len(word) == 1` is False, the if branch is not taken.
+    - For i in range(2, len(word)), i is 2, 3, 4.
+        - The condition `len(word)%i == 0` is False for i=2, 3, 4, the if branch is not taken.
+    - The condition `flg == 0 or len(word) == 2` is False, the if branch is not taken.
+Second Iteration (word="is"):
+    - `word` is "is", length of "is" is 2.
+    - The condition `len(word) == 1` is False, the if branch is not taken.
+    - For i in range(2, len(word)), i is 2.
+        - The condition `len(word)%i == 0` is False for i=2, the if branch is not taken.
+    - The condition `flg == 0 or len(word) == 2` is True, the if branch is taken. "is" is added to new_lst.
+Third Iteration (word="a"):
+    - `word` is "a", length of "a" is 1.
+    - The condition `len(word) == 1` is True, the if branch is taken.
+    - For i in range(2, len(word)), i is not executed as the range is empty.
+    - The condition `flg == 0 or len(word) == 2` is True, the if branch is taken. "a" is added to new_lst.
+Fourth Iteration (word="test"):
+    - `word` is "test", length of "test" is 4.
+    - The condition `len(word) == 1` is False, the if branch is not taken.
+    - For i in range(2, len(word)), i is 2, 3, 4.
+        - The condition `len(word)%i == 0` is False for i=2, 3, 4, the if branch is not taken.
+    - The condition `flg == 0 or len(word) == 2` is False, the if branch is not taken.

@@ -1,0 +1,36 @@
+The function `prime_fib` is called with ( n = 4 ).
+Inside the function, a list `f` is initialized to [0, 1].
+The loop iterates until `n` becomes 0.
+First Iteration:
+    - `f` is [0, 1].
+    - `f[-1]` is 1.
+    - `f[-2]` is 0.
+    - `f[-1] + f[-2]` is 1.
+    - `f` becomes [0, 1, 1].
+    - `is_prime(f[-1])` is True.
+    - `n` becomes 3.
+Second Iteration:
+    - `f` is [0, 1, 1].
+    - `f[-1]` is 1.
+    - `f[-2]` is 1.
+    - `f[-1] + f[-2]` is 2.
+    - `f` becomes [0, 1, 1, 2].
+    - `is_prime(f[-1])` is False.
+    - `n` becomes 2.
+Third Iteration:
+    - `f` is [0, 1, 1, 2].
+    - `f[-1]` is 2.
+    - `f[-2]` is 1.
+    - `f[-1] + f[-2]` is 3.
+    - `f` becomes [0, 1, 1, 2, 3].
+    - `is_prime(f[-1])` is True.
+    - `n` becomes 1.
+Fourth Iteration:
+    - `f` is [0, 1, 1, 2, 3].
+    - `f[-1]` is 3.
+    - `f[-2]` is 2.
+    - `f[-1] + f[-2]` is 5.
+    - `f` becomes [0, 1, 1, 2, 3, 5].
+    - `is_prime(f[-1])` is False.
+    - `n` becomes 0.
+After the loop completes, the function returns `f[-1]`, which is 5.

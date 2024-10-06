@@ -1,0 +1,38 @@
+[REASONING]
+The function `search` is called with ( lst = [5, 5, 5, 5, 1] ).
+Inside the function, a list `frq` is initialized with zeros of length ( max(lst) + 1 ).
+The loop iterates over the elements of `lst` and increments the corresponding element in `frq`.
+After the loop, the variable `ans` is initialized to -1.
+The second loop iterates over the elements of `frq` from index 1 to `len(frq)`.
+For each element `frq[i]`, if `frq[i]` is greater than or equal to `i`, then `ans` is updated to `i`.
+Finally, the function returns `ans`.
+
+In this case, `max(lst)` is 5, so `frq` is initialized to [0, 0, 0, 0, 0, 0].
+The first loop increments `frq[5]` five times, resulting in `frq` being [0, 0, 0, 0, 5, 0].
+The second loop iterates over `frq` from index 1 to 6.
+For `i = 1`, `frq[1]` is 0, which is not greater than or equal to 1, so `ans` remains -1.
+For `i = 2`, `frq[2]` is 0, which is not greater than or equal to 2, so `ans` remains -1.
+For `i = 3`, `frq[3]` is 0, which is not greater than or equal to 3, so `ans` remains -1.
+For `i = 4`, `frq[4]` is 0, which is not greater than or equal to 4, so `ans` remains -1.
+For `i = 5`, `frq[5]` is 5, which is greater than or equal to 5, so `ans` is updated to 5.
+The function returns `ans`, which is 5.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def search(lst):
+    frq = [0] * (max(lst) + 1) ## [STATE]i=[0, 0, 0, 0, 0, 0][/STATE]
+    for i in lst: ## [STATE]lst=[5, 5, 5, 5, 1][/STATE]
+        frq[i] += 1;
+
+    ans = -1 ## [STATE]i=-1[/STATE]
+    for i in range(1, len(frq)): ## [STATE]range(1, len(frq))=[1, 2, 3, 4, 5][/STATE][STATE]len(frq)=[6][/STATE]
+        if frq[i] >= i: ## [CONDITION](frq[i] >= i)=[False, False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, N, Y][/BRANCH]
+            ans = i
+    
+    return ans
+[/ANSWER]
+
+[OUTPUT]
+5
+[/OUTPUT]

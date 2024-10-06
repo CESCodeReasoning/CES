@@ -1,0 +1,92 @@
+The function `will_it_fly` is called with ( q = [3, 2, 3], w = 9 ).
+Inside the function, a variable `i` is initialized to 0 and a variable `j` is initialized to the length of `q` minus 1.
+The loop iterates from 0 through the length of `q` minus 1 (since ( j = len(q)-1 )).
+First Iteration (i = 0, j = 2):
+    - i < j when i=0 and j=2
+    - The condition `q[i] != q[j]` is true. The first branch is taken.
+    - The function returns False.
+Second Iteration (i = 1, j = 1):
+    - i < j when i=1 and j=1
+    - The condition `q[i] != q[j]` is false. The first branch is not taken.
+    - The condition `q[i] != q[j]` is true. The second branch is taken.
+    - The function returns False.
+Third Iteration (i = 2, j = 0):
+    - i < j when i=2 and j=0
+    - The condition `q[i] != q[j]` is false. The first branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w` is false. The first branch is not taken.
+    - The condition `i < j` is false. The second branch is not taken.
+    - The condition `q[i] != q[j]` is false. The second branch is not taken.
+    - The condition `sum(q) > w

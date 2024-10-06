@@ -1,0 +1,37 @@
+The function `how_many_times` is called with ( string = 'xyxyxyx', substring = 'x' ).
+Inside the function, a variable `times` is initialized to 0.
+The loop iterates over the indices of `string` up to `(len(string) - len(substring)) + 1`.
+First Iteration (i = 0):
+   - The substring 'x' is found at index 0 in 'xyxyxyx'.
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` updates `times` to 1.
+Second Iteration (i = 1):
+   - The substring 'x' is found at index 1 in 'xyxyxyx'.
+   - The condition is still true.
+   - Action: `times += 1` updates `times` to 2.
+Third Iteration (i = 2):
+   - The substring 'x' is found at index 2 in 'xyxyxyx'.
+   - The condition is still true.
+   - Action: `times += 1` updates `times` to 3.
+Fourth Iteration (i = 3):
+   - The substring 'x' is found at index 3 in 'xyxyxyx'.
+   - The condition is still true.
+   - Action: `times += 1` updates `times` to 4.
+Fifth Iteration (i = 4):
+   - The substring 'x' is found at index 4 in 'xyxyxyx'.
+   - The condition is still true.
+   - Action: `times += 1` updates `times` to 5.
+Sixth Iteration (i = 5):
+   - The substring 'x' is found at index 5 in 'xyxyxyx'.
+   - The condition is still true.
+   - Action: `times += 1` updates `times` to 6.
+Seventh Iteration (i = 6):
+   - The substring 'x' is found at index 6 in 'xyxyxyx'.
+   - The condition is still true.
+   - Action: `times += 1` updates `times` to 7.
+Eighth Iteration (i = 7):
+   - The loop ends as `i` exceeds the limit.
+Return Statement
+   - After the loop completes, the function returns the value of `times`, which is now 7.
+
+Therefore, the final output of the function `how_many_times('xyxyxyx', 'x')` is 7.

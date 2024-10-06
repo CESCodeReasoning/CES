@@ -1,0 +1,20 @@
+The function find_closest_elements(numbers) takes a list of numbers as its parameter.
+The outer loop iterates through each element in the list.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (idx=0):
+    - `idx` is 0, idx2 in the inner loop is 1, 2, 3, 4, 5, 6.
+    - numbers[idx]=1.0: compare with numbers[idx2]=2.0, 3.9, 4.0, 5.0, 2.2:
+        - When idx2 = 1 (numbers[idx2]=2.0), the condition `numbers[idx] != numbers[idx2]` is True, the if branch is not taken.
+        - When idx2 = 2 (numbers[idx2]=3.9), the condition `numbers[idx] != numbers[idx2]` is True, the if branch is not taken.
+        - When idx2 = 3 (numbers[idx2]=4.0), the condition `numbers[idx] != numbers[idx2]` is True, the if branch is not taken.
+        - When idx2 = 4 (numbers[idx2]=5.0), the condition `numbers[idx] != numbers[idx2]` is True, the if branch is not taken.
+        - When idx2 = 5 (numbers[idx2]=2.2), the condition `numbers[idx] != numbers[idx2]` is True, the if branch is not taken.
+Second Iteration (idx=1):
+    - `idx` is 1, idx2 in the inner loop is 2, 3, 4, 5, 6.
+    - numbers[idx]=2.0: compare with numbers[idx2]=3.9, 4.0, 5.0, 2.2:
+        - When idx2 = 2 (numbers[idx2]=3.9), the condition `numbers[idx] != numbers[idx2]` is True, the if branch is not taken.
+        - When idx2 = 3 (numbers[idx2]=4.0), the condition `numbers[idx] != numbers[idx2]` is True, the if branch is not taken.
+        - When idx2 = 4 (numbers[idx2]=5.0), the condition `numbers[idx] != numbers[idx2]` is True, the if branch is not taken.
+        - When idx2 = 5 (numbers[idx2]=2.2), the condition `numbers[idx] != numbers[idx2]` is True, the if branch is not taken.
+Third Iteration (idx=2):
+    - `idx` is 2, idx2 in the inner loop is 3, 4, 

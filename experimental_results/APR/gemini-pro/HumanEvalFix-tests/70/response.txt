@@ -1,0 +1,12 @@
+```python
+def strange_sort_list(lst):
+    res, switch = [], False
+    while lst:
+        if switch:
+            res.append(max(lst))
+        else:
+            res.append(min(lst))
+        lst.remove(res[-1])
+        switch = not switch
+    return res
+```

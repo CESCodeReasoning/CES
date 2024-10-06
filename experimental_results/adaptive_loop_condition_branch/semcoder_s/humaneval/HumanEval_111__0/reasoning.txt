@@ -1,0 +1,14 @@
+The function `histogram` is called with ( test = 'a b c d g' ).
+Inside the function, a dictionary `dict1` is initialized.
+The input string is split into a list of words using the `split(" ")` method.
+A variable `t` is initialized to 0.
+
+The first loop iterates over each word in the list.
+   - If the count of the current word is greater than `t` and the word is not empty, update `t` to the count of the current word.
+
+After the loop, if `t` is greater than 0, the second loop iterates over each word in the list again.
+   - If the count of the current word is equal to `t`, add an entry to the dictionary `dict1` with the word as the key and `t` as the value.
+
+Finally, the function returns the dictionary `dict1`.
+
+Therefore, the final output of the function `histogram('a b c d g')` is an empty dictionary `{}`.

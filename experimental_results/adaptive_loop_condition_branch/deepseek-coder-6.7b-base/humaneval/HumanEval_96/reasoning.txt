@@ -1,0 +1,30 @@
+The function count_up_to(n) takes a number n as its parameter.
+The outer loop iterates through each number from 2 to n-1.
+In the inner loop, for each number indexed by i in the outer loop, check if it is a prime number.
+First Iteration (i=2):
+    - `i` is 2, j in the inner loop is 2, 3.
+    - 2 is a prime number, append it to primes.
+Second Iteration (i=3):
+    - `i` is 3, j in the inner loop is 2, 3.
+    - 3 is a prime number, append it to primes.
+Third Iteration (i=4):
+    - `i` is 4, j in the inner loop is 2, 3, 4.
+    - 4 is not a prime number, break out of the inner loop.
+Forth Iteration (i=5):
+    - `i` is 5, j in the inner loop is 2, 3, 4, 5.
+    - 5 is a prime number, append it to primes.
+Fifth Iteration (i=6):
+    - `i` is 6, j in the inner loop is 2, 3, 4, 5, 6.
+    - 6 is not a prime number, break out of the inner loop.
+Sixth iteration (i=7):
+    - `i` is 7, j in the inner loop is 2, 3, 4, 5, 6, 7.
+    - 7 is a prime number, append it to primes.
+Seventh iteration (i=8):
+    - `i` is 8, j in the inner loop is 2, 3, 4, 5, 6, 7, 8.
+    - 8 is not a prime number, break out of the inner loop.
+Eighth iteration (i=9):
+    - `i` is 9, j in the inner loop is 2, 3, 4, 5, 6, 7, 8, 9.
+    - 9 is not a prime number, break out of the inner loop.
+Ninth iteration (i=10):
+    - `i` is 10, j in the inner loop is 2, 3, 4, 5, 6, 7, 8, 9, 10.
+    - 10 is not a prime number, break out of the inner loop.

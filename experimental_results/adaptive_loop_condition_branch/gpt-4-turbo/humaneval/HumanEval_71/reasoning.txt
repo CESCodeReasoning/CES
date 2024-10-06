@@ -1,0 +1,20 @@
+The function `triangle_area` is called with the sides of a triangle: a = 3, b = 4, c = 5.
+The function first checks if the given sides can form a triangle using the triangle inequality theorem:
+   - a + b > c
+   - a + c > b
+   - b + c > a
+For the given sides:
+   - 3 + 4 = 7 which is greater than 5
+   - 3 + 5 = 8 which is greater than 4
+   - 4 + 5 = 9 which is greater than 3
+All conditions are satisfied, so the sides can form a triangle.
+
+The function then calculates the semi-perimeter (s) of the triangle:
+   - s = (a + b + c) / 2 = (3 + 4 + 5) / 2 = 6
+
+Using Heron's formula, the area of the triangle is calculated:
+   - area = sqrt(s * (s - a) * (s - b) * (s - c)) = sqrt(6 * (6 - 3) * (6 - 4) * (6 - 5)) = sqrt(6 * 3 * 2 * 1) = sqrt(36) = 6
+
+The area is then rounded to two decimal places, resulting in an area of 6.00.
+
+Therefore, the final output of the function `triangle_area(3, 4, 5)` is 6.00.

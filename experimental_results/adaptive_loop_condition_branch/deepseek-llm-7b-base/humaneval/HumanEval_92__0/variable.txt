@@ -1,0 +1,8 @@
+from typing import *
+
+
+def any_int(x, y, z):
+    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int): ## [CONDITION](isinstance(x, int) and isinstance(y, int) and isinstance(z, int))=??[/CONDITION][CONDITION](isinstance(z, int))=??[/CONDITION][CONDITION](isinstance(x, int))=??[/CONDITION][CONDITION](isinstance(y, int))=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        if (x + y == z) or (x + z == y) or (y + z == x): ## [CONDITION]((x + y == z) or (x + z == y) or (y + z == x))=??[/CONDITION][CONDITION](x + y == z)=??[/CONDITION][CONDITION](x + z == y)=??[/CONDITION][CONDITION](y + z == x)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            return True
+    return False

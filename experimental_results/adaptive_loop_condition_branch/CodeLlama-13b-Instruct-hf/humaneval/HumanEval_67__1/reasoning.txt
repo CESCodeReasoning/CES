@@ -1,0 +1,15 @@
+The function `fruit_distribution` is called with ( s = "5 apples and 6 oranges", n = 21 ).
+Inside the function, a list `lis` is initialized to an empty list.
+
+Iteration 1:
+    - The string "5" is a digit, so it is appended to `lis`.
+Iteration 2:
+    - The string "apples" is not a digit, so it is not appended to `lis`.
+Iteration 3:
+    - The string "and" is not a digit, so it is not appended to `lis`.
+Iteration 4:
+    - The string "6" is a digit, so it is appended to `lis`.
+Iteration 5:
+    - The string "oranges" is not a digit, so it is not appended to `lis`.
+
+The function returns `n - sum(lis)`, which is 21 - 5 - 6 = 1.

@@ -1,0 +1,17 @@
+Fixed Code:
+```python
+from typing import List
+
+def factorize(n: int) -> List[int]:
+    fact = []
+    i = 2
+    while i * i <= n:
+        if n % i:
+            i += 1
+        else:
+            n //= i
+            fact.append(i)
+    if n > 1:
+        fact.append(n)
+    return fact
+```

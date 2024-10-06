@@ -1,0 +1,14 @@
+The function `file_name_check` is called with ( file_name = 'I563_No.exe' ).
+The list `suf` contains the valid suffixes: ['txt', 'exe', 'dll'].
+The file name is split by '.' and stored in `lst`.
+First Condition (len(lst) != 2)
+   - The length of `lst` is 2, so the condition is False.
+Second Condition (not lst[1] in suf)
+   - The suffix 'exe' is in `suf`, so the condition is False.
+Third Condition (len(lst[0]) == 0)
+   - The length of the first part of the split file name is 0, so the condition is False.
+Fourth Condition (not lst[0][0].isalpha())
+   - The first character of the first part of the split file name is 'I', which is an alphabet, so the condition is False.
+Fifth Condition (t > 3)
+   - The count of digits in the first part of the split file name is 3, which is not greater than 3, so the condition is False.
+Therefore, all conditions are False, and the function returns 'Yes'.

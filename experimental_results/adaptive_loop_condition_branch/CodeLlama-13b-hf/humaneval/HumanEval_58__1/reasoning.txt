@@ -1,0 +1,23 @@
+The function common(l1, l2) takes two lists as its parameters.
+The outer loop iterates through each element in the first list.
+In the inner loop, for each element indexed by e1 in the outer loop, compare it with every element in the second list.
+First Iteration (e1=5):
+    - `e1` is 5, `e2` in the inner loop is 3, 2.
+    - e1=5: compare with 3, 2:
+        - When e2 = 3 (e2=3), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 2 (e2=2), the condition `e1 == e2` is False, the if branch is not taken.
+Second Iteration (e1=3):
+    - `e1` is 3, `e2` in the inner loop is 3, 2.
+    - e1=3: compare with 3, 2:
+        - When e2 = 3 (e2=3), the condition `e1 == e2` is True, the if branch is taken. Add 3 to ret.
+        - When e2 = 2 (e2=2), the condition `e1 == e2` is False, the if branch is not taken.
+Third Iteration (e1=2):
+    - `e1` is 2, `e2` in the inner loop is 3, 2.
+    - e1=2: compare with 3, 2:
+        - When e2 = 3 (e2=3), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 2 (e2=2), the condition `e1 == e2` is True, the if branch is taken. Add 2 to ret.
+Forth Iteration (e1=8):
+    - `e1` is 8, `e2` in the inner loop is 3, 2.
+    - e1=8: compare with 3, 2:
+        - When e2 = 3 (e2=3), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 2 (e2=2), the condition `e1 == e2` is False, the if branch is not taken.

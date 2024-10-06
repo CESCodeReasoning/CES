@@ -1,0 +1,19 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: prod_signs
+main.py(3):     if not arr: return None
+main.py(4):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+ --- modulename: main, funcname: <lambda>
+main.py(4):     prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+main.py(5):     return prod * sum([abs(i) for i in arr])
+ --- modulename: main, funcname: <listcomp>
+main.py(5):     return prod * sum([abs(i) for i in arr])
+main.py(5):     return prod * sum([abs(i) for i in arr])
+main.py(5):     return prod * sum([abs(i) for i in arr])
+main.py(5):     return prod * sum([abs(i) for i in arr])
+main.py(5):     return prod * sum([abs(i) for i in arr])

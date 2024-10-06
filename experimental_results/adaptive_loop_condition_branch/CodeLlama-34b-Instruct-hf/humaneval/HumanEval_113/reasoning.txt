@@ -1,0 +1,6 @@
+The function `odd_count` is called with (lst = ['1234567']).
+Inside the function, a variable `res` is initialized to an empty list.
+The loop iterates through the elements of `lst`.
+First Iteration (arr = '1234567'):
+    `n` is assigned the sum of the number of odd elements in `arr`.
+    `res` is appended with a string that contains the number of odd elements in `arr`.

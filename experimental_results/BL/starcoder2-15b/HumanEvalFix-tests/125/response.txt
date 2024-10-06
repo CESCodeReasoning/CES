@@ -1,0 +1,17 @@
+```response
+                return len([i for i in txt if i.islower() and ord(i)%2 == 0])
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(txt):
+    return txt == txt[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("abcba") == True
+    assert is_palindrome("abccba") == True
+    assert is_palindrome("abccbb") == False
+    assert is_

@@ -1,0 +1,23 @@
+The function `minPath` is called with ( grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], k = 3 ).
+Inside the function, a variable `val` is initialized to `n * n + 1`.
+
+Iteration 1:
+    -The character '1' is not equal to 1, so the if condition is not satisfied.
+Iteration 2:
+    -The character '2' is not equal to 1, so the if condition is not satisfied.
+Iteration 3:
+    -The character '3' is not equal to 1, so the if condition is not satisfied.
+Iteration 4:
+    -The character '4' is not equal to 1, so the if condition is not satisfied.
+Iteration 5:
+    -The character '5' is not equal to 1, so the if condition is not satisfied.
+Iteration 6:
+    -The character '6' is not equal to 1, so the if condition is not satisfied.
+Iteration 7:
+    -The character '7' is not equal to 1, so the if condition is not satisfied.
+Iteration 8:
+    -The character '8' is not equal to 1, so the if condition is not satisfied.
+Iteration 9:
+    -The character '9' is not equal to 1, so the if condition is not satisfied.
+
+After the loop completes, the function returns the value of `val`, which is still `n * n + 1`.

@@ -1,0 +1,16 @@
+```response
+    for i in range(len(string) - len(substring)):
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(string: str) -> bool:
+    return string == string[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome('') == True
+    assert is_palindrome('a') == True
+    assert is_palindrome('ab')

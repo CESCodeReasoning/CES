@@ -1,0 +1,17 @@
+The function `is_simple_power` is called with ( x = 128, n = 4 ).
+Inside the function, the first condition ( n == 1 ) is checked.
+Since ( n = 4 ) is not equal to 1, the condition is not satisfied and the if branch is not taken.
+The while loop is entered, and the condition ( power < x ) is checked.
+First Iteration (power = 1):
+    - power < x when power=1 and x=128
+    - `power = power * n` updates `power` to 4 ( 1 * 4 = 4 ).
+Second Iteration (power = 4):
+    - power < x when power=4 and x=128
+    - `power = power * n` updates `power` to 16 ( 4 * 4 = 16 ).
+Third Iteration (power = 16):
+    - power < x when power=16 and x=128
+    - `power = power * n` updates `power` to 64 ( 16 * 4 = 64 ).
+Fourth Iteration (power = 64):
+    - power < x when power=64 and x=128
+    - `power = power * n` updates `power` to 256 ( 64 * 4 = 256 ).
+After the loop completes, the condition ( power == x ) is not satisfied, therefore the function returns `False` as the output.

@@ -1,0 +1,16 @@
+from typing import *
+def solve(N):
+    # Convert N to a string
+    N_str = str(N)
+    # Initialize the sum of the digits to 0
+    sum_digits = 0
+    # Iterate over the characters in the string
+    for i in N_str:
+        # Convert the character to an integer
+        digit = int(i)
+        # Add the digit to the sum of the digits
+        sum_digits += digit
+    # Convert the sum of the digits to a binary string
+    binary_str = bin(sum_digits)[2:]
+    # Return the binary string
+    return binary_str

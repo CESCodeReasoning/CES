@@ -1,0 +1,31 @@
+Here are the fixed versions of the two functions, `has_close_elements` and `strange_sort_list`, with the corrections made to address the issues in the original code:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure the actual distance
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `strange_sort_list`
+```python
+def strange_sort_list(lst):
+    res, switch = [], True  # Start with True to pick the minimum first
+    while lst:
+        if switch:
+            res.append(min(lst))
+        else:
+            res.append(max(lst))
+        lst.remove(res[-1])
+        switch = not switch
+    return res
+```
+
+These changes ensure that the `has_close_elements` function correctly calculates the absolute distance between elements to check against the threshold, and the `strange_sort_list` function starts with the minimum element as specified in the problem description.

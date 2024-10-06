@@ -1,0 +1,38 @@
+The function minPath(grid, k) takes a 2D list of integers (grid) and an integer (k) as its parameters.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4 and 5.
+    - grid[i][j]=8: compare with 14, 9, 2, 6, 4, 13, 15, 5, 7, 1, 12, 3, 10, 11, 16:
+        - When j = 1 (grid[j]=14), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 2 (grid[j]=9), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 3 (grid[j]=2), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 4 (grid[j]=6), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 5 (grid[j]=4), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 6 (grid[j]=13), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 7 (grid[j]=15), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 8 (grid[j]=5), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 9 (grid[j]=7), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 10 (grid[j]=1), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 11 (grid[j]=12), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 12 (grid[j]=3), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 13 (grid[j]=10), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 14 (grid[j]=11), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 15 (grid[j]=16), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15.
+    - grid[i][j]=14: compare with 9, 2, 6, 4, 13, 15, 5, 7, 1, 12, 3, 10, 11, 16:
+        - When j = 2 (grid[j]=9), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 3 (grid[j]=2), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 4 (grid[j]=6), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 5 (grid[j]=4), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 6 (grid[j]=13), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 7 (grid[j]=15), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 8 (grid[j]=5), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 9 (grid[j]=7), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 10 (grid[j]=1), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 11 (grid[j]=12), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 12 (grid[j]=3), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 13 (grid[j]=10), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 14 (grid[j]=11), the condition `grid[i][j] == 1` is False, the if branch is not taken.
+        - When j = 15 (

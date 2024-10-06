@@ -1,0 +1,12 @@
+The function `get_closest_vowel` is called with ( word = "ba" ).
+Inside the function, a set `vowels` is created with the vowels in the English language.
+
+The `if` statement checks if the length of the word is less than 3.
+If the length of the word is less than 3, then the function returns an empty string.
+
+The `for` loop iterates from the length of the word minus 2 to 0, with a step of -1.
+For each iteration, the function checks if the current character is in the set `vowels`.
+If the current character is in the set `vowels`, then the function checks if the next character and the previous character are not in the set `vowels`.
+If both conditions are true, then the function returns the current character.
+
+Therefore, the final output of the function `get_closest_vowel("ba")` is "".

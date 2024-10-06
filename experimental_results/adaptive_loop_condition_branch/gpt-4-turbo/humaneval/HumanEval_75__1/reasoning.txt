@@ -1,0 +1,15 @@
+The function `is_multiply_prime` is called with the argument `a = 125`.
+The function checks if the number `a` can be expressed as a product of three distinct prime numbers, each ranging from 2 to 100.
+
+1. The function defines a nested helper function `is_prime(n)` which checks if a number `n` is prime.
+2. The outer loop iterates over `i` from 2 to 100. For each `i`, it checks if `i` is prime.
+3. If `i` is not prime, it skips to the next iteration using `continue`.
+4. The second loop iterates over `j` from 2 to 100. For each `j`, it checks if `j` is prime.
+5. If `j` is not prime, it skips to the next iteration using `continue`.
+6. The third loop iterates over `k` from 2 to 100. For each `k`, it checks if `k` is prime.
+7. If `k` is not prime, it skips to the next iteration using `continue`.
+8. Inside the innermost loop, it checks if the product of `i`, `j`, and `k` equals `a`.
+9. If the product equals `a`, the function returns `True`.
+10. If no such combination of `i`, `j`, and `k` is found after all iterations, the function returns `False`.
+
+For `a = 125`, the function will check combinations of prime numbers but will not find any combination of three primes that multiply to 125, as 125 is `5 * 5 * 5` and involves the same prime number repeated. Thus, the function should return `False`.

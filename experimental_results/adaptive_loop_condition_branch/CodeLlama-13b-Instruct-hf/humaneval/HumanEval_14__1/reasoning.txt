@@ -1,0 +1,25 @@
+The function `all_prefixes` is called with (string = '' ).
+Inside the function, a variable `result` is initialized to [].
+`len(string)` = 0 since there are no characters in ''.
+The loop iterates from 0 to -1 since `range(len(string))`= [0].
+
+First Iteration(i = 0):
+    string[:i + 1] = ''
+    result.append('')
+    result = ['']
+Second Iteration(i = 1):
+    string[:i + 1] = ''
+    result.append('')
+    result = ['', '']
+Third Iteration(i = 2):
+    string[:i + 1] = ''
+    result.append('')
+    result = ['', '', '']
+Forth Iteration(i = 3): 
+    string[:i + 1] = ''
+    result.append('')
+    result = ['', '', '', '']
+Fifth Iteration(i = 4): 
+    string[:i + 1] = ''
+    result.append('')
+    result = ['', '', '', '', '']

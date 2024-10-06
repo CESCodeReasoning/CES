@@ -1,0 +1,34 @@
+[REASONING]
+The function `correct_bracketing` is called with ( brackets = "<<><>>" ).
+Inside the function, a variable `depth` is initialized to 0.
+The loop iterates over each character in the string.
+First Iteration (b = "<"):
+   - The character is "<", so the depth is incremented to 1.
+Second Iteration (b = "<"):
+   - The character is "<", so the depth is incremented to 2.
+Third Iteration (b = ">"):
+   - The character is ">", so the depth is decremented to 1.
+Fourth Iteration (b = ">"):
+   - The character is ">", so the depth is decremented to 0.
+Fifth Iteration (b = ">"):
+   - The character is ">", so the depth is decremented to -1.
+   - The condition `depth < 0` is true, so the function returns False.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets: ## [STATE]brackets=["<<><>>"][/STATE]
+        if b == "<": ## [CONDITION](b == "<")=[True, True, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, N, N, N][/BRANCH]
+            depth += 1
+        else: ## [BRANCH]taken=[N, N, Y, Y, Y][/BRANCH]
+            depth -= 1
+        if depth < 0: ## [CONDITION](depth < 0)=[False, False, True][/CONDITION][BRANCH]taken=[N, N, Y][/BRANCH]
+            return False
+    return depth == 0
+[/ANSWER]
+
+[OUTPUT]
+False
+[/OUTPUT]

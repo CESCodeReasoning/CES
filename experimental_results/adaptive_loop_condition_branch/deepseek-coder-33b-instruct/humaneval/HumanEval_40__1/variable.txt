@@ -1,0 +1,5 @@
+from typing import *
+
+
+def triples_sum_to_zero(l: list):
+    for i in range(len(l)): ## [STATE]i=[0, 1, 2,

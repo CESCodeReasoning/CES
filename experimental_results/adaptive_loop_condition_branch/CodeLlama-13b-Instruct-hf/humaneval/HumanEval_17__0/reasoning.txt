@@ -1,0 +1,10 @@
+The function `parse_music` takes a string `music_string` as input and returns a list of integers.
+
+The function first defines a dictionary `note_map` that maps each character in the input string to a corresponding integer value. The dictionary maps the characters 'o', 'o|', and '.|' to the integers 4, 2, and 1, respectively.
+
+The function then splits the input string `music_string` into a list of individual characters using the `split` method with a space character as the delimiter.
+
+Next, the function filters out any empty strings from the list of characters using the `if x` condition. This is done because the `split` method may produce empty strings if there are multiple consecutive delimiters in the input string.
+
+Finally, the function returns a list of integers by mapping each character in the filtered list to its corresponding integer value using the `note_map` dictionary.
+

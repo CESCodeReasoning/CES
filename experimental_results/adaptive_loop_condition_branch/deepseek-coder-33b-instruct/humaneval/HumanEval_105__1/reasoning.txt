@@ -1,0 +1,5 @@
+The function `by_length` is called with an empty list.
+Inside the function, a dictionary `dic` is initialized with number-word pairs.
+The list `sorted_arr` is sorted in descending order.
+The loop iterates over the elements of `sorted_arr`. Since `sorted_arr` is empty, the loop does not execute.
+The function returns `new_arr`, which is an empty list.

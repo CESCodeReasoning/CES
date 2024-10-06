@@ -1,0 +1,10 @@
+The function `find_zero` is called with ( xs = [5, 3, -5] ).
+The function `poly` is used to evaluate the polynomial at a given point.
+The function `find_zero` uses a binary search to find the roots of the polynomial.
+The binary search starts by doubling the `begin` and `end` values until the polynomial changes sign at `begin` and `end`.
+Then, it enters a loop where it continuously bisects the interval until the width of the interval is less than 1e-10.
+Inside the loop, it calculates the midpoint of the interval and checks the sign of the polynomial at `begin` and `center`.
+If the product of the signs is positive, it means that the root is in the left half of the interval, so it updates `end` to `center`.
+Otherwise, it means that the root is in the right half of the interval, so it updates `begin` to `center`.
+The loop continues until the width of the interval is less than 1e-10.
+At the end of the loop, it returns the midpoint of the interval as the root of the polynomial.

@@ -1,0 +1,19 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def starts_one_ends(n):
+    if n == 1: return 1
+    return  9 * 10**(n-1)  - 8 * 9**(n-1) 
+```

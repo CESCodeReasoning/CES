@@ -1,0 +1,8 @@
+The function `parse_music` takes a string `music_string` as input and returns a list of integers representing the music notes.
+
+- The `note_map` dictionary maps note strings to their corresponding integer values.
+- The function splits the `music_string` by spaces and creates a list of notes.
+- It then filters out any empty strings and replaces each note with its corresponding integer value from the `note_map`.
+- Finally, it returns the list of integer values representing the music notes.
+
+Since the input string is empty, the function will return an empty list.

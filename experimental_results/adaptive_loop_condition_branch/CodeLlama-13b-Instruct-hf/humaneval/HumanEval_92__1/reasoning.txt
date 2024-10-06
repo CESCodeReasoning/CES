@@ -1,0 +1,9 @@
+The function `any_int` is called with ( x = 3, y = 4, z = 7 ).
+All three arguments are integers, which satisfies (isinstance(x, int) and isinstance(y, int) and isinstance(z, int)).
+The if branch is taken.
+The condition (x + y == z) is True, since (3 + 4 == 7).
+The condition (x + z == y) is False, since (3 + 7 != 4).
+The condition (y + z == x) is False, since (4 + 7 != 3).
+The or operator is used, so the first condition that is True is returned.
+
+Therefore, the final output of the function `any_int(3,4,7)` is True.

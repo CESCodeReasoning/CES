@@ -1,0 +1,6 @@
+The function `maximum` is called with ( arr = [-3, 2, 1, 2, -1, -2, 1], k = 1 ).
+The condition `k == 0` is false, therefore the if branch is not taken and the method proceeds to the next line.
+The array `arr` is sorted in ascending order.
+The last `k` elements of the sorted array are returned and stored in `ans`.
+
+Therefore, the final output of the function `maximum([-3, 2, 1, 2, -1, -2, 1], 1)` is [2].

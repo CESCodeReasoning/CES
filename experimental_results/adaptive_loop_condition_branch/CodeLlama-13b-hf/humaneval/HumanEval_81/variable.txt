@@ -1,0 +1,19 @@
+from typing import *
+def numerical_letter_grade(grades):
+
+   
+    letter_grade = []
+    for gpa in grades: ## [STATE]gpa=[4.0, 3.0, 1.7, 2.0, 3.5][/STATE][STATE]grades=[[4.0, 3, 1.7, 2, 3.5]][/STATE]
+        if gpa == 4.0: ## [CONDITION](gpa == 4.0)=[False, True, False, False, False][/CONDITION][BRANCH]taken=[N, Y, N, N, N][/BRANCH]
+            letter_grade.append("A+")
+        elif gpa > 3.7: ## [CONDITION](gpa > 3.7)=[False, True, True, True, True][/CONDITION][BRANCH]taken=[N, Y, Y, Y, Y][/BRANCH]
+            letter_grade.append("A")
+        elif gpa > 3.3: ## [CONDITION](gpa > 3.3)=[False, True, True, True, True][/CONDITION][BRANCH]taken=[N, Y, Y, Y, Y][/BRANCH]
+            letter_grade.append("A-")
+        elif gpa > 3.0: ## [CONDITION](gpa > 3.0)=[False, True, True, True, True][/CONDITION][BRANCH]taken=[N, Y, Y, Y, Y][/BRANCH]
+            letter_grade.append("B+")
+        elif gpa > 2.7: ## [CONDITION](gpa > 2.7)=[False, True, True, True, True][/CONDITION][BRANCH]taken=[N, Y, Y, Y, Y][/BRANCH]
+            letter_grade.append("B")
+        elif gpa > 2.3: ## [CONDITION](gpa > 2.3)=[False, True, True, True, True][/CONDITION][BRANCH]taken=[N, Y, Y, Y, Y][/BRANCH]
+            letter_grade.append("B-")
+        elif gpa > 2.0: ## [

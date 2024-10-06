@@ -1,0 +1,59 @@
+
+[REASONING]
+The function `is_prime` is called with ( n = 5 * 17 = 85 ).
+
+First Condition:
+    - The condition `n < 2` is false (since 85 >= 2).
+    - The `if` condition is not met, so the `else` block is executed.
+
+Iteration 1:
+    - `k` is 2, and `85 % 2` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 3.
+Iteration 2:
+    - `k` is 3, and `85 % 3` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 4.
+Iteration 3:
+    - `k` is 4, and `85 % 4` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 5.
+Iteration 4:
+    - `k` is 5, and `85 % 5` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 6.
+Iteration 5:
+    - `k` is 6, and `85 % 6` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 7.
+Iteration 6:
+    - `k` is 7, and `85 % 7` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 8.
+Iteration 7:
+    - `k` is 8, and `85 % 8` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 9.
+Iteration 8:
+    - `k` is 9, and `85 % 9` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 10.
+Iteration 9:
+    - `k` is 10, and `85 % 10` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 11.
+Iteration 10:
+    - `k` is 11, and `85 % 11` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 12.
+Iteration 11:
+    - `k` is 12, and `85 % 12` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 13.
+Iteration 12:
+    - `k` is 13, and `85 % 13` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 14.
+Iteration 13:
+    - `k` is 14, and `85 % 14` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 15.
+Iteration 14:
+    - `k` is 15, and `85 % 15` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 16.
+Iteration 15:
+    - `k` is 16, and `85 % 16` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 17.
+Iteration 16:
+    - `k` is 17, and `85 % 17` is not equal to 0.
+    - The `if` condition is not met, so `k` is incremented to 18.
+Iteration 17:
+    - `k` is 18, and `85 % 18` is not equal to 0.
+    - The `if` condition is not met, so `k` is

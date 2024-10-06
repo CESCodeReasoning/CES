@@ -1,0 +1,18 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: vowels_count
+main.py(3):     vowels = "aeiouAEIOU"
+main.py(4):     n_vowels = sum(c in vowels for c in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     n_vowels = sum(c in vowels for c in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     n_vowels = sum(c in vowels for c in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     n_vowels = sum(c in vowels for c in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     n_vowels = sum(c in vowels for c in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     n_vowels = sum(c in vowels for c in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(4):     n_vowels = sum(c in vowels for c in s)
+main.py(5):     if s[-1] == 'y' or s[-1] == 'Y':
+main.py(7):     return n_vowels

@@ -1,0 +1,9 @@
+The function `string_xor` is called with ( a = '111000', b = '101010' ).
+The function `xor` is defined inside `string_xor`. It takes two characters as input and returns '1' if they are not equal, and '0' if they are equal.
+The `zip` function is used to pair the characters from `a` and `b` together.
+The `join` function is used to concatenate the results of the `xor` function on each pair of characters.
+
+For the input '111000' and '101010', the pairs are ('1', '1'), ('1', '0'), ('1', '1'), ('0', '0'), ('0', '1'), ('0', '0').
+The `xor` function is called for each pair, resulting in '010010'.
+
+Therefore, the final output of the function `string_xor('111000', '101010')` is '010010'.

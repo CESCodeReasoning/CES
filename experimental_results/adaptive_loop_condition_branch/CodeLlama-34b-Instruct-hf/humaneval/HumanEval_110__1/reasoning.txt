@@ -1,0 +1,23 @@
+The function `exchange` is called with ( lst1 = [100, 200] ) and ( lst2 = [200, 200] ).
+Inside the function, two variables `odd` and `even` are initialized to 0.
+
+Iteration 1:
+    -The first element of `lst1` is 100, which is odd.
+    -The condition `i % 2 == 1` is true.
+    -Action: `odd += 1` results in `odd` being 1.
+Iteration 2:
+    -The second element of `lst1` is 200, which is even.
+    -The condition `i % 2 == 1` is false.
+    -Action: `odd += 1` is not executed.
+Iteration 3:
+    -The first element of `lst2` is 200, which is even.
+    -The condition `i % 2 == 0` is true.
+    -Action: `even += 1` results in `even` being 1.
+Iteration 4:
+    -The second element of `lst2` is 200, which is even.
+    -The condition `i % 2 == 0` is true.
+    -Action: `even += 1` results in `even` being 2.
+
+After the loops complete, the condition `even >= odd` is evaluated.
+Since `even` is 2 and `odd` is 1, the condition is true.
+The function returns "YES".

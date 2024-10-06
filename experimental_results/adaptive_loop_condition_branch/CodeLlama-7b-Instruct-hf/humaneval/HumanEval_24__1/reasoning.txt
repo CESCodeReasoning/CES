@@ -1,0 +1,129 @@
+The function `largest_divisor` is called with ( n = 100 ).
+Inside the function, a variable `i` is initialized to 0.
+The loop iterates from 99 through 0 (since ( n = 100 )).
+First Iteration (i = 99)
+   - `n % i` is 1, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Second Iteration (i = 98)
+   - `n % i` is 2, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Third Iteration (i = 97)
+   - `n % i` is 3, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Fourth Iteration (i = 96)
+   - `n % i` is 4, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Fifth Iteration (i = 95)
+   - `n % i` is 5, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Sixth Iteration (i = 94)
+   - `n % i` is 6, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Seventh Iteration (i = 93)
+   - `n % i` is 7, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Eighth Iteration (i = 92)
+   - `n % i` is 8, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Ninth Iteration (i = 91)
+   - `n % i` is 9, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Tenth Iteration (i = 90)
+   - `n % i` is 10, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Eleventh Iteration (i = 89)
+   - `n % i` is 11, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twelfth Iteration (i = 88)
+   - `n % i` is 12, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Thirteenth Iteration (i = 87)
+   - `n % i` is 13, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Fourteenth Iteration (i = 86)
+   - `n % i` is 14, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Fifteenth Iteration (i = 85)
+   - `n % i` is 15, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Sixteenth Iteration (i = 84)
+   - `n % i` is 16, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Seventeenth Iteration (i = 83)
+   - `n % i` is 17, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Eighteenth Iteration (i = 82)
+   - `n % i` is 18, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Nineteenth Iteration (i = 81)
+   - `n % i` is 19, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twentieth Iteration (i = 80)
+   - `n % i` is 20, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twenty-first Iteration (i = 79)
+   - `n % i` is 21, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twenty-second Iteration (i = 78)
+   - `n % i` is 22, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twenty-third Iteration (i = 77)
+   - `n % i` is 23, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twenty-fourth Iteration (i = 76)
+   - `n % i` is 24, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twenty-fifth Iteration (i = 75)
+   - `n % i` is 25, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twenty-sixth Iteration (i = 74)
+   - `n % i` is 26, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twenty-seventh Iteration (i = 73)
+   - `n % i` is 27, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twenty-eighth Iteration (i = 72)
+   - `n % i` is 28, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Twenty-ninth Iteration (i = 71)
+   - `n % i` is 29, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Thirtieth Iteration (i = 70)
+   - `n % i` is 30, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Thirty-first Iteration (i = 69)
+   - `n % i` is 31, which is not equal to 0.
+   - The condition `n % i == 0` is false.
+   - Action: The loop continues to the next iteration.
+Thirty-second Iteration (i = 68)
+   - `n % i

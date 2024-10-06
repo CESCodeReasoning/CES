@@ -1,0 +1,6 @@
+The function `next_smallest` takes a list of integers as input. The first step in the function is to convert the list to a set, which removes any duplicate values, and then sort the set in ascending order. This sorted list is stored back in the variable `lst`.
+Next, the function checks if the length of the sorted list `lst` is less than 2. If it is, the function returns `None` because there is no second smallest element in the list. If the length of `lst` is 2 or more, the function returns the second element in the sorted list, which is the second smallest unique number in the original list.
+For the input `[5, 1, 4, 3, 2]`, the steps are as follows:
+1. Convert the list to a set to remove duplicates: `{1, 2, 3, 4, 5}`
+2. Sort the set: `[1, 2, 3, 4, 5]`
+3. Check the length of the sorted list, which is 5. Since 5 is greater than 2, the function returns the second element of the list, which is `2`.

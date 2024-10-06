@@ -1,0 +1,55 @@
+The function `factorize` is called with ( n = 3 * 19 * 3 * 19 ).
+The variable `fact` is initialized to an empty list.
+The variable `i` is initialized to 2.
+The loop iterates from 2 through the square root of ( n + 1 ).
+First Iteration (i = 2):
+    - i <= int((math.sqrt(n) + 1)) when i=2
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 3.
+Second Iteration (i = 3):
+    - i <= int((math.sqrt(n) + 1)) when i=3
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 4.
+Third Iteration (i = 4):
+    - i <= int((math.sqrt(n) + 1)) when i=4
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 5.
+Fourth Iteration (i = 5):
+    - i <= int((math.sqrt(n) + 1)) when i=5
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 6.
+Fifth Iteration (i = 6):
+    - i <= int((math.sqrt(n) + 1)) when i=6
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 7.
+Sixth Iteration (i = 7):
+    - i <= int((math.sqrt(n) + 1)) when i=7
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 8.
+Seventh Iteration (i = 8):
+    - i <= int((math.sqrt(n) + 1)) when i=8
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 9.
+Eighth Iteration (i = 9):
+    - i <= int((math.sqrt(n) + 1)) when i=9
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 10.
+Ninth Iteration (i = 10):
+    - i <= int((math.sqrt(n) + 1)) when i=10
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 11.
+Tenth Iteration (i = 11):
+    - i <= int((math.sqrt(n) + 1)) when i=11
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 12.
+Eleventh Iteration (i = 12):
+    - i <= int((math.sqrt(n) + 1)) when i=12
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 13.
+Twelfth Iteration (i = 13):
+    - i <= int((math.sqrt(n) + 1)) when i=13
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 14.
+Thirteenth Iteration (i = 14):
+    - i <= int((math.sqrt(n) + 1)) when i=14
+    - The condition `n % i == 

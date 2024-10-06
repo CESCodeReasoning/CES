@@ -1,0 +1,15 @@
+from typing import *
+
+
+def words_in_sentence(sentence):
+    new_lst = []
+    for word in sentence.split(): ## [STATE]word='go', 'for', 'it'[/STATE][STATE]sentence.split()=['go', 'for', 'it'][/STATE]
+        flg = 0
+        if len(word) == 1: ## [CONDITION](len(word) == 1)=False, False, False[/CONDITION][BRANCH]taken=N, N, N[/BRANCH]
+            flg = 1
+        for i in range(2, len(word)): ## [STATE]i=2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3[/STATE][STATE]range(2, len(word))=[2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3]
+            if len(word) % i == 0: ## [CONDITION](len(word) % i == 0)=False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False[/CONDITION][BRANCH]taken=N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N[/BRANCH]
+                flg = 1
+        if flg == 0 or len(word) == 2: ## [CONDITION](flg == 0 or len(word) == 2)=True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True[/CONDITION][CONDITION](flg == 0)=True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False[/CONDITION][CONDITION](len(word) == 2)=False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False[/CONDITION][BRANCH]taken=Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y[/BRANCH]
+            new_lst.append(word)
+    return " ".join(new_lst)

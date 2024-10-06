@@ -1,0 +1,6 @@
+The function `compare_one` is called with ( a = 1, b = 2 ).
+Inside the function, `temp_a` and `temp_b` are initialized to `a` and `b`, respectively.
+The first `if` statement checks if `temp_a` is a string. Since `a` is an integer, this condition is false.
+The second `if` statement checks if `temp_b` is a string. Since `b` is an integer, this condition is false.
+The third `if` statement checks if the floating-point values of `temp_a` and `temp_b` are equal. Since `temp_a` and `temp_b` are both integers, this condition is false.
+The function returns `a` since `a` is greater than `b`.

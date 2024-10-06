@@ -1,0 +1,13 @@
+The function `factorize` is called with ( n = 2 ).
+Inside the function, a variable `fact` is initialized to an empty list.
+The loop iterates from 2 through 3 (since ( int(math.sqrt(n) + 1) = 3 )).
+First Iteration (i = 2):
+    - i <= 3 when i=2
+    - The condition `n % i == 0` is true. The first branch is taken.
+    - `fact.append(i)` appends 2 to the list `fact`.
+    - `n //= i` updates `n` to 1 ( 2 // 2 = 1 ).
+Second Iteration (i = 3)
+    - i <= 3 when i=3
+    - The condition `n % i == 0` is false. The first branch is not taken.
+    - The else branch is taken. `i += 1` updates `i` to 4 ( 3 + 1 = 4 ).
+After the loop completes, the function returns the value of `fact`, which is now [2].

@@ -1,0 +1,23 @@
+The function `below_zero` is called with the list of operations `[1, 2, -3, 1, 2, -3]`.
+Inside the function, a variable `balance` is initialized to 0.
+
+Iteration 1:
+    - The operation is `1`. The balance becomes `0 + 1 = 1`.
+    - The balance is not less than 0, so the loop continues.
+Iteration 2:
+    - The operation is `2`. The balance becomes `1 + 2 = 3`.
+    - The balance is not less than 0, so the loop continues.
+Iteration 3:
+    - The operation is `-3`. The balance becomes `3 - 3 = 0`.
+    - The balance is not less than 0, so the loop continues.
+Iteration 4:
+    - The operation is `1`. The balance becomes `0 + 1 = 1`.
+    - The balance is not less than 0, so the loop continues.
+Iteration 5:
+    - The operation is `2`. The balance becomes `1 + 2 = 3`.
+    - The balance is not less than 0, so the loop continues.
+Iteration 6:
+    - The operation is `-3`. The balance becomes `3 - 3 = 0`.
+    - The balance is not less than 0, so the loop continues.
+
+After all operations are processed, the balance never went below zero. Therefore, the function returns `False`.

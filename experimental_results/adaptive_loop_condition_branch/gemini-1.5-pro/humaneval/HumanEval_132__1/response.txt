@@ -1,0 +1,71 @@
+[REASONING]
+The function `is_nested` is called with ( string = '[[[[]]]]' ).
+Inside the function, two lists `opening_bracket_index` and `closing_bracket_index` are initialized to store the indices of opening and closing brackets, respectively.
+
+Iteration 1:
+    - The character at index 0 is '[', which is an opening bracket. So, `opening_bracket_index` becomes [0].
+
+Iteration 2:
+    - The character at index 1 is '[', which is an opening bracket. So, `opening_bracket_index` becomes [0, 1].
+
+Iteration 3:
+    - The character at index 2 is '[', which is an opening bracket. So, `opening_bracket_index` becomes [0, 1, 2].
+
+Iteration 4:
+    - The character at index 3 is '[', which is an opening bracket. So, `opening_bracket_index` becomes [0, 1, 2, 3].
+
+Iteration 5:
+    - The character at index 4 is ']', which is a closing bracket. So, `closing_bracket_index` becomes [4].
+
+Iteration 6:
+    - The character at index 5 is ']', which is a closing bracket. So, `closing_bracket_index` becomes [4, 5].
+
+Iteration 7:
+    - The character at index 6 is ']', which is a closing bracket. So, `closing_bracket_index` becomes [4, 5, 6].
+
+Iteration 8:
+    - The character at index 7 is ']', which is a closing bracket. So, `closing_bracket_index` becomes [4, 5, 6, 7].
+
+Now, `closing_bracket_index` is reversed to [7, 6, 5, 4].
+
+Iteration 1:
+    - The first opening bracket index is 0. The first closing bracket index is 7. Since 0 < 7, `cnt` is incremented to 1.
+
+Iteration 2:
+    - The second opening bracket index is 1. The second closing bracket index is 6. Since 1 < 6, `cnt` is incremented to 2.
+
+Iteration 3:
+    - The third opening bracket index is 2. The third closing bracket index is 5. Since 2 < 5, `cnt` is incremented to 3.
+
+Iteration 4:
+    - The fourth opening bracket index is 3. The fourth closing bracket index is 4. Since 3 is not less than 4, `cnt` is not incremented.
+
+Therefore, `cnt` is 3, which is greater than or equal to 2. So, the function returns True.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def is_nested(string):
+    opening_bracket_index = []
+    closing_bracket_index = []
+    for i in range(len(string)): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6, 7][/STATE][STATE]range(len(string))=[0, 1, 2, 3, 4, 5, 6, 7][/STATE][STATE]len(string)=[8][/STATE]
+        if string[i] == '[': ## [CONDITION](string[i] == '[')=[True, True, True, True, False, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, N, N, N, N][/BRANCH]
+            opening_bracket_index.append(i)
+        else: ## [BRANCH]taken=[N, N, N, N, Y, Y, Y, Y][/BRANCH]
+            closing_bracket_index.append(i)
+    closing_bracket_index.reverse()
+    cnt = 0
+    i = 0
+    l = len(closing_bracket_index)
+    for idx in opening_bracket_index: ## [STATE]idx=[0, 1, 2, 3][/STATE][STATE]opening_bracket_index=[0, 1, 2, 3][/STATE]
+        if i < l and idx < closing_bracket_index[i]: ## [CONDITION](i < l and idx < closing_bracket_index[i])=[True, True, True, False][/CONDITION][CONDITION](i < l)=[True, True, True, True][/CONDITION][CONDITION](idx < closing_bracket_index[i])=[True, True, True, False][/CONDITION][BRANCH]taken=[Y, Y, Y, N][/BRANCH]
+            cnt += 1
+            i += 1
+    return cnt >= 2
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]

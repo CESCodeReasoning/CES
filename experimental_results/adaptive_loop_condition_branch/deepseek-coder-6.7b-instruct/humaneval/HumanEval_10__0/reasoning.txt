@@ -1,0 +1,6 @@
+The function `is_palindrome` is called with ( string = 'xyx' ).
+The condition `not string` is False, so the if branch is not taken.
+The while loop checks if the string is a palindrome.
+The condition `not is_palindrome(string[beginning_of_suffix:])` is initially False because 'xyx' is a palindrome.
+The loop does not execute because the condition is False.
+The function returns the string itself plus the reversed prefix of the string.

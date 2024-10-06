@@ -1,0 +1,34 @@
+from typing import *
+
+
+def numerical_letter_grade(grades):
+
+    letter_grade = []
+    for gpa in grades: ## [STATE]gpa=[1.2][/STATE][STATE]grades=[[1.2]][/STATE]
+        if gpa == 4.0: ## [CONDITION](gpa == 4.0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("A+")
+        elif gpa > 3.7: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("A")
+        elif gpa > 3.3: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("A-")
+        elif gpa > 3.0: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("B+")
+        elif gpa > 2.7: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("B")
+        elif gpa > 2.3: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("B-")
+        elif gpa > 2.0: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("C+")
+        elif gpa > 1.7: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("C")
+        elif gpa > 1.3: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("C-")
+        elif gpa > 1.0: ## [BRANCH]taken=[Y][/BRANCH]
+            letter_grade.append("D+")
+        elif gpa > 0.7: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("D")
+        elif gpa > 0.0: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("D-")
+        else: ## [BRANCH]taken=[N][/BRANCH]
+            letter_grade.append("E")
+    return letter_grade

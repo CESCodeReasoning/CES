@@ -1,0 +1,34 @@
+[REASONING]
+The function get_row takes a list of lists lst and an element x as input, and returns a list of the coordinates of all occurrences of x in lst, sorted first by column (in descending order) and then by row.
+
+To determine the output of executing the function get_row on the input [[1]], 2, we need to find all occurrences of 2 in [[1]] and sort them first by column (in descending order) and then by row.
+
+There are no occurrences of 2 in [[1]], so the output of executing the function get_row on the input [[1]], 2 is an empty list.
+[/REASONING]
+
+[ANSWER]
+def get_row(lst, x):
+    coords = [(i, j) for i in range(len(lst))
+              for j in range(len(lst[i])) if lst[i][j] == x]
+    return sorted(
+        sorted(
+            coords,
+            key=lambda x: x[1],
+            reverse=True),
+        key=lambda x: x[0])
+
+# lst = [[1]]
+# x = 2
+# coords = [(i, j) for i in range(len(lst)) for j in range(len(lst[i])) if lst[i][j] == x]
+# [STATE]coords = [][/STATE]
+# return sorted(
+#     sorted(
+#         coords,
+#         key=lambda x: x[1],
+#         reverse=True),
+#     key=lambda x: x[0])
+[/ANSWER]
+
+[OUTPUT]
+[]
+[/OUTPUT]

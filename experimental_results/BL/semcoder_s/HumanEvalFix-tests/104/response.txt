@@ -1,0 +1,127 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def unique_digits(x):
+    odd_digit_elements = []
+    for j, i in enumerate(x):
+        if all (int(c) % 2 == 1 for c in str(i)):
+            odd_digit_elements.append(i)
+            odd_digit_elements.append(j)
+    return sorted(odd_digit_elements)
+
+Tests:
+def check(unique_digits):
+
+    # Check some simple cases
+    assert unique_digits([15, 33, 1422, 1]) == [1, 15, 33]
+    assert unique_digits([152, 323, 1422, 10]) == []
+    assert unique_digits([12345, 2033, 111, 151]) == [111, 151]
+    assert unique_digits([135, 103, 31]) == [31, 135]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True
+
+check(unique_digits)
+
+The code should satisfy the following natural language specification:
+Write a Python function `unique_digits(x)` to solve the following problem:
+Given a list of positive integers x. return a sorted list of all
+elements that hasn't any even digit.
+Note: Returned list should be sorted in increasing order.
+For example:
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+            odd_digit_elements.append(i)
+            odd_digit_elements.append(j)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def count_odd_numbers(numbers):
+    count = 0
+    for num in numbers:
+        if num % 2 != 0:
+            count += 1
+    return count
+
+Tests:
+def check(count_odd_numbers):
+    assert count_odd_numbers([1, 2, 3, 4, 5, 6]) == 3
+    assert count_odd_numbers([2, 4, 6, 8, 10]) == 0
+    assert count_odd_numbers([1, 3, 5, 7, 9]) == 5
+    assert count_odd_numbers([2, 4, 6, 8, 10, 1, 3, 5, 7, 9]) == 5
+    assert count_odd_numbers([11, 22, 33, 44, 55]) == 5
+
+check(count_odd_numbers)
+
+The code should satisfy the following natural language specification:
+Write a Python function `count_odd_numbers(numbers)` to solve the following problem:
+Count the number of odd numbers in the given list of numbers.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+        if num % 2 != 0:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def find_max_sum(numbers):
+    max_sum = float('-inf')
+    current_sum = 0
+    for num in numbers:
+        current_sum += num
+        if current_sum > max_sum:
+            max_sum = current_sum
+        elif current_sum < 0:
+            current_sum = 0
+    return max_sum
+
+Tests:
+def check(find_max_sum):
+    assert find_max_sum([

@@ -1,0 +1,22 @@
+[REASONING]
+The function `parse_music` takes a string `music_string` as input, which represents musical notes separated by spaces. The function uses a dictionary `note_map` to map string representations of musical notes to their corresponding integer values. The function splits the input string by spaces to get individual note representations, filters out any empty strings, and then maps each note representation to its corresponding integer value using the `note_map` dictionary. The result is a list of integers representing the musical notes.
+
+To determine the output of executing the function `parse_music` on the input 'o| .| o| .| o o| o o|', we follow these steps:
+1. Split the input string by spaces, resulting in the list: ['o|', '.|', 'o|', '.|', 'o', 'o|', 'o', 'o|'].
+2. Filter out any empty strings (none in this case).
+3. Map each note representation to its corresponding integer value using `note_map`, resulting in the list: [2, 1, 2, 1, 4, 2, 4, 2].
+
+Therefore, the output of executing the function `parse_music` on the input 'o| .| o| .| o o| o o|' is [2, 1, 2, 1, 4, 2, 4, 2].
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def parse_music(music_string: str) -> List[int]:
+    note_map = {'o': 4, 'o|': 2, '.|': 1}  # [STATE] note_map = {'o': 4, 'o|': 2, '.|': 1} [/STATE]
+    return [note_map[x] for x in music_string.split(' ') if x]  # [STATE] music_string.split(' ') = ['o|', '.|', 'o|', '.|', 'o', 'o|', 'o', 'o|'] [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+[2, 1, 2, 1, 4, 2, 4, 2]
+[/OUTPUT]

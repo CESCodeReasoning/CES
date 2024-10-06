@@ -1,0 +1,13 @@
+The function `odd_count` is called with (lst = ['1234567'] ).
+Inside the function, a variable `res` is initialized to [].
+The loop iterates from 0 to 0 since `range(len(lst))`= [0].
+First Iteration(i = 0):
+    arr = '1234567'
+    n = sum(int(d)%2==1 for d in arr)
+    res.append("the number of odd elements " + str(n) + "n the str"+ str(n) +"ng "+ str(n) +" of the "+ str(n) +"nput.")
+    res = ['the number of odd elements 4n the str4ng 4 of the 4nput.']
+Second Iteration(i = 1):
+    arr = '1234567'
+    n = sum(int(d)%2==1 for d in arr)
+    res.append("the number of odd elements " + str(n) + "n the str"+ str(n) +"ng "+ str(n) +" of the "+ str(n) +"nput.")
+    res = ['the number of odd elements 4n the str4ng 4 of the 4nput.', 'the number of odd elements 4n the str4ng 4 of the 4nput.']

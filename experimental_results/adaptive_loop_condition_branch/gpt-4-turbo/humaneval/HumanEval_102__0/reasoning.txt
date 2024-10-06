@@ -1,0 +1,5 @@
+The function `choose_num` is called with parameters (x = 13, y = 12).
+1. The first condition checks if `x > y`. Since 13 is greater than 12, this condition is true.
+2. As the condition is true, the function immediately returns -1 without checking the other conditions.
+
+Therefore, the final output of the function `choose_num(13, 12)` is -1.

@@ -1,0 +1,11 @@
+The function `encrypt` is called with ( s = 'hi' ).
+Inside the function, a variable `d` is initialized to 'abcdefghijklmnopqrstuvwxyz'.
+The loop iterates through each character in `s`.
+First Iteration (c = 'h'):
+   - `c` is 'h', which is in `d`.
+   - The condition `c in d` is true.
+   - Action: `out` is updated with the character at index `d.index(c)+2*2` modulo 26, which is 'j'.
+Second Iteration (c = 'i'):
+   - `c` is 'i', which is also in `d`.
+   - The same condition is true.
+   - Action: `out` is updated with the character at index `d.index(c)+2*2` modulo 26, which is 'j'.

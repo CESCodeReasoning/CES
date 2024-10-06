@@ -1,0 +1,23 @@
+The function `solve` is called with ( s = "#a@C" ).
+Inside the function, a variable `flg` and `idx` are initialized to 0.
+Inside the function, a variable `new_str` is initialized to a list of characters in `s`.
+
+Iteration 1:
+    - The character '#' is not a letter, so `flg` remains 0.
+    - `idx` becomes 1.
+Iteration 2:
+    - The character 'a' is a letter, so `flg` becomes 1.
+    - `new_str[1]` becomes 'A'.
+    - `idx` becomes 2.
+Iteration 3:
+    - The character '@' is not a letter, so `flg` remains 1.
+    - `idx` becomes 3.
+Iteration 4:
+    - The character 'C' is a letter, so `flg` becomes 2.
+    - `new_str[3]` becomes 'c'.
+    - `idx` becomes 4.
+Iteration 5:
+    - The character '!' is not a letter, so `flg` remains 2.
+    - `idx` becomes 5.
+
+Since `flg` is 2, the function returns `s[len(s)::-1]`, which is "!C@a#".

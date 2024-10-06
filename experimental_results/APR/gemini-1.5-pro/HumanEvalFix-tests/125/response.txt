@@ -1,0 +1,21 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+
+    return False
+```
+
+
+```python
+def split_words(txt):
+    if " " in txt:
+        return txt.split()
+    elif "," in txt:
+        return txt.split(",")
+    else:
+        return sum([1 for i in txt if i.islower() and ord(i)%2 == 1])
+```

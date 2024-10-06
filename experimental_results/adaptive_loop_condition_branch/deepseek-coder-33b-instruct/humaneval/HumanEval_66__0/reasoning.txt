@@ -1,0 +1,7 @@
+The function `digitSum` is called with ( s = "abcCd" ).
+`s` is "abcCd", which does not equal to "".
+The condition `s == ""` is false, therefore the else branch is taken.
+The function returns the sum of the ASCII values of the uppercase characters in the string.
+In this case, the only uppercase character is 'C', whose ASCII value is 67.
+
+Therefore, the final output of the function `digitSum("abcCd")` is 67.

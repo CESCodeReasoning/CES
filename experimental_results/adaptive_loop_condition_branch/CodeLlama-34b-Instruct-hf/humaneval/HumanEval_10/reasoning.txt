@@ -1,0 +1,22 @@
+The function `is_palindrome` is called with (string = 'jerry').
+Inside the function, a variable `beginning_of_suffix` is initialized to 0.
+The loop iterates until the condition `not is_palindrome(string[beginning_of_suffix:])` is satisfied.
+First Iteration (beginning_of_suffix = 0):
+    - `not is_palindrome(string[beginning_of_suffix:])` is `not is_palindrome('jerry')` which is `False`.
+    - The loop continues.
+Second Iteration (beginning_of_suffix = 1):
+    - `not is_palindrome(string[beginning_of_suffix:])` is `not is_palindrome('erry')` which is `False`.
+    - The loop continues.
+Third Iteration (beginning_of_suffix = 2):
+    - `not is_palindrome(string[beginning_of_suffix:])` is `not is_palindrome('rry')` which is `False`.
+    - The loop continues.
+Fourth Iteration (beginning_of_suffix = 3):
+    - `not is_palindrome(string[beginning_of_suffix:])` is `not is_palindrome('ry')` which is `False`.
+    - The loop continues.
+Fifth Iteration (beginning_of_suffix = 4):
+    - `not is_palindrome(string[beginning_of_suffix:])` is `not is_palindrome('y')` which is `False`.
+    - The loop continues.
+Sixth Iteration (beginning_of_suffix = 5):
+    - `not is_palindrome(string[beginning_of_suffix:])` is `not is_palindrome('')` which is `True`.
+    - The loop exits.
+After the loop exits, the function returns `string + string[:beginning_of_suffix][::-1]` which is `'jerry' + 'yrej'[::-1]` which is `'jerryyrej'`.

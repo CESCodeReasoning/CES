@@ -1,0 +1,13 @@
+The function `skjkasdkd` is called with ( lst = [127, 97, 8192] ).
+Inside the function, a variable `maxx` is initialized to 0 and `i` to 0.
+The loop iterates over the elements of the list `lst`.
+First Iteration (i = 0):
+    - The element at index 0 is 127.
+    - 127 is greater than 0 and a prime number, so `maxx` is updated to 127.
+Second Iteration (i = 1):
+    - The element at index 1 is 97.
+    - 97 is greater than 127 (which is now `maxx`) and a prime number, so `maxx` is updated to 97.
+Third Iteration (i = 2):
+    - The element at index 2 is 8192.
+    - 8192 is not greater than 97 (which is now `maxx`) and not a prime number, so `maxx` remains 97.
+After the loop completes, the function calculates the sum of digits of `maxx` (97) and returns it.

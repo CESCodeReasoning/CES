@@ -1,0 +1,50 @@
+The function `fix_spaces` is called with the input string "Exa   mple".
+The function initializes `new_text` as an empty string, and both `start` and `end` are set to 0. The variable `i` is used to iterate through the string.
+
+First Iteration (i = 0):
+- The character at index 0 is 'E', which is not a space. The else branch is taken.
+- Since `end - start` is 0, the character 'E' is added directly to `new_text`.
+- `start` and `end` are updated to 1.
+
+Second Iteration (i = 1):
+- The character at index 1 is 'x', which is not a space. The else branch is taken.
+- Since `end - start` is 0, the character 'x' is added directly to `new_text`.
+- `start` and `end` are updated to 2.
+
+Third Iteration (i = 2):
+- The character at index 2 is 'a', which is not a space. The else branch is taken.
+- Since `end - start` is 0, the character 'a' is added directly to `new_text`.
+- `start` and `end` are updated to 3.
+
+Fourth Iteration (i = 3):
+- The character at index 3 is a space. The if branch is taken, and `end` is incremented to 4.
+
+Fifth Iteration (i = 4):
+- The character at index 4 is a space. The if branch is taken, and `end` is incremented to 5.
+
+Sixth Iteration (i = 5):
+- The character at index 5 is a space. The if branch is taken, and `end` is incremented to 6.
+
+Seventh Iteration (i = 6):
+- The character at index 6 is 'm', which is not a space. The else branch is taken.
+- Since `end - start` is 3 (6 - 3), a dash '-' is added followed by 'm' to `new_text`.
+- `start` and `end` are updated to 7.
+
+Eighth Iteration (i = 7):
+- The character at index 7 is 'p', which is not a space. The else branch is taken.
+- Since `end - start` is 0, the character 'p' is added directly to `new_text`.
+- `start` and `end` are updated to 8.
+
+Ninth Iteration (i = 8):
+- The character at index 8 is 'l', which is not a space. The else branch is taken.
+- Since `end - start` is 0, the character 'l' is added directly to `new_text`.
+- `start` and `end` are updated to 9.
+
+Tenth Iteration (i = 9):
+- The character at index 9 is 'e', which is not a space. The else branch is taken.
+- Since `end - start` is 0, the character 'e' is added directly to `new_text`.
+- `start` and `end` are updated to 10.
+
+After the loop, since `end - start` is 0, no additional characters are added to `new_text`.
+
+The function returns the value of `new_text`, which is now "Exa-mple".

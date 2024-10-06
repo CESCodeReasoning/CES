@@ -1,0 +1,129 @@
+The function `is_prime` is called with ( n = 5 * 17 ).
+Inside the function, the condition `n < 2` is false.
+The loop iterates from 2 through 5 * 17 - 1 (since `n` is 5 * 17).
+First Iteration (k = 2)
+   - `n` is 85, which is not divisible by 2.
+   - The condition `n % k == 0` is false.
+Second Iteration (k = 3)
+   - `n` is 85, which is not divisible by 3.
+   - The condition `n % k == 0` is false.
+Third Iteration (k = 4)
+   - `n` is 85, which is not divisible by 4.
+   - The condition `n % k == 0` is false.
+Fourth Iteration (k = 5)
+   - `n` is 85, which is not divisible by 5.
+   - The condition `n % k == 0` is false.
+Fifth Iteration (k = 6)
+   - `n` is 85, which is not divisible by 6.
+   - The condition `n % k == 0` is false.
+Sixth Iteration (k = 7)
+   - `n` is 85, which is not divisible by 7.
+   - The condition `n % k == 0` is false.
+Seventh Iteration (k = 8)
+   - `n` is 85, which is not divisible by 8.
+   - The condition `n % k == 0` is false.
+Eighth Iteration (k = 9)
+   - `n` is 85, which is not divisible by 9.
+   - The condition `n % k == 0` is false.
+Ninth Iteration (k = 10)
+   - `n` is 85, which is not divisible by 10.
+   - The condition `n % k == 0` is false.
+Tenth Iteration (k = 11)
+   - `n` is 85, which is not divisible by 11.
+   - The condition `n % k == 0` is false.
+Eleventh Iteration (k = 12)
+   - `n` is 85, which is not divisible by 12.
+   - The condition `n % k == 0` is false.
+Twelfth Iteration (k = 13)
+   - `n` is 85, which is not divisible by 13.
+   - The condition `n % k == 0` is false.
+Thirteenth Iteration (k = 14)
+   - `n` is 85, which is not divisible by 14.
+   - The condition `n % k == 0` is false.
+Fourteenth Iteration (k = 15)
+   - `n` is 85, which is not divisible by 15.
+   - The condition `n % k == 0` is false.
+Fifteenth Iteration (k = 16)
+   - `n` is 85, which is not divisible by 16.
+   - The condition `n % k == 0` is false.
+Sixteenth Iteration (k = 17)
+   - `n` is 85, which is not divisible by 17.
+   - The condition `n % k == 0` is false.
+Seventeenth Iteration (k = 18)
+   - `n` is 85, which is not divisible by 18.
+   - The condition `n % k == 0` is false.
+Eighteenth Iteration (k = 19)
+   - `n` is 85, which is not divisible by 19.
+   - The condition `n % k == 0` is false.
+Nineteenth Iteration (k = 20)
+   - `n` is 85, which is not divisible by 20.
+   - The condition `n % k == 0` is false.
+Twentieth Iteration (k = 21)
+   - `n` is 85, which is not divisible by 21.
+   - The condition `n % k == 0` is false.
+Twenty-first Iteration (k = 22)
+   - `n` is 85, which is not divisible by 22.
+   - The condition `n % k == 0` is false.
+Twenty-second Iteration (k = 23)
+   - `n` is 85, which is not divisible by 23.
+   - The condition `n % k == 0` is false.
+Twenty-third Iteration (k = 24)
+   - `n` is 85, which is not divisible by 24.
+   - The condition `n % k == 0` is false.
+Twenty-fourth Iteration (k = 25)
+   - `n` is 85, which is not divisible by 25.
+   - The condition `n % k == 0` is false.
+Twenty-fifth Iteration (k = 26)
+   - `n` is 85, which is not divisible by 26.
+   - The condition `n % k == 0` is false.
+Twenty-sixth Iteration (k = 27)
+   - `n` is 85, which is not divisible by 27.
+   - The condition `n % k == 0` is false.
+Twenty-seventh Iteration (k = 28)
+   - `n` is 85, which is not divisible by 28.
+   - The condition `n % k == 0` is false.
+Twenty-eighth Iteration (k = 29)
+   - `n` is 85, which is not divisible by 29.
+   - The condition `n % k == 0` is false.
+Twenty-ninth Iteration (k = 30)
+   - `n` is 85, which is not divisible by 30.
+   - The condition `n % k == 0` is false.
+Thirtieth Iteration (k = 31)
+   - `n` is 85, which is not divisible by 31.
+   - The condition `n % k == 0` is false.
+Thirty-first Iteration (k = 32)
+   - `n` is 85, which is not divisible by 32.
+   - The condition `n % k == 0` is false.
+Thirty-second Iteration (k = 33)
+   - `n` is 85, which is not divisible by 33.
+   - The condition `n % k == 0` is false.
+Thirty-third Iteration (k = 34)
+   - `n` is 85, which is not divisible by 34.
+   - The condition `n % k == 0` is false.
+Thirty-fourth Iteration (k = 35)
+   - `n` is 85, which is not divisible by 35.
+   - The condition `n % k == 0` is false.
+Thirty-fifth Iteration (k = 36)
+   - `n` is 85, which is not divisible by 36.
+   - The condition `n % k == 0` is false.
+Thirty-sixth Iteration (k = 37)
+   - `n` is 85, which is not divisible by 37.
+   - The condition `n % k == 0` is false.
+Thirty-seventh Iteration (k = 38)
+   - `n` is 85, which is not divisible by 38.
+   - The condition `n % k == 0` is false.
+Thirty-eighth Iteration (k = 39)
+   - `n` is 85, which is not divisible by 39.
+   - The condition `n % k == 0` is false.
+Thirty-ninth Iteration (k = 40)
+   - `n` is 85, which is not divisible by 40.
+   - The condition `n % k == 0` is false.
+Fortieth Iteration (k = 41)
+   - `n` is 85, which is not divisible by 41.
+   - The condition `n % k == 0` is false.
+Forty-first Iteration (k = 42)
+   - `n` is 85, which is not divisible by 42.
+   - The condition `n % k == 0` is false.
+Forty-second Iteration (k = 43)
+   - `n` is 85, which is not divisible by 43.
+   - The condition

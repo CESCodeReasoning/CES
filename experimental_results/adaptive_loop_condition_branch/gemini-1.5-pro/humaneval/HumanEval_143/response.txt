@@ -1,0 +1,50 @@
+[REASONING]
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The function splits the sentence into a list of words.
+For each word in the list, the function checks if the length of the word is 1.
+If the length of the word is 1, the function sets a flag to 1.
+The function then checks if the length of the word is divisible by any number between 2 and the length of the word.
+If the length of the word is divisible by any number between 2 and the length of the word, the function sets the flag to 1.
+If the flag is 0 or the length of the word is 2, the function adds the word to a new list.
+The function then returns the new list joined by a space.
+First Iteration (word="This"):
+    - `word` is "This", the length of the word is 4.
+    - The condition `len(word) == 1` is False, the if branch is not taken.
+    - The condition `len(word)%i == 0` is False for i=2 and i=3, the if branch is not taken.
+    - The condition `flg == 0 or len(word) == 2` is False, the if branch is not taken.
+Second Iteration (word="is"):
+    - `word` is "is", the length of the word is 2.
+    - The condition `len(word) == 1` is False, the if branch is not taken.
+    - The condition `len(word)%i == 0` is not checked because the outer loop starts from i=2.
+    - The condition `flg == 0 or len(word) == 2` is True, the if branch is taken. Append "is" to new_lst.
+Third Iteration (word="a"):
+    - `word` is "a", the length of the word is 1.
+    - The condition `len(word) == 1` is True, the if branch is taken. Set flg to 1.
+    - The condition `len(word)%i == 0` is not checked because the outer loop starts from i=2.
+    - The condition `flg == 0 or len(word) == 2` is False, the if branch is not taken.
+Fourth Iteration (word="test"):
+    - `word` is "test", the length of the word is 4.
+    - The condition `len(word) == 1` is False, the if branch is not taken.
+    - The condition `len(word)%i == 0` is True for i=2, the if branch is taken. Set flg to 1.
+    - The condition `flg == 0 or len(word) == 2` is False, the if branch is not taken.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def words_in_sentence(sentence):
+    new_lst = [] ## [STATE]word=??[/STATE]
+    for word in sentence.split(): ## [STATE]sentence.split()=??[/STATE]
+        flg = 0
+        if len(word) == 1: ## [CONDITION](len(word) == 1)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            flg = 1 ## [STATE]i=??[/STATE]
+        for i in range(2, len(word)): ## [STATE]range(2, len(word))=??[/STATE][STATE]len(word)=??[/STATE]
+            if len(word)%i == 0: ## [CONDITION](len(word)%i == 0)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                flg = 1
+        if flg == 0 or len(word) == 2: ## [CONDITION](flg == 0 or len(word) == 2)=??[/CONDITION][CONDITION](flg == 0)=??[/CONDITION][CONDITION](len(word) == 2)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            new_lst.append(word)
+    return " ".join(new_lst)
+[/ANSWER]
+
+[OUTPUT]
+is
+[/OUTPUT]

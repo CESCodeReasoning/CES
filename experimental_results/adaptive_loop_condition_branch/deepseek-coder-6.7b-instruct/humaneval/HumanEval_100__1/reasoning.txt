@@ -1,0 +1,16 @@
+The function make_a_pile takes an integer n as input and returns a list of integers. The list is created by using a list comprehension, which is a compact way of creating a list.
+
+The list comprehension generates the numbers 0 through n-1 (inclusive) and for each number i, it adds n + 2 * i to the list. This is done by the expression n + 2 * i.
+
+To determine the output of executing the function make_a_pile on the input 6, we need to generate a list of numbers where each number is 6 plus twice its index.
+
+Therefore, the output of executing the function make_a_pile on the input 6 is [6, 8, 10, 12, 14, 16].
+
+The list [6, 8, 10, 12, 14, 16] is created by adding 6 to 0, 8 to 1, 10 to 2, 12 to 3, 14 to 4, and 16 to 5.
+
+So, the function make_a_pile(6) returns the list [6, 8, 10, 12, 14, 16].
+
+The output of the function make_a_pile(6) is [6, 8, 10, 12, 14, 16].
+
+Therefore, the output of the function make_a_pile(6) is [6, 8, 10, 12, 14, 16].
+

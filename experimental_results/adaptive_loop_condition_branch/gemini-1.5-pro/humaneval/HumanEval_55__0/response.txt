@@ -1,0 +1,48 @@
+[REASONING]
+The function `fib` is called with ( n = 12 ).
+The first condition ( n == 0 ) is false, so the first branch is not taken.
+The second condition ( n == 1 ) is also false, so the second branch is not taken.
+Therefore, the function proceeds to the recursive case.
+The function calls itself with ( n = 11 ) and ( n = 10 ).
+The function calls itself with ( n = 10 ) and ( n = 9 ).
+The function calls itself with ( n = 9 ) and ( n = 8 ).
+The function calls itself with ( n = 8 ) and ( n = 7 ).
+The function calls itself with ( n = 7 ) and ( n = 6 ).
+The function calls itself with ( n = 6 ) and ( n = 5 ).
+The function calls itself with ( n = 5 ) and ( n = 4 ).
+The function calls itself with ( n = 4 ) and ( n = 3 ).
+The function calls itself with ( n = 3 ) and ( n = 2 ).
+The function calls itself with ( n = 2 ) and ( n = 1 ).
+The function calls itself with ( n = 1 ) and ( n = 0 ).
+The function reaches the base case ( n == 0 ) and returns 0.
+The function returns 1 for the base case ( n == 1 ).
+The function returns 1 for the call with ( n = 1 ).
+The function returns 2 for the call with ( n = 2 ).
+The function returns 3 for the call with ( n = 3 ).
+The function returns 5 for the call with ( n = 4 ).
+The function returns 8 for the call with ( n = 5 ).
+The function returns 13 for the call with ( n = 6 ).
+The function returns 21 for the call with ( n = 7 ).
+The function returns 34 for the call with ( n = 8 ).
+The function returns 55 for the call with ( n = 9 ).
+The function returns 89 for the call with ( n = 10 ).
+The function returns 144 for the call with ( n = 11 ).
+The function returns 233 for the call with ( n = 12 ).
+Therefore, the final output of the function `fib(12)` is 233.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def fib(n: int):
+    if n == 0: ## [CONDITION](n == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 0
+    if n == 1: ## [CONDITION](n == 1)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return 1
+    return fib(n - 1) + fib(n - 2)
+[/ANSWER]
+
+[OUTPUT]
+233
+[/OUTPUT]

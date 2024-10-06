@@ -1,0 +1,8 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: simplify
+main.py(3):     a, b = x.split("/")
+main.py(4):     c, d = n.split("/")
+main.py(5):     numerator = int(a) * int(c)
+main.py(6):     denom = int(b) * int(d)
+main.py(7):     if (numerator/denom == int(numerator/denom)):
+main.py(8):         return True

@@ -1,0 +1,13 @@
+The function `move_one_ball` is called with ( arr = [4, 3, 1, 2] ).
+
+Initial Conditions:
+- The initial array `arr` is [4, 3, 1, 2].
+- The sorted array `sorted_array` is [1, 2, 3, 4].
+- The minimum value in `arr` is 1, and its index is 2.
+- The new array `my_arr` is created by moving the elements from index 2 to the end and then the elements from the beginning to index 2. So, `my_arr` becomes [1, 2, 4, 3].
+
+Iteration 1:
+    - The elements at index 1 in `my_arr` and `sorted_array` are 2 and 2 respectively, so they are equal.
+Iteration 2:
+    - The elements at index 2 in `my_arr` and `sorted_array` are 4 and 3 respectively, so they are not equal.
+    - The function returns False.

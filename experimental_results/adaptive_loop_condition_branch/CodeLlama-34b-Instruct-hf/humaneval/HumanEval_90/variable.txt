@@ -1,0 +1,8 @@
+def next_smallest(lst):
+    [REASONING]
+    The function next_smallest takes a list of integers as input and returns the next smallest number in the list after the first element.
+    To determine the output of executing the function next_smallest on the input [1, 2, 3, 4, 5], we need to sort the list and return the second element.
+    Therefore, the output of executing the function next_smallest on the input [1, 2, 3, 4, 5] is 2.
+    [/REASONING]
+    lst = sorted(set(lst))
+    return None if len(lst) < 2 else lst[1]

@@ -1,0 +1,23 @@
+The function `exchange` is called with ( lst1 = [3, 2, 6, 1, 8, 9], lst2 = [3, 5, 5, 1, 1, 1] ).
+Inside the function, two variables `odd` and `even` are initialized to 0.
+
+Iteration 1:
+    -The number 3 in lst1 is odd, so odd becomes 1.
+    -The number 3 in lst2 is even, so even becomes 1.
+Iteration 2:
+    -The number 2 in lst1 is even, so even becomes 2.
+    -The number 5 in lst2 is odd, so odd becomes 1.
+Iteration 3:
+    -The number 6 in lst1 is even, so even becomes 3.
+    -The number 5 in lst2 is odd, so odd becomes 2.
+Iteration 4:
+    -The number 1 in lst1 is odd, so odd becomes 3.
+    -The number 1 in lst2 is even, so even becomes 2.
+Iteration 5:
+    -The number 8 in lst1 is even, so even becomes 4.
+    -The number 1 in lst2 is odd, so odd becomes 3.
+Iteration 6:
+    -The number 9 in lst1 is odd, so odd becomes 4.
+    -The number 1 in lst2 is odd, so odd becomes 4.
+
+The condition `even >= odd` is checked. Since 4 is not greater than or equal to 4, the function returns "NO".

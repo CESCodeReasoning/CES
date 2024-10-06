@@ -1,0 +1,81 @@
+The function `words_string` is called with ( s = "One, two, three, four, five, six" ).
+Inside the function, a variable `s_list` is initialized to an empty list.
+
+Iteration 1:
+    -The character 'O' is not equal to ',', so the character is appended to `s_list`.
+Iteration 2:
+    -The character 'n' is not equal to ',', so the character is appended to `s_list`.
+Iteration 3:
+    -The character 'e' is not equal to ',', so the character is appended to `s_list`.
+Iteration 4:
+    -The character ',' is equal to ',', so a space is appended to `s_list`.
+Iteration 5:
+    -The character'' is not equal to ',', so the character is appended to `s_list`.
+Iteration 6:
+    -The character 't' is not equal to ',', so the character is appended to `s_list`.
+Iteration 7:
+    -The character 'w' is not equal to ',', so the character is appended to `s_list`.
+Iteration 8:
+    -The character 'o' is not equal to ',', so the character is appended to `s_list`.
+Iteration 9:
+    -The character ',' is equal to ',', so a space is appended to `s_list`.
+Iteration 10:
+    -The character'' is not equal to ',', so the character is appended to `s_list`.
+Iteration 11:
+    -The character 't' is not equal to ',', so the character is appended to `s_list`.
+Iteration 12:
+    -The character 'h' is not equal to ',', so the character is appended to `s_list`.
+Iteration 13:
+    -The character 'r' is not equal to ',', so the character is appended to `s_list`.
+Iteration 14:
+    -The character 'e' is not equal to ',', so the character is appended to `s_list`.
+Iteration 15:
+    -The character 'e' is not equal to ',', so the character is appended to `s_list`.
+Iteration 16:
+    -The character ',' is equal to ',', so a space is appended to `s_list`.
+Iteration 17:
+    -The character'' is not equal to ',', so the character is appended to `s_list`.
+Iteration 18:
+    -The character 'f' is not equal to ',', so the character is appended to `s_list`.
+Iteration 19:
+    -The character 'o' is not equal to ',', so the character is appended to `s_list`.
+Iteration 20:
+    -The character 'u' is not equal to ',', so the character is appended to `s_list`.
+Iteration 21:
+    -The character 'r' is not equal to ',', so the character is appended to `s_list`.
+Iteration 22:
+    -The character ',' is equal to ',', so a space is appended to `s_list`.
+Iteration 23:
+    -The character'' is not equal to ',', so the character is appended to `s_list`.
+Iteration 24:
+    -The character 'f' is not equal to ',', so the character is appended to `s_list`.
+Iteration 25:
+    -The character 'i' is not equal to ',', so the character is appended to `s_list`.
+Iteration 26:
+    -The character 'v' is not equal to ',', so the character is appended to `s_list`.
+Iteration 27:
+    -The character 'e' is not equal to ',', so the character is appended to `s_list`.
+Iteration 28:
+    -The character ',' is equal to ',', so a space is appended to `s_list`.
+Iteration 29:
+    -The character'' is not equal to ',', so the character is appended to `s_list`.
+Iteration 30:
+    -The character's' is not equal to ',', so the character is appended to `s_list`.
+Iteration 31:
+    -The character 'i' is not equal to ',', so the character is appended to `s_list`.
+Iteration 32:
+    -The character 'x' is not equal to ',', so the character is appended to `s_list`.
+Iteration 33:
+    -The character ',' is equal to ',', so a space is appended to `s_list`.
+Iteration 34:
+    -The character'' is not equal to ',', so the character is appended to `s_list`.
+Iteration 35:
+    -The character's' is not equal to ',', so the character is appended to `s_list`.
+Iteration 36:
+    -The character 'i' is not equal to ',', so the character is appended to `s_list`.
+Iteration 37:
+    -The character 'x' is not equal to ',', so the character is appended to `s_list`.
+
+After the loop, the function returns the value of `s_list`, which is now a list of words separated by spaces.
+
+Therefore, the final output of the function `words_string("One, two, three, four, five, six")` is ['One', 'two', 'three', 'four', 'five','six'].

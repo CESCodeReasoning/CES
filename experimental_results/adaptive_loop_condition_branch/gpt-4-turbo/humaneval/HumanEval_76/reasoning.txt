@@ -1,0 +1,17 @@
+The function `is_simple_power` is called with ( x = 16, n = 2 ).
+The function first checks if `n` is equal to 1. In this case, `n` is 2, so the condition `(n == 1)` is false, and the corresponding branch is not taken.
+Next, a variable `power` is initialized to 1.
+The loop continues as long as `power` is less than `x` (16 in this case).
+First Iteration (power = 1):
+    - `power < x` when power=1
+    - `power = power * n` updates `power` to 2 ( 1 * 2 = 2 ).
+Second Iteration (power = 2):
+    - `power < x` when power=2
+    - `power = power * n` updates `power` to 4 ( 2 * 2 = 4 ).
+Third Iteration (power = 4):
+    - `power < x` when power=4
+    - `power = power * n` updates `power` to 8 ( 4 * 2 = 8 ).
+Fourth Iteration (power = 8):
+    - `power < x` when power=8
+    - `power = power * n` updates `power` to 16 ( 8 * 2 = 16 ).
+After the loop, `power` equals `x` (16), so the function returns `True`.

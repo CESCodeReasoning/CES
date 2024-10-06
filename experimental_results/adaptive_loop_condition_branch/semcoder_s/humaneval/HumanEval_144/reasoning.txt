@@ -1,0 +1,8 @@
+The function `simplify` is called with ( x = "1/5", n = "5/1" ).
+The input strings are split into numerator and denominator parts.
+For "1/5", a="1" and b="5". For "5/1", c="5" and d="1".
+The numerators are multiplied: 1 * 5 = 5.
+The denominators are multiplied: 5 * 1 = 5.
+The condition `numerator/denom == int(numerator/denom)` is checked.
+Since 5/5 equals 1 and 1 is an integer, the condition is true.
+The function returns True.

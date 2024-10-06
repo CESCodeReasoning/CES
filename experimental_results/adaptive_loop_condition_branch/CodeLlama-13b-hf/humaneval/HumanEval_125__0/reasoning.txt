@@ -1,0 +1,6 @@
+The function `split_words` is called with ( txt = "" ).
+txt is empty, so the first branch is not taken.
+txt is empty, so the second branch is not taken.
+txt is empty, so the third branch is taken.
+
+Therefore, the final output of the function `split_words("")` is 0.

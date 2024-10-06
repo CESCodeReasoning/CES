@@ -1,0 +1,5 @@
+The function `split_words` is called with the input string "Hello world!".
+The function first checks if the input string contains a space character.
+Since the input string does contain a space character, the first condition is true.
+The function then splits the input string into a list of words using the `split()` method.
+The resulting list of words is returned as the output of the function.

@@ -1,0 +1,26 @@
+The function `skjkasdkd` is called with ( lst = [127, 97, 8192] ).
+Inside the function, a variable `maxx` is initialized to 0.
+The loop iterates through the list `lst`.
+First Iteration (i = 0):
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - The function `isPrime` is called with ( n = 127 ).
+    - The loop iterates from 2 through the square root of 127 (since ( n = 127 )).
+    - The condition `(127 % i == 0)` is false for all i in the range.
+    - The function `isPrime` returns True.
+    - `maxx` is updated to 127.
+Second Iteration (i = 1):
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is true.
+    - The function `isPrime` is called with ( n = 97 ).
+    - The loop iterates from 2 through the square root of 97 (since ( n = 97 )).
+    - The condition `(97 % i == 0)` is false for all i in the range.
+    - The function `isPrime` returns True.
+    - `maxx` is updated to 97.
+Third Iteration (i = 2):
+    - The condition `(lst[i] > maxx and isPrime(lst[i]))` is false.
+    - The function `isPrime` is called with ( n = 8192 ).
+    - The loop iterates from 2 through the square root of 8192 (since ( n = 8192 )).
+    - The condition `(8192 % i == 0)` is true for i = 2.
+    - The function `isPrime` returns False.
+    - `maxx` remains 97.
+After the loop completes, the function converts `maxx` to a string, iterates through each digit, converts it back to an integer, and sums them up.
+The final output of the function `skjkasdkd([127, 97, 8192])` is 16.

@@ -1,0 +1,26 @@
+[REASONING]
+The function `string_xor` takes two binary strings `a` and `b` as input and returns a new binary string that is the result of XORing the two input strings.
+The function `xor` is a helper function that takes two characters `i` and `j` as input and returns '0' if the characters are the same, and '1' otherwise.
+The function `string_xor` uses the `zip` function to iterate over the characters in the two input strings, and for each pair of characters, it calls the `xor` function to compute the XOR result.
+The results of the `xor` function calls are then joined together to form the output string.
+
+For the input strings '0101' and '0000', the output string will be '0101' because the XOR of '0' and '0' is '0', the XOR of '1' and '0' is '1', the XOR of '0' and '0' is '0', and the XOR of '1' and '0' is '1'.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def string_xor(a: str, b: str) -> str:
+    def xor(i, j):
+        if i == j: ## [CONDITION](i == j)=[True, False, True, False][/CONDITION][BRANCH]taken=[Y, N, Y, N][/BRANCH]
+            return '0'
+        else: ## [BRANCH]taken=[N, Y, N, Y][/BRANCH]
+            return '1'
+
+    return ''.join(xor(x, y) for x, y in zip(a, b))
+[/ANSWER]
+
+[OUTPUT]
+0101
+[/OUTPUT]

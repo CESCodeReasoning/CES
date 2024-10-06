@@ -1,0 +1,4 @@
+The function iscube takes a number a as input and returns a boolean indicating whether a is a cube.
+To determine whether a is a cube, we need to check whether a is equal to the cube of some number c.
+We can write this as a ** (1. / 3) == a, where a is the input number and ** is the cube root operator.
+Therefore, the output of executing the function iscube on the input 1 is False, since 1 is not equal to the cube of any number.

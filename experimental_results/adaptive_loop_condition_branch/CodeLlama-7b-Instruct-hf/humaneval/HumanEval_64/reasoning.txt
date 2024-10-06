@@ -1,0 +1,8 @@
+The function `vowels_count` is called with ( s = "abcde" ).
+The variable `vowels` is initialized to "aeiouAEIOU".
+The variable `n_vowels` is initialized to the sum of the number of vowels in `s` (using a generator expression).
+The condition `s[-1] == 'y' or s[-1] == 'Y'` is evaluated.
+If `s[-1] == 'y'` or `s[-1] == 'Y'`, then the if branch is taken and `n_vowels` is incremented by 1.
+Otherwise, the else branch is taken and `n_vowels` remains unchanged.
+
+Therefore, the final output of the function `vowels_count("abcde")` is 3.

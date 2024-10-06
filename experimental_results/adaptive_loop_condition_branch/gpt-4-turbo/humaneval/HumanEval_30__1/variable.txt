@@ -1,0 +1,6 @@
+from typing import *
+
+
+def get_positive(l: list):
+    # [STATE] l = [-1, -2] [/STATE]
+    return [e for e in l if e > 0]  # [CONDITION] e > 0 [/CONDITION] [BRANCH] N [/BRANCH]

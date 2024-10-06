@@ -1,0 +1,18 @@
+Fixed Code:
+```python
+def solve(N):
+    return bin(sum(int(i) for i in str(N)))[2:]
+```
+
+Fixed Code:
+```python
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```

@@ -1,0 +1,4 @@
+The function mean_absolute_deviation takes a list of floating-point numbers as input and returns the mean absolute deviation of the input list.
+To determine the output of executing the function mean_absolute_deviation on the input [1.0, 2.0, 3.0, 4.0], we need to calculate the mean of the input list and then calculate the absolute difference between each element of the input list and the mean.
+The sum of these absolute differences is then divided by the length of the input list to give the mean absolute deviation.
+Therefore, the output of executing the function mean_absolute_deviation on the input [1.0, 2.0, 3.0, 4.0] is 1.25.

@@ -1,0 +1,5 @@
+The function `is_simple_power` is called with ( x = 1, n = 1 ).
+Inside the function, a variable `power` is initialized to 1.
+The condition ( n == 1 ) is not satisfied, so the else branch is taken.
+The while loop iterates until ( power < x ), which is not satisfied for ( power = 1, x = 1 ).
+The function returns `False` as the output.

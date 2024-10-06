@@ -1,0 +1,97 @@
+The function `check_dict_case` is called with ( dict = {"Name":"John", "Age":"36", "City":"Houston"} ).
+Inside the function, a variable `state` is initialized to "start".
+
+Iteration 1:
+    - The length of the keys is 3, so the condition `len(dict.keys()) == 0` is false.
+    - The state is "start", so the condition `state == "start"` is true.
+    - The key is "Name", so the condition `key.isupper()` is false.
+    - The state is "start", so the condition `state == "upper"` is false.
+    - The key is "Name", so the condition `key.islower()` is true.
+    - The state is "start", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `state == "mixed"` is false.
+    - The state is "lower", so the condition `state == "upper"` is false.
+    - The state is "lower", so the condition `state == "lower"` is true.
+    - The state is "lower", so the condition `

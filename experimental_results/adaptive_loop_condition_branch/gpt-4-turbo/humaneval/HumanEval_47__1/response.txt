@@ -1,0 +1,25 @@
+[REASONING]
+The function `median` is called with the list `[-10, 4, 6, 1000, 10, 20]`.
+1. The list is first sorted, resulting in `[-10, 4, 6, 10, 20, 1000]`.
+2. The length of the sorted list is 6, which is an even number.
+3. Since the length of the list is even (`len(l) % 2 == 0`), the condition `(len(l) % 2 == 1)` is false, and the `else` branch is taken.
+4. The median for an even number of elements is calculated as the average of the two middle numbers. In this sorted list, the middle numbers are at indices 2 and 3 (0-based index), which are `6` and `10`.
+5. The average of `6` and `10` is `(6 + 10) / 2.0 = 8.0`.
+
+Therefore, the final output of the function `median([-10, 4, 6, 1000, 10, 20])` is `8.0`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def median(l: list):
+    l = sorted(l)
+    if len(l) % 2 == 1: ## [CONDITION](len(l) % 2 == 1)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return l[len(l) // 2]
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        return (l[len(l) // 2 - 1] + l[len(l) // 2]) / 2.0
+[/PYTHON]
+
+[OUTPUT]
+8.0
+[/OUTPUT]

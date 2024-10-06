@@ -1,0 +1,23 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: max_element
+main.py(5):     m = l[0]
+main.py(6):     for e in l:
+main.py(7):         if e > m:
+main.py(6):     for e in l:
+main.py(7):         if e > m:
+main.py(8):             m = e
+main.py(6):     for e in l:
+main.py(7):         if e > m:
+main.py(8):             m = e
+main.py(6):     for e in l:
+main.py(7):         if e > m:
+main.py(6):     for e in l:
+main.py(7):         if e > m:
+main.py(6):     for e in l:
+main.py(7):         if e > m:
+main.py(6):     for e in l:
+main.py(7):         if e > m:
+main.py(6):     for e in l:
+main.py(7):         if e > m:
+main.py(6):     for e in l:
+main.py(9):     return m

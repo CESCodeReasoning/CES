@@ -1,0 +1,7 @@
+The function `maximum` is called with the array `[123, -123, 20, 0, 1, 2, -3]` and `k = 3`.
+1. The function first checks if `k` is equal to 0. Since `k` is 3, this condition is false.
+2. The array is then sorted, resulting in `[-123, -3, 0, 1, 2, 20, 123]`.
+3. The function extracts the last `k` elements from the sorted array, which are `[2, 20, 123]` since `k = 3`.
+4. These elements `[2, 20, 123]` are returned as the result.
+
+Therefore, the final output of the function `maximum([123, -123, 20, 0, 1, 2, -3], 3)` is `[2, 20, 123]`.

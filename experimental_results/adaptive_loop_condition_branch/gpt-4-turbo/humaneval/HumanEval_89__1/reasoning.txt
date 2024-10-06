@@ -1,0 +1,24 @@
+The function `encrypt` is called with the string 'asdfghjkl'.
+Inside the function, a string `d` containing the alphabet is defined, and an empty string `out` is initialized to store the result.
+The function iterates over each character `c` in the input string `s`.
+
+Iteration 1:
+    - The character 'a' is in `d`, so it is shifted by 4 positions (2 * 2) in the alphabet, resulting in 'e'.
+Iteration 2:
+    - The character 's' is in `d`, so it is shifted by 4 positions, resulting in 'w'.
+Iteration 3:
+    - The character 'd' is in `d`, so it is shifted by 4 positions, resulting in 'h'.
+Iteration 4:
+    - The character 'f' is in `d`, so it is shifted by 4 positions, resulting in 'j'.
+Iteration 5:
+    - The character 'g' is in `d`, so it is shifted by 4 positions, resulting in 'k'.
+Iteration 6:
+    - The character 'h' is in `d`, so it is shifted by 4 positions, resulting in 'l'.
+Iteration 7:
+    - The character 'j' is in `d`, so it is shifted by 4 positions, resulting in 'n'.
+Iteration 8:
+    - The character 'k' is in `d`, so it is shifted by 4 positions, resulting in 'o'.
+Iteration 9:
+    - The character 'l' is in `d`, so it is shifted by 4 positions, resulting in 'p'.
+
+After processing all characters, the encrypted string 'ewhjknlop' is returned.

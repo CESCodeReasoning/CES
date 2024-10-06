@@ -1,0 +1,5 @@
+The function `median` is called with a list of numbers.
+The list is sorted.
+The length of the list is an odd number, therefore the if branch is taken and the method returns the middle element of the list.
+
+Therefore, the final output of the function `median([3, 1, 2, 4, 5])` is 3.

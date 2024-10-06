@@ -1,0 +1,43 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterates from 1 to n.
+For each iteration, if the current number is even, it calculates the factorial of the number and appends it to the list ret.
+If the current number is odd, it calculates the sum of all numbers from 1 to the current number and appends it to the list ret.
+First Iteration (i=1):
+    - `i` is 1, the condition `i%2 == 0` is False, the else branch is taken.
+    - x = 0, j in the inner loop is 1, 2, 3, 4, 5:
+        - When j = 1, x = 0 + 1 = 1
+        - When j = 2, x = 1 + 2 = 3
+        - When j = 3, x = 3 + 3 = 6
+        - When j = 4, x = 6 + 4 = 10
+        - When j = 5, x = 10 + 5 = 15
+    - Append 15 to ret.
+Second Iteration (i=2):
+    - `i` is 2, the condition `i%2 == 0` is True, the if branch is taken.
+    - x = 1, j in the inner loop is 1, 2:
+        - When j = 1, x = 1 * 1 = 1
+        - When j = 2, x = 1 * 2 = 2
+    - Append 2 to ret.
+Third Iteration (i=3):
+    - `i` is 3, the condition `i%2 == 0` is False, the else branch is taken.
+    - x = 0, j in the inner loop is 1, 2, 3:
+        - When j = 1, x = 0 + 1 = 1
+        - When j = 2, x = 1 + 2 = 3
+        - When j = 3, x = 3 + 3 = 6
+    - Append 6 to ret.
+Forth Iteration (i=4):
+    - `i` is 4, the condition `i%2 == 0` is True, the if branch is taken.
+    - x = 1, j in the inner loop is 1, 2, 3, 4:
+        - When j = 1, x = 1 * 1 = 1
+        - When j = 2, x = 1 * 2 = 2
+        - When j = 3, x = 2 * 3 = 6
+        - When j = 4, x = 6 * 4 = 24
+    - Append 24 to ret.
+Fifth Iteration (i=5):
+    - `i` is 5, the condition `i%2 == 0` is False, the else branch is taken.
+    - x = 0, j in the inner loop is 1, 2, 3, 4, 5:
+        - When j = 1, x = 0 + 1 = 1
+        - When j = 2, x = 1 + 2 = 3
+        - When j = 3, x = 3 + 3 = 6
+        - When j = 4, x = 6 + 4 = 10
+        - When j = 5, x = 10 + 5 = 15
+    - Append 15 to ret.

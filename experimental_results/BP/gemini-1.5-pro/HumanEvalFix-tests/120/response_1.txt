@@ -1,0 +1,4 @@
+```response
+Yes
+```
+The code is buggy because `ans.sort(reverse=True)` sorts the list in place and returns `None`. To fix this, we can simply return `ans[::-1]` or change the return statement to `ans.sort(reverse=True); return ans`. 

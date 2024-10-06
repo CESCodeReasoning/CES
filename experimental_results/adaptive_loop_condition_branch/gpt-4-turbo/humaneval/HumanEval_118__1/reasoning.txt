@@ -1,0 +1,5 @@
+The function `get_closest_vowel` is called with the argument ( word = "ba" ).
+Inside the function, the first conditional statement checks if the length of the word is less than 3. Since "ba" has a length of 2, this condition is true.
+As a result, the function immediately returns an empty string "" without proceeding to any further logic or iterations.
+
+Therefore, the output of the function `get_closest_vowel("ba")` is an empty string "".

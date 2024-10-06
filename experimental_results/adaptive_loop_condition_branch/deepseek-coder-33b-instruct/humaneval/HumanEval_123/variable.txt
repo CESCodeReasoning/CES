@@ -1,0 +1,16 @@
+from typing import *
+def get_odd_collatz(n):
+    if n%2==0: ## [CONDITION](n%2==0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        odd_collatz = [] 
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        odd_collatz = [n]
+    while n > 1: ## [STATE]n=[14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1][/STATE]
+        if n % 2 == 0: ## [CONDITION](n % 2 == 0)=[False, False, True, False, True, False, True, False, True, False, True, False, False, False, True, True, True, True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[N, N, Y, N, Y, N, Y, N, Y, N, Y, N, N, N, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+            n = n/2
+        else: ## [BRANCH]taken=[Y, Y, N, Y, N, Y, N, Y, N, Y, N, Y, Y, Y, N, N, N, N, N, N, N, N, N, N][/BRANCH]
+            n = n*3 + 1
+            
+        if n%2 == 1: ## [CONDITION](n%2 == 1)=[False, True, False, True, False, True, False, True, False, True, False, True, False, False, True, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, Y, N, Y, N, Y, N, Y, N, Y, N, Y, N, N, Y, N, N, N, N, N, N, N, N, N, N][/BRANCH]
+            odd_collatz.append(int(n))
+
+    return sorted(odd_collatz)

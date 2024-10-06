@@ -1,0 +1,10 @@
+The function `digits` is called with ( n = 5 ).
+Inside the function, a variable `product` is initialized to 1.
+The loop iterates through each digit in the string representation of n, which is "5".
+First Iteration (digit = "5")
+   - `int_digit` is 5, which is an odd number.
+   - The condition `int_digit%2 == 1` is true.
+   - Action: `product` is updated to 5 (`1 * 5 = 5`).
+   - `odd_count` is incremented to 1.
+The condition `odd_count == 0` is false, so the `else` block is executed.
+The function returns the value of `product`, which is 5.

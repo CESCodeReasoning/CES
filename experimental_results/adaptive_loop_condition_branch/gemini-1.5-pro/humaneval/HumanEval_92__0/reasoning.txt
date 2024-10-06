@@ -1,0 +1,4 @@
+The function `any_int` is called with ( x = 2, y = 1, z = 1 ).
+The first condition `isinstance(x, int) and isinstance(y, int) and isinstance(z, int)` is true because all three arguments are integers.
+The second condition `(x + y == z) or (x + z == y) or (y + z == x)` is also true because `(1 + 2 == 1)` is true.
+Therefore, the function returns True.

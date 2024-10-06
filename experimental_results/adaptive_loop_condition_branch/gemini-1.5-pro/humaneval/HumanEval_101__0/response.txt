@@ -1,0 +1,130 @@
+[REASONING]
+The function `words_string` is called with ( s = "One, two, three, four, five, six" ).
+The function first checks if the input string `s` is empty. Since `s` is not empty, the function proceeds to convert the string into a list of words.
+
+Iteration 1:
+   - The first letter in `s` is 'O', which is not a comma, so it is appended to `s_list`.
+
+Iteration 2:
+   - The second letter in `s` is 'n', which is not a comma, so it is appended to `s_list`.
+
+Iteration 3:
+   - The third letter in `s` is 'e', which is not a comma, so it is appended to `s_list`.
+
+Iteration 4:
+   - The fourth letter in `s` is ',', which is a comma, so a space is appended to `s_list` instead.
+
+Iteration 5:
+   - The fifth letter in `s` is ' ', which is a space, so it is appended to `s_list`.
+
+Iteration 6:
+   - The sixth letter in `s` is 't', which is not a comma, so it is appended to `s_list`.
+
+Iteration 7:
+   - The seventh letter in `s` is 'w', which is not a comma, so it is appended to `s_list`.
+
+Iteration 8:
+   - The eighth letter in `s` is 'o', which is not a comma, so it is appended to `s_list`.
+
+Iteration 9:
+   - The ninth letter in `s` is ',', which is a comma, so a space is appended to `s_list` instead.
+
+Iteration 10:
+   - The tenth letter in `s` is ' ', which is a space, so it is appended to `s_list`.
+
+Iteration 11:
+   - The eleventh letter in `s` is 't', which is not a comma, so it is appended to `s_list`.
+
+Iteration 12:
+   - The twelfth letter in `s` is 'h', which is not a comma, so it is appended to `s_list`.
+
+Iteration 13:
+   - The thirteenth letter in `s` is 'r', which is not a comma, so it is appended to `s_list`.
+
+Iteration 14:
+   - The fourteenth letter in `s` is 'e', which is not a comma, so it is appended to `s_list`.
+
+Iteration 15:
+   - The fifteenth letter in `s` is 'e', which is not a comma, so it is appended to `s_list`.
+
+Iteration 16:
+   - The sixteenth letter in `s` is ',', which is a comma, so a space is appended to `s_list` instead.
+
+Iteration 17:
+   - The seventeenth letter in `s` is ' ', which is a space, so it is appended to `s_list`.
+
+Iteration 18:
+   - The eighteenth letter in `s` is 'f', which is not a comma, so it is appended to `s_list`.
+
+Iteration 19:
+   - The nineteenth letter in `s` is 'o', which is not a comma, so it is appended to `s_list`.
+
+Iteration 20:
+   - The twentieth letter in `s` is 'u', which is not a comma, so it is appended to `s_list`.
+
+Iteration 21:
+   - The twenty-first letter in `s` is 'r', which is not a comma, so it is appended to `s_list`.
+
+Iteration 22:
+   - The twenty-second letter in `s` is ',', which is a comma, so a space is appended to `s_list` instead.
+
+Iteration 23:
+   - The twenty-third letter in `s` is ' ', which is a space, so it is appended to `s_list`.
+
+Iteration 24:
+   - The twenty-fourth letter in `s` is 'f', which is not a comma, so it is appended to `s_list`.
+
+Iteration 25:
+   - The twenty-fifth letter in `s` is 'i', which is not a comma, so it is appended to `s_list`.
+
+Iteration 26:
+   - The twenty-sixth letter in `s` is 'v', which is not a comma, so it is appended to `s_list`.
+
+Iteration 27:
+   - The twenty-seventh letter in `s` is 'e', which is not a comma, so it is appended to `s_list`.
+
+Iteration 28:
+   - The twenty-eighth letter in `s` is ',', which is a comma, so a space is appended to `s_list` instead.
+
+Iteration 29:
+   - The twenty-ninth letter in `s` is ' ', which is a space, so it is appended to `s_list`.
+
+Iteration 30:
+   - The thirtieth letter in `s` is 's', which is not a comma, so it is appended to `s_list`.
+
+Iteration 31:
+   - The thirty-first letter in `s` is 'i', which is not a comma, so it is appended to `s_list`.
+
+Iteration 32:
+   - The thirty-second letter in `s` is 'x', which is not a comma, so it is appended to `s_list`.
+
+After the loop, `s_list` contains ['O', 'n', 'e', ' ', 't', 'w', 'o', ' ', 't', 'h', 'r', 'e', 'e', ' ', 'f', 'o', 'u', 'r', ' ', 'f', 'i', 'v', 'e', ' ', 's', 'i', 'x'].
+
+The function then joins the elements of `s_list` into a single string, resulting in 'One two three four five six'.
+
+Finally, the function splits the string into a list of words, resulting in ['One', 'two', 'three', 'four', 'five', 'six'].
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def words_string(s):
+    if not s: ## [CONDITION](not s)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return []
+
+    s_list = []
+
+    for letter in s: ## [STATE]letter=['O', 'n', 'e', ',', ' ', 't', 'w', 'o', ',', ' ', 't', 'h', 'r', 'e', 'e', ',', ' ', 'f', 'o', 'u', 'r', ',', ' ', 'f', 'i', 'v', 'e', ',', ' ', 's', 'i', 'x'][/STATE][STATE]s=["One, two, three, four, five, six"][/STATE]
+        if letter == ',': ## [CONDITION](letter == ',')=[False, False, False, True, True, False, False, False, True, True, False, False, False, False, False, True, True, False, False, False, False, True, True, False, False, False, True, True, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, Y, Y, N, N, N, Y, Y, N, N, N, N, N, Y, Y, N, N, N, N, Y, Y, N, N, N, Y, Y, N, N, N][/BRANCH]
+            s_list.append(' ')
+        else: ## [BRANCH]taken=[Y, Y, Y, N, N, Y, Y, Y, N, N, Y, Y, Y, Y, Y, N, N, Y, Y, Y, Y, N, N, Y, Y, Y, N, N, Y, Y, Y][/BRANCH]
+            s_list.append(letter)
+
+    s_list = "".join(s_list)
+    return s_list.split()
+[/ANSWER]
+
+[OUTPUT]
+['One', 'two', 'three', 'four', 'five', 'six']
+[/OUTPUT]

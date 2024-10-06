@@ -1,0 +1,12 @@
+The function reverse_delete takes a string s and a string c as inputs. The function should return a tuple where the first element is the string s with all characters in c removed, and the second element is a boolean indicating whether the resulting string is the same when reversed.
+
+In the given input, s is "abcdedcba" and c is "v". The string c contains the character "v", which is present in the string s. Therefore, we need to remove all occurrences of "v" from the string s.
+
+After removing all occurrences of "v" from the string s, we get "abcdecba". Comparing this string with its reverse "abcdcba", we find that they are not the same. Therefore, the function reverse_delete should return ("abcdecba", False).
+
+Therefore, the output of executing the function reverse_delete on the input "abcdedcba","v" is ("abcdecba", False).
+
+[OUTPUT]
+("abcdecba", False)
+[/OUTPUT]
+<|EOT|>

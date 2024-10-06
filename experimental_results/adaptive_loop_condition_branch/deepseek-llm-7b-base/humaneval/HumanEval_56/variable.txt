@@ -1,0 +1,11 @@
+from typing import *
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets: ## [STATE]brackets=??[/STATE]
+        if b == "<": ## [CONDITION](b == "<")=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            depth += 1
+        else: ## [BRANCH]taken=??[/BRANCH]
+            depth -= 1
+        if depth < 0: ## [CONDITION](depth < 0)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            return False
+    return depth == 0

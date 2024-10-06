@@ -1,0 +1,154 @@
+The function `change_base` is called with ( x = 234, base = 2 ).
+Inside the function, a variable `ret` is initialized to the empty string.
+First Iteration:
+    - x = 234, x > 0 when x=234
+    - ret = str(x % base) + ret
+    - x = 234, x //= base when x=234
+    - ret = "1" + ret
+    - x = 234 // 2 = 117
+    - ret = "1" + ret
+    - x = 117, x > 0 when x=117
+    - ret = str(x % base) + ret
+    - x = 117, x //= base when x=117
+    - ret = "1" + ret
+    - x = 117 // 2 = 58
+    - ret = "1" + ret
+    - x = 58, x > 0 when x=58
+    - ret = str(x % base) + ret
+    - x = 58, x //= base when x=58
+    - ret = "1" + ret
+    - x = 58 // 2 = 29
+    - ret = "1" + ret
+    - x = 29, x > 0 when x=29
+    - ret = str(x % base) + ret
+    - x = 29, x //= base when x=29
+    - ret = "1" + ret
+    - x = 29 // 2 = 14
+    - ret = "1" + ret
+    - x = 14, x > 0 when x=14
+    - ret = str(x % base) + ret
+    - x = 14, x //= base when x=14
+    - ret = "1" + ret
+    - x = 14 // 2 = 7
+    - ret = "1" + ret
+    - x = 7, x > 0 when x=7
+    - ret = str(x % base) + ret
+    - x = 7, x //= base when x=7
+    - ret = "1" + ret
+    - x = 7 // 2 = 3
+    - ret = "1" + ret
+    - x = 3, x > 0 when x=3
+    - ret = str(x % base) + ret
+    - x = 3, x //= base when x=3
+    - ret = "1" + ret
+    - x = 3 // 2 = 1
+    - ret = "1" + ret
+    - x = 1, x > 0 when x=1
+    - ret = str(x % base) + ret
+    - x = 1, x //= base when x=1
+    - ret = "1" + ret
+    - x = 1 // 2 = 0
+    - ret = "1" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    - x = 0, x > 0 when x=0
+    - ret = str(x % base) + ret
+    - x = 0, x //= base when x=0
+    - ret = "0" + ret
+    - x = 0 // 2 = 0
+    - ret = "0" + ret
+    -

@@ -1,0 +1,9 @@
+The function `string_xor` takes two strings `a` and `b` as input.
+The function defines a local function `xor` that takes two characters `i` and `j` as input.
+The `xor` function returns the bitwise XOR of `i` and `j`.
+The `string_xor` function uses the `zip` function to iterate over the characters of `a` and `b` simultaneously.
+For each pair of characters `i` and `j`, the `xor` function is called with `i` and `j` as input.
+The output of the `xor` function is then concatenated to the result string using the `join` method.
+Finally, the `string_xor` function returns the result string.
+
+Therefore, the final output of the function `string_xor('0101', '0000')` is '1101'.

@@ -1,0 +1,35 @@
+The function `how_many_times` is called with ( string = "john doe" ) and ( substring = "john" ).
+Inside the function, a variable `times` is initialized to 0.
+
+Iteration 1:
+    -The substring "john" is found in the string "john doe" starting at index 0.
+    -The variable `times` is incremented by 1, so `times` becomes 1.
+Iteration 2:
+    -The substring "john" is not found in the string "john doe" starting at index 1.
+    -The variable `times` remains unchanged, so `times` is still 1.
+Iteration 3:
+    -The substring "john" is not found in the string "john doe" starting at index 2.
+    -The variable `times` remains unchanged, so `times` is still 1.
+Iteration 4:
+    -The substring "john" is not found in the string "john doe" starting at index 3.
+    -The variable `times` remains unchanged, so `times` is still 1.
+Iteration 5:
+    -The substring "john" is not found in the string "john doe" starting at index 4.
+    -The variable `times` remains unchanged, so `times` is still 1.
+Iteration 6:
+    -The substring "john" is not found in the string "john doe" starting at index 5.
+    -The variable `times` remains unchanged, so `times` is still 1.
+Iteration 7:
+    -The substring "john" is not found in the string "john doe" starting at index 6.
+    -The variable `times` remains unchanged, so `times` is still 1.
+Iteration 8:
+    -The substring "john" is not found in the string "john doe" starting at index 7.
+    -The variable `times` remains unchanged, so `times` is still 1.
+Iteration 9:
+    -The substring "john" is not found in the string "john doe" starting at index 8.
+    -The variable `times` remains unchanged, so `times` is still 1.
+Iteration 10:
+    -The substring "john" is not found in the string "john doe" starting at index 9.
+    -The variable `times` remains unchanged, so `times` is still 1.
+
+Therefore, the final output of the function `how_many_times("john doe", "john")` is 1.

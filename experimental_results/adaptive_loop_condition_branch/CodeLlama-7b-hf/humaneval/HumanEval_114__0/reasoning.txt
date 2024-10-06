@@ -1,0 +1,20 @@
+The function `minSubArraySum` is called with ( nums = [1, -1] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+The loop iterates through the list `nums`.
+First Iteration (num = 1)
+   - `num` is 1, so `s` becomes 1.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 1.
+Second Iteration (num = -1)
+   - `num` is -1, so `s` becomes -1.
+   - The condition `s < 0` is true, so the branch is taken.
+   - Action: `s = 0` updates `s` to 0.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 1.
+Third Iteration (num = 1)
+   - `num` is 1, so `s` becomes 0.
+   - The condition `s < 0` is false, so the branch is not taken.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 1.
+Return Statement
+   - After the loop completes, the function returns the value of `min_sum`, which is -1.
+
+Therefore, the final output of the function `minSubArraySum([1, -1])` is -1.

@@ -1,0 +1,11 @@
+The function largest_smallest_integers takes a list of integers as input and returns a tuple containing the largest negative integer and the smallest positive integer in the list.
+
+In the case of an empty list, the function returns a tuple containing None for both the largest negative integer and the smallest positive integer.
+
+The function first filters the list to obtain two lists: one containing only the negative integers and the other containing only the positive integers.
+
+If the filtered list of negative integers is not empty, the function returns the maximum value in the list as the largest negative integer. Otherwise, it returns None.
+
+Similarly, if the filtered list of positive integers is not empty, the function returns the minimum value in the list as the smallest positive integer. Otherwise, it returns None.
+
+In the case of an empty list, both the filtered lists of negative integers and positive integers will be empty, and the function will return a tuple containing None for both the largest negative integer and the smallest positive integer.

@@ -1,0 +1,16 @@
+```response
+    for i in range(len(arr)):
+      if my_arr[i]==sorted_array[i]:
+        return False
+    return True
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s: str) -> bool:
+    s = s.lower()
+    s = s.replace(" ", "")
+    s = s.replace(",", "")
+    s = s.replace(".", "")

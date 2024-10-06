@@ -1,0 +1,16 @@
+The function `is_multiply_prime` takes an integer `a` as input and returns `True` if `a` can be expressed as a product of three prime numbers, and `False` otherwise.
+The function first defines a helper function `is_prime` that checks if a given number is prime.
+The function `is_multiply_prime` then iterates over all possible combinations of three prime numbers and checks if their product is equal to `a`.
+If such a combination is found, the function returns `True`.
+Otherwise, the function returns `False`.
+
+In this case, we are checking if `3 * 6 * 7` can be expressed as a product of three prime numbers.
+The first loop iterates over all prime numbers less than 101.
+The second loop iterates over all prime numbers less than 101.
+The third loop iterates over all prime numbers less than 101.
+For each combination of three prime numbers, we check if their product is equal to `3 * 6 * 7`.
+If such a combination is found, the function returns `True`.
+Otherwise, the function returns `False`.
+
+In this case, we find that `3 * 6 * 7` can be expressed as a product of three prime numbers (3, 6, and 7).
+Therefore, the function returns `True`.

@@ -1,0 +1,15 @@
+The function count_up_to(n) takes a number n as its parameter.
+The outer loop iterates from 2 to n-1 to check each number if it is a prime number.
+In the inner loop, for each number i in the outer loop, check if it is divisible by any number from 2 to i-1.
+First Iteration (i=2):
+    - `i` is 2, j in the inner loop is 2, 3.
+    - 2 is a prime number, append it to primes.
+Second Iteration (i=3):
+    - `i` is 3, j in the inner loop is 2, 3.
+    - 3 is a prime number, append it to primes.
+Third Iteration (i=4):
+    - `i` is 4, j in the inner loop is 2, 3, 4.
+    - 4 is not a prime number, break the inner loop.
+Fourth Iteration (i=5):
+    - `i` is 5, j in the inner loop is 2, 3, 4, 5.
+    - 5 is a prime number, append it to primes.

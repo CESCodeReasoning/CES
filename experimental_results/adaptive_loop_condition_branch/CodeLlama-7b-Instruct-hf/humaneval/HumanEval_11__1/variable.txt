@@ -1,0 +1,11 @@
+from typing import *
+
+
+def string_xor(a: str, b: str) -> str:
+    def xor(i, j):
+        if i == j: ## [CONDITION](i == j)=[False, True, False, True][/CONDITION][BRANCH]taken=[N, Y, N, Y][/BRANCH]
+            return '0'
+        else: ## [BRANCH]taken=[N, N, N, N][/BRANCH]
+            return '1'
+
+    return ''.join(xor(x, y) for x, y in zip(a, b))

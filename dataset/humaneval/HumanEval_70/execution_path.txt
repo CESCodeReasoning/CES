@@ -1,0 +1,21 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: strange_sort_list
+main.py(3):     res, switch = [], True
+main.py(4):     while lst:
+main.py(5):         res.append(min(lst) if switch else max(lst))
+main.py(6):         lst.remove(res[-1])
+main.py(7):         switch = not switch
+main.py(4):     while lst:
+main.py(5):         res.append(min(lst) if switch else max(lst))
+main.py(6):         lst.remove(res[-1])
+main.py(7):         switch = not switch
+main.py(4):     while lst:
+main.py(5):         res.append(min(lst) if switch else max(lst))
+main.py(6):         lst.remove(res[-1])
+main.py(7):         switch = not switch
+main.py(4):     while lst:
+main.py(5):         res.append(min(lst) if switch else max(lst))
+main.py(6):         lst.remove(res[-1])
+main.py(7):         switch = not switch
+main.py(4):     while lst:
+main.py(8):     return res

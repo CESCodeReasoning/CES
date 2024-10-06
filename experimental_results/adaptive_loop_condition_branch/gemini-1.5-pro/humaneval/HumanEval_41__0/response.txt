@@ -1,0 +1,14 @@
+[REASONING]
+The function car_race_collision takes an integer n as input and returns n squared.
+To determine the output of executing the function car_race_collision on the input 4, we need to square 4.
+Therefore, the output of executing the function car_race_collision on the input 4 is 16.
+[/REASONING]
+
+[ANSWER]
+def car_race_collision(n: int):
+    return n**2
+[/ANSWER]
+
+[OUTPUT]
+16
+[/OUTPUT]

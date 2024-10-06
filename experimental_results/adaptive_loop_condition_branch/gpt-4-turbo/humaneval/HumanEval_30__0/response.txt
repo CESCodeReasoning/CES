@@ -1,0 +1,30 @@
+[REASONING]
+The function `get_positive` takes a list of integers `l` as input and returns a new list containing only the positive integers from the input list. The function uses a list comprehension to iterate over each element `e` in the list `l`. For each element, it checks if `e` is greater than 0. If the condition is true, the element `e` is included in the new list. Otherwise, it is excluded.
+
+To determine the output of executing the function `get_positive` on the input `[5, 3, -5, 2, 3, 3, 9, 0, 123, 1, -10]`, we evaluate each element:
+- 5 is positive, included.
+- 3 is positive, included.
+- -5 is not positive, excluded.
+- 2 is positive, included.
+- 3 is positive, included.
+- 3 is positive, included.
+- 9 is positive, included.
+- 0 is not positive (not greater than 0), excluded.
+- 123 is positive, included.
+- 1 is positive, included.
+- -10 is not positive, excluded.
+
+Therefore, the output of executing the function `get_positive` on the given input is `[5, 3, 2, 3, 3, 9, 123, 1]`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def get_positive(l: list):
+    # [STATE] l = [5, 3, -5, 2, 3, 3, 9, 0, 123, 1, -10] [/STATE]
+    return [e for e in l if e > 0]  # [CONDITION] e > 0 [/CONDITION]
+[PYTHON]
+
+[OUTPUT]
+[5, 3, 2, 3, 3, 9, 123, 1]
+[/OUTPUT]

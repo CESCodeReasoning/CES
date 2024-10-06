@@ -1,0 +1,6 @@
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The for loop iterates through each word in the sentence after splitting it.
+For each word, check if its length is 1 or 2. If it is, set the flag `flg` to 1.
+If the length of the word is greater than 2, iterate from 2 to the length of the word and check if the length of the word is divisible by the current index. If it is, set the flag `flg` to 1.
+If the flag `flg` is still 0 or the length of the word is 2, append the word to the new list `new_lst`.
+Finally, join the words in the new list with a space and return the result.

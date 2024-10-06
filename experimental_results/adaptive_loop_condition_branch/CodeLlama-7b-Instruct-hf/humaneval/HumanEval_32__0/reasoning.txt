@@ -1,0 +1,8 @@
+The function `find_zero` is called with ( xs = [5, 3, -5] ).
+The function first initializes two variables `begin` and `end` to -1.0 and 1.0, respectively.
+The function then enters a while loop that continues as long as the product of the polynomial evaluated at `begin` and `end` is non-zero.
+Inside the while loop, the function updates `begin` and `end` to be twice their current values, respectively.
+The function then enters a second while loop that continues as long as the difference between `end` and `begin` is greater than 1e-10.
+Inside the second while loop, the function updates a variable `center` to be the average of `begin` and `end`.
+The function then evaluates the polynomial at `center` and updates `begin` or `end` to be `center` if the product of the polynomial evaluated at `center` and the current value of `begin` or `end` is positive or negative, respectively.
+After the second while loop completes, the function returns the value of `begin`.

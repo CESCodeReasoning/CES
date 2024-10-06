@@ -1,0 +1,5 @@
+The function is_bored takes a string S as input. It first imports the re module, which provides support for regular expressions in Python. It then splits the input string S into a list of sentences, using the re.split function. The regular expression r'[.?!]\s*' is used to split the string at each occurrence of a period, exclamation mark, or question mark, followed by any number of whitespace characters.
+
+Next, the function uses a generator expression to iterate over each sentence in the list of sentences. For each sentence, it checks if the first two characters of the sentence are "I ". If they are, it returns True; otherwise, it returns False. The sum function then adds up all the True values returned by the generator expression, giving the total number of sentences that start with "I ".
+
+To determine the output of executing the function is_bored on the input "I love It !", we need to count the number of sentences in the string that start with "I ". There is only one sentence in the string, and it does start with "I ", so the output of executing the function is 1.

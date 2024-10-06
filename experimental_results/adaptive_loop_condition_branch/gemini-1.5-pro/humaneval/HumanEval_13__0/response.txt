@@ -1,0 +1,27 @@
+[REASONING]
+The function `greatest_common_divisor` is called with ( a = 10, b = 15 ).
+First Iteration:
+    - b = 15, a % b = 10.
+    - a = 15, b = 10.
+Second Iteration:
+    - b = 10, a % b = 5.
+    - a = 10, b = 5.
+Third Iteration:
+    - b = 5, a % b = 0.
+    - a = 5, b = 0.
+b is 0, the while loop terminates. The function returns the value of `a`, which is now 5.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def greatest_common_divisor(a: int, b: int) -> int:
+    while b: ## [STATE]b=[15, 10, 5, 0][/STATE]
+        a, b = b, a % b
+    return a
+[/ANSWER]
+
+[OUTPUT]
+5
+[/OUTPUT]

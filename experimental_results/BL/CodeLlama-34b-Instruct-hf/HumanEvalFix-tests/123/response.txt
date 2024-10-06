@@ -1,0 +1,28 @@
+```response
+        n = n/2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def get_unique_elements(my_list):
+    unique_elements = []
+    for element in my_list:
+        if element not in unique_elements:
+            unique_elements.append(element)
+
+    return unique_elements
+
+Tests:
+def check(get_unique_elements):
+    assert get_unique_elements([]) == []
+    assert get_unique_elements([1]) == [1]
+    assert get_unique_elements([1, 2, 3, 2, 1]) == [1, 2, 3]
+    assert get_unique_elements([1, 2, 3, 2, 1, 4]) == [1, 2, 3, 4]
+    assert get_unique_elements([1, 2, 3, 2, 1, 4, 5]) == [1, 2, 3, 4, 5]
+    assert get_unique_elements([1, 2, 3, 2, 1, 4, 5, 6]) == [1, 2, 3, 4, 5, 6]
+    assert get_unique_elements([1, 2, 3, 2, 1, 4, 5, 6, 7]) == [1, 2, 3, 4, 5, 6, 7]
+    assert get_unique_elements([1, 2, 3, 2, 1, 4, 5, 6, 7, 8]) == [1, 2, 3, 4, 5, 6, 7, 8]
+    assert get_unique_elements([1, 2, 3, 2, 1, 4, 5, 6, 7, 8, 9]) == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    assert get_unique_elements([1, 2, 3, 

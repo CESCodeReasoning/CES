@@ -1,0 +1,102 @@
+The function `how_many_times` is called with ( string = 'john doe', substring = 'john' ).
+Inside the function, a variable `times` is initialized to 0.
+The loop iterates over the range from 0 to (len(string) - len(substring)) + 1.
+First Iteration (i = 0):
+   - The substring 'john' is found at index 0 in the string 'john doe'.
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times += 1` updates `times` to 1.
+Second Iteration (i = 1):
+   - The substring 'john' is not found at index 1 in the string 'john doe'.
+Third Iteration (i = 2):
+   - The substring 'john' is not found at index 2 in the string 'john doe'.
+Fourth Iteration (i = 3):
+   - The substring 'john' is not found at index 3 in the string 'john doe'.
+Fifth Iteration (i = 4):
+   - The substring 'john' is not found at index 4 in the string 'john doe'.
+Sixth Iteration (i = 5):
+   - The substring 'john' is not found at index 5 in the string 'john doe'.
+Seventh Iteration (i = 6):
+   - The substring 'john' is not found at index 6 in the string 'john doe'.
+Eighth Iteration (i = 7):
+   - The substring 'john' is not found at index 7 in the string 'john doe'.
+Ninth Iteration (i = 8):
+   - The substring 'john' is not found at index 8 in the string 'john doe'.
+Tenth Iteration (i = 9):
+   - The substring 'john' is not found at index 9 in the string 'john doe'.
+Eleventh Iteration (i = 10):
+   - The substring 'john' is not found at index 10 in the string 'john doe'.
+Twelfth Iteration (i = 11):
+   - The substring 'john' is not found at index 11 in the string 'john doe'.
+Thirteenth Iteration (i = 12):
+   - The substring 'john' is not found at index 12 in the string 'john doe'.
+Fourteenth Iteration (i = 13):
+   - The substring 'john' is not found at index 13 in the string 'john doe'.
+Fifteenth Iteration (i = 14):
+   - The substring 'john' is not found at index 14 in the string 'john doe'.
+Sixteenth Iteration (i = 15):
+   - The substring 'john' is not found at index 15 in the string 'john doe'.
+Seventeenth Iteration (i = 16):
+   - The substring 'john' is not found at index 16 in the string 'john doe'.
+Eighteenth Iteration (i = 17):
+   - The substring 'john' is not found at index 17 in the string 'john doe'.
+Nineteenth Iteration (i = 18):
+   - The substring 'john' is not found at index 18 in the string 'john doe'.
+Twentieth Iteration (i = 19):
+   - The substring 'john' is not found at index 19 in the string 'john doe'.
+Twenty-First Iteration (i = 20):
+   - The substring 'john' is not found at index 20 in the string 'john doe'.
+Twenty-Second Iteration (i = 21):
+   - The substring 'john' is not found at index 21 in the string 'john doe'.
+Twenty-Third Iteration (i = 22):
+   - The substring 'john' is not found at index 22 in the string 'john doe'.
+Twenty-Fourth Iteration (i = 23):
+   - The substring 'john' is not found at index 23 in the string 'john doe'.
+Twenty-Fifth Iteration (i = 24):
+   - The substring 'john' is not found at index 24 in the string 'john doe'.
+Twenty-Sixth Iteration (i = 25):
+   - The substring 'john' is not found at index 25 in the string 'john doe'.
+Twenty-Seventh Iteration (i = 26):
+   - The substring 'john' is not found at index 26 in the string 'john doe'.
+Twenty-Eighth Iteration (i = 27):
+   - The substring 'john' is not found at index 27 in the string 'john doe'.
+Twenty-Ninth Iteration (i = 28):
+   - The substring 'john' is not found at index 28 in the string 'john doe'.
+Thirtieth Iteration (i = 29):
+   - The substring 'john' is not found at index 29 in the string 'john doe'.
+Thirty-First Iteration (i = 30):
+   - The substring 'john' is not found at index 30 in the string 'john doe'.
+Thirty-Second Iteration (i = 31):
+   - The substring 'john' is not found at index 31 in the string 'john doe'.
+Thirty-Third Iteration (i = 32):
+   - The substring 'john' is not found at index 32 in the string 'john doe'.
+Thirty-Fourth Iteration (i = 33):
+   - The substring 'john' is not found at index 33 in the string 'john doe'.
+Thirty-Fifth Iteration (i = 34):
+   - The substring 'john' is not found at index 34 in the string 'john doe'.
+Thirty-Sixth Iteration (i = 35):
+   - The substring 'john' is not found at index 35 in the string 'john doe'.
+Thirty-Seventh Iteration (i = 36):
+   - The substring 'john' is not found at index 36 in the string 'john doe'.
+Thirty-Eighth Iteration (i = 37):
+   - The substring 'john' is not found at index 37 in the string 'john doe'.
+Thirty-Ninth Iteration (i = 38):
+   - The substring 'john' is not found at index 38 in the string 'john doe'.
+Fortieth Iteration (i = 39):
+   - The substring 'john' is not found at index 39 in the string 'john doe'.
+FORTY-FIRST Iteration (i = 40):
+   - The substring 'john' is not found at index 40 in the string 'john doe'.
+FORTY-SECOND Iteration (i = 41):
+   - The substring 'john' is not found at index 41 in the string 'john doe'.
+FORTY-THIRD Iteration (i = 42):
+   - The substring 'john' is not found at index 42 in the string 'john doe'.
+FORTY-FOURTH Iteration (i = 43):
+   - The substring 'john' is not found at index 43 in the string 'john doe'.
+FORTY-FIFTH Iteration (i = 44):
+   - The substring 'john' is not found at index 44 in the string 'john doe'.
+FORTY-SIXTH Iteration (i = 45):
+   - The substring 'john' is not found at index 45 in the string 'john doe'.
+FORTY-SEVENTH Iteration (i = 46):
+   - The substring 'john' is not found at index 46 in the string 'john doe'.
+FORTY-EIGHTH Iteration (i = 47):
+   - The substring 'john' is not found at index 47 in the string 'john doe'.
+FORTY-NINTH Iteration (i = 48

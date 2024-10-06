@@ -1,0 +1,31 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: is_nested
+main.py(3):     opening_bracket_index = []
+main.py(4):     closing_bracket_index = []
+main.py(5):     for i in range(len(string)):
+main.py(6):         if string[i] == '[':
+main.py(7):             opening_bracket_index.append(i)
+main.py(5):     for i in range(len(string)):
+main.py(6):         if string[i] == '[':
+main.py(7):             opening_bracket_index.append(i)
+main.py(5):     for i in range(len(string)):
+main.py(6):         if string[i] == '[':
+main.py(9):             closing_bracket_index.append(i)
+main.py(5):     for i in range(len(string)):
+main.py(6):         if string[i] == '[':
+main.py(9):             closing_bracket_index.append(i)
+main.py(5):     for i in range(len(string)):
+main.py(10):     closing_bracket_index.reverse()
+main.py(11):     cnt = 0
+main.py(12):     i = 0
+main.py(13):     l = len(closing_bracket_index)
+main.py(14):     for idx in opening_bracket_index:
+main.py(15):         if i < l and idx < closing_bracket_index[i]:
+main.py(16):             cnt += 1
+main.py(17):             i += 1
+main.py(14):     for idx in opening_bracket_index:
+main.py(15):         if i < l and idx < closing_bracket_index[i]:
+main.py(16):             cnt += 1
+main.py(17):             i += 1
+main.py(14):     for idx in opening_bracket_index:
+main.py(18):     return cnt >= 2

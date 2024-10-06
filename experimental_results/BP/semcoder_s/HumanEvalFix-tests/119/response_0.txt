@@ -1,0 +1,139 @@
+<｜begin▁of▁sentence｜>
+
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def match_parens(lst):
+    def check(s):
+        val = 0
+        for i in s:
+            if i == '(':
+                val = val + 1
+            else:
+                val = val - 1
+            if val < 0:
+                return False
+        return True if val == 0 else False
+
+    S1 = lst[0] + lst[1]
+    S2 = lst[1] + lst[0]
+    return 'Yes' if check(S1) or check(S2) else 'No'
+
+Tests:
+def check(match_parens):
+
+    # Check some simple cases
+    assert match_parens(['()(', ')']) == 'Yes'
+    assert match_parens([')', ')']) == 'No'
+    assert match_parens(['(()(())', '())())']) == 'No'
+    assert match_parens([')())', '(()()(']) == 'Yes'
+    assert match_parens(['(())))', '(()())((']) == 'Yes'
+    assert match_parens(['()', '())']) == 'No'
+    assert match_parens(['(()(', '()))()']) == 'Yes'
+    assert match_parens(['((((', '((())']) == 'No'
+    assert match_parens([')(()', '(()(']) == 'No'
+    assert match_parens([')(', ')(']) == 'No'
+    
+
+    # Check some edge cases that are easy to work out by hand.
+    assert match_parens(['(', ')']) == 'Yes'
+    assert match_parens([')', '(']) == 'Yes'
+
+check(match_parens)
+
+The code should satisfy the following natural language specification:
+Write a Python function `match_parens(lst)` to solve the following problem:
+You are given a list of two strings, both strings consist of open
+parentheses '(' or close parentheses ')' only.
+Your job is to check if it is possible to concatenate the two strings in
+some order, that the resulting string will be good.
+A string S is considered to be good if and only if all parentheses in S
+are balanced. For example: the string '(())()' is good, while the string
+'())' is not.
+Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.
+Examples:
+match_parens(['()(', ')']) == 'Yes'
+match_parens([')', ')']) == 'No'
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def is_valid_ip(ip):
+    parts = ip.split('.')
+    if len(parts) != 4:
+        return False
+    for part in parts:
+        if not part.isdigit():
+            return False
+        i = int(part)
+        if i < 0 or i > 255:
+            return False
+        if len(part) > 1 and part[0] == '0':
+            return False
+    return True
+
+Tests:
+def check(is_valid_ip):
+    assert is_valid_ip('192.168.0.1') == True
+    assert is_valid_ip('255.255.255.255') == True
+    assert is_valid_ip('10.0.0.10') == True
+    assert is_valid_ip('10.10.10') == False
+    assert is_valid_ip('10.10.10.10.10') == False
+    assert is_valid_ip('10.10.10.256') == False
+    assert is_valid_ip('10.10.10.-1') == False
+    assert is_valid_ip('10.10.10.01') == False
+    assert is_valid_ip('10.10.10.10') == True
+    assert is_valid_ip('10.10.10.00') == False
+    assert is_valid_ip('10.10.01.10') == False
+    assert is_valid_ip('10.01.10.10') == False
+    assert is_valid_ip('01.10.10.10') == False
+    assert is_valid_ip('10.10.10.10.10') == False
+
+check(is_valid_ip)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_valid_

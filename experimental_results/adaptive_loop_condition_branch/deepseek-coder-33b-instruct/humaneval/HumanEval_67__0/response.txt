@@ -1,0 +1,46 @@
+
+[REASONING]
+The function `fruit_distribution` is called with ( s = "2 apples and 3 oranges", n = 5 ).
+Inside the function, a list `lis` is initialized.
+The loop iterates over the words in the string `s` after splitting it by spaces.
+First Iteration (i = "2")
+   - `i` is "2", which is a digit.
+   - The condition `i.isdigit()` is true.
+   - Action: `lis.append(int(i))` results in `lis = [2]`.
+Second Iteration (i = "apples")
+   - `i` is "apples", which is not a digit.
+   - The condition `i.isdigit()` is false.
+   - No action is taken.
+Third Iteration (i = "and")
+   - `i` is "and", which is not a digit.
+   - The condition `i.isdigit()` is false.
+   - No action is taken.
+Fourth Iteration (i = "3")
+   - `i` is "3", which is a digit.
+   - The condition `i.isdigit()` is true.
+   - Action: `lis.append(int(i))` updates `lis` to `[2, 3]`.
+Fifth Iteration (i = "oranges")
+   - `i` is "oranges", which is not a digit.
+   - The condition `i.isdigit()` is false.
+   - No action is taken.
+Return Statement
+   - After the loop completes, the function returns the value of `n - sum(lis)`, which is `5 - (2 + 3) = 0`.
+
+Therefore, the final output of the function `fruit_distribution("2 apples and 3 oranges",5)` is 0.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def fruit_distribution(s, n):
+    lis = list()
+    for i in s.split(' '): ## [STATE]i=['2', 'apples', 'and', '3', 'oranges'][/STATE][STATE]s.split(' ')=["2 apples and 3 oranges"][/STATE]
+        if i.isdigit(): ## [CONDITION](i.isdigit())=[True, False, False, True, False][/CONDITION][BRANCH]taken=[Y, N, N, Y, N][/BRANCH]
+            lis.append(int(i))
+    return n - sum(lis)
+[/ANSWER]
+
+[OUTPUT]
+0
+[/OUTPUT]

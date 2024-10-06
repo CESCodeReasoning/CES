@@ -1,0 +1,122 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def how_many_times(string: str, substring: str) -> int:
+    times = 0
+
+    for i in range(len(string) - len(substring)):
+        if string[i:i+len(substring)] == substring:
+            times += 1
+
+    return times
+
+Tests:
+def check(how_many_times):
+    assert how_many_times('', 'x') == 0
+    assert how_many_times('xyxyxyx', 'x') == 4
+    assert how_many_times('cacacacac', 'cac') == 4
+    assert how_many_times('john doe', 'john') == 1
+
+check(how_many_times)
+
+The code should satisfy the following natural language specification:
+Write a Python function `how_many_times(string: str, substring: str) -> int` to solve the following problem:
+Find how many times a given substring can be found in the original string. Count overlaping cases.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+        if string[i:i+len(substring)] == substring:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(string: str) -> bool:
+    for i in range(len(string) // 2):
+        if string[i] != string[-i - 1]:
+            return False
+    return True
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome('') == True
+    assert is_palindrome('a') == True
+    assert is_palindrome('aa') == True
+    assert is_palindrome('ab') == False
+    assert is_palindrome('abcba') == True
+    assert is_palindrome('abcdba') == False
+
+check(is_palindrome)
+
+The code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(string: str) -> bool` to solve the following problem:
+Check if a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward, ignoring spaces, punctuation, and capitalization.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+        if string[i] != string[-i - 1]:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(0) == False
+    assert is_prime(1) == False
+    assert is_prime(2) == True
+    assert is_prime(3) == True
+    assert is_prime(4) == False
+    assert is_prime(5) == True
+    assert is_prime(6)

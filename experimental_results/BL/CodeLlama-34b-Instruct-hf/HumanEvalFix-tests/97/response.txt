@@ -1,0 +1,32 @@
+```response
+    return abs(a % 10) * abs(b % 10) * a * b
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(1) == False, "First test error: " + str(is_prime(1))
+    assert is_prime(2) == True, "Second test error: " + str(is_prime(2))
+    assert is_prime(3) == True, "Third test error: " + str(is_prime(3))
+    assert is_prime(4) == False, "Fourth test error: " + str(is_prime(4))
+    assert is_prime(5) == True, "Fifth test error: " + str(is_prime(5))
+    assert is_prime(6) == False, "Sixth test error: " + str(is_prime(6))
+    assert is_prime(7) == True, "Seventh test error: " + str(is_prime(7))
+    assert is_prime(8) == False, "Eighth test error: " + str(is_prime(8))
+    assert is_prime(9) == False, "Ninth test error: " + str(is_prime(9))
+    assert is_prime(10) == False, "Tenth test error: " + str(is_prime(10))
+    assert is_prime(11) == True, "Eleventh test error: " + str(is_prime(11))
+    assert is_prime(12) == False, "Twelfth test error: " + str(is_prime(12))
+    assert is_prime(13) == True, "Thirteenth test error: " + str(is_prime(13))
+    assert is_prime(14) == False, "F

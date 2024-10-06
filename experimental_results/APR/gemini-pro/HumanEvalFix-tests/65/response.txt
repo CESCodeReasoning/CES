@@ -1,0 +1,8 @@
+Fixed Code:
+```python
+def circular_shift(x, shift):
+    s = str(x)
+    if shift > len(s):
+        shift = shift % len(s)
+    return s[len(s) - shift:] + s[:len(s) - shift]
+```

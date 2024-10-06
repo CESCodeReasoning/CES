@@ -1,0 +1,134 @@
+<fim_prefix>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx!= idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx!= idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in fib.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def fib(n: int):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    if n == 2:
+        return 2
+    return fib(n - 1) + fib(n - 2)
+
+Tests:
+def check(fib):
+    assert fib(10) == 55
+    assert fib(1) == 1
+    assert fib(8) == 21
+    assert fib(11) == 89
+    assert fib(12) == 144
+
+check(fib)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `fib(n: int)` to solve the following problem:
+Return n-th Fibonacci number.
+<fim_suffix><fim_middle>
+Fixed Code:
+```python
+def fib(n: int):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+```
+
+<file_sep>/data/natural_language_inference/README.md
+# Natural Language Inference
+
+## Description
+
+This dataset contains 10000 pairs of sentences, with a label indicating if the second sentence is a natural language inference of the first sentence. The pairs are from news headlines, on which crowdworkers received a prompt like "Article: a person on a horse jumps over a broken down airplane." and were asked which headlines, if any, could plausibly be written as a continuation of the prompt.
+
+## Dataset
+
+The dataset is available in the following format:
+
+- `train.tsv`: Training set
+- `dev.tsv`: Development set
+- `test.tsv`: Test set
+
+Each file contains 10000 lines, with each line containing a pair of sentences and a label indicating if the second sentence is a natural language inference of the first sentence. The label is either `0` (not a natural language inference) or `1` (a natural language inference).
+
+## Example
+
+Here is an example of a line from the dataset:
+
+```
+Article: a person on a horse jumps over a broken down airplane.
+Hypothesis: a person is training his horse for a competition.
+Label: 0
+```
+
+In this example, the first sentence is an article, and the second sentence is a hypothesis. The label `0` indicates that the second sentence is not a natural language inference of the first sentence.
+
+## Usage
+
+This dataset can be used for training and evaluating models for natural language inference. For example, you could train a model to predict if the second sentence is a natural language inference of the first sentence.
+
+## Citation
+
+If you use this dataset in your research, please cite the following paper:
+
+```
+@inproceedings{williams-etal-2018-broad,
+    title = "A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference",
+    author = "<NAME>  and
+      <NAME>  and
+      <NAME>  and
+      <NAME>  and
+      

@@ -1,0 +1,8 @@
+from typing import *
+
+
+def encode(message):
+    vowels = "aeiouAEIOU"
+    vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])  # Creates a dictionary mapping each vowel to its ASCII character after adding 2
+    message = message.swapcase()  # Swaps the case of all characters in the message
+    return ''.join([vowels_replace[i] if i in vowels else i for i in message])  # Encodes the message based on the vowel replacement dictionary and returns the encoded message

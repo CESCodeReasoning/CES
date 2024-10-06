@@ -1,0 +1,8 @@
+from typing import *
+
+
+def below_threshold(l: list, t: int):
+    for e in l: ## [STATE]e=??[/STATE][STATE]l=??[/STATE]
+        if e >= t: ## [CONDITION](e >= t)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            return False
+    return True

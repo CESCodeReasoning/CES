@@ -1,0 +1,11 @@
+The function `split_words` is called with ( txt = "Hello world!" ).
+The condition `" " in txt` is True. The first branch is taken.
+The function `split_words` returns the result of splitting the string `"Hello world!"` into a list of words.
+The condition `"," in txt` is False. The second branch is not taken.
+The function `split_words` returns the result of replacing the comma in the string `"Hello world!"` with a space and splitting the resulting string into a list of words.
+The condition `txt.islower()` is True. The third branch is taken.
+The function `split_words` returns the result of counting the number of lowercase letters in the string `"Hello world!"` and returning it.
+The condition `ord(i)%2 == 0` is True. The fourth branch is taken.
+The function `split_words` returns the result of counting the number of even-valued characters in the string `"Hello world!"` and returning it.
+
+Therefore, the final output of the function `split_words("Hello world!")` is [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1

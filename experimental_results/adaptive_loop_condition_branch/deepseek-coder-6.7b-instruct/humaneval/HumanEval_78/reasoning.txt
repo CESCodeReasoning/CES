@@ -1,0 +1,9 @@
+The function `hex_key` is called with ( num = "AB" ).
+Inside the function, a variable `total` is initialized to 0.
+
+Iteration 1:
+    -The character 'A' is not in primes, so no increment.
+Iteration 2:
+    -The character 'B' is in primes, so total becomes 1.
+
+Therefore, the final output of the function `hex_key("AB")` is 1.

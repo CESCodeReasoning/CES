@@ -1,0 +1,153 @@
+<｜begin▁of▁sentence｜>
+
+Fix bugs in has_close_elements.
+Enclose the fixed code in ```python and ```.
+
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Fixed Code:
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+    
+Fix bugs in correct_bracketing.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets:
+        if b == "(":
+            depth += 1
+        else:
+            depth -= 1
+        if depth < 0:
+            return True
+    return depth == 0
+
+Tests:
+def check(correct_bracketing):
+    assert correct_bracketing("()")
+    assert correct_bracketing("(()())")
+    assert correct_bracketing("()()(()())()")
+    assert correct_bracketing("()()((()()())())(()()(()))")
+    assert not correct_bracketing("((()())))")
+    assert not correct_bracketing(")(()")
+    assert not correct_bracketing("(")
+    assert not correct_bracketing("((((")
+    assert not correct_bracketing(")")
+    assert not correct_bracketing("(()")
+    assert not correct_bracketing("()()(()())())(()")
+    assert not correct_bracketing("()()(()())()))()")
+
+check(correct_bracketing)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `correct_bracketing(brackets: str)` to solve the following problem:
+brackets is a string of "(" and ")".
+return True if every opening bracket has a corresponding closing bracket.
+return False otherwise.
+
+Fixed Code:
+```python
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets:
+        if b == "(":
+            depth += 1
+        else:
+            depth -= 1
+        if depth < 0:
+            return False
+    return depth == 0
+```
+
+
+    
+Fix bugs in is_palindrome.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def is_palindrome(word: str) -> bool:
+    return word == word[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("aibofobai")
+    assert is_palindrome("anan")
+    assert is_palindrome("amanaplanacanalpanama")
+    assert is_palindrome("")
+    assert not is_palindrome("abc")
+    assert not is_palindrome("abca")
+    assert not is_palindrome("abcdefghijklmnopqrstuvwxyz")
+    assert not is_palindrome("zyxwvutsrqponmlkjihgfedcba")
+
+check(is_palindrome)
+
+The fixed code should satisfy the following natural language specification:
+Write a Python function `is_palindrome(word: str) -> bool` to solve the following problem:
+Check if a given word is a palindrome.
+
+Fixed Code:
+```python
+def is_palindrome(word: str) -> bool:
+    return word == word[::-1]
+```
+
+
+    
+Fix bugs in is_prime.    
+Enclose the fixed code inside ```python and ```.
+
+Buggy Code:
+def is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(2)
+    assert is_prime(3)
+    assert is_prime(

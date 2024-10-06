@@ -1,0 +1,5 @@
+The function `digitSum` is called with ( s = "You arE Very Smart" ).
+The condition `s == ""` is false, therefore the if branch is not taken.
+The return statement returns the value of `sum(ord(char) if char.isupper() else 0 for char in s)`.
+
+Therefore, the final output of the function `digitSum("You arE Very Smart")` is 22.

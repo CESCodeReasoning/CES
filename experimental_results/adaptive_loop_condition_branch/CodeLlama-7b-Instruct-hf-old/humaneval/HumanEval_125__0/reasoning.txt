@@ -1,0 +1,6 @@
+The function `split_words` is called with ( txt = "" ).
+The condition " " in txt is False, and the condition ", " in txt is False.
+The else branch is taken.
+The function returns the length of the list of lowercase letters in txt that have an even ASCII code.
+
+Therefore, the final output of the function `split_words("")` is 0.

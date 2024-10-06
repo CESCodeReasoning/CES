@@ -1,0 +1,6 @@
+def pairs_sum_to_zero(l):
+    for i, l1 in enumerate(l): ## [STATE]i=[0, 1, 2, 3, 4, 5][/STATE][STATE]l1=[-3, 9, -1, 4, 2, 30][/STATE][STATE]enumerate(l)=[[0, -3], [1, 9], [2, -1], [3, 4], [4, 2], [5, 30]][/STATE][STATE]l=[[-3, 9, -1, 4, 2, 30]][/STATE]
+        for j in range(i + 1, len(l)): ## [STATE]j=[1, 2, 3, 4, 5, 2, 3, 4, 5, 3, 4, 5, 4, 5, 5][/STATE][STATE]range((i + 1), len(l))=[[1, 2, 3, 4, 5], [2, 3, 4, 5], [3, 4, 5], [4, 5], [5]][/STATE][STATE](i + 1)=[1, 2, 3, 4, 5][/STATE][STATE]len(l)=[6][/STATE]
+            if l1 + l[j] == 0: ## [CONDITION](l1 + l[j] == 0)=[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[F, F, F, F, F, F, F, F, F, F, F, F, F, F, F][/BRANCH]
+                return True
+    return False

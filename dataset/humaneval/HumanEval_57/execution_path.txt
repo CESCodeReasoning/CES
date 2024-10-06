@@ -1,0 +1,4 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: monotonic
+main.py(3):     if l == sorted(l) or l == sorted(l, reverse=True):
+main.py(4):         return True

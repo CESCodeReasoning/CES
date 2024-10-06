@@ -1,0 +1,7 @@
+from typing import *
+
+def encode(message: str) -> str:
+    vowels = "aeiouAEIOU"  # [STATE] vowels = "aeiouAEIOU" [/STATE]
+    vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])  # [STATE] vowels_replace = {'a': 'c', 'e': 'g', 'i': 'k', 'o': 'q', 'u': 's', 'A': 'C', 'E': 'G', 'I': 'K', 'O': 'Q', 'U': 'S'} [/STATE]
+    message = message.swapcase()  # [STATE] message = "test" [/STATE]
+    return ''.join([vowels_replace[i] if i in vowels else i for i in message])  # [STATE] return value = "test" [/STATE]

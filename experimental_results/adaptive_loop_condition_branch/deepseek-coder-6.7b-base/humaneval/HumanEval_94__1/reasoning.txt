@@ -1,0 +1,52 @@
+The function `skjkasdkd` is called with ( lst = [0, 8, 1, 2, 1, 7] ).
+Inside the function, a variable `maxx` is initialized to 0.
+The loop iterates from 0 through 5 (since ( len(lst) = 6 )).
+First Iteration (i = 0):
+    - The condition `i < len(lst)` is true.
+    - The condition `lst[i] > maxx` is false.
+    - The condition `isPrime(lst[i])` is false.
+    - The first branch is not taken.
+    - The second branch is not taken.
+    - The else branch is not taken.
+    - The loop continues to the next iteration.
+Second Iteration (i = 1):
+    - The condition `i < len(lst)` is true.
+    - The condition `lst[i] > maxx` is true.
+    - The condition `isPrime(lst[i])` is true.
+    - The first branch is taken.
+    - The second branch is not taken.
+    - The else branch is not taken.
+    - The loop continues to the next iteration.
+Third Iteration (i = 2):
+    - The condition `i < len(lst)` is true.
+    - The condition `lst[i] > maxx` is false.
+    - The condition `isPrime(lst[i])` is false.
+    - The first branch is not taken.
+    - The second branch is not taken.
+    - The else branch is not taken.
+    - The loop continues to the next iteration.
+Fourth Iteration (i = 3):
+    - The condition `i < len(lst)` is true.
+    - The condition `lst[i] > maxx` is true.
+    - The condition `isPrime(lst[i])` is true.
+    - The first branch is taken.
+    - The second branch is not taken.
+    - The else branch is not taken.
+    - The loop continues to the next iteration.
+Fifth Iteration (i = 4):
+    - The condition `i < len(lst)` is true.
+    - The condition `lst[i] > maxx` is false.
+    - The condition `isPrime(lst[i])` is false.
+    - The first branch is not taken.
+    - The second branch is not taken.
+    - The else branch is not taken.
+    - The loop continues to the next iteration.
+Sixth Iteration (i = 5):
+    - The condition `i < len(lst)` is true.
+    - The condition `lst[i] > maxx` is false.
+    - The condition `isPrime(lst[i])` is false.
+    - The first branch is not taken.
+    - The second branch is not taken.
+    - The else branch is not taken.
+    - The loop continues to the next iteration.
+After the loop completes, the function returns the value of `maxx`, which is now 8.

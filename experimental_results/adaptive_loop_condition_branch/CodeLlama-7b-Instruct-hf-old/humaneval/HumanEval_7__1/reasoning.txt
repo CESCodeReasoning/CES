@@ -1,0 +1,12 @@
+The function filter_by_substring takes two arguments: a list of strings (strings) and a string (substring). It returns a new list containing all the strings in the original list that contain the substring.
+
+To determine the output of executing the function filter_by_substring on the input ['xxx', 'asd', 'aaaxxy', 'john doe', 'xxxAAA', 'xxx'], 'xx', we need to apply the filter to each string in the list.
+
+The first string in the list is 'xxx'. It contains the substring 'xx', so it is included in the output.
+The second string in the list is 'asd'. It does not contain the substring 'xx', so it is excluded from the output.
+The third string in the list is 'aaaxxy'. It contains the substring 'xx', so it is included in the output.
+The fourth string in the list is 'john doe'. It does not contain the substring 'xx', so it is excluded from the output.
+The fifth string in the list is 'xxxAAA'. It contains the substring 'xx', so it is included in the output.
+The sixth string in the list is 'xxx'. It contains the substring 'xx', so it is included in the output.
+
+Therefore, the output of executing the function filter_by_substring on the input ['xxx', 'asd', 'aaaxxy', 'john doe', 'xxxAAA', 'xxx'], 'xx' is ['xxx', 'aaaxxy', 'xxxAAA', 'xxx'].

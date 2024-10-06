@@ -1,0 +1,23 @@
+The function `numerical_letter_grade` is called with ( grades = [4.0, 3, 1.7, 2, 3.5] ).
+Inside the function, an empty list `letter_grade` is initialized.
+
+Iteration 1:
+    -The gpa is 4.0, so the condition `gpa == 4.0` is true.
+    -Action: `letter_grade.append("A+")` results in `letter_grade` becoming `["A+"]`.
+Iteration 2:
+    -The gpa is 3, which does not satisfy any of the conditions.
+    -Action: `letter_grade.append("D-")` results in `letter_grade` becoming `["A+", "D-"]`.
+Iteration 3:
+    -The gpa is 1.7, which does not satisfy any of the conditions.
+    -Action: `letter_grade.append("C")` results in `letter_grade` becoming `["A+", "D-", "C"]`.
+Iteration 4:
+    -The gpa is 2, which does not satisfy any of the conditions.
+    -Action: `letter_grade.append("D-")` results in `letter_grade` becoming `["A+", "D-", "C", "D-"]`.
+Iteration 5:
+    -The gpa is 3.5, which does not satisfy any of the conditions.
+    -Action: `letter_grade.append("B+")` results in `letter_grade` becoming `["A+", "D-", "C", "D-", "B+"]`.
+
+Return Statement
+   - After the loop completes, the function returns the value of `letter_grade`, which is now `["A+", "D-", "C", "D-", "B+"]`.
+
+Therefore, the final output of the function `numerical_letter_grade([4.0, 3, 1.7, 2, 3.5])` is `["A+", "D-", "C", "D-", "B+"]`.

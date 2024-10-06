@@ -1,0 +1,66 @@
+The function `int_to_mini_roman` is called with ( number = 900 ).
+Inside the function, a variable `num` is initialized to [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000].
+A variable `sym` is initialized to ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"].
+A variable `i` is initialized to 12.
+A variable `res` is initialized to ''.
+First Iteration:
+    - number = 900, number // num[i] = 900 // 1000 = 0, number %= num[i] = 900 % 1000 = 900.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "".
+    - i -= 1 = 12 - 1 = 11.
+Second Iteration:
+    - number = 90, number // num[i] = 90 // 100 = 9, number %= num[i] = 90 % 100 = 0.
+    - div = 9, div -= 1 = 9 - 1 = 8.
+    - res += sym[i] = res += "CM" = "M".
+    - i -= 1 = 11 - 1 = 10.
+Third Iteration:
+    - number = 9, number // num[i] = 9 // 10 = 0, number %= num[i] = 9 % 10 = 9.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "CM".
+    - i -= 1 = 10 - 1 = 9.
+Fourth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0, number %= num[i] = 0 % 1 = 0.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "CMX".
+    - i -= 1 = 9 - 1 = 8.
+Fifth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0, number %= num[i] = 0 % 1 = 0.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "CMXC".
+    - i -= 1 = 8 - 1 = 7.
+Sixth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0, number %= num[i] = 0 % 1 = 0.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "CMXCV".
+    - i -= 1 = 7 - 1 = 6.
+Seventh Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0, number %= num[i] = 0 % 1 = 0.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "CMXCVI".
+    - i -= 1 = 6 - 1 = 5.
+Eighth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0, number %= num[i] = 0 % 1 = 0.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "CMXCVII".
+    - i -= 1 = 5 - 1 = 4.
+Ninth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0, number %= num[i] = 0 % 1 = 0.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "CMXCVIII".
+    - i -= 1 = 4 - 1 = 3.
+Tenth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0, number %= num[i] = 0 % 1 = 0.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "CMXCIX".
+    - i -= 1 = 3 - 1 = 2.
+Eleventh Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0, number %= num[i] = 0 % 1 = 0.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "CMXCIX".
+    - i -= 1 = 2 - 1 = 1.
+Twelfth Iteration:
+    - number = 0, number // num[i] = 0 // 1 = 0, number %= num[i] = 0 % 1 = 0.
+    - div = 0, div -= 1 = 0 - 1 = -1.
+    - res += sym[i] = res += "M" = "CMXCIX".
+    - i -= 1 = 1 - 1 = 0.
+After the loop completes, the function returns the value of `res`, which is now "cmxcix".

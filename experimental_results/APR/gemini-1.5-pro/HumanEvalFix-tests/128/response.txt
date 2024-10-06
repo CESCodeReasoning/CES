@@ -1,0 +1,20 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def prod_signs(arr):
+    if not arr: return None
+    prod = 1 if len(list(filter(lambda x: x < 0, arr))) % 2 == 0 and 0 not in arr else -1 if 0 not in arr else 0
+    return prod * sum([abs(i) for i in arr])
+```

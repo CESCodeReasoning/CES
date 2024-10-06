@@ -1,0 +1,10 @@
+The function `triangle_area` is called with (a = 3, b = 4, c = 5).
+First, the code checks if the triangle is valid. To do this, it checks if the sum of any two sides is greater than the third side. In this case, the sum of sides a and b is 7, which is greater than side c, so the triangle is valid.
+Next, the code calculates the semi-perimeter (s) using the formula:
+s = (a + b + c) / 2
+In this case, s = (3 + 4 + 5) / 2 = 12 / 2 = 6
+Next, the code calculates the area using the formula:
+area = sqrt(s * (s - a) * (s - b) * (s - c))
+In this case, area = sqrt(6 * (6 - 3) * (6 - 4) * (6 - 5)) = sqrt(6 * 3 * 2 * 1) = sqrt(36) = 6
+Finally, the code rounds the area to two decimal places and returns it.
+Therefore, the final output of the function `triangle_area(3, 4, 5)` is 6.

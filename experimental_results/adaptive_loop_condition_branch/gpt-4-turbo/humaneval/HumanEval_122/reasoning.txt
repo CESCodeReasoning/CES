@@ -1,0 +1,8 @@
+The function `add_elements` takes two parameters: `arr`, which is a list of integers, and `k`, an integer. The function returns the sum of the first `k` elements of `arr` that have a string representation of length less than or equal to 2.
+
+To determine the output of executing the function `add_elements` on the input `[1, -2, -3, 41, 57, 76, 87, 88, 99]` with `k` equal to 3:
+1. The function slices the array `arr` to the first `k` elements, resulting in `[1, -2, -3]`.
+2. It then filters these elements to include only those whose string representation has a length of 2 or less. All elements in `[1, -2, -3]` meet this condition (`"1"`, `"-2"`, `"-3"`).
+3. The function sums these elements: `1 + (-2) + (-3) = -4`.
+
+Therefore, the output of executing the function `add_elements` with the given input is `-4`.

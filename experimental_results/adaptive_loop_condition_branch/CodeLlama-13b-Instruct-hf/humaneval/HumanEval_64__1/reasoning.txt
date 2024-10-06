@@ -1,0 +1,5 @@
+The function `vowels_count` is called with ( s = "bye" ).
+`s` is "bye", which has 2 vowels ( "y" and "e" ).
+The condition `s[-1] == 'y' or s[-1] == 'Y'` is true, therefore the if branch is taken and the method returns 3 ( 2 vowels + 1 ).
+
+Therefore, the final output of the function `vowels_count("bye")` is 3.

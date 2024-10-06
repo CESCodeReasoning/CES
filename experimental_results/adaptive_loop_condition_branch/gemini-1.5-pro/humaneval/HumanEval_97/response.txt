@@ -1,0 +1,16 @@
+[REASONING]
+The function multiply takes two integers a and b as input and returns the product of the last digits of a and b.
+To determine the output of executing the function multiply on the input 148 and 412, we need to find the last digits of 148 and 412, which are 8 and 2, respectively.
+Then, we need to multiply 8 and 2, which gives us 16.
+Therefore, the output of executing the function multiply on the input 148 and 412 is 16.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def multiply(a, b):
+    return abs(a % 10) * abs(b % 10)
+[/ANSWER]
+
+[OUTPUT]
+16
+[/OUTPUT]

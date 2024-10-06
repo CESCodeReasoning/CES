@@ -1,0 +1,7 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: valid_date
+main.py(5):     try:
+main.py(6):         date = date.strip()
+main.py(7):         month, day, year = date.split('-')
+main.py(17):     except BaseException:
+main.py(18):         return False

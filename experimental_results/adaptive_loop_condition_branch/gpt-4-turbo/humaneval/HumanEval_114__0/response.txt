@@ -1,0 +1,40 @@
+[REASONING]
+The function `minSubArraySum` is called with the list `nums = [1, -1]`.
+Inside the function, two variables `max_sum` and `s` are initialized to 0.
+
+Iteration 1:
+    - The number `1` is processed. The variable `s` is updated by adding `-1` (i.e., `-num`), resulting in `s = -1`.
+    - The condition `(s < 0)` is true, so `s` is reset to 0.
+    - `max_sum` remains 0 as `max(s, max_sum)` is `max(0, 0)`.
+
+Iteration 2:
+    - The number `-1` is processed. The variable `s` is updated by adding `1` (i.e., `-(-1)`), resulting in `s = 1`.
+    - The condition `(s < 0)` is false, so `s` remains 1.
+    - `max_sum` is updated to 1 as `max(s, max_sum)` is `max(1, 0)`.
+
+After the loop, the condition `(max_sum == 0)` is false because `max_sum` is 1.
+The `min_sum` is calculated as `-max_sum`, which results in `-1`.
+
+Therefore, the final output of the function `minSubArraySum([1, -1])` is `-1`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def minSubArraySum(nums):
+    max_sum = 0
+    s = 0
+    for num in nums: ## [STATE]num=[1, -1][/STATE][STATE]nums=[1, -1][/STATE]
+        s += -num
+        if (s < 0): ## [CONDITION](s < 0)=[True, False][/CONDITION][BRANCH]taken=[Y, N][/BRANCH]
+            s = 0
+        max_sum = max(s, max_sum)
+    if max_sum == 0: ## [CONDITION](max_sum == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        max_sum = max(-i for i in nums)
+    min_sum = -max_sum
+    return min_sum
+[/PYTHON]
+
+[OUTPUT]
+-1
+[/OUTPUT]

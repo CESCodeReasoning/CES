@@ -1,0 +1,28 @@
+The function `is_nested` is called with ( string = '[][][[]]' ).
+Inside the function, two empty lists `opening_bracket_index` and `closing_bracket_index` are initialized.
+
+Iteration 1:
+    -The character '[' is found, so it is appended to `opening_bracket_index`.
+Iteration 2:
+    -The character ']' is found, so it is appended to `closing_bracket_index`.
+Iteration 3:
+    -The character '[' is found, so it is appended to `opening_bracket_index`.
+Iteration 4:
+    -The character '[' is found, so it is appended to `opening_bracket_index`.
+Iteration 5:
+    -The character ']' is found, so it is appended to `closing_bracket_index`.
+Iteration 6:
+    -The character ']' is found, so it is appended to `closing_bracket_index`.
+Iteration 7:
+    -The character ']' is found, so it is appended to `closing_bracket_index`.
+
+After the loop, `closing_bracket_index` is reversed.
+
+Iteration 1:
+    -The first index in `opening_bracket_index` is less than the first index in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 2:
+    -The second index in `opening_bracket_index` is less than the second index in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 3:
+    -The third index in `opening_bracket_index` is less than the third index in `closing_bracket_index`, so `cnt` is incremented by 1.
+
+Therefore, the final output of the function `is_nested('[][][[]]')` is True.

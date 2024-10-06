@@ -1,0 +1,15 @@
+The function `Strongest_Extension` is called with ( class_name = 'finNNalLLly', extensions = ['Die', 'NowW', 'Wow', 'WoW'] ).
+Inside the function, a variable `strong` and `my_val` are initialized to 0.
+
+Iteration 1:
+    - The variable `strong` is assigned the value of the first element of the list `extensions`, which is 'Die'.
+    - The variable `my_val` is assigned the value of the difference between the number of uppercase letters and the number of lowercase letters in the string 'Die'.
+Iteration 2:
+    - The variable `val` is assigned the value of the difference between the number of uppercase letters and the number of lowercase letters in the string 'NowW'.
+    - The variable `my_val` is assigned the value of the difference between the number of uppercase letters and the number of lowercase letters in the string 'NowW'.
+Iteration 3:
+    - The variable `val` is assigned the value of the difference between the number of uppercase letters and the number of lowercase letters in the string 'Wow'.
+    - The variable `my_val` is assigned the value of the difference between the number of uppercase letters and the number of lowercase letters in the string 'Wow'.
+Iteration 4:
+    - The variable `val` is assigned the value of the difference between the number of uppercase letters and the number of lowercase letters in the string 'WoW'.
+    - The variable `my_val` is assigned the value of the difference between the number of uppercase letters and the number of lowercase letters in the string 'WoW'.

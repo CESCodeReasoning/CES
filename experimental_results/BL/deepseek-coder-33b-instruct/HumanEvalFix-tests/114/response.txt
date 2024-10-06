@@ -1,0 +1,15 @@
+```response
+    max_sum = max(-i for i in nums)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def find_max_subarray(nums):
+    max_sum = nums[0]
+    current_sum = nums[0]
+    for num in nums[1:]:
+        current_sum = max(current_sum + num, num)
+        max_sum = max(current_sum, max_sum)
+    return

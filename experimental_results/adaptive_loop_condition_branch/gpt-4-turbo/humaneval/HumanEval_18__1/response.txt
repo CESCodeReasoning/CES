@@ -1,0 +1,51 @@
+[REASONING]
+The function `how_many_times` is called with the parameters (string = "john doe", substring = "john").
+Inside the function, a variable `times` is initialized to 0 to keep track of the number of times the substring appears in the string.
+
+The loop iterates from 0 to the length of the string minus the length of the substring plus one. This is calculated as follows:
+- Length of "john doe" is 8.
+- Length of "john" is 4.
+- Thus, the loop iterates from 0 to (8 - 4 + 1) = 5.
+
+Iteration 1 (i = 0):
+   - The substring from index 0 to 4 in "john doe" is "john", which matches "john".
+   - The condition `string[i:i + len(substring)] == substring` is true.
+   - Action: `times` is incremented by 1, resulting in `times = 1`.
+
+Iteration 2 (i = 1):
+   - The substring from index 1 to 5 in "john doe" is "ohn ", which does not match "john".
+   - The condition is false.
+
+Iteration 3 (i = 2):
+   - The substring from index 2 to 6 in "john doe" is "hn d", which does not match "john".
+   - The condition is false.
+
+Iteration 4 (i = 3):
+   - The substring from index 3 to 7 in "john doe" is "n do", which does not match "john".
+   - The condition is false.
+
+Iteration 5 (i = 4):
+   - The substring from index 4 to 8 in "john doe" is " doe", which does not match "john".
+   - The condition is false.
+
+After the loop completes, the function returns the value of `times`, which is 1, indicating the substring "john" appears once in "john doe".
+
+Therefore, the final output of the function `how_many_times('john doe', 'john')` is 1.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def how_many_times(string: str, substring: str) -> int:
+    times = 0
+
+    for i in range(len(string) - len(substring) + 1): ## [STATE]i=[0, 1, 2, 3, 4][/STATE][STATE]range(((len(string) - len(substring)) + 1))=[0, 1, 2, 3, 4][/STATE][STATE]((len(string) - len(substring)) + 1)=5[/STATE]
+        if string[i:i + len(substring)] == substring: ## [CONDITION](string[i:i + len(substring)] == substring)=[True, False, False, False, False][/CONDITION][BRANCH]taken=[Y, N, N, N, N][/BRANCH]
+            times += 1
+
+    return times
+[/PYTHON]
+
+[OUTPUT]
+1
+[/OUTPUT]

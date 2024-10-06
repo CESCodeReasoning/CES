@@ -1,0 +1,14 @@
+The function `exchange` is called with ( lst1 = [100, 200], lst2 = [200, 200] ).
+Inside the function, two variables `odd` and `even` are initialized to 0.
+
+Iteration 1:
+    -The number 100 is not odd, so no increment in odd.
+    -The number 200 is even, so even becomes 1.
+Iteration 2:
+    -The number 200 is even, so even becomes 2.
+
+Iteration 1:
+    -The number 200 is even, so even becomes 3.
+    -The number 200 is even, so even becomes 4.
+
+The condition `even >= odd` is checked. Since `even` is 4 and `odd` is 0, the condition is true, so the function returns "YES".

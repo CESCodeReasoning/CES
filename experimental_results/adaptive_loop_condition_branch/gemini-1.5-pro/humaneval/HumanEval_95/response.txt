@@ -1,0 +1,44 @@
+[REASONING]
+The function `check_dict_case` is called with ( dict = {"p":"pineapple", "b":"banana"} ).
+The function first checks if the dictionary is empty. Since the dictionary is not empty, the function proceeds to check the case of the keys in the dictionary.
+
+The function initializes a variable `state` to "start".
+The function then iterates over the keys in the dictionary.
+
+For the first key, "p", the function checks if the key is a string. Since the key is a string, the function checks if the key is uppercase. Since the key is not uppercase, the function checks if the key is lowercase. Since the key is lowercase, the function sets the state to "lower".
+
+For the second key, "b", the function checks if the key is a string. Since the key is a string, the function checks if the key is uppercase. Since the key is not uppercase, the function checks if the key is lowercase. Since the key is lowercase, the function checks if the state is "lower". Since the state is "lower", the function continues to the next iteration.
+
+After iterating over all the keys in the dictionary, the function checks if the state is "upper" or "lower". Since the state is "lower", the function returns True.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def check_dict_case(dict):
+    if len(dict.keys()) == 0: ## [CONDITION](len(dict.keys()) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return False
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        state = "start"
+        for key in dict.keys(): ## [STATE]dict.keys()=['p', 'b'][/STATE]
+
+            if isinstance(key, str) == False: ## [CONDITION](isinstance(key, str) == False)=[False, False][/CONDITION][BRANCH]taken=[N, N][/BRANCH]
+                state = "mixed"
+                break
+            if state == "start": ## [CONDITION](state == "start")=[True, False][/CONDITION][BRANCH]taken=[Y, N][/BRANCH]
+                if key.isupper(): ## [CONDITION](key.isupper())=[False, False][/CONDITION][BRANCH]taken=[N, N][/BRANCH]
+                    state = "upper"
+                elif key.islower(): ## [CONDITION](key.islower())=[True, True][/CONDITION][BRANCH]taken=[Y, Y][/BRANCH]
+                    state = "lower"
+                else: ## [BRANCH]taken=[N, N][/BRANCH]
+                    break
+            elif (state == "upper" and not key.isupper()) or (state == "lower" and not key.islower()): ## [CONDITION]((state == "upper" and not key.isupper()) or (state == "lower" and not key.islower()))=[False, False][/CONDITION][CONDITION]((state == "upper" and not key.isupper()))=[False, False][/CONDITION][CONDITION](state == "upper")=[True, False][/CONDITION][CONDITION](not key.isupper())=[True, True][/CONDITION][CONDITION]((state == "lower" and not key.islower()))=[False, False][/CONDITION][CONDITION](state == "lower")=[False, True][/CONDITION][CONDITION](not key.islower())=[True, False][/CONDITION][BRANCH]taken=[N, N][/BRANCH]
+                    state = "mixed"
+                    break
+            else: ## [BRANCH]taken=[N, N][/BRANCH]
+                break
+        return state == "upper" or state == "lower" 
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]

@@ -1,0 +1,24 @@
+The function `smallest_change` is called with ( arr = [1, 2, 3, 4, 3, 2, 2] ).
+Inside the function, a variable `ans` is initialized to 0.
+
+Iteration 1:
+    -The first element (arr[0]) is 1, and the last element (arr[len(arr) - 1]) is 2.
+    -The condition (arr[0]!= arr[len(arr) - 1]) is true, so ans becomes 1.
+Iteration 2:
+    -The second element (arr[1]) is 2, and the second-to-last element (arr[len(arr) - 2]) is 3.
+    -The condition (arr[1]!= arr[len(arr) - 2]) is true, so ans becomes 2.
+Iteration 3:
+    -The third element (arr[2]) is 3, and the third-to-last element (arr[len(arr) - 3]) is 3.
+    -The condition (arr[2]!= arr[len(arr) - 3]) is false, so ans remains 2.
+Iteration 4:
+    -The fourth element (arr[3]) is 4, and the fourth-to-last element (arr[len(arr) - 4]) is 4.
+    -The condition (arr[3]!= arr[len(arr) - 4]) is false, so ans remains 2.
+Iteration 5:
+    -The fifth element (arr[4]) is 3, and the fifth-to-last element (arr[len(arr) - 5]) is 3.
+    -The condition (arr[4]!= arr[len(arr) - 5]) is false, so ans remains 2.
+Iteration 6:
+    -The sixth element (arr[5]) is 2, and the sixth-to-last element (arr[len(arr) - 6]) is 2.
+    -The condition (arr[5]!= arr[len(arr) - 6]) is false, so ans remains 2.
+Iteration 7:
+    -The seventh element (arr[6]) is 2, and the seventh-to-last element (arr[len(arr) - 7]) is 2.
+    -The condition (arr[6]!= arr[len(arr) - 7]) is false, so ans remains 2.

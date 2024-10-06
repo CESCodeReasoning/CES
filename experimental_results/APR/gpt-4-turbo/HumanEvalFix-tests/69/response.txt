@@ -1,0 +1,45 @@
+Here is the fixed code for both functions, `has_close_elements` and `search`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `search`
+```python
+def search(lst):
+    if not lst:
+        return -1
+
+    frq = [0] * (max(lst) + 1)
+    for i in lst:
+        frq[i] += 1
+
+    ans = -1
+    for i in range(1, len(frq)):
+        if frq[i] >= i:
+            ans = i
+
+    return ans
+```
+
+### Explanation of Fixes
+
+1. **has_close_elements**:
+   - The main issue was the lack of absolute value calculation in the distance measurement. This has been corrected by using `abs(elem - elem2)` to ensure the distance is always non-negative.
+
+2. **search**:
+   - The function now initializes `ans` with `-1` to handle cases where no integer meets the criteria.
+   - The function checks if the list is empty at the beginning, although the problem states the list is non-empty. This is just a safeguard.
+   - The loop correctly iterates through the frequency array and updates `ans` if the condition `frq[i] >= i` is met. This ensures that the greatest integer meeting the condition is returned.
+
+These fixes ensure that the functions work as expected based on the provided specifications and test cases.

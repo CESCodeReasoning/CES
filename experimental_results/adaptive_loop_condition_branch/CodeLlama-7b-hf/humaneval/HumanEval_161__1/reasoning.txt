@@ -1,0 +1,18 @@
+The function `solve` is called with ( s = "ab" ).
+Inside the function, a variable `flg` and `idx` are initialized to 0.
+A variable `new_str` is initialized to the list of characters in `s`.
+The loop iterates through the characters in `s`.
+First Iteration (i = 'a')
+   - `i` is 'a', which is not an alphabetical character.
+   - The condition `i.isalpha()` is false.
+   - Action: `new_str[idx] = i.swapcase()` does not change `new_str`.
+   - `idx` is incremented to 1.
+Second Iteration (i = 'b')
+   - `i` is 'b', which is not an alphabetical character.
+   - The condition `i.isalpha()` is false.
+   - Action: `new_str[idx] = i.swapcase()` does not change `new_str`.
+   - `idx` is incremented to 2.
+Return Statement
+   - After the loop completes, the function returns the value of `s`, which is "ab".
+
+Therefore, the final output of the function `solve("ab")` is "ab".

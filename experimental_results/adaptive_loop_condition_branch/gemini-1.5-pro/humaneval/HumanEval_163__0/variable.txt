@@ -1,0 +1,8 @@
+from typing import *
+
+
+def generate_integers(a, b):
+    lower = max(2, min(a, b))  # [STATE]lower = 17[/STATE]
+    upper = min(8, max(a, b))  # [STATE]upper = 89[/STATE]
+
+    return [i for i in range(lower, upper + 1) if i % 2 == 0]  # [CONDITION]i % 2 == 0[/CONDITION] [BRANCH]Y[/BRANCH]

@@ -1,0 +1,13 @@
+The function `smallest_change` is called with ( arr = [1,2,3,5,4,7,9,6] ).
+Inside the function, a variable `ans` is initialized to 0.
+
+Iteration 1:
+    -The first element (1) is not equal to the last element (6), so `ans` becomes 1.
+Iteration 2:
+    -The second element (2) is not equal to the second last element (9), so `ans` becomes 2.
+Iteration 3:
+    -The third element (3) is not equal to the third last element (7), so `ans` becomes 3.
+Iteration 4:
+    -The fourth element (5) is not equal to the fourth last element (4), so `ans` becomes 4.
+
+Therefore, the final output of the function `smallest_change([1,2,3,5,4,7,9,6])` is 4.

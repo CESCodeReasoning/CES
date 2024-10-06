@@ -1,0 +1,19 @@
+The function `solve` is called with ( s = "ab" ).
+Inside the function, a flag `flg` is initialized to 0, and an index `idx` is initialized to 0.
+A new list `new_str` is created from the string `s`.
+
+Iteration 1:
+    - The first character 'a' is alphabetic, so the condition `i.isalpha()` is true.
+    - The character at index `idx` in `new_str` is changed to the swapcase of 'a', which is 'A'.
+    - The flag `flg` is set to 1 to indicate that at least one character has been swapped.
+    - The index `idx` is incremented to 1.
+
+Iteration 2:
+    - The second character 'b' is also alphabetic, so the condition `i.isalpha()` is true.
+    - The character at index `idx` in `new_str` is changed to the swapcase of 'b', which is 'B'.
+    - The index `idx` is incremented to 2.
+
+After the loop, the new string `s` is created by joining the characters in `new_str`.
+Since `flg` is not equal to 0, the function returns the string `s` without any further modification.
+
+Therefore, the final output of the function `solve("ab")` is "Ab".

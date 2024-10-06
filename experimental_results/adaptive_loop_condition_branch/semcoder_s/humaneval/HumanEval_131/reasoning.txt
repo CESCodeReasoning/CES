@@ -1,0 +1,10 @@
+The function `digits` is called with ( n = 5 ).
+Inside the function, a variable `product` is initialized to 1 and `odd_count` to 0.
+The loop iterates over the digits of `n` (which is 5).
+Iteration 1:
+    -The digit '5' is converted to an integer (5).
+    -5 is not odd, so no action is taken.
+Iteration 2:
+    -The loop ends as there are no more digits.
+The condition `odd_count == 0` is false (`odd_count` is 0), so the `else` block is executed.
+The function returns 0 as `odd_count` is 0.

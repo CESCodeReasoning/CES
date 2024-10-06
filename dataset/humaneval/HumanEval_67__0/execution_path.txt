@@ -1,0 +1,17 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: fruit_distribution
+main.py(5):     lis = list()
+main.py(6):     for i in s.split(' '):
+main.py(7):         if i.isdigit():
+main.py(8):             lis.append(int(i))
+main.py(6):     for i in s.split(' '):
+main.py(7):         if i.isdigit():
+main.py(6):     for i in s.split(' '):
+main.py(7):         if i.isdigit():
+main.py(6):     for i in s.split(' '):
+main.py(7):         if i.isdigit():
+main.py(8):             lis.append(int(i))
+main.py(6):     for i in s.split(' '):
+main.py(7):         if i.isdigit():
+main.py(6):     for i in s.split(' '):
+main.py(9):     return n - sum(lis)

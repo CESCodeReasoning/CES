@@ -1,0 +1,28 @@
+[REASONING]
+The function `find_max` takes a list of words as input and returns the word with the maximum number of unique characters. If there are ties, it returns the lexicographically smallest word among those with the maximum number of unique characters.
+
+Here's the step-by-step reasoning for the input `["play", "this", "game", "of", "footbott"]`:
+1. The function sorts the list of words based on two criteria:
+   - The negative of the length of the set of characters in each word (which counts unique characters). Using the negative value ensures that words with more unique characters come first.
+   - The word itself, to handle ties by choosing the lexicographically smallest word.
+2. For each word:
+   - "play" has 4 unique characters.
+   - "this" has 4 unique characters.
+   - "game" has 4 unique characters.
+   - "of" has 2 unique characters.
+   - "footbott" has 4 unique characters.
+3. The words "play", "this", "game", and "footbott" all have the maximum number of unique characters (4). Among these, "game" is the lexicographically smallest.
+4. Therefore, "game" is returned as the output.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def find_max(words):
+    # [STATE] words = ["play", "this", "game", "of", "footbott"] [/STATE]
+    return sorted(words, key=lambda x: (-len(set(x)), x))[0]  # [STATE] key=lambda x: (-len(set(x)), x) [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+"game"
+[/OUTPUT]

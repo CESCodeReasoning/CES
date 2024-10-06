@@ -1,0 +1,102 @@
+The function `search` is called with ( lst = [2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1] ).
+Inside the function, a list `frq` is initialized with zeros. The length of `frq` is equal to the maximum value in `lst` plus 1.
+
+Iteration 1:
+    -The value 2 is not in `frq`, so `frq[2]` becomes 1.
+Iteration 2:
+    -The value 7 is not in `frq`, so `frq[7]` becomes 1.
+Iteration 3:
+    -The value 8 is not in `frq`, so `frq[8]` becomes 1.
+Iteration 4:
+    -The value 8 is not in `frq`, so `frq[8]` becomes 2.
+Iteration 5:
+    -The value 4 is not in `frq`, so `frq[4]` becomes 1.
+Iteration 6:
+    -The value 8 is not in `frq`, so `frq[8]` becomes 3.
+Iteration 7:
+    -The value 7 is not in `frq`, so `frq[7]` becomes 2.
+Iteration 8:
+    -The value 3 is not in `frq`, so `frq[3]` becomes 1.
+Iteration 9:
+    -The value 9 is not in `frq`, so `frq[9]` becomes 1.
+Iteration 10:
+    -The value 6 is not in `frq`, so `frq[6]` becomes 1.
+Iteration 11:
+    -The value 5 is not in `frq`, so `frq[5]` becomes 1.
+Iteration 12:
+    -The value 10 is not in `frq`, so `frq[10]` becomes 1.
+Iteration 13:
+    -The value 4 is not in `frq`, so `frq[4]` becomes 2.
+Iteration 14:
+    -The value 3 is not in `frq`, so `frq[3]` becomes 2.
+Iteration 15:
+    -The value 6 is not in `frq`, so `frq[6]` becomes 2.
+Iteration 16:
+    -The value 7 is not in `frq`, so `frq[7]` becomes 3.
+Iteration 17:
+    -The value 1 is not in `frq`, so `frq[1]` becomes 1.
+Iteration 18:
+    -The value 7 is not in `frq`, so `frq[7]` becomes 4.
+Iteration 19:
+    -The value 4 is not in `frq`, so `frq[4]` becomes 3.
+Iteration 20:
+    -The value 10 is not in `frq`, so `frq[10]` becomes 2.
+Iteration 21:
+    -The value 8 is not in `frq`, so `frq[8]` becomes 4.
+Iteration 22:
+    -The value 1 is not in `frq`, so `frq[1]` becomes 2.
+
+The function then iterates over `frq` from 1 to the length of `frq`.
+
+Iteration 1:
+    -The value 1 in `frq` is less than 1, so `ans` remains -1.
+Iteration 2:
+    -The value 2 in `frq` is less than 2, so `ans` remains -1.
+Iteration 3:
+    -The value 3 in `frq` is less than 3, so `ans` remains -1.
+Iteration 4:
+    -The value 4 in `frq` is less than 4, so `ans` remains -1.
+Iteration 5:
+    -The value 5 in `frq` is less than 5, so `ans` remains -1.
+Iteration 6:
+    -The value 6 in `frq` is less than 6, so `ans` remains -1.
+Iteration 7:
+    -The value 7 in `frq` is less than 7, so `ans` remains -1.
+Iteration 8:
+    -The value 8 in `frq` is less than 8, so `ans` remains -1.
+Iteration 9:
+    -The value 9 in `frq` is less than 9, so `ans` remains -1.
+Iteration 10:
+    -The value 10 in `frq` is less than 10, so `ans` remains -1.
+Iteration 11:
+    -The value 11 in `frq` is less than 11, so `ans` remains -1.
+Iteration 12:
+    -The value 12 in `frq` is less than 12, so `ans` remains -1.
+Iteration 13:
+    -The value 13 in `frq` is less than 13, so `ans` remains -1.
+Iteration 14:
+    -The value 14 in `frq` is less than 14, so `ans` remains -1.
+Iteration 15:
+    -The value 15 in `frq` is less than 15, so `ans` remains -1.
+Iteration 16:
+    -The value 16 in `frq` is less than 16, so `ans` remains -1.
+Iteration 17:
+    -The value 17 in `frq` is less than 17, so `ans` remains -1.
+Iteration 18:
+    -The value 18 in `frq` is less than 18, so `ans` remains -1.
+Iteration 19:
+    -The value 19 in `frq` is less than 19, so `ans` remains -1.
+Iteration 20:
+    -The value 20 in `frq` is less than 20, so `ans` remains -1.
+Iteration 21:
+    -The value 21 in `frq` is less than 21, so `ans` remains -1.
+Iteration 22:
+    -The value 22 in `frq` is less than 22, so `ans` remains -1.
+Iteration 23:
+    -The value 23 in `frq` is less than 23, so `ans` remains -1.
+Iteration 24:
+    -The value 24 in `frq` is less than 24, so `ans` remains -1.
+Iteration 25:
+    -The value 25 in `frq` is less than 25, so `ans` remains -1.
+
+The function finally returns `ans`, which is -1.

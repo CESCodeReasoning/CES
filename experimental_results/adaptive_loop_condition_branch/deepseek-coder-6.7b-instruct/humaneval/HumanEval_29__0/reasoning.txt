@@ -1,0 +1,12 @@
+The function filter_by_prefix takes a list of strings and a prefix as input. It returns a new list that contains only the strings from the input list that start with the given prefix.
+
+To determine the output of executing the function filter_by_prefix on the input ['abc', 'abcd', 'abcde'], 'abc', we need to filter the list to only include strings that start with 'abc'.
+
+The first string 'abc' in the input list starts with 'abc', so it is included in the output. The strings 'abcd' and 'abcde' do not start with 'abc', so they are not included in the output.
+
+Therefore, the output of executing the function filter_by_prefix on the input ['abc', 'abcd', 'abcde'], 'abc' is ['abc'].
+
+[OUTPUT]
+['abc']
+[/OUTPUT]
+<|EOT|>

@@ -1,0 +1,10 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: get_closest_vowel
+main.py(5):     if len(word) < 3:
+main.py(8):     vowels = {"a", "e", "i", "o", "u", "A", "E", 'O', 'U', 'I'}
+main.py(9):     for i in range(len(word) - 2, 0, -1):
+main.py(10):         if word[i] in vowels:
+main.py(9):     for i in range(len(word) - 2, 0, -1):
+main.py(10):         if word[i] in vowels:
+main.py(11):             if (word[i + 1] not in vowels) and (word[i - 1] not in vowels):
+main.py(12):                 return word[i]

@@ -1,0 +1,8 @@
+The function decimal_to_binary takes an integer decimal as input and returns a string that represents the binary representation of the input.
+The function first concatenates the string "db" with the binary representation of the input, which is obtained using the bin() function.
+The bin() function returns a string that starts with "0b", so we need to remove the first two characters by slicing the string from index 2 to the end.
+Finally, the function concatenates the resulting string with another "db" to form the final output.
+
+For example, if we call the function with the input 103, the function will first convert 103 to its binary representation, which is "0b1100111".
+Then, it will remove the first two characters to get "1100111".
+Finally, it will concatenate "db" with "1100111" and another "db" to get "db1100111db".

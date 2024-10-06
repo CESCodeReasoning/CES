@@ -1,0 +1,8 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: max_fill
+main.py(4):     return sum([math.ceil(sum(arr)/capacity) for arr in grid])
+ --- modulename: main, funcname: <listcomp>
+main.py(4):     return sum([math.ceil(sum(arr)/capacity) for arr in grid])
+main.py(4):     return sum([math.ceil(sum(arr)/capacity) for arr in grid])
+main.py(4):     return sum([math.ceil(sum(arr)/capacity) for arr in grid])
+main.py(4):     return sum([math.ceil(sum(arr)/capacity) for arr in grid])

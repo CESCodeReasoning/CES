@@ -1,0 +1,11 @@
+The function reverse_delete takes two inputs: a string s and a character c.
+It first creates a new string by removing all occurrences of c from s.
+Then, it checks if the resulting string is a palindrome by comparing it with its reverse.
+Finally, it returns a tuple containing the original string and a boolean indicating whether it is a palindrome.
+
+To determine the output of executing the function reverse_delete on the input "mamma" and "mia", we need to follow the steps of the function:
+
+1. Create a new string by removing all occurrences of "mia" from "mamma". This results in the string "mam".
+2. Check if the resulting string is a palindrome by comparing it with its reverse. Since "mam" is not a palindrome, the function returns (False, "mam").
+
+Therefore, the output of executing the function reverse_delete on the input "mamma" and "mia" is (False, "mam").

@@ -1,0 +1,30 @@
+The function `int_to_mini_roman` is called with ( number = 152 ).
+The function initializes a list of numbers and a list of symbols in descending order.
+The function initializes a variable `i` to 12, which is the index of the largest number in the list.
+The function initializes an empty string `res` to store the result.
+The while loop iterates until `number` is 0.
+First Iteration:
+    - number = 152, num[i] = 1000, div = 1, number = 52.
+    - res += sym[i] updates `res` to "M".
+    - div -= 1 updates `div` to 0.
+Second Iteration:
+    - number = 52, num[i] = 500, div = 0, number = 2.
+    - res += sym[i] updates `res` to "M".
+    - div -= 1 updates `div` to -1.
+Third Iteration:
+    - number = 2, num[i] = 100, div = 0, number = 2.
+    - res += sym[i] updates `res` to "M".
+    - div -= 1 updates `div` to -1.
+Fourth Iteration:
+    - number = 2, num[i] = 10, div = 0, number = 2.
+    - res += sym[i] updates `res` to "M".
+    - div -= 1 updates `div` to -1.
+Fifth Iteration:
+    - number = 2, num[i] = 1, div = 2, number = 0.
+    - res += sym[i] updates `res` to "MII".
+    - div -= 1 updates `div` to 1.
+Sixth Iteration:
+    - number = 0, num[i] = 1, div = 0, number = 0.
+    - res += sym[i] updates `res` to "MII".
+    - div -= 1 updates `div` to -1.
+The while loop terminates, and the function returns the value of `res`, which is now "mii".

@@ -1,0 +1,10 @@
+The function `same_chars` takes two strings, `s0` and `s1`, as input. It returns `True` if both strings contain the same unique characters, regardless of the order or frequency of those characters; otherwise, it returns `False`.
+
+To determine the output of executing the function `same_chars` on the inputs 'eabcd' and 'dddddddabc':
+1. Convert each string to a set of characters. This removes duplicates and disregards order.
+   - `set('eabcd')` results in `{'e', 'a', 'b', 'c', 'd'}`.
+   - `set('dddddddabc')` results in `{'a', 'b', 'c', 'd'}`.
+2. Compare the two sets using the equality operator (`==`).
+   - Since `{'e', 'a', 'b', 'c', 'd'}` is not equal to `{'a', 'b', 'c', 'd'}` (the first set contains 'e' which is not in the second set), the comparison will be `False`.
+
+Therefore, the output of executing the function `same_chars` on the inputs 'eabcd' and 'dddddddabc' is `False`.

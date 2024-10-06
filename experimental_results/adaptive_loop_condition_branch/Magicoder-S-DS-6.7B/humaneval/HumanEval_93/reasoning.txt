@@ -1,0 +1,11 @@
+The function encode takes a string message as input and returns the encoded message.
+
+The first step is to create a dictionary vowels_replace that maps each vowel to its next character in the ASCII table.
+
+The second step is to swap the case of the message. This means that all lowercase letters become uppercase and vice versa.
+
+The third step is to encode the message. For each character in the message, if it is a vowel, it is replaced by its next character in the ASCII table. If it is not a vowel, it remains the same.
+
+For the input 'TEST', the output of the function encode('TEST') is 'UGVU'.
+
+The vowels in 'TEST' are 'E' and 'E', and their next characters in the ASCII table are 'G' and 'G' respectively. Therefore, the encoded message is 'UGVU'.

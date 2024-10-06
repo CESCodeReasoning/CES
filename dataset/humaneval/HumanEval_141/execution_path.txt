@@ -1,0 +1,20 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: file_name_check
+main.py(3):     suf = ['txt', 'exe', 'dll']
+main.py(4):     lst = file_name.split(sep='.')
+main.py(5):     if len(lst) != 2:
+main.py(7):     if not lst[1] in suf:
+main.py(9):     if len(lst[0]) == 0:
+main.py(11):     if not lst[0][0].isalpha():
+main.py(13):     t = len([x for x in lst[0] if x.isdigit()])
+ --- modulename: main, funcname: <listcomp>
+main.py(13):     t = len([x for x in lst[0] if x.isdigit()])
+main.py(13):     t = len([x for x in lst[0] if x.isdigit()])
+main.py(13):     t = len([x for x in lst[0] if x.isdigit()])
+main.py(13):     t = len([x for x in lst[0] if x.isdigit()])
+main.py(13):     t = len([x for x in lst[0] if x.isdigit()])
+main.py(13):     t = len([x for x in lst[0] if x.isdigit()])
+main.py(13):     t = len([x for x in lst[0] if x.isdigit()])
+main.py(13):     t = len([x for x in lst[0] if x.isdigit()])
+main.py(14):     if t > 3:
+main.py(16):     return 'Yes'

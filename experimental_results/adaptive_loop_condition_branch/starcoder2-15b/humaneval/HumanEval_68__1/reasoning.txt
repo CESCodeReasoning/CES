@@ -1,0 +1,16 @@
+The function `pluck` is called with ( arr = [5, 0, 3, 0, 4, 2] ).
+`arr` is not empty, so the condition `len(arr) == 0` is false.
+The if branch is not taken, and the function continues to the next line.
+The function `filter` is called with ( lambda x: x % 2 == 0, arr = [5, 0, 3, 0, 4, 2] ).
+The lambda function is applied to each element of `arr`, and the elements that satisfy the condition `x % 2 == 0` are returned.
+In this case, the lambda function returns the elements that are even numbers, so the result is [0, 0, 4, 2].
+The variable `evens` is assigned the result of the `filter` function, which is [0, 0, 4, 2].
+`evens` is not empty, so the condition `evens == []` is false.
+The if branch is not taken, and the function continues to the next line.
+The function `min` is called with ( evens = [0, 0, 4, 2] ).
+The `min` function returns the smallest element in the list, which is 0.
+The function `arr.index` is called with ( min(evens) = 0 ).
+The `index` function returns the index of the first occurrence of the element in the list, which is 1.
+The function returns the list [0, 1].
+
+Therefore, the final output of the function `pluck([5, 0, 3, 0, 4, 2])` is [0, 1].

@@ -1,0 +1,37 @@
+The function `sum_squares` is called with ( lst = [-16, -9, -2, 36, 36, 26, -20, 25, -40, 20, -4, 12, -26, 35, 37] ).
+Inside the function, an empty list `result` is initialized.
+
+Iteration 1:
+    -The index 0 is divisible by 3, so the square of the element at index 0 is appended to `result`.
+Iteration 2:
+    -The index 1 is not divisible by 3, so the element at index 1 is appended to `result`.
+Iteration 3:
+    -The index 2 is divisible by 3, so the square of the element at index 2 is appended to `result`.
+Iteration 4:
+    -The index 3 is not divisible by 3 or 4, so the element at index 3 is appended to `result`.
+Iteration 5:
+    -The index 4 is divisible by 3, so the square of the element at index 4 is appended to `result`.
+Iteration 6:
+    -The index 5 is not divisible by 3 or 4, so the element at index 5 is appended to `result`.
+Iteration 7:
+    -The index 6 is not divisible by 3 or 4, so the element at index 6 is appended to `result`.
+Iteration 8:
+    -The index 7 is not divisible by 3 or 4, so the element at index 7 is appended to `result`.
+Iteration 9:
+    -The index 8 is divisible by 4, so the cube of the element at index 8 is appended to `result`.
+Iteration 10:
+    -The index 9 is not divisible by 3 or 4, so the element at index 9 is appended to `result`.
+Iteration 11:
+    -The index 10 is not divisible by 3 or 4, so the element at index 10 is appended to `result`.
+Iteration 12:
+    -The index 11 is not divisible by 3 or 4, so the element at index 11 is appended to `result`.
+Iteration 13:
+    -The index 12 is divisible by 3, so the square of the element at index 12 is appended to `result`.
+Iteration 14:
+    -The index 13 is not divisible by 3 or 4, so the element at index 13 is appended to `result`.
+Iteration 15:
+    -The index 14 is not divisible by 3 or 4, so the element at index 14 is appended to `result`.
+Iteration 16:
+    -The index 15 is divisible by 3, so the square of the element at index 15 is appended to `result`.
+
+The function returns the sum of all elements in `result`.

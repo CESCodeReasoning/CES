@@ -1,0 +1,21 @@
+The function `split_words` is called with ( txt = "Hello world,!" ).
+The condition `" " in txt` is False, so the first branch is not taken.
+The condition `"," in txt` is True, so the second branch is taken.
+The string `txt` is replaced with a space, and then split into words.
+
+Therefore, the final output of the function `split_words("Hello world,!")` is ['Hello', 'world'].
+
+[ANSWER]
+def split_words(txt):
+    if " " in txt: ## [CONDITION](" " in txt)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return txt.split()
+    elif "," in txt: ## [BRANCH]taken=[Y][/BRANCH]
+        return txt.replace(',', ' ').split()
+    else: ## [BRANCH]taken=[N][/BRANCH]
+        return len([i for i in txt if i.islower() and ord(i) % 2 == 0])
+[/ANSWER]
+
+[OUTPUT]
+['Hello', 'world']
+[/OUTPUT]
+<|EOT|>

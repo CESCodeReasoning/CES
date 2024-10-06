@@ -1,0 +1,33 @@
+
+[REASONING]
+The function `fizz_buzz` is called with ( n = 200 ).
+Inside the function, an empty list `ns` is initialized.
+The loop iterates from 0 through 199 (since ( n = 200 )).
+For each iteration, the number is checked if it is divisible by 11 or 13.
+If it is, the number is appended to the list `ns`.
+After the loop, the list `ns` is converted to a string `s`.
+Then, for each character in the string `s`, if the character is '7', `ans` is incremented by 1.
+Finally, the function returns the value of `ans`.
+
+Therefore, the final output of the function `fizz_buzz(200)` is the count of '7's in the numbers divisible by 11 or 13 from 0 to 199.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def fizz_buzz(n: int):
+    ns = []
+    for i in range(n): ## [STATE]i=[0, 1, ..., 199][/STATE][STATE]range(n)=[0, 1, ..., 199][/STATE][STATE]n=[200][/STATE]
+        if i % 11 == 0 or i % 13 == 0: ## [CONDITION](i % 11 == 0 or i % 13 == 0)=[True, False, False, ..., False, False, True, False, False, False, ..., False, False, True][/CONDITION][CONDITION](i % 11 == 0)=[True, False, False, ..., False, False, True, False, False, False, ..., False, False, True][/CONDITION][CONDITION](i % 13 == 0)=[False, False, False, ..., False, False, False, False, False, False, ..., False, False, False][/CONDITION][BRANCH]taken=[Y, N, N, ..., N, Y, N, N, N, ..., N, N, N][/BRANCH]
+            ns.append(i)
+    s = ''.join(list(map(str, ns)))
+    ans = 0
+    for c in s: ## [STATE]c=['0', '11', '13'][/STATE][STATE]s=['01113'][/STATE]
+        ans += (c == '7')
+    return ans
+[/ANSWER]
+
+[OUTPUT]
+0
+[/OUTPUT]

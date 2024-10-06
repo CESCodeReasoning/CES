@@ -1,0 +1,13 @@
+The function make_a_pile takes an integer n as input and returns a list of integers. The list is created by using a list comprehension, which is a compact way of creating a list.
+
+The list comprehension generates a sequence of numbers starting from 0 to n-1 (inclusive). For each number i in this sequence, it calculates the expression n + 2 * i. This expression represents a pile of stones where the number of stones in the i-th pile is n + 2 * i.
+
+To determine the output of executing the function make_a_pile on the input 4, we need to calculate the number of stones in each pile for n = 4.
+
+The calculation is as follows:
+- For the 0-th pile, there are 4 + 2 * 0 = 4 stones.
+- For the 1-st pile, there are 4 + 2 * 1 = 6 stones.
+- For the 2-nd pile, there are 4 + 2 * 2 = 8 stones.
+- For the 3-rd pile, there are 4 + 2 * 3 = 10 stones.
+
+Therefore, the output of executing the function make_a_pile on the input 4 is [4, 6, 8, 10].

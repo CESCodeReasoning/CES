@@ -1,0 +1,9 @@
+The function `median` is called with a list `[-10, 4, 6, 1000, 10, 20]`.
+The list is sorted first, resulting in `[-10, 4, 6, 10, 20, 1000]`.
+The length of the list is 6, which is an even number.
+The condition `len(l) % 2 == 1` is false, so the else branch is taken.
+The middle two numbers are `l[len(l) // 2 - 1]` and `l[len(l) // 2]`.
+`l[len(l) // 2 - 1]` is `l[2 - 1]` which is `l[1]` (4), and `l[len(l) // 2]` is `l[6 // 2]` which is `l[3]` (10).
+The average of 4 and 10 is `(4 + 10) / 2.0`, which is 7.0.
+
+Therefore, the final output of the function `median([-10, 4, 6, 1000, 10, 20])` is 7.0.

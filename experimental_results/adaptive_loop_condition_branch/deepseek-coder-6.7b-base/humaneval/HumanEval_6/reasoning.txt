@@ -1,0 +1,12 @@
+The function `parse_nested_parens` is called with ( paren_string = '(()()) ((())) () ((())()())' ).
+The function `parse_nested_parens` splits the input string into a list of strings using the split method with a space as the delimiter.
+The function `parse_nested_parens` then iterates over each string in the list and calls the `parse_paren_group` function on each string.
+The `parse_paren_group` function takes a string as input and returns the maximum depth of nested parentheses in that string.
+
+The `parse_paren_group` function iterates over each character in the input string and keeps track of the current depth of nested parentheses.
+If the character is an opening parenthesis, the depth is incremented by 1.
+If the character is a closing parenthesis, the depth is decremented by 1.
+The function returns the maximum depth of nested parentheses encountered during the iteration.
+
+The `parse_nested_parens` function iterates over each string in the list and calls the `parse_paren_group` function on each string.
+It then returns a list of the maximum depths of nested parentheses encountered in each string.

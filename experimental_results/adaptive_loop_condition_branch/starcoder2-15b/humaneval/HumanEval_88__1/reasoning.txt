@@ -1,0 +1,5 @@
+The function sort_array takes an array of integers as input and returns a sorted version of the array.
+The sorting is done in ascending order if the sum of the first and last elements of the array is even, and in descending order otherwise.
+To determine the output of executing the function sort_array on the input [5], we need to check if the sum of the first and last elements of the array is even.
+Since there is only one element in the array, the sum of the first and last elements is 5 + 5 = 10, which is even.
+Therefore, the sorting is done in ascending order, and the output of executing the function sort_array on the input [5] is [5].

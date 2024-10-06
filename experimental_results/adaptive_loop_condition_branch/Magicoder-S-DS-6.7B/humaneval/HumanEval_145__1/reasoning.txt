@@ -1,0 +1,8 @@
+The function `order_by_points` is called with ( nums = [] ).
+The function `order_by_points` sorts the list `nums` based on the sum of its digits.
+The inner function `digits_sum` calculates the sum of the digits of a number.
+The function `digits_sum` is called for each number in `nums`.
+The function `digits_sum` converts the number to a list of digits, multiplies the first digit by the sign of the number, and then sums the digits.
+The function `order_by_points` returns the sorted list `nums`.
+
+Therefore, the final output of the function `order_by_points([])` is [].

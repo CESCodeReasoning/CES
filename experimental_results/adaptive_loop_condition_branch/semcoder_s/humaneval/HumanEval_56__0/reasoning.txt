@@ -1,0 +1,143 @@
+The function `correct_bracketing` is called with ( brackets = "<><><<><>><>>><>" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The character '<' is encountered, so depth is incremented to 1.
+Iteration 2:
+    -The character '>' is encountered, so depth is decremented to 0.
+Iteration 3:
+    -The character '<' is encountered, so depth is incremented to 1.
+Iteration 4:
+    -The character '<' is encountered, so depth is incremented to 2.
+Iteration 5:
+    -The character '>' is encountered, so depth is decremented to 1.
+Iteration 6:
+    -The character '>' is encountered, so depth is decremented to 0.
+Iteration 7:
+    -The character '<' is encountered, so depth is incremented to 1.
+Iteration 8:
+    -The character '>' is encountered, so depth is decremented to 0.
+Iteration 9:
+    -The character '>' is encountered, so depth is decremented to -1.
+Iteration 10:
+    -The character '>' is encountered, so depth is decremented to -2.
+Iteration 11:
+    -The character '>' is encountered, so depth is decremented to -3.
+Iteration 12:
+    -The character '>' is encountered, so depth is decremented to -4.
+Iteration 13:
+    -The character '>' is encountered, so depth is decremented to -5.
+Iteration 14:
+    -The character '>' is encountered, so depth is decremented to -6.
+Iteration 15:
+    -The character '>' is encountered, so depth is decremented to -7.
+Iteration 16:
+    -The character '>' is encountered, so depth is decremented to -8.
+Iteration 17:
+    -The character '>' is encountered, so depth is decremented to -9.
+Iteration 18:
+    -The character '>' is encountered, so depth is decremented to -10.
+Iteration 19:
+    -The character '>' is encountered, so depth is decremented to -11.
+Iteration 20:
+    -The character '>' is encountered, so depth is decremented to -12.
+Iteration 21:
+    -The character '>' is encountered, so depth is decremented to -13.
+Iteration 22:
+    -The character '>' is encountered, so depth is decremented to -14.
+Iteration 23:
+    -The character '>' is encountered, so depth is decremented to -15.
+Iteration 24:
+    -The character '>' is encountered, so depth is decremented to -16.
+Iteration 25:
+    -The character '>' is encountered, so depth is decremented to -17.
+Iteration 26:
+    -The character '>' is encountered, so depth is decremented to -18.
+Iteration 27:
+    -The character '>' is encountered, so depth is decremented to -19.
+Iteration 28:
+    -The character '>' is encountered, so depth is decremented to -20.
+Iteration 29:
+    -The character '>' is encountered, so depth is decremented to -21.
+Iteration 30:
+    -The character '>' is encountered, so depth is decremented to -22.
+Iteration 31:
+    -The character '>' is encountered, so depth is decremented to -23.
+Iteration 32:
+    -The character '>' is encountered, so depth is decremented to -24.
+Iteration 33:
+    -The character '>' is encountered, so depth is decremented to -25.
+Iteration 34:
+    -The character '>' is encountered, so depth is decremented to -26.
+Iteration 35:
+    -The character '>' is encountered, so depth is decremented to -27.
+Iteration 36:
+    -The character '>' is encountered, so depth is decremented to -28.
+Iteration 37:
+    -The character '>' is encountered, so depth is decremented to -29.
+Iteration 38:
+    -The character '>' is encountered, so depth is decremented to -30.
+Iteration 39:
+    -The character '>' is encountered, so depth is decremented to -31.
+Iteration 40:
+    -The character '>' is encountered, so depth is decremented to -32.
+Iteration 41:
+    -The character '>' is encountered, so depth is decremented to -33.
+Iteration 42:
+    -The character '>' is encountered, so depth is decremented to -34.
+Iteration 43:
+    -The character '>' is encountered, so depth is decremented to -35.
+Iteration 44:
+    -The character '>' is encountered, so depth is decremented to -36.
+Iteration 45:
+    -The character '>' is encountered, so depth is decremented to -37.
+Iteration 46:
+    -The character '>' is encountered, so depth is decremented to -38.
+Iteration 47:
+    -The character '>' is encountered, so depth is decremented to -39.
+Iteration 48:
+    -The character '>' is encountered, so depth is decremented to -40.
+Iteration 49:
+    -The character '>' is encountered, so depth is decremented to -41.
+Iteration 50:
+    -The character '>' is encountered, so depth is decremented to -42.
+Iteration 51:
+    -The character '>' is encountered, so depth is decremented to -43.
+Iteration 52:
+    -The character '>' is encountered, so depth is decremented to -44.
+Iteration 53:
+    -The character '>' is encountered, so depth is decremented to -45.
+Iteration 54:
+    -The character '>' is encountered, so depth is decremented to -46.
+Iteration 55:
+    -The character '>' is encountered, so depth is decremented to -47.
+Iteration 56:
+    -The character '>' is encountered, so depth is decremented to -48.
+Iteration 57:
+    -The character '>' is encountered, so depth is decremented to -49.
+Iteration 58:
+    -The character '>' is encountered, so depth is decremented to -50.
+Iteration 59:
+    -The character '>' is encountered, so depth is decremented to -51.
+Iteration 60:
+    -The character '>' is encountered, so depth is decremented to -52.
+Iteration 61:
+    -The character '>' is encountered, so depth is decremented to -53.
+Iteration 62:
+    -The character '>' is encountered, so depth is decremented to -54.
+Iteration 63:
+    -The character '>' is encountered, so depth is decremented to -55.
+Iteration 64:
+    -The character '>' is encountered, so depth is decremented to -56.
+Iteration 65:
+    -The character '>' is encountered, so depth is decremented to -57.
+Iteration 66:
+    -The character '>' is encountered, so depth is decremented to -58.
+Iteration 67:
+    -The character '>' is encountered, so depth is decremented to -59.
+Iteration 68:
+    -The character '>' is encountered, so depth is decremented to -60.
+Iteration 69:
+    -The character '>' is encountered, so depth is decremented to -61.
+Iteration 70:
+    -The character '>' is encountered, so depth is decrement

@@ -1,0 +1,82 @@
+The function `int_to_mini_roman` is called with ( number = 900 ).
+Inside the function, two lists are defined: `num` and `sym`. `num` contains the values of the Roman numerals, and `sym` contains the corresponding symbols.
+The while loop iterates from 12 (the index of the largest Roman numeral in `num`) down to 0.
+First Iteration (i = 12):
+    - number // num[i] = 900 // 1000 = 0
+    - number %= num[i] = 900 % 1000 = 900
+    - div = 0
+    - res = ''
+    - The while loop does not execute, so the function continues to the next iteration.
+Second Iteration (i = 11):
+    - number // num[i] = 900 // 900 = 1
+    - number %= num[i] = 900 % 900 = 0
+    - div = 1
+    - res = 'M'
+    - The while loop executes once, adding 'M' to `res`.
+Third Iteration (i = 10):
+    - number // num[i] = 0 // 90 = 0
+    - number %= num[i] = 0 % 90 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+Fourth Iteration (i = 9):
+    - number // num[i] = 0 // 50 = 0
+    - number %= num[i] = 0 % 50 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+Fifth Iteration (i = 8):
+    - number // num[i] = 0 // 40 = 0
+    - number %= num[i] = 0 % 40 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+Sixth Iteration (i = 7):
+    - number // num[i] = 0 // 10 = 0
+    - number %= num[i] = 0 % 10 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+Seventh Iteration (i = 6):
+    - number // num[i] = 0 // 5 = 0
+    - number %= num[i] = 0 % 5 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+Eighth Iteration (i = 5):
+    - number // num[i] = 0 // 4 = 0
+    - number %= num[i] = 0 % 4 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+Ninth Iteration (i = 4):
+    - number // num[i] = 0 // 1 = 0
+    - number %= num[i] = 0 % 1 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+Tenth Iteration (i = 3):
+    - number // num[i] = 0 // 1 = 0
+    - number %= num[i] = 0 % 1 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+Eleventh Iteration (i = 2):
+    - number // num[i] = 0 // 4 = 0
+    - number %= num[i] = 0 % 4 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+Twelfth Iteration (i = 1):
+    - number // num[i] = 0 // 1 = 0
+    - number %= num[i] = 0 % 1 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+Thirteenth Iteration (i = 0):
+    - number // num[i] = 0 // 1 = 0
+    - number %= num[i] = 0 % 1 = 0
+    - div = 0
+    - res = 'M'
+    - The while loop does not execute, so the function continues to the next iteration.
+The while loop completes, and the function returns the value of `res`, which is now 'm'.

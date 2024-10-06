@@ -1,0 +1,17 @@
+The function `specialFilter` is called with ( nums = [5, -2, 1, -5] ).
+Inside the function, a variable `count` is initialized to 0.
+
+Iteration 1:
+    -The number 5 is greater than 10, so it is checked for odd digits.
+    -The first digit of 5 is 5, which is not an odd digit.
+    -The last digit of 5 is 5, which is not an odd digit.
+    -Therefore, the number 5 does not satisfy the conditions and is not counted.
+Iteration 2:
+    -The number -2 is less than or equal to 10, so it is not counted.
+Iteration 3:
+    -The number 1 is greater than 10, so it is checked for odd digits.
+    -The first digit of 1 is 1, which is an odd digit.
+    -The last digit of 1 is 1, which is an odd digit.
+    -Therefore, the number 1 satisfies the conditions and is counted.
+Iteration 4:
+    -The number -5 is less than or equal to 10, so it is not counted.

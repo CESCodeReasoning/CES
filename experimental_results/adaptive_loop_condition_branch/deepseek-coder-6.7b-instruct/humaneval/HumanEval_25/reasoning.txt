@@ -1,0 +1,14 @@
+The function `factorize` is called with ( n = 2 ).
+Inside the function, a variable `fact` is initialized to an empty list.
+The loop iterates from 2 through the square root of n (since the square root of 2 is approximately 1.414).
+First Iteration (i = 2):
+    - 2 is a factor of 2. The condition `n % i == 0` is true. The if branch is taken.
+    - `fact.append(i)` appends 2 to `fact`.
+    - `n //= i` updates `n` to 1 ( 2 // 2 = 1 ).
+The loop ends because `i` is greater than the square root of `n`.
+Second Iteration (i = 3):
+    - 3 is not a factor of 1. The condition `n % i == 0` is false. The else branch is taken.
+    - `i += 1` updates `i` to 4.
+The loop ends because `i` is greater than the square root of `n`.
+After the loop completes, the function returns the value of `fact`, which is now [2].
+If `n` is still greater than 1, it is appended to `fact`.

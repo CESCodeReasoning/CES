@@ -1,0 +1,24 @@
+The function `strange_sort_list` is called with ( lst = [1, 2, 3, 4]).
+Inside the function, a variable `res` is initialized to an empty list.
+A variable `switch` is initialized to True.
+First Iteration:
+    - lst = [1, 2, 3, 4], min(lst) = 1.
+    -`res.append(min(lst) if switch else max(lst))` updates `res` to [1] ( [1] + [1] = [1] ).
+    -`lst.remove(res[-1])` removes 1 from lst.
+    -`switch = not switch` updates `switch` to False.
+Second Iteration:
+    - lst = [2, 3, 4], max(lst) = 4.
+    -`res.append(min(lst) if switch else max(lst))` updates `res` to [1, 4] ( [1, 4] + [4] = [1, 4] ).
+    -`lst.remove(res[-1])` removes 4 from lst.
+    -`switch = not switch` updates `switch` to True.
+Third Iteration:
+    - lst = [2, 3], min(lst) = 2.
+    -`res.append(min(lst) if switch else max(lst))` updates `res` to [1, 4, 2] ( [1, 4, 2] + [2] = [1, 4, 2] ).
+    -`lst.remove(res[-1])` removes 2 from lst.
+    -`switch = not switch` updates `switch` to False.
+Fourth Iteration:
+    - lst = [3], max(lst) = 3.
+    -`res.append(min(lst) if switch else max(lst))` updates `res` to [1, 4, 2, 3] ( [1, 4, 2, 3] + [3] = [1, 4, 2, 3] ).
+    -`lst.remove(res[-1])` removes 3 from lst.
+    -`switch = not switch` updates `switch` to True.
+lst is empty, the while loop terminates. The function returns the value of `res`, which is now [1, 4, 2, 3].

@@ -1,0 +1,9 @@
+The function `add_elements` takes two arguments: a list `arr` of integers and an integer `k`. It calculates the sum of the first `k` elements in the list `arr` that have a length of 1 or 2 digits.
+
+- The first `k=4` elements of `arr` are `[11, 21, 3, 90]`.
+- The elements `11` and `21` have 2 digits, so they are included in the sum.
+- The element `3` has 1 digit, so it is included in the sum.
+- The element `90` has 2 digits, so it is included in the sum.
+- The sum of these elements is `11 + 21 + 3 + 90 = 125`.
+
+Therefore, the output of executing the function `add_elements([11,21,3,90,5,6,7,8,9], 4)` is `125`.

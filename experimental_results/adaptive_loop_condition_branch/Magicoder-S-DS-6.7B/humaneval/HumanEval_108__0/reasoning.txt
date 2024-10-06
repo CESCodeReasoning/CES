@@ -1,0 +1,12 @@
+The function `count_nums` is called with ( arr = [1] ).
+The inner function `digits_sum` is called with ( n = 1 ).
+`n` is 1, which is not less than 0.
+The condition `n < 0` is false, therefore the if branch is not taken.
+`n` is converted to a list of digits.
+The first digit is multiplied by the sign of `n`.
+The sum of the digits is returned.
+The function `digits_sum` returns 1.
+The function `count_nums` filters the list of sums to only include positive numbers.
+The length of the filtered list is returned.
+
+Therefore, the final output of the function `count_nums([1])` is 1.

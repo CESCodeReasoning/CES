@@ -1,0 +1,5 @@
+The function `check_integer` is called with ( i = 4 ).
+`i` is 2, which doesn't satisfy ( 1 <= i < 3 ).The condition `i >= 1` and `i < 3` is False. The first branch is not taken.
+i = 2 satisfies (i<2). The condition `i<5` is Ture, the second branch is taken.
+
+Therefore, the final output of the function `check_integer(2)` is 1.

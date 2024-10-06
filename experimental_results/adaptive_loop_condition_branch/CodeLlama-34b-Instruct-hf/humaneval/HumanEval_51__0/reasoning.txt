@@ -1,0 +1,5 @@
+The function remove_vowels takes a string text as input and returns a new string with all the vowels removed.
+To determine the output of executing the function remove_vowels on the input "", we need to iterate through each character in the input string and check if it is a vowel.
+If the character is a vowel, it is not included in the new string.
+Otherwise, it is included in the new string.
+Therefore, the output of executing the function remove_vowels on the input "" is "".

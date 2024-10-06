@@ -1,0 +1,3 @@
+The function remove_duplicates takes a list of integers as input and returns a new list with all duplicates removed.
+To do this, it uses the collections.Counter class to count the frequency of each integer in the input list.
+Then, it uses a list comprehension to create a new list with only the integers that appear once or less in the input list.

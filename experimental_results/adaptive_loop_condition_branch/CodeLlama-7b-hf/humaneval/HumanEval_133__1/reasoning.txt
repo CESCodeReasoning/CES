@@ -1,0 +1,9 @@
+The function `sum_squares` is called with (lst = [-2.4, 1, 1]).
+Inside the function, a variable `squared` is initialized to 0.
+The loop iterates through the list `lst` which has 3 elements.
+First Iteration (i = -2.4):
+    `squared` = 0 + 4 = 4
+Second Iteration (i = 1):
+    `squared` = 4 + 1 = 5
+Third Iteration (i = 1):
+    `squared` = 5 + 1 = 6

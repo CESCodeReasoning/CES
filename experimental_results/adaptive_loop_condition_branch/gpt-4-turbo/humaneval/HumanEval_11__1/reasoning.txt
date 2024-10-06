@@ -1,0 +1,27 @@
+The function `string_xor` is called with two binary strings `a = '0101'` and `b = '0000'`.
+The function defines a nested function `xor` which takes two characters `i` and `j` and returns '0' if they are equal, otherwise '1'.
+The main function uses a generator expression inside `join` to iterate over pairs of characters from `a` and `b` using `zip`, and applies the `xor` function to each pair.
+
+First Pair (i = '0', j = '0')
+   - Both characters are equal.
+   - The condition `i == j` is true.
+   - Action: `xor` returns '0'.
+
+Second Pair (i = '1', j = '0')
+   - Characters are different.
+   - The condition `i == j` is false.
+   - Action: `xor` returns '1'.
+
+Third Pair (i = '0', j = '0')
+   - Both characters are equal again.
+   - The condition `i == j` is true.
+   - Action: `xor` returns '0'.
+
+Fourth Pair (i = '1', j = '0')
+   - Characters are different.
+   - The condition `i == j` is false.
+   - Action: `xor` returns '1'.
+
+The results of the `xor` function for each pair are concatenated to form the final result '0101'.
+
+Therefore, the final output of the function `string_xor('0101', '0000')` is '0101'.

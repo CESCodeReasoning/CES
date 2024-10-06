@@ -1,0 +1,12 @@
+The function `prime_length` is called with ( string = 'Wow' ).
+The length of the string 'Wow' is 3.
+
+First Iteration (i = 2)
+   - `i` is 2, which is less than 3.
+   - The condition `l % i == 0` is false (since 3 % 2 != 0).
+   - Action: `return False` is not executed.
+Second Iteration (i = 3)
+   - `i` is 3, which is not less than 3.
+   - The loop ends.
+
+The function `prime_length` returns True, as no factors of 3 were found.

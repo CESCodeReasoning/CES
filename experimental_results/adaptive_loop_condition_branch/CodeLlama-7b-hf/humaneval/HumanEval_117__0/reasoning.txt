@@ -1,0 +1,41 @@
+The function select_words(s, n) takes a string s and an integer n as its parameters.
+The outer loop iterates through each word in the string s.
+The inner loop iterates through each character in the word.
+First Iteration (word="Hello"):
+    - `word` is "Hello", `n_consonants` is 0, `i` is 0, `len(word)` is 5.
+    - `word[i].lower()` is "H", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 1.
+    - `word[i].lower()` is "e", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 2.
+    - `word[i].lower()` is "l", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 3.
+    - `word[i].lower()` is "l", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 4.
+    - `word[i].lower()` is "o", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 5.
+    - `word[i].lower()` is " ", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 5.
+Second Iteration (word="world"):
+    - `word` is "world", `n_consonants` is 0, `i` is 0, `len(word)` is 5.
+    - `word[i].lower()` is "w", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 1.
+    - `word[i].lower()` is "o", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 2.
+    - `word[i].lower()` is "r", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 3.
+    - `word[i].lower()` is "l", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 4.
+    - `word[i].lower()` is "d", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 5.
+    - `word[i].lower()` is " ", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 5.
+Third Iteration (word="world"):
+    - `word` is "world", `n_consonants` is 0, `i` is 0, `len(word)` is 5.
+    - `word[i].lower()` is "w", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 1.
+    - `word[i].lower()` is "o", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 2.
+    - `word[i].lower()` is "r", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 3.
+    - `word[i].lower()` is "l", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 4.
+    - `word[i].lower()` is "d", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 5.
+    - `word[i].lower()` is " ", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 5.
+Forth Iteration (word="world"):
+    - `word` is "world", `n_consonants` is 0, `i` is 0, `len(word)` is 5.
+    - `word[i].lower()` is "w", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 1.
+    - `word[i].lower()` is "o", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 2.
+    - `word[i].lower()` is "r", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 3.
+    - `word[i].lower()` is "l", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 4.
+    - `word[i].lower()` is "d", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 5.
+    - `word[i].lower()` is " ", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 5.
+Fifth Iteration (word="world"):
+    - `word` is "world", `n_consonants` is 0, `i` is 0, `len(word)` is 5.
+    - `word[i].lower()` is "w", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 1.
+    - `word[i].lower()` is "o", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 2.
+    - `word[i].lower()` is "r", `word[i].lower() not in ["a", "e", "i", "o", "u"]` is True, `n_consonants` is 3.
+    - `word[i].lower()` is "l", `word[i].lower() not in ["a", "e", "i", "o", "u

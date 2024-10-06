@@ -1,0 +1,8 @@
+The function `how_many_times` is called with ( string = '', substring = 'x' ).
+Inside the function, a variable `times` is initialized to 0.
+
+The loop iterates from 0 to 0 (since ( len(string) - len(substring) + 1 ) = 0 ).
+First Iteration (i = 0)
+   - `string[i:i+len(substring)]` is '' (since i = 0 and len(substring) = 1).
+   - '' is not equal to 'x', so the condition is false.
+   - Action: `times` remains 0.

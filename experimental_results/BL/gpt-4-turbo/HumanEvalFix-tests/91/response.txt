@@ -1,0 +1,3 @@
+```response
+    return sum(sentence[0:2] == ' I' for sentence in sentences)
+```

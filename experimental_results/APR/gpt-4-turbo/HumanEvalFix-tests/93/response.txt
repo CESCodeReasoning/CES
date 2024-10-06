@@ -1,0 +1,24 @@
+Here's the fixed code for the `encode` function, which correctly swaps the case of all letters and replaces vowels with the letter that appears 2 places ahead in the English alphabet:
+
+```python
+def encode(message):
+    vowels = "aeiouAEIOU"
+    vowels_replace = {i: chr(ord(i) + 2) for i in vowels}
+    message = message.swapcase()
+    return ''.join([vowels_replace.get(i, i) for i in message])
+
+# Tests
+def check(encode):
+    # Check some simple cases
+    assert encode('TEST') == 'TGST', "This prints if this assert fails 1 (good for debugging!)"
+    assert encode('Mudasir') == 'MWdCsKr', "This prints if this assert fails 2 (good for debugging!)"
+    assert encode('YES') == 'YGS', "This prints if this assert fails 3 (good for debugging!)"
+    
+    # Check some edge cases that are easy to work out by hand.
+    assert encode('This is a message') == 'tHKS KS C MGSSCGG', "This prints if this assert fails 4 (also good for debugging!)"
+    assert encode("I DoNt KnOw WhAt tO WrItE") == 'k dQnT kNqW wHcT Tq wRkTg', "This prints if this assert fails 5 (also good for debugging!)"
+
+check(encode)
+```
+
+This code includes a dictionary comprehension that handles both lowercase and uppercase vowels, ensuring that the case swap and vowel replacement are correctly applied. The `get` method is used to handle characters that are not vowels, returning the character itself when it's not found in the `vowels_replace` dictionary.

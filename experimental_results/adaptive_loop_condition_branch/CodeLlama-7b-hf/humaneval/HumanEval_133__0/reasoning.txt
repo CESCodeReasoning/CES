@@ -1,0 +1,12 @@
+The function `sum_squares` is called with (lst = [1,3,5,7]).
+Inside the function, a variable `squared` is initialized to 0.
+The loop iterates through the list [1,3,5,7].
+First Iteration (i = 1):
+    `squared += math.ceil(i)**2` updates `squared` to 1 ( 0 + 1 = 1 ).
+Second Iteration (i = 3):
+    `squared += math.ceil(i)**2` updates `squared` to 4 ( 1 + 9 = 4 ).
+Third Iteration (i = 5):
+    `squared += math.ceil(i)**2` updates `squared` to 16 ( 4 + 25 = 16 ).
+Fourth Iteration (i = 7):
+    `squared += math.ceil(i)**2` updates `squared` to 37 ( 16 + 49 = 37 ).
+After the loop completes, the function returns the value of `squared`, which is now 37.

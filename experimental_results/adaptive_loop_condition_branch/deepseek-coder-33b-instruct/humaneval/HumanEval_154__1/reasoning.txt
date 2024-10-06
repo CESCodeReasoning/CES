@@ -1,0 +1,22 @@
+The function cycpattern_check(a, b) takes two strings a and b as its parameters.
+The outer loop iterates through each substring of length l in a.
+The inner loop iterates through each substring of length l in b + b.
+If a substring of a equals to a substring of b + b, return True.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 0.
+    - a[i:i + l]="efef", pat[j:j + l]="fee":
+        - The condition `a[i:i + l] == pat[j:j + l]` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 0.
+    - a[i:i + l]="fef", pat[j:j + l]="fee":
+        - The condition `a[i:i + l] == pat[j:j + l]` is False, the if branch is not taken.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 0.
+    - a[i:i + l]="efe", pat[j:j + l]="fee":
+        - The condition `a[i:i + l] == pat[j:j + l]` is False, the if branch is not taken.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 0.
+    - a[i:i + l]="efe", pat[j:j + l]="fee":
+        - The condition `a[i:i + l] == pat[j:j + l]` is False, the if branch is not taken.
+No more substrings to compare.
+Return False.

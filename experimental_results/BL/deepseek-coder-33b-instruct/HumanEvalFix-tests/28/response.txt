@@ -1,0 +1,22 @@
+```response
+    return ' '.join(strings)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def find_max(numbers: List[int]) -> int:
+    max_number = numbers[0]
+    for number in numbers:
+        if number > max_number:
+            max_number = number
+
+    return max_number
+
+Tests:
+def check(find_max):
+    assert find_max([1, 

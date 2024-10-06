@@ -1,0 +1,34 @@
+[REASONING]
+The function `correct_bracketing` is called with the input string "(()())".
+The function checks if the brackets in the string are correctly nested and balanced.
+
+1. Initialize `depth` to 0.
+2. Iterate over each character in the string:
+   - First character '(' increases `depth` to 1.
+   - Second character '(' increases `depth` to 2.
+   - Third character ')' decreases `depth` to 1.
+   - Fourth character '(' increases `depth` to 2.
+   - Fifth character ')' decreases `depth` to 1.
+   - Sixth character ')' decreases `depth` to 0.
+3. After the loop, check if `depth` equals 0, which it does, indicating that the brackets are correctly nested and balanced.
+
+Therefore, the function returns `True`, indicating that the input string "(()())" is correctly bracketed.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets: ## [STATE]brackets="(()())"[/STATE]
+        if b == "(": ## [CONDITION](b == "(")=[True, True, False, True, False, False][/CONDITION][BRANCH]taken=[Y, Y, N, Y, N, N][/BRANCH]
+            depth += 1
+        else: ## [BRANCH]taken=[N, N, Y, N, Y, Y][/BRANCH]
+            depth -= 1
+        if depth < 0: ## [CONDITION](depth < 0)=[False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N][/BRANCH]
+            return False
+    return depth == 0
+[/PYTHON]
+
+[OUTPUT]
+True
+[/OUTPUT]

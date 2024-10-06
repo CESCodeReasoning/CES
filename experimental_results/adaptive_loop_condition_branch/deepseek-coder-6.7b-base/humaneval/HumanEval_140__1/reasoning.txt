@@ -1,0 +1,64 @@
+The function `fix_spaces` is called with ( text = "Yellow Yellow  Dirty  Fellow" ).
+The variable `new_text` is initialized to an empty string.
+The loop iterates over each character in the input string.
+First Iteration (i = 0):
+    - The character at index 0 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 1.
+Second Iteration (i = 1):
+    - The character at index 1 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 2.
+Third Iteration (i = 2):
+    - The character at index 2 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 3.
+Fourth Iteration (i = 3):
+    - The character at index 3 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 4.
+Fifth Iteration (i = 4):
+    - The character at index 4 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 5.
+Sixth Iteration (i = 5):
+    - The character at index 5 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 6.
+Seventh Iteration (i = 6):
+    - The character at index 6 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 7.
+Eighth Iteration (i = 7):
+    - The character at index 7 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 8.
+Ninth Iteration (i = 8):
+    - The character at index 8 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 9.
+Tenth Iteration (i = 9):
+    - The character at index 9 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 10.
+Eleventh Iteration (i = 10):
+    - The character at index 10 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 11.
+Twelfth Iteration (i = 11):
+    - The character at index 11 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 12.
+Thirteenth Iteration (i = 12):
+    - The character at index 12 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 13.
+Fourteenth Iteration (i = 13):
+    - The character at index 13 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 14.
+Fifteenth Iteration (i = 14):
+    - The character at index 14 is a space.
+    - The condition `text[i] == " "` is true. The first branch is taken.
+    - `end += 1` updates `end` to 15.
+Sixteenth Iteration (i = 15

@@ -1,0 +1,52 @@
+[REASONING]
+The function `factorize` is called with the argument `n = 3 * 2 * 3 = 18`.
+The function aims to factorize the number 18 into its prime factors.
+
+1. Initialize an empty list `fact` to store factors.
+2. Start with `i = 2` and iterate while `i <= int(math.sqrt(n) + 1)`.
+   - `math.sqrt(18) ≈ 4.24`, so `int(math.sqrt(18) + 1) = 5`.
+3. First Iteration (`i = 2`):
+   - `18 % 2 == 0` is true. Append `2` to `fact` and update `n` to `18 // 2 = 9`.
+   - The condition is true, so the branch is taken.
+4. Second Iteration (`i = 2`):
+   - `9 % 2 == 0` is false. Increment `i` to `3`.
+   - The condition is false, so the else branch is taken.
+5. Third Iteration (`i = 3`):
+   - `9 % 3 == 0` is true. Append `3` to `fact` and update `n` to `9 // 3 = 3`.
+   - The condition is true, so the branch is taken.
+6. Fourth Iteration (`i = 3`):
+   - `3 % 3 == 0` is true. Append `3` to `fact` and update `n` to `3 // 3 = 1`.
+   - The condition is true, so the branch is taken.
+7. Fifth Iteration (`i = 3`):
+   - Increment `i` to `4` since `1 % 3 == 0` is false.
+   - The condition is false, so the else branch is taken.
+8. Sixth Iteration (`i = 4`):
+   - `i` is now greater than `int(math.sqrt(1) + 1) = 2`, so the loop exits.
+9. Check if `n > 1`:
+   - `n = 1` is not greater than 1, so the branch is not taken.
+10. Return the list `fact` which now contains `[2, 3, 3]`.
+
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def factorize(n: int) -> List[int]:
+    import math
+    fact = []
+    i = 2
+    while i <= int(math.sqrt(n) + 1): ## [STATE](i <= int((math.sqrt(n) + 1)))=[True, True, True, True, True, False][/STATE][STATE]i=[2, 2, 3, 3, 4][/STATE][STATE]int((math.sqrt(n) + 1))=[5, 5, 2, 2, 2][/STATE]
+        if n % i == 0: ## [CONDITION](n % i == 0)=[True, False, True, True, False][/CONDITION][BRANCH]taken=[Y, N, Y, Y, N][/BRANCH]
+            fact.append(i)
+            n //= i
+        else: ## [BRANCH]taken=[N, Y, N, N, Y][/BRANCH]
+            i += 1
+
+    if n > 1: ## [CONDITION](n > 1)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        fact.append(n)
+    return fact
+[/PYTHON]
+
+[OUTPUT]
+[2, 3, 3]
+[/OUTPUT]

@@ -1,0 +1,9 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: is_bored
+main.py(3):     import re
+main.py(4):     sentences = re.split(r'[.?!]\s*', S)
+main.py(5):     return sum(sentence[0:2] == 'I ' for sentence in sentences)
+ --- modulename: main, funcname: <genexpr>
+main.py(5):     return sum(sentence[0:2] == 'I ' for sentence in sentences)
+ --- modulename: main, funcname: <genexpr>
+main.py(5):     return sum(sentence[0:2] == 'I ' for sentence in sentences)

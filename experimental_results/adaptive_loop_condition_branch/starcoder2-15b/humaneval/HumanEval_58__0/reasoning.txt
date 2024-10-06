@@ -1,0 +1,28 @@
+The function common(l1, l2) takes two lists as parameters.
+The outer loop iterates through each element in the first list.
+The inner loop iterates through each element in the second list.
+If an element in the first list is equal to an element in the second list, add it to the set ret.
+First Iteration (e1=4):
+    - `e1` is 4, e2 in the inner loop is 3, 2, 4.
+    - e1 == e2:
+        - When e2 = 3, the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 2, the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 4, the condition `e1 == e2` is True, the if branch is taken. Add 4 to ret.
+Second Iteration (e1=3):
+    - `e1` is 3, e2 in the inner loop is 3, 2, 4.
+    - e1 == e2:
+        - When e2 = 3, the condition `e1 == e2` is True, the if branch is taken. Add 3 to ret.
+        - When e2 = 2, the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 4, the condition `e1 == e2` is False, the if branch is not taken.
+Third Iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 3, 2, 4.
+    - e1 == e2:
+        - When e2 = 3, the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 2, the condition `e1 == e2` is True, the if branch is taken. Add 2 to ret.
+        - When e2 = 4, the condition `e1 == e2` is False, the if branch is not taken.
+Forth Iteration (e1=8):
+    - `e1` is 8, e2 in the inner loop is 3, 2, 4.
+    - e1 == e2:
+        - When e2 = 3, the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 2, the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 4, the condition `e1 == e2` is False, the if branch is not taken.

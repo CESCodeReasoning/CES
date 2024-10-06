@@ -1,0 +1,14 @@
+The function find_max takes a list of words as input and returns the word with the maximum length that contains unique characters.
+
+The function uses the sorted function to sort the words in the list. The key for the sorted function is a lambda function that returns a tuple (-len(set(x)), x). The tuple contains two elements: the negative length of the set of characters in the word (to ensure that words with more unique characters are placed first), and the word itself (to ensure that words with the same number of unique characters are sorted lexicographically).
+
+The sorted function returns a list of the words in the order they would be sorted. The first element of this list is the word with the maximum length that contains unique characters.
+
+To determine the output of executing the function find_max on the input ["name", "of", "string"], we need to sort the words in the list based on the criteria specified above.
+
+The words "name", "of", and "string" have unique characters: "name" has 4 unique characters ("n", "a", "m", "e"), "of" has 2 unique characters ("o", "f"), and "string" has 6 unique characters ("s", "t", "r", "i", "n", "g"). Therefore, the output of executing the function find_max on the input ["name", "of", "string"] is "string".
+
+The word "string" has the maximum number of unique characters (6) and is lexicographically the smallest among the words with this number of unique characters.
+
+Therefore, the output of executing the function find_max on the input ["name", "of", "string"] is "string".
+

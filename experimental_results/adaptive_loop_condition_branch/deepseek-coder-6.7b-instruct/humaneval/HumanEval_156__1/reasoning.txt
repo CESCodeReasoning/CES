@@ -1,0 +1,28 @@
+The function `int_to_mini_roman` is called with ( number = 152 ).
+Inside the function, there are two lists: `num` and `sym`. `num` contains the decimal values of the roman numerals and `sym` contains the corresponding roman numeral symbols.
+The while loop iterates from the highest decimal value in `num` down to 0.
+First Iteration (i = 12):
+    - number // num[i] = 152 // 1000 = 1 (integer division), number % num[i] = 2.
+    - The while loop iterates 1 times, adding "M" to `res`.
+Second Iteration (i = 9):
+    - number // num[i] = 2 // 900 = 0 (integer division), number % num[i] = 2.
+    - The while loop does not iterate, so no "CM" is added to `res`.
+Third Iteration (i = 8):
+    - number // num[i] = 2 // 100 = 0 (integer division), number % num[i] = 2.
+    - The while loop does not iterate, so no "C" is added to `res`.
+Fourth Iteration (i = 5):
+    - number // num[i] = 2 // 50 = 0 (integer division), number % num[i] = 2.
+    - The while loop does not iterate, so no "L" is added to `res`.
+Fifth Iteration (i = 4):
+    - number // num[i] = 2 // 40 = 0 (integer division), number % num[i] = 2.
+    - The while loop does not iterate, so no "XL" is added to `res`.
+Sixth Iteration (i = 2):
+    - number // num[i] = 2 // 10 = 0 (integer division), number % num[i] = 2.
+    - The while loop does not iterate, so no "X" is added to `res`.
+Seventh Iteration (i = 1):
+    - number // num[i] = 2 // 4 = 0 (integer division), number % num[i] = 2.
+    - The while loop does not iterate, so no "IV" is added to `res`.
+Eighth Iteration (i = 0):
+    - number // num[i] = 2 // 1 = 2 (integer division), number % num[i] = 0.
+    - The while loop iterates 2 times, adding "I" to `res`.
+After the loop completes, the function returns the value of `res`, which is now "MMII".

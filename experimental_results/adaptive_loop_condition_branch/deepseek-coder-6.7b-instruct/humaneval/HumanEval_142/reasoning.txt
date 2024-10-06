@@ -1,0 +1,13 @@
+The function `sum_squares` is called with ( lst = [1,2,3] ).
+Inside the function, a variable `result` is initialized as an empty list.
+
+Iteration 1:
+    -The index `i` is 0, which is not divisible by 3 or 4, so the element at index `i` (which is 1) is appended to `result`.
+Iteration 2:
+    -The index `i` is 1, which is not divisible by 3 or 4, so the element at index `i` (which is 2) is appended to `result`.
+Iteration 3:
+    -The index `i` is 2, which is not divisible by 3 or 4, so the element at index `i` (which is 3) is appended to `result`.
+
+Since the list `lst` only contains 3 elements, the function returns the sum of the elements in `result`, which is 1^2 + 2^2 + 3^2 = 1 + 4 + 9 = 14.
+
+Therefore, the final output of the function `sum_squares([1,2,3])` is 14.

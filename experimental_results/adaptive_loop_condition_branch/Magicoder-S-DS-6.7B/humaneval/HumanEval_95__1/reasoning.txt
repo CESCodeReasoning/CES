@@ -1,0 +1,11 @@
+The function `check_dict_case` is called with ( dict = {"Name":"John", "Age":"36", "City":"Houston"} ).
+Inside the function, a variable `state` is initialized to "start".
+
+Iteration 1:
+    -The key 'Name' is a string and is uppercase, so `state` becomes "upper".
+Iteration 2:
+    -The key 'Age' is a string and is lowercase, so `state` remains "upper".
+Iteration 3:
+    -The key 'City' is a string and is uppercase, so `state` remains "upper".
+
+The function returns True, indicating that the keys in the dictionary are all either uppercase or lowercase.

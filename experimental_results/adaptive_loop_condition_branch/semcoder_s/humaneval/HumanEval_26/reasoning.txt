@@ -1,0 +1,7 @@
+The function `remove_duplicates` takes a list of integers as input and returns a list of integers where all duplicates have been removed.
+
+Here's the step-by-step reasoning:
+1. Import the `collections` module to use the `Counter` class to count the occurrences of each number in the input list.
+2. Create a Counter object `c` that counts the occurrences of each number in the input list `[1, 2, 3, 2, 4, 3, 5]`.
+3. Use a list comprehension to iterate over each number in the input list and only keep the numbers that have a count of 1 or less.
+4. The function returns a list of numbers that have a count of 1 or less, which removes all duplicates from the input list.

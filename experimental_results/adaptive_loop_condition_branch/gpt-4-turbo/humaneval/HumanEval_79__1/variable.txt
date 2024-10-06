@@ -1,0 +1,8 @@
+from typing import *
+
+
+def decimal_to_binary(decimal: int) -> str:
+    # [STATE] decimal is 103 [/STATE]
+    binary_representation = bin(decimal)[2:]  # [STATE] binary_representation is '1100111' [/STATE]
+    result = "db" + binary_representation + "db"  # [STATE] result is 'db1100111db' [/STATE]
+    return result

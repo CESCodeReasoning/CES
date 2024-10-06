@@ -1,0 +1,9 @@
+The function `largest_smallest_integers` takes a list `lst` as input and aims to find the largest negative integer and the smallest positive integer in the list. It uses two filters to separate the negative and positive integers from the list:
+1. `smallest` is assigned the list of negative integers from `lst`.
+2. `largest` is assigned the list of positive integers from `lst`.
+
+The function then checks:
+- If `smallest` is not empty, it returns the maximum value from `smallest` (which is the largest negative integer), otherwise it returns `None`.
+- If `largest` is not empty, it returns the minimum value from `largest` (which is the smallest positive integer), otherwise it returns `None`.
+
+For the input `[]`, both `smallest` and `largest` will be empty lists since there are no elements to filter. Consequently, the function will return `(None, None)` because both conditions for non-empty lists are not met.

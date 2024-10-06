@@ -1,0 +1,14 @@
+The function `sum_product` is called with (numbers = [1, 1, 1]).
+Inside the function, two variables `sum_value` and `prod_value` are initialized to 0 and 1 respectively.
+The loop iterates from 0 to 2 since `range(len(numbers))` = [0, 1, 2].
+
+First Iteration(n = 1):
+    `sum_value += n` updates `sum_value` to 1 ( 0 + 1 = 1 ).
+    `prod_value *= n` updates `prod_value` to 1 ( 1 * 1 = 1 ).
+Second Iteration(n = 1):
+    `sum_value += n` updates `sum_value` to 2 ( 1 + 1 = 2 ).
+    `prod_value *= n` updates `prod_value` to 1 ( 1 * 1 = 1 ).
+Third Iteration(n = 1):
+    `sum_value += n` updates `sum_value` to 3 ( 2 + 1 = 3 ).
+    `prod_value *= n` updates `prod_value` to 1 ( 1 * 1 = 1 ).
+After the loop completes, the function returns the value of `sum_value` and `prod_value`, which are now 3 and 1.

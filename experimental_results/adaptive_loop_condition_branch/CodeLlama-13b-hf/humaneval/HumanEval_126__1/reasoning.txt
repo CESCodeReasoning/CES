@@ -1,0 +1,10 @@
+The function `is_sorted` is called with ( lst = [3, 2, 1] ).
+Inside the function, a dictionary `count_digit` is initialized to { 3: 0, 2: 0, 1: 0 }.
+The loop iterates from 0 through 2 (since ( len(lst) = 3 )).
+First Iteration (i = 0):
+    `count_digit[i] += 1` updates `count_digit` to { 3: 1, 2: 0, 1: 0 }.
+Second Iteration (i = 1):
+    `count_digit[i] += 1` updates `count_digit` to { 3: 1, 2: 1, 1: 0 }.
+Third Iteration (i = 2)
+    `count_digit[i] += 1` updates `count_digit` to { 3: 1, 2: 1, 1: 1 }.
+After the loop completes, the condition ( any(count_digit[i] > 2 for i in lst) ) is satisfied, therefore the if branch is taken and the function returns `False` as the output.

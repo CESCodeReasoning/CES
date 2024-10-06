@@ -1,0 +1,8 @@
+The function `median` is called with a list of integers.
+The list is sorted using the `sorted` method.
+The length of the list is checked to determine if it is odd or even.
+If the length is odd, the median is the middle element of the list.
+If the length is even, the median is the average of the two middle elements.
+The method returns the median.
+
+Therefore, the final output of the function `median([-10, 4, 6, 1000, 10, 20])` is 10.

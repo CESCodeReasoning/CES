@@ -1,0 +1,6 @@
+from typing import *
+
+
+def sum_to_n(n: int):
+    # [STATE] n = 100 [/STATE]
+    return sum(range(n + 1))  # [STATE] range(n + 1) generates numbers from 0 to 100 inclusive [/STATE]

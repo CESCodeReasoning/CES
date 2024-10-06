@@ -1,0 +1,6 @@
+The function encode takes a string message as input and returns a new string that is the result of encoding the input string.
+The encoding process involves replacing each vowel (a, e, i, o, u, A, E, I, O, U) in the input string with the character that is two positions after it in the alphabet.
+The function first converts the input string to uppercase using the swapcase() method.
+Then, it creates a dictionary vowels_replace that maps each vowel to its character that is two positions after it in the alphabet.
+Finally, the function iterates through each character in the input string and replaces it with its corresponding encoded character if it is a vowel, or with itself if it is not a vowel.
+The resulting string is returned as the output of the function.

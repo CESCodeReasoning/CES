@@ -1,0 +1,45 @@
+Here's the fixed code for both functions, `has_close_elements` and `total_match`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `total_match`
+```python
+def total_match(lst1, lst2):
+    l1 = sum(len(st) for st in lst1)  # Calculate total length of strings in lst1
+    l2 = sum(len(st) for st in lst2)  # Calculate total length of strings in lst2
+    
+    if l1 < l2:
+        return lst1
+    elif l2 < l1:
+        return lst2
+    else:
+        return lst1  # Return lst1 if both have the same total number of characters
+
+# Tests for total_match
+def check(total_match):
+    assert total_match([], []) == []
+    assert total_match(['hi', 'admin'], ['hi', 'hi']) == ['hi', 'hi']
+    assert total_match(['hi', 'admin'], ['hi', 'hi', 'admin', 'project']) == ['hi', 'admin']
+    assert total_match(['4'], ['1', '2', '3', '4', '5']) == ['4']
+    assert total_match(['hi', 'admin'], ['hI', 'Hi']) == ['hI', 'Hi']
+    assert total_match(['hi', 'admin'], ['hI', 'hi', 'hi']) == ['hI', 'hi', 'hi']
+    assert total_match(['hi', 'admin'], ['hI', 'hi', 'hii']) == ['hi', 'admin']
+    assert total_match([], ['this']) == []
+    assert total_match(['this'], []) == []
+
+check(total_match)
+```
+
+These fixes ensure that the functions behave as specified in the problem statements. The `has_close_elements` function now correctly calculates the absolute distance between elements, and the `total_match` function correctly compares the total lengths of strings in the lists and handles ties by returning the first list.

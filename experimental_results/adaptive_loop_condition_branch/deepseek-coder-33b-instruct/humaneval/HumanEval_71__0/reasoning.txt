@@ -1,0 +1,8 @@
+The function `triangle_area` is called with ( a = 1, b = 2, c = 3 ).
+The condition `a + b <= c or a + c <= b or b + c <= a` is false, therefore the if branch is not taken.
+The semi-perimeter `s` is calculated as `(a + b + c) / 2`, which is `(1 + 2 + 3) / 2 = 2`.
+The area is then calculated as `(s * (s - a) * (s - b) * (s - c)) ** 0.5`, which is `(2 * (2 - 1) * (2 - 2) * (2 - 3)) ** 0.5`, which is `0`.
+The area is then rounded to 2 decimal places using `round(area, 2)`, which results in `0`.
+The function returns the value of `area`, which is `0`.
+
+Therefore, the final output of the function `triangle_area(1, 2, 3)` is `0`.

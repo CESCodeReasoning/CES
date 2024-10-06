@@ -1,0 +1,13 @@
+The function `is_prime` is called with ( n = 5 * 17 ).
+Inside the function, a condition is checked:
+    - If n < 2, then return False.
+    - If n % k == 0, then return False.
+    - If all the above conditions are false, then return True.
+
+First Iteration:
+    - n = 5 * 17 = 89
+    - k = 2
+    - n % k = 89 % 2 = 1
+    - The condition ( n % k == 0 ) is false, so the function returns False.
+
+Therefore, the final output of the function `is_prime(5 * 17)` is False.

@@ -1,0 +1,19 @@
+[REASONING]
+The function `truncate_number` takes a floating-point number as input and returns the fractional part of the number by using the modulo operation with 1.0. The modulo operation `%` calculates the remainder of the division of the number by 1.0, which effectively isolates the decimal part of the number.
+For the input 123.456, the integer part is 123 and the fractional part is 0.456. When we perform `123.456 % 1.0`, it returns the remainder after dividing 123.456 by 1.0, which is 0.456.
+Thus, the output of executing the function `truncate_number` on the input 123.456 is 0.456.
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def truncate_number(number: float) -> float:
+    # [STATE] number is 123.456 [/STATE]
+    return number % 1.0  # [STATE] return value is 0.456 [/STATE]
+```
+[/ANSWER]
+
+[OUTPUT]
+0.456
+[/OUTPUT]

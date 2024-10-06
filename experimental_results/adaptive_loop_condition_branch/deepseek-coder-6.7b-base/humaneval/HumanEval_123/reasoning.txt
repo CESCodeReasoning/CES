@@ -1,0 +1,44 @@
+The function `get_odd_collatz` is called with ( n = 14 ).
+The condition `n%2==0` is false. The first branch is not taken.
+The else branch is taken. The variable `odd_collatz` is initialized to [14].
+The loop iterates from 14 to 1 (since ( n = 14 )).
+First Iteration (n = 14):
+    - n % 2 == 0 when n=14
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken. `n = n*3 + 1` updates `n` to 42 ( 14 * 3 + 1 = 42 ).
+Second Iteration (n = 42):
+    - n % 2 == 0 when n=42
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken. `n = n*3 + 1` updates `n` to 126 ( 42 * 3 + 1 = 126 ).
+Third Iteration (n = 126):
+    - n % 2 == 0 when n=126
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken. `n = n*3 + 1` updates `n` to 378 ( 126 * 3 + 1 = 378 ).
+Fourth Iteration (n = 378):
+    - n % 2 == 0 when n=378
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken. `n = n*3 + 1` updates `n` to 1134 ( 378 * 3 + 1 = 1134 ).
+Fifth Iteration (n = 1134):
+    - n % 2 == 0 when n=1134
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken. `n = n*3 + 1` updates `n` to 3402 ( 1134 * 3 + 1 = 3402 ).
+Sixth Iteration (n = 3402):
+    - n % 2 == 0 when n=3402
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken. `n = n*3 + 1` updates `n` to 10206 ( 3402 * 3 + 1 = 10206 ).
+Seventh Iteration (n = 10206):
+    - n % 2 == 0 when n=10206
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken. `n = n*3 + 1` updates `n` to 30618 ( 10206 * 3 + 1 = 30618 ).
+Eighth Iteration (n = 30618):
+    - n % 2 == 0 when n=30618
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken. `n = n*3 + 1` updates `n` to 92854 ( 30618 * 3 + 1 = 92854 ).
+Ninth Iteration (n = 92854):
+    - n % 2 == 0 when n=92854
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken. `n = n*3 + 1` updates `n` to 278562 ( 92854 * 3 + 1 = 278562 ).
+Tenth Iteration (n = 278562):
+    - n % 2 == 0 when n=278562
+    - The condition `n % 2 == 0` is false. The first branch is not taken.
+    - The else branch is taken.

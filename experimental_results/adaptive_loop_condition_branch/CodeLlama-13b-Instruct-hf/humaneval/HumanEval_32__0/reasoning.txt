@@ -1,0 +1,12 @@
+The function `find_zero` is called with a list of coefficients (xs = [5, 3, -5]).
+Inside the function, a variable `begin` is initialized to -1.0 and a variable `end` is initialized to 1.0.
+The loop iterates until the condition `poly(xs, begin) * poly(xs, end) > 0` is false.
+The condition is true for the first 4 iterations, since the product of the values of the polynomial at -1.0 and 1.0 is positive.
+In the fifth iteration, the condition is false, since the product of the values of the polynomial at -1.0 and 1.0 is negative.
+The loop then iterates until the condition `(end - begin) > 1e-10` is false.
+The condition is true for the first 4 iterations, since the difference between -1.0 and 1.0 is greater than 1e-10.
+In the fifth iteration, the condition is false, since the difference between -1.0 and 1.0 is less than 1e-10.
+The loop then iterates until the condition `poly(xs, center) * poly(xs, begin) > 0` is false.
+The condition is true for the first 4 iterations, since the product of the values of the polynomial at the center and -1.0 is positive.
+In the fifth iteration, the condition is false, since the product of the values of the polynomial at the center and -1.0 is negative.
+After the loop completes, the function returns the value of `begin`, which is now -1.0.

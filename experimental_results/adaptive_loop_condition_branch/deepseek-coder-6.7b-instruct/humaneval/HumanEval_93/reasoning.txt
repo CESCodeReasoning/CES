@@ -1,0 +1,20 @@
+The function encode takes a string message as input.
+
+First, it defines a string vowels containing all the vowels in both lowercase and uppercase.
+
+Then, it creates a dictionary vowels_replace where each vowel in the string vowels is mapped to its ASCII value plus 2. This is done using the built-in function dict and list comprehension.
+
+Next, it converts the entire message to uppercase using the built-in method swapcase().
+
+Finally, it returns a new string where each character in the message is replaced by its corresponding value in the dictionary vowels_replace if the character is a vowel, or by the character itself otherwise. This is done using a list comprehension.
+
+To determine the output of executing the function encode on the input 'TEST', we first convert 'TEST' to uppercase using the swapcase() method, which gives us 'test'.
+
+Then, we replace each vowel in 'test' with its ASCII value plus 2. The vowels are 'e' and 'a', so we replace them with 'g' and 'c' respectively.
+
+Therefore, the output of executing the function encode on the input 'TEST' is 'gcvt'.
+
+[OUTPUT]
+'gcvt'
+[/OUTPUT]
+<|EOT|>

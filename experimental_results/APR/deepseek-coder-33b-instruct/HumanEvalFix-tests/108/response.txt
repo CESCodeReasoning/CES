@@ -1,0 +1,8 @@
+Fixed Code:
+```python
+def count_nums(arr):
+    def digits_sum(n):
+        n = [int(i) for i in str(abs(n))]
+        return sum(n)
+    return len(list(filter(lambda x: x > 0, [digits_sum(i) for i in arr])))
+```

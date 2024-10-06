@@ -1,0 +1,27 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: get_odd_collatz
+main.py(5):     if n % 2 == 0:
+main.py(8):         odd_collatz = [n]
+main.py(9):     while n > 1:
+main.py(10):         if n % 2 == 0:
+main.py(13):             n = n * 3 + 1
+main.py(15):         if n % 2 == 1:
+main.py(9):     while n > 1:
+main.py(10):         if n % 2 == 0:
+main.py(11):             n = n / 2
+main.py(15):         if n % 2 == 1:
+main.py(9):     while n > 1:
+main.py(10):         if n % 2 == 0:
+main.py(11):             n = n / 2
+main.py(15):         if n % 2 == 1:
+main.py(9):     while n > 1:
+main.py(10):         if n % 2 == 0:
+main.py(11):             n = n / 2
+main.py(15):         if n % 2 == 1:
+main.py(9):     while n > 1:
+main.py(10):         if n % 2 == 0:
+main.py(11):             n = n / 2
+main.py(15):         if n % 2 == 1:
+main.py(16):             odd_collatz.append(int(n))
+main.py(9):     while n > 1:
+main.py(18):     return sorted(odd_collatz)

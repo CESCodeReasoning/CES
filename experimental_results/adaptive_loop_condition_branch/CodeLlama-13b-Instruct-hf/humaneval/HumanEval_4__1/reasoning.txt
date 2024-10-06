@@ -1,0 +1,8 @@
+The function mean_absolute_deviation takes a list of floating-point numbers as input and returns the mean absolute deviation (MAD) of the list.
+
+To determine the MAD of a list of numbers, we first need to calculate the mean of the list. We can do this by taking the sum of all the numbers in the list and dividing it by the length of the list.
+
+Once we have the mean, we can calculate the absolute deviation of each number from the mean. We can do this by taking the absolute value of each number and subtracting the mean.
+
+Finally, we can calculate the MAD by taking the sum of all the absolute deviations and dividing it by the length of the list.
+

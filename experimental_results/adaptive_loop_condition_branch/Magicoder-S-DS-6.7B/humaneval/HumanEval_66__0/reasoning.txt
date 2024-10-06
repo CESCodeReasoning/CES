@@ -1,0 +1,6 @@
+The function `digitSum` is called with ( s = "abcCd" ).
+The condition `s == ""` is false, therefore the else branch is taken.
+The function `ord` is used to get the ASCII value of the character. If the character is uppercase, its ASCII value is returned, otherwise 0 is returned.
+The sum of ASCII values of all uppercase characters in "abcCd" is 65+67+68 = 190.
+
+Therefore, the final output of the function `digitSum("abcCd")` is 190.

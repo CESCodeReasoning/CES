@@ -1,0 +1,41 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: numerical_letter_grade
+main.py(5):     letter_grade = []
+main.py(6):     for gpa in grades:
+main.py(7):         if gpa == 4.0:
+main.py(8):             letter_grade.append("A+")
+main.py(6):     for gpa in grades:
+main.py(7):         if gpa == 4.0:
+main.py(9):         elif gpa > 3.7:
+main.py(11):         elif gpa > 3.3:
+main.py(13):         elif gpa > 3.0:
+main.py(15):         elif gpa > 2.7:
+main.py(16):             letter_grade.append("B")
+main.py(6):     for gpa in grades:
+main.py(7):         if gpa == 4.0:
+main.py(9):         elif gpa > 3.7:
+main.py(11):         elif gpa > 3.3:
+main.py(13):         elif gpa > 3.0:
+main.py(15):         elif gpa > 2.7:
+main.py(17):         elif gpa > 2.3:
+main.py(19):         elif gpa > 2.0:
+main.py(21):         elif gpa > 1.7:
+main.py(23):         elif gpa > 1.3:
+main.py(24):             letter_grade.append("C-")
+main.py(6):     for gpa in grades:
+main.py(7):         if gpa == 4.0:
+main.py(9):         elif gpa > 3.7:
+main.py(11):         elif gpa > 3.3:
+main.py(13):         elif gpa > 3.0:
+main.py(15):         elif gpa > 2.7:
+main.py(17):         elif gpa > 2.3:
+main.py(19):         elif gpa > 2.0:
+main.py(21):         elif gpa > 1.7:
+main.py(22):             letter_grade.append("C")
+main.py(6):     for gpa in grades:
+main.py(7):         if gpa == 4.0:
+main.py(9):         elif gpa > 3.7:
+main.py(11):         elif gpa > 3.3:
+main.py(12):             letter_grade.append("A-")
+main.py(6):     for gpa in grades:
+main.py(33):     return letter_grade

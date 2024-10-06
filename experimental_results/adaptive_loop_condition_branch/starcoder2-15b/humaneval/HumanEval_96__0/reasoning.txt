@@ -1,0 +1,7 @@
+The function count_up_to(n) takes an integer n as its parameter.
+The outer loop iterates through the range of integers from 2 to n-1.
+The inner loop iterates through the range of integers from 2 to i-1.
+For each integer i in the outer loop, the inner loop checks if i is divisible by any integer j in the range from 2 to i-1.
+If i is divisible by j, then i is not a prime number, and the inner loop breaks.
+If i is not divisible by any integer j in the range from 2 to i-1, then i is a prime number, and it is appended to the list primes.
+The function returns the list of prime numbers that are less than or equal to n.

@@ -1,0 +1,33 @@
+[REASONING]
+The function `get_closest_vowel` is called with the input string "yogurt".
+1. The function first checks if the length of the word is less than 3. Since "yogurt" has 6 characters, this condition is false.
+2. A set of vowels is defined containing both lowercase and uppercase vowels.
+3. The function then iterates over the string from the second last character to the second character in reverse order (indices 4 to 1 for "yogurt").
+   - Iteration 1 (i = 4): The character at index 4 is 'r', which is not a vowel.
+   - Iteration 2 (i = 3): The character at index 3 is 't', which is not a vowel.
+   - Iteration 3 (i = 2): The character at index 2 is 'g', which is not a vowel.
+   - Iteration 4 (i = 1): The character at index 1 is 'o', which is a vowel.
+     - The characters at indices 2 ('g') and 0 ('y') are checked and neither are vowels.
+     - Since the adjacent characters are not vowels, 'o' is returned as the closest vowel.
+4. The function returns 'o' as the closest vowel surrounded by non-vowel characters.
+
+Therefore, the output of the function `get_closest_vowel("yogurt")` is 'o'.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def get_closest_vowel(word):
+    if len(word) < 3: ## [CONDITION](len(word) < 3)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return ""
+
+    vowels = {"a", "e", "i", "o", "u", "A", "E", 'O', 'U', 'I'}
+    for i in range(len(word)-2, 0, -1): ## [STATE]i=[4, 3, 2, 1][/STATE][STATE]range((len(word) - 2), 0, (- 1))=[4, 3, 2, 1][/STATE][STATE](len(word) - 2)=[4][/STATE]
+        if word[i] in vowels: ## [CONDITION](word[i] in vowels)=[False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, Y][/BRANCH]
+            if (word[i+1] not in vowels) and (word[i-1] not in vowels): ## [CONDITION]((word[i+1] not in vowels) and (word[i-1] not in vowels))=[True][/CONDITION][CONDITION](word[i+1] not in vowels)=[True][/CONDITION][CONDITION](word[i-1] not in vowels)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+                return word[i]
+    return ""
+[/PYTHON]
+
+[OUTPUT]
+o
+[/OUTPUT]

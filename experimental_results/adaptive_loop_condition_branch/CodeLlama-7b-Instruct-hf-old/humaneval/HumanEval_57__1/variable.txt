@@ -1,0 +1,7 @@
+from typing import *
+
+
+def monotonic(l: list):
+    if l == sorted(l) or l == sorted(l, reverse=True): ## [CONDITION](l == sorted(l) or l == sorted(l, reverse=True))=??[/CONDITION][CONDITION](l == sorted(l))=??[/CONDITION][CONDITION](l == sorted(l, reverse=True))=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return True
+    return False

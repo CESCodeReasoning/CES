@@ -1,0 +1,12 @@
+The function `change_base` is called with ( x = 9, base = 3 ).
+Inside the function, a variable `ret` is initialized to an empty string.
+First Iteration (x = 9):
+    - x > 0 when x=9
+    -`ret = str(x % base) + ret` updates `ret` to '0' ( 9 % 3 = 0, '0' + '' = '0' ).
+Second Iteration (x = 3):
+    - x > 0 when x=3
+    -`ret = str(x % base) + ret` updates `ret` to '10' ( 3 % 3 = 0, '0' + '10' = '10' ).
+Third Iteration (x = 1):
+    - x > 0 when x=1
+    -`ret = str(x % base) + ret` updates `ret` to '110' ( 1 % 3 = 1, '1' + '10' = '110' ).
+After the loop completes, the function returns the value of `ret`, which is now '110'.

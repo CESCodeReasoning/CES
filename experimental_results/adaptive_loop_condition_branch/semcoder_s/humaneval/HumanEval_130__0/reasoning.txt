@@ -1,0 +1,59 @@
+The function `tri` is called with ( n = 20 ).
+The first condition checks if `n` is 0. Since `n` is 20, this condition is false.
+The list `my_tri` is initialized with `[1, 3]`.
+The loop iterates from 2 to 20 (inclusive).
+Iteration 2:
+   - The condition `i % 2 == 0` is true (since 2 is even).
+   - Action: `my_tri.append(2 / 2 + 1)` results in `my_tri = [1, 3, 2]`.
+Iteration 3:
+   - The condition `i % 2 == 0` is false (since 3 is odd).
+   - Action: `my_tri.append(my_tri[3 - 1] + my_tri[3 - 2] + (3 + 3) / 2)` results in `my_tri = [1, 3, 2, 6]`.
+Iteration 4:
+   - The condition `i % 2 == 0` is true (since 4 is even).
+   - Action: `my_tri.append(4 / 2 + 1)` results in `my_tri = [1, 3, 2, 6, 3]`.
+Iteration 5:
+   - The condition `i % 2 == 0` is false (since 5 is odd).
+   - Action: `my_tri.append(my_tri[5 - 1] + my_tri[5 - 2] + (5 + 3) / 2)` results in `my_tri = [1, 3, 2, 6, 3, 11]`.
+Iteration 6:
+   - The condition `i % 2 == 0` is true (since 6 is even).
+   - Action: `my_tri.append(6 / 2 + 1)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4]`.
+Iteration 7:
+   - The condition `i % 2 == 0` is false (since 7 is odd).
+   - Action: `my_tri.append(my_tri[7 - 1] + my_tri[7 - 2] + (7 + 3) / 2)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16]`.
+Iteration 8:
+   - The condition `i % 2 == 0` is true (since 8 is even).
+   - Action: `my_tri.append(8 / 2 + 1)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5]`.
+Iteration 9:
+   - The condition `i % 2 == 0` is false (since 9 is odd).
+   - Action: `my_tri.append(my_tri[9 - 1] + my_tri[9 - 2] + (9 + 3) / 2)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22]`.
+Iteration 10:
+   - The condition `i % 2 == 0` is true (since 10 is even).
+   - Action: `my_tri.append(10 / 2 + 1)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22, 6]`.
+Iteration 11:
+   - The condition `i % 2 == 0` is false (since 11 is odd).
+   - Action: `my_tri.append(my_tri[11 - 1] + my_tri[11 - 2] + (11 + 3) / 2)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22, 6, 29]`.
+Iteration 12:
+   - The condition `i % 2 == 0` is true (since 12 is even).
+   - Action: `my_tri.append(12 / 2 + 1)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22, 6, 29, 7]`.
+Iteration 13:
+   - The condition `i % 2 == 0` is false (since 13 is odd).
+   - Action: `my_tri.append(my_tri[13 - 1] + my_tri[13 - 2] + (13 + 3) / 2)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22, 6, 29, 7, 37]`.
+Iteration 14:
+   - The condition `i % 2 == 0` is true (since 14 is even).
+   - Action: `my_tri.append(14 / 2 + 1)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22, 6, 29, 7, 37, 8]`.
+Iteration 15:
+   - The condition `i % 2 == 0` is false (since 15 is odd).
+   - Action: `my_tri.append(my_tri[15 - 1] + my_tri[15 - 2] + (15 + 3) / 2)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22, 6, 29, 7, 37, 8, 46]`.
+Iteration 16:
+   - The condition `i % 2 == 0` is true (since 16 is even).
+   - Action: `my_tri.append(16 / 2 + 1)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22, 6, 29, 7, 37, 8, 46, 9]`.
+Iteration 17:
+   - The condition `i % 2 == 0` is false (since 17 is odd).
+   - Action: `my_tri.append(my_tri[17 - 1] + my_tri[17 - 2] + (17 + 3) / 2)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22, 6, 29, 7, 37, 8, 46, 9, 56]`.
+Iteration 18:
+   - The condition `i % 2 == 0` is true (since 18 is even).
+   - Action: `my_tri.append(18 / 2 + 1)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22, 6, 29, 7, 37, 8, 46, 9, 56, 10]`.
+Iteration 19:
+   - The condition `i % 2 == 0` is false (since 19 is odd).
+   - Action: `my_tri.append(my_tri[19 - 1] + my_tri[19 - 2] + (19 + 3) / 2)` results in `my_tri = [1, 3, 2, 6, 3, 11, 4, 16, 5, 22, 6, 29, 7, 37, 8, 46, 9, 56, 10, 67]`.
+Iteration 20

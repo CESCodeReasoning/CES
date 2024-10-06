@@ -1,0 +1,8 @@
+The function `split_words` is called with ( txt = "" ).
+The condition `" " in txt` is False. The first branch is not taken.
+The condition `"," in txt` is False. The second branch is not taken.
+The `else` block is taken.
+The list comprehension `[i for i in txt if i.islower() and ord(i) % 2 == 0]` iterates over each character in `txt` and returns a list of characters that are lowercase and have an even ordinal value.
+In this case, `txt` is an empty string, so the list comprehension returns an empty list.
+The `len` function is called on the empty list, which returns 0.
+Therefore, the final output of the function `split_words("")` is 0.

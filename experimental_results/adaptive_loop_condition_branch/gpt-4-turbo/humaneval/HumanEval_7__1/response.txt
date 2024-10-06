@@ -1,0 +1,25 @@
+[REASONING]
+The function `filter_by_substring` takes two parameters: a list of strings `strings` and a string `substring`. It returns a new list containing only those strings from the input list that contain the specified `substring`.
+To determine the output of executing the function `filter_by_substring` on the input list `['xxx', 'asd', 'aaaxxy', 'john doe', 'xxxAAA', 'xxx']` with the substring `'xx'`, we need to check each string in the list to see if it contains the substring `'xx'`.
+
+1. 'xxx' contains 'xx' -> included in the result.
+2. 'asd' does not contain 'xx' -> not included.
+3. 'aaaxxy' contains 'xx' -> included in the result.
+4. 'john doe' does not contain 'xx' -> not included.
+5. 'xxxAAA' contains 'xx' -> included in the result.
+6. 'xxx' contains 'xx' -> included in the result.
+
+Therefore, the output of executing the function `filter_by_substring` on the given input is `['xxx', 'aaaxxy', 'xxxAAA', 'xxx']`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    # [STATE] strings = ['xxx', 'asd', 'aaaxxy', 'john doe', 'xxxAAA', 'xxx'], substring = 'xx' [/STATE]
+    return [x for x in strings if substring in x]  # [CONDITION] substring in x [/CONDITION]
+[/PYTHON]
+
+[OUTPUT]
+['xxx', 'aaaxxy', 'xxxAAA', 'xxx']
+[/OUTPUT]

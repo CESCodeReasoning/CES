@@ -1,0 +1,8 @@
+The function `circular_shift` is called with ( x = 100, shift = 2 ).
+The string representation of `x` is "100".
+The length of this string is 3.
+`shift` is 2, which is greater than 3.
+The condition `shift > len(s)` is true, therefore the else branch is taken.
+The string is reversed and returned.
+
+Therefore, the final output of the function `circular_shift(100, 2)` is "001".

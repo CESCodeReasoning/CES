@@ -1,0 +1,11 @@
+from typing import *
+
+
+def anti_shuffle(s):
+    # [STATE] s = 'Hello World!!!' [/STATE]
+    return ' '.join([''.join(sorted(list(i))) for i in s.split(' ')])
+    # [STATE] s.split(' ') = ['Hello', 'World!!!'] [/STATE]
+    # [STATE] list(i) for i in ['Hello', 'World!!!'] = [['H', 'e', 'l', 'l', 'o'], ['W', 'o', 'r', 'l', 'd', '!', '!', '!']] [/STATE]
+    # [STATE] sorted(list(i)) for i in [['H', 'e', 'l', 'l', 'o'], ['W', 'o', 'r', 'l', 'd', '!', '!', '!']] = [['H', 'e', 'l', 'l', 'o'], ['!', '!', '!', 'W', 'd', 'l', 'o', 'r']] [/STATE]
+    # [STATE] ''.join(sorted(list(i))) for i in [['H', 'e', 'l', 'l', 'o'], ['!', '!', '!', 'W', 'd', 'l', 'o', 'r']] = ['Hello', '!!!dlorW'] [/STATE]
+    # [STATE] ' '.join(['Hello', '!!!dlorW']) = 'Hello !!!dlorW' [/STATE]

@@ -1,0 +1,13 @@
+The function `search` is called with ( lst = [5, 5, 5, 5, 1] ).
+Inside the function, a variable `frq` is initialized to [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0].
+
+Iteration 1:
+    - The value of `i` is 5, so `frq[i]` becomes 1.
+Iteration 2:
+    - The value of `i` is 5, so `frq[i]` becomes 2.
+Iteration 3:
+    - The value of `i` is 5, so `frq[i]` becomes 3.
+Iteration 4:
+    - The value of `i` is 5, so `frq[i]` becomes 4.
+Iteration 5:
+    - The value of `i` is 1, so `frq[i]` becomes 1.

@@ -1,0 +1,25 @@
+The function `Strongest_Extension` is called with ( class_name = "Watashi", extensions = ["tEN", "niNE", "eIGHt8OKe"] ).
+Inside the function, a variable `strong` is initialized to the first element of `extensions`, which is "tEN".
+The variable `my_val` is initialized to the difference between the number of uppercase letters and lowercase letters in "tEN".
+The loop iterates over each element in `extensions`.
+
+Iteration 1:
+    - The element is "tEN".
+    - The value of `val` is calculated as the difference between the number of uppercase letters and lowercase letters in "tEN", which is 0.
+    - The condition `val > my_val` is false, so the `if` block is not executed.
+
+Iteration 2:
+    - The element is "niNE".
+    - The value of `val` is calculated as the difference between the number of uppercase letters and lowercase letters in "niNE", which is 1.
+    - The condition `val > my_val` is true, so the `if` block is executed.
+    - The value of `strong` is updated to "niNE".
+    - The value of `my_val` is updated to 1.
+
+Iteration 3:
+    - The element is "eIGHt8OKe".
+    - The value of `val` is calculated as the difference between the number of uppercase letters and lowercase letters in "eIGHt8OKe", which is 2.
+    - The condition `val > my_val` is true, so the `if` block is executed.
+    - The value of `strong` is updated to "eIGHt8OKe".
+    - The value of `my_val` is updated to 2.
+
+After the loop completes, the function returns the value of `ans`, which is "Watashi.eIGHt8OKe".

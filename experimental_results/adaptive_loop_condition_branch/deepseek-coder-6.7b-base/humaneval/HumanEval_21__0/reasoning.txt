@@ -1,0 +1,10 @@
+The function rescale_to_unit takes a list of numbers as input and returns a list of numbers that have been rescaled to the range [0, 1].
+To determine the output of executing the function rescale_to_unit on the input [1.0, 2.0, 3.0, 4.0, 5.0], we need to rescale each number in the input list to the range [0, 1].
+
+To rescale a number x to the range [0, 1], we first need to find the minimum and maximum values in the input list.
+The minimum value is 1.0 and the maximum value is 5.0.
+
+We can then rescale each number in the input list by subtracting the minimum value from it and then dividing the result by the difference between the maximum and minimum values.
+For example, to rescale the number 2.0 to the range [0, 1], we subtract 1.0 from it to get 1.0, and then divide the result by 4.0 to get 0.25.
+
+Therefore, the output of executing the function rescale_to_unit on the input [1.0, 2.0, 3.0, 4.0, 5.0] is [0.0, 0.25, 0.5, 0.75, 1.0].

@@ -1,0 +1,38 @@
+The function `search` is called with ( lst = [8, 8, 8, 8, 8, 8, 8, 8] ).
+Inside the function, a variable `frq` is initialized to a list of 0s with the length of the maximum value in `lst` plus 1.
+
+Iteration 1:
+    -The value of `i` is 8, which is the first element of `lst`.
+    -The value of `frq[i]` is 0, since `frq` is initialized with 0s.
+    -The value of `frq[i]` is incremented by 1, so `frq[8]` becomes 1.
+Iteration 2:
+    -The value of `i` is 8, which is the second element of `lst`.
+    -The value of `frq[i]` is 1, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented by 1, so `frq[8]` becomes 2.
+Iteration 3:
+    -The value of `i` is 8, which is the third element of `lst`.
+    -The value of `frq[i]` is 2, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented by 1, so `frq[8]` becomes 3.
+Iteration 4:
+    -The value of `i` is 8, which is the fourth element of `lst`.
+    -The value of `frq[i]` is 3, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented by 1, so `frq[8]` becomes 4.
+Iteration 5:
+    -The value of `i` is 8, which is the fifth element of `lst`.
+    -The value of `frq[i]` is 4, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented by 1, so `frq[8]` becomes 5.
+Iteration 6:
+    -The value of `i` is 8, which is the sixth element of `lst`.
+    -The value of `frq[i]` is 5, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented by 1, so `frq[8]` becomes 6.
+Iteration 7:
+    -The value of `i` is 8, which is the seventh element of `lst`.
+    -The value of `frq[i]` is 6, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented by 1, so `frq[8]` becomes 7.
+Iteration 8:
+    -The value of `i` is 8, which is the eighth element of `lst`.
+    -The value of `frq[i]` is 7, since it was incremented in the previous iteration.
+    -The value of `frq[i]` is incremented by 1, so `frq[8]` becomes 8.
+
+After the loop completes, the function checks if `frq[i]` is greater than or equal to `i` for each `i` in the range of 1 to the length of `frq`.
+Since `frq[8]` is 8, which is greater than or equal to 8, the function returns 8.

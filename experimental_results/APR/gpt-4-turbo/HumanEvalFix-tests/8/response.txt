@@ -1,0 +1,33 @@
+Here are the fixed versions of both functions, `has_close_elements` and `sum_product`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `sum_product`
+```python
+from typing import List, Tuple
+
+def sum_product(numbers: List[int]) -> Tuple[int, int]:
+    sum_value = 0
+    prod_value = 1  # Initialize product to 1 for correct multiplication, especially for empty list
+
+    for n in numbers:
+        sum_value += n
+        prod_value *= n
+    return sum_value, prod_value
+```
+
+These fixes address the issues in the original code:
+- In `has_close_elements`, the distance calculation now correctly uses the absolute value to ensure that the comparison is based on the magnitude of the difference, not the direction.
+- In `sum_product`, the product initialization is set to 1 instead of 0. This is crucial because any number multiplied by 0 is 0, which would incorrectly handle non-empty lists where the product should not be zero.

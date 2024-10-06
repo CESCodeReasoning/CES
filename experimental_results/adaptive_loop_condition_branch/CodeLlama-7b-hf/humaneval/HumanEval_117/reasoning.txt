@@ -1,0 +1,37 @@
+The function select_words(s, n) takes a string s and an integer n as its parameters.
+The outer loop iterates through each word in the string s.
+In the inner loop, for each word indexed by i in the outer loop, count the number of consonants in the word.
+First Iteration (i=0):
+    - `i` is 0, word in the inner loop is "Mary".
+    - n_consonants = 0, word[i].lower() not in ["a","e","i","o","u"]:
+        - When i = 0 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 1 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 2 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 3 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 4 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 5 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 6 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 7 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 8 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 9 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 10 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 11 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 12 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 13 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 14 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 15 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 16 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 17 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 18 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 19 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 20 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 21 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 22 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 23 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 24 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 25 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 26 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 27 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 28 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 29 (word[i].lower() not in ["a","e","i","o","u"]), the condition `word[i].lower() not in ["a","e","i","o","u"]` is False, the if branch is not taken.
+        - When i = 30 (word[i].lower() not in ["a","e","i","o","u

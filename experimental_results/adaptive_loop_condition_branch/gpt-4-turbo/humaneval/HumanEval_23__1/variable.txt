@@ -1,0 +1,6 @@
+from typing import *
+
+
+def strlen(string: str) -> int:
+    # [STATE] string is '' [/STATE]
+    return len(string)  # [STATE] len(string) is 0 [/STATE]

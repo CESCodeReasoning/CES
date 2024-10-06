@@ -1,0 +1,8 @@
+The function `by_length` is called with (arr = [2, 1, 1, 4, 5, 8, 2, 3]).
+First, a dictionary `dic` is created with keys as integers from 1 to 9 and values as their corresponding words.
+Then, the input list `arr` is sorted in reverse order.
+After that, a new list `new_arr` is initialized.
+The loop iterates over each element in `sorted_arr`.
+For each element, it tries to fetch the corresponding word from the dictionary `dic` and append it to `new_arr`.
+If the element is not in the dictionary, it simply passes and moves to the next element.
+Finally, the function returns the `new_arr`.

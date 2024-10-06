@@ -1,0 +1,13 @@
+The function `numerical_letter_grade` is called with ( grades = [0, 0.7] ).
+Inside the function, a variable `letter_grade` is initialized to an empty list.
+
+Iteration 1:
+    -The value of `gpa` is 0.0, which is less than 0.7, so the `else` block is executed.
+    -The `else` block's action: `letter_grade.append("E")` appends "E" to `letter_grade`.
+    -The value of `letter_grade` is now ["E"].
+Iteration 2:
+    -The value of `gpa` is 0.7, which is greater than 0.7, so the `if` block is executed.
+    -The `if` block's action: `letter_grade.append("D+")` appends "D+" to `letter_grade`.
+    -The value of `letter_grade` is now ["E", "D+"].
+
+Therefore, the final output of the function `numerical_letter_grade([0, 0.7])` is ["E", "D+"].

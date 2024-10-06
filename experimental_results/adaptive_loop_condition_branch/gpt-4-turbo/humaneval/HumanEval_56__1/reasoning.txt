@@ -1,0 +1,21 @@
+The function `correct_bracketing` is called with the input string "<<<><>>>>".
+The function checks if the brackets are correctly nested using a depth counter:
+- `depth` is initialized to 0.
+- For each character in the string:
+  - If the character is '<', `depth` is incremented by 1.
+  - If the character is '>', `depth` is decremented by 1.
+  - If at any point `depth` becomes negative, it indicates that there are more closing brackets than opening ones before them, and the function returns `False`.
+- After the loop, if `depth` is not zero, it means there are unmatched opening brackets, so the function should return `False`. If `depth` is zero, it means all brackets are correctly nested, and the function returns `True`.
+
+Step-by-step:
+- '<' increments depth to 1.
+- '<' increments depth to 2.
+- '<' increments depth to 3.
+- '>' decrements depth to 2.
+- '<' increments depth to 3.
+- '>' decrements depth to 2.
+- '>' decrements depth to 1.
+- '>' decrements depth to 0.
+- '>' decrements depth to -1 (at this point, the function returns `False` because there are more closing brackets than opening ones).
+
+Therefore, the function returns `False` as the brackets are not correctly nested.

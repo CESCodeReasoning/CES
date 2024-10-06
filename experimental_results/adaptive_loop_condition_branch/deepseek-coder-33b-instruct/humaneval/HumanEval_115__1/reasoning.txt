@@ -1,0 +1,9 @@
+The function max_fill takes a 2D list grid and an integer capacity as input. It calculates the sum of each sublist in the grid, divides it by the capacity, and rounds up to the nearest integer using the math.ceil function. It then sums up all these rounded values and returns the result.
+
+To determine the output of executing the function max_fill on the input [[1,1,1,1], [1,1,1,1]] and 2, we need to calculate the sum of each sublist in the grid, divide it by the capacity, and round up to the nearest integer.
+
+For the first sublist [1,1,1,1], the sum is 4. Dividing 4 by 2 equals 2. Rounding up to the nearest integer gives 2.
+For the second sublist [1,1,1,1], the sum is also 4. Dividing 4 by 2 equals 2. Rounding up to the nearest integer gives 2.
+
+Adding these two values together gives 4.
+Therefore, the output of executing the function max_fill on the input [[1,1,1,1], [1,1,1,1]] and 2 is 4.

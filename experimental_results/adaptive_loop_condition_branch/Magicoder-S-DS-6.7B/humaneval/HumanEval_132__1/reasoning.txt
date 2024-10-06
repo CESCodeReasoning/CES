@@ -1,0 +1,60 @@
+The function `is_nested` is called with ( string = '[[[[]]]]' ).
+Inside the function, two empty lists `opening_bracket_index` and `closing_bracket_index` are initialized.
+
+Iteration 1:
+    -The character '[' is an opening bracket, so it is appended to `opening_bracket_index`.
+Iteration 2:
+    -The character '[' is an opening bracket, so it is appended to `opening_bracket_index`.
+Iteration 3:
+    -The character '[' is an opening bracket, so it is appended to `opening_bracket_index`.
+Iteration 4:
+    -The character '[' is an opening bracket, so it is appended to `opening_bracket_index`.
+Iteration 5:
+    -The character ']' is a closing bracket, so it is appended to `closing_bracket_index`.
+Iteration 6:
+    -The character ']' is a closing bracket, so it is appended to `closing_bracket_index`.
+Iteration 7:
+    -The character ']' is a closing bracket, so it is appended to `closing_bracket_index`.
+Iteration 8:
+    -The character ']' is a closing bracket, so it is appended to `closing_bracket_index`.
+Iteration 9:
+    -The character ']' is a closing bracket, so it is appended to `closing_bracket_index`.
+Iteration 10:
+    -The character ']' is a closing bracket, so it is appended to `closing_bracket_index`.
+Iteration 11:
+    -The character ']' is a closing bracket, so it is appended to `closing_bracket_index`.
+Iteration 12:
+    -The character ']' is a closing bracket, so it is appended to `closing_bracket_index`.
+Iteration 13:
+    -The character ']' is a closing bracket, so it is appended to `closing_bracket_index`.
+
+After the loop, `closing_bracket_index` is reversed.
+
+Iteration 1:
+    -The index 0 is less than the index 1 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 2:
+    -The index 1 is less than the index 2 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 3:
+    -The index 2 is less than the index 3 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 4:
+    -The index 3 is less than the index 4 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 5:
+    -The index 4 is less than the index 5 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 6:
+    -The index 5 is less than the index 6 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 7:
+    -The index 6 is less than the index 7 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 8:
+    -The index 7 is less than the index 8 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 9:
+    -The index 8 is less than the index 9 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 10:
+    -The index 9 is less than the index 10 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 11:
+    -The index 10 is less than the index 11 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 12:
+    -The index 11 is less than the index 12 in `closing_bracket_index`, so `cnt` is incremented by 1.
+Iteration 13:
+    -The index 12 is less than the index 13 in `closing_bracket_index`, so `cnt` is incremented by 1.
+
+Finally, the function returns `cnt >= 2`, which is `True`.

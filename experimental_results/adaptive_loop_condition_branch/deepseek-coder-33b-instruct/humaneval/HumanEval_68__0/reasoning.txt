@@ -1,0 +1,4 @@
+The function `pluck` is called with an empty list (`arr = []`).
+The condition `len(arr) == 0` is true, so the if branch is taken and the function returns an empty list `[]`.
+
+Therefore, the final output of the function `pluck([])` is `[]`.

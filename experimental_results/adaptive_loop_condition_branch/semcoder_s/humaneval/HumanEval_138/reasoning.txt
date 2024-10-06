@@ -1,0 +1,5 @@
+The function `is_equal_to_sum_even` takes an integer `n` as input and checks if `n` is even (i.e., `n % 2 == 0`) and greater than or equal to 8. If both conditions are true, it returns `True`; otherwise, it returns `False`.
+
+To determine the output of executing the function `is_equal_to_sum_even` on the input 4, we need to check if 4 is both even and greater than or equal to 8.
+
+Since 4 is even (4 % 2 == 0), but not greater than or equal to 8, the function will return `False`.

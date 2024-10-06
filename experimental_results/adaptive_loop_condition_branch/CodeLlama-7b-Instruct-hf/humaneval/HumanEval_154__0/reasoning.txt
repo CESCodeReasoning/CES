@@ -1,0 +1,42 @@
+The function cycpattern_check(a, b) takes two strings as its parameters.
+The outer loop iterates through each element in the first string to compare it against the second string.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element in the second string.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15.
+    - a[i:i + 1] = "w", compare with "t", "i", "n", "e", "m", "t", "t", "i", "n", "e", "m":
+        - When j = 1 (a[i:i + 1] == "t"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 2 (a[i:i + 1] == "i"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 3 (a[i:i + 1] == "n"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 4 (a[i:i + 1] == "e"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 5 (a[i:i + 1] == "m"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 6 (a[i:i + 1] == "t"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 7 (a[i:i + 1] == "t"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 8 (a[i:i + 1] == "i"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 9 (a[i:i + 1] == "n"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 10 (a[i:i + 1] == "e"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 11 (a[i:i + 1] == "m"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 12 (a[i:i + 1] == "t"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 13 (a[i:i + 1] == "t"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 14 (a[i:i + 1] == "i"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 15 (a[i:i + 1] == "n"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15.
+    - a[i:i + 1] = "i", compare with "t", "i", "n", "e", "m", "t", "t", "i", "n", "e", "m":
+        - When j = 2 (a[i:i + 1] == "t"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 3 (a[i:i + 1] == "i"), the condition `a[i:i + 1] == pat[j:j + 1]` is True, the if branch is taken. Return True.
+        - When j = 4 (a[i:i + 1] == "n"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 5 (a[i:i + 1] == "e"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 6 (a[i:i + 1] == "m"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 7 (a[i:i + 1] == "t"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 8 (a[i:i + 1] == "t"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 9 (a[i:i + 1] == "i"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 10 (a[i:i + 1] == "n"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 11 (a[i:i + 1] == "e"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 12 (a[i:i + 1] == "m"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 13 (a[i:i + 1] == "t"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 14 (a[i:i + 1] == "t"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+        - When j = 15 (a[i:i + 1] == "i"), the condition `a[i:i + 1] == pat[j:j + 1]` is False, the if branch is not taken.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15.
+    - a[i:i + 1] = "n", compare with "t", "i", "n", "e", "m", "t", "t", "i", "n", "e", "m":
+        - When j = 3 (a[i:i + 1]

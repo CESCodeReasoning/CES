@@ -1,0 +1,4 @@
+The function `any_int` is called with ( x = 3, y = 4, z = 7 ).
+`x`, `y`, and `z` are all integers, which satisfies (isinstance(x, int) and isinstance(y, int) and isinstance(z, int)).
+The condition (x + y == z) or (x + z == y) or (y + z == x) is True, since (3 + 4 == 7) or (3 + 7 == 4) or (4 + 7 == 3).
+Therefore, the final output of the function `any_int(3,4,7)` is True.

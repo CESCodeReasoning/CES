@@ -1,0 +1,7 @@
+The function `maximum` is called with ( arr = [-3, -4, 5], k = 3 ).
+The condition `k == 0` is false, therefore the if branch is not taken and the method proceeds to the next line.
+The line `arr.sort()` sorts the array in ascending order.
+The line `ans = arr[-k:]` assigns the last `k` elements of the sorted array to `ans`.
+The method returns `ans`, which is [-3, -4, 5].
+
+Therefore, the final output of the function `maximum([-3, -4, 5], 3)` is [-3, -4, 5].

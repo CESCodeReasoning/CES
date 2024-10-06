@@ -1,0 +1,7 @@
+The function `get_closest_vowel` is called with ( word = "ba" ).
+Inside the function, a variable `vowels` is initialized to a set of vowels.
+
+The first condition is checked: `len(word) < 3`.
+Since `len(word) = 2`, the condition is false.
+
+The function returns an empty string.

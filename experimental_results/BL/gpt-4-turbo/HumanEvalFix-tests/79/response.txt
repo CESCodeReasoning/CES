@@ -1,0 +1,3 @@
+```response
+    return "db" + bin(decimal)[2:] + "d"
+```

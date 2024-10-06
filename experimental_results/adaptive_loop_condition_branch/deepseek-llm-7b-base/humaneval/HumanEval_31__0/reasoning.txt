@@ -1,0 +1,36 @@
+The function `is_prime` is called with ( n = 5 * 17 ).
+Inside the function, a variable `n` is initialized to 5 * 17.
+The loop iterates from 2 through ( n - 1 ) (since ( n = 5 * 17 )).
+First Iteration (k = 2)
+   - `k` is 2, which satisfies ( 2 <= k < 17 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `5 % 2` (since ( n = 5 * 17 )).
+   - The condition `n % k == 0` is false.
+Second Iteration (k = 3)
+   - `k` is 3, which satisfies ( 3 <= k < 17 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `5 % 3` (since ( n = 5 * 17 )).
+   - The condition `n % k == 0` is false.
+Third Iteration (k = 4)
+   - `k` is 4, which satisfies ( 4 <= k < 17 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `5 % 4` (since ( n = 5 * 17 )).
+   - The condition `n % k == 0` is false.
+Fourth Iteration (k = 5)
+   - `k` is 5, which satisfies ( 5 <= k < 17 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `5 % 5` (since ( n = 5 * 17 )).
+   - The condition `n % k == 0` is false.
+Fifth Iteration (k = 6)
+   - `k` is 6, which satisfies ( 6 <= k < 17 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `5 % 6` (since ( n = 5 * 17 )).
+   - The condition `n % k == 0` is false.
+Sixth Iteration (k = 7)
+   - `k` is 7, which satisfies ( 7 <= k < 17 ).
+   - The condition `k < n - 1` is true.
+   - Action: `n % k` results in `5 % 7` (since ( n = 5 * 17 )).
+   - The condition `n % k == 0` is false.
+Seventh Iteration (k = 8)
+   - `k` is 8, which satisfies ( 8 <= k < 17 ).
+   - The condition `k <

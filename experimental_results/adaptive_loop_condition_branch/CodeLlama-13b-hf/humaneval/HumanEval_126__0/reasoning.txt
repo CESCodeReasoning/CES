@@ -1,0 +1,12 @@
+The function `is_sorted` is called with ( lst = [1, 2, 3, 4] ).
+Inside the function, a variable `count_digit` is initialized to a dictionary with keys as the elements of the list and values as 0.
+The loop iterates from 0 through 3 (since ( len(lst) = 4 )).
+First Iteration (i = 0):
+    `count_digit[i] += 1` updates `count_digit[1]` to 1 ( 0 + 1 = 1 ).
+Second Iteration (i = 1):
+    `count_digit[i] += 1` updates `count_digit[2]` to 1 ( 0 + 1 = 1 ).
+Third Iteration (i = 2)
+    `count_digit[i] += 1` updates `count_digit[3]` to 1 ( 0 + 1 = 1 ).
+Fourth Iteration (i = 3)
+    `count_digit[i] += 1` updates `count_digit[4]` to 1 ( 0 + 1 = 1 ).
+After the loop completes, the condition ( any(count_digit[i] > 2 for i in lst) ) is satisfied, therefore the if branch is taken and the function returns `False` as the output.

@@ -1,0 +1,8 @@
+The function `tri` is called with ( n = 20 ).
+The function first checks if ( n == 0 ), which is not the case here, so it proceeds to the next part.
+It initializes a list `my_tri` with the first two elements [1, 3].
+Then, it enters a loop that iterates from 2 to ( n + 1 ), which is from 2 to 21.
+Inside the loop, it checks if ( i % 2 == 0 ), which is true for even numbers.
+For even numbers, it appends ( i / 2 + 1 ) to the `my_tri` list.
+For odd numbers, it appends ( my_tri[i - 1] + my_tri[i - 2] + (i + 3) / 2 ) to the `my_tri` list.
+After the loop completes, the function returns the `my_tri` list.

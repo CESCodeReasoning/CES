@@ -1,0 +1,5 @@
+from typing import *
+
+def compare(game: List[int], guess: List[int]) -> List[int]:
+    # [STATE] game = [1,2,3,4,5,1], guess = [1,2,3,4,2,-2] [/STATE]
+    return [abs(x-y) for x, y in zip(game, guess)]  # [STATE] abs(x-y) for each pair (x, y) [/STATE]

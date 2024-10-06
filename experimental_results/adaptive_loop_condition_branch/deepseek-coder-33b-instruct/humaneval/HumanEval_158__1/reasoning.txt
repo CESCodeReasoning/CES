@@ -1,0 +1,9 @@
+The function find_max takes a list of strings as input. It sorts the list in descending order of the length of unique characters in each string. If two strings have the same length of unique characters, it sorts them in ascending order of the strings themselves. The function then returns the first element of the sorted list, which is the string with the maximum length of unique characters.
+
+To determine the output of executing the function find_max on the input ["name", "enam", "game"], we need to sort the list in the specified way.
+
+1. "name" has 4 unique characters ("n", "a", "m", "e")
+2. "enam" has 4 unique characters ("n", "a", "m", "e")
+3. "game" has 5 unique characters ("g", "a", "m", "e", "r")
+
+After sorting, the list becomes ["game", "name", "enam"]. Therefore, the output of executing the function find_max on the input ["name", "enam", "game"] is "game".

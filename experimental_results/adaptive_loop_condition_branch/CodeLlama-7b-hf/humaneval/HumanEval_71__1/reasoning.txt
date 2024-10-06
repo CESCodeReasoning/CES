@@ -1,0 +1,7 @@
+The function `triangle_area` is called with ( a = 1, b = 2, c = 10 ).
+The condition `a + b <= c` is false, therefore the if branch is not taken.
+The condition `a + c <= b` is false, therefore the if branch is not taken.
+The condition `b + c <= a` is false, therefore the if branch is not taken.
+The if branch is not taken, therefore the method returns -1.
+
+Therefore, the final output of the function `triangle_area(1, 2, 10)` is -1.

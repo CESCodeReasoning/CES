@@ -1,0 +1,6 @@
+from typing import *
+
+
+def parse_music(music_string: str) -> List[int]:
+    note_map = {'o': 4, 'o|': 2, '.|': 1}  # Maps music symbols to their corresponding note values
+    return [note_map[x] for x in music_string.split(' ') if x]  # Returns a list of note values based on the input string

@@ -1,0 +1,17 @@
+The function select_words(s, n) takes a string and an integer as its parameters.
+The string is split into words using the split() method.
+For each word in the string, the function counts the number of consonants in the word.
+If the number of consonants in the word is equal to the integer n, the word is appended to the result list.
+The function returns the result list.
+
+In the given input "Mary had a little lamb", 4:
+- The string is split into words: ["Mary", "had", "a", "little", "lamb"]
+- For each word, count the number of consonants:
+    - "Mary" has 2 consonants
+    - "had" has 1 consonant
+    - "a" has 1 consonant
+    - "little" has 3 consonants
+    - "lamb" has 2 consonants
+- The words with 4 consonants are "Mary" and "lamb", so the result list is ["Mary", "lamb"]
+
+The function returns the list ["Mary", "lamb"].

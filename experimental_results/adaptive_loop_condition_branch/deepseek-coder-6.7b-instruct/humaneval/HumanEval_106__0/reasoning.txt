@@ -1,0 +1,5 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterates from 1 to n (inclusive).
+For each iteration, it checks if the current number is even.
+If it is even, it calculates the factorial of the number and appends it to the list ret.
+If it is not even, it calculates the sum of all numbers from 1 to the current number and appends it to the list ret.

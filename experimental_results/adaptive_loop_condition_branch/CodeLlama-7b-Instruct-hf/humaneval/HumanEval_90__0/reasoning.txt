@@ -1,0 +1,8 @@
+The function next_smallest takes a list of integers lst as input and returns the next smallest element in the list.
+To determine the output of executing the function next_smallest on the input [5, 1, 4, 3, 2], we need to follow these steps:
+
+1. Sort the list of integers lst to get a sorted list of unique elements.
+2. If the length of the sorted list is less than 2, return None.
+3. Otherwise, return the second element of the sorted list.
+
+Therefore, the output of executing the function next_smallest on the input [5, 1, 4, 3, 2] is 3.

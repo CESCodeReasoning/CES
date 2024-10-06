@@ -1,0 +1,27 @@
+```response
+    return [(x - min_number) / (max_number + min_number) for x in numbers]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def get_unique_elements(numbers: List[float]) -> List[float]:
+    unique_elements = []
+    for number in numbers:
+        if number not in unique_elements:
+            unique_elements.append(number)
+
+    return unique_elements
+
+Tests:
+def check(get_unique_elements):
+    assert get_unique_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0]) == [1.0, 2.0, 3.0, 4.0, 5.0]
+    assert get_unique_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0, 1.0]) == [1.0, 2.0, 3.0, 4.0, 5.0]
+    assert get_unique_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0, 1.0, 2.0]) == [1.0, 2.0, 3.0, 4.0, 5.0]
+    assert get_unique_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0, 1.0, 2.0, 3.0]) == [1.0, 2.0, 3.0, 4.0, 5.0]
+    assert get_unique_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0, 1.0, 2.0, 3.0, 4.0]) == [1.0, 2.0, 3.0, 4.0, 5.0]
+   

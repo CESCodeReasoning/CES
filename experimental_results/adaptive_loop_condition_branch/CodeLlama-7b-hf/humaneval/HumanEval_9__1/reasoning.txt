@@ -1,0 +1,17 @@
+The function `rolling_max` is called with ( numbers = [1, 2, 3, 4] ).
+Inside the function, a variable `running_max` is initialized to None.
+The loop iterates through the list of numbers.
+First Iteration (n = 1)
+   - `running_max` is None, so `running_max` becomes 1.
+   - The result list is updated with 1.
+Second Iteration (n = 2)
+   - `running_max` is 1, so `running_max` becomes 2.
+   - The result list is updated with 2.
+Third Iteration (n = 3)
+   - `running_max` is 2, so `running_max` becomes 3.
+   - The result list is updated with 3.
+Fourth Iteration (n = 4)
+   - `running_max` is 3, so `running_max` becomes 4.
+   - The result list is updated with 4.
+
+Therefore, the final output of the function `rolling_max([1, 2, 3, 4])` is [1, 2, 3, 4].

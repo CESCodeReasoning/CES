@@ -1,0 +1,6 @@
+The function `digitSum` is called with ( s = "aAaaaXa" ).
+`s` is "aAaaaXa", which is not empty.
+The condition `s == ""` is false, therefore the if branch is not taken.
+The return statement returns the sum of the ordinal values of the uppercase characters in `s`.
+
+Therefore, the final output of the function `digitSum("aAaaaXa")` is 10.

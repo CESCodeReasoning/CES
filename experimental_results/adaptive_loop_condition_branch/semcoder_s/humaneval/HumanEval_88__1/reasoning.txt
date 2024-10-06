@@ -1,0 +1,3 @@
+The function `sort_array` takes an array as input and returns an empty array if the input array is empty. Otherwise, it sorts the array in reverse order if the sum of the first and last elements of the array is even, and in ascending order otherwise.
+
+For the input `[5]`, the length of the array is 1, so the function returns an empty array since the length is equal to 0.

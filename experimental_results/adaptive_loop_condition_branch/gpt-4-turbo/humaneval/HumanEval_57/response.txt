@@ -1,0 +1,22 @@
+[REASONING]
+The function `monotonic` is called with the list `[1, 2, 4, 10]`.
+The function checks if the list is either non-decreasing or non-increasing.
+- The list `[1, 2, 4, 10]` is compared with its sorted version, which is `[1, 2, 4, 10]`. Since they are the same, the list is non-decreasing.
+- The list `[1, 2, 4, 10]` is also compared with its reverse sorted version, which is `[10, 4, 2, 1]`. They are not the same, so the list is not non-increasing.
+Since the list matches its sorted version, the condition `(l == sorted(l) or l == sorted(l, reverse=True))` evaluates to True.
+Therefore, the function returns True, indicating that the list is monotonic.
+
+Therefore, the final output of the function `monotonic([1, 2, 4, 10])` is True.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def monotonic(l: list):
+    if l == sorted(l) or l == sorted(l, reverse=True): ## [CONDITION](l == sorted(l) or l == sorted(l, reverse=True))=[True][/CONDITION][CONDITION](l == sorted(l))=[True][/CONDITION][CONDITION](l == sorted(l, reverse=True))=[False][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return True
+    return False
+[/PYTHON]
+
+[OUTPUT]
+True
+[/OUTPUT]

@@ -1,0 +1,15 @@
+The function `encrypt` is called with ( s = 'hi' ).
+Inside the function, a variable `out` is initialized to an empty string.
+The loop iterates over each character `c` in the string `s`.
+First Iteration (c = 'h')
+   - `c` is in the string `d`, so the condition `c in d` is true.
+   - The index of `c` in `d` is 7.
+   - The expression `(d.index(c)+2*2) % 26` evaluates to 11.
+   - The character at index 11 in `d` is 'l'.
+   - The character 'l' is appended to `out`.
+Second Iteration (c = 'i')
+   - `c` is in the string `d`, so the condition `c in d` is true.
+   - The index of `c` in `d` is 8.
+   - The expression `(d.index(c)+2*2) % 26` evaluates to 12.
+   - The character at index 12 in `d` is 'm'.
+   - The character 'm' is appended to `out`.

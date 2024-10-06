@@ -1,0 +1,17 @@
+from typing import *
+def is_multiply_prime(a):
+    def is_prime(n):
+        for j in range(2, n): ## [STATE]range(2, n)=[2 to n-1][/STATE][STATE]n=[2 to 100][/STATE]
+            if n % j == 0: ## [CONDITION](n % j == 0)=??[/CONDITION][BRANCH]taken=[N, N, ..., depends on n][/BRANCH]
+                return False
+        return True
+
+    for i in range(2, 101): ## [STATE]range(2, 101)=[2 to 100][/STATE]
+        if not is_prime(i): continue ## [CONDITION](not is_prime(i))=??[/CONDITION][BRANCH]taken=[N, Y, ..., depends on i][/BRANCH]
+        for j in range(2, 101): ## [STATE]range(2, 101)=[2 to 100][/STATE]
+            if not is_prime(j): continue ## [CONDITION](not is_prime(j))=??[/CONDITION][BRANCH]taken=[N, Y, ..., depends on j][/BRANCH]
+            for k in range(2, 101): ## [STATE]range(2, 101)=[2 to 100][/STATE]
+                if not is_prime(k): continue ## [CONDITION](not is_prime(k))=??[/CONDITION][BRANCH]taken=[N, Y, ..., depends on k][/BRANCH]
+                if i * j * k == a: ## [CONDITION](i * j * k == a)=??[/CONDITION][BRANCH]taken=[N, N, ..., N][/BRANCH]
+                    return True
+    return False

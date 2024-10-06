@@ -1,0 +1,25 @@
+[REASONING]
+The function `unique` takes a list `l` as input. The purpose of this function is to return a new list that contains only unique elements from the input list, and these elements are sorted in ascending order.
+1. The function first converts the list `l` into a set, which automatically removes any duplicate elements because sets do not allow duplicates.
+2. This set is then converted back into a list.
+3. Finally, this list is sorted in ascending order using the `sorted()` function.
+For the input `['a', 'b', 'b', 'c', 'd', 'd']`, the steps are as follows:
+- Convert to set: `{'a', 'b', 'c', 'd'}`
+- Convert set back to list: `['a', 'b', 'c', 'd']`
+- Sort the list: `['a', 'b', 'c', 'd']` (Note: The list is already sorted in this case, but the sorting step ensures order for any input.)
+Thus, the output of the function for the given input is `['a', 'b', 'c', 'd']`.
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def unique(l: list):
+    # [STATE] l = ['a', 'b', 'b', 'c', 'd', 'd'] [/STATE]
+    return sorted(list(set(l)))  # [STATE] set(l) = {'a', 'b', 'c', 'd'}, list(set(l)) = ['a', 'b', 'c', 'd'], sorted(list(set(l))) = ['a', 'b', 'c', 'd'] [/STATE]
+```
+[/ANSWER]
+
+[OUTPUT]
+['a', 'b', 'c', 'd']
+[/OUTPUT]

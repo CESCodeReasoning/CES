@@ -1,0 +1,61 @@
+The function `is_prime` is called with ( n = 10 ).
+First Iteration:
+    - n = 10, n % 2 = 0, return False.
+Second Iteration:
+    - n = 10, n % 3 = 0, return False.
+Third Iteration:
+    - n = 10, n % 5 = 0, return False.
+Fourth Iteration:
+    - n = 10, n % 7 = 0, return False.
+Fifth Iteration:
+    - n = 10, n % 11 = 0, return False.
+Sixth Iteration:
+    - n = 10, n % 13 = 0, return False.
+Seventh Iteration:
+    - n = 10, n % 17 = 0, return False.
+Eighth Iteration:
+    - n = 10, n % 19 = 0, return False.
+Ninth Iteration:
+    - n = 10, n % 23 = 0, return False.
+Tenth Iteration:
+    - n = 10, n % 29 = 0, return False.
+Eleventh Iteration:
+    - n = 10, n % 31 = 0, return False.
+Twelfth Iteration:
+    - n = 10, n % 37 = 0, return False.
+Thirteenth Iteration:
+    - n = 10, n % 41 = 0, return False.
+Fourteenth Iteration:
+    - n = 10, n % 43 = 0, return False.
+Fifteenth Iteration:
+    - n = 10, n % 47 = 0, return False.
+Sixteenth Iteration:
+    - n = 10, n % 53 = 0, return False.
+Seventeenth Iteration:
+    - n = 10, n % 59 = 0, return False.
+Eighteenth Iteration:
+    - n = 10, n % 61 = 0, return False.
+Nineteenth Iteration:
+    - n = 10, n % 67 = 0, return False.
+Twentieth Iteration:
+    - n = 10, n % 71 = 0, return False.
+Twenty-First Iteration:
+    - n = 10, n % 73 = 0, return False.
+Twenty-Second Iteration:
+    - n = 10, n % 79 = 0, return False.
+Twenty-Third Iteration:
+    - n = 10, n % 83 = 0, return False.
+Twenty-Fourth Iteration:
+    - n = 10, n % 89 = 0, return False.
+Twenty-Fifth Iteration:
+    - n = 10, n % 97 = 0, return False.
+Twenty-Sixth Iteration:
+    - n = 10, n % 101 = 0, return False.
+Twenty-Seventh Iteration:
+    - n = 10, n % 103 = 0, return False.
+Twenty-Eighth Iteration:
+    - n = 10, n % 107 = 0, return False.
+Twenty-Ninth Iteration:
+    - n = 10, n % 109 = 0, return False.
+Thirty-First Iteration:
+    - n = 10, n % 113 = 

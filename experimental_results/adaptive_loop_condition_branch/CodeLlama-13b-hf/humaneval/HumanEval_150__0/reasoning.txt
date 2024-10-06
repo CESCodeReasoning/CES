@@ -1,0 +1,13 @@
+The function `x_or_y` is called with ( n = 3, x = 33, y = 5212 ).
+Inside the function, a variable `i` is initialized to 2.
+The loop iterates from 2 through 3 (since ( n = 3 )).
+First Iteration (i = 2)
+   - `i` is 2, which satisfies ( 2 <= i < n ).
+   - The condition `n % i == 0` is true.
+   - Action: `return y` returns 5212.
+   - The loop is broken.
+Second Iteration (i = 3)
+   - `i` is 3, which satisfies ( 2 <= i < n ).
+   - The condition `n % i == 0` is true.
+   - Action: `return y` returns 5212.
+   - The loop is broken.

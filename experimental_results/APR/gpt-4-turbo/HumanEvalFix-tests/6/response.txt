@@ -1,0 +1,37 @@
+Here's the fixed code for both functions, `has_close_elements` and `parse_nested_parens`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to calculate the correct distance
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `parse_nested_parens`
+```python
+from typing import List
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    def parse_paren_group(s):
+        depth = 0
+        max_depth = 0
+        for c in s:
+            if c == '(':
+                depth += 1
+            elif c == ')':
+                depth -= 1
+            max_depth = max(max_depth, depth)  # Update max_depth only after modifying depth
+
+        return max_depth
+
+    return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+```
+
+These corrections ensure that the functions work as intended and pass the provided tests. The `has_close_elements` function now correctly calculates the distance between elements using the absolute value, and the `parse_nested_parens` function correctly tracks the depth and maximum depth of nested parentheses.

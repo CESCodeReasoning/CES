@@ -1,0 +1,7 @@
+The function `count_distinct_characters` takes a string as input and returns the count of distinct characters in the string.
+
+- The input string 'aaaaAAAAaaaa' is converted to lowercase, resulting in 'aaaaaaaaaaaa'.
+- The set function is used to get the unique characters from the string, resulting in {'a'}.
+- The length of the set is calculated, which is 1.
+
+Therefore, the output of executing the function `count_distinct_characters` on the input 'aaaaAAAAaaaa' is 1.

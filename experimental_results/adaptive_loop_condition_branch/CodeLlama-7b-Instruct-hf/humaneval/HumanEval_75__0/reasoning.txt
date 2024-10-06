@@ -1,0 +1,7 @@
+The function `is_multiply_prime` takes a single argument `a` of type `int`.
+The function first defines a nested function `is_prime` that takes a single argument `n` of type `int` and returns `True` if `n` is prime and `False` otherwise.
+The outer function then iterates over the range of numbers from 2 to 100, and for each number `i` in the range, it checks if `i` is prime using the `is_prime` function.
+If `i` is prime, the outer function then iterates over the range of numbers from 2 to 100 again, and for each number `j` in the range, it checks if `j` is prime using the `is_prime` function.
+If `j` is prime, the outer function then iterates over the range of numbers from 2 to 100 again, and for each number `k` in the range, it checks if `k` is prime using the `is_prime` function.
+If `k` is prime, the outer function then checks if `i * j * k == a` is true, and if it is, it returns `True`.
+If none of the above conditions are met, the outer function returns `False`.

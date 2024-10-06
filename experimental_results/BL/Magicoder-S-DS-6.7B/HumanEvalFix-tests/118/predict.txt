@@ -1,0 +1,2 @@
+if (word[i+1] not in vowels) and (word[i-1] not in vowels):
+                    return word[i]

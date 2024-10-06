@@ -1,0 +1,6 @@
+The function count_distinct_characters takes a string as input and returns the number of distinct characters in the string.
+To determine the output of executing the function count_distinct_characters on the input 'abcde', we need to count the number of distinct characters in the string 'abcde'.
+
+The function set() is used to remove duplicate characters from the string. The function len() is used to count the number of elements in the set.
+
+The string 'abcde' has 5 distinct characters: 'a', 'b', 'c', 'd', 'e'. Therefore, the output of executing the function count_distinct_characters on the input 'abcde' is 5.

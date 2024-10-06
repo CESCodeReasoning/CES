@@ -1,0 +1,28 @@
+The function `solve` is called with ( s = "AsDf" ).
+Inside the function, a flag `flg` is initialized to 0, and an index `idx` is initialized to 0.
+A new list `new_str` is created from the string `s`.
+
+Iteration 1:
+    - The first character 'A' is alphabetic, so the character at index 0 in `new_str` is replaced with its swapcase, which is 'a'.
+    - `flg` is set to 1 to indicate that at least one character has been swapped.
+    - `idx` is incremented to 1.
+
+Iteration 2:
+    - The second character 's' is alphabetic, so the character at index 1 in `new_str` is replaced with its swapcase, which is 'S'.
+    - `flg` remains 1.
+    - `idx` is incremented to 2.
+
+Iteration 3:
+    - The third character 'D' is alphabetic, so the character at index 2 in `new_str` is replaced with its swapcase, which is 'd'.
+    - `flg` remains 1.
+    - `idx` is incremented to 3.
+
+Iteration 4:
+    - The fourth character 'f' is alphabetic, so the character at index 3 in `new_str` is replaced with its swapcase, which is 'F'.
+    - `flg` remains 1.
+    - `idx` is incremented to 4.
+
+After the loop, the new string `s` is created by joining the characters in `new_str`.
+Since `flg` is not 0, the function returns the string `s` without any further modification.
+
+Therefore, the final output of the function `solve("AsDf")` is "aSdF".

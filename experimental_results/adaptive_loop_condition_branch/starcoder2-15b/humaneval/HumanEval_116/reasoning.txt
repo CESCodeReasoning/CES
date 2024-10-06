@@ -1,0 +1,6 @@
+The function sort_array takes an array arr as input and returns a sorted array.
+The sorting is done in two steps:
+1. Sort the array arr using the built-in sorted function.
+2. Sort the array again using the built-in sorted function, but this time the sorting is done based on the number of ones in the binary representation of each element.
+To determine the output of executing the function sort_array on the input [1,5,2,3,4], we need to sort the array [1,5,2,3,4] using the built-in sorted function and then sort the resulting array again using the built-in sorted function, but this time the sorting is done based on the number of ones in the binary representation of each element.
+Therefore, the output of executing the function sort_array on the input [1,5,2,3,4] is [1,2,3,4,5].

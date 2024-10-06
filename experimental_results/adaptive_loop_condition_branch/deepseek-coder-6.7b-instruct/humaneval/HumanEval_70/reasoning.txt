@@ -1,0 +1,37 @@
+The function `strange_sort_list` is called with ( lst = [1, 2, 3, 4]).
+Inside the function, a variable `res` is initialized to an empty list and `switch` is initialized to True.
+The loop iterates until `lst` is empty.
+In each iteration, it checks the value of `switch`. If `switch` is True, it appends the smallest element from `lst` to `res`, otherwise it appends the largest element. After appending, it removes the appended element from `lst` and flips the `switch`.
+
+First Iteration:
+    - lst = [1, 2, 3, 4], switch = True
+    - The smallest element in lst is 1, so it is appended to `res` and removed from `lst`.
+    - Now, lst = [2, 3, 4], switch = False
+Second Iteration:
+    - lst = [2, 3, 4], switch = False
+    - The largest element in lst is 4, so it is appended to `res` and removed from `lst`.
+    - Now, lst = [2, 3], switch = True
+Third Iteration:
+    - lst = [2, 3], switch = True
+    - The smallest element in lst is 2, so it is appended to `res` and removed from `lst`.
+    - Now, lst = [3], switch = False
+Fourth Iteration:
+    - lst = [3], switch = False
+    - The largest element in lst is 3, so it is appended to `res` and removed from `lst`.
+    - Now, lst = [], switch = True
+`lst` is empty, the while loop terminates. The function returns the value of `res`, which is now [1, 4, 2, 3].
+
+[ANSWER]
+def strange_sort_list(lst):
+    res, switch = [], True
+    while lst: ## [STATE]lst=[[1, 2, 3, 4], [2, 3], [3], []][/STATE]
+        res.append(min(lst) if switch else max(lst))
+        lst.remove(res[-1])
+        switch = not switch
+    return res
+[/ANSWER]
+
+[OUTPUT]
+[1, 4, 2, 3]
+[/OUTPUT]
+<|EOT|>

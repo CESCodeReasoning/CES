@@ -1,0 +1,7 @@
+The function `monotonic` is called with ( l = [1, 2, 4, 20] ).
+The function checks if the list `l` is sorted in ascending or descending order.
+The condition `l == sorted(l)` checks if the list `l` is sorted in ascending order.
+The condition `l == sorted(l, reverse=True)` checks if the list `l` is sorted in descending order.
+If either of the conditions is true, the function returns True.
+
+Therefore, the final output of the function `monotonic([1, 2, 4, 20])` is True.

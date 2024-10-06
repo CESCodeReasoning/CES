@@ -1,0 +1,9 @@
+The function `count_upper` is called with ( s = 'U' ).
+Inside the function, a variable `count` is initialized to 0.
+The loop iterates over the characters of the string 'U' with a step of 2.
+Iteration 1:
+    - The character at index 0 is 'U', which is in uppercase vowels.
+    - The condition `s[i] in "AEIOU"` is true.
+    - Action: `count += 1` updates `count` to 1.
+
+Therefore, the final output of the function `count_upper('U')` is 1.

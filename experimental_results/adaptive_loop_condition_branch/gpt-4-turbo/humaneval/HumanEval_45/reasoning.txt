@@ -1,0 +1,5 @@
+The function `triangle_area` takes two parameters, `a` and `h`, which represent the base and height of a triangle, respectively. The area of a triangle is calculated using the formula:
+\[ \text{Area} = \frac{1}{2} \times \text{base} \times \text{height} \]
+In this case, the base `a` is 5 and the height `h` is 3. Plugging these values into the formula gives:
+\[ \text{Area} = \frac{1}{2} \times 5 \times 3 = 7.5 \]
+Thus, the output of executing the function `triangle_area` with inputs 5 and 3 is 7.5.

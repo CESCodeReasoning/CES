@@ -1,0 +1,9 @@
+The function `sort_array` takes a list `arr` as input and returns a sorted version of the list. The sorting is done in two steps:
+1. The list is first sorted in ascending order.
+2. The list is then sorted based on the count of '1's in the binary representation of each element, using a lambda function as the key for sorting.
+
+For the input `[]`, an empty list:
+- The first sorting operation on an empty list will still result in an empty list.
+- The second sorting operation, which sorts based on the count of '1's in the binary representation, will also result in an empty list since there are no elements to count '1's in.
+
+Thus, the output of `sort_array([])` is an empty list `[]`.

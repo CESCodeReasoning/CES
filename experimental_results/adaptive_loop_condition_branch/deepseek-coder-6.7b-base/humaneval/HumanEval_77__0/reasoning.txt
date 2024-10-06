@@ -1,0 +1,6 @@
+The function iscube takes an integer a as input and returns True if a is a perfect cube, and False otherwise.
+To determine whether a is a perfect cube, we first take the absolute value of a.
+Then, we calculate the cube root of a and round it to the nearest integer.
+Finally, we check if the cube of the rounded cube root is equal to a.
+If the cube of the rounded cube root is equal to a, then a is a perfect cube, and the function returns True.
+Otherwise, a is not a perfect cube, and the function returns False.

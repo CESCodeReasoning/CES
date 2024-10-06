@@ -1,0 +1,15 @@
+The function sort_array takes an array of integers as input and returns a sorted version of the array based on the number of 1s in the binary representation of each integer.
+To determine the output of executing the function sort_array on the input [1,5,2,3,4], we need to sort the array based on the number of 1s in the binary representation of each integer.
+The binary representation of each integer in the input array is as follows:
+1: 1
+5: 101
+2: 10
+3: 11
+4: 100
+The number of 1s in the binary representation of each integer is as follows:
+1: 1
+5: 2
+2: 1
+3: 2
+4: 1
+Therefore, the output of executing the function sort_array on the input [1,5,2,3,4] is [1,2,3,4,5].

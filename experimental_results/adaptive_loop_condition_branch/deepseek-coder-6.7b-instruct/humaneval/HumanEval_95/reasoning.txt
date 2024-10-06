@@ -1,0 +1,41 @@
+The function `check_dict_case` is called with ( dict = {"p":"pineapple", "b":"banana"} ).
+Inside the function, we first check if the dictionary is empty. If it is, we return False.
+Otherwise, we initialize a variable `state` to "start".
+Then we iterate over the keys of the dictionary.
+For each key, we check if it is a string. If it is not, we set `state` to "mixed" and break the loop.
+If `state` is "start", we check if the key is uppercase or lowercase. If it is uppercase, we set `state` to "upper". If it is lowercase, we set `state` to "lower". If it is neither, we break the loop.
+If `state` is "upper" or "lower", we check if the next key is the opposite case. If it is not, we set `state` to "mixed" and break the loop.
+Finally, we return whether `state` is "upper" or "lower".
+
+For the input {"p":"pineapple", "b":"banana"}, the keys are "p" and "b". Both are lowercase, so the function returns True.
+
+[ANSWER]
+def check_dict_case(dict):
+    if len(dict.keys()) == 0: ## [CONDITION](len(dict.keys()) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return False
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        state = "start"
+        for key in dict.keys(): ## [STATE]dict.keys()=["p", "b"][/STATE]
+
+            if isinstance(key, str) == False: ## [CONDITION](isinstance(key, str) == False)=[False, False][/CONDITION][BRANCH]taken=[N, N][/BRANCH]
+                state = "mixed"
+                break
+            if state == "start": ## [CONDITION](state == "start")=[True, True][/CONDITION][BRANCH]taken=[Y, Y][/BRANCH]
+                if key.isupper(): ## [CONDITION](key.isupper())=[False, False][/CONDITION][BRANCH]taken=[N, N][/BRANCH]
+                    state = "upper"
+                elif key.islower(): ## [CONDITION](key.islower())=[True, True][/CONDITION][BRANCH]taken=[Y, Y][/BRANCH]
+                    state = "lower"
+                else: ## [BRANCH]taken=[N][/BRANCH]
+                    break
+            elif (state == "upper" and not key.isupper()) or (state == "lower" and not key.islower()): ## [CONDITION]((state == "upper" and not key.isupper()) or (state == "lower" and not key.islower()))=[False, False][/CONDITION][CONDITION]((state == "upper" and not key.isupper()))=[False][/CONDITION][CONDITION](state == "upper")=[False][/CONDITION][CONDITION](not key.isupper())=[True][/CONDITION][CONDITION]((state == "lower" and not key.islower()))=[False][/CONDITION][CONDITION](state == "lower")=[True][/CONDITION][CONDITION](not key.islower())=[True][/CONDITION][BRANCH]taken=[N, N][/BRANCH]
+                    state = "mixed"
+                    break
+            else: ## [BRANCH]taken=[N][/BRANCH]
+                break
+        return state == "upper" or state == "lower" 
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]
+<|EOT|>

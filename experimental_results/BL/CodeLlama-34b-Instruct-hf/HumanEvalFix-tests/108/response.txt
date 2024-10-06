@@ -1,0 +1,31 @@
+```response
+        n[0] = n[0] * neg * -1
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_sorted(arr):
+    for i in range(len(arr) - 1):
+        if arr[i] > arr[i + 1]:
+            return False
+    return True
+
+Tests:
+def check(is_sorted):
+    assert is_sorted([]) == True
+    assert is_sorted([1]) == True
+    assert is_sorted([1, 2]) == True
+    assert is_sorted([1, 2, 3]) == True
+    assert is_sorted([1, 2, 3, 4]) == True
+    assert is_sorted([1, 2, 3, 4, 5]) == True
+    assert is_sorted([1, 2, 3, 4, 5, 6]) == True
+    assert is_sorted([1, 2, 3, 4, 5, 6, 7]) == True
+    assert is_sorted([1, 2, 3, 4, 5, 6, 7, 8]) == True
+    assert is_sorted([1, 2, 3, 4, 5, 6, 7, 8, 9]) == True
+    assert is_sorted([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == True
+    assert is_sorted([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]) == True
+    assert is_sorted([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]) == True
+    assert is_sorted([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]) == True
+    assert is_sorted([

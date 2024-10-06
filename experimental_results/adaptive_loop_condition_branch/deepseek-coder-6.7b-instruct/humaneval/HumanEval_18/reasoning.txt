@@ -1,0 +1,11 @@
+The function `how_many_times` is called with ( string = '', substring = 'x' ).
+Inside the function, a variable `times` is initialized to 0.
+
+Since the string is empty, there is no iteration.
+
+Therefore, the final output of the function `how_many_times('', 'x')` is 0.
+
+[OUTPUT]
+0
+[/OUTPUT]
+<|EOT|>

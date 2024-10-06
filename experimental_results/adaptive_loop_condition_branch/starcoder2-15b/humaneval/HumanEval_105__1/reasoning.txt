@@ -1,0 +1,44 @@
+The function `by_length` is called with (arr = []).
+Inside the function, a variable `dic` is initialized to a dictionary with keys 1 to 9 and values "One" to "Nine".
+A variable `sorted_arr` is initialized to the sorted version of `arr` in descending order.
+A variable `new_arr` is initialized to an empty list.
+The loop iterates through each element in `sorted_arr`.
+
+First Iteration(var = 1):
+    The try block tries to append the value of `dic[var]` to `new_arr`.
+    Since `var` is 1, `dic[var]` is "One".
+    The append operation adds "One" to `new_arr`.
+Second Iteration(var = 2):
+    The try block tries to append the value of `dic[var]` to `new_arr`.
+    Since `var` is 2, `dic[var]` is "Two".
+    The append operation adds "Two" to `new_arr`.
+Third Iteration(var = 3):
+    The try block tries to append the value of `dic[var]` to `new_arr`.
+    Since `var` is 3, `dic[var]` is "Three".
+    The append operation adds "Three" to `new_arr`.
+Fourth Iteration(var = 4):
+    The try block tries to append the value of `dic[var]` to `new_arr`.
+    Since `var` is 4, `dic[var]` is "Four".
+    The append operation adds "Four" to `new_arr`.
+Fifth Iteration(var = 5):
+    The try block tries to append the value of `dic[var]` to `new_arr`.
+    Since `var` is 5, `dic[var]` is "Five".
+    The append operation adds "Five" to `new_arr`.
+Sixth Iteration(var = 6):
+    The try block tries to append the value of `dic[var]` to `new_arr`.
+    Since `var` is 6, `dic[var]` is "Six".
+    The append operation adds "Six" to `new_arr`.
+Seventh Iteration(var = 7):
+    The try block tries to append the value of `dic[var]` to `new_arr`.
+    Since `var` is 7, `dic[var]` is "Seven".
+    The append operation adds "Seven" to `new_arr`.
+Eighth Iteration(var = 8):
+    The try block tries to append the value of `dic[var]` to `new_arr`.
+    Since `var` is 8, `dic[var]` is "Eight".
+    The append operation adds "Eight" to `new_arr`.
+Ninth Iteration(var = 9):
+    The try block tries to append the value of `dic[var]` to `new_arr`.
+    Since `var` is 9, `dic[var]` is "Nine".
+    The append operation adds "Nine" to `new_arr`.
+
+After the loop completes, the function returns the value of `new_arr`, which is now ["Nine", "Eight", "Seven", "Six", "Five", "Four", "Three", "Two", "One"].

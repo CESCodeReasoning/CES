@@ -1,0 +1,12 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: sum_squares
+main.py(5):     import math
+main.py(6):     squared = 0
+main.py(7):     for i in lst:
+main.py(8):         squared += math.ceil(i)**2
+main.py(7):     for i in lst:
+main.py(8):         squared += math.ceil(i)**2
+main.py(7):     for i in lst:
+main.py(8):         squared += math.ceil(i)**2
+main.py(7):     for i in lst:
+main.py(9):     return squared

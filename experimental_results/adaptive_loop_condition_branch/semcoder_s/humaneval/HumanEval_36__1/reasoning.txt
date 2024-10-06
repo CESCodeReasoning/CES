@@ -1,0 +1,16 @@
+The function `fizz_buzz` is called with ( n = 200 ).
+Inside the function, an empty list `ns` is initialized.
+The loop iterates from 0 through 199 (since ( n = 200 )).
+For each iteration:
+   - If the number is divisible by 11 or 13 (or both), it is appended to the list `ns`.
+   - The list `ns` is then converted to a string and mapped to a list of characters.
+   - The count of '7' in the string is calculated and stored in `ans`.
+Finally, the function returns the value of `ans`.
+
+The loop iterates from 0 to 199.
+For each iteration:
+   - If the number is divisible by 11 or 13, it is appended to the list `ns`.
+   - The list `ns` is then converted to a string and mapped to a list of characters.
+   - The count of '7' in the string is calculated and stored in `ans`.
+
+Therefore, the final output of the function `fizz_buzz(200)` is the count of '7' in the concatenated string of numbers divisible by 11 or 13 from 0 to 199.

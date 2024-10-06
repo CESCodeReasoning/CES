@@ -1,0 +1,13 @@
+from typing import *
+
+
+def select_words(s, n):
+    result = []
+    for word in s.split(): ## [STATE]word=["Mary", "had", "a", "little", "lamb"][/STATE][STATE]s.split()=["Mary", "had", "a", "little", "lamb"][/STATE]
+        n_consonants = 0
+        for i in range(0, len(word)): ## [STATE]i=[0, 1, 2, 3, 0, 1, 2, 0, 0, 1, 2, 3, 4, 5, 0, 1, 2, 3][/STATE][STATE]range(0, len(word))=[[0, 1, 2, 3], [0, 1, 2], [0], [0, 1, 2, 3, 4, 5], [0, 1, 2, 3]][/STATE][STATE]len(word)=[4, 3, 1, 6, 4][/STATE]
+            if word[i].lower() not in ["a", "e", "i", "o", "u"]: ## [CONDITION](word[i].lower() not in ["a", "e", "i", "o", "u"])=[True, False, True, True, True, False, True, False, False, True, True, True, True, False, True, False, True, True][/CONDITION][BRANCH]taken=[T, F, T, T, T, F, T, F, F, T, T, T, T, F, T, F, T, T][/BRANCH]
+                n_consonants += 1
+        if n_consonants == n: ## [CONDITION](n_consonants == n)=[False, True, False, False, True][/CONDITION][BRANCH]taken=[F, T, F, F, T][/BRANCH]
+            result.append(word)
+    return result

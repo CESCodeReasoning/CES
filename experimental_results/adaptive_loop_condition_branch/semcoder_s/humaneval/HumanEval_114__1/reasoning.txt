@@ -1,0 +1,20 @@
+The function `minSubArraySum` is called with ( nums = [0, 10, 20, 1000000] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+
+Iteration 1:
+    - `s += -num` => `s += -0` => `s = 0`.
+    - `max_sum = max(s, max_sum)` => `max_sum = max(0, 0)` => `max_sum = 0`.
+Iteration 2:
+    - `s += -num` => `s += -10` => `s = -10`.
+    - `max_sum = max(s, max_sum)` => `max_sum = max(-10, 0)` => `max_sum = 0`.
+Iteration 3:
+    - `s += -num` => `s += -20` => `s = -30`.
+    - `max_sum = max(s, max_sum)` => `max_sum = max(-30, 0)` => `max_sum = 0`.
+Iteration 4:
+    - `s += -num` => `s += -1000000` => `s = -1000030`.
+    - `max_sum = max(s, max_sum)` => `max_sum = max(-1000030, 0)` => `max_sum = -1000030`.
+    - `if max_sum == 0` condition is True.
+    - `max_sum = max(-i for i in nums)` => `max_sum = max(-0, -10, -20, -1000000)` => `max_sum = -1000000`.
+    - `min_sum = -max_sum` => `min_sum = 1000000`.
+
+Therefore, the final output of the function `minSubArraySum([0, 10, 20, 1000000])` is 1000000.

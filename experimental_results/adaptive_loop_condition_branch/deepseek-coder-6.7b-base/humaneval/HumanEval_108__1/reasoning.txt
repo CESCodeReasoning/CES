@@ -1,0 +1,48 @@
+The function `count_nums` is called with ( arr = [1, 6, 9, -6, 0, 1, 5] ).
+The function `digits_sum` is called with ( n = 1 ).
+`n` is 1, which is not less than 0.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The list comprehension `[int(i) for i in str(n)]` converts the integer `n` to a list of digits.
+The first element of the list is multiplied by the negative sign of `neg`, which is 1.
+The sum of the list is returned.
+The function `digits_sum` is called with ( n = 6 ).
+`n` is 6, which is not less than 0.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The list comprehension `[int(i) for i in str(n)]` converts the integer `n` to a list of digits.
+The first element of the list is multiplied by the negative sign of `neg`, which is 1.
+The sum of the list is returned.
+The function `digits_sum` is called with ( n = 9 ).
+`n` is 9, which is not less than 0.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The list comprehension `[int(i) for i in str(n)]` converts the integer `n` to a list of digits.
+The first element of the list is multiplied by the negative sign of `neg`, which is 1.
+The sum of the list is returned.
+The function `digits_sum` is called with ( n = -6 ).
+`n` is -6, which is less than 0.
+The condition `n < 0` is true, therefore the if branch is taken.
+The negative sign of `n` is removed and the list comprehension `[int(i) for i in str(n)]` converts the integer `n` to a list of digits.
+The first element of the list is multiplied by the negative sign of `neg`, which is -1.
+The sum of the list is returned.
+The function `digits_sum` is called with ( n = 0 ).
+`n` is 0, which is not less than 0.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The list comprehension `[int(i) for i in str(n)]` converts the integer `n` to a list of digits.
+The first element of the list is multiplied by the negative sign of `neg`, which is 1.
+The sum of the list is returned.
+The function `digits_sum` is called with ( n = 1 ).
+`n` is 1, which is not less than 0.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The list comprehension `[int(i) for i in str(n)]` converts the integer `n` to a list of digits.
+The first element of the list is multiplied by the negative sign of `neg`, which is 1.
+The sum of the list is returned.
+The function `digits_sum` is called with ( n = 5 ).
+`n` is 5, which is not less than 0.
+The condition `n < 0` is false, therefore the if branch is not taken.
+The list comprehension `[int(i) for i in str(n)]` converts the integer `n` to a list of digits.
+The first element of the list is multiplied by the negative sign of `neg`, which is 1.
+The sum of the list is returned.
+The function `count_nums` returns the length of the list returned by the `filter` function.
+The `filter` function returns a list of elements for which the lambda function returns True.
+The lambda function returns True if the element is greater than 0.
+The list returned by the `filter` function is [6, 9, 1, 1, 5].
+The length of this list is 5, which is the final output of the function `count_nums([1, 6, 9, -6, 0, 1, 5])`.

@@ -1,0 +1,4 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: triangle_area
+main.py(5):     if a + b <= c or a + c <= b or b + c <= a:
+main.py(6):         return -1

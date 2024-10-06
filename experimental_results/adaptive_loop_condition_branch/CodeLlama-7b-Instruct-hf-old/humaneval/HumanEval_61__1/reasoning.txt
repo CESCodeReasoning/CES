@@ -1,0 +1,9 @@
+The function `correct_bracketing` is called with ( brackets = "(" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The character '(' is a left bracket, so depth becomes 1.
+Return Statement
+   - After the loop completes, the function returns the value of `depth`, which is now 1.
+
+Therefore, the final output of the function `correct_bracketing("(")` is True.

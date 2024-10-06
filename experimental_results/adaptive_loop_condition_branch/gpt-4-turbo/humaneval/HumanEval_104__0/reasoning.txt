@@ -1,0 +1,19 @@
+The function `unique_digits` is called with the list `[135, 103, 31]`.
+Inside the function, an empty list `odd_digit_elements` is initialized to store numbers that consist entirely of odd digits.
+
+Iteration 1:
+    - The number `135` is evaluated. Each digit (1, 3, 5) is odd.
+    - The condition `all(int(c) % 2 == 1 for c in str(i))` is true.
+    - Action: `135` is added to `odd_digit_elements`.
+
+Iteration 2:
+    - The number `103` is evaluated. The digits are 1, 0, and 3. The digit 0 is not odd.
+    - The condition `all(int(c) % 2 == 1 for c in str(i))` is false.
+    - Action: `103` is not added to `odd_digit_elements`.
+
+Iteration 3:
+    - The number `31` is evaluated. Each digit (3, 1) is odd.
+    - The condition `all(int(c) % 2 == 1 for c in str(i))` is true.
+    - Action: `31` is added to `odd_digit_elements`.
+
+After iterating through all elements, the function returns the sorted list of numbers that consist entirely of odd digits, which are `[31, 135]`.

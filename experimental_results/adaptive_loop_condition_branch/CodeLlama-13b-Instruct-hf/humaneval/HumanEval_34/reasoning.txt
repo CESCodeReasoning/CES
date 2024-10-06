@@ -1,0 +1,4 @@
+The function unique takes a list l as input and returns a sorted list of unique elements from l.
+To determine the output of executing the function unique on the input [5, 3, 5, 2, 3, 3, 9, 0, 123], we need to first convert the list to a set to remove duplicates.
+Then, we sort the set and convert it back to a list.
+Therefore, the output of executing the function unique on the input [5, 3, 5, 2, 3, 3, 9, 0, 123] is [0, 2, 3, 5, 9, 123].

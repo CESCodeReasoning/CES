@@ -1,0 +1,9 @@
+The function `sum_squares` is called with ( lst = [0] ).
+Inside the function, an empty list `result` is initialized.
+
+Iteration 1:
+    -The index `i` is 0, which satisfies ( 0 % 3 == 0 ).
+    -The condition `i % 3 == 0` is true.
+    -Action: `result.append(lst[i]**2)` appends the square of the element at index `i` (0**2 = 0) to `result`.
+
+Therefore, the final output of the function `sum_squares([0])` is 0.

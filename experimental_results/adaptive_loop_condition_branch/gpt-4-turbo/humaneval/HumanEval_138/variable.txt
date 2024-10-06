@@ -1,0 +1,7 @@
+from typing import *
+
+def is_equal_to_sum_even(n):
+    # [STATE] n = 4 [/STATE]
+    # [CONDITION] n % 2 == 0 and n >= 8 [/CONDITION]
+    # [BRANCH] Y, N [/BRANCH]
+    return n % 2 == 0 and n >= 8

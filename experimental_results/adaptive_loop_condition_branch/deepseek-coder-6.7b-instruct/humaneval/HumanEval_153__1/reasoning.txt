@@ -1,0 +1,14 @@
+The function `Strongest_Extension` is called with ( class_name = 'finNNalLLly', extensions = ['Die', 'NowW', 'Wow', 'WoW'] ).
+
+The function starts by initializing `strong` to the first element of `extensions` and `my_val` to the difference between the number of uppercase letters and lowercase letters in the first element of `extensions`.
+
+Then it iterates over the rest of `extensions`. For each extension `s`, it calculates `val` as the difference between the number of uppercase letters and lowercase letters in `s`. If `val` is greater than `my_val`, it updates `strong` to `s` and `my_val` to `val`.
+
+Finally, it returns the concatenation of `class_name` and `strong` with a dot in between.
+
+In the given example, the first extension 'Die' has 2 uppercase letters and 2 lowercase letters, so `val` is 2 - 2 = 0. The second extension 'NowW' has 1 uppercase letter and 3 lowercase letters, so `val` is 1 - 3 = -2. The third extension 'Wow' has 1 uppercase letter and 2 lowercase letters, so `val` is 1 - 2 = -1. The fourth extension 'WoW' has 2 uppercase letters and 2 lowercase letters, so `val` is 2 - 2 = 0.
+
+Since 0 is not greater than -2, the first extension 'Die' is not the strongest extension. Similarly, since 0 is not greater than -1, the third extension 'Wow' is not the strongest extension. Therefore, the strongest extension is 'WoW'.
+
+So the final output of the function `Strongest_Extension('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW'])` is 'finNNalLLly.WoW'.
+<|EOT|>

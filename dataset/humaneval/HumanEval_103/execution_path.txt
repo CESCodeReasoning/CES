@@ -1,0 +1,16 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: rounded_avg
+main.py(3):     if m < n:
+main.py(5):     summation = 0
+main.py(6):     for i in range(n, m+1):
+main.py(7):         summation += i
+main.py(6):     for i in range(n, m+1):
+main.py(7):         summation += i
+main.py(6):     for i in range(n, m+1):
+main.py(7):         summation += i
+main.py(6):     for i in range(n, m+1):
+main.py(7):         summation += i
+main.py(6):     for i in range(n, m+1):
+main.py(7):         summation += i
+main.py(6):     for i in range(n, m+1):
+main.py(8):     return bin(round(summation/(m - n + 1)))

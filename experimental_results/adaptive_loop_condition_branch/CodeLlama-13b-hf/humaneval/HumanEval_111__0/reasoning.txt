@@ -1,0 +1,15 @@
+The function `histogram` is called with ( test = "a b c d g" ).
+Inside the function, a variable `dict1` is initialized to {}.
+A variable `list1` is initialized to the list of words in the string `test`.
+A variable `t` is initialized to 0.
+
+Iteration 1:
+    - The word 'a' is not in the dictionary, so the dictionary remains empty.
+Iteration 2:
+    - The word 'b' is not in the dictionary, so the dictionary remains empty.
+Iteration 3:
+    - The word 'c' is not in the dictionary, so the dictionary remains empty.
+Iteration 4:
+    - The word 'd' is not in the dictionary, so the dictionary remains empty.
+Iteration 5:
+    - The word 'g' is not in the dictionary, so the dictionary remains empty.

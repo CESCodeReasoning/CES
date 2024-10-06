@@ -1,0 +1,8 @@
+from typing import *
+def hex_key(num):
+    primes = ('2', '3', '5', '7', 'B', 'D')
+    total = 0 ## [STATE]total=0[/STATE]
+    for i in range(0, len(num)): ## [STATE]range(0, len(num))=[0, 1][/STATE][STATE]len(num)=2[/STATE]
+        if num[i] in primes: ## [CONDITION](num[i] in primes)=[False, True][/CONDITION][BRANCH]taken=[N, Y][/BRANCH]
+            total += 1
+    return total

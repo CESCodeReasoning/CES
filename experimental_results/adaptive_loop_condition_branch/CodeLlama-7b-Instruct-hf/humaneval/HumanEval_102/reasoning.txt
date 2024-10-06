@@ -1,0 +1,5 @@
+The function `choose_num` is called with ( x = 12, y = 15 ).
+The condition `x > y` is false, therefore the first if branch is not taken.
+The condition `y % 2 == 0` is true, therefore the second if branch is taken and the method returns y.
+
+Therefore, the final output of the function `choose_num(12, 15)` is 15.

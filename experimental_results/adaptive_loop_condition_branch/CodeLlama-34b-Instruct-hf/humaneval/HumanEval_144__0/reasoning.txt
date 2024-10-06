@@ -1,0 +1,6 @@
+The function `simplify` is called with ( x = "2/4", n = "8/4" ).
+The function splits the strings `x` and `n` into their numerator and denominator parts using the `.split("/")` method.
+The numerator and denominator parts are then converted to integers using the `int()` function.
+The function then checks if the simplified fraction is equal to the original fraction.
+If the simplified fraction is equal to the original fraction, the function returns `True`.
+Otherwise, the function returns `False`.

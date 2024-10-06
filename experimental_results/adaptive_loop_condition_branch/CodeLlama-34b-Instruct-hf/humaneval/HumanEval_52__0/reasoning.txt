@@ -1,0 +1,7 @@
+The function `below_threshold` is called with ( l = [1, 8, 4, 10] and t = 11 ).
+Inside the function, a loop iterates over the elements of the list `l`.
+
+First Iteration:
+    - The element `e` is 1.
+    - The condition `e >= t` is false (since 1 < 11).
+    - The function returns `False`.

@@ -1,0 +1,7 @@
+from typing import *
+
+
+def sort_array(array):
+    # [STATE]len(array) == 0[/STATE]
+    return [] if [CONDITION]len(array) == 0[/CONDITION] else sorted(
+        array, reverse=(array[0] + array[-1]) % 2 == 0)

@@ -1,0 +1,5 @@
+The function is_bored takes a string S as input and returns the number of sentences in S that start with "I ".
+To determine the output of executing the function is_bored on the input "Hello world", we need to count the number of sentences in "Hello world" that start with "I ".
+The sentences in "Hello world" are "Hello world", "Hello world", and "Hello world".
+The first sentence starts with "I ", the second sentence does not start with "I ", and the third sentence starts with "I ".
+Therefore, the output of executing the function is_bored on the input "Hello world" is 1.

@@ -1,0 +1,12 @@
+The function `is_prime` is called with ( n = 77 ).
+The condition `n < 2` is false, so the function proceeds to the next condition.
+The loop iterates from 2 through 76 (since ( n = 77 )).
+First Iteration (k = 2)
+   - `n` is not divisible by `k` (77 % 2 = 1), so the function proceeds to the next iteration.
+Second Iteration (k = 3)
+   - `n` is not divisible by `k` (77 % 3 = 1), so the function proceeds to the next iteration.
+Third Iteration (k = 4)
+   - `n` is not divisible by `k` (77 % 4 = 1), so the function proceeds to the next iteration.
+Fourth Iteration (k = 5)
+   - `n` is not divisible by `k` (77 % 5 = 2), so the function returns False.
+Therefore, the final output of the function `is_prime(77)` is False.

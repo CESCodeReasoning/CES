@@ -1,0 +1,24 @@
+[REASONING]
+The function is_bored takes a string S as input and returns the number of sentences in S that start with the word "I".
+To determine the number of sentences in S that start with the word "I", we need to split S into sentences using the regular expression r'[.?!]\s*'.
+Then, we need to iterate over the sentences and check if the first two characters of each sentence are "I ".
+If the first two characters of a sentence are "I ", then we increment the count of sentences that start with the word "I".
+Finally, we return the count of sentences that start with the word "I".
+[/REASONING]
+
+[ANSWER]
+def is_bored(S):
+    import re
+    sentences = re.split(r'[.?!]\s*', S)
+    # [STATE]sentences = ['You and I are going for a walk'][/STATE]
+    count = 0
+    for sentence in sentences:
+        # [CONDITION]sentence[0:2] == 'I '[/CONDITION]
+        # [BRANCH]Y[/BRANCH]
+        count += 1
+    return count
+[/ANSWER]
+
+[OUTPUT]
+1
+[/OUTPUT]

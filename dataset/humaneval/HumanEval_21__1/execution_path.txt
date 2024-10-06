@@ -1,0 +1,12 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: rescale_to_unit
+main.py(5):     min_number = min(numbers)
+main.py(6):     max_number = max(numbers)
+main.py(7):     return [(x - min_number) / (max_number - min_number) for x in numbers]
+ --- modulename: main, funcname: <listcomp>
+main.py(7):     return [(x - min_number) / (max_number - min_number) for x in numbers]
+main.py(7):     return [(x - min_number) / (max_number - min_number) for x in numbers]
+main.py(7):     return [(x - min_number) / (max_number - min_number) for x in numbers]
+main.py(7):     return [(x - min_number) / (max_number - min_number) for x in numbers]
+main.py(7):     return [(x - min_number) / (max_number - min_number) for x in numbers]
+main.py(7):     return [(x - min_number) / (max_number - min_number) for x in numbers]

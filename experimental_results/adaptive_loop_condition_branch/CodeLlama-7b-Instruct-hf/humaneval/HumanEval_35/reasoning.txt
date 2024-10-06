@@ -1,0 +1,11 @@
+The function `max_element` is called with ( l = [1, 2, 3] ).
+Inside the function, a variable `m` is initialized to the first element of the list `l`, which is 1.
+
+Iteration 1:
+    -The element 2 is compared with the current maximum `m`, which is 1.
+    -Since 2 is greater than 1, `m` is updated to 2.
+Iteration 2:
+    -The element 3 is compared with the current maximum `m`, which is 2.
+    -Since 3 is greater than 2, `m` is updated to 3.
+
+Therefore, the final output of the function `max_element([1, 2, 3])` is 3.

@@ -1,0 +1,148 @@
+<｜begin▁of▁sentence｜>
+
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def file_name_check(file_name):
+    suf = ['txt', 'exe', 'dll']
+    lst = file_name.split(sep='.')
+    if len(lst) != 2:
+        return 'No'
+    if not lst[1] in suf:
+        return 'No'
+    if len(lst[0]) == 0:
+        return 'No'
+    if not lst[0][0].isalpha():
+        return 'No'
+    t = len([x for x in lst[0] if x.isdigit()])
+    if t > 3:
+        return 'No'
+    return 'Yes'
+
+Tests:
+def check(file_name_check):
+
+    # Check some simple cases
+    assert file_name_check("example.txt") == 'Yes'
+    assert file_name_check("1example.dll") == 'No'
+    assert file_name_check('s1sdf3.asd') == 'No'
+    assert file_name_check('K.dll') == 'Yes'
+    assert file_name_check('MY16FILE3.exe') == 'Yes'
+    assert file_name_check('His12FILE94.exe') == 'No'
+    assert file_name_check('_Y.txt') == 'No'
+    assert file_name_check('?aREYA.exe') == 'No'
+    assert file_name_check('/this_is_valid.dll') == 'No'
+    assert file_name_check('this_is_valid.wow') == 'No'
+    assert file_name_check('this_is_valid.txt') == 'Yes'
+    assert file_name_check('this_is_valid.txtexe') == 'No'
+    assert file_name_check('#this2_i4s_5valid.ten') == 'No'
+    assert file_name_check('@this1_is6_valid.exe') == 'No'
+    assert file_name_check('this_is_12valid.6exe4.txt') == 'No'
+    assert file_name_check('all.exe.txt') == 'No'
+    assert file_name_check('I563_No.exe') == 'Yes'
+    assert file_name_check('Is3youfault.txt') == 'Yes'
+    assert file_name_check('no_one#knows.dll') == 'Yes'
+    assert file_name_check('1I563_Yes3.exe') == 'No'
+    assert file_name_check('I563_Yes3.txtt') == 'No'
+    assert file_name_check('final..txt') == 'No'
+    assert file_name_check('final132') == 'No'
+    assert file_name_check('_f4indsartal132.') == 'No'
+    
+        
+
+    # Check some edge cases that are easy to work out by hand.
+    assert file_name_check('.txt') == 'No'
+    assert file_name_check('s.') == 'No'
+
+check(file_name_check)
+
+The code should satisfy the following natural language specification:
+Write a Python function `file_name_check(file_name)` to solve the following problem:
+Create a function which takes a string representing a file's name, and returns
+'Yes' if the the file's name is valid, and returns 'No' otherwise.
+A file's name is considered to be valid if and only if all the following conditions
+are met:
+- There should not be more than three digits ('0'-'9') in the file's name.
+- The file's name contains exactly one dot '.'
+- The substring before the dot should not be empty, and it starts with a letter from
+the latin alphapet ('a'-'z' and 'A'-'Z').
+- The substring after the dot should be one of these: ['txt', 'exe', 'dll']
+Examples:
+file_name_check("example.txt") # => 'Yes'
+file_name_check("1example.dll") # => 'No' (the name should start with a latin alphapet letter)
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+No
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def is_valid_password(password):
+    if len(password) < 8:
+        return False
+    if not any(char.isdigit() for char in password):
+        return False
+    if not any(char.isalpha() for char in password):
+        return False
+    if not any(char in '@#$%^&+=' for char in password):
+        return False
+    return True
+
+Tests:
+def check(is_valid_password):
+    assert is_valid_password('Abc12345@') == True
+    assert is_valid_password('Abc12345') == False
+    assert is_valid_password('abc12345@') == False
+    assert is_valid_password('ABC12345@') == False
+    assert is_valid_password('Abcdefgh@') == False
+    assert is_valid_password('Abc123@') == False
+    assert is_valid_password('Abc12345@#') == True
+    assert is_valid_password('Abc12345@#$%^&+=') == True
+    assert is_valid_password('Abc12345@#$%^&+=1') == True
+    assert is_valid_password('Abc12345@#$%^&+=12') == True
+    assert is_valid_password('Abc12345@#$%^&+=123') == True
+    assert is_valid_password('Abc12345@#$%^&+=1234') == True
+    assert is_valid_password('Abc12345@#$%^&+=12345') == True
+    assert is_valid_password('Abc12345@#$%^&+=123456') == True
+    assert is_valid_password('Abc12345@#$%^&+=1

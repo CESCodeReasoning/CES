@@ -1,0 +1,10 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: closest_integer
+main.py(5):     from math import floor, ceil
+main.py(7):     if value.count('.') == 1:
+main.py(9):         while (value[-1] == '0'):
+main.py(12):     num = float(value)
+main.py(13):     if value[-2:] == '.5':
+main.py(18):     elif len(value) > 0:
+main.py(19):         res = int(round(num))
+main.py(23):     return res

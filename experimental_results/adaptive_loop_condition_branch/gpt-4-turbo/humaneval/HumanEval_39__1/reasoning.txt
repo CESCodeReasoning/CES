@@ -1,0 +1,21 @@
+The function `prime_fib` is called with `n = 4`. The function generates Fibonacci numbers and checks if each number is a prime. If it is a prime, it decrements `n` until `n` becomes 0, at which point it returns the last generated Fibonacci number.
+
+1. Initialize the Fibonacci sequence with `f = [0, 1]`.
+2. Enter a loop to generate the next Fibonacci number by summing the last two numbers in the list `f`.
+3. Check if the newly generated Fibonacci number is prime using the `is_prime` function.
+4. If the number is prime, decrement `n`.
+5. If `n` becomes 0, return the last Fibonacci number.
+
+The Fibonacci sequence starts as 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+The prime numbers in this sequence are 2, 3, 5, 13, ...
+
+Step-by-step:
+- 0 and 1 are not prime.
+- The next number, 1, is not prime.
+- The next number, 2, is prime (n decrements to 3).
+- The next number, 3, is prime (n decrements to 2).
+- The next number, 5, is prime (n decrements to 1).
+- The next number, 8, is not prime.
+- The next number, 13, is prime (n decrements to 0).
+
+At this point, since `n` is 0, the function returns the last Fibonacci number, which is 13.

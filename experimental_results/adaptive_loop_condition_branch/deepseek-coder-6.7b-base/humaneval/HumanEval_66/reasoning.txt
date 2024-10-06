@@ -1,0 +1,5 @@
+The function `digitSum` is called with ( s = "You arE Very Smart" ).
+The condition `s == ""` is false, therefore the else branch is taken.
+The function returns the sum of the ordinal values of the characters in the string `s`, which is 108.
+
+Therefore, the final output of the function `digitSum("You arE Very Smart")` is 108.

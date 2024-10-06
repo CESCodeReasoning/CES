@@ -1,0 +1,16 @@
+The function `encrypt` is called with ( s = 'hi' ).
+Inside the function, a variable `d` is initialized to 'abcdefghijklmnopqrstuvwxyz'.
+The variable `out` is initialized to an empty string.
+
+Iteration 1:
+    -The character 'h' is in d, so the condition is true.
+    -The index of 'h' in d is 7.
+    -The index of the new character in d is (7 + 2*2) % 26 = 11.
+    -The new character is 'l'.
+    -The new string is 'l'.
+Iteration 2:
+    -The character 'i' is in d, so the condition is true.
+    -The index of 'i' in d is 8.
+    -The index of the new character in d is (8 + 2*2) % 26 = 12.
+    -The new character is'm'.
+    -The new string is 'lm'.

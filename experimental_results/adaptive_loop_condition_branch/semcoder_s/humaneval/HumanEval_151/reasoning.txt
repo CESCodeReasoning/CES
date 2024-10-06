@@ -1,0 +1,8 @@
+The function `double_the_difference` takes a list of numbers as input and returns the sum of the squares of all positive odd integers in the list that do not contain a decimal point.
+
+- For the input list `[0.2, 3, 5]`:
+  - The number `0.2` is not a positive odd integer or contains a decimal point, so it is skipped.
+  - The number `3` is a positive odd integer and does not contain a decimal point, so it is included in the sum of squares.
+  - The number `5` is a positive odd integer and does not contain a decimal point, so it is included in the sum of squares.
+- The sum of squares of `3` and `5` is `3^2 + 5^2 = 9 + 25 = 34`.
+- Therefore, the function returns `34`.

@@ -1,0 +1,24 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: odd_count
+main.py(3):     res = []
+main.py(4):     for arr in lst:
+main.py(5):         n = sum(int(d)%2==1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         n = sum(int(d)%2==1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         n = sum(int(d)%2==1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         n = sum(int(d)%2==1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         n = sum(int(d)%2==1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         n = sum(int(d)%2==1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         n = sum(int(d)%2==1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         n = sum(int(d)%2==1 for d in arr)
+ --- modulename: main, funcname: <genexpr>
+main.py(5):         n = sum(int(d)%2==1 for d in arr)
+main.py(6):         res.append("the number of odd elements " + str(n) + "n the str"+ str(n) +"ng "+ str(n) +" of the "+ str(n) +"nput.")
+main.py(4):     for arr in lst:
+main.py(7):     return res

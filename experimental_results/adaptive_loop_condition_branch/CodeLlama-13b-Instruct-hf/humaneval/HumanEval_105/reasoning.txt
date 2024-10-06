@@ -1,0 +1,32 @@
+The function `by_length` is called with (arr = [2, 1, 1, 4, 5, 8, 2, 3] ).
+Inside the function, a dictionary `dic` is created with keys as numbers from 1 to 9 and their corresponding values as strings.
+`sorted_arr` is created by sorting the input array `arr` in descending order.
+The loop iterates through the sorted array `sorted_arr`.
+First Iteration (var = 9):
+    `dic[var]` = 'Nine'
+    `new_arr.append(dic[var])` appends 'Nine' to `new_arr`.
+Second Iteration (var = 8):
+    `dic[var]` = 'Eight'
+    `new_arr.append(dic[var])` appends 'Eight' to `new_arr`.
+Third Iteration (var = 7):
+    `dic[var]` = 'Seven'
+    `new_arr.append(dic[var])` appends 'Seven' to `new_arr`.
+Fourth Iteration (var = 6):
+    `dic[var]` = 'Six'
+    `new_arr.append(dic[var])` appends 'Six' to `new_arr`.
+Fifth Iteration (var = 5):
+    `dic[var]` = 'Five'
+    `new_arr.append(dic[var])` appends 'Five' to `new_arr`.
+Sixth Iteration (var = 4):
+    `dic[var]` = 'Four'
+    `new_arr.append(dic[var])` appends 'Four' to `new_arr`.
+Seventh Iteration (var = 3):
+    `dic[var]` = 'Three'
+    `new_arr.append(dic[var])` appends 'Three' to `new_arr`.
+Eighth Iteration (var = 2):
+    `dic[var]` = 'Two'
+    `new_arr.append(dic[var])` appends 'Two' to `new_arr`.
+Ninth Iteration (var = 1):
+    `dic[var]` = 'One'
+    `new_arr.append(dic[var])` appends 'One' to `new_arr`.
+After the loop completes, the function returns the value of `new_arr`, which is now ['Nine', 'Eight', 'Seven', 'Six', 'Five', 'Four', 'Three', 'Two', 'One'].

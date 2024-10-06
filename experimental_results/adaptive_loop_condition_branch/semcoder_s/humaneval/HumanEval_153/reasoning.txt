@@ -1,0 +1,10 @@
+The function `Strongest_Extension` is called with ( class_name = 'Watashi', extensions = ['tEN', 'niNE', 'eIGHt8OKe'] ).
+Inside the function, a variable `strong` is initialized to the first element of the extensions list ('tEN').
+A variable `my_val` is calculated by counting the number of uppercase alphabetic characters and subtracting the number of lowercase alphabetic characters in the first extension ('tEN').
+
+Iteration 1:
+    -The extension 'tEN' is compared to 'niNE'. 'tEN' has more uppercase characters than 'niNE'.
+Iteration 2:
+    -The extension 'niNE' is compared to 'eIGHt8OKe'. 'niNE' has more uppercase characters than 'eIGHt8OKe'.
+
+Therefore, the strongest extension is 'niNE'.

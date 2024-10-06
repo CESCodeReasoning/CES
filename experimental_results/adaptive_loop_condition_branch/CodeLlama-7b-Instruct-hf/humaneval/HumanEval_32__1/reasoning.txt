@@ -1,0 +1,9 @@
+The function `find_zero` takes a list of coefficients `xs` and returns the zero of the polynomial represented by the list.
+The function first initializes two variables `begin` and `end` to -1.0 and 1.0, respectively.
+The loop iterates until the product of the polynomial evaluated at `begin` and `end` is non-positive.
+In each iteration, the loop updates `begin` and `end` to be the midpoint of the current interval.
+The loop continues until the end of the interval is less than or equal to 1e-10.
+In each iteration, the loop evaluates the polynomial at the midpoint of the current interval and checks if the product of the polynomial evaluated at the midpoint and the end of the interval is positive.
+If the product is positive, the loop updates `begin` to be the midpoint of the current interval.
+Otherwise, the loop updates `end` to be the midpoint of the current interval.
+After the loop completes, the function returns the value of `begin`, which is the zero of the polynomial.

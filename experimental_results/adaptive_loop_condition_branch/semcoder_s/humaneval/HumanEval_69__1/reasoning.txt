@@ -1,0 +1,10 @@
+The function `search` is called with ( lst = [8, 8, 8, 8, 8, 8, 8, 8] ).
+Inside the function, a list `frq` is initialized with zeros of length `max(lst) + 1`.
+The first loop iterates over the elements of the input list and increments the corresponding index in `frq`.
+The second loop iterates over the frequency list starting from index 1.
+   - The condition `frq[i] >= i` checks if the frequency of the number is greater than or equal to the number itself.
+   - If the condition is true, update `ans` to the current number.
+   - If the condition is false, continue to the next number.
+After the loop, return the value of `ans`.
+
+Therefore, the final output of the function `search([8, 8, 8, 8, 8, 8, 8, 8])` is 8.

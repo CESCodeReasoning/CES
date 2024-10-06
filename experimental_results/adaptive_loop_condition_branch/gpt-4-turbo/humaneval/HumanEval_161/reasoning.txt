@@ -1,0 +1,29 @@
+The function `solve` is called with the input string "AsDf".
+Inside the function:
+1. `flg` is initialized to 0 and `idx` to 0.
+2. `new_str` is created as a list of characters from the input string `s`.
+
+The function then iterates over each character `i` in the string `s`:
+- First Iteration (i = 'A'):
+  - 'A' is an alphabetic character, so `i.isalpha()` is True.
+  - The character 'A' is swapped to lowercase 'a'.
+  - `flg` is set to 1.
+  - `idx` is incremented to 1.
+- Second Iteration (i = 's'):
+  - 's' is an alphabetic character, so `i.isalpha()` is True.
+  - The character 's' is swapped to uppercase 'S'.
+  - `idx` is incremented to 2.
+- Third Iteration (i = 'D'):
+  - 'D' is an alphabetic character, so `i.isalpha()` is True.
+  - The character 'D' is swapped to lowercase 'd'.
+  - `idx` is incremented to 3.
+- Fourth Iteration (i = 'f'):
+  - 'f' is an alphabetic character, so `i.isalpha()` is True.
+  - The character 'f' is swapped to uppercase 'F'.
+  - `idx` is incremented to 4.
+
+After the loop, `new_str` is `['a', 'S', 'd', 'F']`.
+
+The function then constructs the final string `s` by concatenating characters from `new_str`, resulting in "aSdF".
+
+Since `flg` is 1 (indicating that at least one alphabetic character was found and processed), the function returns the string "aSdF" without reversing it.

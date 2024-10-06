@@ -1,0 +1,52 @@
+Here are the fixed versions of the two functions, `has_close_elements` and `count_upper`, along with the test cases to verify their correctness:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+
+# Tests
+def check_has_close_elements(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check_has_close_elements(has_close_elements)
+```
+
+### Fixed Code for `count_upper`
+```python
+def count_upper(s: str) -> int:
+    count = 0
+    vowels = "AEIOU"
+    for i in range(0, len(s)):
+        if i % 2 == 0 and s[i] in vowels:  # Check for even index and if character is an uppercase vowel
+            count += 1
+    return count
+
+# Tests
+def check_count_upper(count_upper):
+    assert count_upper('aBCdEf') == 1
+    assert count_upper('abcdefg') == 0
+    assert count_upper('dBBE') == 0
+    assert count_upper('B') == 0
+    assert count_upper('U') == 1
+    assert count_upper('') == 0
+    assert count_upper('EEEE') == 2
+
+check_count_upper(count_upper)
+```
+
+These corrected functions now adhere to the specifications provided and pass all the test cases.

@@ -1,0 +1,19 @@
+The function get_max_triples(n) takes an integer n as its parameter.
+It returns the maximum number of triples (A[i], A[j], A[k]) such that 1 <= i < j < k <= n and (A[i] + A[j] + A[k]) % 3 == 0.
+The function first creates an array A of size n, where A[i] = i * i - i + 1 for all 1 <= i <= n.
+Then, it iterates over all possible triples (i, j, k) such that 1 <= i < j < k <= n and checks if (A[i] + A[j] + A[k]) % 3 == 0.
+If so, it adds the triple (A[i], A[j], A[k]) to the list ans.
+Finally, it returns the length of the list ans.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, ..., n.
+    - k in the inner loop is 2, 3, ..., n.
+    - A[i]=1: compare with A[j] and A[k] to check if (A[i] + A[j] + A[k]) % 3 == 0.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, ..., n.
+    - k in the inner loop is 3, 4, ..., n.
+    - A[i]=2: compare with A[j] and A[k] to check if (A[i] + A[j] + A[k]) % 3 == 0.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, ..., n.
+    - k in the inner loop is 4, 5, ..., n.
+    - A[i]=4: compare with A[j] and A[k] to check if (A[i] + A[j] + A[k]) % 3 == 0.
+...

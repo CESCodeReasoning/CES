@@ -1,0 +1,9 @@
+from typing import *
+
+
+def sort_array(array):
+    # [STATE] array = [5] [/STATE]
+    return [] if len(array) == 0 else sorted(
+        array, reverse=(array[0] + array[-1]) % 2 == 0)  # [CONDITION] len(array) == 0 [/CONDITION] [BRANCH] N [/BRANCH]
+# [STATE] (array[0] + array[-1]) % 2 == 0 -> (5 + 5) % 2 == 0 -> 10 % 2 == 0 -> True [/STATE]
+# [STATE] sorted(array, reverse=True) -> sorted([5], reverse=True) -> [5] [/STATE]

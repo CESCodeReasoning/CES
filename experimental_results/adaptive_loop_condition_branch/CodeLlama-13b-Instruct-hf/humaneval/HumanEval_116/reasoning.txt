@@ -1,0 +1,4 @@
+The function sort_array takes an array of integers as input and returns a sorted array of integers.
+The function first sorts the input array using the built-in sorted function.
+Then, it sorts the sorted array using the key parameter of the sorted function, which is a lambda function that counts the number of 1s in the binary representation of each element.
+Finally, it returns the sorted array.

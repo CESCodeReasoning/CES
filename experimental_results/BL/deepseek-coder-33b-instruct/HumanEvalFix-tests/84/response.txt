@@ -1,0 +1,17 @@
+```response
+    return bin([int(i) for i in str(N)][-1])[2:]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def solve(N):
+    return bin([int(i) for i in str(N)][-1])[2:]
+
+Tests:
+def check(solve):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)."
+    assert solve(

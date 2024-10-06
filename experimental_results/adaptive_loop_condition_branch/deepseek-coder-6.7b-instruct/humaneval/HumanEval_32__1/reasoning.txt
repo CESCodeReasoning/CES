@@ -1,0 +1,16 @@
+The function `find_zero` is called with a list of coefficients for a polynomial equation. The function uses the bisection method to find a root of the polynomial equation.
+
+The bisection method works by repeatedly dividing the interval in which the root lies in half until the interval is small enough (less than 1e-10). The midpoint of the interval is calculated and used as the next guess for the root.
+
+The function `poly` is used to evaluate the polynomial at a given point.
+
+The loop continues until the interval is small enough. Inside the loop, the function checks the sign of the polynomial evaluated at the beginning and end of the interval. If they have the same sign, it means the root is not in the interval. The function then doubles the interval until the root is in the interval.
+
+After the interval is found, the function then uses the bisection method to find the root. It starts by calculating the midpoint of the interval. Then it checks the sign of the polynomial evaluated at the midpoint and the beginning of the interval. If the product is positive, it means the root is in the first half of the interval. Otherwise, it is in the second half. The function then updates the interval accordingly. This process is repeated until the interval is small enough.
+
+The function returns the root of the polynomial.
+
+The input to the function is [5, 8, -12, 4, 23, 2, 3, 11, 12, -10].
+
+The output of the function is the root of the polynomial equation.
+<|EOT|>

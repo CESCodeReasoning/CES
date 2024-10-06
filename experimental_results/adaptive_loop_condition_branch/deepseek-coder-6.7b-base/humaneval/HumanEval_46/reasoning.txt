@@ -1,0 +1,8 @@
+The function `fib4` is called with ( n = 5 ).
+The condition ( n < 4 ) is not satisfied, therefore the if branch is not taken.
+The loop iterates from 4 through 5 (since ( n + 1 = 6 )).
+First Iteration (i = 4):
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [0, 0, 2, 0, 4].
+Second Iteration (i = 5):
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [0, 0, 2, 0, 4, 8].
+After the loop completes, the function returns the last element of the results list, which is 8 as the output.

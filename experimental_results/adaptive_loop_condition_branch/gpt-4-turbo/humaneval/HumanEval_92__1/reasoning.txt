@@ -1,0 +1,8 @@
+The function `any_int` is called with the arguments (x = 3, y = 4, z = 7).
+First, the function checks if all the arguments `x`, `y`, and `z` are integers. Since all are integers, the condition `(isinstance(x, int) and isinstance(y, int) and isinstance(z, int))` evaluates to True, and the branch is taken.
+Next, the function checks if the sum of any two arguments equals the third argument:
+   - `x + y = 3 + 4 = 7` which equals `z`. Thus, `(x + y == z)` is True.
+   - The other conditions `(x + z == y)` and `(y + z == x)` are not checked further since the first condition is already True.
+Since one of the conditions in the second if statement is True, the function returns True.
+
+Therefore, the final output of the function `any_int(3, 4, 7)` is True.

@@ -1,0 +1,19 @@
+The function `valid_date` is called with ( date = '03-11-2000' ).
+`date` is a string, which is then stripped of any leading or trailing whitespace.
+The string is then split into three parts using the '-' character as a delimiter.
+The resulting parts are then converted to integers using the `int()` method.
+The month, day, and year are then assigned to the variables `month`, `day`, and `year` respectively.
+
+The next step is to check if the month is valid.
+The month is checked to be between 1 and 12, inclusive.
+If the month is not between 1 and 12, the method returns False.
+
+Next, the day is checked to be valid.
+If the month is in [1, 3, 5, 7, 8, 10, 12], the day must be between 1 and 31, inclusive.
+If the month is in [4, 6, 9, 11], the day must be between 1 and 30, inclusive.
+If the month is 2, the day must be between 1 and 29, inclusive.
+If any of the above conditions are not met, the method returns False.
+
+Finally, the method returns True if all the conditions are met.
+
+Therefore, the final output of the function `valid_date('03-11-2000')` is True.

@@ -1,0 +1,16 @@
+The function `largest_divisor` is called with ( n = 49 ).
+The function iterates over the range from 49 down to 1 (in reverse order).
+Iteration 1:
+    - 49 is divisible by 1, so it returns 1.
+Iteration 2:
+    - 49 is divisible by 2, so it returns 2.
+Iteration 3:
+    - 49 is divisible by 3, so it returns 3.
+...
+Iteration 24:
+    - 49 is divisible by 24, so it returns 24.
+Iteration 25:
+    - 49 is not divisible by 25, so it continues to the next iteration.
+...
+Iteration 49:
+    - 49 is divisible by 49, so it returns 49.

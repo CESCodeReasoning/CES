@@ -1,0 +1,8 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: prime_length
+main.py(5):     l = len(string)
+main.py(6):     if l == 0 or l == 1:
+main.py(8):     for i in range(2, l):
+main.py(9):         if l % i == 0:
+main.py(8):     for i in range(2, l):
+main.py(11):     return True

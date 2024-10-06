@@ -1,0 +1,34 @@
+[REASONING]
+The function `max_element` is called with ( l = [3, 2, -3.5, 0] ).
+Inside the function, a variable `m` is initialized to the first element of the list, which is 3.
+The loop iterates through the list, starting from the second element.
+First Iteration (e = 2)
+   - `e` is 2, which is less than `m` (3).
+   - The condition `e > m` is false.
+   - Action: No action is taken.
+Second Iteration (e = -3.5)
+   - `e` is -3.5, which is less than `m` (3).
+   - The condition `e > m` is false.
+   - Action: No action is taken.
+Third Iteration (e = 0)
+   - `e` is 0, which is less than `m` (3).
+   - The condition `e > m` is false.
+   - Action: No action is taken.
+Since no element in the list is greater than the initial value of `m`, the function returns `m`, which is 3.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def max_element(l: list):
+    m = l[0]
+    for e in l: ## [STATE]e=[2, -3.5, 0][/STATE][STATE]l=[3, 2, -3.5, 0][/STATE]
+        if e > m: ## [CONDITION](e > m)=[False, False, False][/CONDITION][BRANCH]taken=[N, N, N][/BRANCH]
+            m = e
+    return m
+[/ANSWER]
+
+[OUTPUT]
+3
+[/OUTPUT]

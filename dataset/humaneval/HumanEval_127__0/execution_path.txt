@@ -1,0 +1,8 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: intersection
+main.py(5):     def is_prime(num):
+main.py(15):     l = max(interval1[0], interval2[0])
+main.py(16):     r = min(interval1[1], interval2[1])
+main.py(17):     length = r - l
+main.py(18):     if length > 0 and is_prime(length):
+main.py(20):     return "NO"

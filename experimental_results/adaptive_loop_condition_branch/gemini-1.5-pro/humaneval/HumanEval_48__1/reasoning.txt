@@ -1,0 +1,13 @@
+The function `is_palindrome` is called with ( text = 'aaaaa' ).
+Inside the function, a loop iterates from 0 to 4 (since len(text) = 5).
+Iteration 1:
+    - i = 0, text[i] = 'a', text[len(text) - 1 - i] = 'a', so the condition is True.
+Iteration 2:
+    - i = 1, text[i] = 'a', text[len(text) - 1 - i] = 'a', so the condition is True.
+Iteration 3:
+    - i = 2, text[i] = 'a', text[len(text) - 1 - i] = 'a', so the condition is True.
+Iteration 4:
+    - i = 3, text[i] = 'a', text[len(text) - 1 - i] = 'a', so the condition is True.
+Iteration 5:
+    - i = 4, text[i] = 'a', text[len(text) - 1 - i] = 'a', so the condition is True.
+Since the condition is True for all iterations, the function returns True.

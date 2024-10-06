@@ -1,0 +1,29 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def move_one_ball(arr):
+    if len(arr)==0:
+      return True
+    sorted_array=sorted(arr)
+    for i in range(len(arr)):
+        matches=True
+        for j in range (len(arr)):
+          if arr[(i+j)%len(arr)]!=sorted_array[j]:
+            matches=False
+        if matches:
+          return True
+    return False
+
+```

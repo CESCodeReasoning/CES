@@ -1,0 +1,51 @@
+[REASONING]
+The function common(l1: list, l2: list) takes two lists as its parameters.
+It initializes an empty set ret to store the common elements between the two lists.
+The outer loop iterates through each element e1 in the first list l1.
+For each e1, the inner loop iterates through each element e2 in the second list l2.
+If e1 is equal to e2, it means they are common elements, so e1 is added to the set ret.
+Finally, the function returns a sorted list of the common elements.
+First Iteration (e1=1):
+    - e1 is 1, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - Compare 1 with 5, 7, 1, 5, 9, 653, 121:
+        - When e2 = 1, the condition `e1 == e2` is True, add 1 to ret.
+Second Iteration (e1=4):
+    - e1 is 4, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - Compare 4 with 5, 7, 1, 5, 9, 653, 121:
+        - No match, move on.
+Third Iteration (e1=3):
+    - e1 is 3, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - Compare 3 with 5, 7, 1, 5, 9, 653, 121:
+        - No match, move on.
+Forth Iteration (e1=34):
+    - e1 is 34, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - Compare 34 with 5, 7, 1, 5, 9, 653, 121:
+        - No match, move on.
+Fifth Iteration (e1=653):
+    - e1 is 653, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - Compare 653 with 5, 7, 1, 5, 9, 653, 121:
+        - When e2 = 653, the condition `e1 == e2` is True, add 653 to ret.
+Sixth Iteration (e1=2):
+    - e1 is 2, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - Compare 2 with 5, 7, 1, 5, 9, 653, 121:
+        - No match, move on.
+Seventh Iteration (e1=5):
+    - e1 is 5, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - Compare 5 with 5, 7, 1, 5, 9, 653, 121:
+        - When e2 = 5, the condition `e1 == e2` is True, add 5 to ret.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def common(l1: list, l2: list):
+    ret = set() ## [STATE]e1=[1, 4, 3, 34, 653, 2, 5][/STATE]
+    for e1 in l1: ## [STATE]e2=[5, 7, 1, 5, 9, 653, 121][/STATE][STATE]l1=[1, 4, 3, 34, 653, 2, 5][/STATE]
+        for e2 in l2: ## [STATE]l2=[5, 7, 1, 5, 9, 653, 121][/STATE]
+            if e1 == e2: ## [CONDITION](e1 == e2)=[True, False, False, False, True, False, True][/CONDITION][BRANCH]taken=[Y, N, N, N, Y, N, Y][/BRANCH]
+                ret.add(e1)
+    return sorted(list(ret))
+[/ANSWER]
+
+[OUTPUT]
+[1, 5, 653]
+[/OUTPUT]

@@ -1,0 +1,34 @@
+The bug in the `has_close_elements` function is that it is calculating the distance as `elem - elem2` instead of `abs(elem - elem2)`. The `abs` function is used to get the absolute value of the distance, which ensures that the distance is always positive.
+
+The bug in the `parse_nested_parens` function is that it is not handling the case when the input string has multiple groups of parentheses separated by spaces. The function is splitting the input string by spaces and then processing each group separately, but it is not handling the case when a group contains multiple parentheses groups.
+
+Here is the fixed code:
+
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    def parse_paren_group(s):
+        depth = 0
+        max_depth = 0
+        for c in s:
+            if c == '(':
+                depth += 1
+                max_depth = max(depth, max_depth)
+            else:
+                depth -= 1
+
+        return max_depth
+
+    return [parse_paren_group(x) for x in paren_string.split(' ') if x]
+```

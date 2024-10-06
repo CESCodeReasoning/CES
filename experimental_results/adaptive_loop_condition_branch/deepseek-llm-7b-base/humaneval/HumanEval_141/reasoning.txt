@@ -1,0 +1,6 @@
+The function `file_name_check` is called with ( file_name = "example.txt" ).
+The function splits the file name into two parts, `lst = file_name.split(sep='.')`.
+The length of the list `lst` is 2, which satisfies ( len(lst) != 2 ).
+The condition `not lst[1] in suf` is true, therefore the if branch is taken and the method returns `No`.
+
+Therefore, the final output of the function `file_name_check("example.txt")` is `No`.

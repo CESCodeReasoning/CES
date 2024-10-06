@@ -1,0 +1,5 @@
+from typing import *
+
+
+def car_race_collision(n: int):
+    return n**2  # The output is 64, which is the square of the input value 8

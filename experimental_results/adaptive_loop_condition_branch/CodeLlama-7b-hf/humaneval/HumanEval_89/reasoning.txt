@@ -1,0 +1,13 @@
+The function `encrypt` is called with ( s = 'hi' ).
+Inside the function, a variable `d` is initialized to 'abcdefghijklmnopqrstuvwxyz'.
+A variable `out` is initialized to an empty string.
+The loop iterates through the characters in the string 'hi'.
+First Iteration (c = 'h')
+   - The character 'h' is in the string 'abcdefghijklmnopqrstuvwxyz', so the condition `c in d` is true.
+   - The condition `c in d` is true, so the action `out += d[(d.index(c)+2*2) % 26]` is executed.
+   - The action `out += d[(d.index(c)+2*2) % 26]` updates `out` to 'j'.
+Second Iteration (c = 'i')
+   - The character 'i' is not in the string 'abcdefghijklmnopqrstuvwxyz', so the condition `c in d` is false.
+   - The condition `c in d` is false, so the action `out += c` is executed.
+   - The action `out += c` updates `out` to 'ji'.
+Therefore, the final output of the function `encrypt('hi')` is 'jj'.

@@ -1,0 +1,31 @@
+The function `sum_squares` is called with ( lst = [1, 2, 3] ).
+Inside the function, a variable `result` is initialized to an empty list.
+
+Iteration 1:
+    -The value of `i` is 0, which satisfies ( i % 3 = 0 ).
+    -The condition `i % 3 == 0` is true.
+    -Action: `result.append(lst[i]**2)` updates `result` to [1**2 = 1, 2**2 = 4].
+Iteration 2:
+    -The value of `i` is 1, which satisfies ( i % 3 = 0 ).
+    -The condition `i % 3 == 0` is true.
+    -Action: `result.append(lst[i]**2)` updates `result` to [1**2 = 1, 2**2 = 4, 3**2 = 9].
+Iteration 3:
+    -The value of `i` is 2, which satisfies ( i % 3 = 0 ).
+    -The condition `i % 3 == 0` is true.
+    -Action: `result.append(lst[i]**2)` updates `result` to [1**2 = 1, 2**2 = 4, 3**2 = 9, 4**2 = 16].
+Iteration 4:
+    -The value of `i` is 3, which does not satisfy ( i % 3 = 0 ).
+    -The condition `i % 3 == 0` is false.
+    -Action: `result.append(lst[i])` updates `result` to [1**2 = 1, 2**2 = 4, 3**2 = 9, 4**2 = 16, 5].
+Iteration 5:
+    -The value of `i` is 4, which does not satisfy ( i % 3 = 0 ).
+    -The condition `i % 3 == 0` is false.
+    -Action: `result.append(lst[i])` updates `result` to [1**2 = 1, 2**2 = 4, 3**2 = 9, 4**2 = 16, 5, 6].
+Iteration 6:
+    -The value of `i` is 5, which does not satisfy ( i % 3 = 0 ).
+    -The condition `i % 3 == 0` is false.
+    -Action: `result.append(lst[i])` updates `result` to [1**2 = 1, 2**2 = 4, 3**2 = 9, 4**2 = 16, 5, 6, 7].
+Iteration 7:
+    -The value of `i` is 6, which does not satisfy ( i % 3 = 0 ).
+    -The condition `i % 3 == 0` is false.
+    -Action: `result

@@ -1,0 +1,15 @@
+[REASONING]
+The function filter_by_prefix takes a list of strings and a prefix as input, and returns a list of strings that start with the given prefix.
+To determine the output of executing the function filter_by_prefix on the input [], 'john', we need to check if each string in the list starts with the prefix 'john'.
+Since the input list is empty, the output list will also be empty.
+Therefore, the output of executing the function filter_by_prefix on the input [], 'john' is [].
+[/REASONING]
+
+[ANSWER]
+def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:
+    return [x for x in strings if [CONDITION]x.startswith(prefix)[/CONDITION]]
+[/ANSWER]
+
+[OUTPUT]
+[]
+[/OUTPUT]

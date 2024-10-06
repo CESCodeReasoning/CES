@@ -1,0 +1,12 @@
+from typing import *
+
+
+def anti_shuffle(s: str) -> str:
+    # [STATE] s is an empty string "" [/STATE]
+    # [STATE] s.split(' ') results in [''] [/STATE]
+    # [STATE] list(i) for i in [''] results in [[]] [/STATE]
+    # [STATE] sorted(list(i)) for i in [''] results in [[]] [/STATE]
+    # [STATE] ''.join(sorted(list(i))) for i in [''] results in [''] [/STATE]
+    # [STATE] [''.join(sorted(list(i))) for i in s.split(' ')] results in [''] [/STATE]
+    # [STATE] ' '.join(['']) results in "" [/STATE]
+    return ' '.join([''.join(sorted(list(i))) for i in s.split(' ')])

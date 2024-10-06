@@ -1,0 +1,19 @@
+The function `below_zero` is called with ( operations = [1, 2, -4, 5, 6] ).
+Inside the function, a variable `balance` is initialized to 0.
+
+Iteration 1:
+    - `op` is 1, so `balance` becomes 1.
+    - The condition `balance < 0` is false.
+    - Action: `return False` is executed.
+
+Iteration 2:
+    - `op` is 2, so `balance` becomes 3.
+    - The condition `balance < 0` is false.
+    - Action: `return False` is executed.
+
+Iteration 3:
+    - `op` is -4, so `balance` becomes -3.
+    - The condition `balance < 0` is true.
+    - Action: `return True` is executed.
+
+Therefore, the final output of the function `below_zero([1, 2, -4, 5, 6])` is True.

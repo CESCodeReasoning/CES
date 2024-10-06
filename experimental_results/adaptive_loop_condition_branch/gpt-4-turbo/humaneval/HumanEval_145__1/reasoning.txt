@@ -1,0 +1,4 @@
+The function `order_by_points` is called with an empty list `[]`.
+The function defines a nested function `digits_sum` which calculates the sum of the digits of a number, adjusting for negative numbers by making the first digit negative if the original number was negative.
+Since the input list is empty, the `sorted` function is called with an empty list and the `digits_sum` function as the key. However, since there are no elements to sort, the `sorted` function will immediately return an empty list.
+Therefore, the final output of the function `order_by_points([])` is an empty list `[]`.

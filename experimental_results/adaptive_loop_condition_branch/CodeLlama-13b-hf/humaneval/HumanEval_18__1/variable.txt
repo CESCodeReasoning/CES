@@ -1,0 +1,11 @@
+from typing import *
+
+
+def how_many_times(string: str, substring: str) -> int:
+    times = 0
+
+    for i in range(len(string) - len(substring) + 1): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6][/STATE][STATE]range(((len(string) - len(substring)) + 1))=[0, 1, 2, 3, 4, 5, 6][/STATE][STATE]((len(string) - len(substring)) + 1)=[7][/STATE]
+        if string[i:i + len(substring)] == substring: ## [CONDITION](string[i:i + len(substring)] == substring)=[False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N][/BRANCH]
+            times += 1
+
+    return times

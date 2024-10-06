@@ -1,0 +1,4 @@
+The function `is_simple_power` is called with ( x = 1, n = 1 ).
+The condition ( n == 1 ) is satisfied, therefore the if branch is taken.
+The condition ( power < x ) is not satisfied, therefore the while loop is not executed.
+The function returns `True` as the output.

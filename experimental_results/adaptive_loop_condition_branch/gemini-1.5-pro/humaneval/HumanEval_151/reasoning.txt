@@ -1,0 +1,6 @@
+The function double_the_difference takes a list of numbers as input and returns the sum of the squares of the odd numbers in the list that are not floats.
+To determine the output of executing the function double_the_difference on the input [0.2, 3, 5], we need to first filter out the numbers that are not odd or are floats.
+The numbers that are not odd or are floats are 0.2 and 5.
+The remaining numbers are 3.
+We then square each of the remaining numbers and sum them up.
+Therefore, the output of executing the function double_the_difference on the input [0.2, 3, 5] is 9.

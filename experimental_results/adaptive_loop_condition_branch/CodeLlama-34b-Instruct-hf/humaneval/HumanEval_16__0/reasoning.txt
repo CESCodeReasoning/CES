@@ -1,0 +1,7 @@
+The function count_distinct_characters takes a string as input and returns the number of distinct characters in the string.
+To determine the output of executing the function on the input 'abcde', we need to first convert the string to lowercase using the lower() method.
+The resulting string is 'abcde'.
+Next, we create a set from the lowercase string, which removes any duplicates.
+The resulting set is {'a', 'b', 'c', 'd', 'e'}.
+Finally, we return the length of the set, which is 5.
+Therefore, the output of executing the function on the input 'abcde' is 5.

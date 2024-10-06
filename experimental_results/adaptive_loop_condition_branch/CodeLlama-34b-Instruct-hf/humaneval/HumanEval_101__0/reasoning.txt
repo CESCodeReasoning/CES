@@ -1,0 +1,71 @@
+The function `words_string` is called with ( s = "One, two, three, four, five, six" ).
+Inside the function, a variable `s_list` is initialized to an empty list.
+
+Iteration 1:
+    -The character 'O' is not a comma, so it is appended to `s_list`.
+Iteration 2:
+    -The character 'n' is not a comma, so it is appended to `s_list`.
+Iteration 3:
+    -The character 'e' is not a comma, so it is appended to `s_list`.
+Iteration 4:
+    -The character ',' is a comma, so a space is appended to `s_list`.
+Iteration 5:
+    -The character ' ' (space) is not a comma, so it is appended to `s_list`.
+Iteration 6:
+    -The character 't' is not a comma, so it is appended to `s_list`.
+Iteration 7:
+    -The character 'w' is not a comma, so it is appended to `s_list`.
+Iteration 8:
+    -The character 'o' is not a comma, so it is appended to `s_list`.
+Iteration 9:
+    -The character ',' is a comma, so a space is appended to `s_list`.
+Iteration 10:
+    -The character ' ' (space) is not a comma, so it is appended to `s_list`.
+Iteration 11:
+    -The character 't' is not a comma, so it is appended to `s_list`.
+Iteration 12:
+    -The character 'h' is not a comma, so it is appended to `s_list`.
+Iteration 13:
+    -The character 'r' is not a comma, so it is appended to `s_list`.
+Iteration 14:
+    -The character 'e' is not a comma, so it is appended to `s_list`.
+Iteration 15:
+    -The character 'e' is not a comma, so it is appended to `s_list`.
+Iteration 16:
+    -The character ',' is a comma, so a space is appended to `s_list`.
+Iteration 17:
+    -The character ' ' (space) is not a comma, so it is appended to `s_list`.
+Iteration 18:
+    -The character 'f' is not a comma, so it is appended to `s_list`.
+Iteration 19:
+    -The character 'o' is not a comma, so it is appended to `s_list`.
+Iteration 20:
+    -The character 'u' is not a comma, so it is appended to `s_list`.
+Iteration 21:
+    -The character 'r' is not a comma, so it is appended to `s_list`.
+Iteration 22:
+    -The character ',' is a comma, so a space is appended to `s_list`.
+Iteration 23:
+    -The character ' ' (space) is not a comma, so it is appended to `s_list`.
+Iteration 24:
+    -The character 'f' is not a comma, so it is appended to `s_list`.
+Iteration 25:
+    -The character 'i' is not a comma, so it is appended to `s_list`.
+Iteration 26:
+    -The character 'v' is not a comma, so it is appended to `s_list`.
+Iteration 27:
+    -The character 'e' is not a comma, so it is appended to `s_list`.
+Iteration 28:
+    -The character ',' is a comma, so a space is appended to `s_list`.
+Iteration 29:
+    -The character ' ' (space) is not a comma, so it is appended to `s_list`.
+Iteration 30:
+    -The character 's' is not a comma, so it is appended to `s_list`.
+Iteration 31:
+    -The character 'i' is not a comma, so it is appended to `s_list`.
+Iteration 32:
+    -The character 'x' is not a comma, so it is appended to `s_list`.
+
+After the loop completes, `s_list` is joined into a string using the `join` method.
+The resulting string is then split into a list of words using the `split` method.
+The list of words is returned as the output of the function.

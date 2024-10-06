@@ -1,0 +1,37 @@
+The function get_max_triples(n) takes an integer n as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4 and 5.
+    - A[i]=1: compare with 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100:
+        - When j = 1 (A[j]=2), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 2 (A[j]=3), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 3 (A[j]=4), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 4 (A[j]=5), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 5 (A[j]=6), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 6 (A[j]=7), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 7 (A[j]=8), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 8 (A[j]=9), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 9 (A[j]=10), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 10 (A[j]=11), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 11 (A[j]=12), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 12 (A[j]=13), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 13 (A[j]=14), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 14 (A[j]=15), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 15 (A[j]=16), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 16 (A[j]=17), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 17 (A[j]=18), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 18 (A[j]=19), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 19 (A[j]=20), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 20 (A[j]=21), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 21 (A[j]=22), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 22 (A[j]=23), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 23 (A[j]=24), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 24 (A[j]=25), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 25 (A[j]=26), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 26 (A[j]=27), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 27 (A[j]=28), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 28 (A[j]=29), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 29 (A[j]=30), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 30 (A[j]=31), the condition `(A[i] + A[j] + A[k]) % 3 == 0` is False, the if branch is not taken.
+        - When j = 31 (A[j]=32),

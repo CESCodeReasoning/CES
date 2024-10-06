@@ -1,0 +1,12 @@
+The function `common(l1, l2)` takes two lists, `l1` and `l2`, as parameters. The goal is to find common elements between these two lists and return them in sorted order.
+- `l1` is [5, 3, 2, 8] and `l2` is [3, 2].
+- The function initializes an empty set `ret` to store unique common elements.
+- It uses two nested loops to compare each element `e1` from `l1` with each element `e2` from `l2`.
+- For each pair `(e1, e2)`, it checks if they are equal. If they are, `e1` (which is the same as `e2`) is added to the set `ret`.
+- After all comparisons:
+    - When `e1` is 5, it is compared with 3 and 2, no matches, so nothing is added.
+    - When `e1` is 3, it matches with 3 in `l2`, so 3 is added to `ret`.
+    - When `e1` is 2, it matches with 2 in `l2`, so 2 is added to `ret`.
+    - When `e1` is 8, it is compared with 3 and 2, no matches, so nothing is added.
+- The set `ret` now contains {2, 3}.
+- The function returns this set converted to a sorted list, which is [2, 3].

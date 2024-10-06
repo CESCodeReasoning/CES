@@ -1,0 +1,6 @@
+The function `get_closest_vowel` is called with ( word = "yogurt" ).
+Inside the function, a variable `vowels` is initialized to a set of vowels.
+The length of the input string is checked, if it is less than 3, the function returns an empty string.
+The function then iterates through the input string starting from the second last character until the first character.
+If the current character is a vowel and the previous and next characters are not vowels, the function returns the current character.
+If the function reaches the end of the string without finding a suitable vowel, it returns an empty string.

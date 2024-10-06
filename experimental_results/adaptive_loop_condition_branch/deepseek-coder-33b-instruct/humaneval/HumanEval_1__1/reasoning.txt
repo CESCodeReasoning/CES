@@ -1,0 +1,48 @@
+The function `separate_paren_groups` is called with ( paren_string = '()()((((()()((()))))()()()))' ).
+Inside the function, two variables `result` and `current_string` are initialized to empty lists.
+A variable `current_depth` is initialized to 0.
+
+Iteration 1:
+    -The character '(' is encountered, so `current_depth` becomes 1 and '(' is appended to `current_string`.
+Iteration 2:
+    -The character ')' is encountered, so `current_depth` becomes 0 and ')' is appended to `current_string`.
+    -Since `current_depth` is 0, `current_string` is appended to `result` and `current_string` is cleared.
+Iteration 3:
+    -The character '(' is encountered, so `current_depth` becomes 1 and '(' is appended to `current_string`.
+Iteration 4:
+    -The character ')' is encountered, so `current_depth` becomes 0 and ')' is appended to `current_string`.
+    -Since `current_depth` is 0, `current_string` is appended to `result` and `current_string` is cleared.
+Iteration 5:
+    -The character '(' is encountered, so `current_depth` becomes 1 and '(' is appended to `current_string`.
+Iteration 6:
+    -The character '(' is encountered, so `current_depth` becomes 2 and '(' is appended to `current_string`.
+Iteration 7:
+    -The character '(' is encountered, so `current_depth` becomes 3 and '(' is appended to `current_string`.
+Iteration 8:
+    -The character '(' is encountered, so `current_depth` becomes 4 and '(' is appended to `current_string`.
+Iteration 9:
+    -The character ')' is encountered, so `current_depth` becomes 3 and ')' is appended to `current_string`.
+Iteration 10:
+    -The character '(' is encountered, so `current_depth` becomes 4 and '(' is appended to `current_string`.
+Iteration 11:
+    -The character ')' is encountered, so `current_depth` becomes 3 and ')' is appended to `current_string`.
+Iteration 12:
+    -The character ')' is encountered, so `current_depth` becomes 2 and ')' is appended to `current_string`.
+Iteration 13:
+    -The character ')' is encountered, so `current_depth` becomes 1 and ')' is appended to `current_string`.
+Iteration 14:
+    -The character ')' is encountered, so `current_depth` becomes 0 and ')' is appended to `current_string`.
+    -Since `current_depth` is 0, `current_string` is appended to `result` and `current_string` is cleared.
+Iteration 15:
+    -The character '(' is encountered, so `current_depth` becomes 1 and '(' is appended to `current_string`.
+Iteration 16:
+    -The character ')' is encountered, so `current_depth` becomes 0 and ')' is appended to `current_string`.
+    -Since `current_depth` is 0, `current_string` is appended to `result` and `current_string` is cleared.
+Iteration 17:
+    -The character ')' is encountered, so `current_depth` becomes 0 and ')' is appended to `current_string`.
+    -Since `current_depth` is 0, `current_string` is appended to `result` and `current_string` is cleared.
+Iteration 18:
+    -The character ')' is encountered, so `current_depth` becomes 0 and ')' is appended to `current_string`.
+    -Since `current_depth` is 0, `current_string` is appended to `result` and `current_string` is cleared.
+
+Therefore, the final output of the function `separate_paren_groups('()()((((()()((()))))()()()))')` is ['()', '()', '((((()()((

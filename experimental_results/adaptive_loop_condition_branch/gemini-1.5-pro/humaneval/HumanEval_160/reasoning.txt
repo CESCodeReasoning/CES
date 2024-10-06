@@ -1,0 +1,10 @@
+The function `do_algebra` is called with (operator = ['**', '*', '+'], operand = [2, 3, 4, 5]).
+Inside the function, a variable `expression` is initialized to '2'.
+`zip(operator, operand[1:])` creates an iterator of tuples.
+First Iteration (oprt = '**', oprn = 3):
+    `expression += oprt + str(oprn)` results in `expression = '2**3'`.
+Second Iteration (oprt = '*', oprn = 4):
+    `expression += oprt + str(oprn)` results in `expression = '2**3*4'`.
+Third Iteration (oprt = '+', oprn = 5):
+    `expression += oprt + str(oprn)` results in `expression = '2**3*4+5'`.
+Finally, `eval(expression)` evaluates the expression and returns the result, which is 101.

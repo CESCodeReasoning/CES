@@ -1,0 +1,66 @@
+The function common(l1, l2) takes two lists, l1 and l2, as its parameters.
+The outer loop iterates through each element in l1 to compare it against the elements in l2.
+In the inner loop, for each element e1 in l1, compare it with every element e2 in l2.
+First Iteration:
+    - e1=1, e2 in l2=[5, 7, 1, 5, 9, 653, 121]
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 7, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 1, the condition e1 == e2 is True, the if branch is taken. Add 1 to ret.
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 9, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 653, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 121, the condition e1 == e2 is False, the if branch is not taken.
+Second Iteration:
+    - e1=4, e2 in l2=[5, 7, 1, 5, 9, 653, 121]
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 7, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 1, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 9, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 653, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 121, the condition e1 == e2 is False, the if branch is not taken.
+Third Iteration:
+    - e1=3, e2 in l2=[5, 7, 1, 5, 9, 653, 121]
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 7, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 1, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 9, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 653, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 121, the condition e1 == e2 is False, the if branch is not taken.
+Fourth Iteration:
+    - e1=34, e2 in l2=[5, 7, 1, 5, 9, 653, 121]
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 7, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 1, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 9, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 653, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 121, the condition e1 == e2 is False, the if branch is not taken.
+Fifth Iteration:
+    - e1=653, e2 in l2=[5, 7, 1, 5, 9, 653, 121]
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 7, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 1, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 9, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 653, the condition e1 == e2 is True, the if branch is taken. Add 653 to ret.
+    - When e2 = 121, the condition e1 == e2 is False, the if branch is not taken.
+Sixth Iteration:
+    - e1=2, e2 in l2=[5, 7, 1, 5, 9, 653, 121]
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 7, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 1, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 5, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 9, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 653, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 121, the condition e1 == e2 is False, the if branch is not taken.
+Seventh Iteration:
+    - e1=5, e2 in l2=[5, 7, 1, 5, 9, 653, 121]
+    - When e2 = 5, the condition e1 == e2 is True, the if branch is taken. Add 5 to ret.
+    - When e2 = 7, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 1, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 5, the condition e1 == e2 is True, the if branch is taken. Add 5 to ret.
+    - When e2 = 9, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 653, the condition e1 == e2 is False, the if branch is not taken.
+    - When e2 = 121, the condition e1 == e2 is False, the if branch is not taken.

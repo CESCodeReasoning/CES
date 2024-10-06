@@ -1,0 +1,9 @@
+The function `solution` takes a list `lst` as input and returns the sum of all odd numbers that are located at even indices in the list. The indices in Python are zero-based, meaning the first element is at index 0 (even), the second at index 1 (odd), and so on.
+
+For the input list [30, 13, 23, 32]:
+- Index 0: 30 (even index, even number) - not included in the sum.
+- Index 1: 13 (odd index, odd number) - not included in the sum.
+- Index 2: 23 (even index, odd number) - included in the sum.
+- Index 3: 32 (odd index, even number) - not included in the sum.
+
+The only number that meets the criteria (odd number at an even index) is 23. Therefore, the sum returned by the function is 23.

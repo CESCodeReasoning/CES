@@ -1,0 +1,17 @@
+The function `special_factorial` is called with (n = 4).
+Inside the function, two variables `fact_i` and `special_fact` are initialized to 1.
+`range(1, n+1)` = [1, 2, 3, 4] since there are 4 iterations in the loop.
+
+First Iteration (i = 1):
+    `fact_i` = 1 * 1 = 1
+    `special_fact` = 1 * 1 = 1
+Second Iteration (i = 2):
+    `fact_i` = 1 * 2 = 2
+    `special_fact` = 1 * 2 = 2
+Third Iteration (i = 3):
+    `fact_i` = 2 * 3 = 6
+    `special_fact` = 2 * 6 = 12
+Fourth Iteration (i = 4):
+    `fact_i` = 6 * 4 = 24
+    `special_fact` = 12 * 24 = 288
+After the loop completes, the function returns the value of `special_fact`, which is now 288.

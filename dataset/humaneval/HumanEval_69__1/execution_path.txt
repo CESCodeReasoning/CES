@@ -1,0 +1,40 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: search
+main.py(5):     frq = [0] * (max(lst) + 1)
+main.py(6):     for i in lst:
+main.py(7):         frq[i] += 1
+main.py(6):     for i in lst:
+main.py(7):         frq[i] += 1
+main.py(6):     for i in lst:
+main.py(7):         frq[i] += 1
+main.py(6):     for i in lst:
+main.py(7):         frq[i] += 1
+main.py(6):     for i in lst:
+main.py(7):         frq[i] += 1
+main.py(6):     for i in lst:
+main.py(7):         frq[i] += 1
+main.py(6):     for i in lst:
+main.py(7):         frq[i] += 1
+main.py(6):     for i in lst:
+main.py(7):         frq[i] += 1
+main.py(6):     for i in lst:
+main.py(9):     ans = -1
+main.py(10):     for i in range(1, len(frq)):
+main.py(11):         if frq[i] >= i:
+main.py(10):     for i in range(1, len(frq)):
+main.py(11):         if frq[i] >= i:
+main.py(10):     for i in range(1, len(frq)):
+main.py(11):         if frq[i] >= i:
+main.py(10):     for i in range(1, len(frq)):
+main.py(11):         if frq[i] >= i:
+main.py(10):     for i in range(1, len(frq)):
+main.py(11):         if frq[i] >= i:
+main.py(10):     for i in range(1, len(frq)):
+main.py(11):         if frq[i] >= i:
+main.py(10):     for i in range(1, len(frq)):
+main.py(11):         if frq[i] >= i:
+main.py(10):     for i in range(1, len(frq)):
+main.py(11):         if frq[i] >= i:
+main.py(12):             ans = i
+main.py(10):     for i in range(1, len(frq)):
+main.py(14):     return ans

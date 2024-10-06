@@ -1,0 +1,5 @@
+The function `vowels_count` is called with ( s = "bye" ).
+The string "bye" does not end with 'y' or 'Y', so the condition `s[-1] == 'y' or s[-1] == 'Y'` is not met.
+The function returns the count of vowels in the string, which is 1 (only 'e' is a vowel).
+
+Therefore, the final output of the function `vowels_count("bye")` is 1.

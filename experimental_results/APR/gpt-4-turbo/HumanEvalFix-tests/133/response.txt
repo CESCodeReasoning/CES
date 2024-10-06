@@ -1,0 +1,12 @@
+Here's the fixed code for the `sum_squares` function:
+
+```python
+def sum_squares(lst):
+    import math
+    squared = 0
+    for i in lst:
+        squared += math.ceil(i)**2
+    return squared
+```
+
+This corrected version of the function correctly computes the sum of the squares of the ceiling values of the elements in the list, as specified in the problem statement.

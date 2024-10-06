@@ -1,0 +1,92 @@
+The function `search` is called with ( lst = [2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1] ).
+Inside the function, a variable `frq` is initialized to a list of 0s with a length equal to the maximum value in the list `lst` plus 1.
+
+Iteration 1:
+    -The value of `i` is 2, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains -1.
+Iteration 2:
+    -The value of `i` is 7, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains -1.
+Iteration 3:
+    -The value of `i` is 8, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is true.
+    -The value of `ans` is updated to 8.
+Iteration 4:
+    -The value of `i` is 8, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is true.
+    -The value of `ans` remains 8.
+Iteration 5:
+    -The value of `i` is 4, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 8.
+Iteration 6:
+    -The value of `i` is 8, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is true.
+    -The value of `ans` remains 8.
+Iteration 7:
+    -The value of `i` is 7, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 8.
+Iteration 8:
+    -The value of `i` is 3, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 8.
+Iteration 9:
+    -The value of `i` is 9, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 8.
+Iteration 10:
+    -The value of `i` is 6, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 8.
+Iteration 11:
+    -The value of `i` is 5, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 8.
+Iteration 12:
+    -The value of `i` is 10, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is true.
+    -The value of `ans` is updated to 10.
+Iteration 13:
+    -The value of `i` is 4, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 10.
+Iteration 14:
+    -The value of `i` is 3, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 10.
+Iteration 15:
+    -The value of `i` is 6, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 10.
+Iteration 16:
+    -The value of `i` is 7, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 10.
+Iteration 17:
+    -The value of `i` is 1, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 10.
+Iteration 18:
+    -The value of `i` is 7, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 10.
+Iteration 19:
+    -The value of `i` is 4, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 10.
+Iteration 20:
+    -The value of `i` is 10, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is true.
+    -The value of `ans` remains 10.
+Iteration 21:
+    -The value of `i` is 8, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is true.
+    -The value of `ans` remains 10.
+Iteration 22:
+    -The value of `i` is 1, which is less than the length of `frq`.
+    -The condition `frq[i] >= i` is false.
+    -The value of `ans` remains 10.
+

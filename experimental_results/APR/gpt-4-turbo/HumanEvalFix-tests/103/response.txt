@@ -1,0 +1,30 @@
+Here are the fixed versions of the provided Python functions, `has_close_elements` and `rounded_avg`, with corrections and improvements based on the specifications and test cases provided:
+
+### Fixed `has_close_elements` Function
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to measure distance correctly
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed `rounded_avg` Function
+```python
+def rounded_avg(n: int, m: int) -> str:
+    if n > m:
+        return -1
+    summation = sum(range(n, m + 1))
+    count = m - n + 1
+    average = round(summation / count)
+    return bin(average)
+```
+
+These fixes address the issues in the original code:
+1. **`has_close_elements`**: The distance calculation now correctly uses the absolute value to ensure that the comparison is based on the magnitude of the difference, not the direction.
+2. **`rounded_avg`**: The function now correctly calculates the average by including both endpoints `n` and `m`, and it properly handles the case where `n` is greater than `m`. The binary conversion is applied to the rounded average, not just the sum or count.

@@ -1,0 +1,9 @@
+The function `pluck` is called with ( arr = [4,2,3] ).
+The condition `len(arr) == 0` is false, so the if branch is not taken.
+The function `filter` is used to create a new list `evens` that contains only the even numbers from `arr`. The condition `x%2 == 0` is used to check if a number is even.
+The condition `evens == []` is false, so the if branch is not taken.
+The function `min` is used to find the smallest even number in `evens`.
+The function `arr.index` is used to find the index of the smallest even number in `arr`.
+The function returns a list containing the smallest even number and its index.
+
+Therefore, the final output of the function `pluck([4,2,3])` is [2, 1].

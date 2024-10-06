@@ -1,0 +1,7 @@
+The function `compare_one` is called with ( a = 5, b = 6 ).
+`temp_a` and `temp_b` are initialized to `a` and `b`, respectively.
+`temp_a` is 5, which is an integer, so the first if branch is not taken.
+`temp_b` is 6, which is an integer, so the second if branch is not taken.
+`float(temp_a)` is 5.0, and `float(temp_b)` is 6.0, so the condition `float(temp_a) == float(temp_b)` is false.
+The else branch is taken, and the function returns `a` if `float(temp_a) > float(temp_b)`, which is false in this case.
+Therefore, the function returns `b`, which is 6.

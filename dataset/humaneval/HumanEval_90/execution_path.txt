@@ -1,0 +1,4 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: next_smallest
+main.py(3):     lst = sorted(set(lst))
+main.py(4):     return None if len(lst) < 2 else lst[1]

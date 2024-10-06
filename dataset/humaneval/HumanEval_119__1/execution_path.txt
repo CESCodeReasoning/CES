@@ -1,0 +1,76 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: match_parens
+main.py(5):     def check(s):
+main.py(16):     S1 = lst[0] + lst[1]
+main.py(17):     S2 = lst[1] + lst[0]
+main.py(18):     return 'Yes' if check(S1) or check(S2) else 'No'
+ --- modulename: main, funcname: check
+main.py(6):         val = 0
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(9):                 val = val + 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(9):                 val = val + 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(11):                 val = val - 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(9):                 val = val + 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(9):                 val = val + 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(11):                 val = val - 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(11):                 val = val - 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(9):                 val = val + 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(11):                 val = val - 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(11):                 val = val - 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(9):                 val = val + 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(11):                 val = val - 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(11):                 val = val - 1
+main.py(12):             if val < 0:
+main.py(13):                 return False
+ --- modulename: main, funcname: check
+main.py(6):         val = 0
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(9):                 val = val + 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(11):                 val = val - 1
+main.py(12):             if val < 0:
+main.py(7):         for i in s:
+main.py(8):             if i == '(':
+main.py(11):                 val = val - 1
+main.py(12):             if val < 0:
+main.py(13):                 return False

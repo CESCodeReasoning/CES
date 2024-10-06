@@ -1,0 +1,15 @@
+The function `hex_key` is called with ( num = "AB" ).
+Inside the function, a variable `total` is initialized to 0.
+The loop iterates from 0 through 2 (since ( len(num) = 2 )).
+First Iteration (i = 0)
+   - `i` is 0, which satisfies ( 0 <= i < 2 ).
+   - The condition `i < 2` is true.
+   - Action: `total += 1` results in `total = 1`.
+Second Iteration (i = 1)
+   - `i` is 1, which still satisfies ( 0 <= i < 2 ).
+   - The same condition is true.
+   - Action: `total += 1` updates `total` to 2 (`1 + 1 = 2`).
+Return Statement
+   - After the loop completes, the function returns the value of `total`, which is now 2.
+
+Therefore, the final output of the function `hex_key("AB")` is 2.

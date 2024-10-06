@@ -1,0 +1,6 @@
+The function `split_words` is called with ( txt = " ") .
+The condition `" " in txt` is True.
+The first branch is taken.
+The function returns the result of `txt.split()`, which is an empty list.
+
+Therefore, the final output of the function `split_words(" ")` is an empty list.

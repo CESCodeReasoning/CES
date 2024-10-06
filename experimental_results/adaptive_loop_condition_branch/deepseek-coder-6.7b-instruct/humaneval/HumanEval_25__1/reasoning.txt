@@ -1,0 +1,49 @@
+The function `factorize` is called with ( n = 3 * 19 * 3 * 19 ).
+Inside the function, a variable `fact` is initialized to an empty list.
+The loop iterates from 2 through the square root of n (since the square root of n is the largest possible factor).
+First Iteration (i = 2):
+    - 3 * 19 * 3 * 19 % 2 == 0.
+    - The condition `n % i == 0` is true. The if branch is taken.
+    - `fact.append(i)` appends 2 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 * 3 * 19 // 2 = 3 * 19 * 3 * 19.
+Second Iteration (i = 3):
+    - 3 * 19 * 3 * 19 % 3 == 0.
+    - The condition `n % i == 0` is true. The if branch is taken.
+    - `fact.append(i)` appends 3 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 * 3 * 19 // 3 = 3 * 19 * 3 * 19.
+Third Iteration (i = 4):
+    - 3 * 19 * 3 * 19 % 4 == 3.
+    - The condition `n % i == 0` is false. The else branch is taken.
+    - `i += 1` updates `i` to 5.
+Fourth Iteration (i = 5):
+    - 3 * 19 * 3 * 19 % 5 == 4.
+    - The condition `n % i == 0` is false. The else branch is taken.
+    - `i += 1` updates `i` to 6.
+Fifth Iteration (i = 6):
+    - 3 * 19 * 3 * 19 % 6 == 0.
+    - The condition `n % i == 0` is true. The if branch is taken.
+    - `fact.append(i)` appends 6 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 * 3 * 19 // 6 = 3 * 19 * 3 * 19.
+Sixth Iteration (i = 7):
+    - 3 * 19 * 3 * 19 % 7 == 2.
+    - The condition `n % i == 0` is false. The else branch is taken.
+    - `i += 1` updates `i` to 8.
+Seventh Iteration (i = 8):
+    - 3 * 19 * 3 * 19 % 8 == 7.
+    - The condition `n % i == 0` is false. The else branch is taken.
+    - `i += 1` updates `i` to 9.
+Eighth Iteration (i = 9):
+    - 3 * 19 * 3 * 19 % 9 == 0.
+    - The condition `n % i == 0` is true. The if branch is taken.
+    - `fact.append(i)` appends 9 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 * 3 * 19 // 9 = 3 * 19 * 3 * 19.
+Ninth Iteration (i = 10):
+    - 3 * 19 * 3 * 19 % 10 == 0.
+    - The condition `n % i == 0` is true. The if branch is taken.
+    - `fact.append(i)` appends 10 to `fact`.
+    - `n //= i` updates `n` to 3 * 19 * 3 * 19 // 10 = 3 * 19 * 3 * 19.
+After the loop completes, the function returns the value of `fact`, which is now [2, 3, 6, 9, 10].
+
+The condition `n > 1` is true, so the else branch is taken. `fact.append(n)` appends the remaining value of `n` to `fact`.
+After the loop completes, the function returns the value of `fact`, which is now [2, 3, 6, 9, 10, 3 * 19].
+<|EOT|>

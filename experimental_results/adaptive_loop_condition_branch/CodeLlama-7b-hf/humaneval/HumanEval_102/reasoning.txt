@@ -1,0 +1,7 @@
+The function `choose_num` is called with ( x = 12, y = 15 ).
+The condition `x > y` is false, therefore the first branch is not taken.
+The condition `y % 2 == 0` is true, therefore the second branch is taken and the method returns y.
+The condition `x == y` is false, therefore the third branch is not taken.
+The fourth branch is taken and the method returns y - 1.
+
+Therefore, the final output of the function `choose_num(12, 15)` is 14.

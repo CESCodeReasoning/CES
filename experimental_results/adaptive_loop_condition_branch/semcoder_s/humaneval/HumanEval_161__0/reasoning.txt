@@ -1,0 +1,23 @@
+The function `solve` is called with ( s = "#a@C" ).
+Inside the function, a variable `flg` is initialized to 0, and `idx` is initialized to 0.
+A new list `new_str` is created from the input string `s`.
+The first loop iterates over each character in the input string.
+First Iteration (i = '#'):
+   - The character '#' is not an alphabet, so no swapcase operation is performed.
+   - `flg` remains 0.
+   - `idx` is incremented to 1.
+Second Iteration (i = 'a'):
+   - The character 'a' is an alphabet, so swapcase operation is performed, changing 'a' to 'A'.
+   - `flg` is set to 1.
+   - `idx` is incremented to 2.
+Third Iteration (i = '@'):
+   - The character '@' is not an alphabet, so no swapcase operation is performed.
+   - `flg` remains 1.
+   - `idx` is incremented to 3.
+Fourth Iteration (i = 'C'):
+   - The character 'C' is an alphabet, so swapcase operation is performed, changing 'C' to 'c'.
+   - `flg` remains 1.
+   - `idx` is incremented to 4.
+The second loop concatenates the characters in `new_str` to form a new string `s`.
+Since `flg` is 1, the condition `flg == 0` is false, and the string `s` is returned in reverse order.
+Therefore, the final output of the function `solve("#a@C")` is "c@A".

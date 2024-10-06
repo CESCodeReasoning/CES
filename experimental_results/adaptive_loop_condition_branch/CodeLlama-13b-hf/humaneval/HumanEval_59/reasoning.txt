@@ -1,0 +1,89 @@
+The function `largest_prime_factor` is called with ( n = 15 ).
+Inside the function, a variable `largest` is initialized to 1.
+
+Iteration 1:
+    - The value of `j` is 2, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 1, which is not equal to 0.
+    - The value of `is_prime(j)` is False, since 2 is not a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is False.
+    - The value of `largest` is still 1.
+Iteration 2:
+    - The value of `j` is 3, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 0, which is equal to 0.
+    - The value of `is_prime(j)` is True, since 3 is a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is True.
+    - The value of `largest` is updated to 3.
+Iteration 3:
+    - The value of `j` is 4, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 1, which is not equal to 0.
+    - The value of `is_prime(j)` is False, since 4 is not a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is False.
+    - The value of `largest` is still 3.
+Iteration 4:
+    - The value of `j` is 5, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 0, which is equal to 0.
+    - The value of `is_prime(j)` is True, since 5 is a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is True.
+    - The value of `largest` is updated to 5.
+Iteration 5:
+    - The value of `j` is 6, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 1, which is not equal to 0.
+    - The value of `is_prime(j)` is False, since 6 is not a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is False.
+    - The value of `largest` is still 5.
+Iteration 6:
+    - The value of `j` is 7, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 0, which is equal to 0.
+    - The value of `is_prime(j)` is True, since 7 is a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is True.
+    - The value of `largest` is updated to 7.
+Iteration 7:
+    - The value of `j` is 8, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 1, which is not equal to 0.
+    - The value of `is_prime(j)` is False, since 8 is not a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is False.
+    - The value of `largest` is still 7.
+Iteration 8:
+    - The value of `j` is 9, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 1, which is not equal to 0.
+    - The value of `is_prime(j)` is False, since 9 is not a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is False.
+    - The value of `largest` is still 7.
+Iteration 9:
+    - The value of `j` is 10, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 1, which is not equal to 0.
+    - The value of `is_prime(j)` is False, since 10 is not a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is False.
+    - The value of `largest` is still 7.
+Iteration 10:
+    - The value of `j` is 11, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 1, which is not equal to 0.
+    - The value of `is_prime(j)` is False, since 11 is not a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is False.
+    - The value of `largest` is still 7.
+Iteration 11:
+    - The value of `j` is 12, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 1, which is not equal to 0.
+    - The value of `is_prime(j)` is False, since 12 is not a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is False.
+    - The value of `largest` is still 7.
+Iteration 12:
+    - The value of `j` is 13, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 1, which is not equal to 0.
+    - The value of `is_prime(j)` is False, since 13 is not a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is False.
+    - The value of `largest` is still 7.
+Iteration 13:
+    - The value of `j` is 14, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 1, which is not equal to 0.
+    - The value of `is_prime(j)` is False, since 14 is not a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is False.
+    - The value of `largest` is still 7.
+Iteration 14:
+    - The value of `j` is 15, which satisfies ( 2 <= j <= 15 ).
+    - The value of `n % j` is 0, which is equal to 0.
+    - The value of `is_prime(j)` is True, since 15 is a prime number.
+    - The condition `n % j == 0 and is_prime(j)` is True.
+    - The value of `largest` is updated to 15.
+
+Therefore, the final output of the function `largest_prime_factor(15)` is 15.

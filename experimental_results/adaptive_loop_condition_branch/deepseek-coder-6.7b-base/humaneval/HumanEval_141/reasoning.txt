@@ -1,0 +1,17 @@
+The function `file_name_check` is called with ( file_name = "example.txt" ).
+The input string is split into two parts using the `.` separator.
+The resulting list is assigned to the variable `lst`.
+The length of `lst` is checked using the `len` function.
+If the length is not equal to 2, the function returns "No".
+The second element of `lst` is checked against a list of allowed file extensions.
+If the second element is not in the list, the function returns "No".
+The first element of `lst` is checked to ensure it is not empty.
+If the first element is empty, the function returns "No".
+The first character of the first element is checked to ensure it is a letter.
+If the first character is not a letter, the function returns "No".
+The first element is then checked for digits using the `isdigit` method.
+The number of digits in the first element is counted using a list comprehension.
+If the number of digits is greater than 3, the function returns "No".
+If all checks pass, the function returns "Yes".
+
+Therefore, the final output of the function `file_name_check("example.txt")` is "Yes".

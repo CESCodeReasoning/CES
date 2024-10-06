@@ -1,0 +1,65 @@
+The function `parse_nested_parens` is called with ( paren_string = "(()(())((())))" ).
+Inside the function, a variable `depth` and `max_depth` are initialized to 0.
+
+Iteration 1:
+    -The character '(' is encountered, so depth becomes 1.
+    -The maximum depth is 1.
+Iteration 2:
+    -The character '(' is encountered, so depth becomes 2.
+    -The maximum depth is 2.
+Iteration 3:
+    -The character '(' is encountered, so depth becomes 3.
+    -The maximum depth is 3.
+Iteration 4:
+    -The character '(' is encountered, so depth becomes 4.
+    -The maximum depth is 4.
+Iteration 5:
+    -The character '(' is encountered, so depth becomes 5.
+    -The maximum depth is 5.
+Iteration 6:
+    -The character ')' is encountered, so depth becomes 4.
+    -The maximum depth is 5.
+Iteration 7:
+    -The character ')' is encountered, so depth becomes 3.
+    -The maximum depth is 5.
+Iteration 8:
+    -The character ')' is encountered, so depth becomes 2.
+    -The maximum depth is 5.
+Iteration 9:
+    -The character ')' is encountered, so depth becomes 1.
+    -The maximum depth is 5.
+Iteration 10:
+    -The character ')' is encountered, so depth becomes 0.
+    -The maximum depth is 5.
+Iteration 11:
+    -The character '(' is encountered, so depth becomes 1.
+    -The maximum depth is 5.
+Iteration 12:
+    -The character '(' is encountered, so depth becomes 2.
+    -The maximum depth is 5.
+Iteration 13:
+    -The character '(' is encountered, so depth becomes 3.
+    -The maximum depth is 5.
+Iteration 14:
+    -The character '(' is encountered, so depth becomes 4.
+    -The maximum depth is 5.
+Iteration 15:
+    -The character '(' is encountered, so depth becomes 5.
+    -The maximum depth is 5.
+Iteration 16:
+    -The character ')' is encountered, so depth becomes 4.
+    -The maximum depth is 5.
+Iteration 17:
+    -The character ')' is encountered, so depth becomes 3.
+    -The maximum depth is 5.
+Iteration 18:
+    -The character ')' is encountered, so depth becomes 2.
+    -The maximum depth is 5.
+Iteration 19:
+    -The character ')' is encountered, so depth becomes 1.
+    -The maximum depth is 5.
+Iteration 20:
+    -The character ')' is encountered, so depth becomes 0.
+    -The maximum depth is 5.
+
+Therefore, the final output of the function `parse_nested_parens("(()(())((())))")` is [5, 5, 5, 5].

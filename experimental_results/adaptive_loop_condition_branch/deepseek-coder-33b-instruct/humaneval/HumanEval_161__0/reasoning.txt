@@ -1,0 +1,17 @@
+The function `solve` is called with ( s = "#a@C" ).
+Inside the function, a variable `flg` is initialized to 0.
+A variable `idx` is initialized to 0.
+A list `new_str` is created from the string `s`.
+
+Iteration 1:
+    -The character '#' is not an alphabet, so `flg` remains 0.
+Iteration 2:
+    -The character 'a' is an alphabet, so `flg` becomes 1 and the character is swapped to 'A'.
+Iteration 3:
+    -The character '@' is not an alphabet, so `flg` remains 1.
+Iteration 4:
+    -The character 'C' is an alphabet, so `flg` remains 1 and the character is swapped to 'c'.
+
+The string `s` is recreated from the list `new_str`.
+
+Since `flg` is 1, the string `s` is returned as is.

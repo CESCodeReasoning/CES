@@ -1,0 +1,51 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: is_nested
+main.py(5):     opening_bracket_index = []
+main.py(6):     closing_bracket_index = []
+main.py(7):     for i in range(len(string)):
+main.py(8):         if string[i] == '[':
+main.py(9):             opening_bracket_index.append(i)
+main.py(7):     for i in range(len(string)):
+main.py(8):         if string[i] == '[':
+main.py(9):             opening_bracket_index.append(i)
+main.py(7):     for i in range(len(string)):
+main.py(8):         if string[i] == '[':
+main.py(9):             opening_bracket_index.append(i)
+main.py(7):     for i in range(len(string)):
+main.py(8):         if string[i] == '[':
+main.py(9):             opening_bracket_index.append(i)
+main.py(7):     for i in range(len(string)):
+main.py(8):         if string[i] == '[':
+main.py(11):             closing_bracket_index.append(i)
+main.py(7):     for i in range(len(string)):
+main.py(8):         if string[i] == '[':
+main.py(11):             closing_bracket_index.append(i)
+main.py(7):     for i in range(len(string)):
+main.py(8):         if string[i] == '[':
+main.py(11):             closing_bracket_index.append(i)
+main.py(7):     for i in range(len(string)):
+main.py(8):         if string[i] == '[':
+main.py(11):             closing_bracket_index.append(i)
+main.py(7):     for i in range(len(string)):
+main.py(12):     closing_bracket_index.reverse()
+main.py(13):     cnt = 0
+main.py(14):     i = 0
+main.py(15):     l = len(closing_bracket_index)
+main.py(16):     for idx in opening_bracket_index:
+main.py(17):         if i < l and idx < closing_bracket_index[i]:
+main.py(18):             cnt += 1
+main.py(19):             i += 1
+main.py(16):     for idx in opening_bracket_index:
+main.py(17):         if i < l and idx < closing_bracket_index[i]:
+main.py(18):             cnt += 1
+main.py(19):             i += 1
+main.py(16):     for idx in opening_bracket_index:
+main.py(17):         if i < l and idx < closing_bracket_index[i]:
+main.py(18):             cnt += 1
+main.py(19):             i += 1
+main.py(16):     for idx in opening_bracket_index:
+main.py(17):         if i < l and idx < closing_bracket_index[i]:
+main.py(18):             cnt += 1
+main.py(19):             i += 1
+main.py(16):     for idx in opening_bracket_index:
+main.py(20):     return cnt >= 2

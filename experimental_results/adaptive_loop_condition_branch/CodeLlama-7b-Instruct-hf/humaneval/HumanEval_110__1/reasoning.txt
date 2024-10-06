@@ -1,0 +1,11 @@
+The function `exchange` is called with ( lst1 = [100, 200], lst2 = [200, 200] ).
+Inside the function, two variables `odd` and `even` are initialized to 0.
+
+Iteration 1:
+    -The element 100 in lst1 is odd, so odd becomes 1.
+Iteration 2:
+    -The element 200 in lst1 is even, so even becomes 1.
+Iteration 3:
+    -The element 200 in lst2 is even, so even becomes 2.
+
+Since even is greater than or equal to odd, the function returns "YES".

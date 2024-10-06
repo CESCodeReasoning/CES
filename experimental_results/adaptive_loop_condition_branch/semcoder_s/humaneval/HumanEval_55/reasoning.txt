@@ -1,0 +1,14 @@
+The function `fib` is called with ( n = 10 ).
+The function checks if `n` is 0, if so it returns 0.
+The function checks if `n` is 1, if so it returns 1.
+If `n` is neither 0 nor 1, the function recursively calls itself with ( n - 1 ) and ( n - 2 ), adds the results and returns the sum.
+
+The function will recursively call itself with ( n - 1 ) and ( n - 2 ) until `n` is 0 or 1.
+
+For n = 10, the function will recursively call itself with ( n - 1 ) = 9 and ( n - 2 ) = 8.
+
+The function will continue to call itself with decreasing values of `n` until `n` reaches 0 or 1.
+
+After the recursive calls, the function will start returning the sum of the results.
+
+The final output of the function `fib(10)` is the sum of the results of the recursive calls.

@@ -1,0 +1,2 @@
+The function get_row takes two arguments: a list lst and an integer x. It returns a list of tuples, where each tuple contains the coordinates of the elements in lst that have the value x.
+To determine the output of executing the function get_row on the input ([], 1), we need to find the coordinates of the elements in the empty list that have the value 1. Since there are no such elements, the output is an empty list.

@@ -1,0 +1,8 @@
+The function `closest_integer` is called with ( value = "15.3" ).
+The condition ( value.count('.') == 1 ) is satisfied, therefore the if branch is taken.
+The variable `value` is updated to "15.3".
+The variable `num` is updated to 15.3.
+The condition ( value[-2:] == '.5' ) is satisfied, therefore the if branch is taken.
+The variable `num` is updated to 15.5.
+The variable `res` is updated to 16.
+The function returns `res` as the output.

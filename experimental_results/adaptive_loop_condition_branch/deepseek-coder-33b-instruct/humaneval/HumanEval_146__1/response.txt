@@ -1,0 +1,29 @@
+
+[REASONING]
+The function `specialFilter` is called with an empty list (nums = []).
+Inside the function, a variable `count` is initialized to 0.
+Since the list is empty, the loop does not execute.
+Therefore, the function returns 0.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def specialFilter(nums):
+
+    count = 0
+    for num in nums: ## [STATE]nums=[][/STATE]
+        if num > 10:
+            odd_digits = (1, 3, 5, 7, 9)
+            number_as_string = str(num)
+            if int(number_as_string[0]) in odd_digits and int(
+                    number_as_string[-1]) in odd_digits:
+                count += 1
+
+    return count
+[/ANSWER]
+
+[OUTPUT]
+0
+[/OUTPUT]

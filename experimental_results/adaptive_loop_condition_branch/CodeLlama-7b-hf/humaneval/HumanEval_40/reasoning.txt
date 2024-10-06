@@ -1,0 +1,50 @@
+The function triples_sum_to_zero(l) takes a list of numbers([1, 3, 5, 0]) as its parameter.
+The outer loop iterats through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+In the innermost loop, for each element indexed by j in the inner loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3 and 4.
+    - `l[i]` is 1, k in the innermost loop is 1, 2, 3 and 4.
+    - `l[i] + l[j] + l[k]` is 1 + 1 + 1 = 3, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+    - `i` is 0, j in the inner loop is 2, 3, 4 and 5.
+    - `l[i]` is 1, k in the innermost loop is 2, 3, 4 and 5.
+    - `l[i] + l[j] + l[k]` is 1 + 2 + 2 = 5, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+    - `i` is 0, j in the inner loop is 3, 4 and 5.
+    - `l[i]` is 1, k in the innermost loop is 3, 4 and 5.
+    - `l[i] + l[j] + l[k]` is 1 + 3 + 3 = 7, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+    - `i` is 0, j in the inner loop is 4 and 5.
+    - `l[i]` is 1, k in the innermost loop is 4 and 5.
+    - `l[i] + l[j] + l[k]` is 1 + 4 + 4 = 9, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+    - `i` is 0, j in the inner loop is 5.
+    - `l[i]` is 1, k in the innermost loop is 5.
+    - `l[i] + l[j] + l[k]` is 1 + 5 + 5 = 11, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4 and 5.
+    - `l[i]` is 3, k in the innermost loop is 2, 3, 4 and 5.
+    - `l[i] + l[j] + l[k]` is 3 + 2 + 2 = 7, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+    - `i` is 1, j in the inner loop is 3, 4 and 5.
+    - `l[i]` is 3, k in the innermost loop is 3, 4 and 5.
+    - `l[i] + l[j] + l[k]` is 3 + 3 + 3 = 11, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+    - `i` is 1, j in the inner loop is 4 and 5.
+    - `l[i]` is 3, k in the innermost loop is 4 and 5.
+    - `l[i] + l[j] + l[k]` is 3 + 4 + 4 = 13, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+    - `i` is 1, j in the inner loop is 5.
+    - `l[i]` is 3, k in the innermost loop is 5.
+    - `l[i] + l[j] + l[k]` is 3 + 5 + 5 = 17, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4 and 5.
+    - `l[i]` is 5, k in the innermost loop is 3, 4 and 5.
+    - `l[i] + l[j] + l[k]` is 5 + 3 + 3 = 13, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+    - `i` is 2, j in the inner loop is 4 and 5.
+    - `l[i]` is 5, k in the innermost loop is 4 and 5.
+    - `l[i] + l[j] + l[k]` is 5 + 4 + 4 = 17, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+    - `i` is 2, j in the inner loop is 5.
+    - `l[i]` is 5, k in the innermost loop is 5.
+    - `l[i] + l[j] + l[k]` is 5 + 5 + 5 = 25, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4 and 5.
+    - `l[i]` is 0, k in the innermost loop is 4 and 5.
+    - `l[i] + l[j] + l[k]` is 0 + 4 + 4 = 8, the condition `l[i] + l[j] + l[k] == 0` is False, the if branch is not taken.
+    - `i` is 3, j in the inner loop is 5.
+    - `l[i]` is 0, k in the innermost loop is 5.
+    - `l[i] + l[j] + l[k]` is 0 + 5 + 5 = 13, the condition `l[i] + l[j] + l[k] ==

@@ -1,0 +1,7 @@
+The function `is_prime` is called with ( n = 6 ).
+Inside the function, a conditional statement is used to check if n is less than 2.
+First Iteration:
+   - `n` is 6, which is not less than 2.
+   - The condition `n < 2` is false.
+   - Action: `return False` is executed, returning `False`.
+Therefore, the final output of the function `is_prime(6)` is `False`.

@@ -1,0 +1,5 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: prime_length
+main.py(5):     l = len(string)
+main.py(6):     if l == 0 or l == 1:
+main.py(7):         return False

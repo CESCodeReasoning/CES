@@ -1,0 +1,22 @@
+The bug in the `has_close_elements` function is that it is checking if the distance between two numbers is less than the threshold, but it should check if the absolute value of the distance is less than the threshold. This is because the distance between two numbers can be negative, and we want to consider the absolute value of the distance.
+
+The bug in the `filter_by_prefix` function is that it is checking if a string ends with a given prefix, but it should check if a string starts with a given prefix. This is because we want to filter the strings that start with the given prefix, not the ones that end with it.
+
+Here is the fixed code:
+
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+
+def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:
+    return [x for x in strings if x.startswith(prefix)]
+```

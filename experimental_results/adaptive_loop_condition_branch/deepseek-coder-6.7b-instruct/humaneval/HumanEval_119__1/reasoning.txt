@@ -1,0 +1,33 @@
+The function `match_parens` is called with ( lst = ['(()(())', '())())'] ).
+Inside the function, a helper function `check` is defined. This function takes a string `s` as input and checks if the parentheses in `s` are balanced.
+
+The helper function `check` iterates over each character in `s`. If the character is '(', it increments `val` by 1. If the character is ')', it decrements `val` by 1. If `val` becomes less than 0 at any point, the function returns False, indicating that the parentheses are not balanced.
+
+After the loop, if `val` is not 0, the function returns False. Otherwise, it returns True.
+
+The function `match_parens` then concatenates the two strings in `lst` and checks if the parentheses in these two strings are balanced. It does this by calling the helper function `check` on the concatenated strings. If either of the concatenated strings are balanced, the function returns 'Yes'. Otherwise, it returns 'No'.
+
+For the input ['(()(())', '())())'], the function concatenates '(()(())' and '())())' to get '(()(())())())'. This string is balanced, so the function returns 'Yes'.
+
+[ANSWER]
+def match_parens(lst):
+    def check(s):
+        val = 0
+        for i in s: ## [STATE]i=['(', ')', '(', '(', ')', '(', ')', ')', ')', ')'][/STATE][STATE]s=['(()(())())())'][/STATE]
+            if i == '(': ## [CONDITION](i == '(')=[True, False, True, True, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[Y, N, Y, Y, N, N, N, N, N, N][/BRANCH]
+                val = val + 1
+            else: ## [BRANCH]taken=[N, Y, N, N, Y, Y, Y, Y, Y, Y][/BRANCH]
+                val = val - 1
+            if val < 0: ## [CONDITION](val < 0)=[False, False, False, False, False, False, False, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, N, N, N, N, N, N, Y][/BRANCH]
+                return False
+        return True if val == 0 else False
+
+    S1 = lst[0] + lst[1]
+    S2 = lst[1] + lst[0]
+    return 'Yes' if check(S1) or check(S2) else 'No'
+[/ANSWER]
+
+[OUTPUT]
+'Yes'
+[/OUTPUT]
+<|EOT|>

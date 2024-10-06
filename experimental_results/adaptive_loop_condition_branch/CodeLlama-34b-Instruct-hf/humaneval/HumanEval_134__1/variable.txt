@@ -1,0 +1,11 @@
+from typing import *
+
+
+def check_if_last_char_is_a_letter(txt):
+    [REASONING]
+    The function check_if_last_char_is_a_letter takes a string txt as input and checks if the last character of the string is a letter.
+    To determine if the last character is a letter, the function first splits the string into a list of words using the split() method with a space as the separator.
+    It then takes the last word in the list using the [-1] index and checks its length. If the length is 1, it means the word is a single character, and the function checks if the character is a letter by converting it to lowercase and checking if its ASCII code is between 97 and 122 inclusive. If all the conditions are met, the function returns True, otherwise it returns False.
+    [/REASONING]
+    return True if len(txt.split(' ')[-1]) == 1 and (
+        97 <= ord(txt.split(' ')[-1].lower()) <= 122) else False

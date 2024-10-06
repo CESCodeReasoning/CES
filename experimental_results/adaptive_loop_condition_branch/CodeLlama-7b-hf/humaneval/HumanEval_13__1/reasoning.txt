@@ -1,0 +1,11 @@
+The function `greatest_common_divisor` is called with ( a = 144, b = 60 ).
+First Iteration:
+    - b = 60, a % b = 44.
+    - a, b = b, a % b updates a to 60, b to 44.
+Second Iteration:
+    - b = 44, a % b = 16.
+    - a, b = b, a % b updates a to 44, b to 16.
+Third Iteration:
+    - b = 16, a % b = 0.
+    - a, b = b, a % b updates a to 16, b to 0.
+After the loop completes, the function returns the value of `a`, which is now 16.

@@ -1,0 +1,5 @@
+The function `compare_one` is called with ( a = 5, b = 6 ).
+`a` and `b` are both integers, therefore the first two if statements are not executed.
+The third if statement is executed, and the method returns `a` since `float(temp_a) > float(temp_b)` is true.
+
+Therefore, the final output of the function `compare_one(5, 6)` is 5.

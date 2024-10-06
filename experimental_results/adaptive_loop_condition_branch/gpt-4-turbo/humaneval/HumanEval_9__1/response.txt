@@ -1,0 +1,52 @@
+[REASONING]
+The function `rolling_max` is called with the list `[1, 2, 3, 4]`.
+Inside the function, a variable `running_max` is initialized to `None` and an empty list `result` is created to store the running maximum values.
+
+Iteration 1:
+    - The number `n` is 1.
+    - Since `running_max` is `None`, the condition `(running_max is None)` is true.
+    - `running_max` is updated to 1.
+    - The value 1 is appended to `result`.
+
+Iteration 2:
+    - The number `n` is 2.
+    - `running_max` is not `None` now, so the `else` branch is taken.
+    - `running_max` is updated to the maximum of 1 and 2, which is 2.
+    - The value 2 is appended to `result`.
+
+Iteration 3:
+    - The number `n` is 3.
+    - Again, the `else` branch is taken.
+    - `running_max` is updated to the maximum of 2 and 3, which is 3.
+    - The value 3 is appended to `result`.
+
+Iteration 4:
+    - The number `n` is 4.
+    - The `else` branch is taken.
+    - `running_max` is updated to the maximum of 3 and 4, which is 4.
+    - The value 4 is appended to `result`.
+
+The function returns the list `[1, 2, 3, 4]` which represents the running maximum values for each element in the input list.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    running_max = None
+    result = []
+
+    for n in numbers: ## [STATE]n=[1, 2, 3, 4][/STATE][STATE]numbers=[1, 2, 3, 4][/STATE]
+        if running_max is None: ## [CONDITION](running_max is None)=[True, False, False, False][/CONDITION][BRANCH]taken=[Y, N, N, N][/BRANCH]
+            running_max = n
+        else: ## [BRANCH]taken=[N, Y, Y, Y][/BRANCH]
+            running_max = max(running_max, n)
+
+        result.append(running_max)
+
+    return result
+[/PYTHON]
+
+[OUTPUT]
+[1, 2, 3, 4]
+[/OUTPUT]

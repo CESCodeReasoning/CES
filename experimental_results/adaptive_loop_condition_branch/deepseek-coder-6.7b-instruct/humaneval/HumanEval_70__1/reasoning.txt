@@ -1,0 +1,10 @@
+The function `strange_sort_list` is called with ( lst = [111111]).
+Inside the function, a variable `res` is initialized to an empty list and `switch` is initialized to True.
+The loop iterates until `lst` is empty.
+In each iteration, it checks the value of `switch`. If `switch` is True, it appends the smallest element from `lst` to `res`, otherwise it appends the largest element. After appending, it removes the appended element from `lst` and flips the value of `switch`.
+First Iteration:
+    - lst = [111111], min(lst) = 111111.
+    -`res.append(min(lst))` updates `res` to [111111] ( [111111] ).
+    -`lst.remove(res[-1])` updates `lst` to [] ( [] ).
+    -`switch = not switch` updates `switch` to False ( False ).
+Since `lst` is empty, the while loop terminates. The function returns the value of `res`, which is now [111111].

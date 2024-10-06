@@ -1,0 +1,10 @@
+The function find_max takes a list of words as input and returns the word with the maximum length and the smallest lexicographic order.
+To determine the output of executing the function find_max on the input ["play", "this", "game", "of","footbott"], we need to find the word with the maximum length and the smallest lexicographic order.
+
+The word "play" has the maximum length of 4 and the smallest lexicographic order among the words with the same length.
+The word "this" has the maximum length of 4 and the smallest lexicographic order among the words with the same length.
+The word "game" has the maximum length of 4 and the smallest lexicographic order among the words with the same length.
+The word "of" has the maximum length of 2 and the smallest lexicographic order among the words with the same length.
+The word "footbott" has the maximum length of 8 and the smallest lexicographic order among the words with the same length.
+
+Therefore, the output of executing the function find_max on the input ["play", "this", "game", "of","footbott"] is "play".

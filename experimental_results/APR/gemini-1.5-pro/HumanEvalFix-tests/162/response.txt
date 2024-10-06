@@ -1,0 +1,15 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if abs(numbers[i] - numbers[j]) < threshold:
+                return True
+    return False
+```
+
+```python
+def string_to_md5(text):
+    import hashlib
+    return hashlib.md5(text.encode()).hexdigest() if text else None
+```

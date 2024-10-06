@@ -1,0 +1,62 @@
+The function common(l1, l2) takes two lists as its parameters.
+The outer loop iterates through each element in the first list.
+In the inner loop, for each element indexed by e1 in the outer loop, compare it with every element in the second list.
+First Iteration (e1=1):
+    - `e1` is 1, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - e1=1: compare with 5, 7, 1, 5, 9, 653, 121:
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 7 (e2=7), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 1 (e2=1), the condition `e1 == e2` is True, the if branch is taken. Add 1 to ret.
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 9 (e2=9), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 653 (e2=653), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 121 (e2=121), the condition `e1 == e2` is False, the if branch is not taken.
+Second Iteration (e1=4):
+    - `e1` is 4, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - e1=4: compare with 5, 7, 1, 5, 9, 653, 121:
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 7 (e2=7), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 1 (e2=1), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 9 (e2=9), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 653 (e2=653), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 121 (e2=121), the condition `e1 == e2` is False, the if branch is not taken.
+Third Iteration (e1=3):
+    - `e1` is 3, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - e1=3: compare with 5, 7, 1, 5, 9, 653, 121:
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 7 (e2=7), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 1 (e2=1), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 9 (e2=9), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 653 (e2=653), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 121 (e2=121), the condition `e1 == e2` is False, the if branch is not taken.
+Forth Iteration (e1=34):
+    - `e1` is 34, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - e1=34: compare with 5, 7, 1, 5, 9, 653, 121:
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 7 (e2=7), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 1 (e2=1), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 9 (e2=9), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 653 (e2=653), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 121 (e2=121), the condition `e1 == e2` is False, the if branch is not taken.
+Fifth Iteration (e1=653):
+    - `e1` is 653, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - e1=653: compare with 5, 7, 1, 5, 9, 653, 121:
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 7 (e2=7), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 1 (e2=1), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 9 (e2=9), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 653 (e2=653), the condition `e1 == e2` is True, the if branch is taken. Add 653 to ret.
+        - When e2 = 121 (e2=121), the condition `e1 == e2` is False, the if branch is not taken.
+Sixth Iteration (e1=2):
+    - `e1` is 2, e2 in the inner loop is 5, 7, 1, 5, 9, 653, 121.
+    - e1=2: compare with 5, 7, 1, 5, 9, 653, 121:
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 7 (e2=7), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 1 (e2=1), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 5 (e2=5), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 9 (e2=9), the condition `e1 == e2` is False, the if branch is not taken.
+        - When e2 = 653 (e2=653), the condition `e1 ==

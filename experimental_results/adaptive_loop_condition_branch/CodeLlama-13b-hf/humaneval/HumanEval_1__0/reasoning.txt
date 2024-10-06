@@ -1,0 +1,50 @@
+The function `separate_paren_groups` is called with ( paren_string = "(()(())((())))" ).
+Inside the function, a variable `result` is initialized to an empty list.
+Inside the function, a variable `current_string` is initialized to an empty list.
+Inside the function, a variable `current_depth` is initialized to 0.
+
+Iteration 1:
+    - The character '(' is encountered, so the current depth becomes 1.
+    - The character '(' is appended to the current string.
+Iteration 2:
+    - The character '(' is encountered, so the current depth becomes 2.
+    - The character '(' is appended to the current string.
+Iteration 3:
+    - The character '(' is encountered, so the current depth becomes 3.
+    - The character '(' is appended to the current string.
+Iteration 4:
+    - The character ')' is encountered, so the current depth becomes 2.
+    - The character ')' is appended to the current string.
+Iteration 5:
+    - The character ')' is encountered, so the current depth becomes 1.
+    - The character ')' is appended to the current string.
+Iteration 6:
+    - The character '(' is encountered, so the current depth becomes 2.
+    - The character '(' is appended to the current string.
+Iteration 7:
+    - The character ')' is encountered, so the current depth becomes 1.
+    - The character ')' is appended to the current string.
+Iteration 8:
+    - The character '(' is encountered, so the current depth becomes 2.
+    - The character '(' is appended to the current string.
+Iteration 9:
+    - The character ')' is encountered, so the current depth becomes 1.
+    - The character ')' is appended to the current string.
+Iteration 10:
+    - The character ')' is encountered, so the current depth becomes 0.
+    - The character ')' is appended to the current string.
+    - The current depth is 0, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 11:
+    - The character ')' is encountered, so the current depth becomes -1.
+    - The character ')' is appended to the current string.
+Iteration 12:
+    - The character ')' is encountered, so the current depth becomes -2.
+    - The character ')' is appended to the current string.
+    - The current depth is -2, so the current string is appended to the result list.
+    - The current string is cleared.
+Iteration 13:
+    - The character ')' is encountered, so the current depth becomes -3.
+    - The character ')' is appended to the current string.
+    - The current depth is -3, so the current string is appended to the result list.
+    - The current string is cleared.

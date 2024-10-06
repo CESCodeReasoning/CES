@@ -1,0 +1,116 @@
+The function `is_multiply_prime(a)` is called with ( a = 5 ).
+Inside the function, a nested function `is_prime(n)` is defined to check if a number is prime.
+The outer loop iterates from 2 to 100 (since the range is 101).
+The inner loops iterate from 2 to 100 (since the range is 101).
+The innermost loop iterates from 2 to 100 (since the range is 101).
+First Iteration (i = 2):
+   - `i` is 2, which is a prime number.
+   - The inner loop starts with j = 2.
+     - `j` is 2, which is a prime number.
+     - The innermost loop starts with k = 2.
+       - `k` is 2, which is a prime number.
+       - The condition `i*j*k == a` (2*2*2 == 5) is False.
+     - The innermost loop continues with k = 3.
+       - `k` is 3, which is a prime number.
+       - The condition `i*j*k == a` (2*2*3 == 5) is False.
+     - The innermost loop continues with k = 4.
+       - `k` is 4, which is not a prime number.
+     - The innermost loop continues with k = 5.
+       - `k` is 5, which is a prime number.
+       - The condition `i*j*k == a` (2*2*5 == 5) is False.
+     - The innermost loop continues with k = 6.
+       - `k` is 6, which is not a prime number.
+     - The innermost loop continues with k = 7.
+       - `k` is 7, which is a prime number.
+       - The condition `i*j*k == a` (2*2*7 == 5) is False.
+     - The innermost loop continues with k = 8.
+       - `k` is 8, which is not a prime number.
+     - The innermost loop continues with k = 9.
+       - `k` is 9, which is not a prime number.
+     - The innermost loop continues with k = 10.
+       - `k` is 10, which is not a prime number.
+     - The innermost loop continues with k = 11.
+       - `k` is 11, which is a prime number.
+       - The condition `i*j*k == a` (2*2*11 == 5) is False.
+     - The innermost loop continues with k = 12.
+       - `k` is 12, which is not a prime number.
+     - The innermost loop continues with k = 13.
+       - `k` is 13, which is a prime number.
+       - The condition `i*j*k == a` (2*2*13 == 5) is False.
+     - The innermost loop continues with k = 14.
+       - `k` is 14, which is not a prime number.
+     - The innermost loop continues with k = 15.
+       - `k` is 15, which is not a prime number.
+     - The innermost loop continues with k = 16.
+       - `k` is 16, which is not a prime number.
+     - The innermost loop continues with k = 17.
+       - `k` is 17, which is a prime number.
+       - The condition `i*j*k == a` (2*2*17 == 5) is False.
+     - The innermost loop continues with k = 18.
+       - `k` is 18, which is not a prime number.
+     - The innermost loop continues with k = 19.
+       - `k` is 19, which is a prime number.
+       - The condition `i*j*k == a` (2*2*19 == 5) is False.
+     - The innermost loop continues with k = 20.
+       - `k` is 20, which is not a prime number.
+     - The innermost loop continues with k = 21.
+       - `k` is 21, which is not a prime number.
+     - The innermost loop continues with k = 22.
+       - `k` is 22, which is not a prime number.
+     - The innermost loop continues with k = 23.
+       - `k` is 23, which is a prime number.
+       - The condition `i*j*k == a` (2*2*23 == 5) is False.
+     - The innermost loop continues with k = 24.
+       - `k` is 24, which is not a prime number.
+     - The innermost loop continues with k = 25.
+       - `k` is 25, which is not a prime number.
+     - The innermost loop continues with k = 26.
+       - `k` is 26, which is not a prime number.
+     - The innermost loop continues with k = 27.
+       - `k` is 27, which is not a prime number.
+     - The innermost loop continues with k = 28.
+       - `k` is 28, which is not a prime number.
+     - The innermost loop continues with k = 29.
+       - `k` is 29, which is a prime number.
+       - The condition `i*j*k == a` (2*2*29 == 5) is False.
+     - The innermost loop continues with k = 30.
+       - `k` is 30, which is not a prime number.
+     - The innermost loop continues with k = 31.
+       - `k` is 31, which is a prime number.
+       - The condition `i*j*k == a` (2*2*31 == 5) is False.
+     - The innermost loop continues with k = 32.
+       - `k` is 32, which is not a prime number.
+     - The innermost loop continues with k = 33.
+       - `k` is 33, which is not a prime number.
+     - The innermost loop continues with k = 34.
+       - `k` is 34, which is not a prime number.
+     - The innermost loop continues with k = 35.
+       - `k` is 35, which is not a prime number.
+     - The innermost loop continues with k = 36.
+       - `k` is 36, which is not a prime number.
+     - The innermost loop continues with k = 37.
+       - `k` is 37, which is a prime number.
+       - The condition `i*j*k == a` (2*2*37 == 5) is False.
+     - The innermost loop continues with k = 38.
+       - `k` is 38, which is not a prime number.
+     - The innermost loop continues with k = 39.
+       - `k` is 39, which is not a prime number.
+     - The innermost loop continues with k = 40.
+       - `k` is 40, which is not a prime number.
+     - The innermost loop continues with k = 41.
+       - `k` is 41, which is a prime number.
+       - The condition `i*j*k == a` (2*2*41 == 5) is False.
+     - The innermost loop continues with k = 42.
+       - `k` is 42, which is not a prime number.
+     - The innermost loop continues with k = 43.
+       - `k` is 43, which is a prime number.
+       - The condition `i*j*k == a` (2*2*43 == 5) is False.
+     - The innermost loop continues with k = 44.
+       - `k` is 44, which is not a prime number.
+     - The innermost loop continues with k = 45.
+       - `k` is 45, which is not a prime number.
+     - The innermost loop continues with k = 46.
+       - `k` is 46, which is not a prime number.
+     - The innermost loop continues with k = 47.
+       - `k` is 47, which is a prime number.
+       - The

@@ -1,0 +1,5 @@
+The function filter_by_prefix takes a list of strings and a prefix as input. It returns a new list that contains only the strings from the input list that start with the given prefix.
+
+To determine the output of executing the function filter_by_prefix on the input ['a', 'ab', 'abc', 'ba', 'bb', 'bc'] and 'a', we need to filter the list to only include the strings that start with 'a'.
+
+The strings that start with 'a' are 'a', 'ab', and 'abc'. Therefore, the output of executing the function filter_by_prefix on the input ['a', 'ab', 'abc', 'ba', 'bb', 'bc'] and 'a' is ['a', 'ab', 'abc'].

@@ -1,0 +1,19 @@
+The function `is_multiply_prime` checks if a number `a` can be expressed as the product of three prime numbers.
+
+The helper function `is_prime` checks if a number `n` is prime. It does this by checking if `n` is divisible by any number from 2 to `n-1`. If `n` is divisible by any of these numbers, it is not prime and the function returns `False`. If `n` is not divisible by any of these numbers, it is prime and the function returns `True`.
+
+The main function `is_multiply_prime` checks if `a` can be expressed as the product of three prime numbers. It does this by checking all possible combinations of three prime numbers. If it finds a combination that multiplies to `a`, it returns `True`. If it checks all combinations and does not find a match, it returns `False`.
+
+The prime numbers between 2 and 100 are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, and 97.
+
+The function `is_multiply_prime(125)` checks if 125 can be expressed as the product of three prime numbers. It does this by checking all possible combinations of three prime numbers.
+
+The first combination it checks is 2 * 3 * 5 = 30. Since 30 is not equal to 125, the function continues to the next combination.
+
+The next combination it checks is 2 * 3 * 7 = 42. Since 42 is not equal to 125, the function continues to the next combination.
+
+This process continues until it checks the combination 7 * 11 * 13 = 1001. Since 1001 is not equal to 125, the function continues to the next combination.
+
+The function checks all possible combinations and does not find a match, so it returns `False`.
+
+Therefore, the function `is_multiply_prime(125)` returns `False`.

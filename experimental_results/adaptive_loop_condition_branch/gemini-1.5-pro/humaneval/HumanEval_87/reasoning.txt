@@ -1,0 +1,4 @@
+The function get_row takes a list of lists lst and an integer x as input, and returns a list of tuples representing the coordinates of all occurrences of x in lst.
+The list comprehension [(i, j) for i in range(len(lst)) for j in range(len(lst[i])) if lst[i][j] == x] generates a list of tuples representing the coordinates of all occurrences of x in lst.
+The function sorted sorts the list of tuples by the second element in each tuple in reverse order, and then by the first element in each tuple.
+Therefore, the output of executing the function get_row on the input [], 1) is [].

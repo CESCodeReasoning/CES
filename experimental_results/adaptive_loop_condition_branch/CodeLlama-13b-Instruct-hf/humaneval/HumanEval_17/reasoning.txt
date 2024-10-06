@@ -1,0 +1,4 @@
+The function parse_music takes a string as input and returns a list of integers.
+The function first creates a dictionary called note_map, which maps each character in the input string to an integer value.
+The function then uses a list comprehension to iterate over the characters in the input string, and for each character, it looks up the corresponding integer value in the note_map dictionary and appends it to the output list.
+Finally, the function returns the output list.

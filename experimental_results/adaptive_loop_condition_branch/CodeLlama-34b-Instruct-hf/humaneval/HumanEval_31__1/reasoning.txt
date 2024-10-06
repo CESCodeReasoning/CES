@@ -1,0 +1,7 @@
+The function `is_prime` is called with ( n = 11 * 7 ).
+Inside the function, the first condition checks if ( n < 2 ).
+Since ( 11 * 7 = 77 ) is greater than 2, the condition is false.
+The function then enters the for loop, which iterates from 2 to ( n - 1 ) = 76.
+The loop checks if ( n % k == 0 ) for each iteration.
+Since 77 is not divisible by any number between 2 and 76, the condition is false for all iterations.
+Therefore, the function returns True.

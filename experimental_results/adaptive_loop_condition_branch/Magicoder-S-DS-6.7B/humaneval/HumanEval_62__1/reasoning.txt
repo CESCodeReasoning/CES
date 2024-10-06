@@ -1,0 +1,21 @@
+The function derivative takes a list of numbers xs as input and returns a list of the derivatives of the input list.
+
+The derivative of a function at a point is the limit of the difference quotient as the increment of the point tends to zero. In this case, the derivative of a function at a point is the slope of the tangent line at that point.
+
+The derivative of a constant function is zero. The derivative of a linear function is the constant of the function.
+
+For example, the derivative of the function y = 3x + 2 at the point x = 1 is 3.
+
+The derivative of a function at a point is calculated by multiplying the coefficient of the highest degree term by the power of the term minus one.
+
+In the list [3, 2, 1], the derivative is calculated as follows:
+
+- The derivative of the first term is 3 * 0 = 0
+- The derivative of the second term is 2 * 1 = 2
+- The derivative of the third term is 1 * 2 = 2
+
+So, the derivative of the function represented by the list [3, 2, 1] is [0, 2].
+
+The function derivative returns the derivative of the input list, excluding the first element (since the derivative of a constant function is zero).
+
+Therefore, the output of executing the function derivative on the input [3, 2, 1] is [2].

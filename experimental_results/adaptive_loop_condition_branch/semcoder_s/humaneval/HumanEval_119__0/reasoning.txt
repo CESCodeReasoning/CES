@@ -1,0 +1,13 @@
+The function `match_parens` is called with ( lst = ['())(', '()'] ).
+Inside the function, a variable `val` is initialized to 0.
+
+Iteration 1:
+    -The character '(' is encountered, so `val` becomes 1.
+Iteration 2:
+    -The character ')' is encountered, so `val` becomes 0.
+Iteration 3:
+    -The character '(' is encountered, so `val` becomes 1.
+Iteration 4:
+    -The character ')' is encountered, so `val` becomes 0.
+
+The function returns 'Yes' because the final value of `val` is 0, which means the parentheses are balanced.

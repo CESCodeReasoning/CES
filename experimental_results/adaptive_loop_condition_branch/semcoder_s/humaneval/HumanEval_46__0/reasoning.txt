@@ -1,0 +1,26 @@
+The function `fib4` is called with ( n = 10 ).
+The `results` list is initialized with [0, 0, 2, 0].
+The condition ( n < 4 ) is not satisfied, so we proceed to the loop.
+The loop iterates from 4 to 10 (since ( n = 10 )).
+First Iteration (_ = 4):
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [0, 0, 2, 0, 2].
+    results.pop(0) removes the first element from the list, making it [0, 2, 0, 2].
+Second Iteration (_ = 5):
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [2, 0, 2, 0, 2, 4].
+    results.pop(0) removes the first element from the list, making it [0, 2, 0, 2, 4].
+Third Iteration (_ = 6)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [0, 2, 0, 2, 4, 6].
+    results.pop(0) removes the first element from the list, making it [2, 0, 2, 4, 6].
+Fourth Iteration (_ = 7)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [2, 0, 2, 4, 6, 10].
+    results.pop(0) removes the first element from the list, making it [0, 2, 4, 6, 10].
+Fifth Iteration (_ = 8)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [2, 0, 2, 4, 6, 10, 18].
+    results.pop(0) removes the first element from the list, making it [0, 2, 4, 6, 10, 18].
+Sixth Iteration (_ = 9)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [2, 0, 2, 4, 6, 10, 18, 30].
+    results.pop(0) removes the first element from the list, making it [0, 2, 4, 6, 10, 18, 30].
+Seventh Iteration (_ = 10)
+    results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [2, 0, 2, 4, 6, 10, 18, 30, 50].
+    results.pop(0) removes the first element from the list, making it [0, 2, 4, 6, 10, 18, 30, 50].
+After the loop completes, the function returns the last element of the results list, which is 50.

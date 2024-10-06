@@ -1,0 +1,44 @@
+
+[REASONING]
+The function `rolling_max` is called with ( numbers = [3,2,3,100,3] ).
+Inside the function, a variable `running_max` is initialized to None.
+
+Iteration 1:
+    - `running_max` is None, so `running_max` is set to 3.
+    - `3` is appended to `result`.
+Iteration 2:
+    - `running_max` is not None, so `running_max` is set to the maximum of 3 and 2, which is 3.
+    - `3` is appended to `result`.
+Iteration 3:
+    - `running_max` is not None, so `running_max` is set to the maximum of 3 and 3, which is 3.
+    - `3` is appended to `result`.
+Iteration 4:
+    - `running_max` is not None, so `running_max` is set to the maximum of 3 and 100, which is 100.
+    - `100` is appended to `result`.
+Iteration 5:
+    - `running_max` is not None, so `running_max` is set to the maximum of 100 and 3, which is 100.
+    - `100` is appended to `result`.
+
+Therefore, the final output of the function `rolling_max([3,2,3,100,3])` is [3, 3, 3, 100, 100].
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def rolling_max(numbers: List[int]) -> List[int]:
+    running_max = None
+    result = []
+
+    for n in numbers: ## [STATE]n=[3, 2, 3, 100, 3][/STATE][STATE]numbers=[[3, 2, 3, 100, 3]][/STATE]
+        if running_max is None: ## [CONDITION](running_max is None)=[Y, N, N, N, N][/CONDITION][BRANCH]taken=[Y, N, N, N, N][/BRANCH]
+            running_max = n
+        else: ## [BRANCH]taken=[N, Y, Y, Y, Y][/BRANCH]
+            running_max = max(running_max, n)
+
+        result.append(running_max)
+
+    return result
+[/ANSWER]
+
+[OUTPUT]
+[3, 3, 3, 100, 100]
+[/OUTPUT]

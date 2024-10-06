@@ -1,0 +1,12 @@
+The function flip_case takes a string as input and returns a new string where the case of each character is flipped. 
+
+To determine the output of executing the function flip_case on the input 'Hello!', we need to flip the case of each character in the string. 
+
+In the string 'Hello!', the characters 'H', 'e', 'l', 'l', 'o', and '!' are all lowercase. 
+
+The swapcase() method in Python converts lowercase letters to uppercase letters and vice versa. 
+
+Therefore, the output of executing the function flip_case on the input 'Hello!' is 'hELLO!'.
+
+The function flip_case flips the case of each character in the string 'Hello!' to 'hELLO!'.
+

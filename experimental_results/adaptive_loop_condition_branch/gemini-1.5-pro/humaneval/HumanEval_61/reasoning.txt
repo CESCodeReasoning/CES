@@ -1,0 +1,14 @@
+The function `correct_bracketing` is called with ( brackets = "(()())" ).
+Inside the function, a variable `depth` is initialized to 0.
+The loop iterates through each character in the string.
+First Iteration (b = "(")
+   - The character is an opening bracket, so `depth` is incremented to 1.
+Second Iteration (b = "(")
+   - The character is another opening bracket, so `depth` is incremented to 2.
+Third Iteration (b = ")")
+   - The character is a closing bracket, so `depth` is decremented to 1.
+Fourth Iteration (b = ")")
+   - The character is another closing bracket, so `depth` is decremented to 0.
+Fifth Iteration (b = ")")
+   - The character is a closing bracket, so `depth` is decremented to -1.
+   - The condition `depth < 0` is true, so the function returns False.

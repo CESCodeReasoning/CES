@@ -1,0 +1,40 @@
+The function `is_nested` is called with ( string = '[[[[]]]]' ).
+Inside the function, two empty lists are initialized: `opening_bracket_index` and `closing_bracket_index`.
+
+Iteration 1:
+    -The character '[' is found at index 0, so it is appended to `opening_bracket_index`.
+Iteration 2:
+    -The character '[' is found at index 1, so it is appended to `opening_bracket_index`.
+Iteration 3:
+    -The character '[' is found at index 2, so it is appended to `opening_bracket_index`.
+Iteration 4:
+    -The character '[' is found at index 3, so it is appended to `opening_bracket_index`.
+Iteration 5:
+    -The character ']' is found at index 4, so it is appended to `closing_bracket_index`.
+Iteration 6:
+    -The character ']' is found at index 5, so it is appended to `closing_bracket_index`.
+Iteration 7:
+    -The character ']' is found at index 6, so it is appended to `closing_bracket_index`.
+Iteration 8:
+    -The character ']' is found at index 7, so it is appended to `closing_bracket_index`.
+
+After the loop, `closing_bracket_index` is reversed to [7, 6, 5, 4].
+
+Iteration 1:
+    -The index 0 in `opening_bracket_index` is less than the index 0 in `closing_bracket_index`, so the condition is true.
+    -The variable `cnt` is incremented by 1.
+    -The variable `i` is incremented by 1.
+Iteration 2:
+    -The index 1 in `opening_bracket_index` is less than the index 1 in `closing_bracket_index`, so the condition is true.
+    -The variable `cnt` is incremented by 1.
+    -The variable `i` is incremented by 1.
+Iteration 3:
+    -The index 2 in `opening_bracket_index` is less than the index 2 in `closing_bracket_index`, so the condition is true.
+    -The variable `cnt` is incremented by 1.
+    -The variable `i` is incremented by 1.
+Iteration 4:
+    -The index 3 in `opening_bracket_index` is less than the index 3 in `closing_bracket_index`, so the condition is true.
+    -The variable `cnt` is incremented by 1.
+    -The variable `i` is incremented by 1.
+
+After the loop, the function returns `True`.

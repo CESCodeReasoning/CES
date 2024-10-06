@@ -1,0 +1,118 @@
+The function `is_multiply_prime` is called with ( a = 3 * 6 * 7 ).
+The function `is_multiply_prime` calls the nested function `is_prime`.
+The function `is_prime` checks if a number is prime.
+The function `is_multiply_prime` checks if there are three prime numbers i, j, k such that i * j * k = a.
+
+Iteration 1:
+    - The number 2 is prime, so i = 2.
+    - The number 3 is prime, so j = 3.
+    - The number 5 is prime, so k = 5.
+    - 2 * 3 * 5 = 30, which is not equal to a = 3 * 6 * 7.
+Iteration 2:
+    - The number 2 is prime, so i = 2.
+    - The number 3 is prime, so j = 3.
+    - The number 7 is prime, so k = 7.
+    - 2 * 3 * 7 = 42, which is not equal to a = 3 * 6 * 7.
+Iteration 3:
+    - The number 2 is prime, so i = 2.
+    - The number 5 is prime, so j = 5.
+    - The number 7 is prime, so k = 7.
+    - 2 * 5 * 7 = 70, which is not equal to a = 3 * 6 * 7.
+Iteration 4:
+    - The number 2 is prime, so i = 2.
+    - The number 3 is prime, so j = 3.
+    - The number 11 is prime, so k = 11.
+    - 2 * 3 * 11 = 66, which is not equal to a = 3 * 6 * 7.
+Iteration 5:
+    - The number 2 is prime, so i = 2.
+    - The number 5 is prime, so j = 5.
+    - The number 13 is prime, so k = 13.
+    - 2 * 5 * 13 = 130, which is not equal to a = 3 * 6 * 7.
+Iteration 6:
+    - The number 2 is prime, so i = 2.
+    - The number 7 is prime, so j = 7.
+    - The number 11 is prime, so k = 11.
+    - 2 * 7 * 11 = 154, which is not equal to a = 3 * 6 * 7.
+Iteration 7:
+    - The number 2 is prime, so i = 2.
+    - The number 7 is prime, so j = 7.
+    - The number 13 is prime, so k = 13.
+    - 2 * 7 * 13 = 186, which is not equal to a = 3 * 6 * 7.
+Iteration 8:
+    - The number 2 is prime, so i = 2.
+    - The number 11 is prime, so j = 11.
+    - The number 13 is prime, so k = 13.
+    - 2 * 11 * 13 = 276, which is not equal to a = 3 * 6 * 7.
+Iteration 9:
+    - The number 3 is prime, so i = 3.
+    - The number 5 is prime, so j = 5.
+    - The number 7 is prime, so k = 7.
+    - 3 * 5 * 7 = 105, which is not equal to a = 3 * 6 * 7.
+Iteration 10:
+    - The number 3 is prime, so i = 3.
+    - The number 5 is prime, so j = 5.
+    - The number 11 is prime, so k = 11.
+    - 3 * 5 * 11 = 165, which is not equal to a = 3 * 6 * 7.
+Iteration 11:
+    - The number 3 is prime, so i = 3.
+    - The number 7 is prime, so j = 7.
+    - The number 11 is prime, so k = 11.
+    - 3 * 7 * 11 = 231, which is not equal to a = 3 * 6 * 7.
+Iteration 12:
+    - The number 3 is prime, so i = 3.
+    - The number 7 is prime, so j = 7.
+    - The number 13 is prime, so k = 13.
+    - 3 * 7 * 13 = 221, which is not equal to a = 3 * 6 * 7.
+Iteration 13:
+    - The number 3 is prime, so i = 3.
+    - The number 11 is prime, so j = 11.
+    - The number 13 is prime, so k = 13.
+    - 3 * 11 * 13 = 399, which is not equal to a = 3 * 6 * 7.
+Iteration 14:
+    - The number 5 is prime, so i = 5.
+    - The number 7 is prime, so j = 7.
+    - The number 11 is prime, so k = 11.
+    - 5 * 7 * 11 = 385, which is not equal to a = 3 * 6 * 7.
+Iteration 15:
+    - The number 5 is prime, so i = 5.
+    - The number 7 is prime, so j = 7.
+    - The number 13 is prime, so k = 13.
+    - 5 * 7 * 13 = 425, which is not equal to a = 3 * 6 * 7.
+Iteration 16:
+    - The number 5 is prime, so i = 5.
+    - The number 11 is prime, so j = 11.
+    - The number 13 is prime, so k = 13.
+    - 5 * 11 * 13 = 685, which is not equal to a = 3 * 6 * 7.
+Iteration 17:
+    - The number 7 is prime, so i = 7.
+    - The number 11 is prime, so j = 11.
+    - The number 13 is prime, so k = 13.
+    - 7 * 11 * 13 = 987, which is not equal to a = 3 * 6 * 7.
+Iteration 18:
+    - The number 11 is prime, so i = 11.
+    - The number 13 is prime, so j = 13.
+    - The number 17 is prime, so k = 17.
+    - 11 * 13 * 17 = 2210, which is not equal to a = 3 * 6 * 7.
+Iteration 19:
+    - The number 11 is prime, so i = 11.
+    - The number 13 is prime, so j = 13.
+    - The number 19 is prime, so k = 19.
+    - 11 * 13 * 19 = 2673, which is not equal to a = 3 * 6 * 7.
+Iteration 20:
+    - The number 11 is prime, so i = 11.
+    - The number 17 is prime, so j = 17.
+    - The number 19 is prime, so k = 19.
+    - 11 * 17 * 19 = 3003, which is not equal to a = 3 * 6 * 7.
+Iteration 21:
+    - The number 13 is prime, so i = 13.
+    - The number 17 is prime, so j = 17.
+    - The number 19 is prime, so k = 19.
+    - 13 * 17 * 19 = 4187, which is not equal to a = 3 * 6 * 7.
+Iteration 22:
+    - The number 17 is prime, so i = 17.
+    - The number 19 is prime, so j = 19.
+    - The number 23 is prime, so k = 23.
+    - 17 * 19 * 23 = 5145, which is not equal to a = 3 * 6 * 7.
+Iteration 23:
+    - The number 19 is prime, so i = 19.
+    - The number

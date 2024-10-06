@@ -1,0 +1,14 @@
+The function `search` is called with ( lst = [8, 8, 8, 8, 8, 8, 8, 8] ).
+Inside the function, a variable `frq` is initialized to a list of 0s with length equal to the maximum value in `lst` plus 1.
+
+Iteration 1:
+    - `i` is 8, and `frq[i]` is 8.
+    - `frq[i] += 1` updates `frq[i]` to 9.
+Iteration 2:
+    - `i` is 8, and `frq[i]` is 9.
+    - `frq[i] += 1` updates `frq[i]` to 10.
+Iteration 3:
+    - `i` is 8, and `frq[i]` is 10.
+    - `frq[i] >= i` is true, so `ans` is updated to 8.
+
+Therefore, the final output of the function `search([8, 8, 8, 8, 8, 8, 8, 8])` is 8.

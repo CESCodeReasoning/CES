@@ -1,0 +1,26 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def find_max(words):
+    words.sort()
+    max_unique = 0
+    result = ""
+    for word in words:
+        unique_count = len(set(word))
+        if unique_count > max_unique:
+            max_unique = unique_count
+            result = word
+    return result
+```

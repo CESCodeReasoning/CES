@@ -1,0 +1,60 @@
+The function find_closest_elements(numbers) takes a list of numbers([1.0, 2.0, 3.9, 4.0, 5.0, 2.2]) as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (idx=0):
+    - `idx` is 0, idx2 in the inner loop is 1, 2, 3, 4, 5.
+    - numbers[idx]=1.0: compare with 2.0, 3.9, 4.0, 5.0, 2.2:
+        - When idx2 = 1 (numbers[idx2]=2.0), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 1.0, closest_pair is set to (1.0, 2.0).
+            - If distance is not None, then new_distance is set to 1.0, distance is set to 1.0, closest_pair is set to (1.0, 2.0).
+        - When idx2 = 2 (numbers[idx2]=3.9), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 2.9, closest_pair is set to (1.0, 3.9).
+            - If distance is not None, then new_distance is set to 2.9, distance is set to 2.9, closest_pair is set to (1.0, 3.9).
+        - When idx2 = 3 (numbers[idx2]=4.0), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 3.1, closest_pair is set to (1.0, 4.0).
+            - If distance is not None, then new_distance is set to 3.1, distance is set to 3.1, closest_pair is set to (1.0, 4.0).
+        - When idx2 = 4 (numbers[idx2]=5.0), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 4.0, closest_pair is set to (1.0, 5.0).
+            - If distance is not None, then new_distance is set to 4.0, distance is set to 4.0, closest_pair is set to (1.0, 5.0).
+        - When idx2 = 5 (numbers[idx2]=2.2), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 1.9, closest_pair is set to (1.0, 2.2).
+            - If distance is not None, then new_distance is set to 1.9, distance is set to 1.9, closest_pair is set to (1.0, 2.2).
+Second Iteration (idx=1):
+    - `idx` is 1, idx2 in the inner loop is 2, 3, 4, 5.
+    - numbers[idx]=2.0: compare with 3.9, 4.0, 5.0, 2.2:
+        - When idx2 = 2 (numbers[idx2]=3.9), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 1.9, closest_pair is set to (2.0, 3.9).
+            - If distance is not None, then new_distance is set to 1.9, distance is set to 1.9, closest_pair is set to (2.0, 3.9).
+        - When idx2 = 3 (numbers[idx2]=4.0), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 2.0, closest_pair is set to (2.0, 4.0).
+            - If distance is not None, then new_distance is set to 2.0, distance is set to 2.0, closest_pair is set to (2.0, 4.0).
+        - When idx2 = 4 (numbers[idx2]=5.0), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 3.0, closest_pair is set to (2.0, 5.0).
+            - If distance is not None, then new_distance is set to 3.0, distance is set to 3.0, closest_pair is set to (2.0, 5.0).
+        - When idx2 = 5 (numbers[idx2]=2.2), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 0.8, closest_pair is set to (2.0, 2.2).
+            - If distance is not None, then new_distance is set to 0.8, distance is set to 0.8, closest_pair is set to (2.0, 2.2).
+Third Iteration (idx=2):
+    - `idx` is 2, idx2 in the inner loop is 3, 4, 5.
+    - numbers[idx]=3.9: compare with 4.0, 5.0, 2.2:
+        - When idx2 = 3 (numbers[idx2]=4.0), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 0.1, closest_pair is set to (3.9, 4.0).
+            - If distance is not None, then new_distance is set to 0.1, distance is set to 0.1, closest_pair is set to (3.9, 4.0).
+        - When idx2 = 4 (numbers[idx2]=5.0), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 1.1, closest_pair is set to (3.9, 5.0).
+            - If distance is not None, then new_distance is set to 1.1, distance is set to 1.1, closest_pair is set to (3.9, 5.0).
+        - When idx2 = 5 (numbers[idx2]=2.2), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 0.7, closest_pair is set to (3.9, 2.2).
+            - If distance is not None, then new_distance is set to 0.7, distance is set to 0.7, closest_pair is set to (3.9, 2.2).
+Forth Iteration (idx=3):
+    - `idx` is 3, idx2 in the inner loop is 4, 5.
+    - numbers[idx]=4.0: compare with 5.0, 2.2:
+        - When idx2 = 4 (numbers[idx2]=5.0), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 1.0, closest_pair is set to (4.0, 5.0).
+            - If distance is not None, then new_distance is set to 1.0, distance is set to 1.0, closest_pair is set to (4.0, 5.0).
+        - When idx2 = 5 (numbers[idx2]=2.2), the condition `idx != idx2` is True, the if branch is taken.
+            - If distance is None, then distance is set to 1.8, closest_pair is set to (4.0, 2.2).
+            - If distance is not None, then new_distance is set to 1.8, distance is set to 1.8, closest_pair is set to (4.0, 2.2).
+Fifth Iteration (idx=4):
+    - `idx` is 4, idx2 in the inner loop is 5.
+    - numbers[idx]=5.0: compare with 

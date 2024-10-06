@@ -1,0 +1,17 @@
+The function `even_odd_count` is called with the argument `num = -78`.
+Inside the function:
+- The absolute value of `num` is taken, resulting in `78`.
+- This number is then converted to a string, resulting in the string `"78"`.
+- The function initializes two counters: `even_count` and `odd_count` both set to 0.
+
+Iteration 1:
+    - The character '7' is checked.
+    - Since `7 % 2 != 0`, it is odd.
+    - The `odd_count` is incremented by 1.
+
+Iteration 2:
+    - The character '8' is checked.
+    - Since `8 % 2 == 0`, it is even.
+    - The `even_count` is incremented by 1.
+
+After iterating through all characters in the string, the function returns a tuple containing the counts of even and odd digits, which are 1 and 1, respectively.

@@ -1,0 +1,46 @@
+[REASONING]
+The function `count_nums` takes an array of integers as input and returns the count of numbers that have a positive sum of digits.
+
+The function `digits_sum` takes an integer as input and returns the sum of its digits. If the input integer is negative, the function multiplies the sum by -1 to make it positive.
+
+The function `count_nums` uses the `filter` function to filter out the numbers that have a non-positive sum of digits. The `filter` function takes a lambda function as input, which takes a number as input and returns True if the number is greater than 0, and False otherwise.
+
+The `count_nums` function then returns the length of the list of numbers that have a positive sum of digits.
+
+In this case, the input array is [1, 6, 9, -6, 0, 1, 5].
+
+The `digits_sum` function is called on each number in the array.
+
+For the number 1, the sum of digits is 1, which is positive.
+For the number 6, the sum of digits is 6, which is positive.
+For the number 9, the sum of digits is 9, which is positive.
+For the number -6, the sum of digits is -6, which is negative.
+For the number 0, the sum of digits is 0, which is non-positive.
+For the number 1, the sum of digits is 1, which is positive.
+For the number 5, the sum of digits is 5, which is positive.
+
+The `filter` function filters out the numbers that have a non-positive sum of digits. In this case, the numbers -6 and 0 are filtered out.
+
+The `count_nums` function returns the length of the list of numbers that have a positive sum of digits, which is 5.
+
+Therefore, the output of the function `count_nums([1, 6, 9, -6, 0, 1, 5])` is 5.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def count_nums(arr):
+    def digits_sum(n):
+        neg = 1
+        if n < 0: ## [CONDITION](n < 0)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+            n, neg = -1 * n, -1
+        n = [int(i) for i in str(n)]
+        n[0] = n[0] * neg
+        return sum(n)
+    return len(list(filter(lambda x: x > 0, [digits_sum(i) for i in arr])))
+[/ANSWER]
+
+[OUTPUT]
+5
+[/OUTPUT]

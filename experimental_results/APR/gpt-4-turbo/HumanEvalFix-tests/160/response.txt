@@ -1,0 +1,32 @@
+Here are the fixed versions of the two functions `has_close_elements` and `do_algebra`:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `do_algebra`
+```python
+def do_algebra(operator, operand):
+    expression = str(operand[0])
+    for oprt, oprn in zip(operator, operand[1:]):
+        expression += oprt + str(oprn)
+    return eval(expression)
+```
+
+### Explanation of Fixes
+
+#### `has_close_elements`:
+- The main issue was the lack of the `abs` function to calculate the absolute difference between two numbers. Without `abs`, the function could incorrectly ignore cases where `elem2` is greater than `elem1`.
+
+#### `do_algebra`:
+- The original code incorrectly concatenated `expression` with itself (`expression += expression + oprt + str(oprn)`), which would lead to a malformed and incorrect expression string. The fix simplifies the concatenation to correctly build the expression string by appending each operator and operand in sequence.

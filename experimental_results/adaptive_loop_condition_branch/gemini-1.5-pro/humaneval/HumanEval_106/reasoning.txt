@@ -1,0 +1,11 @@
+The function f(n) takes an integer n as its parameter.
+It initializes an empty list ret.
+It then iterates through the numbers from 1 to n (inclusive) using a for loop.
+For each number i, it checks if i is even (i.e., i % 2 == 0).
+If i is even, it initializes a variable x to 1 and iterates through the numbers from 1 to i (inclusive) using a nested for loop.
+For each number j in the nested loop, it multiplies x by j.
+After the nested loop, it appends x to the list ret.
+If i is odd, it initializes a variable x to 0 and iterates through the numbers from 1 to i (inclusive) using a nested for loop.
+For each number j in the nested loop, it adds j to x.
+After the nested loop, it appends x to the list ret.
+Finally, the function returns the list ret.

@@ -1,0 +1,195 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: count_up_to
+main.py(5):     primes = []
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(12):         if is_prime:
+main.py(13):             primes.append(i)
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(12):         if is_prime:
+main.py(13):             primes.append(i)
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(10):                 is_prime = False
+main.py(11):                 break
+main.py(12):         if is_prime:
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(12):         if is_prime:
+main.py(13):             primes.append(i)
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(10):                 is_prime = False
+main.py(11):                 break
+main.py(12):         if is_prime:
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(12):         if is_prime:
+main.py(13):             primes.append(i)
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(10):                 is_prime = False
+main.py(11):                 break
+main.py(12):         if is_prime:
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(10):                 is_prime = False
+main.py(11):                 break
+main.py(12):         if is_prime:
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(10):                 is_prime = False
+main.py(11):                 break
+main.py(12):         if is_prime:
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(12):         if is_prime:
+main.py(13):             primes.append(i)
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(10):                 is_prime = False
+main.py(11):                 break
+main.py(12):         if is_prime:
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(12):         if is_prime:
+main.py(13):             primes.append(i)
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(10):                 is_prime = False
+main.py(11):                 break
+main.py(12):         if is_prime:
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(10):                 is_prime = False
+main.py(11):                 break
+main.py(12):         if is_prime:
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(10):                 is_prime = False
+main.py(11):                 break
+main.py(12):         if is_prime:
+main.py(6):     for i in range(2, n):
+main.py(7):         is_prime = True
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(9):             if i % j == 0:
+main.py(8):         for j in range(2, i):
+main.py(12):         if is_prime:
+main.py(13):             primes.append(i)
+main.py(6):     for i in range(2, n):
+main.py(14):     return primes

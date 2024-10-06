@@ -1,0 +1,5 @@
+The function derivative takes a list of numbers xs as input and returns a list of numbers.
+The function returns the derivative of the input list xs.
+The derivative of a list of numbers is defined as the list of differences between consecutive elements of the input list.
+For example, the derivative of the list [3, 1, 2, 4, 5] is [1, 1, 2, 1].
+The function derivative returns the derivative of the input list xs.

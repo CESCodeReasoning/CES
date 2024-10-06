@@ -1,0 +1,3 @@
+The function is_bored takes a string S as input and returns a boolean value indicating whether the string contains at least one sentence that starts with "I " and ends with a period, exclamation mark, or question mark.
+To determine whether the string "Hello world" contains at least one sentence that starts with "I " and ends with a period, exclamation mark, or question mark, we need to check if the first two characters of the string are "I " and the last character is a period, exclamation mark, or question mark.
+Therefore, the function is_bored returns True for the input "Hello world" because the first two characters are "I " and the last character is a period.

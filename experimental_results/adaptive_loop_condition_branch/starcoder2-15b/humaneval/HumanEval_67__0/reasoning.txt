@@ -1,0 +1,21 @@
+The function `fruit_distribution` is called with ( s = "2 apples and 3 oranges", n = 5 ).
+Inside the function, a variable `lis` is initialized to an empty list.
+The loop iterates over the words in the string `s` separated by spaces.
+First Iteration (i = "2")
+   - `i` is a digit, so the condition `i.isdigit()` is true.
+   - Action: `lis.append(int(i))` appends the integer value of `i` to the list `lis`.
+Second Iteration (i = "apples")
+   - `i` is not a digit, so the condition `i.isdigit()` is false.
+   - Action: The loop continues to the next iteration.
+Third Iteration (i = "and")
+   - `i` is not a digit, so the condition `i.isdigit()` is false.
+   - Action: The loop continues to the next iteration.
+Fourth Iteration (i = "3")
+   - `i` is a digit, so the condition `i.isdigit()` is true.
+   - Action: `lis.append(int(i))` appends the integer value of `i` to the list `lis`.
+Fifth Iteration (i = "oranges")
+   - `i` is not a digit, so the condition `i.isdigit()` is false.
+   - Action: The loop continues to the next iteration.
+After the loop completes, the function returns the difference between `n` and the sum of the integers in the list `lis`.
+
+Therefore, the final output of the function `fruit_distribution("2 apples and 3 oranges", 5)` is 0.

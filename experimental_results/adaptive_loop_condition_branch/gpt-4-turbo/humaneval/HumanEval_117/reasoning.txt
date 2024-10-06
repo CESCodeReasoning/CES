@@ -1,0 +1,17 @@
+The function `select_words(s, n)` takes a string `s` and an integer `n` as parameters. The goal is to find all words in the string `s` that have exactly `n` consonants.
+
+1. The string "Mary had a little lamb" is split into words: ["Mary", "had", "a", "little", "lamb"].
+2. For each word, the function counts the number of consonants:
+   - "Mary": M, r, y (3 consonants)
+   - "had": h, d (2 consonants)
+   - "a": (0 consonants)
+   - "little": l, t, t, l (4 consonants)
+   - "lamb": l, m, b (3 consonants)
+3. The function then checks if the number of consonants in each word equals `n` (which is 4 in this case):
+   - "Mary" has 3 consonants, does not match.
+   - "had" has 2 consonants, does not match.
+   - "a" has 0 consonants, does not match.
+   - "little" has 4 consonants, matches.
+   - "lamb" has 3 consonants, does not match.
+4. The word "little" is the only word that matches the condition of having exactly 4 consonants, so it is added to the result list.
+5. The function returns the list containing the word "little".

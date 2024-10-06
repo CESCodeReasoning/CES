@@ -1,0 +1,33 @@
+The function `largest_prime_factor` is called with ( n = 15 ).
+Inside the function, a variable `largest` is initialized to 1.
+
+Iteration 1:
+    -The number 2 is a factor of 15 and is a prime number, so largest becomes 2.
+Iteration 2:
+    -The number 3 is a factor of 15 and is a prime number, so largest becomes 3.
+Iteration 3:
+    -The number 4 is a factor of 15 but not a prime number, so largest remains 3.
+Iteration 4:
+    -The number 5 is a factor of 15 and is a prime number, so largest becomes 5.
+Iteration 5:
+    -The number 6 is a factor of 15 but not a prime number, so largest remains 5.
+Iteration 6:
+    -The number 7 is a factor of 15 and is a prime number, so largest becomes 7.
+Iteration 7:
+    -The number 8 is a factor of 15 but not a prime number, so largest remains 7.
+Iteration 8:
+    -The number 9 is a factor of 15 but not a prime number, so largest remains 7.
+Iteration 9:
+    -The number 10 is a factor of 15 but not a prime number, so largest remains 7.
+Iteration 10:
+    -The number 11 is a factor of 15 and is a prime number, so largest becomes 11.
+Iteration 11:
+    -The number 12 is a factor of 15 but not a prime number, so largest remains 11.
+Iteration 12:
+    -The number 13 is a factor of 15 and is a prime number, so largest becomes 13.
+Iteration 13:
+    -The number 14 is a factor of 15 but not a prime number, so largest remains 13.
+Iteration 14:
+    -The number 15 is a factor of 15 and is a prime number, so largest becomes 15.
+
+Therefore, the final output of the function `largest_prime_factor(15)` is 15.

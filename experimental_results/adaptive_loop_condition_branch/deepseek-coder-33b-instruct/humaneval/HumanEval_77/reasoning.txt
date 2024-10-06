@@ -1,0 +1,3 @@
+The function iscube takes a number a as input. It first calculates the absolute value of a to ensure that the function works correctly for negative numbers. Then it calculates the cube root of a and rounds it to the nearest integer. It then cubes this rounded value and checks if it is equal to the original number a. If it is, the function returns True, otherwise it returns False.
+
+To determine the output of executing the function iscube on the input 1, we first calculate the cube root of 1, which is 1. This is equal to 1 cubed, so the function returns True.

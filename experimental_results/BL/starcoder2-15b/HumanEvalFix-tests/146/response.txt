@@ -1,0 +1,16 @@
+```response
+                if int(number_as_string[0]) in odd_digits and int(number_as_string[-1]) in odd_digits:
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(word):
+    return word == word[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("abba") == True
+    assert is_palindrome("abcba") == True
+    assert is_palindrome("abccba")

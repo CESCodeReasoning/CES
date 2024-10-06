@@ -1,0 +1,4 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: check_if_last_char_is_a_letter
+main.py(4):     check = txt.split(' ')[-1]
+main.py(5):     return True if len(check) == 1 and (97 <= ord(check.lower()) <= 122) else False

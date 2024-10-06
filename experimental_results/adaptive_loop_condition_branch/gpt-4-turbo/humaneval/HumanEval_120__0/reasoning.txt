@@ -1,0 +1,7 @@
+The function `maximum` is called with the array `[-3, 2, 1, 2, -1, -2, 1]` and `k = 1`.
+The function first checks if `k` is equal to 0. Since `k` is 1, this condition is false, and the branch is not taken.
+The array is then sorted, resulting in `[-3, -2, -1, 1, 1, 2, 2]`.
+The function extracts the last `k` elements from the sorted array, which is `[2]` since `k = 1`.
+The function returns `[2]` as the result.
+
+Therefore, the final output of the function `maximum([-3, 2, 1, 2, -1, -2, 1], 1)` is `[2]`.

@@ -1,0 +1,13 @@
+The function `below_threshold` is called with ( l = [1, 8, 4, 10], t = 11 ).
+The function iterates over the list `l`.
+
+Iteration 1:
+    -The element 1 is not greater than or equal to 11, so the function continues to the next element.
+Iteration 2:
+    -The element 8 is greater than 11, so the function returns False.
+Iteration 3:
+    -The element 4 is not greater than or equal to 11, so the function continues to the next element.
+Iteration 4:
+    -The element 10 is not greater than or equal to 11, so the function continues to the next element.
+
+Since the function did not return False in any of the iterations, it means that all elements in the list are less than the threshold. Therefore, the function returns True.

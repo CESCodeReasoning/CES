@@ -1,0 +1,12 @@
+The function `largest_smallest_integers` takes a list of integers as input and returns a tuple containing the largest and smallest negative integers in the list.
+
+To determine the output of executing the function `largest_smallest_integers` on the input `[]`, we need to find the largest and smallest negative integers in the list. However, the input list is empty, so there are no negative integers to find.
+
+Therefore, the output of executing the function `largest_smallest_integers` on the input `[]` is `(None, None)`.
+
+Here, `None` is used to represent the absence of a value, as there are no negative or positive integers in the input list.
+
+[OUTPUT]
+`(None, None)`
+[OUTPUT]
+<|EOT|>

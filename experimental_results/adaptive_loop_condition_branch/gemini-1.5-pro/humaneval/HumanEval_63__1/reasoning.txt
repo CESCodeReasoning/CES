@@ -1,0 +1,7 @@
+The function `fibfib` is called with ( n = 10 ).
+The first condition ( n == 0 ) is false, so the first branch is not taken.
+The second condition ( n == 1 ) is false, so the second branch is not taken.
+The third condition ( n == 2 ) is false, so the third branch is not taken.
+Therefore, the function proceeds to the last line, which is a recursive call to `fibfib` with ( n - 1 ), ( n - 2 ), and ( n - 3 ).
+This process continues until the base cases ( n == 0, n == 1, or n == 2 ) are reached.
+The results of the recursive calls are then combined to calculate the final result.

@@ -1,0 +1,42 @@
+[REASONING]
+The function `below_zero` is called with the list of operations `[1, 2, -3, 1, 2, -3]`.
+Inside the function, a variable `balance` is initialized to 0.
+
+Iteration 1:
+    - The operation is `1`. The balance becomes `0 + 1 = 1`.
+    - The balance is not less than 0, so the loop continues.
+Iteration 2:
+    - The operation is `2`. The balance becomes `1 + 2 = 3`.
+    - The balance is not less than 0, so the loop continues.
+Iteration 3:
+    - The operation is `-3`. The balance becomes `3 - 3 = 0`.
+    - The balance is not less than 0, so the loop continues.
+Iteration 4:
+    - The operation is `1`. The balance becomes `0 + 1 = 1`.
+    - The balance is not less than 0, so the loop continues.
+Iteration 5:
+    - The operation is `2`. The balance becomes `1 + 2 = 3`.
+    - The balance is not less than 0, so the loop continues.
+Iteration 6:
+    - The operation is `-3`. The balance becomes `3 - 3 = 0`.
+    - The balance is not less than 0, so the loop continues.
+
+After all operations are processed, the balance never went below zero. Therefore, the function returns `False`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+
+    for op in operations: ## [STATE]op=[1, 2, -3, 1, 2, -3][/STATE][STATE]operations=[1, 2, -3, 1, 2, -3][/STATE]
+        balance += op
+        if balance < 0: ## [CONDITION](balance < 0)=[False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N][/BRANCH]
+            return True
+
+    return False
+[/PYTHON]
+
+[OUTPUT]
+False
+[/OUTPUT]

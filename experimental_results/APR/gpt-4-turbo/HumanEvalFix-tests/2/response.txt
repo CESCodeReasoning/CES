@@ -1,0 +1,23 @@
+Here are the fixed versions of the two functions, `has_close_elements` and `truncate_number`, with the corrections applied as per the specifications provided:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to calculate the correct distance
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `truncate_number`
+```python
+def truncate_number(number: float) -> float:
+    return number % 1.0  # Correctly return the decimal part of the number
+```
+
+These corrections ensure that the functions behave as expected based on the test cases and the problem descriptions provided.

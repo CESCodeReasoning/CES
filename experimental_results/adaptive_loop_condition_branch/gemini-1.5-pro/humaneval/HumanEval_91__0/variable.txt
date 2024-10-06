@@ -1,0 +1,13 @@
+from typing import *
+
+
+def is_bored(S):
+    import re
+    sentences = re.split(r'[.?!]\s*', S)
+    # [STATE]sentences = ['You and I are going for a walk'][/STATE]
+    count = 0
+    for sentence in sentences:
+        # [CONDITION]sentence[0:2] == 'I '[/CONDITION]
+        # [BRANCH]Y[/BRANCH]
+        count += 1
+    return count

@@ -1,0 +1,17 @@
+The function `how_many_times` is called with ( string = 'xyxyxyx', substring = 'x' ).
+Inside the function, a variable `times` is initialized to 0.
+
+Iteration 1:
+    -The substring 'x' is found at index 0, so times becomes 1.
+Iteration 2:
+    -The substring 'x' is found at index 1, so times becomes 2.
+Iteration 3:
+    -The substring 'x' is found at index 2, so times becomes 3.
+Iteration 4:
+    -The substring 'x' is found at index 3, so times becomes 4.
+Iteration 5:
+    -The substring 'x' is found at index 4, so times becomes 5.
+Iteration 6:
+    -The substring 'x' is found at index 5, so times becomes 6.
+Iteration 7:
+    -The substring 'x' is found at index 6, so times becomes 7.

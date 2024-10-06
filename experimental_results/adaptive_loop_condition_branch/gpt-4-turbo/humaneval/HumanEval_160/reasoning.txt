@@ -1,0 +1,11 @@
+The function `do_algebra` is called with `operator = ['**', '*', '+']` and `operand = [2, 3, 4, 5]`.
+Inside the function, the variable `expression` is initialized to the string representation of the first element of `operand`, which is '2'.
+The `zip` function pairs each element from `operator` with each element from `operand[1:]` (i.e., elements after the first one). This results in the pairs: ('**', 3), ('*', 4), ('+', 5).
+The loop iterates over these pairs:
+First Iteration (oprt = '**', oprn = 3):
+    `expression` is updated to '2' + '**' + '3' resulting in '2**3'.
+Second Iteration (oprt = '*', oprn = 4):
+    `expression` is updated to '2**3' + '*' + '4' resulting in '2**3*4'.
+Third Iteration (oprt = '+', oprn = 5):
+    `expression` is updated to '2**3*4' + '+' + '5' resulting in '2**3*4+5'.
+After the loop, the `eval` function evaluates the string '2**3*4+5' to calculate the result of the expression, which is 2 raised to the power of 3, multiplied by 4, and then added to 5, resulting in 37.

@@ -1,0 +1,17 @@
+```response
+    return ' '.join([x for x in numbers.split(' ') if x])
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+def find_max_sum(numbers: List[int]) -> int:
+    max_sum = numbers[0]
+    current_sum = numbers[0]
+
+    for num in numbers[1:]:
+        current_sum = max(current_sum + num, num)
+        max

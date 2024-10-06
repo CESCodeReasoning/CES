@@ -1,0 +1,4 @@
+The function find_closest_elements(numbers) takes a list of floating point numbers as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element that comes after it in the list.
+The function checks if the current pair of elements are closer than the previously found closest pair. If it is, it updates the closest pair and the distance.

@@ -1,0 +1,17 @@
+The function `rounded_avg` is called with ( n = 350, m = 902 ).
+Inside the function, the condition ( m < n ) is evaluated. Since ( m = 902 ) is not less than ( n = 350 ), the if branch is not taken and the execution continues to the next line.
+The variable `summation` is initialized to 0.
+The loop iterates from 350 through 902 (since ( m = 902 )).
+First Iteration (i = 350):
+    `summation += i` updates `summation` to 350 ( 0 + 350 = 350 ).
+Second Iteration (i = 351):
+    `summation += i` updates `summation` to 701 ( 350 + 351 = 701 ).
+Third Iteration (i = 352)
+    `summation += i` updates `summation` to 1053 ( 701 + 352 = 1053 ).
+...
+Fifth Iteration (i = 901)
+    `summation += i` updates `summation` to 445352 ( 1053 + 901 = 445352 ).
+Sixth Iteration (i = 902)
+    `summation += i` updates `summation` to 454554 ( 445352 + 902 = 454554 ).
+After the loop completes, the expression `round(summation / (m - n + 1))` is evaluated. Since ( m - n + 1 ) = 553, the expression evaluates to `round(454554 / 553)` which is 82.
+Finally, the function returns the binary representation of 82, which is "0b1010010".

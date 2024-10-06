@@ -1,0 +1,32 @@
+[REASONING]
+The function `sort_array` takes a list of integers `arr` as input and returns a sorted version of the list. The sorting is done in two steps:
+1. The list is first sorted in ascending order.
+2. The list is then sorted based on the count of '1's in the binary representation of each number, using a lambda function as the key for sorting.
+
+For the input `[1,5,2,3,4]`:
+- First, the list is sorted to `[1, 2, 3, 4, 5]`.
+- Next, we calculate the count of '1's in the binary representation of each number:
+  - `1` in binary is `1`, which has 1 '1'.
+  - `2` in binary is `10`, which has 1 '1'.
+  - `3` in binary is `11`, which has 2 '1's.
+  - `4` in binary is `100`, which has 1 '1'.
+  - `5` in binary is `101`, which has 2 '1's.
+- Sorting by the count of '1's, while keeping the original order for ties, results in `[1, 2, 4, 3, 5]`.
+
+Thus, the output of executing `sort_array` on the input `[1,5,2,3,4]` is `[1, 2, 4, 3, 5]`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+def sort_array(arr):
+    # [STATE] arr is initially [1, 5, 2, 3, 4] [/STATE]
+    # First sort by ascending order
+    first_sort = sorted(arr)  # [STATE] first_sort is [1, 2, 3, 4, 5] [/STATE]
+    # Second sort by the count of '1's in the binary representation
+    final_sort = sorted(first_sort, key=lambda x: bin(x)[2:].count('1'))  # [STATE] final_sort is [1, 2, 4, 3, 5] [/STATE]
+    return final_sort
+[/PYTHON]
+
+[OUTPUT]
+[1, 2, 4, 3, 5]
+[/OUTPUT]

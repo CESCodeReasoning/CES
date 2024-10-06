@@ -1,0 +1,18 @@
+from typing import *
+def prime_fib(n: int):
+    import math
+
+    def is_prime(p):
+        if p < 2: ## [CONDITION](p < 2)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+            return False
+        for k in range(2, min(int(math.sqrt(p)) + 1, p - 1)):
+            if p % k == 0:
+                return False
+        return True
+    f = [0, 1]
+    while True:
+        f.append(f[-1] + f[-2])
+        if is_prime(f[-1]): ## [CONDITION](is_prime(f[-1]))=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            n -= 1
+        if n == 0: ## [CONDITION](n == 0)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            return f[-1]

@@ -1,0 +1,108 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def compare_one(a, b):
+    temp_a, temp_b = a, b
+    if isinstance(temp_a, str): temp_a = temp_a.replace(',','.').replace('.',',')
+    if isinstance(temp_b, str): temp_b = temp_b.replace(',','.')
+    if float(temp_a) == float(temp_b): return None
+    return a if float(temp_a) > float(temp_b) else b 
+
+Tests:
+def check(compare_one):
+
+    # Check some simple cases
+    assert compare_one(1, 2) == 2
+    assert compare_one(1, 2.5) == 2.5
+    assert compare_one(2, 3) == 3
+    assert compare_one(5, 6) == 6
+    assert compare_one(1, "2,3") == "2,3"
+    assert compare_one("5,1", "6") == "6"
+    assert compare_one("1", "2") == "2"
+    assert compare_one("1", 1) == None
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True
+
+check(compare_one)
+
+The code should satisfy the following natural language specification:
+Write a Python function `compare_one(a, b)` to solve the following problem:
+Create a function that takes integers, floats, or strings representing
+real numbers, and returns the larger variable in its given variable type.
+Return None if the values are equal.
+Note: If a real number is represented as a string, the floating point might be . or ,
+compare_one(1, 2.5) ➞ 2.5
+compare_one(1, "2,3") ➞ "2,3"
+compare_one("5,1", "6") ➞ "6"
+compare_one("1", 1) ➞ None
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return a if float(temp_a) > float(temp_b) else b 
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def prime_gaps(g, m, n):
+    primes = [i for i in range(m, n+1) if is_prime(i)]
+    return [(primes[i], primes[i+1]) for i in range(len(primes)-1) if primes[i+1] - primes[i] == g]
+
+Tests:
+def check(prime_gaps):
+    assert prime_gaps(2, 10, 30) == [(11, 13), (17, 19), (23, 25), (29, 31)]
+    assert prime_gaps(4, 50, 100) == [(57, 61), (73, 77), (89, 93)]
+    assert prime_gaps(6, 100, 200) == [(103, 109), (137, 143), (163, 169), (193, 199)]
+    assert prime_gaps(8, 300, 400) == [(313, 319), (347, 353), (379, 385), (397, 401)]
+    assert prime_gaps(10, 500, 600) == [(523, 529), (563, 569), (593, 599)]
+    assert prime_gaps(2, 1000, 2000) == [(1009,

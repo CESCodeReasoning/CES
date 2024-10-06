@@ -1,0 +1,11 @@
+The function `order_by_points` is called with the list `nums = [1, 11, -1, -11, -12]`.
+The function `order_by_points` returns a sorted list of the input list `nums`, where the sorting is done based on the sum of the digits of each number.
+The function `digits_sum` is a helper function that takes a number `n` as input and returns the sum of the digits of `n`.
+If `n` is negative, the function `digits_sum` multiplies the sum of the digits by -1 to make it positive.
+The function `digits_sum` converts the number `n` to a string, then converts each character in the string to an integer, and finally sums up the integers.
+The function `sorted` is used to sort the list `nums` based on the key specified by the `key` parameter.
+The `key` parameter is a function that takes an element of the list as input and returns a value that is used for sorting.
+In this case, the `key` parameter is the function `digits_sum`, which returns the sum of the digits of each number.
+Therefore, the list `nums` is sorted based on the sum of the digits of each number.
+
+Therefore, the final output of the function `order_by_points([1, 11, -1, -11, -12])` is `[-12, -11, -1, 1, 11]`.

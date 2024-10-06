@@ -1,0 +1,40 @@
+The function `match_parens` is called with ( lst = ['(()(())', '())())'] ).
+Inside the function, a variable `S1` and `S2` are initialized to the concatenation of the first and second elements of the input list.
+
+Iteration 1:
+    -The character '(' is encountered, so val becomes 1.
+Iteration 2:
+    -The character '(' is encountered, so val becomes 2.
+Iteration 3:
+    -The character '(' is encountered, so val becomes 3.
+Iteration 4:
+    -The character ')' is encountered, so val becomes 2.
+Iteration 5:
+    -The character ')' is encountered, so val becomes 1.
+Iteration 6:
+    -The character ')' is encountered, so val becomes 0.
+Iteration 7:
+    -The character '(' is encountered, so val becomes 1.
+Iteration 8:
+    -The character ')' is encountered, so val becomes 0.
+Iteration 9:
+    -The character ')' is encountered, so val becomes -1.
+
+The function `check` returns False because val is less than 0.
+
+Iteration 1:
+    -The character ')' is encountered, so val becomes 0.
+Iteration 2:
+    -The character '(' is encountered, so val becomes 1.
+Iteration 3:
+    -The character '(' is encountered, so val becomes 2.
+Iteration 4:
+    -The character ')' is encountered, so val becomes 1.
+Iteration 5:
+    -The character ')' is encountered, so val becomes 0.
+Iteration 6:
+    -The character ')' is encountered, so val becomes -1.
+
+The function `check` returns False because val is less than 0.
+
+The function `match_parens` returns 'No' because the function `check` returns False for both `S1` and `S2`.

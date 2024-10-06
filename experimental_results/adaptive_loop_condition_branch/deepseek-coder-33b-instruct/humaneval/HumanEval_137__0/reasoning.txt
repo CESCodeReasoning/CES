@@ -1,0 +1,6 @@
+The function `compare_one` is called with ( a = 5, b = 6 ).
+`a` and `b` are integers, so the conditions `isinstance(temp_a, str)` and `isinstance(temp_b, str)` are false.
+The condition `float(temp_a) == float(temp_b)` is also false, because 5 is not equal to 6.
+The function returns the value of `a` if `float(temp_a) > float(temp_b)`, which is false, so it returns `b`, which is 6.
+
+Therefore, the final output of the function `compare_one(5, 6)` is 6.

@@ -1,0 +1,23 @@
+
+[REASONING]
+The function `modp` is called with (n = 0, p = 101).
+Inside the function, a variable `ret` is initialized to 1.
+The loop iterates from 0 to n-1 (since range(n) = []).
+Since the loop doesn't run at all, `ret` remains 1.
+After the loop completes, the function returns the value of `ret`, which is 1.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def modp(n: int, p: int):
+    ret = 1
+    for i in range(n): ## [STATE]range(n)=[][/STATE][STATE]n=0[/STATE]
+        ret = (2 * ret) % p
+    return ret
+[/ANSWER]
+
+[OUTPUT]
+1
+[/OUTPUT]

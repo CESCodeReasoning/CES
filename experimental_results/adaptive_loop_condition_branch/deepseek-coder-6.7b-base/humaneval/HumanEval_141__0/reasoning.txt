@@ -1,0 +1,15 @@
+The function `file_name_check` is called with ( file_name = 'I563_No.exe' ).
+The input string is split into two parts using the '.' separator.
+The length of the resulting list is checked.
+If the length is not equal to 2, the function returns 'No'.
+The second part of the input string is checked against a list of allowed file extensions.
+If the second part is not in the list, the function returns 'No'.
+The first part of the input string is checked for emptyness.
+If the first part is empty, the function returns 'No'.
+The first character of the first part is checked for alphabetic character.
+If the first character is not alphabetic, the function returns 'No'.
+The number of digits in the first part is counted.
+If the count is greater than 3, the function returns 'No'.
+If all the conditions are satisfied, the function returns 'Yes'.
+
+Therefore, the final output of the function `file_name_check('I563_No.exe')` is 'Yes'.

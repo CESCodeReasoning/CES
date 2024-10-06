@@ -1,0 +1,124 @@
+The function `find_zero` is called with the argument `xs = [5, 3, -5]`.
+Inside the function, the variables `begin` and `end` are initialized to -1.0 and 1.0 respectively.
+The loop iterates until the condition `poly(xs, begin) * poly(xs, end) > 0` is false.
+First Iteration:
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is evaluated.
+    - The function `poly` is called with the arguments `xs = [5, 3, -5]` and `x = -1.0`.
+    - The list comprehension `[coeff * math.pow(x, i) for i, coeff in enumerate(xs)]` is evaluated.
+    - The function `math.pow` is called with the arguments `x = -1.0` and `i = 0`.
+    - The value of `coeff` is 5.
+    - The value of `i` is 0.
+    - The value of `coeff * math.pow(x, i)` is 5.
+    - The function `math.pow` is called with the arguments `x = -1.0` and `i = 1`.
+    - The value of `coeff` is 3.
+    - The value of `i` is 1.
+    - The value of `coeff * math.pow(x, i)` is -3.
+    - The function `math.pow` is called with the arguments `x = -1.0` and `i = 2`.
+    - The value of `coeff` is -5.
+    - The value of `i` is 2.
+    - The value of `coeff * math.pow(x, i)` is 5.
+    - The list comprehension returns the list `[5, -3, 5]`.
+    - The function `sum` is called with the argument `[5, -3, 5]`.
+    - The value of `poly(xs, begin)` is 0.
+    - The function `poly` is called with the arguments `xs = [5, 3, -5]` and `x = 1.0`.
+    - The list comprehension `[coeff * math.pow(x, i) for i, coeff in enumerate(xs)]` is evaluated.
+    - The function `math.pow` is called with the arguments `x = 1.0` and `i = 0`.
+    - The value of `coeff` is 5.
+    - The value of `i` is 0.
+    - The value of `coeff * math.pow(x, i)` is 5.
+    - The function `math.pow` is called with the arguments `x = 1.0` and `i = 1`.
+    - The value of `coeff` is 3.
+    - The value of `i` is 1.
+    - The value of `coeff * math.pow(x, i)` is 3.
+    - The function `math.pow` is called with the arguments `x = 1.0` and `i = 2`.
+    - The value of `coeff` is -5.
+    - The value of `i` is 2.
+    - The value of `coeff * math.pow(x, i)` is -5.
+    - The list comprehension returns the list `[5, 3, -5]`.
+    - The function `sum` is called with the argument `[5, 3, -5]`.
+    - The value of `poly(xs, end)` is 0.
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` evaluates to `False`.
+    - The loop exits.
+Second Iteration:
+    - The variables `begin` and `end` are updated to -2.0 and 2.0 respectively.
+    - The loop continues.
+Third Iteration:
+    - The variables `begin` and `end` are updated to -4.0 and 4.0 respectively.
+    - The loop continues.
+Fourth Iteration:
+    - The variables `begin` and `end` are updated to -8.0 and 8.0 respectively.
+    - The loop continues.
+Fifth Iteration:
+    - The variables `begin` and `end` are updated to -16.0 and 16.0 respectively.
+    - The loop continues.
+Sixth Iteration:
+    - The variables `begin` and `end` are updated to -32.0 and 32.0 respectively.
+    - The loop continues.
+Seventh Iteration:
+    - The variables `begin` and `end` are updated to -64.0 and 64.0 respectively.
+    - The loop continues.
+Eighth Iteration:
+    - The variables `begin` and `end` are updated to -128.0 and 128.0 respectively.
+    - The loop continues.
+Ninth Iteration:
+    - The variables `begin` and `end` are updated to -256.0 and 256.0 respectively.
+    - The loop continues.
+Tenth Iteration:
+    - The variables `begin` and `end` are updated to -512.0 and 512.0 respectively.
+    - The loop continues.
+Eleventh Iteration:
+    - The variables `begin` and `end` are updated to -1024.0 and 1024.0 respectively.
+    - The loop continues.
+Twelfth Iteration:
+    - The variables `begin` and `end` are updated to -2048.0 and 2048.0 respectively.
+    - The loop continues.
+Thirteenth Iteration:
+    - The variables `begin` and `end` are updated to -4096.0 and 4096.0 respectively.
+    - The loop continues.
+Fourteenth Iteration:
+    - The variables `begin` and `end` are updated to -8192.0 and 8192.0 respectively.
+    - The loop continues.
+Fifteenth Iteration:
+    - The variables `begin` and `end` are updated to -16384.0 and 16384.0 respectively.
+    - The loop continues.
+Sixteenth Iteration:
+    - The variables `begin` and `end` are updated to -32768.0 and 32768.0 respectively.
+    - The loop continues.
+Seventeenth Iteration:
+    - The variables `begin` and `end` are updated to -65536.0 and 65536.0 respectively.
+    - The loop continues.
+Eighteenth Iteration:
+    - The variables `begin` and `end` are updated to -131072.0 and 131072.0 respectively.
+    - The loop continues.
+Nineteenth Iteration:
+    - The variables `begin` and `end` are updated to -262144.0 and 262144.0 respectively.
+    - The loop continues.
+Twentieth Iteration:
+    - The variables `begin` and `end` are updated to -524288.0 and 524288.0 respectively.
+    - The loop continues.
+Twenty-first Iteration:
+    - The variables `begin` and `end` are updated to -1048576.0 and 1048576.0 respectively.
+    - The loop continues.
+Twenty-second Iteration:
+    - The variables `begin` and `end` are updated to -2097152.0 and 2097152.0 respectively.
+    - The loop continues.
+Twenty-third Iteration:
+    - The variables `begin` and `end` are updated to -4194304.0 and 4194304.0 respectively.
+    - The loop continues.
+Twenty-fourth Iteration:
+    - The variables `begin` and `end` are updated to -8388608.0 and 8388608.0 respectively.
+    - The loop continues.
+Twenty-fifth Iteration:
+    - The variables `begin` and `end` are updated to -16777216.0 and 16777216.0 respectively.
+    - The loop continues.
+Twenty-sixth Iteration:
+    - The variables `begin` and `end` are updated to -33554432.0 and 33554432.0 respectively.
+    - The loop continues.
+Twenty-seventh Iteration:
+    - The variables `begin` and `end` are updated to -67108864.0 and 67108864.0 respectively.
+    - The loop continues.
+Twenty-eighth Iteration:
+    - The variables `begin` and `end` are updated to -134217728.0 and 134217728.0 respectively.
+    - The loop continues.
+Twenty-ninth Iteration:
+    -

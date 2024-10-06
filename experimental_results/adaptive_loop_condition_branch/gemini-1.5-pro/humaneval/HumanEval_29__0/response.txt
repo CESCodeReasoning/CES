@@ -1,0 +1,17 @@
+[REASONING]
+The function filter_by_prefix takes a list of strings and a prefix as input, and returns a list of strings that start with the given prefix.
+To determine the output of executing the function filter_by_prefix on the input ['abc', 'abcd', 'abcde'], 'abc', we need to check if each string in the input list starts with the prefix 'abc'.
+The first string 'abc' starts with the prefix 'abc', so it is included in the output list.
+The second string 'abcd' starts with the prefix 'abc', so it is included in the output list.
+The third string 'abcde' does not start with the prefix 'abc', so it is not included in the output list.
+Therefore, the output of executing the function filter_by_prefix on the input ['abc', 'abcd', 'abcde'], 'abc' is ['abc', 'abcd'].
+[/REASONING]
+
+[ANSWER]
+def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:
+    return [x for x in strings if [CONDITION]x.startswith(prefix)[/CONDITION]]
+[/ANSWER]
+
+[OUTPUT]
+['abc', 'abcd']
+[/OUTPUT]

@@ -1,0 +1,11 @@
+The function `intersperse` is called with ( numbers = [5, 6, 3, 2], delimeter = 8 ).
+The condition (not numbers) is not satisfied, therefore the else branch is taken.
+The loop iterates over the list `numbers` excluding the last element.
+First Iteration (n = 5):
+    n is appended to `result`, then `delimeter` is appended to `result`.
+Second Iteration (n = 6):
+    n is appended to `result`, then `delimeter` is appended to `result`.
+Third Iteration (n = 3):
+    n is appended to `result`, then `delimeter` is appended to `result`.
+Finally, the last element of `numbers` (2) is appended to `result`.
+The function returns `result` as the output.

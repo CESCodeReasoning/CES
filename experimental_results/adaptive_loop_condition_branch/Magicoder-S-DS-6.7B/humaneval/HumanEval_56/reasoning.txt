@@ -1,0 +1,15 @@
+The function `correct_bracketing` is called with ( brackets = "<<><>>" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The character '<' is found, so depth becomes 1.
+Iteration 2:
+    -The character '<' is found, so depth becomes 2.
+Iteration 3:
+    -The character '>' is found, so depth becomes 1.
+Iteration 4:
+    -The character '>' is found, so depth becomes 0.
+Iteration 5:
+    -The character '>' is found, so depth becomes -1.
+
+Since depth is less than 0, the function returns False.

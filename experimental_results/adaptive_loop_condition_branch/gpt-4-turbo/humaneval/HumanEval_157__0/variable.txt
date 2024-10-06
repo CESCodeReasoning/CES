@@ -1,0 +1,8 @@
+from typing import *
+
+
+def right_angle_triangle(a: int, b: int, c: int) -> bool:
+    # Check if a^2 == b^2 + c^2 [STATE]49 == 576 + 625, 576 == 49 + 625, 625 == 49 + 576[/STATE]
+    return a * a == b * b + c * c or b * b == a * a + c * c or c * c == a * a + b * b
+    # [CONDITION]False or False or True[/CONDITION]
+    # [BRANCH]N or N or Y[/BRANCH]

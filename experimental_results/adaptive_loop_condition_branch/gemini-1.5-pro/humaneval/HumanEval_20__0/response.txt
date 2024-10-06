@@ -1,0 +1,74 @@
+[REASONING]
+The function find_closest_elements([1.1, 2.2, 3.1, 4.1, 5.1]) takes a list of float numbers as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (idx=0, elem=1.1):
+    - Compare 1.1 with 2.2, 3.1, 4.1, 5.1:
+        - When idx2 = 1 (elem2=2.2), the condition `idx != idx2` is True, the if branch is taken.
+            - Since `distance` is None, the if branch of the nested if statement is taken.
+            - Calculate the distance between 1.1 and 2.2, which is 1.1.
+            - Set `closest_pair` to (1.1, 2.2).
+        - When idx2 = 2 (elem2=3.1), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 1.1 and 3.1, which is 2.0.
+            - Since the new distance (2.0) is greater than the current distance (1.1), the else branch of the nested if statement is taken.
+        - When idx2 = 3 (elem2=4.1), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 1.1 and 4.1, which is 3.0.
+            - Since the new distance (3.0) is greater than the current distance (1.1), the else branch of the nested if statement is taken.
+        - When idx2 = 4 (elem2=5.1), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 1.1 and 5.1, which is 4.0.
+            - Since the new distance (4.0) is greater than the current distance (1.1), the else branch of the nested if statement is taken.
+Second Iteration (idx=1, elem=2.2):
+    - Compare 2.2 with 3.1, 4.1, 5.1:
+        - When idx2 = 2 (elem2=3.1), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 2.2 and 3.1, which is 0.9.
+            - Since the new distance (0.9) is less than the current distance (1.1), the if branch of the nested if statement is taken.
+            - Set `closest_pair` to (2.2, 3.1).
+        - When idx2 = 3 (elem2=4.1), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 2.2 and 4.1, which is 1.9.
+            - Since the new distance (1.9) is greater than the current distance (0.9), the else branch of the nested if statement is taken.
+        - When idx2 = 4 (elem2=5.1), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 2.2 and 5.1, which is 2.9.
+            - Since the new distance (2.9) is greater than the current distance (0.9), the else branch of the nested if statement is taken.
+Third Iteration (idx=2, elem=3.1):
+    - Compare 3.1 with 4.1, 5.1:
+        - When idx2 = 3 (elem2=4.1), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 3.1 and 4.1, which is 1.0.
+            - Since the new distance (1.0) is greater than the current distance (0.9), the else branch of the nested if statement is taken.
+        - When idx2 = 4 (elem2=5.1), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 3.1 and 5.1, which is 2.0.
+            - Since the new distance (2.0) is greater than the current distance (0.9), the else branch of the nested if statement is taken.
+Fourth Iteration (idx=3, elem=4.1):
+    - Compare 4.1 with 5.1:
+        - When idx2 = 4 (elem2=5.1), the condition `idx != idx2` is True, the if branch is taken.
+            - Calculate the distance between 4.1 and 5.1, which is 1.0.
+            - Since the new distance (1.0) is greater than the current distance (0.9), the else branch of the nested if statement is taken.
+Fifth Iteration (idx=4, elem=5.1):
+    - No more elements to compare.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    closest_pair = None
+    distance = None
+
+    for idx, elem in enumerate(numbers): ## [STATE]idx=[0, 1, 2, 3, 4][/STATE][STATE]elem=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE][STATE]enumerate(numbers)=[(0, 1.1), (1, 2.2), (2, 3.1), (3, 4.1), (4, 5.1)]][/STATE][STATE]numbers=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE]
+        for idx2, elem2 in enumerate(numbers): ## [STATE]idx2=[1, 2, 3, 4, 2, 3, 4, 3, 4, 4][/STATE][STATE]elem2=[2.2, 3.1, 4.1, 5.1, 3.1, 4.1, 5.1, 4.1, 5.1, 5.1][/STATE][STATE]enumerate(numbers)=[(0, 1.1), (1, 2.2), (2, 3.1), (3, 4.1), (4, 5.1)]][/STATE][STATE]numbers=[1.1, 2.2, 3.1, 4.1, 5.1][/STATE]
+            if idx != idx2: ## [CONDITION](idx != idx2)=[True, True, True, True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+                if distance is None: ## [CONDITION](distance is None)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+                    distance = abs(elem - elem2)
+                    closest_pair = tuple(sorted([elem, elem2]))
+                else: ## [BRANCH]taken=[Y][/BRANCH]
+                    new_distance = abs(elem - elem2)
+                    if new_distance < distance: ## [CONDITION](new_distance < distance)=[False, True, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, Y, N, N, N, N, N, N, N, N][/BRANCH]
+                        distance = new_distance
+                        closest_pair = tuple(sorted([elem, elem2]))
+
+    return closest_pair
+[/ANSWER]
+
+[OUTPUT]
+(2.2, 3.1)
+[/OUTPUT]

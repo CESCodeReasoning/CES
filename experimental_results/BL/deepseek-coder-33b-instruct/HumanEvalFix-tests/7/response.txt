@@ -1,0 +1,20 @@
+```response
+    return [x for x in strings if x in substring]
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def get_most_frequent(numbers: List[int]) -> int:
+    counts = {}
+    for num in numbers:
+        if num in counts:
+            counts[num] += 1
+        else:
+            counts[num] = 1
+
+    max_count = max(counts.values

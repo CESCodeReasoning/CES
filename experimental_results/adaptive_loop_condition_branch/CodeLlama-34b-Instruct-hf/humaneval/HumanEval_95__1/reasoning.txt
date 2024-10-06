@@ -1,0 +1,7 @@
+The function `check_dict_case` is called with ( dict = {"Name":"John", "Age":"36", "City":"Houston"} ).
+Inside the function, the length of the dictionary's keys is checked. If it is 0, the function returns False.
+Otherwise, the function sets the state to "start" and iterates through the keys of the dictionary.
+For each key, the function checks if it is an instance of the string class. If it is not, the function sets the state to "mixed" and breaks out of the loop.
+If the state is "start", the function checks if the key is uppercase. If it is, the function sets the state to "upper". If it is not, the function checks if the key is lowercase. If it is, the function sets the state to "lower". If it is not, the function breaks out of the loop.
+If the state is "upper" or "lower", the function checks if the key is uppercase or lowercase, respectively. If it is not, the function sets the state to "mixed" and breaks out of the loop.
+Finally, the function returns True if the state is "upper" or "lower", and False otherwise.

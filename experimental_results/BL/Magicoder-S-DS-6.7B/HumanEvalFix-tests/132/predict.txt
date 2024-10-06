@@ -1,0 +1,4 @@
+if string[i] == '(':
+        opening_bracket_index.append(i)
+    else:
+        closing_bracket_index.append(i)

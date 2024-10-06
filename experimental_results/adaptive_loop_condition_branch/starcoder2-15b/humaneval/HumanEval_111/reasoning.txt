@@ -1,0 +1,155 @@
+The function `histogram` is called with ( test = 'a b b a' ).
+Inside the function, a variable `dict1` is initialized to an empty dictionary.
+The variable `list1` is initialized to the result of splitting the input string `test` by spaces.
+The variable `t` is initialized to 0.
+
+Iteration 1:
+    -The first element of `list1` is 'a'.
+    -The condition `list1.count(i)>t` is evaluated to `False` since `list1.count('a')` is 1 and `t` is 0.
+    -The condition `i!=''` is evaluated to `True` since `i` is not an empty string.
+    -The condition `(list1.count(i)>t) and i!=''` is evaluated to `False`.
+    -The `if` block is not executed.
+Iteration 2:
+    -The second element of `list1` is 'b'.
+    -The condition `list1.count(i)>t` is evaluated to `True` since `list1.count('b')` is 2 and `t` is 0.
+    -The condition `i!=''` is evaluated to `True` since `i` is not an empty string.
+    -The condition `(list1.count(i)>t) and i!=''` is evaluated to `True`.
+    -The `if` block is executed.
+    -The value of `t` is updated to 2.
+Iteration 3:
+    -The third element of `list1` is 'b'.
+    -The condition `list1.count(i)>t` is evaluated to `False` since `list1.count('b')` is 2 and `t` is 2.
+    -The condition `i!=''` is evaluated to `True` since `i` is not an empty string.
+    -The condition `(list1.count(i)>t) and i!=''` is evaluated to `False`.
+    -The `if` block is not executed.
+Iteration 4:
+    -The fourth element of `list1` is 'a'.
+    -The condition `list1.count(i)>t` is evaluated to `False` since `list1.count('a')` is 1 and `t` is 2.
+    -The condition `i!=''` is evaluated to `True` since `i` is not an empty string.
+    -The condition `(list1.count(i)>t) and i!=''` is evaluated to `False`.
+    -The `if` block is not executed.
+Iteration 5:
+    -The `if` block is not executed since `t` is 0.
+Iteration 6:
+    -The `if` block is not executed since `t` is 0.
+Iteration 7:
+    -The `if` block is not executed since `t` is 0.
+Iteration 8:
+    -The `if` block is not executed since `t` is 0.
+Iteration 9:
+    -The `if` block is not executed since `t` is 0.
+Iteration 10:
+    -The `if` block is not executed since `t` is 0.
+Iteration 11:
+    -The `if` block is not executed since `t` is 0.
+Iteration 12:
+    -The `if` block is not executed since `t` is 0.
+Iteration 13:
+    -The `if` block is not executed since `t` is 0.
+Iteration 14:
+    -The `if` block is not executed since `t` is 0.
+Iteration 15:
+    -The `if` block is not executed since `t` is 0.
+Iteration 16:
+    -The `if` block is not executed since `t` is 0.
+Iteration 17:
+    -The `if` block is not executed since `t` is 0.
+Iteration 18:
+    -The `if` block is not executed since `t` is 0.
+Iteration 19:
+    -The `if` block is not executed since `t` is 0.
+Iteration 20:
+    -The `if` block is not executed since `t` is 0.
+Iteration 21:
+    -The `if` block is not executed since `t` is 0.
+Iteration 22:
+    -The `if` block is not executed since `t` is 0.
+Iteration 23:
+    -The `if` block is not executed since `t` is 0.
+Iteration 24:
+    -The `if` block is not executed since `t` is 0.
+Iteration 25:
+    -The `if` block is not executed since `t` is 0.
+Iteration 26:
+    -The `if` block is not executed since `t` is 0.
+Iteration 27:
+    -The `if` block is not executed since `t` is 0.
+Iteration 28:
+    -The `if` block is not executed since `t` is 0.
+Iteration 29:
+    -The `if` block is not executed since `t` is 0.
+Iteration 30:
+    -The `if` block is not executed since `t` is 0.
+Iteration 31:
+    -The `if` block is not executed since `t` is 0.
+Iteration 32:
+    -The `if` block is not executed since `t` is 0.
+Iteration 33:
+    -The `if` block is not executed since `t` is 0.
+Iteration 34:
+    -The `if` block is not executed since `t` is 0.
+Iteration 35:
+    -The `if` block is not executed since `t` is 0.
+Iteration 36:
+    -The `if` block is not executed since `t` is 0.
+Iteration 37:
+    -The `if` block is not executed since `t` is 0.
+Iteration 38:
+    -The `if` block is not executed since `t` is 0.
+Iteration 39:
+    -The `if` block is not executed since `t` is 0.
+Iteration 40:
+    -The `if` block is not executed since `t` is 0.
+Iteration 41:
+    -The `if` block is not executed since `t` is 0.
+Iteration 42:
+    -The `if` block is not executed since `t` is 0.
+Iteration 43:
+    -The `if` block is not executed since `t` is 0.
+Iteration 44:
+    -The `if` block is not executed since `t` is 0.
+Iteration 45:
+    -The `if` block is not executed since `t` is 0.
+Iteration 46:
+    -The `if` block is not executed since `t` is 0.
+Iteration 47:
+    -The `if` block is not executed since `t` is 0.
+Iteration 48:
+    -The `if` block is not executed since `t` is 0.
+Iteration 49:
+    -The `if` block is not executed since `t` is 0.
+Iteration 50:
+    -The `if` block is not executed since `t` is 0.
+Iteration 51:
+    -The `if` block is not executed since `t` is 0.
+Iteration 52:
+    -The `if` block is not executed since `t` is 0.
+Iteration 53:
+    -The `if` block is not executed since `t` is 0.
+Iteration 54:
+    -The `if` block is not executed since `t` is 0.
+Iteration 55:
+    -The `if` block is not executed since `t` is 0.
+Iteration 56:
+    -The `if` block is not executed since `t` is 0.
+Iteration 57:
+    -The `if` block is not executed since `t` is 0.
+Iteration 58:
+    -The `if` block is not executed since `t` is 0.
+Iteration 59:
+    -The `if` block is not executed since `t` is 0.
+Iteration 60:
+    -The `if` block is not executed since `t` is 0.
+Iteration 61:
+    -The `if` block is not executed since `t` is 0.
+Iteration 62:
+    -The `if` block is not executed since `t` is 0.
+Iteration 63:
+    -The `if` block is not executed since `t` is 0.
+Iteration 64:
+    -The `if` block is not executed since `t` is 0.
+Iteration 65:
+    -The `if` block is not executed since `t` is 0.
+Iteration 66:
+    -The `if` block is not executed since `t` is 0.
+Iteration 

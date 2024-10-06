@@ -1,0 +1,24 @@
+The function `vowels_count` is called with ( s = "bye" ).
+The variable `vowels` is initialized to the string "aeiouAEIOU".
+The variable `n_vowels` is initialized to 0.
+The loop iterates over each character in the string `s`.
+First Iteration (c = 'b')
+   - `c` is 'b', which is not a vowel.
+   - The condition `c in vowels` is false.
+   - Action: `n_vowels` remains unchanged.
+Second Iteration (c = 'y')
+   - `c` is 'y', which is a vowel.
+   - The condition `c in vowels` is true.
+   - Action: `n_vowels` is incremented by 1 (`n_vowels + 1`).
+Third Iteration (c = 'e')
+   - `c` is 'e', which is a vowel.
+   - The condition `c in vowels` is true.
+   - Action: `n_vowels` is incremented by 1 (`n_vowels + 1`).
+Fourth Iteration (c = 'Y')
+   - `c` is 'Y', which is a vowel.
+   - The condition `c in vowels` is true.
+   - Action: `n_vowels` is incremented by 1 (`n_vowels + 1`).
+Return Statement
+   - After the loop completes, the function returns the value of `n_vowels`, which is now 3.
+
+Therefore, the final output of the function `vowels_count("bye")` is 3.

@@ -1,0 +1,18 @@
+The function `greatest_common_divisor` is called with the arguments (a = 10, b = 15).
+The function uses the Euclidean algorithm to find the greatest common divisor (GCD) of two numbers.
+First Iteration:
+    - Initial values are a = 10, b = 15.
+    - The condition `while b` is true since b = 15.
+    - Inside the loop, `a` is assigned the value of `b` (15), and `b` is assigned the value of `a % b` (10 % 15 = 10).
+Second Iteration:
+    - Now, a = 15, b = 10.
+    - The condition `while b` is still true since b = 10.
+    - Inside the loop, `a` is assigned the value of `b` (10), and `b` is assigned the value of `a % b` (15 % 10 = 5).
+Third Iteration:
+    - Now, a = 10, b = 5.
+    - The condition `while b` is still true since b = 5.
+    - Inside the loop, `a` is assigned the value of `b` (5), and `b` is assigned the value of `a % b` (10 % 5 = 0).
+Fourth Iteration:
+    - Now, a = 5, b = 0.
+    - The condition `while b` is false since b = 0.
+    - The loop terminates, and the function returns the value of `a`, which is now 5, the GCD of 10 and 15.

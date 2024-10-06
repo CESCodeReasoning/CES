@@ -1,0 +1,6 @@
+The function `pluck` is called with ( arr = [5, 0, 3, 0, 4, 2] ).
+The first condition `len(arr) == 0` is false, therefore the first branch is not taken.
+The second condition `evens == []` is false, therefore the second branch is not taken.
+The function returns the list `[min(evens), arr.index(min(evens))]` which is `[2, 4]`.
+
+Therefore, the final output of the function `pluck([5, 0, 3, 0, 4, 2])` is [2, 4].

@@ -1,0 +1,8 @@
+The function `pluck` is called with the input array `[4, 2, 3]`.
+
+1. The length of the input array is checked. If it is equal to 0, the function returns an empty list. In this case, the length of the input array is 3, so the if statement is not executed.
+2. The input array is filtered to include only the even numbers. The `filter` function takes a lambda function as an argument, which defines a condition for each element in the array. In this case, the lambda function checks if each element is even by using the modulo operator (`%`). The resulting filtered array is `[4, 2]`.
+3. If the filtered array is empty, the function returns an empty list. In this case, the filtered array is not empty, so the if statement is not executed.
+4. The smallest even number in the filtered array is found using the `min` function. The `min` function returns the smallest element in the array. In this case, the smallest even number is 2.
+5. The index of the smallest even number in the input array is found using the `index` method. The `index` method returns the index of the first occurrence of the specified value in the array. In this case, the index of the smallest even number is 1.
+6. The function returns a list of two elements: the smallest even number and its index. In this case, the function returns `[2, 1]`.

@@ -1,0 +1,11 @@
+The function solution takes a list of integers as input and returns the sum of all odd numbers at even indices.
+
+The list [2, 4, 8] has the following indices: 0, 1, 2.
+
+The number at index 0 is 2, which is even. However, it is not odd.
+
+The number at index 1 is 4, which is even. However, it is not odd.
+
+The number at index 2 is 8, which is even. However, it is not odd.
+
+Therefore, the sum of all odd numbers at even indices in the list [2, 4, 8] is 0.

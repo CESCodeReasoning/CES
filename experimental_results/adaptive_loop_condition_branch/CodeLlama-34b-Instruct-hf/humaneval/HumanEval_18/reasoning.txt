@@ -1,0 +1,9 @@
+The function `how_many_times` takes two string arguments, `string` and `substring`, and returns the number of times that `substring` appears in `string`.
+
+The function first initializes a variable `times` to 0, which will be used to keep track of the number of times `substring` is found in `string`.
+
+Then, it iterates over the characters of `string` using a for loop. The loop starts at the first character of `string` and ends at the last character of `string` minus the length of `substring`. This is because we only need to check for `substring` in the characters of `string` that are not part of the last `substring` length characters of `string`.
+
+Inside the loop, the function checks if the substring starting at the current character `i` and ending at the character `i + len(substring) - 1` is equal to `substring`. If it is, then `times` is incremented by 1.
+
+Finally, the function returns `times`, which is the number of times that `substring` appears in `string`.

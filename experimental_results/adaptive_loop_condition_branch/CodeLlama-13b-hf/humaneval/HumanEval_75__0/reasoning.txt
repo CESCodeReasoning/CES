@@ -1,0 +1,114 @@
+The function `is_multiply_prime` is called with ( a = 3 * 6 * 7 ).
+Inside the function, a variable `is_prime` is defined.
+The inner function `is_prime` is called with ( n = 2 ).
+Inside the inner function, the loop iterates from 2 through 2 (since ( n = 2 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is false.
+   - The inner function `is_prime` returns `True`.
+The inner function `is_prime` is called with ( n = 3 ).
+Inside the inner function, the loop iterates from 2 through 3 (since ( n = 3 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is true.
+   - The inner function `is_prime` returns `False`.
+The inner function `is_prime` is called with ( n = 4 ).
+Inside the inner function, the loop iterates from 2 through 4 (since ( n = 4 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is false.
+   - The inner function `is_prime` returns `True`.
+The inner function `is_prime` is called with ( n = 5 ).
+Inside the inner function, the loop iterates from 2 through 5 (since ( n = 5 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is true.
+   - The inner function `is_prime` returns `False`.
+The inner function `is_prime` is called with ( n = 6 ).
+Inside the inner function, the loop iterates from 2 through 6 (since ( n = 6 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is false.
+   - The inner function `is_prime` returns `True`.
+The inner function `is_prime` is called with ( n = 7 ).
+Inside the inner function, the loop iterates from 2 through 7 (since ( n = 7 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is true.
+   - The inner function `is_prime` returns `False`.
+The inner function `is_prime` is called with ( n = 8 ).
+Inside the inner function, the loop iterates from 2 through 8 (since ( n = 8 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is false.
+   - The inner function `is_prime` returns `True`.
+The inner function `is_prime` is called with ( n = 9 ).
+Inside the inner function, the loop iterates from 2 through 9 (since ( n = 9 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is true.
+   - The inner function `is_prime` returns `False`.
+The inner function `is_prime` is called with ( n = 10 ).
+Inside the inner function, the loop iterates from 2 through 10 (since ( n = 10 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is false.
+   - The inner function `is_prime` returns `True`.
+The inner function `is_prime` is called with ( n = 11 ).
+Inside the inner function, the loop iterates from 2 through 11 (since ( n = 11 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is true.
+   - The inner function `is_prime` returns `False`.
+The inner function `is_prime` is called with ( n = 12 ).
+Inside the inner function, the loop iterates from 2 through 12 (since ( n = 12 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is false.
+   - The inner function `is_prime` returns `True`.
+The inner function `is_prime` is called with ( n = 13 ).
+Inside the inner function, the loop iterates from 2 through 13 (since ( n = 13 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is true.
+   - The inner function `is_prime` returns `False`.
+The inner function `is_prime` is called with ( n = 14 ).
+Inside the inner function, the loop iterates from 2 through 14 (since ( n = 14 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is false.
+   - The inner function `is_prime` returns `True`.
+The inner function `is_prime` is called with ( n = 15 ).
+Inside the inner function, the loop iterates from 2 through 15 (since ( n = 15 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is true.
+   - The inner function `is_prime` returns `False`.
+The inner function `is_prime` is called with ( n = 16 ).
+Inside the inner function, the loop iterates from 2 through 16 (since ( n = 16 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is false.
+   - The inner function `is_prime` returns `True`.
+The inner function `is_prime` is called with ( n = 17 ).
+Inside the inner function, the loop iterates from 2 through 17 (since ( n = 17 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is true.
+   - The inner function `is_prime` returns `False`.
+The inner function `is_prime` is called with ( n = 18 ).
+Inside the inner function, the loop iterates from 2 through 18 (since ( n = 18 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is false.
+   - The inner function `is_prime` returns `True`.
+The inner function `is_prime` is called with ( n = 19 ).
+Inside the inner function, the loop iterates from 2 through 19 (since ( n = 19 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).
+   - The condition `n % j == 0` is true.
+   - The inner function `is_prime` returns `False`.
+The inner function `is_prime` is called with ( n = 20 ).
+Inside the inner function, the loop iterates from 2 through 20 (since ( n = 20 )).
+First Iteration (j = 2):
+   - `j` is 2, which satisfies ( 2 <= j < n ).

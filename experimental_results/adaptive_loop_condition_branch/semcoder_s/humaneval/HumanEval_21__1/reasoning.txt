@@ -1,0 +1,13 @@
+The function `rescale_to_unit` takes a list of floating-point numbers as input and returns a new list where each number is rescaled to the range [0, 1] based on the minimum and maximum values in the input list.
+
+1. Calculate the minimum and maximum values in the input list.
+2. Subtract the minimum value from each number in the input list to shift the values to the positive side.
+3. Divide each shifted number by the range of the input list to rescale it to the range [0, 1].
+
+For the input list `[2.0, 1.0, 5.0, 3.0, 4.0]`:
+- The minimum value is `1.0`.
+- The maximum value is `5.0`.
+- The shifted values are `[2.0-1.0, 1.0-1.0, 5.0-1.0, 3.0-1.0, 4.0-1.0] = [1.0, 0.0, 4.0, 2.0, 3.0]`.
+- The rescaled values are `[1.0/4.0, 0.0/4.0, 4.0/4.0, 2.0/4.0, 3.0/4.0] = [0.25, 0.0, 1.0, 0.5, 0.75]`.
+
+Therefore, the output of executing the function `rescale_to_unit` on the input list `[2.0, 1.0, 5.0, 3.0, 4.0]` is `[0.25, 0.0, 1.0, 0.5, 0.75]`.

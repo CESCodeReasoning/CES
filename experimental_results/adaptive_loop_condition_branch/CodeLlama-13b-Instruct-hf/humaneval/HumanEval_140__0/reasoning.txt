@@ -1,0 +1,44 @@
+The function `fix_spaces` is called with the string "Exa   mple".
+Inside the function, a variable `new_text` is initialized to an empty string.
+The loop iterates through the string, starting from the first character.
+First Iteration (i = 0):
+    - `text[i] == " "` is true, so `end` is incremented.
+    - `end - start > 2` is false, so the first branch is not taken.
+    - `end - start > 0` is true, so the second branch is taken.
+    - `new_text` is updated to "E".
+Second Iteration (i = 1):
+    - `text[i] == " "` is true, so `end` is incremented.
+    - `end - start > 2` is false, so the first branch is not taken.
+    - `end - start > 0` is true, so the second branch is taken.
+    - `new_text` is updated to "Ex".
+Third Iteration (i = 2):
+    - `text[i] == " "` is true, so `end` is incremented.
+    - `end - start > 2` is false, so the first branch is not taken.
+    - `end - start > 0` is true, so the second branch is taken.
+    - `new_text` is updated to "Exa".
+Fourth Iteration (i = 3):
+    - `text[i] == " "` is true, so `end` is incremented.
+    - `end - start > 2` is false, so the first branch is not taken.
+    - `end - start > 0` is true, so the second branch is taken.
+    - `new_text` is updated to "Exam".
+Fifth Iteration (i = 4):
+    - `text[i] == " "` is true, so `end` is incremented.
+    - `end - start > 2` is false, so the first branch is not taken.
+    - `end - start > 0` is true, so the second branch is taken.
+    - `new_text` is updated to "Examp".
+Sixth Iteration (i = 5):
+    - `text[i] == " "` is true, so `end` is incremented.
+    - `end - start > 2` is false, so the first branch is not taken.
+    - `end - start > 0` is true, so the second branch is taken.
+    - `new_text` is updated to "Exampl".
+Seventh Iteration (i = 6):
+    - `text[i] == " "` is true, so `end` is incremented.
+    - `end - start > 2` is false, so the first branch is not taken.
+    - `end - start > 0` is true, so the second branch is taken.
+    - `new_text` is updated to "Exampl".
+Eighth Iteration (i = 7):
+    - `text[i] == " "` is false, so `end` is not incremented.
+    - `end - start > 2` is false, so the first branch is not taken.
+    - `end - start > 0` is true, so the second branch is taken.
+    - `new_text` is updated to "Exampl-".
+After the loop completes, the function returns the value of `new_text`, which is now "Exa-mple".

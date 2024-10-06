@@ -1,0 +1,163 @@
+The function `find_zero` is called with ( xs = [-6, 11, -6, 1] ).
+The function `poly` is used to calculate the value of the polynomial at a given point.
+The function `find_zero` uses a binary search algorithm to find a root of the polynomial.
+The loop iterates until the difference between `begin` and `end` is less than 1e-10.
+First Iteration (begin = -1., end = 1.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Second Iteration (begin = -2., end = 2.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Third Iteration (begin = -4., end = 4.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Fourth Iteration (begin = -8., end = 8.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Fifth Iteration (begin = -16., end = 16.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Sixth Iteration (begin = -32., end = 32.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Seventh Iteration (begin = -64., end = 64.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Eighth Iteration (begin = -128., end = 128.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Ninth Iteration (begin = -256., end = 256.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Tenth Iteration (begin = -512., end = 512.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Eleventh Iteration (begin = -1024., end = 1024.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twelfth Iteration (begin = -2048., end = 2048.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirteenth Iteration (begin = -4096., end = 4096.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Fourteenth Iteration (begin = -8192., end = 8192.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Fifteenth Iteration (begin = -16384., end = 16384.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Sixteenth Iteration (begin = -32768., end = 32768.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Seventeenth Iteration (begin = -65536., end = 65536.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Eighteenth Iteration (begin = -131072., end = 131072.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Nineteenth Iteration (begin = -262144., end = 262144.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twentieth Iteration (begin = -524288., end = 524288.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twenty-first Iteration (begin = -1048576., end = 1048576.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twenty-second Iteration (begin = -2097152., end = 2097152.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twenty-third Iteration (begin = -4194304., end = 4194304.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twenty-fourth Iteration (begin = -8388608., end = 8388608.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twenty-fifth Iteration (begin = -16777216., end = 16777216.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twenty-sixth Iteration (begin = -33554432., end = 33554432.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twenty-seventh Iteration (begin = -67108864., end = 67108864.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twenty-eighth Iteration (begin = -134217728., end = 134217728.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Twenty-ninth Iteration (begin = -268435456., end = 268435456.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirtieth Iteration (begin = -536870912., end = 536870912.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirty-first Iteration (begin = -1073741824., end = 1073741824.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirty-second Iteration (begin = -2147483648., end = 2147483648.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirty-third Iteration (begin = -4294967296., end = 4294967296.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirty-fourth Iteration (begin = -8589934592., end = 8589934592.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirty-fifth Iteration (begin = -17179869184., end = 17179869184.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirty-sixth Iteration (begin = -34359738368., end = 34359738368.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirty-seventh Iteration (begin = -68719476736., end = 68719476736.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirty-eighth Iteration (begin = -137438953472., end = 137438953472.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Thirty-ninth Iteration (begin = -274877906944., end = 274877906944.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Fortieth Iteration (begin = -549755813888., end = 549755813888.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Forty-first Iteration (begin = -1099511627776., end = 1099511627776.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Forty-second Iteration (begin = -2199023255552., end = 2199023255552.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Forty-third Iteration (begin = -4398046511104., end = 4398046511104.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Forty-fourth Iteration (begin = -8796093022208., end = 8796093022208.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Forty-fifth Iteration (begin = -17592186044416., end = 17592186044416.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Forty-sixth Iteration (begin = -35184372088832., end = 35184372088832.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Forty-seventh Iteration (begin = -70368744177664., end = 70368744177664.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Forty-eighth Iteration (begin = -140737488355328., end = 140737488355328.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Forty-ninth Iteration (begin = -281474976710656., end = 281474976710656.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Fifty-th Iteration (begin = -562949953421312., end = 562949953421312.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Fifty-first Iteration (begin = -1125899906842624., end = 1125899906842624.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Fifty-second Iteration (begin = -2251799813685248., end = 2251799813685248.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and `end` are updated to twice their current values.
+Fifty-third Iteration (begin = -4503599627370496., end = 4503599627370496.):
+    - The condition `poly(xs, begin) * poly(xs, end) > 0` is true.
+    - `begin` and

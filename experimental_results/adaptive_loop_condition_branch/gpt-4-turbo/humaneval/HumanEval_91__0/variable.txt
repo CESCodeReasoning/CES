@@ -1,0 +1,9 @@
+from typing import *
+
+
+def is_bored(S):
+    import re
+    # [STATE] sentences = ['You and I are going for a walk'] [/STATE]
+    sentences = re.split(r'[.?!]\s*', S)
+    # [STATE] sum(sentence[0:2] == 'I ' for sentence in sentences) = 0 [/STATE]
+    return sum(sentence[0:2] == 'I ' for sentence in sentences)

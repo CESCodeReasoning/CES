@@ -1,0 +1,10 @@
+The function `file_name_check` is called with ( file_name = 'I563_No.exe' ).
+The file name is split into two parts by the '.' character, resulting in ['I563_No', 'exe'].
+The length of the list is 2, which satisfies the first condition.
+The second part of the file name ('exe') is in the list of valid suffixes.
+The first part of the file name ('I563_No') is not empty.
+The first character of the first part ('I') is alphabetic.
+The number of digits in the first part is 3, which is less than or equal to 3.
+Therefore, all the conditions are met and the function returns 'Yes'.
+
+Therefore, the final output of the function `file_name_check('I563_No.exe')` is 'Yes'.

@@ -1,0 +1,41 @@
+The function triples_sum_to_zero(l) takes a list of numbers([2, 4, -5, 3, 9, 7]) as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+In the innermost loop, for each element indexed by j in the inner loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4 and 5.
+    - For each j, k in the innermost loop is 2, 3, 4, 5.
+    - l[i]=2: compare with 4, -5, 3, 9, 7:
+        - When j = 1 (l[j]=4), k in the innermost loop is 2, 3, 4, 5.
+        - When j = 2 (l[j]=-5), k in the innermost loop is 3, 4, 5.
+        - When j = 3 (l[j]=3), k in the innermost loop is 4, 5.
+        - When j = 4 (l[j]=9), k in the innermost loop is 5.
+        - When j = 5 (l[j]=7), k in the innermost loop is 6.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4, 5.
+    - For each j, k in the innermost loop is 3, 4, 5.
+    - l[i]=4: compare with -5, 3, 9, 7:
+        - When j = 2 (l[j]=-5), k in the innermost loop is 3, 4, 5.
+        - When j = 3 (l[j]=3), k in the innermost loop is 4, 5.
+        - When j = 4 (l[j]=9), k in the innermost loop is 5.
+        - When j = 5 (l[j]=7), k in the innermost loop is 6.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, 5.
+    - For each j, k in the innermost loop is 4, 5.
+    - l[i]=-5: compare with 3, 9, 7:
+        - When j = 3 (l[j]=3), k in the innermost loop is 4, 5.
+        - When j = 4 (l[j]=9), k in the innermost loop is 5.
+        - When j = 5 (l[j]=7), k in the innermost loop is 6.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4, 5.
+    - For each j, k in the innermost loop is 5.
+    - l[i]=3: compare with 9, 7:
+        - When j = 4 (l[j]=9), k in the innermost loop is 5.
+        - When j = 5 (l[j]=7), k in the innermost loop is 6.
+Fifth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5.
+    - For each j, k in the innermost loop is 6.
+    - l[i]=9: compare with 7:
+        - When j = 5 (l[j]=7), k in the innermost loop is 6.
+Sixth iteration (i=5):
+    No more elements to compare.

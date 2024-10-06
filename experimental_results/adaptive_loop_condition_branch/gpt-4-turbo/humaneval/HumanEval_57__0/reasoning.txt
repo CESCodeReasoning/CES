@@ -1,0 +1,10 @@
+The function `monotonic` is called with the list `l = [4, 1, 0, -10]`.
+The function checks if the list `l` is either non-increasing or non-decreasing by comparing it to its sorted versions:
+1. `sorted(l)` results in `[-10, 0, 1, 4]`, which is the list sorted in ascending order.
+2. `sorted(l, reverse=True)` results in `[4, 1, 0, -10]`, which is the list sorted in descending order.
+
+The original list `l` matches the list sorted in descending order, indicating that the list is non-increasing.
+
+Since the list `l` matches its sorted version in descending order, the condition `(l == sorted(l) or l == sorted(l, reverse=True))` evaluates to `True`. Therefore, the function returns `True`.
+
+Thus, the final output of the function `monotonic([4, 1, 0, -10])` is `True`.

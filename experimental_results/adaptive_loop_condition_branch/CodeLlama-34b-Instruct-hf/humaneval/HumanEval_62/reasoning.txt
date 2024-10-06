@@ -1,0 +1,4 @@
+The function derivative takes a list of numbers as input and returns the derivative of the input list.
+To determine the output of executing the function derivative on the input [3, 1, 2, 4, 5], we need to calculate the derivative of each element in the list.
+The derivative of each element is calculated using the formula: (i * x), where i is the index of the element and x is the element itself.
+The output of executing the function derivative on the input [3, 1, 2, 4, 5] is [1, 2, 6, 12, 15].

@@ -1,0 +1,16 @@
+The function `int_to_mini_roman` is called with ( number = 19 ).
+Inside the function, there are two lists: `num` and `sym`. `num` contains the decimal values of the roman numerals and `sym` contains the corresponding roman numeral symbols.
+The while loop iterates from the highest decimal value in `num` down to 0.
+First Iteration (i = 12):
+    - `number // num[i]` gives the quotient of the division of `number` by `num[i]`. This gives the number of times `num[i]` can be subtracted from `number` without making it negative.
+    - `number %= num[i]` updates `number` to the remainder of the division of `number` by `num[i]`. This is the new value of `number` after subtracting `num[i]` from it as many times as possible.
+    - The inner while loop runs as long as `div` is greater than 0. It appends the symbol corresponding to `num[i]` to `res` and decrements `div`.
+Second Iteration (i = 11):
+    - `number // num[i]` gives 1.
+    - `number %= num[i]` updates `number` to 4 ( 19 - 10 = 9 ).
+    - The inner while loop runs once. It appends 'X' to `res`.
+Third Iteration (i = 8):
+    - `number // num[i]` gives 1.
+    - `number %= num[i]` updates `number` to 0 ( 9 - 9 = 0 ).
+    - The inner while loop runs once. It appends 'IX' to `res`.
+After the loop completes, the function returns the value of `res`, which is now 'XIX'.

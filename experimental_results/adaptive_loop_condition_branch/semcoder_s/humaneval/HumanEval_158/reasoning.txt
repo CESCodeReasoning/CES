@@ -1,0 +1,9 @@
+The function `find_max` takes a list of words as input and returns the word with the maximum length of unique characters. In case of a tie, it returns the word that comes first in lexicographical order.
+
+Here's the step-by-step reasoning:
+1. The `sorted` function is used to sort the list of words based on two criteria:
+   - The first criteria is the length of the set of unique characters in descending order. This is achieved by `-len(set(x))`.
+   - The second criteria is the lexicographical order of the words. This is achieved by `x`.
+2. The sorted list is then indexed to get the first element, which is the word with the maximum length of unique characters and comes first in lexicographical order.
+
+For the input `["name", "of", "string"]`, the sorted list based on the criteria mentioned above is `["name", "of", "string"]`. The first element is `"name"`, which is the word with the maximum length of unique characters and comes first in lexicographical order.

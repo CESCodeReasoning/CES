@@ -1,0 +1,148 @@
+The function `match_parens` is called with ( lst = ['())(', '()'] ).
+Inside the function, two variables `S1` and `S2` are defined.
+
+Iteration 1:
+    - `S1` is defined as `lst[0] + lst[1]`, which is '())('
+    - `S2` is defined as `lst[1] + lst[0]`, which is '()'
+
+Iteration 2:
+    - The function `check` is called with `S1` as its argument.
+    - Inside `check`, a variable `val` is initialized to 0.
+    - The loop iterates through the characters in `S1`.
+    - First Iteration:
+        - `i` is '(', so `val` becomes 1.
+    - Second Iteration:
+        - `i` is ')', so `val` becomes 0.
+    - Third Iteration:
+        - `i` is '(', so `val` becomes 1.
+    - Fourth Iteration:
+        - `i` is ')', so `val` becomes 0.
+    - Fifth Iteration:
+        - `i` is ')', so `val` becomes -1.
+    - Sixth Iteration:
+        - `i` is ')', so `val` becomes -2.
+    - Seventh Iteration:
+        - `i` is ')', so `val` becomes -3.
+    - Eighth Iteration:
+        - `i` is ')', so `val` becomes -4.
+    - Ninth Iteration:
+        - `i` is ')', so `val` becomes -5.
+    - Tenth Iteration:
+        - `i` is ')', so `val` becomes -6.
+    - Eleventh Iteration:
+        - `i` is ')', so `val` becomes -7.
+    - Twelfth Iteration:
+        - `i` is ')', so `val` becomes -8.
+    - Thirteenth Iteration:
+        - `i` is ')', so `val` becomes -9.
+    - Fourteenth Iteration:
+        - `i` is ')', so `val` becomes -10.
+    - Fifteenth Iteration:
+        - `i` is ')', so `val` becomes -11.
+    - Sixteenth Iteration:
+        - `i` is ')', so `val` becomes -12.
+    - Seventeenth Iteration:
+        - `i` is ')', so `val` becomes -13.
+    - Eighteenth Iteration:
+        - `i` is ')', so `val` becomes -14.
+    - Nineteenth Iteration:
+        - `i` is ')', so `val` becomes -15.
+    - Twentieth Iteration:
+        - `i` is ')', so `val` becomes -16.
+    - Twenty-first Iteration:
+        - `i` is ')', so `val` becomes -17.
+    - Twenty-second Iteration:
+        - `i` is ')', so `val` becomes -18.
+    - Twenty-third Iteration:
+        - `i` is ')', so `val` becomes -19.
+    - Twenty-fourth Iteration:
+        - `i` is ')', so `val` becomes -20.
+    - Twenty-fifth Iteration:
+        - `i` is ')', so `val` becomes -21.
+    - Twenty-sixth Iteration:
+        - `i` is ')', so `val` becomes -22.
+    - Twenty-seventh Iteration:
+        - `i` is ')', so `val` becomes -23.
+    - Twenty-eighth Iteration:
+        - `i` is ')', so `val` becomes -24.
+    - Twenty-ninth Iteration:
+        - `i` is ')', so `val` becomes -25.
+    - Thirtieth Iteration:
+        - `i` is ')', so `val` becomes -26.
+    - Thirty-first Iteration:
+        - `i` is ')', so `val` becomes -27.
+    - Thirty-second Iteration:
+        - `i` is ')', so `val` becomes -28.
+    - Thirty-third Iteration:
+        - `i` is ')', so `val` becomes -29.
+    - Thirty-fourth Iteration:
+        - `i` is ')', so `val` becomes -30.
+    - Thirty-fifth Iteration:
+        - `i` is ')', so `val` becomes -31.
+    - Thirty-sixth Iteration:
+        - `i` is ')', so `val` becomes -32.
+    - Thirty-seventh Iteration:
+        - `i` is ')', so `val` becomes -33.
+    - Thirty-eighth Iteration:
+        - `i` is ')', so `val` becomes -34.
+    - Thirty-ninth Iteration:
+        - `i` is ')', so `val` becomes -35.
+    - Fortieth Iteration:
+        - `i` is ')', so `val` becomes -36.
+    - Forty-first Iteration:
+        - `i` is ')', so `val` becomes -37.
+    - Forty-second Iteration:
+        - `i` is ')', so `val` becomes -38.
+    - Forty-third Iteration:
+        - `i` is ')', so `val` becomes -39.
+    - Forty-fourth Iteration:
+        - `i` is ')', so `val` becomes -40.
+    - Forty-fifth Iteration:
+        - `i` is ')', so `val` becomes -41.
+    - Forty-sixth Iteration:
+        - `i` is ')', so `val` becomes -42.
+    - Forty-seventh Iteration:
+        - `i` is ')', so `val` becomes -43.
+    - Forty-eighth Iteration:
+        - `i` is ')', so `val` becomes -44.
+    - Forty-ninth Iteration:
+        - `i` is ')', so `val` becomes -45.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -46.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -47.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -48.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -49.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -50.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -51.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -52.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -53.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -54.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -55.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -56.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -57.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -58.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -59.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -60.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -61.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -62.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -63.
+    - Fiftieth Iteration:
+        - `i` is ')', so `val` becomes -64.
+    -

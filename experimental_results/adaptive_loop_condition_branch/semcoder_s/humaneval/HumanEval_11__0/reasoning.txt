@@ -1,0 +1,7 @@
+The function `string_xor` takes two strings `a` and `b` as input and returns the result of XOR operation on the corresponding characters of the two strings.
+
+The inner function `xor` takes two characters `i` and `j`, performs XOR operation on them, and returns '0' if they are equal, otherwise '1'.
+
+The function `string_xor` uses the `zip` function to iterate over the characters of `a` and `b` simultaneously. For each pair of characters, it applies the `xor` function and joins the results into a single string.
+
+Therefore, the final output of the function `string_xor('1', '1')` is '0'.

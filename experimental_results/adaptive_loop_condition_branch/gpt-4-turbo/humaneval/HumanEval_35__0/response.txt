@@ -1,0 +1,38 @@
+[REASONING]
+The function `max_element` is called with the list `[-5, 2, 48, 9, 4, 0, 6, 7]`.
+Inside the function, a variable `m` is initialized to the first element of the list, which is `-5`.
+
+Iteration 1:
+    - The element `-5` is compared with `m` (`-5`). Since `-5` is not greater than `-5`, `m` remains `-5`.
+Iteration 2:
+    - The element `2` is compared with `m` (`-5`). Since `2` is greater than `-5`, `m` is updated to `2`.
+Iteration 3:
+    - The element `48` is compared with `m` (`2`). Since `48` is greater than `2`, `m` is updated to `48`.
+Iteration 4:
+    - The element `9` is compared with `m` (`48`). Since `9` is not greater than `48`, `m` remains `48`.
+Iteration 5:
+    - The element `4` is compared with `m` (`48`). Since `4` is not greater than `48`, `m` remains `48`.
+Iteration 6:
+    - The element `0` is compared with `m` (`48`). Since `0` is not greater than `48`, `m` remains `48`.
+Iteration 7:
+    - The element `6` is compared with `m` (`48`). Since `6` is not greater than `48`, `m` remains `48`.
+Iteration 8:
+    - The element `7` is compared with `m` (`48`). Since `7` is not greater than `48`, `m` remains `48`.
+
+After all iterations, the maximum value found in the list is `48`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def max_element(l: list):
+    m = l[0]
+    for e in l: ## [STATE]e=[-5, 2, 48, 9, 4, 0, 6, 7][/STATE][STATE]l=[-5, 2, 48, 9, 4, 0, 6, 7][/STATE]
+        if e > m: ## [CONDITION](e > m)=[False, True, True, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, Y, Y, N, N, N, N, N][/BRANCH]
+            m = e
+    return m
+[/PYTHON]
+
+[OUTPUT]
+48
+[/OUTPUT]

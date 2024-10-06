@@ -1,0 +1,10 @@
+The function `fix_spaces` is called with ( text = "Yellow Yellow  Dirty  Fellow" ).
+The function iterates over the input string character by character.
+If the character is a space, it increments the `end` counter.
+If the character is not a space, it checks the value of `end - start`.
+    - If `end - start` is greater than 2, it adds a "-" followed by the character to `new_text`.
+    - If `end - start` is greater than 0, it adds `end - start` number of "_" followed by the character to `new_text`.
+    - If `end - start` is 0, it simply adds the character to `new_text`.
+After the loop completes, if `end - start` is greater than 2, it adds a "-" to `new_text`.
+If `end - start` is greater than 0, it adds "_" to `new_text`.
+The function returns the value of `new_text`.

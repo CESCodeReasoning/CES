@@ -1,0 +1,8 @@
+The function `unique` takes a list `l` as input. The purpose of this function is to return a new list containing only unique elements from the input list, sorted in ascending order.
+Here's the step-by-step breakdown of the function execution:
+1. Convert the list `l` to a set to remove duplicates. The set created from the list `[2, 1, 1, 2, 1, 1]` is `{1, 2}`.
+2. Convert the set back to a list. The list now is `[1, 2]`.
+3. Sort the list. Since the list `[1, 2]` is already in ascending order, it remains unchanged.
+4. Return the sorted list.
+
+Thus, the output of executing the function `unique` on the input `[2, 1, 1, 2, 1, 1]` is `[1, 2]`.

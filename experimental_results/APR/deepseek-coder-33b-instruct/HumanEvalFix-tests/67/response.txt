@@ -1,0 +1,30 @@
+The bug in the `has_close_elements` function is that it is not taking the absolute value of the distance between two elements. This means that if the distance is negative, it will not be considered as close.
+
+The bug in the `fruit_distribution` function is that it is not considering the case where the string does not contain any numbers. In this case, the function will return `None`, which will cause an error when it is subtracted from `n`.
+
+Here is the fixed code:
+
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+```python
+def fruit_distribution(s,n):
+    lis = list()
+    for i in s.split(' '):
+        if i.isdigit():
+            lis.append(int(i))
+    if lis:
+        return n - sum(lis) - 1
+    else:
+        return n
+```

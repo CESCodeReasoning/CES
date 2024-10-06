@@ -1,0 +1,7 @@
+The function `even_odd_palindrome` is called with ( n = 1 ).
+Inside the function, a variable `even_palindrome_count` and `odd_palindrome_count` are initialized to 0.
+
+Iteration 1:
+    -The number 1 is odd and a palindrome, so odd_palindrome_count becomes 1.
+
+Therefore, the final output of the function `even_odd_palindrome(1)` is (0, 1).

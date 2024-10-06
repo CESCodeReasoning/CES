@@ -1,0 +1,15 @@
+The function `change_base` is called with ( x = 9, base = 3 ).
+Inside the function, a variable `ret` is initialized to an empty string.
+First Iteration:
+    - ( x > 0 ) is True when x = 9.
+    - `ret = str(x % base) + ret` updates `ret` to "1" ( "" + "1" = "1" ).
+    - `x //= base` updates `x` to 3 ( 9 // 3 = 3 ).
+Second Iteration:
+    - ( x > 0 ) is True when x = 3.
+    - `ret = str(x % base) + ret` updates `ret` to "01" ( "1" + "0" = "01" ).
+    - `x //= base` updates `x` to 1 ( 3 // 3 = 1 ).
+Third Iteration:
+    - ( x > 0 ) is True when x = 1.
+    - `ret = str(x % base) + ret` updates `ret` to "101" ( "01" + "1" = "101" ).
+    - `x //= base` updates `x` to 0 ( 1 // 3 = 0 ).
+( x > 0 ) is False when x = 0, the while loop terminates. The function returns the value of `ret`, which is now "101".

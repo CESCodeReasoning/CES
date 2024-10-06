@@ -1,0 +1,4 @@
+def sort_third(my_list):
+    my_list = list(my_list)
+    my_list[::3] = sorted(my_list[::3])
+    return my_list

@@ -1,0 +1,38 @@
+[REASONING]
+The function `fib4` is designed to compute a sequence where each term is the sum of the previous four terms, starting with the initial list [0, 0, 2, 0]. The function takes an integer `n` and returns the nth term of this sequence.
+
+1. The function is called with `n = 5`.
+2. The initial list `results` is set to [0, 0, 2, 0].
+3. The function first checks if `n` is less than 4. Since `n = 5`, this condition is false, so the branch is not taken.
+4. The loop starts from 4 up to `n + 1` (which is 6 in this case). The loop will iterate twice (for values 4 and 5).
+5. In each iteration, a new element is appended to `results`. This new element is the sum of the last four elements of `results`.
+   - First Iteration (i = 4):
+     - New element = 0 + 0 + 2 + 0 = 2
+     - `results` becomes [0, 2, 0, 2]
+     - The first element (0) is popped, resulting in [2, 0, 2]
+   - Second Iteration (i = 5):
+     - New element = 2 + 0 + 2 + 0 = 4
+     - `results` becomes [0, 2, 2, 4]
+     - The first element (2) is popped, resulting in [2, 2, 4]
+6. After the loop, the function returns the last element of `results`, which is 4.
+
+Thus, the output of the function call `fib4(5)` is 4.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def fib4(n: int):
+    results = [0, 0, 2, 0]
+    if n < 4: ## [CONDITION](n < 4)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return results[n]
+
+    for _ in range(4, n + 1): ## [STATE]_=[4, 5][/STATE][STATE]range(4, (n + 1))=[4, 5][/STATE][STATE](n + 1)=[6][/STATE]
+        results.append(results[-1] + results[-2] + results[-3] + results[-4])
+        results.pop(0)
+
+    return results[-1]
+[/PYTHON]
+
+[OUTPUT]
+4
+[/OUTPUT]

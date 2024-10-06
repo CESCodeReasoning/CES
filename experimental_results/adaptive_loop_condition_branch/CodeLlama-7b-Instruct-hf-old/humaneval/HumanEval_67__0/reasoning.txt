@@ -1,0 +1,22 @@
+The function `fruit_distribution` is called with ( s = "2 apples and 3 oranges", n = 5 ).
+Inside the function, a variable `lis` is initialized to an empty list.
+The string `s` is split into a list of words using the space character as the delimiter.
+The list of words is then iterated over.
+First Iteration (i = "2")
+   - The string "2" is not a digit, so the condition `i.isdigit()` is false.
+   - The branch `taken` is not taken.
+Second Iteration (i = "apples")
+   - The string "apples" is not a digit, so the condition `i.isdigit()` is false.
+   - The branch `taken` is not taken.
+Third Iteration (i = "and")
+   - The string "and" is not a digit, so the condition `i.isdigit()` is false.
+   - The branch `taken` is not taken.
+Fourth Iteration (i = "3")
+   - The string "3" is a digit, so the condition `i.isdigit()` is true.
+   - The branch `taken` is taken.
+Fifth Iteration (i = "oranges")
+   - The string "oranges" is a digit, so the condition `i.isdigit()` is true.
+   - The branch `taken` is taken.
+The list `lis` is then returned.
+
+Therefore, the final output of the function `fruit_distribution("2 apples and 3 oranges",5)` is 2.

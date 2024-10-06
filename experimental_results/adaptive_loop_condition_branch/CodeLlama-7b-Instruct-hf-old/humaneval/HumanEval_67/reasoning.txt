@@ -1,0 +1,33 @@
+The function `fruit_distribution` is called with ( s = "5 apples and 6 oranges", n = 19 ).
+Inside the function, a variable `lis` is initialized to an empty list.
+The string `s` is split into a list of words using the space character as the delimiter.
+The list of words is then iterated over, and for each word, the following actions are performed:
+
+First Iteration:
+   - The word "5" is checked to see if it is a digit.
+   - The word "5" is not a digit, so the condition is false.
+   - The branch is not taken.
+Second Iteration:
+   - The word "apples" is checked to see if it is a digit.
+   - The word "apples" is not a digit, so the condition is false.
+   - The branch is not taken.
+Third Iteration:
+   - The word "and" is checked to see if it is a digit.
+   - The word "and" is not a digit, so the condition is false.
+   - The branch is not taken.
+Fourth Iteration:
+   - The word "6" is checked to see if it is a digit.
+   - The word "6" is a digit, so the condition is true.
+   - The branch is taken.
+   - The word "6" is converted to an integer using the `int()` function.
+   - The integer 6 is appended to the list `lis`.
+Fifth Iteration:
+   - The word "oranges" is checked to see if it is a digit.
+   - The word "oranges" is not a digit, so the condition is false.
+   - The branch is not taken.
+
+The `sum()` function is then called on the list `lis` to calculate the sum of the integers in the list.
+The value returned by `sum()` is then subtracted from the value of `n` to calculate the remaining number of fruits.
+The function returns the remaining number of fruits.
+
+Therefore, the final output of the function `fruit_distribution("5 apples and 6 oranges",19)` is 4 (19 - 6 = 4).

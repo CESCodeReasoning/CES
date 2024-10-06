@@ -1,0 +1,22 @@
+The function `tri` is called with ( n = 3 ).
+The first condition ( n == 0 ) is false, so the function enters the loop.
+Iteration 1:
+    - The value of i is 2.
+    - The condition ( i % 2 == 0 ) is false, so the else block is executed.
+    - The value of my_tri[i - 1] is 1, and the value of my_tri[i - 2] is 3.
+    - The value of ( i + 3 ) / 2 is 4.
+    - The value of my_tri[i - 1] + my_tri[i - 2] + ( i + 3 ) / 2 is 1 + 3 + 4 = 8.
+    - The value of my_tri is now [1, 3, 8].
+Iteration 2:
+    - The value of i is 3.
+    - The condition ( i % 2 == 0 ) is true, so the if block is executed.
+    - The value of i / 2 + 1 is 2.
+    - The value of my_tri is now [1, 3, 8, 2].
+Iteration 3:
+    - The value of i is 4.
+    - The condition ( i % 2 == 0 ) is false, so the else block is executed.
+    - The value of my_tri[i - 1] is 2, and the value of my_tri[i - 2] is 8.
+    - The value of ( i + 3 ) / 2 is 5.
+    - The value of my_tri[i - 1] + my_tri[i - 2] + ( i + 3 ) / 2 is 2 + 8 + 5 = 15.
+    - The value of my_tri is now [1, 3, 8, 2, 15].
+The function returns the value of my_tri, which is [1, 3, 8, 2, 15].

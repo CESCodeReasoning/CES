@@ -1,0 +1,5 @@
+The function get_max_triples(n) takes an integer n as its parameter.
+It first calculates a list A of n elements using a list comprehension where each element is calculated as i^2 - i + 1 for i in the range from 1 to n.
+Then, it iterates through the list A using three nested loops to find all possible triples (i, j, k) such that i, j, and k are distinct indices in the list A.
+For each triple, it checks if the sum of the elements at indices i, j, and k is divisible by 3. If it is, it adds the triple to the list ans.
+Finally, it returns the length of the list ans, which represents the number of triples that satisfy the condition.

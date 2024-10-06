@@ -1,0 +1,15 @@
+[REASONING]
+The function filter_by_substring takes a list of strings and a substring as input, and returns a new list containing only the strings from the input list that contain the substring.
+To determine the output of executing the function filter_by_substring on the input [], 'john', we need to check if the substring 'john' is contained in each string in the input list.
+Since the input list is empty, the output list will also be empty.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    return [x for x in strings if substring in x]
+[/ANSWER]
+
+[OUTPUT]
+[]
+[/OUTPUT]

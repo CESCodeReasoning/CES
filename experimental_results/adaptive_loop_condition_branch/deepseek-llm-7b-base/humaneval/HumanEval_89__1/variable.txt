@@ -1,0 +1,12 @@
+from typing import *
+
+
+def encrypt(s):
+    d = 'abcdefghijklmnopqrstuvwxyz'
+    out = ''
+    for c in s: ## [STATE]c=??[/STATE][STATE]s=??[/STATE]
+        if c in d: ## [CONDITION](c in d)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            out += d[(d.index(c) + 2 * 2) % 26]
+        else: ## [BRANCH]taken=??[/BRANCH]
+            out += c
+    return out

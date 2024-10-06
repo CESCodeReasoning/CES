@@ -1,0 +1,20 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: factorize
+main.py(5):     import math
+main.py(6):     fact = []
+main.py(7):     i = 2
+main.py(8):     while i <= int(math.sqrt(n) + 1):
+main.py(9):         if n % i == 0:
+main.py(10):             fact.append(i)
+main.py(11):             n //= i
+main.py(8):     while i <= int(math.sqrt(n) + 1):
+main.py(9):         if n % i == 0:
+main.py(13):             i += 1
+main.py(8):     while i <= int(math.sqrt(n) + 1):
+main.py(9):         if n % i == 0:
+main.py(10):             fact.append(i)
+main.py(11):             n //= i
+main.py(8):     while i <= int(math.sqrt(n) + 1):
+main.py(15):     if n > 1:
+main.py(16):         fact.append(n)
+main.py(17):     return fact

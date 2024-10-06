@@ -1,0 +1,4 @@
+The function anti_shuffle takes a string s as input and returns a new string that is the result of shuffling the characters in each word of s.
+To determine the output of executing the function anti_shuffle on the input "Hello World!!!", we need to shuffle the characters in each word of the input string.
+The first word is "Hello", which has 5 characters. We can shuffle the characters in this word in any order, but the order of the other words does not matter.
+Therefore, the output of executing the function anti_shuffle on the input "Hello World!!!" is "Hlloe oWrd!!!".

@@ -1,0 +1,25 @@
+[REASONING]
+The function `derivative` takes a list of coefficients `xs` representing the coefficients of a polynomial in increasing order of powers. The function calculates the derivative of the polynomial represented by these coefficients. The derivative of a term \(a_nx^n\) is \(na_nx^{n-1}\). The function uses list comprehension to compute the derivative:
+1. It enumerates over the list `xs`, where `i` is the index (representing the power of x) and `x` is the coefficient.
+2. For each term, it computes `i * x` which corresponds to the derivative of \(x^i\).
+3. The result of the list comprehension includes the term for \(x^0\) (which is 0 and should be omitted in the derivative), so it slices the list from the second element onward using `[1:]`.
+
+For the input `[3, 2, 1]`, the polynomial is \(3 + 2x + x^2\). The derivative is calculated as follows:
+- For \(3\) (where \(i = 0\)), the derivative is \(0 \times 3 = 0\).
+- For \(2x\) (where \(i = 1\)), the derivative is \(1 \times 2 = 2\).
+- For \(x^2\) (where \(i = 2\)), the derivative is \(2 \times 1 = 2\).
+
+The list comprehension produces `[0, 2, 2]`, and slicing from the second element gives `[2, 2]`, which represents the coefficients of the derivative \(2x + 2\).
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def derivative(xs: list):
+    # [STATE] xs = [3, 2, 1] [/STATE]
+    return [(i * x) for i, x in enumerate(xs)][1:]  # [STATE] [(i * x) for i, x in enumerate(xs)] = [0, 2, 2] [/STATE]
+[/PYTHON]
+
+[OUTPUT]
+[2, 2]
+[/OUTPUT]

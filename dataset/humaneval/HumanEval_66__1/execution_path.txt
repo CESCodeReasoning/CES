@@ -1,0 +1,20 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: digitSum
+main.py(5):     if s == "":
+main.py(7):     return sum(ord(char) if char.isupper() else 0 for char in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):     return sum(ord(char) if char.isupper() else 0 for char in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):     return sum(ord(char) if char.isupper() else 0 for char in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):     return sum(ord(char) if char.isupper() else 0 for char in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):     return sum(ord(char) if char.isupper() else 0 for char in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):     return sum(ord(char) if char.isupper() else 0 for char in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):     return sum(ord(char) if char.isupper() else 0 for char in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):     return sum(ord(char) if char.isupper() else 0 for char in s)
+ --- modulename: main, funcname: <genexpr>
+main.py(7):     return sum(ord(char) if char.isupper() else 0 for char in s)

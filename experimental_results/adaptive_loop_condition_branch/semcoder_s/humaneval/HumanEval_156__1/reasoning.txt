@@ -1,0 +1,56 @@
+The function `int_to_mini_roman` is called with ( number = 152 ).
+Inside the function, two lists `num` and `sym` are defined to map integers to their roman numerals.
+The while loop iterates from the largest number in `num` (1000) down to 1 (I).
+First Iteration (i = 12):
+    - number // num[12] = 152 // 1000 = 1
+    - number % num[12] = 152 % 1000 = 52
+    - res += sym[12] updates res to 'm' ( '' + 'M' = 'm' ).
+Second Iteration (i = 11):
+    - number // num[11] = 52 // 900 = 0
+    - number % num[11] = 52 % 900 = 52
+    - res += sym[11] updates res to 'm' ( 'm' + 'M' = 'mm' ).
+Third Iteration (i = 10):
+    - number // num[10] = 52 // 500 = 1
+    - number % num[10] = 52 % 500 = 2
+    - res += sym[10] updates res to 'mmv' ( 'mm' + 'D' = 'mmv' ).
+Fourth Iteration (i = 9):
+    - number // num[9] = 2 // 400 = 0
+    - number % num[9] = 2 % 400 = 2
+    - res += sym[9] updates res to 'mmv' ( 'mmv' + 'D' = 'mmvd' ).
+Fifth Iteration (i = 8):
+    - number // num[8] = 2 // 100 = 0
+    - number % num[8] = 2 % 100 = 2
+    - res += sym[8] updates res to 'mmvd' ( 'mmvd' + 'C' = 'mmvdc' ).
+Sixth Iteration (i = 7):
+    - number // num[7] = 2 // 90 = 0
+    - number % num[7] = 2 % 90 = 2
+    - res += sym[7] updates res to 'mmvdc' ( 'mmvdc' + 'C' = 'mmvdccl' ).
+Seventh Iteration (i = 6):
+    - number // num[6] = 2 // 50 = 0
+    - number % num[6] = 2 % 50 = 2
+    - res += sym[6] updates res to 'mmvdccl' ( 'mmvdccl' + 'L' = 'mmvdcclx' ).
+Eighth Iteration (i = 5):
+    - number // num[5] = 2 // 40 = 0
+    - number % num[5] = 2 % 40 = 2
+    - res += sym[5] updates res to 'mmvdcclx' ( 'mmvdcclx' + 'L' = 'mmvdcclxl' ).
+Ninth Iteration (i = 4):
+    - number // num[4] = 2 // 10 = 0
+    - number % num[4] = 2 % 10 = 2
+    - res += sym[4] updates res to 'mmvdcclxl' ( 'mmvdcclxl' + 'X' = 'mmvdcclxlv' ).
+Tenth Iteration (i = 3):
+    - number // num[3] = 2 // 9 = 0
+    - number % num[3] = 2 % 9 = 2
+    - res += sym[3] updates res to 'mmvdcclxlv' ( 'mmvdcclxlv' + 'X' = 'mmvdcclxlvv' ).
+Eleventh Iteration (i = 2):
+    - number // num[2] = 2 // 5 = 0
+    - number % num[2] = 2 % 5 = 2
+    - res += sym[2] updates res to 'mmvdcclxlvv' ( 'mmvdcclxlvv' + 'V' = 'mmvdcclxlvvv' ).
+Twelfth Iteration (i = 1):
+    - number // num[1] = 2 // 4 = 0
+    - number % num[1] = 2 % 4 = 2
+    - res += sym[1] updates res to 'mmvdcclxlvvv' ( 'mmvdcclxlvvv' + 'V' = 'mmvdcclxlvvvv' ).
+Thirteenth Iteration (i = 0):
+    - number // num[0] = 2 // 1 = 2
+    - number % num[0] = 2 % 1 = 0
+    - res += sym[0] updates res to 'mmvdcclxlvvvv' ( 'mmvdcclxlvvvv' + 'I' = 'mmvdcclxlvvvv' ).
+The while loop ends, the function returns the value of `res`, which is now 'mmvdcclxlvvvv'.

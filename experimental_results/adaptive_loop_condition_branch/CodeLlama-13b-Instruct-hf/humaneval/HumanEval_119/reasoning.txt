@@ -1,0 +1,22 @@
+The function `match_parens` is called with ( lst = ['()(', ')'] ).
+Inside the function, a nested function `check` is defined.
+
+The function `check` takes a string `s` as input.
+
+The function `check` iterates through the characters of `s` and checks if each character is '(' or ')'.
+
+If a character is '(', then `val` is incremented by 1.
+
+If a character is ')', then `val` is decremented by 1.
+
+If `val` becomes less than 0, then the function returns `False`.
+
+If `val` becomes 0, then the function returns `True`.
+
+If `val` is not 0, then the function returns `False`.
+
+The function `match_parens` calls the function `check` with two strings: `S1 = lst[0] + lst[1]` and `S2 = lst[1] + lst[0]`.
+
+The function `check` returns `True` if either `S1` or `S2` is a valid string of parentheses.
+
+Therefore, the final output of the function `match_parens(['()(', ')'])` is 'Yes'.

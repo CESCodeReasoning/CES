@@ -1,0 +1,23 @@
+[REASONING]
+The function `split_words` is called with ( txt = "" ).
+The first condition `if " " in txt` is False, the first branch is not taken.
+The second condition `elif "," in txt` is also False, the second branch is not taken.
+The third branch is taken.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def split_words(txt):
+    if " " in txt: ## [CONDITION](" " in txt)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return txt.split()
+    elif "," in txt: ## [BRANCH]taken=[N][/BRANCH]
+        return txt.replace(',', ' ').split()
+    else: ## [BRANCH]taken=[Y][/BRANCH]
+        return len([i for i in txt if i.islower() and ord(i) % 2 == 0])
+[/ANSWER]
+
+[OUTPUT]
+0
+[/OUTPUT]

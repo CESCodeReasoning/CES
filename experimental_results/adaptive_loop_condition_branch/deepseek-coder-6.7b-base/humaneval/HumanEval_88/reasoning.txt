@@ -1,0 +1,4 @@
+The function sort_array takes an array of integers as input and returns a sorted array in ascending order.
+To determine the output of executing the function sort_array on the input [15, 42, 87, 32 ,11, 0], we need to sort the array in ascending order.
+The first element of the array is 15 and the last element is 0. Since the sum of 15 and 0 is even, the array should be sorted in ascending order.
+Therefore, the output of executing the function sort_array on the input [15, 42, 87, 32 ,11, 0] is [0, 11, 15, 32, 42, 87].

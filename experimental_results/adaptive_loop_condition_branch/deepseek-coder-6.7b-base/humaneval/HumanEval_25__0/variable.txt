@@ -1,0 +1,8 @@
+from typing import *
+
+
+def factorize(n: int) -> List[int]:
+    import math
+    fact = []
+    i = 2
+    while i <= int(math.sqrt(n) + 1): ## [STATE](i <= int((math.sqrt(n) + 1)))=[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True

@@ -1,0 +1,5 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: circular_shift
+main.py(5):     s = str(x)
+main.py(6):     if shift > len(s):
+main.py(9):         return s[len(s) - shift:] + s[:len(s) - shift]

@@ -1,0 +1,11 @@
+The function `correct_bracketing` is called with ( brackets = "(" ).
+Inside the function, a variable `depth` is initialized to 0.
+The loop iterates over each character `b` in the string `brackets`.
+First Iteration (b = "(")
+   - The character `b` is "(", so the condition `b == "("` is true.
+   - Action: `depth += 1` updates `depth` to 1 (`0 + 1 = 1`).
+Second Iteration (b = ")")
+   - The character `b` is ")", so the condition `b == "("` is false.
+   - Action: `depth -= 1` updates `depth` to 0 (`1 - 1 = 0`).
+   - The condition `depth < 0` is false.
+The loop completes, and the function returns `depth == 0`, which is true.

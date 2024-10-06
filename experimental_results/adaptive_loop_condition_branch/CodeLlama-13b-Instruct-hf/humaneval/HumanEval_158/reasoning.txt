@@ -1,0 +1,5 @@
+The function find_max takes a list of strings as input and returns the longest string in the list.
+To determine the output of executing the function find_max on the input ["name", "of", "string"], we need to sort the list of strings based on the length of the unique characters in each string.
+The sorted function is used with the key parameter set to a lambda function that takes a string x and returns a tuple containing the length of the unique characters in x and x itself.
+The sorted function then sorts the list of strings based on the first element of the tuple, which is the length of the unique characters in each string.
+The first element of the sorted list is then returned as the output of the function.

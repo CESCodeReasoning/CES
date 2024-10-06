@@ -1,0 +1,6 @@
+The function `rounded_avg` is called with ( n = 560, m = 851 ).
+The condition ( m < n ) is not satisfied, therefore the if branch is not taken.
+A variable `summation` is initialized to 0.
+The loop iterates from 560 through 851 (since ( n = 560, m = 851 )).
+For each iteration, `summation += i` updates `summation` by adding the current value of `i`.
+After the loop completes, the function returns the binary representation of the rounded average of the numbers from n to m.

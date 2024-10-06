@@ -1,0 +1,4 @@
+if n%2==0:
+        odd_collatz = [] 
+    else:
+        odd_collatz = [n]

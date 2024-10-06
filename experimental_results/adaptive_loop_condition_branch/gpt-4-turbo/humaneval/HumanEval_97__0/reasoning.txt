@@ -1,0 +1,9 @@
+The function `multiply` takes two integers, `a` and `b`, as input. It calculates the product of the last digits of both integers. The last digit of an integer can be obtained using the modulus operation with 10 (`a % 10` and `b % 10`). The `abs` function ensures that the result is non-negative, even if the input numbers are negative.
+
+For the input values `a = 2020` and `b = 1851`:
+- The last digit of `2020` is `2020 % 10 = 0`.
+- The last digit of `1851` is `1851 % 10 = 1`.
+
+The product of these last digits is `0 * 1 = 0`.
+
+Thus, the output of the function `multiply` when called with arguments `2020` and `1851` is `0`.

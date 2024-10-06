@@ -1,0 +1,36 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: string_xor
+main.py(3):     def xor(i, j):
+main.py(9):     return ''.join(xor(x, y) for x, y in zip(a, b))
+ --- modulename: main, funcname: <genexpr>
+main.py(9):     return ''.join(xor(x, y) for x, y in zip(a, b))
+ --- modulename: main, funcname: xor
+main.py(4):         if i == j:
+main.py(5):             return '0'
+ --- modulename: main, funcname: <genexpr>
+main.py(9):     return ''.join(xor(x, y) for x, y in zip(a, b))
+ --- modulename: main, funcname: xor
+main.py(4):         if i == j:
+main.py(7):             return '1'
+ --- modulename: main, funcname: <genexpr>
+main.py(9):     return ''.join(xor(x, y) for x, y in zip(a, b))
+ --- modulename: main, funcname: xor
+main.py(4):         if i == j:
+main.py(5):             return '0'
+ --- modulename: main, funcname: <genexpr>
+main.py(9):     return ''.join(xor(x, y) for x, y in zip(a, b))
+ --- modulename: main, funcname: xor
+main.py(4):         if i == j:
+main.py(5):             return '0'
+ --- modulename: main, funcname: <genexpr>
+main.py(9):     return ''.join(xor(x, y) for x, y in zip(a, b))
+ --- modulename: main, funcname: xor
+main.py(4):         if i == j:
+main.py(7):             return '1'
+ --- modulename: main, funcname: <genexpr>
+main.py(9):     return ''.join(xor(x, y) for x, y in zip(a, b))
+ --- modulename: main, funcname: xor
+main.py(4):         if i == j:
+main.py(5):             return '0'
+ --- modulename: main, funcname: <genexpr>
+main.py(9):     return ''.join(xor(x, y) for x, y in zip(a, b))

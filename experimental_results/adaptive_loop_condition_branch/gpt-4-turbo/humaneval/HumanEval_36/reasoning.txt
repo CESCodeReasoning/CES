@@ -1,0 +1,20 @@
+The function `fizz_buzz` is called with `n = 50`.
+Inside the function:
+1. An empty list `ns` is initialized to store numbers that are divisible by either 11 or 13.
+2. A loop iterates from 0 to 49 (since `n = 50`).
+   - For each iteration, it checks if the current number `i` is divisible by 11 or 13.
+   - If true, the number is appended to the list `ns`.
+3. After the loop, the list `ns` contains numbers divisible by 11 or 13 within the range 0 to 49.
+4. The list `ns` is then converted to a string `s` by mapping each number to a string and joining them.
+5. Another loop iterates over each character `c` in the string `s`.
+   - It counts how many times the character '7' appears in the string.
+6. The count of '7' is stored in `ans` and returned.
+
+Step-by-step loop iterations:
+- Numbers divisible by 11 within the range: 0, 11, 22, 33, 44.
+- Numbers divisible by 13 within the range: 0, 13, 26, 39.
+- Combined list (removing duplicates): 0, 11, 13, 22, 26, 33, 39, 44.
+- String formed from the list: "011132226333944".
+- Count of '7' in the string: 1 (from the number 13).
+
+Therefore, the function returns 1, as '7' appears once in the string.

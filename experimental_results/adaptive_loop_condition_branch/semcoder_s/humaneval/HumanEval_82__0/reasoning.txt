@@ -1,0 +1,7 @@
+The function `prime_length` is called with ( string = 'Wow' ).
+The length of the string 'Wow' is 3.
+The function checks if the length is 0 or 1, which it is not.
+The function then iterates from 2 to 3 (since the length is 3).
+The loop checks if 3 is divisible by 2, which it is not.
+The loop ends without returning False.
+Therefore, the function returns True.

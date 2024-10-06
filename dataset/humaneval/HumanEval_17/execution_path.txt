@@ -1,0 +1,7 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: parse_music
+main.py(3):     note_map = {'o': 4, 'o|': 2, '.|': 1}
+main.py(4):     return [note_map[x] for x in music_string.split(' ') if x]
+ --- modulename: main, funcname: <listcomp>
+main.py(4):     return [note_map[x] for x in music_string.split(' ') if x]
+main.py(4):     return [note_map[x] for x in music_string.split(' ') if x]

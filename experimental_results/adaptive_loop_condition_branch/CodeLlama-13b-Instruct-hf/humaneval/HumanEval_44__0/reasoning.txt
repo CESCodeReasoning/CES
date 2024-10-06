@@ -1,0 +1,27 @@
+The function `change_base` is called with ( x = 234, base = 2 ).
+Inside the function, a variable `ret` is initialized to an empty string.
+First Iteration:
+    - x = 234, x % base = 1, x //= base = 117.
+    -`ret = str(x % base) + ret` updates `ret` to "1".
+Second Iteration:
+    - x = 117, x % base = 1, x //= base = 58.
+    -`ret = str(x % base) + ret` updates `ret` to "11".
+Third Iteration:
+    - x = 58, x % base = 1, x //= base = 29.
+    -`ret = str(x % base) + ret` updates `ret` to "111".
+Fourth Iteration:
+    - x = 29, x % base = 1, x //= base = 14.
+    -`ret = str(x % base) + ret` updates `ret` to "1111".
+Fifth Iteration:
+    - x = 14, x % base = 1, x //= base = 7.
+    -`ret = str(x % base) + ret` updates `ret` to "11111".
+Sixth Iteration:
+    - x = 7, x % base = 1, x //= base = 3.
+    -`ret = str(x % base) + ret` updates `ret` to "111111".
+Seventh Iteration:
+    - x = 3, x % base = 1, x //= base = 1.
+    -`ret = str(x % base) + ret` updates `ret` to "1111111".
+Eighth Iteration:
+    - x = 1, x % base = 1, x //= base = 0.
+    -`ret = str(x % base) + ret` updates `ret` to "11111111".
+The while loop terminates, the function returns the value of `ret`, which is now "11111111".

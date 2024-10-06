@@ -1,0 +1,31 @@
+from typing import *
+
+
+def minPath(grid, k):
+    n = len(grid)
+    val = n * n + 1
+    for i in range(n): ## [STATE]i=[0, 1, 2, 3][/STATE][STATE]range(n)=[0, 1, 2, 3][/STATE][STATE]n=[4][/STATE]
+        for j in range(n): ## [STATE]j=[0, 1, 2, 3][/STATE][STATE]range(n)=[0, 1, 2, 3][/STATE][STATE]n=[4][/STATE]
+            if grid[i][j] == 1: ## [CONDITION](grid[i][j] == 1)=[False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, Y, N, N, N, N, N, N, N, N, N, N, N][/BRANCH]
+                temp = []
+                if i != 0: ## [CONDITION](i != 0)=[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+                    temp.append(grid[i - 1][j])
+
+                if j != 0: ## [CONDITION](j != 0)=[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+                    temp.append(grid[i][j - 1])
+
+                if i != n - 1: ## [CONDITION](i != n - 1)=[True, True, True, True, False, True, True, True, True, True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, N, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+                    temp.append(grid[i + 1][j])
+
+                if j != n - 1: ## [CONDITION](j != n - 1)=[True, True, True, True, True, True, True, True, False, True, True, True, True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y, Y, Y, Y, Y, N, Y, Y, Y, Y, Y, Y, Y][/BRANCH]
+                    temp.append(grid[i][j + 1])
+
+                val = min(temp)
+
+    ans = []
+    for i in range(k): ## [STATE]i=[0, 1, 2, 3, 4][/STATE][STATE]range(k)=[0, 1, 2, 3, 4][/STATE][STATE]k=[5][/STATE]
+        if i % 2 == 0: ## [CONDITION](i % 2 == 0)=[True, False, True, False, True][/CONDITION][BRANCH]taken=[Y, N, Y, N, Y][/BRANCH]
+            ans.append(1)
+        else: ## [BRANCH]taken=[N, Y, N, Y, N][/BRANCH]
+            ans.append(val)
+    return ans

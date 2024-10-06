@@ -1,0 +1,7 @@
+The function `largest_divisor` is called with ( n = 3 ).
+The loop iterates from 2 (the largest possible divisor) down to 0 (exclusive).
+First Iteration (i = 2)
+   - `n % i` is 1, not equal to 0.
+Second Iteration (i = 1)
+   - `n % i` is 0, which satisfies the condition.
+   - The function returns 1.

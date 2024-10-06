@@ -1,0 +1,4 @@
+The function `any_int` is called with ( x = 3, y = 4, z = 7 ).
+The first condition `isinstance(x, int) and isinstance(y, int) and isinstance(z, int)` is true because all three arguments are integers.
+The second condition `(x + y == z) or (x + z == y) or (y + z == x)` is false because none of the three sums is equal to any of the three arguments.
+Therefore, the function returns False.

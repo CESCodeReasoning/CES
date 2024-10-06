@@ -1,0 +1,17 @@
+```response
+    return n - sum(lis) - 1
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def find_max_min(nums):
+    max_num = nums[0]
+    min_num = nums[0]
+    for num in nums:
+        if num > max_num:
+            max_num = num
+        elif num < min_num:
+            min_num = num
+    return max_num, min_num

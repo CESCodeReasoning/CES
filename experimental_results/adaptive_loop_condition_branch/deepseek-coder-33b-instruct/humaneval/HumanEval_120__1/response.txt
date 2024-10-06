@@ -1,0 +1,28 @@
+
+[REASONING]
+The function `maximum` is called with ( arr = [123, -123, 20, 0 , 1, 2, -3], k = 3 ).
+`k` is 3, which is not equal to 0.
+The condition `k == 0` is false, therefore the else branch is taken.
+Action: `arr.sort()` sorts the array in ascending order.
+Action: `ans = arr[-k:]` takes the last `k` elements from the sorted array.
+Return Statement
+   - After the if-else block, the function returns the value of `ans`, which is [0, 1, 2].
+
+Therefore, the final output of the function `maximum([123, -123, 20, 0 , 1, 2, -3], 3)` is [0, 1, 2].
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def maximum(arr, k):
+    if k == 0: ## [CONDITION](k == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return []
+    arr.sort() ## [STATE]arr=[-123, -3, 0, 1, 2, 20, 123][/STATE]
+    ans = arr[-k:] ## [STATE]ans=[0, 1, 2][/STATE]
+    return ans
+[/ANSWER]
+
+[OUTPUT]
+[0, 1, 2]
+[/OUTPUT]

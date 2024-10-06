@@ -1,0 +1,19 @@
+[REASONING]
+The function `sum_to_n` takes an integer `n` as input and calculates the sum of all integers from 0 to `n` inclusive. This is achieved by using the `range` function which generates a sequence of numbers from 0 to `n`, and the `sum` function which adds up all the numbers in the sequence.
+To determine the output of executing the function `sum_to_n` on the input `100`, we need to calculate the sum of all integers from 0 to 100. This can be done using the formula for the sum of an arithmetic series: \( \frac{n(n + 1)}{2} \), where \( n \) is 100 in this case.
+Therefore, the output of executing the function `sum_to_n` on the input `100` is \( \frac{100 \times 101}{2} = 5050 \).
+[REASONING]
+
+[ANSWER]
+```python
+from typing import *
+
+def sum_to_n(n: int):
+    # [STATE] n = 100 [/STATE]
+    return sum(range(n + 1))  # [STATE] range(n + 1) generates numbers from 0 to 100 inclusive [/STATE]
+```
+[/ANSWER]
+
+[OUTPUT]
+5050
+[/OUTPUT]

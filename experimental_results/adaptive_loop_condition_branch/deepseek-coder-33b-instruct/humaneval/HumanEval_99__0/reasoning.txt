@@ -1,0 +1,6 @@
+The function `closest_integer` is called with ( value = "14.5" ).
+Inside the function, the condition (value.count('.') == 1) is satisfied, therefore the if branch is taken.
+The while loop removes the trailing zeros from the value, but since there are no trailing zeros, the loop is not executed.
+The condition (value[-2:] == '.5') is also satisfied, therefore the if branch is taken.
+The condition (num > 0) is also satisfied, therefore the if branch is taken.
+The function returns `res` as the output.

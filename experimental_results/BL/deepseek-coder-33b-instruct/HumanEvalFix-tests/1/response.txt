@@ -1,0 +1,19 @@
+```response
+                current_depth -= 1
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def find_max_subarray(numbers: List[int]) -> List[int]:
+    max_sum = float('-inf')
+    max_start = max_end = 0
+    current_sum = 0
+    current_start = 0
+
+    for current_end, x in enumerate(numbers):
+        if current_sum

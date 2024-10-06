@@ -1,0 +1,13 @@
+The function `prod_signs` is called with ( arr = [1, 2, 2, -4] ).
+The condition `not arr` is false, therefore the if branch is not taken.
+The variable `prod` is initialized to 0.
+The list comprehension `list(filter(lambda x: x < 0, arr))` returns [2, -4].
+The length of the list is 2.
+The method `(-1) ** len(list(filter(lambda x: x < 0, arr)))` is called with the argument 2.
+The result of the method is -1.
+The variable `prod` is updated to -1.
+The list comprehension `sum([abs(i) for i in arr])` returns 7.
+The variable `prod` is updated to -1 * 7 = -7.
+The method returns -7.
+
+Therefore, the final output of the function `prod_signs([1, 2, 2, -4])` is -7.

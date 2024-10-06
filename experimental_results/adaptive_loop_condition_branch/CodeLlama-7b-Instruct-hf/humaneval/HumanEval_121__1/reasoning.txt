@@ -1,0 +1,9 @@
+The function solution takes a list of integers lst as input and returns the sum of all the even indices that contain odd numbers.
+To determine the output of executing the function solution on the input [30, 13, 23, 32], we need to follow the steps below:
+
+1. The list [30, 13, 23, 32] has four elements.
+2. The even indices of the list are 0, 2, and 3.
+3. The odd numbers at the even indices are 30, 23, and 32.
+4. The sum of these odd numbers is 30 + 23 + 32 = 85.
+
+Therefore, the output of executing the function solution on the input [30, 13, 23, 32] is 85.

@@ -1,0 +1,14 @@
+The function decimal_to_binary takes a decimal number as input and returns its binary representation.
+
+The bin function in Python converts a decimal number to binary. The bin function returns a string that starts with '0b' to indicate that it is a binary number, so we need to slice the first two characters from the returned string.
+
+To complete the task, we need to add 'db' at the beginning and at the end of the binary representation.
+
+So, for the input 0, the binary representation is '0b0'. After slicing the first two characters, we get '0'. After adding 'db' at the beginning and at the end, we get 'db0db'.
+
+Therefore, the output of executing the function decimal_to_binary on the input 0 is 'db0db'.
+
+[OUTPUT]
+"db0db"
+[/OUTPUT]
+<|EOT|>

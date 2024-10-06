@@ -1,0 +1,5 @@
+The function encode takes a string message as input and performs the following operations:
+1. It creates a dictionary vowels_replace that maps each vowel to its corresponding ASCII code plus 2.
+2. It swaps the case of the input message.
+3. It iterates over each character in the message and replaces it with the corresponding value in vowels_replace if it is a vowel, or leaves it unchanged if it is not a vowel.
+4. It returns the encoded message.

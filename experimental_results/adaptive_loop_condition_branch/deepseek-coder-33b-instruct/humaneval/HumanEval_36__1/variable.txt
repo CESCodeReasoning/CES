@@ -1,0 +1,13 @@
+from typing import *
+
+
+def fizz_buzz(n: int):
+    ns = []
+    for i in range(n): ## [STATE]i=[0, 1, ..., 199][/STATE][STATE]range(n)=[0, 1, ..., 199][/STATE][STATE]n=[200][/STATE]
+        if i % 11 == 0 or i % 13 == 0: ## [CONDITION](i % 11 == 0 or i % 13 == 0)=[True, False, False, ..., False, False, True, False, False, False, ..., False, False, True][/CONDITION][CONDITION](i % 11 == 0)=[True, False, False, ..., False, False, True, False, False, False, ..., False, False, True][/CONDITION][CONDITION](i % 13 == 0)=[False, False, False, ..., False, False, False, False, False, False, ..., False, False, False][/CONDITION][BRANCH]taken=[Y, N, N, ..., N, Y, N, N, N, ..., N, N, N][/BRANCH]
+            ns.append(i)
+    s = ''.join(list(map(str, ns)))
+    ans = 0
+    for c in s: ## [STATE]c=['0', '11', '13'][/STATE][STATE]s=['01113'][/STATE]
+        ans += (c == '7')
+    return ans

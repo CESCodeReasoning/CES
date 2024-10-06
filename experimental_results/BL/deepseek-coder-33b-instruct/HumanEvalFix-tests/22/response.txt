@@ -1,0 +1,18 @@
+```response
+    out = [x for x in values if isinstance(x, int)]
+    return values
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+
+
+def get_max_min_diff(numbers: List[int]) -> int:
+    if len(numbers) == 0:
+        return 0
+    max_val = max(numbers)
+    min_val = min(numbers)
+    return max_val -

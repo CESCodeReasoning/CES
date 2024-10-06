@@ -1,0 +1,5 @@
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The outer loop iterates through each word in the sentence.
+For each word, it checks if the length of the word is 1 or if the length of the word is divisible by any number from 2 to the length of the word.
+If the word meets either of these conditions, it is not added to the new list.
+Finally, the function returns a string of all the words in the new list, joined by a space.

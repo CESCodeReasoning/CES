@@ -1,0 +1,4 @@
+The function `sorted_list_sum` is called with ( lst = ["d", "dcba", "abcd", "a"] ).
+Inside the function, the list is sorted using the built-in `sort` method.
+The sorted list is then iterated over, and for each element `i` in the list, the length of `i` is checked. If the length of `i` is even, `i` is appended to a new list called `new_lst`.
+Finally, the `new_lst` is sorted using the built-in `sorted` function with the `key` parameter set to `len`.

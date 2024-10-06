@@ -1,0 +1,16 @@
+The function `match_parens` is called with ( lst = ['()(', ')'] ).
+Inside the function, a variable `S1` and `S2` are initialized to the concatenation of the first and second elements of the input list.
+
+Iteration 1:
+    -The character '(' is encountered, so val becomes 1.
+    -The character '(' is encountered, so val becomes 2.
+    -The character ')' is encountered, so val becomes 1.
+    -The character ')' is encountered, so val becomes 0.
+    -Since val is 0, the function returns True.
+
+Iteration 2:
+    -The character '(' is encountered, so val becomes 1.
+    -The character ')' is encountered, so val becomes 0.
+    -Since val is 0, the function returns True.
+
+Since the function returns True for both S1 and S2, the function returns 'Yes'.

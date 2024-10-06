@@ -1,0 +1,12 @@
+The function `is_bored` takes a string `S` as input and returns the number of sentences in `S` that start with "I ".
+
+To determine the output of executing the function `is_bored` on the input "I love It !", we need to split the string `S` into sentences using the `re.split` function. The `re.split` function splits the string `S` at each occurrence of a period, question mark, or exclamation point followed by zero or more whitespace characters.
+
+The `sum` function then counts the number of sentences in `S` that start with "I ". This is done by iterating over each sentence in `S` and checking if the first two characters of the sentence are "I ". If they are, the sentence is counted.
+
+Therefore, the output of executing the function `is_bored` on the input "I love It !" is 1. There is one sentence in the input string that starts with "I ".
+
+The string "I love It !" is split into the sentences ["I love It !"]. The first two characters of the first sentence "I love It !" are "I " and "I " does not equal "I ", so the function `is_bored` returns 0.
+
+The string "I love It !" is split into the sentences ["I love It !"]. The first two characters of the first sentence "I love It !" are "I " and "I " does equal "I ", so the function `is_bored` returns 1.
+<|EOT|>

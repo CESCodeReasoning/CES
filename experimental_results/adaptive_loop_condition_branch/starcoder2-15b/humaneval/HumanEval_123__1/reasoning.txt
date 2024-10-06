@@ -1,0 +1,30 @@
+The function `get_odd_collatz` is called with ( n = 5 ).
+Inside the function, the condition `n % 2 == 0` is false. The else branch is taken.
+The list `odd_collatz` is initialized to `[5]`.
+The loop iterates while `n` is greater than 1.
+First Iteration (n = 5):
+    - The condition `n % 2 == 0` is false. The else branch is taken.
+    - `n` is updated to `n * 3 + 1`, which is 16.
+    - The condition `n % 2 == 1` is true. The if branch is taken.
+    - `odd_collatz` is appended with `int(n)`, which is 16.
+Second Iteration (n = 16):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n / 2`, which is 8.
+    - The condition `n % 2 == 1` is true. The if branch is taken.
+    - `odd_collatz` is appended with `int(n)`, which is 8.
+Third Iteration (n = 8):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n / 2`, which is 4.
+    - The condition `n % 2 == 1` is true. The if branch is taken.
+    - `odd_collatz` is appended with `int(n)`, which is 4.
+Fourth Iteration (n = 4):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n / 2`, which is 2.
+    - The condition `n % 2 == 1` is true. The if branch is taken.
+    - `odd_collatz` is appended with `int(n)`, which is 2.
+Fifth Iteration (n = 2):
+    - The condition `n % 2 == 0` is true. The if branch is taken.
+    - `n` is updated to `n / 2`, which is 1.
+    - The condition `n % 2 == 1` is true. The if branch is taken.
+    - `odd_collatz` is appended with `int(n)`, which is 1.
+After the loop completes, the function returns the sorted list `odd_collatz`, which is now `[5, 8, 4, 2, 1]`.

@@ -1,0 +1,13 @@
+The function `max_fill` takes two parameters: `grid`, which is a list of lists of integers, and `capacity`, which is an integer. The function calculates the maximum number of containers needed to fill each row of the grid, given the capacity of each container.
+
+1. The function iterates over each row in the grid using a list comprehension.
+2. For each row, it calculates the sum of the elements in that row.
+3. It then divides this sum by the `capacity` to determine how many full containers are needed for that row. Since containers can only hold integer amounts, it uses `math.ceil` to round up to the nearest whole number if there is any remainder.
+4. The results for each row are summed up to get the total number of containers needed for the entire grid.
+
+For the input `max_fill([[1,1,1,1], [1,1,1,1]], 2)`, the function processes as follows:
+- For the first row `[1,1,1,1]`, the sum is `4`. Dividing by the capacity `2` gives `2.0`, which rounds up to `2`.
+- For the second row `[1,1,1,1]`, the sum is also `4`. Dividing by the capacity `2` gives `2.0`, which also rounds up to `2`.
+- The total number of containers needed is `2 + 2 = 4`.
+
+Thus, the output of the function for this input is `4`.

@@ -1,0 +1,12 @@
+The function `minPath` is called with ( grid = [[8, 14, 9, 2], [6, 4, 13, 15], [5, 7, 1, 12], [3, 10, 11, 16]], k = 5 ).
+Inside the function, a variable `n` is assigned the value of the length of the grid, which is 4.
+The function then initializes a variable `val` to a large value ( n * n + 1 = 17 ).
+The function then iterates through each cell in the grid using two nested loops.
+For each cell, the function checks if the value of the cell is 1.
+If the value of the cell is 1, the function creates a temporary list `temp` and adds the values of the cells to the north, south, east, and west of the current cell to the list.
+The function then finds the minimum value in the temporary list and assigns it to the variable `val`.
+After iterating through all the cells in the grid, the function initializes a list `ans` and iterates through the range of k (which is 5).
+For each iteration, the function checks if the iteration number is even.
+If the iteration number is even, the function appends 1 to the list `ans`.
+Otherwise, the function appends the value of `val` to the list `ans`.
+Finally, the function returns the list `ans`.

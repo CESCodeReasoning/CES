@@ -1,0 +1,26 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: match_parens
+main.py(3):     def check(s):
+main.py(14):     S1 = lst[0] + lst[1]
+main.py(15):     S2 = lst[1] + lst[0]
+main.py(16):     return 'Yes' if check(S1) or check(S2) else 'No'
+ --- modulename: main, funcname: check
+main.py(4):         val = 0
+main.py(5):         for i in s:
+main.py(6):             if i == '(':
+main.py(7):                 val = val + 1
+main.py(10):             if val < 0:
+main.py(5):         for i in s:
+main.py(6):             if i == '(':
+main.py(9):                 val = val - 1
+main.py(10):             if val < 0:
+main.py(5):         for i in s:
+main.py(6):             if i == '(':
+main.py(7):                 val = val + 1
+main.py(10):             if val < 0:
+main.py(5):         for i in s:
+main.py(6):             if i == '(':
+main.py(9):                 val = val - 1
+main.py(10):             if val < 0:
+main.py(5):         for i in s:
+main.py(12):         return True if val == 0 else False

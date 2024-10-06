@@ -1,0 +1,7 @@
+from typing import *
+
+def right_angle_triangle(a: int, b: int, c: int) -> bool:
+    # [STATE] a=3, b=4, c=5 [/STATE]
+    return (a*a == b*b + c*c  # [CONDITION] 9 == 16 + 25 [/CONDITION] [BRANCH] N [/BRANCH]
+            or b*b == a*a + c*c  # [CONDITION] 16 == 9 + 25 [/CONDITION] [BRANCH] N [/BRANCH]
+            or c*c == a*a + b*b)  # [CONDITION] 25 == 9 + 16 [/CONDITION] [BRANCH] Y [/BRANCH]

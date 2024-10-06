@@ -1,0 +1,10 @@
+The function `x_or_y` is called with ( n = 3, x = 33, y = 5212 ).
+
+The first condition ( n == 1 ) is not met, so the function proceeds to the loop.
+
+Iteration 1:
+    -The number 2 is not a divisor of 3, so the function proceeds to the next iteration.
+Iteration 2:
+    -The number 3 is a divisor of 3, so the function returns y (5212).
+
+Therefore, the final output of the function `x_or_y(3, 33, 5212)` is 5212.

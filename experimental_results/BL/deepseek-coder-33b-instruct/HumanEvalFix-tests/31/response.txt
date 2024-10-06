@@ -1,0 +1,17 @@
+```response
+    for k in range(1, n - 1):
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s):
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("") == True
+    assert is_palindrome("a") == True
+    assert is_palindrome("ab") == False
+    assert is_palindrome

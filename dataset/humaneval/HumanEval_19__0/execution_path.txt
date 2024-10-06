@@ -1,0 +1,19 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: sort_numbers
+main.py(6):         'zero': 0,
+main.py(7):         'one': 1,
+main.py(8):         'two': 2,
+main.py(9):         'three': 3,
+main.py(10):         'four': 4,
+main.py(11):         'five': 5,
+main.py(12):         'six': 6,
+main.py(13):         'seven': 7,
+main.py(14):         'eight': 8,
+main.py(15):         'nine': 9
+main.py(5):     value_map = {
+main.py(17):     return ' '.join(
+main.py(18):         sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+ --- modulename: main, funcname: <listcomp>
+main.py(18):         sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+main.py(18):         sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))
+main.py(17):     return ' '.join(

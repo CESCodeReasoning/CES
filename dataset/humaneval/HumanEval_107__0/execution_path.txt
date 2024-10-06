@@ -1,0 +1,56 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: even_odd_palindrome
+main.py(5):     def is_palindrome(n):
+main.py(8):     even_palindrome_count = 0
+main.py(9):     odd_palindrome_count = 0
+main.py(11):     for i in range(1, n + 1):
+main.py(12):         if i % 2 == 1 and is_palindrome(i):
+ --- modulename: main, funcname: is_palindrome
+main.py(6):         return str(n) == str(n)[::-1]
+main.py(13):             odd_palindrome_count += 1
+main.py(11):     for i in range(1, n + 1):
+main.py(12):         if i % 2 == 1 and is_palindrome(i):
+main.py(14):         elif i % 2 == 0 and is_palindrome(i):
+ --- modulename: main, funcname: is_palindrome
+main.py(6):         return str(n) == str(n)[::-1]
+main.py(15):             even_palindrome_count += 1
+main.py(11):     for i in range(1, n + 1):
+main.py(12):         if i % 2 == 1 and is_palindrome(i):
+ --- modulename: main, funcname: is_palindrome
+main.py(6):         return str(n) == str(n)[::-1]
+main.py(13):             odd_palindrome_count += 1
+main.py(11):     for i in range(1, n + 1):
+main.py(12):         if i % 2 == 1 and is_palindrome(i):
+main.py(14):         elif i % 2 == 0 and is_palindrome(i):
+ --- modulename: main, funcname: is_palindrome
+main.py(6):         return str(n) == str(n)[::-1]
+main.py(15):             even_palindrome_count += 1
+main.py(11):     for i in range(1, n + 1):
+main.py(12):         if i % 2 == 1 and is_palindrome(i):
+ --- modulename: main, funcname: is_palindrome
+main.py(6):         return str(n) == str(n)[::-1]
+main.py(13):             odd_palindrome_count += 1
+main.py(11):     for i in range(1, n + 1):
+main.py(12):         if i % 2 == 1 and is_palindrome(i):
+main.py(14):         elif i % 2 == 0 and is_palindrome(i):
+ --- modulename: main, funcname: is_palindrome
+main.py(6):         return str(n) == str(n)[::-1]
+main.py(15):             even_palindrome_count += 1
+main.py(11):     for i in range(1, n + 1):
+main.py(12):         if i % 2 == 1 and is_palindrome(i):
+ --- modulename: main, funcname: is_palindrome
+main.py(6):         return str(n) == str(n)[::-1]
+main.py(13):             odd_palindrome_count += 1
+main.py(11):     for i in range(1, n + 1):
+main.py(12):         if i % 2 == 1 and is_palindrome(i):
+main.py(14):         elif i % 2 == 0 and is_palindrome(i):
+ --- modulename: main, funcname: is_palindrome
+main.py(6):         return str(n) == str(n)[::-1]
+main.py(15):             even_palindrome_count += 1
+main.py(11):     for i in range(1, n + 1):
+main.py(12):         if i % 2 == 1 and is_palindrome(i):
+ --- modulename: main, funcname: is_palindrome
+main.py(6):         return str(n) == str(n)[::-1]
+main.py(13):             odd_palindrome_count += 1
+main.py(11):     for i in range(1, n + 1):
+main.py(16):     return (even_palindrome_count, odd_palindrome_count)

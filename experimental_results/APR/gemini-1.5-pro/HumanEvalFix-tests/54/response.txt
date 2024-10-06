@@ -1,0 +1,24 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def same_chars(s0: str, s1: str):
+    for char in s0:
+        if not char in s1:
+            return False
+    for char in s1:
+        if not char in s0:
+            return False
+    return True
+```

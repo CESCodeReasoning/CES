@@ -1,0 +1,51 @@
+Here are the fixed versions of the two functions `has_close_elements` and `cycpattern_check` with their respective test cases:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+
+# Tests
+def check_has_close_elements(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check_has_close_elements(has_close_elements)
+```
+
+### Fixed Code for `cycpattern_check`
+```python
+def cycpattern_check(a: str, b: str) -> bool:
+    l = len(b)
+    pat = b + b
+    for i in range(len(a) - l + 1):
+        if b in a[i:i+l] or any(b[j:] + b[:j] in a[i:i+l] for j in range(1, l)):
+            return True
+    return False
+
+# Tests
+def check_cycpattern_check(cycpattern_check):
+    assert cycpattern_check("xyzw", "xyw") == False, "test #0"
+    assert cycpattern_check("yello", "ell") == True, "test #1"
+    assert cycpattern_check("whattup", "ptut") == False, "test #2"
+    assert cycpattern_check("efef", "fee") == True, "test #3"
+    assert cycpattern_check("abab", "aabb") == False, "test #4"
+    assert cycpattern_check("winemtt", "tinem") == True, "test #5"
+
+check_cycpattern_check(cycpattern_check)
+```
+
+These corrected versions of the functions now properly handle the specified requirements and pass the provided test cases.

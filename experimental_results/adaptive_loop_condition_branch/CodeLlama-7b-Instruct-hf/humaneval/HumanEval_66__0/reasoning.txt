@@ -1,0 +1,4 @@
+The function `digitSum` is called with ( s = "abcCd" ).
+The condition `s == ""` is false, therefore the if branch is not taken and the method returns the sum of the digits in the string.
+
+Therefore, the final output of the function `digitSum("abcCd")` is 10.

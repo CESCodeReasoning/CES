@@ -1,0 +1,8 @@
+from typing import *
+
+
+def is_palindrome(text: str):
+    for i in range(len(text)): ## [STATE]i=[0, 1, 2, 3, 4][/STATE][STATE]range(len(text))=[0, 1, 2, 3, 4][/STATE][STATE]len(text)=[5][/STATE]
+        if text[i] != text[len(text) - 1 - i]: ## [CONDITION](text[i] != text[len(text) - 1 - i])=[True, False, True, False, True][/CONDITION][BRANCH]taken=[Y, N, Y, N, Y][/BRANCH]
+            return False
+    return True

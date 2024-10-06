@@ -1,0 +1,3 @@
+The function `monotonic` is called with ( l = [4, 1, 0, -10] ).
+The function checks if the list `l` is either sorted in ascending order or descending order.
+The list `[4, 1, 0, -10]` is not sorted in either order, so the function returns False.

@@ -1,0 +1,23 @@
+[REASONING]
+The function `median` is called with the list `[3, 1, 2, 4, 5]`.
+The list is sorted in ascending order, resulting in `[1, 2, 3, 4, 5]`.
+The length of the sorted list is 5, which is odd.
+The condition `len(l) % 2 == 1` is true, therefore the if branch is taken.
+The middle index of the sorted list is `len(l) // 2`, which is 2.
+The median is the element at index 2, which is 3.
+Therefore, the final output of the function `median([3, 1, 2, 4, 5])` is 3.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def median(l: list):
+    l = sorted(l)
+    if len(l) % 2 == 1: ## [CONDITION](len(l) % 2 == 1)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return l[len(l) // 2]
+    else: ## [BRANCH]taken=[N][/BRANCH]
+        return (l[len(l) // 2 - 1] + l[len(l) // 2]) / 2.0
+[/ANSWER]
+
+[OUTPUT]
+3
+[/OUTPUT]

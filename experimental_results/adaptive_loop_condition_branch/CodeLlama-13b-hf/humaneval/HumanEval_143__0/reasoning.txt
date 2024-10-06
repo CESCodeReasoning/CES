@@ -1,0 +1,53 @@
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The outer loop iterates through each word in the sentence.
+In the inner loop, for each word indexed by i in the outer loop, check if the word is a prime number.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 2, 3, 4, 5, 6.
+    - word[i]=there: check if it is a prime number:
+        - When j = 2 (word[j]=there), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 3 (word[j]=there), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 4 (word[j]=there), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 5 (word[j]=there), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 6 (word[j]=there), the condition `word[i] % j == 0` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4, 5, 6.
+    - word[i]=is: check if it is a prime number:
+        - When j = 2 (word[j]=is), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 3 (word[j]=is), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 4 (word[j]=is), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 5 (word[j]=is), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 6 (word[j]=is), the condition `word[i] % j == 0` is False, the if branch is not taken.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 2, 3, 4, 5, 6.
+    - word[i]=no: check if it is a prime number:
+        - When j = 2 (word[j]=no), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 3 (word[j]=no), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 4 (word[j]=no), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 5 (word[j]=no), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 6 (word[j]=no), the condition `word[i] % j == 0` is False, the if branch is not taken.
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 2, 3, 4, 5, 6.
+    - word[i]=place: check if it is a prime number:
+        - When j = 2 (word[j]=place), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 3 (word[j]=place), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 4 (word[j]=place), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 5 (word[j]=place), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 6 (word[j]=place), the condition `word[i] % j == 0` is False, the if branch is not taken.
+Fifth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 2, 3, 4, 5, 6.
+    - word[i]=available: check if it is a prime number:
+        - When j = 2 (word[j]=available), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 3 (word[j]=available), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 4 (word[j]=available), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 5 (word[j]=available), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 6 (word[j]=available), the condition `word[i] % j == 0` is False, the if branch is not taken.
+Sixth iteration (i=5):
+    - `i` is 5, j in the inner loop is 2, 3, 4, 5, 6.
+    - word[i]=here: check if it is a prime number:
+        - When j = 2 (word[j]=here), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 3 (word[j]=here), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 4 (word[j]=here), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 5 (word[j]=here), the condition `word[i] % j == 0` is False, the if branch is not taken.
+        - When j = 6 (word[j]=here), the condition `word[i] % j == 0` is False, the if branch is not taken.
+Seventh iteration (i=6):
+    No more elements to compare.

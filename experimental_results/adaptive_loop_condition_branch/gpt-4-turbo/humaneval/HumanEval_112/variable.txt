@@ -1,0 +1,7 @@
+from typing import *
+
+def reverse_delete(s: str, c: str) -> Tuple[str, bool]:
+    # [STATE] s = "abcde", c = "ae" [/STATE]
+    s = ''.join([char for char in s if char not in c])  # [STATE] s = "bcd" [/STATE]
+    # [CONDITION] s[::-1] == s evaluates to False [/CONDITION]
+    return (s, s[::-1] == s)  # [BRANCH] Y [/BRANCH]

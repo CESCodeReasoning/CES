@@ -1,0 +1,21 @@
+The function select_words(s, n) takes a string s and an integer n as its parameters.
+The outer loop iterates through each word in the string s.
+In the inner loop, for each word indexed by i in the outer loop, count the number of consonants in the word.
+First Iteration (i=0):
+    - `i` is 0, word is "Hello".
+    - n_consonants is 0, for each letter in "Hello":
+        - When i = 0 (letter is "H"), the condition `letter.lower() not in ["a", "e", "i", "o", "u"]` is True, the if branch is taken.
+        - When i = 1 (letter is "e"), the condition `letter.lower() not in ["a", "e", "i", "o", "u"]` is False, the if branch is not taken.
+        - When i = 2 (letter is "l"), the condition `letter.lower() not in ["a", "e", "i", "o", "u"]` is True, the if branch is taken.
+        - When i = 3 (letter is "l"), the condition `letter.lower() not in ["a", "e", "i", "o", "u"]` is True, the if branch is taken.
+        - When i = 4 (letter is "o"), the condition `letter.lower() not in ["a", "e", "i", "o", "u"]` is False, the if branch is not taken.
+    - n_consonants is 3, the condition `n_consonants == n` is False, the if branch is not taken.
+Second Iteration (i=1):
+    - `i` is 1, word is "world".
+    - n_consonants is 0, for each letter in "world":
+        - When i = 0 (letter is "w"), the condition `letter.lower() not in ["a", "e", "i", "o", "u"]` is True, the if branch is taken.
+        - When i = 1 (letter is "o"), the condition `letter.lower() not in ["a", "e", "i", "o", "u"]` is False, the if branch is not taken.
+        - When i = 2 (letter is "r"), the condition `letter.lower() not in ["a", "e", "i", "o", "u"]` is True, the if branch is taken.
+        - When i = 3 (letter is "l"), the condition `letter.lower() not in ["a", "e", "i", "o", "u"]` is True, the if branch is taken.
+        - When i = 4 (letter is "d"), the condition `letter.lower() not in ["a", "e", "i", "o", "u"]` is True, the if branch is taken.
+    - n_consonants is 4, the condition `n_consonants == n` is True, the if branch is taken. Append "world" to result.

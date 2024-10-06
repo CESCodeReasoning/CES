@@ -1,0 +1,11 @@
+The function `file_name_check` is called with ( file_name = 'I563_No.exe' ).
+The variable `suf` is initialized to ['txt', 'exe', 'dll'].
+The variable `lst` is initialized to ['I563_No', 'exe'].
+The condition `len(lst) != 2` is false, therefore the if branch is not taken.
+The condition `not lst[1] in suf` is false, therefore the if branch is not taken.
+The condition `len(lst[0]) == 0` is false, therefore the if branch is not taken.
+The condition `not lst[0][0].isalpha()` is false, therefore the if branch is not taken.
+The condition `t > 3` is false, therefore the if branch is not taken.
+The method returns 'Yes'.
+
+Therefore, the final output of the function `file_name_check('I563_No.exe')` is 'Yes'.

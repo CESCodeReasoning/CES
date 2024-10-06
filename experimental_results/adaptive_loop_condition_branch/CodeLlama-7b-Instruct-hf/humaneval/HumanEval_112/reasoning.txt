@@ -1,0 +1,7 @@
+The function reverse_delete takes two arguments: s and c.
+s is a string and c is a set of characters.
+The function first joins the characters in s that are not in c using the join method.
+The resulting string is then returned.
+The function also returns a boolean value indicating whether the reversed string of s is equal to s.
+To determine the output of executing the function reverse_delete on the input "abcde" and "ae", we need to join the characters in "abcde" that are not in "ae" using the join method.
+Therefore, the output of executing the function reverse_delete on the input "abcde" and "ae" is ("bdf", False).

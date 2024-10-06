@@ -1,0 +1,141 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def words_string(s):
+    if not s:
+        return []
+
+    s_list = []
+
+    for letter in s:
+        if letter == ',':
+            s_list.append(',')
+        else:
+            s_list.append(letter)
+
+    s_list = "".join(s_list)
+    return s_list.split()
+
+Tests:
+def check(words_string):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert words_string("Hi, my name is John") == ["Hi", "my", "name", "is", "John"]
+    assert words_string("One, two, three, four, five, six") == ["One", "two", "three", "four", "five", "six"]
+    assert words_string("Hi, my name") == ["Hi", "my", "name"]
+    assert words_string("One,, two, three, four, five, six,") == ["One", "two", "three", "four", "five", "six"]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert words_string("") == []
+    assert words_string("ahmed     , gamal") == ["ahmed", "gamal"]
+
+check(words_string)
+
+The code should satisfy the following natural language specification:
+Write a Python function `words_string(s)` to solve the following problem:
+You will be given a string of words separated by commas or spaces. Your task is
+to split the string into words and return an array of the words.
+For example:
+words_string("Hi, my name is John") == ["Hi", "my", "name", "is", "John"]
+words_string("One, two, three, four, five, six") == ["One", "two", "three", "four", "five", "six"]
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    s_list = "".join(s_list)
+    return s_list.split()
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for letter in s:
+        if letter in vowels:
+            count += 1
+    return count
+
+Tests:
+def check(count_vowels):
+    assert count_vowels("Hello, World!") == 3
+    assert count_vowels("The quick brown fox jumps over the lazy dog.") == 8
+    assert count_vowels("I love programming in Python.") == 8
+    assert count_vowels("") == 0
+    assert count_vowels("xyz") == 0
+    assert count_vowels("AEIOUaeiou") == 10
+
+check(count_vowels)
+
+The code should satisfy the following natural language specification:
+Write a Python function `count_vowels(s)` to solve the following problem:
+Count the number of vowels in a given string and return the count.
+For example:
+count_vowels("Hello, World!") == 3
+count_vowels("The quick brown fox jumps over the lazy dog.") == 8
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return count
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(s):
+    s = s.lower()
+    s = s.replace(" ", "")
+    return s == s[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("racecar") == True
+    assert is_palindrome("madam") == True
+    assert is_palindrome("hello") == False
+    assert is_palindrome("Able was I ere I saw Elba") == True
+    assert is_palindrome("A

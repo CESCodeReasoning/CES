@@ -1,0 +1,109 @@
+The function `fizz_buzz` is called with ( n = 100000 ).
+Inside the function, an empty list `ns` is initialized.
+The loop iterates from 0 through 99999 (since ( n = 100000 )).
+First Iteration (i = 0)
+   - `i` is 0, which does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+Second Iteration (i = 1)
+   - `i` is 1, which still does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+Third Iteration (i = 2)
+   - `i` is 2, which still does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+...
+Eleventh Iteration (i = 10)
+   - `i` is 10, which still does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+Twelfth Iteration (i = 11)
+   - `i` is 11, which satisfies ( i % 11 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is true.
+   - Action: `ns` is updated to [11].
+Thirteenth Iteration (i = 12)
+   - `i` is 12, which does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+...
+Twenty-second Iteration (i = 22)
+   - `i` is 22, which does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+Twenty-third Iteration (i = 23)
+   - `i` is 23, which satisfies ( i % 11 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is true.
+   - Action: `ns` is updated to [11, 23].
+...
+Ninety-first Iteration (i = 90)
+   - `i` is 90, which does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+Ninety-second Iteration (i = 91)
+   - `i` is 91, which does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+...
+One-hundredth Iteration (i = 99)
+   - `i` is 99, which does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+One-hundred-and-first Iteration (i = 100)
+   - `i` is 100, which satisfies ( i % 11 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is true.
+   - Action: `ns` is updated to [11, 23, 100].
+...
+Nine-hundred-and-ninety-ninth Iteration (i = 998)
+   - `i` is 998, which does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+One-thousandth Iteration (i = 999)
+   - `i` is 999, which does not satisfy ( i % 11 == 0 or i % 13 == 0 ).
+   - The condition `i % 11 == 0 or i % 13 == 0` is false.
+   - Action: `ns` is not modified.
+After the loop completes, `ns` contains [11, 23, 100, 110, 121, 132, 220, 231, 330, 440, 550, 660, 770, 880, 990].
+The string `s` is then created by joining the elements of `ns` as strings, resulting in "1123100110121132220231330440550660770880990".
+The variable `ans` is initialized to 0.
+The loop iterates over each character `c` in `s`.
+First Iteration (c = '1')
+   - `c` is '1', which is not equal to '7'.
+   - The condition `c == '7'` is false.
+   - Action: `ans` is not modified.
+Second Iteration (c = '1')
+   - `c` is '1', which is not equal to '7'.
+   - The condition `c == '7'` is false.
+   - Action: `ans` is not modified.
+Third Iteration (c = '2')
+   - `c` is '2', which is not equal to '7'.
+   - The condition `c == '7'` is false.
+   - Action: `ans` is not modified.
+...
+Eighth Iteration (c = '3')
+   - `c` is '3', which is not equal to '7'.
+   - The condition `c == '7'` is false.
+   - Action: `ans` is not modified.
+Ninth Iteration (c = '1')
+   - `c` is '1', which is not equal to '7'.
+   - The condition `c == '7'` is false.
+   - Action: `ans` is not modified.
+Tenth Iteration (c = '0')
+   - `c` is '0', which is not equal to '7'.
+   - The condition `c == '7'` is false.
+   - Action: `ans` is not modified.
+...
+Seventeenth Iteration (c = '7')
+   - `c` is '7', which is equal to '7'.
+   - The condition `c == '7'` is true.
+   - Action: `ans` is updated to 1.
+Eighteenth Iteration (c = '7')
+   - `c` is '7', which is equal to '7'.
+   - The condition `c == '7'` is true.
+   - Action: `ans` is updated to 2.
+...
+Twenty-fifth Iteration (c = '0')
+   - `c` is '0', which is not equal to '7'.
+   - The condition `c == '7'` is false.
+   - Action: `ans` is not modified.
+After the loop completes, `ans` is 2.
+The function returns `ans`, which is 2.

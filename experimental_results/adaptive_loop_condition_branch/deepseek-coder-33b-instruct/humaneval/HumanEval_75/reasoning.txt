@@ -1,0 +1,8 @@
+The function `is_multiply_prime` is called with ( a = 5 ).
+The function `is_prime` checks if a number is prime.
+The outer loop iterates from 2 to 100.
+The inner loop iterates from 2 to 100.
+The innermost loop iterates from 2 to 100.
+For each combination of i, j, and k, it checks if the product of i, j, and k is equal to a.
+If it finds a combination where the product equals a, it returns True.
+If it doesn't find any combination where the product equals a, it returns False.

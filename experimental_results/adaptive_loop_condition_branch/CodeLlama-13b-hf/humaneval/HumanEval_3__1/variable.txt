@@ -1,0 +1,12 @@
+from typing import *
+
+
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+
+    for op in operations: ## [STATE]op=[1, -1, 2, -2, 5, -5, 4, -4][/STATE][STATE]operations=[[1, -1, 2, -2, 5, -5, 4, -4]][/STATE]
+        balance += op
+        if balance < 0: ## [CONDITION](balance < 0)=[False, True, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, Y, N, N, N, N, N, N, N, N, N, N, N][/BRANCH]
+            return True
+
+    return False

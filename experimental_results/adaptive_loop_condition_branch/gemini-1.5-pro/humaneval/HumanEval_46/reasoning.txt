@@ -1,0 +1,11 @@
+The function `fib4` is called with ( n = 5 ).
+Inside the function, a list `results` is initialized to [0, 0, 2, 0].
+The condition ( n < 4 ) is not satisfied, therefore the if branch is not taken.
+The loop iterates from 4 through 5 (since ( n + 1 = 6 )).
+First Iteration ( _ = 4 ):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` appends 6 ( 0 + 0 + 2 + 0 ) to the end of the list `results`.
+    `results.pop(0)` removes the first element ( 0 ) from the list `results`.
+Second Iteration ( _ = 5 ):
+    `results.append(results[-1] + results[-2] + results[-3] + results[-4])` appends 12 ( 2 + 0 + 0 + 10 ) to the end of the list `results`.
+    `results.pop(0)` removes the first element ( 0 ) from the list `results`.
+After the loop completes, the function returns the last element ( 12 ) of the list `results` as the output.

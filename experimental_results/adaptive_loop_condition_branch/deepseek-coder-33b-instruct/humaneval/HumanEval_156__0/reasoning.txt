@@ -1,0 +1,15 @@
+The function `int_to_mini_roman` is called with ( number = 900 ).
+Inside the function, a variable `i` is initialized to 12.
+The loop iterates from 12 to 0.
+First Iteration (i = 12):
+    - number = 900, num[i] = 1000, div = number // num[i] = 0.
+    - Since div is 0, the inner loop is skipped.
+Second Iteration (i = 11):
+    - number = 900, num[i] = 900, div = number // num[i] = 1.
+    - Since div is not 0, the inner loop is executed once.
+    -`res += sym[i]` updates `res` to 'CM'.
+    -`number %= num[i]` updates `number` to 0.
+Third Iteration (i = 10):
+    - number = 0, num[i] = 500, div = number // num[i] = 0.
+    - Since div is 0, the inner loop is skipped.
+The loop terminates as i becomes 0. The function returns the value of `res`, which is now 'CM'.

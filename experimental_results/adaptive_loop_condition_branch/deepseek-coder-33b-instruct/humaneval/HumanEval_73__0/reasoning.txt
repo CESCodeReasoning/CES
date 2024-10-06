@@ -1,0 +1,11 @@
+The function `smallest_change` is called with ( arr = [1, 4, 2] ).
+Inside the function, a variable `ans` is initialized to 0.
+The loop iterates from 0 through 1 (since ( len(arr) // 2 ) is 1).
+First Iteration (i = 0)
+   - `i` is 0, so `arr[i]` is 1 and `arr[len(arr) - i - 1]` is 2.
+   - The condition `arr[i] != arr[len(arr) - i - 1]` is true.
+   - Action: `ans += 1` results in `ans = 1`.
+Return Statement
+   - After the loop completes, the function returns the value of `ans`, which is now 1.
+
+Therefore, the final output of the function `smallest_change([1, 4, 2])` is 1.

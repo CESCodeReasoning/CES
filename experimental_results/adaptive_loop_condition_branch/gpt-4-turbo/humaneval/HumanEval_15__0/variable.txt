@@ -1,0 +1,6 @@
+from typing import *
+
+
+def string_sequence(n: int) -> str:
+    # [STATE] n = 3 [/STATE]
+    return ' '.join([str(x) for x in range(n + 1)])  # [STATE] range(n + 1) = range(4) = [0, 1, 2, 3] [/STATE]

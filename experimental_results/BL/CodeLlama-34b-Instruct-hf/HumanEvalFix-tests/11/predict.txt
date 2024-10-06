@@ -1,0 +1,1 @@
+return ''.join(xor(x, y) for x, y in zip(a, b))

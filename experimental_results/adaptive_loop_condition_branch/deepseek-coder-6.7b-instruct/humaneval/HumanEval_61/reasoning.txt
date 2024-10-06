@@ -1,0 +1,37 @@
+The function `correct_bracketing` is called with ( brackets = "(()())" ).
+Inside the function, a variable `depth` is initialized to 0.
+
+Iteration 1:
+    -The bracket '(' is opened, so depth becomes 1.
+Iteration 2:
+    -The bracket '(' is opened, so depth becomes 2.
+Iteration 3:
+    -The bracket ')' is closed, so depth becomes 1.
+Iteration 4:
+    -The bracket '(' is opened, so depth becomes 2.
+Iteration 5:
+    -The bracket ')' is closed, so depth becomes 1.
+Iteration 6:
+    -The bracket ')' is closed, so depth becomes 0.
+
+The function returns `True` if `depth` is 0 at the end of the string, indicating that all brackets are correctly matched. If `depth` is negative at any point, the function returns `False`, indicating that there is a closing bracket without a corresponding opening bracket.
+
+In the given string "(()())", all brackets are correctly matched, so the function returns `True`.
+
+[ANSWER]
+def correct_bracketing(brackets: str):
+    depth = 0
+    for b in brackets: ## [STATE]brackets=["(", "(", ")", "(", ")", ")"][/STATE]
+        if b == "(": ## [CONDITION](b == "(")=[True, True, False, True, True, False][/CONDITION][BRANCH]taken=[Y, Y, N, Y, Y, N][/BRANCH]
+            depth += 1
+        else: ## [BRANCH]taken=[N, N, Y, N, N, Y][/BRANCH]
+            depth -= 1
+        if depth < 0: ## [CONDITION](depth < 0)=[False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N, N][/BRANCH]
+            return False
+    return depth == 0
+[/ANSWER]
+
+[OUTPUT]
+True
+[/OUTPUT]
+<|EOT|>

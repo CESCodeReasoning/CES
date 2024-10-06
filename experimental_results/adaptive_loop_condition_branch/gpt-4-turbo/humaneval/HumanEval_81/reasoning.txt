@@ -1,0 +1,24 @@
+The function `numerical_letter_grade` is called with the list of grades `[4.0, 3, 1.7, 2, 3.5]`.
+Inside the function, an empty list `letter_grade` is initialized to store the corresponding letter grades for each GPA.
+
+Iteration 1:
+    - The GPA is 4.0, which exactly matches the condition `gpa == 4.0`.
+    - The letter grade "A+" is appended to the list.
+
+Iteration 2:
+    - The GPA is 3, which does not match any of the conditions until `gpa > 2.7`.
+    - The letter grade "B" is appended to the list.
+
+Iteration 3:
+    - The GPA is 1.7, which matches the condition `gpa > 1.7`.
+    - The letter grade "C" is appended to the list.
+
+Iteration 4:
+    - The GPA is 2, which matches the condition `gpa > 1.7`.
+    - The letter grade "C" is appended to the list.
+
+Iteration 5:
+    - The GPA is 3.5, which matches the condition `gpa > 3.3`.
+    - The letter grade "A-" is appended to the list.
+
+After iterating through all the GPAs, the function returns the list of letter grades corresponding to each GPA.

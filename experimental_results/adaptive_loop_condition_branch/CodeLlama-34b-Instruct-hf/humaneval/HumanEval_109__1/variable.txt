@@ -1,0 +1,16 @@
+from typing import *
+
+
+def move_one_ball(arr):
+    if len(arr) == 0: ## [CONDITION](len(arr) == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return True
+    sorted_array = sorted(arr) ## [STATE]sorted_array=[1, 2, 3, 4, 5][/STATE]
+    my_arr = [] ## [STATE]my_arr=[][/STATE]
+
+    min_value = min(arr) ## [STATE]min_value=1[/STATE]
+    min_index = arr.index(min_value) ## [STATE]min_index=3[/STATE]
+    my_arr = arr[min_index:] + arr[0:min_index] ## [STATE]my_arr=[4, 5, 3, 1, 2][/STATE]
+    for i in range(len(arr)): ## [STATE]i=[0, 1, 2, 3, 4][/STATE][STATE]range(len(arr))=[0, 1, 2, 3, 4][/STATE][STATE]len(arr)=5[/STATE]
+        if my_arr[i] != sorted_array[i]: ## [CONDITION](my_arr[i] != sorted_array[i])=[False, False, False, False, False][/CONDITION][BRANCH]taken=[N, N, N, N, N][/BRANCH]
+            return False
+    return True

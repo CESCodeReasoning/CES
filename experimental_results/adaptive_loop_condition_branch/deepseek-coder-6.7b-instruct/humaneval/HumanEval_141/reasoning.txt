@@ -1,0 +1,10 @@
+The function `file_name_check` is called with ( file_name = "example.txt" ).
+The function splits the file_name by '.' and stores the result in `lst`.
+The first condition checks if the length of `lst` is not equal to 2. If it's not, it means the file name does not have a file extension or has more than one.
+The second condition checks if the file extension is not in the list `suf`.
+The third and fourth conditions check if the file name (without extension) is empty or does not start with an alphabet character respectively.
+The last condition counts the number of digits in the file name and checks if it's more than 3.
+If any of the conditions are met, it returns 'No'. Otherwise, it returns 'Yes'.
+
+In this case, the file name "example.txt" is valid because it has a valid file extension, starts with an alphabet character, and does not have more than 3 digits in the name.
+So, the final output of the function `file_name_check("example.txt")` is 'Yes'.

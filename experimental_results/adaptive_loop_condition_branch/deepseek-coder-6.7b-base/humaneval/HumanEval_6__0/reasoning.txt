@@ -1,0 +1,33 @@
+The function `parse_nested_parens` is called with ( paren_string = '((()))' ).
+The function `parse_nested_parens` splits the input string `paren_string` into a list of strings using the `split` method with a space character as the separator.
+The resulting list is then filtered using a list comprehension to remove any empty strings.
+The function then iterates over each string in the filtered list and calls the `parse_paren_group` function on each string.
+
+The `parse_paren_group` function takes a string `s` as input and returns the maximum depth of nested parentheses in the string.
+The function initializes two variables `depth` and `max_depth` to 0.
+The function then iterates over each character `c` in the string `s`.
+If the character `c` is an opening parenthesis '(', the function increments `depth` and updates `max_depth` to the maximum of `depth` and `max_depth`.
+If the character `c` is a closing parenthesis ')', the function decrements `depth`.
+After iterating over all characters in the string, the function returns the value of `max_depth`.
+
+In the first iteration of the list comprehension, the function `parse_paren_group` is called with the string '((())'.
+The function `parse_paren_group` iterates over each character in the string and updates `depth` and `max_depth` accordingly.
+The function returns the value of `max_depth`, which is 3.
+
+In the second iteration of the list comprehension, the function `parse_paren_group` is called with the string '()'.
+The function `parse_paren_group` iterates over each character in the string and updates `depth` and `max_depth` accordingly.
+The function returns the value of `max_depth`, which is 1.
+
+In the third iteration of the list comprehension, the function `parse_paren_group` is called with the string '()'.
+The function `parse_paren_group` iterates over each character in the string and updates `depth` and `max_depth` accordingly.
+The function returns the value of `max_depth`, which is 1.
+
+In the fourth iteration of the list comprehension, the function `parse_paren_group` is called with the string '()'.
+The function `parse_paren_group` iterates over each character in the string and updates `depth` and `max_depth` accordingly.
+The function returns the value of `max_depth`, which is 1.
+
+In the fifth iteration of the list comprehension, the function `parse_paren_group` is called with the string '()'.
+The function `parse_paren_group` iterates over each character in the string and updates `depth` and `max_depth` accordingly.
+The function returns the value of `max_depth`, which is 1.
+
+The function `parse_nested_parens` returns the list [3, 1, 1, 1, 1].

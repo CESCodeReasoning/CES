@@ -1,0 +1,19 @@
+The function select_words(s, n) takes a string and a number as its parameters.
+The outer loop iterates through each word in the string.
+In the inner loop, for each word, it counts the number of consonants in the word.
+First Iteration (word="Hello"):
+    - word is "Hello", i in the inner loop is 0, 1, 2, 3 and 4.
+    - word[i]="H": is not a vowel, so increment n_consonants.
+    - word[i]="e": is not a vowel, so increment n_consonants.
+    - word[i]="l": is a vowel, so do not increment n_consonants.
+    - word[i]="l": is a vowel, so do not increment n_consonants.
+    - word[i]="o": is not a vowel, so increment n_consonants.
+    - n_consonants = 5, so the if condition `n_consonants == n` is False, the if branch is not taken.
+Second Iteration (word="world"):
+    - word is "world", i in the inner loop is 0, 1, 2, 3 and 4.
+    - word[i]="w": is a vowel, so do not increment n_consonants.
+    - word[i]="o": is a vowel, so do not increment n_consonants.
+    - word[i]="r": is not a vowel, so increment n_consonants.
+    - word[i]="l": is a vowel, so do not increment n_consonants.
+    - word[i]="d": is not a vowel, so increment n_consonants.
+    - n_consonants = 3, so the if condition `n_consonants == n` is False, the if branch is not taken.

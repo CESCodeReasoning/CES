@@ -1,0 +1,35 @@
+Here's the fixed code for both functions, `has_close_elements` and `is_sorted`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`:
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False
+```
+
+### Fixed Code for `is_sorted`:
+```python
+def is_sorted(lst):
+    if len(lst) < 2:
+        return True
+    count_digit = {}
+    for i in lst:
+        if i in count_digit:
+            count_digit[i] += 1
+            if count_digit[i] > 1:
+                return False
+        else:
+            count_digit[i] = 1
+    return all(lst[i-1] <= lst[i] for i in range(1, len(lst)))
+```
+
+These fixes address the issues in the original code:
+1. For `has_close_elements`, the use of `abs` ensures that the distance is always a non-negative value, which is crucial for comparing distances correctly.
+2. For `is_sorted`, the function now correctly handles the requirement that more than one duplicate of any number should result in `False`. It also handles empty and single-element lists correctly.

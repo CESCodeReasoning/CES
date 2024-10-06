@@ -1,0 +1,9 @@
+The function get_max_triples(n) takes an integer n as its parameter.
+The function creates a list A of integers from 1 to n, where each element is the square of its index minus the index plus 1.
+The function then creates an empty list ans to store the triples that satisfy the condition.
+The function then iterates through the elements of A using three nested loops.
+The first loop iterates through the elements of A from index 0 to n-1.
+The second loop iterates through the elements of A from index i+1 to n-1.
+The third loop iterates through the elements of A from index j+1 to n-1.
+For each triple of elements (A[i], A[j], A[k]) that satisfy the condition (A[i]+A[j]+A[k])%3 == 0, the function appends the triple to the list ans.
+The function then returns the length of the list ans.

@@ -1,0 +1,4 @@
+The function `split_words` is called with ( txt = "Hello world!" ).
+The condition `" " in txt` is True, so the first branch is taken.
+The `txt.split()` method is called, splitting the string "Hello world!" into a list of words: ['Hello', 'world!'].
+The function returns the list ['Hello', 'world!'].

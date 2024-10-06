@@ -1,0 +1,33 @@
+
+[REASONING]
+The function `sorted_list_sum` is called with ( lst = ["school", "AI", "asdf", "b"] ).
+Inside the function, the list `lst` is sorted in ascending order.
+
+Iteration 1:
+    -The string 'school' has an odd number of characters, so it is not appended to `new_lst`.
+Iteration 2:
+    -The string 'AI' has an even number of characters, so it is appended to `new_lst`.
+Iteration 3:
+    -The string 'asdf' has an odd number of characters, so it is not appended to `new_lst`.
+Iteration 4:
+    -The string 'b' has an odd number of characters, so it is not appended to `new_lst`.
+
+After the loop, `new_lst` is sorted by length and returned.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def sorted_list_sum(lst):
+    lst.sort()
+    new_lst = []
+    for i in lst: ## [STATE]i=['AI', 'b', 'asdf', 'school'][/STATE][STATE]lst=[['AI', 'asdf', 'b', 'school']][/STATE]
+        if len(i) % 2 == 0: ## [CONDITION](len(i) % 2 == 0)=[True, False, False, True][/CONDITION][BRANCH]taken=[Y, N, N, Y][/BRANCH]
+            new_lst.append(i)
+    return sorted(new_lst, key=len)
+[/ANSWER]
+
+[OUTPUT]
+['b', 'AI']
+[/OUTPUT]

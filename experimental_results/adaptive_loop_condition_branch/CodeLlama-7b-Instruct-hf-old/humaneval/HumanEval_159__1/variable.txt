@@ -1,0 +1,8 @@
+from typing import *
+
+
+def eat(number, need, remaining):
+    if (need <= remaining): ## [CONDITION](need <= remaining)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+        return [number + need, remaining - need]
+    else: ## [BRANCH]taken=??[/BRANCH]
+        return [number + remaining, 0]

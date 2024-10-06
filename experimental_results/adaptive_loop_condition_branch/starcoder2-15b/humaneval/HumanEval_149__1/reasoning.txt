@@ -1,0 +1,17 @@
+The function `sorted_list_sum` is called with ( lst = ["school", "AI", "asdf", "b"] ).
+Inside the function, the list `lst` is sorted in ascending order.
+
+Iteration 1:
+    -The length of the string 'b' is 1, which is an odd number.
+    -The condition `len(i) % 2 == 0` is false, so the string 'b' is not added to the list `new_lst`.
+Iteration 2:
+    -The length of the string 'AI' is 2, which is an even number.
+    -The condition `len(i) % 2 == 0` is true, so the string 'AI' is added to the list `new_lst`.
+Iteration 3:
+    -The length of the string 'asdf' is 4, which is an even number.
+    -The condition `len(i) % 2 == 0` is true, so the string 'asdf' is added to the list `new_lst`.
+Iteration 4:
+    -The length of the string'school' is 6, which is an even number.
+    -The condition `len(i) % 2 == 0` is true, so the string'school' is added to the list `new_lst`.
+
+After the loop completes, the list `new_lst` is sorted by length and returned.

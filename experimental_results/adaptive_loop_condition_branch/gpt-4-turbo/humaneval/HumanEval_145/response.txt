@@ -1,0 +1,50 @@
+[REASONING]
+The function `order_by_points` is called with the list `[1, 11, -1, -11, -12]`.
+The function uses a nested function `digits_sum` to calculate the sum of the digits of each number in the list, considering the sign of the number. The main function then sorts the list based on the results of `digits_sum`.
+
+Here's the step-by-step breakdown:
+1. For `1`: 
+   - `digits_sum` is called with `n = 1`.
+   - Since `n` is not less than 0, the condition `n < 0` is false.
+   - The digits of `1` are summed directly, resulting in `1`.
+2. For `11`: 
+   - `digits_sum` is called with `n = 11`.
+   - Since `n` is not less than 0, the condition `n < 0` is false.
+   - The digits of `11` are summed (`1 + 1`), resulting in `2`.
+3. For `-1`: 
+   - `digits_sum` is called with `n = -1`.
+   - Since `n` is less than 0, the condition `n < 0` is true.
+   - `n` is converted to `1` and `neg` is set to `-1`.
+   - The digits of `1` are summed, then multiplied by `-1`, resulting in `-1`.
+4. For `-11`: 
+   - `digits_sum` is called with `n = -11`.
+   - Since `n` is less than 0, the condition `n < 0` is true.
+   - `n` is converted to `11` and `neg` is set to `-1`.
+   - The digits of `11` are summed (`1 + 1`), then multiplied by `-1`, resulting in `-2`.
+5. For `-12`: 
+   - `digits_sum` is called with `n = -12`.
+   - Since `n` is less than 0, the condition `n < 0` is true.
+   - `n` is converted to `12` and `neg` is set to `-1`.
+   - The digits of `12` are summed (`1 + 2`), then multiplied by `-1`, resulting in `-3`.
+
+The list is then sorted based on these values, resulting in `[-12, -11, -1, 1, 11]`.
+
+Therefore, the final output of the function `order_by_points([1, 11, -1, -11, -12])` is `[-12, -11, -1, 1, 11]`.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def order_by_points(nums):
+    def digits_sum(n):
+        neg = 1
+        if n < 0: ## [CONDITION](n < 0)=[False, False, True, True, True][/CONDITION][BRANCH]taken=[N, N, Y, Y, Y][/BRANCH]
+            n, neg = -1 * n, -1
+        n = [int(i) for i in str(n)]
+        n[0] = n[0] * neg
+        return sum(n)
+    return sorted(nums, key=digits_sum)
+[/PYTHON]
+
+[OUTPUT]
+[-12, -11, -1, 1, 11]
+[/OUTPUT]

@@ -1,0 +1,19 @@
+The function `largest_divisor` is called with ( n = 100 ).
+The function iterates from 99 down to 1 (since `reversed(range(n))` generates a reversed range from 1 to n-1).
+First Iteration (i = 99)
+   - `n` is divisible by `i` (99), so the function returns `i` (99).
+Second Iteration (i = 98)
+   - `n` is not divisible by `i` (98), so the function continues to the next iteration.
+Third Iteration (i = 97)
+   - `n` is not divisible by `i` (97), so the function continues to the next iteration.
+Fourth Iteration (i = 96)
+   - `n` is not divisible by `i` (96), so the function continues to the next iteration.
+...
+...
+...
+Eighty-ninth Iteration (i = 2)
+   - `n` is not divisible by `i` (2), so the function continues to the next iteration.
+Ninety-th Iteration (i = 1)
+   - `n` is not divisible by `i` (1), so the function continues to the next iteration.
+
+Therefore, the final output of the function `largest_divisor(100)` is 99.

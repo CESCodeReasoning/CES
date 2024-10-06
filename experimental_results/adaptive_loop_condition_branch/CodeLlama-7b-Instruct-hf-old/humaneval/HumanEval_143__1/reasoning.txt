@@ -1,0 +1,24 @@
+The function words_in_sentence(sentence) takes a sentence as its parameter.
+The outer loop iterates through each word in the sentence.
+In the inner loop, for each word indexed by i, compare its length with every other number that is greater than 2.
+First Iteration (i=0):
+    - `i` is 0, `word` is "go", `len(word)` is 2.
+    - `flg` is 0, the if branch is not taken.
+    - `range(2, len(word))` is [2, 3], `len(word)` is 2.
+    - `len(word) % i` is 0, the if branch is not taken.
+    - `flg` is 0 or `len(word) == 2`, the if branch is not taken.
+    - Append "go" to `new_lst`.
+Second Iteration (i=1):
+    - `i` is 1, `word` is "for", `len(word)` is 3.
+    - `flg` is 0, the if branch is not taken.
+    - `range(2, len(word))` is [3, 4], `len(word)` is 3.
+    - `len(word) % i` is 0, the if branch is not taken.
+    - `flg` is 0 or `len(word) == 2`, the if branch is not taken.
+    - Append "for" to `new_lst`.
+Third Iteration (i=2):
+    - `i` is 2, `word` is "it", `len(word)` is 2.
+    - `flg` is 0, the if branch is not taken.
+    - `range(2, len(word))` is [4, 5], `len(word)` is 2.
+    - `len(word) % i` is 0, the if branch is not taken.
+    - `flg` is 0 or `len(word) == 2`, the if branch is not taken.
+    - Append "it" to `new_lst`.

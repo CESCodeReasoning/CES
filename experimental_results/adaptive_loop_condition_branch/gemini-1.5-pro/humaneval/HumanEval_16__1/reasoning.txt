@@ -1,0 +1,5 @@
+The function count_distinct_characters takes a string as input and returns the number of distinct characters in the string.
+To determine the number of distinct characters in the string 'aaaaAAAAaaaa', we first need to convert the string to lowercase using the lower() method.
+Then, we need to create a set of the characters in the string using the set() function.
+Finally, we need to return the length of the set using the len() function.
+Therefore, the number of distinct characters in the string 'aaaaAAAAaaaa' is 1.

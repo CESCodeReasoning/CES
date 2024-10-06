@@ -1,0 +1,3 @@
+The function iscube checks if a number is a perfect cube. It does this by taking the cube root of the absolute value of the input number, rounding it to the nearest integer, and then checking if the cube of this rounded number equals the original number.
+
+For the input 1, the absolute value of 1 is 1. The cube root of 1 is 1. When rounded to the nearest integer, this becomes 1. The cube of 1 is 1. Therefore, 1 is a perfect cube.

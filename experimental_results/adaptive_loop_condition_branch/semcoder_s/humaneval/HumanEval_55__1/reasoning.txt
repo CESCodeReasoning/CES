@@ -1,0 +1,14 @@
+The function `fib` is called with ( n = 11 ).
+The function checks if `n` is 0, 1, or neither.
+First Case (n = 0)
+   - `n` is 11, which does not satisfy ( n == 0 ).
+Second Case (n = 1)
+   - `n` is 11, which does not satisfy ( n == 1 ).
+Third Case (Recursive Calls)
+   - `n` is 11, so the function calls itself twice:
+      - `fib(10)` (n - 1)
+      - `fib(9)` (n - 2)
+   - This process continues until `n` reaches 0 or 1.
+   - The final result is the sum of the returned values from the recursive calls.
+
+Therefore, the final output of the function `fib(11)` is the result of `fib(10) + fib(9)`, which is 55.

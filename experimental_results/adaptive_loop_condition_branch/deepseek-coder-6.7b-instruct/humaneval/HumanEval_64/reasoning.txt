@@ -1,0 +1,4 @@
+The function `vowels_count` is called with ( s = "abcde" ).
+The string "abcde" is iterated over to count the number of vowels.
+The last character of the string is 'e', which is not a vowel.
+Therefore, the function returns the count of vowels in the string, which is 2.

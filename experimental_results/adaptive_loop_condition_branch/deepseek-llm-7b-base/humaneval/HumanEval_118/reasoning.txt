@@ -1,0 +1,17 @@
+The function `get_closest_vowel` is called with ( word = "yogurt" ).
+Inside the function, a variable `vowel` is initialized to `""`.
+The loop iterates from `len(word) - 2` to `0` (since `len(word) - 2` is the last index of the word).
+First Iteration (i = len(word) - 2)
+   - `i` is `len(word) - 2`, which satisfies ( len(word) - 2 < len(word) ).
+   - The condition `len(word) < 3` is true.
+   - Action: `vowel = ""` results in `vowel = ""`.
+Second Iteration (i = len(word) - 1)
+   - `i` is `len(word) - 1`, which satisfies ( len(word) - 1 < len(word) ).
+   - The condition `len(word) < 3` is true.
+   - Action: `vowel = ""` results in `vowel = ""`.
+Third Iteration (i = 0)
+   - `i` is `0`, which satisfies ( 0 < len(word) ).
+   - The condition `len(word) < 3` is true.
+   - Action: `vowel = ""` results in `vowel = ""`.
+Fourth Iteration (i = 1)
+   - `i` is `1`, which satisfies (

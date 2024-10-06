@@ -1,0 +1,20 @@
+[REASONING]
+The function is_bored takes a string S as input and returns the number of sentences in S that start with the word "I".
+To determine the number of sentences in S that start with the word "I", we need to split S into sentences using the regular expression r'[.?!]\s*', and then count the number of sentences that start with the word "I".
+To split S into sentences using the regular expression r'[.?!]\s*', we can use the re.split function.
+To count the number of sentences that start with the word "I", we can use a list comprehension and the sentence[0:2] == 'I' expression.
+Therefore, the output of executing the function is_bored on the input "I love It !" is 1.
+[/REASONING]
+
+[ANSWER]
+def is_bored(S):
+    import re
+    sentences = re.split(r'[.?!]\s*', S)
+    # [STATE]sentences = ['I love', 'It !'][/STATE]
+    return sum(sentence[0:2] == 'I ' for sentence in sentences)
+    # [STATE]sum(sentence[0:2] == 'I ' for sentence in sentences) = 1[/STATE]
+[/ANSWER]
+
+[OUTPUT]
+1
+[/OUTPUT]

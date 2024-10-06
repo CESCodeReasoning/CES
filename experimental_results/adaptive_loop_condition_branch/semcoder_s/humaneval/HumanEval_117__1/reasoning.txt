@@ -1,0 +1,16 @@
+The function select_words(s, n) takes a string `s` and an integer `n` as its parameters.
+The function splits the string `s` into words and iterates through each word.
+For each word, it counts the number of consonants.
+If the number of consonants in a word is equal to `n`, it appends the word to the result list.
+Finally, it returns the list of words that have exactly `n` consonants.
+
+First Iteration (word="Mary"):
+    - The word "Mary" has 2 consonants, so it is not appended to the result list.
+Second Iteration (word="had"):
+    - The word "had" has 1 consonant, so it is not appended to the result list.
+Third Iteration (word="a"):
+    - The word "a" has 0 consonants, so it is not appended to the result list.
+Fourth Iteration (word="little"):
+    - The word "little" has 3 consonants, so it is appended to the result list.
+Fifth Iteration (word="lamb"):
+    - The word "lamb" has 3 consonants, so it is appended to the result list.

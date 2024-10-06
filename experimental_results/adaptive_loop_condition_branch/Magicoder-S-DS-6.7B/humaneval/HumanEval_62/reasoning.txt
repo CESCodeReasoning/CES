@@ -1,0 +1,13 @@
+The function derivative takes a list of numbers xs as input and returns a list of the derivatives of the input list.
+The derivative of a function at a point is the limit of the difference quotient as the increment of the point approaches zero.
+In this case, the derivative of a function at a point is the slope of the tangent line at that point.
+The derivative of a constant function is zero.
+The derivative of a linear function is the constant of the function.
+The derivative of a quadratic function is the coefficient of the linear term.
+The derivative of a cubic function is the coefficient of the quadratic term.
+The derivative of a nth degree polynomial function is the coefficient of the (n-1)th term.
+
+The derivative of the list [3, 1, 2, 4, 5] is [0, 2, 4, 8, 10].
+
+The function derivative is returning the list of derivatives of the input list.
+The function derivative is returning the list [2, 4, 8, 10] which is the derivative of the input list [3, 1, 2, 4, 5].

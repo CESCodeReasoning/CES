@@ -1,0 +1,7 @@
+The function `simplify` is called with ( x = "5/1" and n = "3/1" ).
+`x` and `n` are strings, and they are split into their respective numerator and denominator using the `split` method.
+The numerator and denominator of `x` and `n` are then multiplied together.
+The result is then compared to the result of dividing the numerator and denominator of `x` and `n` by each other.
+If the result of the comparison is true, then the method returns True, otherwise it returns False.
+
+Therefore, the final output of the function `simplify("5/1", "3/1")` is True.

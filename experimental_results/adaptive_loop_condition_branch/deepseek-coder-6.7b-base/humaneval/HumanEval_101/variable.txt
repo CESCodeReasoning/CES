@@ -1,0 +1,9 @@
+from typing import *
+def words_string(s):
+    if not s: ## [CONDITION](not s)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return []
+
+    s_list = []
+
+    for letter in s: ## [STATE]letter=['H', 'i', ',', ' ', 'm', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's', ' ', 'J', 'o', 'h', 'n'][/STATE][STATE]s=["Hi, my name is John"][/STATE]
+        if letter == ',': ## [CONDITION](letter == ',')=[False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False][/CONDITION][BRANCH]taken=[N,

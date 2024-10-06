@@ -1,0 +1,11 @@
+The function multiply takes two integers a and b as input. It returns the product of the last digit of a and the last digit of b. The last digit of a number is obtained by taking the modulus of the number by 10.
+
+To determine the output of executing the function multiply on the input (2020, 1851), we need to find the last digit of 2020 and 1851, multiply them together, and return the result.
+
+2020 % 10 = 0
+1851 % 10 = 1
+
+So, the last digit of 2020 is 0 and the last digit of 1851 is 1.
+
+Therefore, the output of executing the function multiply on the input (2020, 1851) is 0 * 1 = 0.
+

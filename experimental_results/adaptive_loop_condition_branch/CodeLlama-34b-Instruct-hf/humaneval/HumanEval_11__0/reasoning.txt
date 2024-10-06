@@ -1,0 +1,11 @@
+The function `string_xor` is called with ( a = '1', b = '1' ).
+Inside the function, a new function `xor` is defined.
+The `xor` function takes two arguments `i` and `j`.
+The `xor` function checks if `i` is equal to `j`.
+If `i` is equal to `j`, the function returns the string '0'.
+Otherwise, the function returns the string '1'.
+The `string_xor` function then returns the result of calling the `xor` function on each pair of corresponding elements in the input strings `a` and `b`.
+The `zip` function is used to iterate over the input strings `a` and `b` simultaneously.
+The `join` function is used to concatenate the resulting strings into a single string.
+
+Therefore, the final output of the function `string_xor('1', '1')` is '0'.

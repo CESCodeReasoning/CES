@@ -1,0 +1,60 @@
+
+[REASONING]
+The function `order_by_points` is called with ( nums = [1, 11, -1, -11, -12] ).
+The function `digits_sum` is defined inside `order_by_points`.
+The function `digits_sum` takes an integer `n` as input.
+If `n` is negative, it is converted to positive and a flag `neg` is set to -1.
+The digits of `n` are converted to a list of integers.
+The first digit of `n` is multiplied by `neg`.
+The sum of the digits is returned.
+The `sorted` function is used to sort `nums` based on the `digits_sum` function.
+
+First Iteration (n = 1)
+   - `n` is 1, which is positive.
+   - The condition `n < 0` is false.
+   - Action: `n` is not changed and `neg` remains 1.
+   - `n` is converted to a list of integers, which is `[1]`.
+   - The first digit of `n` is multiplied by `neg`, which is `1 * 1 = 1`.
+   - The sum of the digits is `1`.
+Second Iteration (n = 11)
+   - `n` is 11, which is positive.
+   - The condition `n < 0` is false.
+   - Action: `n` is not changed and `neg` remains 1.
+   - `n` is converted to a list of integers, which is `[1, 1]`.
+   - The first digit of `n` is multiplied by `neg`, which is `1 * 1 = 1`.
+   - The sum of the digits is `2`.
+Third Iteration (n = -1)
+   - `n` is -1, which is negative.
+   - The condition `n < 0` is true.
+   - Action: `n` is converted to positive and `neg` is set to -1.
+   - `n` is converted to a list of integers, which is `[1]`.
+   - The first digit of `n` is multiplied by `neg`, which is `-1 * 1 = -1`.
+   - The sum of the digits is `0`.
+Fourth Iteration (n = -11)
+   - `n` is -11, which is negative.
+   - The condition `n < 0` is true.
+   - Action: `n` is converted to positive and `neg` is set to -1.
+   - `n` is converted to a list of integers, which is `[1, 1]`.
+   - The first digit of `n` is multiplied by `neg`, which is `-1 * 1 = -1`.
+   - The sum of the digits is `0`.
+Fifth Iteration (n = -12)
+   - `n` is -12, which is negative.
+   - The condition `n < 0` is true.
+   - Action: `n` is converted to positive and `neg` is set to -1.
+   - `n` is converted to a list of integers, which is `[1, 2]`.
+   - The first digit of `n` is multiplied by `neg`, which is `-1 * 1 = -1`.
+   - The sum of the digits is `-1`.
+
+Therefore, the final output of the function `order_by_points([1, 11, -1, -11, -12])` is `[-1, 1, 11, -11, -12]`.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def order_by_points(nums):
+    def digits_sum(n):
+        neg = 1
+        if n < 0: n, neg = -1 * n, -1  ## [CONDITION](n < 0)=[False, False, True, True, True][/CONDITION][BRANCH]taken=[N, N, Y, Y, Y][/BRANCH]
+        n = [int(i) for i in str(n)]
+        n[0] = n[0] * neg
+        return sum(n)
+    return sorted(

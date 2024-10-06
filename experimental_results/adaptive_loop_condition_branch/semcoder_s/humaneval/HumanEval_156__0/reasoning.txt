@@ -1,0 +1,59 @@
+The function `int_to_mini_roman` is called with ( number = 900 ).
+Inside the function, two lists `num` and `sym` are defined to map integers to roman numerals.
+The while loop iterates from the largest number in `num` (1000) down to 1 (I).
+First Iteration (i = 12):
+    - number // num[12] = 900 // 1000 = 0.
+    - number % num[12] = 900 % 1000 = 900.
+    - div = 0, while loop is skipped.
+Second Iteration (i = 11):
+    - number // num[11] = 900 // 900 = 1.
+    - number % num[11] = 900 % 900 = 0.
+    - div = 1, while loop is entered.
+        - res += sym[11] updates res to 'M'.
+        - div -= 1, div becomes 0.
+    - i = 10.
+Third Iteration (i = 10):
+    - number // num[10] = 0 // 900 = 0.
+    - number % num[10] = 0 % 900 = 0.
+    - div = 0, while loop is skipped.
+Fourth Iteration (i = 9):
+    - number // num[9] = 0 // 90 = 0.
+    - number % num[9] = 0 % 90 = 0.
+    - div = 0, while loop is skipped.
+Fifth Iteration (i = 8):
+    - number // num[8] = 0 // 9 = 0.
+    - number % num[8] = 0 % 9 = 0.
+    - div = 0, while loop is skipped.
+Sixth Iteration (i = 7):
+    - number // num[7] = 0 // 5 = 0.
+    - number % num[7] = 0 % 5 = 0.
+    - div = 0, while loop is skipped.
+Seventh Iteration (i = 6):
+    - number // num[6] = 0 // 4 = 0.
+    - number % num[6] = 0 % 4 = 0.
+    - div = 0, while loop is skipped.
+Eighth Iteration (i = 5):
+    - number // num[5] = 0 // 1 = 0.
+    - number % num[5] = 0 % 1 = 0.
+    - div = 0, while loop is skipped.
+Ninth Iteration (i = 4):
+    - number // num[4] = 0 // 1 = 0.
+    - number % num[4] = 0 % 1 = 0.
+    - div = 0, while loop is skipped.
+Tenth Iteration (i = 3):
+    - number // num[3] = 0 // 1 = 0.
+    - number % num[3] = 0 % 1 = 0.
+    - div = 0, while loop is skipped.
+Eleventh Iteration (i = 2):
+    - number // num[2] = 0 // 1 = 0.
+    - number % num[2] = 0 % 1 = 0.
+    - div = 0, while loop is skipped.
+Twelfth Iteration (i = 1):
+    - number // num[1] = 0 // 1 = 0.
+    - number % num[1] = 0 % 1 = 0.
+    - div = 0, while loop is skipped.
+Thirteenth Iteration (i = 0):
+    - number // num[0] = 0 // 1 = 0.
+    - number % num[0] = 0 % 1 = 0.
+    - div = 0, while loop is skipped.
+The while loop completes, the function returns the value of `res`, which is now 'M'.

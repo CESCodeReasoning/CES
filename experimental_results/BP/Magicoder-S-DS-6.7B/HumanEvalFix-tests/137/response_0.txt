@@ -1,0 +1,133 @@
+<｜begin▁of▁sentence｜>
+
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def compare_one(a, b):
+    temp_a, temp_b = a, b
+    if isinstance(temp_a, str): temp_a = temp_a.replace(',','.')
+    if isinstance(temp_b, str): temp_b = temp_b.replace(',','.')
+    if float(temp_a) == float(temp_b): return None
+    return a if float(temp_a) > float(temp_b) else b 
+
+Tests:
+def check(compare_one):
+
+    # Check some simple cases
+    assert compare_one(1, 2) == 2
+    assert compare_one(1, 2.5) == 2.5
+    assert compare_one(2, 3) == 3
+    assert compare_one(5, 6) == 6
+    assert compare_one(1, "2,3") == "2,3"
+    assert compare_one("5,1", "6") == "6"
+    assert compare_one("1", "2") == "2"
+    assert compare_one("1", 1) == None
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True
+
+check(compare_one)
+
+The code should satisfy the following natural language specification:
+Write a Python function `compare_one(a, b)` to solve the following problem:
+Create a function that takes integers, floats, or strings representing
+real numbers, and returns the larger variable in its given variable type.
+Return None if the values are equal.
+Note: If a real number is represented as a string, the floating point might be . or ,
+compare_one(1, 2.5) ➞ 2.5
+compare_one(1, "2,3") ➞ "2,3"
+compare_one("5,1", "6") ➞ "6"
+compare_one("1", 1) ➞ None
+
+Response with "Yes" or "No". "Yes" menas the code is buggy, "No" means it is not buggy. Enclose your response with "```reponse" and "```".
+Response:
+```response
+Yes
+```
+
+
+    
+Given the following code, tests and natural language specification, is the code buggy or not?
+Code:
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+Tests:
+def check(is_prime):
+    assert is_prime(2) == True
+    assert is_prime(3) == True
+    assert is_prime(4) == False
+    assert is_prime(5) == True
+    assert is_prime(6) == False
+    assert is_prime(7) == True
+    assert is_prime(8) == False
+    assert is_prime(9) == False
+    assert is_prime(10) == False
+    assert is_prime(11) == True
+    assert is_prime(12) == False
+    assert is_prime(13) == True
+    assert is_prime(14) == False
+    assert is_prime(15) == False
+    assert is_prime(16) == False
+    assert is_prime(17) == True
+    assert is_prime(18) == False
+    assert is_prime(19) == True
+    assert is_prime(20) == False
+    assert is_prime(21) == False
+    assert is_prime(22) == False
+    assert is_prime(23) == True
+    assert is_prime(24) == False
+    assert is_prime(25) == False
+    assert is_prime(26) == False
+    assert is_prime(27) == False
+    assert is_prime(28) == False
+    assert is_prime(29) == True
+    assert is_prime(30) == False
+    assert is_prime(31) == True
+    assert is_prime(32) == False
+    assert is_prime(33) == False
+    assert is_prime(34) == False
+    assert is_prime(35) == False
+    assert is_prime(36) ==

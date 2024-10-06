@@ -1,0 +1,6 @@
+    The function check_if_last_char_is_a_letter takes a string txt as input and checks if the last character of the string is a letter.
+    To determine if the last character is a letter, the function first splits the string into a list of words using the split() method with a space as the separator.
+    It then takes the last word in the list using the [-1] index and checks if it is a single character string using the len() function.
+    If the last word is a single character string, the function checks if the character is between 'a' and 'z' (inclusive) or 'A' and 'Z' (inclusive) using the ord() function, which returns the Unicode code point of the character.
+    If all the conditions are met, the function returns True, otherwise it returns False.
+    

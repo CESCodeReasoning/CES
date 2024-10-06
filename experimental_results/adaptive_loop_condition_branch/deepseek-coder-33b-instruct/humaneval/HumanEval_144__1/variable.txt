@@ -1,0 +1,11 @@
+from typing import *
+
+
+def simplify(x, n):
+    a, b = x.split("/")
+    c, d = n.split("/")
+    numerator = int(a) * int(c)
+    denom = int(b) * int(d)
+    if (numerator / denom == int(numerator / denom)): ## [CONDITION](numerator / denom == int(numerator / denom))=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return True
+    return False

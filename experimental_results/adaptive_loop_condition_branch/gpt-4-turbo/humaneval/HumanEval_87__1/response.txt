@@ -1,0 +1,36 @@
+[REASONING]
+The function `get_row` takes two parameters: `lst`, which is a list of lists, and `x`, which is the value to be searched within these sublists. The function aims to find all occurrences of `x` in `lst` and return their coordinates sorted primarily by row index and secondarily by column index in descending order.
+
+1. The input to the function is `lst = [[], [1], [1, 2, 3]]` and `x = 3`.
+2. The function first constructs a list of tuples `coords` where each tuple `(i, j)` represents the row index `i` and column index `j` of the element `x` in `lst`.
+3. Using a list comprehension, it iterates over each sublist in `lst` and each element in these sublists. It checks if the element equals `x`.
+4. For the given input, `x = 3` is found at position `(2, 2)` in `lst` (third element of the third sublist).
+5. The `coords` list after the comprehension is `[(2, 2)]`.
+6. The function then sorts `coords` twice using lambda functions:
+   - First, it sorts by the column index `j` in descending order. Since there's only one tuple, this step doesn't change the order.
+   - Second, it sorts by the row index `i`. Again, with only one tuple, the order remains unchanged.
+7. The function returns the sorted list of coordinates.
+
+Thus, the output for the given input will be a list containing the single tuple `(2, 2)`, indicating the position of `3` in `lst`.
+[REASONING]
+
+[PYTHON]
+from typing import *
+
+def get_row(lst, x):
+    # [STATE] lst = [[], [1], [1, 2, 3]], x = 3 [/STATE]
+    coords = [(i, j) for i in range(len(lst))
+              for j in range(len(lst[i])) if lst[i][j] == x]  # [CONDITION] lst[i][j] == 3 [/CONDITION]
+    # [STATE] coords = [(2, 2)] [/STATE]
+    return sorted(
+        sorted(
+            coords,
+            key=lambda x: x[1],  # [STATE] x = (2, 2), x[1] = 2 [/STATE]
+            reverse=True),  # [BRANCH] Y [/BRANCH]
+        key=lambda x: x[0])  # [STATE] x = (2, 2), x[0] = 2 [/STATE]
+    # [BRANCH] Y [/BRANCH]
+[/PYTHON]
+
+[OUTPUT]
+[(2, 2)]
+[/OUTPUT]

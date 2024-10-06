@@ -1,0 +1,94 @@
+The function `minSubArraySum` is called with ( nums = [0, 10, 20, 1000000] ).
+Inside the function, a variable `max_sum` and `s` are initialized to 0.
+The loop iterates through the list `nums`.
+First Iteration (num = 0)
+   - `num` is 0, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s = 0` updates `s` to 0.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to 0.
+Second Iteration (num = 10)
+   - `num` is 10, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -10.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -10.
+Third Iteration (num = 20)
+   - `num` is 20, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -30.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -30.
+Fourth Iteration (num = 1000000)
+   - `num` is 1000000, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -1000000.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -1000000.
+Fifth Iteration (num = 0)
+   - `num` is 0, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s = 0` updates `s` to 0.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -1000000.
+Sixth Iteration (num = 10)
+   - `num` is 10, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -20.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -20.
+Seventh Iteration (num = 20)
+   - `num` is 20, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -40.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -40.
+Eighth Iteration (num = 1000000)
+   - `num` is 1000000, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -1000020.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -1000020.
+Ninth Iteration (num = 0)
+   - `num` is 0, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s = 0` updates `s` to 0.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -1000020.
+Tenth Iteration (num = 10)
+   - `num` is 10, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -10.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -10.
+Eleventh Iteration (num = 20)
+   - `num` is 20, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -30.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -30.
+Twelfth Iteration (num = 1000000)
+   - `num` is 1000000, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -1000020.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -1000020.
+Thirteenth Iteration (num = 0)
+   - `num` is 0, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s = 0` updates `s` to 0.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -1000020.
+Fourteenth Iteration (num = 10)
+   - `num` is 10, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -10.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -10.
+Fifteenth Iteration (num = 20)
+   - `num` is 20, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -30.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -30.
+Sixteenth Iteration (num = 1000000)
+   - `num` is 1000000, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -1000020.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -1000020.
+Seventeenth Iteration (num = 0)
+   - `num` is 0, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s = 0` updates `s` to 0.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -1000020.
+Eighteenth Iteration (num = 10)
+   - `num` is 10, which is negative.
+   - The condition `s < 0` is true.
+   - Action: `s += -num` updates `s` to -10.
+   - Action: `max_sum = max(s, max_sum)` updates `max_sum` to -10.
+Nineteenth Iteration (num =

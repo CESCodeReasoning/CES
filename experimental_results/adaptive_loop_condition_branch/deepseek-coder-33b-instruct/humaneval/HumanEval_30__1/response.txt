@@ -1,0 +1,10 @@
+
+[REASONING]
+The function get_positive takes a list of integers as input and returns a new list that contains only the positive integers from the input list.
+To determine the output of executing the function get_positive on the input [-1, -2], we need to filter out the negative integers from the list.
+Therefore, the output of executing the function get_positive on the input [-1, -2] is an empty list, because there are no positive integers in the input list.
+[/REASONING]
+
+[OUTPUT]
+[]
+[/OUTPUT]

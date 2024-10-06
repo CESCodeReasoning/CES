@@ -1,0 +1,33 @@
+[REASONING]
+The function `Strongest_Extension` is called with `class_name` set to 'Watashi' and `extensions` set to ['tEN', 'niNE', 'eIGHt8OKe'].
+
+1. The function initializes `strong` to the first element of `extensions`, which is 'tEN'.
+2. `my_val` is calculated for 'tEN'. It counts the uppercase letters (E, N) and subtracts the count of lowercase letters (t). The result is 2 - 1 = 1.
+3. The function then iterates over each string in `extensions`:
+   - For 'tEN', `val` is recalculated as 1 (same as initial `my_val`). No change is made since `val` is not greater than `my_val`.
+   - For 'niNE', `val` is calculated as 2 (N, E) - 2 (n, i) = 0. No change is made since `val` (0) is not greater than `my_val` (1).
+   - For 'eIGHt8OKe', `val` is calculated as 4 (I, G, H, O) - 3 (e, t, k) = 1. No change is made since `val` (1) is not greater than `my_val` (1).
+4. After iterating through all elements, the strongest extension remains 'tEN' with a `my_val` of 1.
+5. The function concatenates `class_name` with the strongest extension using a dot separator, resulting in 'Watashi.tEN'.
+
+Therefore, the output of the function `Strongest_Extension('Watashi', ['tEN', 'niNE', 'eIGHt8OKe'])` is 'Watashi.tEN'.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+def Strongest_Extension(class_name, extensions):
+    strong = extensions[0]  ## [STATE]extensions=['tEN', 'niNE', 'eIGHt8OKe'][/STATE]
+    my_val = len([x for x in extensions[0] if x.isalpha() and x.isupper()]) - len([x for x in extensions[0] if x.isalpha() and x.islower()])  ## [STATE]my_val=1[/STATE]
+    for s in extensions: ## [STATE]s=['tEN', 'niNE', 'eIGHt8OKe'][/STATE]
+        val = len([x for x in s if x.isalpha() and x.isupper()]) - len([x for x in s if x.isalpha() and x.islower()])
+        if val > my_val: ## [CONDITION](val > my_val)=[False, False, False][/CONDITION][BRANCH]taken=[N, N, N][/BRANCH]
+            strong = s
+            my_val = val
+
+    ans = class_name + "." + strong
+    return ans
+[/PYTHON]
+
+[OUTPUT]
+Watashi.tEN
+[/OUTPUT]

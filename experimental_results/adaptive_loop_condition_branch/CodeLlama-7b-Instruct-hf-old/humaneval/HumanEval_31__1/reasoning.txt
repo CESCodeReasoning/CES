@@ -1,0 +1,7 @@
+The function `is_prime` is called with ( n = 11 * 7 ).
+Inside the function, a conditional statement is used to check if n is less than 2.
+First Iteration:
+   - `n` is 11 * 7 = 77, which is greater than 2.
+   - The condition `n < 2` is false.
+   - Action: The function returns `False`.
+Therefore, the final output of the function `is_prime(11 * 7)` is False.

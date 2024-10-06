@@ -1,0 +1,7 @@
+The function `filter_by_prefix` takes a list of strings and a prefix as input and returns a list of strings that start with the given prefix.
+
+- The list comprehension `[x for x in strings if x.startswith(prefix)]` iterates over each string in the input list and checks if it starts with the given prefix.
+- If a string starts with the prefix, it is included in the output list.
+- The output list is constructed by including only those strings that satisfy the condition `x.startswith(prefix)`.
+
+Therefore, the output of executing the function `filter_by_prefix(['a', 'ab', 'abc', 'ba', 'bb', 'bc'], 'a')` is `['a', 'ab', 'abc']`.

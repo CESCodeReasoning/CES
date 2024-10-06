@@ -1,0 +1,36 @@
+The function `by_length` is called with an empty list `arr`.
+Inside the function, a dictionary `dic` is defined with key-value pairs where the key is the length of a word and the value is the word itself.
+The list `sorted_arr` is sorted in reverse order using the `sorted` function.
+The loop iterates over the sorted list `sorted_arr`.
+
+First Iteration:
+    `var` = [] (since `sorted_arr` is an empty list)
+    `dic[var]` raises a `KeyError` since there is no key in `dic` that matches the empty list `var`.
+    The `try-except` block catches the `KeyError` and the `pass` statement is executed.
+    The loop continues to the next iteration.
+
+Second Iteration:
+    `var` = [] (since `sorted_arr` is an empty list)
+    `dic[var]` raises a `KeyError` since there is no key in `dic` that matches the empty list `var`.
+    The `try-except` block catches the `KeyError` and the `pass` statement is executed.
+    The loop continues to the next iteration.
+
+Third Iteration:
+    `var` = [] (since `sorted_arr` is an empty list)
+    `dic[var]` raises a `KeyError` since there is no key in `dic` that matches the empty list `var`.
+    The `try-except` block catches the `KeyError` and the `pass` statement is executed.
+    The loop continues to the next iteration.
+
+Fourth Iteration:
+    `var` = [] (since `sorted_arr` is an empty list)
+    `dic[var]` raises a `KeyError` since there is no key in `dic` that matches the empty list `var`.
+    The `try-except` block catches the `KeyError` and the `pass` statement is executed.
+    The loop continues to the next iteration.
+
+Fifth Iteration:
+    `var` = [] (since `sorted_arr` is an empty list)
+    `dic[var]` raises a `KeyError` since there is no key in `dic` that matches the empty list `var`.
+    The `try-except` block catches the `KeyError` and the `pass` statement is executed.
+    The loop continues to the next iteration.
+
+After the loop completes, the function returns an empty list `new_arr`.

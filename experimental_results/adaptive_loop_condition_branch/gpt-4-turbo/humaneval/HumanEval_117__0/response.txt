@@ -1,0 +1,39 @@
+[REASONING]
+The function `select_words(s, n)` takes a string `s` and an integer `n` as parameters. The goal is to find all words in the string `s` that have exactly `n` consonants.
+
+The string "Hello world" is split into the words ["Hello", "world"].
+- For each word, the function counts the number of consonants.
+- The word "Hello" has 3 consonants ('H', 'l', 'l').
+- The word "world" has 4 consonants ('w', 'r', 'l', 'd').
+
+Detailed Iteration:
+1. First word: "Hello"
+   - Iterates over each character: 'H', 'e', 'l', 'l', 'o'.
+   - Counts consonants: 3 ('H', 'l', 'l').
+   - Since 3 consonants do not equal the target 4, "Hello" is not added to the result list.
+2. Second word: "world"
+   - Iterates over each character: 'w', 'o', 'r', 'l', 'd'.
+   - Counts consonants: 4 ('w', 'r', 'l', 'd').
+   - Since 4 consonants equal the target 4, "world" is added to the result list.
+
+The function returns the list containing the word "world" as it meets the condition of having exactly 4 consonants.
+[/REASONING]
+
+[PYTHON]
+from typing import *
+
+def select_words(s, n):
+    result = []
+    for word in s.split(): ## [STATE]word=['Hello', 'world'][/STATE][STATE]s.split()=['Hello', 'world'][/STATE]
+        n_consonants = 0
+        for i in range(0, len(word)): ## [STATE]i=[0, 1, 2, 3, 4][/STATE][STATE]range(0, len(word))=[0, 1, 2, 3, 4][/STATE][STATE]len(word)=[5][/STATE]
+            if word[i].lower() not in ["a", "e", "i", "o", "u"]: ## [CONDITION](word[i].lower() not in ["a", "e", "i", "o", "u"])=[True, False, True, True, False][/CONDITION][BRANCH]taken=[Y, N, Y, Y, N][/BRANCH]
+                n_consonants += 1
+        if n_consonants == n: ## [CONDITION](n_consonants == n)=[False, True][/CONDITION][BRANCH]taken=[N, Y][/BRANCH]
+            result.append(word)
+    return result
+[/PYTHON]
+
+[OUTPUT]
+['world']
+[/OUTPUT]

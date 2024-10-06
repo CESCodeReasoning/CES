@@ -1,0 +1,61 @@
+The function `numerical_letter_grade` is called with ( grades = [4.0, 3, 1.7, 2, 3.5] ).
+Inside the function, a list `letter_grade` is initialized.
+
+Iteration 1:
+    -The gpa 4.0 is greater than 4.0, so it appends "A+" to the list.
+Iteration 2:
+    -The gpa 3 is not greater than 4.0, so it checks the next condition.
+    -The gpa 3 is not greater than 3.7, so it checks the next condition.
+    -The gpa 3 is not greater than 3.3, so it checks the next condition.
+    -The gpa 3 is not greater than 3.0, so it checks the next condition.
+    -The gpa 3 is not greater than 2.7, so it checks the next condition.
+    -The gpa 3 is not greater than 2.3, so it checks the next condition.
+    -The gpa 3 is not greater than 2.0, so it checks the next condition.
+    -The gpa 3 is not greater than 1.7, so it checks the next condition.
+    -The gpa 3 is not greater than 1.3, so it checks the next condition.
+    -The gpa 3 is not greater than 1.0, so it checks the next condition.
+    -The gpa 3 is not greater than 0.7, so it checks the next condition.
+    -The gpa 3 is not greater than 0.0, so it checks the else condition.
+    -The gpa 3 is not greater than 0.0, so it appends "E" to the list.
+Iteration 3:
+    -The gpa 1.7 is not greater than 4.0, so it checks the next condition.
+    -The gpa 1.7 is not greater than 3.7, so it checks the next condition.
+    -The gpa 1.7 is not greater than 3.3, so it checks the next condition.
+    -The gpa 1.7 is not greater than 3.0, so it checks the next condition.
+    -The gpa 1.7 is not greater than 2.7, so it checks the next condition.
+    -The gpa 1.7 is not greater than 2.3, so it checks the next condition.
+    -The gpa 1.7 is not greater than 2.0, so it checks the next condition.
+    -The gpa 1.7 is not greater than 1.7, so it checks the next condition.
+    -The gpa 1.7 is not greater than 1.3, so it checks the next condition.
+    -The gpa 1.7 is not greater than 1.0, so it checks the next condition.
+    -The gpa 1.7 is not greater than 0.7, so it checks the next condition.
+    -The gpa 1.7 is not greater than 0.0, so it checks the else condition.
+    -The gpa 1.7 is not greater than 0.0, so it appends "E" to the list.
+Iteration 4:
+    -The gpa 2 is not greater than 4.0, so it checks the next condition.
+    -The gpa 2 is not greater than 3.7, so it checks the next condition.
+    -The gpa 2 is not greater than 3.3, so it checks the next condition.
+    -The gpa 2 is not greater than 3.0, so it checks the next condition.
+    -The gpa 2 is not greater than 2.7, so it checks the next condition.
+    -The gpa 2 is not greater than 2.3, so it checks the next condition.
+    -The gpa 2 is not greater than 2.0, so it checks the next condition.
+    -The gpa 2 is not greater than 1.7, so it checks the next condition.
+    -The gpa 2 is not greater than 1.3, so it checks the next condition.
+    -The gpa 2 is not greater than 1.0, so it checks the next condition.
+    -The gpa 2 is not greater than 0.7, so it checks the next condition.
+    -The gpa 2 is not greater than 0.0, so it checks the else condition.
+    -The gpa 2 is not greater than 0.0, so it appends "E" to the list.
+Iteration 5:
+    -The gpa 3.5 is not greater than 4.0, so it checks the next condition.
+    -The gpa 3.5 is not greater than 3.7, so it checks the next condition.
+    -The gpa 3.5 is not greater than 3.3, so it checks the next condition.
+    -The gpa 3.5 is not greater than 3.0, so it checks the next condition.
+    -The gpa 3.5 is not greater than 2.7, so it checks the next condition.
+    -The gpa 3.5 is not greater than 2.3, so it checks the next condition.
+    -The gpa 3.5 is not greater than 2.0, so it checks the next condition.
+    -The gpa 3.5 is not greater than 1.7, so it checks the next condition.
+    -The gpa 3.5 is not greater than 1.3, so it checks the next condition.
+    -The gpa 3.5 is not greater than 1.0, so it checks the next condition.
+    -The gpa 3.5 is not greater than 0.7, so it checks the next condition.
+    -The gpa 3.5 is not greater than 0.0, so it checks the else condition.
+    -The gpa 3.5 is not greater than 0.0, so it appends "E" to the list.

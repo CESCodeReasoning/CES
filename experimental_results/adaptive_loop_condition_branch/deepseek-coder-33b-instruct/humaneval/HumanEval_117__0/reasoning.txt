@@ -1,0 +1,12 @@
+The function select_words(s, n) takes a string s and an integer n as its parameters.
+The outer loop iterates through each word in the string s.
+For each word, it counts the number of consonants in the word.
+If the number of consonants equals to n, it appends the word to the result list.
+First Iteration (word="Hello"):
+    - `word` is "Hello", i in the inner loop is 0, 1, 2, 3, 4.
+    - `n_consonants` is 3, because "H", "l", "l" are consonants.
+    - `n_consonants` is not equal to `n`, so the if branch is not taken.
+Second Iteration (word="world"):
+    - `word` is "world", i in the inner loop is 0, 1, 2, 3, 4.
+    - `n_consonants` is 3, because "w", "r", "l" are consonants.
+    - `n_consonants` is not equal to `n`, so the if branch is not taken.

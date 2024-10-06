@@ -1,0 +1,18 @@
+The function `sort_numbers` takes a string of numbers in words as input and returns the numbers in ascending order.
+
+The function works by first splitting the input string into a list of words using the `split(' ')` function. This function splits the string at each space character and returns a list of the words.
+
+Then, it filters out any empty strings from the list using a list comprehension. This is done by checking if `x` is not an empty string for each element `x` in the list.
+
+Next, it sorts the list of words using the `sorted` function. The `key` argument of the `sorted` function is a lambda function that returns the corresponding number for each word in the `value_map` dictionary. This is done to sort the words by their numerical values.
+
+Finally, it joins the sorted list of words into a single string with spaces between the words using the `join` function.
+
+To determine the output of executing the function `sort_numbers` on the input 'three five nine', we need to split the string into words, filter out any empty strings, sort the words by their numerical values, and then join the sorted words into a single string.
+
+The output of executing the function `sort_numbers` on the input 'three five nine' is 'nine three five'.
+
+This is because 'nine' is the highest numerical value word in the input string, 'three' is the lowest numerical value word, and 'five' is in between.
+
+Therefore, the output of executing the function `sort_numbers` on the input 'three five nine' is 'nine three five'.
+<|EOT|>

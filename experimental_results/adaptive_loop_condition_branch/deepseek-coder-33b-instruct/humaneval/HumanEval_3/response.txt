@@ -1,0 +1,37 @@
+
+[REASONING]
+The function `below_zero` is called with ( operations = [1, 2, -3, 1, 2, -3] ).
+Inside the function, a variable `balance` is initialized to 0.
+
+Iteration 1:
+    -The operation 1 is added to balance, so balance becomes 1.
+Iteration 2:
+    -The operation 2 is added to balance, so balance becomes 3.
+Iteration 3:
+    -The operation -3 is added to balance, so balance becomes 0.
+Iteration 4:
+    -The operation 1 is added to balance, so balance becomes 1.
+Iteration 5:
+    -The operation 2 is added to balance, so balance becomes 3.
+Iteration 6:
+    -The operation -3 is added to balance, so balance becomes 0.
+
+The balance never goes below zero, so the function returns False.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+
+    for op in operations: ## [STATE]op=[1, 2, -3, 1, 2, -3][/STATE][STATE]operations=[[1, 2, -3, 1, 2, -3]][/STATE]
+        balance += op
+        if balance < 0: ## [CONDITION](balance < 0)=[False, False, True, False, False, True][/CONDITION][BRANCH]taken=[N, N, N, N, N, N][/BRANCH]
+            return True
+
+    return False
+[/ANSWER]
+
+[OUTPUT]
+False
+[/OUTPUT]

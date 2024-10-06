@@ -1,0 +1,26 @@
+The function find_closest_elements(numbers) takes a list of numbers([1.0, 2.0, 3.0, 4.0, 5.0, 2.2]) as its parameter.
+The outer loop iterats through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (idx=0):
+    - `idx` is 0, `elem` is 1.0, `idx2` is 1, `elem2` is 2.0.
+    - `idx` is 0, `elem` is 1.0, `idx2` is 2, `elem2` is 3.0.
+    - `idx` is 0, `elem` is 1.0, `idx2` is 3, `elem2` is 4.0.
+    - `idx` is 0, `elem` is 1.0, `idx2` is 4, `elem2` is 5.0.
+    - `idx` is 0, `elem` is 1.0, `idx2` is 5, `elem2` is 2.2.
+    - `idx` is 0, `elem` is 1.0, `idx2` is 0, `elem2` is 1.0.
+    - `idx` is 0, `elem` is 1.0, `idx2` is 1, `elem2` is 2.0.
+    - `idx` is 0, `elem` is 1.0, `idx2` is 2, `elem2` is 3.0.
+    - `idx` is 0, `elem` is 1.0, `idx2` is 3, `elem2` is 4.0.
+    - `idx` is 0, `elem` is 1.0, `idx2` is 4, `elem2` is 5.0.
+    - `idx` is 0, `elem` is 1.0, `idx2` is 5, `elem2` is 2.2.
+Second Iteration (idx=1):
+    - `idx` is 1, `elem` is 2.0, `idx2` is 2, `elem2` is 3.0.
+    - `idx` is 1, `elem` is 2.0, `idx2` is 3, `elem2` is 4.0.
+    - `idx` is 1, `elem` is 2.0, `idx2` is 4, `elem2` is 5.0.
+    - `idx` is 1, `elem` is 2.0, `idx2` is 5, `elem2` is 2.2.
+    - `idx` is 1, `elem` is 2.0, `idx2` is 0, `elem2` is 1.0.
+    - `idx` is 1, `elem` is 2.0, `idx2` is 1, `elem2` is 2.0.
+    - `idx` is 1, `elem` is 2.0, `idx2` is 2, `elem2` is 3.0.
+    - `idx` is 1, `elem` is 2.0, `idx2` is 3, `elem2` is 4.0.
+    - `idx` is 1, `elem` is 2.0, `idx2` is 4, `elem2` is 5.0.
+    - `idx` is 1, `elem` is 2.0, `idx2` is 5, `elem2` is 2.

@@ -1,0 +1,20 @@
+from typing import *
+
+
+def is_nested(string):
+    opening_bracket_index = []
+    closing_bracket_index = []
+    for i in range(len(string)): ## [STATE]i=[0, 1, 2, 3, 4, 5, 6][/STATE][STATE]range(len(string))=[0, 1, 2, 3, 4, 5, 6][/STATE][STATE]len(string)=7[/STATE]
+        if string[i] == '[': ## [CONDITION](string[i] == '[')=[True, True, True, False, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, Y, N, N, N, N][/BRANCH]
+            opening_bracket_index.append(i)
+        else: ## [BRANCH]taken=[N, N, N, Y, Y, Y, Y][/BRANCH]
+            closing_bracket_index.append(i)
+    closing_bracket_index.reverse()
+    cnt = 0
+    i = 0
+    l = len(closing_bracket_index)
+    for idx in opening_bracket_index: ## [STATE]idx=[0, 1, 2][/STATE][STATE]opening_bracket_index=[0, 1, 2][/STATE]
+        if i < l and idx < closing_bracket_index[i]: ## [CONDITION](i < l and idx < closing_bracket_index[i])=[True, True, True, False, False, False, False][/CONDITION][CONDITION](i < l)=[True, True, True, False, False, False, False][/CONDITION][CONDITION](idx < closing_bracket_index[i])=[True, True, True, False, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, Y, N, N, N, N][/BRANCH]
+            cnt += 1
+            i += 1
+    return cnt >= 2

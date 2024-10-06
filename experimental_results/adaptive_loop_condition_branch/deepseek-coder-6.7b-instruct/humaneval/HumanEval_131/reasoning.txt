@@ -1,0 +1,8 @@
+The function `digits` is called with ( n = 5 ).
+Inside the function, a variable `product` is initialized to 1 and `odd_count` to 0.
+The loop iterates over the digits of the number (5).
+Iteration 1:
+    -The digit '5' is odd, so `product` becomes 5 (`1 * 5 = 5`) and `odd_count` becomes 1.
+Since there is only one odd digit, the function returns `product` which is 5.
+
+Therefore, the final output of the function `digits(5)` is 5.

@@ -1,0 +1,9 @@
+The function `file_name_check` is called with ( file_name = "example.txt" ).
+The variable `suf` is a list of strings containing the allowed file extensions.
+The variable `lst` is the result of splitting the file name by the dot character.
+The length of `lst` is 2, which satisfies the condition `len(lst) != 2`.
+The second element of `lst` is "txt", which is in the list of allowed file extensions.
+The length of the first element of `lst` is not 0, which satisfies the condition `len(lst[0]) == 0`.
+The first character of the first element of `lst` is "e", which is a letter, so the condition `not lst[0][0].isalpha()` is false.
+The number of digits in the first element of `lst` is 0, which satisfies the condition `t > 3`.
+Therefore, the function returns "Yes".

@@ -1,0 +1,28 @@
+
+[REASONING]
+The function `is_multiply_prime` checks if a number `a` can be expressed as the product of three prime numbers.
+
+The helper function `is_prime` checks if a number `n` is prime. It does this by checking if `n` is divisible by any number from 2 to `n-1`. If `n` is divisible by any of these numbers, it is not prime and the function returns `False`. If `n` is not divisible by any of these numbers, it is prime and the function returns `True`.
+
+The main function `is_multiply_prime` checks if `a` can be expressed as the product of three prime numbers. It does this by checking all possible combinations of three prime numbers. If it finds a combination that multiplies to `a`, it returns `True`. If it checks all combinations and does not find a match, it returns `False`.
+
+The prime numbers between 2 and 100 are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, and 97.
+
+The number `a` is `3 * 6 * 7`, which is 126.
+
+The combinations of three prime numbers that multiply to 126 are:
+- 2 * 6 * 73
+- 3 * 4 * 11
+- 5 * 2 * 7
+- 7 * 2 * 3
+
+None of these combinations match 126, so the function returns `False`.
+[/REASONING]
+
+[ANSWER]
+from typing import *
+
+
+def is_multiply_prime(a):
+    def is_prime(n):
+        for j in range(2, n): ## [STATE]j=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100][/STATE][STATE]range(2, n)=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37

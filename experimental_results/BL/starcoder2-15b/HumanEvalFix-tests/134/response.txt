@@ -1,0 +1,16 @@
+```response
+                return True if len(check) == 1 and (97 <= ord(check.upper()) <= 122) else False
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def is_palindrome(txt):
+    return txt == txt[::-1]
+
+Tests:
+def check(is_palindrome):
+    assert is_palindrome("abcba") == True
+    assert is_palindrome("abccba") == True
+    assert is_palindrome("abccbb") ==

@@ -1,0 +1,8 @@
+The function `find_zero` is called with a list of coefficients `xs`.
+The function first initializes `begin` and `end` to -1 and 1, respectively.
+The function then enters a loop that iterates until `poly(xs, begin) * poly(xs, end) <= 0`.
+Inside the loop, the function multiplies `begin` and `end` by 2 and checks if `poly(xs, begin) * poly(xs, end) > 0`.
+If the condition is true, the function updates `begin` to `center` and `end` to `center`.
+If the condition is false, the function updates `end` to `center`.
+The loop continues until `end - begin <= 1e-10`.
+After the loop completes, the function returns `begin`.

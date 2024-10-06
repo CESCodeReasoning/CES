@@ -1,0 +1,48 @@
+The function find_closest_elements(numbers) takes a list of numbers([1.0, 2.0, 3.9, 4.0, 5.0, 2.2]) as its parameter.
+The outer loop iterates through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by idx in the outer loop, compare it with every other element in the list.
+First Iteration (idx=0):
+    - `idx` is 0, idx2 in the inner loop is 0, 1, 2, 3, 4 and 5.
+    - elem=1.0: compare with 1.0, 2.0, 3.9, 4.0, 5.0, 2.2:
+        - When idx2 = 0 (elem2=1.0), the condition `idx!= idx2` is False, the if branch is not taken.
+        - When idx2 = 1 (elem2=2.0), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is None, so distance = abs(1.0 - 2.0) = 1.0, closest_pair = tuple(sorted([1.0, 2.0])) = (1.0, 2.0)
+        - When idx2 = 2 (elem2=3.9), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(1.0 - 3.9) = 2.9, new_distance < distance, so distance = 2.9, closest_pair = tuple(sorted([1.0, 3.9])) = (1.0, 3.9)
+        - When idx2 = 3 (elem2=4.0), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(1.0 - 4.0) = 3.0, new_distance < distance, so distance = 3.0, closest_pair = tuple(sorted([1.0, 4.0])) = (1.0, 4.0)
+        - When idx2 = 4 (elem2=5.0), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(1.0 - 5.0) = 4.0, new_distance < distance, so distance = 4.0, closest_pair = tuple(sorted([1.0, 5.0])) = (1.0, 5.0)
+        - When idx2 = 5 (elem2=2.2), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(1.0 - 2.2) = 1.2, new_distance < distance, so distance = 1.2, closest_pair = tuple(sorted([1.0, 2.2])) = (1.0, 2.2)
+Second Iteration (idx=1):
+    - `idx` is 1, idx2 in the inner loop is 0, 1, 2, 3, 4 and 5.
+    - elem=2.0: compare with 1.0, 2.0, 3.9, 4.0, 5.0, 2.2:
+        - When idx2 = 0 (elem2=1.0), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(2.0 - 1.0) = 1.0, new_distance < distance, so distance = 1.0, closest_pair = tuple(sorted([1.0, 2.0])) = (1.0, 2.0)
+        - When idx2 = 1 (elem2=2.0), the condition `idx!= idx2` is False, the if branch is not taken.
+        - When idx2 = 2 (elem2=3.9), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(2.0 - 3.9) = 1.9, new_distance < distance, so distance = 1.9, closest_pair = tuple(sorted([2.0, 3.9])) = (2.0, 3.9)
+        - When idx2 = 3 (elem2=4.0), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(2.0 - 4.0) = 2.0, new_distance < distance, so distance = 2.0, closest_pair = tuple(sorted([2.0, 4.0])) = (2.0, 4.0)
+        - When idx2 = 4 (elem2=5.0), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(2.0 - 5.0) = 3.0, new_distance < distance, so distance = 3.0, closest_pair = tuple(sorted([2.0, 5.0])) = (2.0, 5.0)
+        - When idx2 = 5 (elem2=2.2), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(2.0 - 2.2) = 0.2, new_distance < distance, so distance = 0.2, closest_pair = tuple(sorted([2.0, 2.2])) = (2.0, 2.2)
+Third Iteration (idx=2):
+    - `idx` is 2, idx2 in the inner loop is 0, 1, 2, 3, 4 and 5.
+    - elem=3.9: compare with 1.0, 2.0, 3.9, 4.0, 5.0, 2.2:
+        - When idx2 = 0 (elem2=1.0), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(3.9 - 1.0) = 2.9, new_distance < distance, so distance = 2.9, closest_pair = tuple(sorted([1.0, 3.9])) = (1.0, 3.9)
+        - When idx2 = 1 (elem2=2.0), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(3.9 - 2.0) = 1.9, new_distance < distance, so distance = 1.9, closest_pair = tuple(sorted([2.0, 3.9])) = (2.0, 3.9)
+        - When idx2 = 2 (elem2=3.9), the condition `idx!= idx2` is False, the if branch is not taken.
+        - When idx2 = 3 (elem2=4.0), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(3.9 - 4.0) = 0.1, new_distance < distance, so distance = 0.1, closest_pair = tuple(sorted([3.9, 4.0])) = (3.9, 4.0)
+        - When idx2 = 4 (elem2=5.0), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(3.9 - 5.0) = 1.1, new_distance < distance, so distance = 1.1, closest_pair = tuple(sorted([3.9, 5.0])) = (3.9, 5.0)
+        - When idx2 = 5 (elem2=2.2), the condition `idx!= idx2` is True, the if branch is taken.
+            - distance is not None, so new_distance = abs(3.9 - 2.2) = 1.7, new_distance < distance, so distance = 1.7, closest_pair = tuple(sorted([2.2, 3.9])) = (2.2, 3.9)
+Forth Iteration (idx=3):
+    - `idx` is 3, idx2 in the inner loop is 0, 1, 2, 3, 4 and 5.
+    - elem=4.0: compare with 1.0

@@ -1,0 +1,9 @@
+The function encode takes a string message as input and returns the encoded message.
+
+The first step is to create a dictionary vowels_replace that maps each vowel to its next character in the ASCII table.
+
+The second step is to swap the case of the message. This means that all lowercase letters become uppercase and vice versa.
+
+The third step is to iterate over each character in the message. If the character is a vowel, it is replaced by its next character in the ASCII table. If the character is not a vowel, it remains the same.
+
+The output of executing the function encode on the input 'YES' is 'ZG'.

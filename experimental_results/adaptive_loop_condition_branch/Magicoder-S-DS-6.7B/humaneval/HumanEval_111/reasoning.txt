@@ -1,0 +1,15 @@
+The function `histogram` is called with ( test = 'a b b a' ).
+Inside the function, a variable `dict1` is initialized to an empty dictionary.
+The input string is split into a list of words.
+
+Iteration 1:
+    -The word 'a' appears 2 times in the list, which is more than the current maximum count (0).
+    -The maximum count is updated to 2.
+Iteration 2:
+    -The word 'b' appears 2 times in the list, which is equal to the current maximum count (2).
+    -The word 'b' is added to the dictionary with a count of 2.
+Iteration 3:
+    -The word 'a' appears 2 times in the list, which is equal to the current maximum count (2).
+    -The word 'a' is added to the dictionary with a count of 2.
+
+The function returns the dictionary `dict1`, which contains the words 'a' and 'b' with a count of 2.

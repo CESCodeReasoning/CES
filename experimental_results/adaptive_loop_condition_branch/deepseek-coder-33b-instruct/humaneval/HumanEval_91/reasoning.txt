@@ -1,0 +1,7 @@
+The function is_bored takes a string S as input. It first imports the re module, which provides support for regular expressions in Python. It then splits the input string S into a list of sentences, where a sentence is defined as a string of characters ending with a period, question mark, or exclamation point, followed by a space and any number of spaces.
+
+Next, it counts the number of sentences in the list that start with the string "I ". It does this by iterating over each sentence in the list and checking if the first two characters of the sentence are "I ". If they are, it increments a counter.
+
+Finally, it returns the count of sentences that start with "I ".
+
+To determine the output of executing the function is_bored on the input "Hello world", we need to count the number of sentences in the string that start with "I ". However, there are no sentences in the string that start with "I ", so the output is 0.

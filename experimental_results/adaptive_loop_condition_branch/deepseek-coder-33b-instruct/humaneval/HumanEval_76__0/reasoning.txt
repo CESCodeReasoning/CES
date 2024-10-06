@@ -1,0 +1,4 @@
+The function `is_simple_power` is called with ( x = 1, n = 1 ).
+The condition ( n == 1 ) is satisfied, therefore the if branch is taken.
+Inside the if branch, the function returns ( x == 1 ), which is True.
+Therefore, the function `is_simple_power` returns True as the output.

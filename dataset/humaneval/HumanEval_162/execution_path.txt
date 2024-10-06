@@ -1,0 +1,4 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: string_to_md5
+main.py(3):     import hashlib
+main.py(4):     return hashlib.md5(text.encode('ascii')).hexdigest() if text else None

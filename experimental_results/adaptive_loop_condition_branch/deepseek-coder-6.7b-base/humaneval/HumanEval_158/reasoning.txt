@@ -1,0 +1,4 @@
+The function find_max takes a list of strings as input and returns the string with the maximum number of unique characters.
+To determine the output of executing the function find_max on the input ["name", "of", "string"], we need to find the string with the maximum number of unique characters.
+The string "name" has 4 unique characters, "of" has 2 unique characters, and "string" has 6 unique characters.
+Therefore, the output of executing the function find_max on the input ["name", "of", "string"] is "name".

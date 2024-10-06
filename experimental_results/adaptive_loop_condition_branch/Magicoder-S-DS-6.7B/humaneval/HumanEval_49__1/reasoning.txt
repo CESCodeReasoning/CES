@@ -1,0 +1,4 @@
+The function `modp` is called with (n = 0, p = 101).
+Inside the function, a variable `ret` is initialized to 1.
+The loop iterates 0 times since `range(n)` is an empty list.
+The function returns the value of `ret`, which is still 1.

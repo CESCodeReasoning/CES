@@ -1,0 +1,8 @@
+The function is_bored takes a string S as input and returns the number of sentences in S that start with "I ".
+To determine the output of executing the function is_bored on the input "Hello world", we need to count the number of sentences in "Hello world" that start with "I ".
+
+The function is_bored uses the re.split function to split the input string S into sentences. The regular expression r'[.?!]\s*' is used to split the string at each occurrence of a period, exclamation point, or question mark followed by zero or more whitespace characters.
+
+The sum function is then used to count the number of sentences in the list of sentences that start with "I ". The condition sentence[0:2] == 'I ' checks if the first two characters of each sentence are "I ".
+
+Since there is no sentence in "Hello world" that starts with "I ", the output of executing the function is_bored on the input "Hello world" is 0.

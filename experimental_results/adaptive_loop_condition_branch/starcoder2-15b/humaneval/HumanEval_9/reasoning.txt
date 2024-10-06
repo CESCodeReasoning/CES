@@ -1,0 +1,30 @@
+The function `rolling_max` is called with ( numbers = [3,2,3,100,3] ).
+Inside the function, a variable `running_max` is initialized to None.
+The variable `result` is initialized to an empty list.
+
+Iteration 1:
+    -The first element of the list is 3.
+    -Since `running_max` is None, it is set to 3.
+    -The `running_max` is appended to the `result` list, resulting in [3].
+Iteration 2:
+    -The second element of the list is 2.
+    -Since `running_max` is not None, it is compared with 2 using the `max` function.
+    -The `running_max` is set to 3, which is the maximum of 3 and 2.
+    -The `running_max` is appended to the `result` list, resulting in [3, 3].
+Iteration 3:
+    -The third element of the list is 3.
+    -Since `running_max` is not None, it is compared with 3 using the `max` function.
+    -The `running_max` is set to 3, which is the maximum of 3 and 3.
+    -The `running_max` is appended to the `result` list, resulting in [3, 3, 3].
+Iteration 4:
+    -The fourth element of the list is 100.
+    -Since `running_max` is not None, it is compared with 100 using the `max` function.
+    -The `running_max` is set to 100, which is the maximum of 3 and 100.
+    -The `running_max` is appended to the `result` list, resulting in [3, 3, 3, 100].
+Iteration 5:
+    -The fifth element of the list is 3.
+    -Since `running_max` is not None, it is compared with 3 using the `max` function.
+    -The `running_max` is set to 100, which is the maximum of 100 and 3.
+    -The `running_max` is appended to the `result` list, resulting in [3, 3, 3, 100, 100].
+
+The function returns the `result` list, which contains the running maximum of the input list.

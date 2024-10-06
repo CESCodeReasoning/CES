@@ -1,0 +1,15 @@
+The function `prime_length` is called with ( string = 'Hello' ).
+Inside the function, a variable `l` is initialized to the length of the input string.
+
+Iteration 1:
+    -The length of the input string is 5, so l becomes 5.
+Iteration 2:
+    -The length of the input string is 5, so l becomes 5.
+Iteration 3:
+    -The length of the input string is 5, so l becomes 5.
+Iteration 4:
+    -The length of the input string is 5, so l becomes 5.
+Iteration 5:
+    -The length of the input string is 5, so l becomes 5.
+
+The function returns `True` because the length of the input string is prime (i.e., it is only divisible by 1 and itself).

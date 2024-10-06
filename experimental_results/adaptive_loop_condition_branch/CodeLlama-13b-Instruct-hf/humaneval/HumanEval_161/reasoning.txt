@@ -1,0 +1,23 @@
+The function `solve` is called with ( s = "AsDf" ).
+Inside the function, a variable `flg` is initialized to 0.
+A variable `idx` is initialized to 0.
+A variable `new_str` is initialized to a list of characters in `s`.
+
+Iteration 1:
+    - The character 'A' is a letter, so `flg` becomes 1.
+    - The character 'A' is converted to uppercase and stored in `new_str[0]`.
+    - `idx` becomes 1.
+Iteration 2:
+    - The character 's' is not a letter, so `flg` remains 1.
+    - The character 's' is stored in `new_str[1]`.
+    - `idx` becomes 2.
+Iteration 3:
+    - The character 'D' is a letter, so `flg` becomes 1.
+    - The character 'D' is converted to uppercase and stored in `new_str[2]`.
+    - `idx` becomes 3.
+Iteration 4:
+    - The character 'f' is a letter, so `flg` becomes 1.
+    - The character 'f' is converted to uppercase and stored in `new_str[3]`.
+    - `idx` becomes 4.
+
+Since `flg` is 1, the function returns the string `s` (which is "AsDf").

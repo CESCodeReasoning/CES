@@ -1,0 +1,9 @@
+The function `is_prime` is called with the argument ( n = 6 ).
+Inside the function:
+1. The first conditional check is whether `n` is less than 2. Since 6 is not less than 2, this condition is false.
+2. The function then enters a loop that iterates from 2 to `n - 1` (which is 5 in this case). The range of `k` will be [2, 3, 4, 5].
+3. During the iterations:
+   - First Iteration (k = 2): The condition `n % k == 0` checks if 6 is divisible by 2. It is, so the function returns `False` immediately without checking further values of `k`.
+   - The loop does not proceed to further iterations because the function has already returned `False`.
+
+Therefore, the function correctly identifies 6 as not a prime number and returns `False`.

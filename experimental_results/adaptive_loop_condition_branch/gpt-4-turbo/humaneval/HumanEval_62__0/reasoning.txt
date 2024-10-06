@@ -1,0 +1,10 @@
+The function `derivative` takes a list of coefficients `xs` representing the coefficients of a polynomial and returns a list representing the coefficients of its derivative. The derivative of a polynomial is calculated by multiplying each coefficient by its corresponding power, then reducing the power by one.
+
+For the input `[1]`, which represents the polynomial `1` (a constant), the derivative is calculated as follows:
+1. The list comprehension `[(i * x) for i, x in enumerate(xs)]` iterates over the list `xs` with `enumerate`, which provides both the index `i` (representing the power) and the value `x` (the coefficient).
+2. For the input `[1]`, the enumeration would yield `(0, 1)`.
+3. The expression `i * x` for `(0, 1)` results in `0 * 1 = 0`.
+4. The list comprehension thus results in `[0]`.
+5. The slicing operation `[1:]` on the list `[0]` is used to remove the coefficient of the zeroth power (constant term), resulting in an empty list `[]` because there are no higher power terms left.
+
+Thus, the output for the input `[1]` is an empty list `[]`, indicating that the derivative of a constant is zero (or no terms left to represent in the polynomial form).

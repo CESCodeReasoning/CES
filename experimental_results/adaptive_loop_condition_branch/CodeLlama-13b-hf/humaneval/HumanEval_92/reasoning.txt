@@ -1,0 +1,7 @@
+The function `any_int` is called with ( x = 2, y = 3, z = 1 ).
+`x`, `y`, and `z` are all integers, which satisfies (isinstance(x,int) and isinstance(y,int) and isinstance(z,int)).
+`x` is 2, `y` is 3, and `z` is 1.
+`x+y` is 5, `x+z` is 3, and `y+z` is 4.
+`x+y` is not equal to `z`, `x+z` is not equal to `y`, and `y+z` is not equal to `x`.
+
+Therefore, the final output of the function `any_int(2, 3, 1)` is False.

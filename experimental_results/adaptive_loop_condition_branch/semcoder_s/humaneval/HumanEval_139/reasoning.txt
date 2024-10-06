@@ -1,0 +1,16 @@
+The function `special_factorial` is called with (n = 4).
+Inside the function, two variables `fact_i` and `special_fact` are initialized to 1.
+The loop iterates from 1 through 4 (since (n = 4)).
+First Iteration (i = 1):
+    fact_i *= i updates fact_i to 1 (1 * 1 = 1).
+    special_fact *= fact_i updates special_fact to 1 (1 * 1 = 1).
+Second Iteration (i = 2):
+    fact_i *= i updates fact_i to 2 (1 * 2 = 2).
+    special_fact *= fact_i updates special_fact to 2 (1 * 2 = 2).
+Third Iteration (i = 3):
+    fact_i *= i updates fact_i to 6 (2 * 3 = 6).
+    special_fact *= fact_i updates special_fact to 12 (2 * 6 = 12).
+Fourth Iteration (i = 4):
+    fact_i *= i updates fact_i to 24 (6 * 4 = 24).
+    special_fact *= fact_i updates special_fact to 288 (12 * 24 = 288).
+After the loop completes, the function returns the value of `special_fact`, which is now 288.

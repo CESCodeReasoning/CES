@@ -1,0 +1,15 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: sum_product
+main.py(3):     sum_value = 0
+main.py(4):     prod_value = 1
+main.py(6):     for n in numbers:
+main.py(7):         sum_value += n
+main.py(8):         prod_value *= n
+main.py(6):     for n in numbers:
+main.py(7):         sum_value += n
+main.py(8):         prod_value *= n
+main.py(6):     for n in numbers:
+main.py(7):         sum_value += n
+main.py(8):         prod_value *= n
+main.py(6):     for n in numbers:
+main.py(9):     return sum_value, prod_value

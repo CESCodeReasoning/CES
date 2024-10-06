@@ -1,0 +1,29 @@
+The function `histogram` is called with ( test = 'a b c d g' ).
+Inside the function, a dictionary `dict1` is initialized to an empty dictionary.
+A list `list1` is created by splitting the input string on spaces.
+
+Iteration 1:
+    -The character 'a' is not in the dictionary, so the count is 1.
+Iteration 2:
+    -The character 'b' is not in the dictionary, so the count is 1.
+Iteration 3:
+    -The character 'c' is not in the dictionary, so the count is 1.
+Iteration 4:
+    -The character 'd' is not in the dictionary, so the count is 1.
+Iteration 5:
+    -The character 'g' is not in the dictionary, so the count is 1.
+
+After the loop, the variable `t` is set to the maximum count in the list, which is 1.
+
+Iteration 1:
+    -The character 'a' has a count of 1, so it is added to the dictionary with a value of 1.
+Iteration 2:
+    -The character 'b' has a count of 1, so it is added to the dictionary with a value of 1.
+Iteration 3:
+    -The character 'c' has a count of 1, so it is added to the dictionary with a value of 1.
+Iteration 4:
+    -The character 'd' has a count of 1, so it is added to the dictionary with a value of 1.
+Iteration 5:
+    -The character 'g' has a count of 1, so it is added to the dictionary with a value of 1.
+
+The function returns the dictionary `dict1`.

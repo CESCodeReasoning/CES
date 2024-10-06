@@ -1,0 +1,41 @@
+The function `largest_prime_factor` is called with ( n = 63 ).
+Inside the function, a variable `largest` is initialized to 1.
+The loop iterates from 2 through 63 (since ( n = 63 )).
+Iteration 1:
+    -The number 2 is a factor of 63 and is prime, so largest becomes 2.
+Iteration 3:
+    -The number 3 is a factor of 63 and is prime, so largest becomes 3.
+Iteration 5:
+    -The number 5 is a factor of 63 and is prime, so largest becomes 5.
+Iteration 7:
+    -The number 7 is a factor of 63 and is prime, so largest becomes 7.
+Iteration 11:
+    -The number 11 is a factor of 63 and is prime, so largest becomes 11.
+Iteration 13:
+    -The number 13 is a factor of 63 and is prime, so largest becomes 13.
+Iteration 17:
+    -The number 17 is a factor of 63 and is prime, so largest becomes 17.
+Iteration 19:
+    -The number 19 is a factor of 63 and is prime, so largest becomes 19.
+Iteration 23:
+    -The number 23 is a factor of 63 and is prime, so largest becomes 23.
+Iteration 29:
+    -The number 29 is a factor of 63 and is prime, so largest becomes 29.
+Iteration 31:
+    -The number 31 is a factor of 63 and is prime, so largest becomes 31.
+Iteration 37:
+    -The number 37 is a factor of 63 and is prime, so largest becomes 37.
+Iteration 41:
+    -The number 41 is a factor of 63 and is prime, so largest becomes 41.
+Iteration 43:
+    -The number 43 is a factor of 63 and is prime, so largest becomes 43.
+Iteration 47:
+    -The number 47 is a factor of 63 and is prime, so largest becomes 47.
+Iteration 53:
+    -The number 53 is a factor of 63 and is prime, so largest becomes 53.
+Iteration 59:
+    -The number 59 is a factor of 63 and is prime, so largest becomes 59.
+Iteration 61:
+    -The number 61 is a factor of 63 and is prime, so largest becomes 61.
+
+Therefore, the final output of the function `largest_prime_factor(63)` is 61.

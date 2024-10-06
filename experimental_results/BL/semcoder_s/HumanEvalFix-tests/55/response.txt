@@ -1,0 +1,122 @@
+<｜begin▁of▁sentence｜>
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = elem - elem2
+                if distance < threshold:
+                    return True
+
+    return False
+
+Tests:
+def check(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check(has_close_elements)
+
+The code should satisfy the following natural language specification:
+Write a Python function `has_close_elements(numbers: List[float], threshold: float) -> bool` to solve the following problem:
+Check if in given list of numbers, are any two numbers closer to each other than
+given threshold.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+                distance = elem - elem2
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def fib(n: int):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    if n == 2:
+        return 2
+    return fib(n - 1) + fib(n - 2)
+
+Tests:
+def check(fib):
+    assert fib(10) == 55
+    assert fib(1) == 1
+    assert fib(8) == 21
+    assert fib(11) == 89
+    assert fib(12) == 144
+
+check(fib)
+
+The code should satisfy the following natural language specification:
+Write a Python function `fib(n: int)` to solve the following problem:
+Return n-th Fibonacci number.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return fib(n - 1) + fib(n - 2)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def sum_of_digits(n: int) -> int:
+    if n == 0:
+        return 0
+    return n % 10 + sum_of_digits(n // 10)
+
+Tests:
+def check(sum_of_digits):
+    assert sum_of_digits(12345) == 15
+    assert sum_of_digits(98765) == 35
+    assert sum_of_digits(10000) == 1
+    assert sum_of_digits(99999) == 45
+    assert sum_of_digits(10101) == 3
+
+check(sum_of_digits)
+
+The code should satisfy the following natural language specification:
+Write a Python function `sum_of_digits(n: int) -> int` to solve the following problem:
+Calculate the sum of digits of a given number.
+
+Response with the buggy line. Enclose your response with "```reponse" and "```".
+Response:
+```response
+    return n % 10 + sum_of_digits(n // 10)
+```
+
+
+
+Given the following buggy code, tests and natural language specification, print the buggy line.
+Buggy Code:
+def factorial(n: int) -> int:
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+Tests:
+def check(factorial):
+    assert factorial(5) == 120
+    assert factorial(0) == 1
+    assert factorial(1) == 1
+    assert factorial(6) == 720
+    assert factorial(10) == 3628800
+
+check(factorial)
+
+The code should satisfy the following natural language specification:
+Write a Python function `factorial(n: int) -> int` to solve the following problem:
+Calculate the factor

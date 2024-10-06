@@ -1,0 +1,39 @@
+The function `strange_sort_list` is called with ( lst = []).
+Inside the function, two variables `res` and `switch` are initialized to empty lists and a boolean value `switch` is set to `True`.
+The while loop iterates until the list `lst` is empty.
+First Iteration:
+    - lst = [], `min(lst)` is undefined.
+    - `max(lst)` is undefined.
+    - `switch` is `True`, so `res.append(min(lst))` is not executed.
+    - `res.append(max(lst))` is executed, appending the maximum value of `lst` to `res`.
+    - `lst.remove(res[-1])` removes the maximum value of `lst` from `lst`.
+    - `switch` is set to `False`.
+Second Iteration:
+    - lst = [], `min(lst)` is undefined.
+    - `max(lst)` is undefined.
+    - `switch` is `False`, so `res.append(min(lst))` is not executed.
+    - `res.append(max(lst))` is executed, appending the maximum value of `lst` to `res`.
+    - `lst.remove(res[-1])` removes the maximum value of `lst` from `lst`.
+    - `switch` is set to `True`.
+Third Iteration:
+    - lst = [], `min(lst)` is undefined.
+    - `max(lst)` is undefined.
+    - `switch` is `True`, so `res.append(min(lst))` is not executed.
+    - `res.append(max(lst))` is executed, appending the maximum value of `lst` to `res`.
+    - `lst.remove(res[-1])` removes the maximum value of `lst` from `lst`.
+    - `switch` is set to `False`.
+Fourth Iteration:
+    - lst = [], `min(lst)` is undefined.
+    - `max(lst)` is undefined.
+    - `switch` is `False`, so `res.append(min(lst))` is not executed.
+    - `res.append(max(lst))` is executed, appending the maximum value of `lst` to `res`.
+    - `lst.remove(res[-1])` removes the maximum value of `lst` from `lst`.
+    - `switch` is set to `True`.
+Fifth Iteration:
+    - lst = [], `min(lst)` is undefined.
+    - `max(lst)` is undefined.
+    - `switch` is `True`, so `res.append(min(lst))` is not executed.
+    - `res.append(max(lst))` is executed, appending the maximum value of `lst` to `res`.
+    - `lst.remove(res[-1])` removes the maximum value of `lst` from `lst`.
+    - `switch` is set to `False`.
+After the while loop completes, the function returns the value of `res`, which is now [].

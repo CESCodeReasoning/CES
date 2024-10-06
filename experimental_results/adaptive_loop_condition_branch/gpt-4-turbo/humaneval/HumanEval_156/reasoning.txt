@@ -1,0 +1,55 @@
+The function `int_to_mini_roman` is called with the argument `number = 19`.
+The function initializes two lists: `num` containing integer values and `sym` containing corresponding Roman numeral symbols. It also initializes `i = 12` to start checking from the largest Roman numeral value and an empty string `res` to accumulate the result.
+
+The outer while loop checks if `number` is non-zero:
+- First Iteration (`i = 12`):
+  - `number // num[12]` is `19 // 1000` which is `0`. So, `div = 0`.
+  - The inner while loop does not execute because `div = 0`.
+  - `i` is decremented to `11`.
+- Second Iteration (`i = 11`):
+  - `number // num[11]` is `19 // 900` which is `0`. So, `div = 0`.
+  - The inner while loop does not execute because `div = 0`.
+  - `i` is decremented to `10`.
+- This continues until `i = 3`:
+  - `number // num[3]` is `19 // 9` which is `2`. So, `div = 2`.
+  - `number %= num[3]` updates `number` to `19 % 9` which is `1`.
+  - The inner while loop executes twice, adding "IX" twice to `res`.
+  - `i` is decremented to `2`.
+- Next Iteration (`i = 2`):
+  - `number // num[2]` is `1 // 5` which is `0`. So, `div = 0`.
+  - The inner while loop does not execute because `div = 0`.
+  - `i` is decremented to `1`.
+- Next Iteration (`i = 1`):
+  - `number // num[1]` is `1 // 4` which is `0`. So, `div = 0`.
+  - The inner while loop does not execute because `div = 0`.
+  - `i` is decremented to `0`.
+- Next Iteration (`i = 0`):
+  - `number // num[0]` is `1 // 1` which is `1`. So, `div = 1`.
+  - `number %= num[0]` updates `number` to `1 % 1` which is `0`.
+  - The inner while loop executes once, adding "I" to `res`.
+  - `i` is decremented to `-1`.
+
+The outer while loop terminates as `number` is now `0`. The function returns the result `res` converted to lowercase, which is "ixi".
+
+[PYTHON]
+from typing import *
+def int_to_mini_roman(number):
+    num = [1, 4, 5, 9, 10, 40, 50, 90,  
+           100, 400, 500, 900, 1000] 
+    sym = ["I", "IV", "V", "IX", "X", "XL",  
+           "L", "XC", "C", "CD", "D", "CM", "M"] 
+    i = 12
+    res = ''
+    while number:  ## [STATE]number=[19, 1, 0][/STATE]
+        div = number // num[i]  ## [STATE]div=[0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1][/STATE]
+        number %= num[i]  ## [STATE]number=[19, 19, 19, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0][/STATE]
+        while div:  ## [STATE]div=[0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1][/STATE]
+            res += sym[i] 
+            div -= 1
+        i -= 1
+    return res.lower()
+[/PYTHON]
+
+[OUTPUT]
+ixi
+[/OUTPUT]

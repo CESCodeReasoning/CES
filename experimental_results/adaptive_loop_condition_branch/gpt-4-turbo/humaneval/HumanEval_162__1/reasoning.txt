@@ -1,0 +1,10 @@
+The function `string_to_md5` takes a string `text` as input. It first checks if `text` is not empty. If `text` is not empty, it encodes the string into ASCII format and then computes its MD5 hash using the `hashlib.md5()` method. The result is then converted to a hexadecimal format using the `hexdigest()` method. If `text` is empty, the function returns `None`.
+
+For the input 'A B C', the function will:
+1. Check if 'A B C' is not empty. Since it is not, it proceeds to the next step.
+2. Encode 'A B C' into ASCII format.
+3. Compute the MD5 hash of the encoded string.
+4. Convert the hash to a hexadecimal string format.
+5. Return the hexadecimal string.
+
+Thus, the output will be the MD5 hash of 'A B C' in hexadecimal format.

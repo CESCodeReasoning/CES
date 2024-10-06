@@ -1,0 +1,9 @@
+The function `prime_length` is called with ( string = 'Wow' ).
+The length of the string is 3.
+The condition `l == 0 or l == 1` is not satisfied (since 3 is not equal to 0 or 1).
+The loop iterates from 2 through 3 (since `l` is 3).
+Iteration 1 (i = 2)
+   - `l` is not divisible by 2 (3 % 2 = 1), so the condition `l % i == 0` is not satisfied.
+Iteration 2 (i = 3)
+   - `l` is divisible by 3 (3 % 3 = 0), so the condition `l % i == 0` is satisfied.
+Therefore, the function `prime_length('Wow')` returns False.

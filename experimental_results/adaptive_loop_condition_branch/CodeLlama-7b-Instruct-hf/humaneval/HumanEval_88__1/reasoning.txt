@@ -1,0 +1,5 @@
+The function sort_array takes an array of integers as input and returns a sorted array.
+The function uses the sorted() function to sort the array.
+The function also uses a conditional expression to determine the order of the elements in the sorted array.
+If the sum of the first and last elements in the array is even, the function sorts the array in descending order.
+If the sum of the first and last elements in the array is odd, the function sorts the array in ascending order.

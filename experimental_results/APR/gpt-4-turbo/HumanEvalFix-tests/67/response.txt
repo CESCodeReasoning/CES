@@ -1,0 +1,51 @@
+Here's the fixed code for both functions, `has_close_elements` and `fruit_distribution`, with the necessary corrections and improvements:
+
+### Fixed Code for `has_close_elements`
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)  # Use absolute value to get the correct distance
+                if distance < threshold:
+                    return True
+    return False
+
+# Tests
+def check_has_close_elements(has_close_elements):
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True
+    assert has_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True
+    assert has_close_elements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False
+    assert has_close_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True
+    assert has_close_elements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False
+
+check_has_close_elements(has_close_elements)
+```
+
+### Fixed Code for `fruit_distribution`
+```python
+def fruit_distribution(s: str, n: int) -> int:
+    lis = []
+    for i in s.split(' '):
+        if i.isdigit():
+            lis.append(int(i))
+    return n - sum(lis)  # Correct the formula by removing the unnecessary subtraction of 1
+
+# Tests
+def check_fruit_distribution(fruit_distribution):
+    assert fruit_distribution("5 apples and 6 oranges", 19) == 8
+    assert fruit_distribution("5 apples and 6 oranges", 21) == 10
+    assert fruit_distribution("0 apples and 1 oranges", 3) == 2
+    assert fruit_distribution("1 apples and 0 oranges", 3) == 2
+    assert fruit_distribution("2 apples and 3 oranges", 100) == 95
+    assert fruit_distribution("2 apples and 3 oranges", 5) == 0
+    assert fruit_distribution("1 apples and 100 oranges", 120) == 19
+
+check_fruit_distribution(fruit_distribution)
+```
+
+These corrections ensure that both functions now work as intended and pass all the provided test cases.

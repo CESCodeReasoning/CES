@@ -1,0 +1,8 @@
+from typing import *
+
+
+def prime_fib(n: int):
+    import math
+
+    def is_prime(p):
+        if p < 2: ## [CONDITION](p < 2)=[False][

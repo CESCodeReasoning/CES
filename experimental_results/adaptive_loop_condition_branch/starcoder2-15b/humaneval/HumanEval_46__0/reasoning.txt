@@ -1,0 +1,19 @@
+The function `fib4` is called with ( n = 10 ).
+Inside the function, a variable `results` is initialized to [0, 0, 2, 0].
+The condition ( n < 4 ) is not satisfied, therefore the if branch is not taken.
+The loop iterates from 4 through 10 (since ( n + 1 = 11 )).
+First Iteration (_ = 4):
+    results[-1] = 0, results[-2] = 0, results[-3] = 2, results[-4] = 0, results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [0, 0, 2, 0, 2], results.pop(0) removes the first element from results, which is 0.
+Second Iteration (_ = 5):
+    results[-1] = 2, results[-2] = 0, results[-3] = 2, results[-4] = 0, results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [0, 2, 2, 0, 2, 4], results.pop(0) removes the first element from results, which is 0.
+Third Iteration (_ = 6)
+    results[-1] = 2, results[-2] = 2, results[-3] = 0, results[-4] = 2, results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [2, 2, 0, 2, 4, 8], results.pop(0) removes the first element from results, which is 2.
+Fourth Iteration (_ = 7)
+    results[-1] = 0, results[-2] = 2, results[-3] = 2, results[-4] = 0, results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [2, 0, 2, 4, 8, 14], results.pop(0) removes the first element from results, which is 2.
+Fifth Iteration (_ = 8)
+    results[-1] = 2, results[-2] = 0, results[-3] = 2, results[-4] = 4, results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [0, 2, 4, 8, 14, 24], results.pop(0) removes the first element from results, which is 0.
+Sixth Iteration (_ = 9)
+    results[-1] = 4, results[-2] = 8, results[-3] = 14, results[-4] = 24, results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [8, 14, 24, 42, 24, 68], results.pop(0) removes the first element from results, which is 8.
+Seventh Iteration (_ = 10)
+    results[-1] = 14, results[-2] = 24, results[-3] = 42, results[-4] = 68, results.append(results[-1] + results[-2] + results[-3] + results[-4]) updates results to [24, 42, 68, 134, 68, 230], results.pop(0) removes the first element from results, which is 24.
+After the loop completes, the function returns the last element of results, which is 230.

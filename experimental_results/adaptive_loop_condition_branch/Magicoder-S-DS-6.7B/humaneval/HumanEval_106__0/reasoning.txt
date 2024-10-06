@@ -1,0 +1,16 @@
+The function f(n) takes an integer n as its parameter.
+The outer loop iterates from 1 to n (inclusive).
+If the current number is even, the inner loop calculates the factorial of the number and appends it to the result list.
+If the current number is odd, the inner loop calculates the sum of all numbers from 1 to the current number and appends it to the result list.
+First Iteration (i=1):
+    - `i` is 1, the condition `i % 2 == 0` is False, the else branch is taken.
+    - `x` is 0, the inner loop iterates from 1 to 1 (inclusive), `x` is incremented by 1 in each iteration.
+    - After the inner loop, `x` is 0, append 0 to the result list.
+Second Iteration (i=2):
+    - `i` is 2, the condition `i % 2 == 0` is True, the if branch is taken.
+    - `x` is 1, the inner loop iterates from 1 to 2 (inclusive), `x` is multiplied by the current number in each iteration.
+    - After the inner loop, `x` is 2, append 2 to the result list.
+Third Iteration (i=3):
+    - `i` is 3, the condition `i % 2 == 0` is False, the else branch is taken.
+    - `x` is 0, the inner loop iterates from 1 to 3 (inclusive), `x` is incremented by the current number in each iteration.
+    - After the inner loop, `x` is 6, append 6 to the result list.

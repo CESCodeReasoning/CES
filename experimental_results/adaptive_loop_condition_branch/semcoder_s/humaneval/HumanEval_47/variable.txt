@@ -1,0 +1,7 @@
+from typing import *
+def median(l: list):
+    l = sorted(l) ## [STATE]l=[1, 2, 3, 4, 5][/STATE]
+    if len(l) % 2 == 1: ## [CONDITION](len(l) % 2 == 1)=[True][/CONDITION][BRANCH]taken=[Y][/BRANCH]
+        return l[len(l) // 2] ## [STATE]return l[2]=3[/STATE]
+    else: ## [BRANCH]taken=[N][/BRANCH]
+        return (l[len(l) // 2 - 1] + l[len(l) // 2]) / 2.0

@@ -1,0 +1,61 @@
+The function `int_to_mini_roman` is called with ( number = 19 ).
+Inside the function, a variable `num` is initialized to a list of integers.
+A variable `sym` is initialized to a list of strings.
+A variable `i` is initialized to 12.
+A variable `res` is initialized to an empty string.
+First Iteration:
+    - number = 19, i = 12.
+    - `div = number // num[i]` updates `div` to 0 ( 19 // 1000 = 0 ).
+    - `number %= num[i]` updates `number` to 19 ( 19 % 1000 = 19 ).
+    - `while div` is false, so the loop is not executed.
+Second Iteration:
+    - number = 19, i = 11.
+    - `div = number // num[i]` updates `div` to 0 ( 19 // 900 = 0 ).
+    - `number %= num[i]` updates `number` to 19 ( 19 % 900 = 19 ).
+    - `while div` is false, so the loop is not executed.
+Third Iteration:
+    - number = 19, i = 10.
+    - `div = number // num[i]` updates `div` to 0 ( 19 // 500 = 0 ).
+    - `number %= num[i]` updates `number` to 19 ( 19 % 500 = 19 ).
+    - `while div` is false, so the loop is not executed.
+Fourth Iteration:
+    - number = 19, i = 9.
+    - `div = number // num[i]` updates `div` to 0 ( 19 // 100 = 0 ).
+    - `number %= num[i]` updates `number` to 19 ( 19 % 100 = 19 ).
+    - `while div` is false, so the loop is not executed.
+Fifth Iteration:
+    - number = 19, i = 8.
+    - `div = number // num[i]` updates `div` to 0 ( 19 // 90 = 0 ).
+    - `number %= num[i]` updates `number` to 19 ( 19 % 90 = 19 ).
+    - `while div` is false, so the loop is not executed.
+Sixth Iteration:
+    - number = 19, i = 7.
+    - `div = number // num[i]` updates `div` to 0 ( 19 // 50 = 0 ).
+    - `number %= num[i]` updates `number` to 19 ( 19 % 50 = 19 ).
+    - `while div` is false, so the loop is not executed.
+Seventh Iteration:
+    - number = 19, i = 6.
+    - `div = number // num[i]` updates `div` to 0 ( 19 // 40 = 0 ).
+    - `number %= num[i]` updates `number` to 19 ( 19 % 40 = 19 ).
+    - `while div` is false, so the loop is not executed.
+Eighth Iteration:
+    - number = 19, i = 5.
+    - `div = number // num[i]` updates `div` to 0 ( 19 // 10 = 0 ).
+    - `number %= num[i]` updates `number` to 19 ( 19 % 10 = 9 ).
+    - `while div` is false, so the loop is not executed.
+Ninth Iteration:
+    - number = 9, i = 4.
+    - `div = number // num[i]` updates `div` to 0 ( 9 // 5 = 0 ).
+    - `number %= num[i]` updates `number` to 9 ( 9 % 5 = 4 ).
+    - `while div` is false, so the loop is not executed.
+Tenth Iteration:
+    - number = 4, i = 3.
+    - `div = number // num[i]` updates `div` to 0 ( 4 // 1 = 0 ).
+    - `number %= num[i]` updates `number` to 4 ( 4 % 1 = 0 ).
+    - `while div` is false, so the loop is not executed.
+Eleventh Iteration:
+    - number = 0, i = 2.
+    - `div = number // num[i]` updates `div` to 0 ( 0 // 4 = 0 ).
+    - `number %= num[i]` updates `number` to 0 ( 0 % 4 = 0 ).
+    - `while div` is false, so the loop is not executed.
+The while loop terminates. The function returns the value of `res`, which is now "XIX".

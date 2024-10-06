@@ -1,0 +1,11 @@
+The function `even_odd_count` is called with ( num = -78 ).
+Inside the function, a variable `even_count` and `odd_count` are initialized to 0.
+
+Iteration 1:
+    -The absolute value of -78 is 78.
+    -The string representation of 78 is '78'.
+    -The first character '7' is not even, so odd_count becomes 1.
+Iteration 2:
+    -The character '8' is even, so even_count becomes 1.
+
+Therefore, the final output of the function `even_odd_count(-78)` is (1, 1).

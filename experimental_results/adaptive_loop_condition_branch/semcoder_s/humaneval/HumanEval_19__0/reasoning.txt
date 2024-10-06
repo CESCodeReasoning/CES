@@ -1,0 +1,9 @@
+The function `sort_numbers` takes a string of space-separated numbers in words as input and returns the numbers sorted in numerical order.
+
+Here's the step-by-step reasoning:
+1. A dictionary `value_map` is created to map the word numbers to their corresponding numerical values.
+2. The input string is split by space and filtered to remove any empty strings.
+3. The list of numbers is sorted based on the corresponding numerical value of each word number using the `sorted` function and a lambda function as the key.
+4. The sorted list of numbers is joined back into a string with spaces and returned as the output.
+
+Since the input string is empty, the output will also be an empty string.

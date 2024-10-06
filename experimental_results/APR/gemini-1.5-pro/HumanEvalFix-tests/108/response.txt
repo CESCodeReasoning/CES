@@ -1,0 +1,25 @@
+```python
+from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False
+```
+
+
+```python
+def count_nums(arr):
+    def digits_sum(n):
+        s = 0
+        n = abs(n)
+        while n:
+            s += n % 10
+            n //= 10
+        return s
+    return len(list(filter(lambda x: x > 0, [digits_sum(i) for i in arr])))
+```

@@ -1,0 +1,52 @@
+[REASONING]
+The function `separate_paren_groups` is called with the input string '(()()) ((())) () ((())()())'.
+The function is designed to separate groups of balanced parentheses into individual strings.
+
+1. Initialize an empty list `result` to store the final groups of balanced parentheses.
+2. Initialize an empty list `current_string` to build the current group of balanced parentheses.
+3. Initialize `current_depth` to 0 to keep track of the depth of nested parentheses.
+
+The function iterates over each character `c` in the input string:
+- If `c` is '(', it indicates the start of a new group or a deeper level in the current group:
+  - Increment `current_depth` by 1.
+  - Append `c` to `current_string`.
+- If `c` is ')', it indicates the end of a current group or moving back from a deeper level:
+  - Decrement `current_depth` by 1.
+  - Append `c` to `current_string`.
+  - If `current_depth` becomes 0, it means a complete group of balanced parentheses has been formed:
+    - Append the joined `current_string` to `result`.
+    - Clear `current_string` to start a new group.
+
+The loop processes each character, building groups of balanced parentheses and adding them to `result` when a group is completed.
+
+Finally, the function returns the `result` list containing all separate groups of balanced parentheses.
+
+The expected output for the input '(()()) ((())) () ((())()())' is a list of strings: ['(()())', '((()))', '()', '((())()())'].
+[/REASONING]
+
+[PYTHON]
+from typing import List
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    result = []
+    current_string = []
+    current_depth = 0
+
+    for c in paren_string: ## [STATE]paren_string='(()()) ((())) () ((())()())'[/STATE]
+        if c == '(': ## [CONDITION](c == '(')=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+            current_depth += 1
+            current_string.append(c)
+        elif c == ')': ## [CONDITION](c == ')')=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+            current_depth -= 1
+            current_string.append(c)
+
+            if current_depth == 0: ## [CONDITION](current_depth == 0)=True[/CONDITION][BRANCH]taken=Y[/BRANCH]
+                result.append(''.join(current_string))
+                current_string.clear()
+
+    return result
+[/PYTHON]
+
+[OUTPUT]
+['(()())', '((()))', '()', '((())()())']
+[/OUTPUT]

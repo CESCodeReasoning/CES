@@ -1,0 +1,117 @@
+The function `match_parens` is called with ( lst = ['(()(())', '())())'] ).
+Inside the function, a variable `S1` and `S2` are initialized to the empty string.
+
+Iteration 1:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 2:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 3:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 4:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 5:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 6:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 7:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 8:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 9:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 10:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 11:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 12:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 13:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 14:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 15:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 16:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 17:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 18:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 19:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 20:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 21:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 22:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 23:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 24:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 25:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 26:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 27:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 28:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 29:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 30:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 31:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 32:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 33:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 34:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 35:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 36:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 37:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of the list is '())())', so S2 becomes '())())'.
+Iteration 38:
+    - The first element of the list is '(()(())', so S1 becomes '(()(())'.
+    - The second element of

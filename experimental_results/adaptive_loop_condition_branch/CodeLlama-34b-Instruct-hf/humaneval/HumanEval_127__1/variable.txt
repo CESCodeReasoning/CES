@@ -1,0 +1,20 @@
+from typing import *
+
+
+def intersection(interval1, interval2):
+    def is_prime(num):
+        if num == 1 or num == 0: ## [CONDITION](num == 1 or num == 0)=[False, False][/CONDITION][CONDITION](num == 1)=[False][/CONDITION][CONDITION](num == 0)=[False][/CONDITION][BRANCH]taken=[N, N, N][/BRANCH]
+            return False
+        if num == 2:
+            return True
+        for i in range(2, num): ## [STATE]range(2, num)=[2][/STATE][STATE]num=1[/STATE]
+            if num % i == 0:
+                return False
+        return True
+
+    l = max(interval1[0], interval2[0]) ## [STATE]l=0[/STATE]
+    r = min(interval1[1], interval2[1]) ## [STATE]r=1[/STATE]
+    length = r - l ## [STATE]length=1[/STATE]
+    if length > 0 and is_prime(length): ## [CONDITION](length > 0 and is_prime(length))=True[/CONDITION][CONDITION](length > 0)=True[/CONDITION][CONDITION](is_prime(length))=True[/CONDITION][BRANCH]taken=[Y, Y, Y][/BRANCH]
+        return "YES"
+    return "NO"

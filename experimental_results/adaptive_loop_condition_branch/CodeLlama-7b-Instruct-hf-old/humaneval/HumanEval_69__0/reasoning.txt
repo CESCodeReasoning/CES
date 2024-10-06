@@ -1,0 +1,45 @@
+The function `search` is called with ( lst = [2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1] ).
+Inside the function, a variable `frq` is initialized to a list of zeros with length equal to the maximum value in `lst` plus 1.
+
+Iteration 1:
+    -The value of `i` is 2, which is less than the value of `frq[i]`, so `frq[i]` is updated to 1.
+Iteration 2:
+    -The value of `i` is 7, which is less than the value of `frq[i]`, so `frq[i]` is updated to 2.
+Iteration 3:
+    -The value of `i` is 8, which is greater than the value of `frq[i]`, so `frq[i]` is not updated.
+Iteration 4:
+    -The value of `i` is 8, which is greater than the value of `frq[i]`, so `frq[i]` is not updated.
+Iteration 5:
+    -The value of `i` is 4, which is less than the value of `frq[i]`, so `frq[i]` is updated to 3.
+Iteration 6:
+    -The value of `i` is 8, which is greater than the value of `frq[i]`, so `frq[i]` is not updated.
+Iteration 7:
+    -The value of `i` is 7, which is less than the value of `frq[i]`, so `frq[i]` is updated to 4.
+Iteration 8:
+    -The value of `i` is 3, which is less than the value of `frq[i]`, so `frq[i]` is updated to 5.
+Iteration 9:
+    -The value of `i` is 9, which is greater than the value of `frq[i]`, so `frq[i]` is not updated.
+Iteration 10:
+    -The value of `i` is 6, which is less than the value of `frq[i]`, so `frq[i]` is updated to 6.
+Iteration 11:
+    -The value of `i` is 5, which is less than the value of `frq[i]`, so `frq[i]` is updated to 7.
+Iteration 12:
+    -The value of `i` is 10, which is greater than the value of `frq[i]`, so `frq[i]` is not updated.
+Iteration 13:
+    -The value of `i` is 4, which is less than the value of `frq[i]`, so `frq[i]` is updated to 8.
+Iteration 14:
+    -The value of `i` is 3, which is less than the value of `frq[i]`, so `frq[i]` is updated to 9.
+Iteration 15:
+    -The value of `i` is 6, which is less than the value of `frq[i]`, so `frq[i]` is updated to 10.
+Iteration 16:
+    -The value of `i` is 7, which is less than the value of `frq[i]`, so `frq[i]` is updated to 11.
+Iteration 17:
+    -The value of `i` is 1, which is less than the value of `frq[i]`, so `frq[i]` is updated to 12.
+Iteration 18:
+    -The value of `i` is 7, which is less than the value of `frq[i]`, so `frq[i]` is updated to 13.
+Iteration 19:
+    -The value of `i` is 4, which is less than the value of `frq[i]`, so `frq[i]` is updated to 14.
+Iteration 20:
+    -The value of `i` is 10, which is greater than the value of `frq[i]`, so `frq[i]` is not updated.
+
+The `frq` list is now [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 

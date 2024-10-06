@@ -1,0 +1,11 @@
+The function `intersection` is called with two intervals (interval1 = [-2, -2] and interval2 = [-3, -2]).
+
+First, the function defines a helper function `is_prime` that checks if a number is prime.
+
+Then, the function initializes two variables `l` and `r` to the maximum and minimum values of the two intervals, respectively.
+
+Next, the function calculates the length of the intersection of the two intervals, which is `r - l`.
+
+Finally, the function checks if the length of the intersection is greater than 0 and if the length is prime. If both conditions are true, then the function returns "YES", otherwise it returns "NO".
+
+Therefore, the final output of the function `intersection([-2, -2], [-3, -2])` is "NO".

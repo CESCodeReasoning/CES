@@ -1,0 +1,10 @@
+The function `digitSum` is called with ( s = "You arE Very Smart" ).
+The condition `s == ""` is false, so we move to the return statement.
+The expression `sum(ord(char) if char.isupper() else 0 for char in s)` is evaluated.
+This expression uses a generator comprehension to iterate over each character in the string "You arE Very Smart".
+For each character:
+   - If the character is an uppercase letter (`char.isupper()`), its ASCII value (`ord(char)`) is added to the sum.
+   - If the character is not an uppercase letter, 0 is added to the sum.
+The sum of ASCII values of uppercase letters in the string "You arE Very Smart" is calculated.
+
+Therefore, the final output of the function `digitSum("You arE Very Smart")` is the sum of ASCII values of uppercase letters in the string "You arE Very Smart".

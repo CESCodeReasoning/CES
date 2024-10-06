@@ -1,0 +1,13 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: do_algebra
+main.py(5):     expression = str(operand[0])
+main.py(6):     for oprt, oprn in zip(operator, operand[1:]):
+main.py(7):         expression += oprt + str(oprn)
+main.py(6):     for oprt, oprn in zip(operator, operand[1:]):
+main.py(7):         expression += oprt + str(oprn)
+main.py(6):     for oprt, oprn in zip(operator, operand[1:]):
+main.py(7):         expression += oprt + str(oprn)
+main.py(6):     for oprt, oprn in zip(operator, operand[1:]):
+main.py(8):     return eval(expression)
+ --- modulename: main, funcname: <module>
+<string>(1): 

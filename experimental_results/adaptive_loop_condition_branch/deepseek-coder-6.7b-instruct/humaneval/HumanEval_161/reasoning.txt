@@ -1,0 +1,31 @@
+The function `solve` is called with ( s = "AsDf" ).
+First, it checks if the first character 'A' is an alphabet. It is, so it swaps the case to 'a' and places it at index 0 in the new string `new_str`.
+Next, it checks the second character 's', which is an alphabet, so it swaps the case to 'S' and places it at index 1 in `new_str`.
+The third character 'D' is an alphabet, so it swaps the case to 'd' and places it at index 2 in `new_str`.
+The fourth character 'f' is an alphabet, so it swaps the case to 'F' and places it at index 3 in `new_str`.
+Finally, it checks if `flg` is 0 (which it is, because we have swapped at least one character). If `flg` is 0, it returns the reversed string `new_str`.
+
+Therefore, the final output of the function `solve("AsDf")` is 'fDsA'.
+
+[ANSWER]
+def solve(s):
+    flg = 0
+    idx = 0
+    new_str = list(s)
+    for i in s: ## [STATE]i=['A', 's', 'D', 'f'][/STATE][STATE]s=["AsDf"][/STATE]
+        if i.isalpha(): ## [CONDITION](i.isalpha())=[True, True, True, True][/CONDITION][BRANCH]taken=[Y, Y, Y, Y][/BRANCH]
+            new_str[idx] = i.swapcase()
+            flg = 1
+        idx += 1
+    s = ""
+    for i in new_str: ## [STATE]i=['A', 's', 'D', 'f'][/STATE][STATE]new_str=['a', 'S', 'd', 'F'][/STATE]
+        s += i
+    if flg == 0: ## [CONDITION](flg == 0)=[False][/CONDITION][BRANCH]taken=[N][/BRANCH]
+        return s[len(s)::-1]
+    return s
+[/ANSWER]
+
+[OUTPUT]
+'fDsA'
+[/OUTPUT]
+<|EOT|>

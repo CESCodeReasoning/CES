@@ -1,0 +1,4 @@
+The function right_angle_triangle takes three numbers a, b, and c as input and returns True if the three numbers form a right-angled triangle, and False otherwise.
+To determine the output of executing the function right_angle_triangle on the input 3, 4, and 5, we need to check if the three numbers 3, 4, and 5 form a right-angled triangle.
+Since 3*3 = 9, 4*4 = 16, and 5*5 = 25, we have 9 + 16 = 25, which means that the three numbers 3, 4, and 5 form a right-angled triangle.
+Therefore, the output of executing the function right_angle_triangle on the input 3, 4, and 5 is True.

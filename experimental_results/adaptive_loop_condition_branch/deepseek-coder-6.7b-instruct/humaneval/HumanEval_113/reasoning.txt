@@ -1,0 +1,6 @@
+The function `odd_count` is called with (lst = ['1234567']).
+Inside the function, a variable `res` is initialized as an empty list.
+The loop iterates over each element in the list `lst`.
+For each element `arr` in `lst`, it calculates the number of odd elements in `arr` by summing up the results of the condition `int(d)%2==1` for each digit `d` in `arr`.
+Then, it appends a string to `res` that includes the number of odd elements in `arr`.
+Finally, the function returns the list `res`.

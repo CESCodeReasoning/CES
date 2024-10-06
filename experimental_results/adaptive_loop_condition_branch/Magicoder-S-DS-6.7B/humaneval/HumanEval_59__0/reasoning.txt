@@ -1,0 +1,116 @@
+The function `largest_prime_factor` is called with ( n = 330 ).
+Inside the function, a variable `largest` is initialized to 1.
+
+Iteration 1:
+    -The number 2 is not a factor of 330, so it is not a prime number.
+Iteration 2:
+    -The number 3 is a factor of 330 and is a prime number, so largest becomes 3.
+Iteration 3:
+    -The number 4 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 4:
+    -The number 5 is a factor of 330 and is a prime number, so largest becomes 5.
+Iteration 5:
+    -The number 6 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 6:
+    -The number 7 is a factor of 330 and is a prime number, so largest becomes 7.
+Iteration 7:
+    -The number 8 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 8:
+    -The number 9 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 9:
+    -The number 10 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 10:
+    -The number 11 is a factor of 330 and is a prime number, so largest becomes 11.
+Iteration 11:
+    -The number 12 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 12:
+    -The number 13 is a factor of 330 and is a prime number, so largest becomes 13.
+Iteration 13:
+    -The number 14 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 14:
+    -The number 15 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 15:
+    -The number 16 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 16:
+    -The number 17 is a factor of 330 and is a prime number, so largest becomes 17.
+Iteration 17:
+    -The number 18 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 18:
+    -The number 19 is a factor of 330 and is a prime number, so largest becomes 19.
+Iteration 19:
+    -The number 20 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 20:
+    -The number 21 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 21:
+    -The number 22 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 22:
+    -The number 23 is a factor of 330 and is a prime number, so largest becomes 23.
+Iteration 23:
+    -The number 24 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 24:
+    -The number 25 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 25:
+    -The number 26 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 26:
+    -The number 27 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 27:
+    -The number 28 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 28:
+    -The number 29 is a factor of 330 and is a prime number, so largest becomes 29.
+Iteration 29:
+    -The number 30 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 30:
+    -The number 31 is a factor of 330 and is a prime number, so largest becomes 31.
+Iteration 31:
+    -The number 32 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 32:
+    -The number 33 is a factor of 330 and is a prime number, so largest becomes 33.
+Iteration 33:
+    -The number 34 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 34:
+    -The number 35 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 35:
+    -The number 36 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 36:
+    -The number 37 is a factor of 330 and is a prime number, so largest becomes 37.
+Iteration 37:
+    -The number 38 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 38:
+    -The number 39 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 39:
+    -The number 40 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 40:
+    -The number 41 is a factor of 330 and is a prime number, so largest becomes 41.
+Iteration 41:
+    -The number 42 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 42:
+    -The number 43 is a factor of 330 and is a prime number, so largest becomes 43.
+Iteration 43:
+    -The number 44 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 44:
+    -The number 45 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 45:
+    -The number 46 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 46:
+    -The number 47 is a factor of 330 and is a prime number, so largest becomes 47.
+Iteration 47:
+    -The number 48 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 48:
+    -The number 49 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 49:
+    -The number 50 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 50:
+    -The number 51 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 51:
+    -The number 52 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 52:
+    -The number 53 is a factor of 330 and is a prime number, so largest becomes 53.
+Iteration 53:
+    -The number 54 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 54:
+    -The number 55 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 55:
+    -The number 56 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 56:
+    -The number 57 is a factor of 330, but not a prime number, so it is not updated.
+Iteration 57:

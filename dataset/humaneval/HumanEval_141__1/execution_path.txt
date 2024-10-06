@@ -1,0 +1,9 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: file_name_check
+main.py(5):     suf = ['txt', 'exe', 'dll']
+main.py(6):     lst = file_name.split(sep='.')
+main.py(7):     if len(lst) != 2:
+main.py(9):     if not lst[1] in suf:
+main.py(11):     if len(lst[0]) == 0:
+main.py(13):     if not lst[0][0].isalpha():
+main.py(14):         return 'No'

@@ -1,0 +1,3 @@
+The function get_row takes a list of lists lst and an integer x as input. It first creates a list of tuples coords where each tuple represents the coordinates (i, j) of the elements in lst that are equal to x. It then sorts the list of tuples coords first by the second element of each tuple in descending order and then by the first element of each tuple in ascending order.
+
+To determine the output of executing the function get_row on the input ([], 1), we need to create the list of tuples coords. Since the input list lst is empty, there are no elements in lst that are equal to 1, so coords is an empty list. Therefore, the output of executing the function get_row on the input ([], 1) is an empty list.

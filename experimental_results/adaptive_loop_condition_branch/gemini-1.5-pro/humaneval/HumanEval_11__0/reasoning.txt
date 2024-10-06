@@ -1,0 +1,5 @@
+The function `string_xor` is called with two strings, `a` and `b`, both of which are '1'.
+The function `xor` is defined as a nested function within `string_xor`.
+The `xor` function takes two characters, `i` and `j`, and returns '0' if they are the same, and '1' otherwise.
+The `string_xor` function uses a list comprehension to apply the `xor` function to each pair of characters in `a` and `b`, and then joins the results into a single string.
+In this case, since both `a` and `b` are '1', the `xor` function will return '0' for each pair of characters, and the `string_xor` function will return the string '0'.

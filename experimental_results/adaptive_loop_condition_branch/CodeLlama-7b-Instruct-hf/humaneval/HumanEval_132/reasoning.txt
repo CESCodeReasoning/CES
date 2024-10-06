@@ -1,0 +1,263 @@
+The function `is_nested` is called with ( string = '[[]]' ).
+Inside the function, three lists are created: `opening_bracket_index`, `closing_bracket_index`, and `cnt`.
+
+Iteration 1:
+    -The character '[' is added to `opening_bracket_index`.
+Iteration 2:
+    -The character '[' is added to `opening_bracket_index`.
+Iteration 3:
+    -The character ']' is added to `closing_bracket_index`.
+Iteration 4:
+    -The character ']' is added to `closing_bracket_index`.
+Iteration 5:
+    -The character ']' is added to `closing_bracket_index`.
+Iteration 6:
+    -The character ']' is added to `closing_bracket_index`.
+
+The `closing_bracket_index` list is reversed.
+
+Iteration 1:
+    -The index of the last ']' is 4.
+Iteration 2:
+    -The index of the second last ']' is 3.
+Iteration 3:
+    -The index of the third last ']' is 2.
+Iteration 4:
+    -The index of the fourth last ']' is 1.
+Iteration 5:
+    -The index of the fifth last ']' is 0.
+
+The `opening_bracket_index` list is iterated over.
+
+Iteration 1:
+    -The index of the first '[' is 0.
+Iteration 2:
+    -The index of the second '[' is 1.
+
+The `closing_bracket_index` list is iterated over in reverse.
+
+Iteration 1:
+    -The index of the last ']' is 4.
+Iteration 2:
+    -The index of the second last ']' is 3.
+Iteration 3:
+    -The index of the third last ']' is 2.
+Iteration 4:
+    -The index of the fourth last ']' is 1.
+Iteration 5:
+    -The index of the fifth last ']' is 0.
+
+The `cnt` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `cnt` is 1.
+Iteration 2:
+    -The value of `cnt` is 2.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 1.
+Iteration 2:
+    -The value of `i` is 2.
+
+The `l` variable is set to the length of the `closing_bracket_index` list.
+
+Iteration 1:
+    -The value of `l` is 5.
+Iteration 2:
+    -The value of `l` is 5.
+
+The `idx` variable is set to the value of the current index in the `opening_bracket_index` list.
+
+Iteration 1:
+    -The value of `idx` is 0.
+Iteration 2:
+    -The value of `idx` is 1.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `True`.
+Iteration 2:
+    -The condition is evaluated to `True`.
+
+The `cnt` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `cnt` is 2.
+Iteration 2:
+    -The value of `cnt` is 3.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 2.
+Iteration 2:
+    -The value of `i` is 3.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iteration 2:
+    -The condition is evaluated to `False`.
+
+The `if` statement is not executed.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 3.
+Iteration 2:
+    -The value of `i` is 4.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iteration 2:
+    -The condition is evaluated to `False`.
+
+The `if` statement is not executed.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 4.
+Iteration 2:
+    -The value of `i` is 5.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iteration 2:
+    -The condition is evaluated to `False`.
+
+The `if` statement is not executed.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 5.
+Iteration 2:
+    -The value of `i` is 6.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iteration 2:
+    -The condition is evaluated to `False`.
+
+The `if` statement is not executed.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 6.
+Iteration 2:
+    -The value of `i` is 7.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iteration 2:
+    -The condition is evaluated to `False`.
+
+The `if` statement is not executed.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 7.
+Iteration 2:
+    -The value of `i` is 8.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iteration 2:
+    -The condition is evaluated to `False`.
+
+The `if` statement is not executed.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 8.
+Iteration 2:
+    -The value of `i` is 9.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iteration 2:
+    -The condition is evaluated to `False`.
+
+The `if` statement is not executed.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 9.
+Iteration 2:
+    -The value of `i` is 10.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iteration 2:
+    -The condition is evaluated to `False`.
+
+The `if` statement is not executed.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 10.
+Iteration 2:
+    -The value of `i` is 11.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iteration 2:
+    -The condition is evaluated to `False`.
+
+The `if` statement is not executed.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 11.
+Iteration 2:
+    -The value of `i` is 12.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iteration 2:
+    -The condition is evaluated to `False`.
+
+The `if` statement is not executed.
+
+The `i` variable is incremented by 1.
+
+Iteration 1:
+    -The value of `i` is 12.
+Iteration 2:
+    -The value of `i` is 13.
+
+The `if` statement is evaluated.
+
+Iteration 1:
+    -The condition is evaluated to `False`.
+Iter

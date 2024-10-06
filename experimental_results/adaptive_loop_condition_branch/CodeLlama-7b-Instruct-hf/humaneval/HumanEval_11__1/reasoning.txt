@@ -1,0 +1,7 @@
+The function `string_xor` is called with ( a = '0101', b = '0000' ).
+The `zip` function is used to iterate over the characters of both strings simultaneously.
+The `xor` function is called with each pair of characters from the two strings.
+The `xor` function returns '0' if the characters are the same, and '1' if they are different.
+The `join` method is used to concatenate the results of the `xor` function into a single string.
+
+Therefore, the final output of the function `string_xor('0101', '0000')` is '1101'.

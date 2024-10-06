@@ -1,0 +1,24 @@
+ --- modulename: execution_path, funcname: <module>
+<string>(1):  --- modulename: main, funcname: count_up_to
+main.py(3):     primes = []
+main.py(4):     for i in range(2, n):
+main.py(5):         is_prime = True
+main.py(6):         for j in range(2, i):
+main.py(10):         if is_prime:
+main.py(11):             primes.append(i)
+main.py(4):     for i in range(2, n):
+main.py(5):         is_prime = True
+main.py(6):         for j in range(2, i):
+main.py(7):             if i % j == 0:
+main.py(6):         for j in range(2, i):
+main.py(10):         if is_prime:
+main.py(11):             primes.append(i)
+main.py(4):     for i in range(2, n):
+main.py(5):         is_prime = True
+main.py(6):         for j in range(2, i):
+main.py(7):             if i % j == 0:
+main.py(8):                 is_prime = False
+main.py(9):                 break
+main.py(10):         if is_prime:
+main.py(4):     for i in range(2, n):
+main.py(12):     return primes

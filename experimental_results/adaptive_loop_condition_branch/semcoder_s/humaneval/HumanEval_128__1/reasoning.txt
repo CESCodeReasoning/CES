@@ -1,0 +1,12 @@
+The function `prod_signs` is called with ( arr = [1, 1, 1, 2, 3, -1, 1] ).
+The function checks if the input list `arr` is empty.
+   - The condition `not arr` is false (since `arr` is not empty).
+The function calculates the product of the signs based on the number of negative elements in the list.
+   - It counts the number of negative elements in the list using `filter(lambda x: x < 0, arr)`.
+   - The product is calculated as `(-1) ** len(list(...))`.
+   - The sum of absolute values is calculated as `sum([abs(i) for i in arr])`.
+   - The final product is `prod * sum([abs(i) for i in arr])`.
+Return Statement
+   - After the calculation, the function returns the calculated product.
+
+Therefore, the final output of the function `prod_signs([1, 1, 1, 2, 3, -1, 1])` is -10.
