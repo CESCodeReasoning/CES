@@ -3,9 +3,9 @@ import time
 import os
 from litellm import completion
 import google.generativeai as genai
-genai.configure(api_key="AIzaSyAbOjHoRq7B7Z4Id66oaaGRk2JG1B9q-3g")
+genai.configure(api_key="")
 openai.api_key = os.getenv("OPENAIKEY")
-os.environ['GEMINI_API_KEY'] = "AIzaSyAbOjHoRq7B7Z4Id66oaaGRk2JG1B9q-3g"
+os.environ['GEMINI_API_KEY'] = ""
 
 def chatgpt_generator(model,message, temp=0.0, max_len=1024):
     err_flag = False
